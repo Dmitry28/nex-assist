@@ -1,11 +1,14 @@
 const puppeteer = require('puppeteer');
-
 const fs = require('fs').promises;
-
 const TelegramBot = require('node-telegram-bot-api');
+require('dotenv').config();
 
-const token = process.env.TELEGRAM_TOKEN || '6660285157:AAHkdPJONQJMbtL1xwB-RLZzYlPIvQV4vp0';
-const chatId = process.env.TELEGRAM_CHAT_ID || '-1001995284264'; // Replace with your chat ID or group ID where you want to send messages
+if (!process.env.TELEGRAM_TOKEN || !process.env.TELEGRAM_CHAT_ID) {
+  throw new Error('TELEGRAM_TOKEN and TELEGRAM_CHAT_ID must be set in environment variables');
+}
+
+const token = process.env.TELEGRAM_TOKEN;
+const chatId = process.env.TELEGRAM_CHAT_ID;
 const bot = new TelegramBot(token, { polling: false });
 
 const URL = 'https://gcn.by/zemelnye-uchastki/zemelnye-uchastki-v-sobstvennost/';

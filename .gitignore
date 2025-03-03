@@ -74,8 +74,6 @@ dist
 .idea
 storage.json
 
-
-
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -126,3 +124,5 @@ next-env.d.ts
 
 # IDE files
 .idea/
+
+.env
