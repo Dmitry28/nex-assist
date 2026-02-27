@@ -21,7 +21,6 @@ const CONCURRENCY = 4;
 interface Item {
   title: string | undefined;
   link: string | undefined;
-  description: string | undefined;
   price?: string;
   area?: string;
   address?: string;
@@ -64,14 +63,13 @@ async function scrapeData(url: string): Promise<Item[]> {
   await listPage.waitForSelector('.vc_grid-item', { timeout: 10000 });
 
   const items: Item[] = await listPage.evaluate(() => {
-    const data: { title: string | undefined; link: string | undefined; description: string | undefined }[] = [];
+    const data: { title: string | undefined; link: string | undefined }[] = [];
     const elements = document.querySelectorAll('.vc_grid-item');
     console.log('Number of items found:', elements.length);
     elements.forEach(element => {
-      const description = element.querySelector('.vc_gitem-post-data-source-post_excerpt')?.textContent?.trim();
       const title = element.querySelector('.vc_gitem-post-data-source-post_title')?.textContent?.trim();
       const link = (element.querySelector('.vc-zone-link') as HTMLAnchorElement | null)?.href;
-      data.push({ title, link, description });
+      data.push({ title, link });
     });
     return data;
   });
@@ -280,8 +278,7 @@ async function detectChanges(): Promise<void> {
   const newItems = currentItems.filter(item => !previousItems.some(prev => prev.link === item.link));
   const removedItems = previousItems.filter(prev => !currentItems.some(item => item.link === prev.link));
   const specialItems = currentItems.filter(
-    item =>
-      item.description?.toLowerCase().includes('заболо') || item.title?.toLowerCase().includes('заболо')
+    item => item.title?.toLowerCase().includes('заболо')
   );
   const newSpecialItems = specialItems.filter(item => !previousItems.some(prev => prev.link === item.link));
 
