@@ -24,11 +24,25 @@ interface Item {
   description: string | undefined;
   price?: string;
   area?: string;
+  address?: string;
+  cadastralNumber?: string;
+  cadastralMapUrl?: string;
+  auctionDate?: string;
+  applicationDeadline?: string;
+  communications?: string;
+  images?: string[];
 }
 
 interface Details {
   price: string;
   area: string;
+  address: string;
+  cadastralNumber: string;
+  cadastralMapUrl: string;
+  auctionDate: string;
+  applicationDeadline: string;
+  communications: string;
+  images: string[];
 }
 
 async function sendMessage(message: string): Promise<void> {
@@ -74,6 +88,13 @@ async function scrapeData(url: string): Promise<Item[]> {
         const details = await fetchDetails(page, item.link);
         item.price = details.price;
         item.area = details.area;
+        item.address = details.address;
+        item.cadastralNumber = details.cadastralNumber;
+        item.cadastralMapUrl = details.cadastralMapUrl;
+        item.auctionDate = details.auctionDate;
+        item.applicationDeadline = details.applicationDeadline;
+        item.communications = details.communications;
+        item.images = details.images;
       }
       await page.close();
     })
@@ -84,27 +105,97 @@ async function scrapeData(url: string): Promise<Item[]> {
 }
 
 async function fetchDetails(page: Page, link: string | undefined): Promise<Details> {
+  const empty: Details = {
+    price: 'N/A',
+    area: 'N/A',
+    address: 'N/A',
+    cadastralNumber: 'N/A',
+    cadastralMapUrl: 'N/A',
+    auctionDate: 'N/A',
+    applicationDeadline: 'N/A',
+    communications: 'N/A',
+    images: [],
+  };
+
   if (!link) {
     console.warn('Skipping item with missing link');
-    return { price: 'N/A', area: 'N/A' };
+    return empty;
   }
+
   try {
     await page.goto(link, { waitUntil: 'networkidle2' });
-    await page.waitForSelector('strong');
+    await page.waitForSelector('.prop, strong', { timeout: 10000 });
 
     const details: Details = await page.evaluate(() => {
-      const priceText = document.body.innerText.match(/Начальная цена:\s*([\d\s,]+)руб\./);
-      const areaText = document.body.innerText.match(/Площадь земельного участка:\s*([\d,]+)\s*га/);
+      const text = document.body.innerText;
+
+      const match = (pattern: RegExp) => {
+        const m = text.match(pattern);
+        return m ? m[1].trim() : 'N/A';
+      };
+
+      // Цена
+      const price = match(/Начальная цена:\s*([\d\s,]+)\s*руб\./);
+
+      // Площадь — сначала пробуем полное название, потом короткое
+      const area =
+        match(/Площадь земельного участка:\s*([\d,\.]+)\s*га/) !== 'N/A'
+          ? match(/Площадь земельного участка:\s*([\d,\.]+)\s*га/)
+          : match(/Площадь:\s*([\d,\.]+)\s*га/);
+
+      // Адрес
+      const address = match(/Адрес:\s*(.+)/);
+
+      // Кадастровый номер
+      const cadastralNumber = match(/Кадастровый номер:\s*(\d+)/);
+
+      // Ссылка на публичную кадастровую карту
+      const cadastralMapEl = document.querySelector('.prop a[href*="map.nca.by"]') as HTMLAnchorElement | null;
+      const cadastralMapUrl = cadastralMapEl?.href ?? 'N/A';
+
+      // Дата аукциона — точная или плановая
+      const auctionLinkEl = Array.from(document.querySelectorAll('.prop a')).find(a =>
+        a.textContent?.includes('Аукцион состоится')
+      );
+      const auctionEmEl = document.querySelector('.prop em');
+      const auctionDate =
+        auctionLinkEl?.textContent?.trim() ??
+        auctionEmEl?.textContent?.trim() ??
+        'N/A';
+
+      // Дедлайн подачи заявок
+      const deadlineLinkEl = Array.from(document.querySelectorAll('.prop a')).find(a =>
+        a.textContent?.includes('Заявления принимаются')
+      );
+      const applicationDeadline = deadlineLinkEl?.textContent?.trim() ?? 'N/A';
+
+      // Коммуникации
+      const commsMatch = text.match(/Имеется возможность подключения к сетям\s+(.+?)(?:\n|Победитель)/s);
+      const communications = commsMatch ? commsMatch[1].replace(/\s+/g, ' ').trim() : 'N/A';
+
+      // Изображения из галереи
+      const imageEls = document.querySelectorAll('#image-gallery img');
+      const images = Array.from(imageEls)
+        .map(img => (img as HTMLImageElement).src)
+        .filter(src => !!src);
+
       return {
-        price: priceText ? priceText[1].trim() + 'руб' : 'Price not found',
-        area: areaText ? areaText[1].trim() + 'га' : 'Area not found',
+        price: price !== 'N/A' ? price + 'руб' : 'N/A',
+        area: area !== 'N/A' ? area + 'га' : 'N/A',
+        address,
+        cadastralNumber,
+        cadastralMapUrl,
+        auctionDate,
+        applicationDeadline,
+        communications,
+        images,
       };
     });
 
     return details;
   } catch (error) {
     console.error('Error fetching details:', error);
-    return { price: 'Error fetching price', area: 'Error fetching area' };
+    return empty;
   }
 }
 
@@ -116,9 +207,11 @@ const buildMessage = (items: Item[], header: string, range: string): string => {
         item => `
         <b>${item.title}</b>
         <a href="${item.link}">Ссылка</a>
-        <i>${item.description}</i>
+        📍 ${item.address}
         <b>Цена:</b> ${item.price}
         <b>Площадь:</b> ${item.area}
+        <b>Аукцион:</b> ${item.auctionDate}
+        <b>Приём заявок до:</b> ${item.applicationDeadline}
       `
       )
       .join('\n')

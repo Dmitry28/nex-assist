@@ -4,195 +4,494 @@
     "link": "http://gcn.by/properties/zemelnyj-uchastok-u-2-po-ul-podkryzhakskaya-2/",
     "description": "Земельный участок У-2 по ул. Подкрыжакской в г. Гродно, в районе жилого дома № 12 в собственность Адрес: г. Гродно, ул. Подкрыжакская, 14 Площадь: 0,0752 га Кадастровый номер: 440100000001015113 Имеется возможность подключения к сетям электроснабжения (без возможности использования электроэнергии для электроотопления), газоснабжения, водоснабжения Победитель торгов обязан: ⇨ внести плату за земельный участок; ⇨ возместить организатору […]",
     "price": "19 395,00руб",
-    "area": "Area not found"
+    "area": "0,0752га",
+    "address": "г. Гродно, ул. Подкрыжакская, 14",
+    "cadastralNumber": "440100000001015113",
+    "cadastralMapUrl": "https://map.nca.by/search/019c0891-aa58-72e5-a96c-5970bf9d63e1",
+    "auctionDate": "Проведение аукциона планируется на II квартал 2026 г.",
+    "applicationDeadline": "N/A",
+    "communications": "электроснабжения (без возможности использования электроэнергии для электроотопления), газоснабжения, водоснабжения",
+    "images": [
+      "https://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt3.png",
+      "https://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt1.png",
+      "https://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt2.png",
+      "https://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt3.png",
+      "https://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt1.png"
+    ]
   },
   {
     "title": "Земельный участок У-122 по ул. Майской в микрорайоне «Барановичи-9»",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-u-122-po-ul-majskoj-v-mikrorajone-baranovichi-9/",
     "description": "Земельный участок У-122 по ул. Майской в микрорайоне жилой усадебной застройки Барановичи-9 в г. Гродно, в собственность Адрес: г. Гродно, ул. Майская, 2 Площадь: 0,1004 га Кадастровый номер: 440100000003007807 Имеется возможность подключения к сетям электроснабжения, водоснабжения, газоснабжения. Победитель торгов обязан: ⇨ внести плату за земельный участок; ⇨ возместить организатору аукциона затраты на организацию и проведение […]",
     "price": "19 468,00руб",
-    "area": "Area not found"
+    "area": "0,1004га",
+    "address": "г. Гродно, ул. Майская, 2",
+    "cadastralNumber": "440100000003007807",
+    "cadastralMapUrl": "https://map.nca.by/search/019c04d8-bb37-71c1-b935-f5a8ff42867c",
+    "auctionDate": "Аукцион состоится 24.03.2026",
+    "applicationDeadline": "Заявления принимаются по 18.03.2026",
+    "communications": "электроснабжения, водоснабжения, газоснабжения.",
+    "images": []
   },
   {
     "title": "Земельный участок У-101 по ул. Майской в микрорайоне «Барановичи-9»",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-u-101-po-ul-majskoj-v-mikrorajone-baranovichi-9/",
     "description": "Земельный участок У-101 по ул. Майской в микрорайоне жилой усадебной застройки Барановичи-9 в г. Гродно, в собственность Адрес: г. Гродно, ул. Майская, 1 Площадь: 0,0998 га Кадастровый номер: 440100000003007809 Имеется возможность подключения к сетям электроснабжения, водоснабжения, газоснабжения. Победитель торгов обязан: ⇨ внести плату за земельный участок; ⇨ возместить организатору аукциона затраты на организацию и проведение […]",
     "price": "19 352,00руб",
-    "area": "Area not found"
+    "area": "0,0998га",
+    "address": "г. Гродно, ул. Майская, 1",
+    "cadastralNumber": "440100000003007809",
+    "cadastralMapUrl": "https://map.nca.by/search/019c04d1-f7cf-7308-80ff-7ac0e7856789",
+    "auctionDate": "Проведение аукциона планируется во II квартале 2026 г.",
+    "applicationDeadline": "N/A",
+    "communications": "электроснабжения, водоснабжения, газоснабжения.",
+    "images": []
   },
   {
     "title": "Не завершённый строительством жилой дом по ул. Ласковая, 18",
     "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-laskovaya-18/",
     "description": "Не завершённый строительством жилой дом и право частной собственности на земельный участок для обслуживания незавершенного строительством жилого дома по адресу: г. Гродно, У-84 в микрорайоне «Барановичи-9», ул. Ласковая, 18 Не завершенное незаконсервированное капитальное строение. Готовность 10%. Фундамент железобетон, площадь застройки 55 кв.м Площадь земельного участка: 0,0999 га Кадастровый номер: 440100000003006503 Начальная цена: 35 044,78 руб., […]",
     "price": "35 044,78руб",
-    "area": "0,0999га"
+    "area": "0,0999га",
+    "address": "N/A",
+    "cadastralNumber": "440100000003006503",
+    "cadastralMapUrl": "N/A",
+    "auctionDate": "Возможно проведение повторного аукциона при обращении заинтересованного в приобретении объекта лица",
+    "applicationDeadline": "N/A",
+    "communications": "N/A",
+    "images": []
   },
   {
     "title": "Не завершённый строительством жилой дом по ул. Яскравая, 1",
     "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-yaskravaya-1/",
     "description": "Не завершённый строительством жилой дом и право частной собственности на земельный участок для обслуживания незавершенного строительством жилого дома по адресу: г. Гродно, У-109 в микрорайоне «Барановичи-7», ул. Яскравая, 1 Не завершенное незаконсервированное капитальное строение. Фундамент бетон (готовность 50%), площадь застройки 144 кв.м Площадь земельного участка: 0,1043 га Кадастровый номер: 440100000003005924 Начальная цена: 37 844,67 руб., […]",
     "price": "37 844,67руб",
-    "area": "0,1043га"
+    "area": "0,1043га",
+    "address": "N/A",
+    "cadastralNumber": "440100000003005924",
+    "cadastralMapUrl": "https://map.nca.by/search/019c033d-2de5-73ec-9471-542bedfca3ee",
+    "auctionDate": "Аукцион состоится 24.03.2026",
+    "applicationDeadline": "Заявления принимаются по 18.03.2026",
+    "communications": "N/A",
+    "images": []
   },
   {
     "title": "Не завершённый строительством жилой дом по ул. Пригожая, 6",
     "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-prigozhaya-6/",
     "description": "Не завершённый строительством жилой дом и право частной собственности на земельный участок для обслуживания незавершенного строительством жилого дома по адресу: г. Гродно, У-128 в микрорайоне «Барановичи-9», ул. Пригожая, 6 Не завершенное незаконсервированное капитальное строение. Готовность 18%. Фундамент бетон, наружные и внутренние стены: бревно (готовность 35%), площадь застройки 129 кв.м Площадь земельного участка: 0,0992 га Кадастровый […]",
     "price": "34 154,23руб",
-    "area": "0,0992га"
+    "area": "0,0992га",
+    "address": "N/A",
+    "cadastralNumber": "440100000003005950",
+    "cadastralMapUrl": "https://map.nca.by/search/019c0335-22fb-73d8-96a5-4a502838890b",
+    "auctionDate": "Проведение аукциона планируется на II квартал 2026 года",
+    "applicationDeadline": "N/A",
+    "communications": "N/A",
+    "images": []
   },
   {
     "title": "Земельный участок по ул. Рожанского, 94",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-rozhanskogo-94/",
     "description": "Земельный участок в микрорайоне жилой усадебной застройки Зарица-4 в районе жилых домов № 92 и  № 96 по ул. Рожанского в собственность Адрес: г. Гродно, ул. Рожанского, 94 Площадь: 0,0997 га Кадастровый номер: 440100000002012985 Имеется возможность подключения к сетям электроснабжения, газоснабжения, водоснабжения Победитель торгов обязан: ⇨ внести плату за земельный участок; ⇨ возместить организатору аукциона […]",
     "price": "34 537,00руб",
-    "area": "Area not found"
+    "area": "0,0997га",
+    "address": "г. Гродно, ул. Рожанского, 94",
+    "cadastralNumber": "440100000002012985",
+    "cadastralMapUrl": "https://map.nca.by/search/019c08bc-b49c-7292-a1d7-b4f36e373ce8",
+    "auctionDate": "Проведение аукциона планируется на II квартал 2026 г.",
+    "applicationDeadline": "N/A",
+    "communications": "электроснабжения, газоснабжения, водоснабжения",
+    "images": []
   },
   {
     "title": "Не завершённый строительством жилой дом по ул. Ранишняя, 13",
     "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-ranishnyaya-13/",
     "description": "Не завершённый строительством жилой дом и право частной собственности на земельный участок для обслуживания незавершенного строительством жилого дома по адресу: г. Гродно, У-64 в микрорайоне «Барановичи 5,6», ул. Ранишняя, 13 Не завершенное законсервированное капитальное строение с инв. № 400/D-136030. Готовность 12%. Фундамент блоки железобетонные, подземных этажей: 1; общая площадь 121,9 кв.м; подвал: готовность 68%, наружные, […]",
     "price": "51 374,34руб",
-    "area": "0,1040га"
+    "area": "0,1040га",
+    "address": "N/A",
+    "cadastralNumber": "440100000003004644",
+    "cadastralMapUrl": "https://map.nca.by/search/019c031c-6424-706e-8a1d-55785c6b11fa",
+    "auctionDate": "Проведение аукциона планируется на II квартал 2026 года",
+    "applicationDeadline": "N/A",
+    "communications": "N/A",
+    "images": []
   },
   {
     "title": "Не завершённый строительством жилой дом по ул. Суничная, 52",
     "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-sunichnaya-52/",
     "description": "Не завершённый строительством жилой дом и право частной собственности на земельный участок для обслуживания незавершенного строительством жилого дома по адресу: г. Гродно, У-418 в микрорайоне «Барановичи 5,6», ул. Суничная, 52 Не завершенное законсервированное капитальное строение с инв. № 400/D-105248. Готовность 12%. Фундамент бетон, наружная площадь 87 кв.м Площадь земельного участка: 0,0974 га Кадастровый номер: 440100000003005438 […]",
     "price": "25 987,70руб",
-    "area": "0,0974га"
+    "area": "0,0974га",
+    "address": "N/A",
+    "cadastralNumber": "440100000003005438",
+    "cadastralMapUrl": "https://map.nca.by/search/019bffb7-1e15-70a4-b102-2b599fe311be",
+    "auctionDate": "Проведение аукциона планируется на II квартал 2026 года",
+    "applicationDeadline": "N/A",
+    "communications": "N/A",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/01/u-418-sunichnaya-sajt-2.png",
+      "http://gcn.by/wp-content/uploads/2026/01/u-418-sunichnaya-sajt-3.png",
+      "http://gcn.by/wp-content/uploads/2026/01/u-418-sunichnaya-sajt-1.png",
+      "http://gcn.by/wp-content/uploads/2026/01/u-418-sunichnaya-sajt-2.png",
+      "http://gcn.by/wp-content/uploads/2026/01/u-418-sunichnaya-sajt-3.png"
+    ]
   },
   {
     "title": "Земельный участок по ул. Иосифа Дьякова, 5",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-iosifa-dyakova-5/",
     "description": "Земельный участок по ул. Иосифа Дьякова в г. Гродно, в районе жилого дома № 3 в собственность Адрес: г. Гродно, ул. Иосифа Дьякова, 5 Площадь: 0,1012 га Кадастровый номер: 440100000002012969 Имеется возможность подключения к сетям электроснабжения, газоснабжения, водоснабжения Победитель торгов обязан: ⇨ внести плату за земельный участок; ⇨ возместить организатору аукциона затраты на организацию и […]",
     "price": "42 262,00руб",
-    "area": "Area not found"
+    "area": "0,1012га",
+    "address": "г. Гродно, ул. Иосифа Дьякова, 5",
+    "cadastralNumber": "440100000002012969",
+    "cadastralMapUrl": "https://map.nca.by/search/019c08e7-7455-7254-a18d-abfc7de2d9e0",
+    "auctionDate": "Проведение аукциона планируется на II квартал 2026 г.",
+    "applicationDeadline": "N/A",
+    "communications": "электроснабжения, газоснабжения, водоснабжения",
+    "images": []
   },
   {
     "title": "Земельный участок по ул. Александра Боголюбова, 40",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-aleksandra-bogolyubova-40/",
     "description": "Земельный участок У-2 по ул. Виктора Афанасьева в г. Гродно, в районе жилого дома № 7 в собственность Адрес: г. Гродно, ул. Александра Боголюбова, 40 Площадь: 0,0979 га Кадастровый номер: 440100000002012970 Имеется возможность подключения к сетям электроснабжения, газоснабжения, водоснабжения Победитель торгов обязан: ⇨ внести плату за земельный участок; ⇨ возместить организатору аукциона затраты на организацию […]",
     "price": "40 884,00руб",
-    "area": "Area not found"
+    "area": "0,0979га",
+    "address": "г. Гродно, ул. Александра Боголюбова, 40",
+    "cadastralNumber": "440100000002012970",
+    "cadastralMapUrl": "https://map.nca.by/search/019c656c-a1b1-702b-8eb9-51359758764b",
+    "auctionDate": "Проведение аукциона планируется во II квартале 2026 г.",
+    "applicationDeadline": "N/A",
+    "communications": "электроснабжения, газоснабжения, водоснабжения",
+    "images": []
   },
   {
     "title": "Земельный участок по ул. Виктора Афанасьева, 21",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-viktora-afanaseva-21/",
     "description": "Земельный участок У-1 по ул. Виктора Афанасьева в г. Гродно, в районе жилого дома № 7 в собственность Адрес: г. Гродно, ул. Виктора Афанасьева, 21 Площадь: 0,0978 га Кадастровый номер: 440100000002012991 Имеется возможность подключения к сетям электроснабжения, газоснабжения, водоснабжения Победитель торгов обязан: ⇨ внести плату за земельный участок; ⇨ возместить организатору аукциона затраты на организацию […]",
     "price": "40 842,00руб",
-    "area": "Area not found"
+    "area": "0,0978га",
+    "address": "г. Гродно, ул. Виктора Афанасьева, 21",
+    "cadastralNumber": "440100000002012991",
+    "cadastralMapUrl": "https://map.nca.by/search/019c0911-319f-73bd-aa3b-cfec2d16a8e1",
+    "auctionDate": "Аукцион состоится 24.03.2026",
+    "applicationDeadline": "Заявления принимаются по 18.03.2026",
+    "communications": "электроснабжения, газоснабжения, водоснабжения",
+    "images": []
   },
   {
     "title": "Земельный участок по ул. Шидловского, 6",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-shidlovskogo-6/",
     "description": "Земельный участок по ул. Шидловского в г. Гродно, в районе жилого дома № 4 в собственность Адрес: г. Гродно, ул. Шидловского, 6 Площадь: 0,0966 га Кадастровый номер: 440100000002012972 Имеется возможность подключения к сетям электроснабжения, газоснабжения, водоснабжения Победитель торгов обязан: ⇨ внести плату за земельный участок; ⇨ возместить организатору аукциона затраты на организацию и проведение аукциона […]",
     "price": "33 463,00руб",
-    "area": "Area not found"
+    "area": "0,0966га",
+    "address": "г. Гродно, ул. Шидловского, 6",
+    "cadastralNumber": "440100000002012972",
+    "cadastralMapUrl": "https://map.nca.by/search/019c08b1-42c5-727e-8d3d-fc1e90691ddf",
+    "auctionDate": "Проведение аукциона планируется на II квартал 2026 г.",
+    "applicationDeadline": "N/A",
+    "communications": "электроснабжения, газоснабжения, водоснабжения",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-4.png",
+      "http://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-1.png",
+      "http://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-2.png",
+      "http://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-3.png",
+      "http://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-4.png",
+      "http://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-1.png"
+    ]
   },
   {
     "title": "Не завершённый строительством жилой дом по ул. Пригожая, 11",
     "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-prigozhaya-11/",
     "description": "Не завершённый строительством жилой дом и право частной собственности на земельный участок для обслуживания незавершенного строительством жилого дома по адресу: г. Гродно, У-132 в микрорайоне «Барановичи-9», ул. Пригожая, 11 Не завершенное незаконсервированное капитальное строение. Готовность 12%. Фундамент железобетон, наружная площадь 134 кв.м Площадь земельного участка: 0,1004 га Кадастровый номер: 440100000003005947 Начальная цена: 29 803,08 руб., […]",
     "price": "29 803,08руб",
-    "area": "0,1004га"
+    "area": "0,1004га",
+    "address": "N/A",
+    "cadastralNumber": "440100000003005947",
+    "cadastralMapUrl": "https://map.nca.by/search/019bff96-dd2c-7137-bba5-e7bec2ea249e",
+    "auctionDate": "Аукцион состоится 10.03.2026",
+    "applicationDeadline": "Заявления принимаются по 04.03.2026",
+    "communications": "N/A",
+    "images": []
   },
   {
     "title": "Земельный участок в микрорайоне «Барановичи-11»",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-v-mikrorajone-baranovichi-11/",
     "description": "Земельный участок в микрорайоне Барановичи-11 в г. Гродно, в районе земельного участка У-31 в собственность Адрес: г. Гродно, пер. Виктора Юртова 2-й, 34 Площадь: 0,1069 га Кадастровый номер: 440100000001015233 Имеется возможность подключения к сетям электроснабжения, водоснабжения. Победитель торгов обязан: ⇨ внести плату за земельный участок; ⇨ возместить организатору аукциона затраты на организацию и проведение аукциона […]",
     "price": "32 829,00руб",
-    "area": "Area not found"
+    "area": "0,1069га",
+    "address": "г. Гродно, пер. Виктора Юртова 2-й, 34",
+    "cadastralNumber": "440100000001015233",
+    "cadastralMapUrl": "https://map.nca.by/search/019c0448-a075-7130-845d-f5f5627ad010",
+    "auctionDate": "Аукцион состоится 10.03.2026",
+    "applicationDeadline": "Заявления принимаются по 04.03.2026",
+    "communications": "электроснабжения, водоснабжения.",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/01/yurtova-34-sajt-4.png",
+      "http://gcn.by/wp-content/uploads/2026/01/yurtova-34-sajt-1.png",
+      "http://gcn.by/wp-content/uploads/2026/01/yurtova-34-sajt-2.png",
+      "http://gcn.by/wp-content/uploads/2026/01/yurtova-34-sajt-3.png",
+      "http://gcn.by/wp-content/uploads/2026/01/yurtova-34-sajt-4.png",
+      "http://gcn.by/wp-content/uploads/2026/01/yurtova-34-sajt-1.png"
+    ]
   },
   {
     "title": "Земельный участок У-164 по ул. Ровной в микрорайоне «Барановичи-9»",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-u-164-po-ul-rovnoj-v-mikrorajone-baranovichi-9/",
     "description": "Земельный участок У-164 по ул. Ровной в микрорайоне жилой усадебной застройки Барановичи-9 в г. Гродно, в собственность Адрес: г. Гродно, ул. Ровная, 13 Площадь: 0,0998 га Кадастровый номер: 440100000003007804 Имеется возможность подключения к сетям электроснабжения, водоснабжения, газоснабжения. Победитель торгов обязан: ⇨ внести плату за земельный участок; ⇨ возместить организатору аукциона затраты на организацию и проведение […]",
     "price": "19 352,00руб",
-    "area": "Area not found"
+    "area": "0,0998га",
+    "address": "г. Гродно, ул. Ровная, 13",
+    "cadastralNumber": "440100000003007804",
+    "cadastralMapUrl": "https://map.nca.by/search/019c0888-7c67-704c-a3d0-ade5a6d404cf",
+    "auctionDate": "Аукцион состоится 10.03.2026",
+    "applicationDeadline": "Заявления принимаются по 04.03.2026",
+    "communications": "электроснабжения, водоснабжения, газоснабжения.",
+    "images": []
   },
   {
     "title": "Земельный участок У-163 по ул. Ровной в микрорайоне «Барановичи-9»",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-u-163-po-ul-rovnoj-v-mikrorajone-baranovichi-9/",
     "description": "Земельный участок У-163 по ул. Ровной в микрорайоне жилой усадебной застройки Барановичи-9 в г. Гродно, в собственность Адрес: г. Гродно, ул. Ровная, 15 Площадь: 0,0998 га Кадастровый номер: 440100000003007805 Имеется возможность подключения к сетям электроснабжения, водоснабжения, газоснабжения. Победитель торгов обязан: ⇨ внести плату за земельный участок; ⇨ возместить организатору аукциона затраты на организацию и проведение […]",
     "price": "19 352,00руб",
-    "area": "Area not found"
+    "area": "0,0998га",
+    "address": "г. Гродно, ул. Ровная, 15",
+    "cadastralNumber": "440100000003007805",
+    "cadastralMapUrl": "https://map.nca.by/search/019c0879-1d35-71f1-b797-eab97ddd970d",
+    "auctionDate": "Проведение аукциона планируется на II квартал 2026 г.",
+    "applicationDeadline": "N/A",
+    "communications": "электроснабжения, водоснабжения, газоснабжения.",
+    "images": []
   },
   {
     "title": "Земельный участок по пер. Серафимовича, 2-му",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-po-per-serafimovicha-2-mu/",
     "description": "Земельный участок по переулку Серафимовича 2-му в г. Гродно, в районе жилых домов № 7, №9 и № 11 по переулку Серафимовича 2-му в собственность Адрес: г. Гродно, пер. Серафимовича 2-й, 7А Площадь: 0,1104 га Кадастровый номер: 440100000002012968 Имеется возможность подключения к сетям электроснабжения (без возможности использования электроэнергии для подключения нагрузки электроплиты, электроотопления и горячего […]",
     "price": "70 049,00руб",
-    "area": "Area not found"
+    "area": "0,1104га",
+    "address": "г. Гродно, пер. Серафимовича 2-й, 7А",
+    "cadastralNumber": "440100000002012968",
+    "cadastralMapUrl": "https://map.nca.by/search/019c04b0-8f39-739a-a7ab-add200619897",
+    "auctionDate": "Проведение аукциона планируется на II квартал 2026 года",
+    "applicationDeadline": "N/A",
+    "communications": "электроснабжения (без возможности использования электроэнергии для подключения нагрузки электроплиты, электроотопления и горячего водоснабжения), водоснабжения, газоснабжения.",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-6.png",
+      "http://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-1.png",
+      "http://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-2.png",
+      "http://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-3.png",
+      "http://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-4.png",
+      "http://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-5.png",
+      "http://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-6.png",
+      "http://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-1.png"
+    ]
   },
   {
     "title": "Земельный участок по ул. Тарусичской",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-tarusichskoj/",
     "description": "Земельный участок по ул. Тарусичская в г. Гродно, в районе жилого дома № 43 в собственность Адрес: г. Гродно, ул. Тарусичская, 45 Площадь: 0,0636 га Кадастровый номер: 440100000001015089 Имеется возможность подключения к сетям электроснабжения (без возможности использования электроэнергии и пищеприготовления, и с дополнительными условиями), водоснабжения, газоснабжения, водоотведения (к канализации или водонепроницаемый колодец-выгреб). Победитель торгов обязан: […]",
     "price": "13 166,00руб",
-    "area": "Area not found"
+    "area": "0,0636га",
+    "address": "г. Гродно, ул. Тарусичская, 45",
+    "cadastralNumber": "440100000001015089",
+    "cadastralMapUrl": "https://map.nca.by/search/019c044f-e259-73f2-b5f0-cb28dd6abadb",
+    "auctionDate": "Аукцион состоится 10.03.2026",
+    "applicationDeadline": "Заявления принимаются по 04.03.2026",
+    "communications": "электроснабжения (без возможности использования электроэнергии и пищеприготовления, и с дополнительными условиями), водоснабжения, газоснабжения, водоотведения (к канализации или водонепроницаемый колодец-выгреб).",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/01/tarusichskaya-43-sajt2.png",
+      "http://gcn.by/wp-content/uploads/2026/01/tarusichskaya-43-sajt1.png",
+      "http://gcn.by/wp-content/uploads/2026/01/tarusichskaya-43-sajt2.png",
+      "http://gcn.by/wp-content/uploads/2026/01/tarusichskaya-43-sajt1.png"
+    ]
   },
   {
     "title": "Не завершённый строительством жилой дом по ул. Просторная, 18",
     "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-prostornaya-18/",
     "description": "Не завершённый строительством жилой дом и право частной собственности на земельный участок для обслуживания незавершенного строительством жилого дома по адресу: г. Гродно, У-172 в микрорайоне «Барановичи-9», ул. Просторная, 18 Не завершенное незаконсервированное капитальное строение. Площадь застройки жилого дома 156 кв.м; готовность 41%; фундамент фундаментные блоки, наружные стены блоки газосиликатные, внутренние стены кирпич силикатный, кирпич кермамический, […]",
     "price": "65 626,70руб",
-    "area": "0,0998га"
+    "area": "0,0998га",
+    "address": "N/A",
+    "cadastralNumber": "440100000003006017",
+    "cadastralMapUrl": "N/A",
+    "auctionDate": "Возможно проведение повторного аукциона при обращении заинтересованного в приобретении объекта лица",
+    "applicationDeadline": "N/A",
+    "communications": "N/A",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt7.png",
+      "http://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt1.png",
+      "http://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt2.png",
+      "http://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt3.png",
+      "http://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt4.png",
+      "http://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt5.png",
+      "http://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt6.png",
+      "http://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt7.png",
+      "http://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt1.png"
+    ]
   },
   {
     "title": "Земельный участок в СТ «Полёт»",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-v-st-polyot/",
     "description": "Земельный участок № 36 в СТ «Полёт» в г. Гродно, в собственность Адрес: г. Гродно, ул. Рябиновая, 61/36 Площадь: 0,0540 га Кадастровый номер: 440100000001015025 Земельный участок расположен в охранных зонах: санитарной охраны источников питьевого водоснабжения централизованных систем питьевого водоснабжения (0,054 га); электрической сети (0,0048 га) Победитель торгов обязан: ⇨ внести плату за земельный участок; ⇨ […]",
     "price": "11 178,00руб",
-    "area": "Area not found"
+    "area": "0,0540га",
+    "address": "г. Гродно, ул. Рябиновая, 61/36",
+    "cadastralNumber": "440100000001015025",
+    "cadastralMapUrl": "N/A",
+    "auctionDate": "Возможно проведение повторного аукциона при обращении заинтересованного в приобретении объекта лица",
+    "applicationDeadline": "N/A",
+    "communications": "N/A",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2025/09/polyot-foto-3.png",
+      "http://gcn.by/wp-content/uploads/2025/09/polyot-foto-1.png",
+      "http://gcn.by/wp-content/uploads/2025/09/polyot-foto-2.png",
+      "http://gcn.by/wp-content/uploads/2025/09/polyot-foto-3.png",
+      "http://gcn.by/wp-content/uploads/2025/09/polyot-foto-1.png"
+    ]
   },
   {
     "title": "Жилой дом по ул. Юбилейная, 11",
     "link": "http://gcn.by/properties/zhiloj-dom-po-ul-yubilejnaya-11/",
     "description": "Жилой дом по решению суда признан выморочным наследством и передан в собственность города Гродно Капитальное строение с инвентарным номером 400/C-29014. Наименование: жилой дом. Назначение: здание одноквартирного жилого дома. Общая площадь: 33,3 кв.м, жилая площадь 26 кв.м. Составные части и принадлежности: сени, погреб, два сарая, навес, уборная. Одноэтажное, 1975 год постройки. Фундамент – бутобетон; стены – […]",
     "price": "45 400руб",
-    "area": "Area not found"
+    "area": "N/A",
+    "address": "N/A",
+    "cadastralNumber": "N/A",
+    "cadastralMapUrl": "N/A",
+    "auctionDate": "Возможно проведение повторного аукциона при обращении заинтересованного в приобретении объекта лица",
+    "applicationDeadline": "N/A",
+    "communications": "N/A",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2025/02/yubilejnaya-4.png",
+      "http://gcn.by/wp-content/uploads/2025/02/yubilejnaya-1.png",
+      "http://gcn.by/wp-content/uploads/2025/02/yubilejnaya-2.png",
+      "http://gcn.by/wp-content/uploads/2025/02/yubilejnaya-3.png",
+      "http://gcn.by/wp-content/uploads/2025/02/yubilejnaya-4.png",
+      "http://gcn.by/wp-content/uploads/2025/02/yubilejnaya-1.png"
+    ]
   },
   {
     "title": "Земельный участок У-3 по ул. Максима Танка",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-u-3-po-ul-maksima-tanka/",
     "description": "Земельный участок У-3 по ул. Максима Танка, в районе жилого дома по ул. Сергея Болгарина, 4В в г. Гродно в собственность Строительство одноквартирного жилого дома со встроенным(и) нежилым(и) помещением(ями) Адрес: г. Гродно, ул. Сергея Болгарина, 2Б Площадь: 0,1019 га Кадастровый номер: 440100000002012131 Имеется возможность подключения к сетям электроснабжения, газоснабжения и водоснабжения. Земельный участок расположен в […]",
     "price": "72 961руб",
-    "area": "Area not found"
+    "area": "0,1019га",
+    "address": "г. Гродно, ул. Сергея Болгарина, 2Б",
+    "cadastralNumber": "440100000002012131",
+    "cadastralMapUrl": "N/A",
+    "auctionDate": "Возможно проведение повторного аукциона при обращении заинтересованного в приобретении объекта лица",
+    "applicationDeadline": "N/A",
+    "communications": "электроснабжения, газоснабжения и водоснабжения. Земельный участок расположен в зоне санитарной охраны источников питьевого водоснабжения централизованных систем питьевого водоснабжения",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2-2.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-1-1.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-3-1.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2-2.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-1-1.png"
+    ]
   },
   {
     "title": "Земельный участок У-2 по ул. Максима Танка",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-u-2-po-ul-maksima-tanka/",
     "description": "Земельный участок У-2 по ул. Максима Танка, в районе жилого дома по ул. Сергея Болгарина, 4Б в г. Гродно в собственность Строительство одноквартирного жилого дома со встроенным(и) нежилым(и) помещением(ями) Адрес: г. Гродно, ул. Сергея Болгарина, 2А Площадь: 0,1027 га Кадастровый номер:440100000002012134 Имеется возможность подключения к сетям электроснабжения, газоснабжения и водоснабжения. Земельный участок расположен в зоне […]",
     "price": "73 534руб",
-    "area": "Area not found"
+    "area": "0,1027га",
+    "address": "г. Гродно, ул. Сергея Болгарина, 2А",
+    "cadastralNumber": "440100000002012134",
+    "cadastralMapUrl": "N/A",
+    "auctionDate": "Возможно проведение повторного аукциона при обращении заинтересованного в приобретении объекта лица",
+    "applicationDeadline": "N/A",
+    "communications": "электроснабжения, газоснабжения и водоснабжения. Земельный участок расположен в зоне санитарной охраны источников питьевого водоснабжения централизованных систем питьевого водоснабжения",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-3.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-1.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-3.png"
+    ]
   },
   {
     "title": "Земельный участок У-1 по ул. Максима Танка",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-u-1-po-ul-maksima-tanka/",
     "description": "Земельный участок У-1 по ул. Максима Танка, в районе жилого дома по ул. Сергея Болгарина, 4А в г. Гродно в собственность Строительство одноквартирного жилого дома со встроенным(и) нежилым(и) помещением(ями) Адрес: г. Гродно, ул. Сергея Болгарина, 2 Площадь: 0,1016 га Кадастровый номер: 440100000002012135 Имеется возможность подключения к сетям электроснабжения, газоснабжения и водоснабжения. Земельный участок расположен в […]",
     "price": "72 746руб",
-    "area": "Area not found"
+    "area": "0,1016га",
+    "address": "г. Гродно, ул. Сергея Болгарина, 2",
+    "cadastralNumber": "440100000002012135",
+    "cadastralMapUrl": "N/A",
+    "auctionDate": "Возможно проведение повторного аукциона при обращении заинтересованного в приобретении объекта лица",
+    "applicationDeadline": "N/A",
+    "communications": "электроснабжения, газоснабжения и водоснабжения. Земельный участок расположен в зоне санитарной охраны источников питьевого водоснабжения централизованных систем питьевого водоснабжения",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2023/06/U-1-Bolgarina-Tanka-2.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-1-Bolgarina-Tanka-3.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-1-Bolgarina-Tanka-1.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-1-Bolgarina-Tanka-2.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-1-Bolgarina-Tanka-3.png"
+    ]
   },
   {
     "title": "Земельный участок У-92 в микрорайоне «Барановичи-9»",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-u-92-v-mikrorajone-baranovichi-9/",
     "description": "Земельный участок У-92 в микрорайоне «Барановичи-9» в г. Гродно в собственность Площадь: 0,0999 га Кадастровый номер: 440100000003006382 Земельный участок расположен в  зоне охраны электрических сетей напряжением до 1000 вольт. Имеется возможность подключения к сетям электроснабжения и водоснабжения Победитель торгов обязан: ⇨ внести плату за земельный участок; ⇨ возместить организатору аукциона затраты на организацию и проведение […]",
     "price": "19 370,61руб",
-    "area": "Area not found"
+    "area": "0,0999га",
+    "address": "N/A",
+    "cadastralNumber": "440100000003006382",
+    "cadastralMapUrl": "https://map.nca.by/search/019c98a8-8b3b-72bc-8427-62221f66297a",
+    "auctionDate": "N/A",
+    "applicationDeadline": "Заявления принимаются по 18.03.2026",
+    "communications": "электроснабжения и водоснабжения",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2022/04/u-92-baranovichi-9-3.png",
+      "http://gcn.by/wp-content/uploads/2022/04/u-92-baranovichi-9-2.png",
+      "http://gcn.by/wp-content/uploads/2022/04/u-92-baranovichi-9-3.png",
+      "http://gcn.by/wp-content/uploads/2022/04/u-92-baranovichi-9-2.png"
+    ]
   },
   {
     "title": "Не завершённый строительством жилой дом по ул. Рожанского, 110",
     "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-rozhanskogo-110/",
     "description": "Не завершённый строительством жилой дом и право частной собственности на земельный участок для обслуживания незавершенного строительством жилого дома по адресу: г. Гродно, У-1557 в микрорайоне «Зарица-4», ул. Рожанского, 110 Не завершенное незаконсервированное капитальное строение, степень готовности 41%. Фундамент: бетон; наружные стены: блоки газосиликатные, столбы кирпичные; внутренние стены: блоки газосиликатные; перегородки: блоки газосиликатные; наружная площадь: 21 […]",
     "price": "55 311,35руб",
-    "area": "0,1047га"
+    "area": "0,1047га",
+    "address": "N/A",
+    "cadastralNumber": "440100000003004431",
+    "cadastralMapUrl": "N/A",
+    "auctionDate": "Возможно проведение повторного аукциона при обращении заинтересованного в приобретении объекта лица",
+    "applicationDeadline": "N/A",
+    "communications": "N/A",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-7.png",
+      "http://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-1.png",
+      "http://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-2.png",
+      "http://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-3.png",
+      "http://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-4.png",
+      "http://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-5.png",
+      "http://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-6.png",
+      "http://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-7.png",
+      "http://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-1.png"
+    ]
   },
   {
     "title": "Земельный участок У-4 по ул. Кульбакская",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-u-4-po-ul-kulbakskaya/",
     "description": "Земельный участок У-4 в собственность по адресу: г. Гродно, ул. Кульбакская, в районе жилого дома № 35 Кадастровый номер: 440100000001010123 Площадь: 0,1072 га Имеется возможность подключения к сетям электроснабжения (без возможности использования электроэнергии для электроотопления), водоснабжения, газоснабжения. Земельный участок расположен в охранных зонах электрической сети (0,0079 га) Победитель торгов обязан: ⇨ внести плату за земельный […]",
     "price": "42 087,00руб",
-    "area": "Area not found"
+    "area": "0,1072га",
+    "address": "N/A",
+    "cadastralNumber": "440100000001010123",
+    "cadastralMapUrl": "N/A",
+    "auctionDate": "N/A",
+    "applicationDeadline": "N/A",
+    "communications": "электроснабжения (без возможности использования электроэнергии для электроотопления), водоснабжения, газоснабжения.",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt1.png",
+      "http://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt2.png",
+      "http://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt3.png",
+      "http://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt4.png",
+      "http://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt1.png",
+      "http://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt2.png"
+    ]
   }
 ]
