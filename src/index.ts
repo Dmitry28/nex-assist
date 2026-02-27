@@ -106,19 +106,19 @@ async function scrapeData(url: string): Promise<Item[]> {
 
 async function fetchDetails(page: Page, link: string | undefined): Promise<Details> {
   const empty: Details = {
-    price: 'N/A',
-    area: 'N/A',
-    address: 'N/A',
-    cadastralNumber: 'N/A',
-    cadastralMapUrl: 'N/A',
-    auctionDate: 'N/A',
-    applicationDeadline: 'N/A',
-    communications: 'N/A',
+    price: 'Не найдено',
+    area: 'Не найдено',
+    address: 'Не найдено',
+    cadastralNumber: 'Не найдено',
+    cadastralMapUrl: '',
+    auctionDate: 'Не указана',
+    applicationDeadline: 'Не указан',
+    communications: 'Не указаны',
     images: [],
   };
 
   if (!link) {
-    console.warn('Skipping item with missing link');
+    console.warn('Пропускаем объект без ссылки');
     return empty;
   }
 
@@ -131,7 +131,7 @@ async function fetchDetails(page: Page, link: string | undefined): Promise<Detai
 
       const match = (pattern: RegExp) => {
         const m = text.match(pattern);
-        return m ? m[1].trim() : 'N/A';
+        return m ? m[1].trim() : '';
       };
 
       // Цена
@@ -139,9 +139,8 @@ async function fetchDetails(page: Page, link: string | undefined): Promise<Detai
 
       // Площадь — сначала пробуем полное название, потом короткое
       const area =
-        match(/Площадь земельного участка:\s*([\d,\.]+)\s*га/) !== 'N/A'
-          ? match(/Площадь земельного участка:\s*([\d,\.]+)\s*га/)
-          : match(/Площадь:\s*([\d,\.]+)\s*га/);
+        match(/Площадь земельного участка:\s*([\d,\.]+)\s*га/) ||
+        match(/Площадь:\s*([\d,\.]+)\s*га/);
 
       // Адрес
       const address = match(/Адрес:\s*(.+)/);
@@ -151,7 +150,7 @@ async function fetchDetails(page: Page, link: string | undefined): Promise<Detai
 
       // Ссылка на публичную кадастровую карту
       const cadastralMapEl = document.querySelector('.prop a[href*="map.nca.by"]') as HTMLAnchorElement | null;
-      const cadastralMapUrl = cadastralMapEl?.href ?? 'N/A';
+      const cadastralMapUrl = cadastralMapEl?.href ?? '';
 
       // Дата аукциона — точная или плановая
       const auctionLinkEl = Array.from(document.querySelectorAll('.prop a')).find(a =>
@@ -161,17 +160,17 @@ async function fetchDetails(page: Page, link: string | undefined): Promise<Detai
       const auctionDate =
         auctionLinkEl?.textContent?.trim() ??
         auctionEmEl?.textContent?.trim() ??
-        'N/A';
+        'Не указана';
 
       // Дедлайн подачи заявок
       const deadlineLinkEl = Array.from(document.querySelectorAll('.prop a')).find(a =>
         a.textContent?.includes('Заявления принимаются')
       );
-      const applicationDeadline = deadlineLinkEl?.textContent?.trim() ?? 'N/A';
+      const applicationDeadline = deadlineLinkEl?.textContent?.trim() ?? 'Не указан';
 
       // Коммуникации
       const commsMatch = text.match(/Имеется возможность подключения к сетям\s+(.+?)(?:\n|Победитель)/s);
-      const communications = commsMatch ? commsMatch[1].replace(/\s+/g, ' ').trim() : 'N/A';
+      const communications = commsMatch ? commsMatch[1].replace(/\s+/g, ' ').trim() : 'Не указаны';
 
       // Изображения из галереи
       const imageEls = document.querySelectorAll('#image-gallery img');
@@ -180,10 +179,10 @@ async function fetchDetails(page: Page, link: string | undefined): Promise<Detai
         .filter(src => !!src);
 
       return {
-        price: price !== 'N/A' ? price + 'руб' : 'N/A',
-        area: area !== 'N/A' ? area + 'га' : 'N/A',
-        address,
-        cadastralNumber,
+        price: price ? price + ' руб.' : 'Не найдено',
+        area: area ? area + ' га' : 'Не найдено',
+        address: address || 'Не найден',
+        cadastralNumber: cadastralNumber || 'Не найден',
         cadastralMapUrl,
         auctionDate,
         applicationDeadline,
@@ -199,30 +198,41 @@ async function fetchDetails(page: Page, link: string | undefined): Promise<Detai
   }
 }
 
-const buildMessage = (items: Item[], header: string, range: string): string => {
-  return (
-    `\n        <b>${range + '. ' + header}</b>\n    ` +
-    items
-      .map(
-        item => `
-        <b>${item.title}</b>
-        <a href="${item.link}">Ссылка</a>
-        📍 ${item.address}
-        <b>Цена:</b> ${item.price}
-        <b>Площадь:</b> ${item.area}
-        <b>Аукцион:</b> ${item.auctionDate}
-        <b>Приём заявок до:</b> ${item.applicationDeadline}
-      `
-      )
-      .join('\n')
-  );
+const buildItemCaption = (item: Item, header: string, index: number): string => {
+  const lines = [
+    `<b>${index}. ${header}</b>`,
+    `<b>${item.title}</b>`,
+    `<a href="${item.link}">Ссылка</a>`,
+    `📍 ${item.address}`,
+    `<b>Цена:</b> ${item.price}`,
+    `<b>Площадь:</b> ${item.area}`,
+    `<b>Аукцион:</b> ${item.auctionDate}`,
+    `<b>Приём заявок до:</b> ${item.applicationDeadline}`,
+  ];
+  if (item.cadastralMapUrl) {
+    lines.push(`<a href="${item.cadastralMapUrl}">📌 Кадастровая карта</a>`);
+  }
+  return lines.join('\n');
+};
+
+const sendItemMessage = async (item: Item, header: string, index: number): Promise<void> => {
+  const caption = buildItemCaption(item, header, index);
+  const photo = item.images?.[0];
+
+  try {
+    if (photo) {
+      await bot.sendPhoto(chatId, photo, { caption, parse_mode: 'HTML' });
+    } else {
+      await bot.sendMessage(chatId, caption, { parse_mode: 'HTML' });
+    }
+  } catch (error) {
+    console.error('Failed to send item message:', error);
+  }
 };
 
 const sendItemsMessages = async (items: Item[], header: string): Promise<void> => {
-  const LIMIT = 5;
-  for (let i = 0; i < items.length; i += LIMIT) {
-    const message = buildMessage(items.slice(i, i + LIMIT), header, `${i + 1} - ${i + LIMIT}`);
-    await sendMessage(message);
+  for (let i = 0; i < items.length; i++) {
+    await sendItemMessage(items[i], header, i + 1);
   }
 };
 
@@ -262,7 +272,7 @@ async function readPreviousData(file: string): Promise<Item[] | null> {
     const data = await fs.readFile(file, 'utf8');
     return JSON.parse(data) as Item[];
   } catch {
-    console.log('No previous data found, starting fresh.');
+    console.log('Предыдущие данные не найдены, начинаем с нуля.');
     return null;
   }
 }
