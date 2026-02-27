@@ -49,7 +49,7 @@ async function sendMessage(message: string): Promise<void> {
   try {
     await bot.sendMessage(chatId, message, { parse_mode: 'HTML' });
   } catch (error) {
-    console.error('Failed to send message:', error);
+    console.error('Ошибка отправки сообщения:', error);
   }
 }
 
@@ -193,7 +193,7 @@ async function fetchDetails(page: Page, link: string | undefined): Promise<Detai
 
     return details;
   } catch (error) {
-    console.error('Error fetching details:', error);
+    console.error('Ошибка при загрузке деталей:', error);
     return empty;
   }
 }
@@ -226,7 +226,7 @@ const sendItemMessage = async (item: Item, header: string, index: number): Promi
       await bot.sendMessage(chatId, caption, { parse_mode: 'HTML' });
     }
   } catch (error) {
-    console.error('Failed to send item message:', error);
+    console.error('Ошибка отправки объекта:', error);
   }
 };
 
@@ -282,11 +282,11 @@ async function writeData(file: string, data: Item[]): Promise<void> {
 }
 
 detectChanges().catch(async error => {
-  console.error('Fatal error during scraping:', error);
+  console.error('Критическая ошибка скрапинга:', error);
   try {
     await bot.sendMessage(chatId, `⚠️ Ошибка скрапинга:\n<code>${error.message}</code>`, { parse_mode: 'HTML' });
   } catch {
-    console.error('Failed to send error notification to Telegram');
+    console.error('Не удалось отправить уведомление об ошибке в Telegram');
   }
   process.exit(1);
 });
