@@ -84,8 +84,12 @@ async function scrapeData(url: string): Promise<Item[]> {
 }
 
 async function fetchDetails(page: Page, link: string | undefined): Promise<Details> {
+  if (!link) {
+    console.warn('Skipping item with missing link');
+    return { price: 'N/A', area: 'N/A' };
+  }
   try {
-    await page.goto(link!, { waitUntil: 'networkidle2' });
+    await page.goto(link, { waitUntil: 'networkidle2' });
     await page.waitForSelector('strong');
 
     const details: Details = await page.evaluate(() => {
