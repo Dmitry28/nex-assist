@@ -213,19 +213,46 @@ async function fetchDetails(page: Page, link: string | undefined): Promise<Detai
 const EMPTY_VALUES = new Set(['Не найдено', 'Не найден', 'Не указана', 'Не указан', 'Не указаны', 'N/A']);
 const isEmpty = (val: string | undefined): boolean => !val || EMPTY_VALUES.has(val);
 
-const buildItemCaption = (item: Item, header: string, index: number): string => {
+const getObjectEmoji = (title: string | undefined): string => {
+  if (!title) return '🏡';
+  const t = title.toLowerCase();
+  if (t.includes('не завершён') || t.includes('незавершён')) return '🏗';
+  if (t.includes('жилой дом') || t.includes('дом по')) return '🏠';
+  return '🏡';
+};
+
+const formatAuctionDate = (val: string): string => {
+  if (val.startsWith('Аукцион состоится ')) return val.replace('Аукцион состоится ', '');
+  if (val.startsWith('Проведение аукциона планируется ')) return val.replace('Проведение аукциона планируется ', '');
+  if (val.length > 50) return 'уточняется';
+  return val;
+};
+
+const formatDeadline = (val: string): string =>
+  val.replace('Заявления принимаются по ', '');
+
+const buildItemCaption = (item: Item, header: string, index: number, total: number): string => {
+  const emoji = getObjectEmoji(item.title);
   const lines: string[] = [
-    `<b>${index}. ${header}</b>`,
-    `<b>${item.title}</b>`,
-    `<a href="${item.link}">Ссылка</a>`,
+    `<b>${header} · ${index} из ${total}</b>`,
+    '',
+    `${emoji} <b>${item.title}</b>`,
   ];
 
-  if (!isEmpty(item.address))             lines.push(`📍 ${item.address}`);
-  if (!isEmpty(item.price))               lines.push(`<b>Цена:</b> ${item.price}`);
-  if (!isEmpty(item.area))                lines.push(`<b>Площадь:</b> ${item.area}`);
-  if (!isEmpty(item.auctionDate))         lines.push(`<b>Аукцион:</b> ${item.auctionDate}`);
-  if (!isEmpty(item.applicationDeadline)) lines.push(`<b>Приём заявок до:</b> ${item.applicationDeadline}`);
-  if (item.cadastralMapUrl)               lines.push(`<a href="${item.cadastralMapUrl}">📌 Кадастровая карта</a>`);
+  if (!isEmpty(item.address)) lines.push(`📍 ${item.address}`);
+
+  const pricePart = !isEmpty(item.price) ? `💰 ${item.price}` : '';
+  const areaPart  = !isEmpty(item.area)  ? `📐 ${item.area}`  : '';
+  if (pricePart || areaPart) lines.push(['', pricePart, areaPart].filter(Boolean).join('  ·  ').trim());
+
+  if (!isEmpty(item.auctionDate))         lines.push(`🗓 Аукцион: ${formatAuctionDate(item.auctionDate!)}`);
+  if (!isEmpty(item.applicationDeadline)) lines.push(`📅 Заявки до: ${formatDeadline(item.applicationDeadline!)}`);
+  if (!isEmpty(item.communications))      lines.push(`⚡ ${item.communications}`);
+
+  const linkParts: string[] = [`<a href="${item.link}">🔗 Подробнее</a>`];
+  if (item.cadastralMapUrl) linkParts.push(`<a href="${item.cadastralMapUrl}">📌 Карта</a>`);
+  lines.push('');
+  lines.push(linkParts.join('  ·  '));
 
   return lines.join('\n');
 };
@@ -239,8 +266,8 @@ const truncateCaption = (text: string): string => {
 
 const MEDIA_GROUP_LIMIT = 10;
 
-const sendItemMessage = async (item: Item, header: string, index: number): Promise<void> => {
-  const caption = truncateCaption(buildItemCaption(item, header, index));
+const sendItemMessage = async (item: Item, header: string, index: number, total: number): Promise<void> => {
+  const caption = truncateCaption(buildItemCaption(item, header, index, total));
   const photos = (item.images ?? []).slice(0, MEDIA_GROUP_LIMIT);
 
   try {
@@ -266,7 +293,7 @@ const TELEGRAM_SEND_DELAY_MS = 300;
 
 const sendItemsMessages = async (items: Item[], header: string): Promise<void> => {
   for (let i = 0; i < items.length; i++) {
-    await sendItemMessage(items[i], header, i + 1);
+    await sendItemMessage(items[i], header, i + 1, items.length);
     if (i < items.length - 1) await sleep(TELEGRAM_SEND_DELAY_MS);
   }
 };
