@@ -174,11 +174,15 @@ async function fetchDetails(page: Page, link: string | undefined): Promise<Detai
       const commsMatch = text.match(/Имеется возможность подключения к сетям\s+(.+?)(?:\n|Победитель)/s);
       const communications = commsMatch ? commsMatch[1].replace(/\s+/g, ' ').trim() : 'Не указаны';
 
-      // Изображения из галереи
-      const imageEls = document.querySelectorAll('#image-gallery img');
-      const images = Array.from(imageEls)
+      // Изображения — сначала из галереи, потом из тела описания
+      // Исключаем кнопку кадастровой карты (маленькие изображения height < 100)
+      const galleryEls = document.querySelectorAll('#image-gallery img');
+      const propEls = document.querySelectorAll('.prop img');
+      const allImgEls = galleryEls.length > 0 ? galleryEls : propEls;
+      const images = Array.from(allImgEls)
+        .filter(img => (img as HTMLImageElement).naturalHeight > 100 || (img as HTMLImageElement).height > 100 || !(img as HTMLImageElement).height)
         .map(img => (img as HTMLImageElement).src)
-        .filter(src => !!src);
+        .filter(src => !!src && !src.includes('knopka'));
 
       return {
         price: price ? price + ' руб.' : 'Не найдено',
