@@ -215,8 +215,15 @@ const buildItemCaption = (item: Item, header: string, index: number): string => 
   return lines.join('\n');
 };
 
+const TELEGRAM_CAPTION_LIMIT = 1024;
+
+const truncateCaption = (text: string): string => {
+  if (text.length <= TELEGRAM_CAPTION_LIMIT) return text;
+  return text.slice(0, TELEGRAM_CAPTION_LIMIT - 3) + '...';
+};
+
 const sendItemMessage = async (item: Item, header: string, index: number): Promise<void> => {
-  const caption = buildItemCaption(item, header, index);
+  const caption = truncateCaption(buildItemCaption(item, header, index));
   const photo = item.images?.[0];
 
   try {
