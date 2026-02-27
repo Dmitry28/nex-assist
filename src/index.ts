@@ -266,11 +266,29 @@ const truncateCaption = (text: string): string => {
 
 const MEDIA_GROUP_LIMIT = 10;
 
+const sendWithRetry = async (fn: () => Promise<void>, retries = 3): Promise<void> => {
+  for (let attempt = 0; attempt < retries; attempt++) {
+    try {
+      await fn();
+      return;
+    } catch (error: any) {
+      const retryAfter = error?.response?.body?.parameters?.retry_after;
+      if (retryAfter && attempt < retries - 1) {
+        console.log(`Telegram rate limit, ждём ${retryAfter} сек...`);
+        await sleep(retryAfter * 1000 + 500);
+      } else {
+        console.error('Ошибка отправки объекта:', error?.response?.body ?? error);
+        return;
+      }
+    }
+  }
+};
+
 const sendItemMessage = async (item: Item, header: string, index: number, total: number): Promise<void> => {
   const caption = truncateCaption(buildItemCaption(item, header, index, total));
   const photos = (item.images ?? []).slice(0, MEDIA_GROUP_LIMIT);
 
-  try {
+  await sendWithRetry(async () => {
     if (photos.length > 1) {
       const media: TelegramBot.InputMediaPhoto[] = photos.map((url, i) => ({
         type: 'photo',
@@ -283,13 +301,11 @@ const sendItemMessage = async (item: Item, header: string, index: number, total:
     } else {
       await bot.sendMessage(chatId, caption, { parse_mode: 'HTML' });
     }
-  } catch (error) {
-    console.error('Ошибка отправки объекта:', error);
-  }
+  });
 };
 
 const sleep = (ms: number): Promise<void> => new Promise(resolve => setTimeout(resolve, ms));
-const TELEGRAM_SEND_DELAY_MS = 300;
+const TELEGRAM_SEND_DELAY_MS = 1000;
 
 const sendItemsMessages = async (items: Item[], header: string): Promise<void> => {
   for (let i = 0; i < items.length; i++) {
