@@ -25,38 +25,47 @@ async function sendMessage(message) {
   }
 }
 
+const CONCURRENCY = 4;
+
 async function scrapeData(url) {
   const browser = await puppeteer.launch({
     headless: true,
     args: ['--no-sandbox', '--disable-setuid-sandbox']
   });
-  const page = await browser.newPage();
 
-  await page.goto(url, { waitUntil: 'networkidle0' });
-  await page.waitForSelector('.vc_grid-item', { timeout: 10000 });
+  const listPage = await browser.newPage();
+  await listPage.goto(url, { waitUntil: 'networkidle0' });
+  await listPage.waitForSelector('.vc_grid-item', { timeout: 10000 });
 
-  const items = await page.evaluate(() => {
+  const items = await listPage.evaluate(() => {
     const data = [];
-
     const elements = document.querySelectorAll('.vc_grid-item');
     console.log('Number of items found:', elements.length);
-
     elements.forEach(element => {
       const description = element.querySelector('.vc_gitem-post-data-source-post_excerpt')?.textContent?.trim();
       const title = element.querySelector('.vc_gitem-post-data-source-post_title')?.textContent?.trim();
       const link = element.querySelector('.vc-zone-link')?.href;
-
       data.push({ title, link, description });
     });
-
     return data;
   });
 
-  for (const item of items) {
-    const details = await fetchDetails(page, item.link);
-    item.price = details.price;
-    item.area = details.area;
-  }
+  await listPage.close();
+
+  const pages = await Promise.all(Array.from({ length: CONCURRENCY }, () => browser.newPage()));
+
+  const queue = [...items];
+  await Promise.all(
+    pages.map(async page => {
+      while (queue.length > 0) {
+        const item = queue.shift();
+        const details = await fetchDetails(page, item.link);
+        item.price = details.price;
+        item.area = details.area;
+      }
+      await page.close();
+    })
+  );
 
   await browser.close();
   return items;
@@ -64,7 +73,7 @@ async function scrapeData(url) {
 
 async function fetchDetails(page, link) {
   try {
-    await page.goto(link, { waitUntil: 'networkidle0' });
+    await page.goto(link, { waitUntil: 'networkidle2' });
     await page.waitForSelector('strong');
 
     const details = await page.evaluate(() => {
