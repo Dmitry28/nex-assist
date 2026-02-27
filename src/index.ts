@@ -65,7 +65,7 @@ async function scrapeData(url: string): Promise<Item[]> {
   const items: Item[] = await listPage.evaluate(() => {
     const data: { title: string | undefined; link: string | undefined }[] = [];
     const elements = document.querySelectorAll('.vc_grid-item');
-    console.log('Number of items found:', elements.length);
+    console.log('Найдено объявлений:', elements.length);
     elements.forEach(element => {
       const title = element.querySelector('.vc_gitem-post-data-source-post_title')?.textContent?.trim();
       const link = (element.querySelector('.vc-zone-link') as HTMLAnchorElement | null)?.href;
@@ -288,7 +288,14 @@ async function detectChanges(): Promise<void> {
   console.log('Special Items (Заболоть):', specialItems.length);
   console.log('New Special Items (Заболоть):', newSpecialItems.length);
 
-  const summary = `Всего: ${currentItems.length}\nНовые: ${newItems.length}\nУдаленные: ${removedItems.length}\nВсего в Заболоть: ${specialItems.length}\nНовые в Заболоть: ${newSpecialItems.length}`;
+  const summary = [
+    `<b>📊 Сводка на ${new Date().toLocaleDateString('ru-RU')}</b>`,
+    `📋 Всего объявлений: <b>${currentItems.length}</b>`,
+    newItems.length      ? `🆕 Новые: <b>${newItems.length}</b>`           : `🆕 Новые: 0`,
+    removedItems.length  ? `🗑 Удалённые: <b>${removedItems.length}</b>`   : `🗑 Удалённые: 0`,
+    `🌿 Всего в Заболоть: <b>${specialItems.length}</b>`,
+    newSpecialItems.length ? `✅ Новые в Заболоть: <b>${newSpecialItems.length}</b>` : `✅ Новые в Заболоть: 0`,
+  ].join('\n');
   await sendMessage(summary);
 
   if (newItems.length) await sendItemsMessages(newItems, 'Новые:');
