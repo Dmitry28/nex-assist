@@ -127,7 +127,9 @@ async function detectChanges() {
 
   const newItems = currentItems.filter(item => !previousItems.some(prevItem => prevItem.link === item.link));
   const removedItems = previousItems.filter(prevItem => !currentItems.some(item => item.link === prevItem.link));
-  const specialItems = currentItems.filter(item => item.description.toLowerCase().includes('заболо'));
+  const specialItems = currentItems.filter(item =>
+    item.description?.toLowerCase().includes('заболо') || item.title?.toLowerCase().includes('заболо')
+  );
 
   const newSpecialItems = specialItems.filter(item => !previousItems.some(prevItem => prevItem.link === item.link));
 
