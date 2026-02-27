@@ -122,13 +122,13 @@ async function detectChanges() {
 
   const newSpecialItems = specialItems.filter(item => !previousItems.some(prevItem => prevItem.link === item.link));
 
-  console.log('All Items:', currentItems.length && currentItems.length + 1);
-  console.log('New Items:', newItems.length && newItems.length + 1);
-  console.log('Removed Items:', removedItems.length && removedItems.length + 1);
-  console.log('Special Items (Заболоть):', specialItems.length && specialItems.length + 1);
-  console.log('New Special Items (Заболоть):', newSpecialItems.length && newSpecialItems.length + 1);
+  console.log('All Items:', currentItems.length);
+  console.log('New Items:', newItems.length);
+  console.log('Removed Items:', removedItems.length);
+  console.log('Special Items (Заболоть):', specialItems.length);
+  console.log('New Special Items (Заболоть):', newSpecialItems.length);
 
-  const message = `Всего: ${currentItems.length && currentItems.length + 1}\nНовые: ${newItems.length && newItems.length + 1}\nУдаленные: ${removedItems.length && removedItems.length + 1}\nВсего в Заболоть: ${specialItems.length && specialItems.length + 1}\nНовые в Заболоть: ${newSpecialItems.length && newSpecialItems.length + 1}`;
+  const message = `Всего: ${currentItems.length}\nНовые: ${newItems.length}\nУдаленные: ${removedItems.length}\nВсего в Заболоть: ${specialItems.length}\nНовые в Заболоть: ${newSpecialItems.length}`;
   await sendMessage(message);
 
   if (newItems.length) {
