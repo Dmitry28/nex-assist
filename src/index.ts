@@ -204,20 +204,23 @@ async function fetchDetails(page: Page, link: string | undefined): Promise<Detai
   }
 }
 
+const EMPTY_VALUES = new Set(['Не найдено', 'Не найден', 'Не указана', 'Не указан', 'Не указаны', 'N/A']);
+const isEmpty = (val: string | undefined): boolean => !val || EMPTY_VALUES.has(val);
+
 const buildItemCaption = (item: Item, header: string, index: number): string => {
-  const lines = [
+  const lines: string[] = [
     `<b>${index}. ${header}</b>`,
     `<b>${item.title}</b>`,
     `<a href="${item.link}">Ссылка</a>`,
-    `📍 ${item.address}`,
-    `<b>Цена:</b> ${item.price}`,
-    `<b>Площадь:</b> ${item.area}`,
-    `<b>Аукцион:</b> ${item.auctionDate}`,
-    `<b>Приём заявок до:</b> ${item.applicationDeadline}`,
   ];
-  if (item.cadastralMapUrl) {
-    lines.push(`<a href="${item.cadastralMapUrl}">📌 Кадастровая карта</a>`);
-  }
+
+  if (!isEmpty(item.address))             lines.push(`📍 ${item.address}`);
+  if (!isEmpty(item.price))               lines.push(`<b>Цена:</b> ${item.price}`);
+  if (!isEmpty(item.area))                lines.push(`<b>Площадь:</b> ${item.area}`);
+  if (!isEmpty(item.auctionDate))         lines.push(`<b>Аукцион:</b> ${item.auctionDate}`);
+  if (!isEmpty(item.applicationDeadline)) lines.push(`<b>Приём заявок до:</b> ${item.applicationDeadline}`);
+  if (item.cadastralMapUrl)               lines.push(`<a href="${item.cadastralMapUrl}">📌 Кадастровая карта</a>`);
+
   return lines.join('\n');
 };
 
