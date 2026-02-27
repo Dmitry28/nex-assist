@@ -174,4 +174,12 @@ async function writeData(file: string, data: Item[]): Promise<void> {
   await fs.writeFile(file, JSON.stringify(data, null, 2));
 }
 
-detectChanges();
+detectChanges().catch(async error => {
+  console.error('Fatal error during scraping:', error);
+  try {
+    await bot.sendMessage(chatId, `⚠️ Ошибка скрапинга:\n<code>${error.message}</code>`, { parse_mode: 'HTML' });
+  } catch {
+    console.error('Failed to send error notification to Telegram');
+  }
+  process.exit(1);
+});
