@@ -142,8 +142,10 @@ async function fetchDetails(page: Page, link: string | undefined): Promise<Detai
         match(/Площадь земельного участка:\s*([\d,\.]+)\s*га/) ||
         match(/Площадь:\s*([\d,\.]+)\s*га/);
 
-      // Адрес
-      const address = match(/Адрес:\s*(.+)/);
+      // Адрес — либо отдельная строка "Адрес: ...", либо вшит в заголовок "по адресу: ..."
+      const address =
+        match(/Адрес:\s*(.+)/) ||
+        match(/по адресу:\s*(г\.[^\n]+)/);
 
       // Кадастровый номер
       const cadastralNumber = match(/Кадастровый номер:\s*(\d+)/);
