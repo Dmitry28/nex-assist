@@ -231,13 +231,22 @@ const truncateCaption = (text: string): string => {
   return text.slice(0, TELEGRAM_CAPTION_LIMIT - 3) + '...';
 };
 
+const MEDIA_GROUP_LIMIT = 10;
+
 const sendItemMessage = async (item: Item, header: string, index: number): Promise<void> => {
   const caption = truncateCaption(buildItemCaption(item, header, index));
-  const photo = item.images?.[0];
+  const photos = (item.images ?? []).slice(0, MEDIA_GROUP_LIMIT);
 
   try {
-    if (photo) {
-      await bot.sendPhoto(chatId, photo, { caption, parse_mode: 'HTML' });
+    if (photos.length > 1) {
+      const media: TelegramBot.InputMediaPhoto[] = photos.map((url, i) => ({
+        type: 'photo',
+        media: url,
+        ...(i === 0 ? { caption, parse_mode: 'HTML' } : {}),
+      }));
+      await bot.sendMediaGroup(chatId, media);
+    } else if (photos.length === 1) {
+      await bot.sendPhoto(chatId, photos[0], { caption, parse_mode: 'HTML' });
     } else {
       await bot.sendMessage(chatId, caption, { parse_mode: 'HTML' });
     }
