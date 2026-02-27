@@ -31,6 +31,7 @@
     "@types/lodash.pick": "^4.4.9",
     "@types/morgan": "^1.9.4",
     "@types/node": "^20.11.24",
+    "@types/node-telegram-bot-api": "^0.64.14",
     "@types/supertest": "^6.0.2",
     "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@typescript-eslint/parser": "^7.1.0",
