@@ -246,9 +246,13 @@ const sendItemMessage = async (item: Item, header: string, index: number): Promi
   }
 };
 
+const sleep = (ms: number): Promise<void> => new Promise(resolve => setTimeout(resolve, ms));
+const TELEGRAM_SEND_DELAY_MS = 300;
+
 const sendItemsMessages = async (items: Item[], header: string): Promise<void> => {
   for (let i = 0; i < items.length; i++) {
     await sendItemMessage(items[i], header, i + 1);
+    if (i < items.length - 1) await sleep(TELEGRAM_SEND_DELAY_MS);
   }
 };
 
