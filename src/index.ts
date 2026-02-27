@@ -170,9 +170,17 @@ async function fetchDetails(page: Page, link: string | undefined): Promise<Detai
       );
       const applicationDeadline = deadlineLinkEl?.textContent?.trim() ?? 'Не указан';
 
-      // Коммуникации
-      const commsMatch = text.match(/Имеется возможность подключения к сетям\s+(.+?)(?:\n|Победитель)/s);
-      const communications = commsMatch ? commsMatch[1].replace(/\s+/g, ' ').trim() : 'Не указаны';
+      // Коммуникации — собираем список из известных маркеров
+      const commsSource = text.match(/Имеется возможность подключения к сетям\s+(.+?)(?:\n|Победитель)/s)?.[1] ?? '';
+      const commsMap: [RegExp, string][] = [
+        [/электроснабжени/i, 'электроснабжение'],
+        [/газоснабжени/i, 'газоснабжение'],
+        [/водоснабжени/i, 'водоснабжение'],
+        [/водоотведени/i, 'водоотведение'],
+        [/теплоснабжени/i, 'теплоснабжение'],
+      ];
+      const foundComms = commsMap.filter(([re]) => re.test(commsSource)).map(([, name]) => name);
+      const communications = foundComms.length > 0 ? foundComms.join(', ') : 'Не указаны';
 
       // Изображения — сначала из галереи, потом из тела описания
       // Исключаем кнопку кадастровой карты (маленькие изображения height < 100)
