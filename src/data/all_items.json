@@ -11,11 +11,11 @@
     "applicationDeadline": "Не указан",
     "communications": "электроснабжение, газоснабжение, водоснабжение",
     "images": [
-      "https://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt3.png",
-      "https://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt1.png",
-      "https://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt2.png",
-      "https://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt3.png",
-      "https://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt1.png"
+      "http://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt3.png",
+      "http://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt1.png",
+      "http://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt2.png",
+      "http://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt3.png",
+      "http://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt1.png"
     ]
   },
   {
@@ -135,11 +135,11 @@
     "applicationDeadline": "Заявления принимаются по 08.04.2026",
     "communications": "Не указаны",
     "images": [
-      "https://gcn.by/wp-content/uploads/2026/01/u-418-sunichnaya-sajt-2.png",
-      "https://gcn.by/wp-content/uploads/2026/01/u-418-sunichnaya-sajt-3.png",
-      "https://gcn.by/wp-content/uploads/2026/01/u-418-sunichnaya-sajt-1.png",
-      "https://gcn.by/wp-content/uploads/2026/01/u-418-sunichnaya-sajt-2.png",
-      "https://gcn.by/wp-content/uploads/2026/01/u-418-sunichnaya-sajt-3.png"
+      "http://gcn.by/wp-content/uploads/2026/01/u-418-sunichnaya-sajt-2.png",
+      "http://gcn.by/wp-content/uploads/2026/01/u-418-sunichnaya-sajt-3.png",
+      "http://gcn.by/wp-content/uploads/2026/01/u-418-sunichnaya-sajt-1.png",
+      "http://gcn.by/wp-content/uploads/2026/01/u-418-sunichnaya-sajt-2.png",
+      "http://gcn.by/wp-content/uploads/2026/01/u-418-sunichnaya-sajt-3.png"
     ]
   },
   {
@@ -199,62 +199,12 @@
     "applicationDeadline": "Не указан",
     "communications": "электроснабжение, газоснабжение, водоснабжение",
     "images": [
-      "https://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-4.png",
-      "https://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-1.png",
-      "https://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-2.png",
-      "https://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-3.png",
-      "https://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-4.png",
-      "https://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-1.png"
-    ]
-  },
-  {
-    "title": "Не завершённый строительством жилой дом по ул. Пригожая, 11",
-    "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-prigozhaya-11/",
-    "price": "29 803,08 руб.",
-    "area": "0,1004 га",
-    "address": "г. Гродно, У-132 в микрорайоне «Барановичи-9», ул. Пригожая, 11",
-    "cadastralNumber": "440100000003005947",
-    "cadastralMapUrl": "https://map.nca.by/search/019bff96-dd2c-7137-bba5-e7bec2ea249e",
-    "auctionDate": "Аукцион состоится 10.03.2026",
-    "applicationDeadline": "Заявления принимаются по 04.03.2026",
-    "communications": "Не указаны",
-    "images": [
-      "http://gcn.by/wp-content/uploads/2026/01/u-132-prigozhaya-sajt.png"
-    ]
-  },
-  {
-    "title": "Земельный участок в микрорайоне «Барановичи-11»",
-    "link": "http://gcn.by/properties/zemelnyj-uchastok-v-mikrorajone-baranovichi-11/",
-    "price": "32 829,00 руб.",
-    "area": "0,1069 га",
-    "address": "г. Гродно, пер. Виктора Юртова 2-й, 34",
-    "cadastralNumber": "440100000001015233",
-    "cadastralMapUrl": "https://map.nca.by/search/019c0448-a075-7130-845d-f5f5627ad010",
-    "auctionDate": "Аукцион состоится 10.03.2026",
-    "applicationDeadline": "Заявления принимаются по 04.03.2026",
-    "communications": "электроснабжение, водоснабжение",
-    "images": [
-      "https://gcn.by/wp-content/uploads/2026/01/yurtova-34-sajt-4.png",
-      "https://gcn.by/wp-content/uploads/2026/01/yurtova-34-sajt-1.png",
-      "https://gcn.by/wp-content/uploads/2026/01/yurtova-34-sajt-2.png",
-      "https://gcn.by/wp-content/uploads/2026/01/yurtova-34-sajt-3.png",
-      "https://gcn.by/wp-content/uploads/2026/01/yurtova-34-sajt-4.png",
-      "https://gcn.by/wp-content/uploads/2026/01/yurtova-34-sajt-1.png"
-    ]
-  },
-  {
-    "title": "Земельный участок У-164 по ул. Ровной в микрорайоне «Барановичи-9»",
-    "link": "http://gcn.by/properties/zemelnyj-uchastok-u-164-po-ul-rovnoj-v-mikrorajone-baranovichi-9/",
-    "price": "19 352,00 руб.",
-    "area": "0,0998 га",
-    "address": "г. Гродно, ул. Ровная, 13",
-    "cadastralNumber": "440100000003007804",
-    "cadastralMapUrl": "https://map.nca.by/search/019c0888-7c67-704c-a3d0-ade5a6d404cf",
-    "auctionDate": "Аукцион состоится 10.03.2026",
-    "applicationDeadline": "Заявления принимаются по 04.03.2026",
-    "communications": "электроснабжение, газоснабжение, водоснабжение",
-    "images": [
-      "http://gcn.by/wp-content/uploads/2026/01/u164-rovnaya-baranovichi-sajt.png"
+      "http://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-4.png",
+      "http://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-1.png",
+      "http://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-2.png",
+      "http://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-3.png",
+      "http://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-4.png",
+      "http://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-1.png"
     ]
   },
   {
@@ -284,32 +234,14 @@
     "applicationDeadline": "Не указан",
     "communications": "электроснабжение, газоснабжение, водоснабжение",
     "images": [
-      "https://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-6.png",
-      "https://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-1.png",
-      "https://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-2.png",
-      "https://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-3.png",
-      "https://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-4.png",
-      "https://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-5.png",
-      "https://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-6.png",
-      "https://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-1.png"
-    ]
-  },
-  {
-    "title": "Земельный участок по ул. Тарусичской",
-    "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-tarusichskoj/",
-    "price": "13 166,00 руб.",
-    "area": "0,0636 га",
-    "address": "г. Гродно, ул. Тарусичская, 45",
-    "cadastralNumber": "440100000001015089",
-    "cadastralMapUrl": "https://map.nca.by/search/019c044f-e259-73f2-b5f0-cb28dd6abadb",
-    "auctionDate": "Аукцион состоится 10.03.2026",
-    "applicationDeadline": "Заявления принимаются по 04.03.2026",
-    "communications": "электроснабжение, газоснабжение, водоснабжение, водоотведение",
-    "images": [
-      "https://gcn.by/wp-content/uploads/2026/01/tarusichskaya-43-sajt2.png",
-      "https://gcn.by/wp-content/uploads/2026/01/tarusichskaya-43-sajt1.png",
-      "https://gcn.by/wp-content/uploads/2026/01/tarusichskaya-43-sajt2.png",
-      "https://gcn.by/wp-content/uploads/2026/01/tarusichskaya-43-sajt1.png"
+      "http://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-6.png",
+      "http://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-1.png",
+      "http://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-2.png",
+      "http://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-3.png",
+      "http://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-4.png",
+      "http://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-5.png",
+      "http://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-6.png",
+      "http://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-1.png"
     ]
   },
   {
@@ -324,15 +256,15 @@
     "applicationDeadline": "Не указан",
     "communications": "Не указаны",
     "images": [
-      "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt7.png",
-      "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt1.png",
-      "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt2.png",
-      "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt3.png",
-      "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt4.png",
-      "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt5.png",
-      "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt6.png",
-      "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt7.png",
-      "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt1.png"
+      "http://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt7.png",
+      "http://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt1.png",
+      "http://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt2.png",
+      "http://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt3.png",
+      "http://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt4.png",
+      "http://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt5.png",
+      "http://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt6.png",
+      "http://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt7.png",
+      "http://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt1.png"
     ]
   },
   {
@@ -347,11 +279,11 @@
     "applicationDeadline": "Не указан",
     "communications": "Не указаны",
     "images": [
-      "https://gcn.by/wp-content/uploads/2025/09/polyot-foto-3.png",
-      "https://gcn.by/wp-content/uploads/2025/09/polyot-foto-1.png",
-      "https://gcn.by/wp-content/uploads/2025/09/polyot-foto-2.png",
-      "https://gcn.by/wp-content/uploads/2025/09/polyot-foto-3.png",
-      "https://gcn.by/wp-content/uploads/2025/09/polyot-foto-1.png"
+      "http://gcn.by/wp-content/uploads/2025/09/polyot-foto-3.png",
+      "http://gcn.by/wp-content/uploads/2025/09/polyot-foto-1.png",
+      "http://gcn.by/wp-content/uploads/2025/09/polyot-foto-2.png",
+      "http://gcn.by/wp-content/uploads/2025/09/polyot-foto-3.png",
+      "http://gcn.by/wp-content/uploads/2025/09/polyot-foto-1.png"
     ]
   },
   {
@@ -366,12 +298,12 @@
     "applicationDeadline": "Не указан",
     "communications": "Не указаны",
     "images": [
-      "https://gcn.by/wp-content/uploads/2025/02/yubilejnaya-4.png",
-      "https://gcn.by/wp-content/uploads/2025/02/yubilejnaya-1.png",
-      "https://gcn.by/wp-content/uploads/2025/02/yubilejnaya-2.png",
-      "https://gcn.by/wp-content/uploads/2025/02/yubilejnaya-3.png",
-      "https://gcn.by/wp-content/uploads/2025/02/yubilejnaya-4.png",
-      "https://gcn.by/wp-content/uploads/2025/02/yubilejnaya-1.png"
+      "http://gcn.by/wp-content/uploads/2025/02/yubilejnaya-4.png",
+      "http://gcn.by/wp-content/uploads/2025/02/yubilejnaya-1.png",
+      "http://gcn.by/wp-content/uploads/2025/02/yubilejnaya-2.png",
+      "http://gcn.by/wp-content/uploads/2025/02/yubilejnaya-3.png",
+      "http://gcn.by/wp-content/uploads/2025/02/yubilejnaya-4.png",
+      "http://gcn.by/wp-content/uploads/2025/02/yubilejnaya-1.png"
     ]
   },
   {
@@ -386,11 +318,11 @@
     "applicationDeadline": "Не указан",
     "communications": "электроснабжение, газоснабжение, водоснабжение",
     "images": [
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2-2.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-1-1.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-3-1.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2-2.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-1-1.png"
+      "http://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2-2.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-1-1.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-3-1.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2-2.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-1-1.png"
     ]
   },
   {
@@ -405,11 +337,11 @@
     "applicationDeadline": "Не указан",
     "communications": "электроснабжение, газоснабжение, водоснабжение",
     "images": [
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-3.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-1.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-3.png"
+      "http://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-3.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-1.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-3.png"
     ]
   },
   {
@@ -424,11 +356,11 @@
     "applicationDeadline": "Не указан",
     "communications": "электроснабжение, газоснабжение, водоснабжение",
     "images": [
-      "https://gcn.by/wp-content/uploads/2023/06/U-1-Bolgarina-Tanka-2.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-1-Bolgarina-Tanka-3.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-1-Bolgarina-Tanka-1.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-1-Bolgarina-Tanka-2.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-1-Bolgarina-Tanka-3.png"
+      "http://gcn.by/wp-content/uploads/2023/06/U-1-Bolgarina-Tanka-2.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-1-Bolgarina-Tanka-3.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-1-Bolgarina-Tanka-1.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-1-Bolgarina-Tanka-2.png",
+      "http://gcn.by/wp-content/uploads/2023/06/U-1-Bolgarina-Tanka-3.png"
     ]
   },
   {
@@ -443,10 +375,10 @@
     "applicationDeadline": "Заявления принимаются по 18.03.2026",
     "communications": "электроснабжение, газоснабжение, водоснабжение",
     "images": [
-      "https://gcn.by/wp-content/uploads/2022/04/u-92-baranovichi-9-3.png",
-      "https://gcn.by/wp-content/uploads/2022/04/u-92-baranovichi-9-2.png",
-      "https://gcn.by/wp-content/uploads/2022/04/u-92-baranovichi-9-3.png",
-      "https://gcn.by/wp-content/uploads/2022/04/u-92-baranovichi-9-2.png"
+      "http://gcn.by/wp-content/uploads/2022/04/u-92-baranovichi-9-3.png",
+      "http://gcn.by/wp-content/uploads/2022/04/u-92-baranovichi-9-2.png",
+      "http://gcn.by/wp-content/uploads/2022/04/u-92-baranovichi-9-3.png",
+      "http://gcn.by/wp-content/uploads/2022/04/u-92-baranovichi-9-2.png"
     ]
   },
   {
@@ -461,15 +393,15 @@
     "applicationDeadline": "Не указан",
     "communications": "Не указаны",
     "images": [
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-7.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-1.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-2.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-3.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-4.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-5.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-6.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-7.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-1.png"
+      "http://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-7.png",
+      "http://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-1.png",
+      "http://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-2.png",
+      "http://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-3.png",
+      "http://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-4.png",
+      "http://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-5.png",
+      "http://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-6.png",
+      "http://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-7.png",
+      "http://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-1.png"
     ]
   },
   {
@@ -484,12 +416,12 @@
     "applicationDeadline": "Заявления принимаются по 08.04.2026",
     "communications": "электроснабжение, газоснабжение, водоснабжение",
     "images": [
-      "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt1.png",
-      "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt2.png",
-      "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt3.png",
-      "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt4.png",
-      "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt1.png",
-      "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt2.png"
+      "http://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt1.png",
+      "http://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt2.png",
+      "http://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt3.png",
+      "http://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt4.png",
+      "http://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt1.png",
+      "http://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt2.png"
     ]
   }
 ]
