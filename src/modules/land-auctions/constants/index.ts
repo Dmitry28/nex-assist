@@ -35,3 +35,10 @@ export const DATA_FILES = {
 
 /** Keyword to detect special listings (Заболоть area). */
 export const SPECIAL_KEYWORD = 'заболо';
+
+/** Section headers used in Telegram listing notifications. */
+export const NOTIFICATION_HEADERS = {
+  new: 'Новые:',
+  removed: 'Удаленные:',
+  newSpecial: 'Новые в Заболоть:',
+} as const;

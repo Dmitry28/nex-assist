@@ -6,6 +6,7 @@ import type { LandAuctionsResult, Listing } from './dto/listing.dto';
 import {
   EMPTY_VALUES,
   MEDIA_GROUP_LIMIT,
+  NOTIFICATION_HEADERS,
   TELEGRAM_CAPTION_LIMIT,
   TELEGRAM_SEND_DELAY_MS,
 } from './constants';
@@ -19,12 +20,17 @@ import {
 export class ListingNotifierService {
   constructor(private readonly telegram: TelegramService) {}
 
-  /** Send the daily run summary and per-listing messages for new/removed/special listings. */
+  /**
+   * Send the daily run summary and per-listing messages for new/removed/special listings.
+   * Throws if the summary message fails — the caller must not persist the snapshot in that case,
+   * so the items remain "new" and will be retried on the next run.
+   */
   async notifyRunResult(result: LandAuctionsResult): Promise<void> {
     const { total, newListings, removedListings, specialListings, newSpecialListings } = result;
 
-    await this.telegram.sendMessage(
+    const ok = await this.telegram.sendMessage(
       buildSummary({
+        date: new Date(),
         total,
         newCount: newListings.length,
         removedCount: removedListings.length,
@@ -33,9 +39,13 @@ export class ListingNotifierService {
       }),
     );
 
-    if (newListings.length) await this.sendListings(newListings, 'Новые:');
-    if (removedListings.length) await this.sendListings(removedListings, 'Удаленные:');
-    if (newSpecialListings.length) await this.sendListings(newSpecialListings, 'Новые в Заболоть:');
+    if (!ok) throw new Error('Не удалось отправить сводку в Telegram');
+
+    if (newListings.length) await this.sendListings(newListings, NOTIFICATION_HEADERS.new);
+    if (removedListings.length)
+      await this.sendListings(removedListings, NOTIFICATION_HEADERS.removed);
+    if (newSpecialListings.length)
+      await this.sendListings(newSpecialListings, NOTIFICATION_HEADERS.newSpecial);
   }
 
   /** Send a critical error notification. */
@@ -48,7 +58,12 @@ export class ListingNotifierService {
     const failed: Listing[] = [];
 
     for (let i = 0; i < listings.length; i++) {
-      const ok = await this.sendListing(listings[i], header, i + 1, listings.length);
+      const ok = await this.sendListing({
+        listing: listings[i],
+        header,
+        index: i + 1,
+        total: listings.length,
+      });
       if (!ok) failed.push(listings[i]);
       if (i < listings.length - 1) await sleep(TELEGRAM_SEND_DELAY_MS);
     }
@@ -62,22 +77,24 @@ export class ListingNotifierService {
   }
 
   /** Send a single listing as photo/media group or plain text if no images. */
-  private async sendListing(
-    listing: Listing,
-    header: string,
-    index: number,
-    total: number,
-  ): Promise<boolean> {
-    const caption = truncateCaption(buildCaption(listing, header, index, total));
+  private async sendListing({
+    listing,
+    header,
+    index,
+    total,
+  }: SendListingParams): Promise<boolean> {
+    const caption = truncateCaption(buildCaption({ listing, header, index, total }));
     const photos = (listing.images ?? []).slice(0, MEDIA_GROUP_LIMIT);
 
     if (photos.length > 1) {
-      const media: TelegramBot.InputMediaPhoto[] = photos.map((url, i) => ({
-        type: 'photo',
-        media: url,
-        // Only the first photo in a media group carries the caption
-        ...(i === 0 ? { caption, parse_mode: 'HTML' as const } : {}),
-      }));
+      const media: TelegramBot.InputMediaPhoto[] = photos.map((url, i) => {
+        const item: TelegramBot.InputMediaPhoto = { type: 'photo', media: url };
+        if (i === 0) {
+          item.caption = caption;
+          item.parse_mode = 'HTML';
+        }
+        return item;
+      });
       return this.telegram.sendMediaGroup(media);
     }
 
@@ -94,7 +111,15 @@ export class ListingNotifierService {
 /** Type predicate — narrows `string | undefined` to `string`, excluding empty/unknown values. */
 const hasValue = (val: string | undefined): val is string => !!val && !EMPTY_VALUES.has(val);
 
+interface SendListingParams {
+  listing: Listing;
+  header: string;
+  index: number;
+  total: number;
+}
+
 interface SummaryParams {
+  date: Date;
   total: number;
   newCount: number;
   removedCount: number;
@@ -103,6 +128,7 @@ interface SummaryParams {
 }
 
 const buildSummary = ({
+  date,
   total,
   newCount,
   removedCount,
@@ -110,7 +136,7 @@ const buildSummary = ({
   newSpecialCount,
 }: SummaryParams): string =>
   [
-    `<b>📊 Сводка на ${new Date().toLocaleDateString('ru-RU')}</b>`,
+    `<b>📊 Сводка на ${date.toLocaleDateString('ru-RU')}</b>`,
     `📋 Всего объявлений: <b>${total}</b>`,
     newCount ? `🆕 Новые: <b>${newCount}</b>` : '🆕 Новые: 0',
     removedCount ? `🗑 Удалённые: <b>${removedCount}</b>` : '🗑 Удалённые: 0',
@@ -137,7 +163,7 @@ const formatAuctionDate = (val: string): string => {
 
 const formatDeadline = (val: string): string => val.replace('Заявления принимаются по ', '');
 
-const buildCaption = (listing: Listing, header: string, index: number, total: number): string => {
+const buildCaption = ({ listing, header, index, total }: SendListingParams): string => {
   const emoji = getListingEmoji(listing.title);
   const lines: string[] = [
     `<b>${header} · ${index} из ${total}</b>`,

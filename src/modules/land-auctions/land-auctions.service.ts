@@ -107,15 +107,16 @@ export class LandAuctionsService implements OnModuleInit {
         `removed: ${removedListings.length}, special: ${specialListings.length}`,
     );
 
-    // Persist first — a notification failure should not cause a missed snapshot update
+    // Notify first — if Telegram is down the snapshot must NOT be updated, so items remain
+    // "new" and will be retried on the next run. Missing a notification is a critical failure.
+    await this.notifier.notifyRunResult(result);
+
     await Promise.all([
       this.snapshot.write(DATA_FILES.all, currentListings),
       this.snapshot.write(DATA_FILES.new, newListings),
       this.snapshot.write(DATA_FILES.removed, removedListings),
       this.snapshot.write(DATA_FILES.special, specialListings),
     ]);
-
-    await this.notifier.notifyRunResult(result);
 
     return result;
   }
