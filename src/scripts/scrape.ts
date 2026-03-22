@@ -1,15 +1,16 @@
 /**
  * One-shot scrape script for CI / GitHub Actions.
  *
- * Bootstraps the NestJS application context (no HTTP server), runs a single
- * scrape cycle, then exits. Used instead of the long-lived server when the
- * environment has no persistent host (e.g. a GitHub Actions runner).
+ * Bootstraps the NestJS application context (no HTTP server), runs all scrape
+ * cycles sequentially, then exits. Used instead of the long-lived server when
+ * the environment has no persistent host (e.g. a GitHub Actions runner).
  *
  * TODO: replace with a proper persistent deployment — see _TODO.md in the
  * land-auctions module.
  */
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from '../app.module';
+import { CarAuctionsService } from '../modules/car-auctions/car-auctions.service';
 import { LandAuctionsService } from '../modules/land-auctions/land-auctions.service';
 
 async function bootstrap(): Promise<void> {
@@ -18,8 +19,8 @@ async function bootstrap(): Promise<void> {
   });
 
   try {
-    const service = app.get(LandAuctionsService);
-    await service.run();
+    await app.get(LandAuctionsService).run();
+    await app.get(CarAuctionsService).run();
   } finally {
     await app.close();
   }

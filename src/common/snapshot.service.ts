@@ -1,18 +1,17 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { promises as fs } from 'fs';
 import path from 'path';
-import type { Listing } from './dto/listing.dto';
 
 /**
- * Persists listing snapshots as JSON files.
- * Each file stores a point-in-time snapshot that is diffed on the next run
- * to detect new and removed listings.
+ * Generic snapshot persistence — reads/writes JSON arrays to disk.
+ * Used by feature modules to diff listings between runs.
+ * Each module passes its own type guard to validate the shape on read.
  */
 @Injectable()
 export class SnapshotService {
   private readonly logger = new Logger(SnapshotService.name);
 
-  async read(filePath: string): Promise<Listing[]> {
+  async read<T>(filePath: string, isValid: (item: unknown) => item is T): Promise<T[]> {
     try {
       const data = await fs.readFile(filePath, 'utf8');
       const parsed: unknown = JSON.parse(data);
@@ -20,9 +19,7 @@ export class SnapshotService {
         this.logger.warn(`Snapshot at ${filePath} is not an array, resetting.`);
         return [];
       }
-      const isListing = (item: unknown): item is Listing =>
-        typeof item === 'object' && item !== null && 'link' in item;
-      if (!parsed.every(isListing)) {
+      if (!parsed.every(isValid)) {
         this.logger.warn(`Snapshot at ${filePath} has unexpected shape, resetting.`);
         return [];
       }
@@ -38,9 +35,9 @@ export class SnapshotService {
     }
   }
 
-  async write(filePath: string, listings: Listing[]): Promise<void> {
+  async write<T>(filePath: string, items: T[]): Promise<void> {
     // Ensure the directory exists — important on first run and in Docker
     await fs.mkdir(path.dirname(filePath), { recursive: true });
-    await fs.writeFile(filePath, JSON.stringify(listings, null, 2));
+    await fs.writeFile(filePath, JSON.stringify(items, null, 2));
   }
 }

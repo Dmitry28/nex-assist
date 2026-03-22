@@ -1,5 +1,5 @@
 import * as Joi from 'joi';
-import { APP_DEFAULTS, LAND_AUCTIONS_DEFAULTS } from './constants';
+import { APP_DEFAULTS, CAR_AUCTIONS_DEFAULTS, LAND_AUCTIONS_DEFAULTS } from './constants';
 
 /**
  * Joi schema for environment variable validation.
@@ -27,4 +27,9 @@ export const validationSchema = Joi.object({
   SCRAPE_URL: Joi.string().uri().default(LAND_AUCTIONS_DEFAULTS.SCRAPE_URL),
   SCRAPE_CRON: Joi.string().default(LAND_AUCTIONS_DEFAULTS.SCRAPE_CRON),
   TELEGRAM_LAND_AUCTIONS_CHAT_ID: Joi.string().optional(),
+
+  // Car auctions module
+  CAR_AUCTIONS_SCRAPE_URL: Joi.string().uri().default(CAR_AUCTIONS_DEFAULTS.SCRAPE_URL),
+  CAR_AUCTIONS_SCRAPE_CRON: Joi.string().default(CAR_AUCTIONS_DEFAULTS.SCRAPE_CRON),
+  TELEGRAM_CAR_AUCTIONS_CHAT_ID: Joi.string().optional(),
 });
