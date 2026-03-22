@@ -43,10 +43,19 @@ test: add health endpoint e2e test
 
 ```
 ## Summary
-- <type>: description of change
-- <type>: description of change
+
+### User impact
+- feat: what the user sees or can now do (skip if no user-facing changes)
+
+### Technical impact
+- refactor: architectural or internal changes
+- build: dependency or tooling changes
 
 ## Test plan
 - [ ] What to test manually
 - [ ] Edge cases to verify
 ```
+
+**User impact** — visible changes: new features, UI changes, API changes, bug fixes affecting behaviour.
+**Technical impact** — internal changes: refactors, dependency updates, CI, tooling, performance, infrastructure.
+Skip a section entirely if there's nothing to put there.

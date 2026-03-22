@@ -5,7 +5,7 @@
 Collect all locally changed files:
 
 ```bash
-git diff origin/dev-nestjs..HEAD --name-only
+git diff origin/dev..HEAD --name-only
 git diff --name-only
 git diff --cached --name-only
 ```
