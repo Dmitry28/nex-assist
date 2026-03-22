@@ -35,9 +35,8 @@ Thumbs.db
 coverage/
 .nyc_output/
 
-# Data files
-src/data/*.json
-!src/data/.gitkeep
+# Data files (runtime snapshots — auto-created, not committed)
+/data/
 
 # Claude Code (local settings only)
 .claude/settings.json

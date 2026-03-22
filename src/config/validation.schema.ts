@@ -19,9 +19,11 @@ export const validationSchema = Joi.object({
   THROTTLE_TTL: Joi.number().default(APP_DEFAULTS.THROTTLE_TTL),
   THROTTLE_LIMIT: Joi.number().default(APP_DEFAULTS.THROTTLE_LIMIT),
 
-  // Land auctions module
+  // Telegram (shared across all modules that send notifications)
   TELEGRAM_TOKEN: Joi.string().required(),
   TELEGRAM_CHAT_ID: Joi.string().required(),
+
+  // Land auctions module
   SCRAPE_URL: Joi.string().uri().default(LAND_AUCTIONS_DEFAULTS.SCRAPE_URL),
   SCRAPE_CRON: Joi.string().default(LAND_AUCTIONS_DEFAULTS.SCRAPE_CRON),
 });

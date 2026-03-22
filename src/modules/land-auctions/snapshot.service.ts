@@ -1,5 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { promises as fs } from 'fs';
+import path from 'path';
 import type { Listing } from './dto/listing.dto';
 
 /**
@@ -22,6 +23,8 @@ export class SnapshotService {
   }
 
   async write(filePath: string, listings: Listing[]): Promise<void> {
+    // Ensure the directory exists — important on first run and in Docker
+    await fs.mkdir(path.dirname(filePath), { recursive: true });
     await fs.writeFile(filePath, JSON.stringify(listings, null, 2));
   }
 }

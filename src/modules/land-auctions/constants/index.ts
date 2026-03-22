@@ -10,9 +10,6 @@ export const TELEGRAM_CAPTION_LIMIT = 1024;
 /** Delay between Telegram sends to avoid rate limiting (ms). */
 export const TELEGRAM_SEND_DELAY_MS = 1000;
 
-/** Retries for a single Telegram send call. */
-export const TELEGRAM_SEND_RETRIES = 3;
-
 /** Field values considered empty/unknown — skipped when building Telegram captions. */
 export const EMPTY_VALUES = new Set([
   'Не найдено',
@@ -23,13 +20,17 @@ export const EMPTY_VALUES = new Set([
   'N/A',
 ]);
 
-/** Snapshot file paths relative to project root. */
+/**
+ * Snapshot file paths relative to process CWD.
+ * Using ./data/ (not ./src/data/) so the path works in both development and Docker
+ * where only dist/ is present at runtime.
+ */
 export const DATA_FILES = {
-  all: './src/data/land_auctions_all.json',
-  new: './src/data/land_auctions_new.json',
-  removed: './src/data/land_auctions_removed.json',
-  /** Listings matching the special area keyword. */
-  special: './src/data/land_auctions_special.json',
+  all: './data/land_auctions_all.json',
+  new: './data/land_auctions_new.json',
+  removed: './data/land_auctions_removed.json',
+  /** Listings matching the special area keyword (Заболоть). */
+  special: './data/land_auctions_special.json',
 } as const;
 
 /** Keyword to detect special listings (Заболоть area). */
