@@ -128,18 +128,32 @@ const buildCaption = ({ listing, header, index, total }: SendListingParams): str
 
   // Prices
   const priceDetails: string[] = [];
-  if (hasValue(listing.currentBid)) priceDetails.push(`🔨 ${listing.currentBid}`);
+  if (hasValue(listing.currentBid)) priceDetails.push(`🔨 Bid: ${listing.currentBid}`);
   if (hasValue(listing.buyNow)) priceDetails.push(`⚡ BIN: ${listing.buyNow}`);
   if (priceDetails.length) lines.push('', priceDetails.join('  ·  '));
 
-  // Details
-  const details: string[] = [];
-  if (hasValue(listing.odometer)) details.push(`📏 ${listing.odometer}`);
-  if (hasValue(listing.location)) details.push(`📍 ${listing.location}`);
-  if (details.length) lines.push('', details.join('  ·  '));
+  // Damage + document type
+  if (hasValue(listing.damage)) lines.push('', `💥 ${listing.damage}`);
+  const condParts: string[] = [];
+  if (hasValue(listing.condition)) condParts.push(`🚦 ${listing.condition}`);
+  if (hasValue(listing.keys)) condParts.push(`📄 ${listing.keys}`);
+  if (condParts.length) lines.push(condParts.join('  ·  '));
 
+  // Odometer + engine
+  const specs: string[] = [];
+  if (hasValue(listing.odometer)) specs.push(`📏 ${listing.odometer}`);
+  if (hasValue(listing.engine)) specs.push(`🔧 ${listing.engine}`);
+  if (specs.length) lines.push('', specs.join('  ·  '));
+
+  // Location + auction date
+  if (hasValue(listing.location)) lines.push(`📍 ${listing.location}`);
   if (hasValue(listing.auctionDate)) lines.push(`🗓 ${listing.auctionDate}`);
-  if (hasValue(listing.lot)) lines.push(`🔖 Лот: ${listing.lot}`);
+
+  // Identifiers
+  const ids: string[] = [];
+  if (hasValue(listing.lot)) ids.push(`Лот: ${listing.lot}`);
+  if (hasValue(listing.vin)) ids.push(`VIN: ${listing.vin}`);
+  if (ids.length) lines.push('', ids.join('  ·  '));
 
   lines.push('', `<a href="${listing.link}">🔗 Подробнее</a>`);
 

@@ -11,6 +11,7 @@ export class CarListing {
   @ApiPropertyOptional() odometer?: string;
   @ApiPropertyOptional() damage?: string;
   @ApiPropertyOptional() keys?: string;
+  @ApiPropertyOptional() condition?: string;
   @ApiPropertyOptional() engine?: string;
   @ApiPropertyOptional() location?: string;
   @ApiPropertyOptional() auctionDate?: string;

@@ -61,9 +61,9 @@ export class BidCarsParserService {
         const seen = new Set<string>();
         const results: CarListing[] = [];
 
-        /** Parse VIN (17-char) from the end of a lot URL. */
+        /** Parse VIN (17-char) from a lot URL — VIN follows the last hyphen in the slug. */
         const vinFromUrl = (href: string): string => {
-          const m = href.match(/\/([A-HJ-NPR-Z0-9]{17})(?:[/?#]|$)/i);
+          const m = href.match(/([A-HJ-NPR-Z0-9]{17})(?:[/?#]|$)/i);
           return m ? m[1].toUpperCase() : '';
         };
 
@@ -71,25 +71,6 @@ export class BidCarsParserService {
         const lotFromUrl = (href: string): string => {
           const m = href.match(/\/lot\/([^/]+)\//);
           return m ? m[1] : '';
-        };
-
-        /**
-         * Find a label→value pair within a container element.
-         * Works for typical "Label: Value" DOM patterns where a leaf element
-         * holds the label text and the next sibling (or parent's sibling) holds
-         * the value.
-         */
-        const labelValue = (container: Element, label: string): string => {
-          const lower = label.toLowerCase();
-          const els = Array.from(container.querySelectorAll('*')).filter(
-            el => el.children.length === 0 && el.textContent?.toLowerCase().includes(lower),
-          );
-          for (const el of els) {
-            const sibling = el.nextElementSibling ?? el.parentElement?.nextElementSibling;
-            const val = sibling?.textContent?.trim();
-            if (val && val !== el.textContent?.trim()) return val;
-          }
-          return '';
         };
 
         document.querySelectorAll<HTMLAnchorElement>('a[href*="/lot/"]').forEach(anchor => {
@@ -119,16 +100,33 @@ export class BidCarsParserService {
           const vin = vinFromUrl(link) || undefined;
           const lot = lotFromUrl(link) || undefined;
 
-          // Additional fields extracted from the card DOM
-          const lv = (label: string) => labelValue(card, label) || undefined;
-          const odometer = lv('Odometer') ?? lv('Mileage');
-          const damage = lv('Primary Damage') ?? lv('Damage');
-          const location = lv('Location') ?? lv('Auction');
-          const currentBid = lv('Current Bid') ?? lv('Bid');
-          const buyNow = lv('Buy Now') ?? lv('BIN');
-          const engine = lv('Engine');
-          const keys = lv('Keys');
-          const auctionDate = lv('Sale Date') ?? lv('Auction Date');
+          // bid.cars labels are in Russian. Extract fields by matching label\nvalue
+          // patterns from the card's innerText — more reliable than DOM traversal
+          // for this site's markup.
+          const cardText = (card as HTMLElement).innerText ?? '';
+          const matchText = (re: RegExp): string | undefined => {
+            const m = cardText.match(re);
+            return m ? m[1].trim() : undefined;
+          };
+
+          const odometer = matchText(/Километраж:\n\s*([^\n]+)/);
+          const damage = matchText(/Повреждение:\n\s*([^\n]+)/);
+          const location = matchText(/Место расположение:\n\s*([^\n]+)/);
+          const currentBid = matchText(/Текущая ставка:\n\s*([^\n]+)/);
+          const buyNow = matchText(/Купить сейчас:\n\s*([^\n]+)/);
+          // Repurpose `keys` for document/title type (e.g. "Salvage (South Carolina)")
+          const keys = matchText(/Док\. продажи:\n\s*([^\n]+)/);
+          // Running condition (e.g. "На ходу")
+          const condition = matchText(/Статус:\n\s*([^\n]+)/);
+          // Auction datetime (e.g. "пн 23 мар., 14:30 GMT+1")
+          const auctionDate = matchText(/((?:пн|вт|ср|чт|пт|сб|вс)\s+[^\n]+GMT[+-]\d+)/i);
+          // Engine: "2.0L", "4 cyl.", "269HP" appear on consecutive lines — join them
+          const engineParts = [
+            matchText(/(\d+[.,]\d+[Ll])\b/),
+            matchText(/(\d+\s*cyl\.?)/i),
+            matchText(/(\d+\s*HP)/i),
+          ].filter((x): x is string => Boolean(x));
+          const engine = engineParts.length > 0 ? engineParts.join(' ') : undefined;
 
           results.push({
             link,
@@ -142,6 +140,7 @@ export class BidCarsParserService {
             buyNow,
             engine,
             keys,
+            condition,
             auctionDate,
           });
         });
