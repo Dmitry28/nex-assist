@@ -8,11 +8,11 @@ Generate GitHub PR title and description for all changes in current branch.
    - Run `git branch --show-current`
 
 2. **All commits in branch:**
-   - Run `git log origin/dev-nestjs..HEAD --no-merges --format="%s%n%b%n---"`
+   - Run `git log origin/dev..HEAD --no-merges --format="%s%n%b%n---"`
 
 3. **All code changes:**
-   - Run `git diff origin/dev-nestjs..HEAD --stat`
-   - Run `git diff origin/dev-nestjs..HEAD`
+   - Run `git diff origin/dev..HEAD --stat`
+   - Run `git diff origin/dev..HEAD`
 
 4. **Conversation history** for context
 
