@@ -22,6 +22,8 @@ import { Request, Response } from 'express';
  *
  * Error response shape: { statusCode, timestamp, path, message }
  */
+const isObject = (v: unknown): v is Record<string, unknown> => typeof v === 'object' && v !== null;
+
 @Catch()
 export class AllExceptionsFilter implements ExceptionFilter {
   private readonly logger = new Logger(AllExceptionsFilter.name);
@@ -37,8 +39,6 @@ export class AllExceptionsFilter implements ExceptionFilter {
 
       // NOTE: exceptionResponse can be a string or an object (e.g. { message: string[] }
       // from ValidationPipe). We extract the message field if it's an object.
-      const isObject = (v: unknown): v is Record<string, unknown> =>
-        typeof v === 'object' && v !== null;
       const message = isObject(exceptionResponse)
         ? exceptionResponse['message']
         : exceptionResponse;

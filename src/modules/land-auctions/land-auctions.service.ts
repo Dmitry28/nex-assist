@@ -1,4 +1,10 @@
-import { ConflictException, Injectable, Logger, OnModuleInit } from '@nestjs/common';
+import {
+  ConflictException,
+  Injectable,
+  Logger,
+  OnModuleDestroy,
+  OnModuleInit,
+} from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { SchedulerRegistry } from '@nestjs/schedule';
 import { CronJob } from 'cron';
@@ -20,7 +26,7 @@ import { SnapshotService } from './snapshot.service';
  * the @Cron decorator (decorators are evaluated before ConfigModule loads).
  */
 @Injectable()
-export class LandAuctionsService implements OnModuleInit {
+export class LandAuctionsService implements OnModuleInit, OnModuleDestroy {
   private readonly logger = new Logger(LandAuctionsService.name);
 
   // Safe: Node.js is single-threaded — the if-check and flag assignment run
@@ -45,6 +51,10 @@ export class LandAuctionsService implements OnModuleInit {
     this.logger.log(`Cron scheduled: ${cron}`);
   }
 
+  onModuleDestroy(): void {
+    this.scheduler.deleteCronJob('land-auctions-scrape');
+  }
+
   async run(): Promise<LandAuctionsResult> {
     if (this.isRunning) {
       throw new ConflictException('Scrape already in progress');
@@ -56,7 +66,12 @@ export class LandAuctionsService implements OnModuleInit {
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
       this.logger.error('Critical scrape failure', error);
-      await this.notifier.notifyError(message);
+      // notifyError result is intentionally ignored — Telegram failure here must not mask the original error
+      try {
+        await this.notifier.notifyError(message);
+      } catch {
+        this.logger.warn('Failed to send error notification to Telegram');
+      }
       throw error;
     } finally {
       this.isRunning = false;
@@ -68,6 +83,10 @@ export class LandAuctionsService implements OnModuleInit {
       this.logger.log('Scheduled scrape started');
       await this.run();
     } catch (error) {
+      if (error instanceof ConflictException) {
+        this.logger.warn('Scheduled scrape skipped — manual run already in progress');
+        return;
+      }
       // Error already logged and reported to Telegram inside run() — just prevent unhandled rejection
       this.logger.error('Scheduled scrape failed', error);
     }
