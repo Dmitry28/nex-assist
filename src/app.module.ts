@@ -1,8 +1,8 @@
 import { Module, ValidationPipe } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { APP_FILTER, APP_INTERCEPTOR, APP_PIPE } from '@nestjs/core';
+import { APP_FILTER, APP_GUARD, APP_INTERCEPTOR, APP_PIPE } from '@nestjs/core';
 import { ScheduleModule } from '@nestjs/schedule';
-import { ThrottlerModule } from '@nestjs/throttler';
+import { ThrottlerGuard, ThrottlerModule } from '@nestjs/throttler';
 import appConfig from './config/app.config';
 import { validationSchema } from './config/validation.schema';
 import { AllExceptionsFilter } from './common/filters/all-exceptions.filter';
@@ -54,6 +54,8 @@ import { LandAuctionsModule } from './modules/land-auctions/land-auctions.module
         transformOptions: { enableImplicitConversion: true },
       }),
     },
+    // Global rate limiting
+    { provide: APP_GUARD, useClass: ThrottlerGuard },
     // Global exception filter
     { provide: APP_FILTER, useClass: AllExceptionsFilter },
     // Global response envelope

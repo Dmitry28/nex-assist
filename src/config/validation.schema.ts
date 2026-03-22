@@ -17,6 +17,8 @@ export const validationSchema = Joi.object({
   CORS_ORIGIN: Joi.string().default(APP_DEFAULTS.CORS_ORIGIN),
   THROTTLE_TTL: Joi.number().default(APP_DEFAULTS.THROTTLE_TTL),
   THROTTLE_LIMIT: Joi.number().default(APP_DEFAULTS.THROTTLE_LIMIT),
+  // Optional: if set, POST /run requires X-Api-Key header with this value
+  API_KEY: Joi.string().optional(),
 
   // Telegram bot token — optional: if omitted, all modules run in dry-run mode
   TELEGRAM_TOKEN: Joi.string().optional(),
