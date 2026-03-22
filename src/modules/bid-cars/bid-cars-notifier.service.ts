@@ -88,10 +88,7 @@ export class BidCarsNotifierService {
     total,
   }: SendListingParams): Promise<boolean> {
     const caption = truncateCaption(buildCaption({ listing, header, index, total }));
-
-    if (listing.image) {
-      return this.telegram.sendPhoto(this.chatId, listing.image, caption);
-    }
+    // bid.cars CDN blocks Telegram from fetching images, so text-only messages are used.
     return this.telegram.sendMessage(this.chatId, caption);
   }
 }
@@ -129,12 +126,20 @@ const buildCaption = ({ listing, header, index, total }: SendListingParams): str
     `🚗 <b>${listing.title ?? 'Без названия'}</b>`,
   ];
 
+  // Prices
+  const priceDetails: string[] = [];
+  if (hasValue(listing.currentBid)) priceDetails.push(`🔨 ${listing.currentBid}`);
+  if (hasValue(listing.buyNow)) priceDetails.push(`⚡ BIN: ${listing.buyNow}`);
+  if (priceDetails.length) lines.push('', priceDetails.join('  ·  '));
+
+  // Details
   const details: string[] = [];
-  if (hasValue(listing.price)) details.push(`💰 ${listing.price}`);
   if (hasValue(listing.odometer)) details.push(`📏 ${listing.odometer}`);
+  if (hasValue(listing.location)) details.push(`📍 ${listing.location}`);
   if (details.length) lines.push('', details.join('  ·  '));
 
-  if (hasValue(listing.location)) lines.push(`📍 ${listing.location}`);
+  if (hasValue(listing.auctionDate)) lines.push(`🗓 ${listing.auctionDate}`);
+  if (hasValue(listing.lot)) lines.push(`🔖 Лот: ${listing.lot}`);
 
   lines.push('', `<a href="${listing.link}">🔗 Подробнее</a>`);
 

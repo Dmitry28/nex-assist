@@ -4,10 +4,17 @@ import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 export class CarListing {
   @ApiProperty() link!: string;
   @ApiPropertyOptional() title?: string;
-  @ApiPropertyOptional() price?: string;
+  @ApiPropertyOptional() vin?: string;
+  @ApiPropertyOptional() lot?: string;
+  @ApiPropertyOptional() currentBid?: string;
+  @ApiPropertyOptional() buyNow?: string;
   @ApiPropertyOptional() odometer?: string;
+  @ApiPropertyOptional() damage?: string;
+  @ApiPropertyOptional() keys?: string;
+  @ApiPropertyOptional() engine?: string;
   @ApiPropertyOptional() location?: string;
-  @ApiPropertyOptional() image?: string;
+  @ApiPropertyOptional() auctionDate?: string;
+  @ApiPropertyOptional({ type: [String] }) images?: string[];
 }
 
 /** Result returned from one full scrape cycle. */
