@@ -2,6 +2,6 @@
   "$schema": "https://unpkg.com/knip@latest/schema.json",
   "entry": ["src/main.ts", "test/**/*.ts"],
   "project": ["src/**/*.ts", "test/**/*.ts"],
-  "ignoreDependencies": ["ts-node", "tsconfig-paths"],
+  "ignoreDependencies": [],
   "ignoreExportsUsedInFile": true
 }
