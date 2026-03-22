@@ -1,5 +1,6 @@
 import * as Joi from 'joi';
 import { APP_DEFAULTS } from './constants';
+import { SCRAPER_DEFAULTS } from './scraper.config';
 
 /**
  * Joi schema for environment variable validation.
@@ -17,4 +18,10 @@ export const validationSchema = Joi.object({
   CORS_ORIGIN: Joi.string().default(APP_DEFAULTS.CORS_ORIGIN),
   THROTTLE_TTL: Joi.number().default(APP_DEFAULTS.THROTTLE_TTL),
   THROTTLE_LIMIT: Joi.number().default(APP_DEFAULTS.THROTTLE_LIMIT),
+
+  // Scraper module
+  TELEGRAM_TOKEN: Joi.string().required(),
+  TELEGRAM_CHAT_ID: Joi.string().required(),
+  SCRAPE_URL: Joi.string().uri().default(SCRAPER_DEFAULTS.SCRAPE_URL),
+  SCRAPE_CRON: Joi.string().default(SCRAPER_DEFAULTS.SCRAPE_CRON),
 });
