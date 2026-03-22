@@ -6,6 +6,7 @@ NestJS v11 application.
 
 - Node.js >= 20.11 (recommended: use [nvm](https://github.com/nvm-sh/nvm))
 - npm >= 10
+- Docker (optional)
 
 ## Getting started
 
@@ -21,6 +22,16 @@ cp .env.example .env
 
 # Start in development mode (watch)
 npm run start:dev
+```
+
+## Docker
+
+```bash
+# Development (hot-reload)
+docker compose up
+
+# Production
+docker compose -f docker-compose.prod.yml up
 ```
 
 ## Scripts
@@ -57,20 +68,14 @@ See `.env.example` for all available variables.
 
 All routes are prefixed with `/api/v1`.
 
-Successful responses are wrapped in:
+Swagger docs available at `/api/docs` (development only).
+
+Successful responses:
 ```json
-{
-  "data": { ... },
-  "timestamp": "2026-01-01T00:00:00.000Z"
-}
+{ "data": { ... }, "timestamp": "2026-01-01T00:00:00.000Z" }
 ```
 
 Error responses:
 ```json
-{
-  "statusCode": 400,
-  "timestamp": "2026-01-01T00:00:00.000Z",
-  "path": "/api/v1/...",
-  "message": "..."
-}
+{ "statusCode": 400, "timestamp": "...", "path": "/api/v1/...", "message": "..." }
 ```

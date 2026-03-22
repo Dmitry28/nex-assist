@@ -1,6 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { ConsoleLogger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
+import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import helmet from 'helmet';
 import { AppModule } from './app.module';
 
@@ -34,8 +35,24 @@ async function bootstrap(): Promise<void> {
   app.setGlobalPrefix('api/v1');
   app.enableShutdownHooks();
 
+  // Swagger (only in non-production)
+  if (!isProduction) {
+    const swaggerConfig = new DocumentBuilder()
+      .setTitle(name)
+      .setDescription('API documentation')
+      .setVersion('1.0')
+      .addBearerAuth()
+      .build();
+
+    const document = SwaggerModule.createDocument(app, swaggerConfig);
+    SwaggerModule.setup('api/docs', app, document);
+  }
+
   await app.listen(port);
   console.log(`[${name}] Application running on: ${await app.getUrl()}`);
+  if (!isProduction) {
+    console.log(`[${name}] Swagger docs: ${await app.getUrl()}/api/docs`);
+  }
 }
 
-bootstrap();
+void bootstrap();
