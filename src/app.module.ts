@@ -5,7 +5,6 @@ import { ThrottlerModule } from '@nestjs/throttler';
 import appConfig from './config/app.config';
 import { validationSchema } from './config/validation.schema';
 import { AllExceptionsFilter } from './common/filters/all-exceptions.filter';
-import { HttpExceptionFilter } from './common/filters/http-exception.filter';
 import { TransformInterceptor } from './common/interceptors/transform.interceptor';
 import { HealthModule } from './modules/health/health.module';
 
@@ -49,9 +48,8 @@ import { HealthModule } from './modules/health/health.module';
         transformOptions: { enableImplicitConversion: true },
       }),
     },
-    // Global exception filters (order: AllExceptions first as catch-all)
+    // Global exception filter
     { provide: APP_FILTER, useClass: AllExceptionsFilter },
-    { provide: APP_FILTER, useClass: HttpExceptionFilter },
     // Global response envelope
     { provide: APP_INTERCEPTOR, useClass: TransformInterceptor },
   ],

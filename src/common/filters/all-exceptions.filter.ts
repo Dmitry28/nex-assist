@@ -17,22 +17,33 @@ export class AllExceptionsFilter implements ExceptionFilter {
     const response = ctx.getResponse<Response>();
     const request = ctx.getRequest<Request>();
 
-    const status =
-      exception instanceof HttpException ? exception.getStatus() : HttpStatus.INTERNAL_SERVER_ERROR;
+    if (exception instanceof HttpException) {
+      const status = exception.getStatus();
+      const exceptionResponse = exception.getResponse();
+      const isObject = (v: unknown): v is Record<string, unknown> =>
+        typeof v === 'object' && v !== null;
+      const message = isObject(exceptionResponse)
+        ? exceptionResponse['message']
+        : exceptionResponse;
 
-    const message =
-      exception instanceof HttpException ? exception.message : 'Internal server error';
-
-    this.logger.error(
-      `${request.method} ${request.url} → ${status}`,
-      exception instanceof Error ? exception.stack : String(exception),
-    );
-
-    response.status(status).json({
-      statusCode: status,
-      timestamp: new Date().toISOString(),
-      path: request.url,
-      message,
-    });
+      this.logger.warn(`${request.method} ${request.url} → ${status}`);
+      response.status(status).json({
+        statusCode: status,
+        timestamp: new Date().toISOString(),
+        path: request.url,
+        message,
+      });
+    } else {
+      this.logger.error(
+        `${request.method} ${request.url} → 500`,
+        exception instanceof Error ? exception.stack : String(exception),
+      );
+      response.status(HttpStatus.INTERNAL_SERVER_ERROR).json({
+        statusCode: HttpStatus.INTERNAL_SERVER_ERROR,
+        timestamp: new Date().toISOString(),
+        path: request.url,
+        message: 'Internal server error',
+      });
+    }
   }
 }
