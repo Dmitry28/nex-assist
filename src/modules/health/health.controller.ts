@@ -7,8 +7,8 @@ import {
 } from '@nestjs/terminus';
 
 // NOTE: Tune these thresholds based on observed production memory usage.
-const HEAP_LIMIT_BYTES = 300 * 1024 * 1024; // 300 MB
-const RSS_LIMIT_BYTES = 512 * 1024 * 1024; // 512 MB
+const HEAP_LIMIT_BYTES = 1024 * 1024 * 1024; // 1 GB
+const RSS_LIMIT_BYTES = 2 * 1024 * 1024 * 1024; // 2 GB
 
 @Controller('health')
 export class HealthController {
