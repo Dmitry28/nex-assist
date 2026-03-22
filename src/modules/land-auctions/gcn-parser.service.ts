@@ -56,6 +56,9 @@ export class GcnParserService {
       Array.from({ length: CONCURRENCY }, () => browser.newPage()),
     );
 
+    // Each page worker pulls from the shared queue. Safe in Node.js because
+    // queue.shift() is synchronous — no interleaving can happen between
+    // the length check and the shift before the first await.
     const queue = [...listings];
 
     await Promise.all(

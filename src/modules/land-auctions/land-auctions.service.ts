@@ -12,8 +12,8 @@ import { SnapshotService } from './snapshot.service';
  * Business orchestration for the land auctions scrape cycle:
  *   1. Fetch current listings from gcn.by
  *   2. Diff against the previous snapshot → detect new / removed listings
- *   3. Send Telegram notifications
- *   4. Persist updated snapshots to disk
+ *   3. Persist updated snapshots to disk
+ *   4. Send Telegram notifications
  *
  * The cron schedule is read from config at runtime (SCRAPE_CRON env var),
  * which is why we use dynamic scheduling via SchedulerRegistry instead of
@@ -22,7 +22,9 @@ import { SnapshotService } from './snapshot.service';
 @Injectable()
 export class LandAuctionsService implements OnModuleInit {
   private readonly logger = new Logger(LandAuctionsService.name);
-  /** Prevents concurrent runs (e.g. cron fires while a manual run is in progress). */
+
+  // Safe: Node.js is single-threaded — the if-check and flag assignment run
+  // atomically (no interleaving possible before the first await).
   private isRunning = false;
 
   constructor(
@@ -62,8 +64,13 @@ export class LandAuctionsService implements OnModuleInit {
   }
 
   private async runScheduled(): Promise<void> {
-    this.logger.log('Scheduled scrape started');
-    await this.run();
+    try {
+      this.logger.log('Scheduled scrape started');
+      await this.run();
+    } catch (error) {
+      // Error already logged and reported to Telegram inside run() — just prevent unhandled rejection
+      this.logger.error('Scheduled scrape failed', error);
+    }
   }
 
   private async scrape(): Promise<LandAuctionsResult> {
@@ -100,13 +107,15 @@ export class LandAuctionsService implements OnModuleInit {
         `removed: ${removedListings.length}, special: ${specialListings.length}`,
     );
 
-    await this.notifier.notifyRunResult(result);
+    // Persist first — a notification failure should not cause a missed snapshot update
     await Promise.all([
       this.snapshot.write(DATA_FILES.all, currentListings),
       this.snapshot.write(DATA_FILES.new, newListings),
       this.snapshot.write(DATA_FILES.removed, removedListings),
       this.snapshot.write(DATA_FILES.special, specialListings),
     ]);
+
+    await this.notifier.notifyRunResult(result);
 
     return result;
   }

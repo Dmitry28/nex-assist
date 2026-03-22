@@ -61,21 +61,23 @@ export class TelegramService implements OnModuleInit {
    * On a Telegram 429 rate-limit response, waits the requested retry_after delay.
    */
   private async withRetry(fn: () => Promise<void>): Promise<boolean> {
+    let lastError: unknown;
     for (let attempt = 0; attempt < SEND_RETRIES; attempt++) {
       try {
         await fn();
         return true;
       } catch (error: unknown) {
+        lastError = error;
         const retryAfter = extractRetryAfter(error);
         if (retryAfter !== null && attempt < SEND_RETRIES - 1) {
           this.logger.warn(`Telegram rate limit, waiting ${retryAfter}s...`);
           await sleep(retryAfter * 1000 + 500);
         } else {
-          this.logger.error('Telegram send failed', error);
-          return false;
+          break;
         }
       }
     }
+    this.logger.error('Telegram send failed', lastError);
     return false;
   }
 

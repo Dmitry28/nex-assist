@@ -24,13 +24,13 @@ export class ListingNotifierService {
     const { total, newListings, removedListings, specialListings, newSpecialListings } = result;
 
     await this.telegram.sendMessage(
-      buildSummary(
+      buildSummary({
         total,
-        newListings.length,
-        removedListings.length,
-        specialListings.length,
-        newSpecialListings.length,
-      ),
+        newCount: newListings.length,
+        removedCount: removedListings.length,
+        specialCount: specialListings.length,
+        newSpecialCount: newSpecialListings.length,
+      }),
     );
 
     if (newListings.length) await this.sendListings(newListings, 'Новые:');
@@ -91,15 +91,24 @@ export class ListingNotifierService {
 
 // ─── Domain formatting helpers ────────────────────────────────────────────────
 
-const isEmpty = (val: string | undefined): boolean => !val || EMPTY_VALUES.has(val);
+/** Type predicate — narrows `string | undefined` to `string`, excluding empty/unknown values. */
+const hasValue = (val: string | undefined): val is string => !!val && !EMPTY_VALUES.has(val);
 
-const buildSummary = (
-  total: number,
-  newCount: number,
-  removedCount: number,
-  specialCount: number,
-  newSpecialCount: number,
-): string =>
+interface SummaryParams {
+  total: number;
+  newCount: number;
+  removedCount: number;
+  specialCount: number;
+  newSpecialCount: number;
+}
+
+const buildSummary = ({
+  total,
+  newCount,
+  removedCount,
+  specialCount,
+  newSpecialCount,
+}: SummaryParams): string =>
   [
     `<b>📊 Сводка на ${new Date().toLocaleDateString('ru-RU')}</b>`,
     `📋 Всего объявлений: <b>${total}</b>`,
@@ -136,18 +145,18 @@ const buildCaption = (listing: Listing, header: string, index: number, total: nu
     `${emoji} <b>${listing.title}</b>`,
   ];
 
-  if (!isEmpty(listing.address)) lines.push(`📍 ${listing.address}`);
+  if (hasValue(listing.address)) lines.push(`📍 ${listing.address}`);
 
-  const pricePart = !isEmpty(listing.price) ? `💰 ${listing.price}` : '';
-  const areaPart = !isEmpty(listing.area) ? `📐 ${listing.area}` : '';
+  const pricePart = hasValue(listing.price) ? `💰 ${listing.price}` : '';
+  const areaPart = hasValue(listing.area) ? `📐 ${listing.area}` : '';
   if (pricePart || areaPart)
     lines.push(['', pricePart, areaPart].filter(Boolean).join('  ·  ').trim());
 
-  if (!isEmpty(listing.auctionDate))
-    lines.push(`🗓 Аукцион: ${formatAuctionDate(listing.auctionDate!)}`);
-  if (!isEmpty(listing.applicationDeadline))
-    lines.push(`📅 Заявки до: ${formatDeadline(listing.applicationDeadline!)}`);
-  if (!isEmpty(listing.communications)) lines.push(`⚡ ${listing.communications}`);
+  if (hasValue(listing.auctionDate))
+    lines.push(`🗓 Аукцион: ${formatAuctionDate(listing.auctionDate)}`);
+  if (hasValue(listing.applicationDeadline))
+    lines.push(`📅 Заявки до: ${formatDeadline(listing.applicationDeadline)}`);
+  if (hasValue(listing.communications)) lines.push(`⚡ ${listing.communications}`);
 
   const linkParts: string[] = [`<a href="${listing.link}">🔗 Подробнее</a>`];
   if (listing.cadastralMapUrl) linkParts.push(`<a href="${listing.cadastralMapUrl}">📌 Карта</a>`);

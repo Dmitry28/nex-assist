@@ -1,6 +1,5 @@
 import * as Joi from 'joi';
-import { APP_DEFAULTS } from './constants';
-import { LAND_AUCTIONS_DEFAULTS } from './land-auctions.config';
+import { APP_DEFAULTS, LAND_AUCTIONS_DEFAULTS } from './constants';
 
 /**
  * Joi schema for environment variable validation.

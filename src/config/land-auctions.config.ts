@@ -1,16 +1,9 @@
 import { registerAs } from '@nestjs/config';
 
-/** Defaults — avoids magic strings scattered across files. */
-export const LAND_AUCTIONS_DEFAULTS = {
-  SCRAPE_URL: 'https://gcn.by/zemelnye-uchastki/zemelnye-uchastki-v-sobstvennost/',
-  /** Default cron: every day at 08:00 */
-  SCRAPE_CRON: '0 8 * * *',
-} as const;
-
 /**
  * Namespaced config — access via ConfigService.get('landAuctions.*').
- * NOTE: Joi in validation.schema.ts applies defaults, so process.env values
- * here are always defined (no fallbacks needed).
+ * Defaults are defined in src/config/constants.ts and applied by Joi at startup,
+ * so process.env values here are always populated (no fallbacks needed).
  */
 export default registerAs('landAuctions', () => ({
   scrapeUrl: process.env.SCRAPE_URL,
