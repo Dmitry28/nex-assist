@@ -173,27 +173,48 @@ const formatAuctionDate = (val: string): string => {
 
 const formatDeadline = (val: string): string => val.replace('Заявления принимаются по ', '');
 
+const shortenCommunications = (val: string): string =>
+  val
+    .replace(/электроснабжение/gi, 'свет')
+    .replace(/газоснабжение/gi, 'газ')
+    .replace(/водоснабжение/gi, 'вода')
+    .replace(/водоотведение/gi, 'канализация')
+    .replace(/теплоснабжение/gi, 'тепло');
+
 const buildCaption = ({ listing, header, index, total }: SendListingParams): string => {
   const emoji = getListingEmoji(listing.title);
+
+  // Block 1 — header + title
   const lines: string[] = [
-    `<b>${header} · ${index} из ${total}</b>`,
+    `<b>${header} · ${index}/${total}</b>`,
     '',
     `${emoji} <b>${listing.title}</b>`,
   ];
 
-  if (hasValue(listing.address)) lines.push(`📍 ${listing.address}`);
-
+  // Block 2 — location + price/area
+  const locationBlock: string[] = [];
+  if (hasValue(listing.address)) locationBlock.push(`📍 ${listing.address}`);
   const pricePart = hasValue(listing.price) ? `💰 ${listing.price}` : '';
   const areaPart = hasValue(listing.area) ? `📐 ${listing.area}` : '';
   if (pricePart || areaPart)
-    lines.push(['', pricePart, areaPart].filter(Boolean).join('  ·  ').trim());
+    locationBlock.push([pricePart, areaPart].filter(Boolean).join('  ·  '));
+  if (locationBlock.length) lines.push('', ...locationBlock);
 
-  if (hasValue(listing.auctionDate))
-    lines.push(`🗓 Аукцион: ${formatAuctionDate(listing.auctionDate)}`);
-  if (hasValue(listing.applicationDeadline))
-    lines.push(`📅 Заявки до: ${formatDeadline(listing.applicationDeadline)}`);
-  if (hasValue(listing.communications)) lines.push(`⚡ ${listing.communications}`);
+  // Block 3 — dates + communications
+  const infoBlock: string[] = [];
+  const auctionPart = hasValue(listing.auctionDate)
+    ? `🗓 ${formatAuctionDate(listing.auctionDate)}`
+    : '';
+  const deadlinePart = hasValue(listing.applicationDeadline)
+    ? `📅 до ${formatDeadline(listing.applicationDeadline)}`
+    : '';
+  if (auctionPart || deadlinePart)
+    infoBlock.push([auctionPart, deadlinePart].filter(Boolean).join('  ·  '));
+  if (hasValue(listing.communications))
+    infoBlock.push(`⚡ ${shortenCommunications(listing.communications)}`);
+  if (infoBlock.length) lines.push('', ...infoBlock);
 
+  // Block 4 — links
   const linkParts: string[] = [`<a href="${listing.link}">🔗 Подробнее</a>`];
   if (listing.cadastralMapUrl) linkParts.push(`<a href="${listing.cadastralMapUrl}">📌 Карта</a>`);
   lines.push('', linkParts.join('  ·  '));
