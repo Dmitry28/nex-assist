@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [dev-nestjs, main]
+    branches: [dev-nestjs, dev, main]
   pull_request:
-    branches: [dev-nestjs, main]
+    branches: [dev-nestjs, dev, main]
 
 jobs:
   lint-and-test:
@@ -23,6 +23,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Format check
+        run: npm run format:check
+
       - name: Lint
         run: npm run lint
 
@@ -30,7 +33,10 @@ jobs:
         run: npm run build
 
       - name: Unit tests
-        run: npm test -- --passWithNoTests
+        run: npm run test:ci -- --passWithNoTests
 
       - name: E2E tests
         run: npm run test:e2e -- --passWithNoTests
+
+      - name: Dead code check
+        run: npm run check:dead-code
