@@ -18,17 +18,29 @@ async function bootstrap(): Promise<void> {
     logger: ['log', 'warn', 'error'],
   });
 
+  let failed = false;
+
   try {
-    // Run independently — one failure must not prevent the other from running
-    const results = await Promise.allSettled([
-      app.get(LandAuctionsService).run(),
-      app.get(BidCarsService).run(),
-    ]);
-    const failed = results.filter(r => r.status === 'rejected');
-    if (failed.length > 0) process.exit(1);
+    // Run sequentially to avoid two Puppeteer instances competing for memory.
+    // Each scraper is wrapped independently so one failure does not skip the other.
+    try {
+      await app.get(LandAuctionsService).run();
+    } catch (err) {
+      console.error('LandAuctions scrape failed:', err);
+      failed = true;
+    }
+
+    try {
+      await app.get(BidCarsService).run();
+    } catch (err) {
+      console.error('BidCars scrape failed:', err);
+      failed = true;
+    }
   } finally {
     await app.close();
   }
+
+  if (failed) process.exit(1);
 }
 
 bootstrap().catch(err => {

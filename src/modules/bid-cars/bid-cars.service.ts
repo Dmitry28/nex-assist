@@ -14,6 +14,8 @@ import { DATA_FILES } from './constants';
 import { BidCarsParserService } from './bid-cars-parser.service';
 import { BidCarsNotifierService } from './bid-cars-notifier.service';
 
+// Minimal check: only 'link' presence is verified — sufficient because snapshot files
+// are module-specific and will never contain cross-module data.
 const isCarListing = (item: unknown): item is CarListing =>
   typeof item === 'object' && item !== null && 'link' in item;
 
