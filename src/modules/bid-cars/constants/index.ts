@@ -24,10 +24,13 @@ export const DATA_FILES = {
   all: './data/bid_cars_all.json',
   new: './data/bid_cars_new.json',
   removed: './data/bid_cars_removed.json',
+  /** VINs already notified as sold — prevents duplicate sold notifications. */
+  soldVins: './data/bid_cars_sold_vins.json',
 } as const;
 
 /** Section headers used in Telegram listing notifications. */
 export const NOTIFICATION_HEADERS = {
   new: 'Новые авто:',
   removed: 'Снятые с продажи:',
+  sold: 'Продано:',
 } as const;

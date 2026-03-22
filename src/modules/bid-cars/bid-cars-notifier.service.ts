@@ -141,6 +141,13 @@ const buildCaption = ({ listing, header, index, total }: SendListingParams): str
   if (hasValue(listing.location)) lines.push(`📍 ${listing.location}`);
   if (hasValue(listing.auctionDate)) lines.push(`🗓 ${listing.auctionDate}`);
 
+  // Auction source + seller
+  if (hasValue(listing.auctionSource) || hasValue(listing.seller)) {
+    lines.push('');
+    if (hasValue(listing.auctionSource)) lines.push(`🏛 ${listing.auctionSource}`);
+    if (hasValue(listing.seller)) lines.push(`👤 ${listing.seller}`);
+  }
+
   // Identifiers
   if (hasValue(listing.lot)) lines.push('', `Лот: ${listing.lot}`);
   if (hasValue(listing.vin)) lines.push(`VIN: <code>${listing.vin}</code>`);
