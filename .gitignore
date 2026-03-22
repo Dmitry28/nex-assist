@@ -35,8 +35,8 @@ Thumbs.db
 coverage/
 .nyc_output/
 
-# Data files (runtime snapshots — auto-created, not committed)
-/data/
+# Runtime snapshots (auto-created by land-auctions module, not committed)
+/data/land_auctions_*.json
 
 # Claude Code (local settings only)
 .claude/settings.json
