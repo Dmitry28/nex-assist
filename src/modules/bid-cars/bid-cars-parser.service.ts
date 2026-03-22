@@ -1,6 +1,10 @@
 import { Injectable, Logger } from '@nestjs/common';
-import puppeteer, { type Browser, type Page } from 'puppeteer';
+import puppeteerExtra from 'puppeteer-extra';
+import StealthPlugin from 'puppeteer-extra-plugin-stealth';
+import type { Browser, Page } from 'puppeteer';
 import type { CarListing } from './dto/car-listing.dto';
+
+puppeteerExtra.use(StealthPlugin());
 import { CARD_WALK_DEPTH, MAX_PAGES, PAGE_TIMEOUT_MS } from './constants';
 
 /**
@@ -23,7 +27,7 @@ export class BidCarsParserService {
   private readonly logger = new Logger(BidCarsParserService.name);
 
   async fetchListings(url: string): Promise<CarListing[]> {
-    const browser: Browser = await puppeteer.launch({
+    const browser: Browser = await puppeteerExtra.launch({
       headless: true,
       args: [
         '--no-sandbox',
@@ -44,11 +48,6 @@ export class BidCarsParserService {
   /** Scrape all available fields from each card on the search results page. */
   private async scrapeResultsPage(browser: Browser, url: string): Promise<CarListing[]> {
     const page: Page = await browser.newPage();
-
-    // Mask headless detection — bid.cars uses Cloudflare which checks navigator.webdriver
-    await page.evaluateOnNewDocument(() => {
-      Object.defineProperty(navigator, 'webdriver', { get: () => false });
-    });
 
     // Some sites block requests without a realistic user agent
     await page.setUserAgent(
