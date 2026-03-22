@@ -14,21 +14,30 @@ import { AppModule } from '../app.module';
 import { ListingNotifierService } from '../modules/land-auctions/listing-notifier.service';
 import type { LandAuctionsResult, Listing } from '../modules/land-auctions/dto/listing.dto';
 
+// Public-domain placeholder images (Wikimedia Commons) — realistic sizes, no external deps
+const SAMPLE_IMAGES = [
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Camponotus_flavomarginatus_ant.jpg/320px-Camponotus_flavomarginatus_ant.jpg',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/PNG_transparency_demonstration_1.png/320px-PNG_transparency_demonstration_1.png',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bikewest_shark_bay.jpg/320px-Bikewest_shark_bay.jpg',
+];
+
 const MOCK_LISTINGS: Listing[] = [
   {
+    // Multiple photos → sent as media group
     title: 'Земельный участок в д. Заболоть Минского р-на',
     link: 'https://gcn.by/auction/12345',
     price: '45 000 руб.',
     area: '0.25 га',
-    address: 'Минский р-н, Минский р-н, д. Заболоть',
+    address: 'Минский р-н, д. Заболоть',
     cadastralNumber: '500267890123',
     cadastralMapUrl: 'https://map.nca.by/#!/map?cn=500267890123',
     auctionDate: 'Аукцион состоится 15.04.2026',
     applicationDeadline: 'Заявления принимаются по 10.04.2026',
     communications: 'электроснабжение, газоснабжение, водоснабжение',
-    images: [],
+    images: SAMPLE_IMAGES,
   },
   {
+    // Single photo → sent as sendPhoto
     title: 'Жилой дом в аг. Колодищи',
     link: 'https://gcn.by/auction/67890',
     price: '120 000 руб.',
@@ -39,9 +48,10 @@ const MOCK_LISTINGS: Listing[] = [
     auctionDate: 'Проведение аукциона планируется 20.04.2026',
     applicationDeadline: 'Заявления принимаются по 15.04.2026',
     communications: 'электроснабжение, водоснабжение, водоотведение, теплоснабжение',
-    images: [],
+    images: [SAMPLE_IMAGES[0]],
   },
   {
+    // No photos, all fields missing → sent as plain text
     title: 'Незавершённое строительство в г. Дзержинск',
     link: 'https://gcn.by/auction/11111',
     price: 'Не найдено',
