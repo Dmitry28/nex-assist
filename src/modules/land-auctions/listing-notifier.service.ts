@@ -72,14 +72,9 @@ export class ListingNotifierService {
   private async sendListings(listings: Listing[], header: string): Promise<void> {
     const failed: Listing[] = [];
 
-    for (let i = 0; i < listings.length; i++) {
-      const ok = await this.sendListing({
-        listing: listings[i],
-        header,
-        index: i + 1,
-        total: listings.length,
-      });
-      if (!ok) failed.push(listings[i]);
+    for (const [i, listing] of listings.entries()) {
+      const ok = await this.sendListing({ listing, header, index: i + 1, total: listings.length });
+      if (!ok) failed.push(listing);
       if (i < listings.length - 1) await sleep(TELEGRAM_SEND_DELAY_MS);
     }
 
@@ -154,10 +149,10 @@ const buildSummary = ({
   [
     `<b>📊 Сводка на ${date.toLocaleDateString('ru-RU')}</b>`,
     `📋 Всего объявлений: <b>${total}</b>`,
-    newCount ? `🆕 Новые: <b>${newCount}</b>` : '🆕 Новые: 0',
-    removedCount ? `🗑 Удалённые: <b>${removedCount}</b>` : '🗑 Удалённые: 0',
+    `🆕 Новые: <b>${newCount}</b>`,
+    `🗑 Удалённые: <b>${removedCount}</b>`,
     `🌿 Всего в Заболоть: <b>${specialCount}</b>`,
-    newSpecialCount ? `✅ Новые в Заболоть: <b>${newSpecialCount}</b>` : '✅ Новые в Заболоть: 0',
+    `✅ Новые в Заболоть: <b>${newSpecialCount}</b>`,
   ].join('\n');
 
 const getListingEmoji = (title: string | undefined): string => {
