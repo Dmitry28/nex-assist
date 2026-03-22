@@ -1,16 +1,12 @@
-## What
+## Summary
 
-<!-- Brief description of what this PR does -->
+### User impact
+<!-- Visible changes: new features, API changes, bug fixes affecting behaviour. Skip if none. -->
 
-## Why
+### Technical impact
+<!-- Internal changes: refactors, dependency updates, CI, tooling, infrastructure. Skip if none. -->
 
-<!-- Why is this change needed? Link to issue if applicable. Closes #... -->
-
-## How
-
-<!-- Key implementation details, architectural decisions, anything non-obvious -->
-
-## Checklist
+## Test plan
 
 - [ ] Code follows project conventions
 - [ ] Tests added/updated

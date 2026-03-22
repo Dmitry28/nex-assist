@@ -28,9 +28,10 @@ Ask: **"Run full lint and tests? This may take a moment."**
 
 If approved:
 
-1. `npm run lint`
-2. `npm test`
-3. `npm run build`
+1. `npm run typecheck`
+2. `npm run lint`
+3. `npm run test:ci`
+4. `npm run build`
 
 ## Output
 
@@ -39,6 +40,7 @@ If approved:
 ✅ tsc
 ✅ tests (changed files)
 --- approved ---
+✅ typecheck
 ✅ lint
 ✅ tests (full)
 ✅ build

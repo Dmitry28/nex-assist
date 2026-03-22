@@ -7,14 +7,18 @@
 ## Key Commands
 
 ```bash
-npm run start:dev    # dev server with hot-reload
-npm run build        # compile TypeScript
-npm run start:prod   # run production build
-npm run lint         # ESLint
-npm run lint:fix     # ESLint with auto-fix
-npm test             # unit tests
-npm run test:e2e     # e2e tests
-npm run test:cov     # tests with coverage
+npm run start:dev       # dev server with hot-reload
+npm run build           # compile TypeScript
+npm run start:prod      # run production build
+npm run typecheck       # type check without emitting (fast)
+npm run lint            # ESLint
+npm run lint:fix        # ESLint with auto-fix
+npm run format:check    # Prettier check (no writes)
+npm run test:ci         # unit tests (CI mode, no snapshot update)
+npm test                # unit tests (local, updates snapshots)
+npm run test:e2e        # e2e tests
+npm run test:cov        # tests with coverage report
+npm run check:dead-code # detect unused exports and dependencies
 ```
 
 ## Key Files
