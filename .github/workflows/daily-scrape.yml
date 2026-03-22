@@ -2,7 +2,7 @@ name: Daily Land Scraping
 
 on:
   schedule:
-    - cron: '0 8 * * *'  # Runs at 8:00 UTC (11:00 Belarus time)
+    - cron: '0 9 * * *'  # 09:00 UTC (12:00 Minsk time)
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
