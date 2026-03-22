@@ -1,0 +1,16 @@
+services:
+  app:
+    build:
+      context: .
+      target: builder   # dev: uses builder stage with devDeps
+    command: npm run start:dev
+    ports:
+      - '${PORT:-3000}:3000'
+    volumes:
+      - .:/app
+      - /app/node_modules  # prevent host node_modules from overriding container
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: development
+    restart: unless-stopped

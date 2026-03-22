@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Data files
+src/data/*.json
+!src/data/.gitkeep
+
+# Claude Code (local settings only)
+.claude/settings.json
+.claude/settings.local.json
+.claude/memory/
+.claude/worktrees/
+
+# Misc
+*.tsbuildinfo
