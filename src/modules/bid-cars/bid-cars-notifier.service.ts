@@ -126,18 +126,18 @@ const buildCaption = ({ listing, header, index, total }: SendListingParams): str
     `🚗 <b>${listing.title ?? 'Без названия'}</b>`,
   ];
 
-  // Prices
-  const priceDetails: string[] = [];
-  if (hasValue(listing.currentBid)) priceDetails.push(`🔨 Bid: ${listing.currentBid}`);
-  if (hasValue(listing.buyNow)) priceDetails.push(`⚡ BIN: ${listing.buyNow}`);
-  if (priceDetails.length) lines.push('', priceDetails.join('  ·  '));
+  // Prices — most important, shown first
+  const prices: string[] = [];
+  if (hasValue(listing.currentBid)) prices.push(`💰 Ставка: ${listing.currentBid}`);
+  if (hasValue(listing.buyNow)) prices.push(`⚡ BIN: ${listing.buyNow}`);
+  if (prices.length) lines.push('', prices.join('  ·  '));
 
-  // Damage + document type
+  // Damage + running condition + document type
   if (hasValue(listing.damage)) lines.push('', `💥 ${listing.damage}`);
-  const condParts: string[] = [];
-  if (hasValue(listing.condition)) condParts.push(`🚦 ${listing.condition}`);
-  if (hasValue(listing.keys)) condParts.push(`📄 ${listing.keys}`);
-  if (condParts.length) lines.push(condParts.join('  ·  '));
+  const status: string[] = [];
+  if (hasValue(listing.condition)) status.push(`🚦 ${listing.condition}`);
+  if (hasValue(listing.keys)) status.push(`📄 ${listing.keys}`);
+  if (status.length) lines.push(status.join('  ·  '));
 
   // Odometer + engine
   const specs: string[] = [];
@@ -145,14 +145,16 @@ const buildCaption = ({ listing, header, index, total }: SendListingParams): str
   if (hasValue(listing.engine)) specs.push(`🔧 ${listing.engine}`);
   if (specs.length) lines.push('', specs.join('  ·  '));
 
-  // Location + auction date
-  if (hasValue(listing.location)) lines.push(`📍 ${listing.location}`);
-  if (hasValue(listing.auctionDate)) lines.push(`🗓 ${listing.auctionDate}`);
+  // Location + auction date on one line
+  const place: string[] = [];
+  if (hasValue(listing.location)) place.push(`📍 ${listing.location}`);
+  if (hasValue(listing.auctionDate)) place.push(`🗓 ${listing.auctionDate}`);
+  if (place.length) lines.push(place.join('  ·  '));
 
   // Identifiers
   const ids: string[] = [];
   if (hasValue(listing.lot)) ids.push(`Лот: ${listing.lot}`);
-  if (hasValue(listing.vin)) ids.push(`VIN: ${listing.vin}`);
+  if (hasValue(listing.vin)) ids.push(`VIN: <code>${listing.vin}</code>`);
   if (ids.length) lines.push('', ids.join('  ·  '));
 
   lines.push('', `<a href="${listing.link}">🔗 Подробнее</a>`);
