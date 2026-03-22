@@ -39,5 +39,11 @@ coverage/
 src/data/*.json
 !src/data/.gitkeep
 
+# Claude Code (local settings only)
+.claude/settings.json
+.claude/settings.local.json
+.claude/memory/
+.claude/worktrees/
+
 # Misc
 *.tsbuildinfo
