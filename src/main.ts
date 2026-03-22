@@ -4,6 +4,7 @@ import { ConfigService } from '@nestjs/config';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import helmet from 'helmet';
 import { AppModule } from './app.module';
+import { APP_DEFAULTS } from './config/constants';
 
 const logger = new Logger('Bootstrap');
 
@@ -21,8 +22,8 @@ async function bootstrap(): Promise<void> {
   });
 
   const config = app.get(ConfigService);
-  const port = config.get<number>('app.port', 3000);
-  const name = config.get<string>('app.name', 'land-scraper');
+  const port = config.get<number>('app.port', APP_DEFAULTS.PORT);
+  const name = config.get<string>('app.name', APP_DEFAULTS.APP_NAME);
 
   // Security headers
   app.use(helmet());
