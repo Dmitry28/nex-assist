@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [dev-nestjs, dev, main]
+    branches: [dev, main]
   pull_request:
-    branches: [dev-nestjs, dev, main]
+    branches: [dev, main]
 
 jobs:
   lint-and-test:
@@ -43,3 +43,7 @@ jobs:
 
       - name: Dead code check
         run: npm run check:dead-code
+
+      - name: Security audit
+        run: npm audit --audit-level=high
+        continue-on-error: true
