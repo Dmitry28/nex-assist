@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import TelegramBot from 'node-telegram-bot-api';
 import { sleep } from '../../common/utils/sleep';
@@ -19,6 +19,7 @@ import {
  */
 @Injectable()
 export class ListingNotifierService {
+  private readonly logger = new Logger(ListingNotifierService.name);
   private readonly chatId: string;
 
   constructor(
@@ -34,6 +35,10 @@ export class ListingNotifierService {
    * so the items remain "new" and will be retried on the next run.
    */
   async notifyRunResult(result: LandAuctionsResult): Promise<void> {
+    if (!this.chatId) {
+      this.logger.warn('chatId not set — skipping Telegram notification');
+      return;
+    }
     const { total, newListings, removedListings, specialListings, newSpecialListings } = result;
 
     const ok = await this.telegram.sendMessage(
@@ -59,6 +64,7 @@ export class ListingNotifierService {
 
   /** Send a critical error notification. */
   async notifyError(message: string): Promise<void> {
+    if (!this.chatId) return;
     await this.telegram.sendMessage(this.chatId, `⚠️ Ошибка скрапинга:\n<code>${message}</code>`);
   }
 

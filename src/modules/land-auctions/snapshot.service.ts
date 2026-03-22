@@ -20,7 +20,13 @@ export class SnapshotService {
         this.logger.warn(`Snapshot at ${filePath} is not an array, resetting.`);
         return [];
       }
-      return parsed as Listing[];
+      const isListing = (item: unknown): item is Listing =>
+        typeof item === 'object' && item !== null && 'link' in item;
+      if (!parsed.every(isListing)) {
+        this.logger.warn(`Snapshot at ${filePath} has unexpected shape, resetting.`);
+        return [];
+      }
+      return parsed;
     } catch (error: unknown) {
       const isNotFound = (error as NodeJS.ErrnoException).code === 'ENOENT';
       if (isNotFound) {
