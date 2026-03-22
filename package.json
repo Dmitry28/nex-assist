@@ -16,6 +16,7 @@
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
+    "scrape": "ts-node -r tsconfig-paths/register src/scripts/scrape.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"{src,test}/**/*.ts\" --cache",
     "lint:fix": "eslint \"{src,test}/**/*.ts\" --fix --cache",
