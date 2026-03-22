@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import TelegramBot from 'node-telegram-bot-api';
+import { sleep } from '../../common/utils/sleep';
 import { TelegramService } from '../telegram/telegram.service';
 import type { LandAuctionsResult, Listing } from './dto/listing.dto';
 import {
@@ -157,5 +158,3 @@ const buildCaption = (listing: Listing, header: string, index: number, total: nu
 
 const truncateCaption = (text: string): string =>
   text.length <= TELEGRAM_CAPTION_LIMIT ? text : text.slice(0, TELEGRAM_CAPTION_LIMIT - 3) + '...';
-
-const sleep = (ms: number): Promise<void> => new Promise(resolve => setTimeout(resolve, ms));

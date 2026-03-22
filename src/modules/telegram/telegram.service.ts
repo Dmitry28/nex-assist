@@ -1,8 +1,8 @@
 import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import TelegramBot from 'node-telegram-bot-api';
-
-const SEND_RETRIES = 3;
+import { sleep } from '../../common/utils/sleep';
+import { SEND_RETRIES } from './constants';
 
 /**
  * Generic Telegram bot wrapper.
@@ -57,7 +57,7 @@ export class TelegramService implements OnModuleInit {
   }
 
   /**
-   * Retries the given send function up to SEND_RETRIES times.
+   * Retries fn up to SEND_RETRIES times.
    * On a Telegram 429 rate-limit response, waits the requested retry_after delay.
    */
   private async withRetry(fn: () => Promise<void>): Promise<boolean> {
@@ -85,12 +85,25 @@ export class TelegramService implements OnModuleInit {
   }
 }
 
-const sleep = (ms: number): Promise<void> => new Promise(resolve => setTimeout(resolve, ms));
+// ─── Helpers ─────────────────────────────────────────────────────────────────
 
-/** Extract retry_after seconds from a Telegram 429 error response, or null. */
+interface TelegramRateLimitError {
+  response: { body: { parameters: { retry_after: number } } };
+}
+
+/** Type guard for Telegram 429 rate-limit error shape. */
+function isTelegramRateLimitError(error: unknown): error is TelegramRateLimitError {
+  if (typeof error !== 'object' || error === null) return false;
+  const e = error as Record<string, unknown>;
+  const body = (e.response as Record<string, unknown> | undefined)?.body as
+    | Record<string, unknown>
+    | undefined;
+  const params = body?.parameters as Record<string, unknown> | undefined;
+  return typeof params?.retry_after === 'number';
+}
+
+/** Extract retry_after seconds from a Telegram 429 error, or null. */
 const extractRetryAfter = (error: unknown): number | null => {
-  if (typeof error !== 'object' || error === null) return null;
-  const retryAfter = (error as { response?: { body?: { parameters?: { retry_after?: unknown } } } })
-    .response?.body?.parameters?.retry_after;
-  return typeof retryAfter === 'number' ? retryAfter : null;
+  if (!isTelegramRateLimitError(error)) return null;
+  return error.response.body.parameters.retry_after;
 };

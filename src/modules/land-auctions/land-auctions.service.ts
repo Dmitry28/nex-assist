@@ -1,6 +1,7 @@
-import { Injectable, Logger } from '@nestjs/common';
+import { ConflictException, Injectable, Logger, OnModuleInit } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { Cron, CronExpression } from '@nestjs/schedule';
+import { SchedulerRegistry } from '@nestjs/schedule';
+import { CronJob } from 'cron';
 import type { LandAuctionsResult } from './dto/listing.dto';
 import { DATA_FILES, SPECIAL_KEYWORD } from './constants';
 import { GcnParserService } from './gcn-parser.service';
@@ -13,30 +14,38 @@ import { SnapshotService } from './snapshot.service';
  *   2. Diff against the previous snapshot → detect new / removed listings
  *   3. Send Telegram notifications
  *   4. Persist updated snapshots to disk
+ *
+ * The cron schedule is read from config at runtime (SCRAPE_CRON env var),
+ * which is why we use dynamic scheduling via SchedulerRegistry instead of
+ * the @Cron decorator (decorators are evaluated before ConfigModule loads).
  */
 @Injectable()
-export class LandAuctionsService {
+export class LandAuctionsService implements OnModuleInit {
   private readonly logger = new Logger(LandAuctionsService.name);
   /** Prevents concurrent runs (e.g. cron fires while a manual run is in progress). */
   private isRunning = false;
 
   constructor(
     private readonly config: ConfigService,
+    private readonly scheduler: SchedulerRegistry,
     private readonly parser: GcnParserService,
     private readonly snapshot: SnapshotService,
     private readonly notifier: ListingNotifierService,
   ) {}
 
-  @Cron(process.env.SCRAPE_CRON ?? CronExpression.EVERY_DAY_AT_8AM)
-  async runScheduled(): Promise<void> {
-    this.logger.log('Scheduled scrape started');
-    await this.run();
+  onModuleInit(): void {
+    const cron = this.config.getOrThrow<string>('landAuctions.scrapeCron');
+    const job = new CronJob(cron, () => {
+      void this.runScheduled();
+    });
+    this.scheduler.addCronJob('land-auctions-scrape', job);
+    job.start();
+    this.logger.log(`Cron scheduled: ${cron}`);
   }
 
   async run(): Promise<LandAuctionsResult> {
     if (this.isRunning) {
-      this.logger.warn('Scrape already in progress, skipping');
-      throw new Error('Scrape already in progress');
+      throw new ConflictException('Scrape already in progress');
     }
 
     this.isRunning = true;
@@ -50,6 +59,11 @@ export class LandAuctionsService {
     } finally {
       this.isRunning = false;
     }
+  }
+
+  private async runScheduled(): Promise<void> {
+    this.logger.log('Scheduled scrape started');
+    await this.run();
   }
 
   private async scrape(): Promise<LandAuctionsResult> {

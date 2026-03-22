@@ -62,7 +62,8 @@ export class GcnParserService {
       pages.map(async page => {
         try {
           while (queue.length > 0) {
-            const listing = queue.shift()!;
+            const listing = queue.shift();
+            if (!listing) break;
             const details = await this.fetchDetails(page, listing.link);
             Object.assign(listing, details);
           }

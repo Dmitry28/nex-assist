@@ -7,8 +7,12 @@ export const LAND_AUCTIONS_DEFAULTS = {
   SCRAPE_CRON: '0 8 * * *',
 } as const;
 
-/** Namespaced config — access via ConfigService.get('landAuctions.*'). */
+/**
+ * Namespaced config — access via ConfigService.get('landAuctions.*').
+ * NOTE: Joi in validation.schema.ts applies defaults, so process.env values
+ * here are always defined (no fallbacks needed).
+ */
 export default registerAs('landAuctions', () => ({
-  scrapeUrl: process.env.SCRAPE_URL ?? LAND_AUCTIONS_DEFAULTS.SCRAPE_URL,
-  scrapeCron: process.env.SCRAPE_CRON ?? LAND_AUCTIONS_DEFAULTS.SCRAPE_CRON,
+  scrapeUrl: process.env.SCRAPE_URL,
+  scrapeCron: process.env.SCRAPE_CRON,
 }));
