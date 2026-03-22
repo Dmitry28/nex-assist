@@ -1,5 +1,10 @@
 import { Controller, Get } from '@nestjs/common';
-import { HealthCheck, HealthCheckService, MemoryHealthIndicator } from '@nestjs/terminus';
+import {
+  HealthCheck,
+  HealthCheckResult,
+  HealthCheckService,
+  MemoryHealthIndicator,
+} from '@nestjs/terminus';
 
 @Controller('health')
 export class HealthController {
@@ -10,7 +15,7 @@ export class HealthController {
 
   @Get()
   @HealthCheck()
-  check() {
+  check(): Promise<HealthCheckResult> {
     return this.health.check([
       // Heap must stay under 300MB
       () => this.memory.checkHeap('memory_heap', 300 * 1024 * 1024),

@@ -1,7 +1,6 @@
-import { Module } from '@nestjs/common';
+import { Module, ValidationPipe } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { APP_FILTER, APP_INTERCEPTOR, APP_PIPE } from '@nestjs/core';
-import { ValidationPipe } from '@nestjs/common';
 import { ThrottlerModule } from '@nestjs/throttler';
 import appConfig from './config/app.config';
 import { validationSchema } from './config/validation.schema';
@@ -27,7 +26,6 @@ import { HealthModule } from './modules/health/health.module';
 
     // Rate limiting: 100 requests per 60 seconds per IP
     ThrottlerModule.forRootAsync({
-      imports: [ConfigModule],
       inject: [ConfigService],
       useFactory: (config: ConfigService) => [
         {

@@ -1,9 +1,11 @@
 import { NestFactory } from '@nestjs/core';
-import { ConsoleLogger } from '@nestjs/common';
+import { ConsoleLogger, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import helmet from 'helmet';
 import { AppModule } from './app.module';
+
+const logger = new Logger('Bootstrap');
 
 async function bootstrap(): Promise<void> {
   const isProduction = process.env.NODE_ENV === 'production';
@@ -49,9 +51,9 @@ async function bootstrap(): Promise<void> {
   }
 
   await app.listen(port);
-  console.log(`[${name}] Application running on: ${await app.getUrl()}`);
+  logger.log(`Application running on: ${await app.getUrl()}`);
   if (!isProduction) {
-    console.log(`[${name}] Swagger docs: ${await app.getUrl()}/api/docs`);
+    logger.log(`Swagger docs: ${await app.getUrl()}/api/docs`);
   }
 }
 
