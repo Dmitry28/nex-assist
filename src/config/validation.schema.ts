@@ -19,9 +19,9 @@ export const validationSchema = Joi.object({
   THROTTLE_TTL: Joi.number().default(APP_DEFAULTS.THROTTLE_TTL),
   THROTTLE_LIMIT: Joi.number().default(APP_DEFAULTS.THROTTLE_LIMIT),
 
-  // Telegram (shared across all modules that send notifications)
-  TELEGRAM_TOKEN: Joi.string().required(),
-  TELEGRAM_CHAT_ID: Joi.string().required(),
+  // Telegram — optional: if omitted, notifications are logged to console instead of sent
+  TELEGRAM_TOKEN: Joi.string().optional(),
+  TELEGRAM_CHAT_ID: Joi.string().optional(),
 
   // Land auctions module
   SCRAPE_URL: Joi.string().uri().default(LAND_AUCTIONS_DEFAULTS.SCRAPE_URL),

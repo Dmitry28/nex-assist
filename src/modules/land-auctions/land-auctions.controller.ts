@@ -3,7 +3,7 @@ import type { LandAuctionsResult } from './dto/listing.dto';
 import { LandAuctionsService } from './land-auctions.service';
 
 /**
- * Exposes a manual trigger endpoint so the scraper can be run on demand
+ * Exposes a manual trigger endpoint so the land auctions module can be run on demand
  * without waiting for the scheduled cron job.
  */
 @Controller('land-auctions')
