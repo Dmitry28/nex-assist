@@ -18,11 +18,11 @@ export const validationSchema = Joi.object({
   THROTTLE_TTL: Joi.number().default(APP_DEFAULTS.THROTTLE_TTL),
   THROTTLE_LIMIT: Joi.number().default(APP_DEFAULTS.THROTTLE_LIMIT),
 
-  // Telegram — optional: if omitted, notifications are logged to console instead of sent
+  // Telegram bot token — optional: if omitted, all modules run in dry-run mode
   TELEGRAM_TOKEN: Joi.string().optional(),
-  TELEGRAM_CHAT_ID: Joi.string().optional(),
 
   // Land auctions module
   SCRAPE_URL: Joi.string().uri().default(LAND_AUCTIONS_DEFAULTS.SCRAPE_URL),
   SCRAPE_CRON: Joi.string().default(LAND_AUCTIONS_DEFAULTS.SCRAPE_CRON),
+  TELEGRAM_LAND_AUCTIONS_CHAT_ID: Joi.string().optional(),
 });

@@ -8,4 +8,5 @@ import { registerAs } from '@nestjs/config';
 export default registerAs('landAuctions', () => ({
   scrapeUrl: process.env.SCRAPE_URL,
   scrapeCron: process.env.SCRAPE_CRON,
+  chatId: process.env.TELEGRAM_LAND_AUCTIONS_CHAT_ID,
 }));

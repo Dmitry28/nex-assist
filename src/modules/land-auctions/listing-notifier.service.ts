@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
 import TelegramBot from 'node-telegram-bot-api';
 import { sleep } from '../../common/utils/sleep';
 import { TelegramService } from '../telegram/telegram.service';
@@ -18,7 +19,14 @@ import {
  */
 @Injectable()
 export class ListingNotifierService {
-  constructor(private readonly telegram: TelegramService) {}
+  private readonly chatId: string;
+
+  constructor(
+    private readonly telegram: TelegramService,
+    config: ConfigService,
+  ) {
+    this.chatId = config.get<string>('landAuctions.chatId') ?? '';
+  }
 
   /**
    * Send the daily run summary and per-listing messages for new/removed/special listings.
@@ -29,6 +37,7 @@ export class ListingNotifierService {
     const { total, newListings, removedListings, specialListings, newSpecialListings } = result;
 
     const ok = await this.telegram.sendMessage(
+      this.chatId,
       buildSummary({
         date: new Date(),
         total,
@@ -50,7 +59,7 @@ export class ListingNotifierService {
 
   /** Send a critical error notification. */
   async notifyError(message: string): Promise<void> {
-    await this.telegram.sendMessage(`⚠️ Ошибка скрапинга:\n<code>${message}</code>`);
+    await this.telegram.sendMessage(this.chatId, `⚠️ Ошибка скрапинга:\n<code>${message}</code>`);
   }
 
   /** Send all listings sequentially with a delay to stay within Telegram rate limits. */
@@ -71,6 +80,7 @@ export class ListingNotifierService {
     if (failed.length > 0) {
       const list = failed.map(l => `• ${l.title}`).join('\n');
       await this.telegram.sendMessage(
+        this.chatId,
         `⚠️ Не удалось отправить ${failed.length} объект(а):\n${list}`,
       );
     }
@@ -95,14 +105,14 @@ export class ListingNotifierService {
         }
         return item;
       });
-      return this.telegram.sendMediaGroup(media);
+      return this.telegram.sendMediaGroup(this.chatId, media);
     }
 
     if (photos.length === 1) {
-      return this.telegram.sendPhoto(photos[0], caption);
+      return this.telegram.sendPhoto(this.chatId, photos[0], caption);
     }
 
-    return this.telegram.sendMessage(caption);
+    return this.telegram.sendMessage(this.chatId, caption);
   }
 }
 
