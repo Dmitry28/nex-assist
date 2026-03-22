@@ -23,7 +23,7 @@ async function bootstrap(): Promise<void> {
 
     const url = config.getOrThrow<string>('bidCars.scrapeUrl');
     const allListings = await parser.fetchListings(url);
-    const listings = allListings.slice(0, 3);
+    const listings = allListings.slice(0, 5);
 
     console.info(`Scraped ${allListings.length} total, sending ${listings.length} to Telegram`);
     console.info('Sample listing:', JSON.stringify(listings[0], null, 2));
