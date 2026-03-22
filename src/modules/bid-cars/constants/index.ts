@@ -4,6 +4,9 @@ export const PAGE_TIMEOUT_MS = 30_000;
 /** Max DOM levels to walk up when finding a card container around a lot link. */
 export const CARD_WALK_DEPTH = 8;
 
+/** Max pages to load via "Load more" pagination to prevent runaway scraping. */
+export const MAX_PAGES = 10;
+
 /** Telegram max caption length in characters. */
 export const TELEGRAM_CAPTION_LIMIT = 1024;
 

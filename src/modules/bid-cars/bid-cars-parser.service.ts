@@ -1,7 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import puppeteer, { type Browser, type Page } from 'puppeteer';
 import type { CarListing } from './dto/car-listing.dto';
-import { CARD_WALK_DEPTH, PAGE_TIMEOUT_MS } from './constants';
+import { CARD_WALK_DEPTH, MAX_PAGES, PAGE_TIMEOUT_MS } from './constants';
 
 /**
  * Scrapes bid.cars search results using Puppeteer.
@@ -55,6 +55,30 @@ export class BidCarsParserService {
           'No lot links found — page may not have rendered or search returned 0 results',
         );
         return [];
+      }
+
+      // Click "Загрузить больше" until it disappears or MAX_PAGES is reached
+      for (let pageNum = 2; pageNum <= MAX_PAGES; pageNum++) {
+        const btn = await page.$('div.load-more a[data-next-page]');
+        if (!btn) break;
+
+        const prevCount = await page.evaluate(
+          () => document.querySelectorAll('a[href*="/lot/"]').length,
+        );
+
+        await btn.click();
+
+        try {
+          await page.waitForFunction(
+            (prev: number) => document.querySelectorAll('a[href*="/lot/"]').length > prev,
+            { timeout: PAGE_TIMEOUT_MS },
+            prevCount,
+          );
+          this.logger.log(`Loaded page ${pageNum}`);
+        } catch {
+          this.logger.warn(`Load more timed out on page ${pageNum}`);
+          break;
+        }
       }
 
       const listings = await page.evaluate((walkDepth: number): CarListing[] => {
