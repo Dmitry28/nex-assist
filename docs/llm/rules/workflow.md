@@ -15,6 +15,7 @@ One loop for all tasks. Plan depth scales with task complexity.
 - For complex tasks: complete one milestone at a time
 - Keep changes focused and atomic
 - Implement → verify → report results. **Commit only after explicit approval.**
+- After opening a PR — always open it in the browser: `open <pr_url>`
 
 ## 3. Verify
 
