@@ -47,3 +47,6 @@ src/data/*.json
 
 # Misc
 *.tsbuildinfo
+
+# ESLint
+.eslintcache

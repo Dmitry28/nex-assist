@@ -4,11 +4,11 @@ Review code changes using team CCR rules.
 
 ## What to Analyze
 
-All changes in branch vs `origin/dev-nestjs`:
+All changes in branch vs `origin/dev`:
 
 ```bash
-git diff origin/dev-nestjs..HEAD --name-only
-git diff origin/dev-nestjs..HEAD
+git diff origin/dev..HEAD --name-only
+git diff origin/dev..HEAD
 ```
 
 ## Rules
