@@ -43,11 +43,25 @@ jobs:
           TELEGRAM_LAND_AUCTIONS_CHAT_ID: ${{ vars.TELEGRAM_LAND_AUCTIONS_CHAT_ID }}
         run: npm run scrape
 
-      - name: Commit updated snapshots
+      - name: Commit updated snapshots via PR
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
-          git diff --cached --quiet || git commit -m "chore: update scraped data [$(date '+%Y-%m-%d')]"
-          git pull --rebase
-          git push
+          if git diff --cached --quiet; then
+            echo "No data changes, skipping PR"
+            exit 0
+          fi
+          DATE=$(date '+%Y-%m-%d')
+          BRANCH="chore/data-${DATE}-${GITHUB_RUN_ID}"
+          git checkout -b "$BRANCH"
+          git commit -m "chore: update scraped data [${DATE}]"
+          git push origin "$BRANCH"
+          PR_URL=$(gh pr create \
+            --title "chore: update scraped data [${DATE}]" \
+            --body "Automated data update from daily scrape workflow." \
+            --base dev \
+            --head "$BRANCH")
+          gh pr merge "$PR_URL" --merge --admin
