@@ -2,7 +2,7 @@ import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 
 /** A single car auction listing from bid.cars. */
 export class CarListing {
-  @ApiPropertyOptional() link?: string;
+  @ApiProperty() link!: string;
   @ApiPropertyOptional() title?: string;
   @ApiPropertyOptional() price?: string;
   @ApiPropertyOptional() odometer?: string;

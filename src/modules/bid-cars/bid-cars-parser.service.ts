@@ -1,7 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import puppeteer, { type Browser, type Page } from 'puppeteer';
 import type { CarListing } from './dto/car-listing.dto';
-import { PAGE_TIMEOUT_MS } from './constants';
+import { CARD_WALK_DEPTH, PAGE_TIMEOUT_MS } from './constants';
 
 /**
  * Scrapes bid.cars search results using Puppeteer.
@@ -51,7 +51,7 @@ export class BidCarsParserService {
         return [];
       }
 
-      const listings = await page.evaluate((): CarListing[] => {
+      const listings = await page.evaluate((walkDepth: number): CarListing[] => {
         const seen = new Set<string>();
         const results: CarListing[] = [];
 
@@ -63,7 +63,7 @@ export class BidCarsParserService {
           // Find the card: walk up until the parent contains more than one lot link
           // (that means we've reached the grid/section, so stop one level below)
           let card: Element = anchor;
-          for (let i = 0; i < 8; i++) {
+          for (let i = 0; i < walkDepth; i++) {
             if (!card.parentElement) break;
             if (card.parentElement.querySelectorAll('a[href*="/lot/"]').length > 1) break;
             card = card.parentElement;
@@ -92,7 +92,7 @@ export class BidCarsParserService {
         });
 
         return results;
-      });
+      }, CARD_WALK_DEPTH);
 
       this.logger.log(`Found ${listings.length} listings`);
       return listings;

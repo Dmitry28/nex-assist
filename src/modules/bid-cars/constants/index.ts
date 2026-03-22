@@ -1,6 +1,9 @@
 /** Puppeteer navigation and selector timeouts (ms). */
 export const PAGE_TIMEOUT_MS = 30_000;
 
+/** Max DOM levels to walk up when finding a card container around a lot link. */
+export const CARD_WALK_DEPTH = 8;
+
 /** Telegram max caption length in characters. */
 export const TELEGRAM_CAPTION_LIMIT = 1024;
 

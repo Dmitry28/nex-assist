@@ -19,8 +19,13 @@ async function bootstrap(): Promise<void> {
   });
 
   try {
-    await app.get(LandAuctionsService).run();
-    await app.get(BidCarsService).run();
+    // Run independently — one failure must not prevent the other from running
+    const results = await Promise.allSettled([
+      app.get(LandAuctionsService).run(),
+      app.get(BidCarsService).run(),
+    ]);
+    const failed = results.filter(r => r.status === 'rejected');
+    if (failed.length > 0) process.exit(1);
   } finally {
     await app.close();
   }

@@ -56,7 +56,11 @@ export class BidCarsNotifierService {
 
   async notifyError(message: string): Promise<void> {
     if (!this.chatId) return;
-    await this.telegram.sendMessage(this.chatId, `⚠️ Ошибка скрапинга:\n<code>${message}</code>`);
+    const ok = await this.telegram.sendMessage(
+      this.chatId,
+      `⚠️ Ошибка скрапинга:\n<code>${message}</code>`,
+    );
+    if (!ok) this.logger.warn('Failed to send error notification to Telegram');
   }
 
   private async sendListings(listings: CarListing[], header: string): Promise<void> {
