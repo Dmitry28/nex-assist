@@ -2,7 +2,7 @@ import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import TelegramBot from 'node-telegram-bot-api';
 import { sleep } from '../../common/utils/sleep';
-import { SEND_RETRIES } from './constants';
+import { RATE_LIMIT_RETRIES } from './constants';
 
 /**
  * Generic Telegram bot wrapper.
@@ -54,19 +54,19 @@ export class TelegramService implements OnModuleInit {
   }
 
   /**
-   * Retries fn up to SEND_RETRIES times.
-   * On a Telegram 429 rate-limit response, waits the requested retry_after delay.
+   * Retries fn up to RATE_LIMIT_RETRIES times on Telegram 429 rate-limit responses.
+   * All other errors (network, 5xx, etc.) fail immediately — only 429 triggers a retry.
    */
   private async withRetry(fn: () => Promise<void>): Promise<boolean> {
     let lastError: unknown;
-    for (let attempt = 0; attempt < SEND_RETRIES; attempt++) {
+    for (let attempt = 0; attempt < RATE_LIMIT_RETRIES; attempt++) {
       try {
         await fn();
         return true;
       } catch (error: unknown) {
         lastError = error;
         const retryAfter = extractRetryAfter(error);
-        if (retryAfter !== null && attempt < SEND_RETRIES - 1) {
+        if (retryAfter !== null && attempt < RATE_LIMIT_RETRIES - 1) {
           this.logger.warn(`Telegram rate limit, waiting ${retryAfter}s...`);
           await sleep(retryAfter * 1000 + 500);
         } else {

@@ -40,7 +40,7 @@ If Telegram is down the summary send throws → snapshots are NOT updated → li
 
 **Concurrent run guard** — `isRunning` flag (safe in Node.js single-threaded model). Concurrent HTTP call gets `409 Conflict`.
 
-**Dry-run mode** — if `TELEGRAM_TOKEN` / `TELEGRAM_CHAT_ID` are absent, `TelegramService` logs to console instead of calling the API. The app starts and runs normally without credentials.
+**Dry-run mode** — if `TELEGRAM_TOKEN` / `TELEGRAM_LAND_AUCTIONS_CHAT_ID` are absent, `TelegramService` logs to console instead of calling the API. The app starts and runs normally without credentials.
 
 **Special listings** — listings whose title contains `'заболо'` (`SPECIAL_KEYWORD`) are tracked separately as the Заболоть area filter.
 
@@ -53,7 +53,8 @@ If Telegram is down the summary send throws → snapshots are NOT updated → li
 | `SCRAPE_URL` | gcn.by land auctions page | URL to scrape |
 | `SCRAPE_CRON` | `0 8 * * *` (08:00 daily) | Cron expression |
 | `TELEGRAM_TOKEN` | — | Bot token (optional; omit for dry-run) |
-| `TELEGRAM_CHAT_ID` | — | Target chat/channel ID |
+| `TELEGRAM_LAND_AUCTIONS_CHAT_ID` | — | Target chat/channel ID |
+| `API_KEY` | — | API key for `POST /run` (optional; omit to allow all) |
 
 ---
 

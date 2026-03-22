@@ -15,9 +15,19 @@ export class SnapshotService {
   async read(filePath: string): Promise<Listing[]> {
     try {
       const data = await fs.readFile(filePath, 'utf8');
-      return JSON.parse(data) as Listing[];
-    } catch {
-      this.logger.log(`No snapshot at ${filePath}, starting fresh.`);
+      const parsed: unknown = JSON.parse(data);
+      if (!Array.isArray(parsed)) {
+        this.logger.warn(`Snapshot at ${filePath} is not an array, resetting.`);
+        return [];
+      }
+      return parsed as Listing[];
+    } catch (error: unknown) {
+      const isNotFound = (error as NodeJS.ErrnoException).code === 'ENOENT';
+      if (isNotFound) {
+        this.logger.log(`No snapshot at ${filePath}, starting fresh.`);
+      } else {
+        this.logger.warn(`Failed to read snapshot at ${filePath}, starting fresh.`, error);
+      }
       return [];
     }
   }
