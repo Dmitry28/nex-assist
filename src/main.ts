@@ -32,7 +32,7 @@ async function bootstrap(): Promise<void> {
   app.enableCors({
     origin: config.get<string>('app.corsOrigin', '*'),
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Api-Key'],
   });
 
   app.setGlobalPrefix('api/v1');
