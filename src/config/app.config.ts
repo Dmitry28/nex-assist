@@ -4,4 +4,5 @@ export default registerAs('app', () => ({
   env: process.env.NODE_ENV || 'development',
   port: parseInt(process.env.PORT ?? '3000', 10),
   name: process.env.APP_NAME || 'land-scraper',
+  corsOrigin: process.env.CORS_ORIGIN || '*',
 }));
