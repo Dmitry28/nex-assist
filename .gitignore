@@ -43,6 +43,8 @@ coverage/
 .claude/settings.local.json
 .claude/memory/
 .claude/worktrees/
+docs/llm/mcp.json
+.mcp.json
 
 # Misc
 *.tsbuildinfo
