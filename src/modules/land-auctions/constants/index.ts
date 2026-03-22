@@ -1,5 +1,8 @@
 /** Number of concurrent Puppeteer pages for detail fetching. */
-export const CONCURRENCY = 4;
+export const CONCURRENCY = 2;
+
+/** Puppeteer navigation and selector timeouts (ms). */
+export const PAGE_TIMEOUT_MS = 30_000;
 
 /** Telegram max photos per media group. */
 export const MEDIA_GROUP_LIMIT = 10;
