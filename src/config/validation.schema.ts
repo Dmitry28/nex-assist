@@ -1,5 +1,5 @@
 import * as Joi from 'joi';
-import { APP_DEFAULTS } from './constants';
+import { APP_DEFAULTS, LAND_AUCTIONS_DEFAULTS } from './constants';
 
 /**
  * Joi schema for environment variable validation.
@@ -17,4 +17,12 @@ export const validationSchema = Joi.object({
   CORS_ORIGIN: Joi.string().default(APP_DEFAULTS.CORS_ORIGIN),
   THROTTLE_TTL: Joi.number().default(APP_DEFAULTS.THROTTLE_TTL),
   THROTTLE_LIMIT: Joi.number().default(APP_DEFAULTS.THROTTLE_LIMIT),
+
+  // Telegram — optional: if omitted, notifications are logged to console instead of sent
+  TELEGRAM_TOKEN: Joi.string().optional(),
+  TELEGRAM_CHAT_ID: Joi.string().optional(),
+
+  // Land auctions module
+  SCRAPE_URL: Joi.string().uri().default(LAND_AUCTIONS_DEFAULTS.SCRAPE_URL),
+  SCRAPE_CRON: Joi.string().default(LAND_AUCTIONS_DEFAULTS.SCRAPE_CRON),
 });

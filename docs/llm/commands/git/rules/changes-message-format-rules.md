@@ -33,7 +33,7 @@ Based on [Conventional Commits v1.0.0](https://www.conventionalcommits.org/en/v1
 ### Examples
 
 ```
-feat: add scraper module for land listings
+feat: add land auctions module
 fix: handle Telegram 429 rate limit with retry
 chore: update dependencies
 test: add health endpoint e2e test

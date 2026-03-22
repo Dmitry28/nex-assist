@@ -35,15 +35,16 @@ Thumbs.db
 coverage/
 .nyc_output/
 
-# Data files
-src/data/*.json
-!src/data/.gitkeep
+# Runtime snapshots (auto-created by land-auctions module, not committed)
+/data/land_auctions_*.json
 
 # Claude Code (local settings only)
 .claude/settings.json
 .claude/settings.local.json
 .claude/memory/
 .claude/worktrees/
+docs/llm/mcp.json
+.mcp.json
 
 # Misc
 *.tsbuildinfo
