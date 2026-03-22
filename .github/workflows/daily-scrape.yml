@@ -41,6 +41,7 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_LAND_AUCTIONS_CHAT_ID: ${{ vars.TELEGRAM_LAND_AUCTIONS_CHAT_ID }}
+          TELEGRAM_BID_CARS_CHAT_ID: ${{ vars.TELEGRAM_BID_CARS_CHAT_ID }}
         run: npm run scrape
 
       - name: Commit updated snapshots via PR

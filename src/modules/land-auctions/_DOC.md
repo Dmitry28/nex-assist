@@ -27,10 +27,11 @@ If Telegram is down the summary send throws → snapshots are NOT updated → li
 |---|---|
 | `LandAuctionsService` | Orchestration: cron scheduling, run guard, diff logic, error reporting |
 | `GcnParserService` | Infrastructure: Puppeteer scraping of the catalog and detail pages |
-| `SnapshotService` | Infrastructure: read/write JSON snapshots to `./data/` |
 | `ListingNotifierService` | Domain: format land-auction captions/summaries, delegate sends to `TelegramService` |
 
-`TelegramService` lives in the shared `TelegramModule` — this module only does formatting.
+Shared services (from `src/common/`):
+- `SnapshotService` — generic read/write JSON snapshots to `./data/`
+- `TelegramService` (via `TelegramModule`) — low-level Telegram API wrapper
 
 ---
 
