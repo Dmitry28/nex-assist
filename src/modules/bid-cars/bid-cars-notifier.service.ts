@@ -2,7 +2,7 @@ import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { sleep } from '../../common/utils/sleep';
 import { TelegramService } from '../telegram/telegram.service';
-import type { CarAuctionsResult, CarListing } from './dto/car-listing.dto';
+import type { BidCarsResult, CarListing } from './dto/car-listing.dto';
 import {
   EMPTY_VALUES,
   NOTIFICATION_HEADERS,
@@ -11,26 +11,26 @@ import {
 } from './constants';
 
 /**
- * Sends car auction notifications via Telegram.
+ * Sends bid.cars notifications via Telegram.
  * Formats captions and delegates sending to the shared TelegramService.
  */
 @Injectable()
-export class CarAuctionsNotifierService {
-  private readonly logger = new Logger(CarAuctionsNotifierService.name);
+export class BidCarsNotifierService {
+  private readonly logger = new Logger(BidCarsNotifierService.name);
   private readonly chatId: string;
 
   constructor(
     private readonly telegram: TelegramService,
     config: ConfigService,
   ) {
-    this.chatId = config.get<string>('carAuctions.chatId') ?? '';
+    this.chatId = config.get<string>('bidCars.chatId') ?? '';
   }
 
   /**
    * Send the run summary and per-listing messages for new/removed listings.
    * Throws if the summary fails — caller must not persist snapshot in that case.
    */
-  async notifyRunResult(result: CarAuctionsResult): Promise<void> {
+  async notifyRunResult(result: BidCarsResult): Promise<void> {
     if (!this.chatId) {
       this.logger.warn('chatId not set — skipping Telegram notification');
       return;

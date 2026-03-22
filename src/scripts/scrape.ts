@@ -10,7 +10,7 @@
  */
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from '../app.module';
-import { CarAuctionsService } from '../modules/car-auctions/car-auctions.service';
+import { BidCarsService } from '../modules/bid-cars/bid-cars.service';
 import { LandAuctionsService } from '../modules/land-auctions/land-auctions.service';
 
 async function bootstrap(): Promise<void> {
@@ -20,7 +20,7 @@ async function bootstrap(): Promise<void> {
 
   try {
     await app.get(LandAuctionsService).run();
-    await app.get(CarAuctionsService).run();
+    await app.get(BidCarsService).run();
   } finally {
     await app.close();
   }

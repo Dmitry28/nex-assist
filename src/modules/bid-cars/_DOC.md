@@ -1,4 +1,4 @@
-# Car Auctions Module
+# bid-cars Module
 
 Scrapes car auction listings from [bid.cars](https://bid.cars), diffs them against the previous run, and sends a Telegram summary.
 
@@ -8,11 +8,11 @@ Scrapes car auction listings from [bid.cars](https://bid.cars), diffs them again
 
 ```
 Cron trigger (or HTTP POST /run)
-  → CarAuctionsService.run()
+  → BidCarsService.run()
       1. BidCarsParserService  — fetch current listings from bid.cars (Puppeteer)
       2. SnapshotService       — read previous listings from disk
       3. Diff                  — detect new / removed listings
-      4. CarAuctionsNotifierService — send Telegram summary + per-listing messages
+      4. BidCarsNotifierService — send Telegram summary + per-listing messages
       5. SnapshotService       — persist updated snapshots to disk
 ```
 
@@ -25,9 +25,9 @@ If Telegram is down the summary send throws → snapshots are NOT updated → li
 
 | Service | Responsibility |
 |---|---|
-| `CarAuctionsService` | Orchestration: cron scheduling, run guard, diff logic, error reporting |
+| `BidCarsService` | Orchestration: cron scheduling, run guard, diff logic, error reporting |
 | `BidCarsParserService` | Infrastructure: Puppeteer scraping of the bid.cars search results page |
-| `CarAuctionsNotifierService` | Domain: format car-auction captions/summaries, delegate sends to `TelegramService` |
+| `BidCarsNotifierService` | Domain: format captions/summaries, delegate sends to `TelegramService` |
 
 Shared services (from `src/common/`):
 - `SnapshotService` — generic read/write JSON snapshots to `./data/`
@@ -50,10 +50,10 @@ If 0 results are returned, check:
 
 | Variable | Default | Description |
 |---|---|---|
-| `CAR_AUCTIONS_SCRAPE_URL` | bid.cars VW Atlas filter URL | URL to scrape |
-| `CAR_AUCTIONS_SCRAPE_CRON` | `0 9 * * *` (09:00 UTC daily) | Cron expression |
+| `BID_CARS_SCRAPE_URL` | bid.cars VW Atlas filter URL | URL to scrape |
+| `BID_CARS_SCRAPE_CRON` | `0 9 * * *` (09:00 UTC daily) | Cron expression |
 | `TELEGRAM_TOKEN` | — | Bot token (optional; omit for dry-run) |
-| `TELEGRAM_CAR_AUCTIONS_CHAT_ID` | — | Target chat/channel ID |
+| `TELEGRAM_BID_CARS_CHAT_ID` | — | Target chat/channel ID |
 
 ---
 
@@ -61,13 +61,13 @@ If 0 results are returned, check:
 
 | File | Contents |
 |---|---|
-| `car_auctions_all.json` | All current listings (used for next-run diff) |
-| `car_auctions_new.json` | New listings from the last run |
-| `car_auctions_removed.json` | Removed listings from the last run |
+| `bid_cars_all.json` | All current listings (used for next-run diff) |
+| `bid_cars_new.json` | New listings from the last run |
+| `bid_cars_removed.json` | Removed listings from the last run |
 
 ---
 
 ## HTTP API
 
-`POST /api/v1/car-auctions/run` — trigger a scrape immediately (returns the full result JSON).
+`POST /api/v1/bid-cars/run` — trigger a scrape immediately (returns the full result JSON).
 Returns `409` if a scrape is already in progress.

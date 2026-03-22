@@ -11,7 +11,7 @@ export class CarListing {
 }
 
 /** Result returned from one full scrape cycle. */
-export class CarAuctionsResult {
+export class BidCarsResult {
   @ApiProperty() total!: number;
   @ApiProperty({ type: [CarListing] }) newListings!: CarListing[];
   @ApiProperty({ type: [CarListing] }) removedListings!: CarListing[];

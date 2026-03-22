@@ -15,9 +15,9 @@ export const EMPTY_VALUES = new Set(['Не найдено', 'Не указано
  * Using ./data/ so the path works in both development and Docker.
  */
 export const DATA_FILES = {
-  all: './data/car_auctions_all.json',
-  new: './data/car_auctions_new.json',
-  removed: './data/car_auctions_removed.json',
+  all: './data/bid_cars_all.json',
+  new: './data/bid_cars_new.json',
+  removed: './data/bid_cars_removed.json',
 } as const;
 
 /** Section headers used in Telegram listing notifications. */

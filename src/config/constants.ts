@@ -10,7 +10,7 @@ export const LAND_AUCTIONS_DEFAULTS = {
   SCRAPE_CRON: '0 8 * * *',
 } as const;
 
-export const CAR_AUCTIONS_DEFAULTS = {
+export const BID_CARS_DEFAULTS = {
   SCRAPE_URL:
     'https://bid.cars/ru/search/results?search-type=filters&status=Active&type=Automobile&make=Volkswagen&model=Atlas&year-from=2023&year-to=2027&auction-type=All&odometer-to=60000&start-code=Run+and+Drive&engine-size-to=2',
   /** Default cron: every day at 09:00 UTC */

@@ -8,7 +8,7 @@ import { validationSchema } from './config/validation.schema';
 import { AllExceptionsFilter } from './common/filters/all-exceptions.filter';
 import { TransformInterceptor } from './common/interceptors/transform.interceptor';
 import { HealthModule } from './modules/health/health.module';
-import { CarAuctionsModule } from './modules/car-auctions/car-auctions.module';
+import { BidCarsModule } from './modules/bid-cars/bid-cars.module';
 import { LandAuctionsModule } from './modules/land-auctions/land-auctions.module';
 
 @Module({
@@ -43,7 +43,7 @@ import { LandAuctionsModule } from './modules/land-auctions/land-auctions.module
     // Feature modules
     HealthModule,
     LandAuctionsModule,
-    CarAuctionsModule,
+    BidCarsModule,
   ],
   providers: [
     // Global validation
