@@ -25,7 +25,13 @@ export class BidCarsParserService {
   async fetchListings(url: string): Promise<CarListing[]> {
     const browser: Browser = await puppeteer.launch({
       headless: true,
-      args: ['--no-sandbox', '--disable-setuid-sandbox'],
+      args: [
+        '--no-sandbox',
+        '--disable-setuid-sandbox',
+        '--disable-dev-shm-usage',
+        '--disable-gpu',
+        '--disable-blink-features=AutomationControlled',
+      ],
     });
 
     try {
@@ -39,20 +45,26 @@ export class BidCarsParserService {
   private async scrapeResultsPage(browser: Browser, url: string): Promise<CarListing[]> {
     const page: Page = await browser.newPage();
 
+    // Mask headless detection — bid.cars uses Cloudflare which checks navigator.webdriver
+    await page.evaluateOnNewDocument(() => {
+      Object.defineProperty(navigator, 'webdriver', { get: () => false });
+    });
+
     // Some sites block requests without a realistic user agent
     await page.setUserAgent(
       'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     );
 
     try {
-      await page.goto(url, { waitUntil: 'networkidle2', timeout: PAGE_TIMEOUT_MS });
+      await page.goto(url, { waitUntil: 'domcontentloaded', timeout: PAGE_TIMEOUT_MS });
 
       // Wait for any lot link to appear — signals that results have rendered
       try {
         await page.waitForSelector('a[href*="/lot/"]', { timeout: PAGE_TIMEOUT_MS });
       } catch {
+        const title = await page.title();
         this.logger.warn(
-          'No lot links found — page may not have rendered or search returned 0 results',
+          `No lot links found — page title: "${title}". Possible Cloudflare challenge or empty results.`,
         );
         return [];
       }
@@ -144,6 +156,12 @@ export class BidCarsParserService {
           const condition = matchText(/Статус:\n\s*([^\n]+)/);
           // Auction datetime (e.g. "пн 23 мар., 14:30 GMT+1")
           const auctionDate = matchText(/((?:пн|вт|ср|чт|пт|сб|вс)\s+[^\n]+GMT[+-]\d+)/i);
+          // Auction house: standalone line — IAAI, Copart, Manheim, etc.
+          const auctionSource = cardText.match(
+            /\n(IAAI|IAA|Copart|Manheim|ADESA|BacklotCars|ACV)\n/i,
+          )?.[1];
+          // Seller / insurance company (e.g. "State Farm Group Insurance")
+          const seller = matchText(/Продавец:\n\s*([^\n]+)/);
           // Engine: "2.0L", "4 cyl.", "269HP" appear on consecutive lines — join them
           const engineParts = [
             matchText(/(\d+[.,]\d+[Ll])\b/),
@@ -166,6 +184,8 @@ export class BidCarsParserService {
             keys,
             condition,
             auctionDate,
+            auctionSource: auctionSource ?? undefined,
+            seller,
           });
         });
 

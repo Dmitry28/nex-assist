@@ -15,6 +15,8 @@ export class CarListing {
   @ApiPropertyOptional() engine?: string;
   @ApiPropertyOptional() location?: string;
   @ApiPropertyOptional() auctionDate?: string;
+  @ApiPropertyOptional() auctionSource?: string;
+  @ApiPropertyOptional() seller?: string;
   @ApiPropertyOptional({ type: [String] }) images?: string[];
 }
 
