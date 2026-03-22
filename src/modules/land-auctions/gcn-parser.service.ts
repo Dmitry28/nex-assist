@@ -1,7 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import puppeteer, { type Browser, type Page } from 'puppeteer';
 import type { Listing, ListingDetails } from './dto/listing.dto';
-import { CONCURRENCY } from './constants';
+import { CONCURRENCY, PAGE_TIMEOUT_MS } from './constants';
 
 /**
  * Scrapes gcn.by land auction listings using Puppeteer.
@@ -30,8 +30,8 @@ export class GcnParserService {
   private async scrapeListPage(browser: Browser, url: string): Promise<Listing[]> {
     const page: Page = await browser.newPage();
     try {
-      await page.goto(url, { waitUntil: 'networkidle0' });
-      await page.waitForSelector('.vc_grid-item', { timeout: 10000 });
+      await page.goto(url, { waitUntil: 'networkidle0', timeout: PAGE_TIMEOUT_MS });
+      await page.waitForSelector('.vc_grid-item', { timeout: PAGE_TIMEOUT_MS });
 
       const listings: Listing[] = await page.evaluate(() =>
         Array.from(document.querySelectorAll('.vc_grid-item')).map(el => ({
@@ -97,8 +97,8 @@ export class GcnParserService {
     }
 
     try {
-      await page.goto(link, { waitUntil: 'networkidle2' });
-      await page.waitForSelector('.prop, strong', { timeout: 10000 });
+      await page.goto(link, { waitUntil: 'networkidle2', timeout: PAGE_TIMEOUT_MS });
+      await page.waitForSelector('.prop, strong', { timeout: PAGE_TIMEOUT_MS });
 
       return await page.evaluate((): ListingDetails => {
         const text = document.body.innerText;
