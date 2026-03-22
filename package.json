@@ -16,8 +16,9 @@
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
-    "lint": "eslint \"{src,test}/**/*.ts\"",
-    "lint:fix": "eslint \"{src,test}/**/*.ts\" --fix",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint \"{src,test}/**/*.ts\" --cache",
+    "lint:fix": "eslint \"{src,test}/**/*.ts\" --fix --cache",
     "format:check": "prettier --check \"src/**/*.ts\" \"test/**/*.ts\"",
     "test": "jest -u",
     "test:ci": "jest",
@@ -102,6 +103,7 @@
     },
     "testEnvironment": "node",
     "testTimeout": 30000,
-    "maxWorkers": "50%"
+    "maxWorkers": "50%",
+    "verbose": true
   }
 }
