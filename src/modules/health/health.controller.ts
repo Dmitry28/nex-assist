@@ -6,6 +6,10 @@ import {
   MemoryHealthIndicator,
 } from '@nestjs/terminus';
 
+// NOTE: Tune these thresholds based on observed production memory usage.
+const HEAP_LIMIT_BYTES = 300 * 1024 * 1024; // 300 MB
+const RSS_LIMIT_BYTES = 512 * 1024 * 1024; // 512 MB
+
 @Controller('health')
 export class HealthController {
   constructor(
@@ -17,10 +21,8 @@ export class HealthController {
   @HealthCheck()
   check(): Promise<HealthCheckResult> {
     return this.health.check([
-      // Heap must stay under 300MB
-      () => this.memory.checkHeap('memory_heap', 300 * 1024 * 1024),
-      // RSS must stay under 512MB
-      () => this.memory.checkRSS('memory_rss', 512 * 1024 * 1024),
+      () => this.memory.checkHeap('memory_heap', HEAP_LIMIT_BYTES),
+      () => this.memory.checkRSS('memory_rss', RSS_LIMIT_BYTES),
     ]);
   }
 }

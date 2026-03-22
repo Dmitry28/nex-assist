@@ -23,13 +23,13 @@ import { HealthModule } from './modules/health/health.module';
       },
     }),
 
-    // Rate limiting: 100 requests per 60 seconds per IP
+    // Rate limiting — configurable via THROTTLE_TTL / THROTTLE_LIMIT env vars
     ThrottlerModule.forRootAsync({
       inject: [ConfigService],
       useFactory: (config: ConfigService) => [
         {
-          ttl: config.get<number>('app.throttleTtl', 60000),
-          limit: config.get<number>('app.throttleLimit', 100),
+          ttl: config.getOrThrow<number>('app.throttleTtl'),
+          limit: config.getOrThrow<number>('app.throttleLimit'),
         },
       ],
     }),
