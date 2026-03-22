@@ -8,7 +8,7 @@ import { validationSchema } from './config/validation.schema';
 import { AllExceptionsFilter } from './common/filters/all-exceptions.filter';
 import { TransformInterceptor } from './common/interceptors/transform.interceptor';
 import { HealthModule } from './modules/health/health.module';
-import { ScraperModule } from './modules/scraper/scraper.module';
+import { LandAuctionsModule } from './modules/land-auctions/land-auctions.module';
 
 @Module({
   imports: [
@@ -41,7 +41,7 @@ import { ScraperModule } from './modules/scraper/scraper.module';
 
     // Feature modules
     HealthModule,
-    ScraperModule,
+    LandAuctionsModule,
   ],
   providers: [
     // Global validation

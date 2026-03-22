@@ -1,4 +1,5 @@
-export interface Item {
+/** A single land auction listing from gcn.by. */
+export interface Listing {
   title: string | undefined;
   link: string | undefined;
   price?: string;
@@ -12,7 +13,8 @@ export interface Item {
   images?: string[];
 }
 
-export interface Details {
+/** Full detail fields fetched from the listing's own page. */
+export interface ListingDetails {
   price: string;
   area: string;
   address: string;
@@ -24,10 +26,11 @@ export interface Details {
   images: string[];
 }
 
-export interface ScraperResult {
+export interface LandAuctionsResult {
   total: number;
-  newItems: Item[];
-  removedItems: Item[];
-  specialItems: Item[];
-  newSpecialItems: Item[];
+  newListings: Listing[];
+  removedListings: Listing[];
+  /** All listings matching the special keyword (e.g. Заболоть area). */
+  specialListings: Listing[];
+  newSpecialListings: Listing[];
 }

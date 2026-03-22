@@ -1,71 +1,70 @@
 import { Injectable, Logger } from '@nestjs/common';
 import puppeteer, { type Browser, type Page } from 'puppeteer';
-import type { Details, Item } from './dto/item.dto';
+import type { Listing, ListingDetails } from './dto/listing.dto';
 import { CONCURRENCY } from './constants';
 
-/** Handles all Puppeteer browser automation: listing scrape + detail fetching. */
+/**
+ * Scrapes gcn.by land auction listings using Puppeteer.
+ * Opens a pool of CONCURRENCY pages to fetch listing details in parallel.
+ */
 @Injectable()
-export class ScraperService {
-  private readonly logger = new Logger(ScraperService.name);
+export class GcnParserService {
+  private readonly logger = new Logger(GcnParserService.name);
 
-  /**
-   * Scrape the listing page and fetch full details for each item.
-   * Opens CONCURRENCY pages in parallel to speed up detail fetching.
-   */
-  async scrapeItems(url: string): Promise<Item[]> {
+  async fetchListings(url: string): Promise<Listing[]> {
     const browser: Browser = await puppeteer.launch({
       headless: true,
       args: ['--no-sandbox', '--disable-setuid-sandbox'],
     });
 
     try {
-      const items = await this.scrapeListPage(browser, url);
-      await this.enrichWithDetails(browser, items);
-      return items;
+      const listings = await this.scrapeListPage(browser, url);
+      await this.enrichWithDetails(browser, listings);
+      return listings;
     } finally {
       await browser.close();
     }
   }
 
-  /** Scrape item titles and links from the listing page. */
-  private async scrapeListPage(browser: Browser, url: string): Promise<Item[]> {
+  /** Scrape listing titles and links from the main catalog page. */
+  private async scrapeListPage(browser: Browser, url: string): Promise<Listing[]> {
     const page: Page = await browser.newPage();
     try {
       await page.goto(url, { waitUntil: 'networkidle0' });
       await page.waitForSelector('.vc_grid-item', { timeout: 10000 });
 
-      const items: Item[] = await page.evaluate(() => {
-        return Array.from(document.querySelectorAll('.vc_grid-item')).map(el => ({
+      const listings: Listing[] = await page.evaluate(() =>
+        Array.from(document.querySelectorAll('.vc_grid-item')).map(el => ({
           title: el.querySelector('.vc_gitem-post-data-source-post_title')?.textContent?.trim(),
           link: el.querySelector<HTMLAnchorElement>('.vc-zone-link')?.href,
-        }));
-      });
+        })),
+      );
 
-      this.logger.log(`Found ${items.length} listings`);
-      return items;
+      this.logger.log(`Found ${listings.length} listings`);
+      return listings;
     } finally {
       await page.close();
     }
   }
 
   /**
-   * Fetch details for all items using a pool of CONCURRENCY concurrent pages.
-   * Mutates each item in place (price, area, address, images, etc.).
+   * Fetch full details for each listing using a pool of concurrent pages.
+   * Mutates each listing in place to add price, area, images, etc.
    */
-  private async enrichWithDetails(browser: Browser, items: Item[]): Promise<void> {
+  private async enrichWithDetails(browser: Browser, listings: Listing[]): Promise<void> {
     const pages: Page[] = await Promise.all(
       Array.from({ length: CONCURRENCY }, () => browser.newPage()),
     );
 
-    const queue = [...items];
+    const queue = [...listings];
 
     await Promise.all(
       pages.map(async page => {
         try {
           while (queue.length > 0) {
-            const item = queue.shift()!;
-            const details = await this.fetchDetails(page, item.link);
-            Object.assign(item, details);
+            const listing = queue.shift()!;
+            const details = await this.fetchDetails(page, listing.link);
+            Object.assign(listing, details);
           }
         } finally {
           await page.close();
@@ -74,9 +73,9 @@ export class ScraperService {
     );
   }
 
-  /** Fetch details for a single listing page. Returns empty defaults on failure. */
-  private async fetchDetails(page: Page, link: string | undefined): Promise<Details> {
-    const empty: Details = {
+  /** Fetch detail fields from a single listing page. Returns empty defaults on failure. */
+  private async fetchDetails(page: Page, link: string | undefined): Promise<ListingDetails> {
+    const empty: ListingDetails = {
       price: 'Не найдено',
       area: 'Не найдено',
       address: 'Не найдено',
@@ -89,7 +88,7 @@ export class ScraperService {
     };
 
     if (!link) {
-      this.logger.warn('Skipping item with no link');
+      this.logger.warn('Skipping listing with no link');
       return empty;
     }
 
@@ -97,7 +96,7 @@ export class ScraperService {
       await page.goto(link, { waitUntil: 'networkidle2' });
       await page.waitForSelector('.prop, strong', { timeout: 10000 });
 
-      return await page.evaluate((): Details => {
+      return await page.evaluate((): ListingDetails => {
         const text = document.body.innerText;
 
         const match = (pattern: RegExp): string => {
@@ -109,6 +108,7 @@ export class ScraperService {
         const area =
           match(/Площадь земельного участка:\s*([\d,.]+)\s*га/) ||
           match(/Площадь:\s*([\d,.]+)\s*га/);
+        // Address can appear as a standalone field or embedded in the description
         const address = match(/Адрес:\s*(.+)/) || match(/по адресу:\s*(г\.[^\n]+)/);
         const cadastralNumber = match(/Кадастровый номер:\s*(\d+)/);
 
@@ -130,7 +130,7 @@ export class ScraperService {
         );
         const applicationDeadline = deadlineLinkEl?.textContent?.trim() ?? 'Не указан';
 
-        // Collect utility connections from a known text block
+        // Collect available utility connections from a known text block
         const commsSource =
           text.match(/Имеется возможность подключения к сетям\s+(.+?)(?:\n|Победитель)/s)?.[1] ??
           '';
@@ -144,7 +144,7 @@ export class ScraperService {
         const foundComms = commsMap.filter(([re]) => re.test(commsSource)).map(([, name]) => name);
         const communications = foundComms.length > 0 ? foundComms.join(', ') : 'Не указаны';
 
-        // Images from gallery first, then from .prop; exclude small cadastral-map buttons
+        // Images: prefer gallery, fall back to .prop images; exclude small cadastral-map buttons
         const galleryEls = document.querySelectorAll('#image-gallery img');
         const propEls = document.querySelectorAll('.prop img');
         const allImgEls = galleryEls.length > 0 ? galleryEls : propEls;

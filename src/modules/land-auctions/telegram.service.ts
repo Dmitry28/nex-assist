@@ -1,7 +1,7 @@
 import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import TelegramBot from 'node-telegram-bot-api';
-import type { Item } from './dto/item.dto';
+import type { Listing } from './dto/listing.dto';
 import {
   EMPTY_VALUES,
   MEDIA_GROUP_LIMIT,
@@ -19,8 +19,8 @@ export class TelegramService implements OnModuleInit {
   constructor(private readonly config: ConfigService) {}
 
   onModuleInit(): void {
-    const token = this.config.getOrThrow<string>('scraper.telegramToken');
-    this.chatId = this.config.getOrThrow<string>('scraper.telegramChatId');
+    const token = this.config.getOrThrow<string>('landAuctions.telegramToken');
+    this.chatId = this.config.getOrThrow<string>('landAuctions.telegramChatId');
     // polling: false — we only send messages, never receive them
     this.bot = new TelegramBot(token, { polling: false });
   }
@@ -33,31 +33,31 @@ export class TelegramService implements OnModuleInit {
     }
   }
 
-  /** Send all items as individual Telegram messages with a delay between each. */
-  async sendItemsMessages(items: Item[], header: string): Promise<void> {
-    const failed: Item[] = [];
+  /** Send all listings as individual Telegram messages with a delay between each. */
+  async sendListingMessages(listings: Listing[], header: string): Promise<void> {
+    const failed: Listing[] = [];
 
-    for (let i = 0; i < items.length; i++) {
-      const ok = await this.sendItemMessage(items[i], header, i + 1, items.length);
-      if (!ok) failed.push(items[i]);
-      if (i < items.length - 1) await sleep(TELEGRAM_SEND_DELAY_MS);
+    for (let i = 0; i < listings.length; i++) {
+      const ok = await this.sendListingMessage(listings[i], header, i + 1, listings.length);
+      if (!ok) failed.push(listings[i]);
+      if (i < listings.length - 1) await sleep(TELEGRAM_SEND_DELAY_MS);
     }
 
     if (failed.length > 0) {
-      const list = failed.map(item => `• ${item.title}`).join('\n');
+      const list = failed.map(l => `• ${l.title}`).join('\n');
       await this.sendMessage(`⚠️ Не удалось отправить ${failed.length} объект(а):\n${list}`);
     }
   }
 
-  /** Send one item as a photo/media group (or plain message if no images). */
-  private async sendItemMessage(
-    item: Item,
+  /** Send one listing as a photo/media group (or plain message if no images). */
+  private async sendListingMessage(
+    listing: Listing,
     header: string,
     index: number,
     total: number,
   ): Promise<boolean> {
-    const caption = truncateCaption(buildItemCaption(item, header, index, total));
-    const photos = (item.images ?? []).slice(0, MEDIA_GROUP_LIMIT);
+    const caption = truncateCaption(buildCaption(listing, header, index, total));
+    const photos = (listing.images ?? []).slice(0, MEDIA_GROUP_LIMIT);
 
     return this.sendWithRetry(async () => {
       if (photos.length > 1) {
@@ -91,7 +91,7 @@ export class TelegramService implements OnModuleInit {
           this.logger.warn(`Telegram rate limit, waiting ${retryAfter}s...`);
           await sleep(retryAfter * 1000 + 500);
         } else {
-          this.logger.error('Failed to send item message', error);
+          this.logger.error('Failed to send listing message', error);
           return false;
         }
       }
@@ -100,11 +100,11 @@ export class TelegramService implements OnModuleInit {
   }
 }
 
-// ─── Pure formatting helpers (no side effects, easy to unit test) ────────────
+// ─── Pure formatting helpers ─────────────────────────────────────────────────
 
 const isEmpty = (val: string | undefined): boolean => !val || EMPTY_VALUES.has(val);
 
-const getObjectEmoji = (title: string | undefined): string => {
+const getListingEmoji = (title: string | undefined): string => {
   if (!title) return '🏡';
   const t = title.toLowerCase();
   if (t.includes('не завершён') || t.includes('незавершён')) return '🏗';
@@ -116,34 +116,36 @@ const formatAuctionDate = (val: string): string => {
   if (val.startsWith('Аукцион состоится ')) return val.replace('Аукцион состоится ', '');
   if (val.startsWith('Проведение аукциона планируется '))
     return val.replace('Проведение аукциона планируется ', '');
+  // Truncate overly long dates (e.g. full sentences)
   if (val.length > 50) return 'уточняется';
   return val;
 };
 
 const formatDeadline = (val: string): string => val.replace('Заявления принимаются по ', '');
 
-const buildItemCaption = (item: Item, header: string, index: number, total: number): string => {
-  const emoji = getObjectEmoji(item.title);
+const buildCaption = (listing: Listing, header: string, index: number, total: number): string => {
+  const emoji = getListingEmoji(listing.title);
   const lines: string[] = [
     `<b>${header} · ${index} из ${total}</b>`,
     '',
-    `${emoji} <b>${item.title}</b>`,
+    `${emoji} <b>${listing.title}</b>`,
   ];
 
-  if (!isEmpty(item.address)) lines.push(`📍 ${item.address}`);
+  if (!isEmpty(listing.address)) lines.push(`📍 ${listing.address}`);
 
-  const pricePart = !isEmpty(item.price) ? `💰 ${item.price}` : '';
-  const areaPart = !isEmpty(item.area) ? `📐 ${item.area}` : '';
+  const pricePart = !isEmpty(listing.price) ? `💰 ${listing.price}` : '';
+  const areaPart = !isEmpty(listing.area) ? `📐 ${listing.area}` : '';
   if (pricePart || areaPart)
     lines.push(['', pricePart, areaPart].filter(Boolean).join('  ·  ').trim());
 
-  if (!isEmpty(item.auctionDate)) lines.push(`🗓 Аукцион: ${formatAuctionDate(item.auctionDate!)}`);
-  if (!isEmpty(item.applicationDeadline))
-    lines.push(`📅 Заявки до: ${formatDeadline(item.applicationDeadline!)}`);
-  if (!isEmpty(item.communications)) lines.push(`⚡ ${item.communications}`);
+  if (!isEmpty(listing.auctionDate))
+    lines.push(`🗓 Аукцион: ${formatAuctionDate(listing.auctionDate!)}`);
+  if (!isEmpty(listing.applicationDeadline))
+    lines.push(`📅 Заявки до: ${formatDeadline(listing.applicationDeadline!)}`);
+  if (!isEmpty(listing.communications)) lines.push(`⚡ ${listing.communications}`);
 
-  const linkParts: string[] = [`<a href="${item.link}">🔗 Подробнее</a>`];
-  if (item.cadastralMapUrl) linkParts.push(`<a href="${item.cadastralMapUrl}">📌 Карта</a>`);
+  const linkParts: string[] = [`<a href="${listing.link}">🔗 Подробнее</a>`];
+  if (listing.cadastralMapUrl) linkParts.push(`<a href="${listing.cadastralMapUrl}">📌 Карта</a>`);
   lines.push('', linkParts.join('  ·  '));
 
   return lines.join('\n');
@@ -156,17 +158,10 @@ const truncateCaption = (text: string): string => {
 
 const sleep = (ms: number): Promise<void> => new Promise(resolve => setTimeout(resolve, ms));
 
-/** Extract `retry_after` seconds from a Telegram API rate-limit error response. */
+/** Extract `retry_after` seconds from a Telegram 429 rate-limit error, or null. */
 const extractRetryAfter = (error: unknown): number | null => {
-  if (
-    error !== null &&
-    typeof error === 'object' &&
-    'response' in error &&
-    (error as { response?: { body?: { parameters?: { retry_after?: number } } } }).response?.body
-      ?.parameters?.retry_after !== undefined
-  ) {
-    return (error as { response: { body: { parameters: { retry_after: number } } } }).response.body
-      .parameters.retry_after;
-  }
-  return null;
+  if (typeof error !== 'object' || error === null) return null;
+  const retryAfter = (error as { response?: { body?: { parameters?: { retry_after?: unknown } } } })
+    .response?.body?.parameters?.retry_after;
+  return typeof retryAfter === 'number' ? retryAfter : null;
 };
