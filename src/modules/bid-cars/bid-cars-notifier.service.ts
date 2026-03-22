@@ -127,35 +127,23 @@ const buildCaption = ({ listing, header, index, total }: SendListingParams): str
   ];
 
   // Prices — most important, shown first
-  const prices: string[] = [];
-  if (hasValue(listing.currentBid)) prices.push(`💰 Ставка: ${listing.currentBid}`);
-  if (hasValue(listing.buyNow)) prices.push(`⚡ BIN: ${listing.buyNow}`);
-  if (prices.length) lines.push('', prices.join('  ·  '));
+  if (hasValue(listing.currentBid)) lines.push('', `💰 Ставка: ${listing.currentBid}`);
+  if (hasValue(listing.buyNow)) lines.push(`⚡ BIN: ${listing.buyNow}`);
 
   // Damage + running condition + document type
   if (hasValue(listing.damage)) lines.push('', `💥 ${listing.damage}`);
-  const status: string[] = [];
-  if (hasValue(listing.condition)) status.push(`🚦 ${listing.condition}`);
-  if (hasValue(listing.keys)) status.push(`📄 ${listing.keys}`);
-  if (status.length) lines.push(status.join('  ·  '));
+  if (hasValue(listing.condition)) lines.push(`🚦 ${listing.condition}`);
+  if (hasValue(listing.keys)) lines.push(`📄 ${listing.keys}`);
 
-  // Odometer + engine
-  const specs: string[] = [];
-  if (hasValue(listing.odometer)) specs.push(`📏 ${listing.odometer}`);
-  if (hasValue(listing.engine)) specs.push(`🔧 ${listing.engine}`);
-  if (specs.length) lines.push('', specs.join('  ·  '));
-
-  // Location + auction date on one line
-  const place: string[] = [];
-  if (hasValue(listing.location)) place.push(`📍 ${listing.location}`);
-  if (hasValue(listing.auctionDate)) place.push(`🗓 ${listing.auctionDate}`);
-  if (place.length) lines.push(place.join('  ·  '));
+  // Odometer + engine + location + date
+  if (hasValue(listing.odometer)) lines.push('', `📏 ${listing.odometer}`);
+  if (hasValue(listing.engine)) lines.push(`🔧 ${listing.engine}`);
+  if (hasValue(listing.location)) lines.push(`📍 ${listing.location}`);
+  if (hasValue(listing.auctionDate)) lines.push(`🗓 ${listing.auctionDate}`);
 
   // Identifiers
-  const ids: string[] = [];
-  if (hasValue(listing.lot)) ids.push(`Лот: ${listing.lot}`);
-  if (hasValue(listing.vin)) ids.push(`VIN: <code>${listing.vin}</code>`);
-  if (ids.length) lines.push('', ids.join('  ·  '));
+  if (hasValue(listing.lot)) lines.push('', `Лот: ${listing.lot}`);
+  if (hasValue(listing.vin)) lines.push(`VIN: <code>${listing.vin}</code>`);
 
   lines.push('', `<a href="${listing.link}">🔗 Подробнее</a>`);
 
