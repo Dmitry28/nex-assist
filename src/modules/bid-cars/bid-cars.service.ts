@@ -10,7 +10,7 @@ import { SchedulerRegistry } from '@nestjs/schedule';
 import { CronJob } from 'cron';
 import { SnapshotService } from '../../common/snapshot.service';
 import type { BidCarsResult, CarListing, RemovedCarListing } from './dto/car-listing.dto';
-import { DATA_FILES, SOLD_LOOKUP_RETENTION_DAYS } from './constants';
+import { DATA_FILES, RUN_TIMEOUT_MS, SOLD_LOOKUP_RETENTION_DAYS } from './constants';
 import { BidCarsParserService } from './bid-cars-parser.service';
 import { BidCarsNotifierService } from './bid-cars-notifier.service';
 
@@ -22,9 +22,8 @@ const isCarListing = (item: unknown): item is CarListing =>
   'link' in item &&
   typeof (item as { link: unknown }).link === 'string';
 
-// RemovedCarListing extends CarListing — same minimal check is sufficient.
-// Extra fields (removedAt, soldPrice, etc.) are optional and handled defensively in scrape().
-const isRemovedCarListing = (item: unknown): item is RemovedCarListing => isCarListing(item);
+const isRemovedCarListing = (item: unknown): item is RemovedCarListing =>
+  isCarListing(item) && typeof (item as unknown as Record<string, unknown>).removedAt === 'string';
 
 /**
  * Business orchestration for the bid.cars scrape cycle:
@@ -72,9 +71,13 @@ export class BidCarsService implements OnModuleInit, OnModuleDestroy {
       throw new ConflictException('Scrape already in progress');
     }
 
-    // No watchdog needed: Puppeteer has an internal navigation timeout that bounds
-    // the scrape duration. If Puppeteer hangs, it will throw before the flag gets stuck.
     this.isRunning = true;
+
+    const watchdog = setTimeout(() => {
+      this.logger.error(`Scrape watchdog fired after ${RUN_TIMEOUT_MS / 1000}s — resetting lock`);
+      this.isRunning = false;
+    }, RUN_TIMEOUT_MS);
+
     try {
       return await this.scrape();
     } catch (error) {
@@ -88,6 +91,7 @@ export class BidCarsService implements OnModuleInit, OnModuleDestroy {
       }
       throw error;
     } finally {
+      clearTimeout(watchdog);
       this.isRunning = false;
     }
   }

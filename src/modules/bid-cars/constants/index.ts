@@ -32,3 +32,6 @@ export const NOTIFICATION_HEADERS = {
  * After this window the listing is considered settled without a price.
  */
 export const SOLD_LOOKUP_RETENTION_DAYS = 14;
+
+/** Max wall-clock time for a full scrape cycle — watchdog resets isRunning if exceeded (10 min). */
+export const RUN_TIMEOUT_MS = 10 * 60 * 1000;
