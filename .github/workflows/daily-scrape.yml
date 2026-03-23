@@ -9,7 +9,7 @@ on:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    environment: development
+    environment: ${{ github.ref == 'refs/heads/main' && 'production' || 'development' }}
     permissions:
       contents: write
       pull-requests: write
@@ -62,9 +62,10 @@ jobs:
           git checkout -b "$BRANCH"
           git commit -m "chore: update scraped data [${DATE}]"
           git push origin "$BRANCH"
+          BASE_BRANCH="${GITHUB_REF_NAME}"
           PR_URL=$(gh pr create \
             --title "chore: update scraped data [${DATE}]" \
             --body "Automated data update from daily scrape workflow." \
-            --base dev \
+            --base "$BASE_BRANCH" \
             --head "$BRANCH")
           gh pr merge "$PR_URL" --merge --auto
