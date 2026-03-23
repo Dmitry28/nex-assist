@@ -313,15 +313,17 @@ const buildSummary = (feeds: KufarFeedResult[]): string => {
     const status = parts.length > 0 ? parts.join(', ') : 'без изменений';
     lines.push(`\n<b>${name}:</b> ${status}`);
 
-    // List price changes inline: title + old → new price
+    // List price changes inline with link: title + old → new price
     if (feed.priceChanges.length > 0) {
       const shown = feed.priceChanges.slice(0, MAX_PRICE_CHANGES_IN_SUMMARY);
       for (const { listing, oldPriceByn, oldPriceUsd } of shown) {
         const oldPrice = formatPrice(oldPriceByn, oldPriceUsd) || '—';
         const newPrice = formatPrice(listing.priceByn, listing.priceUsd) || '—';
         const shortTitle =
-          listing.title.length > 40 ? listing.title.slice(0, 37) + '...' : listing.title;
-        lines.push(`  • ${shortTitle}: ${oldPrice} → ${newPrice}`);
+          listing.title.length > 35 ? listing.title.slice(0, 32) + '...' : listing.title;
+        lines.push(
+          `  • <a href="${listing.link}">${shortTitle}</a>: <s>${oldPrice}</s> → <b>${newPrice}</b>`,
+        );
       }
       if (feed.priceChanges.length > MAX_PRICE_CHANGES_IN_SUMMARY) {
         lines.push(`  <i>...и ещё ${feed.priceChanges.length - MAX_PRICE_CHANGES_IN_SUMMARY}</i>`);
