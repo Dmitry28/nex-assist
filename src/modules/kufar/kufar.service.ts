@@ -232,11 +232,9 @@ export class KufarService implements OnModuleInit, OnModuleDestroy {
     }
 
     // Log if nothing was persisted due to notification failures
-    const notifiedCount = notifiedNew.size + notifiedPriceChanges.size;
-    const pendingCount = Math.max(
-      0,
-      result.newListings.length + result.priceChanges.length - notifiedCount,
-    );
+    const pendingCount =
+      result.newListings.filter(l => !notifiedNew.has(l.adId)).length +
+      result.priceChanges.filter(c => !notifiedPriceChanges.has(c.listing.adId)).length;
     if (pendingCount > 0) {
       this.logger.warn(
         `Feed ${feed.key}: ${pendingCount} listing(s) not persisted — notification failed, will retry next run`,
