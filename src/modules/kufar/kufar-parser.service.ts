@@ -44,6 +44,13 @@ const toNum = (v: unknown): number | undefined => {
 const toStr = (v: unknown): string | undefined =>
   typeof v === 'string' && v.trim() ? v.trim() : undefined;
 
+/** Look up a parameter value by key from a Kufar ad_parameters / account_parameters array. */
+const getParam = (
+  params: Array<{ p: string; v: unknown; vl?: unknown }> | undefined,
+  key: string,
+  field: 'v' | 'vl' = 'v',
+): unknown => params?.find(p => p.p === key)?.[field];
+
 /**
  * Fetches Kufar real-estate search results by parsing the __NEXT_DATA__ JSON
  * embedded in the server-side-rendered HTML.
@@ -182,12 +189,6 @@ export class KufarParserService {
     const rawUsd = ad.price_usd ? parseInt(ad.price_usd, 10) : 0;
     const priceByn = rawByn > 0 ? Math.round(rawByn / 100) : undefined;
     const priceUsd = rawUsd > 0 ? Math.round(rawUsd / 100) : undefined;
-
-    const getParam = (
-      params: Array<{ p: string; v: unknown; vl?: unknown }> | undefined,
-      key: string,
-      field: 'v' | 'vl' = 'v',
-    ) => params?.find(p => p.p === key)?.[field];
 
     const address = toStr(getParam(ad.account_parameters, 'address'));
     const seller = toStr(getParam(ad.account_parameters, 'name'));

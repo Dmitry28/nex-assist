@@ -64,6 +64,8 @@ export class BidCarsService implements OnModuleInit, OnModuleDestroy {
       throw new ConflictException('Scrape already in progress');
     }
 
+    // No watchdog needed: Puppeteer has an internal navigation timeout that bounds
+    // the scrape duration. If Puppeteer hangs, it will throw before the flag gets stuck.
     this.isRunning = true;
     try {
       return await this.scrape();
@@ -121,7 +123,10 @@ export class BidCarsService implements OnModuleInit, OnModuleDestroy {
       `Done — total: ${result.total}, new: ${newListings.length}, removed: ${removedListings.length}`,
     );
 
-    // Notify first — if Telegram is down the snapshot must NOT be updated
+    // Notify first, then always persist — even if Telegram is down.
+    // Unlike KufarService (which delays persist until notification succeeds),
+    // bid.cars returns a full current snapshot each run, so we can always
+    // reconstruct the diff on the next run without losing listings.
     await this.notifier.notifyRunResult(result);
 
     await Promise.all([
