@@ -3,7 +3,8 @@ import { SnapshotService } from './snapshot.service';
 
 /**
  * Global module for shared infrastructure services.
- * Import once in AppModule — all feature modules can inject these providers without re-importing.
+ * Registered once in AppModule with @Global() — feature modules do NOT need to import it;
+ * its exports are available for injection everywhere automatically.
  */
 @Global()
 @Module({
