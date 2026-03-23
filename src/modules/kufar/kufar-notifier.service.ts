@@ -13,6 +13,7 @@ import type {
 import {
   EMPTY_VALUES,
   FEED_DISPLAY_NAMES,
+  MAX_PRICE_CHANGES_IN_SUMMARY,
   MEDIA_GROUP_LIMIT,
   NOTIFICATION_HEADERS,
 } from './constants';
@@ -42,6 +43,11 @@ export class KufarNotifierService {
     config: ConfigService,
   ) {
     this.chatId = config.get<string>('kufar.chatId') ?? '';
+    if (!this.chatId) {
+      this.logger.warn(
+        'TELEGRAM_KUFAR_CHAT_ID is not set — notifications disabled, nothing will be persisted',
+      );
+    }
   }
 
   async notifyRunResult(result: KufarResult): Promise<KufarNotifyResult> {
@@ -50,21 +56,19 @@ export class KufarNotifierService {
       notifiedPriceChanges: new Map(),
     };
 
-    if (!this.chatId) {
-      this.logger.warn('chatId not set — skipping Telegram notification');
-      return empty;
-    }
+    if (!this.chatId) return empty;
 
     const { feeds } = result;
     const hasAnything = feeds.some(f => f.newListings.length > 0 || f.priceChanges.length > 0);
+
+    // Only send summary when there is something to report
+    if (!hasAnything) return empty;
 
     const summaryOk = await this.telegram.sendMessage(this.chatId, buildSummary(feeds));
     if (!summaryOk) {
       this.logger.error('Failed to send Kufar summary — skipping all notifications');
       return empty;
     }
-
-    if (!hasAnything) return empty;
 
     const notifiedNew = new Map<string, Set<number>>();
     const notifiedPriceChanges = new Map<string, Set<number>>();
@@ -76,7 +80,6 @@ export class KufarNotifierService {
         const sent = await this.sendListings(
           feed.newListings,
           `${NOTIFICATION_HEADERS.new} · ${displayName}`,
-          feed.newListings.length,
         );
         notifiedNew.set(feed.feedName, sent);
       }
@@ -99,11 +102,8 @@ export class KufarNotifierService {
     if (!ok) this.logger.warn('Failed to send Kufar error notification');
   }
 
-  private async sendListings(
-    listings: KufarListing[],
-    header: string,
-    total: number,
-  ): Promise<Set<number>> {
+  private async sendListings(listings: KufarListing[], header: string): Promise<Set<number>> {
+    const total = listings.length;
     const notified = new Set<number>();
     const failed: KufarListing[] = [];
 
@@ -293,8 +293,6 @@ const buildPriceChangeCaption = ({
 
   return lines.join('\n');
 };
-
-const MAX_PRICE_CHANGES_IN_SUMMARY = 8;
 
 const buildSummary = (feeds: KufarFeedResult[]): string => {
   const date = new Date().toLocaleDateString('ru-RU');

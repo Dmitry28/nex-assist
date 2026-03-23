@@ -11,13 +11,13 @@ import {
 /** Raw ad shape from Kufar's __NEXT_DATA__ JSON. */
 interface RawAd {
   ad_id: number;
-  ad_link: string;
   subject: string;
   body_short?: string;
   price_byn?: string;
   price_usd?: string;
   list_time: string;
   images?: Array<{ path: string }>;
+  /** v = raw code/key; vl = human-readable label (preferred for display). */
   ad_parameters?: Array<{ p: string; v: unknown; vl?: unknown }>;
   account_parameters?: Array<{ p: string; v: unknown; vl?: unknown }>;
 }
@@ -27,6 +27,22 @@ interface RawPaginationEntry {
   label: string;
   token: string | null;
 }
+
+// ─── Runtime coercions ────────────────────────────────────────────────────────
+
+/** Safely coerce an unknown API value to number, or undefined if not numeric. */
+const toNum = (v: unknown): number | undefined => {
+  if (typeof v === 'number' && isFinite(v)) return v;
+  if (typeof v === 'string') {
+    const n = parseFloat(v);
+    return isFinite(n) ? n : undefined;
+  }
+  return undefined;
+};
+
+/** Safely coerce an unknown API value to a non-empty string, or undefined. */
+const toStr = (v: unknown): string | undefined =>
+  typeof v === 'string' && v.trim() ? v.trim() : undefined;
 
 /**
  * Fetches Kufar real-estate search results by parsing the __NEXT_DATA__ JSON
@@ -44,6 +60,10 @@ export class KufarParserService {
     let currentUrl = url;
     let truncated = false;
 
+    // Cutoff is fixed for the entire run so pagination decisions are consistent
+    const cutoff = new Date(Date.now() - LOOKBACK_HOURS * 60 * 60 * 1000);
+    const isRecent = (listTime: string) => new Date(listTime) >= cutoff;
+
     for (let page = 1; page <= MAX_PAGES; page++) {
       const html = await this.fetchHtml(currentUrl);
       if (!html) break;
@@ -55,7 +75,7 @@ export class KufarParserService {
         break;
       }
 
-      const recentAds = ads.filter(ad => this.isRecent(ad.list_time));
+      const recentAds = ads.filter(ad => isRecent(ad.list_time));
       allListings.push(...recentAds.map(ad => this.mapListing(ad)));
 
       this.logger.log(
@@ -63,8 +83,7 @@ export class KufarParserService {
       );
 
       // Stop paginating if the oldest ad on this page is outside our window
-      const oldestAd = ads[ads.length - 1];
-      if (!this.isRecent(oldestAd.list_time)) break;
+      if (!isRecent(ads[ads.length - 1].list_time)) break;
 
       const nextToken = pagination.find(p => p.label === 'next')?.token;
       if (!nextToken) break;
@@ -151,30 +170,25 @@ export class KufarParserService {
     const priceByn = rawByn > 0 ? Math.round(rawByn / 100) : undefined;
     const priceUsd = rawUsd > 0 ? Math.round(rawUsd / 100) : undefined;
 
-    // v  = raw code/key (e.g. "central_heating")
-    // vl = human-readable label (e.g. "Центральное") — preferred for display
-    type ParamField = 'v' | 'vl';
     const getParam = (
       params: Array<{ p: string; v: unknown; vl?: unknown }> | undefined,
       key: string,
-      field: ParamField = 'v',
+      field: 'v' | 'vl' = 'v',
     ) => params?.find(p => p.p === key)?.[field];
 
-    const address = getParam(ad.account_parameters, 'address') as string | undefined;
-    const seller = getParam(ad.account_parameters, 'name') as string | undefined;
+    const address = toStr(getParam(ad.account_parameters, 'address'));
+    const seller = toStr(getParam(ad.account_parameters, 'name'));
 
     // 'size' = building area m²; 'size_area' = land/plot area in sotki
-    const area = getParam(ad.ad_parameters, 'size') as number | undefined;
-    const plotArea = getParam(ad.ad_parameters, 'size_area') as number | undefined;
+    const area = toNum(getParam(ad.ad_parameters, 'size'));
+    const plotArea = toNum(getParam(ad.ad_parameters, 'size_area'));
+    const rooms = toNum(getParam(ad.ad_parameters, 'rooms'));
+    const yearBuilt = toNum(getParam(ad.ad_parameters, 'year_built'));
 
-    const rooms = getParam(ad.ad_parameters, 'rooms') as number | undefined;
-    const yearBuilt = getParam(ad.ad_parameters, 'year_built') as number | undefined;
-
-    // Human-readable property type from vl field
     const propertyType =
-      (getParam(ad.ad_parameters, 'garage_type', 'vl') as string | undefined) ??
-      (getParam(ad.ad_parameters, 'house_type_for_sell', 'vl') as string | undefined) ??
-      (getParam(ad.ad_parameters, 'land_type', 'vl') as string | undefined);
+      toStr(getParam(ad.ad_parameters, 'garage_type', 'vl')) ??
+      toStr(getParam(ad.ad_parameters, 'house_type_for_sell', 'vl')) ??
+      toStr(getParam(ad.ad_parameters, 'land_type', 'vl'));
 
     // Collect feature labels (improvements, heating, water, property rights, outbuildings)
     const featureKeys = [
@@ -190,9 +204,10 @@ export class KufarParserService {
       const vl = getParam(ad.ad_parameters, key, 'vl');
       if (vl == null) continue;
       if (Array.isArray(vl)) {
-        features.push(...(vl as string[]).filter(Boolean));
-      } else if (typeof vl === 'string' && vl) {
-        features.push(vl);
+        features.push(...vl.map(toStr).filter((s): s is string => s !== undefined));
+      } else {
+        const s = toStr(vl);
+        if (s) features.push(s);
       }
     }
 
@@ -200,27 +215,23 @@ export class KufarParserService {
 
     return {
       adId: ad.ad_id,
+      // ad_link from the API is not used — we reconstruct from ad_id for a stable canonical URL
       link: `https://re.kufar.by/vi/${ad.ad_id}`,
       title: ad.subject,
       description: ad.body_short || undefined,
       priceByn,
       priceUsd,
-      address: address || undefined,
-      area: area !== undefined ? Number(area) : undefined,
-      plotArea: plotArea !== undefined ? Number(plotArea) : undefined,
-      rooms: rooms !== undefined ? Number(rooms) : undefined,
-      yearBuilt: yearBuilt !== undefined ? Number(yearBuilt) : undefined,
-      seller: seller || undefined,
-      propertyType: propertyType || undefined,
+      address,
+      area,
+      plotArea,
+      rooms,
+      yearBuilt,
+      seller,
+      propertyType,
       features: features.length > 0 ? features : undefined,
       listTime: ad.list_time,
       images,
     };
-  }
-
-  private isRecent(listTime: string): boolean {
-    const cutoff = new Date(Date.now() - LOOKBACK_HOURS * 60 * 60 * 1000);
-    return new Date(listTime) >= cutoff;
   }
 
   /** Append (or replace) the cursor param on the original search URL. */

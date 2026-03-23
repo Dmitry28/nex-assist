@@ -25,6 +25,10 @@ import { KufarNotifierService, KufarNotifyResult } from './kufar-notifier.servic
 const effectivePrice = (p: number | undefined): number | undefined =>
   p !== undefined && p > 0 ? p : undefined;
 
+/** Single source of truth for price-change detection — used in both scrapeFeed and persistSnapshot. */
+const hasPriceChanged = (prev: KufarSnapshotEntry, current: KufarListing): boolean =>
+  effectivePrice(prev.priceByn) !== effectivePrice(current.priceByn);
+
 const isKufarSnapshotEntry = (item: unknown): item is KufarSnapshotEntry =>
   typeof item === 'object' &&
   item !== null &&
@@ -163,7 +167,7 @@ export class KufarService implements OnModuleInit, OnModuleDestroy {
 
       if (!prev) {
         newListings.push(listing);
-      } else if (effectivePrice(prev.priceByn) !== effectivePrice(listing.priceByn)) {
+      } else if (hasPriceChanged(prev, listing)) {
         priceChanges.push({ listing, oldPriceByn: prev.priceByn, oldPriceUsd: prev.priceUsd });
       }
       // Same effective price → bumped ad, silently ignore
@@ -200,7 +204,7 @@ export class KufarService implements OnModuleInit, OnModuleDestroy {
     for (const listing of currentListings) {
       const prev = updatedMap.get(listing.adId);
       const isNew = !prev;
-      const isPriceChange = prev !== undefined && prev.priceByn !== listing.priceByn;
+      const isPriceChange = prev !== undefined && hasPriceChanged(prev, listing);
 
       if (isNew) {
         // Only persist if notification was delivered — otherwise retry next run

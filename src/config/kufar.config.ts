@@ -12,19 +12,16 @@ export interface KufarFeedConfig {
  * Add a new entry here (+ env var) to track a new property type.
  */
 function buildFeeds(): KufarFeedConfig[] {
-  const candidates: Array<[string, string | undefined]> = [
-    ['garazh', process.env.KUFAR_GARAGES_URL],
-    ['uchastok', process.env.KUFAR_LAND_URL],
-    ['dom', process.env.KUFAR_HOUSES_URL],
+  // registerAs runs before Joi applies defaults to process.env, so we apply them explicitly here.
+  return [
+    { key: 'garazh', url: process.env.KUFAR_GARAGES_URL ?? KUFAR_DEFAULTS.GARAGES_URL },
+    { key: 'uchastok', url: process.env.KUFAR_LAND_URL ?? KUFAR_DEFAULTS.LAND_URL },
+    { key: 'dom', url: process.env.KUFAR_HOUSES_URL ?? KUFAR_DEFAULTS.HOUSES_URL },
   ];
-  return candidates
-    .filter((pair): pair is [string, string] => !!pair[1])
-    .map(([key, url]) => ({ key, url }));
 }
 
 /**
  * Namespaced config — access via ConfigService.get('kufar.*').
- * Defaults are defined in src/config/constants.ts and applied by Joi at startup.
  */
 export default registerAs('kufar', () => ({
   feeds: buildFeeds(),
