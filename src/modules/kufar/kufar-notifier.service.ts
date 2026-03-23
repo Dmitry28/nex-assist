@@ -65,6 +65,7 @@ export class KufarNotifierService {
       this.logger.error('Failed to send Kufar summary — skipping all notifications');
       return empty;
     }
+    this.logger.log('Summary sent to Telegram');
 
     const notifiedNew = new Map<string, Set<number>>();
     const notifiedPriceChanges = new Map<string, Set<number>>();

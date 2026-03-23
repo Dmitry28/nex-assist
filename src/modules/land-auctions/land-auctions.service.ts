@@ -149,6 +149,7 @@ export class LandAuctionsService implements OnModuleInit, OnModuleDestroy {
       this.snapshot.write(DATA_FILES.removed, removedListings),
       this.snapshot.write(DATA_FILES.special, specialListings),
     ]);
+    this.logger.log('Snapshots saved');
 
     return result;
   }

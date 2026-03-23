@@ -151,6 +151,12 @@ export class KufarService implements OnModuleInit, OnModuleDestroy {
       await this.persistSnapshot(data, notifyResult);
     }
 
+    const totalNew = scrapeData.reduce((sum, d) => sum + d.result.newListings.length, 0);
+    const totalChanges = scrapeData.reduce((sum, d) => sum + d.result.priceChanges.length, 0);
+    this.logger.log(
+      `Done — feeds: ${feeds.length}, new: ${totalNew}, price changes: ${totalChanges}`,
+    );
+
     return { feeds: scrapeData.map(d => d.result) };
   }
 
@@ -245,5 +251,6 @@ export class KufarService implements OnModuleInit, OnModuleDestroy {
     }
 
     await this.snapshot.write(dataFile(feed.key), [...updatedMap.values()]);
+    this.logger.log(`Feed ${feed.key}: snapshot saved (${updatedMap.size} entries)`);
   }
 }

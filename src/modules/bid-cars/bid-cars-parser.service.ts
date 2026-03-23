@@ -51,6 +51,7 @@ export class BidCarsParserService implements OnModuleDestroy {
   /** Returns the shared browser, launching one if not yet started or if it crashed. */
   private async getBrowser(): Promise<Browser> {
     if (!this.browser?.connected) {
+      this.logger.log('Launching browser');
       this.browser = await puppeteerExtra.launch({ headless: true, args: BROWSER_ARGS });
     }
     return this.browser;

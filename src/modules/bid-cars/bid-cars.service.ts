@@ -205,6 +205,7 @@ export class BidCarsService implements OnModuleInit, OnModuleDestroy {
       this.snapshot.write(DATA_FILES.new, newListings),
       this.snapshot.write(DATA_FILES.removed, finalRemoved),
     ]);
+    this.logger.log('Snapshots saved');
 
     return result;
   }
