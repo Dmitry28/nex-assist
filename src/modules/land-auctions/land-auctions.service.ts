@@ -10,7 +10,7 @@ import { SchedulerRegistry } from '@nestjs/schedule';
 import { CronJob } from 'cron';
 import { SnapshotService } from '../../common/snapshot.service';
 import type { LandAuctionsResult, Listing } from './dto/listing.dto';
-import { DATA_FILES, SPECIAL_KEYWORD } from './constants';
+import { DATA_FILES, RUN_TIMEOUT_MS, SPECIAL_KEYWORD } from './constants';
 import { GcnParserService } from './gcn-parser.service';
 import { ListingNotifierService } from './listing-notifier.service';
 
@@ -67,6 +67,12 @@ export class LandAuctionsService implements OnModuleInit, OnModuleDestroy {
     }
 
     this.isRunning = true;
+
+    const watchdog = setTimeout(() => {
+      this.logger.error(`Scrape watchdog fired after ${RUN_TIMEOUT_MS / 1000}s — resetting lock`);
+      this.isRunning = false;
+    }, RUN_TIMEOUT_MS);
+
     try {
       return await this.scrape();
     } catch (error) {
@@ -80,6 +86,7 @@ export class LandAuctionsService implements OnModuleInit, OnModuleDestroy {
       }
       throw error;
     } finally {
+      clearTimeout(watchdog);
       this.isRunning = false;
     }
   }

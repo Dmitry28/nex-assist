@@ -290,7 +290,6 @@ const buildPriceChangeCaption = ({
   return lines.join('\n');
 };
 
-// Called only when hasAnything is true, so feeds is guaranteed non-empty here
 const buildSummary = (feeds: KufarFeedResult[]): string => {
   const date = new Date().toLocaleDateString('ru-RU');
   const lines = [`<b>🏘 Kufar · ${date}</b>`];
