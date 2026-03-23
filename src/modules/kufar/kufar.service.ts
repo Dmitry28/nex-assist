@@ -21,6 +21,10 @@ import { dataFile, RUN_TIMEOUT_MS } from './constants';
 import { KufarParserService } from './kufar-parser.service';
 import { KufarNotifierService, KufarNotifyResult } from './kufar-notifier.service';
 
+/** Treat 0 and undefined as equivalent "no price" to avoid false price-change detections. */
+const effectivePrice = (p: number | undefined): number | undefined =>
+  p !== undefined && p > 0 ? p : undefined;
+
 const isKufarSnapshotEntry = (item: unknown): item is KufarSnapshotEntry =>
   typeof item === 'object' &&
   item !== null &&
@@ -159,16 +163,18 @@ export class KufarService implements OnModuleInit, OnModuleDestroy {
 
       if (!prev) {
         newListings.push(listing);
-      } else if (prev.priceByn !== listing.priceByn) {
+      } else if (effectivePrice(prev.priceByn) !== effectivePrice(listing.priceByn)) {
         priceChanges.push({ listing, oldPriceByn: prev.priceByn, oldPriceUsd: prev.priceUsd });
       }
-      // Same price → bumped ad, silently ignore
+      // Same effective price → bumped ad, silently ignore
     }
 
+    // Total is an estimate: previous + newly seen. Actual persisted count may be lower
+    // if notifications fail (new listings won't be saved until next successful delivery).
     const total = previousMap.size + newListings.length;
 
     this.logger.log(
-      `Feed ${feed.key} — total in snapshot: ${total}, new: ${newListings.length}, price changes: ${priceChanges.length}${truncated ? ' [TRUNCATED]' : ''}`,
+      `Feed ${feed.key} — snapshot estimate: ${total}, new: ${newListings.length}, price changes: ${priceChanges.length}${truncated ? ' [TRUNCATED]' : ''}`,
     );
 
     return {

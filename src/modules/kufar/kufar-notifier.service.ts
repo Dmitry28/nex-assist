@@ -10,6 +10,12 @@ import type {
   KufarPriceChange,
   KufarResult,
 } from './dto/kufar-listing.dto';
+import {
+  EMPTY_VALUES,
+  FEED_DISPLAY_NAMES,
+  MEDIA_GROUP_LIMIT,
+  NOTIFICATION_HEADERS,
+} from './constants';
 
 /**
  * Tracks which listings were successfully delivered to Telegram.
@@ -21,12 +27,6 @@ export interface KufarNotifyResult {
   /** adIds successfully sent as price changes, keyed by feedName */
   notifiedPriceChanges: Map<string, Set<number>>;
 }
-import {
-  EMPTY_VALUES,
-  FEED_DISPLAY_NAMES,
-  MEDIA_GROUP_LIMIT,
-  NOTIFICATION_HEADERS,
-} from './constants';
 
 /**
  * Sends Kufar notifications via Telegram.
@@ -215,8 +215,8 @@ const formatDate = (isoString: string): string => {
 
 const formatPrice = (byn?: number, usd?: number): string => {
   const parts: string[] = [];
-  if (byn !== undefined) parts.push(`${byn.toLocaleString('ru-RU')} BYN`);
-  if (usd !== undefined) parts.push(`$${usd.toLocaleString('ru-RU')}`);
+  if (byn !== undefined && byn > 0) parts.push(`${byn.toLocaleString('ru-RU')} BYN`);
+  if (usd !== undefined && usd > 0) parts.push(`$${usd.toLocaleString('ru-RU')}`);
   return parts.join(' / ');
 };
 
@@ -311,7 +311,7 @@ const buildSummary = (feeds: KufarFeedResult[]): string => {
     if (feed.newListings.length > 0) parts.push(`🆕 ${feed.newListings.length} новых`);
     if (feed.priceChanges.length > 0) parts.push(`💸 ${feed.priceChanges.length} изм. цены`);
     const status = parts.length > 0 ? parts.join(', ') : 'без изменений';
-    lines.push(`\n<b>${name}:</b> ${status}`);
+    lines.push('', `<b>${name}:</b> ${status}`);
 
     // List price changes inline with link: title + old → new price
     if (feed.priceChanges.length > 0) {

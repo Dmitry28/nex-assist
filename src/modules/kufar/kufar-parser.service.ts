@@ -70,6 +70,7 @@ export class KufarParserService {
       if (!nextToken) break;
 
       if (page === MAX_PAGES) {
+        // Next token exists but we've hit the page cap — signal truncation to the caller
         truncated = true;
         this.logger.warn(`Reached MAX_PAGES (${MAX_PAGES}) — feed may have more listings`);
         break;
@@ -152,31 +153,28 @@ export class KufarParserService {
 
     // v  = raw code/key (e.g. "central_heating")
     // vl = human-readable label (e.g. "Центральное") — preferred for display
-    const getParamV = (
+    type ParamField = 'v' | 'vl';
+    const getParam = (
       params: Array<{ p: string; v: unknown; vl?: unknown }> | undefined,
       key: string,
-    ) => params?.find(p => p.p === key)?.v;
+      field: ParamField = 'v',
+    ) => params?.find(p => p.p === key)?.[field];
 
-    const getParamVl = (
-      params: Array<{ p: string; v: unknown; vl?: unknown }> | undefined,
-      key: string,
-    ) => params?.find(p => p.p === key)?.vl;
-
-    const address = getParamV(ad.account_parameters, 'address') as string | undefined;
-    const seller = getParamV(ad.account_parameters, 'name') as string | undefined;
+    const address = getParam(ad.account_parameters, 'address') as string | undefined;
+    const seller = getParam(ad.account_parameters, 'name') as string | undefined;
 
     // 'size' = building area m²; 'size_area' = land/plot area in sotki
-    const area = getParamV(ad.ad_parameters, 'size') as number | undefined;
-    const plotArea = getParamV(ad.ad_parameters, 'size_area') as number | undefined;
+    const area = getParam(ad.ad_parameters, 'size') as number | undefined;
+    const plotArea = getParam(ad.ad_parameters, 'size_area') as number | undefined;
 
-    const rooms = getParamV(ad.ad_parameters, 'rooms') as number | undefined;
-    const yearBuilt = getParamV(ad.ad_parameters, 'year_built') as number | undefined;
+    const rooms = getParam(ad.ad_parameters, 'rooms') as number | undefined;
+    const yearBuilt = getParam(ad.ad_parameters, 'year_built') as number | undefined;
 
     // Human-readable property type from vl field
     const propertyType =
-      (getParamVl(ad.ad_parameters, 'garage_type') as string | undefined) ??
-      (getParamVl(ad.ad_parameters, 'house_type_for_sell') as string | undefined) ??
-      (getParamVl(ad.ad_parameters, 'land_type') as string | undefined);
+      (getParam(ad.ad_parameters, 'garage_type', 'vl') as string | undefined) ??
+      (getParam(ad.ad_parameters, 'house_type_for_sell', 'vl') as string | undefined) ??
+      (getParam(ad.ad_parameters, 'land_type', 'vl') as string | undefined);
 
     // Collect feature labels (improvements, heating, water, property rights, outbuildings)
     const featureKeys = [
@@ -189,7 +187,7 @@ export class KufarParserService {
     ];
     const features: string[] = [];
     for (const key of featureKeys) {
-      const vl = getParamVl(ad.ad_parameters, key);
+      const vl = getParam(ad.ad_parameters, key, 'vl');
       if (vl == null) continue;
       if (Array.isArray(vl)) {
         features.push(...(vl as string[]).filter(Boolean));
