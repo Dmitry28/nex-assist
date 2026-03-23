@@ -407,21 +407,14 @@
   {
     "title": "Земельный участок У-4 по ул. Кульбакская",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-u-4-po-ul-kulbakskaya/",
-    "price": "42 087,00 руб.",
-    "area": "0,1072 га",
-    "address": "г. Гродно, ул. Кульбакская, 29А",
-    "cadastralNumber": "440100000001010123",
-    "cadastralMapUrl": "https://map.nca.by/search/019cbe05-7f35-703b-9b7e-5423228a0201",
-    "auctionDate": "Аукцион состоится 14.04.2026",
-    "applicationDeadline": "Заявления принимаются по 08.04.2026",
-    "communications": "электроснабжение, газоснабжение, водоснабжение",
-    "images": [
-      "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt1.png",
-      "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt2.png",
-      "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt3.png",
-      "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt4.png",
-      "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt1.png",
-      "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt2.png"
-    ]
+    "price": "Не найдено",
+    "area": "Не найдено",
+    "address": "Не найдено",
+    "cadastralNumber": "Не найдено",
+    "cadastralMapUrl": "",
+    "auctionDate": "Не указана",
+    "applicationDeadline": "Не указан",
+    "communications": "Не указаны",
+    "images": []
   }
 ]
