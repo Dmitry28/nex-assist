@@ -1,6 +1,9 @@
 /** Number of concurrent Puppeteer pages for detail fetching. */
 export const CONCURRENCY = 2;
 
+/** Max wall-clock time for a full scrape cycle — watchdog resets isRunning if exceeded (10 min). */
+export const RUN_TIMEOUT_MS = 10 * 60 * 1000;
+
 /** Puppeteer navigation and selector timeouts (ms). */
 export const PAGE_TIMEOUT_MS = 30_000;
 
