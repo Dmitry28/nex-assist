@@ -39,7 +39,7 @@ Shared services (from `src/common/`):
 
 **Dynamic cron** — `SchedulerRegistry` + `CronJob` in `onModuleInit` instead of the `@Cron` decorator, because decorators are evaluated before `ConfigModule` loads the env-based schedule.
 
-**Concurrent run guard** — `isRunning` flag (safe in Node.js single-threaded model). Concurrent HTTP call gets `409 Conflict`.
+**Concurrent run guard** — `isRunning` flag (safe in Node.js single-threaded model). Concurrent HTTP call gets `409 Conflict`. A watchdog timer resets the flag if the scrape hangs beyond `RUN_TIMEOUT_MS` (10 min).
 
 **Dry-run mode** — if `TELEGRAM_TOKEN` / `TELEGRAM_LAND_AUCTIONS_CHAT_ID` are absent, `TelegramService` logs to console instead of calling the API. The app starts and runs normally without credentials.
 
