@@ -26,3 +26,9 @@ export const NOTIFICATION_HEADERS = {
   removed: 'Снятые с продажи:',
   sold: 'Продано:',
 } as const;
+
+/**
+ * How many days to keep retrying sold-price lookups for removed listings.
+ * After this window the listing is considered settled without a price.
+ */
+export const SOLD_LOOKUP_RETENTION_DAYS = 14;

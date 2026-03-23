@@ -3,7 +3,7 @@ import { ConfigService } from '@nestjs/config';
 import { sleep } from '../../common/utils/sleep';
 import { TELEGRAM_SEND_DELAY_MS, truncateCaption } from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
-import type { BidCarsResult, CarListing } from './dto/car-listing.dto';
+import type { BidCarsResult, CarListing, RemovedCarListing } from './dto/car-listing.dto';
 import { EMPTY_VALUES, NOTIFICATION_HEADERS } from './constants';
 
 /**
@@ -23,7 +23,7 @@ export class BidCarsNotifierService {
   }
 
   /**
-   * Send the run summary and per-listing messages for new/removed listings.
+   * Send the run summary and per-listing messages for new/removed/sold listings.
    * Throws if the summary fails — caller must not persist snapshot in that case.
    */
   async notifyRunResult(result: BidCarsResult): Promise<void> {
@@ -31,7 +31,7 @@ export class BidCarsNotifierService {
       this.logger.warn('chatId not set — skipping Telegram notification');
       return;
     }
-    const { total, newListings, removedListings } = result;
+    const { total, newListings, removedListings, soldPriceUpdates } = result;
 
     const ok = await this.telegram.sendMessage(
       this.chatId,
@@ -40,6 +40,7 @@ export class BidCarsNotifierService {
         total,
         newCount: newListings.length,
         removedCount: removedListings.length,
+        soldUpdateCount: soldPriceUpdates.length,
       }),
     );
 
@@ -48,6 +49,8 @@ export class BidCarsNotifierService {
     if (newListings.length) await this.sendListings(newListings, NOTIFICATION_HEADERS.new);
     if (removedListings.length)
       await this.sendListings(removedListings, NOTIFICATION_HEADERS.removed);
+    if (soldPriceUpdates.length)
+      await this.sendListings(soldPriceUpdates, NOTIFICATION_HEADERS.sold);
   }
 
   async notifyError(message: string): Promise<void> {
@@ -59,8 +62,11 @@ export class BidCarsNotifierService {
     if (!ok) this.logger.warn('Failed to send error notification to Telegram');
   }
 
-  private async sendListings(listings: CarListing[], header: string): Promise<void> {
-    const failed: CarListing[] = [];
+  private async sendListings(
+    listings: (CarListing | RemovedCarListing)[],
+    header: string,
+  ): Promise<void> {
+    const failed: (CarListing | RemovedCarListing)[] = [];
 
     for (const [i, listing] of listings.entries()) {
       const ok = await this.sendListing({ listing, header, index: i + 1, total: listings.length });
@@ -92,7 +98,7 @@ export class BidCarsNotifierService {
 // ─── Domain formatting helpers ────────────────────────────────────────────────
 
 interface SendListingParams {
-  listing: CarListing;
+  listing: CarListing | RemovedCarListing;
   header: string;
   index: number;
   total: number;
@@ -103,17 +109,29 @@ interface SummaryParams {
   total: number;
   newCount: number;
   removedCount: number;
+  soldUpdateCount: number;
 }
 
 const hasValue = (val: string | undefined): val is string => !!val && !EMPTY_VALUES.has(val);
 
-const buildSummary = ({ date, total, newCount, removedCount }: SummaryParams): string =>
-  [
+const buildSummary = ({
+  date,
+  total,
+  newCount,
+  removedCount,
+  soldUpdateCount,
+}: SummaryParams): string => {
+  const lines = [
     `<b>🚗 Сводка на ${date.toLocaleDateString('ru-RU')}</b>`,
     `📋 Всего лотов: <b>${total}</b>`,
     `🆕 Новые: <b>${newCount}</b>`,
     `🗑 Снятые: <b>${removedCount}</b>`,
-  ].join('\n');
+  ];
+  if (soldUpdateCount > 0) {
+    lines.push(`💰 Цены продажи найдены: <b>${soldUpdateCount}</b>`);
+  }
+  return lines.join('\n');
+};
 
 const buildCaption = ({ listing, header, index, total }: SendListingParams): string => {
   const lines: string[] = [
@@ -122,9 +140,14 @@ const buildCaption = ({ listing, header, index, total }: SendListingParams): str
     `🚗 <b>${listing.title ?? 'Без названия'}</b>`,
   ];
 
-  // Prices — most important, shown first
-  if (hasValue(listing.currentBid)) lines.push('', `💰 Ставка: ${listing.currentBid}`);
-  if (hasValue(listing.buyNow)) lines.push(`⚡ BIN: ${listing.buyNow}`);
+  // Show sold price (final) if available, otherwise last known bid/BIN
+  const soldPrice = (listing as RemovedCarListing).soldPrice;
+  if (hasValue(soldPrice)) {
+    lines.push('', `💰 Продано за: <b>${soldPrice}</b>`);
+  } else {
+    if (hasValue(listing.currentBid)) lines.push('', `💰 Ставка: ${listing.currentBid}`);
+    if (hasValue(listing.buyNow)) lines.push(`⚡ BIN: ${listing.buyNow}`);
+  }
 
   // Damage + running condition + document type
   if (hasValue(listing.damage)) lines.push('', `💥 ${listing.damage}`);

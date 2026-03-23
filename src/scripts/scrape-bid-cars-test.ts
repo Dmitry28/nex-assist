@@ -31,6 +31,7 @@ async function bootstrap(): Promise<void> {
       total: allListings.length,
       newListings: listings,
       removedListings: [],
+      soldPriceUpdates: [],
     });
   } finally {
     await app.close();
