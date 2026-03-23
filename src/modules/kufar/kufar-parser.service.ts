@@ -118,6 +118,12 @@ export class KufarParserService {
         this.logger.warn(`HTTP ${res.status} for ${url}`);
         return null;
       }
+      // Cheap early exit before buffering the body
+      const contentLength = Number(res.headers.get('content-length'));
+      if (contentLength > MAX_HTML_SIZE_BYTES) {
+        this.logger.warn(`Content-Length ${contentLength} exceeds limit for ${url} — skipping`);
+        return null;
+      }
       const html = await res.text();
       if (html.length > MAX_HTML_SIZE_BYTES) {
         this.logger.warn(`Response too large (${html.length} bytes) for ${url} — skipping`);
@@ -133,16 +139,23 @@ export class KufarParserService {
   }
 
   private extractPageData(html: string): { ads: RawAd[]; pagination: RawPaginationEntry[] } {
-    const match = html.match(
-      /<script id="__NEXT_DATA__" type="application\/json">([^<]+)<\/script>/,
-    );
-    if (!match) {
+    // Use positional search instead of regex — the JSON can contain '<' characters
+    // (e.g. in titles or descriptions), which would truncate a [^<]+ pattern.
+    const openTag = '<script id="__NEXT_DATA__" type="application/json">';
+    const start = html.indexOf(openTag);
+    if (start === -1) {
       this.logger.warn('__NEXT_DATA__ not found in page HTML');
+      return { ads: [], pagination: [] };
+    }
+    const contentStart = start + openTag.length;
+    const end = html.indexOf('</script>', contentStart);
+    if (end === -1) {
+      this.logger.warn('__NEXT_DATA__ closing tag not found in page HTML');
       return { ads: [], pagination: [] };
     }
 
     try {
-      const nextData = JSON.parse(match[1]) as Record<string, unknown>;
+      const nextData = JSON.parse(html.slice(contentStart, end)) as Record<string, unknown>;
       // Kufar stores Redux state under props.pageProps.initialState or props.initialState
       const props = nextData?.props as Record<string, unknown> | undefined;
       const initialState =
