@@ -18,29 +18,24 @@ async function bootstrap(): Promise<void> {
     logger: ['log', 'warn', 'error'],
   });
 
-  let failed = false;
-
   try {
     // Run sequentially to avoid two Puppeteer instances competing for memory.
     // Each scraper is wrapped independently so one failure does not skip the other.
+    // Errors are already reported to Telegram via notifyError() inside each service.
     try {
       await app.get(LandAuctionsService).run();
     } catch (err) {
       console.error('LandAuctions scrape failed:', err);
-      failed = true;
     }
 
     try {
       await app.get(BidCarsService).run();
     } catch (err) {
       console.error('BidCars scrape failed:', err);
-      failed = true;
     }
   } finally {
     await app.close();
   }
-
-  if (failed) process.exit(1);
 }
 
 bootstrap().catch(err => {
