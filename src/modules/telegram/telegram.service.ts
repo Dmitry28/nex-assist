@@ -12,6 +12,10 @@ import { MAX_SEND_ATTEMPTS } from './constants';
  *
  * Dry-run mode: if TELEGRAM_TOKEN is not set, all send methods log to console
  * instead of calling the Telegram API. This lets the app run locally without credentials.
+ *
+ * TODO: Telegram is the only alerting channel — if the token expires or the bot is
+ * blocked, errors disappear silently. Consider adding a fallback alert mechanism
+ * (e.g. email, webhook, or GitHub Actions job failure) for critical scrape failures.
  */
 @Injectable()
 export class TelegramService implements OnModuleInit {
