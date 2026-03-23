@@ -66,4 +66,4 @@ jobs:
             --body "Automated data update from daily scrape workflow." \
             --base dev \
             --head "$BRANCH")
-          gh pr merge "$PR_URL" --merge --admin
+          gh pr merge "$PR_URL" --merge --auto
