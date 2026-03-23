@@ -5,7 +5,12 @@ import { sleep } from '../../common/utils/sleep';
 import { TELEGRAM_SEND_DELAY_MS, truncateCaption } from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
 import type { LandAuctionsResult, Listing } from './dto/listing.dto';
-import { EMPTY_VALUES, MEDIA_GROUP_LIMIT, NOTIFICATION_HEADERS } from './constants';
+import {
+  EMPTY_VALUES,
+  MAX_AUCTION_DATE_LENGTH,
+  MEDIA_GROUP_LIMIT,
+  NOTIFICATION_HEADERS,
+} from './constants';
 
 /**
  * Sends land auction notifications via Telegram.
@@ -163,7 +168,7 @@ const formatAuctionDate = (val: string): string => {
   if (val.startsWith('Проведение аукциона планируется '))
     return val.replace('Проведение аукциона планируется ', '');
   // Truncate overly long strings (e.g. full sentences instead of a date)
-  if (val.length > 50) return 'уточняется';
+  if (val.length > MAX_AUCTION_DATE_LENGTH) return 'уточняется';
   return val;
 };
 

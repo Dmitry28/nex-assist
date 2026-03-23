@@ -106,9 +106,9 @@ export class GcnParserService {
       return await page.evaluate((): ListingDetails => {
         const text = document.body.innerText;
 
-        const match = (pattern: RegExp): string => {
+        const match = (pattern: RegExp): string | undefined => {
           const m = text.match(pattern);
-          return m ? m[1].trim() : '';
+          return m ? m[1].trim() : undefined;
         };
 
         const price = match(/Начальная цена:\s*([\d\s,]+)\s*руб\./);

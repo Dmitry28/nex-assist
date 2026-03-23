@@ -33,6 +33,9 @@ export const DATA_FILES = {
 /** Keyword to detect special listings (Заболоть area). */
 export const SPECIAL_KEYWORD = 'заболо';
 
+/** Max length for auction date strings — longer values are replaced with a fallback. */
+export const MAX_AUCTION_DATE_LENGTH = 50;
+
 /** Section headers used in Telegram listing notifications. */
 export const NOTIFICATION_HEADERS = {
   new: 'Новые:',
