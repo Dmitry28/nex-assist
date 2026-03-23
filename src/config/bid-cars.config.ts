@@ -7,7 +7,6 @@ import { registerAs } from '@nestjs/config';
  */
 export default registerAs('bidCars', () => ({
   scrapeUrl: process.env.BID_CARS_SCRAPE_URL,
-  endedUrl: process.env.BID_CARS_ENDED_URL,
   scrapeCron: process.env.BID_CARS_SCRAPE_CRON,
   chatId: process.env.TELEGRAM_BID_CARS_CHAT_ID,
 }));

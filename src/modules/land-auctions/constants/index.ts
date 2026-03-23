@@ -7,12 +7,6 @@ export const PAGE_TIMEOUT_MS = 30_000;
 /** Telegram max photos per media group. */
 export const MEDIA_GROUP_LIMIT = 10;
 
-/** Telegram max caption length in characters. */
-export const TELEGRAM_CAPTION_LIMIT = 1024;
-
-/** Delay between Telegram sends to avoid rate limiting (ms). */
-export const TELEGRAM_SEND_DELAY_MS = 1000;
-
 /** Field values considered empty/unknown — skipped when building Telegram captions. */
 export const EMPTY_VALUES = new Set([
   'Не найдено',
@@ -38,6 +32,9 @@ export const DATA_FILES = {
 
 /** Keyword to detect special listings (Заболоть area). */
 export const SPECIAL_KEYWORD = 'заболо';
+
+/** Max length for auction date strings — longer values are replaced with a fallback. */
+export const MAX_AUCTION_DATE_LENGTH = 50;
 
 /** Section headers used in Telegram listing notifications. */
 export const NOTIFICATION_HEADERS = {

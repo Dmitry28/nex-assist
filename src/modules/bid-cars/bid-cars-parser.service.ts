@@ -3,9 +3,9 @@ import puppeteerExtra from 'puppeteer-extra';
 import StealthPlugin from 'puppeteer-extra-plugin-stealth';
 import type { Browser, Page } from 'puppeteer';
 import type { CarListing } from './dto/car-listing.dto';
+import { CARD_WALK_DEPTH, MAX_PAGES, PAGE_TIMEOUT_MS } from './constants';
 
 puppeteerExtra.use(StealthPlugin());
-import { CARD_WALK_DEPTH, MAX_PAGES, PAGE_TIMEOUT_MS } from './constants';
 
 /**
  * Scrapes bid.cars search results using Puppeteer.
@@ -92,9 +92,25 @@ export class BidCarsParserService {
         }
       }
 
-      const listings = await page.evaluate((walkDepth: number): CarListing[] => {
+      const listings: CarListing[] = await page.evaluate((walkDepth: number) => {
         const seen = new Set<string>();
-        const results: CarListing[] = [];
+        const results: Array<{
+          link: string;
+          title?: string;
+          vin?: string;
+          lot?: string;
+          odometer?: string;
+          damage?: string;
+          location?: string;
+          currentBid?: string;
+          buyNow?: string;
+          engine?: string;
+          keys?: string;
+          condition?: string;
+          auctionDate?: string;
+          auctionSource?: string;
+          seller?: string;
+        }> = [];
 
         /** Parse VIN (17-char) from a lot URL — VIN follows the last hyphen in the slug. */
         const vinFromUrl = (href: string): string => {
@@ -157,7 +173,7 @@ export class BidCarsParserService {
           const auctionDate = matchText(/((?:пн|вт|ср|чт|пт|сб|вс)\s+[^\n]+GMT[+-]\d+)/i);
           // Auction house: standalone line — IAAI, Copart, Manheim, etc.
           const auctionSource = cardText.match(
-            /\n(IAAI|IAA|Copart|Manheim|ADESA|BacklotCars|ACV)\n/i,
+            /\n(IAAI|IAA|Copart|Manheim|ADESA|BacklotCars|ACV)\n/,
           )?.[1];
           // Seller / insurance company (e.g. "State Farm Group Insurance")
           const seller = matchText(/Продавец:\n\s*([^\n]+)/);
@@ -166,7 +182,7 @@ export class BidCarsParserService {
             matchText(/(\d+[.,]\d+[Ll])\b/),
             matchText(/(\d+\s*cyl\.?)/i),
             matchText(/(\d+\s*HP)/i),
-          ].filter((x): x is string => Boolean(x));
+          ].filter((x): x is string => x !== undefined);
           const engine = engineParts.length > 0 ? engineParts.join(' ') : undefined;
 
           results.push({

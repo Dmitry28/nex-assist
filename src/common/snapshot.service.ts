@@ -2,6 +2,9 @@ import { Injectable, Logger } from '@nestjs/common';
 import { promises as fs } from 'fs';
 import path from 'path';
 
+const isErrnoException = (e: unknown): e is NodeJS.ErrnoException =>
+  e instanceof Error && 'code' in e;
+
 /**
  * Generic snapshot persistence — reads/writes JSON arrays to disk.
  * Used by feature modules to diff listings between runs.
@@ -25,7 +28,7 @@ export class SnapshotService {
       }
       return parsed;
     } catch (error: unknown) {
-      const isNotFound = (error as NodeJS.ErrnoException).code === 'ENOENT';
+      const isNotFound = isErrnoException(error) && error.code === 'ENOENT';
       if (isNotFound) {
         this.logger.log(`No snapshot at ${filePath}, starting fresh.`);
       } else {

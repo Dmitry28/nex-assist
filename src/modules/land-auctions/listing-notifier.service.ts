@@ -2,14 +2,14 @@ import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import TelegramBot from 'node-telegram-bot-api';
 import { sleep } from '../../common/utils/sleep';
+import { TELEGRAM_SEND_DELAY_MS, truncateCaption } from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
 import type { LandAuctionsResult, Listing } from './dto/listing.dto';
 import {
   EMPTY_VALUES,
+  MAX_AUCTION_DATE_LENGTH,
   MEDIA_GROUP_LIMIT,
   NOTIFICATION_HEADERS,
-  TELEGRAM_CAPTION_LIMIT,
-  TELEGRAM_SEND_DELAY_MS,
 } from './constants';
 
 /**
@@ -79,7 +79,7 @@ export class ListingNotifierService {
     }
 
     if (failed.length > 0) {
-      const list = failed.map(l => `• ${l.title}`).join('\n');
+      const list = failed.map(l => `• ${l.title ?? l.link ?? 'unknown'}`).join('\n');
       await this.telegram.sendMessage(
         this.chatId,
         `⚠️ Не удалось отправить ${failed.length} объект(а):\n${list}`,
@@ -168,7 +168,7 @@ const formatAuctionDate = (val: string): string => {
   if (val.startsWith('Проведение аукциона планируется '))
     return val.replace('Проведение аукциона планируется ', '');
   // Truncate overly long strings (e.g. full sentences instead of a date)
-  if (val.length > 50) return 'уточняется';
+  if (val.length > MAX_AUCTION_DATE_LENGTH) return 'уточняется';
   return val;
 };
 
@@ -222,6 +222,3 @@ const buildCaption = ({ listing, header, index, total }: SendListingParams): str
 
   return lines.join('\n');
 };
-
-const truncateCaption = (text: string): string =>
-  text.length <= TELEGRAM_CAPTION_LIMIT ? text : text.slice(0, TELEGRAM_CAPTION_LIMIT - 3) + '...';

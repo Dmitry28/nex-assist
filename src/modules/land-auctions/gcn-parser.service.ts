@@ -33,13 +33,14 @@ export class GcnParserService {
       await page.goto(url, { waitUntil: 'networkidle0', timeout: PAGE_TIMEOUT_MS });
       await page.waitForSelector('.vc_grid-item', { timeout: PAGE_TIMEOUT_MS });
 
-      const listings: Listing[] = await page.evaluate(() =>
+      const rawListings = await page.evaluate(() =>
         Array.from(document.querySelectorAll('.vc_grid-item')).map(el => ({
           title: el.querySelector('.vc_gitem-post-data-source-post_title')?.textContent?.trim(),
           link: el.querySelector<HTMLAnchorElement>('.vc-zone-link')?.href,
         })),
       );
 
+      const listings: Listing[] = rawListings.filter(l => !!l.link);
       this.logger.log(`Found ${listings.length} listings`);
       return listings;
     } finally {
@@ -52,8 +53,10 @@ export class GcnParserService {
    * Mutates each listing in place to add price, area, images, etc.
    */
   private async enrichWithDetails(browser: Browser, listings: Listing[]): Promise<void> {
+    const poolSize = Math.min(CONCURRENCY, listings.length);
+    if (poolSize === 0) return;
     const pages: Page[] = await Promise.all(
-      Array.from({ length: CONCURRENCY }, () => browser.newPage()),
+      Array.from({ length: poolSize }, () => browser.newPage()),
     );
 
     // Each page worker pulls from the shared queue. Safe in Node.js because
@@ -103,9 +106,9 @@ export class GcnParserService {
       return await page.evaluate((): ListingDetails => {
         const text = document.body.innerText;
 
-        const match = (pattern: RegExp): string => {
+        const match = (pattern: RegExp): string | undefined => {
           const m = text.match(pattern);
-          return m ? m[1].trim() : '';
+          return m ? m[1].trim() : undefined;
         };
 
         const price = match(/Начальная цена:\s*([\d\s,]+)\s*руб\./);
