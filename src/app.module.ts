@@ -5,6 +5,7 @@ import { ScheduleModule } from '@nestjs/schedule';
 import { ThrottlerGuard, ThrottlerModule } from '@nestjs/throttler';
 import appConfig from './config/app.config';
 import { validationSchema } from './config/validation.schema';
+import { CommonModule } from './common/common.module';
 import { AllExceptionsFilter } from './common/filters/all-exceptions.filter';
 import { TransformInterceptor } from './common/interceptors/transform.interceptor';
 import { HealthModule } from './modules/health/health.module';
@@ -40,6 +41,9 @@ import { LandAuctionsModule } from './modules/land-auctions/land-auctions.module
 
     // Cron job scheduler
     ScheduleModule.forRoot(),
+
+    // Shared infrastructure (global: SnapshotService available everywhere)
+    CommonModule,
 
     // Feature modules
     HealthModule,

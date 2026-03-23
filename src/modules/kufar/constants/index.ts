@@ -46,3 +46,6 @@ export const NOTIFICATION_HEADERS = {
   new: '🆕 Новые',
   priceChange: '💸 Изменение цены',
 } as const;
+
+/** Max price-change rows shown inline in the run summary message. */
+export const MAX_PRICE_CHANGES_IN_SUMMARY = 8;
