@@ -1,0 +1,185 @@
+import { Injectable, Logger } from '@nestjs/common';
+import puppeteer, { type Browser, type Page } from 'puppeteer';
+import type { Listing, ListingDetails } from './dto/listing.dto';
+import { CONCURRENCY, PAGE_TIMEOUT_MS } from './constants';
+
+/**
+ * Scrapes gcn.by land auction listings using Puppeteer.
+ * Opens a pool of CONCURRENCY pages to fetch listing details in parallel.
+ */
+@Injectable()
+export class GcnParserService {
+  private readonly logger = new Logger(GcnParserService.name);
+
+  async fetchListings(url: string): Promise<Listing[]> {
+    const browser: Browser = await puppeteer.launch({
+      headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    });
+
+    try {
+      const listings = await this.scrapeListPage(browser, url);
+      await this.enrichWithDetails(browser, listings);
+      return listings;
+    } finally {
+      await browser.close();
+    }
+  }
+
+  /** Scrape listing titles and links from the main catalog page. */
+  private async scrapeListPage(browser: Browser, url: string): Promise<Listing[]> {
+    const page: Page = await browser.newPage();
+    try {
+      await page.goto(url, { waitUntil: 'networkidle0', timeout: PAGE_TIMEOUT_MS });
+      await page.waitForSelector('.vc_grid-item', { timeout: PAGE_TIMEOUT_MS });
+
+      const rawListings = await page.evaluate(() =>
+        Array.from(document.querySelectorAll('.vc_grid-item')).map(el => ({
+          title: el.querySelector('.vc_gitem-post-data-source-post_title')?.textContent?.trim(),
+          link: el.querySelector<HTMLAnchorElement>('.vc-zone-link')?.href,
+        })),
+      );
+
+      const listings: Listing[] = rawListings.filter(l => !!l.link);
+      this.logger.log(`Found ${listings.length} listings`);
+      return listings;
+    } finally {
+      await page.close();
+    }
+  }
+
+  /**
+   * Fetch full details for each listing using a pool of concurrent pages.
+   * Mutates each listing in place to add price, area, images, etc.
+   */
+  private async enrichWithDetails(browser: Browser, listings: Listing[]): Promise<void> {
+    const poolSize = Math.min(CONCURRENCY, listings.length);
+    if (poolSize === 0) return;
+    const pages: Page[] = await Promise.all(
+      Array.from({ length: poolSize }, () => browser.newPage()),
+    );
+
+    // Each page worker pulls from the shared queue. Safe in Node.js because
+    // queue.shift() is synchronous — no interleaving can happen between
+    // the length check and the shift before the first await.
+    const queue = [...listings];
+
+    await Promise.all(
+      pages.map(async page => {
+        try {
+          while (queue.length > 0) {
+            const listing = queue.shift();
+            if (!listing) break;
+            const details = await this.fetchDetails(page, listing.link);
+            Object.assign(listing, details);
+          }
+        } finally {
+          await page.close();
+        }
+      }),
+    );
+  }
+
+  /** Fetch detail fields from a single listing page. Returns empty defaults on failure. */
+  private async fetchDetails(page: Page, link: string | undefined): Promise<ListingDetails> {
+    const empty: ListingDetails = {
+      price: 'Не найдено',
+      area: 'Не найдено',
+      address: 'Не найдено',
+      cadastralNumber: 'Не найдено',
+      cadastralMapUrl: '',
+      auctionDate: 'Не указана',
+      applicationDeadline: 'Не указан',
+      communications: 'Не указаны',
+      images: [],
+    };
+
+    if (!link) {
+      this.logger.warn('Skipping listing with no link');
+      return empty;
+    }
+
+    try {
+      await page.goto(link, { waitUntil: 'networkidle2', timeout: PAGE_TIMEOUT_MS });
+      await page.waitForSelector('.prop, strong', { timeout: PAGE_TIMEOUT_MS });
+
+      return await page.evaluate((): ListingDetails => {
+        const text = document.body.innerText;
+
+        const match = (pattern: RegExp): string | undefined => {
+          const m = text.match(pattern);
+          return m ? m[1].trim() : undefined;
+        };
+
+        const price = match(/Начальная цена:\s*([\d\s,]+)\s*руб\./);
+        const area =
+          match(/Площадь земельного участка:\s*([\d,.]+)\s*га/) ||
+          match(/Площадь:\s*([\d,.]+)\s*га/);
+        // Address can appear as a standalone field or embedded in the description
+        const address = match(/Адрес:\s*(.+)/) || match(/по адресу:\s*(г\.[^\n]+)/);
+        const cadastralNumber = match(/Кадастровый номер:\s*(\d+)/);
+
+        const cadastralMapEl = document.querySelector<HTMLAnchorElement>(
+          '.prop a[href*="map.nca.by"]',
+        );
+        const cadastralMapUrl = cadastralMapEl?.href ?? '';
+
+        // Auction date — prefer a link with the exact phrase, fall back to <em>
+        const auctionLinkEl = Array.from(document.querySelectorAll('.prop a')).find(a =>
+          a.textContent?.includes('Аукцион состоится'),
+        );
+        const auctionEmEl = document.querySelector('.prop em');
+        const auctionDate =
+          auctionLinkEl?.textContent?.trim() ?? auctionEmEl?.textContent?.trim() ?? 'Не указана';
+
+        const deadlineLinkEl = Array.from(document.querySelectorAll('.prop a')).find(a =>
+          a.textContent?.includes('Заявления принимаются'),
+        );
+        const applicationDeadline = deadlineLinkEl?.textContent?.trim() ?? 'Не указан';
+
+        // Collect available utility connections from a known text block
+        const commsSource =
+          text.match(/Имеется возможность подключения к сетям\s+(.+?)(?:\n|Победитель)/s)?.[1] ??
+          '';
+        const commsMap: [RegExp, string][] = [
+          [/электроснабжени/i, 'электроснабжение'],
+          [/газоснабжени/i, 'газоснабжение'],
+          [/водоснабжени/i, 'водоснабжение'],
+          [/водоотведени/i, 'водоотведение'],
+          [/теплоснабжени/i, 'теплоснабжение'],
+        ];
+        const foundComms = commsMap.filter(([re]) => re.test(commsSource)).map(([, name]) => name);
+        const communications = foundComms.length > 0 ? foundComms.join(', ') : 'Не указаны';
+
+        // Images: prefer gallery, fall back to .prop images; exclude small cadastral-map buttons
+        const galleryEls = document.querySelectorAll('#image-gallery img');
+        const propEls = document.querySelectorAll('.prop img');
+        const allImgEls = galleryEls.length > 0 ? galleryEls : propEls;
+        const images = Array.from(allImgEls)
+          .filter(
+            img =>
+              (img as HTMLImageElement).naturalHeight > 100 ||
+              (img as HTMLImageElement).height > 100 ||
+              !(img as HTMLImageElement).height,
+          )
+          .map(img => (img as HTMLImageElement).src)
+          .filter(src => !!src && !src.includes('knopka'));
+
+        return {
+          price: price ? price + ' руб.' : 'Не найдено',
+          area: area ? area + ' га' : 'Не найдено',
+          address: address || 'Не найден',
+          cadastralNumber: cadastralNumber || 'Не найден',
+          cadastralMapUrl,
+          auctionDate,
+          applicationDeadline,
+          communications,
+          images,
+        };
+      });
+    } catch (error) {
+      this.logger.error(`Failed to fetch details for ${link}`, error);
+      return empty;
+    }
+  }
+}

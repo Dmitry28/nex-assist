@@ -1,0 +1,22 @@
+services:
+  app:
+    build:
+      context: .
+      target: builder   # dev: uses builder stage with devDeps
+    command: npm run start:dev
+    ports:
+      - '${PORT:-3000}:3000'
+    volumes:
+      - .:/app
+      - /app/node_modules  # prevent host node_modules from overriding container
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: development
+    restart: unless-stopped
+    healthcheck:
+      test: ['CMD', 'wget', '-qO-', 'http://localhost:3000/api/v1/health']
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
