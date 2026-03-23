@@ -10,6 +10,13 @@ export const LAND_AUCTIONS_DEFAULTS = {
   SCRAPE_CRON: '0 8 * * *',
 } as const;
 
+export const KUFAR_DEFAULTS = {
+  GARAGES_URL:
+    'https://re.kufar.by/l/grodnenskaya-oblast/kupit/garazh?cur=BYR&gbx=b%3A23.725981746227706%2C53.57183301832253%2C23.94948485902068%2C53.75128104662766&size=30',
+  /** Default cron: every day at 09:00 UTC (12:00 Minsk) */
+  SCRAPE_CRON: '0 9 * * *',
+} as const;
+
 export const BID_CARS_DEFAULTS = {
   SCRAPE_URL:
     'https://bid.cars/ru/search/results?search-type=filters&status=Active&type=Automobile&make=Volkswagen&model=Atlas&year-from=2023&year-to=2027&auction-type=All&odometer-to=60000&start-code=Run+and+Drive&engine-size-to=2',
