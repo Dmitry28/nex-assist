@@ -99,32 +99,16 @@ export class KufarNotifierService {
   }
 
   private async sendListings(listings: KufarListing[], header: string): Promise<Set<number>> {
-    const total = listings.length;
-    const notified = new Set<number>();
-    const failed: KufarListing[] = [];
-
-    for (const [i, listing] of listings.entries()) {
-      const ok = await this.sendListing({
-        caption: truncateCaption(buildListingCaption({ listing, header, index: i + 1, total })),
+    return this.sendBatch(
+      listings,
+      (listing, index, total) => ({
+        caption: buildListingCaption({ listing, header, index, total }),
         images: listing.images,
-      });
-      if (ok) {
-        notified.add(listing.adId);
-      } else {
-        failed.push(listing);
-      }
-      if (i < listings.length - 1) await sleep(TELEGRAM_SEND_DELAY_MS);
-    }
-
-    if (failed.length > 0) {
-      const list = failed.map(l => `• ${l.title}`).join('\n');
-      await this.telegram.sendMessage(
-        this.chatId,
-        `⚠️ Не удалось отправить ${failed.length} объект(а):\n${list}`,
-      );
-    }
-
-    return notified;
+      }),
+      l => l.adId,
+      l => l.title,
+      'объект(а)',
+    );
   }
 
   private async sendPriceChanges(
@@ -132,29 +116,42 @@ export class KufarNotifierService {
     displayName: string,
   ): Promise<Set<number>> {
     const header = `${NOTIFICATION_HEADERS.priceChange} · ${displayName}`;
-    const notified = new Set<number>();
-    const failed: KufarListing[] = [];
-
-    for (const [i, change] of changes.entries()) {
-      const ok = await this.sendListing({
-        caption: truncateCaption(
-          buildPriceChangeCaption({ change, header, index: i + 1, total: changes.length }),
-        ),
+    return this.sendBatch(
+      changes,
+      (change, index, total) => ({
+        caption: buildPriceChangeCaption({ change, header, index, total }),
         images: change.listing.images,
-      });
-      if (ok) {
-        notified.add(change.listing.adId);
-      } else {
-        failed.push(change.listing);
-      }
-      if (i < changes.length - 1) await sleep(TELEGRAM_SEND_DELAY_MS);
+      }),
+      c => c.listing.adId,
+      c => c.listing.title,
+      'изменение(й) цены',
+    );
+  }
+
+  /** Generic send loop — iterates items, tracks delivered/failed, reports failures. */
+  private async sendBatch<T>(
+    items: T[],
+    toMessage: (item: T, index: number, total: number) => { caption: string; images: string[] },
+    getId: (item: T) => number,
+    getTitle: (item: T) => string,
+    failedLabel: string,
+  ): Promise<Set<number>> {
+    const notified = new Set<number>();
+    const failed: T[] = [];
+
+    for (const [i, item] of items.entries()) {
+      const { caption, images } = toMessage(item, i + 1, items.length);
+      const ok = await this.sendListing({ caption: truncateCaption(caption), images });
+      if (ok) notified.add(getId(item));
+      else failed.push(item);
+      if (i < items.length - 1) await sleep(TELEGRAM_SEND_DELAY_MS);
     }
 
     if (failed.length > 0) {
-      const list = failed.map(l => `• ${l.title}`).join('\n');
+      const list = failed.map(item => `• ${getTitle(item)}`).join('\n');
       await this.telegram.sendMessage(
         this.chatId,
-        `⚠️ Не удалось отправить ${failed.length} изменение(й) цены:\n${list}`,
+        `⚠️ Не удалось отправить ${failed.length} ${failedLabel}:\n${list}`,
       );
     }
 
