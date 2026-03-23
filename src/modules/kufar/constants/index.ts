@@ -13,6 +13,9 @@ export const MAX_HTML_SIZE_BYTES = 5 * 1024 * 1024;
 /** Max wall-clock time for a full scrape cycle — watchdog resets isRunning if exceeded (15 min). */
 export const RUN_TIMEOUT_MS = 15 * 60 * 1000;
 
+/** Pause between fetching consecutive feeds to reduce load on Kufar servers (2 s). */
+export const INTER_FEED_DELAY_MS = 2_000;
+
 /**
  * Only process listings whose list_time is within the last LOOKBACK_HOURS.
  * 48 h covers today + yesterday regardless of timezone offset.

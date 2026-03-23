@@ -9,6 +9,7 @@ import { ConfigService } from '@nestjs/config';
 import { SchedulerRegistry } from '@nestjs/schedule';
 import { CronJob } from 'cron';
 import { SnapshotService } from '../../common/snapshot.service';
+import { sleep } from '../../common/utils/sleep';
 import type { KufarFeedConfig } from '../../config/kufar.config';
 import type {
   KufarFeedResult,
@@ -17,7 +18,7 @@ import type {
   KufarResult,
   KufarSnapshotEntry,
 } from './dto/kufar-listing.dto';
-import { dataFile, RUN_TIMEOUT_MS } from './constants';
+import { INTER_FEED_DELAY_MS, dataFile, RUN_TIMEOUT_MS } from './constants';
 import { KufarParserService } from './kufar-parser.service';
 import { KufarNotifierService, KufarNotifyResult } from './kufar-notifier.service';
 
@@ -132,7 +133,8 @@ export class KufarService implements OnModuleInit, OnModuleDestroy {
 
     const scrapeData: KufarFeedScrapeData[] = [];
 
-    for (const feed of feeds) {
+    for (const [i, feed] of feeds.entries()) {
+      if (i > 0) await sleep(INTER_FEED_DELAY_MS);
       scrapeData.push(await this.scrapeFeed(feed));
     }
 
@@ -231,7 +233,10 @@ export class KufarService implements OnModuleInit, OnModuleDestroy {
 
     // Log if nothing was persisted due to notification failures
     const notifiedCount = notifiedNew.size + notifiedPriceChanges.size;
-    const pendingCount = result.newListings.length + result.priceChanges.length - notifiedCount;
+    const pendingCount = Math.max(
+      0,
+      result.newListings.length + result.priceChanges.length - notifiedCount,
+    );
     if (pendingCount > 0) {
       this.logger.warn(
         `Feed ${feed.key}: ${pendingCount} listing(s) not persisted — notification failed, will retry next run`,
