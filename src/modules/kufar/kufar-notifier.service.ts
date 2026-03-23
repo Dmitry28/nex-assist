@@ -202,10 +202,17 @@ const buildListingCaption = ({ listing, header, index, total }: ListingCaptionPa
 
   lines.push('');
   if (hasValue(listing.address)) lines.push(`📍 ${listing.address}`);
+  if (hasValue(listing.propertyType)) lines.push(`🏷 ${listing.propertyType}`);
 
   const price = formatPrice(listing.priceByn, listing.priceUsd);
   if (price) lines.push(`💰 ${price}`);
   if (hasValue(listing.area)) lines.push(`📐 ${listing.area} м²`);
+  if (hasValue(listing.plotArea)) lines.push(`🌱 ${listing.plotArea} сот.`);
+  if (hasValue(listing.rooms)) lines.push(`🚪 ${listing.rooms} комн.`);
+  if (hasValue(listing.yearBuilt)) lines.push(`📅 ${listing.yearBuilt} г.п.`);
+  if (listing.features && listing.features.length > 0)
+    lines.push(`✅ ${listing.features.join(', ')}`);
+  if (hasValue(listing.seller)) lines.push(`👤 ${listing.seller}`);
 
   lines.push(`🕐 ${formatDate(listing.listTime)}`);
   lines.push('', `<a href="${listing.link}">🔗 Подробнее</a>`);
@@ -236,6 +243,9 @@ const buildPriceChangeCaption = ({
   }
 
   if (hasValue(listing.area)) lines.push(`📐 ${listing.area} м²`);
+  if (hasValue(listing.plotArea)) lines.push(`🌱 ${listing.plotArea} сот.`);
+  if (hasValue(listing.rooms)) lines.push(`🚪 ${listing.rooms} комн.`);
+  if (hasValue(listing.yearBuilt)) lines.push(`📅 ${listing.yearBuilt} г.п.`);
   lines.push('', `<a href="${listing.link}">🔗 Подробнее</a>`);
 
   return lines.join('\n');

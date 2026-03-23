@@ -11,8 +11,20 @@ export class KufarListing {
   @ApiPropertyOptional() priceByn?: number;
   @ApiPropertyOptional() priceUsd?: number;
   @ApiPropertyOptional() address?: string;
-  /** Total area in m² (garages) or hectares (land). */
+  /** Total area in m² (garages/houses). */
   @ApiPropertyOptional() area?: number;
+  /** Land/plot area in sotki (land plots and houses with land). */
+  @ApiPropertyOptional() plotArea?: number;
+  /** Number of rooms (houses). */
+  @ApiPropertyOptional() rooms?: number;
+  /** Year built (houses). */
+  @ApiPropertyOptional() yearBuilt?: number;
+  /** Seller/account name. */
+  @ApiPropertyOptional() seller?: string;
+  /** Human-readable property type (e.g. "Машиноместо", "Дача"). */
+  @ApiPropertyOptional() propertyType?: string;
+  /** Additional features: improvements, heating, water supply, etc. */
+  @ApiPropertyOptional({ type: [String] }) features?: string[];
   /** ISO 8601 UTC timestamp of last update/bump. */
   @ApiProperty() listTime!: string;
   @ApiProperty({ type: [String] }) images!: string[];

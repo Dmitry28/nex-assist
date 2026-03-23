@@ -13,6 +13,10 @@ export const LAND_AUCTIONS_DEFAULTS = {
 export const KUFAR_DEFAULTS = {
   GARAGES_URL:
     'https://re.kufar.by/l/grodnenskaya-oblast/kupit/garazh?cur=BYR&gbx=b%3A23.725981746227706%2C53.57183301832253%2C23.94948485902068%2C53.75128104662766&size=30',
+  LAND_URL:
+    'https://re.kufar.by/l/grodnenskaya-oblast/kupit/uchastok?cur=BYR&gbx=b%3A23.63247006323345%2C53.454666565957595%2C24.079476288819368%2C53.81379430265694&size=30',
+  HOUSES_URL:
+    'https://re.kufar.by/l/grodnenskaya-oblast/kupit/dom?cur=BYR&gbx=b%3A23.656203109090203%2C53.45970346998098%2C24.10320933467615%2C53.81878831030225&size=30',
   /** Default cron: every day at 09:00 UTC (12:00 Minsk) */
   SCRAPE_CRON: '0 9 * * *',
 } as const;

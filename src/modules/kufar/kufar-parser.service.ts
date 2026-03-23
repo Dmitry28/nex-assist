@@ -12,8 +12,8 @@ interface RawAd {
   price_usd?: string;
   list_time: string;
   images?: Array<{ path: string }>;
-  ad_parameters?: Array<{ p: string; v: unknown }>;
-  account_parameters?: Array<{ p: string; v: unknown }>;
+  ad_parameters?: Array<{ p: string; v: unknown; vl?: unknown }>;
+  account_parameters?: Array<{ p: string; v: unknown; vl?: unknown }>;
 }
 
 /** Pagination entry from __NEXT_DATA__. */
@@ -126,18 +126,57 @@ export class KufarParserService {
   }
 
   private mapListing(ad: RawAd): KufarListing {
-    // Kufar stores prices as integers in 1/1000 of the currency unit (e.g. 1095000 → 1095 BYN)
-    const priceByn = ad.price_byn ? Math.round(parseInt(ad.price_byn, 10) / 1000) : undefined;
-    const priceUsd = ad.price_usd ? Math.round(parseInt(ad.price_usd, 10) / 1000) : undefined;
+    // Kufar stores prices as integers in 1/100 of the currency unit (e.g. 10950000 → 109500 BYN)
+    const rawByn = ad.price_byn ? parseInt(ad.price_byn, 10) : 0;
+    const rawUsd = ad.price_usd ? parseInt(ad.price_usd, 10) : 0;
+    const priceByn = rawByn > 0 ? Math.round(rawByn / 100) : undefined;
+    const priceUsd = rawUsd > 0 ? Math.round(rawUsd / 100) : undefined;
 
-    const getParam = (params: Array<{ p: string; v: unknown }> | undefined, key: string) =>
-      params?.find(p => p.p === key)?.v;
+    const getParamV = (
+      params: Array<{ p: string; v: unknown; vl?: unknown }> | undefined,
+      key: string,
+    ) => params?.find(p => p.p === key)?.v;
 
-    const address = getParam(ad.account_parameters, 'address') as string | undefined;
-    // 'size' = m² for garages/apartments; 'size_area' = m² for land plots
-    const area =
-      (getParam(ad.ad_parameters, 'size') as number | undefined) ??
-      (getParam(ad.ad_parameters, 'size_area') as number | undefined);
+    const getParamVl = (
+      params: Array<{ p: string; v: unknown; vl?: unknown }> | undefined,
+      key: string,
+    ) => params?.find(p => p.p === key)?.vl;
+
+    const address = getParamV(ad.account_parameters, 'address') as string | undefined;
+    const seller = getParamV(ad.account_parameters, 'name') as string | undefined;
+
+    // 'size' = building area m²; 'size_area' = land/plot area in sotki
+    const area = getParamV(ad.ad_parameters, 'size') as number | undefined;
+    const plotArea = getParamV(ad.ad_parameters, 'size_area') as number | undefined;
+
+    const rooms = getParamV(ad.ad_parameters, 'rooms') as number | undefined;
+    const yearBuilt = getParamV(ad.ad_parameters, 'year_built') as number | undefined;
+
+    // Human-readable property type from vl field
+    const propertyType =
+      (getParamVl(ad.ad_parameters, 'garage_type') as string | undefined) ??
+      (getParamVl(ad.ad_parameters, 'house_type_for_sell') as string | undefined) ??
+      (getParamVl(ad.ad_parameters, 'land_type') as string | undefined);
+
+    // Collect feature labels (improvements, heating, water, property rights, outbuildings)
+    const featureKeys = [
+      'garage_improvements',
+      'garage_parking_type',
+      're_heating',
+      're_water',
+      're_property_rights',
+      're_outbuildings',
+    ];
+    const features: string[] = [];
+    for (const key of featureKeys) {
+      const vl = getParamVl(ad.ad_parameters, key);
+      if (vl == null) continue;
+      if (Array.isArray(vl)) {
+        features.push(...(vl as string[]).filter(Boolean));
+      } else if (typeof vl === 'string' && vl) {
+        features.push(vl);
+      }
+    }
 
     const images = (ad.images ?? []).map(img => `${IMAGE_CDN_BASE}/${img.path}`);
 
@@ -150,6 +189,12 @@ export class KufarParserService {
       priceUsd,
       address: address || undefined,
       area: area !== undefined ? Number(area) : undefined,
+      plotArea: plotArea !== undefined ? Number(plotArea) : undefined,
+      rooms: rooms !== undefined ? Number(rooms) : undefined,
+      yearBuilt: yearBuilt !== undefined ? Number(yearBuilt) : undefined,
+      seller: seller || undefined,
+      propertyType: propertyType || undefined,
+      features: features.length > 0 ? features : undefined,
       listTime: ad.list_time,
       images,
     };
