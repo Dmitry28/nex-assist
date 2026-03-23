@@ -4,7 +4,8 @@
   "description": "ops-io-proxy service",
   "main": "src/index.ts",
   "scripts": {
-    "start": "ts-node src/index.ts"
+    "start": "ts-node src/index.ts",
+    "scrape": "ts-node src/index.ts"
   },
   "keywords": [],
   "author": "Enneo",
