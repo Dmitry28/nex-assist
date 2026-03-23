@@ -59,10 +59,6 @@ export class KufarNotifierService {
     if (!this.chatId) return empty;
 
     const { feeds } = result;
-    const hasAnything = feeds.some(f => f.newListings.length > 0 || f.priceChanges.length > 0);
-
-    // Only send summary when there is something to report
-    if (!hasAnything) return empty;
 
     const summaryOk = await this.telegram.sendMessage(this.chatId, buildSummary(feeds));
     if (!summaryOk) {
