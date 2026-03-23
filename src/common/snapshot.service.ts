@@ -28,11 +28,12 @@ export class SnapshotService {
       }
       return parsed;
     } catch (error: unknown) {
-      const isNotFound = isErrnoException(error) && error.code === 'ENOENT';
-      if (isNotFound) {
+      if (isErrnoException(error) && error.code === 'ENOENT') {
         this.logger.log(`No snapshot at ${filePath}, starting fresh.`);
+      } else if (error instanceof SyntaxError) {
+        this.logger.error(`Snapshot at ${filePath} contains invalid JSON — resetting.`, error);
       } else {
-        this.logger.warn(`Failed to read snapshot at ${filePath}, starting fresh.`, error);
+        this.logger.error(`Failed to read snapshot at ${filePath}, starting fresh.`, error);
       }
       return [];
     }

@@ -1,4 +1,4 @@
-import { Injectable, Logger } from '@nestjs/common';
+import { Injectable, Logger, OnModuleDestroy } from '@nestjs/common';
 import puppeteerExtra from 'puppeteer-extra';
 import StealthPlugin from 'puppeteer-extra-plugin-stealth';
 import type { Browser, Page } from 'puppeteer';
@@ -6,6 +6,14 @@ import type { CarListing } from './dto/car-listing.dto';
 import { CARD_WALK_DEPTH, MAX_PAGES, PAGE_TIMEOUT_MS } from './constants';
 
 puppeteerExtra.use(StealthPlugin());
+
+const BROWSER_ARGS = [
+  '--no-sandbox',
+  '--disable-setuid-sandbox',
+  '--disable-dev-shm-usage',
+  '--disable-gpu',
+  '--disable-blink-features=AutomationControlled',
+];
 
 /**
  * Scrapes bid.cars search results using Puppeteer.
@@ -18,31 +26,34 @@ puppeteerExtra.use(StealthPlugin());
  * Uses URL-based card detection (links matching /lot/) instead of CSS class names,
  * which makes it resilient to front-end rebuilds.
  *
+ * The browser instance is reused across calls within a scrape cycle (active →
+ * ended → archived lookups). It is closed when the module is destroyed.
+ *
  * NOTE: If the page structure changes and nothing is found, check:
  *   1. That lot detail URLs still contain '/lot/'
  *   2. That the page fully loads (check PAGE_TIMEOUT_MS)
  */
 @Injectable()
-export class BidCarsParserService {
+export class BidCarsParserService implements OnModuleDestroy {
   private readonly logger = new Logger(BidCarsParserService.name);
+  private browser: Browser | null = null;
+
+  async onModuleDestroy(): Promise<void> {
+    await this.browser?.close();
+    this.browser = null;
+  }
 
   async fetchListings(url: string): Promise<CarListing[]> {
-    const browser: Browser = await puppeteerExtra.launch({
-      headless: true,
-      args: [
-        '--no-sandbox',
-        '--disable-setuid-sandbox',
-        '--disable-dev-shm-usage',
-        '--disable-gpu',
-        '--disable-blink-features=AutomationControlled',
-      ],
-    });
+    const browser = await this.getBrowser();
+    return this.scrapeResultsPage(browser, url);
+  }
 
-    try {
-      return await this.scrapeResultsPage(browser, url);
-    } finally {
-      await browser.close();
+  /** Returns the shared browser, launching one if not yet started or if it crashed. */
+  private async getBrowser(): Promise<Browser> {
+    if (!this.browser?.connected) {
+      this.browser = await puppeteerExtra.launch({ headless: true, args: BROWSER_ARGS });
     }
+    return this.browser;
   }
 
   /** Scrape all available fields from each card on the search results page. */
