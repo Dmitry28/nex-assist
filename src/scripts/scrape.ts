@@ -11,6 +11,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from '../app.module';
 import { BidCarsService } from '../modules/bid-cars/bid-cars.service';
+import { KufarService } from '../modules/kufar/kufar.service';
 import { LandAuctionsService } from '../modules/land-auctions/land-auctions.service';
 
 async function bootstrap(): Promise<void> {
@@ -32,6 +33,12 @@ async function bootstrap(): Promise<void> {
       await app.get(BidCarsService).run();
     } catch (err) {
       console.error('BidCars scrape failed:', err);
+    }
+
+    try {
+      await app.get(KufarService).run();
+    } catch (err) {
+      console.error('Kufar scrape failed:', err);
     }
   } finally {
     await app.close();

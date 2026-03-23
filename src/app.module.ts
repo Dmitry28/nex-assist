@@ -9,6 +9,7 @@ import { AllExceptionsFilter } from './common/filters/all-exceptions.filter';
 import { TransformInterceptor } from './common/interceptors/transform.interceptor';
 import { HealthModule } from './modules/health/health.module';
 import { BidCarsModule } from './modules/bid-cars/bid-cars.module';
+import { KufarModule } from './modules/kufar/kufar.module';
 import { LandAuctionsModule } from './modules/land-auctions/land-auctions.module';
 
 @Module({
@@ -44,6 +45,7 @@ import { LandAuctionsModule } from './modules/land-auctions/land-auctions.module
     HealthModule,
     LandAuctionsModule,
     BidCarsModule,
+    KufarModule,
   ],
   providers: [
     // Global validation

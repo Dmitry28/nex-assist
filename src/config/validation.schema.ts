@@ -1,5 +1,10 @@
 import * as Joi from 'joi';
-import { APP_DEFAULTS, BID_CARS_DEFAULTS, LAND_AUCTIONS_DEFAULTS } from './constants';
+import {
+  APP_DEFAULTS,
+  BID_CARS_DEFAULTS,
+  KUFAR_DEFAULTS,
+  LAND_AUCTIONS_DEFAULTS,
+} from './constants';
 
 /**
  * Joi schema for environment variable validation.
@@ -32,4 +37,11 @@ export const validationSchema = Joi.object({
   BID_CARS_SCRAPE_URL: Joi.string().uri().default(BID_CARS_DEFAULTS.SCRAPE_URL),
   BID_CARS_SCRAPE_CRON: Joi.string().default(BID_CARS_DEFAULTS.SCRAPE_CRON),
   TELEGRAM_BID_CARS_CHAT_ID: Joi.string().optional(),
+
+  // Kufar module — each feed URL is optional; omit to disable that feed
+  KUFAR_GARAGES_URL: Joi.string().uri().optional(),
+  KUFAR_LAND_URL: Joi.string().uri().optional(),
+  KUFAR_HOUSES_URL: Joi.string().uri().optional(),
+  KUFAR_SCRAPE_CRON: Joi.string().default(KUFAR_DEFAULTS.SCRAPE_CRON),
+  TELEGRAM_KUFAR_CHAT_ID: Joi.string().optional(),
 });
