@@ -62,9 +62,10 @@ export class BidCarsParserService {
         await page.waitForSelector('a[href*="/lot/"]', { timeout: PAGE_TIMEOUT_MS });
       } catch {
         const title = await page.title();
-        this.logger.warn(
-          `No lot links found — page title: "${title}". Possible Cloudflare challenge or empty results.`,
-        );
+        if (title.toLowerCase().includes('just a moment')) {
+          throw new Error(`Cloudflare challenge detected (page title: "${title}")`);
+        }
+        this.logger.warn(`No lot links found — page title: "${title}". Possibly empty results.`);
         return [];
       }
 
