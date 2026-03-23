@@ -23,7 +23,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/90f92dd2-89de-4908-9c45-ee5f876a542c.jpg"
     ],
     "firstSeenAt": "2026-03-23T15:16:21.158Z",
-    "lastSeenAt": "2026-03-23T16:53:56.354Z"
+    "lastSeenAt": "2026-03-23T20:43:48.160Z"
   },
   {
     "adId": 1061647870,
@@ -44,7 +44,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b66b168c-9ca2-42f0-a912-40e3f5952a5a.jpg"
     ],
     "firstSeenAt": "2026-03-23T15:16:21.158Z",
-    "lastSeenAt": "2026-03-23T16:53:56.354Z"
+    "lastSeenAt": "2026-03-23T20:43:48.160Z"
   },
   {
     "adId": 1028888402,
@@ -68,7 +68,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3989f57d-fcc9-4ae7-89eb-138480a835d7.jpg"
     ],
     "firstSeenAt": "2026-03-23T15:16:21.158Z",
-    "lastSeenAt": "2026-03-23T16:53:56.354Z"
+    "lastSeenAt": "2026-03-23T20:43:48.160Z"
   },
   {
     "adId": 1061595367,
@@ -91,7 +91,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9bee5fe9-5a2e-4a7e-a88d-d09495dd76f0.jpg"
     ],
     "firstSeenAt": "2026-03-23T15:16:21.158Z",
-    "lastSeenAt": "2026-03-23T16:53:56.354Z"
+    "lastSeenAt": "2026-03-23T20:43:48.160Z"
   },
   {
     "adId": 1047537778,
@@ -116,7 +116,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/714ec30c-9916-4b9a-93b9-2ffd651d3056.jpg"
     ],
     "firstSeenAt": "2026-03-23T15:16:21.158Z",
-    "lastSeenAt": "2026-03-23T16:53:56.354Z"
+    "lastSeenAt": "2026-03-23T20:43:48.160Z"
   },
   {
     "adId": 1061508163,
@@ -139,7 +139,7 @@
     "listTime": "2026-03-22T14:20:13Z",
     "images": [],
     "firstSeenAt": "2026-03-23T15:16:21.158Z",
-    "lastSeenAt": "2026-03-23T16:53:56.354Z"
+    "lastSeenAt": "2026-03-23T20:43:48.160Z"
   },
   {
     "adId": 1061390568,
@@ -156,5 +156,101 @@
     "images": [],
     "firstSeenAt": "2026-03-23T15:16:21.158Z",
     "lastSeenAt": "2026-03-23T16:53:56.354Z"
+  },
+  {
+    "adId": 1061693589,
+    "link": "https://re.kufar.by/vi/1061693589",
+    "title": "Гараж",
+    "description": "Продам гараж, бокс 46, к11",
+    "priceByn": 13540,
+    "priceUsd": 4500,
+    "address": "Максима Горького ул, 105Ак4614блок46, Гродно, Гродненская область",
+    "area": 17,
+    "seller": "Юрий",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма",
+      "Подвал",
+      "Наземная"
+    ],
+    "listTime": "2026-03-23T20:14:36Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8dd7ebc2-bcce-43c4-acbf-a02bf3477d2c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9ce5af3b-3a4a-460a-a919-4fc7cddf9ebd.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/75894b75-9679-44e6-8cd1-32e2ed43be9c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/dd0a2e53-e646-4855-a952-a9c810e864cc.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c988116e-1b85-49e5-a842-2bf273e2d457.jpg"
+    ],
+    "firstSeenAt": "2026-03-23T20:43:48.160Z",
+    "lastSeenAt": "2026-03-23T20:43:48.160Z"
+  },
+  {
+    "adId": 1061693061,
+    "link": "https://re.kufar.by/vi/1061693061",
+    "title": "Гараж",
+    "description": "Продам гараж с ямой и две комнаты под землёй с печкай\n\nСрочно до конца марта\n14000",
+    "priceByn": 46636,
+    "priceUsd": 15500,
+    "address": "Космонавтов пр, Гродно, Гродненская область",
+    "area": 45,
+    "seller": "Сергей",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма",
+      "Подвал",
+      "Печное"
+    ],
+    "listTime": "2026-03-23T20:04:35Z",
+    "images": [],
+    "firstSeenAt": "2026-03-23T20:43:48.160Z",
+    "lastSeenAt": "2026-03-23T20:43:48.160Z"
+  },
+  {
+    "adId": 1061689605,
+    "link": "https://re.kufar.by/vi/1061689605",
+    "title": "Гаражи и стоянки",
+    "description": "Продам гараж в ГК Лососно - Новики. Есть электричество, небольшая смотровая яма, крыша перекрывались. Документы в порядке",
+    "priceByn": 11734,
+    "priceUsd": 3900,
+    "address": "Гродно, Гродненская область",
+    "area": 16.1,
+    "seller": "Ирина",
+    "propertyType": "Гараж",
+    "features": [
+      "Отсутствует"
+    ],
+    "listTime": "2026-03-23T19:12:35Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4ad7906c-56bb-46f5-b6cd-93da7034ec28.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/86891732-4ead-4b32-802b-b1e91a29d80b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2696ace4-0571-4388-9e40-16df94976162.jpg"
+    ],
+    "firstSeenAt": "2026-03-23T20:43:48.160Z",
+    "lastSeenAt": "2026-03-23T20:43:48.160Z"
+  },
+  {
+    "adId": 1061677328,
+    "link": "https://re.kufar.by/vi/1061677328",
+    "title": "Гараж продам",
+    "description": "Продам гараж 18 м², в хорошей локализации пр. Космонавтов,  проведено электричество  220В ,кирпичный,сухой подвал с ямой ,крыша не течет, тип пола -бе",
+    "priceByn": 18655,
+    "priceUsd": 6200,
+    "address": "Космонавтов пр, Гродно, Гродненская область",
+    "area": 18,
+    "seller": "Янина",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма",
+      "Подвал"
+    ],
+    "listTime": "2026-03-23T17:02:44Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6e5724aa-ed57-4094-b9a2-f7de1454962f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e2176095-25cd-41cc-8728-80a163bc986e.jpg"
+    ],
+    "firstSeenAt": "2026-03-23T20:43:48.160Z",
+    "lastSeenAt": "2026-03-23T20:43:48.160Z"
   }
 ]
