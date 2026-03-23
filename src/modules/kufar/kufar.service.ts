@@ -30,13 +30,16 @@ const effectivePrice = (p: number | undefined): number | undefined =>
 const hasPriceChanged = (prev: KufarSnapshotEntry, current: KufarListing): boolean =>
   effectivePrice(prev.priceByn) !== effectivePrice(current.priceByn);
 
-const isKufarSnapshotEntry = (item: unknown): item is KufarSnapshotEntry =>
-  typeof item === 'object' &&
-  item !== null &&
-  'adId' in item &&
-  typeof (item as { adId: unknown }).adId === 'number' &&
-  'listTime' in item &&
-  typeof (item as { listTime: unknown }).listTime === 'string';
+const isKufarSnapshotEntry = (item: unknown): item is KufarSnapshotEntry => {
+  if (typeof item !== 'object' || item === null) return false;
+  const e = item as Record<string, unknown>;
+  return (
+    typeof e.adId === 'number' &&
+    typeof e.listTime === 'string' &&
+    typeof e.firstSeenAt === 'string' &&
+    typeof e.lastSeenAt === 'string'
+  );
+};
 
 /** Internal data kept per feed during a scrape cycle — not exposed to callers. */
 interface KufarFeedScrapeData {
