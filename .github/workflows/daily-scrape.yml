@@ -3,7 +3,7 @@ name: Daily Land Scrape
 # TODO: this workflow is a temporary workaround — see src/modules/land-auctions/_TODO.md
 on:
   schedule:
-    - cron: '0 9 * * *' # 09:00 UTC (12:00 Minsk time)
+    - cron: '0 7 * * *' # 07:00 UTC (10:00 Minsk time, UTC+3)
   workflow_dispatch:
 
 jobs:
