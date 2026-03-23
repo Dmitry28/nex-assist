@@ -40,8 +40,8 @@ export const validationSchema = Joi.object({
 
   // Kufar module — each feed URL is optional; omit to disable that feed
   KUFAR_GARAGES_URL: Joi.string().uri().default(KUFAR_DEFAULTS.GARAGES_URL),
-  KUFAR_LAND_URL: Joi.string().uri().optional(),
-  KUFAR_HOUSES_URL: Joi.string().uri().optional(),
+  KUFAR_LAND_URL: Joi.string().uri().default(KUFAR_DEFAULTS.LAND_URL),
+  KUFAR_HOUSES_URL: Joi.string().uri().default(KUFAR_DEFAULTS.HOUSES_URL),
   KUFAR_SCRAPE_CRON: Joi.string().default(KUFAR_DEFAULTS.SCRAPE_CRON),
   TELEGRAM_KUFAR_CHAT_ID: Joi.string().optional(),
 });

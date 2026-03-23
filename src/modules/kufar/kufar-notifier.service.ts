@@ -18,6 +18,17 @@ import {
 } from './constants';
 
 /**
+ * Tracks which listings were successfully delivered to Telegram.
+ * Service uses this to decide what to persist — only notified listings are saved.
+ */
+export interface KufarNotifyResult {
+  /** adIds successfully sent as new listings, keyed by feedName */
+  notifiedNew: Map<string, Set<number>>;
+  /** adIds successfully sent as price changes, keyed by feedName */
+  notifiedPriceChanges: Map<string, Set<number>>;
+}
+
+/**
  * Sends Kufar notifications via Telegram.
  * One summary message per run, then per-listing messages (with photos) for each feed.
  */
@@ -33,35 +44,50 @@ export class KufarNotifierService {
     this.chatId = config.get<string>('kufar.chatId') ?? '';
   }
 
-  async notifyRunResult(result: KufarResult): Promise<void> {
+  async notifyRunResult(result: KufarResult): Promise<KufarNotifyResult> {
+    const empty: KufarNotifyResult = {
+      notifiedNew: new Map(),
+      notifiedPriceChanges: new Map(),
+    };
+
     if (!this.chatId) {
       this.logger.warn('chatId not set — skipping Telegram notification');
-      return;
+      return empty;
     }
 
     const { feeds } = result;
     const hasAnything = feeds.some(f => f.newListings.length > 0 || f.priceChanges.length > 0);
 
-    const ok = await this.telegram.sendMessage(this.chatId, buildSummary(feeds));
-    if (!ok) throw new Error('Не удалось отправить сводку Kufar в Telegram');
+    const summaryOk = await this.telegram.sendMessage(this.chatId, buildSummary(feeds));
+    if (!summaryOk) {
+      this.logger.error('Failed to send Kufar summary — skipping all notifications');
+      return empty;
+    }
 
-    if (!hasAnything) return;
+    if (!hasAnything) return empty;
+
+    const notifiedNew = new Map<string, Set<number>>();
+    const notifiedPriceChanges = new Map<string, Set<number>>();
 
     for (const feed of feeds) {
       const displayName = FEED_DISPLAY_NAMES[feed.feedName] ?? feed.feedName;
 
       if (feed.newListings.length) {
-        await this.sendListings(
+        const sent = await this.sendListings(
           feed.newListings,
           `${NOTIFICATION_HEADERS.new} · ${displayName}`,
           feed.newListings.length,
         );
+        notifiedNew.set(feed.feedName, sent);
       }
 
       if (feed.priceChanges.length) {
-        await this.sendPriceChanges(feed.priceChanges, displayName);
+        const sent = await this.sendPriceChanges(feed.priceChanges, displayName);
+        notifiedPriceChanges.set(feed.feedName, sent);
       }
     }
+
+    return { notifiedNew, notifiedPriceChanges };
   }
 
   async notifyError(message: string): Promise<void> {
@@ -77,7 +103,8 @@ export class KufarNotifierService {
     listings: KufarListing[],
     header: string,
     total: number,
-  ): Promise<void> {
+  ): Promise<Set<number>> {
+    const notified = new Set<number>();
     const failed: KufarListing[] = [];
 
     for (const [i, listing] of listings.entries()) {
@@ -85,7 +112,11 @@ export class KufarNotifierService {
         caption: truncateCaption(buildListingCaption({ listing, header, index: i + 1, total })),
         images: listing.images,
       });
-      if (!ok) failed.push(listing);
+      if (ok) {
+        notified.add(listing.adId);
+      } else {
+        failed.push(listing);
+      }
       if (i < listings.length - 1) await sleep(TELEGRAM_SEND_DELAY_MS);
     }
 
@@ -96,10 +127,16 @@ export class KufarNotifierService {
         `⚠️ Не удалось отправить ${failed.length} объект(а):\n${list}`,
       );
     }
+
+    return notified;
   }
 
-  private async sendPriceChanges(changes: KufarPriceChange[], displayName: string): Promise<void> {
+  private async sendPriceChanges(
+    changes: KufarPriceChange[],
+    displayName: string,
+  ): Promise<Set<number>> {
     const header = `${NOTIFICATION_HEADERS.priceChange} · ${displayName}`;
+    const notified = new Set<number>();
     const failed: KufarListing[] = [];
 
     for (const [i, change] of changes.entries()) {
@@ -109,7 +146,11 @@ export class KufarNotifierService {
         ),
         images: change.listing.images,
       });
-      if (!ok) failed.push(change.listing);
+      if (ok) {
+        notified.add(change.listing.adId);
+      } else {
+        failed.push(change.listing);
+      }
       if (i < changes.length - 1) await sleep(TELEGRAM_SEND_DELAY_MS);
     }
 
@@ -120,6 +161,8 @@ export class KufarNotifierService {
         `⚠️ Не удалось отправить ${failed.length} изменение(й) цены:\n${list}`,
       );
     }
+
+    return notified;
   }
 
   private async sendListing({
@@ -172,8 +215,8 @@ const formatDate = (isoString: string): string => {
 
 const formatPrice = (byn?: number, usd?: number): string => {
   const parts: string[] = [];
-  if (byn !== undefined) parts.push(`${byn.toLocaleString('ru-RU')} BYN`);
-  if (usd !== undefined) parts.push(`$${usd.toLocaleString('ru-RU')}`);
+  if (byn !== undefined && byn > 0) parts.push(`${byn.toLocaleString('ru-RU')} BYN`);
+  if (usd !== undefined && usd > 0) parts.push(`$${usd.toLocaleString('ru-RU')}`);
   return parts.join(' / ');
 };
 
@@ -202,10 +245,17 @@ const buildListingCaption = ({ listing, header, index, total }: ListingCaptionPa
 
   lines.push('');
   if (hasValue(listing.address)) lines.push(`📍 ${listing.address}`);
+  if (hasValue(listing.propertyType)) lines.push(`🏷 ${listing.propertyType}`);
 
   const price = formatPrice(listing.priceByn, listing.priceUsd);
   if (price) lines.push(`💰 ${price}`);
   if (hasValue(listing.area)) lines.push(`📐 ${listing.area} м²`);
+  if (hasValue(listing.plotArea)) lines.push(`🌱 ${listing.plotArea} сот.`);
+  if (hasValue(listing.rooms)) lines.push(`🚪 ${listing.rooms} комн.`);
+  if (hasValue(listing.yearBuilt)) lines.push(`📅 ${listing.yearBuilt} г.п.`);
+  if (listing.features && listing.features.length > 0)
+    lines.push(`✅ ${listing.features.join(', ')}`);
+  if (hasValue(listing.seller)) lines.push(`👤 ${listing.seller}`);
 
   lines.push(`🕐 ${formatDate(listing.listTime)}`);
   lines.push('', `<a href="${listing.link}">🔗 Подробнее</a>`);
@@ -236,10 +286,15 @@ const buildPriceChangeCaption = ({
   }
 
   if (hasValue(listing.area)) lines.push(`📐 ${listing.area} м²`);
+  if (hasValue(listing.plotArea)) lines.push(`🌱 ${listing.plotArea} сот.`);
+  if (hasValue(listing.rooms)) lines.push(`🚪 ${listing.rooms} комн.`);
+  if (hasValue(listing.yearBuilt)) lines.push(`📅 ${listing.yearBuilt} г.п.`);
   lines.push('', `<a href="${listing.link}">🔗 Подробнее</a>`);
 
   return lines.join('\n');
 };
+
+const MAX_PRICE_CHANGES_IN_SUMMARY = 8;
 
 const buildSummary = (feeds: KufarFeedResult[]): string => {
   const date = new Date().toLocaleDateString('ru-RU');
@@ -256,7 +311,24 @@ const buildSummary = (feeds: KufarFeedResult[]): string => {
     if (feed.newListings.length > 0) parts.push(`🆕 ${feed.newListings.length} новых`);
     if (feed.priceChanges.length > 0) parts.push(`💸 ${feed.priceChanges.length} изм. цены`);
     const status = parts.length > 0 ? parts.join(', ') : 'без изменений';
-    lines.push(`${name}: ${status}`);
+    lines.push('', `<b>${name}:</b> ${status}`);
+
+    // List price changes inline with link: title + old → new price
+    if (feed.priceChanges.length > 0) {
+      const shown = feed.priceChanges.slice(0, MAX_PRICE_CHANGES_IN_SUMMARY);
+      for (const { listing, oldPriceByn, oldPriceUsd } of shown) {
+        const oldPrice = formatPrice(oldPriceByn, oldPriceUsd) || '—';
+        const newPrice = formatPrice(listing.priceByn, listing.priceUsd) || '—';
+        const shortTitle =
+          listing.title.length > 35 ? listing.title.slice(0, 32) + '...' : listing.title;
+        lines.push(
+          `  • <a href="${listing.link}">${shortTitle}</a>: <s>${oldPrice}</s> → <b>${newPrice}</b>`,
+        );
+      }
+      if (feed.priceChanges.length > MAX_PRICE_CHANGES_IN_SUMMARY) {
+        lines.push(`  <i>...и ещё ${feed.priceChanges.length - MAX_PRICE_CHANGES_IN_SUMMARY}</i>`);
+      }
+    }
   }
 
   return lines.join('\n');
