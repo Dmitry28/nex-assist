@@ -40,8 +40,13 @@ export class SnapshotService {
   }
 
   async write<T>(filePath: string, items: T[]): Promise<void> {
+    const dir = path.dirname(filePath);
     // Ensure the directory exists — important on first run and in Docker
-    await fs.mkdir(path.dirname(filePath), { recursive: true });
-    await fs.writeFile(filePath, JSON.stringify(items, null, 2));
+    await fs.mkdir(dir, { recursive: true });
+    // Atomic write: write to a temp file then rename so a crash mid-write
+    // never corrupts the live snapshot.
+    const tmp = path.join(dir, `${path.basename(filePath)}.tmp`);
+    await fs.writeFile(tmp, JSON.stringify(items, null, 2));
+    await fs.rename(tmp, filePath);
   }
 }
