@@ -1,6 +1,12 @@
 import { Injectable, Logger } from '@nestjs/common';
 import type { KufarListing } from './dto/kufar-listing.dto';
-import { FETCH_TIMEOUT_MS, IMAGE_CDN_BASE, LOOKBACK_HOURS, MAX_PAGES } from './constants';
+import {
+  FETCH_TIMEOUT_MS,
+  IMAGE_CDN_BASE,
+  LOOKBACK_HOURS,
+  MAX_HTML_SIZE_BYTES,
+  MAX_PAGES,
+} from './constants';
 
 /** Raw ad shape from Kufar's __NEXT_DATA__ JSON. */
 interface RawAd {
@@ -33,9 +39,10 @@ interface RawPaginationEntry {
 export class KufarParserService {
   private readonly logger = new Logger(KufarParserService.name);
 
-  async fetchFeed(url: string): Promise<KufarListing[]> {
+  async fetchFeed(url: string): Promise<{ listings: KufarListing[]; truncated: boolean }> {
     const allListings: KufarListing[] = [];
     let currentUrl = url;
+    let truncated = false;
 
     for (let page = 1; page <= MAX_PAGES; page++) {
       const html = await this.fetchHtml(currentUrl);
@@ -62,11 +69,17 @@ export class KufarParserService {
       const nextToken = pagination.find(p => p.label === 'next')?.token;
       if (!nextToken) break;
 
+      if (page === MAX_PAGES) {
+        truncated = true;
+        this.logger.warn(`Reached MAX_PAGES (${MAX_PAGES}) — feed may have more listings`);
+        break;
+      }
+
       currentUrl = this.buildNextPageUrl(url, nextToken);
     }
 
     this.logger.log(`Fetched ${allListings.length} listings within ${LOOKBACK_HOURS}h window`);
-    return allListings;
+    return { listings: allListings, truncated };
   }
 
   private async fetchHtml(url: string): Promise<string | null> {
@@ -85,7 +98,12 @@ export class KufarParserService {
         this.logger.warn(`HTTP ${res.status} for ${url}`);
         return null;
       }
-      return await res.text();
+      const html = await res.text();
+      if (html.length > MAX_HTML_SIZE_BYTES) {
+        this.logger.warn(`Response too large (${html.length} bytes) for ${url} — skipping`);
+        return null;
+      }
+      return html;
     } catch (err) {
       this.logger.error(`Failed to fetch ${url}`, err);
       return null;
@@ -132,6 +150,8 @@ export class KufarParserService {
     const priceByn = rawByn > 0 ? Math.round(rawByn / 100) : undefined;
     const priceUsd = rawUsd > 0 ? Math.round(rawUsd / 100) : undefined;
 
+    // v  = raw code/key (e.g. "central_heating")
+    // vl = human-readable label (e.g. "Центральное") — preferred for display
     const getParamV = (
       params: Array<{ p: string; v: unknown; vl?: unknown }> | undefined,
       key: string,

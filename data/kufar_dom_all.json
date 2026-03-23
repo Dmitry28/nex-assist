@@ -4,10 +4,18 @@
     "link": "https://re.kufar.by/vi/1059749645",
     "title": "Продажа таунхауса в г. Гродно, проезд Калиновый 3",
     "description": "Идеальный формат для тех, кто хочет жить рядом с природой, но не отказываться от благ цивилизации. Тишина, комфорт и личное пространство для всей семь",
-    "priceByn": 27380,
-    "priceUsd": 9100,
+    "priceByn": 273801,
+    "priceUsd": 91000,
     "address": "3-й Калиновый проезд, 10, Гродно, Гродненская область",
     "area": 91,
+    "plotArea": 1.83,
+    "yearBuilt": 2025,
+    "seller": "ООО АйронИнвестПроект",
+    "propertyType": "Таунхаус",
+    "features": [
+      "Газовое",
+      "Центральная"
+    ],
     "listTime": "2026-03-23T14:34:31Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b0155e0b-71e3-40bf-884b-909b064d3bfe.jpg",
@@ -22,18 +30,26 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3051598d-b07d-449d-a2fd-3f1e710c4753.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/11a7ca0c-8d28-46a0-b10c-10d9c22db6c8.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1061655626,
     "link": "https://re.kufar.by/vi/1061655626",
     "title": "Продам дачу",
     "description": "Коптевский с/с , садовое товарищество \"Дружба- 2\" , вопросы по тел. \n Людмила",
-    "priceByn": 1504,
-    "priceUsd": 500,
+    "priceByn": 15044,
+    "priceUsd": 5000,
     "address": "деревня Гневенщина, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "area": 19,
+    "plotArea": 5,
+    "rooms": 2,
+    "yearBuilt": 1990,
+    "seller": "Вероника",
+    "propertyType": "Дача",
+    "features": [
+      "Частная собственность"
+    ],
     "listTime": "2026-03-23T14:25:19Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bd970de0-4efc-4552-842d-51f83665bdff.jpg",
@@ -41,18 +57,25 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0707befc-de99-4345-9dc7-a4897e6790b3.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/788e97b8-6114-4909-8fb6-718a8157d36b.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1018932938,
     "link": "https://re.kufar.by/vi/1018932938",
     "title": "Дача",
     "description": "Дача расположена в очень удобном месте 150 метрах от конечной автобуса , участок не большой 5,5 соток но есть возможность продлить до 7,5 соток,  сосе",
-    "priceByn": 1250,
-    "priceUsd": 415,
+    "priceByn": 12500,
+    "priceUsd": 4154,
     "address": "СТ Подснежник, Квасовский сельсовет, Гродненский район, Гродненская область",
-    "area": 5.5,
+    "plotArea": 5.5,
+    "rooms": 1,
+    "seller": "ИП Шлавенец",
+    "propertyType": "Дача",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-23T14:12:50Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/19f937d8-2ff0-4300-81d8-43105d979157.jpg",
@@ -66,18 +89,28 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8ec2fa7b-8b20-4c6a-bd20-fa4418313b2d.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e11841f5-ba55-4911-878e-07f535fb2165.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1017132907,
     "link": "https://re.kufar.by/vi/1017132907",
     "title": "Дача с/т Гостинец",
     "description": "Продаётся уютная дача в городской черте Гродно!\n\nИдеальное место для отдыха и жизни на природе — всего в 1 км от живописного озера Юбилейное, рядом с ",
-    "priceByn": 5115,
-    "priceUsd": 1700,
+    "priceByn": 51150,
+    "priceUsd": 17000,
     "address": "СТ Гостинец, Подлабенский сельсовет, Гродненский район, Гродненская область",
     "area": 42,
+    "plotArea": 7,
+    "rooms": 3,
+    "yearBuilt": 1998,
+    "seller": "Алексей",
+    "propertyType": "Дача",
+    "features": [
+      "Печное",
+      "Сезонная",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-23T14:11:44Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ce63a0fc-078f-435c-8a53-a3a92bfe5fcc.jpg",
@@ -95,18 +128,28 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d48a9b57-9952-4d21-ac45-1e91363fd3a5.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9b3f098f-d2aa-4cfb-94c7-d217c7a5b0b0.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1061652954,
     "link": "https://re.kufar.by/vi/1061652954",
     "title": "Коттедж в микрорайоне Южный",
     "description": "В продаже готовый к проживанию коттедж в микрорайоне Южный.\n\nПлощадь –  134/84/14 м2.\nБлочный дом 2007 г. постройки, кровля выполнена из металлочерепи",
-    "priceByn": 51150,
-    "priceUsd": 17000,
+    "priceByn": 511496,
+    "priceUsd": 170000,
     "address": "микрорайон Южный, Гродно, Гродненская область",
     "area": 134,
+    "plotArea": 11.7,
+    "rooms": 5,
+    "yearBuilt": 2007,
+    "seller": "ООО Центр жилья",
+    "propertyType": "Коттедж",
+    "features": [
+      "Центральное",
+      "Центральная",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-23T13:56:47Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/829611c3-1369-4b1f-a8e4-ebd9ae729d39.jpg",
@@ -126,18 +169,28 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/28cd7f29-b924-4567-80b6-2e1822400b64.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/74f0450e-a89a-413a-ab84-5bbe6b834178.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1059027173,
     "link": "https://re.kufar.by/vi/1059027173",
     "title": "Современный жилой дом.",
     "description": "Продаётся совершенно замечательный дом в СТ Лесное-2!\nЗдесь всё прекрасно и идеально- строили для себя,  вложили душу, не пожалели денег, воплотили св",
-    "priceByn": 33999,
-    "priceUsd": 11300,
+    "priceByn": 339994,
+    "priceUsd": 113000,
     "address": "СТ Лесное-2, Подлабенский сельсовет, Гродненский район, Гродненская область",
     "area": 86.9,
+    "plotArea": 6.2,
+    "rooms": 2,
+    "yearBuilt": 2023,
+    "seller": "Агентство недвижимости ''Ключ к мечте''",
+    "propertyType": "Дача",
+    "features": [
+      "Газовое",
+      "Скважина",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-23T13:44:17Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e5c5c6ea-127a-49d2-aec1-cca44ef6fa96.jpg",
@@ -169,18 +222,26 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/63313a74-0cac-46f5-a628-d3615168ad01.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fec16e9c-1f73-448d-9720-89231da1391e.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1052997409,
     "link": "https://re.kufar.by/vi/1052997409",
     "title": "Дач",
     "description": "Ухожен участок\nВ удобном месте , рядом лес,  близко остановка , озеро, на возвышенности , есть место для огорода. Яблони, груша, слива ,виноград, куст",
-    "priceByn": 3611,
-    "priceUsd": 1200,
+    "priceByn": 36106,
+    "priceUsd": 12000,
     "address": "деревня Гривки, Квасовский сельсовет, Гродненский район, Гродненская область",
     "area": 6,
+    "plotArea": 6,
+    "rooms": 2,
+    "seller": "александр",
+    "propertyType": "Дача",
+    "features": [
+      "Отсутствует",
+      "Скважина"
+    ],
     "listTime": "2026-03-23T13:40:53Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/db31fb2f-36a8-43c2-bd99-37f01875f120.jpg",
@@ -190,18 +251,28 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cb880079-f220-4cd6-a4c6-d420bbce2cb6.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fa62c52f-ff5b-4ff8-ab77-e4365dfb93da.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1056148437,
     "link": "https://re.kufar.by/vi/1056148437",
     "title": "Просторная 3-х комнатная квартира  по адресу: пер. Пролетарский, 1",
     "description": "Просторная 3-х комнатная квартира в блокированном жилом доме в городе по адресу: пер. Пролетарский, 1.\nОбщая площадь дома составляет 78.8 м2.\nДом с ма",
-    "priceByn": 27079,
-    "priceUsd": 9000,
+    "priceByn": 270792,
+    "priceUsd": 90000,
     "address": "Пролетарский переулок, 1, Гродно, Гродненская область",
     "area": 97,
+    "plotArea": 1.9,
+    "rooms": 3,
+    "yearBuilt": 2024,
+    "seller": "ООО Центр жилья",
+    "propertyType": "Дом",
+    "features": [
+      "Электрическое",
+      "Центральная",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-23T13:30:22Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/305f5f6d-0232-41db-b076-9734830f9bd8.jpg",
@@ -233,18 +304,26 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d3c630a6-dc19-4e71-8ab0-8d06e2e11df5.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/83996b3e-8342-4980-bf0a-dca3762b4e0b.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1011233668,
     "link": "https://re.kufar.by/vi/1011233668",
     "title": "Участок в окружении лесного массива ",
     "description": " ЧЕРЕЗ ГОД ПРОВОДЯТ ГАЗ.Участок,находится в живописном месте,окружён лесом и чистым воздухом,поля животные вся природа под носом ,огорожен бетонным за",
-    "priceByn": 13540,
-    "priceUsd": 4500,
+    "priceByn": 135396,
+    "priceUsd": 45000,
     "address": "СТ Афган, Подлабенский сельсовет, Гродненский район, Гродненская область",
     "area": 30,
+    "plotArea": 9,
+    "yearBuilt": 2022,
+    "seller": "Александр",
+    "propertyType": "Прочее",
+    "features": [
+      "Скважина",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-23T13:01:43Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/028e9634-317f-4f3f-8fee-ee48789a1db9.jpg",
@@ -273,18 +352,27 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e0b97543-48ff-4261-8685-70478b84df50.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3941e2a8-04aa-402b-9bb0-d6bc50dbaf64.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1060860307,
     "link": "https://re.kufar.by/vi/1060860307",
     "title": "Хорошая дача в 10 км. от города, СТ ''Спецавтохозяйство''",
     "description": "В продаже хорошая дача, подходящая для круглогодичного проживания, в садовом товариществе Спецавтохозяйство в 10 км от города (Гожский сельский совет)",
-    "priceByn": 14743,
-    "priceUsd": 4900,
+    "priceByn": 147431,
+    "priceUsd": 49000,
     "address": "СТ Спецавтохозяйство, Гожский сельсовет, Гродненский район, Гродненская область",
     "area": 107,
+    "plotArea": 7,
+    "rooms": 2,
+    "yearBuilt": 2015,
+    "seller": "ООО Центр жилья",
+    "propertyType": "Дача",
+    "features": [
+      "Скважина",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-23T12:56:09Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e5e881a9-a675-462f-9f47-44739ea7676e.jpg",
@@ -306,8 +394,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0b120dac-82ae-458d-bb7f-12bb04f138cb.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/60ee3e1a-650d-4140-a44f-ac5a7bed7aee.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1060482072,
@@ -318,23 +406,37 @@
     "priceUsd": 0,
     "address": "Цветочная ул, СТ Пчёлка, Подлабенский сельсовет, Гродненский район, Гродненская область",
     "area": 60,
+    "plotArea": 6.5,
+    "rooms": 3,
+    "yearBuilt": 1993,
+    "seller": "Наталья",
+    "propertyType": "Дача",
+    "features": [
+      "Печное",
+      "Сезонная",
+      "Пожизненное наследование"
+    ],
     "listTime": "2026-03-23T12:40:54Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c4956149-f310-4ed7-83db-0c76cd423e0b.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e08bb720-1ecb-4c53-997a-09e7ddc26a38.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1061639580,
     "link": "https://re.kufar.by/vi/1061639580",
     "title": "Продажа дома, с/т. Ветерок",
     "description": "Дача, где дышится легко! В продаже уютный деревянный дом , который  находится в СТ «Ветерок»,  вблизи леса и непосредственной близости (1 минуте ходьб",
-    "priceByn": 12487,
-    "priceUsd": 4150,
+    "priceByn": 124865,
+    "priceUsd": 41500,
     "address": "16, СТ Ветерок, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "area": 92.3,
+    "plotArea": 7.3,
+    "yearBuilt": 2022,
+    "seller": "ООО ''Фирма 2КиК''",
+    "propertyType": "Дом",
     "listTime": "2026-03-23T12:33:07Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c94c63f5-4932-49d5-a86d-507bfa9a649c.jpg",
@@ -357,18 +459,28 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c456bea8-d459-4bdf-95f5-69d57fb494f5.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/22f9cfc5-00cb-4dcb-b7b7-f2806295c17b.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1013585679,
     "link": "https://re.kufar.by/vi/1013585679",
     "title": "Продаётся дом 210 м.кв. на земельном участке в 15 соток в самом центре города Гродно.",
     "description": "Продаётся дом площадью 210 м.кв. на земельном участке в 15 соток в самом центре Гродно. \nВозможен обмен на квартиру, с доплатой разницы в ценах.\n\nДом ",
-    "priceByn": 84246,
-    "priceUsd": 28000,
+    "priceByn": 842464,
+    "priceUsd": 280000,
     "address": "Лермонтова ул, 38, Гродно, Гродненская область",
     "area": 210,
+    "plotArea": 15,
+    "rooms": 5,
+    "yearBuilt": 1950,
+    "seller": "Александр",
+    "propertyType": "Дом",
+    "features": [
+      "Центральное",
+      "Центральная",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-23T11:06:17Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/99a992ce-2559-4f1f-87ac-9024963615fd.jpg",
@@ -401,18 +513,26 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8238fe07-3a22-4ff9-8273-2b47c9214819.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c82486bb-880f-4262-9f8b-89133f50db07.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1061246179,
     "link": "https://re.kufar.by/vi/1061246179",
     "title": "Дом 112 м² на участке 11 соток в центре Гродно (пер. Суворова)",
     "description": "Продается просторный жилой дом в центральной части города по адресу: пер. Суворова, 22. Идеальное место для тех, кто хочет жить в частном секторе, не ",
-    "priceByn": 25876,
-    "priceUsd": 8600,
+    "priceByn": 258757,
+    "priceUsd": 86000,
     "address": "переулок Суворова, Гродно, Гродненская область",
     "area": 93.6,
+    "plotArea": 11,
+    "rooms": 5,
+    "seller": "ООО Адресат",
+    "propertyType": "Дом",
+    "features": [
+      "Печное",
+      "Центральная"
+    ],
     "listTime": "2026-03-23T10:04:56Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a6156042-f167-4559-8f99-5dbeb77ff8ca.jpg",
@@ -433,8 +553,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d9c8ab31-7af9-4fb1-8f2c-3e0b5f439198.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3baa1502-920d-4964-8ff5-6f3236591f68.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1045711102,
@@ -445,24 +565,39 @@
     "priceUsd": 0,
     "address": "14, деревня Славичи, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "area": 65,
+    "seller": "Андрей",
+    "propertyType": "Дом",
+    "features": [
+      "Частная собственность"
+    ],
     "listTime": "2026-03-23T09:54:35Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/875226ef-7add-42c1-a145-00b89ef1cd9c.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/23f7e70e-803d-43e8-94e1-6b1748c0e62b.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/322a43b7-2b53-4c0d-a8f8-1ed8712ffaed.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1053834078,
     "link": "https://re.kufar.by/vi/1053834078",
     "title": "Продажа дома ",
     "description": "Продается жилой дом в городе Гродно, микрорайон Девятовка по улице Подкрыжацкой на земельном участке 0.1499га.\nДом расположен в удобном районе. Местор",
-    "priceByn": 28584,
-    "priceUsd": 9500,
+    "priceByn": 285836,
+    "priceUsd": 95000,
     "address": "Подкрыжакская ул, 11, Гродно, Гродненская область",
     "area": 86,
+    "plotArea": 15,
+    "rooms": 4,
+    "yearBuilt": 1970,
+    "seller": "Юрий",
+    "propertyType": "Дом",
+    "features": [
+      "Газовое",
+      "Колодец",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-23T09:44:30Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9003c230-1ce4-4988-af68-1d7ae080e7f8.jpg",
@@ -476,18 +611,26 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4e11d9e8-d2c7-45e1-ad11-de02ba3c4a60.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/28e95038-ec4f-4cb5-b6db-7417d3b2144c.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1002015686,
     "link": "https://re.kufar.by/vi/1002015686",
     "title": "Дача ",
     "description": "Дача направление Стрельчики, Беляны.\nКрайний участок, кругом лес. ",
-    "priceByn": 2377,
-    "priceUsd": 790,
+    "priceByn": 23770,
+    "priceUsd": 7900,
     "address": "СТ Афган-2, Коптёвский сельсовет, Гродненский район, Гродненская область",
-    "area": 10,
+    "plotArea": 10,
+    "rooms": 1,
+    "yearBuilt": 2020,
+    "seller": "Юрий",
+    "propertyType": "Дача",
+    "features": [
+      "Отсутствует",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-23T08:53:02Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/83bd0155-b37e-40ed-9631-f027d02dbd8d.jpg",
@@ -499,18 +642,28 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/634233c3-0852-4aaf-b682-aac3413d2208.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a8c9a2e5-6585-41d1-a803-25636bae3e75.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1055550684,
     "link": "https://re.kufar.by/vi/1055550684",
     "title": "Современный дом в стиле хай-тек 160 кв. м., Гродно",
     "description": "Предлагаем вам уникальную возможность стать владельцем современного дома площадью 160 кв.м., который находится на старте строительства. Этот стильный ",
-    "priceByn": 53858,
-    "priceUsd": 17900,
+    "priceByn": 538575,
+    "priceUsd": 179000,
     "address": "Шауляйская ул, Гродно, Гродненская область",
     "area": 160,
+    "plotArea": 10,
+    "rooms": 4,
+    "yearBuilt": 2026,
+    "seller": "ООО АРТПРОДУКТС-БЕЛ",
+    "propertyType": "Дом",
+    "features": [
+      "Газовое",
+      "Центральная",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-23T08:10:57Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/29dc64dd-457f-4d97-89e7-f8bb38a958cd.jpg",
@@ -543,18 +696,28 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/472bc63c-ebc1-49cc-91b6-2df75f609e74.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9a76729f-87d4-47d9-9dc1-b465db98cd5a.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1053798134,
     "link": "https://re.kufar.by/vi/1053798134",
     "title": "Продам дачу Горница-Торгмаш-ст Нива",
     "description": "Продаётся уютный дом 83м2 в 8км. от города.  д.Горница Гродненского р-на С.Т Нива.  Дом 2015 года постройки имеет два этажа, фундамент ленточный, мате",
-    "priceByn": 10531,
-    "priceUsd": 3500,
+    "priceByn": 105308,
+    "priceUsd": 35000,
     "address": "СТ Нива, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "area": 83,
+    "plotArea": 5,
+    "rooms": 3,
+    "yearBuilt": 2015,
+    "seller": "Андрей ",
+    "propertyType": "Дом",
+    "features": [
+      "Печное",
+      "Сезонная",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-23T07:19:30Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/48670d25-918a-4f10-8ef1-9d3b9ca1d787.jpg",
@@ -583,18 +746,28 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eab96a0b-a08d-4e4f-bddb-680ea3a89166.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d61f68c3-2e00-42e8-a234-30c4b6882500.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1058097896,
     "link": "https://re.kufar.by/vi/1058097896",
     "title": "Продается дача СТ Строитель 1 ",
     "description": "Продается дача для круглогодичного проживания. Идеальное место для рыбалки и отдыха. Рядом находится Гродненское водохранилище. Очень красивая природа",
-    "priceByn": 29787,
-    "priceUsd": 9900,
+    "priceByn": 297871,
+    "priceUsd": 99000,
     "address": "31, СТ Строитель-1, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "area": 78.8,
+    "plotArea": 6,
+    "rooms": 3,
+    "yearBuilt": 2025,
+    "seller": "Владимир ",
+    "propertyType": "Дача",
+    "features": [
+      "Электрическое",
+      "Скважина",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-23T07:03:08Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fee7ec22-2506-4dc3-9c4e-db5069e0c8e4.jpg",
@@ -627,60 +800,52 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/07dc9106-3093-41d3-ae3a-db624f3b1f8f.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/153ec696-2460-4fcd-b194-f73400536e3f.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1061127808,
     "link": "https://re.kufar.by/vi/1061127808",
     "title": "Продам часть дома",
     "description": "Продается 1/2 часть дома, прилегающая часть земли (~ 5 соток) относится к нашей части дома, здесь можно поставить забор. Общая дорога с соседом вдоль ",
-    "priceByn": 27079,
-    "priceUsd": 9000,
+    "priceByn": 270789,
+    "priceUsd": 89999,
     "address": "Грандичская ул, Гродно, Гродненская область",
     "area": 110,
+    "plotArea": 7.5,
+    "rooms": 5,
+    "yearBuilt": 2015,
+    "seller": "ИП Виль Андрей Генрикович",
+    "propertyType": "Дом",
+    "features": [
+      "Электрическое",
+      "Скважина"
+    ],
     "listTime": "2026-03-23T07:02:47Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/afd6865b-6fdf-4147-b209-11c57072e370.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/45132507-d26f-4945-8dc4-d17548b24a51.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d2a5cca6-7087-44b8-8819-cb78c3bc82b5.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
-  },
-  {
-    "adId": 1061595148,
-    "link": "https://re.kufar.by/vi/1061595148",
-    "title": "Продается дача",
-    "description": "Продается отличная дача, в СТ Крыница-Луцковляны. Отличное месторасположение, хороший подъездной путь, рядом озеро «Луцковляны». Общая площадь участка",
-    "priceByn": 5416,
-    "priceUsd": 1800,
-    "address": "агрогородок Луцковляны, Индурский сельсовет, Гродненский район, Гродненская область",
-    "area": 48,
-    "listTime": "2026-03-23T06:45:43Z",
-    "images": [
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6706207d-0e5e-425b-9371-76b1803e8785.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/290ba5b7-163c-4bda-9e54-e2dd41a11f7b.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9a3e84c7-aa73-4af5-afaa-b1eddb70e903.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ad061149-ef54-4d70-8402-ba5f32e0ee37.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3189f35f-fbbc-4e3f-b086-bee446a6a063.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7cba1558-b31e-4b00-a30b-964fb41491f0.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/096344f3-0001-459a-9421-32396ac91114.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5574245a-04c6-4652-a1a2-5050c14555c9.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/32f86a29-4570-4314-8619-41267c86133f.jpg"
-    ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 255149518,
     "link": "https://re.kufar.by/vi/255149518",
     "title": "Дача на берегу Лососянки, СТ ''Тропинка'', 44",
     "description": "Продается дача в районе озера Юбилейное в СТ \"Тропинка, 44 в 7 км от кольца на ул. Суворова. Прекрасное месторасположение вблизи реки Лососянки. Садов",
-    "priceByn": 3611,
-    "priceUsd": 1200,
+    "priceByn": 36106,
+    "priceUsd": 12000,
     "address": "СТ Тропинка, Подлабенский сельсовет, Гродненский район, Гродненская область",
     "area": 18.2,
+    "plotArea": 7,
+    "rooms": 2,
+    "seller": "Гродненское агентство оказания риэлтерских услуг ",
+    "propertyType": "Дача",
+    "features": [
+      "Колодец"
+    ],
     "listTime": "2026-03-23T06:26:48Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/666beaa9-a027-4f0b-98b6-dc61193f4d7a.jpg",
@@ -696,18 +861,81 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d66d4c3b-5a5d-49fa-8c8a-256ea9faafa9.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eaddc1b6-51e1-4305-aaf4-f44ba8d53318.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
+  },
+  {
+    "adId": 1034676792,
+    "link": "https://re.kufar.by/vi/1034676792",
+    "title": "Продажа 2-этажного дома в Гоже",
+    "description": "Продается 2-х этажный кирпичный дом 1992 года постройки в агрогородке Гожа Гродненского района. Общая площадь дома 121,9 кв.м, жилая - 70,2 кв.м. На п",
+    "priceByn": 315924,
+    "priceUsd": 105000,
+    "address": "Школьная ул, агрогородок Гожа, Гожский сельсовет, Гродненский район, Гродненская область",
+    "area": 121.9,
+    "plotArea": 16.75,
+    "rooms": 5,
+    "yearBuilt": 1992,
+    "seller": "Гродненское агентство оказания риэлтерских услуг ",
+    "propertyType": "Дом",
+    "features": [
+      "Газовое",
+      "Центральная"
+    ],
+    "listTime": "2026-03-23T06:18:32Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/73eed1d4-08a0-40b6-980b-b42728521a7e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5876f9b2-f9d1-45e5-8cba-e3b5388cf5fa.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5c415ccc-0869-4224-a7d5-b194e805606b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fcf1ecba-7020-45bc-bb08-889da3a90097.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7c72e6a5-2857-4cc6-9a13-7584dd3170be.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ecf703c1-cd8f-4eb2-920f-68d95d6c6339.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/86d89419-3fdc-41bd-834e-08ae17842eec.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0be72605-7354-42d8-a650-adc01b59f332.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0bbc644b-8dca-45b9-9833-7014ad599d00.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/68a007e9-b4ad-4c3d-9b84-3ed60ccd55a4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/512bf48a-f401-4aa7-ad32-acf6567c7e98.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f7ffa4c7-5f7d-441c-8905-9e289d769b82.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ce3ef676-bfae-4820-a9e4-c54157619e81.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cdefbb16-bbed-48d6-99f2-dccca3349a0e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/626972dd-cdb8-4097-a233-230e496720c1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/75dba020-aa9d-4e5f-bd9a-7ea26f2152fe.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1b243339-a8f3-4ed0-b2d2-4faa192bf246.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b30ef1ca-e8c1-4196-91fe-de747e582a4e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5510e6ae-a6cd-4189-a492-e5d84bbaf0d5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8a38d27e-c3a8-48ea-a43d-b3715ff7e23a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/96d031fe-4a28-4a95-8791-118840fc998c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0ae33127-bf64-4274-a461-f3d285bd0d8b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/09eb4011-3fc1-42d4-98ca-7cdb0f140bab.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5303c297-804f-48fc-b86a-bbd2e43bf9b9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/32dba790-e7e2-478a-b6b3-a14d8aaf5cac.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/64c206be-1be2-4fbb-ab8e-deba101a3e3d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f9b11214-218f-4fb0-bf18-87b02768ec89.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/853ce887-8c57-45e2-ac3a-99c46fb7b1a3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/81af344c-060e-4ff4-bf6a-cee74c263e23.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b63e01f6-db01-4c2d-bde5-30dc778b4bfe.jpg"
+    ],
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1036365314,
     "link": "https://re.kufar.by/vi/1036365314",
     "title": "Продажа 2-этажной дачи в СТ ''Муравей''",
     "description": "Продается благоустроенная дача в районе д. Немейши в 17 км от города Гродно в СТ \"Муравей\".\nОбщая информация: площадь земельного участка - 0.0537 га, ",
-    "priceByn": 5800,
-    "priceUsd": 1928,
+    "priceByn": 58000,
+    "priceUsd": 19277,
     "address": "СТ Муравей, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "area": 45.4,
+    "plotArea": 5.37,
+    "rooms": 2,
+    "yearBuilt": 1999,
+    "seller": "Гродненское агентство оказания риэлтерских услуг ",
+    "propertyType": "Дача",
+    "features": [
+      "Печное",
+      "Колодец"
+    ],
     "listTime": "2026-03-23T06:17:47Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4da30595-3e07-4378-af4b-f4c74447eaf1.jpg",
@@ -723,18 +951,26 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c1fb17da-23e3-42b2-bef1-2cc6d30ca71b.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/085573ef-8ef3-439e-85ea-6711d0815434.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1039840935,
     "link": "https://re.kufar.by/vi/1039840935",
     "title": "2-этажная дача в районе д. Погораны",
     "description": "Продается земельный участок, находящийся в частной собственности, площадью 10 соток в районе д. Погораны в 5 км от рынка \"Южный\" г. Гродно в СТ \"Дружн",
-    "priceByn": 16548,
-    "priceUsd": 5500,
+    "priceByn": 165484,
+    "priceUsd": 55000,
     "address": "10, СТ Дружный Труд, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "area": 102,
+    "plotArea": 10,
+    "yearBuilt": 2022,
+    "seller": "Гродненское агентство оказания риэлтерских услуг ",
+    "propertyType": "Дача",
+    "features": [
+      "Печное",
+      "Колодец"
+    ],
     "listTime": "2026-03-23T06:13:52Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/99d8fd77-543d-4cfc-a99e-49e29fd0c7c2.jpg",
@@ -753,18 +989,27 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/61beac22-1470-4c0b-939e-23deef96d936.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f1da64cd-6383-4623-91c3-9d683f17461e.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1050061232,
     "link": "https://re.kufar.by/vi/1050061232",
     "title": "Продажа 2-этажного коттеджа в аг.Коптевка",
     "description": "Общая информация о доме\nТип дома: мансардный. Дом построен добротно, “для себя”, из качественных строительных материалов. \nМатериал стен: клеевые блок",
-    "priceByn": 27079,
-    "priceUsd": 9000,
+    "priceByn": 270792,
+    "priceUsd": 90000,
     "address": "Шоссейная ул, 11, агрогородок Коптёвка, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "area": 142.3,
+    "plotArea": 8.04,
+    "rooms": 4,
+    "yearBuilt": 2025,
+    "seller": "Гродненское агентство оказания риэлтерских услуг ",
+    "propertyType": "Коттедж",
+    "features": [
+      "Газовое",
+      "Центральная"
+    ],
     "listTime": "2026-03-23T06:12:31Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/95e7b30b-47d2-485e-b5cd-f18a16dcbd88.jpg",
@@ -793,8 +1038,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/50b18760-7c9f-4f94-aa24-33c91a41a716.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0b9992ba-9611-4574-95ae-e1e637a60ae6.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1054707709,
@@ -805,6 +1050,15 @@
     "priceUsd": 0,
     "address": "Аксамитная ул, 5, Гродно, Гродненская область",
     "area": 356.2,
+    "plotArea": 12,
+    "rooms": 5,
+    "yearBuilt": 1998,
+    "seller": "Гродненское агентство оказания риэлтерских услуг ",
+    "propertyType": "Коттедж",
+    "features": [
+      "Газовое",
+      "Центральная"
+    ],
     "listTime": "2026-03-23T06:12:21Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/417cbda1-e9c5-4e58-93e1-23c7ac07eb69.jpg",
@@ -858,18 +1112,27 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/05dde89e-3e6c-4a87-ab10-3fb97834f541.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3968dd3c-6b87-4cb0-8a4b-fc97b2ef9dac.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1044416672,
     "link": "https://re.kufar.by/vi/1044416672",
     "title": "Продажа дома в д.Бараново Квасовского с/с",
     "description": "Продается жилой дом, расположенный в д. Бараново Квасовского с/с в 15 км от г. Гродно.  Прямо к дому ведет асфальтированная дорога. Недалеко от дома р",
-    "priceByn": 19557,
-    "priceUsd": 6500,
+    "priceByn": 195572,
+    "priceUsd": 65000,
     "address": "70, деревня Бараново, Квасовский сельсовет, Гродненский район, Гродненская область",
     "area": 106.3,
+    "plotArea": 65,
+    "rooms": 4,
+    "yearBuilt": 1968,
+    "seller": "Гродненское агентство оказания риэлтерских услуг ",
+    "propertyType": "Дом",
+    "features": [
+      "Газовое",
+      "Центральная"
+    ],
     "listTime": "2026-03-23T06:11:59Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cb720b38-4997-49da-b92a-e082cbcd41cf.jpg",
@@ -894,49 +1157,28 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f47eba11-b858-4686-9542-122d7a5e1725.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9dfa5256-0578-488d-a516-459645307d90.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
-  },
-  {
-    "adId": 1059789094,
-    "link": "https://re.kufar.by/vi/1059789094",
-    "title": "Продажа жилого дома рядом с Гродно.",
-    "description": "***Продаётся одноквартирный жилой дом по ул. Центральной в д. Лабно-Огородники Подлабенского с/с, Гродненского района.\n\n***Кирпичный дом, общей площад",
-    "priceByn": 11734,
-    "priceUsd": 3900,
-    "address": "деревня Лабно-Огородники, Подлабенский сельсовет, Гродненский район, Гродненская область",
-    "area": 63.1,
-    "listTime": "2026-03-23T05:48:40Z",
-    "images": [
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1d76f76e-2ffc-400e-9668-b1443d29186b.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/611ba68a-f77d-4956-bbe0-11f3a307adec.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4e603efc-bca5-4606-ae8d-133a077b1493.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3f91acde-d0df-4fc4-9022-cdc07e6a31d4.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a174b3dd-de65-4c71-8db4-926eff29c705.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8b000bc8-8e8c-4886-a4c5-839c39fafd3f.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d6d50e93-acc8-4717-bb05-30cdb100bd41.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f92f1f8e-c38c-45ab-91b7-b09bb7401e81.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7b8d49c0-054e-4be5-90c0-ffc78b6a069c.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/937d5c91-d5df-4cdf-9a38-42ec91a4eb59.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eedab01f-bc23-478e-9174-c7ab707e808c.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/44fd49b0-f198-43a0-b684-795deba8ff8e.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/aacf3892-261f-4707-9d6e-1efd44e1c210.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5b025ae0-6971-4328-8a4d-6ea6888c8c73.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/68981b75-e54f-4640-9de0-d8c27a6f3d38.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0eb06f80-4046-43a9-a6d3-a0d4e3aec094.jpg"
-    ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1059700261,
     "link": "https://re.kufar.by/vi/1059700261",
     "title": "Продажа уютного дома в центре.",
     "description": "Продаётся уютный двухэтажный дом в центре города Гродно по улице Дальняя. Дом 2011 года постройки, сделан из блоков, утеплен пенопластом и оштукатурен",
-    "priceByn": 31562,
-    "priceUsd": 10490,
+    "priceByn": 315623,
+    "priceUsd": 104900,
     "address": "Дальняя ул, Гродно, Гродненская область",
     "area": 79.2,
+    "plotArea": 6.5,
+    "rooms": 3,
+    "yearBuilt": 2011,
+    "seller": "Агентство недвижимости ''Ключ к мечте''",
+    "propertyType": "Дом",
+    "features": [
+      "Газовое",
+      "Центральная",
+      "Пожизненное наследование"
+    ],
     "listTime": "2026-03-23T05:48:25Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/be915ec0-6e46-42cc-8ecd-84fc88f4cb03.jpg",
@@ -963,18 +1205,28 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f771be28-75b7-4129-a324-502ab9b6df6c.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a5584795-d09f-4d12-9af0-b07ca584f606.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1059058923,
     "link": "https://re.kufar.by/vi/1059058923",
     "title": "Дача в живописном месте,рядом поезд.",
     "description": "Продается дача в СТ Сирень. Направление за Ольшанку, Каменка, Копаньки. Рядом, в пяти минутах ходьбы,  остановка поезда Немейши, курсирует  круглый го",
-    "priceByn": 4513,
-    "priceUsd": 1500,
+    "priceByn": 45132,
+    "priceUsd": 15000,
     "address": "СТ Сирень-1, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "area": 34.7,
+    "plotArea": 4.8,
+    "rooms": 2,
+    "yearBuilt": 1996,
+    "seller": "Агентство недвижимости ''Ключ к мечте''",
+    "propertyType": "Дача",
+    "features": [
+      "Печное",
+      "Сезонная",
+      "Пожизненное наследование"
+    ],
     "listTime": "2026-03-23T05:47:58Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/15048636-c804-4835-8e67-4618e7e84e51.jpg",
@@ -989,18 +1241,28 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/10a0371f-2a67-40fc-8938-597d31e8873d.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/233da561-32cf-4563-b696-7ae8e549726b.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1051279442,
     "link": "https://re.kufar.by/vi/1051279442",
     "title": "Продажа дачи СТ ''Натуралист''",
     "description": "Продаётся уютная дача  7 км. от Гродно в живописном месте  ст. \"Натуралист\". Дом мансардного типа площадью 36,6 кв. м. сделан из блоков, утеплен и ошт",
-    "priceByn": 4197,
-    "priceUsd": 1395,
+    "priceByn": 41973,
+    "priceUsd": 13950,
     "address": "СТ Натуралист, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "area": 36.6,
+    "plotArea": 5,
+    "rooms": 4,
+    "yearBuilt": 1986,
+    "seller": "Агентство недвижимости ''Ключ к мечте''",
+    "propertyType": "Дача",
+    "features": [
+      "Печное",
+      "Сезонная",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-23T05:47:21Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/08889626-e02a-4b94-a2e7-8390cfef0aa7.jpg",
@@ -1017,18 +1279,28 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6bcabc45-e419-4c2a-a2c8-7acbe7d5dd62.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a732665d-f95d-45a7-af92-5af6a06107d2.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1004219427,
     "link": "https://re.kufar.by/vi/1004219427",
     "title": "Дом, дача в Гродно.",
     "description": "ТОРГ.ул. Карского 63Ак41. Дом с пристройкой, до конечной автобусной остановки, 7 минут хотьбы, можно проехать на машине, по той же дороге. В доме можн",
-    "priceByn": 7522,
-    "priceUsd": 2500,
+    "priceByn": 75220,
+    "priceUsd": 25000,
     "address": "Карского ул, 63Ак41, Гродно, Гродненская область",
     "area": 67.4,
+    "plotArea": 6,
+    "rooms": 3,
+    "yearBuilt": 1999,
+    "seller": "ИП Ковалев В. Ю. ",
+    "propertyType": "Дача",
+    "features": [
+      "Печное",
+      "Сезонная",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-23T05:35:07Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/42617b1f-17f0-499c-9949-1fd609b521fd.jpg",
@@ -1049,18 +1321,27 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8caaedf7-78e3-46f6-a203-d784b2371acd.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5c1ce310-f6a2-421a-b734-19db39b7e940.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1061551956,
     "link": "https://re.kufar.by/vi/1061551956",
     "title": "Коттедж",
     "description": "Коттедж под отделку. Находится в Гродно, микрорайон Фабричный, в тихом благоустроенном месте. К дому подведены газ, вода, электричество, телефонный ка",
-    "priceByn": 31592,
-    "priceUsd": 10500,
+    "priceByn": 315924,
+    "priceUsd": 105000,
     "address": "Льва Бакста ул, 15, Гродно, Гродненская область",
     "area": 230,
+    "plotArea": 15,
+    "rooms": 4,
+    "seller": "Михаил",
+    "propertyType": "Коттедж",
+    "features": [
+      "Газовое",
+      "Центральная",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-22T20:49:33Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eca72b8e-a696-479f-bbb3-14e29ea6be1f.jpg",
@@ -1113,18 +1394,28 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e3348b0d-cb1f-4a19-aa96-44ced18e42af.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d0c70d0c-7909-4dc3-bfd8-92c3201eeee7.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1053319977,
     "link": "https://re.kufar.by/vi/1053319977",
     "title": "Дача",
     "description": "Атмосферный домик 33 кв.м, с гостиной, спальней, туалетом и маленькой баней в живописном месте. \nВ домик подведена сезонная вода, для умывальника и ун",
-    "priceByn": 5867,
-    "priceUsd": 1950,
+    "priceByn": 58672,
+    "priceUsd": 19500,
     "address": "СТ Колокольчик, Подлабенский сельсовет, Гродненский район, Гродненская область",
     "area": 33,
+    "plotArea": 9,
+    "rooms": 2,
+    "yearBuilt": 2024,
+    "seller": "Валерий",
+    "propertyType": "Дача",
+    "features": [
+      "Электрическое",
+      "Сезонная",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-22T18:33:07Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/57a91a23-3eba-4865-85f0-2fe4ebd5fdf4.jpg",
@@ -1144,18 +1435,49 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/50f71974-a916-4d37-824a-a8b837460d6e.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3102dd39-cc40-47e3-bfcf-5dd72f01f149.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
+  },
+  {
+    "adId": 1061533878,
+    "link": "https://re.kufar.by/vi/1061533878",
+    "title": "Дача",
+    "description": "Продаётся дача, в живописном лесном массиве. Недалеко протекает река Неман, также на дачном участке есть плодовые деревья и кусты. Дача расположена в ",
+    "priceByn": 0,
+    "priceUsd": 0,
+    "address": "СТ Янтарное, Сопоцкинский сельсовет, Гродненский район, Гродненская область",
+    "area": 6.5,
+    "plotArea": 6.5,
+    "rooms": 2,
+    "seller": "Пользователь",
+    "propertyType": "Дача",
+    "features": [
+      "Отсутствует",
+      "Скважина",
+      "Частная собственность"
+    ],
+    "listTime": "2026-03-22T17:16:39Z",
+    "images": [],
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1061527096,
     "link": "https://re.kufar.by/vi/1061527096",
     "title": "Две дачи на смежных участках",
     "description": "Два дома на смежных участках в Тарусичах. Возможна продажа одного дома из двух.",
-    "priceByn": 9026,
-    "priceUsd": 3000,
+    "priceByn": 90264,
+    "priceUsd": 30000,
     "address": "Цветочная ул, СТ Пламя, Подлабенский сельсовет, Гродненский район, Гродненская область",
     "area": 64,
+    "plotArea": 12,
+    "rooms": 4,
+    "seller": "Вадим",
+    "propertyType": "Дом",
+    "features": [
+      "Центральная",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-22T16:47:03Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/37dd616c-1645-4065-aaf9-f0bfe10cddaf.jpg",
@@ -1167,18 +1489,28 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0b79b21f-1cdd-4807-bdd6-78ad8966ebd7.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/be47bbc2-fcb9-4e99-97ab-9ba93e92719f.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1061524680,
     "link": "https://re.kufar.by/vi/1061524680",
     "title": "Дача",
     "description": "Участок огорожен со всех сторон с электричеством, на участке летний дом, плодовые деревья, летний душ, туалет, хороший подъезд к участку, 5 километров",
-    "priceByn": 3761,
-    "priceUsd": 1250,
+    "priceByn": 37610,
+    "priceUsd": 12500,
     "address": "11, СТ Вишнёвка, Квасовский сельсовет, Гродненский район, Гродненская область",
     "area": 60,
+    "plotArea": 6,
+    "rooms": 1,
+    "yearBuilt": 2025,
+    "seller": "Михаил",
+    "propertyType": "Дача",
+    "features": [
+      "Отсутствует",
+      "Отсутствует",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-22T16:33:22Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d6c6c21b-c3dd-4a57-863d-bd03fe2ada2b.jpg",
@@ -1187,18 +1519,27 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/337a7aaf-d487-49b7-963a-eba9567d74b9.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/11e5c48f-dd0b-45b5-aa64-978403f498c0.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1060538151,
     "link": "https://re.kufar.by/vi/1060538151",
     "title": "Дом",
     "description": "Дом в поселке Береговой.Отличное месторасположение. В шаговой близости река Неман, лес. Развитая транспортная развязка. Рядом выезд на трассу М 6. До ",
-    "priceByn": 41822,
-    "priceUsd": 13900,
+    "priceByn": 418223,
+    "priceUsd": 139000,
     "address": "посёлок Береговой, Вертелишковский сельсовет, Гродненский район, Гродненская область",
     "area": 140,
+    "rooms": 4,
+    "yearBuilt": 2023,
+    "seller": "Владимир",
+    "propertyType": "Дом",
+    "features": [
+      "Газовое",
+      "Центральная",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-22T16:20:38Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3a8c307a-d574-42cf-8fde-8dbe1b82e156.jpg",
@@ -1228,35 +1569,54 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/74d2e2ec-a227-41a0-bd95-70dee19611e6.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/26e61698-b95c-4a87-b0eb-7da93941a59c.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1061511781,
     "link": "https://re.kufar.by/vi/1061511781",
     "title": "Дача",
     "description": "Электричество постоянное, газовый баллон в доме, вода сезонная. Участок ровный. Печное отопление. Печь рабочая. Садовое товарищество Янтарное. Находит",
-    "priceByn": 1986,
-    "priceUsd": 660,
+    "priceByn": 19858,
+    "priceUsd": 6600,
     "address": "деревня Моньковцы, Сопоцкинский сельсовет, Гродненский район, Гродненская область",
     "area": 40,
+    "plotArea": 6,
+    "rooms": 3,
+    "yearBuilt": 2009,
+    "seller": "Людмила",
+    "propertyType": "Дача",
+    "features": [
+      "Печное",
+      "Сезонная"
+    ],
     "listTime": "2026-03-22T14:51:44Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a525c570-c631-4fb0-97a5-59316519d025.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9004d2b0-1c4b-40f5-be35-64af20091407.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1038404063,
     "link": "https://re.kufar.by/vi/1038404063",
     "title": "Дача СТ Путно",
     "description": "Продам дачу в красивом месте 11км от города, в пешей доступности есть речка, озеро и лес. На участке есть скважина, вода хорошая пригодная для питья, ",
-    "priceByn": 2257,
-    "priceUsd": 750,
+    "priceByn": 22566,
+    "priceUsd": 7500,
     "address": "СТ Путно, Квасовский сельсовет, Гродненский район, Гродненская область",
     "area": 21,
+    "plotArea": 9,
+    "rooms": 1,
+    "yearBuilt": 1999,
+    "seller": "al",
+    "propertyType": "Дача",
+    "features": [
+      "Электрическое",
+      "Скважина",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-22T14:38:17Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/962f9b75-f7ee-4d30-aeb3-64c8edbb4d55.jpg",
@@ -1271,18 +1631,28 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/92985bd0-cca0-42d1-902a-03d406f78a91.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9e876ae6-6e89-4440-95a6-fd27b7f453c9.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1005993919,
     "link": "https://re.kufar.by/vi/1005993919",
     "title": "Дом для жизни и бизнеса с частным участком",
     "description": "     Коробка коттеджа с участком 0.13 га (частная собственность). Участок расположен в престижном, экологически чистом районе. Высокое сухое место, ок",
-    "priceByn": 20761,
-    "priceUsd": 6900,
+    "priceByn": 207607,
+    "priceUsd": 69000,
     "address": "Романтическая ул, деревня Коробчицы, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "area": 400.2,
+    "plotArea": 13,
+    "rooms": 5,
+    "yearBuilt": 2010,
+    "seller": "Николай",
+    "propertyType": "Коттедж",
+    "features": [
+      "Газовое",
+      "Центральная",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-22T10:19:10Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4251ebee-63f8-42d8-8147-2788a95a5ef1.jpg",
@@ -1297,18 +1667,26 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f147bbe3-dc7a-41c5-ab3d-72cb0712735b.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/52d12833-771e-42ef-846a-119482523ea1.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1038387578,
     "link": "https://re.kufar.by/vi/1038387578",
     "title": "Дача с участком",
     "description": "Дом с дачным участком около 10 соток. Земля обработана, деревья и кустаркики молодые. Подробности по телефонам. Осмотр организуем.",
-    "priceByn": 2678,
-    "priceUsd": 890,
+    "priceByn": 26778,
+    "priceUsd": 8900,
     "address": "34, СТ Физкультурник, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "area": 30.4,
+    "rooms": 2,
+    "seller": "пользователь",
+    "propertyType": "Дача",
+    "features": [
+      "Отсутствует",
+      "Сезонная",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-22T10:15:48Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/57738025-b447-400c-b33d-b1274924abee.jpg",
@@ -1320,18 +1698,21 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/98363d53-8a8b-4d4f-b545-1f3520f2b426.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bd8aaaf4-e0b7-4b62-a687-e94b5ccc0d7e.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1059594831,
     "link": "https://re.kufar.by/vi/1059594831",
     "title": "дача СТ Металлист",
     "description": "Добро пожаловать в замечательное место для отдыха вдали от городской суеты!\nВ продаже уютная дача в садовом товариществе «Металлист». Площадь земельно",
-    "priceByn": 3009,
-    "priceUsd": 1000,
+    "priceByn": 30088,
+    "priceUsd": 10000,
     "address": "101, СТ Металлист, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "area": 32,
+    "plotArea": 4.76,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "propertyType": "Дача",
     "listTime": "2026-03-22T09:32:42Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3401d537-9b9a-4b29-a2c7-ca41bf503bdd.jpg",
@@ -1343,35 +1724,88 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/160938d5-ed39-40a8-9fcc-5129fe09b144.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f847a04e-480c-4939-bd99-53b373a10738.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
+  },
+  {
+    "adId": 1015461274,
+    "link": "https://re.kufar.by/vi/1015461274",
+    "title": "Дом в д. Завадичи",
+    "description": "Продается дом в д. Завадичи Вертелишковского сельского совета\nДом расположен на земельном участке площадью 20 соток, зарегистрированном на праве пожиз",
+    "priceByn": 20761,
+    "priceUsd": 6900,
+    "address": "18А, деревня Завадичи, Вертелишковский сельсовет, Гродненский район, Гродненская область",
+    "area": 57.4,
+    "plotArea": 20,
+    "rooms": 1,
+    "seller": "ООО ''ГРОДНЕНСКОЕ АГЕНТСТВО НЕДВИЖИМОСТИ''",
+    "propertyType": "Дом",
+    "features": [
+      "Печное",
+      "Пожизненное наследование"
+    ],
+    "listTime": "2026-03-22T09:19:39Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/24b599b6-2bc6-4cdb-b5dd-f053b2477deb.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c2fd66a2-8c98-4bf0-9de0-393840ebdc76.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/335f5f5d-605f-4914-811a-aa8eba7fbee1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0911074a-b992-4516-b1d3-eba2c51811ff.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/38251d03-3e7f-4460-a228-8e02cf7c49fa.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6dba1b6c-4c8f-4763-84b7-2c8607338011.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e28d179b-3e28-42d9-be18-07a87be34ba9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e85ca1b2-b014-46ab-a867-0a67e2c2ce52.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/411640c8-48a2-4a60-9c98-95219b11fddf.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5dcb33a8-121f-46ad-aba7-3af318385926.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/93cffc49-032a-4d55-96c6-7e70e9b13c7a.jpg"
+    ],
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1061458530,
     "link": "https://re.kufar.by/vi/1061458530",
     "title": "Дача",
     "description": "Дача находится в СТ»Маки» -1.5км от озера Юбилейное-ходит городской автобус№№35. От остановки 5 минут ходьбы,от асфальта 200 метров.",
-    "priceByn": 4212,
-    "priceUsd": 1400,
+    "priceByn": 42123,
+    "priceUsd": 14000,
     "address": "49, СТ Маки, Подлабенский сельсовет, Гродненский район, Гродненская область",
     "area": 35,
+    "plotArea": 5,
+    "rooms": 2,
+    "yearBuilt": 1985,
+    "seller": "Елена Георгиевна ",
+    "propertyType": "Дача",
+    "features": [
+      "Отсутствует",
+      "Сезонная",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-22T08:38:31Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0e4108c5-c9f2-4e7a-b513-e71bbbef89e9.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d4449a6b-3946-44d7-bcff-2500784b7620.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1061456892,
     "link": "https://re.kufar.by/vi/1061456892",
     "title": "Продается дача",
     "description": "Продается дача. СТ Вишневка, 5 км от Ольшанки! Участок 6 соток, на участке плодовые деревья, сарай! Дом блочно-кирпичный! На участке колодец. К дому п",
-    "priceByn": 4513,
-    "priceUsd": 1500,
+    "priceByn": 45132,
+    "priceUsd": 15000,
     "address": "40, СТ Вишнёвка, Квасовский сельсовет, Гродненский район, Гродненская область",
     "area": 54,
+    "plotArea": 6,
+    "rooms": 2,
+    "seller": "Андрей ",
+    "propertyType": "Дача",
+    "features": [
+      "Печное",
+      "Колодец",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-22T08:24:58Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1afbf206-9574-4cfe-a947-118e0455109b.jpg",
@@ -1392,18 +1826,22 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/31e6b27f-bdd1-4cb5-9999-455b0be55d89.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0f3c9527-a012-4fa6-b088-443fd7a69938.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1024192833,
     "link": "https://re.kufar.by/vi/1024192833",
     "title": "Часть дома в центре Гродно",
     "description": "Продается часть дома в блокированном жилом доме. Переведена в статус квартиры. Расположена в центральной части города, на левонабережной Немана. \nДом ",
-    "priceByn": 8876,
-    "priceUsd": 2950,
+    "priceByn": 88760,
+    "priceUsd": 29500,
     "address": "Краснопартизанская ул, Гродно, Гродненская область",
     "area": 59,
+    "plotArea": 5,
+    "rooms": 2,
+    "seller": "ООО Центр жилья",
+    "propertyType": "Часть дома",
     "listTime": "2026-03-22T08:04:15Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/68d859ab-4a32-4ed8-be50-3dce6624be18.jpg",
@@ -1420,8 +1858,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1d0b26bd-2ff7-4914-97a7-c0889a872d59.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2c281a49-f2c8-4463-b0e9-6ab8251e5b3d.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1061445709,
@@ -1432,6 +1870,14 @@
     "priceUsd": 0,
     "address": "деревня Наумовичи, Подлабенский сельсовет, Гродненский район, Гродненская область",
     "area": 123.9,
+    "plotArea": 25,
+    "rooms": 4,
+    "seller": "ООО РиэлтЭлит",
+    "propertyType": "Дом",
+    "features": [
+      "Отсутствует",
+      "Скважина"
+    ],
     "listTime": "2026-03-22T07:28:45Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/43a6c442-e451-47ec-878a-74f060ae97db.jpg",
@@ -1456,18 +1902,27 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d9f04daa-8eba-4ac9-9d70-18054ad3ea9e.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4c884161-0507-460a-b97c-ba9ba33c8791.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1061441542,
     "link": "https://re.kufar.by/vi/1061441542",
     "title": "дача",
     "description": "на участке много плодовых деревьев, клубника... Остановка рядом 10 минут ходьбы, рядом с городом",
-    "priceByn": 2979,
-    "priceUsd": 990,
+    "priceByn": 29787,
+    "priceUsd": 9900,
     "address": "82, СТ Вишнёвка, Квасовский сельсовет, Гродненский район, Гродненская область",
     "area": 26.1,
+    "plotArea": 6,
+    "rooms": 2,
+    "seller": "жека",
+    "propertyType": "Дача",
+    "features": [
+      "Печное",
+      "Колодец",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-22T07:03:03Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ffa1e1c0-33f1-4878-8d33-0aca3ba46f45.jpg",
@@ -1480,18 +1935,26 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/38e50c30-38d0-4ebf-9f67-97f06ca4c6a8.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/142447d3-b10c-46a3-9636-2461baaa3c64.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1057476665,
     "link": "https://re.kufar.by/vi/1057476665",
     "title": "Продажа таунхауса в г. Гродно, Проезд Калиновый 4",
     "description": "Двухуровневые квартиры в таунхаусах — это ваш личный уголок с отдельным входом, где никто не проходит мимо окон. Никакого шума соседей сверху, только ",
-    "priceByn": 28384,
-    "priceUsd": 9434,
+    "priceByn": 283835,
+    "priceUsd": 94335,
     "address": "4-й Калиновый проезд, 3, Гродно, Гродненская область",
     "area": 99.3,
+    "plotArea": 1.9,
+    "yearBuilt": 2025,
+    "seller": "ООО АйронИнвестПроект",
+    "propertyType": "Таунхаус",
+    "features": [
+      "Газовое",
+      "Центральная"
+    ],
     "listTime": "2026-03-22T06:46:20Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/28f8380e-979e-4c59-a23b-cf515b220462.jpg",
@@ -1502,8 +1965,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9f0d060d-2012-4e5d-8ecd-de4bc81c9781.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bc27c171-c7d6-4518-bc68-6100ba2b91cb.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1009941055,
@@ -1514,6 +1977,16 @@
     "priceUsd": 0,
     "address": "Коммунальная ул, 32/4, Гродно, Гродненская область",
     "area": 127,
+    "plotArea": 2,
+    "rooms": 4,
+    "yearBuilt": 2026,
+    "seller": "Группа компаний САЕНГРУПП - ООО АСТОСТРОЙ",
+    "propertyType": "Таунхаус",
+    "features": [
+      "Газовое",
+      "Центральная",
+      "Аренда"
+    ],
     "listTime": "2026-03-22T06:43:05Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5c42a4b0-675a-4840-883a-fa449f215161.jpg",
@@ -1529,18 +2002,26 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f2b7e6df-9520-4d23-b1c8-3f70b2bd8ace.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d64f2f5b-ac97-49d7-b3f7-25d7c12a8721.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1056520432,
     "link": "https://re.kufar.by/vi/1056520432",
     "title": "Дача 6.15 сот. в д.Тарусичи, 8 км. от г. Гродно",
     "description": "Отличное решение! Дача для отдыха и урожая 6,15 сот., СТ «Чайка – Тарусичи». \n\nВ живописном месте, шаговой доступности к оз. Юбилейное продам земельны",
-    "priceByn": 3611,
-    "priceUsd": 1200,
+    "priceByn": 36106,
+    "priceUsd": 12000,
     "address": "деревня Тарусичи, Подлабенский сельсовет, Гродненский район, Гродненская область",
     "area": 27.1,
+    "plotArea": 6.2,
+    "rooms": 2,
+    "seller": "ООО РиэлтЭлит",
+    "propertyType": "Дача",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-22T06:33:40Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/98aabb58-2518-407a-9719-eee57c38b96a.jpg",
@@ -1556,8 +2037,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5993ee33-3bc6-43be-878c-4e521bc40378.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4e17a420-a1aa-4cf1-ae49-d434cc6cd3c1.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1056540512,
@@ -1568,6 +2049,15 @@
     "priceUsd": 0,
     "address": "деревня Тарусичи, Подлабенский сельсовет, Гродненский район, Гродненская область",
     "area": 42.8,
+    "plotArea": 7.9,
+    "rooms": 2,
+    "seller": "ООО РиэлтЭлит",
+    "propertyType": "Дача",
+    "features": [
+      "Печное",
+      "Сезонная",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-22T06:33:31Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0a7c69f8-f62c-49c1-9608-4b1a9b826ca6.jpg",
@@ -1581,18 +2071,26 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/462e475d-4606-4565-9e69-b6a0a5125684.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d2ccadfd-fd8a-46c1-bed4-b358310505a3.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1060937810,
     "link": "https://re.kufar.by/vi/1060937810",
     "title": "Дача",
     "description": "Продаётся дача в черте города в СТ \"Химик-Азот\". Участок 0,0684 га на праве аренды. \nСадовый домик блочный, 2-х этажный, 1995 года постройки, общая пл",
-    "priceByn": 4664,
-    "priceUsd": 1550,
+    "priceByn": 46636,
+    "priceUsd": 15500,
     "address": "Карского ул, Гродно, Гродненская область",
     "area": 51.9,
+    "plotArea": 6.8,
+    "yearBuilt": 1995,
+    "seller": "Ольга",
+    "propertyType": "Дача",
+    "features": [
+      "Сезонная",
+      "Аренда"
+    ],
     "listTime": "2026-03-22T05:32:18Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ba564d7f-6c04-4583-9f51-3ed4cff2f6b6.jpg",
@@ -1614,18 +2112,26 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e7b4b3cc-53a7-4483-80cf-7d189025e9f5.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/039a2135-a627-44a1-a120-424916f25228.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1034685457,
     "link": "https://re.kufar.by/vi/1034685457",
     "title": "Дача",
     "description": "Дом находится в 8км от города. Дорога полностью асфальтирована. Лес в 100м от домика. Огорожена забором. Домик обшит сайдингом, новая кровля, окна сте",
-    "priceByn": 4513,
-    "priceUsd": 1500,
+    "priceByn": 45132,
+    "priceUsd": 15000,
     "address": "16, СТ Заболотное, Гожский сельсовет, Гродненский район, Гродненская область",
     "area": 25.9,
+    "rooms": 2,
+    "seller": "Андрей",
+    "propertyType": "Дача",
+    "features": [
+      "Печное",
+      "Колодец",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-21T21:47:56Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/36197b90-0db6-4a16-b16f-e937a96f10ab.jpg",
@@ -1638,18 +2144,28 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/009765df-1dca-4f38-a824-5918af12d285.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6f085f7e-70a9-40a2-99ab-536b0111c5a5.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1039283487,
     "link": "https://re.kufar.by/vi/1039283487",
     "title": "Продаётся дом",
     "description": "Продаётся дом в 4 км от Города. Крайний угловой участок у речки и леса. 25 соток. Газ, вода, электричество 380, канализация. \nДом 300 квадратов, хоз п",
-    "priceByn": 22265,
-    "priceUsd": 7400,
+    "priceByn": 222651,
+    "priceUsd": 74000,
     "address": "Кленовая ул, 86, деревня Каменка, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "area": 290,
+    "plotArea": 25,
+    "rooms": 5,
+    "yearBuilt": 2023,
+    "seller": "ИП Езжев Денис Олегович",
+    "propertyType": "Коттедж",
+    "features": [
+      "Газовое",
+      "Колодец",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-21T19:58:59Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/db03094c-450c-4896-bfa8-b20012e29f6e.jpg",
@@ -1664,18 +2180,27 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/73b708c6-1d9d-4d02-8e64-67e0fe75407f.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/05dd9e0a-ee39-44b3-9861-ed6c2b270fe2.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1061394861,
     "link": "https://re.kufar.by/vi/1061394861",
     "title": "Садовый домик с участком",
     "description": "Дача в хорошем состоянии, на территории плодовые деревья, теплица, Блочный сарай с туалетом. Также есть колодец. В доме 2 небольшие жилые комнаты с пе",
-    "priceByn": 3500,
-    "priceUsd": 1163,
+    "priceByn": 35000,
+    "priceUsd": 11633,
     "address": "СТ Крушина, Одельский сельсовет, Гродненский район, Гродненская область",
     "area": 40,
+    "plotArea": 8.76,
+    "rooms": 2,
+    "yearBuilt": 2002,
+    "seller": "Юрий  ",
+    "propertyType": "Дача",
+    "features": [
+      "Колодец",
+      "Частная собственность"
+    ],
     "listTime": "2026-03-21T19:50:10Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/85031bc1-529d-433b-b6d0-235cda73bd6f.jpg",
@@ -1701,18 +2226,27 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/52277ca8-bf36-44af-9ba7-28000dd888e7.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e88d2860-db5b-4c01-a8c9-eaa7a83e50dd.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1030459779,
     "link": "https://re.kufar.by/vi/1030459779",
     "title": "Дом,",
     "description": "Продам дом,мансардного типа,деревня Тарусичи, в 500ста метрах озеро Юбилейное,рядом расположены микрорайон Барановичи, кому интересно, пишите, звоните",
-    "priceByn": 30088,
-    "priceUsd": 10000,
+    "priceByn": 300880,
+    "priceUsd": 100000,
     "address": "деревня Тарусичи, Подлабенский сельсовет, Гродненский район, Гродненская область",
     "area": 120,
+    "plotArea": 6,
+    "rooms": 3,
+    "yearBuilt": 2020,
+    "seller": "Частное лицо ",
+    "propertyType": "Дом",
+    "features": [
+      "Газовое",
+      "Скважина"
+    ],
     "listTime": "2026-03-21T19:09:16Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8bab8c3a-4beb-4f8c-a18f-574755e4502d.jpg",
@@ -1721,18 +2255,28 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3fcb7ed6-6d70-4ca0-b187-d954c8efc9a8.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a9e3f7da-a891-494d-8785-be6e52e930b6.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   },
   {
     "adId": 1058596260,
     "link": "https://re.kufar.by/vi/1058596260",
     "title": "Продам дом на берегу реки Неман",
     "description": "Продается современный просторный 2-ух этажный дом-сруб в д. Миневичи на первой береговой линии р. Неман в 37 км. От г. Гродно расположенный на участке",
-    "priceByn": 88760,
-    "priceUsd": 29500,
+    "priceByn": 887596,
+    "priceUsd": 295000,
     "address": "Вавжецкого ул, 35, Гродно, Гродненская область",
     "area": 188,
+    "plotArea": 20,
+    "rooms": 4,
+    "yearBuilt": 2016,
+    "seller": "Сергей",
+    "propertyType": "Дом",
+    "features": [
+      "Электрическое",
+      "Скважина",
+      "Пожизненное наследование"
+    ],
     "listTime": "2026-03-21T17:37:20Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/048ceeaa-85e3-4c29-b5b3-13b62a45faf9.jpg",
@@ -1783,36 +2327,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/af29ffa8-18b6-402f-8265-f0e4c01c9bb1.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/34c3af94-3263-4367-bdfb-a985dfcc598e.jpg"
     ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
-  },
-  {
-    "adId": 1028610574,
-    "link": "https://re.kufar.by/vi/1028610574",
-    "title": "Уютный дом с земельным участком на ул. Окульной",
-    "description": "В продаже уютный дом с земельным участком на ул. Окульная. Дом одноэтажный, материал стен дома – брус, облицован кирпичом, фундамент-бетон, крыша-шифе",
-    "priceByn": 11433,
-    "priceUsd": 3800,
-    "address": "Окульная ул, Гродно, Гродненская область",
-    "area": 36.1,
-    "listTime": "2026-03-21T15:44:26Z",
-    "images": [
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/45f58c1f-c957-41c7-aa0e-f6fc3b9f4c7d.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d246a925-fd22-4661-87a7-b10963bb7315.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ecc805fd-dfda-4f43-9f82-108e255dd5c3.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9a000086-0d85-46e8-b4d5-71f23eefbce5.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c90f123d-8126-480c-b9f7-5f03a9f87287.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7bc66ee2-ea06-42b1-bf1a-bb473f6b358f.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8fa10484-805b-42e8-9c07-fe86d8e49777.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8f3e890f-3eb5-48bf-af11-7818fe3bacf7.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d2d4ae0c-b07b-4f1f-929a-2e5b97514295.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7b9d1618-cfae-49b8-bc9c-ea443ee6ffd2.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e5c3c020-23c2-41e8-a2f5-99b56346022a.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/70c1788b-f5d3-4597-a1fb-6590d9930098.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b7f81828-2d9c-4f15-ae1d-67c47f9cd027.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eb6bfb5b-a069-4929-b1b8-b05d5a9bc525.jpg"
-    ],
-    "firstSeenAt": "2026-03-23T15:18:55.446Z",
-    "lastSeenAt": "2026-03-23T15:18:55.446Z"
+    "firstSeenAt": "2026-03-23T15:44:56.264Z",
+    "lastSeenAt": "2026-03-23T15:44:56.264Z"
   }
 ]

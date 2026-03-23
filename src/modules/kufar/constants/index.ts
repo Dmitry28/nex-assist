@@ -7,6 +7,12 @@ export const MAX_PAGES = 10;
 /** HTTP request timeout for fetching Kufar pages (ms). */
 export const FETCH_TIMEOUT_MS = 30_000;
 
+/** Max HTML response size — reject anything larger to avoid memory exhaustion (5 MB). */
+export const MAX_HTML_SIZE_BYTES = 5 * 1024 * 1024;
+
+/** Max wall-clock time for a full scrape cycle — watchdog resets isRunning if exceeded (15 min). */
+export const RUN_TIMEOUT_MS = 15 * 60 * 1000;
+
 /**
  * Only process listings whose list_time is within the last LOOKBACK_HOURS.
  * 48 h covers today + yesterday regardless of timezone offset.

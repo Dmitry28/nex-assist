@@ -17,9 +17,9 @@ import type {
   KufarResult,
   KufarSnapshotEntry,
 } from './dto/kufar-listing.dto';
-import { dataFile } from './constants';
+import { dataFile, RUN_TIMEOUT_MS } from './constants';
 import { KufarParserService } from './kufar-parser.service';
-import { KufarNotifierService } from './kufar-notifier.service';
+import { KufarNotifierService, KufarNotifyResult } from './kufar-notifier.service';
 
 const isKufarSnapshotEntry = (item: unknown): item is KufarSnapshotEntry =>
   typeof item === 'object' &&
@@ -29,12 +29,20 @@ const isKufarSnapshotEntry = (item: unknown): item is KufarSnapshotEntry =>
   'listTime' in item &&
   typeof (item as { listTime: unknown }).listTime === 'string';
 
+/** Internal data kept per feed during a scrape cycle — not exposed to callers. */
+interface KufarFeedScrapeData {
+  feed: KufarFeedConfig;
+  currentListings: KufarListing[];
+  previousMap: Map<number, KufarSnapshotEntry>;
+  result: KufarFeedResult;
+}
+
 /**
  * Orchestrates the Kufar scrape cycle for all configured feeds:
  *   1. Fetch recent listings (today/yesterday) from each search URL
  *   2. Diff against the per-feed snapshot → detect new listings and price changes
- *   3. Send Telegram notifications
- *   4. Persist updated snapshots to disk
+ *   3. Send Telegram notifications — only what was successfully sent gets persisted
+ *   4. Persist updated snapshots to disk (bumped ads always saved; new/price-change only if notified)
  *
  * Bumped ads (reappearing with the same price) are silently ignored.
  */
@@ -69,6 +77,13 @@ export class KufarService implements OnModuleInit, OnModuleDestroy {
     if (this.isRunning) throw new ConflictException('Scrape already in progress');
 
     this.isRunning = true;
+
+    // Watchdog: if the scrape hangs longer than RUN_TIMEOUT_MS, reset the lock
+    const watchdog = setTimeout(() => {
+      this.logger.error(`Scrape watchdog fired after ${RUN_TIMEOUT_MS / 1000}s — resetting lock`);
+      this.isRunning = false;
+    }, RUN_TIMEOUT_MS);
+
     try {
       return await this.scrape();
     } catch (error) {
@@ -81,6 +96,7 @@ export class KufarService implements OnModuleInit, OnModuleDestroy {
       }
       throw error;
     } finally {
+      clearTimeout(watchdog);
       this.isRunning = false;
     }
   }
@@ -106,31 +122,29 @@ export class KufarService implements OnModuleInit, OnModuleDestroy {
       return { feeds: [] };
     }
 
-    const feedResults: KufarFeedResult[] = [];
+    const scrapeData: KufarFeedScrapeData[] = [];
 
     for (const feed of feeds) {
-      const result = await this.scrapeFeed(feed);
-      feedResults.push(result);
+      scrapeData.push(await this.scrapeFeed(feed));
     }
 
-    // Send combined Telegram summary + per-listing messages
-    await this.notifier.notifyRunResult({ feeds: feedResults });
+    // Notify and track which adIds were actually delivered
+    const notifyResult = await this.notifier.notifyRunResult({
+      feeds: scrapeData.map(d => d.result),
+    });
 
-    // Persist snapshots only after successful notification
-    for (const feed of feeds) {
-      const result = feedResults.find(r => r.feedName === feed.key);
-      if (result) {
-        await this.persistSnapshot(feed.key, result);
-      }
+    // Persist: new/price-change entries only if notified; bumped entries always
+    for (const data of scrapeData) {
+      await this.persistSnapshot(data, notifyResult);
     }
 
-    return { feeds: feedResults };
+    return { feeds: scrapeData.map(d => d.result) };
   }
 
-  private async scrapeFeed(feed: KufarFeedConfig): Promise<KufarFeedResult> {
+  private async scrapeFeed(feed: KufarFeedConfig): Promise<KufarFeedScrapeData> {
     this.logger.log(`Fetching feed: ${feed.key}`);
 
-    const [currentListings, previousEntries] = await Promise.all([
+    const [{ listings: currentListings, truncated }, previousEntries] = await Promise.all([
       this.parser.fetchFeed(feed.url),
       this.snapshot.read(dataFile(feed.key), isKufarSnapshotEntry),
     ]);
@@ -151,44 +165,69 @@ export class KufarService implements OnModuleInit, OnModuleDestroy {
       // Same price → bumped ad, silently ignore
     }
 
-    // Build updated snapshot (upsert: add new, update existing)
+    const total = previousMap.size + newListings.length;
+
+    this.logger.log(
+      `Feed ${feed.key} — total in snapshot: ${total}, new: ${newListings.length}, price changes: ${priceChanges.length}${truncated ? ' [TRUNCATED]' : ''}`,
+    );
+
+    return {
+      feed,
+      currentListings,
+      previousMap,
+      result: { feedName: feed.key, total, newListings, priceChanges, truncated },
+    };
+  }
+
+  private async persistSnapshot(
+    data: KufarFeedScrapeData,
+    notifyResult: KufarNotifyResult,
+  ): Promise<void> {
+    const { feed, currentListings, previousMap, result } = data;
+    const notifiedNew = notifyResult.notifiedNew.get(feed.key) ?? new Set<number>();
+    const notifiedPriceChanges =
+      notifyResult.notifiedPriceChanges.get(feed.key) ?? new Set<number>();
+
     const now = new Date().toISOString();
     const updatedMap = new Map(previousMap);
 
     for (const listing of currentListings) {
       const prev = updatedMap.get(listing.adId);
-      const entry: KufarSnapshotEntry = {
-        ...listing,
-        firstSeenAt: prev?.firstSeenAt ?? now,
-        lastSeenAt: now,
-      };
-      updatedMap.set(listing.adId, entry);
+      const isNew = !prev;
+      const isPriceChange = prev !== undefined && prev.priceByn !== listing.priceByn;
+
+      if (isNew) {
+        // Only persist if notification was delivered — otherwise retry next run
+        if (notifiedNew.has(listing.adId)) {
+          updatedMap.set(listing.adId, { ...listing, firstSeenAt: now, lastSeenAt: now });
+        }
+      } else if (isPriceChange) {
+        if (notifiedPriceChanges.has(listing.adId)) {
+          // Update to new price only after successful notification
+          updatedMap.set(listing.adId, {
+            ...listing,
+            firstSeenAt: prev.firstSeenAt,
+            lastSeenAt: now,
+          });
+        } else {
+          // Keep old price — will retry next run; still refresh lastSeenAt
+          updatedMap.set(listing.adId, { ...prev, lastSeenAt: now });
+        }
+      } else {
+        // Bumped (same price) — always update lastSeenAt
+        updatedMap.set(listing.adId, { ...prev, lastSeenAt: now });
+      }
     }
 
-    const total = updatedMap.size;
+    // Log if nothing was persisted due to notification failures
+    const notifiedCount = notifiedNew.size + notifiedPriceChanges.size;
+    const pendingCount = result.newListings.length + result.priceChanges.length - notifiedCount;
+    if (pendingCount > 0) {
+      this.logger.warn(
+        `Feed ${feed.key}: ${pendingCount} listing(s) not persisted — notification failed, will retry next run`,
+      );
+    }
 
-    this.logger.log(
-      `Feed ${feed.key} — total in snapshot: ${total}, new: ${newListings.length}, price changes: ${priceChanges.length}`,
-    );
-
-    // Store the updated entries back; we'll write to disk after notification succeeds
-    // We pass this via the result object so persistSnapshot can access it.
-    // Using a small trick: attach updatedEntries to the result under a private symbol.
-    const result: KufarFeedResult & { _updatedEntries?: KufarSnapshotEntry[] } = {
-      feedName: feed.key,
-      total,
-      newListings,
-      priceChanges,
-      _updatedEntries: [...updatedMap.values()],
-    };
-
-    return result;
-  }
-
-  private async persistSnapshot(feedKey: string, result: KufarFeedResult): Promise<void> {
-    const entries = (result as KufarFeedResult & { _updatedEntries?: KufarSnapshotEntry[] })
-      ._updatedEntries;
-    if (!entries) return;
-    await this.snapshot.write(dataFile(feedKey), entries);
+    await this.snapshot.write(dataFile(feed.key), [...updatedMap.values()]);
   }
 }

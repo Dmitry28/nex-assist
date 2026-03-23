@@ -44,6 +44,8 @@ export interface KufarFeedResult {
   total: number;
   newListings: KufarListing[];
   priceChanges: KufarPriceChange[];
+  /** True if pagination was cut off at MAX_PAGES — there may be more unseen listings. */
+  truncated: boolean;
 }
 
 /** Aggregated result across all configured feeds. */
