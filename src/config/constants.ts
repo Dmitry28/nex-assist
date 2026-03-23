@@ -11,6 +11,8 @@ export const LAND_AUCTIONS_DEFAULTS = {
 } as const;
 
 export const KUFAR_DEFAULTS = {
+  GARAGES_URL:
+    'https://re.kufar.by/l/grodnenskaya-oblast/kupit/garazh?cur=BYR&gbx=b%3A23.725981746227706%2C53.57183301832253%2C23.94948485902068%2C53.75128104662766&size=30',
   /** Default cron: every day at 09:00 UTC (12:00 Minsk) */
   SCRAPE_CRON: '0 9 * * *',
 } as const;
