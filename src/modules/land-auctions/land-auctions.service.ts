@@ -15,7 +15,10 @@ import { GcnParserService } from './gcn-parser.service';
 import { ListingNotifierService } from './listing-notifier.service';
 
 const isListing = (item: unknown): item is Listing =>
-  typeof item === 'object' && item !== null && 'link' in item;
+  typeof item === 'object' &&
+  item !== null &&
+  'link' in item &&
+  typeof (item as { link: unknown }).link === 'string';
 
 /**
  * Business orchestration for the land auctions scrape cycle:

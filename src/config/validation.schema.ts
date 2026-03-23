@@ -30,7 +30,6 @@ export const validationSchema = Joi.object({
 
   // bid.cars module
   BID_CARS_SCRAPE_URL: Joi.string().uri().default(BID_CARS_DEFAULTS.SCRAPE_URL),
-  BID_CARS_ENDED_URL: Joi.string().uri().optional(),
   BID_CARS_SCRAPE_CRON: Joi.string().default(BID_CARS_DEFAULTS.SCRAPE_CRON),
   TELEGRAM_BID_CARS_CHAT_ID: Joi.string().optional(),
 });

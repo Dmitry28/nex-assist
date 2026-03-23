@@ -2,15 +2,10 @@ import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import TelegramBot from 'node-telegram-bot-api';
 import { sleep } from '../../common/utils/sleep';
+import { TELEGRAM_SEND_DELAY_MS, truncateCaption } from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
 import type { LandAuctionsResult, Listing } from './dto/listing.dto';
-import {
-  EMPTY_VALUES,
-  MEDIA_GROUP_LIMIT,
-  NOTIFICATION_HEADERS,
-  TELEGRAM_CAPTION_LIMIT,
-  TELEGRAM_SEND_DELAY_MS,
-} from './constants';
+import { EMPTY_VALUES, MEDIA_GROUP_LIMIT, NOTIFICATION_HEADERS } from './constants';
 
 /**
  * Sends land auction notifications via Telegram.
@@ -79,7 +74,7 @@ export class ListingNotifierService {
     }
 
     if (failed.length > 0) {
-      const list = failed.map(l => `• ${l.title}`).join('\n');
+      const list = failed.map(l => `• ${l.title ?? l.link ?? 'unknown'}`).join('\n');
       await this.telegram.sendMessage(
         this.chatId,
         `⚠️ Не удалось отправить ${failed.length} объект(а):\n${list}`,
@@ -222,6 +217,3 @@ const buildCaption = ({ listing, header, index, total }: SendListingParams): str
 
   return lines.join('\n');
 };
-
-const truncateCaption = (text: string): string =>
-  text.length <= TELEGRAM_CAPTION_LIMIT ? text : text.slice(0, TELEGRAM_CAPTION_LIMIT - 3) + '...';

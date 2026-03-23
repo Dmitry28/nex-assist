@@ -1,14 +1,10 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { sleep } from '../../common/utils/sleep';
+import { TELEGRAM_SEND_DELAY_MS, truncateCaption } from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
 import type { BidCarsResult, CarListing } from './dto/car-listing.dto';
-import {
-  EMPTY_VALUES,
-  NOTIFICATION_HEADERS,
-  TELEGRAM_CAPTION_LIMIT,
-  TELEGRAM_SEND_DELAY_MS,
-} from './constants';
+import { EMPTY_VALUES, NOTIFICATION_HEADERS } from './constants';
 
 /**
  * Sends bid.cars notifications via Telegram.
@@ -156,6 +152,3 @@ const buildCaption = ({ listing, header, index, total }: SendListingParams): str
 
   return lines.join('\n');
 };
-
-const truncateCaption = (text: string): string =>
-  text.length <= TELEGRAM_CAPTION_LIMIT ? text : text.slice(0, TELEGRAM_CAPTION_LIMIT - 3) + '...';

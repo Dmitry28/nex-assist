@@ -1,6 +1,5 @@
 /**
- * Temporary test script — runs a single bid-cars scrape limited to 3 items.
- * Delete after testing.
+ * Debug script — runs a single bid-cars scrape and sends the first 5 results to Telegram.
  *
  * Usage:
  *   ts-node -r tsconfig-paths/register src/scripts/scrape-bid-cars-test.ts

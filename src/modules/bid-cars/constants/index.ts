@@ -7,12 +7,6 @@ export const CARD_WALK_DEPTH = 8;
 /** Max pages to load via "Load more" pagination to prevent runaway scraping. */
 export const MAX_PAGES = 10;
 
-/** Telegram max caption length in characters. */
-export const TELEGRAM_CAPTION_LIMIT = 1024;
-
-/** Delay between Telegram sends to avoid rate limiting (ms). */
-export const TELEGRAM_SEND_DELAY_MS = 1000;
-
 /** Field values considered empty — skipped when building Telegram captions. */
 export const EMPTY_VALUES = new Set(['Не найдено', 'Не указано', 'N/A', '']);
 
@@ -24,8 +18,6 @@ export const DATA_FILES = {
   all: './data/bid_cars_all.json',
   new: './data/bid_cars_new.json',
   removed: './data/bid_cars_removed.json',
-  /** VINs already notified as sold — prevents duplicate sold notifications. */
-  soldVins: './data/bid_cars_sold_vins.json',
 } as const;
 
 /** Section headers used in Telegram listing notifications. */
