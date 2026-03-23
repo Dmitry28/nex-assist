@@ -126,8 +126,9 @@ export class KufarParserService {
   }
 
   private mapListing(ad: RawAd): KufarListing {
-    const priceByn = ad.price_byn ? Math.round(parseInt(ad.price_byn, 10) / 100) : undefined;
-    const priceUsd = ad.price_usd ? Math.round(parseInt(ad.price_usd, 10) / 100) : undefined;
+    // Kufar stores prices as integers in 1/1000 of the currency unit (e.g. 1095000 → 1095 BYN)
+    const priceByn = ad.price_byn ? Math.round(parseInt(ad.price_byn, 10) / 1000) : undefined;
+    const priceUsd = ad.price_usd ? Math.round(parseInt(ad.price_usd, 10) / 1000) : undefined;
 
     const getParam = (params: Array<{ p: string; v: unknown }> | undefined, key: string) =>
       params?.find(p => p.p === key)?.v;
