@@ -23,13 +23,13 @@ import { KufarParserService } from './kufar-parser.service';
 import { KufarNotifierService, KufarNotifyResult } from './kufar-notifier.service';
 
 /** Treat 0 and undefined as equivalent "no price" to avoid false price-change detections. */
-const effectivePrice = (p: number | undefined): number | undefined =>
+export const effectivePrice = (p: number | undefined): number | undefined =>
   p !== undefined && p > 0 ? p : undefined;
 
 /** Single source of truth for price-change detection — used in both scrapeFeed and persistSnapshot.
  * Both BYN and USD must change: if either is stable, the seller didn't change the price
  * (the other just fluctuated with the exchange rate). */
-const hasPriceChanged = (prev: KufarSnapshotEntry, current: KufarListing): boolean =>
+export const hasPriceChanged = (prev: KufarSnapshotEntry, current: KufarListing): boolean =>
   effectivePrice(prev.priceByn) !== effectivePrice(current.priceByn) &&
   effectivePrice(prev.priceUsd) !== effectivePrice(current.priceUsd);
 
