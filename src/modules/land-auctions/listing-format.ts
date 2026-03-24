@@ -1,4 +1,5 @@
 import type { Listing } from './dto/listing.dto';
+import { LOCALE, TIMEZONE } from '../../common/utils/locale';
 import { EMPTY_VALUES, MAX_AUCTION_DATE_LENGTH } from './constants';
 
 export const hasValue = (val: string | undefined): val is string => !!val && !EMPTY_VALUES.has(val);
@@ -28,7 +29,7 @@ export const buildSummary = ({
   newSpecialCount,
 }: SummaryParams): string =>
   [
-    `<b>📊 Сводка на ${date.toLocaleDateString('ru-RU', { timeZone: 'Europe/Minsk' })}</b>`,
+    `<b>📊 Сводка на ${date.toLocaleDateString(LOCALE, { timeZone: TIMEZONE })}</b>`,
     `📋 Всего объявлений: <b>${total}</b>`,
     `🆕 Новые: <b>${newCount}</b>`,
     `🗑 Удалённые: <b>${removedCount}</b>`,

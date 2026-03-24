@@ -1,5 +1,8 @@
 import type { KufarFeedResult, KufarListing, KufarPriceChange } from './dto/kufar-listing.dto';
+import { LOCALE, TIMEZONE } from '../../common/utils/locale';
 import { EMPTY_VALUES, FEED_DISPLAY_NAMES, MAX_PRICE_CHANGES_IN_SUMMARY } from './constants';
+
+const NEGOTIABLE_PRICE = 'Договорная';
 
 export const hasValue = (val: string | number | undefined): val is string | number =>
   val !== undefined && val !== null && !EMPTY_VALUES.has(String(val));
@@ -10,18 +13,18 @@ export const formatDate = (isoString: string): string => {
   const diffH = (now.getTime() - date.getTime()) / (1000 * 60 * 60);
 
   if (diffH < 24) {
-    return `сегодня ${date.toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Minsk' })}`;
+    return `сегодня ${date.toLocaleTimeString(LOCALE, { hour: '2-digit', minute: '2-digit', timeZone: TIMEZONE })}`;
   }
   if (diffH < 48) {
-    return `вчера ${date.toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Minsk' })}`;
+    return `вчера ${date.toLocaleTimeString(LOCALE, { hour: '2-digit', minute: '2-digit', timeZone: TIMEZONE })}`;
   }
-  return date.toLocaleDateString('ru-RU', { timeZone: 'Europe/Minsk' });
+  return date.toLocaleDateString(LOCALE, { timeZone: TIMEZONE });
 };
 
 export const formatPrice = (byn?: number, usd?: number): string => {
   const parts: string[] = [];
-  if (byn !== undefined && byn > 0) parts.push(`${byn.toLocaleString('ru-RU')} BYN`);
-  if (usd !== undefined && usd > 0) parts.push(`$${usd.toLocaleString('ru-RU')}`);
+  if (byn !== undefined && byn > 0) parts.push(`${byn.toLocaleString(LOCALE)} BYN`);
+  if (usd !== undefined && usd > 0) parts.push(`$${usd.toLocaleString(LOCALE)}`);
   return parts.join(' / ');
 };
 
@@ -57,7 +60,7 @@ export const buildListingCaption = ({
   if (hasValue(listing.address)) lines.push(`📍 ${listing.address}`);
   if (hasValue(listing.propertyType)) lines.push(`🏷 ${listing.propertyType}`);
 
-  lines.push(`💰 ${formatPrice(listing.priceByn, listing.priceUsd) || 'Договорная'}`);
+  lines.push(`💰 ${formatPrice(listing.priceByn, listing.priceUsd) || NEGOTIABLE_PRICE}`);
   if (hasValue(listing.area)) lines.push(`📐 ${listing.area} м²`);
   if (hasValue(listing.plotArea)) lines.push(`🌱 ${listing.plotArea} сот.`);
   if (hasValue(listing.rooms)) lines.push(`🚪 ${listing.rooms} комн.`);
@@ -87,8 +90,8 @@ export const buildPriceChangeCaption = ({
 
   if (hasValue(listing.address)) lines.push(`📍 ${listing.address}`);
 
-  const oldPrice = formatPrice(oldPriceByn, oldPriceUsd) || 'Договорная';
-  const newPrice = formatPrice(listing.priceByn, listing.priceUsd) || 'Договорная';
+  const oldPrice = formatPrice(oldPriceByn, oldPriceUsd) || NEGOTIABLE_PRICE;
+  const newPrice = formatPrice(listing.priceByn, listing.priceUsd) || NEGOTIABLE_PRICE;
   lines.push(`💰 ${oldPrice} → <b>${newPrice}</b>`);
 
   if (hasValue(listing.area)) lines.push(`📐 ${listing.area} м²`);
@@ -101,7 +104,7 @@ export const buildPriceChangeCaption = ({
 };
 
 export const buildSummary = (feeds: KufarFeedResult[]): string => {
-  const date = new Date().toLocaleDateString('ru-RU', { timeZone: 'Europe/Minsk' });
+  const date = new Date().toLocaleDateString(LOCALE, { timeZone: TIMEZONE });
   const lines = [`<b>🏘 Kufar · ${date}</b>`];
 
   for (const feed of feeds) {
@@ -115,8 +118,8 @@ export const buildSummary = (feeds: KufarFeedResult[]): string => {
     if (feed.priceChanges.length > 0) {
       const shown = feed.priceChanges.slice(0, MAX_PRICE_CHANGES_IN_SUMMARY);
       for (const { listing, oldPriceByn, oldPriceUsd } of shown) {
-        const oldPrice = formatPrice(oldPriceByn, oldPriceUsd) || 'Договорная';
-        const newPrice = formatPrice(listing.priceByn, listing.priceUsd) || 'Договорная';
+        const oldPrice = formatPrice(oldPriceByn, oldPriceUsd) || NEGOTIABLE_PRICE;
+        const newPrice = formatPrice(listing.priceByn, listing.priceUsd) || NEGOTIABLE_PRICE;
         const shortTitle =
           listing.title.length > 35 ? listing.title.slice(0, 32) + '...' : listing.title;
         lines.push(
