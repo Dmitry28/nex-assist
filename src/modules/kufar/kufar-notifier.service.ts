@@ -3,13 +3,14 @@ import { ConfigService } from '@nestjs/config';
 import TelegramBot from 'node-telegram-bot-api';
 import { sleep } from '../../common/utils/sleep';
 import {
+  TELEGRAM_MEDIA_GROUP_LIMIT,
   TELEGRAM_MESSAGE_LIMIT,
   TELEGRAM_SEND_DELAY_MS,
   truncateText,
 } from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
 import type { KufarListing, KufarPriceChange, KufarResult } from './dto/kufar-listing.dto';
-import { FEED_DISPLAY_NAMES, MEDIA_GROUP_LIMIT, NOTIFICATION_HEADERS } from './constants';
+import { FEED_DISPLAY_NAMES, NOTIFICATION_HEADERS } from './constants';
 import { buildListingCaption, buildPriceChangeCaption, buildSummary } from './kufar-format';
 
 /**
@@ -163,7 +164,7 @@ export class KufarNotifierService {
     caption: string;
     images: string[];
   }): Promise<boolean> {
-    const photos = images.slice(0, MEDIA_GROUP_LIMIT);
+    const photos = images.slice(0, TELEGRAM_MEDIA_GROUP_LIMIT);
     const captionFor1024 = truncateText(caption); // photo/media-group: 1024-char limit
 
     if (photos.length > 1) {

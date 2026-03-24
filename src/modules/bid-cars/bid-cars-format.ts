@@ -1,4 +1,5 @@
 import type { CarListing, RemovedCarListing } from './dto/car-listing.dto';
+import { LOCALE, TIMEZONE } from '../../common/utils/locale';
 import { EMPTY_VALUES } from './constants';
 
 export const hasValue = (val: string | undefined): val is string => !!val && !EMPTY_VALUES.has(val);
@@ -26,7 +27,7 @@ export const buildSummary = ({
   soldUpdateCount,
 }: SummaryParams): string => {
   const lines = [
-    `<b>🚗 Сводка на ${date.toLocaleDateString('ru-RU', { timeZone: 'Europe/Minsk' })}</b>`,
+    `<b>🚗 Сводка на ${date.toLocaleDateString(LOCALE, { timeZone: TIMEZONE })}</b>`,
     `📋 Всего лотов: <b>${total}</b>`,
     `🆕 Новые: <b>${newCount}</b>`,
     `🗑 Снятые: <b>${removedCount}</b>`,

@@ -3,13 +3,14 @@ import { ConfigService } from '@nestjs/config';
 import TelegramBot from 'node-telegram-bot-api';
 import { sleep } from '../../common/utils/sleep';
 import {
+  TELEGRAM_MEDIA_GROUP_LIMIT,
   TELEGRAM_MESSAGE_LIMIT,
   TELEGRAM_SEND_DELAY_MS,
   truncateText,
 } from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
 import type { LandAuctionsResult, Listing } from './dto/listing.dto';
-import { MEDIA_GROUP_LIMIT, NOTIFICATION_HEADERS } from './constants';
+import { NOTIFICATION_HEADERS } from './constants';
 import { buildCaption, buildSummary, type CaptionParams } from './listing-format';
 
 /**
@@ -97,7 +98,7 @@ export class ListingNotifierService {
   /** Send a single listing as photo/media group or plain text if no images. */
   private async sendListing({ listing, header, index, total }: CaptionParams): Promise<boolean> {
     const rawCaption = buildCaption({ listing, header, index, total });
-    const photos = (listing.images ?? []).slice(0, MEDIA_GROUP_LIMIT);
+    const photos = (listing.images ?? []).slice(0, TELEGRAM_MEDIA_GROUP_LIMIT);
     const captionFor1024 = truncateText(rawCaption); // photo/media-group: 1024-char limit
 
     if (photos.length > 1) {

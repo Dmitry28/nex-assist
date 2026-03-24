@@ -1,5 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 import type { KufarListing } from './dto/kufar-listing.dto';
+import { BROWSER_USER_AGENT } from '../../common/utils/scraping';
 import {
   FETCH_TIMEOUT_MS,
   IMAGE_CDN_BASE,
@@ -116,8 +117,7 @@ export class KufarParserService {
       const res = await fetch(url, {
         signal: controller.signal,
         headers: {
-          'User-Agent':
-            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+          'User-Agent': BROWSER_USER_AGENT,
           'Accept-Language': 'ru-RU,ru;q=0.9',
         },
       });
