@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "link": "https://bid.cars/ru/lot/0-44400597/2024-Volkswagen-Atlas-1V2LR2CA1RC610163",
+    "title": "2024 Volkswagen Atlas, 2.0T Se",
+    "vin": "1V2LR2CA1RC610163",
+    "lot": "0-44400597",
+    "odometer": "36k мили (59k km)",
+    "damage": "Столкноевение | Задний",
+    "location": "Portland (OR)",
+    "currentBid": "$0",
+    "engine": "2.0L 4 cyl. 269HP",
+    "keys": "Salvage (Oregon)",
+    "condition": "На ходу",
+    "auctionDate": "чт 26 мар., 19:30 GMT+3",
+    "auctionSource": "IAAI",
+    "seller": "---"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/0-43417185/2024-Volkswagen-Atlas-1V2JR2CA9RC624061",
+    "title": "2024 Volkswagen Atlas, 2.0T Se W/Tec...",
+    "vin": "1V2JR2CA9RC624061",
+    "lot": "0-43417185",
+    "odometer": "13k мили (22k km)",
+    "damage": "Столкноевение | Задний",
+    "location": "Charlotte (NC)",
+    "currentBid": "$0",
+    "buyNow": "$16,025",
+    "engine": "2.0L 4 cyl. 269HP",
+    "keys": "Salvage (South Carolina)",
+    "condition": "На ходу",
+    "auctionDate": "пн 30 мар., 16:30 GMT+3",
+    "auctionSource": "IAAI",
+    "seller": "State Farm Group Insurance"
+  }
+]
