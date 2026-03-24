@@ -1,7 +1,11 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { sleep } from '../../common/utils/sleep';
-import { TELEGRAM_SEND_DELAY_MS, truncateCaption } from '../../common/utils/telegram';
+import {
+  TELEGRAM_MESSAGE_LIMIT,
+  TELEGRAM_SEND_DELAY_MS,
+  truncateText,
+} from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
 import type { BidCarsResult, CarListing, RemovedCarListing } from './dto/car-listing.dto';
 import { NOTIFICATION_HEADERS } from './constants';
@@ -88,8 +92,12 @@ export class BidCarsNotifierService {
   }
 
   private async sendListing({ listing, header, index, total }: CaptionParams): Promise<boolean> {
-    const caption = truncateCaption(buildCaption({ listing, header, index, total }));
     // bid.cars CDN blocks Telegram from fetching images, so text-only messages are used.
+    // Text messages support up to 4096 chars (vs 1024 for media captions).
+    const caption = truncateText(
+      buildCaption({ listing, header, index, total }),
+      TELEGRAM_MESSAGE_LIMIT,
+    );
     return this.telegram.sendMessage(this.chatId, caption);
   }
 }

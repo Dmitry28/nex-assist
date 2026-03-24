@@ -24,8 +24,8 @@ export const isListing = (item: unknown): item is Listing =>
  * Business orchestration for the land auctions scrape cycle:
  *   1. Fetch current listings from gcn.by
  *   2. Diff against the previous snapshot → detect new / removed listings
- *   3. Persist updated snapshots to disk
- *   4. Send Telegram notifications
+ *   3. Send Telegram notifications
+ *   4. Persist updated snapshots to disk (only after successful notification)
  *
  * The cron schedule is read from config at runtime (SCRAPE_CRON env var),
  * which is why we use dynamic scheduling via SchedulerRegistry instead of

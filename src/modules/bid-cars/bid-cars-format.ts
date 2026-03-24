@@ -26,7 +26,7 @@ export const buildSummary = ({
   soldUpdateCount,
 }: SummaryParams): string => {
   const lines = [
-    `<b>🚗 Сводка на ${date.toLocaleDateString('ru-RU')}</b>`,
+    `<b>🚗 Сводка на ${date.toLocaleDateString('ru-RU', { timeZone: 'Europe/Minsk' })}</b>`,
     `📋 Всего лотов: <b>${total}</b>`,
     `🆕 Новые: <b>${newCount}</b>`,
     `🗑 Снятые: <b>${removedCount}</b>`,
@@ -45,7 +45,7 @@ export const buildCaption = ({ listing, header, index, total }: CaptionParams): 
   ];
 
   // Show sold price (final) if available, otherwise last known bid/BIN
-  const soldPrice = (listing as RemovedCarListing).soldPrice;
+  const soldPrice = 'soldPrice' in listing ? listing.soldPrice : undefined;
   if (hasValue(soldPrice)) {
     lines.push('', `💰 Продано за: <b>${soldPrice}</b>`);
   } else {

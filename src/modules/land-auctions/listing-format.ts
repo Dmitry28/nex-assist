@@ -28,7 +28,7 @@ export const buildSummary = ({
   newSpecialCount,
 }: SummaryParams): string =>
   [
-    `<b>📊 Сводка на ${date.toLocaleDateString('ru-RU')}</b>`,
+    `<b>📊 Сводка на ${date.toLocaleDateString('ru-RU', { timeZone: 'Europe/Minsk' })}</b>`,
     `📋 Всего объявлений: <b>${total}</b>`,
     `🆕 Новые: <b>${newCount}</b>`,
     `🗑 Удалённые: <b>${removedCount}</b>`,

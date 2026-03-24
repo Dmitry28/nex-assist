@@ -101,7 +101,7 @@ export const buildPriceChangeCaption = ({
 };
 
 export const buildSummary = (feeds: KufarFeedResult[]): string => {
-  const date = new Date().toLocaleDateString('ru-RU');
+  const date = new Date().toLocaleDateString('ru-RU', { timeZone: 'Europe/Minsk' });
   const lines = [`<b>🏘 Kufar · ${date}</b>`];
 
   for (const feed of feeds) {
