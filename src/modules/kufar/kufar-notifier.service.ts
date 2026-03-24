@@ -4,19 +4,9 @@ import TelegramBot from 'node-telegram-bot-api';
 import { sleep } from '../../common/utils/sleep';
 import { TELEGRAM_SEND_DELAY_MS, truncateCaption } from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
-import type {
-  KufarFeedResult,
-  KufarListing,
-  KufarPriceChange,
-  KufarResult,
-} from './dto/kufar-listing.dto';
-import {
-  EMPTY_VALUES,
-  FEED_DISPLAY_NAMES,
-  MAX_PRICE_CHANGES_IN_SUMMARY,
-  MEDIA_GROUP_LIMIT,
-  NOTIFICATION_HEADERS,
-} from './constants';
+import type { KufarListing, KufarPriceChange, KufarResult } from './dto/kufar-listing.dto';
+import { FEED_DISPLAY_NAMES, MEDIA_GROUP_LIMIT, NOTIFICATION_HEADERS } from './constants';
+import { buildListingCaption, buildPriceChangeCaption, buildSummary } from './kufar-format';
 
 /**
  * Tracks which listings were successfully delivered to Telegram.
@@ -140,6 +130,8 @@ export class KufarNotifierService {
     const notified = new Set<number>();
     const failed: T[] = [];
 
+    this.logger.log(`Sending ${items.length} ${failedLabel}`);
+
     for (const [i, item] of items.entries()) {
       const { caption, images } = toMessage(item, i + 1, items.length);
       const ok = await this.sendListing({ caption: truncateCaption(caption), images });
@@ -149,6 +141,7 @@ export class KufarNotifierService {
     }
 
     if (failed.length > 0) {
+      this.logger.warn(`${failed.length} ${failedLabel} failed to send`);
       const list = failed.map(item => `• ${getTitle(item)}`).join('\n');
       await this.telegram.sendMessage(
         this.chatId,
@@ -187,133 +180,3 @@ export class KufarNotifierService {
     return this.telegram.sendMessage(this.chatId, caption);
   }
 }
-
-// ─── Formatting helpers ───────────────────────────────────────────────────────
-
-const hasValue = (val: string | number | undefined): val is string | number =>
-  val !== undefined && val !== null && !EMPTY_VALUES.has(String(val));
-
-const formatDate = (isoString: string): string => {
-  const date = new Date(isoString);
-  const now = new Date();
-  const diffH = (now.getTime() - date.getTime()) / (1000 * 60 * 60);
-
-  if (diffH < 24) {
-    return `сегодня ${date.toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Minsk' })}`;
-  }
-  if (diffH < 48) {
-    return `вчера ${date.toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Minsk' })}`;
-  }
-  return date.toLocaleDateString('ru-RU', { timeZone: 'Europe/Minsk' });
-};
-
-const formatPrice = (byn?: number, usd?: number): string => {
-  const parts: string[] = [];
-  if (byn !== undefined && byn > 0) parts.push(`${byn.toLocaleString('ru-RU')} BYN`);
-  if (usd !== undefined && usd > 0) parts.push(`$${usd.toLocaleString('ru-RU')}`);
-  return parts.join(' / ');
-};
-
-interface ListingCaptionParams {
-  listing: KufarListing;
-  header: string;
-  index: number;
-  total: number;
-}
-
-interface PriceChangeCaptionParams {
-  change: KufarPriceChange;
-  header: string;
-  index: number;
-  total: number;
-}
-
-const buildListingCaption = ({ listing, header, index, total }: ListingCaptionParams): string => {
-  const lines: string[] = [
-    `<b>${header} · ${index}/${total}</b>`,
-    '',
-    `🏠 <b>${listing.title}</b>`,
-  ];
-
-  if (hasValue(listing.description)) lines.push(`<i>${listing.description}</i>`);
-
-  lines.push('');
-  if (hasValue(listing.address)) lines.push(`📍 ${listing.address}`);
-  if (hasValue(listing.propertyType)) lines.push(`🏷 ${listing.propertyType}`);
-
-  lines.push(`💰 ${formatPrice(listing.priceByn, listing.priceUsd) || 'Договорная'}`);
-  if (hasValue(listing.area)) lines.push(`📐 ${listing.area} м²`);
-  if (hasValue(listing.plotArea)) lines.push(`🌱 ${listing.plotArea} сот.`);
-  if (hasValue(listing.rooms)) lines.push(`🚪 ${listing.rooms} комн.`);
-  if (hasValue(listing.yearBuilt)) lines.push(`📅 ${listing.yearBuilt} г.п.`);
-  if (listing.features && listing.features.length > 0)
-    lines.push(`✅ ${listing.features.join(', ')}`);
-  if (hasValue(listing.seller)) lines.push(`👤 ${listing.seller}`);
-
-  lines.push(`🕐 ${formatDate(listing.listTime)}`);
-  lines.push('', `<a href="${listing.link}">🔗 Подробнее</a>`);
-
-  return lines.join('\n');
-};
-
-const buildPriceChangeCaption = ({
-  change,
-  header,
-  index,
-  total,
-}: PriceChangeCaptionParams): string => {
-  const { listing, oldPriceByn, oldPriceUsd } = change;
-  const lines: string[] = [
-    `<b>${header} · ${index}/${total}</b>`,
-    '',
-    `🏠 <b>${listing.title}</b>`,
-  ];
-
-  if (hasValue(listing.address)) lines.push(`📍 ${listing.address}`);
-
-  // Old price → new price
-  const oldPrice = formatPrice(oldPriceByn, oldPriceUsd) || 'Договорная';
-  const newPrice = formatPrice(listing.priceByn, listing.priceUsd) || 'Договорная';
-  lines.push(`💰 ${oldPrice} → <b>${newPrice}</b>`);
-
-  if (hasValue(listing.area)) lines.push(`📐 ${listing.area} м²`);
-  if (hasValue(listing.plotArea)) lines.push(`🌱 ${listing.plotArea} сот.`);
-  if (hasValue(listing.rooms)) lines.push(`🚪 ${listing.rooms} комн.`);
-  if (hasValue(listing.yearBuilt)) lines.push(`📅 ${listing.yearBuilt} г.п.`);
-  lines.push('', `<a href="${listing.link}">🔗 Подробнее</a>`);
-
-  return lines.join('\n');
-};
-
-const buildSummary = (feeds: KufarFeedResult[]): string => {
-  const date = new Date().toLocaleDateString('ru-RU');
-  const lines = [`<b>🏘 Kufar · ${date}</b>`];
-
-  for (const feed of feeds) {
-    const name = FEED_DISPLAY_NAMES[feed.feedName] ?? feed.feedName;
-    const parts: string[] = [];
-    if (feed.newListings.length > 0) parts.push(`🆕 ${feed.newListings.length} новых`);
-    if (feed.priceChanges.length > 0) parts.push(`💸 ${feed.priceChanges.length} изм. цены`);
-    const status = parts.length > 0 ? parts.join(', ') : 'без изменений';
-    lines.push('', `<b>${name}:</b> ${status}`);
-
-    // List price changes inline with link: title + old → new price
-    if (feed.priceChanges.length > 0) {
-      const shown = feed.priceChanges.slice(0, MAX_PRICE_CHANGES_IN_SUMMARY);
-      for (const { listing, oldPriceByn, oldPriceUsd } of shown) {
-        const oldPrice = formatPrice(oldPriceByn, oldPriceUsd) || 'Договорная';
-        const newPrice = formatPrice(listing.priceByn, listing.priceUsd) || 'Договорная';
-        const shortTitle =
-          listing.title.length > 35 ? listing.title.slice(0, 32) + '...' : listing.title;
-        lines.push(
-          `  • <a href="${listing.link}">${shortTitle}</a>: <s>${oldPrice}</s> → <b>${newPrice}</b>`,
-        );
-      }
-      if (feed.priceChanges.length > MAX_PRICE_CHANGES_IN_SUMMARY) {
-        lines.push(`  <i>...и ещё ${feed.priceChanges.length - MAX_PRICE_CHANGES_IN_SUMMARY}</i>`);
-      }
-    }
-  }
-
-  return lines.join('\n');
-};
