@@ -21,28 +21,32 @@
   {
     "title": "Земельный участок У-122 по ул. Майской в микрорайоне «Барановичи-9»",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-u-122-po-ul-majskoj-v-mikrorajone-baranovichi-9/",
-    "price": "Не найдено",
-    "area": "Не найдено",
-    "address": "Не найдено",
-    "cadastralNumber": "Не найдено",
-    "cadastralMapUrl": "",
-    "auctionDate": "Не указана",
-    "applicationDeadline": "Не указан",
-    "communications": "Не указаны",
-    "images": []
+    "price": "19 468,00 руб.",
+    "area": "0,1004 га",
+    "address": "г. Гродно, ул. Майская, 2",
+    "cadastralNumber": "440100000003007807",
+    "cadastralMapUrl": "https://map.nca.by/search/019c04d8-bb37-71c1-b935-f5a8ff42867c",
+    "auctionDate": "Аукцион состоится 24.03.2026",
+    "applicationDeadline": "Заявления принимаются по 18.03.2026",
+    "communications": "электроснабжение, газоснабжение, водоснабжение",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/01/u122-teplaya-baranovichi-sajt3.png"
+    ]
   },
   {
     "title": "Земельный участок У-101 по ул. Майской в микрорайоне «Барановичи-9»",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-u-101-po-ul-majskoj-v-mikrorajone-baranovichi-9/",
-    "price": "Не найдено",
-    "area": "Не найдено",
-    "address": "Не найдено",
-    "cadastralNumber": "Не найдено",
-    "cadastralMapUrl": "",
-    "auctionDate": "Не указана",
-    "applicationDeadline": "Не указан",
-    "communications": "Не указаны",
-    "images": []
+    "price": "19 352,00 руб.",
+    "area": "0,0998 га",
+    "address": "г. Гродно, ул. Майская, 1",
+    "cadastralNumber": "440100000003007809",
+    "cadastralMapUrl": "https://map.nca.by/search/019c04d1-f7cf-7308-80ff-7ac0e7856789",
+    "auctionDate": "Аукцион состоится 14.04.2026",
+    "applicationDeadline": "Заявления принимаются по 08.04.2026",
+    "communications": "электроснабжение, газоснабжение, водоснабжение",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/01/u101-majskaya-baranovichi-sajt.png"
+    ]
   },
   {
     "title": "Не завершённый строительством жилой дом по ул. Ласковая, 18",

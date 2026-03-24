@@ -23,7 +23,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/90f92dd2-89de-4908-9c45-ee5f876a542c.jpg"
     ],
     "firstSeenAt": "2026-03-23T15:16:21.158Z",
-    "lastSeenAt": "2026-03-23T22:42:50.952Z"
+    "lastSeenAt": "2026-03-24T08:51:28.407Z"
   },
   {
     "adId": 1061647870,
@@ -44,7 +44,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b66b168c-9ca2-42f0-a912-40e3f5952a5a.jpg"
     ],
     "firstSeenAt": "2026-03-23T15:16:21.158Z",
-    "lastSeenAt": "2026-03-23T22:42:50.952Z"
+    "lastSeenAt": "2026-03-24T08:51:28.407Z"
   },
   {
     "adId": 1028888402,
@@ -68,7 +68,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3989f57d-fcc9-4ae7-89eb-138480a835d7.jpg"
     ],
     "firstSeenAt": "2026-03-23T15:16:21.158Z",
-    "lastSeenAt": "2026-03-23T22:42:50.952Z"
+    "lastSeenAt": "2026-03-24T08:51:28.407Z"
   },
   {
     "adId": 1061595367,
@@ -91,7 +91,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9bee5fe9-5a2e-4a7e-a88d-d09495dd76f0.jpg"
     ],
     "firstSeenAt": "2026-03-23T15:16:21.158Z",
-    "lastSeenAt": "2026-03-23T22:42:50.952Z"
+    "lastSeenAt": "2026-03-24T08:51:28.407Z"
   },
   {
     "adId": 1047537778,
@@ -116,7 +116,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/714ec30c-9916-4b9a-93b9-2ffd651d3056.jpg"
     ],
     "firstSeenAt": "2026-03-23T15:16:21.158Z",
-    "lastSeenAt": "2026-03-23T22:42:50.952Z"
+    "lastSeenAt": "2026-03-24T08:51:28.407Z"
   },
   {
     "adId": 1061508163,
@@ -139,7 +139,7 @@
     "listTime": "2026-03-22T14:20:13Z",
     "images": [],
     "firstSeenAt": "2026-03-23T15:16:21.158Z",
-    "lastSeenAt": "2026-03-23T22:42:50.952Z"
+    "lastSeenAt": "2026-03-24T08:51:28.407Z"
   },
   {
     "adId": 1061390568,
@@ -183,7 +183,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c988116e-1b85-49e5-a842-2bf273e2d457.jpg"
     ],
     "firstSeenAt": "2026-03-23T20:43:48.160Z",
-    "lastSeenAt": "2026-03-23T22:42:50.952Z"
+    "lastSeenAt": "2026-03-24T08:51:28.407Z"
   },
   {
     "adId": 1061693061,
@@ -204,7 +204,7 @@
     "listTime": "2026-03-23T20:04:35Z",
     "images": [],
     "firstSeenAt": "2026-03-23T20:43:48.160Z",
-    "lastSeenAt": "2026-03-23T22:42:50.952Z"
+    "lastSeenAt": "2026-03-24T08:51:28.407Z"
   },
   {
     "adId": 1061689605,
@@ -227,7 +227,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2696ace4-0571-4388-9e40-16df94976162.jpg"
     ],
     "firstSeenAt": "2026-03-23T20:43:48.160Z",
-    "lastSeenAt": "2026-03-23T22:42:50.952Z"
+    "lastSeenAt": "2026-03-24T08:51:28.407Z"
   },
   {
     "adId": 1061677328,
@@ -251,6 +251,35 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e2176095-25cd-41cc-8728-80a163bc986e.jpg"
     ],
     "firstSeenAt": "2026-03-23T20:43:48.160Z",
-    "lastSeenAt": "2026-03-23T22:42:50.952Z"
+    "lastSeenAt": "2026-03-24T08:51:28.407Z"
+  },
+  {
+    "adId": 1052062309,
+    "link": "https://re.kufar.by/vi/1052062309",
+    "title": "Гараж в ГСПК Автолюбитель-Иваныч",
+    "description": "Гараж в ГСПК «Автолюбитель-Иваныч»\nПродается гараж в гаражном кооперативе «Автолюбитель-Иваныч» в Октябрьском районе Гродно.\nОтличное расположение!\nВъ",
+    "priceByn": 21728,
+    "priceUsd": 7300,
+    "address": "Понемуньская ул, 2Ак3220блок32, Гродно, Гродненская область",
+    "area": 18.2,
+    "seller": "ООО Магазин недвижимости",
+    "propertyType": "Гараж",
+    "features": [
+      "Подвал",
+      "Наземная"
+    ],
+    "listTime": "2026-03-24T07:07:36Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/202f7335-fdb4-4bad-9847-54502a8496e0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/76c3b375-958c-42ce-9c01-9807bfa60111.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b55a603f-3205-4a68-bf30-e51f2f4c10fe.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/02d88ff8-b65c-4a21-9cce-fdefc6a2b5ab.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/91c5834d-7baa-441f-a946-c64e3e4b18d5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6613891c-e39c-4126-ac82-e67058303ea3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2213aeee-58aa-4a52-a420-ba960766dec5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b6c78120-d446-479b-85fb-c825f87475c8.jpg"
+    ],
+    "firstSeenAt": "2026-03-24T08:39:06.732Z",
+    "lastSeenAt": "2026-03-24T08:51:28.407Z"
   }
 ]
