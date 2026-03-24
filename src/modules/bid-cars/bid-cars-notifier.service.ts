@@ -146,7 +146,7 @@ const buildCaption = ({ listing, header, index, total }: SendListingParams): str
     lines.push('', `💰 Продано за: <b>${soldPrice}</b>`);
   } else {
     if (hasValue(listing.currentBid)) lines.push('', `💰 Ставка: ${listing.currentBid}`);
-    if (hasValue(listing.buyNow)) lines.push(`⚡ BIN: ${listing.buyNow}`);
+    if (hasValue(listing.buyNow)) lines.push(`🛒 <b>Купить сейчас: ${listing.buyNow}</b>`);
   }
 
   // Damage + running condition + document type
