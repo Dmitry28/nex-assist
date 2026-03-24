@@ -47,7 +47,7 @@ Feeds are configured in `kufar.config.ts` as an array of `{ key, url }` objects.
 
 ## Price change detection
 
-A price change is detected when the effective BYN price differs from the previous snapshot (`effectivePrice` treats 0 and undefined as equivalent to avoid false positives). Old and new prices are shown in the notification.
+A price change is detected only when **both** BYN and USD prices differ from the previous snapshot. If either currency is unchanged, it means the seller didn't change the price — the other just fluctuated with the exchange rate. `effectivePrice` treats 0 and `undefined` as equivalent to avoid false positives on missing prices. When no numeric price is set, the listing shows "Договорная" (negotiable).
 
 ---
 
