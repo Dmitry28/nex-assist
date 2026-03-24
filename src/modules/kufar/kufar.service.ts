@@ -27,8 +27,10 @@ const effectivePrice = (p: number | undefined): number | undefined =>
   p !== undefined && p > 0 ? p : undefined;
 
 /** Single source of truth for price-change detection — used in both scrapeFeed and persistSnapshot.
- * Compares USD prices to avoid false positives from BYN exchange-rate fluctuations. */
+ * Both BYN and USD must change: if either is stable, the seller didn't change the price
+ * (the other just fluctuated with the exchange rate). */
 const hasPriceChanged = (prev: KufarSnapshotEntry, current: KufarListing): boolean =>
+  effectivePrice(prev.priceByn) !== effectivePrice(current.priceByn) &&
   effectivePrice(prev.priceUsd) !== effectivePrice(current.priceUsd);
 
 const isKufarSnapshotEntry = (item: unknown): item is KufarSnapshotEntry => {
