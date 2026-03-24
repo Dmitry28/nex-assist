@@ -2,7 +2,11 @@ import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import TelegramBot from 'node-telegram-bot-api';
 import { sleep } from '../../common/utils/sleep';
-import { TELEGRAM_SEND_DELAY_MS, truncateCaption } from '../../common/utils/telegram';
+import {
+  TELEGRAM_MESSAGE_LIMIT,
+  TELEGRAM_SEND_DELAY_MS,
+  truncateText,
+} from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
 import type { KufarListing, KufarPriceChange, KufarResult } from './dto/kufar-listing.dto';
 import { FEED_DISPLAY_NAMES, MEDIA_GROUP_LIMIT, NOTIFICATION_HEADERS } from './constants';
@@ -134,7 +138,7 @@ export class KufarNotifierService {
 
     for (const [i, item] of items.entries()) {
       const { caption, images } = toMessage(item, i + 1, items.length);
-      const ok = await this.sendListing({ caption: truncateCaption(caption), images });
+      const ok = await this.sendListing({ caption, images });
       if (ok) notified.add(getId(item));
       else failed.push(item);
       if (i < items.length - 1) await sleep(TELEGRAM_SEND_DELAY_MS);
@@ -160,12 +164,13 @@ export class KufarNotifierService {
     images: string[];
   }): Promise<boolean> {
     const photos = images.slice(0, MEDIA_GROUP_LIMIT);
+    const captionFor1024 = truncateText(caption); // photo/media-group: 1024-char limit
 
     if (photos.length > 1) {
       const media: TelegramBot.InputMediaPhoto[] = photos.map((url, i) => {
         const item: TelegramBot.InputMediaPhoto = { type: 'photo', media: url };
         if (i === 0) {
-          item.caption = caption;
+          item.caption = captionFor1024;
           item.parse_mode = 'HTML';
         }
         return item;
@@ -174,9 +179,9 @@ export class KufarNotifierService {
     }
 
     if (photos.length === 1) {
-      return this.telegram.sendPhoto(this.chatId, photos[0], caption);
+      return this.telegram.sendPhoto(this.chatId, photos[0], captionFor1024);
     }
 
-    return this.telegram.sendMessage(this.chatId, caption);
+    return this.telegram.sendMessage(this.chatId, truncateText(caption, TELEGRAM_MESSAGE_LIMIT)); // text: 4096-char limit
   }
 }

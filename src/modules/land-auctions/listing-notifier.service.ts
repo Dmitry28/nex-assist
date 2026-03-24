@@ -2,7 +2,11 @@ import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import TelegramBot from 'node-telegram-bot-api';
 import { sleep } from '../../common/utils/sleep';
-import { TELEGRAM_SEND_DELAY_MS, truncateCaption } from '../../common/utils/telegram';
+import {
+  TELEGRAM_MESSAGE_LIMIT,
+  TELEGRAM_SEND_DELAY_MS,
+  truncateText,
+} from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
 import type { LandAuctionsResult, Listing } from './dto/listing.dto';
 import { MEDIA_GROUP_LIMIT, NOTIFICATION_HEADERS } from './constants';
@@ -61,7 +65,11 @@ export class ListingNotifierService {
   /** Send a critical error notification. */
   async notifyError(message: string): Promise<void> {
     if (!this.chatId) return;
-    await this.telegram.sendMessage(this.chatId, `⚠️ Ошибка скрапинга:\n<code>${message}</code>`);
+    const ok = await this.telegram.sendMessage(
+      this.chatId,
+      `⚠️ Ошибка скрапинга:\n<code>${message}</code>`,
+    );
+    if (!ok) this.logger.warn('Failed to send error notification to Telegram');
   }
 
   /** Send all listings sequentially with a delay to stay within Telegram rate limits. */
@@ -88,14 +96,15 @@ export class ListingNotifierService {
 
   /** Send a single listing as photo/media group or plain text if no images. */
   private async sendListing({ listing, header, index, total }: CaptionParams): Promise<boolean> {
-    const caption = truncateCaption(buildCaption({ listing, header, index, total }));
+    const rawCaption = buildCaption({ listing, header, index, total });
     const photos = (listing.images ?? []).slice(0, MEDIA_GROUP_LIMIT);
+    const captionFor1024 = truncateText(rawCaption); // photo/media-group: 1024-char limit
 
     if (photos.length > 1) {
       const media: TelegramBot.InputMediaPhoto[] = photos.map((url, i) => {
         const item: TelegramBot.InputMediaPhoto = { type: 'photo', media: url };
         if (i === 0) {
-          item.caption = caption;
+          item.caption = captionFor1024;
           item.parse_mode = 'HTML';
         }
         return item;
@@ -104,9 +113,9 @@ export class ListingNotifierService {
     }
 
     if (photos.length === 1) {
-      return this.telegram.sendPhoto(this.chatId, photos[0], caption);
+      return this.telegram.sendPhoto(this.chatId, photos[0], captionFor1024);
     }
 
-    return this.telegram.sendMessage(this.chatId, caption);
+    return this.telegram.sendMessage(this.chatId, truncateText(rawCaption, TELEGRAM_MESSAGE_LIMIT)); // text: 4096-char limit
   }
 }
