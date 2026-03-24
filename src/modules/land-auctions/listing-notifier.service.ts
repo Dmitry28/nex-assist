@@ -5,12 +5,8 @@ import { sleep } from '../../common/utils/sleep';
 import { TELEGRAM_SEND_DELAY_MS, truncateCaption } from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
 import type { LandAuctionsResult, Listing } from './dto/listing.dto';
-import {
-  EMPTY_VALUES,
-  MAX_AUCTION_DATE_LENGTH,
-  MEDIA_GROUP_LIMIT,
-  NOTIFICATION_HEADERS,
-} from './constants';
+import { MEDIA_GROUP_LIMIT, NOTIFICATION_HEADERS } from './constants';
+import { buildCaption, buildSummary, type CaptionParams } from './listing-format';
 
 /**
  * Sends land auction notifications via Telegram.
@@ -72,6 +68,8 @@ export class ListingNotifierService {
   private async sendListings(listings: Listing[], header: string): Promise<void> {
     const failed: Listing[] = [];
 
+    this.logger.log(`Sending ${listings.length} ${header}`);
+
     for (const [i, listing] of listings.entries()) {
       const ok = await this.sendListing({ listing, header, index: i + 1, total: listings.length });
       if (!ok) failed.push(listing);
@@ -79,6 +77,7 @@ export class ListingNotifierService {
     }
 
     if (failed.length > 0) {
+      this.logger.warn(`${failed.length} listings failed to send`);
       const list = failed.map(l => `• ${l.title ?? l.link ?? 'unknown'}`).join('\n');
       await this.telegram.sendMessage(
         this.chatId,
@@ -88,12 +87,7 @@ export class ListingNotifierService {
   }
 
   /** Send a single listing as photo/media group or plain text if no images. */
-  private async sendListing({
-    listing,
-    header,
-    index,
-    total,
-  }: SendListingParams): Promise<boolean> {
+  private async sendListing({ listing, header, index, total }: CaptionParams): Promise<boolean> {
     const caption = truncateCaption(buildCaption({ listing, header, index, total }));
     const photos = (listing.images ?? []).slice(0, MEDIA_GROUP_LIMIT);
 
@@ -116,109 +110,3 @@ export class ListingNotifierService {
     return this.telegram.sendMessage(this.chatId, caption);
   }
 }
-
-// ─── Domain formatting helpers ────────────────────────────────────────────────
-
-/** Type predicate — narrows `string | undefined` to `string`, excluding empty/unknown values. */
-const hasValue = (val: string | undefined): val is string => !!val && !EMPTY_VALUES.has(val);
-
-interface SendListingParams {
-  listing: Listing;
-  header: string;
-  index: number;
-  total: number;
-}
-
-interface SummaryParams {
-  date: Date;
-  total: number;
-  newCount: number;
-  removedCount: number;
-  specialCount: number;
-  newSpecialCount: number;
-}
-
-const buildSummary = ({
-  date,
-  total,
-  newCount,
-  removedCount,
-  specialCount,
-  newSpecialCount,
-}: SummaryParams): string =>
-  [
-    `<b>📊 Сводка на ${date.toLocaleDateString('ru-RU')}</b>`,
-    `📋 Всего объявлений: <b>${total}</b>`,
-    `🆕 Новые: <b>${newCount}</b>`,
-    `🗑 Удалённые: <b>${removedCount}</b>`,
-    `🌿 Всего в Заболоть: <b>${specialCount}</b>`,
-    `✅ Новые в Заболоть: <b>${newSpecialCount}</b>`,
-  ].join('\n');
-
-const getListingEmoji = (title: string | undefined): string => {
-  if (!title) return '🏡';
-  const t = title.toLowerCase();
-  if (t.includes('не завершён') || t.includes('незавершён')) return '🏗';
-  if (t.includes('жилой дом') || t.includes('дом по')) return '🏠';
-  return '🏡';
-};
-
-const formatAuctionDate = (val: string): string => {
-  if (val.startsWith('Аукцион состоится ')) return val.replace('Аукцион состоится ', '');
-  if (val.startsWith('Проведение аукциона планируется '))
-    return val.replace('Проведение аукциона планируется ', '');
-  // Truncate overly long strings (e.g. full sentences instead of a date)
-  if (val.length > MAX_AUCTION_DATE_LENGTH) return 'уточняется';
-  return val;
-};
-
-const formatDeadline = (val: string): string => val.replace('Заявления принимаются по ', '');
-
-const shortenCommunications = (val: string): string =>
-  val
-    .replace(/электроснабжение/gi, 'свет')
-    .replace(/газоснабжение/gi, 'газ')
-    .replace(/водоснабжение/gi, 'вода')
-    .replace(/водоотведение/gi, 'канализация')
-    .replace(/теплоснабжение/gi, 'тепло');
-
-const buildCaption = ({ listing, header, index, total }: SendListingParams): string => {
-  const emoji = getListingEmoji(listing.title);
-
-  // Block 1 — header + title
-  const lines: string[] = [
-    `<b>${header} · ${index}/${total}</b>`,
-    '',
-    `${emoji} <b>${listing.title}</b>`,
-  ];
-
-  // Block 2 — location + price/area
-  const locationBlock: string[] = [];
-  if (hasValue(listing.address)) locationBlock.push(`📍 ${listing.address}`);
-  const pricePart = hasValue(listing.price) ? `💰 ${listing.price}` : '';
-  const areaPart = hasValue(listing.area) ? `📐 ${listing.area}` : '';
-  if (pricePart || areaPart)
-    locationBlock.push([pricePart, areaPart].filter(Boolean).join('  ·  '));
-  if (locationBlock.length) lines.push('', ...locationBlock);
-
-  // Block 3 — dates + communications
-  const infoBlock: string[] = [];
-  const auctionPart = hasValue(listing.auctionDate)
-    ? `🗓 ${formatAuctionDate(listing.auctionDate)}`
-    : '';
-  const deadlinePart = hasValue(listing.applicationDeadline)
-    ? `📅 до ${formatDeadline(listing.applicationDeadline)}`
-    : '';
-  if (auctionPart || deadlinePart)
-    infoBlock.push([auctionPart, deadlinePart].filter(Boolean).join('  ·  '));
-  if (hasValue(listing.communications))
-    infoBlock.push(`⚡ ${shortenCommunications(listing.communications)}`);
-  if (infoBlock.length) lines.push('', ...infoBlock);
-
-  // Block 4 — links
-  const linkParts: string[] = [`<a href="${listing.link}">🔗 Подробнее</a>`];
-  if (listing.cadastralMapUrl) linkParts.push(`<a href="${listing.cadastralMapUrl}">📌 Карта</a>`);
-  lines.push('', linkParts.join('  ·  '));
-
-  return lines.join('\n');
-};
