@@ -241,8 +241,7 @@ const buildListingCaption = ({ listing, header, index, total }: ListingCaptionPa
   if (hasValue(listing.address)) lines.push(`📍 ${listing.address}`);
   if (hasValue(listing.propertyType)) lines.push(`🏷 ${listing.propertyType}`);
 
-  const price = formatPrice(listing.priceByn, listing.priceUsd);
-  if (price) lines.push(`💰 ${price}`);
+  lines.push(`💰 ${formatPrice(listing.priceByn, listing.priceUsd) || 'Договорная'}`);
   if (hasValue(listing.area)) lines.push(`📐 ${listing.area} м²`);
   if (hasValue(listing.plotArea)) lines.push(`🌱 ${listing.plotArea} сот.`);
   if (hasValue(listing.rooms)) lines.push(`🚪 ${listing.rooms} комн.`);
@@ -273,11 +272,9 @@ const buildPriceChangeCaption = ({
   if (hasValue(listing.address)) lines.push(`📍 ${listing.address}`);
 
   // Old price → new price
-  const oldPrice = formatPrice(oldPriceByn, oldPriceUsd);
-  const newPrice = formatPrice(listing.priceByn, listing.priceUsd);
-  if (oldPrice || newPrice) {
-    lines.push(`💰 ${oldPrice || '—'} → <b>${newPrice || '—'}</b>`);
-  }
+  const oldPrice = formatPrice(oldPriceByn, oldPriceUsd) || 'Договорная';
+  const newPrice = formatPrice(listing.priceByn, listing.priceUsd) || 'Договорная';
+  lines.push(`💰 ${oldPrice} → <b>${newPrice}</b>`);
 
   if (hasValue(listing.area)) lines.push(`📐 ${listing.area} м²`);
   if (hasValue(listing.plotArea)) lines.push(`🌱 ${listing.plotArea} сот.`);
@@ -304,8 +301,8 @@ const buildSummary = (feeds: KufarFeedResult[]): string => {
     if (feed.priceChanges.length > 0) {
       const shown = feed.priceChanges.slice(0, MAX_PRICE_CHANGES_IN_SUMMARY);
       for (const { listing, oldPriceByn, oldPriceUsd } of shown) {
-        const oldPrice = formatPrice(oldPriceByn, oldPriceUsd) || '—';
-        const newPrice = formatPrice(listing.priceByn, listing.priceUsd) || '—';
+        const oldPrice = formatPrice(oldPriceByn, oldPriceUsd) || 'Договорная';
+        const newPrice = formatPrice(listing.priceByn, listing.priceUsd) || 'Договорная';
         const shortTitle =
           listing.title.length > 35 ? listing.title.slice(0, 32) + '...' : listing.title;
         lines.push(
