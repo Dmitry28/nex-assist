@@ -14,7 +14,7 @@ import { DATA_FILES, RUN_TIMEOUT_MS, SPECIAL_KEYWORD } from './constants';
 import { GcnParserService } from './gcn-parser.service';
 import { ListingNotifierService } from './listing-notifier.service';
 
-const isListing = (item: unknown): item is Listing =>
+export const isListing = (item: unknown): item is Listing =>
   typeof item === 'object' &&
   item !== null &&
   'link' in item &&
