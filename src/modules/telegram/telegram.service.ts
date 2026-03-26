@@ -64,8 +64,12 @@ export class TelegramService implements OnModuleInit {
   /** Ensures at least SEND_INTERVAL_MS between consecutive sends to the same chat. */
   private async throttle(chatId: string): Promise<void> {
     const last = this.lastSentAt.get(chatId) ?? 0;
-    const wait = SEND_INTERVAL_MS - (Date.now() - last);
-    if (wait > 0) await sleep(wait);
+    const elapsed = Date.now() - last;
+    const wait = SEND_INTERVAL_MS - elapsed;
+    if (wait > 0) {
+      this.logger.debug(`Throttle chat=${chatId}: elapsed=${elapsed}ms, waiting=${wait}ms`);
+      await sleep(wait);
+    }
     this.lastSentAt.set(chatId, Date.now());
   }
 
