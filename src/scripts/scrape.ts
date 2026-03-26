@@ -30,7 +30,7 @@ function parseModule(): Module {
 }
 
 async function bootstrap(): Promise<void> {
-  const module = parseModule();
+  const target = parseModule();
 
   const app = await NestFactory.createApplicationContext(AppModule, {
     logger: ['log', 'warn', 'error'],
@@ -40,7 +40,7 @@ async function bootstrap(): Promise<void> {
     // Run sequentially to avoid two Puppeteer instances competing for memory.
     // Each scraper is wrapped independently so one failure does not skip the other.
     // Errors are already reported to Telegram via notifyError() inside each service.
-    if (module === 'all' || module === 'land') {
+    if (target === 'all' || target === 'land') {
       try {
         await app.get(LandAuctionsService).run();
       } catch (err) {
@@ -48,7 +48,7 @@ async function bootstrap(): Promise<void> {
       }
     }
 
-    if (module === 'all' || module === 'bid-cars') {
+    if (target === 'all' || target === 'bid-cars') {
       try {
         await app.get(BidCarsService).run();
       } catch (err) {
@@ -56,7 +56,7 @@ async function bootstrap(): Promise<void> {
       }
     }
 
-    if (module === 'all' || module === 'kufar') {
+    if (target === 'all' || target === 'kufar') {
       try {
         await app.get(KufarService).run();
       } catch (err) {

@@ -7,9 +7,6 @@ export const RUN_TIMEOUT_MS = 10 * 60 * 1000;
 /** Puppeteer navigation and selector timeouts (ms). */
 export const PAGE_TIMEOUT_MS = 30_000;
 
-/** Telegram max photos per media group. */
-export const MEDIA_GROUP_LIMIT = 10;
-
 /** Field values considered empty/unknown — skipped when building Telegram captions. */
 export const EMPTY_VALUES = new Set([
   'Не найдено',

@@ -3,6 +3,7 @@ import puppeteerExtra from 'puppeteer-extra';
 import StealthPlugin from 'puppeteer-extra-plugin-stealth';
 import type { Browser, Page } from 'puppeteer';
 import type { CarListing } from './dto/car-listing.dto';
+import { BROWSER_USER_AGENT } from '../../common/utils/scraping';
 import { CARD_WALK_DEPTH, MAX_PAGES, PAGE_TIMEOUT_MS } from './constants';
 
 puppeteerExtra.use(StealthPlugin());
@@ -62,9 +63,7 @@ export class BidCarsParserService implements OnModuleDestroy {
     const page: Page = await browser.newPage();
 
     // Some sites block requests without a realistic user agent
-    await page.setUserAgent(
-      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    );
+    await page.setUserAgent(BROWSER_USER_AGENT);
 
     try {
       await page.goto(url, { waitUntil: 'domcontentloaded', timeout: PAGE_TIMEOUT_MS });

@@ -22,9 +22,6 @@ export const INTER_FEED_DELAY_MS = 2_000;
  */
 export const LOOKBACK_HOURS = 48;
 
-/** Max photos per Telegram media group. */
-export const MEDIA_GROUP_LIMIT = 10;
-
 /** Field values considered empty — skipped when building Telegram captions. */
 export const EMPTY_VALUES = new Set(['', 'Не указано', 'Не указан', 'Не указана', 'N/A']);
 

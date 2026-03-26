@@ -39,7 +39,7 @@ jobs:
         run: npm run build
 
       - name: Unit tests
-        run: npm run test:ci -- --passWithNoTests
+        run: npm run test:ci
 
       - name: E2E tests
         run: npm run test:e2e -- --passWithNoTests
