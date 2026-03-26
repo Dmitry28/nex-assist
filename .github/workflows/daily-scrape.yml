@@ -36,7 +36,9 @@ jobs:
         run: npm ci
 
       - name: Install Puppeteer browser
-        run: npx puppeteer browsers install chrome
+        run: |
+          npx puppeteer browsers install chrome
+          node node_modules/rebrowser-puppeteer/install.mjs
 
       - name: Run scrape
         env:
