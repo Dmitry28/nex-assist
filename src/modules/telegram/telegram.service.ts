@@ -2,7 +2,7 @@ import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import TelegramBot from 'node-telegram-bot-api';
 import { sleep } from '../../common/utils/sleep';
-import { MAX_SEND_ATTEMPTS } from './constants';
+import { MAX_SEND_ATTEMPTS, SEND_INTERVAL_MS } from './constants';
 
 /**
  * Generic Telegram bot wrapper.
@@ -21,6 +21,7 @@ import { MAX_SEND_ATTEMPTS } from './constants';
 export class TelegramService implements OnModuleInit {
   private readonly logger = new Logger(TelegramService.name);
   private bot: TelegramBot | null = null;
+  private readonly lastSentAt = new Map<string, number>();
 
   constructor(private readonly config: ConfigService) {}
 
@@ -40,6 +41,7 @@ export class TelegramService implements OnModuleInit {
 
   async sendMessage(chatId: string, text: string): Promise<boolean> {
     if (!this.bot) return this.dryRun('sendMessage', chatId, text);
+    await this.throttle(chatId);
     return this.withRetry(() =>
       this.bot!.sendMessage(chatId, text, { parse_mode: 'HTML' }).then(() => undefined),
     );
@@ -47,6 +49,7 @@ export class TelegramService implements OnModuleInit {
 
   async sendPhoto(chatId: string, url: string, caption: string): Promise<boolean> {
     if (!this.bot) return this.dryRun('sendPhoto', chatId, caption, url);
+    await this.throttle(chatId);
     return this.withRetry(() =>
       this.bot!.sendPhoto(chatId, url, { caption, parse_mode: 'HTML' }).then(() => undefined),
     );
@@ -54,7 +57,16 @@ export class TelegramService implements OnModuleInit {
 
   async sendMediaGroup(chatId: string, media: TelegramBot.InputMediaPhoto[]): Promise<boolean> {
     if (!this.bot) return this.dryRun('sendMediaGroup', chatId, `${media.length} photos`);
+    await this.throttle(chatId);
     return this.withRetry(() => this.bot!.sendMediaGroup(chatId, media).then(() => undefined));
+  }
+
+  /** Ensures at least SEND_INTERVAL_MS between consecutive sends to the same chat. */
+  private async throttle(chatId: string): Promise<void> {
+    const last = this.lastSentAt.get(chatId) ?? 0;
+    const wait = SEND_INTERVAL_MS - (Date.now() - last);
+    if (wait > 0) await sleep(wait);
+    this.lastSentAt.set(chatId, Date.now());
   }
 
   /**
