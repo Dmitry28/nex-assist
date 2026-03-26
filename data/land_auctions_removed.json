@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "title": "Земельный участок У-122 по ул. Майской в микрорайоне «Барановичи-9»",
+    "link": "http://gcn.by/properties/zemelnyj-uchastok-u-122-po-ul-majskoj-v-mikrorajone-baranovichi-9/",
+    "price": "19 468,00 руб.",
+    "area": "0,1004 га",
+    "address": "г. Гродно, ул. Майская, 2",
+    "cadastralNumber": "440100000003007807",
+    "cadastralMapUrl": "https://map.nca.by/search/019c04d8-bb37-71c1-b935-f5a8ff42867c",
+    "auctionDate": "Аукцион состоится 24.03.2026",
+    "applicationDeadline": "Заявления принимаются по 18.03.2026",
+    "communications": "электроснабжение, газоснабжение, водоснабжение",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/01/u122-teplaya-baranovichi-sajt3.png"
+    ]
+  },
+  {
+    "title": "Не завершённый строительством жилой дом по ул. Яскравая, 1",
+    "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-yaskravaya-1/",
+    "price": "37 844,67 руб.",
+    "area": "0,1043 га",
+    "address": "г. Гродно, У-109 в микрорайоне «Барановичи-7», ул. Яскравая, 1",
+    "cadastralNumber": "440100000003005924",
+    "cadastralMapUrl": "https://map.nca.by/search/019c033d-2de5-73ec-9471-542bedfca3ee",
+    "auctionDate": "Аукцион состоится 24.03.2026",
+    "applicationDeadline": "Заявления принимаются по 18.03.2026",
+    "communications": "Не указаны",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/01/u-109-baranovichi-yaskravaya-sajt.png"
+    ]
+  },
+  {
+    "title": "Земельный участок по ул. Виктора Афанасьева, 21",
+    "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-viktora-afanaseva-21/",
+    "price": "40 842,00 руб.",
+    "area": "0,0978 га",
+    "address": "г. Гродно, ул. Виктора Афанасьева, 21",
+    "cadastralNumber": "440100000002012991",
+    "cadastralMapUrl": "https://map.nca.by/search/019c0911-319f-73bd-aa3b-cfec2d16a8e1",
+    "auctionDate": "Аукцион состоится 24.03.2026",
+    "applicationDeadline": "Заявления принимаются по 18.03.2026",
+    "communications": "электроснабжение, газоснабжение, водоснабжение",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/01/u1-afanaseva-21-sajt.png"
+    ]
+  },
+  {
+    "title": "Земельный участок У-92 в микрорайоне «Барановичи-9»",
+    "link": "http://gcn.by/properties/zemelnyj-uchastok-u-92-v-mikrorajone-baranovichi-9/",
+    "price": "19 370,61 руб.",
+    "area": "0,0999 га",
+    "address": "Не найден",
+    "cadastralNumber": "440100000003006382",
+    "cadastralMapUrl": "https://map.nca.by/search/019c98a8-8b3b-72bc-8427-62221f66297a",
+    "auctionDate": "Не указана",
+    "applicationDeadline": "Заявления принимаются по 18.03.2026",
+    "communications": "электроснабжение, газоснабжение, водоснабжение",
+    "images": [
+      "https://gcn.by/wp-content/uploads/2022/04/u-92-baranovichi-9-3.png",
+      "https://gcn.by/wp-content/uploads/2022/04/u-92-baranovichi-9-2.png",
+      "https://gcn.by/wp-content/uploads/2022/04/u-92-baranovichi-9-3.png",
+      "https://gcn.by/wp-content/uploads/2022/04/u-92-baranovichi-9-2.png"
+    ]
+  }
+]
