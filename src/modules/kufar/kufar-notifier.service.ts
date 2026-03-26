@@ -1,11 +1,9 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import TelegramBot from 'node-telegram-bot-api';
-import { sleep } from '../../common/utils/sleep';
 import {
   TELEGRAM_MEDIA_GROUP_LIMIT,
   TELEGRAM_MESSAGE_LIMIT,
-  TELEGRAM_SEND_DELAY_MS,
   truncateText,
 } from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
@@ -142,7 +140,6 @@ export class KufarNotifierService {
       const ok = await this.sendListing({ caption, images });
       if (ok) notified.add(getId(item));
       else failed.push(item);
-      if (i < items.length - 1) await sleep(TELEGRAM_SEND_DELAY_MS);
     }
 
     if (failed.length > 0) {

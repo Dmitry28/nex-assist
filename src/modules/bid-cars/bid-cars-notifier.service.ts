@@ -1,11 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { sleep } from '../../common/utils/sleep';
-import {
-  TELEGRAM_MESSAGE_LIMIT,
-  TELEGRAM_SEND_DELAY_MS,
-  truncateText,
-} from '../../common/utils/telegram';
+import { TELEGRAM_MESSAGE_LIMIT, truncateText } from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
 import type { BidCarsResult, CarListing, RemovedCarListing } from './dto/car-listing.dto';
 import { NOTIFICATION_HEADERS } from './constants';
@@ -78,7 +73,6 @@ export class BidCarsNotifierService {
     for (const [i, listing] of listings.entries()) {
       const ok = await this.sendListing({ listing, header, index: i + 1, total: listings.length });
       if (!ok) failed.push(listing);
-      if (i < listings.length - 1) await sleep(TELEGRAM_SEND_DELAY_MS);
     }
 
     if (failed.length > 0) {
