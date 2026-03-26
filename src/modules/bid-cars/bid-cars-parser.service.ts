@@ -15,9 +15,12 @@ import {
   PAGE_TIMEOUT_MS,
 } from './constants';
 
-// TODO: if rebrowser-puppeteer is still blocked after retries, consider routing
-// through ScrapFly (https://scrapfly.io) which handles Cloudflare JS challenges
-// via residential proxies and managed browsers.
+// TODO: Cloudflare blocks GitHub Actions (AWS) IP range regardless of browser fingerprint.
+// Options to fix bid.cars scraping on CI:
+//   1. Deploy the service to a VPS (Hetzner/DigitalOcean) — residential IP bypasses the block,
+//      and the built-in NestJS cron replaces the GitHub Actions schedule entirely.
+//   2. Route through ScrapFly (https://scrapfly.io) — residential proxies + managed browsers
+//      that handle Cloudflare JS challenges. Requires API key and SDK integration.
 
 const BROWSER_ARGS = [
   '--no-sandbox',
