@@ -1,12 +1,26 @@
 import { Injectable, Logger, OnModuleDestroy } from '@nestjs/common';
-import puppeteerExtra from 'puppeteer-extra';
-import StealthPlugin from 'puppeteer-extra-plugin-stealth';
-import type { Browser, Page } from 'puppeteer';
+// rebrowser-puppeteer: drop-in Puppeteer replacement that patches the CDP Runtime.Enable
+// leak — the main signal Cloudflare uses to detect headless Chrome automation.
+// See: https://github.com/rebrowser/rebrowser-patches
+import puppeteer from 'rebrowser-puppeteer';
+import type { Browser, Page } from 'rebrowser-puppeteer';
 import type { CarListing } from './dto/car-listing.dto';
+import { sleep } from '../../common/utils/sleep';
 import { BROWSER_USER_AGENT } from '../../common/utils/scraping';
-import { CARD_WALK_DEPTH, MAX_PAGES, PAGE_TIMEOUT_MS } from './constants';
+import {
+  CARD_WALK_DEPTH,
+  CLOUDFLARE_RETRY_ATTEMPTS,
+  CLOUDFLARE_RETRY_DELAY_MS,
+  MAX_PAGES,
+  PAGE_TIMEOUT_MS,
+} from './constants';
 
-puppeteerExtra.use(StealthPlugin());
+// TODO: Cloudflare blocks GitHub Actions (AWS) IP range regardless of browser fingerprint.
+// Options to fix bid.cars scraping on CI:
+//   1. Deploy the service to a VPS (Hetzner/DigitalOcean) — residential IP bypasses the block,
+//      and the built-in NestJS cron replaces the GitHub Actions schedule entirely.
+//   2. Route through ScrapFly (https://scrapfly.io) — residential proxies + managed browsers
+//      that handle Cloudflare JS challenges. Requires API key and SDK integration.
 
 const BROWSER_ARGS = [
   '--no-sandbox',
@@ -45,21 +59,39 @@ export class BidCarsParserService implements OnModuleDestroy {
   }
 
   async fetchListings(url: string): Promise<CarListing[]> {
-    const browser = await this.getBrowser();
-    return this.scrapeResultsPage(browser, url);
+    for (let attempt = 0; attempt <= CLOUDFLARE_RETRY_ATTEMPTS; attempt++) {
+      if (attempt > 0) {
+        this.logger.warn(
+          `Cloudflare retry ${attempt}/${CLOUDFLARE_RETRY_ATTEMPTS} — waiting ${CLOUDFLARE_RETRY_DELAY_MS / 1000}s`,
+        );
+        // Close the old browser so the next attempt starts with a fresh instance
+        await this.browser?.close();
+        this.browser = null;
+        await sleep(CLOUDFLARE_RETRY_DELAY_MS);
+      }
+
+      const browser = await this.getBrowser();
+      const result = await this.scrapeResultsPage(browser, url);
+      if (result !== null) return result;
+    }
+
+    throw new Error('Cloudflare challenge not resolved after all retries');
   }
 
   /** Returns the shared browser, launching one if not yet started or if it crashed. */
   private async getBrowser(): Promise<Browser> {
     if (!this.browser?.connected) {
       this.logger.log('Launching browser');
-      this.browser = await puppeteerExtra.launch({ headless: true, args: BROWSER_ARGS });
+      this.browser = await puppeteer.launch({ headless: true, args: BROWSER_ARGS });
     }
     return this.browser;
   }
 
-  /** Scrape all available fields from each card on the search results page. */
-  private async scrapeResultsPage(browser: Browser, url: string): Promise<CarListing[]> {
+  /**
+   * Scrape all available fields from each card on the search results page.
+   * Returns null if a Cloudflare challenge is detected (caller should retry).
+   */
+  private async scrapeResultsPage(browser: Browser, url: string): Promise<CarListing[] | null> {
     const page: Page = await browser.newPage();
 
     // Some sites block requests without a realistic user agent
@@ -74,7 +106,8 @@ export class BidCarsParserService implements OnModuleDestroy {
       } catch {
         const title = await page.title();
         if (title.toLowerCase().includes('just a moment')) {
-          throw new Error(`Cloudflare challenge detected (page title: "${title}")`);
+          this.logger.warn(`Cloudflare challenge detected (page title: "${title}")`);
+          return null;
         }
         this.logger.warn(`No lot links found — page title: "${title}". Possibly empty results.`);
         return [];

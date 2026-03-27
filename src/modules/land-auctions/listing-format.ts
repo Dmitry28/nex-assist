@@ -72,13 +72,14 @@ export const buildCaption = ({ listing, header, index, total }: CaptionParams): 
     `${emoji} <b>${listing.title}</b>`,
   ];
 
-  // Block 2 — location + price/area
+  // Block 2 — location + price/area + sale price
   const locationBlock: string[] = [];
   if (hasValue(listing.address)) locationBlock.push(`📍 ${listing.address}`);
   const pricePart = hasValue(listing.price) ? `💰 ${listing.price}` : '';
   const areaPart = hasValue(listing.area) ? `📐 ${listing.area}` : '';
   if (pricePart || areaPart)
     locationBlock.push([pricePart, areaPart].filter(Boolean).join('  ·  '));
+  if (hasValue(listing.salePrice)) locationBlock.push(`✅ Продано: ${listing.salePrice}`);
   if (locationBlock.length) lines.push('', ...locationBlock);
 
   // Block 3 — dates + communications

@@ -1,11 +1,2 @@
 version: 2
-updates:
-  - package-ecosystem: npm
-    directory: /
-    schedule:
-      interval: weekly
-    groups:
-      nestjs:
-        patterns: ['@nestjs/*']
-      typescript-eslint:
-        patterns: ['@typescript-eslint/*', 'typescript-eslint']
+updates: []

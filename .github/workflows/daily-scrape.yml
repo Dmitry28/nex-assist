@@ -36,7 +36,12 @@ jobs:
         run: npm ci
 
       - name: Install Puppeteer browser
-        run: npx puppeteer browsers install chrome
+        run: |
+          npx puppeteer browsers install chrome
+          # Export the installed Chrome path so rebrowser-puppeteer uses it instead of
+          # its bundled version (rebrowser-puppeteer@24.8.1 bundles a different Chrome
+          # version than puppeteer@24.x, so we point it at the already-downloaded binary).
+          echo "PUPPETEER_EXECUTABLE_PATH=$(node -p "require('puppeteer').executablePath()")" >> $GITHUB_ENV
 
       - name: Run scrape
         env:
@@ -44,6 +49,7 @@ jobs:
           TELEGRAM_LAND_AUCTIONS_CHAT_ID: ${{ vars.TELEGRAM_LAND_AUCTIONS_CHAT_ID }}
           TELEGRAM_BID_CARS_CHAT_ID: ${{ vars.TELEGRAM_BID_CARS_CHAT_ID }}
           TELEGRAM_KUFAR_CHAT_ID: ${{ vars.TELEGRAM_KUFAR_CHAT_ID }}
+          PUPPETEER_EXECUTABLE_PATH: ${{ env.PUPPETEER_EXECUTABLE_PATH }}
         run: npm run scrape
 
       - name: Commit updated snapshots via PR
