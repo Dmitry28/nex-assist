@@ -308,7 +308,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0e9de701-ed0e-43f1-a224-6d093df2ce70.jpg"
     ],
     "firstSeenAt": "2026-03-26T08:28:56.935Z",
-    "lastSeenAt": "2026-03-26T10:35:33.095Z"
+    "lastSeenAt": "2026-03-27T08:26:24.804Z"
   },
   {
     "adId": 1010319964,
@@ -330,7 +330,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T08:28:56.935Z",
-    "lastSeenAt": "2026-03-26T10:35:33.095Z"
+    "lastSeenAt": "2026-03-27T08:26:24.804Z"
   },
   {
     "adId": 1062002915,
@@ -359,7 +359,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/be419516-3544-477b-83e2-70f69bb9d9cf.jpg"
     ],
     "firstSeenAt": "2026-03-26T08:28:56.935Z",
-    "lastSeenAt": "2026-03-26T10:35:33.095Z"
+    "lastSeenAt": "2026-03-27T08:26:24.804Z"
   },
   {
     "adId": 1061908048,
@@ -499,5 +499,32 @@
     ],
     "firstSeenAt": "2026-03-26T08:28:56.935Z",
     "lastSeenAt": "2026-03-26T10:35:33.095Z"
+  },
+  {
+    "adId": 1062120406,
+    "link": "https://re.kufar.by/vi/1062120406",
+    "title": "Гараж Химик-авто",
+    "description": "Гараж стандартный 18.2 кв.м., состояние удовлетворительное, небольшой подвал имеется, косметический ремонт по желанию.",
+    "priceByn": 23719,
+    "priceUsd": 7999,
+    "address": "Славинского ул, 17А, Гродно, Гродненская область",
+    "area": 18.2,
+    "seller": "egor",
+    "propertyType": "Гараж",
+    "features": [
+      "Подвал",
+      "Смотровая яма",
+      "Электричество 220В",
+      "Наземная",
+      "Печное"
+    ],
+    "listTime": "2026-03-26T14:13:38Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0b808674-f338-479c-a71b-c5e12e7920ee.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5a1f1cfd-9161-4cb5-9dc6-b40eb51eb441.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f900e455-e2c0-40a6-af00-39cd658f318d.jpg"
+    ],
+    "firstSeenAt": "2026-03-27T08:26:24.804Z",
+    "lastSeenAt": "2026-03-27T08:26:24.804Z"
   }
 ]
