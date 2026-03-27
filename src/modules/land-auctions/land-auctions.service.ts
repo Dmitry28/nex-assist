@@ -66,6 +66,7 @@ export class LandAuctionsService implements OnModuleInit, OnModuleDestroy {
   }
 
   onModuleDestroy(): void {
+    if (!this.scheduler.doesExist('cron', 'land-auctions-scrape')) return;
     this.scheduler.deleteCronJob('land-auctions-scrape');
   }
 
@@ -139,15 +140,15 @@ export class LandAuctionsService implements OnModuleInit, OnModuleDestroy {
     const toCheck = [...removedListings, ...archivePending.map(i => i.listing)];
     const salePriceMap = await this.parser.findSalePrices(toCheck);
 
-    // Enrich newly removed listings with sale price where found
-    for (const listing of removedListings) {
-      const sp = listing.link ? salePriceMap.get(listing.link) : undefined;
-      if (sp) listing.salePrice = sp;
-    }
+    // Build enriched copies of removed listings (no mutation of source array)
+    const enrichedRemoved: Listing[] = removedListings.map(l => {
+      const sp = l.link ? salePriceMap.get(l.link) : undefined;
+      return sp ? { ...l, salePrice: sp } : l;
+    });
 
     // Removed without price → add to pending queue
     const now = new Date().toISOString();
-    const newPending: ArchivePendingItem[] = removedListings
+    const newPending: ArchivePendingItem[] = enrichedRemoved
       .filter(l => !l.salePrice)
       .map(l => ({ listing: l, removedAt: now }));
 
@@ -172,7 +173,7 @@ export class LandAuctionsService implements OnModuleInit, OnModuleDestroy {
     const result: LandAuctionsResult = {
       total: currentListings.length,
       newListings,
-      removedListings,
+      removedListings: enrichedRemoved,
       soldListings,
       specialListings,
       newSpecialListings,
@@ -180,7 +181,7 @@ export class LandAuctionsService implements OnModuleInit, OnModuleDestroy {
 
     this.logger.log(
       `Done — total: ${result.total}, new: ${newListings.length}, ` +
-        `removed: ${removedListings.length}, sold: ${soldListings.length}, ` +
+        `removed: ${enrichedRemoved.length}, sold: ${soldListings.length}, ` +
         `special: ${specialListings.length}, pending: ${updatedPending.length}`,
     );
 
@@ -191,7 +192,7 @@ export class LandAuctionsService implements OnModuleInit, OnModuleDestroy {
     await Promise.all([
       this.snapshot.write(DATA_FILES.all, currentListings),
       this.snapshot.write(DATA_FILES.new, newListings),
-      this.snapshot.write(DATA_FILES.removed, removedListings),
+      this.snapshot.write(DATA_FILES.removed, enrichedRemoved),
       this.snapshot.write(DATA_FILES.special, specialListings),
       this.snapshot.write(DATA_FILES.archivePending, updatedPending),
     ]);

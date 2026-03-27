@@ -136,7 +136,7 @@ export class GcnParserService {
       const date = parseDateFromAuctionDate(listing.auctionDate);
       if (!date) continue;
       if (!byDate.has(date)) byDate.set(date, []);
-      byDate.get(date)!.push(listing);
+      (byDate.get(date) ?? []).push(listing);
     }
     if (byDate.size === 0) return result;
 
@@ -181,9 +181,9 @@ export class GcnParserService {
             if (!item.url || !item.date) continue;
             if (!targetDates.has(item.date)) continue;
             // Only land-plot ownership auctions (not lease)
-            const t = item.title.toLowerCase();
-            if (!t.includes('земельного участка')) continue;
-            if (t.includes('аренд')) continue;
+            const titleLower = item.title.toLowerCase();
+            if (!titleLower.includes('земельного участка')) continue;
+            if (titleLower.includes('аренд')) continue;
             candidates.push({ url: item.url, date: item.date });
           }
         }
@@ -220,7 +220,7 @@ export class GcnParserService {
               const { initialPrice, salePrice } = await page.evaluate(() => {
                 const text = document.body.innerText;
                 const initMatch = text.match(/Начальная цена:?\s*([\d\s,.]+)\s*руб\./);
-                const saleMatch = text.match(/Цена продажи\s*(.+?)(?:\n|$)/);
+                const saleMatch = text.match(/Цена продажи\s*(.+?)(?:\r?\n|$)/);
                 return {
                   initialPrice: initMatch?.[1]?.trim() ?? '',
                   salePrice: saleMatch?.[1]?.trim() ?? '',
