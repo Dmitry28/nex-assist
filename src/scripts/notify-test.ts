@@ -70,6 +70,7 @@ const MOCK_RESULT: LandAuctionsResult = {
   total: 42,
   newListings: MOCK_LISTINGS.slice(0, 2),
   removedListings: MOCK_LISTINGS.slice(2),
+  soldListings: [],
   specialListings: MOCK_LISTINGS.slice(0, 1),
   newSpecialListings: MOCK_LISTINGS.slice(0, 1),
 };
