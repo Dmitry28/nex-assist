@@ -20,10 +20,9 @@ One loop for all tasks. Plan depth scales with task complexity — a simple fix 
 
 ## Git workflow
 
-- **Always branch off `dev`** — `dev` is the active development branch
-- **Always target `dev`** in PRs — never open a PR directly to `main`
-- **Merge PRs with `--merge`** — squash merges are disabled in this repo
-- `main` is the GitHub default branch (scheduled Actions run on it); it receives releases from `dev`
+- Branch off `dev`, PR to `dev` — never directly to `main`
+- Merge with `gh pr merge --merge` (squash is disabled)
+- `main` is for releases and GitHub Actions only
 
 ## 3. Verify
 
