@@ -7,7 +7,6 @@ import {
 } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { SchedulerRegistry } from '@nestjs/schedule';
-import { CronJob } from 'cron';
 import { SnapshotService } from '../../common/snapshot.service';
 import type { BidCarsResult, CarListing, RemovedCarListing } from './dto/car-listing.dto';
 import { DATA_FILES, RUN_TIMEOUT_MS, SOLD_LOOKUP_RETENTION_DAYS } from './constants';
@@ -53,16 +52,18 @@ export class BidCarsService implements OnModuleInit, OnModuleDestroy {
   ) {}
 
   onModuleInit(): void {
-    const cron = this.config.getOrThrow<string>('bidCars.scrapeCron');
-    const job = new CronJob(cron, () => {
-      void this.runScheduled();
-    });
-    this.scheduler.addCronJob('bid-cars-scrape', job);
-    job.start();
-    this.logger.log(`Cron scheduled: ${cron}`);
+    // TODO: restore cron body when the app is deployed persistently (see land-auctions/_TODO.md).
+    // Disabled: cron was firing mid-run in GitHub Actions and causing duplicate Telegram notifications.
+    //
+    // const cron = this.config.getOrThrow<string>('bidCars.scrapeCron');
+    // const job = new CronJob(cron, () => { void this.runScheduled(); });
+    // this.scheduler.addCronJob('bid-cars-scrape', job);
+    // job.start();
+    // this.logger.log(`Cron scheduled: ${cron}`);
   }
 
   onModuleDestroy(): void {
+    if (!this.scheduler.doesExist('cron', 'bid-cars-scrape')) return;
     this.scheduler.deleteCronJob('bid-cars-scrape');
   }
 
@@ -96,19 +97,20 @@ export class BidCarsService implements OnModuleInit, OnModuleDestroy {
     }
   }
 
-  private async runScheduled(): Promise<void> {
-    try {
-      this.logger.log('Scheduled scrape started');
-      await this.run();
-    } catch (error) {
-      if (error instanceof ConflictException) {
-        this.logger.warn('Scheduled scrape skipped — manual run already in progress');
-        return;
-      }
-      // Error already logged and reported to Telegram inside run()
-      this.logger.error('Scheduled scrape failed', error);
-    }
-  }
+  // TODO: restore when cron is re-enabled (see onModuleInit above).
+  // private async runScheduled(): Promise<void> {
+  //   try {
+  //     this.logger.log('Scheduled scrape started');
+  //     await this.run();
+  //   } catch (error) {
+  //     if (error instanceof ConflictException) {
+  //       this.logger.warn('Scheduled scrape skipped — manual run already in progress');
+  //       return;
+  //     }
+  //     // Error already logged and reported to Telegram inside run()
+  //     this.logger.error('Scheduled scrape failed', error);
+  //   }
+  // }
 
   private async scrape(): Promise<BidCarsResult> {
     const scrapeUrl = this.config.getOrThrow<string>('bidCars.scrapeUrl');
