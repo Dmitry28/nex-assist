@@ -37,6 +37,22 @@ export interface ArchivePendingItem {
   removedAt: string;
 }
 
+/** Type guard: checks that an unknown value is a valid {@link Listing}. */
+export const isListing = (item: unknown): item is Listing =>
+  typeof item === 'object' &&
+  item !== null &&
+  'link' in item &&
+  typeof (item as { link: unknown }).link === 'string';
+
+/** Type guard: checks that an unknown value is a valid {@link ArchivePendingItem}. */
+export const isArchivePendingItem = (item: unknown): item is ArchivePendingItem =>
+  typeof item === 'object' &&
+  item !== null &&
+  'listing' in item &&
+  isListing((item as { listing: unknown }).listing) &&
+  'removedAt' in item &&
+  typeof (item as { removedAt: unknown }).removedAt === 'string';
+
 /** Result returned from one full scrape cycle. */
 export class LandAuctionsResult {
   @ApiProperty() total!: number;

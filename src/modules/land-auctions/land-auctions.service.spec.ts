@@ -1,4 +1,4 @@
-import { isListing } from './land-auctions.service';
+import { isListing } from './dto/listing.dto';
 
 describe('isListing', () => {
   it('returns true for valid listing', () =>
