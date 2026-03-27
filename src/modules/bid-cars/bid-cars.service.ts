@@ -9,20 +9,10 @@ import { ConfigService } from '@nestjs/config';
 import { SchedulerRegistry } from '@nestjs/schedule';
 import { SnapshotService } from '../../common/snapshot.service';
 import type { BidCarsResult, CarListing, RemovedCarListing } from './dto/car-listing.dto';
+import { isCarListing, isRemovedCarListing } from './dto/car-listing.dto';
 import { DATA_FILES, RUN_TIMEOUT_MS, SOLD_LOOKUP_RETENTION_DAYS } from './constants';
 import { BidCarsParserService } from './bid-cars-parser.service';
 import { BidCarsNotifierService } from './bid-cars-notifier.service';
-
-// Minimal check: only 'link' presence is verified — sufficient because snapshot files
-// are module-specific and will never contain cross-module data.
-export const isCarListing = (item: unknown): item is CarListing =>
-  typeof item === 'object' &&
-  item !== null &&
-  'link' in item &&
-  typeof (item as { link: unknown }).link === 'string';
-
-export const isRemovedCarListing = (item: unknown): item is RemovedCarListing =>
-  isCarListing(item) && typeof (item as unknown as Record<string, unknown>).removedAt === 'string';
 
 /**
  * Business orchestration for the bid.cars scrape cycle:

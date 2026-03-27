@@ -1,5 +1,5 @@
-import type { CarListing, RemovedCarListing } from './dto/car-listing.dto';
-import { buildCaption, buildSummary, hasValue } from './bid-cars-format';
+import type { CarListing, RemovedCarListing } from '../dto/car-listing.dto';
+import { buildCaption, buildSummary, hasValue } from '../bid-cars-format';
 
 const baseListing: CarListing = {
   link: 'https://bid.cars/ru/lot/12345/vw-atlas-2024',
