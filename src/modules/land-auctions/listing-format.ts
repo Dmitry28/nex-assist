@@ -1,6 +1,6 @@
 import type { Listing } from './dto/listing.dto';
 import { LOCALE, TIMEZONE } from '../../common/utils/locale';
-import { EMPTY_VALUES, MAX_AUCTION_DATE_LENGTH } from './constants';
+import { EMPTY_VALUES, MAX_AUCTION_DATE_LENGTH, SPECIAL_AREA_LABEL } from './constants';
 
 export const hasValue = (val: string | undefined): val is string => !!val && !EMPTY_VALUES.has(val);
 
@@ -9,6 +9,7 @@ export interface SummaryParams {
   total: number;
   newCount: number;
   removedCount: number;
+  soldCount: number;
   specialCount: number;
   newSpecialCount: number;
 }
@@ -25,6 +26,7 @@ export const buildSummary = ({
   total,
   newCount,
   removedCount,
+  soldCount,
   specialCount,
   newSpecialCount,
 }: SummaryParams): string =>
@@ -33,8 +35,9 @@ export const buildSummary = ({
     `📋 Всего объявлений: <b>${total}</b>`,
     `🆕 Новые: <b>${newCount}</b>`,
     `🗑 Удалённые: <b>${removedCount}</b>`,
-    `🌿 Всего в Заболоть: <b>${specialCount}</b>`,
-    `✅ Новые в Заболоть: <b>${newSpecialCount}</b>`,
+    `💰 Продано: <b>${soldCount}</b>`,
+    `🌿 Всего в ${SPECIAL_AREA_LABEL}: <b>${specialCount}</b>`,
+    `✅ Новые в ${SPECIAL_AREA_LABEL}: <b>${newSpecialCount}</b>`,
   ].join('\n');
 
 export const getListingEmoji = (title: string | undefined): string => {

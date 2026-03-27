@@ -9,24 +9,11 @@ import { ConfigService } from '@nestjs/config';
 import { SchedulerRegistry } from '@nestjs/schedule';
 import { CronJob } from 'cron';
 import { SnapshotService } from '../../common/snapshot.service';
+import { isArchivePendingItem, isListing } from './dto/listing.dto';
 import type { ArchivePendingItem, LandAuctionsResult, Listing } from './dto/listing.dto';
 import { ARCHIVE_PENDING_TTL_DAYS, DATA_FILES, RUN_TIMEOUT_MS, SPECIAL_KEYWORD } from './constants';
 import { GcnParserService } from './gcn-parser.service';
 import { ListingNotifierService } from './listing-notifier.service';
-
-export const isListing = (item: unknown): item is Listing =>
-  typeof item === 'object' &&
-  item !== null &&
-  'link' in item &&
-  typeof (item as { link: unknown }).link === 'string';
-
-export const isArchivePendingItem = (item: unknown): item is ArchivePendingItem =>
-  typeof item === 'object' &&
-  item !== null &&
-  'listing' in item &&
-  isListing((item as { listing: unknown }).listing) &&
-  'removedAt' in item &&
-  typeof (item as { removedAt: unknown }).removedAt === 'string';
 
 /**
  * Business orchestration for the land auctions scrape cycle:
