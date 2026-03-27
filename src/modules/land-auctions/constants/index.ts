@@ -28,6 +28,8 @@ export const DATA_FILES = {
   removed: './data/land_auctions_removed.json',
   /** Listings matching the special area keyword (Заболоть). */
   special: './data/land_auctions_special.json',
+  /** Removed listings awaiting sale price confirmation from the archive. */
+  archivePending: './data/land_auctions_archive_pending.json',
 } as const;
 
 /** Keyword to detect special listings (Заболоть area). */
@@ -41,4 +43,14 @@ export const NOTIFICATION_HEADERS = {
   new: 'Новые:',
   removed: 'Удаленные:',
   newSpecial: 'Новые в Заболоть:',
+  sold: 'Продано:',
 } as const;
+
+/** Archive page URL for completed auctions. */
+export const ARCHIVE_URL = 'https://gcn.by/arhiv-aukczionov/';
+
+/** Max number of archive pages to scan per run. */
+export const ARCHIVE_MAX_PAGES = 3;
+
+/** Stop checking archive after this many days since the listing was removed. */
+export const ARCHIVE_PENDING_TTL_DAYS = 14;

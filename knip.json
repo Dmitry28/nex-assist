@@ -2,6 +2,6 @@
   "$schema": "https://unpkg.com/knip@latest/schema.json",
   "entry": ["src/main.ts", "src/scripts/*.ts", "test/**/*.ts"],
   "project": ["src/**/*.ts", "test/**/*.ts"],
-  "ignoreDependencies": [],
+  "ignoreDependencies": ["cron"],
   "ignoreExportsUsedInFile": true
 }
