@@ -1,4 +1,4 @@
-import type { Listing } from './dto/listing.dto';
+import type { Listing } from '../dto/listing.dto';
 import {
   buildCaption,
   buildSummary,
@@ -6,7 +6,7 @@ import {
   formatDeadline,
   getListingEmoji,
   shortenCommunications,
-} from './listing-format';
+} from '../listing-format';
 
 const baseListing: Listing = {
   link: 'https://gcn.by/lot/123',
