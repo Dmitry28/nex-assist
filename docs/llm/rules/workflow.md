@@ -18,6 +18,12 @@ One loop for all tasks. Plan depth scales with task complexity — a simple fix 
 - After opening a PR — always open it in the browser: `open <pr_url>`
 - Reflect on what was learned during implementation — if new findings affect the solution, address them before moving on
 
+## Git workflow
+
+- Branch off `dev`, PR to `dev` — never directly to `main`
+- Merge with `gh pr merge --merge` (squash is disabled)
+- `main` is for releases and GitHub Actions only
+
 ## 3. Verify
 
 - Confirm the plan step is fully realized (nothing skipped)
