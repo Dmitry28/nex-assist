@@ -35,3 +35,12 @@ export const SOLD_LOOKUP_RETENTION_DAYS = 14;
 
 /** Max wall-clock time for a full scrape cycle — watchdog resets isRunning if exceeded (10 min). */
 export const RUN_TIMEOUT_MS = 10 * 60 * 1000;
+
+/**
+ * Retry attempts when Cloudflare challenge is detected (not counting the initial try).
+ * Each retry waits CLOUDFLARE_RETRY_DELAY_MS before re-launching the browser.
+ */
+export const CLOUDFLARE_RETRY_ATTEMPTS = 2;
+
+/** Delay between Cloudflare retries (ms). 30s gives CF time to settle. */
+export const CLOUDFLARE_RETRY_DELAY_MS = 30_000;
