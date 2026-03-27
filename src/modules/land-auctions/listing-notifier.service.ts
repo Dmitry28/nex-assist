@@ -38,7 +38,14 @@ export class ListingNotifierService {
       this.logger.warn('chatId not set — skipping Telegram notification');
       return;
     }
-    const { total, newListings, removedListings, specialListings, newSpecialListings } = result;
+    const {
+      total,
+      newListings,
+      removedListings,
+      soldListings,
+      specialListings,
+      newSpecialListings,
+    } = result;
 
     const ok = await this.telegram.sendMessage(
       this.chatId,
@@ -57,6 +64,7 @@ export class ListingNotifierService {
     if (newListings.length) await this.sendListings(newListings, NOTIFICATION_HEADERS.new);
     if (removedListings.length)
       await this.sendListings(removedListings, NOTIFICATION_HEADERS.removed);
+    if (soldListings.length) await this.sendListings(soldListings, NOTIFICATION_HEADERS.sold);
     if (newSpecialListings.length)
       await this.sendListings(newSpecialListings, NOTIFICATION_HEADERS.newSpecial);
   }

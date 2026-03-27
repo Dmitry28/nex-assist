@@ -112,4 +112,16 @@ describe('buildCaption', () => {
     expect(c).not.toContain('🗓');
     expect(c).not.toContain('⚡');
   });
+
+  it('shows sale price when present', () => {
+    const listing: Listing = { ...baseListing, price: '19 370 руб.', salePrice: '42 тыс. руб.' };
+    const c = buildCaption({ listing, header: 'H', index: 1, total: 1 });
+    expect(c).toContain('✅ Продано: 42 тыс. руб.');
+  });
+
+  it('does not show sale price when absent', () => {
+    const listing: Listing = { ...baseListing, price: '19 370 руб.' };
+    const c = buildCaption({ listing, header: 'H', index: 1, total: 1 });
+    expect(c).not.toContain('Продано');
+  });
 });

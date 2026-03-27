@@ -1,7 +1,55 @@
 import { Injectable, Logger } from '@nestjs/common';
 import puppeteer, { type Browser, type Page } from 'puppeteer';
 import type { Listing, ListingDetails } from './dto/listing.dto';
-import { CONCURRENCY, PAGE_TIMEOUT_MS } from './constants';
+import { ARCHIVE_MAX_PAGES, ARCHIVE_URL, CONCURRENCY, PAGE_TIMEOUT_MS } from './constants';
+
+const MONTH_MAP: Record<string, string> = {
+  января: '01',
+  февраля: '02',
+  марта: '03',
+  апреля: '04',
+  мая: '05',
+  июня: '06',
+  июля: '07',
+  августа: '08',
+  сентября: '09',
+  октября: '10',
+  ноября: '11',
+  декабря: '12',
+};
+
+/**
+ * Extracts a date in "ДД.ММ.ГГГГ" format from an auction date string for archive matching.
+ * Supports two formats found in real data:
+ *   - "Аукцион состоится 24.03.2026" → "24.03.2026"
+ *   - "Аукцион состоится 24 марта 2026 в 12:00" → "24.03.2026"
+ * Returns undefined if no recognisable date is found.
+ */
+function parseDateFromAuctionDate(auctionDate: string | undefined): string | undefined {
+  if (!auctionDate) return undefined;
+
+  // Numeric format — most common in real data (e.g. "Аукцион состоится 24.03.2026")
+  const numeric = auctionDate.match(/(\d{2}\.\d{2}\.\d{4})/);
+  if (numeric) return numeric[1];
+
+  // Russian month-name format (e.g. "24 марта 2026")
+  const m = auctionDate.match(
+    /(\d{1,2})\s+(января|февраля|марта|апреля|мая|июня|июля|августа|сентября|октября|ноября|декабря)\s+(\d{4})/,
+  );
+  if (!m) return undefined;
+  return `${m[1].padStart(2, '0')}.${MONTH_MAP[m[2]]}.${m[3]}`;
+}
+
+/**
+ * Strips "руб." and whitespace so "19 370,61 руб." and "19 370,61" both become "19370,61".
+ * Used to compare the stored listing price against the archive initial price.
+ */
+function normalizePrice(price: string): string {
+  return price
+    .replace(/руб\.?/gi, '')
+    .replace(/\s/g, '')
+    .trim();
+}
 
 /**
  * Scrapes gcn.by land auction listings using Puppeteer.
@@ -78,6 +126,144 @@ export class GcnParserService {
         }
       }),
     );
+  }
+
+  /**
+   * Search the gcn.by archive for sale prices of the given listings.
+   * Matches by auction date and normalized initial price.
+   * Returns a Map of listing.link → salePrice string.
+   * Returns an empty Map (and logs a warning) if the archive is unreachable.
+   */
+  async findSalePrices(listings: Listing[]): Promise<Map<string, string>> {
+    const result = new Map<string, string>();
+    if (listings.length === 0) return result;
+
+    // Group listings by their formatted auction date ("ДД.ММ.ГГГГ")
+    const byDate = new Map<string, Listing[]>();
+    for (const listing of listings) {
+      const date = parseDateFromAuctionDate(listing.auctionDate);
+      if (!date) continue;
+      if (!byDate.has(date)) byDate.set(date, []);
+      (byDate.get(date) ?? []).push(listing);
+    }
+    if (byDate.size === 0) return result;
+
+    const targetDates = new Set(byDate.keys());
+
+    const browser: Browser = await puppeteer.launch({
+      headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    });
+
+    try {
+      // Step 1: scan archive list pages to collect candidate detail URLs
+      const candidates: { url: string; date: string }[] = [];
+      const listPage: Page = await browser.newPage();
+      try {
+        for (let pageNum = 1; pageNum <= ARCHIVE_MAX_PAGES; pageNum++) {
+          const archiveUrl = pageNum === 1 ? ARCHIVE_URL : `${ARCHIVE_URL}page/${pageNum}/`;
+          try {
+            await listPage.goto(archiveUrl, {
+              waitUntil: 'networkidle2',
+              timeout: PAGE_TIMEOUT_MS,
+            });
+          } catch {
+            this.logger.warn(`Archive page ${pageNum} failed to load`);
+            break;
+          }
+
+          const items = await listPage.evaluate(() =>
+            Array.from(document.querySelectorAll('.auction')).map(el => {
+              // Second <a> has the title text; first <a> wraps the thumbnail image
+              const anchor = Array.from(el.querySelectorAll<HTMLAnchorElement>('a')).find(
+                a => !!a.textContent?.trim(),
+              );
+              const dateText = el.querySelector('.begin_date')?.textContent ?? '';
+              const dateMatch = dateText.match(/(\d{2}\.\d{2}\.\d{4})/);
+              return {
+                title: anchor?.textContent?.trim() ?? '',
+                url: anchor?.href ?? '',
+                date: dateMatch?.[1] ?? '',
+              };
+            }),
+          );
+
+          for (const item of items) {
+            if (!item.url || !item.date) continue;
+            if (!targetDates.has(item.date)) continue;
+            // Only land-plot ownership auctions (not lease)
+            const titleLower = item.title.toLowerCase();
+            if (!titleLower.includes('земельного участка')) continue;
+            if (titleLower.includes('аренд')) continue;
+            candidates.push({ url: item.url, date: item.date });
+          }
+        }
+      } finally {
+        await listPage.close();
+      }
+
+      if (candidates.length === 0) return result;
+
+      // Step 2: fetch detail pages concurrently and match by initial price
+      const queue = [...candidates];
+      const poolSize = Math.min(CONCURRENCY, queue.length);
+      const detailPages: Page[] = await Promise.all(
+        Array.from({ length: poolSize }, () => browser.newPage()),
+      );
+
+      await Promise.all(
+        detailPages.map(async page => {
+          try {
+            while (queue.length > 0) {
+              const candidate = queue.shift();
+              if (!candidate) break;
+
+              try {
+                await page.goto(candidate.url, {
+                  waitUntil: 'networkidle2',
+                  timeout: PAGE_TIMEOUT_MS,
+                });
+              } catch {
+                this.logger.warn(`Archive detail page failed to load: ${candidate.url}`);
+                continue;
+              }
+
+              const { initialPrice, salePrice } = await page.evaluate(() => {
+                const text = document.body.innerText;
+                const initMatch = text.match(/начальная цена:?\s*([\d\s,.]+)\s*руб\./i);
+                const saleMatch = text.match(/Цена продажи\s*(.+?)(?:\r?\n|$)/);
+                return {
+                  initialPrice: initMatch?.[1]?.trim() ?? '',
+                  salePrice: saleMatch?.[1]?.trim() ?? '',
+                };
+              });
+
+              if (!initialPrice || !salePrice) continue;
+
+              const normalizedArchive = normalizePrice(initialPrice);
+              const dateListings = byDate.get(candidate.date) ?? [];
+
+              for (const listing of dateListings) {
+                if (!listing.link || result.has(listing.link)) continue;
+                if (!listing.price) continue;
+                if (normalizePrice(listing.price) === normalizedArchive) {
+                  result.set(listing.link, salePrice);
+                }
+              }
+            }
+          } finally {
+            await page.close();
+          }
+        }),
+      );
+    } catch (error) {
+      this.logger.warn('Archive price search failed', error);
+    } finally {
+      await browser.close();
+    }
+
+    this.logger.log(`Archive search complete — found ${result.size} sale prices`);
+    return result;
   }
 
   /** Fetch detail fields from a single listing page. Returns empty defaults on failure. */
