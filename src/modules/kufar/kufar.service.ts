@@ -10,6 +10,7 @@ import { SchedulerRegistry } from '@nestjs/schedule';
 import { SnapshotService } from '../../common/snapshot.service';
 import { sleep } from '../../common/utils/sleep';
 import type { KufarFeedConfig } from '../../config/kufar.config';
+import { isKufarSnapshotEntry } from './dto/kufar-listing.dto';
 import type {
   KufarFeedResult,
   KufarListing,
@@ -31,17 +32,6 @@ export const effectivePrice = (p: number | undefined): number | undefined =>
 export const hasPriceChanged = (prev: KufarSnapshotEntry, current: KufarListing): boolean =>
   effectivePrice(prev.priceByn) !== effectivePrice(current.priceByn) &&
   effectivePrice(prev.priceUsd) !== effectivePrice(current.priceUsd);
-
-const isKufarSnapshotEntry = (item: unknown): item is KufarSnapshotEntry => {
-  if (typeof item !== 'object' || item === null) return false;
-  const e = item as Record<string, unknown>;
-  return (
-    typeof e.adId === 'number' &&
-    typeof e.listTime === 'string' &&
-    typeof e.firstSeenAt === 'string' &&
-    typeof e.lastSeenAt === 'string'
-  );
-};
 
 /** Internal data kept per feed during a scrape cycle — not exposed to callers. */
 interface KufarFeedScrapeData {

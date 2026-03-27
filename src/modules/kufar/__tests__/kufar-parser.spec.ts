@@ -1,4 +1,4 @@
-import { mapListing, toNum, toStr, getParam, type RawAd } from './kufar-parser.service';
+import { mapListing, toNum, toStr, getParam, type RawAd } from '../kufar-parser.service';
 
 const baseAd: RawAd = {
   ad_id: 42,
