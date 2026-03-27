@@ -19,12 +19,20 @@ const MONTH_MAP: Record<string, string> = {
 };
 
 /**
- * Converts a Russian auction date string like "Аукцион состоится 24 марта 2026 в 12:00"
- * to "24.03.2026" for matching against the archive page date format.
- * Returns undefined if no date is found.
+ * Extracts a date in "ДД.ММ.ГГГГ" format from an auction date string for archive matching.
+ * Supports two formats found in real data:
+ *   - "Аукцион состоится 24.03.2026" → "24.03.2026"
+ *   - "Аукцион состоится 24 марта 2026 в 12:00" → "24.03.2026"
+ * Returns undefined if no recognisable date is found.
  */
 function parseDateFromAuctionDate(auctionDate: string | undefined): string | undefined {
   if (!auctionDate) return undefined;
+
+  // Numeric format — most common in real data (e.g. "Аукцион состоится 24.03.2026")
+  const numeric = auctionDate.match(/(\d{2}\.\d{2}\.\d{4})/);
+  if (numeric) return numeric[1];
+
+  // Russian month-name format (e.g. "24 марта 2026")
   const m = auctionDate.match(
     /(\d{1,2})\s+(января|февраля|марта|апреля|мая|июня|июля|августа|сентября|октября|ноября|декабря)\s+(\d{4})/,
   );
@@ -166,9 +174,12 @@ export class GcnParserService {
 
           const items = await listPage.evaluate(() =>
             Array.from(document.querySelectorAll('.auction')).map(el => {
-              const anchor = el.querySelector<HTMLAnchorElement>('.title a');
-              const text = el.textContent ?? '';
-              const dateMatch = text.match(/Дата проведения:\s*(\d{2}\.\d{2}\.\d{4})/);
+              // Second <a> has the title text; first <a> wraps the thumbnail image
+              const anchor = Array.from(el.querySelectorAll<HTMLAnchorElement>('a')).find(
+                a => !!a.textContent?.trim(),
+              );
+              const dateText = el.querySelector('.begin_date')?.textContent ?? '';
+              const dateMatch = dateText.match(/(\d{2}\.\d{2}\.\d{4})/);
               return {
                 title: anchor?.textContent?.trim() ?? '',
                 url: anchor?.href ?? '',
@@ -219,7 +230,7 @@ export class GcnParserService {
 
               const { initialPrice, salePrice } = await page.evaluate(() => {
                 const text = document.body.innerText;
-                const initMatch = text.match(/Начальная цена:?\s*([\d\s,.]+)\s*руб\./);
+                const initMatch = text.match(/начальная цена:?\s*([\d\s,.]+)\s*руб\./i);
                 const saleMatch = text.match(/Цена продажи\s*(.+?)(?:\r?\n|$)/);
                 return {
                   initialPrice: initMatch?.[1]?.trim() ?? '',
