@@ -124,12 +124,24 @@ function parseLotsFromText(text: string, sourceUrl: string, type: LotType, month
     address = introMatch?.[0]?.trim();
   }
 
-  return [{ address: address ?? 'Не найден', salePriceRaw: raw, price: parsePrice(raw), type, month, sourceUrl }];
+  return [
+    {
+      address: address ?? 'Не найден',
+      salePriceRaw: raw,
+      price: parsePrice(raw),
+      type,
+      month,
+      sourceUrl,
+    },
+  ];
 }
 
 async function scrapeArchive(): Promise<Lot[]> {
   console.log('Launching browser...');
-  const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+  });
   const archiveUrls: { url: string; type: LotType; month: string }[] = [];
 
   try {
@@ -147,7 +159,9 @@ async function scrapeArchive(): Promise<Lot[]> {
 
       const items = await listPage.evaluate(() =>
         Array.from(document.querySelectorAll('.auction')).map(el => {
-          const anchor = Array.from(el.querySelectorAll<HTMLAnchorElement>('a')).find(a => !!a.textContent?.trim());
+          const anchor = Array.from(el.querySelectorAll<HTMLAnchorElement>('a')).find(
+            a => !!a.textContent?.trim(),
+          );
           return { title: anchor?.textContent?.trim() ?? '', url: anchor?.href ?? '' };
         }),
       );
@@ -157,7 +171,12 @@ async function scrapeArchive(): Promise<Lot[]> {
       for (const item of items) {
         if (!item.url) continue;
         const t = item.title.toLowerCase();
-        if ((!t.includes('земельного участка') && !t.includes('незавершён')) || t.includes('аренд') || t.includes('нежилог')) continue;
+        if (
+          (!t.includes('земельного участка') && !t.includes('незавершён')) ||
+          t.includes('аренд') ||
+          t.includes('нежилог')
+        )
+          continue;
         const slug = item.url.split('/').filter(Boolean).at(-1) ?? '';
         archiveUrls.push({ url: item.url, type: detectType(slug), month: parseMonth(item.url) });
         if (archiveUrls.length >= TARGET_PAGES) break;
@@ -245,11 +264,11 @@ function buildStats(lots: Lot[]): string {
 
   // Price buckets
   const buckets = [
-    { label: 'до 30 тыс.',    min: 0,   max: 30  },
-    { label: '30–60 тыс.',    min: 30,  max: 60  },
-    { label: '60–100 тыс.',   min: 60,  max: 100 },
-    { label: '100–150 тыс.',  min: 100, max: 150 },
-    { label: 'от 150 тыс.',   min: 150, max: Infinity },
+    { label: 'до 30 тыс.', min: 0, max: 30 },
+    { label: '30–60 тыс.', min: 30, max: 60 },
+    { label: '60–100 тыс.', min: 60, max: 100 },
+    { label: '100–150 тыс.', min: 100, max: 150 },
+    { label: 'от 150 тыс.', min: 150, max: Infinity },
   ];
 
   const lines: string[] = [];
@@ -267,9 +286,13 @@ function buildStats(lots: Lot[]): string {
   // By type
   lines.push(`<b>🏷 По типу объекта</b>`);
   if (plotPrices.length > 0)
-    lines.push(`Участок (${plotPrices.length}): avg <b>${fmt(avg(plotPrices))}</b> тыс., медиана <b>${fmt(median(plotPrices))}</b> тыс.`);
+    lines.push(
+      `Участок (${plotPrices.length}): avg <b>${fmt(avg(plotPrices))}</b> тыс., медиана <b>${fmt(median(plotPrices))}</b> тыс.`,
+    );
   if (housePrices.length > 0)
-    lines.push(`Дом+участок (${housePrices.length}): avg <b>${fmt(avg(housePrices))}</b> тыс., медиана <b>${fmt(median(housePrices))}</b> тыс.`);
+    lines.push(
+      `Дом+участок (${housePrices.length}): avg <b>${fmt(avg(housePrices))}</b> тыс., медиана <b>${fmt(median(housePrices))}</b> тыс.`,
+    );
   lines.push('');
 
   // Monthly trend
@@ -286,7 +309,7 @@ function buildStats(lots: Lot[]): string {
   for (const b of buckets) {
     const count = prices.filter(p => p >= b.min && p < b.max).length;
     if (count === 0) continue;
-    const bar = '█'.repeat(Math.round(count / withPrice.length * 10));
+    const bar = '█'.repeat(Math.round((count / withPrice.length) * 10));
     lines.push(`${b.label}: ${bar} ${count}`);
   }
   lines.push('');
@@ -313,9 +336,11 @@ function buildStats(lots: Lot[]): string {
 async function run(): Promise<void> {
   const env = loadEnv();
   const token = process.env.TELEGRAM_TOKEN ?? env['TELEGRAM_TOKEN'] ?? '';
-  const chatId = process.env.TELEGRAM_LAND_AUCTIONS_CHAT_ID ?? env['TELEGRAM_LAND_AUCTIONS_CHAT_ID'] ?? '';
+  const chatId =
+    process.env.TELEGRAM_LAND_AUCTIONS_CHAT_ID ?? env['TELEGRAM_LAND_AUCTIONS_CHAT_ID'] ?? '';
 
-  if (SEND && (!token || !chatId)) throw new Error('TELEGRAM_TOKEN or TELEGRAM_LAND_AUCTIONS_CHAT_ID not set');
+  if (SEND && (!token || !chatId))
+    throw new Error('TELEGRAM_TOKEN or TELEGRAM_LAND_AUCTIONS_CHAT_ID not set');
 
   console.log(`Mode: ${SEND ? 'SEND to Telegram' : 'DRY RUN (pass --send to actually send)'}\n`);
 
