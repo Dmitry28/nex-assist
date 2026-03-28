@@ -137,7 +137,7 @@ function parseLotsFromText(text: string, sourceUrl: string, type: LotType, month
 }
 
 async function scrapeArchive(): Promise<Lot[]> {
-  console.log('Launching browser...');
+  console.info('Launching browser...');
   const browser = await puppeteer.launch({
     headless: true,
     args: ['--no-sandbox', '--disable-setuid-sandbox'],
@@ -150,7 +150,7 @@ async function scrapeArchive(): Promise<Lot[]> {
 
     while (archiveUrls.length < TARGET_PAGES) {
       const url = pageNum === 1 ? ARCHIVE_URL : `${ARCHIVE_URL}page/${pageNum}/`;
-      console.log(`  Archive page ${pageNum}...`);
+      console.info(`  Archive page ${pageNum}...`);
       try {
         await listPage.goto(url, { waitUntil: 'networkidle2', timeout: TIMEOUT_MS });
       } catch {
@@ -185,7 +185,7 @@ async function scrapeArchive(): Promise<Lot[]> {
     }
     await listPage.close();
 
-    console.log(`  Fetching details for ${archiveUrls.length} pages...`);
+    console.info(`  Fetching details for ${archiveUrls.length} pages...`);
     const lots: Lot[] = [];
     const queue = [...archiveUrls];
     const poolSize = Math.min(CONCURRENCY, archiveUrls.length);
@@ -212,7 +212,7 @@ async function scrapeArchive(): Promise<Lot[]> {
       }),
     );
 
-    console.log('');
+    console.info('');
     return lots;
   } finally {
     await browser.close();
@@ -342,24 +342,24 @@ async function run(): Promise<void> {
   if (SEND && (!token || !chatId))
     throw new Error('TELEGRAM_TOKEN or TELEGRAM_LAND_AUCTIONS_CHAT_ID not set');
 
-  console.log(`Mode: ${SEND ? 'SEND to Telegram' : 'DRY RUN (pass --send to actually send)'}\n`);
+  console.info(`Mode: ${SEND ? 'SEND to Telegram' : 'DRY RUN (pass --send to actually send)'}\n`);
 
   const lots = await scrapeArchive();
   const report = lots.slice(0, TARGET_PAGES);
   const statsText = buildStats(report);
 
-  console.log('\n' + '='.repeat(60));
-  console.log(statsText.replace(/<[^>]+>/g, ''));
-  console.log('='.repeat(60));
+  console.info('\n' + '='.repeat(60));
+  console.info(statsText.replace(/<[^>]+>/g, ''));
+  console.info('='.repeat(60));
 
   if (!SEND) {
-    console.log('\nDRY RUN complete. Run with --send to post to Telegram.');
+    console.info('\nDRY RUN complete. Run with --send to post to Telegram.');
     return;
   }
 
-  console.log('\nSending to Telegram...');
+  console.info('\nSending to Telegram...');
   await telegramSend(token, chatId, statsText);
-  console.log('Done.');
+  console.info('Done.');
 }
 
 run().catch(err => {

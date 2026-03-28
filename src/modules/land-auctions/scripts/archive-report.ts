@@ -120,9 +120,9 @@ async function run(): Promise<void> {
     throw new Error('TELEGRAM_TOKEN or TELEGRAM_LAND_AUCTIONS_CHAT_ID not set');
   }
 
-  console.log(`Mode: ${SEND ? 'SEND to Telegram' : 'DRY RUN (pass --send to actually send)'}\n`);
+  console.info(`Mode: ${SEND ? 'SEND to Telegram' : 'DRY RUN (pass --send to actually send)'}\n`);
 
-  console.log('Launching browser...');
+  console.info('Launching browser...');
   const browser = await puppeteer.launch({
     headless: true,
     args: ['--no-sandbox', '--disable-setuid-sandbox'],
@@ -137,7 +137,7 @@ async function run(): Promise<void> {
 
     while (archiveUrls.length < TARGET_COUNT) {
       const url = pageNum === 1 ? ARCHIVE_URL : `${ARCHIVE_URL}page/${pageNum}/`;
-      console.log(`Scanning archive page ${pageNum}...`);
+      console.info(`Scanning archive page ${pageNum}...`);
 
       try {
         await listPage.goto(url, { waitUntil: 'networkidle2', timeout: TIMEOUT_MS });
@@ -178,7 +178,7 @@ async function run(): Promise<void> {
     }
 
     await listPage.close();
-    console.log(`Fetching details for ${archiveUrls.length} archive pages...\n`);
+    console.info(`Fetching details for ${archiveUrls.length} archive pages...\n`);
 
     // --- Fetch details with concurrency pool ---
     const allLots: SoldLot[] = [];
@@ -206,7 +206,7 @@ async function run(): Promise<void> {
           const lots = parseLotsFromText(text, entry.url);
           mutex.push(...lots);
           fetched++;
-          console.log(
+          console.info(
             `[${fetched}/${archiveUrls.length}] ${entry.url.split('/').at(-2) ?? ''} → ${lots.length} lot(s)`,
           );
         }
@@ -218,18 +218,18 @@ async function run(): Promise<void> {
     const report = allLots.slice(0, TARGET_COUNT);
 
     // --- Print report to console for review ---
-    console.log(`\n${'='.repeat(60)}`);
-    console.log(`REPORT: ${report.length} sold lots`);
-    console.log('='.repeat(60));
+    console.info(`\n${'='.repeat(60)}`);
+    console.info(`REPORT: ${report.length} sold lots`);
+    console.info('='.repeat(60));
     report.forEach((lot, i) => {
-      console.log(`\n${i + 1}. ${lot.address}`);
-      console.log(`   Цена продажи: ${lot.salePrice}`);
-      console.log(`   ${lot.sourceUrl}`);
+      console.info(`\n${i + 1}. ${lot.address}`);
+      console.info(`   Цена продажи: ${lot.salePrice}`);
+      console.info(`   ${lot.sourceUrl}`);
     });
-    console.log('\n' + '='.repeat(60));
+    console.info('\n' + '='.repeat(60));
 
     if (!SEND) {
-      console.log('\nDRY RUN complete. Run with --send to post to Telegram.');
+      console.info('\nDRY RUN complete. Run with --send to post to Telegram.');
       return;
     }
 
@@ -253,12 +253,12 @@ async function run(): Promise<void> {
       chunks.push(header + lines.slice(i, i + chunkSize).join('\n\n'));
     }
 
-    console.log(`\nSending ${chunks.length} message(s) to Telegram...`);
+    console.info(`\nSending ${chunks.length} message(s) to Telegram...`);
     for (const chunk of chunks) {
       await telegramSend(token, chatId, chunk);
       await new Promise(r => setTimeout(r, 500));
     }
-    console.log('Done.');
+    console.info('Done.');
   } finally {
     await browser.close();
   }
