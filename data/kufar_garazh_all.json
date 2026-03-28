@@ -525,6 +525,102 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f900e455-e2c0-40a6-af00-39cd658f318d.jpg"
     ],
     "firstSeenAt": "2026-03-27T08:26:24.804Z",
-    "lastSeenAt": "2026-03-27T08:26:24.804Z"
+    "lastSeenAt": "2026-03-28T08:26:26.223Z"
+  },
+  {
+    "adId": 1025550031,
+    "link": "https://re.kufar.by/vi/1025550031",
+    "title": " Продам гараж. ",
+    "description": "Продам гараж на Гая, размеры 3.20х5.60,высота 2.75,подвал под всем гаражом, разделён на 2 комнаты. ",
+    "priceByn": 28169,
+    "priceUsd": 9500,
+    "address": "Гая ул, 2Бк348блок3, Гродно, Гродненская область",
+    "area": 18,
+    "seller": "Андрей",
+    "listTime": "2026-03-28T05:26:01Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/74b2cff4-12f2-4c73-a1cd-418ea61fdfda.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/04aeb407-d767-48ee-8e42-e08e1d3d233a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c83bb699-c9ce-4167-b151-bb8e82bdaa35.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/344184e5-3042-49de-86d0-6f66bdaa8f65.jpg"
+    ],
+    "firstSeenAt": "2026-03-28T08:26:26.223Z",
+    "lastSeenAt": "2026-03-28T08:26:26.223Z"
+  },
+  {
+    "adId": 1062275663,
+    "link": "https://re.kufar.by/vi/1062275663",
+    "title": "Продажа",
+    "description": "Гараж в центре Гродно продается.\nОколо электротехнического коледжа им.Счастного\nРядом новый микрорайон Островского \n\nХорошее место -не крайний.\nПод вс",
+    "priceByn": 29355,
+    "priceUsd": 9900,
+    "address": "Дзержинского ул, 41Ак214блок2, Гродно, Гродненская область",
+    "area": 17.3,
+    "seller": "Борис",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма",
+      "Подвал",
+      "Наземная",
+      "Отсутствует"
+    ],
+    "listTime": "2026-03-27T16:19:03Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3a9adca6-4e3a-4376-925a-4931580bc875.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b0e8c416-a3fb-41f3-b45b-7a65d277144d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/75259544-b8a4-4eab-a09e-f4aa48e1992f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b1dfd811-e2c1-4e4a-9eb0-763033435b19.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fe5fc442-a096-443b-982b-d488a9d55e86.jpg"
+    ],
+    "firstSeenAt": "2026-03-28T08:26:26.223Z",
+    "lastSeenAt": "2026-03-28T08:26:26.223Z"
+  },
+  {
+    "adId": 1058573350,
+    "link": "https://re.kufar.by/vi/1058573350",
+    "title": "Гараж",
+    "description": "Гараж 17.9 м.кв, 220В, яма, подвал, новая кровля.",
+    "priceByn": 20460,
+    "priceUsd": 6900,
+    "address": "Скосная ул, 20А, Гродно, Гродненская область",
+    "area": 17.9,
+    "seller": "Игорь",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В"
+    ],
+    "listTime": "2026-03-27T13:20:53Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a6c66f55-138b-4f1b-bddd-ebcf98650eda.jpg"
+    ],
+    "firstSeenAt": "2026-03-28T08:26:26.223Z",
+    "lastSeenAt": "2026-03-28T08:26:26.223Z"
+  },
+  {
+    "adId": 1062236887,
+    "link": "https://re.kufar.by/vi/1062236887",
+    "title": "Гараж район Понемунь",
+    "description": "Продается кирпичный гараж в гаражном кооперативе \"Понемунь-3\" общей площадь 18м², с ямой под всем гаражом. Гараж обустроен, подвальное помещение (высо",
+    "priceByn": 21942,
+    "priceUsd": 7400,
+    "address": "микрорайон Понемунь, Гродно, Гродненская область",
+    "area": 18,
+    "seller": "Ольга",
+    "propertyType": "Гараж",
+    "listTime": "2026-03-27T10:44:16Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1c5fdc9b-32ab-4ff8-b2d5-d65f9c7256a2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a84cece7-4382-4e07-af56-498fc7cbc8a5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8a826970-b14d-4df3-bf41-4ce56d5564c6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ffbf4034-4472-4ac8-9970-e5d44674aca4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5aab531f-a65d-4479-9e85-225183a2523b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e8302db1-c23e-4555-9ed0-5a3894db5c86.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c0309960-252c-467e-a524-b2c33b28d46f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/95ee3353-c754-4a5b-8cdc-949ce46828a1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7ed5d09b-006b-4699-abd1-72004c012107.jpg"
+    ],
+    "firstSeenAt": "2026-03-28T08:26:26.223Z",
+    "lastSeenAt": "2026-03-28T08:26:26.223Z"
   }
 ]
