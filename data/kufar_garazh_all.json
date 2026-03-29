@@ -264,7 +264,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/344184e5-3042-49de-86d0-6f66bdaa8f65.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.799Z",
-    "lastSeenAt": "2026-03-28T10:34:02.799Z"
+    "lastSeenAt": "2026-03-29T19:58:43.074Z"
   },
   {
     "adId": 1062275663,
@@ -341,5 +341,78 @@
     ],
     "firstSeenAt": "2026-03-28T10:34:02.799Z",
     "lastSeenAt": "2026-03-28T10:34:02.799Z"
+  },
+  {
+    "adId": 1062555903,
+    "link": "https://re.kufar.by/vi/1062555903",
+    "title": "Гараж",
+    "description": "Типовой кирпичный гараж, 3 х 6 м, кровля отлично перекрыта гидроизолом. Под всем гаражом погреб (отлично всё хранится), имеется смотровая яма. Электри",
+    "priceByn": 10378,
+    "priceUsd": 3500,
+    "address": "Меречская Застава ул, Гродно, Гродненская область",
+    "area": 17,
+    "seller": "Николай",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма"
+    ],
+    "listTime": "2026-03-29T14:21:51Z",
+    "images": [],
+    "firstSeenAt": "2026-03-29T19:58:43.074Z",
+    "lastSeenAt": "2026-03-29T19:58:43.074Z"
+  },
+  {
+    "adId": 1062540519,
+    "link": "https://re.kufar.by/vi/1062540519",
+    "title": "Гараж",
+    "description": "Оштукатурен покрашен подвал на всю площадь.",
+    "priceByn": 29652,
+    "priceUsd": 10000,
+    "address": "Звёздная ул, 47к248блок2, Гродно, Гродненская область",
+    "area": 16.1,
+    "seller": "александр",
+    "propertyType": "Гараж",
+    "features": [
+      "Наземная",
+      "Отсутствует"
+    ],
+    "listTime": "2026-03-29T12:58:06Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/08c73713-6a68-402e-86c6-1b3a4b9bb92f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ef3fd4c6-6471-4ebb-b73e-ce43c7aa89a1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/dd8a3b28-0fa1-4376-a112-35a5247de2fc.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9679a7c3-f6b2-41ca-b959-028b1c047d4a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9fd6ebf5-977f-4522-889b-d2789df35c22.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/38c6ef6c-3669-456a-b690-422a2d74a7ed.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2350b9bc-6365-44c9-bb68-1a0b62224950.jpg"
+    ],
+    "firstSeenAt": "2026-03-29T19:58:43.074Z",
+    "lastSeenAt": "2026-03-29T19:58:43.074Z"
+  },
+  {
+    "adId": 1062512737,
+    "link": "https://re.kufar.by/vi/1062512737",
+    "title": "Гараж",
+    "description": "Гараж все вопросы по телефону",
+    "priceByn": 15500,
+    "priceUsd": 5227,
+    "address": "Венечная ул, 2Ак1823блок18, Гродно, Гродненская область",
+    "area": 16.8,
+    "seller": "Александр",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма",
+      "Подвал",
+      "Наземная",
+      "Отсутствует"
+    ],
+    "listTime": "2026-03-29T09:07:44Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/94d0c511-0799-4ec7-8252-402316fccde9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b508b611-685b-43a8-a0bf-b86e5d1f7357.jpg"
+    ],
+    "firstSeenAt": "2026-03-29T19:58:43.074Z",
+    "lastSeenAt": "2026-03-29T19:58:43.074Z"
   }
 ]
