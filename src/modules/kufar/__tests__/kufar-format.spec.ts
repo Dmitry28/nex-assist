@@ -1,11 +1,11 @@
-import type { KufarFeedResult, KufarListing } from './dto/kufar-listing.dto';
+import type { KufarFeedResult, KufarListing } from '../dto/kufar-listing.dto';
 import {
   buildListingCaption,
   buildPriceChangeCaption,
   buildSummary,
   formatPrice,
   hasValue,
-} from './kufar-format';
+} from '../kufar-format';
 
 const baseListing: KufarListing = {
   adId: 123,

@@ -3,6 +3,7 @@ import { ConfigService } from '@nestjs/config';
 import TelegramBot from 'node-telegram-bot-api';
 import { sleep } from '../../common/utils/sleep';
 import { MAX_SEND_ATTEMPTS, SEND_INTERVAL_MS } from './constants';
+import { extractRetryAfter } from './telegram.utils';
 
 /**
  * Generic Telegram bot wrapper.
@@ -105,33 +106,3 @@ export class TelegramService implements OnModuleInit {
     return true;
   }
 }
-
-// ─── Helpers ─────────────────────────────────────────────────────────────────
-
-interface TelegramRateLimitError {
-  response: { body: { parameters: { retry_after: number } } };
-}
-
-/** Type guard for Telegram 429 rate-limit error shape. */
-function isTelegramRateLimitError(error: unknown): error is TelegramRateLimitError {
-  if (typeof error !== 'object' || error === null) return false;
-  if (!('response' in error)) return false;
-  const { response } = error as { response: unknown };
-  if (typeof response !== 'object' || response === null) return false;
-  if (!('body' in response)) return false;
-  const { body } = response as { body: unknown };
-  if (typeof body !== 'object' || body === null) return false;
-  if (!('parameters' in body)) return false;
-  const { parameters } = body as { parameters: unknown };
-  if (typeof parameters !== 'object' || parameters === null) return false;
-  return (
-    'retry_after' in parameters &&
-    typeof (parameters as { retry_after: unknown }).retry_after === 'number'
-  );
-}
-
-/** Extract retry_after seconds from a Telegram 429 error, or null. */
-const extractRetryAfter = (error: unknown): number | null => {
-  if (!isTelegramRateLimitError(error)) return null;
-  return error.response.body.parameters.retry_after;
-};

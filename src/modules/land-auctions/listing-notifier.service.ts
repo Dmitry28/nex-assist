@@ -54,6 +54,7 @@ export class ListingNotifierService {
         total,
         newCount: newListings.length,
         removedCount: removedListings.length,
+        soldCount: soldListings.length,
         specialCount: specialListings.length,
         newSpecialCount: newSpecialListings.length,
       }),
