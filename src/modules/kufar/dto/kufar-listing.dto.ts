@@ -63,3 +63,15 @@ export interface KufarSnapshotEntry extends KufarListing {
   /** UTC ISO timestamp of the most recent appearance in our scrapes. */
   lastSeenAt: string;
 }
+
+/** Type guard for KufarSnapshotEntry — used when reading snapshot files from disk. */
+export const isKufarSnapshotEntry = (item: unknown): item is KufarSnapshotEntry => {
+  if (typeof item !== 'object' || item === null) return false;
+  const e = item as Record<string, unknown>;
+  return (
+    typeof e.adId === 'number' &&
+    typeof e.listTime === 'string' &&
+    typeof e.firstSeenAt === 'string' &&
+    typeof e.lastSeenAt === 'string'
+  );
+};

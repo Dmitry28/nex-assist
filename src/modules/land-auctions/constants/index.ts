@@ -35,6 +35,9 @@ export const DATA_FILES = {
 /** Keyword to detect special listings (Заболоть area). */
 export const SPECIAL_KEYWORD = 'заболо';
 
+/** Human-readable label for the special area — used in Telegram summary and notifications. */
+export const SPECIAL_AREA_LABEL = 'Заболоть';
+
 /** Max length for auction date strings — longer values are replaced with a fallback. */
 export const MAX_AUCTION_DATE_LENGTH = 50;
 

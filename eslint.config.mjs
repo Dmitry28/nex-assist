@@ -23,7 +23,10 @@ export default tseslint.config(
     rules: {
       // TypeScript
       '@typescript-eslint/no-explicit-any': 'error',
-      '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', ignoreRestSiblings: true }],
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        { argsIgnorePattern: '^_', ignoreRestSiblings: true },
+      ],
       '@typescript-eslint/no-floating-promises': 'error',
       '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
       '@typescript-eslint/only-throw-error': 'error',
@@ -36,6 +39,17 @@ export default tseslint.config(
       // General
       'no-console': ['error', { allow: ['warn', 'error', 'info'] }],
       'no-debugger': 'error',
+    },
+  },
+
+  // Spec files inside src/ — relax rules that are incompatible with Jest patterns
+  // (unbound-method: expect(mock.method), unsafe-*: jest.Mock cast for .mock.calls)
+  {
+    files: ['src/**/*.spec.ts', 'src/**/__tests__/**/*.ts'],
+    rules: {
+      '@typescript-eslint/unbound-method': 'off',
+      '@typescript-eslint/no-unsafe-assignment': 'off',
+      '@typescript-eslint/no-unsafe-member-access': 'off',
     },
   },
 

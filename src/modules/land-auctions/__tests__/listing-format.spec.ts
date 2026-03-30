@@ -1,12 +1,13 @@
-import type { Listing } from './dto/listing.dto';
+import type { Listing } from '../dto/listing.dto';
 import {
   buildCaption,
   buildSummary,
   formatAuctionDate,
   formatDeadline,
   getListingEmoji,
+  hasValue,
   shortenCommunications,
-} from './listing-format';
+} from '../listing-format';
 
 const baseListing: Listing = {
   link: 'https://gcn.by/lot/123',
@@ -18,9 +19,19 @@ const summaryBase = {
   total: 24,
   newCount: 3,
   removedCount: 1,
+  soldCount: 2,
   specialCount: 5,
   newSpecialCount: 2,
 };
+
+describe('hasValue', () => {
+  it('returns true for a non-empty string not in EMPTY_VALUES', () =>
+    expect(hasValue('5 000 руб.')).toBe(true));
+  it('returns false for undefined', () => expect(hasValue(undefined)).toBe(false));
+  it('returns false for empty string', () => expect(hasValue('')).toBe(false));
+  it('returns false for known empty placeholder', () => expect(hasValue('Не найдено')).toBe(false));
+  it('returns false for N/A', () => expect(hasValue('N/A')).toBe(false));
+});
 
 describe('getListingEmoji', () => {
   it('returns 🏠 for жилой дом', () =>
@@ -65,6 +76,7 @@ describe('buildSummary', () => {
     expect(s).toContain('Всего объявлений: <b>24</b>');
     expect(s).toContain('🆕 Новые: <b>3</b>');
     expect(s).toContain('🗑 Удалённые: <b>1</b>');
+    expect(s).toContain('💰 Продано: <b>2</b>');
     expect(s).toContain('Всего в Заболоть: <b>5</b>');
     expect(s).toContain('Новые в Заболоть: <b>2</b>');
   });
