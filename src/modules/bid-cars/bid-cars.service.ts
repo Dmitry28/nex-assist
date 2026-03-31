@@ -113,6 +113,12 @@ export class BidCarsService implements OnModuleInit, OnModuleDestroy {
       this.snapshot.read(DATA_FILES.removed, isRemovedCarListing),
     ]);
 
+    if (currentListings.length === 0 && previousAll.length > 0) {
+      throw new Error(
+        `Scraper returned 0 listings but snapshot has ${previousAll.length} — aborting to prevent data loss`,
+      );
+    }
+
     const newListings = currentListings.filter(c => !previousAll.some(p => p.link === c.link));
     const newlyRemovedLinks = new Set(
       previousAll.filter(p => !currentListings.some(c => c.link === p.link)).map(p => p.link),
