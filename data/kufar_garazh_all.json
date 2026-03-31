@@ -106,7 +106,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c32966cf-6663-4cbc-a483-09da9f48647d.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-03-26T11:27:09.574Z"
+    "lastSeenAt": "2026-03-31T14:27:14.678Z"
   },
   {
     "adId": 1044024342,
@@ -433,7 +433,7 @@
     "listTime": "2026-03-30T15:01:59Z",
     "images": [],
     "firstSeenAt": "2026-03-31T09:53:43.592Z",
-    "lastSeenAt": "2026-03-31T09:53:43.592Z"
+    "lastSeenAt": "2026-03-31T14:27:14.678Z"
   },
   {
     "adId": 1062755565,
@@ -451,6 +451,39 @@
     "listTime": "2026-03-30T13:25:16Z",
     "images": [],
     "firstSeenAt": "2026-03-31T09:53:43.592Z",
-    "lastSeenAt": "2026-03-31T09:53:43.592Z"
+    "lastSeenAt": "2026-03-31T14:27:14.678Z"
+  },
+  {
+    "adId": 1062900373,
+    "link": "https://re.kufar.by/vi/1062900373",
+    "title": "Продажа машиномест ул. Будённого д.30",
+    "description": "Продажа машино-мест по адресу ул.Будённого 30. \nЗакрытый, подземный паркинг с личным местом в самом центре г.Гродно.\nВ наличии девять машино-мест. Воз",
+    "priceByn": 31260,
+    "priceUsd": 10594,
+    "address": "Будённого ул, 30, Гродно, Гродненская область",
+    "area": 18.2,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "propertyType": "Машиноместо",
+    "listTime": "2026-03-31T12:13:22Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/17425399-6ebe-476e-8df0-c4787b168542.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7675ef5b-07af-49e3-9fa3-c7bf0c8228f7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9bb58120-0e0b-4b77-8359-9190b93a9727.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bdaa67ca-ece3-45ab-9303-3d6af480eceb.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/891fd271-2d02-4ea4-b014-550a161d5e0c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bd3bbe8c-76fd-4cd9-80aa-78f6246b31e9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f7b5bab6-a014-4d9b-8bfd-997a759932d1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b1fcf0cd-0595-4660-a069-f8ee48f33aa1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8a2ec102-31f2-4a13-ba78-84df394cd10d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ae1516d2-544f-455f-aa22-a12b7f295c9a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/45e3ba23-d8f3-4656-b587-7a680239c8c9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8f3a1afd-558d-49b8-99ca-eca9028a6de4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2df75d6e-8a08-4737-8945-cb3198549ce9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/41c72704-d1b6-4c66-838d-c5f764bf90c9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ba3aa0b9-2d26-464a-8011-1c0bf7b93034.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b1da3586-5f5a-42a1-b6ca-631dff508579.jpg"
+    ],
+    "firstSeenAt": "2026-03-31T14:27:14.678Z",
+    "lastSeenAt": "2026-03-31T14:27:14.678Z"
   }
 ]
