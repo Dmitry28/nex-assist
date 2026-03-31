@@ -141,15 +141,22 @@
   {
     "title": "Земельный участок по ул. Шидловского, 6",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-shidlovskogo-6/",
-    "price": "Не найдено",
-    "area": "Не найдено",
-    "address": "Не найдено",
-    "cadastralNumber": "Не найдено",
-    "cadastralMapUrl": "",
-    "auctionDate": "Не указана",
-    "applicationDeadline": "Не указан",
-    "communications": "Не указаны",
-    "images": []
+    "price": "33 463,00 руб.",
+    "area": "0,0966 га",
+    "address": "г. Гродно, ул. Шидловского, 6",
+    "cadastralNumber": "440100000002012972",
+    "cadastralMapUrl": "https://map.nca.by/search/019c08b1-42c5-727e-8d3d-fc1e90691ddf",
+    "auctionDate": "Аукцион состоится 28.04.2026",
+    "applicationDeadline": "Заявления принимаются по 23.04.2026",
+    "communications": "электроснабжение, газоснабжение, водоснабжение",
+    "images": [
+      "https://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-4.png",
+      "https://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-1.png",
+      "https://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-2.png",
+      "https://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-3.png",
+      "https://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-4.png",
+      "https://gcn.by/wp-content/uploads/2026/01/shidlovskogo-4-sajt-1.png"
+    ]
   },
   {
     "title": "Земельный участок У-163 по ул. Ровной в микрорайоне «Барановичи-9»",
