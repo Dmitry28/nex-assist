@@ -113,6 +113,17 @@ export class BidCarsService implements OnModuleInit, OnModuleDestroy {
       this.snapshot.read(DATA_FILES.removed, isRemovedCarListing),
     ]);
 
+    // NOTE: Guard against Cloudflare-blocked runs returning 0 results.
+    // On 2026-03-30 GitHub Actions (AWS IP) was blocked by Cloudflare — the scraper
+    // returned 0 listings, all 45 tracked cars were marked as removed, and the snapshot
+    // was wiped. If this happens again, the run will fail with an error notification
+    // instead of silently destroying the snapshot.
+    if (currentListings.length === 0 && previousAll.length > 0) {
+      throw new Error(
+        `Scraper returned 0 listings but snapshot has ${previousAll.length} — aborting to prevent data loss`,
+      );
+    }
+
     const newListings = currentListings.filter(c => !previousAll.some(p => p.link === c.link));
     const newlyRemovedLinks = new Set(
       previousAll.filter(p => !currentListings.some(c => c.link === p.link)).map(p => p.link),
