@@ -44,7 +44,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f3593f4d-c092-4c1d-baab-af3c77d17817.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-03-27T10:03:43.686Z"
+    "lastSeenAt": "2026-04-02T08:22:32.820Z"
   },
   {
     "adId": 1061975394,
@@ -438,7 +438,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e1e891b3-5120-459b-91b3-f25f912142df.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-04-01T08:24:27.715Z"
+    "lastSeenAt": "2026-04-02T08:22:32.820Z"
   },
   {
     "adId": 1055938948,
@@ -1017,7 +1017,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8851791a-b3ff-48e4-85ca-444cee193f6d.jpg"
     ],
     "firstSeenAt": "2026-03-31T09:53:43.593Z",
-    "lastSeenAt": "2026-04-01T08:24:27.715Z"
+    "lastSeenAt": "2026-04-02T08:22:32.820Z"
   },
   {
     "adId": 1016279565,
@@ -1047,7 +1047,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0e2ac68d-f4d4-4728-8e6b-0d22fceb0492.jpg"
     ],
     "firstSeenAt": "2026-03-31T09:53:43.593Z",
-    "lastSeenAt": "2026-04-01T08:24:27.715Z"
+    "lastSeenAt": "2026-04-02T08:22:32.820Z"
   },
   {
     "adId": 1054725244,
@@ -1193,7 +1193,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ecc36b2b-2567-48c0-92a7-009e1cd693cd.jpg"
     ],
     "firstSeenAt": "2026-03-31T14:27:14.679Z",
-    "lastSeenAt": "2026-04-01T08:24:27.715Z"
+    "lastSeenAt": "2026-04-02T08:22:32.820Z"
   },
   {
     "adId": 1062920531,
@@ -1229,6 +1229,77 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ad136321-97e7-425f-a6f3-345b026b1f3f.jpg"
     ],
     "firstSeenAt": "2026-04-01T08:24:27.715Z",
-    "lastSeenAt": "2026-04-01T08:24:27.715Z"
+    "lastSeenAt": "2026-04-02T08:22:32.820Z"
+  },
+  {
+    "adId": 1063098228,
+    "link": "https://re.kufar.by/vi/1063098228",
+    "title": "Продам дачный участок.",
+    "description": "Дачный участок Торгмаш, общество \"Оптовик\"",
+    "priceByn": 7330,
+    "priceUsd": 2500,
+    "address": "Горница, Гродненская область",
+    "plotArea": 5,
+    "seller": "Виталий",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-01T19:24:59Z",
+    "images": [],
+    "firstSeenAt": "2026-04-02T08:22:32.820Z",
+    "lastSeenAt": "2026-04-02T08:22:32.820Z"
+  },
+  {
+    "adId": 1063072249,
+    "link": "https://re.kufar.by/vi/1063072249",
+    "title": "Дачный участок",
+    "description": "Местонахождение: садовое товарищество » Вяселка-Горница» , Коптевский с/с. Тихое и экологически чистое место с красивой природой. Полностью асфальтиро",
+    "priceByn": 24922,
+    "priceUsd": 8500,
+    "address": "СТ Вясёлка-Горница, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 9.2,
+    "seller": "Александр",
+    "features": [
+      "Сезонная",
+      "Частная собственность",
+      "Да"
+    ],
+    "listTime": "2026-04-01T15:33:34Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e3b04fdc-627a-4803-91ab-adc699cdc350.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/992f868b-ba64-4801-8c81-23d58afc25ac.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2859b7d0-949c-4279-8c87-4fb84ef23007.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/59430fe0-6c18-466e-97bd-a2c21b671c3e.jpg"
+    ],
+    "firstSeenAt": "2026-04-02T08:22:32.820Z",
+    "lastSeenAt": "2026-04-02T08:22:32.820Z"
+  },
+  {
+    "adId": 1063046645,
+    "link": "https://re.kufar.by/vi/1063046645",
+    "title": "земельный участок СТ Магистраль",
+    "description": "Продается земельный участок в 8 км от г. Гродно СТ Магистраль , Гродненская область, Подлабенский с/с,  расположенный на участке площадью 7,03 соток (",
+    "priceByn": 28147,
+    "priceUsd": 9600,
+    "address": "СТ Магистраль, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 7,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-01T11:53:08Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5a8e5f25-1597-4daf-b6ab-e7eee0399ac0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/24213dc6-74fe-4c83-bf38-2f2b9d321d7f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/84256056-2752-4cf2-953e-5ab66a627a12.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8e926916-1f36-4019-8ba9-85422de22afe.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4399049b-87af-4717-90cd-805ef8b1e210.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/51d83b9d-0b72-4875-91ae-a5614029a40a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6ccc3333-2de5-4569-ae3c-fd01804f524f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5b70460c-3602-4b99-b046-02a8551ca3f5.jpg"
+    ],
+    "firstSeenAt": "2026-04-02T08:22:32.820Z",
+    "lastSeenAt": "2026-04-02T08:22:32.820Z"
   }
 ]
