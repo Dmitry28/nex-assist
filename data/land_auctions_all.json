@@ -86,8 +86,8 @@
     "address": "г. Гродно, У-64 в микрорайоне «Барановичи 5,6», ул. Ранишняя, 13",
     "cadastralNumber": "440100000003004644",
     "cadastralMapUrl": "https://map.nca.by/search/019c031c-6424-706e-8a1d-55785c6b11fa",
-    "auctionDate": "Проведение аукциона планируется на II квартал 2026 года",
-    "applicationDeadline": "Не указан",
+    "auctionDate": "Аукцион состоится 12.05.2026",
+    "applicationDeadline": "Заявления принимаются по 06.05.2026",
     "communications": "Не указаны",
     "images": [
       "http://gcn.by/wp-content/uploads/2026/01/u-64-ranishnyaya-sajt.png"
@@ -131,8 +131,8 @@
     "address": "г. Гродно, ул. Александра Боголюбова, 40",
     "cadastralNumber": "440100000002012970",
     "cadastralMapUrl": "https://map.nca.by/search/019c656c-a1b1-702b-8eb9-51359758764b",
-    "auctionDate": "Проведение аукциона планируется во II квартале 2026 г.",
-    "applicationDeadline": "Не указан",
+    "auctionDate": "Аукцион состоится 12.05.2026",
+    "applicationDeadline": "Заявления принимаются по  06.05.2026",
     "communications": "электроснабжение, газоснабжение, водоснабжение",
     "images": [
       "http://gcn.by/wp-content/uploads/2026/01/u2-bogolyubova-40-sajt.png"
@@ -165,9 +165,9 @@
     "area": "0,0998 га",
     "address": "г. Гродно, ул. Ровная, 15",
     "cadastralNumber": "440100000003007805",
-    "cadastralMapUrl": "https://map.nca.by/search/019c0879-1d35-71f1-b797-eab97ddd970d",
-    "auctionDate": "Проведение аукциона планируется на II квартал 2026 г.",
-    "applicationDeadline": "Не указан",
+    "cadastralMapUrl": "",
+    "auctionDate": "Аукцион состоится 12.05.2026",
+    "applicationDeadline": "Заявления принимаются по  06.05.2026",
     "communications": "электроснабжение, газоснабжение, водоснабжение",
     "images": [
       "http://gcn.by/wp-content/uploads/2026/01/u163-rovnaya-baranovichi-sajt.png"
@@ -260,101 +260,66 @@
   {
     "title": "Земельный участок У-3 по ул. Максима Танка",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-u-3-po-ul-maksima-tanka/",
-    "price": "72 961 руб.",
-    "area": "0,1019 га",
-    "address": "г. Гродно, ул. Сергея Болгарина, 2Б",
-    "cadastralNumber": "440100000002012131",
+    "price": "Не найдено",
+    "area": "Не найдено",
+    "address": "Не найдено",
+    "cadastralNumber": "Не найдено",
     "cadastralMapUrl": "",
-    "auctionDate": "Возможно проведение повторного аукциона при обращении заинтересованного в приобретении объекта лица",
+    "auctionDate": "Не указана",
     "applicationDeadline": "Не указан",
-    "communications": "электроснабжение, газоснабжение, водоснабжение",
-    "images": [
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2-2.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-1-1.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-3-1.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2-2.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-1-1.png"
-    ]
+    "communications": "Не указаны",
+    "images": []
   },
   {
     "title": "Земельный участок У-2 по ул. Максима Танка",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-u-2-po-ul-maksima-tanka/",
-    "price": "73 534 руб.",
-    "area": "0,1027 га",
-    "address": "г. Гродно, ул. Сергея Болгарина, 2А",
-    "cadastralNumber": "440100000002012134",
+    "price": "Не найдено",
+    "area": "Не найдено",
+    "address": "Не найдено",
+    "cadastralNumber": "Не найдено",
     "cadastralMapUrl": "",
-    "auctionDate": "Возможно проведение повторного аукциона при обращении заинтересованного в приобретении объекта лица",
+    "auctionDate": "Не указана",
     "applicationDeadline": "Не указан",
-    "communications": "электроснабжение, газоснабжение, водоснабжение",
-    "images": [
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-3.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-1.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-3.png"
-    ]
+    "communications": "Не указаны",
+    "images": []
   },
   {
     "title": "Земельный участок У-1 по ул. Максима Танка",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-u-1-po-ul-maksima-tanka/",
-    "price": "72 746 руб.",
-    "area": "0,1016 га",
-    "address": "г. Гродно, ул. Сергея Болгарина, 2",
-    "cadastralNumber": "440100000002012135",
+    "price": "Не найдено",
+    "area": "Не найдено",
+    "address": "Не найдено",
+    "cadastralNumber": "Не найдено",
     "cadastralMapUrl": "",
-    "auctionDate": "Возможно проведение повторного аукциона при обращении заинтересованного в приобретении объекта лица",
+    "auctionDate": "Не указана",
     "applicationDeadline": "Не указан",
-    "communications": "электроснабжение, газоснабжение, водоснабжение",
-    "images": [
-      "https://gcn.by/wp-content/uploads/2023/06/U-1-Bolgarina-Tanka-2.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-1-Bolgarina-Tanka-3.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-1-Bolgarina-Tanka-1.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-1-Bolgarina-Tanka-2.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-1-Bolgarina-Tanka-3.png"
-    ]
+    "communications": "Не указаны",
+    "images": []
   },
   {
     "title": "Не завершённый строительством жилой дом по ул. Рожанского, 110",
     "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-rozhanskogo-110/",
-    "price": "55 311,35 руб.",
-    "area": "0,1047 га",
-    "address": "г. Гродно, У-1557 в микрорайоне «Зарица-4», ул. Рожанского, 110",
-    "cadastralNumber": "440100000003004431",
+    "price": "Не найдено",
+    "area": "Не найдено",
+    "address": "Не найдено",
+    "cadastralNumber": "Не найдено",
     "cadastralMapUrl": "",
-    "auctionDate": "Возможно проведение повторного аукциона при обращении заинтересованного в приобретении объекта лица",
+    "auctionDate": "Не указана",
     "applicationDeadline": "Не указан",
     "communications": "Не указаны",
-    "images": [
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-7.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-1.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-2.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-3.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-4.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-5.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-6.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-7.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-1.png"
-    ]
+    "images": []
   },
   {
     "title": "Земельный участок У-4 по ул. Кульбакская",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-u-4-po-ul-kulbakskaya/",
-    "price": "42 087,00 руб.",
-    "area": "0,1072 га",
-    "address": "г. Гродно, ул. Кульбакская, 29А",
-    "cadastralNumber": "440100000001010123",
-    "cadastralMapUrl": "https://map.nca.by/search/019cbe05-7f35-703b-9b7e-5423228a0201",
-    "auctionDate": "Аукцион состоится 14.04.2026",
-    "applicationDeadline": "Заявления принимаются по 08.04.2026",
-    "communications": "электроснабжение, газоснабжение, водоснабжение",
-    "images": [
-      "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt1.png",
-      "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt2.png",
-      "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt3.png",
-      "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt4.png",
-      "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt1.png",
-      "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt2.png"
-    ]
+    "price": "Не найдено",
+    "area": "Не найдено",
+    "address": "Не найдено",
+    "cadastralNumber": "Не найдено",
+    "cadastralMapUrl": "",
+    "auctionDate": "Не указана",
+    "applicationDeadline": "Не указан",
+    "communications": "Не указаны",
+    "images": []
   }
 ]
