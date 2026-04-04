@@ -122,7 +122,7 @@ export class BidCarsParserService implements OnModuleDestroy {
           () => document.querySelectorAll('a[href*="/lot/"]').length,
         );
 
-        await btn.evaluate((el) => (el as HTMLElement).click());
+        await btn.evaluate(el => (el as HTMLElement).click());
 
         try {
           await page.waitForFunction(
