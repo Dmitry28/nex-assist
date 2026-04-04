@@ -165,7 +165,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/76c25739-4706-4d05-aac3-1b8d2ee68fb2.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-03-27T10:03:43.686Z"
+    "lastSeenAt": "2026-04-04T21:48:19.398Z"
   },
   {
     "adId": 1061925432,
@@ -365,7 +365,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/04f1b8c4-4fbb-441c-a2ab-1ac585592980.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-03-30T09:37:35.128Z"
+    "lastSeenAt": "2026-04-04T21:48:19.398Z"
   },
   {
     "adId": 1061786677,
@@ -585,7 +585,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ea1b67d7-7c85-4e05-807a-f3f815a7ee38.jpg"
     ],
     "firstSeenAt": "2026-03-27T10:03:43.686Z",
-    "lastSeenAt": "2026-04-03T10:00:31.324Z"
+    "lastSeenAt": "2026-04-04T21:48:19.398Z"
   },
   {
     "adId": 1060581921,
@@ -697,7 +697,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8828a22f-d8a1-448f-80ff-e1a82c4f3d63.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.801Z",
-    "lastSeenAt": "2026-03-29T19:58:43.075Z"
+    "lastSeenAt": "2026-04-04T21:48:19.398Z"
   },
   {
     "adId": 1056448347,
@@ -723,7 +723,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8c3d8b38-10bc-43c8-9698-7c95e2e6e041.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.801Z",
-    "lastSeenAt": "2026-03-28T10:34:02.801Z"
+    "lastSeenAt": "2026-04-04T21:48:19.398Z"
   },
   {
     "adId": 1062276662,
@@ -917,7 +917,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4e794612-a7d4-401f-8635-19525b62f0e5.jpg"
     ],
     "firstSeenAt": "2026-03-29T19:58:43.075Z",
-    "lastSeenAt": "2026-03-30T09:37:35.128Z"
+    "lastSeenAt": "2026-04-04T21:48:19.398Z"
   },
   {
     "adId": 1057144146,
@@ -946,7 +946,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/33fd3700-4382-4713-b4cc-deb8d2adb749.jpg"
     ],
     "firstSeenAt": "2026-03-29T19:58:43.075Z",
-    "lastSeenAt": "2026-03-30T09:37:35.128Z"
+    "lastSeenAt": "2026-04-04T21:48:19.398Z"
   },
   {
     "adId": 1062375057,
@@ -1328,7 +1328,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b352eb55-46cf-402b-8639-c1dafcb425ef.jpg"
     ],
     "firstSeenAt": "2026-04-03T10:00:31.324Z",
-    "lastSeenAt": "2026-04-03T10:00:31.324Z"
+    "lastSeenAt": "2026-04-04T21:48:19.398Z"
   },
   {
     "adId": 1056526712,
@@ -1350,7 +1350,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2579b64a-59c9-46c2-8820-e11ece2473a2.jpg"
     ],
     "firstSeenAt": "2026-04-03T10:00:31.324Z",
-    "lastSeenAt": "2026-04-03T10:00:31.324Z"
+    "lastSeenAt": "2026-04-04T21:48:19.398Z"
   },
   {
     "adId": 1063240282,
@@ -1443,5 +1443,128 @@
     ],
     "firstSeenAt": "2026-04-03T10:00:31.324Z",
     "lastSeenAt": "2026-04-03T10:00:31.324Z"
+  },
+  {
+    "adId": 1063374678,
+    "link": "https://re.kufar.by/vi/1063374678",
+    "title": "участок СТ Автотранспортник",
+    "description": "В продаже земельный участок в СТ Автотранспортник 0,0544 га направление Августовский канал), частная собственность. Асфальтированный  подъезд практиче",
+    "priceByn": 52864,
+    "priceUsd": 18000,
+    "address": "Автотранспортник, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5.44,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-03T16:30:45Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ffb80ede-c178-44f1-865e-2cdf6b1c74a2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/02fd2a9a-6e74-4784-b64c-b2f5636c86ad.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e1d4401a-452b-4be3-b286-604d0c3e78d7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/492d0d89-8789-4915-b456-7d63b4a81825.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5903acdd-d895-4d36-90cf-c6b537521c08.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/98b42990-9807-48c2-af60-fd91e0f11e0f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b873563f-9e63-4454-a816-ac1a47fb7585.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/565786cd-2762-446a-8be9-37e367f9ca93.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0c53b7a0-9b5b-4db0-9fd9-96dd0575300b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/928689fc-3952-4545-8bbf-0ef28ab1e8e8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a51bd150-3f43-4ad6-baa3-9b446aa494e8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d538a45e-8eec-425b-920d-2df743cf717a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0b620aa6-0dfd-44a7-b2e7-4f3380701c0c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/63059d33-6c25-45bc-b5d0-511cf4c641df.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ac4908a6-bb0d-4a36-bd51-1d0328518c43.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/79cf1903-2688-46a6-a2ed-6f08c8db00e8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8ecfea39-c39b-4a75-9251-d173e45f2199.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/29cf229f-a659-46af-a4cc-45bac9a8b97a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3f9cc0ed-7a8c-4cce-8c1b-86d3ff1e8bde.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ec7577d3-38a7-4a2e-bc6e-a4cc1645d2b0.jpg"
+    ],
+    "firstSeenAt": "2026-04-04T21:48:19.398Z",
+    "lastSeenAt": "2026-04-04T21:48:19.398Z"
+  },
+  {
+    "adId": 1063363445,
+    "link": "https://re.kufar.by/vi/1063363445",
+    "title": "Земельный участок в СТ Земляне-М. Демидково",
+    "description": "Продаётся земельный участок в отличном месте в районе деревни Малое Демидково, садовое товарищество «Земляне — М. Демидково» (Гродненская обл., Гродне",
+    "priceByn": 14685,
+    "priceUsd": 5000,
+    "address": "265, СТ Земляне, Квасовский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 8.4,
+    "seller": "ООО Магазин недвижимости",
+    "features": [
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-03T15:03:30Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fd78fa43-74f0-4206-9194-8bbc54a35bdf.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/abcde983-d33e-4f2a-8470-c447800e8558.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/abdb3fc4-a7d5-4700-b709-efee50850993.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ecb24169-2e3e-4384-84d3-873477ce7ce9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6bdada29-3d58-4e0e-846a-7257dcd3ca3a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/044d9cd7-b818-4a7b-b76b-973c7d34fc3f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/99a1218f-d077-49ee-b8d2-c24fc3a32789.jpg"
+    ],
+    "firstSeenAt": "2026-04-04T21:48:19.398Z",
+    "lastSeenAt": "2026-04-04T21:48:19.398Z"
+  },
+  {
+    "adId": 1063353661,
+    "link": "https://re.kufar.by/vi/1063353661",
+    "title": "Дача . земельный участок садовое товарищество Азот-Кулевцы",
+    "description": "Звонить по телефону . Расскажу и покажу земельный участок.площадь участка 0.1088га",
+    "priceByn": 8811,
+    "priceUsd": 3000,
+    "address": "Одельский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 10,
+    "seller": "Ал",
+    "features": [
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-03T14:22:24Z",
+    "images": [],
+    "firstSeenAt": "2026-04-04T21:48:19.398Z",
+    "lastSeenAt": "2026-04-04T21:48:19.398Z"
+  },
+  {
+    "adId": 1063334258,
+    "link": "https://re.kufar.by/vi/1063334258",
+    "title": "Сдам дом в районе оз. Юбилейное",
+    "description": "Сдам дом 200 м. от оз. Юбилейное (р-н д. Тарусичи) на длительную либо краткосрочную аренду. Без домашних животных.",
+    "priceByn": 1350,
+    "priceUsd": 460,
+    "address": "деревня Тарусичи, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 12,
+    "seller": "Антон",
+    "listTime": "2026-04-03T11:34:30Z",
+    "images": [],
+    "firstSeenAt": "2026-04-04T21:48:19.398Z",
+    "lastSeenAt": "2026-04-04T21:48:19.398Z"
+  },
+  {
+    "adId": 1063326126,
+    "link": "https://re.kufar.by/vi/1063326126",
+    "title": "Участок ст Вишневка-Новики",
+    "description": "Участок прямоугольной формы в 5км от Ольшанки, частично загорожен сеткой (не загорожен только в начале участка 3 пролета), есть возможность подключени",
+    "priceByn": 14685,
+    "priceUsd": 5000,
+    "address": "10, СТ Вишнёвка, Квасовский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 6,
+    "seller": "Елена",
+    "features": [
+      "Отсутствует",
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-03T10:02:53Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1a907abb-d233-4ba6-83f8-880746f0f69e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2462d225-3629-46ec-b1c8-17fcee00b1e7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9ad88d51-ebda-4296-9484-cdee3c9727bc.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ab1b89ff-c130-4aa6-8c60-ee0e071dec46.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/dd8f4d8d-76b5-4743-a4fc-1152506a632c.jpg"
+    ],
+    "firstSeenAt": "2026-04-04T21:48:19.398Z",
+    "lastSeenAt": "2026-04-04T21:48:19.398Z"
   }
 ]
