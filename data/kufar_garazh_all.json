@@ -47,7 +47,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-04-03T08:21:12.537Z"
+    "lastSeenAt": "2026-04-03T10:00:31.323Z"
   },
   {
     "adId": 1062002915,
@@ -106,7 +106,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c32966cf-6663-4cbc-a483-09da9f48647d.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-04-04T08:06:10.769Z"
+    "lastSeenAt": "2026-04-04T21:48:19.395Z"
   },
   {
     "adId": 1044024342,
@@ -134,7 +134,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/976f68c0-038c-46cf-aafd-961f06054c6e.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-04-02T08:22:32.819Z"
+    "lastSeenAt": "2026-04-02T09:48:26.935Z"
   },
   {
     "adId": 1061809698,
@@ -264,7 +264,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/344184e5-3042-49de-86d0-6f66bdaa8f65.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.799Z",
-    "lastSeenAt": "2026-04-04T08:06:10.769Z"
+    "lastSeenAt": "2026-04-04T21:48:19.395Z"
   },
   {
     "adId": 1062275663,
@@ -314,7 +314,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a6c66f55-138b-4f1b-bddd-ebcf98650eda.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.799Z",
-    "lastSeenAt": "2026-04-04T08:06:10.769Z"
+    "lastSeenAt": "2026-04-04T21:48:19.395Z"
   },
   {
     "adId": 1062236887,
@@ -433,7 +433,7 @@
     "listTime": "2026-03-30T15:01:59Z",
     "images": [],
     "firstSeenAt": "2026-03-31T09:53:43.592Z",
-    "lastSeenAt": "2026-04-01T08:24:27.714Z"
+    "lastSeenAt": "2026-04-01T13:26:51.158Z"
   },
   {
     "adId": 1062755565,
@@ -451,7 +451,7 @@
     "listTime": "2026-03-30T13:25:16Z",
     "images": [],
     "firstSeenAt": "2026-03-31T09:53:43.592Z",
-    "lastSeenAt": "2026-04-01T08:24:27.714Z"
+    "lastSeenAt": "2026-04-01T13:26:51.158Z"
   },
   {
     "adId": 1062900373,
@@ -484,7 +484,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b1da3586-5f5a-42a1-b6ca-631dff508579.jpg"
     ],
     "firstSeenAt": "2026-03-31T14:27:14.678Z",
-    "lastSeenAt": "2026-04-02T08:22:32.819Z"
+    "lastSeenAt": "2026-04-02T09:48:26.935Z"
   },
   {
     "adId": 1063141857,
@@ -511,8 +511,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7794afb1-2fcc-469c-a279-3a725093e3be.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ef64edc6-3c25-4bba-a7e4-ed641032b57b.jpg"
     ],
-    "firstSeenAt": "2026-04-02T08:22:32.819Z",
-    "lastSeenAt": "2026-04-03T08:21:12.537Z"
+    "firstSeenAt": "2026-04-02T09:48:26.935Z",
+    "lastSeenAt": "2026-04-03T10:00:31.323Z"
   },
   {
     "adId": 1063076106,
@@ -541,8 +541,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/13889e33-4527-4fc0-b18f-ac1053f861b0.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e20ca543-67b3-478e-ad3c-c11ac4e2e584.jpg"
     ],
-    "firstSeenAt": "2026-04-02T08:22:32.819Z",
-    "lastSeenAt": "2026-04-03T08:21:12.537Z"
+    "firstSeenAt": "2026-04-02T09:48:26.935Z",
+    "lastSeenAt": "2026-04-03T10:00:31.323Z"
   },
   {
     "adId": 1063073901,
@@ -564,8 +564,43 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/82209c03-ca5a-41e2-a596-aab38b5e5bc5.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e68a43c7-1a6e-4eca-ac5a-b35ef226f3c2.jpg"
     ],
-    "firstSeenAt": "2026-04-02T08:22:32.819Z",
-    "lastSeenAt": "2026-04-03T08:21:12.537Z"
+    "firstSeenAt": "2026-04-02T09:48:26.935Z",
+    "lastSeenAt": "2026-04-03T10:00:31.323Z"
+  },
+  {
+    "adId": 1063307417,
+    "link": "https://re.kufar.by/vi/1063307417",
+    "title": "Продам гараж 51.7 кв.м.",
+    "description": "Помещение 5.6*9.27 м. Ворота 3.1*4.5 м.\nДве ямы. 220-380в.\nБолее подробную информацию по телефону.\n Вадим.",
+    "address": "Космонавтов пр, Гродно, Гродненская область",
+    "area": 51.7,
+    "seller": "Вадим",
+    "propertyType": "Гараж",
+    "features": [
+      "Электрическое"
+    ],
+    "listTime": "2026-04-03T08:40:13Z",
+    "images": [],
+    "firstSeenAt": "2026-04-03T10:00:31.323Z",
+    "lastSeenAt": "2026-04-04T21:48:19.395Z"
+  },
+  {
+    "adId": 1050633674,
+    "link": "https://re.kufar.by/vi/1050633674",
+    "title": "Продам Гараж",
+    "description": "Продам Гараж в ТС Центр 3. Гараж находится за зданием МЧС что на улице Дубко. Кровля перекрыта, гараж сухой, утеплён. Подвал под всем горожом разделён",
+    "priceByn": 27460,
+    "priceUsd": 9350,
+    "address": "Пушкина ул, 41Ак1207блок12, Гродно, Гродненская область",
+    "area": 17,
+    "seller": "ИП Росол Роман Викторович",
+    "propertyType": "Гараж",
+    "listTime": "2026-04-03T08:01:22Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1d6d907d-d705-4dff-ba13-50c55ce0d91f.jpg"
+    ],
+    "firstSeenAt": "2026-04-03T10:00:31.323Z",
+    "lastSeenAt": "2026-04-04T21:48:19.395Z"
   },
   {
     "adId": 1028888402,
@@ -588,8 +623,8 @@
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3989f57d-fcc9-4ae7-89eb-138480a835d7.jpg"
     ],
-    "firstSeenAt": "2026-04-03T08:21:12.537Z",
-    "lastSeenAt": "2026-04-04T08:06:10.769Z"
+    "firstSeenAt": "2026-04-03T10:00:31.323Z",
+    "lastSeenAt": "2026-04-04T21:48:19.395Z"
   },
   {
     "adId": 1063237673,
@@ -613,8 +648,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5d0bfedb-e0eb-4694-a51e-bffec894115c.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7f9a1f50-e1dc-4fb7-9a7c-9ef35a0c3680.jpg"
     ],
-    "firstSeenAt": "2026-04-03T08:21:12.537Z",
-    "lastSeenAt": "2026-04-04T08:06:10.769Z"
+    "firstSeenAt": "2026-04-03T10:00:31.323Z",
+    "lastSeenAt": "2026-04-03T10:00:31.323Z"
   },
   {
     "adId": 1056168799,
@@ -639,8 +674,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/97dffa2a-aa96-42be-88e3-cbdb30cdcacf.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0af1c7ba-25d6-460d-803f-19b15944ba0b.jpg"
     ],
-    "firstSeenAt": "2026-04-03T08:21:12.537Z",
-    "lastSeenAt": "2026-04-04T08:06:10.769Z"
+    "firstSeenAt": "2026-04-03T10:00:31.323Z",
+    "lastSeenAt": "2026-04-03T10:00:31.323Z"
   },
   {
     "adId": 1063190680,
@@ -655,26 +690,50 @@
     "propertyType": "Гараж",
     "listTime": "2026-04-02T12:14:48Z",
     "images": [],
-    "firstSeenAt": "2026-04-03T08:21:12.537Z",
-    "lastSeenAt": "2026-04-04T08:06:10.769Z"
+    "firstSeenAt": "2026-04-03T10:00:31.323Z",
+    "lastSeenAt": "2026-04-03T10:00:31.323Z"
   },
   {
-    "adId": 1050633674,
-    "link": "https://re.kufar.by/vi/1050633674",
-    "title": "Продам Гараж",
-    "description": "Продам Гараж в ТС Центр 3. Гараж находится за зданием МЧС что на улице Дубко. Кровля перекрыта, гараж сухой, утеплён. Подвал под всем горожом разделён",
-    "priceByn": 27460,
-    "priceUsd": 9350,
-    "address": "Пушкина ул, 41Ак1207блок12, Гродно, Гродненская область",
-    "area": 17,
-    "seller": "ИП Росол Роман Викторович",
+    "adId": 1063504153,
+    "link": "https://re.kufar.by/vi/1063504153",
+    "title": "ПРОДАЁТСЯ гараж по ул. СОЛОМОВОЙ 138А в ГСК ''Строитель Импульс''",
+    "description": "Продаётся гараж в гаражное кооперативе \"Строитель Импульс\" (р-н ул.Репина), 17.8кв., 220в, новая кровля, без ямы.",
+    "priceByn": 18209,
+    "priceUsd": 6200,
+    "address": "Соломовой ул, 138А, Гродно, Гродненская область",
+    "area": 17.8,
+    "seller": "Андрей",
     "propertyType": "Гараж",
-    "listTime": "2026-04-02T09:46:25Z",
-    "images": [
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1d6d907d-d705-4dff-ba13-50c55ce0d91f.jpg"
+    "features": [
+      "Электричество 220В",
+      "Отсутствует"
     ],
-    "firstSeenAt": "2026-04-03T08:21:12.537Z",
-    "lastSeenAt": "2026-04-04T08:06:10.769Z"
+    "listTime": "2026-04-04T14:21:22Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/26bb0b33-27dc-4c9b-8e61-ff9d7c1f0d68.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f95c894c-1389-4833-b970-b56c87350869.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4b2977aa-260c-40bb-89af-b40c39198eb4.jpg"
+    ],
+    "firstSeenAt": "2026-04-04T21:48:19.395Z",
+    "lastSeenAt": "2026-04-04T21:48:19.395Z"
+  },
+  {
+    "adId": 1063502688,
+    "link": "https://re.kufar.by/vi/1063502688",
+    "title": "Гараж ГСК Сигнал",
+    "description": "Гараж в гаражном кооперативе Сигнал,район мясокомбината.Электричество 220в,смотровая яма,подвал,ворота обшиты изнутри, есть калитка,стены без внутренн",
+    "priceByn": 14391,
+    "priceUsd": 4900,
+    "address": "Максима Горького ул, 105Аблок36к3638, Гродно, Гродненская область",
+    "area": 16,
+    "seller": "александр",
+    "propertyType": "Гараж",
+    "listTime": "2026-04-04T14:06:21Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/98041191-6714-497f-b601-3ea7da2ca4bf.jpg"
+    ],
+    "firstSeenAt": "2026-04-04T21:48:19.395Z",
+    "lastSeenAt": "2026-04-04T21:48:19.395Z"
   },
   {
     "adId": 1063335949,
@@ -699,24 +758,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c5cc92fb-c1b2-46f2-adff-30c4970b5788.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a4141898-ff93-42a6-8051-0aa7f77bb60d.jpg"
     ],
-    "firstSeenAt": "2026-04-04T08:06:10.769Z",
-    "lastSeenAt": "2026-04-04T08:06:10.769Z"
-  },
-  {
-    "adId": 1063307417,
-    "link": "https://re.kufar.by/vi/1063307417",
-    "title": "Продам гараж 51.7 кв.м.",
-    "description": "Помещение 5.6*9.27 м. Ворота 3.1*4.5 м.\nДве ямы. 220-380в.\nБолее подробную информацию по телефону.\n Вадим.",
-    "address": "Космонавтов пр, Гродно, Гродненская область",
-    "area": 51.7,
-    "seller": "Вадим",
-    "propertyType": "Гараж",
-    "features": [
-      "Электрическое"
-    ],
-    "listTime": "2026-04-03T08:40:13Z",
-    "images": [],
-    "firstSeenAt": "2026-04-04T08:06:10.769Z",
-    "lastSeenAt": "2026-04-04T08:06:10.769Z"
+    "firstSeenAt": "2026-04-04T21:48:19.395Z",
+    "lastSeenAt": "2026-04-04T21:48:19.395Z"
   }
 ]
