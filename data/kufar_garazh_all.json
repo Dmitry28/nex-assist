@@ -106,7 +106,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c32966cf-6663-4cbc-a483-09da9f48647d.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-04-02T08:22:32.819Z"
+    "lastSeenAt": "2026-04-04T08:06:10.769Z"
   },
   {
     "adId": 1044024342,
@@ -264,7 +264,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/344184e5-3042-49de-86d0-6f66bdaa8f65.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.799Z",
-    "lastSeenAt": "2026-04-02T08:22:32.819Z"
+    "lastSeenAt": "2026-04-04T08:06:10.769Z"
   },
   {
     "adId": 1062275663,
@@ -314,7 +314,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a6c66f55-138b-4f1b-bddd-ebcf98650eda.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.799Z",
-    "lastSeenAt": "2026-03-28T10:34:02.799Z"
+    "lastSeenAt": "2026-04-04T08:06:10.769Z"
   },
   {
     "adId": 1062236887,
@@ -589,7 +589,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3989f57d-fcc9-4ae7-89eb-138480a835d7.jpg"
     ],
     "firstSeenAt": "2026-04-03T08:21:12.537Z",
-    "lastSeenAt": "2026-04-03T08:21:12.537Z"
+    "lastSeenAt": "2026-04-04T08:06:10.769Z"
   },
   {
     "adId": 1063237673,
@@ -614,7 +614,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7f9a1f50-e1dc-4fb7-9a7c-9ef35a0c3680.jpg"
     ],
     "firstSeenAt": "2026-04-03T08:21:12.537Z",
-    "lastSeenAt": "2026-04-03T08:21:12.537Z"
+    "lastSeenAt": "2026-04-04T08:06:10.769Z"
   },
   {
     "adId": 1056168799,
@@ -640,7 +640,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0af1c7ba-25d6-460d-803f-19b15944ba0b.jpg"
     ],
     "firstSeenAt": "2026-04-03T08:21:12.537Z",
-    "lastSeenAt": "2026-04-03T08:21:12.537Z"
+    "lastSeenAt": "2026-04-04T08:06:10.769Z"
   },
   {
     "adId": 1063190680,
@@ -656,7 +656,7 @@
     "listTime": "2026-04-02T12:14:48Z",
     "images": [],
     "firstSeenAt": "2026-04-03T08:21:12.537Z",
-    "lastSeenAt": "2026-04-03T08:21:12.537Z"
+    "lastSeenAt": "2026-04-04T08:06:10.769Z"
   },
   {
     "adId": 1050633674,
@@ -674,6 +674,49 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1d6d907d-d705-4dff-ba13-50c55ce0d91f.jpg"
     ],
     "firstSeenAt": "2026-04-03T08:21:12.537Z",
-    "lastSeenAt": "2026-04-03T08:21:12.537Z"
+    "lastSeenAt": "2026-04-04T08:06:10.769Z"
+  },
+  {
+    "adId": 1063335949,
+    "link": "https://re.kufar.by/vi/1063335949",
+    "title": "гараж пр-кт Космонавтов 68В",
+    "description": "Продается гараж на пр. Космонавтов 68В в гаражно-строительном кооперативе, за гаражом находится лесной массив. Общая площадь – 16,3 м2. Размеры гаража",
+    "priceByn": 20265,
+    "priceUsd": 6900,
+    "address": "Космонавтов пр, 68Вк105блок1, Гродно, Гродненская область",
+    "area": 16.3,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "propertyType": "Гараж",
+    "listTime": "2026-04-03T11:53:10Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0b182eb7-2954-4db8-b4f8-eccfade2580f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e09bfaaf-0b58-4857-9670-0be21f127208.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/55281541-40e5-4032-aead-09cf3eda5ada.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b0169a3a-3c90-40c1-8010-e0e3574c6af8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/445b613d-8b18-4dbf-aa68-df8e97545681.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/02988da2-b3e4-492e-8043-b894d24fcc5e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fe7a84dd-f783-4356-83f9-b0f7897c6d64.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c5cc92fb-c1b2-46f2-adff-30c4970b5788.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a4141898-ff93-42a6-8051-0aa7f77bb60d.jpg"
+    ],
+    "firstSeenAt": "2026-04-04T08:06:10.769Z",
+    "lastSeenAt": "2026-04-04T08:06:10.769Z"
+  },
+  {
+    "adId": 1063307417,
+    "link": "https://re.kufar.by/vi/1063307417",
+    "title": "Продам гараж 51.7 кв.м.",
+    "description": "Помещение 5.6*9.27 м. Ворота 3.1*4.5 м.\nДве ямы. 220-380в.\nБолее подробную информацию по телефону.\n Вадим.",
+    "address": "Космонавтов пр, Гродно, Гродненская область",
+    "area": 51.7,
+    "seller": "Вадим",
+    "propertyType": "Гараж",
+    "features": [
+      "Электрическое"
+    ],
+    "listTime": "2026-04-03T08:40:13Z",
+    "images": [],
+    "firstSeenAt": "2026-04-04T08:06:10.769Z",
+    "lastSeenAt": "2026-04-04T08:06:10.769Z"
   }
 ]
