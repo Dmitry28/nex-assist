@@ -106,7 +106,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c32966cf-6663-4cbc-a483-09da9f48647d.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-04-03T10:00:31.323Z"
+    "lastSeenAt": "2026-04-04T21:48:19.395Z"
   },
   {
     "adId": 1044024342,
@@ -264,7 +264,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/344184e5-3042-49de-86d0-6f66bdaa8f65.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.799Z",
-    "lastSeenAt": "2026-04-02T09:48:26.935Z"
+    "lastSeenAt": "2026-04-04T21:48:19.395Z"
   },
   {
     "adId": 1062275663,
@@ -314,7 +314,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a6c66f55-138b-4f1b-bddd-ebcf98650eda.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.799Z",
-    "lastSeenAt": "2026-03-28T10:34:02.799Z"
+    "lastSeenAt": "2026-04-04T21:48:19.395Z"
   },
   {
     "adId": 1062236887,
@@ -582,7 +582,7 @@
     "listTime": "2026-04-03T08:40:13Z",
     "images": [],
     "firstSeenAt": "2026-04-03T10:00:31.323Z",
-    "lastSeenAt": "2026-04-03T10:00:31.323Z"
+    "lastSeenAt": "2026-04-04T21:48:19.395Z"
   },
   {
     "adId": 1050633674,
@@ -600,7 +600,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1d6d907d-d705-4dff-ba13-50c55ce0d91f.jpg"
     ],
     "firstSeenAt": "2026-04-03T10:00:31.323Z",
-    "lastSeenAt": "2026-04-03T10:00:31.323Z"
+    "lastSeenAt": "2026-04-04T21:48:19.395Z"
   },
   {
     "adId": 1028888402,
@@ -624,7 +624,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3989f57d-fcc9-4ae7-89eb-138480a835d7.jpg"
     ],
     "firstSeenAt": "2026-04-03T10:00:31.323Z",
-    "lastSeenAt": "2026-04-03T10:00:31.323Z"
+    "lastSeenAt": "2026-04-04T21:48:19.395Z"
   },
   {
     "adId": 1063237673,
@@ -692,5 +692,73 @@
     "images": [],
     "firstSeenAt": "2026-04-03T10:00:31.323Z",
     "lastSeenAt": "2026-04-03T10:00:31.323Z"
+  },
+  {
+    "adId": 1063504153,
+    "link": "https://re.kufar.by/vi/1063504153",
+    "title": "ПРОДАЁТСЯ гараж по ул. СОЛОМОВОЙ 138А в ГСК ''Строитель Импульс''",
+    "description": "Продаётся гараж в гаражное кооперативе \"Строитель Импульс\" (р-н ул.Репина), 17.8кв., 220в, новая кровля, без ямы.",
+    "priceByn": 18209,
+    "priceUsd": 6200,
+    "address": "Соломовой ул, 138А, Гродно, Гродненская область",
+    "area": 17.8,
+    "seller": "Андрей",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Отсутствует"
+    ],
+    "listTime": "2026-04-04T14:21:22Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/26bb0b33-27dc-4c9b-8e61-ff9d7c1f0d68.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f95c894c-1389-4833-b970-b56c87350869.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4b2977aa-260c-40bb-89af-b40c39198eb4.jpg"
+    ],
+    "firstSeenAt": "2026-04-04T21:48:19.395Z",
+    "lastSeenAt": "2026-04-04T21:48:19.395Z"
+  },
+  {
+    "adId": 1063502688,
+    "link": "https://re.kufar.by/vi/1063502688",
+    "title": "Гараж ГСК Сигнал",
+    "description": "Гараж в гаражном кооперативе Сигнал,район мясокомбината.Электричество 220в,смотровая яма,подвал,ворота обшиты изнутри, есть калитка,стены без внутренн",
+    "priceByn": 14391,
+    "priceUsd": 4900,
+    "address": "Максима Горького ул, 105Аблок36к3638, Гродно, Гродненская область",
+    "area": 16,
+    "seller": "александр",
+    "propertyType": "Гараж",
+    "listTime": "2026-04-04T14:06:21Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/98041191-6714-497f-b601-3ea7da2ca4bf.jpg"
+    ],
+    "firstSeenAt": "2026-04-04T21:48:19.395Z",
+    "lastSeenAt": "2026-04-04T21:48:19.395Z"
+  },
+  {
+    "adId": 1063335949,
+    "link": "https://re.kufar.by/vi/1063335949",
+    "title": "гараж пр-кт Космонавтов 68В",
+    "description": "Продается гараж на пр. Космонавтов 68В в гаражно-строительном кооперативе, за гаражом находится лесной массив. Общая площадь – 16,3 м2. Размеры гаража",
+    "priceByn": 20265,
+    "priceUsd": 6900,
+    "address": "Космонавтов пр, 68Вк105блок1, Гродно, Гродненская область",
+    "area": 16.3,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "propertyType": "Гараж",
+    "listTime": "2026-04-03T11:53:10Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0b182eb7-2954-4db8-b4f8-eccfade2580f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e09bfaaf-0b58-4857-9670-0be21f127208.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/55281541-40e5-4032-aead-09cf3eda5ada.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b0169a3a-3c90-40c1-8010-e0e3574c6af8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/445b613d-8b18-4dbf-aa68-df8e97545681.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/02988da2-b3e4-492e-8043-b894d24fcc5e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fe7a84dd-f783-4356-83f9-b0f7897c6d64.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c5cc92fb-c1b2-46f2-adff-30c4970b5788.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a4141898-ff93-42a6-8051-0aa7f77bb60d.jpg"
+    ],
+    "firstSeenAt": "2026-04-04T21:48:19.395Z",
+    "lastSeenAt": "2026-04-04T21:48:19.395Z"
   }
 ]
