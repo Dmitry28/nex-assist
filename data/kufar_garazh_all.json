@@ -106,7 +106,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c32966cf-6663-4cbc-a483-09da9f48647d.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-04-04T21:48:19.395Z"
+    "lastSeenAt": "2026-04-05T07:52:59.776Z"
   },
   {
     "adId": 1044024342,
@@ -264,7 +264,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/344184e5-3042-49de-86d0-6f66bdaa8f65.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.799Z",
-    "lastSeenAt": "2026-04-04T21:48:19.395Z"
+    "lastSeenAt": "2026-04-05T07:52:59.776Z"
   },
   {
     "adId": 1062275663,
@@ -314,7 +314,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a6c66f55-138b-4f1b-bddd-ebcf98650eda.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.799Z",
-    "lastSeenAt": "2026-04-04T21:48:19.395Z"
+    "lastSeenAt": "2026-04-05T07:52:59.776Z"
   },
   {
     "adId": 1062236887,
@@ -582,7 +582,7 @@
     "listTime": "2026-04-03T08:40:13Z",
     "images": [],
     "firstSeenAt": "2026-04-03T10:00:31.323Z",
-    "lastSeenAt": "2026-04-04T21:48:19.395Z"
+    "lastSeenAt": "2026-04-05T07:52:59.776Z"
   },
   {
     "adId": 1050633674,
@@ -600,7 +600,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1d6d907d-d705-4dff-ba13-50c55ce0d91f.jpg"
     ],
     "firstSeenAt": "2026-04-03T10:00:31.323Z",
-    "lastSeenAt": "2026-04-04T21:48:19.395Z"
+    "lastSeenAt": "2026-04-05T07:52:59.776Z"
   },
   {
     "adId": 1028888402,
@@ -715,7 +715,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4b2977aa-260c-40bb-89af-b40c39198eb4.jpg"
     ],
     "firstSeenAt": "2026-04-04T21:48:19.395Z",
-    "lastSeenAt": "2026-04-04T21:48:19.395Z"
+    "lastSeenAt": "2026-04-05T07:52:59.776Z"
   },
   {
     "adId": 1063502688,
@@ -733,7 +733,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/98041191-6714-497f-b601-3ea7da2ca4bf.jpg"
     ],
     "firstSeenAt": "2026-04-04T21:48:19.395Z",
-    "lastSeenAt": "2026-04-04T21:48:19.395Z"
+    "lastSeenAt": "2026-04-05T07:52:59.776Z"
   },
   {
     "adId": 1063335949,
@@ -759,6 +759,28 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a4141898-ff93-42a6-8051-0aa7f77bb60d.jpg"
     ],
     "firstSeenAt": "2026-04-04T21:48:19.395Z",
-    "lastSeenAt": "2026-04-04T21:48:19.395Z"
+    "lastSeenAt": "2026-04-05T07:52:59.776Z"
+  },
+  {
+    "adId": 1063540543,
+    "link": "https://re.kufar.by/vi/1063540543",
+    "title": "Гараж на Репина (Фолюш)",
+    "description": "Продам гараж в самом перспективном районе города. Яма присутствует. Подвал под всем гаражом разделен на 3 изолированных помещения. На данный момент фо",
+    "priceByn": 27607,
+    "priceUsd": 9400,
+    "address": "Лизы Чайкиной ул, 2Бблок1к138, Гродно, Гродненская область",
+    "area": 17.4,
+    "seller": "Продавец",
+    "propertyType": "Гараж",
+    "features": [
+      "Наземная",
+      "Отсутствует"
+    ],
+    "listTime": "2026-04-04T21:42:54Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2b140d18-2fdc-4813-874a-545551991b63.jpg"
+    ],
+    "firstSeenAt": "2026-04-05T07:52:59.776Z",
+    "lastSeenAt": "2026-04-05T07:52:59.776Z"
   }
 ]
