@@ -365,7 +365,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/04f1b8c4-4fbb-441c-a2ab-1ac585592980.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-04-04T21:48:19.398Z"
+    "lastSeenAt": "2026-04-05T16:51:33.361Z"
   },
   {
     "adId": 1061786677,
@@ -697,7 +697,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8828a22f-d8a1-448f-80ff-e1a82c4f3d63.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.801Z",
-    "lastSeenAt": "2026-04-04T21:48:19.398Z"
+    "lastSeenAt": "2026-04-05T16:51:33.361Z"
   },
   {
     "adId": 1056448347,
@@ -723,7 +723,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8c3d8b38-10bc-43c8-9698-7c95e2e6e041.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.801Z",
-    "lastSeenAt": "2026-04-04T21:48:19.398Z"
+    "lastSeenAt": "2026-04-05T16:51:33.361Z"
   },
   {
     "adId": 1062276662,
@@ -917,7 +917,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4e794612-a7d4-401f-8635-19525b62f0e5.jpg"
     ],
     "firstSeenAt": "2026-03-29T19:58:43.075Z",
-    "lastSeenAt": "2026-04-04T21:48:19.398Z"
+    "lastSeenAt": "2026-04-05T16:51:33.361Z"
   },
   {
     "adId": 1057144146,
@@ -946,7 +946,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/33fd3700-4382-4713-b4cc-deb8d2adb749.jpg"
     ],
     "firstSeenAt": "2026-03-29T19:58:43.075Z",
-    "lastSeenAt": "2026-04-04T21:48:19.398Z"
+    "lastSeenAt": "2026-04-05T16:51:33.361Z"
   },
   {
     "adId": 1062375057,
@@ -984,7 +984,7 @@
     "listTime": "2026-03-30T06:48:30Z",
     "images": [],
     "firstSeenAt": "2026-03-30T08:44:32.651Z",
-    "lastSeenAt": "2026-03-31T14:27:14.679Z"
+    "lastSeenAt": "2026-04-05T16:51:33.361Z"
   },
   {
     "adId": 1038887958,
@@ -1566,5 +1566,57 @@
     ],
     "firstSeenAt": "2026-04-04T21:48:19.398Z",
     "lastSeenAt": "2026-04-04T21:48:19.398Z"
+  },
+  {
+    "adId": 1063659659,
+    "link": "https://re.kufar.by/vi/1063659659",
+    "title": "Участок ( Гривки 2)",
+    "description": "Продам 2 смежных участка ,расположенных в Ст Гривки -2 номер 78 и 79. 12 км от города.В сезон ходит автобус.Участки огорожены , есть электричество, во",
+    "priceByn": 20558,
+    "priceUsd": 7000,
+    "address": "78, СТ Гривки-2, Квасовский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 16,
+    "seller": "Владимир",
+    "features": [
+      "Колодец",
+      "Частная собственность",
+      "Да"
+    ],
+    "listTime": "2026-04-05T16:32:25Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2da760ab-5254-4cf8-96f1-8603ee4a888d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eb84093b-320a-4f7c-ba81-0c8b10be5e6a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4374d814-9dea-4572-8b6b-e03b1f722269.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8e629cf1-d894-4197-aff5-b5190cb57e37.jpg"
+    ],
+    "firstSeenAt": "2026-04-05T16:51:33.361Z",
+    "lastSeenAt": "2026-04-05T16:51:33.361Z"
+  },
+  {
+    "adId": 1050004332,
+    "link": "https://re.kufar.by/vi/1050004332",
+    "title": "Дача",
+    "description": "Участок расположен рядом с сосновым лесом, около участка находится колонка с питьевой водой, на территории растут плодовые деревья, голубика, малина, ",
+    "priceByn": 17621,
+    "priceUsd": 6000,
+    "address": "СТ Высотник, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5,
+    "seller": "Марина",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-05T11:58:16Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/071a9091-5113-4842-9b4e-db0a75261a97.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/52fcfca3-a617-41da-9a4b-74d56ccf3ad3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6a6d49bc-11e7-4357-a3d0-63549ded0fd8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d22476df-4fac-4925-9d39-7dc97067b914.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e1ffcd55-d2c9-49c1-90ca-b18309d6cd06.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4eb35d18-ca0f-4371-a98f-b7a223ecf711.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/521fad65-df6d-44df-b80e-ff715b0ad1f5.jpg"
+    ],
+    "firstSeenAt": "2026-04-05T16:51:33.361Z",
+    "lastSeenAt": "2026-04-05T16:51:33.361Z"
   }
 ]
