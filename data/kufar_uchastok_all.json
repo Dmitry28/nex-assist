@@ -917,7 +917,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4e794612-a7d4-401f-8635-19525b62f0e5.jpg"
     ],
     "firstSeenAt": "2026-03-29T19:58:43.075Z",
-    "lastSeenAt": "2026-04-05T16:51:33.361Z"
+    "lastSeenAt": "2026-04-06T09:39:27.881Z"
   },
   {
     "adId": 1057144146,
@@ -946,7 +946,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/33fd3700-4382-4713-b4cc-deb8d2adb749.jpg"
     ],
     "firstSeenAt": "2026-03-29T19:58:43.075Z",
-    "lastSeenAt": "2026-04-05T16:51:33.361Z"
+    "lastSeenAt": "2026-04-06T09:39:27.881Z"
   },
   {
     "adId": 1062375057,
@@ -984,7 +984,7 @@
     "listTime": "2026-03-30T06:48:30Z",
     "images": [],
     "firstSeenAt": "2026-03-30T08:44:32.651Z",
-    "lastSeenAt": "2026-04-05T16:51:33.361Z"
+    "lastSeenAt": "2026-04-06T09:39:27.881Z"
   },
   {
     "adId": 1038887958,
@@ -1590,7 +1590,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8e629cf1-d894-4197-aff5-b5190cb57e37.jpg"
     ],
     "firstSeenAt": "2026-04-05T16:51:33.361Z",
-    "lastSeenAt": "2026-04-05T16:51:33.361Z"
+    "lastSeenAt": "2026-04-06T09:39:27.881Z"
   },
   {
     "adId": 1050004332,
@@ -1617,6 +1617,82 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/521fad65-df6d-44df-b80e-ff715b0ad1f5.jpg"
     ],
     "firstSeenAt": "2026-04-05T16:51:33.361Z",
-    "lastSeenAt": "2026-04-05T16:51:33.361Z"
+    "lastSeenAt": "2026-04-06T09:39:27.881Z"
+  },
+  {
+    "adId": 1058838837,
+    "link": "https://re.kufar.by/vi/1058838837",
+    "title": "Продажа участка, с/т. Демидково",
+    "description": "В продаже хороший участок в 10 км от города в СТ Демидково.Площадь 8.16 сот., в частной собственности.Есть скважина, заведен свет.Рядом остановка обще",
+    "priceByn": 10865,
+    "priceUsd": 3700,
+    "address": "СТ Демидково, Одельский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 8.16,
+    "seller": "ООО Центр жилья",
+    "features": [
+      "Скважина"
+    ],
+    "listTime": "2026-04-06T08:58:08Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b01a7be0-c982-4050-849c-bfd169a05b4d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/70237310-3f2c-4846-ad79-11bd0c4d681b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9d7ac04d-2e80-46dd-b42b-58efa586c468.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e4e70a6e-2f1c-415b-9f67-8d6ef97f6d5e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3aaaa87c-3118-42e0-b383-4b67ffca0a26.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ffaa7cb4-fd3e-4bfd-9771-8a7f17669ec1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/37cf8c77-dd72-4f86-b250-66ffadb14503.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ff12c77f-9dc9-42e7-8194-2da769edb10d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39322529-ecf7-4de6-81fc-d17e3cb90628.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3b81af03-fc7f-4bce-bc4f-28a1e78b6d8e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/46e51081-75a6-48a5-97f2-7d9b8139fcf4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ed08fad4-4fb7-4721-815a-1274f2b51ac3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/178128ab-2a9e-436b-931d-68bc2da8c3df.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/56fc1ca5-1192-4b4e-b47b-608b6a7ddbd7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/143bba4e-2173-4067-835e-f4286c1d83f5.jpg"
+    ],
+    "firstSeenAt": "2026-04-06T09:39:27.881Z",
+    "lastSeenAt": "2026-04-06T09:39:27.881Z"
+  },
+  {
+    "adId": 1063723127,
+    "link": "https://re.kufar.by/vi/1063723127",
+    "title": "Дачный участок",
+    "description": "Продается дачный участок в ст «Лесное-2», 8 км от Гродно. Участок ровный, имеются садовые насаждения, теплица.",
+    "priceByn": 19087,
+    "priceUsd": 6500,
+    "address": "СТ Лесное-2, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 6,
+    "seller": "Ирина",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-06T06:45:38Z",
+    "images": [],
+    "firstSeenAt": "2026-04-06T09:39:27.881Z",
+    "lastSeenAt": "2026-04-06T09:39:27.881Z"
+  },
+  {
+    "adId": 1063666891,
+    "link": "https://re.kufar.by/vi/1063666891",
+    "title": "Участок",
+    "description": "Продам участок в с/т Автомагнитола, все вопросы по телефону.",
+    "priceByn": 20555,
+    "priceUsd": 7000,
+    "address": "18, СТ Автомагнитола, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 6,
+    "seller": "Дмитрий",
+    "features": [
+      "Отсутствует",
+      "Частная собственность",
+      "Да"
+    ],
+    "listTime": "2026-04-05T17:10:21Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5d9eff65-0e28-47c7-8edf-f4ed242f9af4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7d24cbc4-ccc7-483a-990c-1c489deaf130.jpg"
+    ],
+    "firstSeenAt": "2026-04-06T09:39:27.881Z",
+    "lastSeenAt": "2026-04-06T09:39:27.881Z"
   }
 ]

@@ -13,7 +13,7 @@
     "condition": "На ходу",
     "auctionDate": "пн 6 апр., 16:00 GMT+2",
     "auctionSource": "Copart",
-    "seller": "Insurance Company"
+    "seller": "---"
   },
   {
     "link": "https://bid.cars/ru/lot/1-75598805/2026-Volkswagen-Atlas-1V2FN2CA6TC507790",
@@ -23,7 +23,7 @@
     "odometer": "1k мили (2k km)",
     "damage": "Передняя часть",
     "location": "Clewiston (FL)",
-    "currentBid": "$5,700",
+    "currentBid": "$14,500",
     "engine": "2.0L 4 cyl. 269HP",
     "keys": "RB (Florida)",
     "condition": "На ходу",
@@ -39,7 +39,7 @@
     "odometer": "19k мили (31k km)",
     "damage": "Столкноевение | Левая сторона",
     "location": "Minneapoli... (MN)",
-    "currentBid": "$0",
+    "currentBid": "$25",
     "engine": "2.0L 4 cyl. 269HP",
     "keys": "Salvage (Minnesota)",
     "condition": "На ходу",
@@ -71,7 +71,7 @@
     "odometer": "7k мили (11k km)",
     "damage": "Задняя часть",
     "location": "Atlanta South (GA)",
-    "currentBid": "$475",
+    "currentBid": "$3,100",
     "engine": "2.0L 4 cyl. 269HP",
     "keys": "CT (Maryland)",
     "condition": "На ходу",
@@ -103,7 +103,7 @@
     "odometer": "48k мили (77k km)",
     "damage": "Сторона",
     "location": "Houston East (TX)",
-    "currentBid": "$350",
+    "currentBid": "$3,100",
     "engine": "2.0L 4 cyl. 269HP",
     "keys": "SV (Texas)",
     "condition": "На ходу",
@@ -119,7 +119,7 @@
     "odometer": "5k мили (9k km)",
     "damage": "Столкноевение | Задний",
     "location": "Northern V... (VA)",
-    "currentBid": "$12,100",
+    "currentBid": "$13,800",
     "engine": "2.0L 4 cyl. 269HP",
     "keys": "Salvage (Virginia)",
     "condition": "На ходу",
@@ -135,13 +135,13 @@
     "odometer": "5k мили (8k km)",
     "damage": "Задняя часть",
     "location": "Nashville (TN)",
-    "currentBid": "$1,700",
+    "currentBid": "$2,200",
     "engine": "2.0L 4 cyl. 269HP",
     "keys": "SC (Tennessee)",
     "condition": "На ходу",
     "auctionDate": "пн 6 апр., 19:00 GMT+2",
     "auctionSource": "Copart",
-    "seller": "Insurance Company"
+    "seller": "---"
   },
   {
     "link": "https://bid.cars/ru/lot/1-77800205/2026-Volkswagen-Atlas-1V2CN2CA3TC503974",
@@ -151,13 +151,13 @@
     "odometer": "1k мили (1k km)",
     "damage": "Сторона",
     "location": "Milwaukee... (WI)",
-    "currentBid": "$250",
+    "currentBid": "$300",
     "engine": "2.0L 4 cyl. 269HP",
     "keys": "IC (Wisconsin)",
     "condition": "На ходу",
     "auctionDate": "пн 6 апр., 19:00 GMT+2",
     "auctionSource": "Copart",
-    "seller": "Insurance Company"
+    "seller": "---"
   },
   {
     "link": "https://bid.cars/ru/lot/1-77138315/2024-Volkswagen-Atlas-1V2JR2CA8RC517504",
@@ -216,7 +216,7 @@
     "odometer": "9k мили (14k km)",
     "damage": "Вода | Наводнение",
     "location": "Southern N... (NJ)",
-    "currentBid": "$8,100",
+    "currentBid": "$8,300",
     "engine": "2.0L 4 cyl. 269HP",
     "keys": "Salvage (New Jersey)",
     "condition": "На ходу",
@@ -239,7 +239,7 @@
     "condition": "На ходу",
     "auctionDate": "вт 7 апр., 16:00 GMT+2",
     "auctionSource": "Copart",
-    "seller": "Insurance Company"
+    "seller": "---"
   },
   {
     "link": "https://bid.cars/ru/lot/1-77235315/2023-Volkswagen-Atlas-1V2DP2CA2PC503789",
@@ -255,7 +255,7 @@
     "condition": "На ходу",
     "auctionDate": "вт 7 апр., 16:00 GMT+2",
     "auctionSource": "Copart",
-    "seller": "Insurance Company"
+    "seller": "---"
   },
   {
     "link": "https://bid.cars/ru/lot/1-46507696/2025-Volkswagen-Atlas-1V2CR2CA2SC562971",
@@ -271,7 +271,7 @@
     "condition": "На ходу",
     "auctionDate": "вт 7 апр., 16:00 GMT+2",
     "auctionSource": "Copart",
-    "seller": "Non-insurance Company"
+    "seller": "---"
   },
   {
     "link": "https://bid.cars/ru/lot/1-77625605/2024-Volkswagen-Atlas-1V2WR2CA3RC574621",
@@ -303,7 +303,7 @@
     "condition": "На ходу",
     "auctionDate": "вт 7 апр., 16:00 GMT+2",
     "auctionSource": "Copart",
-    "seller": "Non-insurance Company"
+    "seller": "---"
   },
   {
     "link": "https://bid.cars/ru/lot/0-44358659/2024-Volkswagen-Atlas-1V2FR2CA4RC567905",
@@ -346,7 +346,7 @@
     "odometer": "29k мили (47k km)",
     "damage": "Незначительные вмятины / царапины",
     "location": "Ft. Pierce (FL)",
-    "currentBid": "$150",
+    "currentBid": "$200",
     "engine": "2.0L 4 cyl. 269HP",
     "keys": "CT (Florida)",
     "condition": "На ходу",
@@ -434,7 +434,7 @@
     "condition": "На ходу",
     "auctionDate": "вт 7 апр., 19:00 GMT+2",
     "auctionSource": "Copart",
-    "seller": "Non-insurance Company"
+    "seller": "---"
   },
   {
     "link": "https://bid.cars/ru/lot/1-78048235/2024-Volkswagen-Atlas-1V2DE2CA7RC234892",
@@ -451,7 +451,7 @@
     "condition": "На ходу",
     "auctionDate": "вт 7 апр., 19:00 GMT+2",
     "auctionSource": "Copart",
-    "seller": "Non-insurance Company"
+    "seller": "---"
   },
   {
     "link": "https://bid.cars/ru/lot/1-75692655/2024-Volkswagen-Atlas-1V2LE2CA5RC217326",
@@ -548,7 +548,7 @@
     "condition": "На ходу",
     "auctionDate": "ср 8 апр., 16:00 GMT+2",
     "auctionSource": "Copart",
-    "seller": "Insurance Company"
+    "seller": "---"
   },
   {
     "link": "https://bid.cars/ru/lot/0-44408590/2023-Volkswagen-Atlas-1V2BC2CA1PC202191",
@@ -689,7 +689,7 @@
     "odometer": "21k мили (34k km)",
     "damage": "Столкноевение | Левый задний",
     "location": "Miami-North (FL)",
-    "currentBid": "$25",
+    "currentBid": "$1,150",
     "buyNow": "$9,800",
     "engine": "2.0L 4 cyl. 269HP",
     "keys": "Rebuildable (Florida)",
@@ -761,7 +761,7 @@
     "condition": "На ходу",
     "auctionDate": "чт 9 апр., 16:00 GMT+2",
     "auctionSource": "Copart",
-    "seller": "Insurance Company"
+    "seller": "---"
   },
   {
     "link": "https://bid.cars/ru/lot/1-41907656/2024-Volkswagen-Atlas-1V2LR2CAXRC559794",
@@ -777,7 +777,7 @@
     "condition": "На ходу",
     "auctionDate": "чт 9 апр., 16:00 GMT+2",
     "auctionSource": "Copart",
-    "seller": "Insurance Company"
+    "seller": "---"
   },
   {
     "link": "https://bid.cars/ru/lot/0-43963580/2024-Volkswagen-Atlas-1V2HR2CA5RC621298",
@@ -858,7 +858,23 @@
     "condition": "На ходу",
     "auctionDate": "чт 9 апр., 20:00 GMT+2",
     "auctionSource": "Copart",
-    "seller": "Insurance Company"
+    "seller": "---"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/1-92102545/2024-Volkswagen-Atlas-1V2HR2CA3RC535536",
+    "title": "2024 Volkswagen Atlas, SE",
+    "vin": "1V2HR2CA3RC535536",
+    "lot": "1-92102545",
+    "odometer": "34k мили (55k km)",
+    "damage": "Передняя часть",
+    "location": "Jackson (MS)",
+    "currentBid": "$0",
+    "engine": "2.0L 4 cyl. 269HP",
+    "keys": "ST (Mississippi)",
+    "condition": "На ходу",
+    "auctionDate": "пт 10 апр., 19:00 GMT+2",
+    "auctionSource": "Copart",
+    "seller": "---"
   },
   {
     "link": "https://bid.cars/ru/lot/1-78306005/2024-Volkswagen-Atlas-1V2HE2CA8RC224731",
@@ -875,7 +891,7 @@
     "condition": "На ходу",
     "auctionDate": "пт 10 апр., 19:00 GMT+2",
     "auctionSource": "Copart",
-    "seller": "Non-insurance Company"
+    "seller": "---"
   },
   {
     "link": "https://bid.cars/ru/lot/0-44475938/2025-Volkswagen-Atlas-1V2CR2CA2SC573114",
@@ -949,7 +965,7 @@
     "odometer": "19k мили (31k km)",
     "damage": "Столкноевение | Левый задний",
     "location": "Stockton (CA)",
-    "currentBid": "$0",
+    "currentBid": "$25",
     "buyNow": "$12,850",
     "engine": "2.0L 4 cyl. 235HP",
     "keys": "Salvage (California)",
@@ -966,7 +982,7 @@
     "odometer": "29k мили (47k km)",
     "damage": "Столкноевение | Правая сторона",
     "location": "Atlanta South (GA)",
-    "currentBid": "$0",
+    "currentBid": "$25",
     "engine": "2.0L 4 cyl. 269HP",
     "keys": "Salvage (Idaho)",
     "condition": "На ходу",
