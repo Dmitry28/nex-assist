@@ -336,7 +336,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a3334576-d39f-4867-994a-501c556b1104.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-03-26T11:27:09.575Z"
+    "lastSeenAt": "2026-04-08T09:47:09.838Z"
   },
   {
     "adId": 1061800906,
@@ -863,7 +863,7 @@
     "listTime": "2026-04-07T08:58:38Z",
     "images": [],
     "firstSeenAt": "2026-03-29T19:58:43.075Z",
-    "lastSeenAt": "2026-04-07T09:54:55.667Z"
+    "lastSeenAt": "2026-04-08T09:47:09.838Z"
   },
   {
     "adId": 1011452136,
@@ -984,7 +984,7 @@
     "listTime": "2026-04-07T08:14:01Z",
     "images": [],
     "firstSeenAt": "2026-03-30T08:44:32.651Z",
-    "lastSeenAt": "2026-04-07T09:54:55.667Z"
+    "lastSeenAt": "2026-04-08T09:47:09.838Z"
   },
   {
     "adId": 1038887958,
@@ -1066,7 +1066,7 @@
     "listTime": "2026-03-31T07:52:18Z",
     "images": [],
     "firstSeenAt": "2026-03-31T09:53:43.593Z",
-    "lastSeenAt": "2026-04-07T09:54:55.667Z"
+    "lastSeenAt": "2026-04-08T09:47:09.838Z"
   },
   {
     "adId": 1062860736,
@@ -1717,7 +1717,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c2d3e1d1-db3b-4ab2-8ef8-a8cc4806c91a.jpg"
     ],
     "firstSeenAt": "2026-04-07T09:54:55.667Z",
-    "lastSeenAt": "2026-04-07T09:54:55.667Z"
+    "lastSeenAt": "2026-04-08T09:47:09.838Z"
   },
   {
     "adId": 1063796763,
@@ -1740,7 +1740,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d2dab31a-afa0-4d1b-bc63-12d3ae7c8d70.jpg"
     ],
     "firstSeenAt": "2026-04-07T09:54:55.667Z",
-    "lastSeenAt": "2026-04-07T09:54:55.667Z"
+    "lastSeenAt": "2026-04-08T09:47:09.838Z"
   },
   {
     "adId": 1063790944,
@@ -1763,7 +1763,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/80feba00-480f-4533-8d1b-ff7758219e56.jpg"
     ],
     "firstSeenAt": "2026-04-07T09:54:55.667Z",
-    "lastSeenAt": "2026-04-07T09:54:55.667Z"
+    "lastSeenAt": "2026-04-08T09:47:09.838Z"
   },
   {
     "adId": 1063783439,
@@ -1781,6 +1781,111 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fd1fca74-cd97-438e-990c-1d7c6b0c6716.jpg"
     ],
     "firstSeenAt": "2026-04-07T09:54:55.667Z",
-    "lastSeenAt": "2026-04-07T09:54:55.667Z"
+    "lastSeenAt": "2026-04-08T09:47:09.838Z"
+  },
+  {
+    "adId": 1064009168,
+    "link": "https://re.kufar.by/vi/1064009168",
+    "title": "Дачный участок возле Коробчиц СТ Лососянка",
+    "description": "Продается отличный земельный участок в СТ Лососянка рядом с д. Коробчицы , 7км до города. (Гродненская обл., Гродненский р-н, Коптевский с/с, СТ «Лосо",
+    "priceByn": 10218,
+    "priceUsd": 3500,
+    "address": "36, СТ Лососянка, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5,
+    "seller": "Пользователь",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-08T07:12:51Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2c2e5a6f-bf37-4b1d-915d-8fd1abb2fb43.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d187f8bc-3459-4982-b76c-f5b49a584dee.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0777a961-038e-46eb-8f3d-05c7e8f30548.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d128cca8-c85d-4b7f-9e76-d9fb5d708855.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d9e700d8-e5fa-4a07-a26e-926d87926680.jpg"
+    ],
+    "firstSeenAt": "2026-04-08T09:47:09.838Z",
+    "lastSeenAt": "2026-04-08T09:47:09.838Z"
+  },
+  {
+    "adId": 1060424231,
+    "link": "https://re.kufar.by/vi/1060424231",
+    "title": "Земельный участок . Вблизи деревни Коробчицы",
+    "description": "Земельный участок, вблизи д.коробчицы. Торг уместен.",
+    "priceByn": 20143,
+    "priceUsd": 6900,
+    "address": "СТ Незабудка, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5.85,
+    "seller": "Виталий Ельяшевич",
+    "features": [
+      "Сезонная",
+      "Частная собственность",
+      "Да"
+    ],
+    "listTime": "2026-04-07T21:07:22Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9c74edca-4dee-46d3-91f9-4e96f358f14d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bc45f866-bc44-4832-a075-be7c640581e5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3921bbbd-46f5-4cb5-bcc5-45112d060522.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/352f88c4-301c-49b4-8360-557f6ace6500.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/345c6b56-b352-4d4a-9d94-aa8a82f92c90.jpg"
+    ],
+    "firstSeenAt": "2026-04-08T09:47:09.838Z",
+    "lastSeenAt": "2026-04-08T09:47:09.838Z"
+  },
+  {
+    "adId": 1063935659,
+    "link": "https://re.kufar.by/vi/1063935659",
+    "title": "участок СТ Шембелевцы",
+    "description": "Продается дачный участок в садовом товариществе «Шембелевцы», Гродненский р-н, Сопоцкинский с/с. До города 12 км. 15 минут езды на автомобиле. Площадь",
+    "priceByn": 21019,
+    "priceUsd": 7200,
+    "address": "Н-6883, Гродненская область",
+    "plotArea": 7,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-07T16:03:05Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5e3bb597-ec92-4a59-b28d-81c88b169b14.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d60c0c2f-cc5f-4ce2-a53d-858f61bfb55c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/886ae522-5024-48aa-8692-317b82b7d338.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/90f5ed9f-2127-4f86-b61e-2b9c963a3d80.jpg"
+    ],
+    "firstSeenAt": "2026-04-08T09:47:09.838Z",
+    "lastSeenAt": "2026-04-08T09:47:09.838Z"
+  },
+  {
+    "adId": 1063906677,
+    "link": "https://re.kufar.by/vi/1063906677",
+    "title": "земельный участок СТ Лесное-2",
+    "description": "Продается земельный участок рядом с г. Гродно СТ Лесное-2 , Гродненская область, Подлабенский с/с,  расположенный на участке площадью 8,16 соток (форм",
+    "priceByn": 33000,
+    "priceUsd": 11304,
+    "address": "СТ Лесное-2, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 8.16,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-07T11:53:46Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6dfd0015-8c8f-44f2-9334-2959736812a2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2d9a1952-c919-49ea-a2b5-35442418b294.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/623b675f-8eaf-47b8-8e90-abded4739193.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/58f656a2-f614-4196-8af8-2ca1809084fb.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/332807ed-e4e9-4214-8dc0-67bb0d405916.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d989db4f-0de1-4856-8894-98e0e1e9aea9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7047a963-1317-4087-85b2-7a88b14d886e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c3d8f90a-f103-469d-b4e2-9cf9925811ae.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/56de2fc0-9f05-44cf-9c7f-e512fffab584.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/57c15d0f-55f5-44d6-aa7a-7d2a4903540e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/76b6a37d-a138-4cd0-b753-be462ef50617.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5aab775a-c2c5-469e-bbeb-9876bfc8bbc7.jpg"
+    ],
+    "firstSeenAt": "2026-04-08T09:47:09.838Z",
+    "lastSeenAt": "2026-04-08T09:47:09.838Z"
   }
 ]
