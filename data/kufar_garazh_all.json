@@ -47,7 +47,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-04-03T10:00:31.323Z"
+    "lastSeenAt": "2026-04-09T09:47:57.681Z"
   },
   {
     "adId": 1062002915,
@@ -542,7 +542,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e20ca543-67b3-478e-ad3c-c11ac4e2e584.jpg"
     ],
     "firstSeenAt": "2026-04-02T09:48:26.935Z",
-    "lastSeenAt": "2026-04-06T09:39:27.879Z"
+    "lastSeenAt": "2026-04-09T09:47:57.681Z"
   },
   {
     "adId": 1063073901,
@@ -902,7 +902,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca7987d4-c9dc-4301-983f-20329c5638d6.jpg"
     ],
     "firstSeenAt": "2026-04-07T09:54:55.665Z",
-    "lastSeenAt": "2026-04-08T09:47:09.837Z"
+    "lastSeenAt": "2026-04-09T09:47:57.681Z"
   },
   {
     "adId": 1063807131,
@@ -972,5 +972,39 @@
     "images": [],
     "firstSeenAt": "2026-04-07T09:54:55.665Z",
     "lastSeenAt": "2026-04-08T09:47:09.837Z"
+  },
+  {
+    "adId": 1064092662,
+    "link": "https://re.kufar.by/vi/1064092662",
+    "title": "Гараж на ул.Максима Горького, в ГК Радуга",
+    "description": "Продается гараж на ул.Максима Горького, в гаражном кооперативе «Радуга». Общая площадь – 24м2. Размеры гаража: ширина 3,30м., длина – 7,38м., высота –",
+    "priceByn": 20300,
+    "priceUsd": 7000,
+    "address": "Максима Горького ул, Гродно, Гродненская область",
+    "area": 24,
+    "seller": "ООО Магазин недвижимости",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма",
+      "Подвал",
+      "Наземная",
+      "Отсутствует"
+    ],
+    "listTime": "2026-04-08T15:12:39Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0546499a-de20-48df-926d-ccd89b68a019.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0b83a7ac-9913-4c0f-a7d4-a07e781509cf.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ec2fa1e2-96ff-4ade-80f7-d9e2a7bc5c75.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fc3025dc-664d-47f5-a092-f0589a63ca16.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/04bb6f8c-b60a-4804-b88e-45d3e70e3b4e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0f392a97-751b-4236-b9c4-3d1b237ec70d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6c6f0097-36e5-4403-986d-f470146c7bc1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c6f65049-74ea-4cbf-94e7-20da7ea0a2ee.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2ffa6adb-9444-4f8f-98aa-d90019d0a82b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1a58552d-2ea7-4dbf-a7bf-315383b616a0.jpg"
+    ],
+    "firstSeenAt": "2026-04-09T09:47:57.681Z",
+    "lastSeenAt": "2026-04-09T09:47:57.681Z"
   }
 ]
