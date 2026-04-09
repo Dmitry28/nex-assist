@@ -22,7 +22,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5e57eef0-2ee2-469e-a4f8-03b2f11cbbd1.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-04-03T10:00:31.324Z"
+    "lastSeenAt": "2026-04-09T08:28:36.680Z"
   },
   {
     "adId": 1024462788,
@@ -44,7 +44,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f3593f4d-c092-4c1d-baab-af3c77d17817.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-04-03T10:00:31.324Z"
+    "lastSeenAt": "2026-04-09T08:28:36.680Z"
   },
   {
     "adId": 1061975394,
@@ -336,7 +336,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a3334576-d39f-4867-994a-501c556b1104.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-04-08T08:21:09.280Z"
+    "lastSeenAt": "2026-04-09T08:28:36.680Z"
   },
   {
     "adId": 1061800906,
@@ -863,7 +863,7 @@
     "listTime": "2026-04-07T08:58:38Z",
     "images": [],
     "firstSeenAt": "2026-03-29T19:58:43.075Z",
-    "lastSeenAt": "2026-04-08T08:21:09.280Z"
+    "lastSeenAt": "2026-04-09T08:28:36.680Z"
   },
   {
     "adId": 1011452136,
@@ -1047,7 +1047,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0e2ac68d-f4d4-4728-8e6b-0d22fceb0492.jpg"
     ],
     "firstSeenAt": "2026-03-31T09:53:43.593Z",
-    "lastSeenAt": "2026-04-01T13:26:51.161Z"
+    "lastSeenAt": "2026-04-09T08:28:36.680Z"
   },
   {
     "adId": 1054725244,
@@ -1806,7 +1806,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d9e700d8-e5fa-4a07-a26e-926d87926680.jpg"
     ],
     "firstSeenAt": "2026-04-08T08:21:09.280Z",
-    "lastSeenAt": "2026-04-08T08:21:09.280Z"
+    "lastSeenAt": "2026-04-09T08:28:36.680Z"
   },
   {
     "adId": 1060424231,
@@ -1832,7 +1832,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/345c6b56-b352-4d4a-9d94-aa8a82f92c90.jpg"
     ],
     "firstSeenAt": "2026-04-08T08:21:09.280Z",
-    "lastSeenAt": "2026-04-08T08:21:09.280Z"
+    "lastSeenAt": "2026-04-09T08:28:36.680Z"
   },
   {
     "adId": 1063935659,
@@ -1855,7 +1855,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/90f5ed9f-2127-4f86-b61e-2b9c963a3d80.jpg"
     ],
     "firstSeenAt": "2026-04-08T08:21:09.280Z",
-    "lastSeenAt": "2026-04-08T08:21:09.280Z"
+    "lastSeenAt": "2026-04-09T08:28:36.680Z"
   },
   {
     "adId": 1063906677,
@@ -1886,6 +1886,130 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5aab775a-c2c5-469e-bbeb-9876bfc8bbc7.jpg"
     ],
     "firstSeenAt": "2026-04-08T08:21:09.280Z",
-    "lastSeenAt": "2026-04-08T08:21:09.280Z"
+    "lastSeenAt": "2026-04-09T08:28:36.680Z"
+  },
+  {
+    "adId": 1064169018,
+    "link": "https://re.kufar.by/vi/1064169018",
+    "title": "Дачный участок Горница, 5соток",
+    "description": "Участок ровной прямоугольной формы  огорожен со всех сторон( фундамент лента с сеткой рябицей), от соседнего участка отделяет проем с туями. Ворота ра",
+    "priceByn": 14500,
+    "priceUsd": 5000,
+    "address": "СТ Голубой Родник, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5,
+    "seller": "Наталья",
+    "features": [
+      "Сезонная",
+      "Частная собственность",
+      "Да"
+    ],
+    "listTime": "2026-04-09T06:40:48Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/66e77980-2b3a-4b75-93ab-40a95af51d16.jpg"
+    ],
+    "firstSeenAt": "2026-04-09T08:28:36.680Z",
+    "lastSeenAt": "2026-04-09T08:28:36.680Z"
+  },
+  {
+    "adId": 1064099009,
+    "link": "https://re.kufar.by/vi/1064099009",
+    "title": "участок СТ Горицвет",
+    "description": "Продается   отличный земельный участок в 10  км от   города,  в экологически чистом районе   направление на Каролино) , СТ «Горицвет ».  \n Участок ров",
+    "priceByn": 31900,
+    "priceUsd": 11000,
+    "address": "Солнечная ул, СТ Горицвет, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 9.15,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-08T16:03:06Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b51c667b-894a-483b-8033-c558cd28c2eb.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b6289cde-98dc-4715-9dc5-f2b63d2e5ef1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/31e1f86e-9c14-4eb2-bce3-e41d6aa31ac0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b25738ea-cd53-40a9-acd8-b781a2061cb0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/190cc974-5c4a-4a19-9610-cbddb350afbf.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/25798855-5383-44b1-b447-ae20ebdba085.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/206bf1cf-30f3-42d9-b242-30b29da2639d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/89eadbfb-91a4-43cc-b1cb-f88c31812295.jpg"
+    ],
+    "firstSeenAt": "2026-04-09T08:28:36.680Z",
+    "lastSeenAt": "2026-04-09T08:28:36.680Z"
+  },
+  {
+    "adId": 1064069172,
+    "link": "https://re.kufar.by/vi/1064069172",
+    "title": "Участок вблизи РП(Брузги)с фундаментом",
+    "description": "Участок 20 соток, газифицирован.Находится в отличном месте.Рядом лес,река Лососянка.Имеется согласованный проект дома,можно конечно менять на своё усм",
+    "priceByn": 78300,
+    "priceUsd": 27000,
+    "address": "деревня Клочки, Одельский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 20.35,
+    "seller": "Игорь",
+    "features": [
+      "Центральная",
+      "Пожизненное наследование",
+      "Да"
+    ],
+    "listTime": "2026-04-08T12:29:06Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/927db3a3-90e2-4e8c-a88d-079200722a10.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c61a064f-a465-49b8-afd7-5340d4617493.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/509eb361-f7ec-4d84-b4a6-78083d1d3b72.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b296af37-1610-4015-9c0a-52797492ff78.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0594e5be-fa52-41ed-a5ec-e02b611aacb3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a1345b96-4f26-447e-bfda-458e7c39d37a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8b46875d-8f81-4649-b913-383c8f815411.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d895a42a-77b2-4743-9f78-aba835b58244.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fb7743cf-1793-4864-9dc7-2530d170c571.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/00f4e8ba-add5-431d-8412-cfdd670ca21b.jpg"
+    ],
+    "firstSeenAt": "2026-04-09T08:28:36.680Z",
+    "lastSeenAt": "2026-04-09T08:28:36.680Z"
+  },
+  {
+    "adId": 1064068920,
+    "link": "https://re.kufar.by/vi/1064068920",
+    "title": "участок СТ Автомагнитола",
+    "description": "Продается отличный земельный участок  в 8 км от города, рядом с д.  Каменка ,д. Бросты,  Коптевский   с/с , в СТ  Автомагнитола . \n Отличное местополо",
+    "priceByn": 20300,
+    "priceUsd": 7000,
+    "address": "СТ Автомагнитола, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 6,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-08T12:24:47Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c53903b6-6c48-4375-94d4-ea69ebcdfb84.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b11a5d44-302f-4326-bc4d-d9c998004128.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/87fbbe00-af21-4538-a063-a2864f1eb396.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6602dbe3-996c-47df-9799-60f6f45cd301.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/52b3d51e-bd73-449b-b420-04915bc0dfae.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a1e324dc-45d2-4eb0-adb9-264007ef6612.jpg"
+    ],
+    "firstSeenAt": "2026-04-09T08:28:36.680Z",
+    "lastSeenAt": "2026-04-09T08:28:36.680Z"
+  },
+  {
+    "adId": 1064065396,
+    "link": "https://re.kufar.by/vi/1064065396",
+    "title": "Продается СТ участок Гродно",
+    "description": "Нет нужного параметра в",
+    "priceByn": 24650,
+    "priceUsd": 8500,
+    "address": "3, СТ Энергетик-5, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 10,
+    "seller": "Валентина",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-08T11:55:53Z",
+    "images": [],
+    "firstSeenAt": "2026-04-09T08:28:36.680Z",
+    "lastSeenAt": "2026-04-09T08:28:36.680Z"
   }
 ]
