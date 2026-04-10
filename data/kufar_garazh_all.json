@@ -47,7 +47,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-04-09T08:28:36.679Z"
+    "lastSeenAt": "2026-04-10T08:33:09.044Z"
   },
   {
     "adId": 1062002915,
@@ -542,7 +542,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e20ca543-67b3-478e-ad3c-c11ac4e2e584.jpg"
     ],
     "firstSeenAt": "2026-04-02T09:48:26.935Z",
-    "lastSeenAt": "2026-04-09T08:28:36.679Z"
+    "lastSeenAt": "2026-04-10T08:33:09.044Z"
   },
   {
     "adId": 1063073901,
@@ -1005,6 +1005,32 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1a58552d-2ea7-4dbf-a7bf-315383b616a0.jpg"
     ],
     "firstSeenAt": "2026-04-09T08:28:36.679Z",
-    "lastSeenAt": "2026-04-09T08:28:36.679Z"
+    "lastSeenAt": "2026-04-10T08:33:09.044Z"
+  },
+  {
+    "adId": 1064255355,
+    "link": "https://re.kufar.by/vi/1064255355",
+    "title": "гараж ул. Пушкина 41А",
+    "description": "Продам гараж из кирпича на улице Пушкина 41А, площадью 17, в два уровня. Имеется погреб, железные ворота. Чистый, сухой, оборудованный! Удобный подъез",
+    "priceByn": 22826,
+    "priceUsd": 7900,
+    "address": "Пушкина ул, 41А, Гродно, Гродненская область",
+    "area": 17,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "propertyType": "Гараж",
+    "listTime": "2026-04-09T16:02:55Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/be15f76a-4ea3-4bb6-ac4b-6f19fbf598f9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/657c5b2c-148b-4f42-8d36-81702b898af5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/93d4a9f8-9e2e-4865-9079-799acca3dd44.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3804a6bb-3ccd-4436-853f-456338580fcc.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1f66c771-1e33-4146-95e7-4749ad9af037.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/87e43209-ae69-4402-b8cb-6d9297916edf.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1432b763-0200-4ee0-afc1-f1857fdbe8b4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bb99f325-2463-4b56-8567-b5c755431b35.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d39d5f3a-28bf-42ad-bc3e-1378883f0a3a.jpg"
+    ],
+    "firstSeenAt": "2026-04-10T08:33:09.044Z",
+    "lastSeenAt": "2026-04-10T08:33:09.044Z"
   }
 ]
