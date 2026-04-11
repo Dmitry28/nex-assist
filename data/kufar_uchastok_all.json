@@ -22,7 +22,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5e57eef0-2ee2-469e-a4f8-03b2f11cbbd1.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-04-10T08:33:09.046Z"
+    "lastSeenAt": "2026-04-11T07:59:56.086Z"
   },
   {
     "adId": 1024462788,
@@ -165,7 +165,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/76c25739-4706-4d05-aac3-1b8d2ee68fb2.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-04-04T21:48:19.398Z"
+    "lastSeenAt": "2026-04-11T07:59:56.086Z"
   },
   {
     "adId": 1061925432,
@@ -697,7 +697,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8828a22f-d8a1-448f-80ff-e1a82c4f3d63.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.801Z",
-    "lastSeenAt": "2026-04-05T16:51:33.361Z"
+    "lastSeenAt": "2026-04-11T07:59:56.086Z"
   },
   {
     "adId": 1056448347,
@@ -723,7 +723,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8c3d8b38-10bc-43c8-9698-7c95e2e6e041.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.801Z",
-    "lastSeenAt": "2026-04-05T16:51:33.361Z"
+    "lastSeenAt": "2026-04-11T07:59:56.086Z"
   },
   {
     "adId": 1062276662,
@@ -1442,7 +1442,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6143f864-9035-4233-b869-535bde1fa957.jpg"
     ],
     "firstSeenAt": "2026-04-03T10:00:31.324Z",
-    "lastSeenAt": "2026-04-10T08:33:09.046Z"
+    "lastSeenAt": "2026-04-11T07:59:56.086Z"
   },
   {
     "adId": 1063374678,
@@ -2037,7 +2037,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5ead033a-1ca7-4457-a865-51ce8660b098.jpg"
     ],
     "firstSeenAt": "2026-04-10T08:33:09.046Z",
-    "lastSeenAt": "2026-04-10T08:33:09.046Z"
+    "lastSeenAt": "2026-04-11T07:59:56.086Z"
   },
   {
     "adId": 1064230019,
@@ -2065,7 +2065,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3981b235-2c1d-4674-8311-6fa33efd6ee3.jpg"
     ],
     "firstSeenAt": "2026-04-10T08:33:09.046Z",
-    "lastSeenAt": "2026-04-10T08:33:09.046Z"
+    "lastSeenAt": "2026-04-11T07:59:56.086Z"
   },
   {
     "adId": 1064227767,
@@ -2090,7 +2090,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d1be62fd-99fa-47f1-adcf-b0dc570c4dc1.jpg"
     ],
     "firstSeenAt": "2026-04-10T08:33:09.046Z",
-    "lastSeenAt": "2026-04-10T08:33:09.046Z"
+    "lastSeenAt": "2026-04-11T07:59:56.086Z"
   },
   {
     "adId": 1048902017,
@@ -2116,6 +2116,83 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a33e18be-5f9c-4fe4-aeec-25324138f034.jpg"
     ],
     "firstSeenAt": "2026-04-10T08:33:09.046Z",
-    "lastSeenAt": "2026-04-10T08:33:09.046Z"
+    "lastSeenAt": "2026-04-11T07:59:56.086Z"
+  },
+  {
+    "adId": 1064403656,
+    "link": "https://re.kufar.by/vi/1064403656",
+    "title": "Дачный участок",
+    "description": "Близкое расположение к Неману. Напротив участка находиться лес.",
+    "priceByn": 40452,
+    "priceUsd": 14000,
+    "address": "59, СТ Принеманское-2, Путришковский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 6,
+    "seller": "мерседес",
+    "features": [
+      "Отсутствует",
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-10T17:09:57Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/90546f9b-aace-4733-89f5-791e19077c8e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e5cd58df-a977-40ca-86d9-594b9800cee8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/719f8592-7a3d-40a9-b278-e377ff728e71.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3cbe2cf1-0abc-4184-a4d0-d98b5515782e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b2556cb0-a319-4eaa-bf27-9ad93509fd72.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c4ed4cf0-71ef-4149-9986-ab9dbe58c524.jpg"
+    ],
+    "firstSeenAt": "2026-04-11T07:59:56.086Z",
+    "lastSeenAt": "2026-04-11T07:59:56.086Z"
+  },
+  {
+    "adId": 1064362059,
+    "link": "https://re.kufar.by/vi/1064362059",
+    "title": "земельный участок СТ Земляне- М. Демидково",
+    "description": "Продается участок в пригороде города Гродно, в 7 км от микрорайона Ольшанка! Участок находится на территории садового товарищества  «Земляне-М.Димидко",
+    "priceByn": 13002,
+    "priceUsd": 4500,
+    "address": "154, СТ Демидково, Одельский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 8.51,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-10T11:53:47Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/da18b302-6a26-4ba3-878d-7d60de37f70d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9ed7e776-85aa-41d1-9742-a385e9fabd9f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b56b5b6e-9242-4094-a7d3-59c1a636a788.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/056edaee-87b5-464c-8390-9e5509d1fe2f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/290728d0-1aa2-4658-addc-9adb374fff1e.jpg"
+    ],
+    "firstSeenAt": "2026-04-11T07:59:56.086Z",
+    "lastSeenAt": "2026-04-11T07:59:56.086Z"
+  },
+  {
+    "adId": 1064362057,
+    "link": "https://re.kufar.by/vi/1064362057",
+    "title": "земельный участок СТ Демидково",
+    "description": "Продается земельный участок в садовом товариществе «Демидково» Одельского сельсовета Гродненского района. Расположен недалеко от микрорайона «Ольшанка",
+    "priceByn": 10691,
+    "priceUsd": 3700,
+    "address": "154, СТ Демидково, Одельский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 8.46,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-10T11:53:45Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d64fe1b0-c3a3-4c69-b1ec-d8a6b804089d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6c1b41d7-2722-458f-86a1-de1866d9da83.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ae975824-e951-42c4-9f23-eb5f8ef141d2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/da2fd2ac-b57b-4d40-aa18-7a01a7200ce9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8f552959-0a68-484f-b7b6-e41597d8345d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e45a7de7-99fd-4fd5-b784-aa6d2c902680.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5a5f2850-701e-467a-ab5f-4e3549214232.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/10f367e3-bea8-432d-b4dd-c38b2da0c84b.jpg"
+    ],
+    "firstSeenAt": "2026-04-11T07:59:56.086Z",
+    "lastSeenAt": "2026-04-11T07:59:56.086Z"
   }
 ]
