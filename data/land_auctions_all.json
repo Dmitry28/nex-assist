@@ -1,5 +1,20 @@
 [
   {
+    "title": "Не завершённый строительством жилой дом по ул. Ранишняя, 8",
+    "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-ranishnyaya-8/",
+    "price": "39 084,43 руб.",
+    "area": "0,1017 га",
+    "address": "г. Гродно, У-59 в микрорайоне «Барановичи 5,6», ул. Ранишняя, 8",
+    "cadastralNumber": "440100000003005093",
+    "cadastralMapUrl": "https://map.nca.by/search/019d855e-865f-72ee-9374-90e077883938",
+    "auctionDate": "Не указана",
+    "applicationDeadline": "Не указан",
+    "communications": "Не указаны",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2024/11/u-59-ranishnyaya-baranovichi-sajt.png"
+    ]
+  },
+  {
     "title": "Земельный участок У-2 по ул. Подкрыжакская",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-u-2-po-ul-podkryzhakskaya-2/",
     "price": "19 395,00 руб.",
@@ -260,40 +275,28 @@
   {
     "title": "Земельный участок У-3 по ул. Максима Танка",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-u-3-po-ul-maksima-tanka/",
-    "price": "72 961 руб.",
-    "area": "0,1019 га",
-    "address": "г. Гродно, ул. Сергея Болгарина, 2Б",
-    "cadastralNumber": "440100000002012131",
+    "price": "Не найдено",
+    "area": "Не найдено",
+    "address": "Не найдено",
+    "cadastralNumber": "Не найдено",
     "cadastralMapUrl": "",
-    "auctionDate": "Возможно проведение повторного аукциона при обращении заинтересованного в приобретении объекта лица",
+    "auctionDate": "Не указана",
     "applicationDeadline": "Не указан",
-    "communications": "электроснабжение, газоснабжение, водоснабжение",
-    "images": [
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2-2.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-1-1.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-3-1.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2-2.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-1-1.png"
-    ]
+    "communications": "Не указаны",
+    "images": []
   },
   {
     "title": "Земельный участок У-2 по ул. Максима Танка",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-u-2-po-ul-maksima-tanka/",
-    "price": "73 534 руб.",
-    "area": "0,1027 га",
-    "address": "г. Гродно, ул. Сергея Болгарина, 2А",
-    "cadastralNumber": "440100000002012134",
+    "price": "Не найдено",
+    "area": "Не найдено",
+    "address": "Не найдено",
+    "cadastralNumber": "Не найдено",
     "cadastralMapUrl": "",
-    "auctionDate": "Возможно проведение повторного аукциона при обращении заинтересованного в приобретении объекта лица",
+    "auctionDate": "Не указана",
     "applicationDeadline": "Не указан",
-    "communications": "электроснабжение, газоснабжение, водоснабжение",
-    "images": [
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-3.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-1.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-3.png"
-    ]
+    "communications": "Не указаны",
+    "images": []
   },
   {
     "title": "Земельный участок У-1 по ул. Максима Танка",
@@ -326,15 +329,13 @@
     "applicationDeadline": "Не указан",
     "communications": "Не указаны",
     "images": [
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-7.png",
       "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-1.png",
       "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-2.png",
       "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-3.png",
       "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-4.png",
       "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-5.png",
       "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-6.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-7.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-1.png"
+      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-7.png"
     ]
   },
   {
