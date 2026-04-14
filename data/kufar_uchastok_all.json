@@ -1017,7 +1017,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8851791a-b3ff-48e4-85ca-444cee193f6d.jpg"
     ],
     "firstSeenAt": "2026-03-31T09:53:43.593Z",
-    "lastSeenAt": "2026-04-01T13:26:51.161Z"
+    "lastSeenAt": "2026-04-14T08:39:12.555Z"
   },
   {
     "adId": 1016279565,
@@ -1066,7 +1066,7 @@
     "listTime": "2026-03-31T07:52:18Z",
     "images": [],
     "firstSeenAt": "2026-03-31T09:53:43.593Z",
-    "lastSeenAt": "2026-04-08T08:21:09.280Z"
+    "lastSeenAt": "2026-04-14T08:39:12.555Z"
   },
   {
     "adId": 1062860736,
@@ -1832,7 +1832,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/345c6b56-b352-4d4a-9d94-aa8a82f92c90.jpg"
     ],
     "firstSeenAt": "2026-04-08T08:21:09.280Z",
-    "lastSeenAt": "2026-04-13T09:08:18.564Z"
+    "lastSeenAt": "2026-04-14T08:39:12.555Z"
   },
   {
     "adId": 1063935659,
@@ -2290,7 +2290,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/960b7737-a08b-472a-a01c-9cd26d574b5c.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:08:18.564Z",
-    "lastSeenAt": "2026-04-13T09:08:18.564Z"
+    "lastSeenAt": "2026-04-14T08:39:12.555Z"
   },
   {
     "adId": 1038882993,
@@ -2311,7 +2311,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7b484c43-4b27-4651-9da7-52796a4e8d7a.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:08:18.564Z",
-    "lastSeenAt": "2026-04-13T09:08:18.564Z"
+    "lastSeenAt": "2026-04-14T08:39:12.555Z"
   },
   {
     "adId": 1063962481,
@@ -2363,7 +2363,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/74b554e1-4b25-45b7-b399-75c547f5c462.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:08:18.564Z",
-    "lastSeenAt": "2026-04-13T09:08:18.564Z"
+    "lastSeenAt": "2026-04-14T08:39:12.555Z"
   },
   {
     "adId": 1064676800,
@@ -2389,7 +2389,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6f8f6ff5-7235-4073-b709-6e8dbf7ec0c4.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:08:18.564Z",
-    "lastSeenAt": "2026-04-13T09:08:18.564Z"
+    "lastSeenAt": "2026-04-14T08:39:12.555Z"
   },
   {
     "adId": 1064664659,
@@ -2419,7 +2419,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4c634511-5309-4ff4-8b51-c99ef42cf408.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:08:18.564Z",
-    "lastSeenAt": "2026-04-13T09:08:18.564Z"
+    "lastSeenAt": "2026-04-14T08:39:12.555Z"
   },
   {
     "adId": 1064663334,
@@ -2446,7 +2446,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/88af32ae-7a23-40f3-9b44-456d7a389824.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:08:18.564Z",
-    "lastSeenAt": "2026-04-13T09:08:18.564Z"
+    "lastSeenAt": "2026-04-14T08:39:12.555Z"
   },
   {
     "adId": 1061236439,
@@ -2476,6 +2476,110 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0eec0879-1e50-41b4-8c71-550cf155ba98.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:08:18.564Z",
-    "lastSeenAt": "2026-04-13T09:08:18.564Z"
+    "lastSeenAt": "2026-04-14T08:39:12.555Z"
+  },
+  {
+    "adId": 236759314,
+    "link": "https://re.kufar.by/vi/236759314",
+    "title": "Земельный участок, Зарица,126, (10,51 сотка)",
+    "description": "Земельный участок  включён в границы населенного пункта деревни Зарица Путришковского с/совета.\nУчасток ровный, номер 126 (на карте неправильно устана",
+    "priceByn": 59000,
+    "priceUsd": 20764,
+    "address": "СТ Зарица, Путришковский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 10.51,
+    "seller": "***",
+    "features": [
+      "Центральная",
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-14T04:21:45Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2f3349b4-4e0d-486a-bfd3-620a5e7348d5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/95c5d152-8095-4a57-951a-af3448476c6f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fe5dd033-d807-46a5-9893-8b9148a44fff.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/291a5611-92ed-41aa-b305-f69ced14e83b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/51dcdc03-04b8-42a3-9f99-581514c44c9a.jpg"
+    ],
+    "firstSeenAt": "2026-04-14T08:39:12.555Z",
+    "lastSeenAt": "2026-04-14T08:39:12.555Z"
+  },
+  {
+    "adId": 1064823553,
+    "link": "https://re.kufar.by/vi/1064823553",
+    "title": "Земельный участок 8 в СТ Лососянка.",
+    "description": "Продается земельный участок 8 в СТ Лососянка, направление Коробчицы-Немейши, в 7 км от черты города. Участок площадью 0,05 га, угловой, ровный, без ли",
+    "address": "8, СТ Лососянка, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5,
+    "seller": "Светлана",
+    "features": [
+      "Сезонная",
+      "Частная собственность",
+      "-"
+    ],
+    "listTime": "2026-04-13T20:19:22Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bb6b770e-24e5-4fa3-b947-17c2c3a29490.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ff942ecd-4018-43de-9f38-7eba2a07d519.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/019bdabe-4479-407c-bb60-9c066ace2046.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5cd39a4d-960d-4b58-a42c-6d8868c1b7af.jpg"
+    ],
+    "firstSeenAt": "2026-04-14T08:39:12.555Z",
+    "lastSeenAt": "2026-04-14T08:39:12.555Z"
+  },
+  {
+    "adId": 1064790338,
+    "link": "https://re.kufar.by/vi/1064790338",
+    "title": "Дачный участок",
+    "description": "Продаётся участок 8.5 соток, развитая инфраструктура, с июля полностью асфальтируемая дорога к СТ, ближайшее время рядом будут проводить газ, идеально",
+    "priceByn": 16500,
+    "priceUsd": 5807,
+    "address": "СТ Приграничное, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 8.5,
+    "seller": "светлана",
+    "features": [
+      "Отсутствует",
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-13T14:25:53Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bb0a9447-83de-4a02-a79a-239f328e7f7e.jpg"
+    ],
+    "firstSeenAt": "2026-04-14T08:39:12.555Z",
+    "lastSeenAt": "2026-04-14T08:39:12.555Z"
+  },
+  {
+    "adId": 1064548877,
+    "link": "https://re.kufar.by/vi/1064548877",
+    "title": "Продам дачу",
+    "description": "Продам дачу, район озера Юбилейного-Тарусичи. С/Т \"Дружба-1\", ул. Широкая, 33. Участок 6 соток, летний домик на фундаменте 15 м,2, документы, в собств",
+    "priceByn": 18469,
+    "priceUsd": 6500,
+    "address": "33, СТ Дружба-1, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 6,
+    "seller": "Анна",
+    "features": [
+      "Сезонная",
+      "Частная собственность",
+      "Да"
+    ],
+    "listTime": "2026-04-13T11:36:24Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bfd50238-1d60-43e6-9b2c-2896550c4b26.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/038a7070-b022-4c72-ab1d-044aa31f40a9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7a4c5f4d-63e2-4566-add0-4c6e7fff323d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4fd42022-960a-4a7e-ace6-b99a86e5f024.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2c7ec4c2-4676-41da-a448-67cf86abe336.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/dce871d6-d1a5-4246-b7ae-e2223a68b721.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/83299d6f-1cee-4507-984f-7a9a345155f0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/505d1643-dffd-4827-bbf1-b73a8b1be5bf.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f2f7a0d1-7b51-482c-9198-5b8ae6b84b4d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bad3db72-b62f-4473-9b39-82cd344e413b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b5f9615f-995d-4ce3-a2db-12ae5f57624f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e7b69824-4c10-4ad8-80de-7b5a120c9aa0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8170ad4d-297c-460e-a22c-fe6c03c78897.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ac986408-71db-4928-876c-bc4e42ee616f.jpg"
+    ],
+    "firstSeenAt": "2026-04-14T08:39:12.555Z",
+    "lastSeenAt": "2026-04-14T08:39:12.555Z"
   }
 ]
