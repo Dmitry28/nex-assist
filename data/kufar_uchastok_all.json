@@ -87,7 +87,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7b4053ef-1b86-4f81-a244-191274796e97.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-03-27T10:03:43.686Z"
+    "lastSeenAt": "2026-04-15T08:37:31.945Z"
   },
   {
     "adId": 1061953023,
@@ -1017,7 +1017,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8851791a-b3ff-48e4-85ca-444cee193f6d.jpg"
     ],
     "firstSeenAt": "2026-03-31T09:53:43.593Z",
-    "lastSeenAt": "2026-04-14T08:39:12.555Z"
+    "lastSeenAt": "2026-04-15T08:37:31.945Z"
   },
   {
     "adId": 1016279565,
@@ -1066,7 +1066,7 @@
     "listTime": "2026-03-31T07:52:18Z",
     "images": [],
     "firstSeenAt": "2026-03-31T09:53:43.593Z",
-    "lastSeenAt": "2026-04-14T08:39:12.555Z"
+    "lastSeenAt": "2026-04-15T08:37:31.945Z"
   },
   {
     "adId": 1062860736,
@@ -2290,7 +2290,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/960b7737-a08b-472a-a01c-9cd26d574b5c.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:08:18.564Z",
-    "lastSeenAt": "2026-04-14T08:39:12.555Z"
+    "lastSeenAt": "2026-04-15T08:37:31.945Z"
   },
   {
     "adId": 1038882993,
@@ -2501,7 +2501,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/51dcdc03-04b8-42a3-9f99-581514c44c9a.jpg"
     ],
     "firstSeenAt": "2026-04-14T08:39:12.555Z",
-    "lastSeenAt": "2026-04-14T08:39:12.555Z"
+    "lastSeenAt": "2026-04-15T08:37:31.945Z"
   },
   {
     "adId": 1064823553,
@@ -2524,7 +2524,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5cd39a4d-960d-4b58-a42c-6d8868c1b7af.jpg"
     ],
     "firstSeenAt": "2026-04-14T08:39:12.555Z",
-    "lastSeenAt": "2026-04-14T08:39:12.555Z"
+    "lastSeenAt": "2026-04-15T08:37:31.945Z"
   },
   {
     "adId": 1064790338,
@@ -2545,7 +2545,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bb0a9447-83de-4a02-a79a-239f328e7f7e.jpg"
     ],
     "firstSeenAt": "2026-04-14T08:39:12.555Z",
-    "lastSeenAt": "2026-04-14T08:39:12.555Z"
+    "lastSeenAt": "2026-04-15T08:37:31.945Z"
   },
   {
     "adId": 1064548877,
@@ -2580,6 +2580,35 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ac986408-71db-4928-876c-bc4e42ee616f.jpg"
     ],
     "firstSeenAt": "2026-04-14T08:39:12.555Z",
-    "lastSeenAt": "2026-04-14T08:39:12.555Z"
+    "lastSeenAt": "2026-04-15T08:37:31.945Z"
+  },
+  {
+    "adId": 1036245004,
+    "link": "https://re.kufar.by/vi/1036245004",
+    "title": "Продается хороший участок в 20 км от города",
+    "description": "Продаётся хороший участок в д. Воловичёвцы, Гродненский район. Направление Сопоцкин.\n\nНедалеко от деревни расположен знаменитый дворцово-парковый комп",
+    "priceByn": 50949,
+    "priceUsd": 18000,
+    "address": "деревня Воловичёвцы, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 15,
+    "seller": "ООО Центр жилья",
+    "features": [
+      "Колодец",
+      "Пожизненное наследование",
+      "Да"
+    ],
+    "listTime": "2026-04-14T11:27:39Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/16a44938-edca-41f0-bfe3-d1a1b4aac702.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/92b22f3d-da6f-4500-9715-57d34ecf48ef.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8a88c309-277a-4249-a695-17b8a74ab661.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c76cbb77-260d-4e3c-92f2-c29a90b2fbb8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0b066425-c1d6-4e22-90ae-029cc0ddd1f2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8baddc2e-988f-4d46-badb-e00a94cd9772.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3655b124-27ac-498b-bc8b-1e3a751d2fa9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/19b9eb71-8846-4f11-a7c2-f9db390d0329.jpg"
+    ],
+    "firstSeenAt": "2026-04-15T08:37:31.945Z",
+    "lastSeenAt": "2026-04-15T08:37:31.945Z"
   }
 ]
