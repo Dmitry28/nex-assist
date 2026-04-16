@@ -17,6 +17,11 @@ import { extractRetryAfter } from './telegram.utils';
  * TODO: Telegram is the only alerting channel — if the token expires or the bot is
  * blocked, errors disappear silently. Consider adding a fallback alert mechanism
  * (e.g. email, webhook, or GitHub Actions job failure) for critical scrape failures.
+ *
+ * TODO: Kufar CDN (rms.kufar.by) returns 302 redirects (e.g. to rms8.kufar.by).
+ * Telegram API handles these inconsistently in sendMediaGroup, causing
+ * WEBPAGE_MEDIA_EMPTY errors. Consider resolving redirects with HEAD requests
+ * before sending to Telegram to improve photo delivery reliability.
  */
 @Injectable()
 export class TelegramService implements OnModuleInit {
