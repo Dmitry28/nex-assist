@@ -315,7 +315,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a6c66f55-138b-4f1b-bddd-ebcf98650eda.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.799Z",
-    "lastSeenAt": "2026-04-16T09:51:57.625Z"
+    "lastSeenAt": "2026-04-16T20:05:19.394Z"
   },
   {
     "adId": 1062236887,
@@ -543,7 +543,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e20ca543-67b3-478e-ad3c-c11ac4e2e584.jpg"
     ],
     "firstSeenAt": "2026-04-02T09:48:26.935Z",
-    "lastSeenAt": "2026-04-16T09:51:57.625Z"
+    "lastSeenAt": "2026-04-16T20:05:19.394Z"
   },
   {
     "adId": 1063073901,
@@ -827,7 +827,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ec90b0fa-5b55-42e5-a012-6a668ffe9c87.jpg"
     ],
     "firstSeenAt": "2026-04-05T16:51:33.360Z",
-    "lastSeenAt": "2026-04-16T09:51:57.625Z"
+    "lastSeenAt": "2026-04-16T20:05:19.394Z"
   },
   {
     "adId": 1063540543,
@@ -1149,7 +1149,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/68bfe4a4-f6be-47d8-88c3-47af97584b27.jpg"
     ],
     "firstSeenAt": "2026-04-15T10:02:09.426Z",
-    "lastSeenAt": "2026-04-16T09:51:57.625Z"
+    "lastSeenAt": "2026-04-16T20:05:19.394Z"
   },
   {
     "adId": 1065033369,
@@ -1174,7 +1174,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7765cb59-64f5-4bfd-8063-533fd00edc84.jpg"
     ],
     "firstSeenAt": "2026-04-15T10:02:09.426Z",
-    "lastSeenAt": "2026-04-16T09:51:57.625Z"
+    "lastSeenAt": "2026-04-16T20:05:19.394Z"
   },
   {
     "adId": 1064930359,
@@ -1191,7 +1191,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/348d2fe7-814e-42d2-93fc-5bea16d7a2c9.jpg"
     ],
     "firstSeenAt": "2026-04-15T10:02:09.426Z",
-    "lastSeenAt": "2026-04-16T09:51:57.625Z"
+    "lastSeenAt": "2026-04-16T20:05:19.394Z"
   },
   {
     "adId": 1064897428,
@@ -1286,7 +1286,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fbfe64ff-3d0c-4984-9201-3a180ce34c4a.jpg"
     ],
     "firstSeenAt": "2026-04-16T09:51:57.625Z",
-    "lastSeenAt": "2026-04-16T09:51:57.625Z"
+    "lastSeenAt": "2026-04-16T20:05:19.394Z"
   },
   {
     "adId": 1064384079,
@@ -1323,7 +1323,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/979821c3-e345-4fcf-9b48-898408081b6e.jpg"
     ],
     "firstSeenAt": "2026-04-16T09:51:57.625Z",
-    "lastSeenAt": "2026-04-16T09:51:57.625Z"
+    "lastSeenAt": "2026-04-16T20:05:19.394Z"
   },
   {
     "adId": 1065104042,
@@ -1344,7 +1344,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bebdea38-c41b-41f3-ba50-bedf600d73a6.jpg"
     ],
     "firstSeenAt": "2026-04-16T09:51:57.625Z",
-    "lastSeenAt": "2026-04-16T09:51:57.625Z"
+    "lastSeenAt": "2026-04-16T20:05:19.394Z"
   },
   {
     "adId": 1061342837,
@@ -1370,6 +1370,30 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d0cba27d-2a67-47bb-9f8d-ee2b1f45b921.jpg"
     ],
     "firstSeenAt": "2026-04-16T09:51:57.625Z",
-    "lastSeenAt": "2026-04-16T09:51:57.625Z"
+    "lastSeenAt": "2026-04-16T20:05:19.394Z"
+  },
+  {
+    "adId": 1065201345,
+    "link": "https://re.kufar.by/vi/1065201345",
+    "title": "Гараж в районе заправки микрорайона Вишневец",
+    "description": "Продаётся гараж в районе заправки микрорайона «Вишневец».\nВ гараже имеется печка, стеллажи, погреб.\nХорошие подъездные пути.",
+    "priceByn": 31012,
+    "priceUsd": 11000,
+    "address": "Индурское шоссе, 17Аблок3к315, Гродно, Гродненская область",
+    "area": 24.1,
+    "seller": "ООО Магазин недвижимости",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Подвал",
+      "Наземная",
+      "Печное"
+    ],
+    "listTime": "2026-04-16T11:25:13Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1ed92605-84ba-4817-b11d-ba93000101af.jpg"
+    ],
+    "firstSeenAt": "2026-04-16T20:04:26.877Z",
+    "lastSeenAt": "2026-04-16T20:05:19.394Z"
   }
 ]

@@ -51,15 +51,24 @@ export class TelegramService implements OnModuleInit {
   async sendPhoto(chatId: string, url: string, caption: string): Promise<boolean> {
     if (!this.bot) return this.dryRun('sendPhoto', chatId, caption, url);
     await this.throttle(chatId);
-    return this.withRetry(() =>
+    const ok = await this.withRetry(() =>
       this.bot!.sendPhoto(chatId, url, { caption, parse_mode: 'HTML' }).then(() => undefined),
     );
+    if (ok) return true;
+    this.logger.warn('Photo send failed, falling back to text-only message');
+    return this.sendMessage(chatId, caption);
   }
 
   async sendMediaGroup(chatId: string, media: TelegramBot.InputMediaPhoto[]): Promise<boolean> {
     if (!this.bot) return this.dryRun('sendMediaGroup', chatId, `${media.length} photos`);
     await this.throttle(chatId);
-    return this.withRetry(() => this.bot!.sendMediaGroup(chatId, media).then(() => undefined));
+    const ok = await this.withRetry(() =>
+      this.bot!.sendMediaGroup(chatId, media).then(() => undefined),
+    );
+    if (ok) return true;
+    const caption = media.find(m => m.caption)?.caption ?? '';
+    this.logger.warn('Media group failed, falling back to text-only message');
+    return this.sendMessage(chatId, caption);
   }
 
   /** Ensures at least SEND_INTERVAL_MS between consecutive sends to the same chat. */
