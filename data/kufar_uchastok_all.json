@@ -87,7 +87,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7b4053ef-1b86-4f81-a244-191274796e97.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-04-15T10:02:09.427Z"
+    "lastSeenAt": "2026-04-16T09:51:57.626Z"
   },
   {
     "adId": 1061953023,
@@ -213,7 +213,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4726f432-6c88-499e-843c-386b62e74a79.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-03-30T09:37:35.128Z"
+    "lastSeenAt": "2026-04-16T09:51:57.626Z"
   },
   {
     "adId": 1039071483,
@@ -525,7 +525,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0461d35f-00e9-4ab1-96e2-ac30178d9ab8.jpg"
     ],
     "firstSeenAt": "2026-03-27T10:03:43.686Z",
-    "lastSeenAt": "2026-04-13T09:49:43.145Z"
+    "lastSeenAt": "2026-04-16T09:51:57.626Z"
   },
   {
     "adId": 1057867782,
@@ -2441,7 +2441,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5cd39a4d-960d-4b58-a42c-6d8868c1b7af.jpg"
     ],
     "firstSeenAt": "2026-04-15T10:02:09.427Z",
-    "lastSeenAt": "2026-04-15T10:02:09.427Z"
+    "lastSeenAt": "2026-04-16T09:51:57.626Z"
   },
   {
     "adId": 1036245004,
@@ -2470,7 +2470,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/19b9eb71-8846-4f11-a7c2-f9db390d0329.jpg"
     ],
     "firstSeenAt": "2026-04-15T10:02:09.427Z",
-    "lastSeenAt": "2026-04-15T10:02:09.427Z"
+    "lastSeenAt": "2026-04-16T09:51:57.626Z"
   },
   {
     "adId": 236759314,
@@ -2552,5 +2552,92 @@
     ],
     "firstSeenAt": "2026-04-15T10:02:09.427Z",
     "lastSeenAt": "2026-04-15T10:02:09.427Z"
+  },
+  {
+    "adId": 1065178373,
+    "link": "https://re.kufar.by/vi/1065178373",
+    "title": "Хутор 1га Барановичи",
+    "description": "Продается хутор. Рядом с мк-р Барановичи. В частной собственности. На участке расположен дом - под снос. Есть электричество. Продается целиком 100 сот",
+    "address": "Городенская ул, 34, Гродно, Гродненская область",
+    "plotArea": 100,
+    "seller": "Ядвига",
+    "features": [
+      "Отсутствует",
+      "Частная собственность",
+      "Да"
+    ],
+    "listTime": "2026-04-16T08:12:36Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4323e3f2-7a25-442f-b233-07b1abd40584.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ebee022b-9994-49d2-86fc-c7b127d71706.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7ce425a1-bf37-4cb0-a153-0e517c9225c0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/12280d1f-7289-4845-8892-8a3899f92153.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ac259614-c9fa-410a-b9f9-91ee5965aaed.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5dfe7c7e-8a7c-4d13-9b64-af40814dc560.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/03309d97-0615-473d-a5f6-2d1062681d73.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a3b9983d-ae81-4995-8a46-776efc2c1202.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/83e21d9f-1f98-41c7-9583-5a5435a56b9b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d740a6d0-560e-4d7e-a8d7-85ace90be474.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8b7ac1d4-c50c-4ec5-8c2f-2c8420c1e7b3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/32832284-307f-4620-89d9-910f61110f63.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3f79f884-be4b-4ebc-a98a-2229def825e3.jpg"
+    ],
+    "firstSeenAt": "2026-04-16T09:51:57.626Z",
+    "lastSeenAt": "2026-04-16T09:51:57.626Z"
+  },
+  {
+    "adId": 1036259474,
+    "link": "https://re.kufar.by/vi/1036259474",
+    "title": "Дача в СТ Энергетик-4, 4 км от Гродно",
+    "description": "Продается уютная дача в СТ Энергетик-4, в 4 км от мкр-на Погораны — Кошевники, г. Гродно.\nЗемельный участок находится в частной собственности, правиль",
+    "address": "СТ Энергетик-4, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5.5,
+    "seller": "ООО Магазин недвижимости",
+    "features": [
+      "Сезонная",
+      "Частная собственность",
+      "Да"
+    ],
+    "listTime": "2026-04-16T07:59:14Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a77b597b-c401-494b-8891-8d104640831d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/833ed6cd-2d22-4eb9-8091-66770c3a7749.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/56b561b5-0a57-468a-ab47-fe9271d027a3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/431bdab9-6639-4d12-8f5d-931796dc0347.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2856ab34-4920-4b8f-855c-31c46da8b84a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/38e8f060-8c75-44be-8fa3-7be986e6331f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/78599c2b-b403-4626-adbb-bbe76cdfea45.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/33380796-0056-4544-bbf6-2aea5981bb3f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a224a026-80f1-4098-be17-459099a6de45.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/22d145cc-e8c4-449d-90db-86b596344a5e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/aee90a50-e603-4237-9dfa-11ce8bbdca9d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a63537a0-4182-4df2-af35-e85880dd907c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/856a600f-7f6f-42ad-90e8-06b4947dc45f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ededad7b-3100-4171-96c2-5c7fbc3812e8.jpg"
+    ],
+    "firstSeenAt": "2026-04-16T09:51:57.626Z",
+    "lastSeenAt": "2026-04-16T09:51:57.626Z"
+  },
+  {
+    "adId": 1065050093,
+    "link": "https://re.kufar.by/vi/1065050093",
+    "title": "Дачный участок",
+    "description": "Гродненская обл., Подлабенский с/с, СТ \"Агрэст\", 11. Площадь 0,0807 га.",
+    "priceByn": 14097,
+    "priceUsd": 5000,
+    "address": "СТ Садовая Радуга, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 8,
+    "seller": "Кирилл",
+    "features": [
+      "Отсутствует",
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-15T09:48:52Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/88cea73d-d3b7-4c31-a50a-843e76188a8b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/de1fe0a9-a1be-4d8b-99a4-213b7483c4c4.jpg"
+    ],
+    "firstSeenAt": "2026-04-16T09:51:57.626Z",
+    "lastSeenAt": "2026-04-16T09:51:57.626Z"
   }
 ]
