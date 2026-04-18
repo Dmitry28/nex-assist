@@ -47,7 +47,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-04-17T08:38:33.333Z"
+    "lastSeenAt": "2026-04-18T08:20:21.406Z"
   },
   {
     "adId": 1062002915,
@@ -1064,7 +1064,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b8bde725-947b-4157-9ff9-b6b2dea97625.jpg"
     ],
     "firstSeenAt": "2026-04-11T07:59:56.085Z",
-    "lastSeenAt": "2026-04-12T08:07:35.868Z"
+    "lastSeenAt": "2026-04-18T08:20:21.406Z"
   },
   {
     "adId": 1064384079,
@@ -1283,7 +1283,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/348d2fe7-814e-42d2-93fc-5bea16d7a2c9.jpg"
     ],
     "firstSeenAt": "2026-04-15T08:37:31.943Z",
-    "lastSeenAt": "2026-04-17T08:38:33.333Z"
+    "lastSeenAt": "2026-04-18T08:20:21.406Z"
   },
   {
     "adId": 1064897428,
@@ -1336,7 +1336,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/68bfe4a4-f6be-47d8-88c3-47af97584b27.jpg"
     ],
     "firstSeenAt": "2026-04-15T08:37:31.943Z",
-    "lastSeenAt": "2026-04-17T08:38:33.333Z"
+    "lastSeenAt": "2026-04-18T08:20:21.406Z"
   },
   {
     "adId": 1064874956,
@@ -1427,7 +1427,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f666d6fd-50b8-46c9-a84e-2292dd4b0a29.jpg"
     ],
     "firstSeenAt": "2026-04-17T08:38:33.333Z",
-    "lastSeenAt": "2026-04-17T08:38:33.333Z"
+    "lastSeenAt": "2026-04-18T08:20:21.406Z"
   },
   {
     "adId": 1065201345,
@@ -1452,7 +1452,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/541ed9df-bb66-4e1f-9a81-169b2d4c5f86.jpg"
     ],
     "firstSeenAt": "2026-04-17T08:38:33.333Z",
-    "lastSeenAt": "2026-04-17T08:38:33.333Z"
+    "lastSeenAt": "2026-04-18T08:20:21.406Z"
   },
   {
     "adId": 1065179776,
@@ -1473,6 +1473,91 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fbfe64ff-3d0c-4984-9201-3a180ce34c4a.jpg"
     ],
     "firstSeenAt": "2026-04-17T08:38:33.333Z",
-    "lastSeenAt": "2026-04-17T08:38:33.333Z"
+    "lastSeenAt": "2026-04-18T08:20:21.406Z"
+  },
+  {
+    "adId": 1065318304,
+    "link": "https://re.kufar.by/vi/1065318304",
+    "title": "Гараж в ГК Понемунь2",
+    "description": "Гараж в Понемунь 2. Блок 8, гараж 304",
+    "priceByn": 22662,
+    "priceUsd": 8000,
+    "address": "Понемуньская ул, 9, Гродно, Гродненская область",
+    "area": 19,
+    "seller": "Анна",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма",
+      "Подвал"
+    ],
+    "listTime": "2026-04-17T16:16:39Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f847cece-c456-49b7-897f-72ae10493ab6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/19a3c7f6-4b43-4c61-91e2-3437cdc57074.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/538bb3df-6f76-49ec-94d7-a8648bf33ee0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c2faf814-2d86-4806-b5a1-25183d99a158.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0af8fa84-50bc-4779-a1bd-e1820e133fde.jpg"
+    ],
+    "firstSeenAt": "2026-04-18T08:20:21.406Z",
+    "lastSeenAt": "2026-04-18T08:20:21.406Z"
+  },
+  {
+    "adId": 1065317441,
+    "link": "https://re.kufar.by/vi/1065317441",
+    "title": "гараж пр-кт Космонавтов 68В",
+    "description": "Продается гараж на пр. Космонавтов 68В в гаражно-строительном кооперативе, за гаражом находится лесной массив. Общая площадь – 16,3 м2. Размеры гаража",
+    "priceByn": 19546,
+    "priceUsd": 6900,
+    "address": "Космонавтов пр, 68Вк105блок1, Гродно, Гродненская область",
+    "area": 16.3,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "propertyType": "Гараж",
+    "listTime": "2026-04-17T16:14:19Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/23a184ea-7836-4f46-8eae-22158f34c6fc.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3a0e47f8-dd1e-4760-8c7d-5378b0e4a0d0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2299d11f-0d2e-4094-87cf-d6f083bf01d8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/46267a64-4f80-4a6c-98dd-7b1ab21f898f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/26320e34-6ae4-44ae-827e-b6d2fd1397df.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39e97b58-2dd6-4c5f-928b-b268a2ccc403.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/83e47918-7715-4caa-91ce-aae450fc3cb4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d15adf7f-b5cd-47c2-bb38-260e2945de64.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/babbbc60-bb39-444e-9b37-b5d71c9bd41d.jpg"
+    ],
+    "firstSeenAt": "2026-04-18T08:20:21.406Z",
+    "lastSeenAt": "2026-04-18T08:20:21.406Z"
+  },
+  {
+    "adId": 1065290081,
+    "link": "https://re.kufar.by/vi/1065290081",
+    "title": "Гараж",
+    "description": "Гараж в районе мясокомбината. Не стандартные размеры, в новом блоке с хорошим широким подъездом, смотровая яма, высокие  3 метра ворота. Документы в п",
+    "priceByn": 69404,
+    "priceUsd": 24500,
+    "address": "Гродно, Гродненская область",
+    "area": 40,
+    "seller": "ИП Максименко С.Л.",
+    "propertyType": "Гараж",
+    "listTime": "2026-04-17T11:00:01Z",
+    "images": [],
+    "firstSeenAt": "2026-04-18T08:20:21.406Z",
+    "lastSeenAt": "2026-04-18T08:20:21.406Z"
+  },
+  {
+    "adId": 1065289187,
+    "link": "https://re.kufar.by/vi/1065289187",
+    "title": "Гараж мясомбинат",
+    "description": "Двойной не стандартный гараж,в районе мясокомбината ,\nсмотровая яма ,высокие ворота 3 метра, хороший широкий подъезд. Документы в порядке.",
+    "priceByn": 69404,
+    "priceUsd": 24500,
+    "address": "Гродно, Гродненская область",
+    "area": 40,
+    "seller": "ИП Максименко С.Л.",
+    "propertyType": "Гараж",
+    "listTime": "2026-04-17T10:47:25Z",
+    "images": [],
+    "firstSeenAt": "2026-04-18T08:20:21.406Z",
+    "lastSeenAt": "2026-04-18T08:20:21.406Z"
   }
 ]

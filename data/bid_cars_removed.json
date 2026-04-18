@@ -1572,5 +1572,23 @@
     "seller": "State Farm Group Insurance",
     "removedAt": "2026-04-17T08:22:14.053Z",
     "removalNotifiedAt": "2026-04-17T08:22:14.053Z"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/0-44595085/2025-Volkswagen-Atlas-1V2BR2CA9SC530787",
+    "title": "2025 Volkswagen Atlas, 2.0T Sel",
+    "vin": "1V2BR2CA9SC530787",
+    "lot": "0-44595085",
+    "odometer": "5k мили (8k km)",
+    "damage": "Столкноевение | Правая сторона",
+    "location": "Fayetteville (AR)",
+    "currentBid": "$0",
+    "engine": "2.0L 4 cyl. 269HP",
+    "keys": "Salvage (Arkansas)",
+    "condition": "На ходу",
+    "auctionDate": "чт 23 апр., 16:30 GMT+2",
+    "auctionSource": "IAAI",
+    "seller": "State Farm Group Insurance",
+    "removedAt": "2026-04-18T07:53:35.017Z",
+    "removalNotifiedAt": "2026-04-18T07:53:35.017Z"
   }
 ]
