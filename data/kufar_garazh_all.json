@@ -779,7 +779,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/453e56a0-8903-4402-8b3f-01d44ebd10e4.jpg"
     ],
     "firstSeenAt": "2026-04-05T16:51:33.360Z",
-    "lastSeenAt": "2026-04-07T08:31:10.678Z"
+    "lastSeenAt": "2026-04-19T08:15:52.348Z"
   },
   {
     "adId": 1063594653,
@@ -849,7 +849,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2b140d18-2fdc-4813-874a-545551991b63.jpg"
     ],
     "firstSeenAt": "2026-04-05T16:51:33.360Z",
-    "lastSeenAt": "2026-04-14T08:39:12.554Z"
+    "lastSeenAt": "2026-04-19T08:15:52.348Z"
   },
   {
     "adId": 1063817729,
@@ -1064,7 +1064,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b8bde725-947b-4157-9ff9-b6b2dea97625.jpg"
     ],
     "firstSeenAt": "2026-04-11T07:59:56.085Z",
-    "lastSeenAt": "2026-04-18T08:20:21.406Z"
+    "lastSeenAt": "2026-04-19T08:15:52.348Z"
   },
   {
     "adId": 1064384079,
@@ -1336,7 +1336,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/68bfe4a4-f6be-47d8-88c3-47af97584b27.jpg"
     ],
     "firstSeenAt": "2026-04-15T08:37:31.943Z",
-    "lastSeenAt": "2026-04-18T08:20:21.406Z"
+    "lastSeenAt": "2026-04-19T08:15:52.348Z"
   },
   {
     "adId": 1064874956,
@@ -1500,7 +1500,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0af8fa84-50bc-4779-a1bd-e1820e133fde.jpg"
     ],
     "firstSeenAt": "2026-04-18T08:20:21.406Z",
-    "lastSeenAt": "2026-04-18T08:20:21.406Z"
+    "lastSeenAt": "2026-04-19T08:15:52.348Z"
   },
   {
     "adId": 1065317441,
@@ -1526,7 +1526,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/babbbc60-bb39-444e-9b37-b5d71c9bd41d.jpg"
     ],
     "firstSeenAt": "2026-04-18T08:20:21.406Z",
-    "lastSeenAt": "2026-04-18T08:20:21.406Z"
+    "lastSeenAt": "2026-04-19T08:15:52.348Z"
   },
   {
     "adId": 1065290081,
@@ -1542,7 +1542,7 @@
     "listTime": "2026-04-17T11:00:01Z",
     "images": [],
     "firstSeenAt": "2026-04-18T08:20:21.406Z",
-    "lastSeenAt": "2026-04-18T08:20:21.406Z"
+    "lastSeenAt": "2026-04-19T08:15:52.348Z"
   },
   {
     "adId": 1065289187,
@@ -1558,6 +1558,28 @@
     "listTime": "2026-04-17T10:47:25Z",
     "images": [],
     "firstSeenAt": "2026-04-18T08:20:21.406Z",
-    "lastSeenAt": "2026-04-18T08:20:21.406Z"
+    "lastSeenAt": "2026-04-19T08:15:52.348Z"
+  },
+  {
+    "adId": 1065433285,
+    "link": "https://re.kufar.by/vi/1065433285",
+    "title": "Гараж",
+    "description": "Интересует гараж в районе Гаражной, Веселой, Звёздной, Понемунь, КСМ.",
+    "address": "Гаражная ул, Гродно, Гродненская область",
+    "area": 19,
+    "seller": "kb76",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Подвал",
+      "Наземная",
+      "Отсутствует"
+    ],
+    "listTime": "2026-04-19T05:46:41Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/808bfbd8-0740-4f50-a0d7-5bb4a17fed39.jpg"
+    ],
+    "firstSeenAt": "2026-04-19T08:15:52.348Z",
+    "lastSeenAt": "2026-04-19T08:15:52.348Z"
   }
 ]
