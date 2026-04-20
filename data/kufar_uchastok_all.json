@@ -917,7 +917,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4e794612-a7d4-401f-8635-19525b62f0e5.jpg"
     ],
     "firstSeenAt": "2026-03-29T19:58:43.075Z",
-    "lastSeenAt": "2026-04-19T08:15:52.350Z"
+    "lastSeenAt": "2026-04-20T09:14:23.707Z"
   },
   {
     "adId": 1057144146,
@@ -2220,7 +2220,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/92c8dec1-5c23-4459-b592-a624d87fe5bb.jpg"
     ],
     "firstSeenAt": "2026-04-12T08:07:35.869Z",
-    "lastSeenAt": "2026-04-19T08:15:52.350Z"
+    "lastSeenAt": "2026-04-20T09:14:23.707Z"
   },
   {
     "adId": 1037553582,
@@ -2314,7 +2314,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7b484c43-4b27-4651-9da7-52796a4e8d7a.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:08:18.564Z",
-    "lastSeenAt": "2026-04-14T08:39:12.555Z"
+    "lastSeenAt": "2026-04-20T09:14:23.707Z"
   },
   {
     "adId": 1063962481,
@@ -2366,7 +2366,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/74b554e1-4b25-45b7-b399-75c547f5c462.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:08:18.564Z",
-    "lastSeenAt": "2026-04-14T08:39:12.555Z"
+    "lastSeenAt": "2026-04-20T09:14:23.707Z"
   },
   {
     "adId": 1064676800,
@@ -2968,7 +2968,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bfca0597-b08f-4d5e-a0ac-f3e009c9b855.jpg"
     ],
     "firstSeenAt": "2026-04-19T08:15:52.350Z",
-    "lastSeenAt": "2026-04-19T08:15:52.350Z"
+    "lastSeenAt": "2026-04-20T09:14:23.707Z"
   },
   {
     "adId": 1065369871,
@@ -2989,6 +2989,60 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6200777c-14fe-4e4e-a319-7a31c06daa97.jpg"
     ],
     "firstSeenAt": "2026-04-19T08:15:52.350Z",
-    "lastSeenAt": "2026-04-19T08:15:52.350Z"
+    "lastSeenAt": "2026-04-20T09:14:23.707Z"
+  },
+  {
+    "adId": 1065523488,
+    "link": "https://re.kufar.by/vi/1065523488",
+    "title": "Дача лесное-2",
+    "description": "Продам дачный участок ст лесное-2,ровный без строений,все вопросы по телефону",
+    "priceByn": 27478,
+    "priceUsd": 9700,
+    "address": "СТ Лесное-2, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 6,
+    "seller": "Ася",
+    "features": [
+      "Сезонная"
+    ],
+    "listTime": "2026-04-20T06:52:49Z",
+    "images": [],
+    "firstSeenAt": "2026-04-20T09:14:23.707Z",
+    "lastSeenAt": "2026-04-20T09:14:23.707Z"
+  },
+  {
+    "adId": 1065514912,
+    "link": "https://re.kufar.by/vi/1065514912",
+    "title": "Участок у Немана от города 15 мин",
+    "description": "Участок в живописном месте, река Неман в широком разливе, с соснами по всему берегу реки, 300м от участка, рыбалка, купание, отдых. Участок для истинн",
+    "priceByn": 84984,
+    "priceUsd": 30000,
+    "address": "8, деревня Александрово, Обуховский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 15,
+    "seller": "Александр",
+    "features": [
+      "Пожизненное наследование",
+      "Да"
+    ],
+    "listTime": "2026-04-20T01:50:57Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5561e586-00cb-401c-8ba4-78628b2356b1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f4811aa5-77d8-476e-963c-5cc702a6bdc1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2eb01982-ca6f-444f-b0f6-297ea76fd826.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9ec92acf-944b-436d-a27e-bb0033af03de.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/04034321-0e7f-4b81-981d-1819dd3f58dd.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8c7aa766-c7fa-4e4e-bd9e-c7340750acda.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/455483ad-2c15-45f1-af28-6715b423d2c4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2f8301a7-aa85-4622-911b-4767d98853e2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b539c0d0-657a-41c9-a006-1f69dfa9bf56.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/066283f0-757f-4124-869e-489f5fa934ea.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/16c5e744-13ce-4a0c-a8e9-6b44afee38f5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/562e9269-f817-46e0-8843-5f0eb5f33c1d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/95912184-4c17-4499-9faa-65d44a5b8edb.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4cc85ecf-4bf0-43e3-8280-d43ba4ac3553.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/125f2b3e-b790-4fba-8471-bcef7971e38e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ef52a1bb-7651-4fff-a9c9-6c46a53d5710.jpg"
+    ],
+    "firstSeenAt": "2026-04-20T09:14:23.707Z",
+    "lastSeenAt": "2026-04-20T09:14:23.707Z"
   }
 ]

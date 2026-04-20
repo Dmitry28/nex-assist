@@ -520,8 +520,8 @@
     "link": "https://re.kufar.by/vi/1063076106",
     "title": "Гараж кирпичный ГК ''Автолюбитель''",
     "description": "Продам кирпичный гараж 16,5 кв. м. в ГК \"Автолюбитель\" , район Грандич, от рынка Корона 5 мин, в хорошем состоянии. Удобное месторасположение, асфальт",
-    "priceByn": 11982,
-    "priceUsd": 4250,
+    "priceByn": 11756,
+    "priceUsd": 4150,
     "address": "Меречская Застава ул, 1Ак398блок3, Гродно, Гродненская область",
     "area": 16.5,
     "seller": "grod",
@@ -530,10 +530,10 @@
       "Электричество 220В",
       "Наземная"
     ],
-    "listTime": "2026-04-16T03:42:31Z",
+    "listTime": "2026-04-20T07:29:38Z",
     "images": [
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3e70e973-eacb-4bb5-b900-5dcecae21d85.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d73a5fcb-22a8-42c1-94a4-f0f81c3c6a9b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3e70e973-eacb-4bb5-b900-5dcecae21d85.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/07889882-e84c-46bb-9867-d8fd717b10a1.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/373fc50c-e5ee-4dd9-b138-573d96044427.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cd5bb993-3d0c-4f53-8991-47a94526431d.jpg",
@@ -543,7 +543,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e20ca543-67b3-478e-ad3c-c11ac4e2e584.jpg"
     ],
     "firstSeenAt": "2026-04-02T09:48:26.935Z",
-    "lastSeenAt": "2026-04-17T08:38:33.333Z"
+    "lastSeenAt": "2026-04-20T09:14:23.705Z"
   },
   {
     "adId": 1063073901,
@@ -632,13 +632,13 @@
     "link": "https://re.kufar.by/vi/1063237673",
     "title": "Гараж в кооперативе Мираж-авто",
     "description": "Гараж в кооперативе Мираж-авто. ОЛЬШАНКА. Сухой. С большой ямой под всем гаражем. Освещение и электрика разведена по всему гаражу. ТОРГ",
-    "priceByn": 23495,
-    "priceUsd": 8000,
+    "priceByn": 22096,
+    "priceUsd": 7800,
     "address": "Автомобильная ул, 7Ак80блок2, Гродно, Гродненская область",
     "area": 17.8,
     "seller": "Анатолий",
     "propertyType": "Гараж",
-    "listTime": "2026-04-02T18:11:30Z",
+    "listTime": "2026-04-19T16:16:26Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/424d7404-856c-4b9a-ba89-cb6f6f65a567.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e0f69916-3b37-4066-a60d-a92802e6f744.jpg",
@@ -650,7 +650,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7f9a1f50-e1dc-4fb7-9a7c-9ef35a0c3680.jpg"
     ],
     "firstSeenAt": "2026-04-03T10:00:31.323Z",
-    "lastSeenAt": "2026-04-13T09:08:18.563Z"
+    "lastSeenAt": "2026-04-20T09:14:23.705Z"
   },
   {
     "adId": 1056168799,
@@ -849,7 +849,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2b140d18-2fdc-4813-874a-545551991b63.jpg"
     ],
     "firstSeenAt": "2026-04-05T16:51:33.360Z",
-    "lastSeenAt": "2026-04-19T08:15:52.348Z"
+    "lastSeenAt": "2026-04-20T09:14:23.705Z"
   },
   {
     "adId": 1063817729,
@@ -1336,7 +1336,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/68bfe4a4-f6be-47d8-88c3-47af97584b27.jpg"
     ],
     "firstSeenAt": "2026-04-15T08:37:31.943Z",
-    "lastSeenAt": "2026-04-19T08:15:52.348Z"
+    "lastSeenAt": "2026-04-20T09:14:23.705Z"
   },
   {
     "adId": 1064874956,
@@ -1580,6 +1580,56 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/808bfbd8-0740-4f50-a0d7-5bb4a17fed39.jpg"
     ],
     "firstSeenAt": "2026-04-19T08:15:52.348Z",
-    "lastSeenAt": "2026-04-19T08:15:52.348Z"
+    "lastSeenAt": "2026-04-20T09:14:23.705Z"
+  },
+  {
+    "adId": 1055804583,
+    "link": "https://re.kufar.by/vi/1055804583",
+    "title": "Продам машино место",
+    "description": "Продам, находится под 8  подъездом",
+    "priceByn": 16997,
+    "priceUsd": 6000,
+    "address": "Советских Пограничников ул, Гродно, Гродненская область",
+    "area": 12,
+    "seller": "Пользователь",
+    "propertyType": "Машиноместо",
+    "features": [
+      "Подземная",
+      "Центральное"
+    ],
+    "listTime": "2026-04-19T17:37:30Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/327b79da-5d80-4ff8-9a04-7a1132aafbae.jpg"
+    ],
+    "firstSeenAt": "2026-04-20T09:14:23.705Z",
+    "lastSeenAt": "2026-04-20T09:14:23.705Z"
+  },
+  {
+    "adId": 1065456635,
+    "link": "https://re.kufar.by/vi/1065456635",
+    "title": "Подземный паркинг",
+    "description": "Машино место в подземном паркинге в центре города",
+    "priceByn": 19830,
+    "priceUsd": 7000,
+    "address": "Захарова ул, Гродно, Гродненская область",
+    "area": 10,
+    "seller": "Пользователь",
+    "propertyType": "Машиноместо",
+    "features": [
+      "Электричество 220В",
+      "Видеонаблюдение",
+      "Автоматические ворота",
+      "Подземная"
+    ],
+    "listTime": "2026-04-19T10:09:03Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/96be9cc3-d354-4c15-b3d6-7422c67b74b5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4ad32209-1d51-4741-a9f3-09b88443feb2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0cbc6894-0fe8-4253-b669-40affa9bb966.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/42876089-e00b-45ab-af1a-e717fae75fd7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/aa0ae018-38a9-461d-97a0-30e195615719.jpg"
+    ],
+    "firstSeenAt": "2026-04-20T09:14:23.705Z",
+    "lastSeenAt": "2026-04-20T09:14:23.705Z"
   }
 ]
