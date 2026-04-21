@@ -543,7 +543,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e20ca543-67b3-478e-ad3c-c11ac4e2e584.jpg"
     ],
     "firstSeenAt": "2026-04-02T09:48:26.935Z",
-    "lastSeenAt": "2026-04-20T10:08:55.812Z"
+    "lastSeenAt": "2026-04-21T09:41:51.396Z"
   },
   {
     "adId": 1063073901,
@@ -650,7 +650,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7f9a1f50-e1dc-4fb7-9a7c-9ef35a0c3680.jpg"
     ],
     "firstSeenAt": "2026-04-03T10:00:31.323Z",
-    "lastSeenAt": "2026-04-20T10:08:55.812Z"
+    "lastSeenAt": "2026-04-21T09:41:51.396Z"
   },
   {
     "adId": 1056168799,
@@ -1149,7 +1149,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/68bfe4a4-f6be-47d8-88c3-47af97584b27.jpg"
     ],
     "firstSeenAt": "2026-04-15T10:02:09.426Z",
-    "lastSeenAt": "2026-04-20T10:08:55.812Z"
+    "lastSeenAt": "2026-04-21T09:41:51.396Z"
   },
   {
     "adId": 1065033369,
@@ -1441,7 +1441,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/327b79da-5d80-4ff8-9a04-7a1132aafbae.jpg"
     ],
     "firstSeenAt": "2026-04-20T10:08:55.812Z",
-    "lastSeenAt": "2026-04-20T10:08:55.812Z"
+    "lastSeenAt": "2026-04-21T09:41:51.396Z"
   },
   {
     "adId": 1065456635,
@@ -1469,7 +1469,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/aa0ae018-38a9-461d-97a0-30e195615719.jpg"
     ],
     "firstSeenAt": "2026-04-20T10:08:55.812Z",
-    "lastSeenAt": "2026-04-20T10:08:55.812Z"
+    "lastSeenAt": "2026-04-21T09:41:51.396Z"
   },
   {
     "adId": 1065433285,
@@ -1492,5 +1492,32 @@
     ],
     "firstSeenAt": "2026-04-20T10:08:55.812Z",
     "lastSeenAt": "2026-04-20T10:08:55.812Z"
+  },
+  {
+    "adId": 1065557877,
+    "link": "https://re.kufar.by/vi/1065557877",
+    "title": "Гараж. 7,3*3,7. 27 квадратов.Богуцкого. Радуга",
+    "description": "Ворота 2,4м*2м. Высота потолка 2,2 м.",
+    "priceByn": 28328,
+    "priceUsd": 10000,
+    "address": "Богуцкого ул, Гродно, Гродненская область",
+    "area": 27,
+    "seller": "Александр",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Видеонаблюдение",
+      "Смотровая яма",
+      "Отсутствует"
+    ],
+    "listTime": "2026-04-20T12:20:41Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0bb447f1-1f64-4c18-bdef-a3d48af000ab.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4a46f6d9-fb61-48d5-a15d-c6eb3dc99c3e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0012253e-390c-4012-a3c8-516298f37d91.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2e04cbe2-0fab-45c9-a306-0c61c55f8fc7.jpg"
+    ],
+    "firstSeenAt": "2026-04-21T09:41:51.396Z",
+    "lastSeenAt": "2026-04-21T09:41:51.396Z"
   }
 ]
