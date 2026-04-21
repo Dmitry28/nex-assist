@@ -22,7 +22,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5e57eef0-2ee2-469e-a4f8-03b2f11cbbd1.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-04-11T07:59:56.086Z"
+    "lastSeenAt": "2026-04-21T08:33:36.657Z"
   },
   {
     "adId": 1024462788,
@@ -1229,7 +1229,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ad136321-97e7-425f-a6f3-345b026b1f3f.jpg"
     ],
     "firstSeenAt": "2026-04-01T09:50:32.540Z",
-    "lastSeenAt": "2026-04-02T09:48:26.936Z"
+    "lastSeenAt": "2026-04-21T08:33:36.657Z"
   },
   {
     "adId": 1063046645,
@@ -1572,8 +1572,6 @@
     "link": "https://re.kufar.by/vi/1063659659",
     "title": "Участок ( Гривки 2)",
     "description": "Продам 2 смежных участка ,расположенных в Ст Гривки -2 номер 78 и 79. 12 км от города.В сезон ходит автобус.Участки огорожены , есть электричество, во",
-    "priceByn": 14500,
-    "priceUsd": 5119,
     "address": "78, СТ Гривки-2, Квасовский сельсовет, Гродненский район, Гродненская область",
     "plotArea": 16,
     "seller": "Владимир",
@@ -1582,7 +1580,7 @@
       "Частная собственность",
       "Да"
     ],
-    "listTime": "2026-04-17T16:55:43Z",
+    "listTime": "2026-04-20T16:30:43Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2da760ab-5254-4cf8-96f1-8603ee4a888d.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eb84093b-320a-4f7c-ba81-0c8b10be5e6a.jpg",
@@ -1593,7 +1591,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2ebd2743-dcc7-4b25-9489-5d95c547bee8.jpg"
     ],
     "firstSeenAt": "2026-04-05T16:51:33.361Z",
-    "lastSeenAt": "2026-04-19T08:15:52.350Z"
+    "lastSeenAt": "2026-04-21T08:33:36.657Z"
   },
   {
     "adId": 1050004332,
@@ -2314,7 +2312,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7b484c43-4b27-4651-9da7-52796a4e8d7a.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:08:18.564Z",
-    "lastSeenAt": "2026-04-20T09:14:23.707Z"
+    "lastSeenAt": "2026-04-21T08:33:36.657Z"
   },
   {
     "adId": 1063962481,
@@ -2366,7 +2364,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/74b554e1-4b25-45b7-b399-75c547f5c462.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:08:18.564Z",
-    "lastSeenAt": "2026-04-20T09:14:23.707Z"
+    "lastSeenAt": "2026-04-21T08:33:36.657Z"
   },
   {
     "adId": 1064676800,
@@ -3007,7 +3005,7 @@
     "listTime": "2026-04-20T06:52:49Z",
     "images": [],
     "firstSeenAt": "2026-04-20T09:14:23.707Z",
-    "lastSeenAt": "2026-04-20T09:14:23.707Z"
+    "lastSeenAt": "2026-04-21T08:33:36.657Z"
   },
   {
     "adId": 1065514912,
@@ -3043,6 +3041,31 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ef52a1bb-7651-4fff-a9c9-6c46a53d5710.jpg"
     ],
     "firstSeenAt": "2026-04-20T09:14:23.707Z",
-    "lastSeenAt": "2026-04-20T09:14:23.707Z"
+    "lastSeenAt": "2026-04-21T08:33:36.657Z"
+  },
+  {
+    "adId": 1065588957,
+    "link": "https://re.kufar.by/vi/1065588957",
+    "title": "Участок дачный с фундаментом С.Т. Ландыш",
+    "description": "Продается участок в ст ландыш. На участке залит фундамент 6*6, хоз. Постройка из кирпича ( использовался как садовый домик), каркас для беседки, вода ",
+    "priceByn": 11331,
+    "priceUsd": 4000,
+    "address": "СТ Ландыш, Квасовский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5,
+    "seller": "юрий",
+    "features": [
+      "Сезонная",
+      "Частная собственность",
+      "Да"
+    ],
+    "listTime": "2026-04-20T17:59:21Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/336b0f17-3792-42c2-aab3-ef032983bb8c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3f4188f7-5c3d-401c-af50-c86c2823e0e5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1d17956c-1246-4d1c-9f34-e9ae3ee962aa.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1f694310-de04-4df8-b32e-c3e72caa76df.jpg"
+    ],
+    "firstSeenAt": "2026-04-21T08:33:36.657Z",
+    "lastSeenAt": "2026-04-21T08:33:36.657Z"
   }
 ]
