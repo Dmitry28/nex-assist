@@ -903,7 +903,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca7987d4-c9dc-4301-983f-20329c5638d6.jpg"
     ],
     "firstSeenAt": "2026-04-07T08:31:10.678Z",
-    "lastSeenAt": "2026-04-16T08:40:16.263Z"
+    "lastSeenAt": "2026-04-22T08:32:32.889Z"
   },
   {
     "adId": 1063807131,
@@ -1336,7 +1336,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/68bfe4a4-f6be-47d8-88c3-47af97584b27.jpg"
     ],
     "firstSeenAt": "2026-04-15T08:37:31.943Z",
-    "lastSeenAt": "2026-04-21T08:33:36.656Z"
+    "lastSeenAt": "2026-04-22T08:32:32.889Z"
   },
   {
     "adId": 1064874956,
@@ -1657,6 +1657,59 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2e04cbe2-0fab-45c9-a306-0c61c55f8fc7.jpg"
     ],
     "firstSeenAt": "2026-04-21T08:33:36.656Z",
-    "lastSeenAt": "2026-04-21T08:33:36.656Z"
+    "lastSeenAt": "2026-04-22T08:32:32.889Z"
+  },
+  {
+    "adId": 1065687834,
+    "link": "https://re.kufar.by/vi/1065687834",
+    "title": "Продам гараж",
+    "description": "Продам гараж, рядом с ТЦ Корона в очень удобном расположение, есть смотровая яма, кровля менялась полтора года назад, удобный подъезд к гаражу, высота",
+    "priceByn": 11334,
+    "priceUsd": 3999,
+    "address": "Максима Горького ул, 126Вблок46к4608, Гродно, Гродненская область",
+    "area": 16,
+    "seller": "Ник",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Круглосуточная охрана",
+      "Видеонаблюдение",
+      "Смотровая яма",
+      "Подвал",
+      "Отсутствует"
+    ],
+    "listTime": "2026-04-21T18:50:37Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ccb1948f-d8ad-45be-aa46-aaf768afae9f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5a09b3c6-e62e-4f94-a945-359d53d9e38e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7e731f7c-9c1f-4338-af77-5980caade335.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/28500c3d-785f-4035-aae6-306ff5da39db.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/84c7271e-ec6d-423f-8f8e-ca22e6ed9623.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a07cef78-b396-4fa3-bcd0-bef75241b610.jpg"
+    ],
+    "firstSeenAt": "2026-04-22T08:32:32.889Z",
+    "lastSeenAt": "2026-04-22T08:32:32.889Z"
+  },
+  {
+    "adId": 1065681946,
+    "link": "https://re.kufar.by/vi/1065681946",
+    "title": "Гараж лососно-новинки",
+    "description": "Гараж в лососно Новики. Обычный, одиночка. Яма и подвал есть. Пишите. В подвале песок.",
+    "priceByn": 11053,
+    "priceUsd": 3900,
+    "address": "Венечная ул, 2Аблок27к2771, Гродно, Гродненская область",
+    "area": 18,
+    "seller": "КР",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Электричество 380В",
+      "Смотровая яма",
+      "Подвал"
+    ],
+    "listTime": "2026-04-21T17:38:37Z",
+    "images": [],
+    "firstSeenAt": "2026-04-22T08:32:32.889Z",
+    "lastSeenAt": "2026-04-22T08:32:32.889Z"
   }
 ]
