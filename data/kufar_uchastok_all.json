@@ -336,7 +336,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a3334576-d39f-4867-994a-501c556b1104.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-04-09T08:28:36.680Z"
+    "lastSeenAt": "2026-04-23T08:44:11.773Z"
   },
   {
     "adId": 1061800906,
@@ -525,7 +525,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0461d35f-00e9-4ab1-96e2-ac30178d9ab8.jpg"
     ],
     "firstSeenAt": "2026-03-27T10:03:43.686Z",
-    "lastSeenAt": "2026-04-17T08:38:33.335Z"
+    "lastSeenAt": "2026-04-23T08:44:11.773Z"
   },
   {
     "adId": 1057867782,
@@ -591,18 +591,18 @@
     "adId": 1060581921,
     "link": "https://re.kufar.by/vi/1060581921",
     "title": "Дачный участок",
-    "description": "Продается дачный участок в СТ «Коммунальник» за д.Королино , в 10 км от города, направление движения- дорога за оз. Юбилейное. Площадь участка 0.0830 ",
-    "priceByn": 20163,
-    "priceUsd": 6800,
+    "description": "Продается дачный участок в СТ «Коммунальник» за д.Королино , всего в 10 км от города. Площадь участка 0.0830 га, находится в тихом уютном месте, возле",
+    "priceByn": 18832,
+    "priceUsd": 6700,
     "address": "СТ Коммунальник, Подлабенский сельсовет, Гродненский район, Гродненская область",
     "plotArea": 8.3,
-    "seller": "Антонина",
+    "seller": "Светлана",
     "features": [
       "Сезонная",
       "Частная собственность",
       "Да"
     ],
-    "listTime": "2026-03-26T17:10:51Z",
+    "listTime": "2026-04-22T14:43:31Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8e506319-0c49-40e1-9d38-620d190985a0.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e0e75de5-571c-4b55-8bdb-8e14537523f0.jpg",
@@ -613,7 +613,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/272d5e94-2800-47f3-943d-f4cadecf1310.jpg"
     ],
     "firstSeenAt": "2026-03-27T10:03:43.686Z",
-    "lastSeenAt": "2026-03-28T10:34:02.801Z"
+    "lastSeenAt": "2026-04-23T08:44:11.773Z"
   },
   {
     "adId": 1051330018,
@@ -1066,7 +1066,7 @@
     "listTime": "2026-03-31T07:52:18Z",
     "images": [],
     "firstSeenAt": "2026-03-31T09:53:43.593Z",
-    "lastSeenAt": "2026-04-22T08:32:32.890Z"
+    "lastSeenAt": "2026-04-23T08:44:11.773Z"
   },
   {
     "adId": 1062860736,
@@ -1442,7 +1442,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6143f864-9035-4233-b869-535bde1fa957.jpg"
     ],
     "firstSeenAt": "2026-04-03T10:00:31.324Z",
-    "lastSeenAt": "2026-04-11T07:59:56.086Z"
+    "lastSeenAt": "2026-04-23T08:44:11.773Z"
   },
   {
     "adId": 1063374678,
@@ -1593,7 +1593,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2ebd2743-dcc7-4b25-9489-5d95c547bee8.jpg"
     ],
     "firstSeenAt": "2026-04-05T16:51:33.361Z",
-    "lastSeenAt": "2026-04-22T08:32:32.890Z"
+    "lastSeenAt": "2026-04-23T08:44:11.773Z"
   },
   {
     "adId": 1050004332,
@@ -1835,7 +1835,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/345c6b56-b352-4d4a-9d94-aa8a82f92c90.jpg"
     ],
     "firstSeenAt": "2026-04-08T08:21:09.280Z",
-    "lastSeenAt": "2026-04-22T08:32:32.890Z"
+    "lastSeenAt": "2026-04-23T08:44:11.773Z"
   },
   {
     "adId": 1063935659,
@@ -1889,7 +1889,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5aab775a-c2c5-469e-bbeb-9876bfc8bbc7.jpg"
     ],
     "firstSeenAt": "2026-04-08T08:21:09.280Z",
-    "lastSeenAt": "2026-04-22T08:32:32.890Z"
+    "lastSeenAt": "2026-04-23T08:44:11.773Z"
   },
   {
     "adId": 1064169018,
@@ -1938,7 +1938,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/89eadbfb-91a4-43cc-b1cb-f88c31812295.jpg"
     ],
     "firstSeenAt": "2026-04-09T08:28:36.680Z",
-    "lastSeenAt": "2026-04-10T08:33:09.046Z"
+    "lastSeenAt": "2026-04-23T08:44:11.773Z"
   },
   {
     "adId": 1064069172,
@@ -3097,6 +3097,80 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/724a574e-54ce-49e3-9c18-b2d95ec6953f.jpg"
     ],
     "firstSeenAt": "2026-04-22T08:32:32.890Z",
-    "lastSeenAt": "2026-04-22T08:32:32.890Z"
+    "lastSeenAt": "2026-04-23T08:44:11.773Z"
+  },
+  {
+    "adId": 1059771925,
+    "link": "https://re.kufar.by/vi/1059771925",
+    "title": "Земельный участок с домом под снос в д.Витьки",
+    "description": "Продаётся ветхий дом с земельным участком в д.Витьки, Квасовский с/с, Гродненский р-н.\nРасстояние до Гродно 18 км.\nУчасток – 14,25 соток. Принадлежит ",
+    "priceByn": 39070,
+    "priceUsd": 13900,
+    "address": "деревня Витьки, Квасовский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 14.3,
+    "seller": "ООО Магазин недвижимости",
+    "features": [
+      "Колодец",
+      "Пожизненное наследование"
+    ],
+    "listTime": "2026-04-22T16:10:05Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2320962b-5b6d-413b-98d2-af3629b4ec54.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cabf5e17-1cd7-450b-8965-068c1477f51f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/aa350bfe-b45a-458b-8003-a8f9bdb5db68.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/18221305-7a91-418e-aa42-3d7763c97bae.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c50ac4e7-5aae-4b75-85ac-3754183e4655.jpg"
+    ],
+    "firstSeenAt": "2026-04-23T08:44:11.773Z",
+    "lastSeenAt": "2026-04-23T08:44:11.773Z"
+  },
+  {
+    "adId": 1065771424,
+    "link": "https://re.kufar.by/vi/1065771424",
+    "title": "земельный участок д. Адамовичи",
+    "description": "В продаже отличный земельный участок, рядом с городом, в экологически чистом районе, д. Адамовичи. Отличное место для жизни и отдыха.\nУчасток ровный –",
+    "priceByn": 182702,
+    "priceUsd": 65000,
+    "address": "Центральная ул, деревня Адамовичи, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 57,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-22T16:03:57Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/154e4cda-201c-4fe4-8c35-a6f0e69548d2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c4770b69-59ad-4138-abf9-769f53e7725a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a2192531-9827-435c-85e2-defa9e8adcce.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ebad4390-2616-42c3-911b-36952786008e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4df09ffb-2e9f-4869-95d5-5eafc58a83f3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/329d6bf1-b84e-4932-a69d-3e9fbb5e5d21.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a916e552-aa69-4483-9679-17f988c3ab66.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/23aa47e9-1f40-4a6d-b062-363334b44ae1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c987dde8-446b-453f-bed2-aa6046126f47.jpg"
+    ],
+    "firstSeenAt": "2026-04-23T08:44:11.773Z",
+    "lastSeenAt": "2026-04-23T08:44:11.773Z"
+  },
+  {
+    "adId": 1065729151,
+    "link": "https://re.kufar.by/vi/1065729151",
+    "title": "Дачный участок в СТ Лесовод-2",
+    "description": "Участок квадратной формы, без построек, не огорожен - идеальный вариант для реализации ваших идей с нуля. \nДо города 10 минут на машине. \n\nУчасток 83,",
+    "priceByn": 28108,
+    "priceUsd": 10000,
+    "address": "83, СТ Лесовод-2, Путришковский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 10,
+    "seller": "Татьяна",
+    "features": [
+      "Отсутствует",
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-22T08:58:57Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/aa2278f8-3cea-4402-8a9a-36f792189b6c.jpg"
+    ],
+    "firstSeenAt": "2026-04-23T08:44:11.773Z",
+    "lastSeenAt": "2026-04-23T08:44:11.773Z"
   }
 ]
