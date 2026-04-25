@@ -1017,7 +1017,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8851791a-b3ff-48e4-85ca-444cee193f6d.jpg"
     ],
     "firstSeenAt": "2026-03-31T09:53:43.593Z",
-    "lastSeenAt": "2026-04-15T08:37:31.945Z"
+    "lastSeenAt": "2026-04-25T08:14:20.498Z"
   },
   {
     "adId": 1016279565,
@@ -1300,7 +1300,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/59430fe0-6c18-466e-97bd-a2c21b671c3e.jpg"
     ],
     "firstSeenAt": "2026-04-02T09:48:26.936Z",
-    "lastSeenAt": "2026-04-03T10:00:31.324Z"
+    "lastSeenAt": "2026-04-25T08:14:20.498Z"
   },
   {
     "adId": 255124550,
@@ -2612,7 +2612,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/19b9eb71-8846-4f11-a7c2-f9db390d0329.jpg"
     ],
     "firstSeenAt": "2026-04-15T08:37:31.945Z",
-    "lastSeenAt": "2026-04-24T09:16:55.890Z"
+    "lastSeenAt": "2026-04-25T08:14:20.498Z"
   },
   {
     "adId": 1065178373,
@@ -3208,7 +3208,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b7d9282f-a20f-4f91-888c-2d1656c7be1c.jpg"
     ],
     "firstSeenAt": "2026-04-24T09:16:55.890Z",
-    "lastSeenAt": "2026-04-24T09:16:55.890Z"
+    "lastSeenAt": "2026-04-25T08:14:20.498Z"
   },
   {
     "adId": 1065892064,
@@ -3242,7 +3242,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d5b56e3e-5720-47be-b65e-5973c50c961f.jpg"
     ],
     "firstSeenAt": "2026-04-24T09:16:55.890Z",
-    "lastSeenAt": "2026-04-24T09:16:55.890Z"
+    "lastSeenAt": "2026-04-25T08:14:20.498Z"
   },
   {
     "adId": 1065890159,
@@ -3259,6 +3259,121 @@
     "listTime": "2026-04-23T11:07:45Z",
     "images": [],
     "firstSeenAt": "2026-04-24T09:16:55.890Z",
-    "lastSeenAt": "2026-04-24T09:16:55.890Z"
+    "lastSeenAt": "2026-04-25T08:14:20.498Z"
+  },
+  {
+    "adId": 1066114341,
+    "link": "https://re.kufar.by/vi/1066114341",
+    "title": "Участок СТ-Черемушки 3",
+    "description": "Участок находиться в 7 км от Гродно в садовом товариществе. На участке нет постороек, воды, канализации. Свет можно провести, рядом с участком находит",
+    "priceByn": 30000,
+    "priceUsd": 10644,
+    "address": "48, СТ Черёмушки-3, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 7.57,
+    "seller": "Юлия",
+    "features": [
+      "Отсутствует",
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-24T14:17:20Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/065cdf46-2e75-40d7-866e-b2349b7ac00c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/be715d8c-ca37-49ed-8c2a-17da85b15593.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fe5d886d-43f9-4e35-8abd-3043a688180c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ae28d5f0-9bcc-4e78-8595-da6248cdac7a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/023349ab-de72-4fb7-9d69-5b44fb45e694.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ff888109-b16c-41f2-9547-f4b20c25fe56.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a0b2fbad-64e4-42f9-b14b-e6188944806f.jpg"
+    ],
+    "firstSeenAt": "2026-04-25T08:14:20.498Z",
+    "lastSeenAt": "2026-04-25T08:14:20.498Z"
+  },
+  {
+    "adId": 1066104913,
+    "link": "https://re.kufar.by/vi/1066104913",
+    "title": "Продам участок 0,0993га, Барановичи 9",
+    "description": "Участок выровнен, Барановичи 9, ул. Майская 12. На участке имеется фундамент не законсервированный, прямоугольный, требует доработки. Есть согласованн",
+    "priceByn": 124018,
+    "priceUsd": 44000,
+    "address": "Майская ул, 12, Гродно, Гродненская область",
+    "plotArea": 9.93,
+    "seller": "Алексей Сергеевич",
+    "features": [
+      "Центральная",
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-24T13:13:40Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c1a1fa74-b415-4a4a-8365-ba8d5b1612a2.jpg"
+    ],
+    "firstSeenAt": "2026-04-25T08:14:20.498Z",
+    "lastSeenAt": "2026-04-25T08:14:20.498Z"
+  },
+  {
+    "adId": 1066092246,
+    "link": "https://re.kufar.by/vi/1066092246",
+    "title": "2 участка рядом с городом 11.8 сот",
+    "description": "Два соседних участка правильной формы, недалеко от города",
+    "priceByn": 26777,
+    "priceUsd": 9500,
+    "address": "196, СТ Энергетик-4, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 11.8,
+    "seller": "Егор",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-24T12:19:24Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e9d7bcb1-d079-4f45-a4cc-2b2e69ad320a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/12568c2d-84e7-46f5-b021-d98ba9501d8c.jpg"
+    ],
+    "firstSeenAt": "2026-04-25T08:14:20.498Z",
+    "lastSeenAt": "2026-04-25T08:14:20.498Z"
+  },
+  {
+    "adId": 1066088943,
+    "link": "https://re.kufar.by/vi/1066088943",
+    "title": "участок СТ Шембелевцы",
+    "description": "Продается дачный участок в садовом товариществе «Шембелевцы», Гродненский р-н, Сопоцкинский с/с. До города 12 км. 15 минут езды на автомобиле. Площадь",
+    "priceByn": 20294,
+    "priceUsd": 7200,
+    "address": "Н-6883, Гродненская область",
+    "plotArea": 7,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-24T11:54:13Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3704fe69-d67e-45c3-8e83-c95f5efd0903.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/071616a1-3c3f-4c89-af03-5b87f5b0e103.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5640142c-d6a8-41a1-8e0d-4d755f729f3f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/858c6512-9761-465e-8617-e75c37c7dd27.jpg"
+    ],
+    "firstSeenAt": "2026-04-25T08:14:20.498Z",
+    "lastSeenAt": "2026-04-25T08:14:20.498Z"
+  },
+  {
+    "adId": 1066088224,
+    "link": "https://re.kufar.by/vi/1066088224",
+    "title": "Дачный участок 8 км от Гродно",
+    "description": "Продается дачный участок, без строений, 8 км от Гродно, СТ Магистраль. Участок продается в комплекте со стройматериалами. Частная собственность. Небол",
+    "priceByn": 25367,
+    "priceUsd": 9000,
+    "address": "СТ Магистраль, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 7,
+    "seller": "Инна",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-24T11:46:33Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/791803ff-f686-4d3d-be59-0b6b85cafd07.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b6190e65-3dc8-47a7-b3fc-2d6e98128ded.jpg"
+    ],
+    "firstSeenAt": "2026-04-25T08:14:20.498Z",
+    "lastSeenAt": "2026-04-25T08:14:20.498Z"
   }
 ]
