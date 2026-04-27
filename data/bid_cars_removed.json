@@ -1,23 +1,5 @@
 [
   {
-    "link": "https://bid.cars/ru/lot/0-44380408/2024-Volkswagen-Atlas-1V2CR2CA5RC542319",
-    "title": "2024 Volkswagen Atlas, 2.0T Peak Edi...",
-    "vin": "1V2CR2CA5RC542319",
-    "lot": "0-44380408",
-    "odometer": "35k мили (57k km)",
-    "damage": "Другой | Передняя часть",
-    "location": "Grenada (MS)",
-    "currentBid": "$0",
-    "engine": "2.0L 4 cyl. 269HP",
-    "keys": "Salvage (Mississippi)",
-    "condition": "На ходу",
-    "auctionDate": "чт 16 апр., 16:30 GMT+2",
-    "auctionSource": "IAAI",
-    "seller": "State Farm Group Insurance",
-    "removedAt": "2026-04-13T08:59:47.997Z",
-    "removalNotifiedAt": "2026-04-13T08:59:47.997Z"
-  },
-  {
     "link": "https://bid.cars/ru/lot/1-75637615/2023-Volkswagen-Atlas-1V2SC2CA7PC202664",
     "title": "2023 Volkswagen Atlas, Sel R-Line",
     "vin": "1V2SC2CA7PC202664",
@@ -1357,5 +1339,23 @@
     "seller": "Progressive Casualty Insurance",
     "removedAt": "2026-04-25T08:02:09.244Z",
     "removalNotifiedAt": "2026-04-25T08:02:09.244Z"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/0-44352248/2024-Volkswagen-Atlas-1V2AE2CA9RC235352",
+    "title": "2024 Volkswagen Atlas, Cross Sport 2...",
+    "vin": "1V2AE2CA9RC235352",
+    "lot": "0-44352248",
+    "odometer": "25k мили (40k km)",
+    "damage": "Столкноевение | Подвеска",
+    "location": "North Holl... (CA)",
+    "currentBid": "$25",
+    "engine": "2.0L 4 cyl. 269HP",
+    "keys": "Salvage (California)",
+    "condition": "На ходу",
+    "auctionDate": "ср 29 апр., 18:30 GMT+2",
+    "auctionSource": "IAAI",
+    "seller": "Progressive Casualty Insurance",
+    "removedAt": "2026-04-27T09:13:34.484Z",
+    "removalNotifiedAt": "2026-04-27T09:13:34.484Z"
   }
 ]
