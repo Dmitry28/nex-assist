@@ -287,24 +287,14 @@
   {
     "title": "Не завершённый строительством жилой дом по ул. Рожанского, 110",
     "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-rozhanskogo-110/",
-    "price": "55 311,35 руб.",
-    "area": "0,1047 га",
-    "address": "г. Гродно, У-1557 в микрорайоне «Зарица-4», ул. Рожанского, 110",
-    "cadastralNumber": "440100000003004431",
-    "cadastralMapUrl": "https://map.nca.by/search/019db985-de98-73fc-8a6b-3bb7a168581e",
-    "auctionDate": "Аукцион состоится 26.05.2026",
+    "price": "Не найдено",
+    "area": "Не найдено",
+    "address": "Не найдено",
+    "cadastralNumber": "Не найдено",
+    "cadastralMapUrl": "",
+    "auctionDate": "Не указана",
     "applicationDeadline": "Не указан",
     "communications": "Не указаны",
-    "images": [
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-7.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-1.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-2.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-3.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-4.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-5.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-6.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-7.png",
-      "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-1.png"
-    ]
+    "images": []
   }
 ]
