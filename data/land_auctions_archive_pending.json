@@ -1,43 +1,42 @@
 [
   {
     "listing": {
-      "title": "Земельный участок У-101 по ул. Майской в микрорайоне «Барановичи-9»",
-      "link": "http://gcn.by/properties/zemelnyj-uchastok-u-101-po-ul-majskoj-v-mikrorajone-baranovichi-9/",
-      "price": "19 352,00 руб.",
-      "area": "0,0998 га",
-      "address": "г. Гродно, ул. Майская, 1",
-      "cadastralNumber": "440100000003007809",
-      "cadastralMapUrl": "https://map.nca.by/search/019c04d1-f7cf-7308-80ff-7ac0e7856789",
-      "auctionDate": "Аукцион состоится 14.04.2026",
-      "applicationDeadline": "Заявления принимаются по 08.04.2026",
+      "title": "Земельный участок У-2 по ул. Подкрыжакская",
+      "link": "http://gcn.by/properties/zemelnyj-uchastok-u-2-po-ul-podkryzhakskaya-2/",
+      "price": "19 395,00 руб.",
+      "area": "0,0752 га",
+      "address": "г. Гродно, ул. Подкрыжакская, 14",
+      "cadastralNumber": "440100000001015113",
+      "cadastralMapUrl": "https://map.nca.by/search/019c0891-aa58-72e5-a96c-5970bf9d63e1",
+      "auctionDate": "Аукцион состоится 28.04.2026",
+      "applicationDeadline": "Заявления принимаются по 23.04.2026",
       "communications": "электроснабжение, газоснабжение, водоснабжение",
       "images": [
-        "http://gcn.by/wp-content/uploads/2026/01/u101-majskaya-baranovichi-sajt.png"
+        "https://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt3.png",
+        "https://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt1.png",
+        "https://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt2.png",
+        "https://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt3.png",
+        "https://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt1.png"
       ]
     },
-    "removedAt": "2026-04-15T09:31:34.353Z"
+    "removedAt": "2026-04-30T09:31:20.905Z"
   },
   {
     "listing": {
-      "title": "Земельный участок У-4 по ул. Кульбакская",
-      "link": "http://gcn.by/properties/zemelnyj-uchastok-u-4-po-ul-kulbakskaya/",
-      "price": "42 087,00 руб.",
-      "area": "0,1072 га",
-      "address": "г. Гродно, ул. Кульбакская, 29А",
-      "cadastralNumber": "440100000001010123",
-      "cadastralMapUrl": "https://map.nca.by/search/019cbe05-7f35-703b-9b7e-5423228a0201",
-      "auctionDate": "Аукцион состоится 14.04.2026",
-      "applicationDeadline": "Заявления принимаются по 08.04.2026",
-      "communications": "электроснабжение, газоснабжение, водоснабжение",
+      "title": "Не завершённый строительством жилой дом по ул. Ласковая, 18",
+      "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-laskovaya-18/",
+      "price": "35 044,78 руб.",
+      "area": "0,0999 га",
+      "address": "г. Гродно, У-84 в микрорайоне «Барановичи-9», ул. Ласковая, 18",
+      "cadastralNumber": "440100000003006503",
+      "cadastralMapUrl": "",
+      "auctionDate": "Не указана",
+      "applicationDeadline": "Заявления принимаются по 23.04.2026",
+      "communications": "Не указаны",
       "images": [
-        "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt1.png",
-        "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt2.png",
-        "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt3.png",
-        "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt4.png",
-        "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt1.png",
-        "https://gcn.by/wp-content/uploads/2020/09/u4-kulbakskaya-sajt2.png"
+        "http://gcn.by/wp-content/uploads/2026/01/u-84-laskovaya-sajt.png"
       ]
     },
-    "removedAt": "2026-04-15T09:31:34.353Z"
+    "removedAt": "2026-04-30T09:31:20.905Z"
   }
 ]

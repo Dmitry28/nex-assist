@@ -917,7 +917,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4e794612-a7d4-401f-8635-19525b62f0e5.jpg"
     ],
     "firstSeenAt": "2026-03-29T19:58:43.075Z",
-    "lastSeenAt": "2026-04-20T10:08:55.814Z"
+    "lastSeenAt": "2026-04-30T09:45:22.850Z"
   },
   {
     "adId": 1057144146,
@@ -1066,7 +1066,7 @@
     "listTime": "2026-03-31T07:52:18Z",
     "images": [],
     "firstSeenAt": "2026-03-31T09:53:43.593Z",
-    "lastSeenAt": "2026-04-29T09:49:12.029Z"
+    "lastSeenAt": "2026-04-30T09:45:22.850Z"
   },
   {
     "adId": 1062860736,
@@ -3462,7 +3462,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4d99c761-a102-4d75-a360-3a8bec89b587.jpg"
     ],
     "firstSeenAt": "2026-04-29T09:49:12.029Z",
-    "lastSeenAt": "2026-04-29T09:49:12.029Z"
+    "lastSeenAt": "2026-04-30T09:45:22.850Z"
   },
   {
     "adId": 1066748354,
@@ -3486,7 +3486,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1c9799a7-e58d-43cf-a349-499557b26ad4.jpg"
     ],
     "firstSeenAt": "2026-04-29T09:49:12.029Z",
-    "lastSeenAt": "2026-04-29T09:49:12.029Z"
+    "lastSeenAt": "2026-04-30T09:45:22.850Z"
   },
   {
     "adId": 1066746888,
@@ -3514,7 +3514,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/487b456e-847d-466b-bf69-813b27259f44.jpg"
     ],
     "firstSeenAt": "2026-04-29T09:49:12.029Z",
-    "lastSeenAt": "2026-04-29T09:49:12.029Z"
+    "lastSeenAt": "2026-04-30T09:45:22.850Z"
   },
   {
     "adId": 1066746864,
@@ -3539,7 +3539,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/73c469ec-6fca-4383-8ddc-b266e7f94d62.jpg"
     ],
     "firstSeenAt": "2026-04-29T09:49:12.029Z",
-    "lastSeenAt": "2026-04-29T09:49:12.029Z"
+    "lastSeenAt": "2026-04-30T09:45:22.850Z"
   },
   {
     "adId": 1027950475,
@@ -3566,7 +3566,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d0c16128-6449-400f-8c94-866878515df7.jpg"
     ],
     "firstSeenAt": "2026-04-29T09:49:12.029Z",
-    "lastSeenAt": "2026-04-29T09:49:12.029Z"
+    "lastSeenAt": "2026-04-30T09:45:22.850Z"
   },
   {
     "adId": 1066728162,
@@ -3647,5 +3647,77 @@
     ],
     "firstSeenAt": "2026-04-29T09:49:12.029Z",
     "lastSeenAt": "2026-04-29T09:49:12.029Z"
+  },
+  {
+    "adId": 1066962335,
+    "link": "https://re.kufar.by/vi/1066962335",
+    "title": "Участок",
+    "description": "Продам участок 12 соток в черте города. СТ «Принеманское-2». До центра 10 минут на машине. Участок ровный. Газ есть. Рядом лес и река Неман. Идеально ",
+    "priceByn": 55895,
+    "priceUsd": 19800,
+    "address": "СТ Принеманское-2, Путришковский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 12,
+    "seller": "Ирина",
+    "features": [
+      "Да"
+    ],
+    "listTime": "2026-04-29T18:00:36Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca313ca3-879e-4f31-a133-565b0d774881.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/25bdbcf4-0a96-43c3-ab41-c0dd8ccb8f31.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b170161f-59c7-402f-b58c-bf0f8cbb2d13.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0031bd67-bb5c-4be3-9186-790b8d2e914b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bcab8ac1-b62b-4855-9d06-311318c4c382.jpg"
+    ],
+    "firstSeenAt": "2026-04-30T09:45:22.850Z",
+    "lastSeenAt": "2026-04-30T09:45:22.850Z"
+  },
+  {
+    "adId": 1066936344,
+    "link": "https://re.kufar.by/vi/1066936344",
+    "title": "Дачный участок СТ « Дары природы»",
+    "description": "Дачный участок в СТ «Дары природы»\nНаходится в 9 км от города в направлении базы отдыха Привал\nАсфальтная дорога, 500 м гравейки, до становки автобуса",
+    "priceByn": 22584,
+    "priceUsd": 8000,
+    "address": "СТ Дары Природы, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 9,
+    "seller": "Светлана",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "listTime": "2026-04-29T13:41:02Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/461263ae-c322-4a4c-84a6-1043d6b246a0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/15e55047-b1d3-4904-8cf5-32fad2d7e127.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/57cc27d1-f213-4804-b5a2-aa512e6ada51.jpg"
+    ],
+    "firstSeenAt": "2026-04-30T09:45:22.850Z",
+    "lastSeenAt": "2026-04-30T09:45:22.850Z"
+  },
+  {
+    "adId": 1059178831,
+    "link": "https://re.kufar.by/vi/1059178831",
+    "title": "Продам дачу",
+    "description": "Отличное предложение!!!Дача вблизи города Гродно- 8 км,Живописные места, чудесная природа – рядом лесной массив ,Площадь участка 5 соток ,вода – сезон",
+    "priceByn": 19761,
+    "priceUsd": 7000,
+    "address": "35, СТ Сатурн Зелёный, Квасовский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5,
+    "seller": "сергей",
+    "features": [
+      "Да"
+    ],
+    "listTime": "2026-04-29T10:40:44Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b1d86bfe-b1b0-4faf-b3f9-661dd6e9828b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9bfb6684-4471-4c9d-b727-8d7fcc37173b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b7b2d964-be54-4da4-b16a-88ccb7c36c03.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c7294a5b-d4a0-45b1-b23d-505cf0821088.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f5155149-85c6-47af-a76a-6bd4e38ad37f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0d1e80cf-07de-49c7-bd34-5f071ed6582d.jpg"
+    ],
+    "firstSeenAt": "2026-04-30T09:45:22.850Z",
+    "lastSeenAt": "2026-04-30T09:45:22.850Z"
   }
 ]
