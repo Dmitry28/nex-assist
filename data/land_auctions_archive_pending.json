@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "listing": {
+      "title": "Земельный участок У-2 по ул. Подкрыжакская",
+      "link": "http://gcn.by/properties/zemelnyj-uchastok-u-2-po-ul-podkryzhakskaya-2/",
+      "price": "19 395,00 руб.",
+      "area": "0,0752 га",
+      "address": "г. Гродно, ул. Подкрыжакская, 14",
+      "cadastralNumber": "440100000001015113",
+      "cadastralMapUrl": "https://map.nca.by/search/019c0891-aa58-72e5-a96c-5970bf9d63e1",
+      "auctionDate": "Аукцион состоится 28.04.2026",
+      "applicationDeadline": "Заявления принимаются по 23.04.2026",
+      "communications": "электроснабжение, газоснабжение, водоснабжение",
+      "images": [
+        "https://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt3.png",
+        "https://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt1.png",
+        "https://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt2.png",
+        "https://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt3.png",
+        "https://gcn.by/wp-content/uploads/2026/01/u2-podkryzhaczkaya-sajt1.png"
+      ]
+    },
+    "removedAt": "2026-04-30T09:07:40.195Z"
+  },
+  {
+    "listing": {
+      "title": "Не завершённый строительством жилой дом по ул. Ласковая, 18",
+      "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-laskovaya-18/",
+      "price": "35 044,78 руб.",
+      "area": "0,0999 га",
+      "address": "г. Гродно, У-84 в микрорайоне «Барановичи-9», ул. Ласковая, 18",
+      "cadastralNumber": "440100000003006503",
+      "cadastralMapUrl": "",
+      "auctionDate": "Не указана",
+      "applicationDeadline": "Заявления принимаются по 23.04.2026",
+      "communications": "Не указаны",
+      "images": [
+        "http://gcn.by/wp-content/uploads/2026/01/u-84-laskovaya-sajt.png"
+      ]
+    },
+    "removedAt": "2026-04-30T09:07:40.195Z"
+  }
+]
