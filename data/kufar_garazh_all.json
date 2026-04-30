@@ -271,8 +271,8 @@
     "link": "https://re.kufar.by/vi/1062275663",
     "title": "Гараж на девятовке",
     "description": "Гараж в центре Гродно продается.\nОколо электротехнического коледжа им.Счастного\nРядом новый микрорайон Островского \n\nХорошее место -не крайний.\nПод вс",
-    "priceByn": 20164,
-    "priceUsd": 7150,
+    "priceByn": 19761,
+    "priceUsd": 7000,
     "address": "Дзержинского ул, 41Ак214блок2, Гродно, Гродненская область",
     "area": 17.3,
     "seller": "Борис",
@@ -284,7 +284,7 @@
       "Наземная",
       "Отсутствует"
     ],
-    "listTime": "2026-04-28T14:43:08Z",
+    "listTime": "2026-04-29T14:43:08Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3a9adca6-4e3a-4376-925a-4931580bc875.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b0e8c416-a3fb-41f3-b45b-7a65d277144d.jpg",
@@ -295,7 +295,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/57b19c72-6e0a-4677-aaf3-1d0b6f8950e1.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.799Z",
-    "lastSeenAt": "2026-04-29T09:49:12.028Z"
+    "lastSeenAt": "2026-04-30T09:45:22.848Z"
   },
   {
     "adId": 1058573350,
@@ -542,7 +542,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e20ca543-67b3-478e-ad3c-c11ac4e2e584.jpg"
     ],
     "firstSeenAt": "2026-04-02T09:48:26.935Z",
-    "lastSeenAt": "2026-04-29T09:49:12.028Z"
+    "lastSeenAt": "2026-04-30T09:45:22.848Z"
   },
   {
     "adId": 1063073901,
@@ -902,7 +902,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca7987d4-c9dc-4301-983f-20329c5638d6.jpg"
     ],
     "firstSeenAt": "2026-04-07T09:54:55.665Z",
-    "lastSeenAt": "2026-04-29T09:49:12.028Z"
+    "lastSeenAt": "2026-04-30T09:45:22.848Z"
   },
   {
     "adId": 1063807131,
@@ -1817,7 +1817,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8a61eb9c-89e5-47c4-9dcf-43f56960af00.jpg"
     ],
     "firstSeenAt": "2026-04-29T09:49:12.028Z",
-    "lastSeenAt": "2026-04-29T09:49:12.028Z"
+    "lastSeenAt": "2026-04-30T09:45:22.848Z"
   },
   {
     "adId": 1066728858,
@@ -1867,5 +1867,55 @@
     ],
     "firstSeenAt": "2026-04-29T09:49:12.028Z",
     "lastSeenAt": "2026-04-29T09:49:12.028Z"
+  },
+  {
+    "adId": 1066944926,
+    "link": "https://re.kufar.by/vi/1066944926",
+    "title": "Гараж",
+    "description": "Просторный сухой гараж, крыша не течет, площадь 17,9 кв.м. Есть свет и смотровая яма. Идеально подходит как для хранения автомобиля, так и под мастерс",
+    "priceByn": 19479,
+    "priceUsd": 6900,
+    "address": "Гродно, Гродненская область",
+    "area": 17.9,
+    "seller": "Сергей",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма",
+      "Наземная",
+      "Отсутствует"
+    ],
+    "listTime": "2026-04-29T15:32:39Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9b43a530-c0fc-4201-a8db-9caa7a02b5fd.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f0bda07b-77c4-493f-9f50-3415fa5dcb69.jpg"
+    ],
+    "firstSeenAt": "2026-04-30T09:45:22.848Z",
+    "lastSeenAt": "2026-04-30T09:45:22.848Z"
+  },
+  {
+    "adId": 1066939752,
+    "link": "https://re.kufar.by/vi/1066939752",
+    "title": "Гараж по ул. Меречская застава 1а",
+    "description": "В продаже гараж по адресу ул. Меречская застава 1а, гаражный потребительский кооператив «Автолюбитель - Гродно». \nПлощадь - 16,5м². \nГараж кирпичный, ",
+    "priceByn": 19761,
+    "priceUsd": 7000,
+    "address": "Меречская Застава ул, 1А, Гродно, Гродненская область",
+    "area": 16.5,
+    "seller": "ООО Центр жилья",
+    "propertyType": "Гараж",
+    "features": [
+      "Наземная"
+    ],
+    "listTime": "2026-04-29T14:21:32Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3e6e296a-6ab6-4e66-9b03-e1b8a2b5042d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/82064d04-c77c-41cf-b7f0-54e8fa6bc1db.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6391d2ea-88d8-4342-8355-4306dc43abf4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0771bfc7-d969-4df0-9d48-4b3baee52e59.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d567989d-b362-455c-8313-321b2130efde.jpg"
+    ],
+    "firstSeenAt": "2026-04-30T09:45:22.848Z",
+    "lastSeenAt": "2026-04-30T09:45:22.848Z"
   }
 ]
