@@ -112,7 +112,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/af035024-a843-42e5-8fa5-8c16f7b9b5f3.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-05-01T09:17:20.861Z"
+    "lastSeenAt": "2026-05-02T08:25:33.530Z"
   },
   {
     "adId": 1061952299,
@@ -167,7 +167,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/76c25739-4706-4d05-aac3-1b8d2ee68fb2.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-05-01T09:17:20.861Z"
+    "lastSeenAt": "2026-05-02T08:25:33.530Z"
   },
   {
     "adId": 1061925432,
@@ -215,7 +215,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4726f432-6c88-499e-843c-386b62e74a79.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-05-01T09:17:20.861Z"
+    "lastSeenAt": "2026-05-02T08:25:33.530Z"
   },
   {
     "adId": 1039071483,
@@ -865,7 +865,7 @@
     "listTime": "2026-04-07T08:58:38Z",
     "images": [],
     "firstSeenAt": "2026-03-29T19:58:43.075Z",
-    "lastSeenAt": "2026-04-19T08:15:52.350Z"
+    "lastSeenAt": "2026-05-02T08:25:33.530Z"
   },
   {
     "adId": 1011452136,
@@ -919,7 +919,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4e794612-a7d4-401f-8635-19525b62f0e5.jpg"
     ],
     "firstSeenAt": "2026-03-29T19:58:43.075Z",
-    "lastSeenAt": "2026-05-01T09:17:20.861Z"
+    "lastSeenAt": "2026-05-02T08:25:33.530Z"
   },
   {
     "adId": 1057144146,
@@ -1302,7 +1302,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/59430fe0-6c18-466e-97bd-a2c21b671c3e.jpg"
     ],
     "firstSeenAt": "2026-04-02T09:48:26.936Z",
-    "lastSeenAt": "2026-04-26T08:42:57.861Z"
+    "lastSeenAt": "2026-05-02T08:25:33.530Z"
   },
   {
     "adId": 255124550,
@@ -1913,7 +1913,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/66e77980-2b3a-4b75-93ab-40a95af51d16.jpg"
     ],
     "firstSeenAt": "2026-04-09T08:28:36.680Z",
-    "lastSeenAt": "2026-04-10T08:33:09.046Z"
+    "lastSeenAt": "2026-05-02T08:25:33.530Z"
   },
   {
     "adId": 1064099009,
@@ -3972,7 +3972,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cd560872-3bce-44ff-92b6-643745542421.jpg"
     ],
     "firstSeenAt": "2026-05-01T09:17:20.861Z",
-    "lastSeenAt": "2026-05-01T09:17:20.861Z"
+    "lastSeenAt": "2026-05-02T08:25:33.530Z"
   },
   {
     "adId": 1067067979,
@@ -4000,7 +4000,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/43dad6a8-1f90-492f-974c-4f70de1256d1.jpg"
     ],
     "firstSeenAt": "2026-05-01T09:17:20.861Z",
-    "lastSeenAt": "2026-05-01T09:17:20.861Z"
+    "lastSeenAt": "2026-05-02T08:25:33.530Z"
   },
   {
     "adId": 1067056668,
@@ -4039,6 +4039,86 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7d6802b8-cffd-4798-8202-3fd6f7777360.jpg"
     ],
     "firstSeenAt": "2026-05-01T09:17:20.861Z",
-    "lastSeenAt": "2026-05-01T09:17:20.861Z"
+    "lastSeenAt": "2026-05-02T08:25:33.530Z"
+  },
+  {
+    "adId": 1067287161,
+    "link": "https://re.kufar.by/vi/1067287161",
+    "title": "Участок в садовом товариществе",
+    "description": "Участок 6 соток в садовом товариществе",
+    "priceByn": 14115,
+    "priceUsd": 5000,
+    "address": "СТ Кедр, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5,
+    "seller": "Наталья",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "listTime": "2026-05-02T07:30:58Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0d42ee30-2df5-4980-9b00-ea3f3f1561fd.jpg"
+    ],
+    "firstSeenAt": "2026-05-02T08:25:33.530Z",
+    "lastSeenAt": "2026-05-02T08:25:33.530Z"
+  },
+  {
+    "adId": 1067231995,
+    "link": "https://re.kufar.by/vi/1067231995",
+    "title": "Продам дачу возле реки Неман",
+    "description": "Продам дачу возле реки Неман. Требуется очистка от разросшихся деревьев. Если интересует, прозьба звонить по указанным номерам",
+    "address": "СТ Утро-3, Квасовский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5.5,
+    "seller": "Богдан",
+    "features": [
+      "Колодец",
+      "Частная собственность"
+    ],
+    "listTime": "2026-05-01T19:47:22Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a83aef38-037a-4fd1-89f2-f12871a1b03d.jpg"
+    ],
+    "firstSeenAt": "2026-05-02T08:25:33.530Z",
+    "lastSeenAt": "2026-05-02T08:25:33.530Z"
+  },
+  {
+    "adId": 1067201197,
+    "link": "https://re.kufar.by/vi/1067201197",
+    "title": "Дачный участок",
+    "description": "Продам  два совмещенных участка в красивом месте 11км от города.Проведено электричество, щиток на участке. \nхорошие соседи. \nКруглогодично ходят автоб",
+    "priceByn": 25407,
+    "priceUsd": 9000,
+    "address": "28, СТ Черёмушки-2, Одельский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 13,
+    "seller": "Дарья",
+    "features": [
+      "Сезонная"
+    ],
+    "listTime": "2026-05-01T13:55:49Z",
+    "images": [],
+    "firstSeenAt": "2026-05-02T08:25:33.530Z",
+    "lastSeenAt": "2026-05-02T08:25:33.530Z"
+  },
+  {
+    "adId": 1067200709,
+    "link": "https://re.kufar.by/vi/1067200709",
+    "title": "Продам два дачных смежных участка 15, 4 сотки",
+    "description": "Продам два дачных смежных участка.",
+    "priceByn": 36417,
+    "priceUsd": 12900,
+    "address": "СТ Сябры, Одельский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 15.4,
+    "seller": "Михаил",
+    "features": [
+      "Сезонная",
+      "Частная собственность",
+      "Да"
+    ],
+    "listTime": "2026-05-01T13:49:57Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/95be2d99-7c3a-4aa7-b132-0c9266b3b53b.jpg"
+    ],
+    "firstSeenAt": "2026-05-02T08:25:33.530Z",
+    "lastSeenAt": "2026-05-02T08:25:33.530Z"
   }
 ]

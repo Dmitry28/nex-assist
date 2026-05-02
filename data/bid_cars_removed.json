@@ -1,23 +1,5 @@
 [
   {
-    "link": "https://bid.cars/ru/lot/0-44595085/2025-Volkswagen-Atlas-1V2BR2CA9SC530787",
-    "title": "2025 Volkswagen Atlas, 2.0T Sel",
-    "vin": "1V2BR2CA9SC530787",
-    "lot": "0-44595085",
-    "odometer": "5k мили (8k km)",
-    "damage": "Столкноевение | Правая сторона",
-    "location": "Fayetteville (AR)",
-    "currentBid": "$0",
-    "engine": "2.0L 4 cyl. 269HP",
-    "keys": "Salvage (Arkansas)",
-    "condition": "На ходу",
-    "auctionDate": "чт 23 апр., 16:30 GMT+2",
-    "auctionSource": "IAAI",
-    "seller": "State Farm Group Insurance",
-    "removedAt": "2026-04-18T07:53:35.017Z",
-    "removalNotifiedAt": "2026-04-18T07:53:35.017Z"
-  },
-  {
     "link": "https://bid.cars/ru/lot/0-44542397/2025-Volkswagen-Atlas-1V2FR2CA3SC575421",
     "title": "2025 Volkswagen Atlas, 2.0T Sel Prem...",
     "vin": "1V2FR2CA3SC575421",
@@ -1483,5 +1465,41 @@
     "seller": "Geico",
     "removedAt": "2026-05-01T08:56:23.448Z",
     "removalNotifiedAt": "2026-05-01T08:56:23.448Z"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/1-49495286/2026-Volkswagen-Atlas-1V2JN2CAXTC519192",
+    "title": "2026 Volkswagen Atlas, SE",
+    "vin": "1V2JN2CAXTC519192",
+    "lot": "1-49495286",
+    "odometer": "0k мили (1k km)",
+    "damage": "Задняя часть",
+    "location": "Houston (TX)",
+    "currentBid": "$3,600",
+    "engine": "2.0L 4 cyl. 269HP",
+    "keys": "SV (Texas)",
+    "condition": "На ходу",
+    "auctionDate": "пт 1 мая, 19:00 GMT+2",
+    "auctionSource": "Copart",
+    "seller": "Geico",
+    "removedAt": "2026-05-02T08:17:36.883Z",
+    "removalNotifiedAt": "2026-05-02T08:17:36.883Z"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/0-44520996/2023-Volkswagen-Atlas-1V2KC2CA3PC224841",
+    "title": "2023 Volkswagen Atlas, Cross Sport 2...",
+    "vin": "1V2KC2CA3PC224841",
+    "lot": "0-44520996",
+    "odometer": "35k мили (56k km)",
+    "damage": "Столкноевение | Передняя часть",
+    "location": "Billings (MT)",
+    "currentBid": "$0",
+    "engine": "2.0L 4 cyl. 235HP",
+    "keys": "Salvage (Montana)",
+    "condition": "На ходу",
+    "auctionDate": "ср 6 мая, 17:30 GMT+2",
+    "auctionSource": "IAAI",
+    "seller": "Progressive Casualty Insurance",
+    "removedAt": "2026-05-02T08:17:36.883Z",
+    "removalNotifiedAt": "2026-05-02T08:17:36.883Z"
   }
 ]
