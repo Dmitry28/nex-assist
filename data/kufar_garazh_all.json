@@ -1767,7 +1767,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/77b2c7b6-d750-431d-92e2-6d23d6736824.jpg"
     ],
     "firstSeenAt": "2026-04-24T09:16:55.888Z",
-    "lastSeenAt": "2026-04-29T09:20:43.141Z"
+    "lastSeenAt": "2026-05-04T09:35:47.293Z"
   },
   {
     "adId": 1065912942,
@@ -2296,6 +2296,100 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/986242a0-c9eb-47cd-911b-c9305b4ee522.jpg"
     ],
     "firstSeenAt": "2026-05-03T08:39:26.950Z",
-    "lastSeenAt": "2026-05-03T08:39:26.950Z"
+    "lastSeenAt": "2026-05-04T09:35:47.293Z"
+  },
+  {
+    "adId": 1067544766,
+    "link": "https://re.kufar.by/vi/1067544766",
+    "title": "Гараж с подвалом и смотровой ямой",
+    "description": "Гараж сухой , подвал под всем гаражом,смотровая яма, электричество. Хороший подъезд,рядом заправка, магазин. Венечная 2а Бл.11 гараж 50",
+    "priceByn": 11307,
+    "priceUsd": 4000,
+    "address": "Венечная ул, Гродно, Гродненская область",
+    "area": 17.7,
+    "seller": "ИП Бортник С.В.",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма",
+      "Подвал",
+      "Отсутствует"
+    ],
+    "listTime": "2026-05-04T07:01:38Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/22b94574-c2d2-4cf3-8f79-1825df63c1ef.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b6a4e489-1ae2-45fe-8524-cd4d76fd9a8a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2bb3aa1b-2b41-4528-bf31-a197d7d484f9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8642ebad-550c-44c2-ac3f-11b0d0ce326a.jpg"
+    ],
+    "firstSeenAt": "2026-05-04T09:35:47.293Z",
+    "lastSeenAt": "2026-05-04T09:35:47.293Z"
+  },
+  {
+    "adId": 1067512886,
+    "link": "https://re.kufar.by/vi/1067512886",
+    "title": "Гараж",
+    "description": "Продам гараж 3,5/5.85. яма и подвал под всем гаражом! Есть 380в.Все вопросы по телефону либо сообщения.",
+    "priceByn": 26854,
+    "priceUsd": 9500,
+    "address": "Промысловый проезд, Гродно, Гродненская область",
+    "area": 20.4,
+    "seller": "Евгений",
+    "propertyType": "Гараж",
+    "listTime": "2026-05-04T02:34:11Z",
+    "images": [],
+    "firstSeenAt": "2026-05-04T09:35:47.293Z",
+    "lastSeenAt": "2026-05-04T09:35:47.293Z"
+  },
+  {
+    "adId": 1067458867,
+    "link": "https://re.kufar.by/vi/1067458867",
+    "title": "Гараж ,  ул. Меречская  застава 1А блок3",
+    "description": "Продам гараж 16,5 кв.м в Гродно по ул.Меречская застава ( ГК «Автолюбитель-Гродно»): кирпичный, сухой, перекрытия — ж/б плиты, пол — бетонная стяжка, ",
+    "priceByn": 12720,
+    "priceUsd": 4500,
+    "address": "Меречская Застава ул, Гродно, Гродненская область",
+    "area": 16.5,
+    "seller": "Лариса",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма",
+      "Наземная",
+      "Отсутствует"
+    ],
+    "listTime": "2026-05-03T14:17:22Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/50ba42e4-d07e-4e80-8767-05f539f865d4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b7a7a371-0a43-4c09-91e7-ebf76230075c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/529c3b1d-e59f-4068-af99-be1320c7b845.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/075bd5c3-8173-4c88-9bec-a3ab0645a028.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/354d35e9-69d8-4cfc-b0b4-f4bc826e7214.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2ed0f755-51be-452d-b155-fdb6fa81ca9a.jpg"
+    ],
+    "firstSeenAt": "2026-05-04T09:35:47.293Z",
+    "lastSeenAt": "2026-05-04T09:35:47.293Z"
+  },
+  {
+    "adId": 1067452580,
+    "link": "https://re.kufar.by/vi/1067452580",
+    "title": "Гараж",
+    "description": "Гараж 3x6, не разборный, уши есть, самовывоз, район пл. Декабристов, 1300р, разумный торг уместен. Самовывоз. Все вопросы по телефону",
+    "priceByn": 1300,
+    "priceUsd": 460,
+    "address": "площадь Декабристов, Гродно, Гродненская область",
+    "area": 18,
+    "seller": "Денис",
+    "propertyType": "Гараж",
+    "listTime": "2026-05-03T13:08:35Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a2446ea7-3ae7-4b6c-ada9-93b144e7e3b6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/19124c9b-8cb5-4213-9f7f-9c0ec6794756.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/510d7785-5b82-4d59-8507-d230186e7961.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0ed1f4cd-685b-4b49-b81c-1e467f764506.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/48ae63d0-f0f0-4f29-9452-aee6dd3d6dcd.jpg"
+    ],
+    "firstSeenAt": "2026-05-04T09:35:47.293Z",
+    "lastSeenAt": "2026-05-04T09:35:47.293Z"
   }
 ]
