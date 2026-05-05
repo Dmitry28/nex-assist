@@ -22,7 +22,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5e57eef0-2ee2-469e-a4f8-03b2f11cbbd1.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-05-04T09:56:17.648Z"
+    "lastSeenAt": "2026-05-05T09:39:20.484Z"
   },
   {
     "adId": 1024462788,
@@ -73,6 +73,8 @@
     "link": "https://re.kufar.by/vi/1054012577",
     "title": "Дача в СТ Ягодка, Гродно, 6 соток, дом, баня, теплица",
     "description": "Продаётся дача: 6 соток, 2-этажный дом 7*8 с печкой, камином, закрытой и открытой верандами, с баней и теплицей. Яблони, груши, сливы, вишни, виноград",
+    "priceByn": 56630,
+    "priceUsd": 20000,
     "address": "СТ Ягодка, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "plotArea": 6,
     "seller": "Людмила",
@@ -80,14 +82,14 @@
       "Частная собственность",
       "Да"
     ],
-    "listTime": "2026-03-25T13:36:41Z",
+    "listTime": "2026-05-04T12:38:34Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9e01492b-0fc1-415f-8ffd-9c8a64adb381.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/05e94ba8-824d-4549-941a-a772717cffe6.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7b4053ef-1b86-4f81-a244-191274796e97.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-04-16T09:51:57.626Z"
+    "lastSeenAt": "2026-05-05T09:39:20.484Z"
   },
   {
     "adId": 1061953023,
@@ -946,7 +948,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/33fd3700-4382-4713-b4cc-deb8d2adb749.jpg"
     ],
     "firstSeenAt": "2026-03-29T19:58:43.075Z",
-    "lastSeenAt": "2026-05-04T09:56:17.648Z"
+    "lastSeenAt": "2026-05-05T09:39:20.484Z"
   },
   {
     "adId": 1062375057,
@@ -1816,17 +1818,15 @@
     "link": "https://re.kufar.by/vi/1060424231",
     "title": "Земельный участок . Вблизи деревни Коробчицы",
     "description": "Земельный участок, вблизи д.коробчицы. Торг уместен.",
-    "priceByn": 19177,
-    "priceUsd": 6800,
+    "priceByn": 18405,
+    "priceUsd": 6500,
     "address": "СТ Незабудка, Подлабенский сельсовет, Гродненский район, Гродненская область",
-    "plotArea": 5.85,
+    "plotArea": 6,
     "seller": "Виталий Ельяшевич",
     "features": [
-      "Сезонная",
-      "Частная собственность",
       "Да"
     ],
-    "listTime": "2026-04-27T12:53:36Z",
+    "listTime": "2026-05-04T12:53:35Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9c74edca-4dee-46d3-91f9-4e96f358f14d.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bc45f866-bc44-4832-a075-be7c640581e5.jpg",
@@ -1835,7 +1835,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/345c6b56-b352-4d4a-9d94-aa8a82f92c90.jpg"
     ],
     "firstSeenAt": "2026-04-08T09:47:09.838Z",
-    "lastSeenAt": "2026-04-29T09:49:12.029Z"
+    "lastSeenAt": "2026-05-05T09:39:20.484Z"
   },
   {
     "adId": 1063935659,
@@ -2165,7 +2165,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7b484c43-4b27-4651-9da7-52796a4e8d7a.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:49:43.145Z",
-    "lastSeenAt": "2026-05-04T09:56:17.648Z"
+    "lastSeenAt": "2026-05-05T09:39:20.484Z"
   },
   {
     "adId": 1063962481,
@@ -2217,7 +2217,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/74b554e1-4b25-45b7-b399-75c547f5c462.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:49:43.145Z",
-    "lastSeenAt": "2026-05-04T09:56:17.648Z"
+    "lastSeenAt": "2026-05-05T09:39:20.484Z"
   },
   {
     "adId": 1064676800,
@@ -2402,7 +2402,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2b475c11-052b-4d45-9f0c-33531ebac3c8.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:49:43.145Z",
-    "lastSeenAt": "2026-05-04T09:56:17.648Z"
+    "lastSeenAt": "2026-05-05T09:39:20.484Z"
   },
   {
     "adId": 1065047877,
@@ -3168,7 +3168,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0f5c840b-1dd5-4f0d-8960-70543ab97cc1.jpg"
     ],
     "firstSeenAt": "2026-04-27T10:16:17.664Z",
-    "lastSeenAt": "2026-04-27T10:16:17.664Z"
+    "lastSeenAt": "2026-05-05T09:39:20.484Z"
   },
   {
     "adId": 1066572874,
@@ -3739,7 +3739,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0d42ee30-2df5-4980-9b00-ea3f3f1561fd.jpg"
     ],
     "firstSeenAt": "2026-05-04T09:56:17.648Z",
-    "lastSeenAt": "2026-05-04T09:56:17.648Z"
+    "lastSeenAt": "2026-05-05T09:39:20.484Z"
   },
   {
     "adId": 229968872,
@@ -3768,7 +3768,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4c07e588-3c7d-4d34-bc77-482d054b7e93.jpg"
     ],
     "firstSeenAt": "2026-05-04T09:56:17.648Z",
-    "lastSeenAt": "2026-05-04T09:56:17.648Z"
+    "lastSeenAt": "2026-05-05T09:39:20.484Z"
   },
   {
     "adId": 1067537742,
@@ -3798,7 +3798,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f487a590-62c1-447a-9478-fc79306c992a.jpg"
     ],
     "firstSeenAt": "2026-05-04T09:56:17.648Z",
-    "lastSeenAt": "2026-05-04T09:56:17.648Z"
+    "lastSeenAt": "2026-05-05T09:39:20.484Z"
   },
   {
     "adId": 1067482591,
@@ -3817,20 +3817,18 @@
     "listTime": "2026-05-03T17:42:30Z",
     "images": [],
     "firstSeenAt": "2026-05-04T09:56:17.648Z",
-    "lastSeenAt": "2026-05-04T09:56:17.648Z"
+    "lastSeenAt": "2026-05-05T09:39:20.484Z"
   },
   {
     "adId": 1067441965,
     "link": "https://re.kufar.by/vi/1067441965",
     "title": "Дачный участок",
     "description": "Хороший участок под огоро и не большой сад. Находится в хорошем месте. К товариществу, можно добраться на городском транспорте 26 и 34 автобусе. Так ж",
+    "priceByn": 16989,
+    "priceUsd": 6000,
     "address": "37, СТ Белые Росы, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "plotArea": 5,
     "seller": "ирина",
-    "features": [
-      "Сезонная",
-      "Частная собственность"
-    ],
     "listTime": "2026-05-03T12:05:37Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/934919c0-b9e6-440e-a376-2b27d55b45bf.jpg",
@@ -3839,7 +3837,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0c10dc0a-8566-4ccc-82f9-a6e7ab5e9605.jpg"
     ],
     "firstSeenAt": "2026-05-04T09:56:17.648Z",
-    "lastSeenAt": "2026-05-04T09:56:17.648Z"
+    "lastSeenAt": "2026-05-05T09:39:20.484Z"
   },
   {
     "adId": 1067432066,
@@ -3863,7 +3861,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/22c14676-c22b-4453-bbba-8ab322b2cf5a.jpg"
     ],
     "firstSeenAt": "2026-05-04T09:56:17.648Z",
-    "lastSeenAt": "2026-05-04T09:56:17.648Z"
+    "lastSeenAt": "2026-05-05T09:39:20.484Z"
   },
   {
     "adId": 1067361914,
@@ -3936,5 +3934,50 @@
     ],
     "firstSeenAt": "2026-05-04T09:56:17.648Z",
     "lastSeenAt": "2026-05-04T09:56:17.648Z"
+  },
+  {
+    "adId": 1067631640,
+    "link": "https://re.kufar.by/vi/1067631640",
+    "title": "Продам участок",
+    "description": "Участок находится по адресу г. Гродно, пер. Виктора Юртова 2-й 25, площадь 0.0984\nНа участке есть электричество.",
+    "priceByn": 67956,
+    "priceUsd": 24000,
+    "address": "2-й переулок Виктора Юртова, 25, Гродно, Гродненская область",
+    "plotArea": 9.8,
+    "seller": "Павел",
+    "features": [
+      "Центральная",
+      "Частная собственность"
+    ],
+    "listTime": "2026-05-04T13:36:19Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/04aecd9c-6f07-4818-a3fb-9b62e69ccdd3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e039174f-aba2-457b-9bb8-0b242ed17c7a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/146c8853-c349-46e3-8844-dea39c12e846.jpg"
+    ],
+    "firstSeenAt": "2026-05-05T09:39:20.484Z",
+    "lastSeenAt": "2026-05-05T09:39:20.484Z"
+  },
+  {
+    "adId": 1065761418,
+    "link": "https://re.kufar.by/vi/1065761418",
+    "title": "Участок",
+    "description": "Звоните или пишите. Абсолютно голый участок,все есть рядом. Угловой дом. Возможен обмен на автомобиль.",
+    "priceByn": 19821,
+    "priceUsd": 7000,
+    "address": "166, СТ Автомагнитола, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 6,
+    "seller": "Алексей",
+    "features": [
+      "Отсутствует",
+      "Частная собственность"
+    ],
+    "listTime": "2026-05-04T12:03:27Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3815a51a-7bdb-4fbb-b255-cb9a751a13f8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0dbfe013-dc55-4337-9b42-c48696c30ae1.jpg"
+    ],
+    "firstSeenAt": "2026-05-05T09:39:20.484Z",
+    "lastSeenAt": "2026-05-05T09:39:20.484Z"
   }
 ]
