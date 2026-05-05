@@ -47,7 +47,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-05-03T08:39:26.950Z"
+    "lastSeenAt": "2026-05-05T09:15:05.494Z"
   },
   {
     "adId": 1062002915,
@@ -83,8 +83,8 @@
     "link": "https://re.kufar.by/vi/1061908048",
     "title": "Продаётся гараж по ул. Скосная",
     "description": "Продается кирпичный гараж по улице Скосная.\nГПК \"Скосный\".\nОбщая площадь 19.4м²+ смотровая яма.\nРазмеры 3,5/5,55 \nПроведено электричество 220В.\nУстано",
-    "priceByn": 30976,
-    "priceUsd": 10500,
+    "priceByn": 25484,
+    "priceUsd": 9000,
     "address": "Скосная ул, Гродно, Гродненская область",
     "area": 19.4,
     "seller": "Агентство недвижимости ''Ключ к мечте''",
@@ -96,7 +96,7 @@
       "Наземная",
       "Отсутствует"
     ],
-    "listTime": "2026-03-25T07:46:41Z",
+    "listTime": "2026-05-05T06:02:59Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2b5c93a6-45bc-43e1-b3d7-f4bb65a13b49.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/db946f22-b9eb-4128-bd5a-772a5059de92.jpg",
@@ -106,7 +106,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c32966cf-6663-4cbc-a483-09da9f48647d.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-04-23T08:44:11.772Z"
+    "lastSeenAt": "2026-05-05T09:15:05.494Z"
   },
   {
     "adId": 1044024342,
@@ -1767,7 +1767,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/77b2c7b6-d750-431d-92e2-6d23d6736824.jpg"
     ],
     "firstSeenAt": "2026-04-24T09:16:55.888Z",
-    "lastSeenAt": "2026-05-04T09:35:47.293Z"
+    "lastSeenAt": "2026-05-05T09:15:05.494Z"
   },
   {
     "adId": 1065912942,
@@ -2323,7 +2323,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8642ebad-550c-44c2-ac3f-11b0d0ce326a.jpg"
     ],
     "firstSeenAt": "2026-05-04T09:35:47.293Z",
-    "lastSeenAt": "2026-05-04T09:35:47.293Z"
+    "lastSeenAt": "2026-05-05T09:15:05.494Z"
   },
   {
     "adId": 1067512886,
@@ -2339,7 +2339,7 @@
     "listTime": "2026-05-04T02:34:11Z",
     "images": [],
     "firstSeenAt": "2026-05-04T09:35:47.293Z",
-    "lastSeenAt": "2026-05-04T09:35:47.293Z"
+    "lastSeenAt": "2026-05-05T09:15:05.494Z"
   },
   {
     "adId": 1067458867,
@@ -2368,7 +2368,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2ed0f755-51be-452d-b155-fdb6fa81ca9a.jpg"
     ],
     "firstSeenAt": "2026-05-04T09:35:47.293Z",
-    "lastSeenAt": "2026-05-04T09:35:47.293Z"
+    "lastSeenAt": "2026-05-05T09:15:05.494Z"
   },
   {
     "adId": 1067452580,
@@ -2390,6 +2390,78 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/48ae63d0-f0f0-4f29-9452-aee6dd3d6dcd.jpg"
     ],
     "firstSeenAt": "2026-05-04T09:35:47.293Z",
-    "lastSeenAt": "2026-05-04T09:35:47.293Z"
+    "lastSeenAt": "2026-05-05T09:15:05.494Z"
+  },
+  {
+    "adId": 1067649054,
+    "link": "https://re.kufar.by/vi/1067649054",
+    "title": "Гараж в ГСК ''Фолюш''.",
+    "description": "В продаже металлический гараж с ямой\n6х4 м с местом в гаражном кооперативе \"Фолюш\".\nЕсть возможность с минимальными вложениями в перестройке получить ",
+    "priceByn": 22652,
+    "priceUsd": 8000,
+    "address": "Суворова ул, 141, Гродно, Гродненская область",
+    "area": 24,
+    "seller": "Пользователь",
+    "propertyType": "Гараж",
+    "listTime": "2026-05-04T16:48:51Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/292b42f5-e6c2-449f-a0dc-fbbf375b2c5a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8bab0cf6-d080-45a1-b416-23a6ee49fed0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3633da65-a6c7-4430-b534-d84606eeeef5.jpg"
+    ],
+    "firstSeenAt": "2026-05-05T09:15:05.494Z",
+    "lastSeenAt": "2026-05-05T09:15:05.494Z"
+  },
+  {
+    "adId": 1067567538,
+    "link": "https://re.kufar.by/vi/1067567538",
+    "title": "Гараж",
+    "description": "Продаю гараж в хорошем состояние",
+    "priceByn": 19821,
+    "priceUsd": 7000,
+    "address": "Звёздная ул, 44, Гродно, Гродненская область",
+    "area": 18,
+    "seller": "Дима",
+    "propertyType": "Гараж",
+    "features": [
+      "Печное"
+    ],
+    "listTime": "2026-05-04T09:50:49Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/33fd029b-6eba-4337-84dc-caa47450e3f5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/15884700-9c7e-425e-97a4-dd95e765cd17.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/648c556e-9516-412c-8b6b-624208c73e73.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/680e1210-1fc0-4102-906c-32b571bd372d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/31542bbc-c553-4c18-b4ab-f1afc458b8d9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8c5affa3-93c1-40b9-805d-022ea0b2b1c0.jpg"
+    ],
+    "firstSeenAt": "2026-05-05T09:15:05.494Z",
+    "lastSeenAt": "2026-05-05T09:15:05.494Z"
+  },
+  {
+    "adId": 1067566597,
+    "link": "https://re.kufar.by/vi/1067566597",
+    "title": "Гараж",
+    "description": "Гараж с удобным расположением. Асфальтированная дорога. Напротив через дорогу жилой район по ул. Лидская.",
+    "priceByn": 46000,
+    "priceUsd": 16246,
+    "address": "Понемуньская ул, Гродно, Гродненская область",
+    "area": 30,
+    "seller": "частное лицо",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Подвал",
+      "Наземная"
+    ],
+    "listTime": "2026-05-04T09:44:44Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/aad14185-5a88-4e3b-9b16-ff6ab39ca734.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3577d91c-50b3-45d6-a255-0cfef1c1bdd1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6801d002-08b2-4515-a4f0-43e491b4a0d9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/24148fd5-be4c-4d8d-b314-a6b42baa072a.jpg"
+    ],
+    "firstSeenAt": "2026-05-05T09:15:05.494Z",
+    "lastSeenAt": "2026-05-05T09:15:05.494Z"
   }
 ]

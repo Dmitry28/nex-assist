@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "link": "https://bid.cars/ru/lot/1-79226575/2025-Volkswagen-Atlas-1V2DE2CAXSC216473",
+    "title": "2025 Volkswagen Atlas, SE",
+    "vin": "1V2DE2CAXSC216473",
+    "lot": "1-79226575",
+    "odometer": "5k мили (8k km)",
+    "damage": "Сторона",
+    "location": "Nashville (TN)",
+    "currentBid": "$175",
+    "engine": "2.0L 4 cyl. 269HP",
+    "keys": "SC (Tennessee)",
+    "condition": "На ходу",
+    "auctionDate": "ср 6 мая, 19:00 GMT+2",
+    "auctionSource": "Copart",
+    "seller": "---"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/1-42059046/2023-Volkswagen-Atlas-1V2SC2CA3PC214326",
+    "title": "2023 Volkswagen Atlas, Sel R-Line",
+    "vin": "1V2SC2CA3PC214326",
+    "lot": "1-42059046",
+    "odometer": "55k мили (89k km)",
+    "damage": "Задняя часть",
+    "location": "Houston (TX)",
+    "currentBid": "$0",
+    "engine": "2.0L 4 cyl. 235HP",
+    "keys": "SV (Texas)",
+    "condition": "На ходу",
+    "auctionDate": "вт 12 мая, 19:00 GMT+2",
+    "auctionSource": "Copart",
+    "seller": "---"
+  }
+]
