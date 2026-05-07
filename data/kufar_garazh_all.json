@@ -848,7 +848,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2b140d18-2fdc-4813-874a-545551991b63.jpg"
     ],
     "firstSeenAt": "2026-04-05T16:51:33.360Z",
-    "lastSeenAt": "2026-05-06T09:31:02.939Z"
+    "lastSeenAt": "2026-05-07T09:35:04.763Z"
   },
   {
     "adId": 1063817729,
@@ -1401,7 +1401,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d0cba27d-2a67-47bb-9f8d-ee2b1f45b921.jpg"
     ],
     "firstSeenAt": "2026-04-16T08:40:16.263Z",
-    "lastSeenAt": "2026-04-17T08:38:33.333Z"
+    "lastSeenAt": "2026-05-07T09:35:04.763Z"
   },
   {
     "adId": 1065272904,
@@ -2239,7 +2239,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2deed016-39b7-4193-8366-99c2670d718c.jpg"
     ],
     "firstSeenAt": "2026-05-02T08:25:33.528Z",
-    "lastSeenAt": "2026-05-06T09:31:02.939Z"
+    "lastSeenAt": "2026-05-07T09:35:04.763Z"
   },
   {
     "adId": 1067211533,
@@ -2483,7 +2483,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6b52bc77-072e-4724-9bd6-89d9e6b2856e.jpg"
     ],
     "firstSeenAt": "2026-05-06T09:31:02.939Z",
-    "lastSeenAt": "2026-05-06T09:31:02.939Z"
+    "lastSeenAt": "2026-05-07T09:35:04.763Z"
   },
   {
     "adId": 1067821993,
@@ -2507,7 +2507,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/13509544-5cb8-4248-92bc-2cc995eb31f6.jpg"
     ],
     "firstSeenAt": "2026-05-06T09:31:02.939Z",
-    "lastSeenAt": "2026-05-06T09:31:02.939Z"
+    "lastSeenAt": "2026-05-07T09:35:04.763Z"
   },
   {
     "adId": 1067817242,
@@ -2536,6 +2536,76 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/74eb392d-b336-4e64-8cc0-ee0c695ff57e.jpg"
     ],
     "firstSeenAt": "2026-05-06T09:31:02.939Z",
-    "lastSeenAt": "2026-05-06T09:31:02.939Z"
+    "lastSeenAt": "2026-05-07T09:35:04.763Z"
+  },
+  {
+    "adId": 1068021201,
+    "link": "https://re.kufar.by/vi/1068021201",
+    "title": "Гараж",
+    "description": "Гараж по адресу : г. Гродно, ул. Лелевеля, 61А/46, блок 1, ГК «Зорька алая»",
+    "priceByn": 14129,
+    "priceUsd": 5000,
+    "address": "Лелевеля ул, Гродно, Гродненская область",
+    "area": 15.8,
+    "seller": "Евгений",
+    "propertyType": "Гараж",
+    "listTime": "2026-05-07T09:17:10Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5879968b-da60-4b14-b370-81d63837680c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/95ec2aba-6625-4526-ada2-2fc3657ab79c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/63c9f7d6-f745-44d6-8903-d78982936127.jpg"
+    ],
+    "firstSeenAt": "2026-05-07T09:35:04.763Z",
+    "lastSeenAt": "2026-05-07T09:35:04.763Z"
+  },
+  {
+    "adId": 1067942366,
+    "link": "https://re.kufar.by/vi/1067942366",
+    "title": "гараж ул. Гаражная (м-н Вишневец)",
+    "description": "Продам гараж в районе Индурского шоссе, ул. Гаражная, Блок 1, за КристаллТрансом (м-н Вишневец).\nВыгодное расположение рядом со спальным районом (пере",
+    "priceByn": 16955,
+    "priceUsd": 6000,
+    "address": "Гаражная ул, Гродно, Гродненская область",
+    "area": 18.53,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "propertyType": "Гараж",
+    "listTime": "2026-05-06T16:04:45Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/33d9f4f2-334c-4342-8e22-e63d20df4bbf.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/89389d4c-3a92-49d1-be32-15ba032883f7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4eb129b6-6823-4819-ba67-95b286eae9f8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e59daec3-04da-45c7-953d-1fe528ae9d09.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/18dcb36b-ed79-4b94-9d70-f0c6a4df1db2.jpg"
+    ],
+    "firstSeenAt": "2026-05-07T09:35:04.763Z",
+    "lastSeenAt": "2026-05-07T09:35:04.763Z"
+  },
+  {
+    "adId": 1067917562,
+    "link": "https://re.kufar.by/vi/1067917562",
+    "title": "Гараж",
+    "description": "Продам гараж ГПК \"Урочище «Секрет». Звоните , пишите. Торг уместен.",
+    "priceByn": 19498,
+    "priceUsd": 6900,
+    "address": "Космонавтов пр, Гродно, Гродненская область",
+    "area": 20,
+    "seller": "Oksana",
+    "propertyType": "Гараж",
+    "features": [
+      "Наземная",
+      "Отсутствует"
+    ],
+    "listTime": "2026-05-06T11:59:43Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6df37925-d451-4b2b-bcb4-53740f8361ae.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e36ebfb4-2226-4375-a004-df949f78ceda.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/232f7c0c-c82d-47d1-87f5-2dfc502af484.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/765b1486-4fa1-4200-b2bf-c2168d832c99.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/34047e6f-adab-444b-9d4d-9a0fa47807c8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/403ed876-f038-49cf-8697-9ff29c53b04a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e242fa23-219c-4bca-8ee9-96d0c4cd9f6d.jpg"
+    ],
+    "firstSeenAt": "2026-05-07T09:35:04.763Z",
+    "lastSeenAt": "2026-05-07T09:35:04.763Z"
   }
 ]
