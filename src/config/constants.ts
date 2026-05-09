@@ -22,17 +22,19 @@ export const KUFAR_DEFAULTS = {
 } as const;
 
 export const REALT_DEFAULTS = {
-  // Bbox coordinates mirror kufar's gbx for the matching property type
-  // (kufar `b:west,south,east,north` → realt `coords=south&coords=west&coords=north&coords=east`).
+  // Each URL combines:
+  //   - `addressV2` — Grodno region UUID (matches kufar's `grodnenskaya-oblast` segment)
+  //   - `coords` — bbox mirroring kufar's gbx for the matching property type
+  //     (kufar `b:west,south,east,north` → realt `coords=south&coords=west&coords=north&coords=east`).
   PLOTS_URL:
-    'https://realt.by/grodno-region/sale/plots/map/?coords=53.454666565957595&coords=23.63247006323345&coords=53.81379430265694&coords=24.079476288819368',
+    'https://realt.by/grodno-region/sale/plots/map/?addressV2=%5B%7B%22stateRegionUuid%22%3A%22499f04f0-7b00-11eb-8943-0cc47adabd66%22%7D%5D&coords=53.454666565957595&coords=23.63247006323345&coords=53.81379430265694&coords=24.079476288819368',
   GARAGE_URL:
-    'https://realt.by/grodno-region/sale/garage/map/?coords=53.57183301832253&coords=23.725981746227706&coords=53.75128104662766&coords=23.94948485902068',
+    'https://realt.by/grodno-region/sale/garage/map/?addressV2=%5B%7B%22stateRegionUuid%22%3A%22499f04f0-7b00-11eb-8943-0cc47adabd66%22%7D%5D&coords=53.57183301832253&coords=23.725981746227706&coords=53.75128104662766&coords=23.94948485902068',
   COTTAGES_URL:
-    'https://realt.by/grodno-region/sale/cottages/map/?coords=53.45970346998098&coords=23.656203109090203&coords=53.81878831030225&coords=24.10320933467615',
+    'https://realt.by/grodno-region/sale/cottages/map/?addressV2=%5B%7B%22stateRegionUuid%22%3A%22499f04f0-7b00-11eb-8943-0cc47adabd66%22%7D%5D&coords=53.45970346998098&coords=23.656203109090203&coords=53.81878831030225&coords=24.10320933467615',
   // No dacha bbox in kufar — reuse the houses bbox (same Grodno-region area).
   DACHI_URL:
-    'https://realt.by/grodno-region/sale/dachi/map/?coords=53.45970346998098&coords=23.656203109090203&coords=53.81878831030225&coords=24.10320933467615',
+    'https://realt.by/grodno-region/sale/dachi/map/?addressV2=%5B%7B%22stateRegionUuid%22%3A%22499f04f0-7b00-11eb-8943-0cc47adabd66%22%7D%5D&coords=53.45970346998098&coords=23.656203109090203&coords=53.81878831030225&coords=24.10320933467615',
   /** Default cron: every day at 09:00 UTC (12:00 Minsk) */
   SCRAPE_CRON: '0 9 * * *',
 } as const;
