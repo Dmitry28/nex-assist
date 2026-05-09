@@ -80,6 +80,14 @@ describe('buildSummary', () => {
     expect(s).toContain('Всего в Заболоть: <b>5</b>');
     expect(s).toContain('Новые в Заболоть: <b>2</b>');
   });
+
+  it('renders baseline summary when isBaseline=true', () => {
+    const s = buildSummary({ ...summaryBase, isBaseline: true });
+    expect(s).toContain('🏗 baseline');
+    expect(s).toContain('<b>24</b>');
+    expect(s).not.toContain('🆕 Новые');
+    expect(s).not.toContain('🗑 Удалённые');
+  });
 });
 
 describe('buildCaption', () => {

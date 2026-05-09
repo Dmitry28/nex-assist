@@ -63,4 +63,9 @@ export class LandAuctionsResult {
   /** All listings matching the special keyword (e.g. Заболоть area). */
   @ApiProperty({ type: [Listing] }) specialListings!: Listing[];
   @ApiProperty({ type: [Listing] }) newSpecialListings!: Listing[];
+  /**
+   * True when this run seeded an empty snapshot — current listings are persisted as
+   * baseline and per-listing Telegram messages are skipped (avoids first-run flood).
+   */
+  @ApiProperty() isBaseline!: boolean;
 }

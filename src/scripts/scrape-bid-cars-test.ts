@@ -32,6 +32,7 @@ async function bootstrap(): Promise<void> {
       newListings: listings,
       removedListings: [],
       soldPriceUpdates: [],
+      isBaseline: false,
     });
   } finally {
     await app.close();
