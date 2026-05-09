@@ -55,4 +55,9 @@ export class BidCarsResult {
   @ApiProperty({ type: [Object], isArray: true }) removedListings!: RemovedCarListing[];
   /** Previously-removed listings whose sold price was just found — triggers follow-up notification. */
   @ApiProperty({ type: [Object], isArray: true }) soldPriceUpdates!: RemovedCarListing[];
+  /**
+   * True when this run seeded an empty snapshot — current listings are persisted as
+   * baseline and per-listing Telegram messages are skipped (avoids first-run flood).
+   */
+  @ApiProperty() isBaseline!: boolean;
 }

@@ -109,6 +109,15 @@ export const buildSummary = (feeds: KufarFeedResult[]): string => {
 
   for (const feed of feeds) {
     const name = FEED_DISPLAY_NAMES[feed.feedName] ?? feed.feedName;
+
+    if (feed.isBaseline) {
+      lines.push(
+        '',
+        `<b>${name}:</b> 🏗 baseline · ${feed.newListings.length} объявлений сохранено`,
+      );
+      continue;
+    }
+
     const parts: string[] = [];
     if (feed.newListings.length > 0) parts.push(`🆕 ${feed.newListings.length} новых`);
     if (feed.priceChanges.length > 0) parts.push(`💸 ${feed.priceChanges.length} изм. цены`);

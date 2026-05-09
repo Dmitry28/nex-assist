@@ -164,6 +164,7 @@ export class KufarService implements OnModuleInit, OnModuleDestroy {
     ]);
 
     const previousMap = new Map(previousEntries.map(e => [e.adId, e]));
+    const isBaseline = previousMap.size === 0 && currentListings.length > 0;
 
     const newListings: KufarListing[] = [];
     const priceChanges: KufarPriceChange[] = [];
@@ -184,14 +185,14 @@ export class KufarService implements OnModuleInit, OnModuleDestroy {
     const total = previousMap.size + newListings.length;
 
     this.logger.log(
-      `Feed ${feed.key} — snapshot estimate: ${total}, new: ${newListings.length}, price changes: ${priceChanges.length}${truncated ? ' [TRUNCATED]' : ''}`,
+      `Feed ${feed.key} — snapshot estimate: ${total}, new: ${newListings.length}, price changes: ${priceChanges.length}${truncated ? ' [TRUNCATED]' : ''}${isBaseline ? ' [BASELINE]' : ''}`,
     );
 
     return {
       feed,
       currentListings,
       previousMap,
-      result: { feedName: feed.key, total, newListings, priceChanges, truncated },
+      result: { feedName: feed.key, total, newListings, priceChanges, truncated, isBaseline },
     };
   }
 
@@ -206,6 +207,18 @@ export class KufarService implements OnModuleInit, OnModuleDestroy {
 
     const now = new Date().toISOString();
     const updatedMap = new Map(previousMap);
+
+    // Silent baseline: snapshot was empty, persist all listings unconditionally.
+    if (result.isBaseline) {
+      for (const listing of currentListings) {
+        updatedMap.set(listing.adId, { ...listing, firstSeenAt: now, lastSeenAt: now });
+      }
+      await this.snapshot.write(dataFile(feed.key), [...updatedMap.values()]);
+      this.logger.log(
+        `Feed ${feed.key}: baseline saved (${updatedMap.size} entries, no per-listing messages sent)`,
+      );
+      return;
+    }
 
     for (const listing of currentListings) {
       const prev = updatedMap.get(listing.adId);

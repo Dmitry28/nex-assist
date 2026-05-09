@@ -73,6 +73,7 @@ const MOCK_RESULT: LandAuctionsResult = {
   soldListings: [],
   specialListings: MOCK_LISTINGS.slice(0, 1),
   newSpecialListings: MOCK_LISTINGS.slice(0, 1),
+  isBaseline: false,
 };
 
 async function bootstrap(): Promise<void> {

@@ -136,6 +136,7 @@ describe('buildSummary', () => {
     newListings: [baseListing, baseListing],
     priceChanges: [],
     truncated: false,
+    isBaseline: false,
   };
 
   it('shows feed display name', () => {

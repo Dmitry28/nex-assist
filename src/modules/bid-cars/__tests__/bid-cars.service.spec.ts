@@ -144,15 +144,22 @@ describe('BidCarsService — scrape', () => {
   // -------------------------------------------------------------------------
 
   describe('diff logic', () => {
-    it('first run: all current listings are new', async () => {
+    it('first run: all current listings are new (and isBaseline=true)', async () => {
       setupRun({ current: [carA, carB] });
 
       const result = await service.run();
 
       expect(result.total).toBe(2);
+      expect(result.isBaseline).toBe(true);
       expect(result.newListings).toEqual([carA, carB]);
       expect(result.removedListings).toHaveLength(0);
       expect(result.soldPriceUpdates).toHaveLength(0);
+    });
+
+    it('non-empty previous → isBaseline=false', async () => {
+      setupRun({ current: [carA, carB], previousAll: [carA] });
+      const result = await service.run();
+      expect(result.isBaseline).toBe(false);
     });
 
     it('no changes: empty diff', async () => {

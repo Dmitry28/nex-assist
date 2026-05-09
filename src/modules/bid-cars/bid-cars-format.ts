@@ -10,6 +10,7 @@ export interface SummaryParams {
   newCount: number;
   removedCount: number;
   soldUpdateCount: number;
+  isBaseline?: boolean;
 }
 
 export interface CaptionParams {
@@ -25,7 +26,14 @@ export const buildSummary = ({
   newCount,
   removedCount,
   soldUpdateCount,
+  isBaseline,
 }: SummaryParams): string => {
+  if (isBaseline) {
+    return [
+      `<b>🚗 Сводка на ${date.toLocaleDateString(LOCALE, { timeZone: TIMEZONE })}</b>`,
+      `🏗 baseline · <b>${total}</b> лотов сохранено`,
+    ].join('\n');
+  }
   const lines = [
     `<b>🚗 Сводка на ${date.toLocaleDateString(LOCALE, { timeZone: TIMEZONE })}</b>`,
     `📋 Всего лотов: <b>${total}</b>`,

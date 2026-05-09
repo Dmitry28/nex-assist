@@ -227,13 +227,35 @@ describe('KufarService — scrape', () => {
   // Notification-gated persistence
   // -------------------------------------------------------------------------
 
+  describe('silent baseline persistence', () => {
+    it('first run with empty snapshot → isBaseline=true, persists all unconditionally', async () => {
+      // No notifyResult → notifier returns empty maps. Baseline must still persist all.
+      setupRun({ listings: [listingA, listingB] });
+
+      const result = await service.run();
+      expect(result.feeds[0].isBaseline).toBe(true);
+
+      const written = (snapshot.write as jest.Mock).mock.calls[0][1] as KufarSnapshotEntry[];
+      expect(written).toHaveLength(2);
+      expect(written.find(e => e.adId === listingA.adId)?.firstSeenAt).toBeTruthy();
+      expect(written.find(e => e.adId === listingB.adId)?.firstSeenAt).toBeTruthy();
+    });
+
+    it('non-empty snapshot → isBaseline=false', async () => {
+      setupRun({ listings: [listingA], previousEntries: [snapshotA] });
+      const result = await service.run();
+      expect(result.feeds[0].isBaseline).toBe(false);
+    });
+  });
+
   describe('notification-gated persistence', () => {
     it('new listing notified → persisted in snapshot with firstSeenAt/lastSeenAt', async () => {
+      // Pre-seed with an unrelated entry so baseline path is not triggered
       const notifyResult: KufarNotifyResult = {
         notifiedNew: new Map([[feed1.key, new Set([listingA.adId])]]),
         notifiedPriceChanges: new Map(),
       };
-      setupRun({ listings: [listingA], notifyResult });
+      setupRun({ listings: [listingA], previousEntries: [snapshotB], notifyResult });
 
       await service.run();
 
@@ -244,9 +266,9 @@ describe('KufarService — scrape', () => {
       expect(entry?.lastSeenAt).toBeTruthy();
     });
 
-    it('new listing NOT notified → NOT added to snapshot', async () => {
-      // notifiedNew map is empty — notification was not delivered
-      setupRun({ listings: [listingA] });
+    it('new listing NOT notified → NOT added to snapshot (non-baseline run)', async () => {
+      // Pre-seed with an unrelated entry so baseline path is not triggered
+      setupRun({ listings: [listingA], previousEntries: [snapshotB] });
 
       await service.run();
 
