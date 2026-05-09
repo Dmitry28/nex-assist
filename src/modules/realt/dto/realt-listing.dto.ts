@@ -12,8 +12,22 @@ export class RealtListing {
   @ApiPropertyOptional() priceByn?: number;
   @ApiPropertyOptional() priceUsd?: number;
   @ApiPropertyOptional() address?: string;
+  /** Total area in m² (houses, dachas, garages — `areaTotal`). */
+  @ApiPropertyOptional() area?: number;
+  /** Living area in m² (houses, dachas). */
+  @ApiPropertyOptional() areaLiving?: number;
+  /** Kitchen area in m² (houses, dachas). */
+  @ApiPropertyOptional() areaKitchen?: number;
   /** Land/plot area in sotki. */
   @ApiPropertyOptional() plotArea?: number;
+  /** Number of rooms (houses). */
+  @ApiPropertyOptional() rooms?: number;
+  /** Year built (houses, dachas, garages — `buildingYear`). */
+  @ApiPropertyOptional() yearBuilt?: number;
+  /** Number of storeys in the building (houses, garages — `storeys`). */
+  @ApiPropertyOptional() storeys?: number;
+  /** Number of levels in the unit (multi-level houses/dachas — `levels`). */
+  @ApiPropertyOptional() levels?: number;
   /** Seller/contact name. */
   @ApiPropertyOptional() seller?: string;
   /** ISO 8601 timestamp of last update on realt.by. */
@@ -37,6 +51,12 @@ export interface RealtFeedResult {
   priceChanges: RealtPriceChange[];
   /** True if pagination was cut off at MAX_PAGES — there may be more unseen listings. */
   truncated: boolean;
+  /**
+   * True when this run seeded an empty snapshot — all current listings are persisted
+   * without sending per-listing Telegram messages (baseline mode). Avoids the
+   * first-run flood when adding a new feed with hundreds of active listings.
+   */
+  isBaseline: boolean;
 }
 
 /** Aggregated result across all configured feeds. */

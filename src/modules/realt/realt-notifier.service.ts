@@ -64,6 +64,13 @@ export class RealtNotifierService {
     const notifiedPriceChanges = new Map<string, Set<number>>();
 
     for (const feed of feeds) {
+      // Baseline: summary already mentions the seeded count — skip per-listing flood.
+      // Persistence in the service writes all current listings unconditionally for baselines.
+      if (feed.isBaseline) {
+        this.logger.log(`Feed ${feed.feedName}: baseline — skipping per-listing messages`);
+        continue;
+      }
+
       const displayName = FEED_DISPLAY_NAMES[feed.feedName] ?? feed.feedName;
 
       if (feed.newListings.length) {
