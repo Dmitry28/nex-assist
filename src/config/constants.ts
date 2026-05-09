@@ -21,6 +21,13 @@ export const KUFAR_DEFAULTS = {
   SCRAPE_CRON: '0 9 * * *',
 } as const;
 
+export const REALT_DEFAULTS = {
+  PLOTS_URL:
+    'https://realt.by/grodno-region/sale/plots/map/?addressV2=%5B%7B%22stateRegionUuid%22%3A%22499f04f0-7b00-11eb-8943-0cc47adabd66%22%7D%5D&coords=53.59721452626257&coords=23.53781023985464&coords=53.7686224317539&coords=24.112875852647623',
+  /** Default cron: every day at 09:00 UTC (12:00 Minsk) */
+  SCRAPE_CRON: '0 9 * * *',
+} as const;
+
 export const BID_CARS_DEFAULTS = {
   SCRAPE_URL:
     'https://bid.cars/ru/search/results?search-type=filters&status=Active&type=Automobile&make=Volkswagen&model=Atlas&year-from=2023&year-to=2027&auction-type=All&odometer-to=60000&start-code=Run+and+Drive&engine-size-to=2',
