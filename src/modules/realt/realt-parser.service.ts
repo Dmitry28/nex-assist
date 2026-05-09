@@ -4,6 +4,7 @@ import {
   CURRENCY_BYN,
   CURRENCY_USD,
   FETCH_TIMEOUT_MS,
+  LOOKBACK_HOURS,
   MAX_HTML_SIZE_BYTES,
   MAX_PAGES,
   listingLink,
@@ -23,8 +24,24 @@ export interface RawObject {
   createdAt?: string;
   /** All available currency conversions, keyed by ISO 4217 numeric code. */
   priceRates?: Record<string, number>;
-  /** Plot area in sotki. */
+  /** Total building area in m² (houses, dachas, garages). */
+  areaTotal?: number | null;
+  /** Living area in m² (houses, dachas). */
+  areaLiving?: number | null;
+  /** Kitchen area in m² (houses, dachas). */
+  areaKitchen?: number | null;
+  /** Plot area in sotki (plots, houses, dachas with land). */
   areaLand?: number | null;
+  /** Number of rooms (houses). */
+  rooms?: number | null;
+  /** Year built (houses, dachas, garages). */
+  buildingYear?: number | null;
+  /** Number of storeys in the building. */
+  storeys?: number | null;
+  /** Floor (apartments — not used for houses/plots). */
+  storey?: number | null;
+  /** Number of levels in the unit. */
+  levels?: number | null;
   address?: string | null;
   townName?: string | null;
   streetName?: string | null;
@@ -51,9 +68,16 @@ interface RawPagination {
 export class RealtParserService {
   private readonly logger = new Logger(RealtParserService.name);
 
-  async fetchFeed(url: string): Promise<{ listings: RealtListing[]; truncated: boolean }> {
+  async fetchFeed(
+    url: string,
+    linkPath: string,
+  ): Promise<{ listings: RealtListing[]; truncated: boolean }> {
     const allListings: RealtListing[] = [];
     let truncated = false;
+
+    // Cutoff is fixed for the entire run so pagination decisions are consistent
+    const cutoff = new Date(Date.now() - LOOKBACK_HOURS * 60 * 60 * 1000);
+    const isRecent = (updatedAt: string): boolean => new Date(updatedAt) >= cutoff;
 
     for (let page = 1; page <= MAX_PAGES; page++) {
       const pageUrl = page === 1 ? url : this.buildPageUrl(url, page);
@@ -67,10 +91,11 @@ export class RealtParserService {
         break;
       }
 
-      allListings.push(...objects.map(mapListing));
+      const recentObjects = objects.filter(o => isRecent(o.updatedAt));
+      allListings.push(...recentObjects.map(o => mapListing(o, linkPath)));
 
       this.logger.log(
-        `Page ${page}: ${objects.length} objects (totalCount=${pagination?.totalCount ?? '?'})`,
+        `Page ${page}: ${objects.length} objects total, ${recentObjects.length} within ${LOOKBACK_HOURS}h window (totalCount=${pagination?.totalCount ?? '?'})`,
       );
 
       if (!pagination) break;
@@ -83,7 +108,7 @@ export class RealtParserService {
       }
     }
 
-    this.logger.log(`Fetched ${allListings.length} listings`);
+    this.logger.log(`Fetched ${allListings.length} listings within ${LOOKBACK_HOURS}h window`);
     return { listings: allListings, truncated };
   }
 
@@ -169,22 +194,24 @@ export class RealtParserService {
 const toPositiveInt = (n: number | undefined): number | undefined =>
   typeof n === 'number' && isFinite(n) && n > 0 ? Math.round(n) : undefined;
 
+/** Pass through a positive number unchanged (preserves decimals like 9.84 sotki, 114.6 m²). */
+const toPositiveNum = (n: number | null | undefined): number | undefined =>
+  typeof n === 'number' && isFinite(n) && n > 0 ? n : undefined;
+
 /** Coerce a non-empty trimmed string, or undefined. */
 const toStr = (v: unknown): string | undefined =>
   typeof v === 'string' && v.trim() ? v.trim() : undefined;
 
-export const mapListing = (obj: RawObject): RealtListing => {
+export const mapListing = (obj: RawObject, linkPath: string): RealtListing => {
   const priceUsd = toPositiveInt(obj.priceRates?.[CURRENCY_USD]);
   const priceByn = toPositiveInt(obj.priceRates?.[CURRENCY_BYN]);
 
-  const plotArea = typeof obj.areaLand === 'number' && obj.areaLand > 0 ? obj.areaLand : undefined;
-
-  // Prefer explicit title; otherwise build from town + street; otherwise headline excerpt.
+  // Prefer explicit title; otherwise build from town + street; otherwise generic fallback.
   const titleParts = [toStr(obj.townName), toStr(obj.streetName)].filter(
     (s): s is string => s !== undefined,
   );
   const title =
-    toStr(obj.title) ?? (titleParts.length > 0 ? titleParts.join(', ') : undefined) ?? 'Участок';
+    toStr(obj.title) ?? (titleParts.length > 0 ? titleParts.join(', ') : undefined) ?? 'Объявление';
 
   const description = toStr(obj.headline) ?? toStr(obj.description);
   const address = toStr(obj.address);
@@ -193,13 +220,20 @@ export const mapListing = (obj: RawObject): RealtListing => {
   return {
     adId: obj.code,
     uuid: obj.uuid,
-    link: listingLink(obj.code),
+    link: listingLink(linkPath, obj.code),
     title,
     description,
     priceByn,
     priceUsd,
     address,
-    plotArea,
+    area: toPositiveNum(obj.areaTotal),
+    areaLiving: toPositiveNum(obj.areaLiving),
+    areaKitchen: toPositiveNum(obj.areaKitchen),
+    plotArea: toPositiveNum(obj.areaLand),
+    rooms: toPositiveInt(obj.rooms ?? undefined),
+    yearBuilt: toPositiveInt(obj.buildingYear ?? undefined),
+    storeys: toPositiveInt(obj.storeys ?? undefined),
+    levels: toPositiveInt(obj.levels ?? undefined),
     seller,
     listTime: obj.updatedAt,
     images: obj.images ?? [],

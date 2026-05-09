@@ -17,7 +17,7 @@
       "https://cdn.realt.by/img/55/c1b50a24-4af4-11f1-b13e-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T20:05:48.773Z",
-    "lastSeenAt": "2026-05-09T20:05:48.773Z"
+    "lastSeenAt": "2026-05-09T20:45:50.299Z"
   },
   {
     "adId": 4090854,
@@ -791,7 +791,7 @@
       "https://cdn.realt.by/img/55/b6ca0b6c-7752-11f0-be98-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T20:05:48.773Z",
-    "lastSeenAt": "2026-05-09T20:05:48.773Z"
+    "lastSeenAt": "2026-05-09T20:45:50.299Z"
   },
   {
     "adId": 3830788,
@@ -1031,5 +1031,41 @@
     ],
     "firstSeenAt": "2026-05-09T20:05:48.773Z",
     "lastSeenAt": "2026-05-09T20:05:48.773Z"
+  },
+  {
+    "adId": 4055627,
+    "uuid": "74e80d30-186e-11f1-a4e4-fb5c59588b55",
+    "link": "https://realt.by/sale-plots/object/4055627/",
+    "title": "Комотово",
+    "description": "Незавершенное строительство в д.Комотово, в живописном месте около разлива реки Неман, недалеко от деревни Обухово. Идеальное место для отдыха и рыбалки. Первая линия, до Немана через дорогу 50 метров. Ленточный фундамент. Есть согласованный проект строительства. Земельный участок площадью 0.1004га на праве пожизненного наследуемого владения. Электричество рядом. Асфальтированная дорога.",
+    "priceByn": 47634,
+    "priceUsd": 16900,
+    "address": "Комотово",
+    "plotArea": 10,
+    "seller": "ООО \"ЦИАН Адв\"\"",
+    "listTime": "2026-05-08T16:00:03+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/0b73cdc6-186e-11f1-b74f-0242ac120002",
+      "https://cdn.realt.by/img/55/0f8d58e6-186e-11f1-81eb-0242ac120002",
+      "https://cdn.realt.by/img/55/12dda0f0-186e-11f1-b0d9-0242ac120002",
+      "https://cdn.realt.by/img/55/165a8c20-186e-11f1-ae0b-0242ac120002",
+      "https://cdn.realt.by/img/55/192601be-186e-11f1-a255-0242ac120002",
+      "https://cdn.realt.by/img/55/1d198f02-186e-11f1-9d91-0242ac120002",
+      "https://cdn.realt.by/img/55/2014c17c-186e-11f1-b144-0242ac120002",
+      "https://cdn.realt.by/img/55/22a40614-186e-11f1-9b28-0242ac120002",
+      "https://cdn.realt.by/img/55/25fbabdc-186e-11f1-8e2f-0242ac120002",
+      "https://cdn.realt.by/img/55/2a0f9ee0-186e-11f1-ad3f-0242ac120002",
+      "https://cdn.realt.by/img/55/2cbbd0c8-186e-11f1-a846-0242ac120002",
+      "https://cdn.realt.by/img/55/31e0ea66-186e-11f1-a709-0242ac120002",
+      "https://cdn.realt.by/img/55/3a414ab6-186e-11f1-bfd1-0242ac120002",
+      "https://cdn.realt.by/img/55/3d4db9ce-186e-11f1-9cb3-0242ac120002",
+      "https://cdn.realt.by/img/55/40ae876a-186e-11f1-9199-0242ac120002",
+      "https://cdn.realt.by/img/55/44179a22-186e-11f1-a8a5-0242ac120002",
+      "https://cdn.realt.by/img/55/80830b58-26ac-11f1-946b-0242ac120003",
+      "https://cdn.realt.by/img/55/831bfb18-26ac-11f1-9f53-0242ac120003",
+      "https://cdn.realt.by/img/55/8af915d2-26ac-11f1-ac96-0242ac120003"
+    ],
+    "firstSeenAt": "2026-05-09T20:45:50.299Z",
+    "lastSeenAt": "2026-05-09T20:45:50.299Z"
   }
 ]

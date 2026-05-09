@@ -150,13 +150,30 @@ describe('RealtService — scrape', () => {
   });
 
   describe('diff logic', () => {
-    it('first run: all current listings are new', async () => {
+    it('first run (empty snapshot) → baseline, all current listings collected', async () => {
       setupRun({ listings: [listingA, listingB] });
 
       const result = await service.run();
 
+      expect(result.feeds[0].isBaseline).toBe(true);
       expect(result.feeds[0].newListings).toEqual([listingA, listingB]);
       expect(result.feeds[0].priceChanges).toHaveLength(0);
+    });
+
+    it('non-empty snapshot → not baseline', async () => {
+      setupRun({ listings: [listingA, listingB], previousEntries: [snapshotA] });
+
+      const result = await service.run();
+
+      expect(result.feeds[0].isBaseline).toBe(false);
+    });
+
+    it('empty current listings → not baseline (nothing to seed)', async () => {
+      setupRun({ listings: [] });
+
+      const result = await service.run();
+
+      expect(result.feeds[0].isBaseline).toBe(false);
     });
 
     it('no changes (same adId, same price) → re-seen, no new, no price changes', async () => {
@@ -198,13 +215,31 @@ describe('RealtService — scrape', () => {
     });
   });
 
+  describe('silent baseline persistence', () => {
+    it('baseline run: persists all listings unconditionally (no notify gating)', async () => {
+      // No notifyResult set → notifier returns empty maps. Baseline must still persist all.
+      setupRun({ listings: [listingA, listingB] });
+
+      await service.run();
+
+      const written = (snapshot.write as jest.Mock).mock.calls[0][1] as RealtSnapshotEntry[];
+      expect(written).toHaveLength(2);
+      const a = written.find(e => e.adId === listingA.adId);
+      const b = written.find(e => e.adId === listingB.adId);
+      expect(a?.firstSeenAt).toBeTruthy();
+      expect(a?.lastSeenAt).toBeTruthy();
+      expect(b?.firstSeenAt).toBeTruthy();
+    });
+  });
+
   describe('notification-gated persistence', () => {
     it('new listing notified → persisted in snapshot with firstSeenAt/lastSeenAt', async () => {
+      // Pre-seed with an unrelated listing so baseline path is not triggered
       const notifyResult: RealtNotifyResult = {
         notifiedNew: new Map([[feed1.key, new Set([listingA.adId])]]),
         notifiedPriceChanges: new Map(),
       };
-      setupRun({ listings: [listingA], notifyResult });
+      setupRun({ listings: [listingA], previousEntries: [snapshotB], notifyResult });
 
       await service.run();
 
@@ -215,8 +250,9 @@ describe('RealtService — scrape', () => {
       expect(entry?.lastSeenAt).toBeTruthy();
     });
 
-    it('new listing NOT notified → NOT added to snapshot', async () => {
-      setupRun({ listings: [listingA] });
+    it('new listing NOT notified → NOT added to snapshot (non-baseline run)', async () => {
+      // Pre-seed with an unrelated listing so baseline path is not triggered
+      setupRun({ listings: [listingA], previousEntries: [snapshotB] });
 
       await service.run();
 

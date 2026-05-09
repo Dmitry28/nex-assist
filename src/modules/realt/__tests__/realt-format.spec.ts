@@ -71,6 +71,34 @@ describe('buildListingCaption', () => {
     expect(caption).toContain('🌱 7 сот.');
     expect(caption).toContain('👤 Иван');
   });
+
+  it('renders house-specific fields (area, rooms, yearBuilt, storeys)', () => {
+    const listing = {
+      ...baseListing,
+      area: 114.6,
+      areaLiving: 48,
+      areaKitchen: 24,
+      rooms: 3,
+      yearBuilt: 2025,
+      storeys: 2,
+      levels: 2,
+    };
+    const caption = buildListingCaption({ listing, header: 'H', index: 1, total: 1 });
+    expect(caption).toContain('📐 114.6 м²');
+    expect(caption).toContain('жил. 48 м²');
+    expect(caption).toContain('кух. 24 м²');
+    expect(caption).toContain('🚪 3 комн.');
+    expect(caption).toContain('📅 2025 г.п.');
+    expect(caption).toContain('🏢 2 эт.');
+    expect(caption).not.toContain('🪜');
+  });
+
+  it('renders levels separately when different from storeys', () => {
+    const listing = { ...baseListing, storeys: 1, levels: 2 };
+    const caption = buildListingCaption({ listing, header: 'H', index: 1, total: 1 });
+    expect(caption).toContain('🏢 1 эт.');
+    expect(caption).toContain('🪜 2 уровн.');
+  });
 });
 
 describe('buildPriceChangeCaption', () => {
@@ -122,6 +150,7 @@ describe('buildSummary', () => {
     newListings: [baseListing, baseListing],
     priceChanges: [],
     truncated: false,
+    isBaseline: false,
   };
 
   it('shows feed display name', () => {
@@ -137,13 +166,29 @@ describe('buildSummary', () => {
     expect(buildSummary([emptyFeed])).toContain('без изменений');
   });
 
+  it('renders baseline as "🏗 baseline · N сохранено"', () => {
+    const baselineFeed: RealtFeedResult = {
+      ...feed,
+      newListings: [baseListing, baseListing, baseListing],
+      isBaseline: true,
+    };
+    const summary = buildSummary([baselineFeed]);
+    expect(summary).toContain('🏗 baseline');
+    expect(summary).toContain('3 объявлений сохранено');
+    expect(summary).not.toContain('🆕');
+  });
+
   it('lists price changes inline', () => {
     const change = {
       listing: { ...baseListing, title: 'Участок', priceByn: 21000, priceUsd: 7000 },
       oldPriceByn: 22000,
       oldPriceUsd: 7300,
     };
-    const feedWithChanges = { ...feed, newListings: [], priceChanges: [change] };
+    const feedWithChanges: RealtFeedResult = {
+      ...feed,
+      newListings: [],
+      priceChanges: [change],
+    };
     const summary = buildSummary([feedWithChanges]);
     expect(summary).toContain('💸 1 изм. цены');
     expect(summary).toContain('Участок');

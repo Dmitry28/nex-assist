@@ -138,11 +138,12 @@ export class RealtService implements OnModuleInit, OnModuleDestroy {
     this.logger.log(`Fetching feed: ${feed.key}`);
 
     const [{ listings: currentListings, truncated }, previousEntries] = await Promise.all([
-      this.parser.fetchFeed(feed.url),
+      this.parser.fetchFeed(feed.url, feed.linkPath),
       this.snapshot.read(dataFile(feed.key), isRealtSnapshotEntry),
     ]);
 
     const previousMap = new Map(previousEntries.map(e => [e.adId, e]));
+    const isBaseline = previousMap.size === 0 && currentListings.length > 0;
 
     const newListings: RealtListing[] = [];
     const priceChanges: RealtPriceChange[] = [];
@@ -161,14 +162,14 @@ export class RealtService implements OnModuleInit, OnModuleDestroy {
     const total = previousMap.size + newListings.length;
 
     this.logger.log(
-      `Feed ${feed.key} — snapshot estimate: ${total}, new: ${newListings.length}, price changes: ${priceChanges.length}${truncated ? ' [TRUNCATED]' : ''}`,
+      `Feed ${feed.key} — snapshot estimate: ${total}, new: ${newListings.length}, price changes: ${priceChanges.length}${truncated ? ' [TRUNCATED]' : ''}${isBaseline ? ' [BASELINE]' : ''}`,
     );
 
     return {
       feed,
       currentListings,
       previousMap,
-      result: { feedName: feed.key, total, newListings, priceChanges, truncated },
+      result: { feedName: feed.key, total, newListings, priceChanges, truncated, isBaseline },
     };
   }
 
@@ -183,6 +184,19 @@ export class RealtService implements OnModuleInit, OnModuleDestroy {
 
     const now = new Date().toISOString();
     const updatedMap = new Map(previousMap);
+
+    // Silent baseline: snapshot was empty, persist all listings unconditionally
+    // (no notification gating — nothing was sent per-listing) and skip the loop below.
+    if (result.isBaseline) {
+      for (const listing of currentListings) {
+        updatedMap.set(listing.adId, { ...listing, firstSeenAt: now, lastSeenAt: now });
+      }
+      await this.snapshot.write(dataFile(feed.key), [...updatedMap.values()]);
+      this.logger.log(
+        `Feed ${feed.key}: baseline saved (${updatedMap.size} entries, no per-listing messages sent)`,
+      );
+      return;
+    }
 
     for (const listing of currentListings) {
       const prev = updatedMap.get(listing.adId);

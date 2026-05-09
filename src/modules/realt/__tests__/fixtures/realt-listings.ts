@@ -1,8 +1,16 @@
 import type { RealtFeedConfig } from '../../../../config/realt.config';
 import type { RealtListing, RealtSnapshotEntry } from '../../dto/realt-listing.dto';
 
-export const feed1: RealtFeedConfig = { key: 'plots', url: 'https://realt.by/grodno/plots' };
-export const feed2: RealtFeedConfig = { key: 'houses', url: 'https://realt.by/grodno/houses' };
+export const feed1: RealtFeedConfig = {
+  key: 'plots',
+  url: 'https://realt.by/grodno/plots',
+  linkPath: 'sale-plots',
+};
+export const feed2: RealtFeedConfig = {
+  key: 'dom',
+  url: 'https://realt.by/grodno/houses',
+  linkPath: 'sale-cottages',
+};
 
 export const listingA: RealtListing = {
   adId: 1001,

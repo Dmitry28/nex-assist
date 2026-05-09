@@ -1,6 +1,6 @@
 # realt Module
 
-Scrapes real-estate listings from [realt.by](https://realt.by) for the configured feeds, diffs them, and sends Telegram notifications. Currently tracks **plots only**, but the feed array is extensible.
+Scrapes real-estate listings from [realt.by](https://realt.by) for the configured feeds, diffs them, and sends Telegram notifications. Tracks **plots, garages, houses (cottages), and dachas**.
 
 ---
 
@@ -43,7 +43,7 @@ Pagination is page-based: `?page=N` until `page * pageSize >= totalCount` or `MA
 
 ## Feeds
 
-Feeds are configured in `realt.config.ts` as an array of `{ key, url }` objects. Each feed maps to a separate snapshot file `realt_<key>_all.json`. Current feeds: `plots`.
+Feeds are configured in `realt.config.ts` as an array of `{ key, url, linkPath }` objects (`linkPath` is the URL segment for canonical listing URLs — differs per property type). Each feed maps to a separate snapshot file `realt_<key>_all.json`. Current feeds: `plots`, `garage`, `dom` (cottages), `dacha`.
 
 ---
 
@@ -58,6 +58,9 @@ A price change is detected only when **both** BYN and USD prices differ from the
 | Variable | Default | Description |
 |---|---|---|
 | `REALT_PLOTS_URL` | hardcoded Grodno-region plots search | Search URL for the `plots` feed |
+| `REALT_GARAGE_URL` | hardcoded Grodno-region garages search | Search URL for the `garage` feed |
+| `REALT_COTTAGES_URL` | hardcoded Grodno-region houses search | Search URL for the `dom` feed |
+| `REALT_DACHI_URL` | hardcoded Grodno-region dachas search | Search URL for the `dacha` feed |
 | `REALT_SCRAPE_CRON` | `0 9 * * *` | Reserved (cron currently disabled) |
 | `TELEGRAM_TOKEN` | — | Bot token (optional; omit for dry-run) |
 | `TELEGRAM_REALT_CHAT_ID` | — | Target chat/channel ID |
@@ -69,6 +72,9 @@ A price change is detected only when **both** BYN and USD prices differ from the
 | File | Contents |
 |---|---|
 | `realt_plots_all.json` | Plot listings snapshot |
+| `realt_garage_all.json` | Garage listings snapshot |
+| `realt_dom_all.json` | House (cottage) listings snapshot |
+| `realt_dacha_all.json` | Dacha listings snapshot |
 
 Each entry includes `firstSeenAt` and `lastSeenAt` timestamps for tracking.
 

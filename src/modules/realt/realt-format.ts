@@ -59,7 +59,19 @@ export const buildListingCaption = ({
   lines.push('');
   if (hasValue(listing.address)) lines.push(`📍 ${listing.address}`);
   lines.push(`💰 ${formatPrice(listing.priceByn, listing.priceUsd) || NEGOTIABLE_PRICE}`);
+  if (hasValue(listing.area)) lines.push(`📐 ${listing.area} м²`);
+  if (hasValue(listing.areaLiving) || hasValue(listing.areaKitchen)) {
+    const parts: string[] = [];
+    if (hasValue(listing.areaLiving)) parts.push(`жил. ${listing.areaLiving} м²`);
+    if (hasValue(listing.areaKitchen)) parts.push(`кух. ${listing.areaKitchen} м²`);
+    lines.push(`🏠 ${parts.join(' / ')}`);
+  }
   if (hasValue(listing.plotArea)) lines.push(`🌱 ${listing.plotArea} сот.`);
+  if (hasValue(listing.rooms)) lines.push(`🚪 ${listing.rooms} комн.`);
+  if (hasValue(listing.yearBuilt)) lines.push(`📅 ${listing.yearBuilt} г.п.`);
+  if (hasValue(listing.storeys)) lines.push(`🏢 ${listing.storeys} эт.`);
+  if (hasValue(listing.levels) && listing.levels !== listing.storeys)
+    lines.push(`🪜 ${listing.levels} уровн.`);
   if (hasValue(listing.seller)) lines.push(`👤 ${listing.seller}`);
 
   lines.push(`🕐 ${formatDate(listing.listTime)}`);
@@ -87,7 +99,10 @@ export const buildPriceChangeCaption = ({
   const newPrice = formatPrice(listing.priceByn, listing.priceUsd) || NEGOTIABLE_PRICE;
   lines.push(`💰 ${oldPrice} → <b>${newPrice}</b>`);
 
+  if (hasValue(listing.area)) lines.push(`📐 ${listing.area} м²`);
   if (hasValue(listing.plotArea)) lines.push(`🌱 ${listing.plotArea} сот.`);
+  if (hasValue(listing.rooms)) lines.push(`🚪 ${listing.rooms} комн.`);
+  if (hasValue(listing.yearBuilt)) lines.push(`📅 ${listing.yearBuilt} г.п.`);
   lines.push('', `<a href="${listing.link}">🔗 Подробнее</a>`);
 
   return lines.join('\n');
@@ -99,6 +114,15 @@ export const buildSummary = (feeds: RealtFeedResult[]): string => {
 
   for (const feed of feeds) {
     const name = FEED_DISPLAY_NAMES[feed.feedName] ?? feed.feedName;
+
+    if (feed.isBaseline) {
+      lines.push(
+        '',
+        `<b>${name}:</b> 🏗 baseline · ${feed.newListings.length} объявлений сохранено`,
+      );
+      continue;
+    }
+
     const parts: string[] = [];
     if (feed.newListings.length > 0) parts.push(`🆕 ${feed.newListings.length} новых`);
     if (feed.priceChanges.length > 0) parts.push(`💸 ${feed.priceChanges.length} изм. цены`);
