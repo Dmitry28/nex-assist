@@ -31,7 +31,7 @@ export class BidCarsNotifierService {
       this.logger.warn('chatId not set — skipping Telegram notification');
       return;
     }
-    const { total, newListings, removedListings, soldPriceUpdates } = result;
+    const { total, newListings, removedListings, soldPriceUpdates, isBaseline } = result;
 
     const ok = await this.telegram.sendMessage(
       this.chatId,
@@ -41,10 +41,17 @@ export class BidCarsNotifierService {
         newCount: newListings.length,
         removedCount: removedListings.length,
         soldUpdateCount: soldPriceUpdates.length,
+        isBaseline,
       }),
     );
 
     if (!ok) throw new Error('Не удалось отправить сводку в Telegram');
+
+    // Baseline: summary already covers the seeded count — skip per-listing flood.
+    if (isBaseline) {
+      this.logger.log(`Baseline run — skipping per-listing messages (${newListings.length} cars)`);
+      return;
+    }
 
     if (newListings.length) await this.sendListings(newListings, NOTIFICATION_HEADERS.new);
     if (removedListings.length)

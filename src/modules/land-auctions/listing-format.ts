@@ -12,6 +12,7 @@ export interface SummaryParams {
   soldCount: number;
   specialCount: number;
   newSpecialCount: number;
+  isBaseline?: boolean;
 }
 
 export interface CaptionParams {
@@ -29,8 +30,16 @@ export const buildSummary = ({
   soldCount,
   specialCount,
   newSpecialCount,
-}: SummaryParams): string =>
-  [
+  isBaseline,
+}: SummaryParams): string => {
+  if (isBaseline) {
+    return [
+      `<b>📊 Сводка на ${date.toLocaleDateString(LOCALE, { timeZone: TIMEZONE })}</b>`,
+      `🏗 baseline · <b>${total}</b> объявлений сохранено`,
+      `🌿 В ${SPECIAL_AREA_LABEL}: <b>${specialCount}</b>`,
+    ].join('\n');
+  }
+  return [
     `<b>📊 Сводка на ${date.toLocaleDateString(LOCALE, { timeZone: TIMEZONE })}</b>`,
     `📋 Всего объявлений: <b>${total}</b>`,
     `🆕 Новые: <b>${newCount}</b>`,
@@ -39,6 +48,7 @@ export const buildSummary = ({
     `🌿 Всего в ${SPECIAL_AREA_LABEL}: <b>${specialCount}</b>`,
     `✅ Новые в ${SPECIAL_AREA_LABEL}: <b>${newSpecialCount}</b>`,
   ].join('\n');
+};
 
 export const getListingEmoji = (title: string | undefined): string => {
   if (!title) return '🏡';

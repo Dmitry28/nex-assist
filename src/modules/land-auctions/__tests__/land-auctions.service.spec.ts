@@ -152,15 +152,22 @@ describe('LandAuctionsService — scrape', () => {
   // -------------------------------------------------------------------------
 
   describe('diff logic', () => {
-    it('first run: all current listings are new', async () => {
+    it('first run: all current listings are new (and isBaseline=true)', async () => {
       setupRun({ current: [listingA, listingB] });
 
       const result = await service.run();
 
       expect(result.total).toBe(2);
+      expect(result.isBaseline).toBe(true);
       expect(result.newListings).toEqual([listingA, listingB]);
       expect(result.removedListings).toHaveLength(0);
       expect(result.soldListings).toHaveLength(0);
+    });
+
+    it('non-empty previous → isBaseline=false', async () => {
+      setupRun({ current: [listingA, listingB], previous: [listingA] });
+      const result = await service.run();
+      expect(result.isBaseline).toBe(false);
     });
 
     it('no changes: empty diff', async () => {

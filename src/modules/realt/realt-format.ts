@@ -1,6 +1,6 @@
-import type { KufarFeedResult, KufarListing, KufarPriceChange } from './dto/kufar-listing.dto';
 import { LOCALE, TIMEZONE } from '../../common/utils/locale';
 import { EMPTY_VALUES, FEED_DISPLAY_NAMES, MAX_PRICE_CHANGES_IN_SUMMARY } from './constants';
+import type { RealtFeedResult, RealtListing, RealtPriceChange } from './dto/realt-listing.dto';
 
 const NEGOTIABLE_PRICE = 'Договорная';
 
@@ -29,14 +29,14 @@ export const formatPrice = (byn?: number, usd?: number): string => {
 };
 
 export interface ListingCaptionParams {
-  listing: KufarListing;
+  listing: RealtListing;
   header: string;
   index: number;
   total: number;
 }
 
 export interface PriceChangeCaptionParams {
-  change: KufarPriceChange;
+  change: RealtPriceChange;
   header: string;
   index: number;
   total: number;
@@ -58,15 +58,20 @@ export const buildListingCaption = ({
 
   lines.push('');
   if (hasValue(listing.address)) lines.push(`📍 ${listing.address}`);
-  if (hasValue(listing.propertyType)) lines.push(`🏷 ${listing.propertyType}`);
-
   lines.push(`💰 ${formatPrice(listing.priceByn, listing.priceUsd) || NEGOTIABLE_PRICE}`);
   if (hasValue(listing.area)) lines.push(`📐 ${listing.area} м²`);
+  if (hasValue(listing.areaLiving) || hasValue(listing.areaKitchen)) {
+    const parts: string[] = [];
+    if (hasValue(listing.areaLiving)) parts.push(`жил. ${listing.areaLiving} м²`);
+    if (hasValue(listing.areaKitchen)) parts.push(`кух. ${listing.areaKitchen} м²`);
+    lines.push(`🏠 ${parts.join(' / ')}`);
+  }
   if (hasValue(listing.plotArea)) lines.push(`🌱 ${listing.plotArea} сот.`);
   if (hasValue(listing.rooms)) lines.push(`🚪 ${listing.rooms} комн.`);
   if (hasValue(listing.yearBuilt)) lines.push(`📅 ${listing.yearBuilt} г.п.`);
-  if (listing.features && listing.features.length > 0)
-    lines.push(`✅ ${listing.features.join(', ')}`);
+  if (hasValue(listing.storeys)) lines.push(`🏢 ${listing.storeys} эт.`);
+  if (hasValue(listing.levels) && listing.levels !== listing.storeys)
+    lines.push(`🪜 ${listing.levels} уровн.`);
   if (hasValue(listing.seller)) lines.push(`👤 ${listing.seller}`);
 
   lines.push(`🕐 ${formatDate(listing.listTime)}`);
@@ -103,9 +108,9 @@ export const buildPriceChangeCaption = ({
   return lines.join('\n');
 };
 
-export const buildSummary = (feeds: KufarFeedResult[]): string => {
+export const buildSummary = (feeds: RealtFeedResult[]): string => {
   const date = new Date().toLocaleDateString(LOCALE, { timeZone: TIMEZONE });
-  const lines = [`<b>🏘 Kufar · ${date}</b>`];
+  const lines = [`<b>🏘 realt.by · ${date}</b>`];
 
   for (const feed of feeds) {
     const name = FEED_DISPLAY_NAMES[feed.feedName] ?? feed.feedName;

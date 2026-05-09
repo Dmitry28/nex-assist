@@ -110,6 +110,8 @@ export class LandAuctionsService implements OnModuleInit, OnModuleDestroy {
       this.snapshot.read(DATA_FILES.archivePending, isArchivePendingItem),
     ]);
 
+    const isBaseline = previousListings.length === 0 && currentListings.length > 0;
+
     const newListings = currentListings.filter(
       l => !previousListings.some(prev => prev.link === l.link),
     );
@@ -164,6 +166,7 @@ export class LandAuctionsService implements OnModuleInit, OnModuleDestroy {
       soldListings,
       specialListings,
       newSpecialListings,
+      isBaseline,
     };
 
     this.logger.log(

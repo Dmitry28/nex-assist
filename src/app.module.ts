@@ -12,6 +12,7 @@ import { HealthModule } from './modules/health/health.module';
 import { BidCarsModule } from './modules/bid-cars/bid-cars.module';
 import { KufarModule } from './modules/kufar/kufar.module';
 import { LandAuctionsModule } from './modules/land-auctions/land-auctions.module';
+import { RealtModule } from './modules/realt/realt.module';
 
 @Module({
   imports: [
@@ -50,6 +51,7 @@ import { LandAuctionsModule } from './modules/land-auctions/land-auctions.module
     LandAuctionsModule,
     BidCarsModule,
     KufarModule,
+    RealtModule,
   ],
   providers: [
     // Global validation

@@ -4,6 +4,7 @@ import {
   BID_CARS_DEFAULTS,
   KUFAR_DEFAULTS,
   LAND_AUCTIONS_DEFAULTS,
+  REALT_DEFAULTS,
 } from './constants';
 
 /**
@@ -44,4 +45,12 @@ export const validationSchema = Joi.object({
   KUFAR_HOUSES_URL: Joi.string().uri().default(KUFAR_DEFAULTS.HOUSES_URL),
   KUFAR_SCRAPE_CRON: Joi.string().default(KUFAR_DEFAULTS.SCRAPE_CRON),
   TELEGRAM_KUFAR_CHAT_ID: Joi.string().optional(),
+
+  // realt.by module — multi-feed: plots, garage, cottages, dachi
+  REALT_PLOTS_URL: Joi.string().uri().default(REALT_DEFAULTS.PLOTS_URL),
+  REALT_GARAGE_URL: Joi.string().uri().default(REALT_DEFAULTS.GARAGE_URL),
+  REALT_COTTAGES_URL: Joi.string().uri().default(REALT_DEFAULTS.COTTAGES_URL),
+  REALT_DACHI_URL: Joi.string().uri().default(REALT_DEFAULTS.DACHI_URL),
+  REALT_SCRAPE_CRON: Joi.string().default(REALT_DEFAULTS.SCRAPE_CRON),
+  TELEGRAM_REALT_CHAT_ID: Joi.string().optional(),
 });

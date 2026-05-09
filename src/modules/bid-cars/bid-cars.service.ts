@@ -124,6 +124,8 @@ export class BidCarsService implements OnModuleInit, OnModuleDestroy {
       );
     }
 
+    const isBaseline = previousAll.length === 0 && currentListings.length > 0;
+
     const newListings = currentListings.filter(c => !previousAll.some(p => p.link === c.link));
     const newlyRemovedLinks = new Set(
       previousAll.filter(p => !currentListings.some(c => c.link === p.link)).map(p => p.link),
@@ -181,6 +183,7 @@ export class BidCarsService implements OnModuleInit, OnModuleDestroy {
       newListings,
       removedListings: toNotifyRemoval,
       soldPriceUpdates: toNotifySold,
+      isBaseline,
     };
 
     // Notify first, then always persist — even if Telegram is down.

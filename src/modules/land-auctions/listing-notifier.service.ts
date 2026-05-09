@@ -45,6 +45,7 @@ export class ListingNotifierService {
       soldListings,
       specialListings,
       newSpecialListings,
+      isBaseline,
     } = result;
 
     const ok = await this.telegram.sendMessage(
@@ -57,10 +58,19 @@ export class ListingNotifierService {
         soldCount: soldListings.length,
         specialCount: specialListings.length,
         newSpecialCount: newSpecialListings.length,
+        isBaseline,
       }),
     );
 
     if (!ok) throw new Error('Не удалось отправить сводку в Telegram');
+
+    // Baseline: summary already mentions the seeded count — skip per-listing flood.
+    if (isBaseline) {
+      this.logger.log(
+        `Baseline run — skipping per-listing messages (${newListings.length} listings)`,
+      );
+      return;
+    }
 
     if (newListings.length) await this.sendListings(newListings, NOTIFICATION_HEADERS.new);
     if (removedListings.length)

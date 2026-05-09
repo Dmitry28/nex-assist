@@ -38,6 +38,14 @@ describe('buildSummary', () => {
       'Цены продажи найдены: <b>3</b>',
     );
   });
+
+  it('renders baseline summary when isBaseline=true', () => {
+    const s = buildSummary({ ...base, isBaseline: true });
+    expect(s).toContain('🏗 baseline');
+    expect(s).toContain('<b>30</b>');
+    expect(s).not.toContain('🆕 Новые');
+    expect(s).not.toContain('🗑 Снятые');
+  });
 });
 
 describe('buildCaption', () => {

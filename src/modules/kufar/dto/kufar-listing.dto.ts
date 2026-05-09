@@ -46,6 +46,12 @@ export interface KufarFeedResult {
   priceChanges: KufarPriceChange[];
   /** True if pagination was cut off at MAX_PAGES — there may be more unseen listings. */
   truncated: boolean;
+  /**
+   * True when this run seeded an empty snapshot — all current listings are persisted
+   * unconditionally and per-listing Telegram messages are skipped (baseline mode).
+   * Avoids the first-run flood when adding a new feed.
+   */
+  isBaseline: boolean;
 }
 
 /** Aggregated result across all configured feeds. */

@@ -1,14 +1,14 @@
 import { ConflictException } from '@nestjs/common';
-import { Test, type TestingModule } from '@nestjs/testing';
 import { ConfigService } from '@nestjs/config';
 import { SchedulerRegistry } from '@nestjs/schedule';
+import { Test, type TestingModule } from '@nestjs/testing';
 import { SnapshotService } from '../../../common/snapshot.service';
-import { KufarService } from '../kufar.service';
-import { isKufarSnapshotEntry } from '../dto/kufar-listing.dto';
-import { KufarParserService } from '../kufar-parser.service';
-import { KufarNotifierService, type KufarNotifyResult } from '../kufar-notifier.service';
-import type { KufarFeedConfig } from '../../../config/kufar.config';
-import type { KufarListing, KufarSnapshotEntry } from '../dto/kufar-listing.dto';
+import type { RealtFeedConfig } from '../../../config/realt.config';
+import { isRealtSnapshotEntry } from '../dto/realt-listing.dto';
+import type { RealtListing, RealtSnapshotEntry } from '../dto/realt-listing.dto';
+import { RealtNotifierService, type RealtNotifyResult } from '../realt-notifier.service';
+import { RealtParserService } from '../realt-parser.service';
+import { RealtService } from '../realt.service';
 import {
   feed1,
   feed2,
@@ -17,18 +17,14 @@ import {
   listingBPriceChanged,
   snapshotA,
   snapshotB,
-} from './fixtures/kufar-listings';
+} from './fixtures/realt-listings';
 
 jest.mock('../../../common/utils/sleep', () => ({ sleep: jest.fn().mockResolvedValue(undefined) }));
 
-// ---------------------------------------------------------------------------
-// Type guard
-// ---------------------------------------------------------------------------
-
-describe('isKufarSnapshotEntry', () => {
+describe('isRealtSnapshotEntry', () => {
   it('returns true for a valid entry', () =>
     expect(
-      isKufarSnapshotEntry({
+      isRealtSnapshotEntry({
         adId: 1,
         listTime: '2026-01-01T00:00:00.000Z',
         firstSeenAt: '2026-01-01T00:00:00.000Z',
@@ -36,11 +32,11 @@ describe('isKufarSnapshotEntry', () => {
       }),
     ).toBe(true));
 
-  it('returns false for null', () => expect(isKufarSnapshotEntry(null)).toBe(false));
+  it('returns false for null', () => expect(isRealtSnapshotEntry(null)).toBe(false));
 
   it('returns false when adId is missing', () =>
     expect(
-      isKufarSnapshotEntry({
+      isRealtSnapshotEntry({
         listTime: '2026-01-01T00:00:00.000Z',
         firstSeenAt: '2026-01-01T00:00:00.000Z',
         lastSeenAt: '2026-01-01T00:00:00.000Z',
@@ -49,47 +45,34 @@ describe('isKufarSnapshotEntry', () => {
 
   it('returns false when adId is not a number', () =>
     expect(
-      isKufarSnapshotEntry({
+      isRealtSnapshotEntry({
         adId: '1',
         listTime: '2026-01-01T00:00:00.000Z',
         firstSeenAt: '2026-01-01T00:00:00.000Z',
         lastSeenAt: '2026-01-01T00:00:00.000Z',
       }),
     ).toBe(false));
-
-  it('returns false when firstSeenAt is missing', () =>
-    expect(
-      isKufarSnapshotEntry({
-        adId: 1,
-        listTime: '2026-01-01T00:00:00.000Z',
-        lastSeenAt: '2026-01-01T00:00:00.000Z',
-      }),
-    ).toBe(false));
 });
 
-// ---------------------------------------------------------------------------
-// KufarService — scrape orchestration
-// ---------------------------------------------------------------------------
-
-describe('KufarService — scrape', () => {
+describe('RealtService — scrape', () => {
   let module: TestingModule;
-  let service: KufarService;
-  let parser: jest.Mocked<KufarParserService>;
+  let service: RealtService;
+  let parser: jest.Mocked<RealtParserService>;
   let snapshot: jest.Mocked<SnapshotService>;
-  let notifier: jest.Mocked<KufarNotifierService>;
+  let notifier: jest.Mocked<RealtNotifierService>;
   let config: jest.Mocked<ConfigService>;
 
   beforeEach(async () => {
-    jest.spyOn(KufarService.prototype, 'onModuleInit').mockImplementation(() => {});
+    jest.spyOn(RealtService.prototype, 'onModuleInit').mockImplementation(() => {});
 
     module = await Test.createTestingModule({
       providers: [
-        KufarService,
+        RealtService,
         {
           provide: ConfigService,
           useValue: {
             get: jest.fn().mockImplementation((key: string) => {
-              if (key === 'kufar.feeds') return [feed1];
+              if (key === 'realt.feeds') return [feed1];
               return undefined;
             }),
           },
@@ -99,7 +82,7 @@ describe('KufarService — scrape', () => {
           useValue: { doesExist: jest.fn().mockReturnValue(false), deleteCronJob: jest.fn() },
         },
         {
-          provide: KufarParserService,
+          provide: RealtParserService,
           useValue: { fetchFeed: jest.fn() },
         },
         {
@@ -107,7 +90,7 @@ describe('KufarService — scrape', () => {
           useValue: { read: jest.fn(), write: jest.fn().mockResolvedValue(undefined) },
         },
         {
-          provide: KufarNotifierService,
+          provide: RealtNotifierService,
           useValue: {
             notifyRunResult: jest
               .fn()
@@ -118,10 +101,10 @@ describe('KufarService — scrape', () => {
       ],
     }).compile();
 
-    service = module.get(KufarService);
-    parser = module.get(KufarParserService);
+    service = module.get(RealtService);
+    parser = module.get(RealtParserService);
     snapshot = module.get(SnapshotService);
-    notifier = module.get(KufarNotifierService);
+    notifier = module.get(RealtNotifierService);
     config = module.get(ConfigService);
   });
 
@@ -130,11 +113,11 @@ describe('KufarService — scrape', () => {
   });
 
   function setupRun(opts: {
-    listings?: KufarListing[];
+    listings?: RealtListing[];
     truncated?: boolean;
-    previousEntries?: KufarSnapshotEntry[];
-    feeds?: KufarFeedConfig[];
-    notifyResult?: KufarNotifyResult;
+    previousEntries?: RealtSnapshotEntry[];
+    feeds?: RealtFeedConfig[];
+    notifyResult?: RealtNotifyResult;
   }): void {
     const {
       listings = [],
@@ -144,7 +127,7 @@ describe('KufarService — scrape', () => {
       notifyResult,
     } = opts;
     (config.get as jest.Mock).mockImplementation((key: string) => {
-      if (key === 'kufar.feeds') return feeds;
+      if (key === 'realt.feeds') return feeds;
       return undefined;
     });
     parser.fetchFeed.mockResolvedValue({ listings, truncated });
@@ -153,10 +136,6 @@ describe('KufarService — scrape', () => {
       notifier.notifyRunResult.mockResolvedValue(notifyResult);
     }
   }
-
-  // -------------------------------------------------------------------------
-  // No feeds configured
-  // -------------------------------------------------------------------------
 
   describe('no feeds configured', () => {
     it('returns { feeds: [] } and makes no parser or snapshot calls', async () => {
@@ -170,21 +149,34 @@ describe('KufarService — scrape', () => {
     });
   });
 
-  // -------------------------------------------------------------------------
-  // Diff logic
-  // -------------------------------------------------------------------------
-
   describe('diff logic', () => {
-    it('first run: all current listings are new', async () => {
+    it('first run (empty snapshot) → baseline, all current listings collected', async () => {
       setupRun({ listings: [listingA, listingB] });
 
       const result = await service.run();
 
+      expect(result.feeds[0].isBaseline).toBe(true);
       expect(result.feeds[0].newListings).toEqual([listingA, listingB]);
       expect(result.feeds[0].priceChanges).toHaveLength(0);
     });
 
-    it('no changes (same adId, same price) → bumped, no new, no price changes', async () => {
+    it('non-empty snapshot → not baseline', async () => {
+      setupRun({ listings: [listingA, listingB], previousEntries: [snapshotA] });
+
+      const result = await service.run();
+
+      expect(result.feeds[0].isBaseline).toBe(false);
+    });
+
+    it('empty current listings → not baseline (nothing to seed)', async () => {
+      setupRun({ listings: [] });
+
+      const result = await service.run();
+
+      expect(result.feeds[0].isBaseline).toBe(false);
+    });
+
+    it('no changes (same adId, same price) → re-seen, no new, no price changes', async () => {
       setupRun({ listings: [listingA], previousEntries: [snapshotA] });
 
       const result = await service.run();
@@ -214,7 +206,7 @@ describe('KufarService — scrape', () => {
     });
 
     it('only BYN changed (exchange rate fluctuation) → not a price change', async () => {
-      const listingBynOnly: KufarListing = { ...listingB, priceByn: 28000 }; // USD same
+      const listingBynOnly: RealtListing = { ...listingB, priceByn: 28000 };
       setupRun({ listings: [listingBynOnly], previousEntries: [snapshotB] });
 
       const result = await service.run();
@@ -223,35 +215,27 @@ describe('KufarService — scrape', () => {
     });
   });
 
-  // -------------------------------------------------------------------------
-  // Notification-gated persistence
-  // -------------------------------------------------------------------------
-
   describe('silent baseline persistence', () => {
-    it('first run with empty snapshot → isBaseline=true, persists all unconditionally', async () => {
-      // No notifyResult → notifier returns empty maps. Baseline must still persist all.
+    it('baseline run: persists all listings unconditionally (no notify gating)', async () => {
+      // No notifyResult set → notifier returns empty maps. Baseline must still persist all.
       setupRun({ listings: [listingA, listingB] });
 
-      const result = await service.run();
-      expect(result.feeds[0].isBaseline).toBe(true);
+      await service.run();
 
-      const written = (snapshot.write as jest.Mock).mock.calls[0][1] as KufarSnapshotEntry[];
+      const written = (snapshot.write as jest.Mock).mock.calls[0][1] as RealtSnapshotEntry[];
       expect(written).toHaveLength(2);
-      expect(written.find(e => e.adId === listingA.adId)?.firstSeenAt).toBeTruthy();
-      expect(written.find(e => e.adId === listingB.adId)?.firstSeenAt).toBeTruthy();
-    });
-
-    it('non-empty snapshot → isBaseline=false', async () => {
-      setupRun({ listings: [listingA], previousEntries: [snapshotA] });
-      const result = await service.run();
-      expect(result.feeds[0].isBaseline).toBe(false);
+      const a = written.find(e => e.adId === listingA.adId);
+      const b = written.find(e => e.adId === listingB.adId);
+      expect(a?.firstSeenAt).toBeTruthy();
+      expect(a?.lastSeenAt).toBeTruthy();
+      expect(b?.firstSeenAt).toBeTruthy();
     });
   });
 
   describe('notification-gated persistence', () => {
     it('new listing notified → persisted in snapshot with firstSeenAt/lastSeenAt', async () => {
-      // Pre-seed with an unrelated entry so baseline path is not triggered
-      const notifyResult: KufarNotifyResult = {
+      // Pre-seed with an unrelated listing so baseline path is not triggered
+      const notifyResult: RealtNotifyResult = {
         notifiedNew: new Map([[feed1.key, new Set([listingA.adId])]]),
         notifiedPriceChanges: new Map(),
       };
@@ -259,7 +243,7 @@ describe('KufarService — scrape', () => {
 
       await service.run();
 
-      const written = (snapshot.write as jest.Mock).mock.calls[0][1] as KufarSnapshotEntry[];
+      const written = (snapshot.write as jest.Mock).mock.calls[0][1] as RealtSnapshotEntry[];
       const entry = written.find(e => e.adId === listingA.adId);
       expect(entry).toBeDefined();
       expect(entry?.firstSeenAt).toBeTruthy();
@@ -267,17 +251,17 @@ describe('KufarService — scrape', () => {
     });
 
     it('new listing NOT notified → NOT added to snapshot (non-baseline run)', async () => {
-      // Pre-seed with an unrelated entry so baseline path is not triggered
+      // Pre-seed with an unrelated listing so baseline path is not triggered
       setupRun({ listings: [listingA], previousEntries: [snapshotB] });
 
       await service.run();
 
-      const written = (snapshot.write as jest.Mock).mock.calls[0][1] as KufarSnapshotEntry[];
+      const written = (snapshot.write as jest.Mock).mock.calls[0][1] as RealtSnapshotEntry[];
       expect(written.find(e => e.adId === listingA.adId)).toBeUndefined();
     });
 
     it('price change notified → snapshot updated with new price', async () => {
-      const notifyResult: KufarNotifyResult = {
+      const notifyResult: RealtNotifyResult = {
         notifiedNew: new Map(),
         notifiedPriceChanges: new Map([[feed1.key, new Set([listingBPriceChanged.adId])]]),
       };
@@ -285,43 +269,38 @@ describe('KufarService — scrape', () => {
 
       await service.run();
 
-      const written = (snapshot.write as jest.Mock).mock.calls[0][1] as KufarSnapshotEntry[];
+      const written = (snapshot.write as jest.Mock).mock.calls[0][1] as RealtSnapshotEntry[];
       const entry = written.find(e => e.adId === listingBPriceChanged.adId);
       expect(entry?.priceByn).toBe(listingBPriceChanged.priceByn);
       expect(entry?.priceUsd).toBe(listingBPriceChanged.priceUsd);
     });
 
     it('price change NOT notified → snapshot keeps old price, only lastSeenAt updated', async () => {
-      // notifiedPriceChanges map is empty
       setupRun({ listings: [listingBPriceChanged], previousEntries: [snapshotB] });
 
       await service.run();
 
-      const written = (snapshot.write as jest.Mock).mock.calls[0][1] as KufarSnapshotEntry[];
+      const written = (snapshot.write as jest.Mock).mock.calls[0][1] as RealtSnapshotEntry[];
       const entry = written.find(e => e.adId === snapshotB.adId);
       expect(entry?.priceByn).toBe(snapshotB.priceByn);
       expect(entry?.priceUsd).toBe(snapshotB.priceUsd);
       expect(entry?.lastSeenAt).not.toBe(snapshotB.lastSeenAt);
     });
 
-    it('bumped listing (same price) → always updates lastSeenAt', async () => {
+    it('re-seen listing (same price) → always updates lastSeenAt', async () => {
       setupRun({ listings: [listingA], previousEntries: [snapshotA] });
 
       await service.run();
 
-      const written = (snapshot.write as jest.Mock).mock.calls[0][1] as KufarSnapshotEntry[];
+      const written = (snapshot.write as jest.Mock).mock.calls[0][1] as RealtSnapshotEntry[];
       const entry = written.find(e => e.adId === snapshotA.adId);
       expect(entry?.lastSeenAt).not.toBe(snapshotA.lastSeenAt);
     });
   });
 
-  // -------------------------------------------------------------------------
-  // Run guard
-  // -------------------------------------------------------------------------
-
   describe('run guard', () => {
     it('throws ConflictException when already running', async () => {
-      let unblock!: (value: { listings: KufarListing[]; truncated: boolean }) => void;
+      let unblock!: (value: { listings: RealtListing[]; truncated: boolean }) => void;
       parser.fetchFeed.mockReturnValue(
         new Promise(resolve => {
           unblock = resolve;
@@ -339,10 +318,6 @@ describe('KufarService — scrape', () => {
     });
   });
 
-  // -------------------------------------------------------------------------
-  // Run result structure
-  // -------------------------------------------------------------------------
-
   describe('run result structure', () => {
     it('result.feeds contains feedName, total, newListings, priceChanges', async () => {
       setupRun({ listings: [listingA, listingB] });
@@ -359,7 +334,7 @@ describe('KufarService — scrape', () => {
 
     it('processes multiple feeds', async () => {
       (config.get as jest.Mock).mockImplementation((key: string) => {
-        if (key === 'kufar.feeds') return [feed1, feed2];
+        if (key === 'realt.feeds') return [feed1, feed2];
         return undefined;
       });
       parser.fetchFeed.mockResolvedValue({ listings: [listingA], truncated: false });

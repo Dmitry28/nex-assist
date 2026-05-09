@@ -7,15 +7,15 @@ import {
   truncateText,
 } from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
-import type { KufarListing, KufarPriceChange, KufarResult } from './dto/kufar-listing.dto';
 import { FEED_DISPLAY_NAMES, NOTIFICATION_HEADERS } from './constants';
-import { buildListingCaption, buildPriceChangeCaption, buildSummary } from './kufar-format';
+import type { RealtListing, RealtPriceChange, RealtResult } from './dto/realt-listing.dto';
+import { buildListingCaption, buildPriceChangeCaption, buildSummary } from './realt-format';
 
 /**
  * Tracks which listings were successfully delivered to Telegram.
  * Service uses this to decide what to persist — only notified listings are saved.
  */
-export interface KufarNotifyResult {
+export interface RealtNotifyResult {
   /** adIds successfully sent as new listings, keyed by feedName */
   notifiedNew: Map<string, Set<number>>;
   /** adIds successfully sent as price changes, keyed by feedName */
@@ -23,28 +23,28 @@ export interface KufarNotifyResult {
 }
 
 /**
- * Sends Kufar notifications via Telegram.
+ * Sends realt.by notifications via Telegram.
  * One summary message per run, then per-listing messages (with photos) for each feed.
  */
 @Injectable()
-export class KufarNotifierService {
-  private readonly logger = new Logger(KufarNotifierService.name);
+export class RealtNotifierService {
+  private readonly logger = new Logger(RealtNotifierService.name);
   private readonly chatId: string;
 
   constructor(
     private readonly telegram: TelegramService,
     config: ConfigService,
   ) {
-    this.chatId = config.get<string>('kufar.chatId') ?? '';
+    this.chatId = config.get<string>('realt.chatId') ?? '';
     if (!this.chatId) {
       this.logger.warn(
-        'TELEGRAM_KUFAR_CHAT_ID is not set — notifications disabled, nothing will be persisted',
+        'TELEGRAM_REALT_CHAT_ID is not set — notifications disabled, nothing will be persisted',
       );
     }
   }
 
-  async notifyRunResult(result: KufarResult): Promise<KufarNotifyResult> {
-    const empty: KufarNotifyResult = {
+  async notifyRunResult(result: RealtResult): Promise<RealtNotifyResult> {
+    const empty: RealtNotifyResult = {
       notifiedNew: new Map(),
       notifiedPriceChanges: new Map(),
     };
@@ -55,7 +55,7 @@ export class KufarNotifierService {
 
     const summaryOk = await this.telegram.sendMessage(this.chatId, buildSummary(feeds));
     if (!summaryOk) {
-      this.logger.error('Failed to send Kufar summary — skipping all notifications');
+      this.logger.error('Failed to send realt.by summary — skipping all notifications');
       return empty;
     }
     this.logger.log('Summary sent to Telegram');
@@ -94,12 +94,12 @@ export class KufarNotifierService {
     if (!this.chatId) return;
     const ok = await this.telegram.sendMessage(
       this.chatId,
-      `⚠️ Ошибка скрапинга Kufar:\n<code>${message}</code>`,
+      `⚠️ Ошибка скрапинга realt.by:\n<code>${message}</code>`,
     );
-    if (!ok) this.logger.warn('Failed to send Kufar error notification');
+    if (!ok) this.logger.warn('Failed to send realt.by error notification');
   }
 
-  private async sendListings(listings: KufarListing[], header: string): Promise<Set<number>> {
+  private async sendListings(listings: RealtListing[], header: string): Promise<Set<number>> {
     return this.sendBatch(
       listings,
       (listing, index, total) => ({
@@ -113,7 +113,7 @@ export class KufarNotifierService {
   }
 
   private async sendPriceChanges(
-    changes: KufarPriceChange[],
+    changes: RealtPriceChange[],
     displayName: string,
   ): Promise<Set<number>> {
     const header = `${NOTIFICATION_HEADERS.priceChange} · ${displayName}`;
@@ -169,7 +169,7 @@ export class KufarNotifierService {
     images: string[];
   }): Promise<boolean> {
     const photos = images.slice(0, TELEGRAM_MEDIA_GROUP_LIMIT);
-    const captionFor1024 = truncateText(caption); // photo/media-group: 1024-char limit
+    const captionFor1024 = truncateText(caption);
 
     if (photos.length > 1) {
       const media: TelegramBot.InputMediaPhoto[] = photos.map((url, i) => {
@@ -187,6 +187,6 @@ export class KufarNotifierService {
       return this.telegram.sendPhoto(this.chatId, photos[0], captionFor1024);
     }
 
-    return this.telegram.sendMessage(this.chatId, truncateText(caption, TELEGRAM_MESSAGE_LIMIT)); // text: 4096-char limit
+    return this.telegram.sendMessage(this.chatId, truncateText(caption, TELEGRAM_MESSAGE_LIMIT));
   }
 }
