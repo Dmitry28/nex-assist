@@ -317,15 +317,21 @@
   {
     "title": "Земельный участок в СТ «Полёт»",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-v-st-polyot/",
-    "price": "Не найдено",
-    "area": "Не найдено",
-    "address": "Не найдено",
-    "cadastralNumber": "Не найдено",
+    "price": "11 178,00 руб.",
+    "area": "0,0540 га",
+    "address": "г. Гродно, ул. Рябиновая, 61/36",
+    "cadastralNumber": "440100000001015025",
     "cadastralMapUrl": "",
-    "auctionDate": "Не указана",
+    "auctionDate": "Возможно проведение повторного аукциона при обращении заинтересованного в приобретении объекта лица",
     "applicationDeadline": "Не указан",
     "communications": "Не указаны",
-    "images": []
+    "images": [
+      "https://gcn.by/wp-content/uploads/2025/09/polyot-foto-3.png",
+      "https://gcn.by/wp-content/uploads/2025/09/polyot-foto-1.png",
+      "https://gcn.by/wp-content/uploads/2025/09/polyot-foto-2.png",
+      "https://gcn.by/wp-content/uploads/2025/09/polyot-foto-3.png",
+      "https://gcn.by/wp-content/uploads/2025/09/polyot-foto-1.png"
+    ]
   },
   {
     "title": "Жилой дом по ул. Юбилейная, 11",
