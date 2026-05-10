@@ -9,6 +9,7 @@
  *   npm run scrape:land         # land-auctions only
  *   npm run scrape:bid-cars     # bid-cars only
  *   npm run scrape:kufar        # kufar only
+ *   npm run scrape:realt        # realt only
  *
  * TODO: replace with a proper persistent deployment — see _TODO.md in the
  * land-auctions module.
@@ -18,14 +19,15 @@ import { AppModule } from '../app.module';
 import { BidCarsService } from '../modules/bid-cars/bid-cars.service';
 import { KufarService } from '../modules/kufar/kufar.service';
 import { LandAuctionsService } from '../modules/land-auctions/land-auctions.service';
+import { RealtService } from '../modules/realt/realt.service';
 
-type Module = 'land' | 'bid-cars' | 'kufar' | 'all';
+type Module = 'land' | 'bid-cars' | 'kufar' | 'realt' | 'all';
 
 function parseModule(): Module {
   const arg = process.argv[2];
   if (!arg || arg === 'all') return 'all';
-  if (arg === 'land' || arg === 'bid-cars' || arg === 'kufar') return arg;
-  console.error(`Unknown module: "${arg}". Valid options: land, bid-cars, kufar`);
+  if (arg === 'land' || arg === 'bid-cars' || arg === 'kufar' || arg === 'realt') return arg;
+  console.error(`Unknown module: "${arg}". Valid options: land, bid-cars, kufar, realt`);
   process.exit(1);
 }
 
@@ -61,6 +63,14 @@ async function bootstrap(): Promise<void> {
         await app.get(KufarService).run();
       } catch (err) {
         console.error('Kufar scrape failed:', err);
+      }
+    }
+
+    if (target === 'all' || target === 'realt') {
+      try {
+        await app.get(RealtService).run();
+      } catch (err) {
+        console.error('Realt scrape failed:', err);
       }
     }
   } finally {
