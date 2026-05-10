@@ -20,6 +20,7 @@
     "scrape:land": "ts-node -r tsconfig-paths/register src/scripts/scrape.ts land",
     "scrape:bid-cars": "ts-node -r tsconfig-paths/register src/scripts/scrape.ts bid-cars",
     "scrape:kufar": "ts-node -r tsconfig-paths/register src/scripts/scrape.ts kufar",
+    "scrape:realt": "ts-node -r tsconfig-paths/register src/scripts/scrape.ts realt",
     "notify:test": "ts-node -r tsconfig-paths/register src/scripts/notify-test.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"{src,test}/**/*.ts\" --cache",
