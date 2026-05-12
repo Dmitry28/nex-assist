@@ -624,7 +624,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3989f57d-fcc9-4ae7-89eb-138480a835d7.jpg"
     ],
     "firstSeenAt": "2026-04-03T10:00:31.323Z",
-    "lastSeenAt": "2026-05-02T08:25:33.528Z"
+    "lastSeenAt": "2026-05-12T10:22:55.912Z"
   },
   {
     "adId": 1063237673,
@@ -1767,7 +1767,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/77b2c7b6-d750-431d-92e2-6d23d6736824.jpg"
     ],
     "firstSeenAt": "2026-04-24T09:16:55.888Z",
-    "lastSeenAt": "2026-05-05T09:15:05.494Z"
+    "lastSeenAt": "2026-05-12T10:22:55.912Z"
   },
   {
     "adId": 1065912942,
@@ -2851,6 +2851,52 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/82765e20-5451-400c-8812-e33f3ec2613e.jpg"
     ],
     "firstSeenAt": "2026-05-11T09:36:48.266Z",
-    "lastSeenAt": "2026-05-11T09:36:48.266Z"
+    "lastSeenAt": "2026-05-12T10:22:55.912Z"
+  },
+  {
+    "adId": 1068651532,
+    "link": "https://re.kufar.by/vi/1068651532",
+    "title": "Гараж",
+    "description": "Гараж ,расположен на улице Пушкина,27.площадь.  16,4 кв.м.  Есть электричество, подвал.Состоит в гаражном кооперативе.",
+    "address": "Пушкина ул, Гродно, Гродненская область",
+    "area": 16.4,
+    "seller": "Людмила",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма",
+      "Подвал",
+      "Наземная",
+      "Отсутствует"
+    ],
+    "listTime": "2026-05-12T07:45:13Z",
+    "images": [],
+    "firstSeenAt": "2026-05-12T10:22:55.912Z",
+    "lastSeenAt": "2026-05-12T10:22:55.912Z"
+  },
+  {
+    "adId": 1068648069,
+    "link": "https://re.kufar.by/vi/1068648069",
+    "title": "Гараж",
+    "description": "Мясокомбинат. Второй заезд от дороги. Нужно приложить руки. 3х6. Яма на весь гараж, свет в яме. Задолженностей нет. Гараж сухой, в этом году залита кр",
+    "priceByn": 9515,
+    "priceUsd": 3400,
+    "address": "Максима Горького ул, 105Аблок56к5660, Гродно, Гродненская область",
+    "area": 18,
+    "seller": "Вадим",
+    "propertyType": "Гараж",
+    "features": [
+      "Отсутствует"
+    ],
+    "listTime": "2026-05-12T07:14:39Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/de8e7d54-4539-4c30-82c9-e190deb9173b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6a5fc006-985d-447c-bf43-dd8cbcb724f3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8b07eabe-066a-49ae-b4b8-e33d71cff8e8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/654acd3f-24f3-4584-a3fd-23f0aebd469b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/976cce03-1fcf-4f6f-834d-bbbfe140d74e.jpg"
+    ],
+    "firstSeenAt": "2026-05-12T10:22:55.912Z",
+    "lastSeenAt": "2026-05-12T10:22:55.912Z"
   }
 ]
