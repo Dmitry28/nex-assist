@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-12T10:40:00.938Z"
+    "lastSeenAt": "2026-05-13T10:09:16.601Z"
   },
   {
     "adId": 4057786,
@@ -193,7 +193,7 @@
       "https://cdn.realt.by/img/55/6511868e-35d8-11f1-accf-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-12T10:40:00.938Z"
+    "lastSeenAt": "2026-05-13T10:09:16.601Z"
   },
   {
     "adId": 4100697,
@@ -228,7 +228,7 @@
       "https://cdn.realt.by/img/55/923b78de-3cb0-11f1-be49-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-10T09:57:56.166Z"
+    "lastSeenAt": "2026-05-13T10:09:16.601Z"
   },
   {
     "adId": 3969197,
@@ -424,19 +424,22 @@
     "link": "https://realt.by/sale-dachi/object/4082278/",
     "title": "Уютная дача вблизи д. Коробчицы",
     "description": "Дача расположена вблизи озера с прекрасной рыбалкой, в окружении леса с чистым воздухом и красивыми живописными местами.",
-    "priceByn": 54963,
-    "priceUsd": 19500,
+    "priceByn": 51685,
+    "priceUsd": 18500,
     "address": "Ветеран  34",
     "area": 41.9,
     "areaKitchen": 4.5,
     "plotArea": 6.64,
     "yearBuilt": 1983,
     "seller": "Кватэра",
-    "listTime": "2026-05-07T11:14:25+03:00",
+    "listTime": "2026-05-12T13:46:29+03:00",
     "images": [
       "https://cdn.realt.by/img/55/c16500e8-2d02-11f1-ab0a-0242ac120003",
+      "https://cdn.realt.by/img/55/009afc92-4def-11f1-832c-0242ac120003",
       "https://cdn.realt.by/img/55/c11e82d0-2d02-11f1-9413-0242ac120003",
+      "https://cdn.realt.by/img/55/f1779996-4dee-11f1-a308-0242ac120003",
       "https://cdn.realt.by/img/55/c11c532a-2d02-11f1-a552-0242ac120003",
+      "https://cdn.realt.by/img/55/fc5c33f8-4dee-11f1-bec3-0242ac120003",
       "https://cdn.realt.by/img/55/c103366a-2d02-11f1-9a57-0242ac120003",
       "https://cdn.realt.by/img/55/c0e01658-2d02-11f1-acaa-0242ac120003",
       "https://cdn.realt.by/img/55/c0e50d84-2d02-11f1-b3b5-0242ac120003",
@@ -459,7 +462,7 @@
       "https://cdn.realt.by/img/55/cedbcce6-2d9a-11f1-a3db-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-05-13T10:09:16.601Z"
   },
   {
     "adId": 4029977,
@@ -532,7 +535,7 @@
       "https://cdn.realt.by/img/55/48b2f02e-488c-11f1-92b2-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-12T10:40:00.938Z"
+    "lastSeenAt": "2026-05-13T10:09:16.601Z"
   },
   {
     "adId": 4056686,
@@ -1006,7 +1009,7 @@
       "https://cdn.realt.by/img/55/b4ffdaf2-2c6d-11f1-9dd0-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-05-13T10:09:16.601Z"
   },
   {
     "adId": 3844540,
@@ -1535,7 +1538,7 @@
       "https://cdn.realt.by/img/55/509fe592-8426-11f0-89b3-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-12T10:40:00.938Z"
+    "lastSeenAt": "2026-05-13T10:09:16.601Z"
   },
   {
     "adId": 3720539,
@@ -2876,7 +2879,7 @@
       "https://cdn.realt.by/img/55/7ee68648-08a8-11f1-a6b3-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-12T10:40:00.938Z"
+    "lastSeenAt": "2026-05-13T10:09:16.601Z"
   },
   {
     "adId": 4095210,
@@ -5194,5 +5197,76 @@
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
     "lastSeenAt": "2026-05-09T21:42:42.837Z"
+  },
+  {
+    "adId": 4122579,
+    "uuid": "e5217580-4ead-11f1-a7a4-d5b3b9712aa2",
+    "link": "https://realt.by/sale-dachi/object/4122579/",
+    "title": "Приграничное",
+    "description": "Продается дача в живописном и спокойном районе Ст. Приграничное",
+    "priceByn": 104768,
+    "priceUsd": 37500,
+    "address": "Приграничное  191",
+    "area": 47.7,
+    "plotArea": 8,
+    "yearBuilt": 2016,
+    "levels": 2,
+    "seller": "Наталья",
+    "listTime": "2026-05-13T12:54:19+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/38490030-4ead-11f1-81d0-0242ac120003",
+      "https://cdn.realt.by/img/55/3e60a482-4ead-11f1-a7ca-0242ac120003",
+      "https://cdn.realt.by/img/55/3fab1b38-4ead-11f1-a46d-0242ac120003",
+      "https://cdn.realt.by/img/55/3f139a6a-4ead-11f1-a2fe-0242ac120003",
+      "https://cdn.realt.by/img/55/38f48f4a-4ead-11f1-b998-0242ac120003",
+      "https://cdn.realt.by/img/55/397b57fa-4ead-11f1-9b3e-0242ac120003",
+      "https://cdn.realt.by/img/55/385d34ba-4ead-11f1-8423-0242ac120003",
+      "https://cdn.realt.by/img/55/37275594-4ead-11f1-a92e-0242ac120003",
+      "https://cdn.realt.by/img/55/3ddb7082-4ead-11f1-9591-0242ac120003",
+      "https://cdn.realt.by/img/55/3fd385e6-4ead-11f1-9165-0242ac120003",
+      "https://cdn.realt.by/img/55/472bd640-4ead-11f1-a0d0-0242ac120003",
+      "https://cdn.realt.by/img/55/48671db2-4ead-11f1-96ad-0242ac120003",
+      "https://cdn.realt.by/img/55/4878e95c-4ead-11f1-92cf-0242ac120003",
+      "https://cdn.realt.by/img/55/494a311a-4ead-11f1-939d-0242ac120003",
+      "https://cdn.realt.by/img/55/47524eec-4ead-11f1-9849-0242ac120003",
+      "https://cdn.realt.by/img/55/45d6f00e-4ead-11f1-b70a-0242ac120003",
+      "https://cdn.realt.by/img/55/6855aec2-4ead-11f1-be88-0242ac120003",
+      "https://cdn.realt.by/img/55/6835cff8-4ead-11f1-84c8-0242ac120003",
+      "https://cdn.realt.by/img/55/682a034e-4ead-11f1-b399-0242ac120003",
+      "https://cdn.realt.by/img/55/686e26a0-4ead-11f1-9522-0242ac120003"
+    ],
+    "firstSeenAt": "2026-05-13T10:09:16.601Z",
+    "lastSeenAt": "2026-05-13T10:09:16.601Z"
+  },
+  {
+    "adId": 4122349,
+    "uuid": "d72532c0-4e9c-11f1-99e3-b5d26f0d7469",
+    "link": "https://realt.by/sale-dachi/object/4122349/",
+    "title": "Малое Демидково",
+    "description": "Продается дача в районе \"Малое Демидково\". 15 км от г.Гродно. Участок 8 соток. Приватизирована. Дом из силикатных блоков-24 м2 с верандой-8 м2. Проведено электричество. На участке имеются колодец,куб для воды,туалет,хозсарай. В доме:печь,бетонированный подвал,чердачное помещение,свет, телевизор. Высажены плодовые деревья,сортовой виноград,кусты. Торг уместен в разумных пределах. Все вопросы,пожалуйста,по телефону.",
+    "priceByn": 27938,
+    "priceUsd": 10000,
+    "address": "Малое Демидково",
+    "areaLiving": 24,
+    "plotArea": 8,
+    "levels": 1,
+    "seller": "Алексей Иванович",
+    "listTime": "2026-05-13T10:40:16+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/3df1d172-4e9b-11f1-b5b2-0242ac120003",
+      "https://cdn.realt.by/img/55/3d900190-4e9b-11f1-a236-0242ac120003",
+      "https://cdn.realt.by/img/55/3dffa298-4e9b-11f1-9e15-0242ac120003",
+      "https://cdn.realt.by/img/55/3de8e4d6-4e9b-11f1-b615-0242ac120003",
+      "https://cdn.realt.by/img/55/3db00076-4e9b-11f1-a3fb-0242ac120003",
+      "https://cdn.realt.by/img/55/3e183a42-4e9b-11f1-b692-0242ac120003",
+      "https://cdn.realt.by/img/55/538deaac-4e9b-11f1-b23c-0242ac120003",
+      "https://cdn.realt.by/img/55/536af362-4e9b-11f1-bbda-0242ac120003",
+      "https://cdn.realt.by/img/55/53c809a8-4e9b-11f1-97e9-0242ac120003",
+      "https://cdn.realt.by/img/55/53503bc6-4e9b-11f1-825d-0242ac120003",
+      "https://cdn.realt.by/img/55/5400e5fc-4e9b-11f1-bc72-0242ac120003",
+      "https://cdn.realt.by/img/55/468bc4e6-4e9b-11f1-9a21-0242ac120003"
+    ],
+    "firstSeenAt": "2026-05-13T10:09:16.601Z",
+    "lastSeenAt": "2026-05-13T10:09:16.601Z"
   }
 ]

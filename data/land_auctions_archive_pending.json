@@ -38,5 +38,23 @@
       ]
     },
     "removedAt": "2026-04-30T09:07:40.195Z"
+  },
+  {
+    "listing": {
+      "title": "Земельный участок по ул. Александра Боголюбова, 40",
+      "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-aleksandra-bogolyubova-40/",
+      "price": "40 884,00 руб.",
+      "area": "0,0979 га",
+      "address": "г. Гродно, ул. Александра Боголюбова, 40",
+      "cadastralNumber": "440100000002012970",
+      "cadastralMapUrl": "https://map.nca.by/search/019c656c-a1b1-702b-8eb9-51359758764b",
+      "auctionDate": "Аукцион состоится 12.05.2026",
+      "applicationDeadline": "Заявления принимаются по  06.05.2026",
+      "communications": "электроснабжение, газоснабжение, водоснабжение",
+      "images": [
+        "http://gcn.by/wp-content/uploads/2026/01/u2-bogolyubova-40-sajt.png"
+      ]
+    },
+    "removedAt": "2026-05-13T09:34:57.726Z"
   }
 ]
