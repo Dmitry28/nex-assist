@@ -47,7 +47,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-05-09T08:44:04.835Z"
+    "lastSeenAt": "2026-05-13T10:02:46.619Z"
   },
   {
     "adId": 1062002915,
@@ -624,7 +624,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3989f57d-fcc9-4ae7-89eb-138480a835d7.jpg"
     ],
     "firstSeenAt": "2026-04-03T10:00:31.323Z",
-    "lastSeenAt": "2026-05-12T10:22:56.046Z"
+    "lastSeenAt": "2026-05-13T10:02:46.619Z"
   },
   {
     "adId": 1063237673,
@@ -1767,7 +1767,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/77b2c7b6-d750-431d-92e2-6d23d6736824.jpg"
     ],
     "firstSeenAt": "2026-04-24T09:16:55.888Z",
-    "lastSeenAt": "2026-05-12T10:22:56.046Z"
+    "lastSeenAt": "2026-05-13T10:02:46.619Z"
   },
   {
     "adId": 1065912942,
@@ -2115,7 +2115,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1e090392-2a22-4893-b24c-c94eed0bf021.jpg"
     ],
     "firstSeenAt": "2026-05-01T09:17:20.859Z",
-    "lastSeenAt": "2026-05-02T08:25:33.528Z"
+    "lastSeenAt": "2026-05-13T10:02:46.619Z"
   },
   {
     "adId": 1067078860,
@@ -2483,7 +2483,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6b52bc77-072e-4724-9bd6-89d9e6b2856e.jpg"
     ],
     "firstSeenAt": "2026-05-06T09:31:02.939Z",
-    "lastSeenAt": "2026-05-07T09:35:04.763Z"
+    "lastSeenAt": "2026-05-13T10:02:46.619Z"
   },
   {
     "adId": 1067821993,
@@ -2872,7 +2872,7 @@
     "listTime": "2026-05-12T07:45:13Z",
     "images": [],
     "firstSeenAt": "2026-05-12T10:22:56.046Z",
-    "lastSeenAt": "2026-05-12T10:22:56.046Z"
+    "lastSeenAt": "2026-05-13T10:02:46.619Z"
   },
   {
     "adId": 1068648069,
@@ -2898,5 +2898,28 @@
     ],
     "firstSeenAt": "2026-05-12T10:22:56.046Z",
     "lastSeenAt": "2026-05-12T10:22:56.046Z"
+  },
+  {
+    "adId": 1068679263,
+    "link": "https://re.kufar.by/vi/1068679263",
+    "title": "Продам гараж",
+    "description": "Продам металлический  гараж 1996 г.п. (без фундамента и пола ) Размеры 3,8 м х 6,2. Имеются незначительные следы коррозии.",
+    "priceByn": 1560,
+    "priceUsd": 558,
+    "address": "Озёрское шоссе, 3, Гродно, Гродненская область",
+    "area": 23.4,
+    "seller": "Гродненский филиал ГИПК ГАЗ-ИНСТИТУТ",
+    "propertyType": "Гараж",
+    "features": [
+      "Наземная",
+      "Отсутствует"
+    ],
+    "listTime": "2026-05-12T12:02:03Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/10433d5e-7873-480d-acfe-8f9536569f45.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3904f795-12d4-4185-9027-ef21c83cb68f.jpg"
+    ],
+    "firstSeenAt": "2026-05-13T10:02:46.619Z",
+    "lastSeenAt": "2026-05-13T10:02:46.619Z"
   }
 ]
