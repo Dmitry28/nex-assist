@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-13T10:09:16.601Z"
+    "lastSeenAt": "2026-05-14T10:05:10.120Z"
   },
   {
     "adId": 4057786,
@@ -193,7 +193,7 @@
       "https://cdn.realt.by/img/55/6511868e-35d8-11f1-accf-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-13T10:09:16.601Z"
+    "lastSeenAt": "2026-05-14T10:05:10.120Z"
   },
   {
     "adId": 4100697,
@@ -228,7 +228,7 @@
       "https://cdn.realt.by/img/55/923b78de-3cb0-11f1-be49-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-13T10:09:16.601Z"
+    "lastSeenAt": "2026-05-14T10:05:10.120Z"
   },
   {
     "adId": 3969197,
@@ -462,7 +462,7 @@
       "https://cdn.realt.by/img/55/cedbcce6-2d9a-11f1-a3db-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-13T10:09:16.601Z"
+    "lastSeenAt": "2026-05-14T10:05:10.120Z"
   },
   {
     "adId": 4029977,
@@ -1009,7 +1009,7 @@
       "https://cdn.realt.by/img/55/b4ffdaf2-2c6d-11f1-9dd0-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-13T10:09:16.601Z"
+    "lastSeenAt": "2026-05-14T10:05:10.120Z"
   },
   {
     "adId": 3844540,
@@ -2325,14 +2325,14 @@
     "link": "https://realt.by/sale-dachi/object/3715119/",
     "title": "Дача СТ «Встреча» 11 км от Гродно",
     "description": "Дача СТ «Встреча» 11 км от Гродно, Подлабенский с/с",
-    "priceByn": 25367,
-    "priceUsd": 9000,
+    "priceByn": 22218,
+    "priceUsd": 8000,
     "address": "Встреча",
     "area": 35,
     "plotArea": 5,
     "yearBuilt": 1980,
     "seller": "Светлана",
-    "listTime": "2026-03-05T18:12:13+03:00",
+    "listTime": "2026-05-14T11:14:07+03:00",
     "images": [
       "https://cdn.realt.by/img/55/6c2184d4-2057-11f0-924c-0242ac120003",
       "https://cdn.realt.by/img/55/2bec6e10-2057-11f0-a9cd-0242ac120003",
@@ -2355,7 +2355,7 @@
       "https://cdn.realt.by/img/55/22b1482a-2057-11f0-b0cc-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-05-14T10:05:10.120Z"
   },
   {
     "adId": 3682162,
@@ -5236,7 +5236,7 @@
       "https://cdn.realt.by/img/55/686e26a0-4ead-11f1-9522-0242ac120003"
     ],
     "firstSeenAt": "2026-05-13T10:09:16.601Z",
-    "lastSeenAt": "2026-05-13T10:09:16.601Z"
+    "lastSeenAt": "2026-05-14T10:05:10.120Z"
   },
   {
     "adId": 4122349,
@@ -5267,6 +5267,40 @@
       "https://cdn.realt.by/img/55/468bc4e6-4e9b-11f1-9a21-0242ac120003"
     ],
     "firstSeenAt": "2026-05-13T10:09:16.601Z",
-    "lastSeenAt": "2026-05-13T10:09:16.601Z"
+    "lastSeenAt": "2026-05-14T10:05:10.120Z"
+  },
+  {
+    "adId": 4122788,
+    "uuid": "7f84b9b0-4ec3-11f1-a7a4-d5b3b9712aa2",
+    "link": "https://realt.by/sale-dachi/object/4122788/",
+    "title": "Современный дом в СТ Чайка-Тарусичи возле оз. Юбилейного",
+    "description": "Продается новый дом в одном из лучших садовых товариществ Гродненского района — «Чайка-Тарусичи». Это предложение для тех, кто ищет бескомпромиссное качество строительства в сочетании с близостью к природе и городской инфраструктуре.",
+    "priceByn": 182000,
+    "priceUsd": 65534,
+    "address": "Чайка-Тарусичи",
+    "area": 221,
+    "plotArea": 6,
+    "yearBuilt": 2025,
+    "seller": "Алина",
+    "listTime": "2026-05-13T15:20:24+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/156f8da2-4ec3-11f1-8921-0242ac120003",
+      "https://cdn.realt.by/img/55/15ca80f4-4ec3-11f1-8a0e-0242ac120003",
+      "https://cdn.realt.by/img/55/195e6ece-4ec3-11f1-b279-0242ac120003",
+      "https://cdn.realt.by/img/55/1966cc4a-4ec3-11f1-834f-0242ac120003",
+      "https://cdn.realt.by/img/55/1df03fa8-4ec3-11f1-9d91-0242ac120003",
+      "https://cdn.realt.by/img/55/1e075ef4-4ec3-11f1-a000-0242ac120003",
+      "https://cdn.realt.by/img/55/1e0e798c-4ec3-11f1-ad19-0242ac120003",
+      "https://cdn.realt.by/img/55/2437f90a-4ec3-11f1-9123-0242ac120003",
+      "https://cdn.realt.by/img/55/244b34ac-4ec3-11f1-90fe-0242ac120003",
+      "https://cdn.realt.by/img/55/281bd4d8-4ec3-11f1-abfa-0242ac120003",
+      "https://cdn.realt.by/img/55/28270574-4ec3-11f1-944b-0242ac120003",
+      "https://cdn.realt.by/img/55/282aeb8a-4ec3-11f1-8b6e-0242ac120003",
+      "https://cdn.realt.by/img/55/2d298a60-4ec3-11f1-8316-0242ac120003",
+      "https://cdn.realt.by/img/55/2d2ceb88-4ec3-11f1-a311-0242ac120003",
+      "https://cdn.realt.by/img/55/31291c66-4ec3-11f1-a003-0242ac120003"
+    ],
+    "firstSeenAt": "2026-05-14T10:05:10.120Z",
+    "lastSeenAt": "2026-05-14T10:05:10.120Z"
   }
 ]

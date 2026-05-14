@@ -47,7 +47,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-05-13T10:02:46.619Z"
+    "lastSeenAt": "2026-05-14T09:57:44.873Z"
   },
   {
     "adId": 1062002915,
@@ -2115,7 +2115,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1e090392-2a22-4893-b24c-c94eed0bf021.jpg"
     ],
     "firstSeenAt": "2026-05-01T09:17:20.859Z",
-    "lastSeenAt": "2026-05-13T10:02:46.619Z"
+    "lastSeenAt": "2026-05-14T09:57:44.873Z"
   },
   {
     "adId": 1067078860,
@@ -2483,7 +2483,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6b52bc77-072e-4724-9bd6-89d9e6b2856e.jpg"
     ],
     "firstSeenAt": "2026-05-06T09:31:02.939Z",
-    "lastSeenAt": "2026-05-13T10:02:46.619Z"
+    "lastSeenAt": "2026-05-14T09:57:44.873Z"
   },
   {
     "adId": 1067821993,
@@ -2920,6 +2920,77 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3904f795-12d4-4185-9027-ef21c83cb68f.jpg"
     ],
     "firstSeenAt": "2026-05-13T10:02:46.619Z",
-    "lastSeenAt": "2026-05-13T10:02:46.619Z"
+    "lastSeenAt": "2026-05-14T09:57:44.873Z"
+  },
+  {
+    "adId": 1068897669,
+    "link": "https://re.kufar.by/vi/1068897669",
+    "title": "Продам хороший гараж в Лососно",
+    "description": "Продам хороший гараж в гаражном кооперативе лососно-новики.\n\nРазмер стандарт, указана площадь внутри гаража.\n\nОтличное место для микрорайона Фолюш, ст",
+    "priceByn": 15830,
+    "priceUsd": 5700,
+    "address": "Венечная ул, 2Аблок21к2129, Гродно, Гродненская область",
+    "area": 16.2,
+    "seller": "Дмитрий",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма",
+      "Подвал"
+    ],
+    "listTime": "2026-05-14T07:22:43Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/25797f1f-e550-4d9e-bc41-e16191fe8955.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8063f9b5-0b70-462f-bca7-af2d34a35732.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4c3fa525-f636-4ae6-8564-959e9486d7c3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0b9025f6-3b43-4050-ac7c-8de06f616fd1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b50b5e96-4a46-4e91-aa44-6c75c44be505.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/79a02a4b-100d-4484-b9fb-01f2ae7808d4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6ccf5d32-6da2-4311-a0a5-200cde174bc3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/41a059a3-777d-43b0-9311-3c6b2e52d228.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/57095dcb-0e90-4951-8ae7-25db72cd8546.jpg"
+    ],
+    "firstSeenAt": "2026-05-14T09:57:44.873Z",
+    "lastSeenAt": "2026-05-14T09:57:44.873Z"
+  },
+  {
+    "adId": 1068884559,
+    "link": "https://re.kufar.by/vi/1068884559",
+    "title": "Гараж",
+    "description": "Продается гараж.район привала.",
+    "priceByn": 833,
+    "priceUsd": 300,
+    "address": "СТ Верховина, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "area": 18,
+    "seller": "дмитрий",
+    "propertyType": "Гараж",
+    "listTime": "2026-05-14T04:33:06Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f1e5b54a-7e9f-43d6-a90b-f18ce6c446ef.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0b5e3eee-d2bd-4390-b578-aa7e55d247f4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/aedbb094-7bc3-43aa-b2e1-df2c14506253.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/dd33d4cc-309f-47c6-9107-21da78984c89.jpg"
+    ],
+    "firstSeenAt": "2026-05-14T09:57:44.873Z",
+    "lastSeenAt": "2026-05-14T09:57:44.873Z"
+  },
+  {
+    "adId": 1068848596,
+    "link": "https://re.kufar.by/vi/1068848596",
+    "title": "Продам гараж",
+    "description": "Продам гараж, стандартный 6*3м, район мясокомбината «Сигнал-1» (Грандичи), подвал под всем гаражом, долгов нет, один владелец с момента строительства",
+    "priceByn": 17496,
+    "priceUsd": 6300,
+    "address": "Гродно, Гродненская область",
+    "area": 18,
+    "seller": "Ольга",
+    "propertyType": "Гараж",
+    "listTime": "2026-05-13T19:01:34Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2bb0868e-ae08-4aa8-bd13-82b04e498bd6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f7fe1187-2c7f-413e-8a5e-17e024c0d135.jpg"
+    ],
+    "firstSeenAt": "2026-05-14T09:57:44.873Z",
+    "lastSeenAt": "2026-05-14T09:57:44.873Z"
   }
 ]
