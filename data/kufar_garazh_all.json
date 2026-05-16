@@ -106,7 +106,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c32966cf-6663-4cbc-a483-09da9f48647d.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-05-15T10:12:43.708Z"
+    "lastSeenAt": "2026-05-16T09:01:12.533Z"
   },
   {
     "adId": 1044024342,
@@ -902,7 +902,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca7987d4-c9dc-4301-983f-20329c5638d6.jpg"
     ],
     "firstSeenAt": "2026-04-07T08:31:10.678Z",
-    "lastSeenAt": "2026-05-15T10:12:43.708Z"
+    "lastSeenAt": "2026-05-16T09:01:12.533Z"
   },
   {
     "adId": 1063807131,
@@ -1767,7 +1767,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/77b2c7b6-d750-431d-92e2-6d23d6736824.jpg"
     ],
     "firstSeenAt": "2026-04-24T09:16:55.888Z",
-    "lastSeenAt": "2026-05-13T10:02:46.619Z"
+    "lastSeenAt": "2026-05-16T09:01:12.533Z"
   },
   {
     "adId": 1065912942,
@@ -2115,7 +2115,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1e090392-2a22-4893-b24c-c94eed0bf021.jpg"
     ],
     "firstSeenAt": "2026-05-01T09:17:20.859Z",
-    "lastSeenAt": "2026-05-15T10:12:43.708Z"
+    "lastSeenAt": "2026-05-16T09:01:12.533Z"
   },
   {
     "adId": 1067078860,
@@ -3024,6 +3024,57 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fe5d8832-bbaa-4267-bc9c-108990ea4ee1.jpg"
     ],
     "firstSeenAt": "2026-05-15T10:12:43.708Z",
-    "lastSeenAt": "2026-05-15T10:12:43.708Z"
+    "lastSeenAt": "2026-05-16T09:01:12.533Z"
+  },
+  {
+    "adId": 1069052969,
+    "link": "https://re.kufar.by/vi/1069052969",
+    "title": "Гараж ул. Горького 126Б/3А-18",
+    "description": "Гараж ул горького 126Б /3А-18",
+    "priceByn": 24927,
+    "priceUsd": 9000,
+    "address": "Максима Горького ул, 126Бблок3к143, Гродно, Гродненская область",
+    "area": 35.3,
+    "seller": "Продавец",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В"
+    ],
+    "listTime": "2026-05-15T12:57:55Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d8fa4c02-e337-4ce1-89ce-b98ec51f8d68.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/918ffc8f-0285-4f9b-9316-8eac138216f9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/22e1101f-94fe-411d-8433-d4ebb921e433.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/74f15400-e19a-4392-8b78-271dce474cdb.jpg"
+    ],
+    "firstSeenAt": "2026-05-16T09:01:12.533Z",
+    "lastSeenAt": "2026-05-16T09:01:12.533Z"
+  },
+  {
+    "adId": 1069050229,
+    "link": "https://re.kufar.by/vi/1069050229",
+    "title": "Гараж",
+    "description": "Продам гараж, стены из кирпича, крыша - железобетонные плиты, смотровая яма, электроснабжение, крыша не течёт.",
+    "priceByn": 20773,
+    "priceUsd": 7500,
+    "address": "Краснопартизанская ул, 50Аблок1к108, Гродно, Гродненская область",
+    "area": 17.9,
+    "seller": "Татьяна",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма",
+      "Наземная",
+      "Отсутствует"
+    ],
+    "listTime": "2026-05-15T12:30:53Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b88380fd-3375-4a35-bf37-f80c5c505a42.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/46bfed43-0329-49d5-b7f0-fe6e3404ab92.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d826acc9-b47d-4e1e-893d-e480d9ff04bf.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eb46e174-7a52-4df9-a3a1-27ceea4161e6.jpg"
+    ],
+    "firstSeenAt": "2026-05-16T09:01:12.533Z",
+    "lastSeenAt": "2026-05-16T09:01:12.533Z"
   }
 ]
