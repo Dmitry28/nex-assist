@@ -1451,7 +1451,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/541ed9df-bb66-4e1f-9a81-169b2d4c5f86.jpg"
     ],
     "firstSeenAt": "2026-04-17T08:38:33.333Z",
-    "lastSeenAt": "2026-04-18T08:20:21.406Z"
+    "lastSeenAt": "2026-05-17T13:31:10.721Z"
   },
   {
     "adId": 1065179776,
@@ -2115,7 +2115,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1e090392-2a22-4893-b24c-c94eed0bf021.jpg"
     ],
     "firstSeenAt": "2026-05-01T09:17:20.859Z",
-    "lastSeenAt": "2026-05-15T10:07:44.790Z"
+    "lastSeenAt": "2026-05-17T13:31:10.721Z"
   },
   {
     "adId": 1067078860,
@@ -2397,20 +2397,20 @@
     "link": "https://re.kufar.by/vi/1067649054",
     "title": "Гараж в ГСК ''Фолюш''.",
     "description": "В продаже металлический гараж с ямой\n6х4 м с местом в гаражном кооперативе \"Фолюш\".\nЕсть возможность с минимальными вложениями в перестройке получить ",
-    "priceByn": 22652,
-    "priceUsd": 8000,
+    "priceByn": 21881,
+    "priceUsd": 7900,
     "address": "Суворова ул, 141, Гродно, Гродненская область",
     "area": 24,
     "seller": "Пользователь",
     "propertyType": "Гараж",
-    "listTime": "2026-05-04T16:48:51Z",
+    "listTime": "2026-05-16T18:35:11Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/292b42f5-e6c2-449f-a0dc-fbbf375b2c5a.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8bab0cf6-d080-45a1-b416-23a6ee49fed0.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3633da65-a6c7-4430-b534-d84606eeeef5.jpg"
     ],
     "firstSeenAt": "2026-05-05T09:15:05.494Z",
-    "lastSeenAt": "2026-05-06T09:31:02.939Z"
+    "lastSeenAt": "2026-05-17T13:31:10.721Z"
   },
   {
     "adId": 1067567538,
@@ -3025,5 +3025,89 @@
     ],
     "firstSeenAt": "2026-05-15T10:07:44.790Z",
     "lastSeenAt": "2026-05-15T10:07:44.790Z"
+  },
+  {
+    "adId": 1047537778,
+    "link": "https://re.kufar.by/vi/1047537778",
+    "title": "Продам гараж на улице Понемуньская",
+    "description": "Продам хороший сухой гараж.",
+    "priceByn": 15900,
+    "priceUsd": 5741,
+    "address": "Понемуньская ул, 15А, Гродно, Гродненская область",
+    "area": 15.8,
+    "seller": "Татьяна",
+    "propertyType": "Гараж",
+    "listTime": "2026-05-17T12:48:44Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7e597aa7-e488-427d-b6d8-940ff8289d94.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d2640c41-2d5c-43cf-939a-6f1ecf96ccaa.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d3ac60c7-c72c-4ba7-924b-eea1d7a13575.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0c7c1d34-1357-4e65-971f-04cc85097daa.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/181d6626-3c40-4ba3-9579-b5ada355e3cf.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2637ee08-f74f-4dbc-bdc2-0b9a3aee4099.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d76dbc63-6e5e-4970-ba98-8cb17891b216.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/714ec30c-9916-4b9a-93b9-2ffd651d3056.jpg"
+    ],
+    "firstSeenAt": "2026-05-17T13:31:10.721Z",
+    "lastSeenAt": "2026-05-17T13:31:10.721Z"
+  },
+  {
+    "adId": 1069173269,
+    "link": "https://re.kufar.by/vi/1069173269",
+    "title": "ДВОЙНОЙ ГАРАЖ ПОНЕМУНЬ-АВТО",
+    "description": "ДВА СТАНДАРТНЫХ ГАРАЖА БЕЗ СТЕНКИ..ДВЕ ЯМЫ,ДВОЕ ВОРОТ (ПОД ВЫСОКИЙ БУС И ОБЫЧНЫЕ),ПОДВАЛ ПОД ВСЕЙ ПЛОЩАДЬЮ,ВЫСОТА ОКОЛО 3,5 М...СОСТОЯНИЕ РАБОЧЕЕ,НО Р",
+    "priceByn": 46146,
+    "priceUsd": 16661,
+    "address": "Понемуньская ул, 15Аблок6к618, Гродно, Гродненская область",
+    "area": 33,
+    "seller": "Михаил",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма",
+      "Подвал",
+      "Печное"
+    ],
+    "listTime": "2026-05-16T13:54:10Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9626af03-b1a1-41e2-b827-32a4fc9f1657.jpg"
+    ],
+    "firstSeenAt": "2026-05-17T13:31:10.721Z",
+    "lastSeenAt": "2026-05-17T13:31:10.721Z"
+  },
+  {
+    "adId": 1017915742,
+    "link": "https://re.kufar.by/vi/1017915742",
+    "title": "Гараж в гаражном кооперативе Понемунь-3",
+    "description": "Продается гараж в гаражном кооперативе «Понемунь-3» в Октябрьском районе Гродно.\nЕсть смотровая яма и подвал.",
+    "priceByn": 24927,
+    "priceUsd": 9000,
+    "address": "Понемуньская ул, 2В, Гродно, Гродненская область",
+    "area": 22,
+    "seller": "ООО Магазин недвижимости",
+    "propertyType": "Гараж",
+    "features": [
+      "Смотровая яма",
+      "Подвал",
+      "Наземная",
+      "Печное"
+    ],
+    "listTime": "2026-05-16T12:04:12Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/707779bc-179b-44a0-992f-d5d7ad426e00.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9e5e5490-2508-4fbb-85b7-5fba861a5441.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a9ba55ce-788b-44e9-8820-d3e376b77e3f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1c0a55a8-c232-42b3-b78b-116ece4b18bf.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7a804b29-a46d-4fd9-9bb7-df96f28ec118.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a886f1f0-668d-4bcd-942a-1bb5c29f6446.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/29ec6db9-e464-4346-9a2e-210044cc5d17.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/91b6409b-bfae-4e58-82c4-15f28620e74b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/aa9af685-b911-4593-b6be-8bc36b7b1980.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8a1b7469-2efe-4c55-ab16-4451f6cbc35d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0a7da1d7-8675-4cf2-a739-c991aa37db31.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ecbb6fcd-0a37-4102-9429-269ee7b730c6.jpg"
+    ],
+    "firstSeenAt": "2026-05-17T13:31:10.721Z",
+    "lastSeenAt": "2026-05-17T13:31:10.721Z"
   }
 ]
