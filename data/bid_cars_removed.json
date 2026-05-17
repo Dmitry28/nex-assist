@@ -1182,5 +1182,23 @@
     "seller": "Geico",
     "removedAt": "2026-05-16T08:31:10.211Z",
     "removalNotifiedAt": "2026-05-16T08:31:10.211Z"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/0-44937069/2024-Volkswagen-Atlas-1V2KR2CA7RC598242",
+    "title": "2024 Volkswagen Atlas, 2.0T Se W/Tec...",
+    "vin": "1V2KR2CA7RC598242",
+    "lot": "0-44937069",
+    "odometer": "21k мили (34k km)",
+    "damage": "Столкноевение | Левая сторона",
+    "location": "Bridgeport (PA)",
+    "currentBid": "$0",
+    "engine": "2.0L 4 cyl. 269HP",
+    "keys": "Salvage (Pennsylvania)",
+    "condition": "На ходу",
+    "auctionDate": "пт 22 мая, 15:30 GMT+2",
+    "auctionSource": "IAAI",
+    "seller": "Erie Insurance Group",
+    "removedAt": "2026-05-17T08:57:57.220Z",
+    "removalNotifiedAt": "2026-05-17T08:57:57.220Z"
   }
 ]
