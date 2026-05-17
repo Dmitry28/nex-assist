@@ -1,6 +1,7 @@
 import * as Joi from 'joi';
 import {
   APP_DEFAULTS,
+  AV_BY_DEFAULTS,
   BID_CARS_DEFAULTS,
   KUFAR_DEFAULTS,
   LAND_AUCTIONS_DEFAULTS,
@@ -38,6 +39,13 @@ export const validationSchema = Joi.object({
   BID_CARS_SCRAPE_URL: Joi.string().uri().default(BID_CARS_DEFAULTS.SCRAPE_URL),
   BID_CARS_SCRAPE_CRON: Joi.string().default(BID_CARS_DEFAULTS.SCRAPE_CRON),
   TELEGRAM_BID_CARS_CHAT_ID: Joi.string().optional(),
+
+  // av.by module — ScrapFly proxies the SafeLine-protected site
+  SCRAPFLY_API_KEY: Joi.string().optional(),
+  AV_BY_ATLAS_URL: Joi.string().uri().default(AV_BY_DEFAULTS.ATLAS_URL),
+  AV_BY_ATLAS_CROSS_SPORT_URL: Joi.string().uri().default(AV_BY_DEFAULTS.ATLAS_CROSS_SPORT_URL),
+  AV_BY_MIN_RUN_INTERVAL_HOURS: Joi.number().default(AV_BY_DEFAULTS.MIN_RUN_INTERVAL_HOURS),
+  TELEGRAM_AV_BY_CHAT_ID: Joi.string().optional(),
 
   // Kufar module — each feed URL is optional; omit to disable that feed
   KUFAR_GARAGES_URL: Joi.string().uri().default(KUFAR_DEFAULTS.GARAGES_URL),

@@ -16,18 +16,20 @@
  */
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from '../app.module';
+import { AvByService } from '../modules/av-by/av-by.service';
 import { BidCarsService } from '../modules/bid-cars/bid-cars.service';
 import { KufarService } from '../modules/kufar/kufar.service';
 import { LandAuctionsService } from '../modules/land-auctions/land-auctions.service';
 import { RealtService } from '../modules/realt/realt.service';
 
-type Module = 'land' | 'bid-cars' | 'kufar' | 'realt' | 'all';
+type Module = 'land' | 'bid-cars' | 'kufar' | 'realt' | 'av-by' | 'all';
 
 function parseModule(): Module {
   const arg = process.argv[2];
   if (!arg || arg === 'all') return 'all';
-  if (arg === 'land' || arg === 'bid-cars' || arg === 'kufar' || arg === 'realt') return arg;
-  console.error(`Unknown module: "${arg}". Valid options: land, bid-cars, kufar, realt`);
+  if (arg === 'land' || arg === 'bid-cars' || arg === 'kufar' || arg === 'realt' || arg === 'av-by')
+    return arg;
+  console.error(`Unknown module: "${arg}". Valid options: land, bid-cars, kufar, realt, av-by`);
   process.exit(1);
 }
 
@@ -71,6 +73,14 @@ async function bootstrap(): Promise<void> {
         await app.get(RealtService).run();
       } catch (err) {
         console.error('Realt scrape failed:', err);
+      }
+    }
+
+    if (target === 'all' || target === 'av-by') {
+      try {
+        await app.get(AvByService).run();
+      } catch (err) {
+        console.error('AvBy scrape failed:', err);
       }
     }
   } finally {
