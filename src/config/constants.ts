@@ -39,6 +39,17 @@ export const REALT_DEFAULTS = {
   SCRAPE_CRON: '0 9 * * *',
 } as const;
 
+export const AV_BY_DEFAULTS = {
+  // Volkswagen Atlas, year 2023+, engine <= 2.0L
+  ATLAS_URL:
+    'https://cars.av.by/filter?brands[0][brand]=1216&brands[0][model]=5980&brands[0][generation]=13256&year[min]=2023&engine_capacity[max]=2000',
+  // Volkswagen Atlas Cross Sport, year 2023+, engine <= 2.0L
+  ATLAS_CROSS_SPORT_URL:
+    'https://cars.av.by/filter?brands[0][brand]=1216&brands[0][model]=10265&brands[0][generation]=13810&year[min]=2023&engine_capacity[max]=2000',
+  /** Minimum interval between runs — protects ScrapFly free-tier budget (1000 credits/mo). */
+  MIN_RUN_INTERVAL_HOURS: 47,
+} as const;
+
 export const BID_CARS_DEFAULTS = {
   SCRAPE_URL:
     'https://bid.cars/ru/search/results?search-type=filters&status=Active&type=Automobile&make=Volkswagen&model=Atlas&year-from=2023&year-to=2027&auction-type=All&odometer-to=60000&start-code=Run+and+Drive&engine-size-to=2',

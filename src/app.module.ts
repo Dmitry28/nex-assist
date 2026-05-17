@@ -9,6 +9,7 @@ import { CommonModule } from './common/common.module';
 import { AllExceptionsFilter } from './common/filters/all-exceptions.filter';
 import { TransformInterceptor } from './common/interceptors/transform.interceptor';
 import { HealthModule } from './modules/health/health.module';
+import { AvByModule } from './modules/av-by/av-by.module';
 import { BidCarsModule } from './modules/bid-cars/bid-cars.module';
 import { KufarModule } from './modules/kufar/kufar.module';
 import { LandAuctionsModule } from './modules/land-auctions/land-auctions.module';
@@ -52,6 +53,7 @@ import { RealtModule } from './modules/realt/realt.module';
     BidCarsModule,
     KufarModule,
     RealtModule,
+    AvByModule,
   ],
   providers: [
     // Global validation
