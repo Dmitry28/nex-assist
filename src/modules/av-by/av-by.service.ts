@@ -88,6 +88,12 @@ export class AvByService {
     const minIntervalHours = this.config.getOrThrow<number>('avBy.minRunIntervalHours');
     const apiKey = this.config.get<string>('avBy.scrapflyApiKey') ?? '';
 
+    const appEnv = process.env.APP_ENV ?? 'development';
+    if (appEnv !== 'production') {
+      this.logger.log(`APP_ENV="${appEnv}" — av.by runs only in production, skipping`);
+      return { feeds: [], skipped: true, skipReason: `app_env:${appEnv}` };
+    }
+
     if (!apiKey) {
       this.logger.warn('SCRAPFLY_API_KEY not set — skipping av.by scrape');
       return { feeds: [], skipped: true, skipReason: 'no_api_key' };
