@@ -21,7 +21,7 @@ interface RawAd {
 const toNum = (v: unknown): number | undefined => {
   // Some kufar params arrive wrapped in a single-element array (e.g. `floor: [5]`).
   // Unwrap before coercing.
-  const value = Array.isArray(v) ? v[0] : v;
+  const value: unknown = Array.isArray(v) ? (v as unknown[])[0] : v;
   if (typeof value === 'number' && isFinite(value)) return value;
   if (typeof value === 'string') {
     const n = parseFloat(value);
