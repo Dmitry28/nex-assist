@@ -649,7 +649,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7f9a1f50-e1dc-4fb7-9a7c-9ef35a0c3680.jpg"
     ],
     "firstSeenAt": "2026-04-03T10:00:31.323Z",
-    "lastSeenAt": "2026-05-03T08:39:26.950Z"
+    "lastSeenAt": "2026-05-18T11:08:43.946Z"
   },
   {
     "adId": 1056168799,
@@ -1451,7 +1451,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/541ed9df-bb66-4e1f-9a81-169b2d4c5f86.jpg"
     ],
     "firstSeenAt": "2026-04-17T08:38:33.333Z",
-    "lastSeenAt": "2026-05-17T09:15:11.631Z"
+    "lastSeenAt": "2026-05-18T11:08:43.946Z"
   },
   {
     "adId": 1065179776,
@@ -2115,7 +2115,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1e090392-2a22-4893-b24c-c94eed0bf021.jpg"
     ],
     "firstSeenAt": "2026-05-01T09:17:20.859Z",
-    "lastSeenAt": "2026-05-17T09:15:11.631Z"
+    "lastSeenAt": "2026-05-18T11:08:43.946Z"
   },
   {
     "adId": 1067078860,
@@ -2397,20 +2397,20 @@
     "link": "https://re.kufar.by/vi/1067649054",
     "title": "Гараж в ГСК ''Фолюш''.",
     "description": "В продаже металлический гараж с ямой\n6х4 м с местом в гаражном кооперативе \"Фолюш\".\nЕсть возможность с минимальными вложениями в перестройке получить ",
-    "priceByn": 22652,
-    "priceUsd": 8000,
+    "priceByn": 21753,
+    "priceUsd": 7900,
     "address": "Суворова ул, 141, Гродно, Гродненская область",
     "area": 24,
     "seller": "Пользователь",
     "propertyType": "Гараж",
-    "listTime": "2026-05-04T16:48:51Z",
+    "listTime": "2026-05-16T18:35:11Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/292b42f5-e6c2-449f-a0dc-fbbf375b2c5a.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8bab0cf6-d080-45a1-b416-23a6ee49fed0.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3633da65-a6c7-4430-b534-d84606eeeef5.jpg"
     ],
     "firstSeenAt": "2026-05-05T09:15:05.494Z",
-    "lastSeenAt": "2026-05-17T09:15:11.631Z"
+    "lastSeenAt": "2026-05-18T11:08:43.946Z"
   },
   {
     "adId": 1067567538,
@@ -3099,7 +3099,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9626af03-b1a1-41e2-b827-32a4fc9f1657.jpg"
     ],
     "firstSeenAt": "2026-05-17T09:15:11.631Z",
-    "lastSeenAt": "2026-05-17T09:15:11.631Z"
+    "lastSeenAt": "2026-05-18T11:08:43.946Z"
   },
   {
     "adId": 1017915742,
@@ -3134,6 +3134,101 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ecbb6fcd-0a37-4102-9429-269ee7b730c6.jpg"
     ],
     "firstSeenAt": "2026-05-17T09:15:11.631Z",
-    "lastSeenAt": "2026-05-17T09:15:11.631Z"
+    "lastSeenAt": "2026-05-18T11:08:43.946Z"
+  },
+  {
+    "adId": 1069381715,
+    "link": "https://re.kufar.by/vi/1069381715",
+    "title": "гараж",
+    "description": "ПРОДАМ ИНДИВИДУАЛЬНЫЙ ГАРАЖ НЕСТАНДАРТНОГО РАЗМЕРА (23,7 М2 ПО ТЕХПАСПОРТУ)С БОЛЬШИМ ПОДВАЛОМ.КРЫША ПЕРЕКРЫТА В ПРОШЛОМ ГОДУ (4 СЛОЯ).10 МЕТРОВ ОТ АСФ",
+    "priceByn": 23375,
+    "priceUsd": 8489,
+    "address": "Понемуньская ул, 2В/1763, Гродно, Гродненская область",
+    "area": 23.7,
+    "seller": "иван михайлович",
+    "propertyType": "Гараж",
+    "features": [
+      "Смотровая яма",
+      "Подвал",
+      "Отсутствует"
+    ],
+    "listTime": "2026-05-18T09:53:36Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fb4d2e06-fa15-4e00-a965-a1ee0578be1f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eceab737-e17f-4643-b706-2c7236cb5e85.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c9a13075-9c67-43f6-adcc-421f7f19723e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/058a7d5d-3cfb-40c5-ad84-0de5fa12c484.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d18e6983-c7c6-4a67-8e44-5294beca13eb.jpg"
+    ],
+    "firstSeenAt": "2026-05-18T11:08:43.946Z",
+    "lastSeenAt": "2026-05-18T11:08:43.946Z"
+  },
+  {
+    "adId": 1069364921,
+    "link": "https://re.kufar.by/vi/1069364921",
+    "title": "Продам гараж",
+    "description": "В плане съехать из гаража в течение лета.Место отличное,движухи нет,вода не затекает, \"по ногам не ездят\",удобное,тихое место.Кооператив \"секрет\".10-б",
+    "address": "Космонавтов пр, 81, Гродно, Гродненская область",
+    "area": 19,
+    "seller": "leonid",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Видеонаблюдение",
+      "Смотровая яма",
+      "Подвал",
+      "Отсутствует"
+    ],
+    "listTime": "2026-05-18T07:20:33Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7d7f6e95-bde4-4f13-af21-f4b76628176e.jpg"
+    ],
+    "firstSeenAt": "2026-05-18T11:08:43.946Z",
+    "lastSeenAt": "2026-05-18T11:08:43.946Z"
+  },
+  {
+    "adId": 1069286211,
+    "link": "https://re.kufar.by/vi/1069286211",
+    "title": "гараж на Пушкина",
+    "description": "Продается гараж на Пушкина. Заезд с Пушкина и Дубко. Имеется погреб и яма. Кровля новая. Цена 20700, торг уместен.  Галина",
+    "priceByn": 20700,
+    "priceUsd": 7518,
+    "address": "Пушкина ул, 41Б, Гродно, Гродненская область",
+    "area": 16.7,
+    "seller": "Галина",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Отсутствует"
+    ],
+    "listTime": "2026-05-17T13:44:50Z",
+    "images": [],
+    "firstSeenAt": "2026-05-18T11:08:43.946Z",
+    "lastSeenAt": "2026-05-18T11:08:43.946Z"
+  },
+  {
+    "adId": 1047537778,
+    "link": "https://re.kufar.by/vi/1047537778",
+    "title": "Продам гараж на улице Понемуньская",
+    "description": "Продам хороший сухой гараж.",
+    "priceByn": 15900,
+    "priceUsd": 5774,
+    "address": "Понемуньская ул, 15А, Гродно, Гродненская область",
+    "area": 15.8,
+    "seller": "Татьяна",
+    "propertyType": "Гараж",
+    "listTime": "2026-05-17T12:48:44Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7e597aa7-e488-427d-b6d8-940ff8289d94.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d2640c41-2d5c-43cf-939a-6f1ecf96ccaa.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d3ac60c7-c72c-4ba7-924b-eea1d7a13575.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0c7c1d34-1357-4e65-971f-04cc85097daa.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/181d6626-3c40-4ba3-9579-b5ada355e3cf.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2637ee08-f74f-4dbc-bdc2-0b9a3aee4099.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d76dbc63-6e5e-4970-ba98-8cb17891b216.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/714ec30c-9916-4b9a-93b9-2ffd651d3056.jpg"
+    ],
+    "firstSeenAt": "2026-05-18T11:08:43.946Z",
+    "lastSeenAt": "2026-05-18T11:08:43.946Z"
   }
 ]
