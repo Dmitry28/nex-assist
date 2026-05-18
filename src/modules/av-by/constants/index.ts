@@ -1,5 +1,5 @@
 /** ScrapFly request timeout (ms). */
-export const SCRAPFLY_TIMEOUT_MS = 60_000;
+export const SCRAPFLY_TIMEOUT_MS = 120_000;
 
 /** Max wall-clock time for a full scrape cycle — watchdog resets isRunning if exceeded. */
 export const RUN_TIMEOUT_MS = 5 * 60 * 1000;
