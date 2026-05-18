@@ -20,16 +20,26 @@ import { AvByService } from '../modules/av-by/av-by.service';
 import { BidCarsService } from '../modules/bid-cars/bid-cars.service';
 import { KufarService } from '../modules/kufar/kufar.service';
 import { LandAuctionsService } from '../modules/land-auctions/land-auctions.service';
+import { PogoranyService } from '../modules/pogorany/pogorany.service';
 import { RealtService } from '../modules/realt/realt.service';
 
-type Module = 'land' | 'bid-cars' | 'kufar' | 'realt' | 'av-by' | 'all';
+type Module = 'land' | 'bid-cars' | 'kufar' | 'realt' | 'av-by' | 'pogorany' | 'all';
 
 function parseModule(): Module {
   const arg = process.argv[2];
   if (!arg || arg === 'all') return 'all';
-  if (arg === 'land' || arg === 'bid-cars' || arg === 'kufar' || arg === 'realt' || arg === 'av-by')
+  if (
+    arg === 'land' ||
+    arg === 'bid-cars' ||
+    arg === 'kufar' ||
+    arg === 'realt' ||
+    arg === 'av-by' ||
+    arg === 'pogorany'
+  )
     return arg;
-  console.error(`Unknown module: "${arg}". Valid options: land, bid-cars, kufar, realt, av-by`);
+  console.error(
+    `Unknown module: "${arg}". Valid options: land, bid-cars, kufar, realt, av-by, pogorany`,
+  );
   process.exit(1);
 }
 
@@ -81,6 +91,14 @@ async function bootstrap(): Promise<void> {
         await app.get(AvByService).run();
       } catch (err) {
         console.error('AvBy scrape failed:', err);
+      }
+    }
+
+    if (target === 'all' || target === 'pogorany') {
+      try {
+        await app.get(PogoranyService).run();
+      } catch (err) {
+        console.error('Pogorany scrape failed:', err);
       }
     }
   } finally {

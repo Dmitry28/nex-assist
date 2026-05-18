@@ -22,6 +22,7 @@
     "scrape:kufar": "ts-node -r tsconfig-paths/register src/scripts/scrape.ts kufar",
     "scrape:realt": "ts-node -r tsconfig-paths/register src/scripts/scrape.ts realt",
     "scrape:av-by": "ts-node -r tsconfig-paths/register src/scripts/scrape.ts av-by",
+    "scrape:pogorany": "ts-node -r tsconfig-paths/register src/scripts/scrape.ts pogorany",
     "notify:test": "ts-node -r tsconfig-paths/register src/scripts/notify-test.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"{src,test}/**/*.ts\" --cache",
