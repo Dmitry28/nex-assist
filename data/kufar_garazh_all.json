@@ -649,7 +649,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7f9a1f50-e1dc-4fb7-9a7c-9ef35a0c3680.jpg"
     ],
     "firstSeenAt": "2026-04-03T10:00:31.323Z",
-    "lastSeenAt": "2026-05-03T08:39:26.950Z"
+    "lastSeenAt": "2026-05-18T09:40:43.192Z"
   },
   {
     "adId": 1056168799,
@@ -1451,7 +1451,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/541ed9df-bb66-4e1f-9a81-169b2d4c5f86.jpg"
     ],
     "firstSeenAt": "2026-04-17T08:38:33.333Z",
-    "lastSeenAt": "2026-05-17T13:31:10.721Z"
+    "lastSeenAt": "2026-05-18T09:40:43.192Z"
   },
   {
     "adId": 1065179776,
@@ -2115,7 +2115,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1e090392-2a22-4893-b24c-c94eed0bf021.jpg"
     ],
     "firstSeenAt": "2026-05-01T09:17:20.859Z",
-    "lastSeenAt": "2026-05-17T13:31:10.721Z"
+    "lastSeenAt": "2026-05-18T09:40:43.192Z"
   },
   {
     "adId": 1067078860,
@@ -2410,7 +2410,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3633da65-a6c7-4430-b534-d84606eeeef5.jpg"
     ],
     "firstSeenAt": "2026-05-05T09:15:05.494Z",
-    "lastSeenAt": "2026-05-17T13:31:10.721Z"
+    "lastSeenAt": "2026-05-18T09:40:43.192Z"
   },
   {
     "adId": 1067567538,
@@ -3049,7 +3049,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/714ec30c-9916-4b9a-93b9-2ffd651d3056.jpg"
     ],
     "firstSeenAt": "2026-05-17T13:31:10.721Z",
-    "lastSeenAt": "2026-05-17T13:31:10.721Z"
+    "lastSeenAt": "2026-05-18T09:40:43.192Z"
   },
   {
     "adId": 1069173269,
@@ -3073,7 +3073,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9626af03-b1a1-41e2-b827-32a4fc9f1657.jpg"
     ],
     "firstSeenAt": "2026-05-17T13:31:10.721Z",
-    "lastSeenAt": "2026-05-17T13:31:10.721Z"
+    "lastSeenAt": "2026-05-18T09:40:43.192Z"
   },
   {
     "adId": 1017915742,
@@ -3108,6 +3108,49 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ecbb6fcd-0a37-4102-9429-269ee7b730c6.jpg"
     ],
     "firstSeenAt": "2026-05-17T13:31:10.721Z",
-    "lastSeenAt": "2026-05-17T13:31:10.721Z"
+    "lastSeenAt": "2026-05-18T09:40:43.192Z"
+  },
+  {
+    "adId": 1069364921,
+    "link": "https://re.kufar.by/vi/1069364921",
+    "title": "Продам гараж",
+    "description": "В плане съехать из гаража в течение лета.Место отличное,движухи нет,вода не затекает, \"по ногам не ездят\",удобное,тихое место.Кооператив \"секрет\".10-б",
+    "address": "Космонавтов пр, 81, Гродно, Гродненская область",
+    "area": 19,
+    "seller": "leonid",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Видеонаблюдение",
+      "Смотровая яма",
+      "Подвал",
+      "Отсутствует"
+    ],
+    "listTime": "2026-05-18T07:20:33Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7d7f6e95-bde4-4f13-af21-f4b76628176e.jpg"
+    ],
+    "firstSeenAt": "2026-05-18T09:40:43.192Z",
+    "lastSeenAt": "2026-05-18T09:40:43.192Z"
+  },
+  {
+    "adId": 1069286211,
+    "link": "https://re.kufar.by/vi/1069286211",
+    "title": "гараж на Пушкина",
+    "description": "Продается гараж на Пушкина. Заезд с Пушкина и Дубко. Имеется погреб и яма. Кровля новая. Цена 20700, торг уместен.  Галина",
+    "priceByn": 20700,
+    "priceUsd": 7518,
+    "address": "Пушкина ул, 41Б, Гродно, Гродненская область",
+    "area": 16.7,
+    "seller": "Галина",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Отсутствует"
+    ],
+    "listTime": "2026-05-17T13:44:50Z",
+    "images": [],
+    "firstSeenAt": "2026-05-18T09:40:43.192Z",
+    "lastSeenAt": "2026-05-18T09:40:43.192Z"
   }
 ]
