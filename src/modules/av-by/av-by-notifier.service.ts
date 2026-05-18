@@ -54,13 +54,9 @@ export class AvByNotifierService {
       out.notifiedSold.set(feed.feedKey, new Set());
       out.notifiedPriceChanges.set(feed.feedKey, new Set());
 
-      if (feed.isBaseline) {
-        this.logger.log(
-          `Feed ${feed.feedKey} — baseline run, skipping per-listing messages (${feed.newListings.length} cars)`,
-        );
-        continue;
-      }
-
+      // Send per-listing messages on every run, including baseline. Catalog is small
+      // (a couple of VW Atlas trims) — surfacing all of them on the first prod run is
+      // what we want, not a silent seed.
       await this.sendFeed(feed, out);
     }
 

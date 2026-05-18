@@ -5,6 +5,7 @@ import {
   BID_CARS_DEFAULTS,
   KUFAR_DEFAULTS,
   LAND_AUCTIONS_DEFAULTS,
+  POGORANY_DEFAULTS,
   REALT_DEFAULTS,
 } from './constants';
 
@@ -61,4 +62,9 @@ export const validationSchema = Joi.object({
   REALT_DACHI_URL: Joi.string().uri().default(REALT_DEFAULTS.DACHI_URL),
   REALT_SCRAPE_CRON: Joi.string().default(REALT_DEFAULTS.SCRAPE_CRON),
   TELEGRAM_REALT_CHAT_ID: Joi.string().optional(),
+
+  // pogorany.by module — Tilda store with ЖК Погораны townhouse apartments
+  POGORANY_STORE_API_URL: Joi.string().uri().default(POGORANY_DEFAULTS.STORE_API_URL),
+  POGORANY_SCRAPE_CRON: Joi.string().default(POGORANY_DEFAULTS.SCRAPE_CRON),
+  TELEGRAM_POGORANY_CHAT_ID: Joi.string().optional(),
 });
