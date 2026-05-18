@@ -78,6 +78,13 @@ export class AvByParserService {
         throw new Error(`ScrapFly returned HTTP ${resp.status}`);
       }
       json = (await resp.json()) as typeof json;
+    } catch (err) {
+      if (err instanceof Error && err.name === 'AbortError') {
+        throw new Error(`ScrapFly timeout after ${SCRAPFLY_TIMEOUT_MS / 1000}s for ${url}`, {
+          cause: err,
+        });
+      }
+      throw err;
     } finally {
       clearTimeout(timer);
     }
