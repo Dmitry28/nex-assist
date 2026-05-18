@@ -13,6 +13,7 @@ import { AvByModule } from './modules/av-by/av-by.module';
 import { BidCarsModule } from './modules/bid-cars/bid-cars.module';
 import { KufarModule } from './modules/kufar/kufar.module';
 import { LandAuctionsModule } from './modules/land-auctions/land-auctions.module';
+import { PogoranyModule } from './modules/pogorany/pogorany.module';
 import { RealtModule } from './modules/realt/realt.module';
 
 @Module({
@@ -54,6 +55,7 @@ import { RealtModule } from './modules/realt/realt.module';
     KufarModule,
     RealtModule,
     AvByModule,
+    PogoranyModule,
   ],
   providers: [
     // Global validation
