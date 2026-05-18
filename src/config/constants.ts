@@ -57,6 +57,34 @@ export const BID_CARS_DEFAULTS = {
   SCRAPE_CRON: '0 9 * * *',
 } as const;
 
+export const KUFAR_RENT_FLAT_DEFAULTS = {
+  /**
+   * travel.kufar.by short-term rental search — narrow bbox in central Grodno
+   * (approx. Советская 10 ± 350 m), apartments/houses for rent (`bkcl=rn:20600,20601,1,0`).
+   * Dates (`bkcin` / `bkcout`) are injected at runtime — see kufar-rent-flat-dates.ts.
+   *
+   * The bbox is intentionally tight: we want to be paged only when a new lot appears
+   * in this exact area. Most days return 0 listings — that's the steady state and the
+   * service handles it gracefully (skips diff so the snapshot is never reset).
+   */
+  GRODNO_URL:
+    'https://travel.kufar.by/l/grodno/arendovat?address=%D0%93%D1%80%D0%BE%D0%B4%D0%BD%D0%BE&bkcl=rn%3A20600%2C20601%2C1%2C0&bku=1&gbx=b%3A23.86182364392963%2C53.716814868074984%2C23.868765200860164%2C53.722414865744966&size=30&sort=rtg',
+  /** Default cron: every day at 09:00 UTC (12:00 Minsk). Cron is wired off — trigger via POST. */
+  SCRAPE_CRON: '0 9 * * *',
+} as const;
+
+export const KUFAR_RENT_LONG_DEFAULTS = {
+  /**
+   * re.kufar.by long-term apartment rental search — narrow bbox in central Grodno.
+   * Same domain/SSR structure as the `kufar` (for-sale) module: listings live in
+   * `__NEXT_DATA__` → `props.initialState.listing.ads`.
+   */
+  GRODNO_URL:
+    'https://re.kufar.by/l/grodno/snyat/kvartiru?cur=USD&gbx=b%3A23.86183751859784%2C53.717136202923456%2C23.86882199087261%2C53.72273615760897&size=30',
+  /** Default cron: every day at 09:00 UTC (12:00 Minsk). Cron is wired off — trigger via POST. */
+  SCRAPE_CRON: '0 9 * * *',
+} as const;
+
 export const POGORANY_DEFAULTS = {
   /** Tilda store API — returns the full product list for the ЖК Погораны catalog. */
   STORE_API_URL: 'https://store.tildacdn.com/api/getproductslist/?storepartuid=856309636292',

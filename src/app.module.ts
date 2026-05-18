@@ -12,6 +12,8 @@ import { HealthModule } from './modules/health/health.module';
 import { AvByModule } from './modules/av-by/av-by.module';
 import { BidCarsModule } from './modules/bid-cars/bid-cars.module';
 import { KufarModule } from './modules/kufar/kufar.module';
+import { KufarRentFlatModule } from './modules/kufar-rent-flat/kufar-rent-flat.module';
+import { KufarRentLongModule } from './modules/kufar-rent-long/kufar-rent-long.module';
 import { LandAuctionsModule } from './modules/land-auctions/land-auctions.module';
 import { PogoranyModule } from './modules/pogorany/pogorany.module';
 import { RealtModule } from './modules/realt/realt.module';
@@ -53,6 +55,8 @@ import { RealtModule } from './modules/realt/realt.module';
     LandAuctionsModule,
     BidCarsModule,
     KufarModule,
+    KufarRentFlatModule,
+    KufarRentLongModule,
     RealtModule,
     AvByModule,
     PogoranyModule,

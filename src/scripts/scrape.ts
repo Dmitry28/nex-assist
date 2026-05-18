@@ -19,11 +19,22 @@ import { AppModule } from '../app.module';
 import { AvByService } from '../modules/av-by/av-by.service';
 import { BidCarsService } from '../modules/bid-cars/bid-cars.service';
 import { KufarService } from '../modules/kufar/kufar.service';
+import { KufarRentFlatService } from '../modules/kufar-rent-flat/kufar-rent-flat.service';
+import { KufarRentLongService } from '../modules/kufar-rent-long/kufar-rent-long.service';
 import { LandAuctionsService } from '../modules/land-auctions/land-auctions.service';
 import { PogoranyService } from '../modules/pogorany/pogorany.service';
 import { RealtService } from '../modules/realt/realt.service';
 
-type Module = 'land' | 'bid-cars' | 'kufar' | 'realt' | 'av-by' | 'pogorany' | 'all';
+type Module =
+  | 'land'
+  | 'bid-cars'
+  | 'kufar'
+  | 'kufar-rent-flat'
+  | 'kufar-rent-long'
+  | 'realt'
+  | 'av-by'
+  | 'pogorany'
+  | 'all';
 
 function parseModule(): Module {
   const arg = process.argv[2];
@@ -32,13 +43,15 @@ function parseModule(): Module {
     arg === 'land' ||
     arg === 'bid-cars' ||
     arg === 'kufar' ||
+    arg === 'kufar-rent-flat' ||
+    arg === 'kufar-rent-long' ||
     arg === 'realt' ||
     arg === 'av-by' ||
     arg === 'pogorany'
   )
     return arg;
   console.error(
-    `Unknown module: "${arg}". Valid options: land, bid-cars, kufar, realt, av-by, pogorany`,
+    `Unknown module: "${arg}". Valid options: land, bid-cars, kufar, kufar-rent-flat, kufar-rent-long, realt, av-by, pogorany`,
   );
   process.exit(1);
 }
@@ -75,6 +88,22 @@ async function bootstrap(): Promise<void> {
         await app.get(KufarService).run();
       } catch (err) {
         console.error('Kufar scrape failed:', err);
+      }
+    }
+
+    if (target === 'all' || target === 'kufar-rent-flat') {
+      try {
+        await app.get(KufarRentFlatService).run();
+      } catch (err) {
+        console.error('KufarRentFlat scrape failed:', err);
+      }
+    }
+
+    if (target === 'all' || target === 'kufar-rent-long') {
+      try {
+        await app.get(KufarRentLongService).run();
+      } catch (err) {
+        console.error('KufarRentLong scrape failed:', err);
       }
     }
 
