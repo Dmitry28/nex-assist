@@ -73,6 +73,18 @@ export const KUFAR_RENT_FLAT_DEFAULTS = {
   SCRAPE_CRON: '0 9 * * *',
 } as const;
 
+export const KUFAR_RENT_LONG_DEFAULTS = {
+  /**
+   * re.kufar.by long-term apartment rental search — narrow bbox in central Grodno.
+   * Same domain/SSR structure as the `kufar` (for-sale) module: listings live in
+   * `__NEXT_DATA__` → `props.initialState.listing.ads`.
+   */
+  GRODNO_URL:
+    'https://re.kufar.by/l/grodno/snyat/kvartiru?cur=USD&gbx=b%3A23.86183751859784%2C53.717136202923456%2C23.86882199087261%2C53.72273615760897&size=30',
+  /** Default cron: every day at 09:00 UTC (12:00 Minsk). Cron is wired off — trigger via POST. */
+  SCRAPE_CRON: '0 9 * * *',
+} as const;
+
 export const POGORANY_DEFAULTS = {
   /** Tilda store API — returns the full product list for the ЖК Погораны catalog. */
   STORE_API_URL: 'https://store.tildacdn.com/api/getproductslist/?storepartuid=856309636292',
