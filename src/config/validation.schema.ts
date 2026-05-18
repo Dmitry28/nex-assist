@@ -4,6 +4,7 @@ import {
   AV_BY_DEFAULTS,
   BID_CARS_DEFAULTS,
   KUFAR_DEFAULTS,
+  KUFAR_RENT_FLAT_DEFAULTS,
   LAND_AUCTIONS_DEFAULTS,
   POGORANY_DEFAULTS,
   REALT_DEFAULTS,
@@ -54,6 +55,11 @@ export const validationSchema = Joi.object({
   KUFAR_HOUSES_URL: Joi.string().uri().default(KUFAR_DEFAULTS.HOUSES_URL),
   KUFAR_SCRAPE_CRON: Joi.string().default(KUFAR_DEFAULTS.SCRAPE_CRON),
   TELEGRAM_KUFAR_CHAT_ID: Joi.string().optional(),
+
+  // Kufar Rent Flat module — travel.kufar.by short-term rentals
+  KUFAR_RENT_FLAT_URL: Joi.string().uri().default(KUFAR_RENT_FLAT_DEFAULTS.GRODNO_URL),
+  KUFAR_RENT_FLAT_SCRAPE_CRON: Joi.string().default(KUFAR_RENT_FLAT_DEFAULTS.SCRAPE_CRON),
+  TELEGRAM_KUFAR_RENT_FLAT_CHAT_ID: Joi.string().optional(),
 
   // realt.by module — multi-feed: plots, garage, cottages, dachi
   REALT_PLOTS_URL: Joi.string().uri().default(REALT_DEFAULTS.PLOTS_URL),
