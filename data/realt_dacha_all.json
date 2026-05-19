@@ -38,7 +38,7 @@
       "https://cdn.realt.by/img/55/da52e928-179d-11f1-857a-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-05-19T10:47:43.359Z"
   },
   {
     "adId": 4112063,
@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-18T20:55:27.927Z"
+    "lastSeenAt": "2026-05-19T10:47:43.359Z"
   },
   {
     "adId": 4057786,
@@ -193,7 +193,7 @@
       "https://cdn.realt.by/img/55/6511868e-35d8-11f1-accf-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-18T20:55:27.927Z"
+    "lastSeenAt": "2026-05-19T10:47:43.359Z"
   },
   {
     "adId": 4100697,
@@ -228,7 +228,7 @@
       "https://cdn.realt.by/img/55/923b78de-3cb0-11f1-be49-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-18T20:55:27.927Z"
+    "lastSeenAt": "2026-05-19T10:47:43.359Z"
   },
   {
     "adId": 3969197,
@@ -594,7 +594,7 @@
       "https://static.realt.by/thumb/c/430x374/3481ea5015ef1403daaa9c2a0a86718a/8c/c/023338dvwc8c/8ff5e5959f.jpeg"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-18T20:55:27.927Z"
+    "lastSeenAt": "2026-05-19T10:47:43.359Z"
   },
   {
     "adId": 3967198,
@@ -2093,13 +2093,13 @@
     "link": "https://realt.by/sale-dachi/object/3606611/",
     "title": "дача  СТ \" Магистраль\"",
     "description": "В продаже дача в 10 км. от города Гродно, незавершенное строительство, расположенное в живописном месте. Месторасположение: Гродненский район, Подлабенский с\\с, СТ \" Магистраль\".",
-    "priceByn": 112462,
-    "priceUsd": 39900,
+    "priceByn": 96156,
+    "priceUsd": 35000,
     "address": "Магистраль",
     "area": 90,
     "plotArea": 7.4,
     "seller": "Наталья",
-    "listTime": "2025-01-24T18:05:00+03:00",
+    "listTime": "2026-05-19T13:40:48+03:00",
     "images": [
       "https://cdn.realt.by/img/55/2c8cda28-da5f-11ef-9eeb-2236ceb6d16d",
       "https://cdn.realt.by/img/55/2c7b910a-da5f-11ef-97ea-2236ceb6d16d",
@@ -2110,7 +2110,7 @@
       "https://cdn.realt.by/img/55/2c57fed4-da5f-11ef-8769-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-05-19T10:47:43.359Z"
   },
   {
     "adId": 4042867,
@@ -2823,7 +2823,7 @@
       "https://cdn.realt.by/img/55/c604edd0-2888-11f1-8bc5-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-18T20:55:27.927Z"
+    "lastSeenAt": "2026-05-19T10:47:43.359Z"
   },
   {
     "adId": 3780907,
@@ -5360,5 +5360,30 @@
     ],
     "firstSeenAt": "2026-05-16T09:05:31.869Z",
     "lastSeenAt": "2026-05-18T11:11:21.765Z"
+  },
+  {
+    "adId": 4128239,
+    "uuid": "ff1dfa00-535b-11f1-aaa3-170443f2751a",
+    "link": "https://realt.by/sale-dachi/object/4128239/",
+    "title": "дачный дом СТ «Крыжачок» (7 км от г.Гродно, направление Горница)",
+    "description": "В продаже дачный дом в СТ «Крыжачок», (7 км от г.Гродно, направление Горница), расположенный на земельном участке 0,0517 га (частная собственность). Общая площадь 100 м2 без внутренней отделки. Предполагаемая сдача дома в 2026 году.",
+    "priceByn": 68683,
+    "priceUsd": 25000,
+    "address": "Крыжачок",
+    "area": 100,
+    "plotArea": 5.17,
+    "seller": "Наталия Г.",
+    "listTime": "2026-05-19T11:55:25+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/cd0c7c80-535b-11f1-95f8-0242ac120003",
+      "https://cdn.realt.by/img/55/cd370630-535b-11f1-a55e-0242ac120003",
+      "https://cdn.realt.by/img/55/cd3aad30-535b-11f1-8f28-0242ac120003",
+      "https://cdn.realt.by/img/55/cd4270e2-535b-11f1-85a7-0242ac120003",
+      "https://cdn.realt.by/img/55/cd51ac74-535b-11f1-9890-0242ac120003",
+      "https://cdn.realt.by/img/55/ccfe07ea-535b-11f1-8c19-0242ac120003",
+      "https://cdn.realt.by/img/55/cd590384-535b-11f1-9cff-0242ac120003"
+    ],
+    "firstSeenAt": "2026-05-19T10:47:43.359Z",
+    "lastSeenAt": "2026-05-19T10:47:43.359Z"
   }
 ]
