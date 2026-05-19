@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "link": "https://bid.cars/ru/lot/1-49072666/2024-Volkswagen-Atlas-1V2WR2CAXRC513198",
+    "title": "2024 Volkswagen Atlas, SE",
+    "vin": "1V2WR2CAXRC513198",
+    "lot": "1-49072666",
+    "odometer": "25k мили (40k km)",
+    "damage": "Передняя часть",
+    "location": "Ft. Worth (TX)",
+    "currentBid": "$0",
+    "engine": "2.0L 4 cyl. 269HP",
+    "keys": "SV (Texas)",
+    "condition": "На ходу",
+    "auctionDate": "пт 22 мая, 19:00 GMT+2",
+    "auctionSource": "Copart",
+    "seller": "---"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/1-49238656/2024-Volkswagen-Atlas-1V2AE2CA6RC222686",
+    "title": "2024 Volkswagen Atlas, Sel R-Line",
+    "vin": "1V2AE2CA6RC222686",
+    "lot": "1-49238656",
+    "odometer": "2k мили (3k km)",
+    "damage": "Передняя часть",
+    "location": "Glassboro... (NJ)",
+    "currentBid": "$150",
+    "engine": "2.0L 4 cyl. 269HP",
+    "keys": "SC (New Jersey)",
+    "condition": "На ходу",
+    "auctionDate": "вт 26 мая, 16:00 GMT+2",
+    "auctionSource": "Copart",
+    "seller": "---"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/1-46903746/2025-Volkswagen-Atlas-1V2FE2CAXSC219978",
+    "title": "2025 Volkswagen Atlas, Sel Premium R...",
+    "vin": "1V2FE2CAXSC219978",
+    "lot": "1-46903746",
+    "odometer": "16k мили (25k km)",
+    "damage": "Stripped",
+    "location": "Amarillo (TX)",
+    "currentBid": "$550",
+    "engine": "2.0L 4 cyl. 269HP",
+    "keys": "SV (Texas)",
+    "condition": "На ходу",
+    "auctionDate": "вт 26 мая, 19:00 GMT+2",
+    "auctionSource": "Copart",
+    "seller": "---"
+  }
+]
