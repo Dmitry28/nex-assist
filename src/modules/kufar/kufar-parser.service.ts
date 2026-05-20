@@ -53,6 +53,20 @@ export const getParam = (
 ): unknown => params?.find(p => p.p === key)?.[field];
 
 /**
+ * Parse the `coordinates` ad parameter. Kufar stores it as `[longitude, latitude]`
+ * (format code `gbx`), with longitude first. Returns undefined for malformed or
+ * out-of-range values.
+ */
+export const parseCoordinates = (v: unknown): { lat: number; lon: number } | undefined => {
+  if (!Array.isArray(v) || v.length < 2) return undefined;
+  const lon = toNum(v[0]);
+  const lat = toNum(v[1]);
+  if (lon === undefined || lat === undefined) return undefined;
+  if (Math.abs(lat) > 90 || Math.abs(lon) > 180) return undefined;
+  return { lat, lon };
+};
+
+/**
  * Fetches Kufar real-estate search results by parsing the __NEXT_DATA__ JSON
  * embedded in the server-side-rendered HTML.
  *
@@ -237,6 +251,8 @@ export const mapListing = (ad: RawAd): KufarListing => {
 
   const images = (ad.images ?? []).map(img => `${IMAGE_CDN_BASE}/${img.path}`);
 
+  const coordinates = parseCoordinates(getParam(ad.ad_parameters, 'coordinates'));
+
   return {
     adId: ad.ad_id,
     // ad_link from the API is not used — we reconstruct from ad_id for a stable canonical URL
@@ -253,6 +269,7 @@ export const mapListing = (ad: RawAd): KufarListing => {
     seller,
     propertyType,
     features: features.length > 0 ? features : undefined,
+    coordinates,
     listTime: ad.list_time,
     images,
   };
