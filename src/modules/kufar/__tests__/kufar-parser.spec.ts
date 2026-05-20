@@ -1,4 +1,11 @@
-import { mapListing, toNum, toStr, getParam, type RawAd } from '../kufar-parser.service';
+import {
+  mapListing,
+  parseCoordinates,
+  toNum,
+  toStr,
+  getParam,
+  type RawAd,
+} from '../kufar-parser.service';
 
 const baseAd: RawAd = {
   ad_id: 42,
@@ -33,6 +40,26 @@ describe('getParam', () => {
   it('returns undefined for missing key', () => expect(getParam(params, 'rooms')).toBeUndefined());
   it('returns undefined for empty params', () =>
     expect(getParam(undefined, 'size')).toBeUndefined());
+});
+
+describe('parseCoordinates', () => {
+  it('parses [lon, lat] tuple', () => {
+    expect(parseCoordinates([27.6762, 53.8833])).toEqual({ lon: 27.6762, lat: 53.8833 });
+  });
+  it('parses numeric strings', () => {
+    expect(parseCoordinates(['27.5', '53.9'])).toEqual({ lon: 27.5, lat: 53.9 });
+  });
+  it('returns undefined for non-array', () => expect(parseCoordinates(null)).toBeUndefined());
+  it('returns undefined for empty array', () => expect(parseCoordinates([])).toBeUndefined());
+  it('returns undefined for out-of-range latitude', () => {
+    expect(parseCoordinates([27.5, 91])).toBeUndefined();
+  });
+  it('returns undefined for out-of-range longitude', () => {
+    expect(parseCoordinates([181, 53.9])).toBeUndefined();
+  });
+  it('returns undefined for non-numeric items', () => {
+    expect(parseCoordinates(['abc', 'def'])).toBeUndefined();
+  });
 });
 
 describe('mapListing', () => {
@@ -139,5 +166,17 @@ describe('mapListing', () => {
     expect(mapListing({ ...baseAd, body_short: 'Хороший участок' }).description).toBe(
       'Хороший участок',
     );
+  });
+
+  it('maps coordinates from ad_parameters (lon, lat order)', () => {
+    const listing = mapListing({
+      ...baseAd,
+      ad_parameters: [{ p: 'coordinates', v: [27.6762, 53.8833] }],
+    });
+    expect(listing.coordinates).toEqual({ lon: 27.6762, lat: 53.8833 });
+  });
+
+  it('leaves coordinates undefined when missing', () => {
+    expect(mapListing(baseAd).coordinates).toBeUndefined();
   });
 });

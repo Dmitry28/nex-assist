@@ -25,6 +25,8 @@ export class KufarListing {
   @ApiPropertyOptional() propertyType?: string;
   /** Additional features: improvements, heating, water supply, etc. */
   @ApiPropertyOptional({ type: [String] }) features?: string[];
+  /** Geographic coordinates from Kufar's ad_parameters (when the seller pinned the ad on the map). */
+  @ApiPropertyOptional() coordinates?: { lat: number; lon: number };
   /** ISO 8601 UTC timestamp of last update/bump. */
   @ApiProperty() listTime!: string;
   @ApiProperty({ type: [String] }) images!: string[];
