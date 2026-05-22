@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-21T10:50:37.485Z"
+    "lastSeenAt": "2026-05-22T10:32:27.689Z"
   },
   {
     "adId": 4057786,
@@ -1317,7 +1317,7 @@
       "https://cdn.realt.by/img/55/ae13dfa6-2c16-11f1-b74b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-21T10:50:37.485Z"
+    "lastSeenAt": "2026-05-22T10:32:27.689Z"
   },
   {
     "adId": 3932756,
@@ -3384,7 +3384,7 @@
       "https://cdn.realt.by/img/55/e82594fa-34b3-11f1-8ff6-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-05-22T10:32:27.689Z"
   },
   {
     "adId": 4091802,
@@ -5309,12 +5309,12 @@
     "link": "https://realt.by/sale-dachi/object/4123805/",
     "title": "дача СТ «Старт-Каролино»",
     "description": "Предлагаем вашему вниманию идеальное место для отдыха СТ «Старт-Каролино», в 7 км от города.",
-    "priceByn": 69243,
-    "priceUsd": 25000,
+    "priceByn": 62825,
+    "priceUsd": 23000,
     "address": "Старт-Каролино",
     "plotArea": 5.13,
     "seller": "Дарья",
-    "listTime": "2026-05-14T15:42:21+03:00",
+    "listTime": "2026-05-22T10:47:58+03:00",
     "images": [
       "https://cdn.realt.by/img/55/1ad973b4-4f8d-11f1-bd25-0242ac120003",
       "https://cdn.realt.by/img/55/1ae9582e-4f8d-11f1-8ade-0242ac120003",
@@ -5329,7 +5329,7 @@
       "https://cdn.realt.by/img/55/1a992930-4f8d-11f1-a9d8-0242ac120003"
     ],
     "firstSeenAt": "2026-05-15T10:23:27.900Z",
-    "lastSeenAt": "2026-05-16T09:05:31.869Z"
+    "lastSeenAt": "2026-05-22T10:32:27.689Z"
   },
   {
     "adId": 4125647,
@@ -5337,8 +5337,8 @@
     "link": "https://realt.by/sale-dachi/object/4125647/",
     "title": "Садовый домик в СТ Дубрава Гродненского района",
     "description": "Есть погреб для хранения овощей и заготовок. Участок 5 соток, огорожен со всех сторон, зарегистрирован на праве пожизненного наследуемого владения. На участке имеются: плодовые деревья, огород, беседка, сарай, уборная. До Гродно 9 км.",
-    "priceByn": 34200,
-    "priceUsd": 12348,
+    "priceByn": 33600,
+    "priceUsd": 12301,
     "address": "Дубрава",
     "area": 24.4,
     "areaKitchen": 9.1,
@@ -5346,7 +5346,7 @@
     "yearBuilt": 1984,
     "levels": 1,
     "seller": "Наталья",
-    "listTime": "2026-05-16T11:54:11+03:00",
+    "listTime": "2026-05-21T17:22:59+03:00",
     "images": [
       "https://cdn.realt.by/img/55/3b340ace-5100-11f1-b53b-0242ac120003",
       "https://cdn.realt.by/img/55/3b95d682-5100-11f1-ab47-0242ac120003",
@@ -5359,7 +5359,7 @@
       "https://cdn.realt.by/img/55/4b76e30c-5100-11f1-9fbc-0242ac120003"
     ],
     "firstSeenAt": "2026-05-16T09:05:31.869Z",
-    "lastSeenAt": "2026-05-18T11:11:21.765Z"
+    "lastSeenAt": "2026-05-22T10:32:27.689Z"
   },
   {
     "adId": 4128239,
@@ -5476,7 +5476,7 @@
       "https://cdn.realt.by/img/55/d4880eda-5454-11f1-80ac-0242ac120003"
     ],
     "firstSeenAt": "2026-05-21T10:50:37.485Z",
-    "lastSeenAt": "2026-05-21T10:50:37.485Z"
+    "lastSeenAt": "2026-05-22T10:32:27.689Z"
   },
   {
     "adId": 4129558,
@@ -5500,6 +5500,34 @@
       "https://cdn.realt.by/img/55/80e1d6f8-5440-11f1-aacc-0242ac120003"
     ],
     "firstSeenAt": "2026-05-21T10:50:37.485Z",
-    "lastSeenAt": "2026-05-21T10:50:37.485Z"
+    "lastSeenAt": "2026-05-22T10:32:27.689Z"
+  },
+  {
+    "adId": 4132125,
+    "uuid": "067f8ce0-55b5-11f1-89e4-5b4b85777e9f",
+    "link": "https://realt.by/sale-dachi/object/4132125/",
+    "title": "дача СТ Демидково",
+    "description": "Продается садовый (дачный) домик в Гродненской области, Одельский с/с, СТ Демидково, расположенный на участке площадью 8,31 сотки. Площадь дачи 23.5 м2. Участок обработан, высажены плодовые деревья, кустарники.",
+    "priceByn": 46436,
+    "priceUsd": 17000,
+    "address": "Демидково",
+    "area": 23.5,
+    "plotArea": 8.31,
+    "seller": "Наталья",
+    "listTime": "2026-05-22T11:22:15+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/befe7a7a-55b4-11f1-8f30-0242ac120003",
+      "https://cdn.realt.by/img/55/bece9f1c-55b4-11f1-a951-0242ac120003",
+      "https://cdn.realt.by/img/55/becdd492-55b4-11f1-8f36-0242ac120003",
+      "https://cdn.realt.by/img/55/bedd36d0-55b4-11f1-bea0-0242ac120003",
+      "https://cdn.realt.by/img/55/bed7ea4a-55b4-11f1-85a5-0242ac120003",
+      "https://cdn.realt.by/img/55/bee2d130-55b4-11f1-8bf2-0242ac120003",
+      "https://cdn.realt.by/img/55/bee4238c-55b4-11f1-a27c-0242ac120003",
+      "https://cdn.realt.by/img/55/bec335f0-55b4-11f1-b839-0242ac120003",
+      "https://cdn.realt.by/img/55/bed72e7a-55b4-11f1-ade0-0242ac120003",
+      "https://cdn.realt.by/img/55/bea0c39e-55b4-11f1-b975-0242ac120003"
+    ],
+    "firstSeenAt": "2026-05-22T10:32:27.689Z",
+    "lastSeenAt": "2026-05-22T10:32:27.689Z"
   }
 ]

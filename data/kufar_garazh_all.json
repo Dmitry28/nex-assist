@@ -47,7 +47,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-05-20T10:32:07.064Z"
+    "lastSeenAt": "2026-05-22T10:31:25.719Z"
   },
   {
     "adId": 1062002915,
@@ -902,7 +902,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca7987d4-c9dc-4301-983f-20329c5638d6.jpg"
     ],
     "firstSeenAt": "2026-04-07T08:31:10.678Z",
-    "lastSeenAt": "2026-05-21T10:45:04.001Z"
+    "lastSeenAt": "2026-05-22T10:31:25.719Z"
   },
   {
     "adId": 1063807131,
@@ -3306,5 +3306,27 @@
     ],
     "firstSeenAt": "2026-05-19T10:38:53.936Z",
     "lastSeenAt": "2026-05-19T10:38:53.936Z"
+  },
+  {
+    "adId": 1069851857,
+    "link": "https://re.kufar.by/vi/1069851857",
+    "title": "Недвижимость",
+    "description": "гараж находиться возле Гродно лифт накладка. р-к Ксм блок16, электричество. ямы нет.",
+    "priceByn": 13111,
+    "priceUsd": 4800,
+    "address": "Ленинский район, Гродно, Гродненская область",
+    "area": 16.9,
+    "seller": "Евгений",
+    "propertyType": "Гараж",
+    "features": [
+      "Наземная",
+      "Отсутствует"
+    ],
+    "listTime": "2026-05-22T07:57:47Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/531e964e-f828-4805-8937-141bb583cb96.jpg"
+    ],
+    "firstSeenAt": "2026-05-22T10:31:25.719Z",
+    "lastSeenAt": "2026-05-22T10:31:25.719Z"
   }
 ]

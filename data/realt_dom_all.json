@@ -40,7 +40,7 @@
       "https://cdn.realt.by/img/55/03fd1570-d66f-11f0-b546-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-21T10:50:37.480Z"
+    "lastSeenAt": "2026-05-22T10:32:27.683Z"
   },
   {
     "adId": 4058841,
@@ -2081,12 +2081,12 @@
     "link": "https://realt.by/sale-cottages/object/3799472/",
     "title": "Часть дома в центре Гродно",
     "description": "Продается часть дома, переведенная в статус квартиры, в блокированном жилом доме. Расположена в центральной части города, на левонабережной Немана.",
-    "priceByn": 83780,
-    "priceUsd": 30249,
+    "priceByn": 80579,
+    "priceUsd": 29500,
     "address": "Гродно Краснопартизанская ул.",
     "plotArea": 5,
     "seller": "Центр",
-    "listTime": "2026-05-15T17:25:38+03:00",
+    "listTime": "2026-05-21T18:27:00+03:00",
     "images": [
       "https://cdn.realt.by/img/55/51f36fa0-5a54-11f0-b555-0242ac120003",
       "https://cdn.realt.by/img/55/54512e68-5a54-11f0-91c8-0242ac120003",
@@ -2105,7 +2105,7 @@
       "https://cdn.realt.by/img/55/518eccd0-5a54-11f0-8c89-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-17T09:17:35.588Z"
+    "lastSeenAt": "2026-05-22T10:32:27.683Z"
   },
   {
     "adId": 3763750,
@@ -2974,7 +2974,7 @@
       "https://cdn.realt.by/img/55/8036fdf6-e568-11f0-8ec0-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-21T10:50:37.480Z"
+    "lastSeenAt": "2026-05-22T10:32:27.683Z"
   },
   {
     "adId": 3442299,
@@ -3372,7 +3372,7 @@
       "https://cdn.realt.by/img/55/163d2d7c-db2b-11f0-941a-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-05-22T10:32:27.683Z"
   },
   {
     "adId": 3162131,
@@ -4526,7 +4526,7 @@
       "https://cdn.realt.by/img/55/cdb79422-3ef1-11f1-87cb-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-16T09:05:31.864Z"
+    "lastSeenAt": "2026-05-22T10:32:27.683Z"
   },
   {
     "adId": 3750931,
@@ -5084,7 +5084,7 @@
       "https://cdn.realt.by/img/55/924dc5d0-0af6-11f0-8b48-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-05-22T10:32:27.683Z"
   },
   {
     "adId": 4014584,
@@ -5875,7 +5875,7 @@
       "https://static.realt.by/thumb/c/430x374/c5f662a11b216aff1dcebc6285dd1e9e/b7/i/11013c3efib7/93fc9e448f.jpeg"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-21T10:50:37.480Z"
+    "lastSeenAt": "2026-05-22T10:32:27.683Z"
   },
   {
     "adId": 3878873,
@@ -10477,7 +10477,7 @@
       "https://cdn.realt.by/img/55/13ce0d88-4f5a-11f1-85bb-0242ac120003"
     ],
     "firstSeenAt": "2026-05-14T10:05:10.115Z",
-    "lastSeenAt": "2026-05-15T10:23:27.895Z"
+    "lastSeenAt": "2026-05-22T10:32:27.683Z"
   },
   {
     "adId": 4123420,
@@ -11006,6 +11006,6 @@
       "https://cdn.realt.by/img/55/918df746-5500-11f1-8edc-0242ac120003"
     ],
     "firstSeenAt": "2026-05-21T10:50:37.480Z",
-    "lastSeenAt": "2026-05-21T10:50:37.480Z"
+    "lastSeenAt": "2026-05-22T10:32:27.683Z"
   }
 ]
