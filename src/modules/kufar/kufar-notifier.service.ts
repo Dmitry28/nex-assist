@@ -105,6 +105,7 @@ export class KufarNotifierService {
       (listing, index, total) => ({
         caption: buildListingCaption({ listing, header, index, total }),
         images: listing.images,
+        coordinates: listing.coordinates,
       }),
       l => l.adId,
       l => l.title,
@@ -122,6 +123,7 @@ export class KufarNotifierService {
       (change, index, total) => ({
         caption: buildPriceChangeCaption({ change, header, index, total }),
         images: change.listing.images,
+        coordinates: change.listing.coordinates,
       }),
       c => c.listing.adId,
       c => c.listing.title,
@@ -132,7 +134,11 @@ export class KufarNotifierService {
   /** Generic send loop — iterates items, tracks delivered/failed, reports failures. */
   private async sendBatch<T>(
     items: T[],
-    toMessage: (item: T, index: number, total: number) => { caption: string; images: string[] },
+    toMessage: (
+      item: T,
+      index: number,
+      total: number,
+    ) => { caption: string; images: string[]; coordinates?: { lat: number; lon: number } },
     getId: (item: T) => number,
     getTitle: (item: T) => string,
     failedLabel: string,
@@ -143,8 +149,8 @@ export class KufarNotifierService {
     this.logger.log(`Sending ${items.length} ${failedLabel}`);
 
     for (const [i, item] of items.entries()) {
-      const { caption, images } = toMessage(item, i + 1, items.length);
-      const ok = await this.sendListing({ caption, images });
+      const { caption, images, coordinates } = toMessage(item, i + 1, items.length);
+      const ok = await this.sendListing({ caption, images, coordinates });
       if (ok) notified.add(getId(item));
       else failed.push(item);
     }
@@ -164,10 +170,21 @@ export class KufarNotifierService {
   private async sendListing({
     caption,
     images,
+    coordinates,
   }: {
     caption: string;
     images: string[];
+    coordinates?: { lat: number; lon: number };
   }): Promise<boolean> {
+    const ok = await this.sendListingBody(caption, images);
+    // Location pin failures are tolerated — main listing already delivered.
+    if (ok && coordinates) {
+      await this.telegram.sendLocation(this.chatId, coordinates.lat, coordinates.lon);
+    }
+    return ok;
+  }
+
+  private async sendListingBody(caption: string, images: string[]): Promise<boolean> {
     const photos = images.slice(0, TELEGRAM_MEDIA_GROUP_LIMIT);
     const captionFor1024 = truncateText(caption); // photo/media-group: 1024-char limit
 

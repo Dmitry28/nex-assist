@@ -64,6 +64,14 @@ export class TelegramService implements OnModuleInit {
     return this.sendMessage(chatId, caption);
   }
 
+  async sendLocation(chatId: string, latitude: number, longitude: number): Promise<boolean> {
+    if (!this.bot) return this.dryRun('sendLocation', chatId, `${latitude},${longitude}`);
+    await this.throttle(chatId);
+    return this.withRetry(() =>
+      this.bot!.sendLocation(chatId, latitude, longitude).then(() => undefined),
+    );
+  }
+
   async sendMediaGroup(chatId: string, media: TelegramBot.InputMediaPhoto[]): Promise<boolean> {
     if (!this.bot) return this.dryRun('sendMediaGroup', chatId, `${media.length} photos`);
     await this.throttle(chatId);
