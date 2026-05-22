@@ -48,7 +48,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/016a0133-bb66-4f53-a356-2dc0224af928.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:43:08.825Z",
-    "lastSeenAt": "2026-05-21T10:45:07.179Z"
+    "lastSeenAt": "2026-05-22T10:31:29.544Z"
   },
   {
     "adId": 1067405190,
@@ -71,7 +71,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8f5b0ef2-e279-42d8-b930-f49f866a3342.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:43:08.825Z",
-    "lastSeenAt": "2026-05-21T10:45:07.179Z"
+    "lastSeenAt": "2026-05-22T10:31:29.544Z"
   },
   {
     "adId": 1063816828,
@@ -94,14 +94,14 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fe3aaa67-820b-4056-a5c1-3f46eb49bd38.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:43:08.825Z",
-    "lastSeenAt": "2026-05-21T10:45:07.179Z"
+    "lastSeenAt": "2026-05-22T10:31:29.544Z"
   },
   {
     "adId": 1060088409,
     "link": "https://re.kufar.by/vi/1060088409",
     "title": "Сдам квартиру на длительный срок",
     "priceByn": 1200,
-    "priceUsd": 440,
+    "priceUsd": 439,
     "address": "Виктора Саяпина ул, 4Б, Гродно, Гродненская область",
     "rooms": 2,
     "area": 79,
@@ -122,6 +122,6 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/180ba6d0-7fba-4180-a758-613e9ec47911.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:43:08.825Z",
-    "lastSeenAt": "2026-05-21T10:45:07.179Z"
+    "lastSeenAt": "2026-05-22T10:31:29.544Z"
   }
 ]
