@@ -1519,7 +1519,7 @@
       "https://cdn.realt.by/img/55/f79fe2ca-774c-11f0-8833-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-22T10:32:27.681Z"
+    "lastSeenAt": "2026-05-23T09:17:41.483Z"
   },
   {
     "adId": 3770113,
@@ -1941,5 +1941,29 @@
     ],
     "firstSeenAt": "2026-05-20T10:40:41.805Z",
     "lastSeenAt": "2026-05-21T10:50:37.477Z"
+  },
+  {
+    "adId": 4132749,
+    "uuid": "314e2b30-5668-11f1-98bf-7d269c16dd44",
+    "link": "https://realt.by/sale-plots/object/4132749/",
+    "title": "Гродно",
+    "description": "Дачный обработанный участок, без построек,рядом лес и р. Неман",
+    "priceByn": 15023,
+    "priceUsd": 5500,
+    "address": "Гродно",
+    "plotArea": 4.84,
+    "seller": "Валерий",
+    "listTime": "2026-05-23T10:13:26+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/be7c4d94-5667-11f1-b79a-0242ac120003",
+      "https://cdn.realt.by/img/55/be8ccb7e-5667-11f1-b4ed-0242ac120003",
+      "https://cdn.realt.by/img/55/bead180c-5667-11f1-a378-0242ac120003",
+      "https://cdn.realt.by/img/55/beba7498-5667-11f1-bce5-0242ac120003",
+      "https://cdn.realt.by/img/55/bef526ce-5667-11f1-bcd3-0242ac120003",
+      "https://cdn.realt.by/img/55/bf051322-5667-11f1-a379-0242ac120003",
+      "https://cdn.realt.by/img/55/bf1213f6-5667-11f1-a2d7-0242ac120003"
+    ],
+    "firstSeenAt": "2026-05-23T09:17:41.483Z",
+    "lastSeenAt": "2026-05-23T09:17:41.483Z"
   }
 ]
