@@ -914,7 +914,7 @@
       "https://cdn.realt.by/img/55/2b8fe780-1d22-11f1-9ee3-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-05-25T11:16:47.329Z"
   },
   {
     "adId": 3667318,
@@ -2531,7 +2531,7 @@
       "https://cdn.realt.by/img/55/a8909146-2d9c-11f1-8785-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-05-25T11:16:47.329Z"
   },
   {
     "adId": 3832372,
@@ -3137,7 +3137,7 @@
       "https://cdn.realt.by/img/55/3f7c9094-56a3-11f1-860f-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-24T09:22:42.702Z"
+    "lastSeenAt": "2026-05-25T11:16:47.329Z"
   },
   {
     "adId": 3796543,
@@ -3907,7 +3907,7 @@
       "https://cdn.realt.by/img/55/1ba0744c-2a84-11f1-8bff-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-05-25T11:16:47.329Z"
   },
   {
     "adId": 4078103,
@@ -4528,7 +4528,7 @@
       "https://cdn.realt.by/img/55/cdb79422-3ef1-11f1-87cb-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-24T09:22:42.702Z"
+    "lastSeenAt": "2026-05-25T11:16:47.329Z"
   },
   {
     "adId": 3750931,
@@ -6237,14 +6237,14 @@
     "link": "https://realt.by/sale-cottages/object/4097445/",
     "title": "дом в г. Гродно ул. Л. Чайкиной",
     "description": "Продается дом в г. Гродно, ул. Чайкиной, без отделки. Хорошее месторасположение, развитая инфраструктура, в шаговой доступности продовольственные магазины, остановки общественного транспорта, недалеко школа, детский сад, до центра города 5 минут, доброжелательные соседи.",
-    "priceByn": 169116,
-    "priceUsd": 60000,
+    "priceByn": 156784,
+    "priceUsd": 57000,
     "address": "Гродно Чайкиной ул.",
     "area": 56.8,
     "plotArea": 6,
     "yearBuilt": 1960,
     "seller": "Елена",
-    "listTime": "2026-04-16T13:10:58+03:00",
+    "listTime": "2026-05-25T13:05:13+03:00",
     "images": [
       "https://cdn.realt.by/img/55/9be19634-3977-11f1-ba4b-0242ac120003",
       "https://cdn.realt.by/img/55/9bcbfe28-3977-11f1-8df3-0242ac120003",
@@ -6253,7 +6253,7 @@
       "https://cdn.realt.by/img/55/9b8fdac4-3977-11f1-9e62-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-05-25T11:16:47.329Z"
   },
   {
     "adId": 4010785,
@@ -11009,5 +11009,47 @@
     ],
     "firstSeenAt": "2026-05-21T10:50:37.480Z",
     "lastSeenAt": "2026-05-22T10:32:27.683Z"
+  },
+  {
+    "adId": 4134811,
+    "uuid": "0c711b60-5816-11f1-9d45-8b63f0dfcc9f",
+    "link": "https://realt.by/sale-cottages/object/4134811/",
+    "title": "Продаётся новый современный дом в агрогородке Путришки — всего 5 минут от Гродно!",
+    "description": "Новое незавершенное законсервированное капитальное строение (двухэтажный жилой дом) общей площадью 297 кв. м с подвалом и земельным участком площадью 21 соток",
+    "priceByn": 425000,
+    "priceUsd": 154512,
+    "address": "Путришки Фестивальная ул. 23",
+    "area": 297,
+    "plotArea": 21,
+    "yearBuilt": 2026,
+    "seller": "Кватэра",
+    "listTime": "2026-05-25T13:05:12+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/d50a2340-5817-11f1-92d1-0242ac120003",
+      "https://cdn.realt.by/img/55/50184036-5817-11f1-8ed4-0242ac120003",
+      "https://cdn.realt.by/img/55/52b41234-5817-11f1-bb49-0242ac120003",
+      "https://cdn.realt.by/img/55/55c688da-5817-11f1-b940-0242ac120003",
+      "https://cdn.realt.by/img/55/a315d8e8-5817-11f1-942c-0242ac120003",
+      "https://cdn.realt.by/img/55/a8f01738-5817-11f1-974a-0242ac120003",
+      "https://cdn.realt.by/img/55/ada3ec28-5817-11f1-87f4-0242ac120003",
+      "https://cdn.realt.by/img/55/b269a392-5817-11f1-b3c2-0242ac120003",
+      "https://cdn.realt.by/img/55/6428a37c-5817-11f1-bb44-0242ac120003",
+      "https://cdn.realt.by/img/55/5ad23a9a-5817-11f1-8000-0242ac120003",
+      "https://cdn.realt.by/img/55/73abcbda-5817-11f1-b6c2-0242ac120003",
+      "https://cdn.realt.by/img/55/7c9da15a-5817-11f1-86b6-0242ac120003",
+      "https://cdn.realt.by/img/55/5fdc72b2-5817-11f1-aea0-0242ac120003",
+      "https://cdn.realt.by/img/55/68c3cbc8-5817-11f1-8178-0242ac120003",
+      "https://cdn.realt.by/img/55/6fa46024-5817-11f1-bf0d-0242ac120003",
+      "https://cdn.realt.by/img/55/76ce3064-5817-11f1-8c16-0242ac120003",
+      "https://cdn.realt.by/img/55/81c39856-5817-11f1-8a44-0242ac120003",
+      "https://cdn.realt.by/img/55/856aec34-5817-11f1-857e-0242ac120003",
+      "https://cdn.realt.by/img/55/8a8889b0-5817-11f1-a8c1-0242ac120003",
+      "https://cdn.realt.by/img/55/973a6eb2-5817-11f1-96ed-0242ac120003",
+      "https://cdn.realt.by/img/55/9d95c374-5817-11f1-b30f-0242ac120003",
+      "https://cdn.realt.by/img/55/8e5baa5e-5817-11f1-ba1c-0242ac120003",
+      "https://cdn.realt.by/img/55/92ea30f4-5817-11f1-bcee-0242ac120003"
+    ],
+    "firstSeenAt": "2026-05-25T11:16:47.329Z",
+    "lastSeenAt": "2026-05-25T11:16:47.329Z"
   }
 ]
