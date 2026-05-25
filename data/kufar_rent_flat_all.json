@@ -13,7 +13,7 @@
     "isSuperhost": true,
     "rating": 1,
     "ratingScoresCount": 63,
-    "listTime": "2026-05-22T10:23:10Z",
+    "listTime": "2026-05-24T10:23:10Z",
     "images": [
       "https://rms.kufar.by/v1/gallery/adim1/19557af8-ed96-48f1-82a4-c1ce14562887.jpg",
       "https://rms.kufar.by/v1/gallery/adim1/3f486676-1d2e-4299-aa1b-b65935496647.jpg",
@@ -33,7 +33,7 @@
       "https://rms.kufar.by/v1/gallery/adim1/d2489f23-b859-4baa-b083-5679bea6c9ab.jpg"
     ],
     "firstSeenAt": "2026-05-19T09:38:29.012Z",
-    "lastSeenAt": "2026-05-22T13:45:19.135Z"
+    "lastSeenAt": "2026-05-25T09:46:50.271Z"
   },
   {
     "adId": 1061321943,
@@ -49,7 +49,7 @@
     "isSuperhost": false,
     "rating": 1,
     "ratingScoresCount": 5,
-    "listTime": "2026-05-15T09:37:37Z",
+    "listTime": "2026-05-22T18:45:36Z",
     "images": [
       "https://rms.kufar.by/v1/gallery/adim1/5e941052-397d-4a14-971b-6a1625464aa0.jpg",
       "https://rms.kufar.by/v1/gallery/adim1/bdad4f5d-1c37-4c5f-bcb1-78a9745cec89.jpg",
@@ -66,7 +66,7 @@
       "https://rms.kufar.by/v1/gallery/adim1/2970dee9-7194-4b08-b9e7-0ff17de31c9b.jpg"
     ],
     "firstSeenAt": "2026-05-19T09:38:29.012Z",
-    "lastSeenAt": "2026-05-22T13:45:19.135Z"
+    "lastSeenAt": "2026-05-25T09:46:50.271Z"
   },
   {
     "adId": 1065503834,
@@ -95,6 +95,6 @@
       "https://rms.kufar.by/v1/gallery/adim1/a1a41e8b-3a3d-4ebc-8465-3a468db2e39c.jpg"
     ],
     "firstSeenAt": "2026-05-19T09:38:29.012Z",
-    "lastSeenAt": "2026-05-22T13:45:19.135Z"
+    "lastSeenAt": "2026-05-25T09:46:50.271Z"
   }
 ]

@@ -47,7 +47,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-05-22T13:45:17.459Z"
+    "lastSeenAt": "2026-05-25T09:46:47.659Z"
   },
   {
     "adId": 1062002915,
@@ -624,7 +624,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3989f57d-fcc9-4ae7-89eb-138480a835d7.jpg"
     ],
     "firstSeenAt": "2026-04-03T10:00:31.323Z",
-    "lastSeenAt": "2026-05-13T10:02:46.619Z"
+    "lastSeenAt": "2026-05-25T09:46:47.659Z"
   },
   {
     "adId": 1063237673,
@@ -3362,5 +3362,87 @@
     ],
     "firstSeenAt": "2026-05-22T13:45:17.459Z",
     "lastSeenAt": "2026-05-22T13:45:17.459Z"
+  },
+  {
+    "adId": 1070157473,
+    "link": "https://re.kufar.by/vi/1070157473",
+    "title": "Гараж",
+    "description": "Хорошее состояние, подробности обращайтесь по телефону",
+    "priceByn": 20000,
+    "priceUsd": 7271,
+    "address": "Понемуньская ул, Гродно, Гродненская область",
+    "area": 18.1,
+    "seller": "Павел",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Видеонаблюдение",
+      "Смотровая яма",
+      "Подвал",
+      "Наземная",
+      "Отсутствует"
+    ],
+    "coordinates": {
+      "lat": 53.666045,
+      "lon": 23.869495
+    },
+    "listTime": "2026-05-24T16:58:46Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/03078903-75bf-48b6-b73b-0fa8d6b5de47.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9b6c012a-c5f0-45f1-a317-65689d896766.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f2a25bc6-350e-455e-afec-de9b5d894b49.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eee28d59-6640-4521-a4ab-2c556844e31f.jpg"
+    ],
+    "firstSeenAt": "2026-05-25T09:46:47.659Z",
+    "lastSeenAt": "2026-05-25T09:46:47.659Z"
+  },
+  {
+    "adId": 1070023403,
+    "link": "https://re.kufar.by/vi/1070023403",
+    "title": "Гараж",
+    "description": "Тройной гараж. Три ямы. Две ямы на всю длинную гаража, одна яма под всем гаражом.",
+    "priceByn": 41259,
+    "priceUsd": 15000,
+    "address": "Венечная ул, 2Аблок52к5210, Гродно, Гродненская область",
+    "area": 70,
+    "seller": "Владимир",
+    "propertyType": "Гараж",
+    "coordinates": {
+      "lat": 53.666545621378525,
+      "lon": 23.76030929673743
+    },
+    "listTime": "2026-05-23T16:24:40Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/876934ce-3da4-4e6a-a01b-c4e626940f18.jpg"
+    ],
+    "firstSeenAt": "2026-05-25T09:46:47.659Z",
+    "lastSeenAt": "2026-05-25T09:46:47.659Z"
+  },
+  {
+    "adId": 1060279559,
+    "link": "https://re.kufar.by/vi/1060279559",
+    "title": "Гараж. Грандичи, Меречская Застава",
+    "description": "Гаражный кооператив \"Автолюбитель-Гродно\"\nПодъезд в гаражу асфальтирован.\nЕсть возможность подключить свет\nПол не бетонировали, чтобы иметь возможност",
+    "priceByn": 8527,
+    "priceUsd": 3100,
+    "address": "Меречская Застава ул, 1А, Гродно, Гродненская область",
+    "area": 16,
+    "seller": "Илья",
+    "propertyType": "Гараж",
+    "features": [
+      "Наземная",
+      "Отсутствует"
+    ],
+    "coordinates": {
+      "lat": 53.730949,
+      "lon": 23.825989
+    },
+    "listTime": "2026-05-23T12:01:10Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/31ff30b3-30ed-4dc7-8a8b-286defe97a28.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b2c2128a-7d40-487f-ac8f-8596c6daa12a.jpg"
+    ],
+    "firstSeenAt": "2026-05-25T09:46:47.659Z",
+    "lastSeenAt": "2026-05-25T09:46:47.659Z"
   }
 ]
