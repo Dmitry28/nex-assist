@@ -24,6 +24,20 @@ interface AvByMeta {
   lastRunAt?: string;
 }
 
+/** Treat 0 and undefined as equivalent "no price" to avoid false price-change detections. */
+export const effectivePrice = (p: number | undefined): number | undefined =>
+  p !== undefined && p > 0 ? p : undefined;
+
+/** Single source of truth for price-change detection — used in both scrape and persist.
+ * Both BYN and USD must change: if either is stable, the seller didn't change the price
+ * (the other just fluctuated with the exchange rate). */
+export const hasPriceChanged = (
+  prev: { priceUsd: number; priceByn: number },
+  current: { priceUsd: number; priceByn: number },
+): boolean =>
+  effectivePrice(prev.priceByn) !== effectivePrice(current.priceByn) &&
+  effectivePrice(prev.priceUsd) !== effectivePrice(current.priceUsd);
+
 const isAvByMeta = (v: unknown): v is AvByMeta =>
   typeof v === 'object' &&
   v !== null &&
@@ -153,7 +167,7 @@ export class AvByService {
         const prev = previousMap.get(listing.id);
         if (!prev) {
           newListings.push(listing);
-        } else if (prev.priceUsd !== listing.priceUsd || prev.priceByn !== listing.priceByn) {
+        } else if (hasPriceChanged(prev, listing)) {
           priceChanges.push({
             listing,
             oldPriceUsd: prev.priceUsd,
@@ -252,8 +266,7 @@ export class AvByService {
         }
         continue;
       }
-      const priceChanged = prev.priceUsd !== listing.priceUsd || prev.priceByn !== listing.priceByn;
-      if (priceChanged) {
+      if (hasPriceChanged(prev, listing)) {
         if (notifiedPriceChanges.has(listing.id)) {
           updated.set(listing.id, {
             ...listing,
