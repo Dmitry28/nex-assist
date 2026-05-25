@@ -10,7 +10,11 @@ export const RUN_TIMEOUT_MS = 5 * 60 * 1000;
 /** Snapshot file path for the ghb.by price list. */
 export const DATA_FILE = './data/ghb_apartments_all.json';
 
+/** Meta file — stores the hash of the /apartments/ page content block so we can ping on change. */
+export const META_FILE = './data/ghb_meta.json';
+
 /** Telegram notification section headers. */
 export const NOTIFICATION_HEADERS = {
   new: '🆕 Новый объект',
+  apartmentsPageChanged: '👀 Страница «Продажа квартир и домов» обновилась',
 } as const;

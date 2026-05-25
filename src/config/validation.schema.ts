@@ -83,6 +83,7 @@ export const validationSchema = Joi.object({
 
   // ghb.by module — ОАО «Гродножилстрой» Прейскурант РБ (new apartments / offices)
   GHB_PRICE_LIST_URL: Joi.string().uri().default(GHB_DEFAULTS.PRICE_LIST_URL),
+  GHB_APARTMENTS_PAGE_URL: Joi.string().uri().default(GHB_DEFAULTS.APARTMENTS_PAGE_URL),
   GHB_SCRAPE_CRON: Joi.string().default(GHB_DEFAULTS.SCRAPE_CRON),
   TELEGRAM_GHB_CHAT_ID: Joi.string().optional(),
 });

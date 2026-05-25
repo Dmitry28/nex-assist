@@ -65,6 +65,13 @@ export class GhbParserService {
     return parsePriceListHtml(html);
   }
 
+  /** Fetch a ghb.by page and return its content-block HTML (or null on failure). */
+  async fetchPageContent(url: string): Promise<string | null> {
+    const html = await this.fetchText(url);
+    if (!html) return null;
+    return extractContentBlock(html);
+  }
+
   private async fetchText(url: string): Promise<string | null> {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
@@ -158,6 +165,19 @@ const normalizeUrl = (id: number, type: GhbItemType): string => {
  * Parse the full ghb.by price-list HTML page into a list of items.
  * Exported for unit tests — pure function with no side effects.
  */
+/**
+ * Extract the `<div class="content">…</div>` block from a ghb.by page and return
+ * a normalized, tag-stripped representation. Used as the change-detection signal
+ * for the /apartments/ placeholder page — when the content text changes, we ping.
+ *
+ * Returns null if no content block is found (treat as "fetch failure", don't notify).
+ */
+export const extractContentBlock = (html: string): string | null => {
+  const match = html.match(/<div\s+class="content"\s*>([\s\S]*?)<\/div>/i);
+  if (!match) return null;
+  return stripTags(match[1]);
+};
+
 export const parsePriceListHtml = (html: string): GhbListing[] => {
   const anchors = collectAnchors(html);
   const listings: GhbListing[] = [];
