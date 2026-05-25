@@ -1,6 +1,10 @@
 import { ConflictException, Injectable, Logger } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
+import { createHash } from 'crypto';
+import { promises as fs } from 'fs';
+import path from 'path';
 import { SnapshotService } from '../../common/snapshot.service';
-import { DATA_FILE, RUN_TIMEOUT_MS } from './constants';
+import { DATA_FILE, META_FILE, RUN_TIMEOUT_MS } from './constants';
 import {
   isGhbSnapshotEntry,
   type GhbListing,
@@ -9,6 +13,15 @@ import {
 } from './dto/ghb-listing.dto';
 import { GhbNotifierService, type GhbNotifyResult } from './ghb-notifier.service';
 import { GhbParserService } from './ghb-parser.service';
+
+interface GhbMeta {
+  apartmentsPageHash?: string;
+}
+
+const isGhbMeta = (v: unknown): v is GhbMeta =>
+  typeof v === 'object' &&
+  v !== null &&
+  (!('apartmentsPageHash' in v) || typeof (v as GhbMeta).apartmentsPageHash === 'string');
 
 /**
  * Orchestrates the ghb.by price-list scrape cycle:
@@ -29,6 +42,7 @@ export class GhbService {
     private readonly parser: GhbParserService,
     private readonly snapshot: SnapshotService,
     private readonly notifier: GhbNotifierService,
+    private readonly config: ConfigService,
   ) {}
 
   async run(): Promise<GhbResult> {
@@ -41,7 +55,14 @@ export class GhbService {
     }, RUN_TIMEOUT_MS);
 
     try {
-      return await this.scrape();
+      const result = await this.scrape();
+      // Best-effort: don't let a /apartments/ watch failure abort the price-list result.
+      try {
+        await this.checkApartmentsPage();
+      } catch (err) {
+        this.logger.error('Apartments-page watch failed', err);
+      }
+      return result;
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
       this.logger.error('Critical scrape failure', error);
@@ -145,5 +166,63 @@ export class GhbService {
 
     await this.snapshot.write(DATA_FILE, [...updatedMap.values()]);
     this.logger.log(`Snapshot saved (${updatedMap.size} entries)`);
+  }
+
+  /**
+   * Watch the /apartments/ page. Currently it's a placeholder ("Извините, … готовится к публикации");
+   * we hash the content block and notify when the hash changes. Silent baseline on first run.
+   * Once content appears, we'll revisit parsing.
+   */
+  private async checkApartmentsPage(): Promise<void> {
+    const url = this.config.getOrThrow<string>('ghb.apartmentsPageUrl');
+    const content = await this.parser.fetchPageContent(url);
+    if (content === null) {
+      this.logger.warn(`Apartments page: fetch/content-extract failed — skipping watch (${url})`);
+      return;
+    }
+
+    const hash = createHash('sha256').update(content).digest('hex').slice(0, 16);
+    const meta = await this.readMeta();
+
+    if (!meta.apartmentsPageHash) {
+      await this.writeMeta({ ...meta, apartmentsPageHash: hash });
+      this.logger.log(`Apartments page: baseline hash saved (${hash})`);
+      return;
+    }
+
+    if (meta.apartmentsPageHash === hash) {
+      this.logger.log(`Apartments page: unchanged (${hash})`);
+      return;
+    }
+
+    this.logger.log(`Apartments page: changed (${meta.apartmentsPageHash} → ${hash})`);
+    const delivered = await this.notifier.notifyApartmentsPageChanged(url);
+    // Persist new hash only after successful notification — retry next run on failure.
+    if (delivered) await this.writeMeta({ ...meta, apartmentsPageHash: hash });
+  }
+
+  private async readMeta(): Promise<GhbMeta> {
+    try {
+      const raw = await fs.readFile(META_FILE, 'utf8');
+      const parsed: unknown = JSON.parse(raw);
+      return isGhbMeta(parsed) ? parsed : {};
+    } catch (err) {
+      if (
+        err instanceof Error &&
+        'code' in err &&
+        (err as NodeJS.ErrnoException).code === 'ENOENT'
+      ) {
+        return {};
+      }
+      this.logger.warn(`Failed to read ${META_FILE}, treating as empty`, err);
+      return {};
+    }
+  }
+
+  private async writeMeta(meta: GhbMeta): Promise<void> {
+    await fs.mkdir(path.dirname(META_FILE), { recursive: true });
+    const tmp = `${META_FILE}.tmp`;
+    await fs.writeFile(tmp, JSON.stringify(meta, null, 2));
+    await fs.rename(tmp, META_FILE);
   }
 }

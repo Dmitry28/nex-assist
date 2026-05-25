@@ -56,6 +56,19 @@ export class GhbNotifierService {
     if (!ok) this.logger.warn('Failed to send ghb.by error notification');
   }
 
+  /** Notify when the /apartments/ placeholder page changes. Returns true if delivered. */
+  async notifyApartmentsPageChanged(url: string): Promise<boolean> {
+    if (!this.chatId) return false;
+    const message = [
+      `<b>${NOTIFICATION_HEADERS.apartmentsPageChanged}</b>`,
+      '',
+      `<a href="${url}">🔗 Открыть страницу</a>`,
+    ].join('\n');
+    const ok = await this.telegram.sendMessage(this.chatId, message);
+    if (!ok) this.logger.warn('Failed to send ghb.by apartments-page-change notification');
+    return ok;
+  }
+
   private async sendListings(listings: GhbListing[]): Promise<Set<string>> {
     const notified = new Set<string>();
     if (listings.length === 0) return notified;
