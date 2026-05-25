@@ -3,6 +3,7 @@ import {
   APP_DEFAULTS,
   AV_BY_DEFAULTS,
   BID_CARS_DEFAULTS,
+  GHB_DEFAULTS,
   KUFAR_DEFAULTS,
   KUFAR_RENT_FLAT_DEFAULTS,
   KUFAR_RENT_LONG_DEFAULTS,
@@ -79,4 +80,9 @@ export const validationSchema = Joi.object({
   POGORANY_STORE_API_URL: Joi.string().uri().default(POGORANY_DEFAULTS.STORE_API_URL),
   POGORANY_SCRAPE_CRON: Joi.string().default(POGORANY_DEFAULTS.SCRAPE_CRON),
   TELEGRAM_POGORANY_CHAT_ID: Joi.string().optional(),
+
+  // ghb.by module — ОАО «Гродножилстрой» Прейскурант РБ (new apartments / offices)
+  GHB_PRICE_LIST_URL: Joi.string().uri().default(GHB_DEFAULTS.PRICE_LIST_URL),
+  GHB_SCRAPE_CRON: Joi.string().default(GHB_DEFAULTS.SCRAPE_CRON),
+  TELEGRAM_GHB_CHAT_ID: Joi.string().optional(),
 });

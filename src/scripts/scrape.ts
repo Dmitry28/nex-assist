@@ -18,6 +18,7 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from '../app.module';
 import { AvByService } from '../modules/av-by/av-by.service';
 import { BidCarsService } from '../modules/bid-cars/bid-cars.service';
+import { GhbService } from '../modules/ghb/ghb.service';
 import { KufarService } from '../modules/kufar/kufar.service';
 import { KufarRentFlatService } from '../modules/kufar-rent-flat/kufar-rent-flat.service';
 import { KufarRentLongService } from '../modules/kufar-rent-long/kufar-rent-long.service';
@@ -34,6 +35,7 @@ type Module =
   | 'realt'
   | 'av-by'
   | 'pogorany'
+  | 'ghb'
   | 'all';
 
 function parseModule(): Module {
@@ -47,11 +49,12 @@ function parseModule(): Module {
     arg === 'kufar-rent-long' ||
     arg === 'realt' ||
     arg === 'av-by' ||
-    arg === 'pogorany'
+    arg === 'pogorany' ||
+    arg === 'ghb'
   )
     return arg;
   console.error(
-    `Unknown module: "${arg}". Valid options: land, bid-cars, kufar, kufar-rent-flat, kufar-rent-long, realt, av-by, pogorany`,
+    `Unknown module: "${arg}". Valid options: land, bid-cars, kufar, kufar-rent-flat, kufar-rent-long, realt, av-by, pogorany, ghb`,
   );
   process.exit(1);
 }
@@ -128,6 +131,14 @@ async function bootstrap(): Promise<void> {
         await app.get(PogoranyService).run();
       } catch (err) {
         console.error('Pogorany scrape failed:', err);
+      }
+    }
+
+    if (target === 'all' || target === 'ghb') {
+      try {
+        await app.get(GhbService).run();
+      } catch (err) {
+        console.error('Ghb scrape failed:', err);
       }
     }
   } finally {
