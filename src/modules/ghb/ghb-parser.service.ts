@@ -18,7 +18,7 @@ const ITEM_ANCHOR_RE =
  * Numeric price cell in BYN/m², e.g. "3 500", "3 150,0", "4 200".
  * Requires a thousand separator (space) — excludes plain 4-digit years like "2026".
  */
-const PRICE_CELL_RE = /\b\d{1,2}[\s ]+\d{3}(?:[.,]\d+)?\b/g;
+const PRICE_CELL_RE = /\b\d{1,2}\s+\d{3}(?:[.,]\d+)?\b/g;
 
 /** Inner table block inside one item's section — that's where price cells live. */
 const INNER_TABLE_RE = /<table\b[\s\S]*?<\/table>/gi;
@@ -28,8 +28,6 @@ const PARAGRAPH_RE = /<p\b[^>]*>([\s\S]*?)<\/p>/gi;
 
 const REGISTRATION_KEYWORD_RE =
   /(?:Онлайн|онлайн)\s+регистрац|Дата\s+начала\s+продаж|бронирование\s+квартир/i;
-
-const OFFICES_SECTION_MARKER = 'ОФИСНЫЕ ПОМЕЩЕНИЯ';
 
 const stripTags = (html: string): string =>
   html
@@ -48,7 +46,7 @@ const stripTags = (html: string): string =>
  * BYN/m² prices are rounded to whole rubles for the diff.
  */
 const parsePriceCell = (raw: string): number | undefined => {
-  const normalized = raw.replace(/[\s ]+/g, '').replace(',', '.');
+  const normalized = raw.replace(/\s+/g, '').replace(',', '.');
   const value = Number(normalized);
   if (!isFinite(value) || value <= 0) return undefined;
   return Math.round(value);
@@ -162,32 +160,20 @@ const normalizeUrl = (id: number, type: GhbItemType): string => {
  */
 export const parsePriceListHtml = (html: string): GhbListing[] => {
   const anchors = collectAnchors(html);
-  if (anchors.length === 0) return [];
-
-  const officesMarkerIdx = html.indexOf(OFFICES_SECTION_MARKER);
-
   const listings: GhbListing[] = [];
   for (const [i, anchor] of anchors.entries()) {
-    // Section text spans from this anchor's end to the next anchor's start.
     const sectionEnd = i + 1 < anchors.length ? anchors[i + 1].index : html.length;
     const section = html.slice(anchor.endIndex, sectionEnd);
-
-    // Re-classify by position: anchors after the "ОФИСНЫЕ ПОМЕЩЕНИЯ" marker are offices
-    // even if the URL path is /nedvizhimost-dogovor/, and vice versa.
-    const type: GhbItemType =
-      officesMarkerIdx >= 0 && anchor.index >= officesMarkerIdx ? 'office' : anchor.type;
-
     const range = extractPriceRange(section);
     listings.push({
-      url: normalizeUrl(anchor.id, type),
+      url: normalizeUrl(anchor.id, anchor.type),
       id: anchor.id,
-      type,
+      type: anchor.type,
       title: anchor.title,
       onlineRegistration: extractOnlineRegistration(section),
       minPricePerM2Byn: range?.min,
       maxPricePerM2Byn: range?.max,
     });
   }
-
   return listings;
 };

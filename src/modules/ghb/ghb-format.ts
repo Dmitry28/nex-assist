@@ -1,5 +1,4 @@
 import { LOCALE, TIMEZONE } from '../../common/utils/locale';
-import { NOTIFICATION_HEADERS } from './constants';
 import type { GhbListing, GhbResult } from './dto/ghb-listing.dto';
 
 const TYPE_LABEL: Record<GhbListing['type'], string> = {
@@ -8,12 +7,11 @@ const TYPE_LABEL: Record<GhbListing['type'], string> = {
 };
 
 const formatPriceRangeByn = (min?: number, max?: number): string | undefined => {
-  if (min === undefined && max === undefined) return undefined;
-  if (min !== undefined && max !== undefined && min !== max) {
-    return `${min.toLocaleString(LOCALE)}–${max.toLocaleString(LOCALE)} BYN / м²`;
-  }
-  const value = (min ?? max)!;
-  return `${value.toLocaleString(LOCALE)} BYN / м²`;
+  const lo = min ?? max;
+  const hi = max ?? min;
+  if (lo === undefined || hi === undefined) return undefined;
+  if (lo === hi) return `${lo.toLocaleString(LOCALE)} BYN / м²`;
+  return `${lo.toLocaleString(LOCALE)}–${hi.toLocaleString(LOCALE)} BYN / м²`;
 };
 
 export interface ListingCaptionParams {
@@ -60,5 +58,3 @@ export const buildSummary = (result: GhbResult): string => {
 
   return lines.join('\n');
 };
-
-export const HEADERS = NOTIFICATION_HEADERS;
