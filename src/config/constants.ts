@@ -85,6 +85,13 @@ export const KUFAR_RENT_LONG_DEFAULTS = {
   SCRAPE_CRON: '0 9 * * *',
 } as const;
 
+export const GHB_DEFAULTS = {
+  /** "Прейскурант РБ" page on ghb.by — server-rendered HTML with all жилые/офисные объекты. */
+  PRICE_LIST_URL: 'https://ghb.by/ru/construction/price_apartments/',
+  /** Default cron: every day at 09:00 UTC (12:00 Minsk). Cron is wired off — trigger via POST. */
+  SCRAPE_CRON: '0 9 * * *',
+} as const;
+
 export const POGORANY_DEFAULTS = {
   /** Tilda store API — returns the full product list for the ЖК Погораны catalog. */
   STORE_API_URL: 'https://store.tildacdn.com/api/getproductslist/?storepartuid=856309636292',
