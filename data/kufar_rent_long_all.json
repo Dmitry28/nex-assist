@@ -30,7 +30,7 @@
     "adId": 1068542567,
     "link": "https://re.kufar.by/vi/1068542567",
     "title": "Сдам квартиру.Новостройка Грандичи",
-    "priceByn": 825,
+    "priceByn": 826,
     "priceUsd": 300,
     "address": "Виктора Саяпина ул, 12А, Гродно, Гродненская область",
     "rooms": 3,
@@ -50,13 +50,13 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/016a0133-bb66-4f53-a356-2dc0224af928.jpg"
     ],
     "firstSeenAt": "2026-05-19T09:38:55.213Z",
-    "lastSeenAt": "2026-05-25T09:47:04.704Z"
+    "lastSeenAt": "2026-05-26T09:56:32.750Z"
   },
   {
     "adId": 1067405190,
     "link": "https://re.kufar.by/vi/1067405190",
-    "title": "Сдам квартиру с июля, желательно молодым специалистам либо парам без животных",
-    "priceByn": 825,
+    "title": "СДАМ ЕВРОДВУШКУ С НОВЫМ РЕМОНТОМ",
+    "priceByn": 826,
     "priceUsd": 300,
     "address": "Виктора Саяпина ул, 12, Гродно, Гродненская область",
     "rooms": 1,
@@ -67,13 +67,13 @@
     "prepayment": "Месяц",
     "listTime": "2026-05-03T06:22:19Z",
     "images": [
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3136d282-daaf-4431-ae09-7364eccb6614.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/df3dbd85-0b80-4e6d-a7f9-06d984197d95.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3136d282-daaf-4431-ae09-7364eccb6614.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/90c0807b-ccf2-4eb5-ae9f-4ef49901ca27.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8f5b0ef2-e279-42d8-b930-f49f866a3342.jpg"
     ],
     "firstSeenAt": "2026-05-19T09:38:55.213Z",
-    "lastSeenAt": "2026-05-25T09:47:04.704Z"
+    "lastSeenAt": "2026-05-26T09:56:32.750Z"
   },
   {
     "adId": 1063816828,
@@ -96,7 +96,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fe3aaa67-820b-4056-a5c1-3f46eb49bd38.jpg"
     ],
     "firstSeenAt": "2026-05-19T09:38:55.213Z",
-    "lastSeenAt": "2026-05-25T09:47:04.704Z"
+    "lastSeenAt": "2026-05-26T09:56:32.750Z"
   },
   {
     "adId": 1060088409,
@@ -124,13 +124,13 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/180ba6d0-7fba-4180-a758-613e9ec47911.jpg"
     ],
     "firstSeenAt": "2026-05-19T09:38:55.213Z",
-    "lastSeenAt": "2026-05-25T09:47:04.704Z"
+    "lastSeenAt": "2026-05-26T09:56:32.750Z"
   },
   {
     "adId": 1069998358,
     "link": "https://re.kufar.by/vi/1069998358",
     "title": "Квартира",
-    "priceByn": 908,
+    "priceByn": 909,
     "priceUsd": 330,
     "address": "Виктора Глухова ул, 3, Гродно, Гродненская область",
     "rooms": 2,
@@ -156,6 +156,6 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/28a1d1bf-5587-4a79-8d20-362ef53762fa.jpg"
     ],
     "firstSeenAt": "2026-05-25T09:47:04.704Z",
-    "lastSeenAt": "2026-05-25T09:47:04.704Z"
+    "lastSeenAt": "2026-05-26T09:56:32.750Z"
   }
 ]

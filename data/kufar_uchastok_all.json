@@ -215,7 +215,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4726f432-6c88-499e-843c-386b62e74a79.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-05-25T09:46:47.661Z"
+    "lastSeenAt": "2026-05-26T09:56:26.498Z"
   },
   {
     "adId": 1039071483,
@@ -1622,7 +1622,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/521fad65-df6d-44df-b80e-ff715b0ad1f5.jpg"
     ],
     "firstSeenAt": "2026-04-05T16:51:33.361Z",
-    "lastSeenAt": "2026-05-04T09:35:47.295Z"
+    "lastSeenAt": "2026-05-26T09:56:26.498Z"
   },
   {
     "adId": 1063723127,
@@ -2223,7 +2223,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/92c8dec1-5c23-4459-b592-a624d87fe5bb.jpg"
     ],
     "firstSeenAt": "2026-04-12T08:07:35.869Z",
-    "lastSeenAt": "2026-05-25T09:46:47.661Z"
+    "lastSeenAt": "2026-05-26T09:56:26.498Z"
   },
   {
     "adId": 1037553582,
@@ -2727,7 +2727,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/15886d50-aaff-46b4-933c-7019baf9eeef.jpg"
     ],
     "firstSeenAt": "2026-04-17T08:38:33.335Z",
-    "lastSeenAt": "2026-05-09T08:44:04.837Z"
+    "lastSeenAt": "2026-05-26T09:56:26.498Z"
   },
   {
     "adId": 1065259206,
@@ -4216,7 +4216,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4c07e588-3c7d-4d34-bc77-482d054b7e93.jpg"
     ],
     "firstSeenAt": "2026-05-04T09:35:47.295Z",
-    "lastSeenAt": "2026-05-25T09:46:47.661Z"
+    "lastSeenAt": "2026-05-26T09:56:26.498Z"
   },
   {
     "adId": 1067537742,
@@ -4502,7 +4502,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/514def33-fecc-4485-93cf-7590e00d9290.jpg"
     ],
     "firstSeenAt": "2026-05-07T09:35:04.765Z",
-    "lastSeenAt": "2026-05-25T09:46:47.661Z"
+    "lastSeenAt": "2026-05-26T09:56:26.498Z"
   },
   {
     "adId": 1067958807,
@@ -4752,7 +4752,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/43f8e9a1-d441-4835-928a-7e061213ae99.jpg"
     ],
     "firstSeenAt": "2026-05-09T08:44:04.837Z",
-    "lastSeenAt": "2026-05-25T09:46:47.661Z"
+    "lastSeenAt": "2026-05-26T09:56:26.498Z"
   },
   {
     "adId": 1068173573,
@@ -4912,7 +4912,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/786c0db8-5214-45cd-a939-e8e306ffa1d4.jpg"
     ],
     "firstSeenAt": "2026-05-11T10:29:36.289Z",
-    "lastSeenAt": "2026-05-25T09:46:47.661Z"
+    "lastSeenAt": "2026-05-26T09:56:26.498Z"
   },
   {
     "adId": 230575733,
@@ -5873,5 +5873,179 @@
     ],
     "firstSeenAt": "2026-05-22T13:45:17.461Z",
     "lastSeenAt": "2026-05-22T13:45:17.461Z"
+  },
+  {
+    "adId": 1070357806,
+    "link": "https://re.kufar.by/vi/1070357806",
+    "title": "Продам дачу недалеко от Юбилейного озера",
+    "description": "Ровный участок. На участке растет орех, старые деревья спилены, а также имеется строение (ветхий дачный дом). Территория огорожена сеткой (имеется кал",
+    "priceByn": 16529,
+    "priceUsd": 6000,
+    "address": "116, СТ Автомобилист, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 6.09,
+    "seller": "Александр",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.654288586009855,
+      "lon": 23.723376008267337
+    },
+    "listTime": "2026-05-26T08:01:38Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/85de2a54-a56e-4ca8-b9b1-05a72df3151c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b890d82f-80a0-42f5-8feb-f3029ae8f64c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/00dd5875-c883-4238-aa8f-b60ce4cd53ac.jpg"
+    ],
+    "firstSeenAt": "2026-05-26T09:56:26.498Z",
+    "lastSeenAt": "2026-05-26T09:56:26.498Z"
+  },
+  {
+    "adId": 1070347984,
+    "link": "https://re.kufar.by/vi/1070347984",
+    "title": "Участок",
+    "description": "Только звонки! Торг.\nПродается участок в живописном месте СТ\nКронон, Ул. Солнечная 6,\n-лес практически на участке,\n-водоем в 300-та метрах,\n- 4 км от ",
+    "priceByn": 26172,
+    "priceUsd": 9500,
+    "address": "СТ Кронон, Квасовский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 6.5,
+    "seller": "Артур",
+    "features": [
+      "Пожизненное наследование",
+      "Да"
+    ],
+    "coordinates": {
+      "lat": 53.564252,
+      "lon": 23.791728
+    },
+    "listTime": "2026-05-26T06:50:19Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/caefa3dc-05d6-48c2-b025-70b1207f678d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/48780e76-b850-4d84-ad6c-871a99f54117.jpg"
+    ],
+    "firstSeenAt": "2026-05-26T09:56:26.498Z",
+    "lastSeenAt": "2026-05-26T09:56:26.498Z"
+  },
+  {
+    "adId": 1070276553,
+    "link": "https://re.kufar.by/vi/1070276553",
+    "title": "2 земельных участка СТ Фиалка",
+    "description": "Стоимость указана за 2 участка!!!\nВ продаже 2 земельных участка, расположенные в СТ Фиалка (Подлабенского с/с) направление д. Каролино. Участки площад",
+    "priceByn": 23417,
+    "priceUsd": 8500,
+    "address": "СТ Фиалка, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 12,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.638729,
+      "lon": 23.691763
+    },
+    "listTime": "2026-05-25T16:13:00Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c88a8f17-1841-498c-80ba-3e917d48865d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4ddff9f1-1aa2-4a2e-b2f2-d87eea5db8ea.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/dbd5a013-cd3f-4d3f-b362-53dfb5156cc9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f2dfd12e-75b0-421a-93c1-1fd6406b4858.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/93284a8e-7b37-4923-b57b-1fff9a90f7ef.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2bc5a4c9-a045-425a-8508-78f0c401fdea.jpg"
+    ],
+    "firstSeenAt": "2026-05-26T09:56:26.498Z",
+    "lastSeenAt": "2026-05-26T09:56:26.498Z"
+  },
+  {
+    "adId": 1070275013,
+    "link": "https://re.kufar.by/vi/1070275013",
+    "title": "земельный участок СТ Магистраль",
+    "description": "Продается земельный участок в 8 км от г. Гродно СТ Магистраль , Гродненская область, Подлабенский с/с,  расположенный на участке площадью 7,03 соток (",
+    "priceByn": 24794,
+    "priceUsd": 9000,
+    "address": "СТ Магистраль, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 7,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.724196,
+      "lon": 23.767085
+    },
+    "listTime": "2026-05-25T16:01:39Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c5340210-d5cb-4777-baf5-1455956d059a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ee321931-dcc7-46cf-907e-fed1d658bcfb.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/52a60183-dba6-42f1-958b-015472ee0fd5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5d75f494-b753-4997-ae7f-b6a2e8200198.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0ecc60fa-b300-4d81-9850-318fbb5101d3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e5282807-2f83-45d5-bd8d-d0aa23e677ad.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1ea6bf46-b32f-4525-a411-9371a4e46272.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a1376248-465b-4db0-8cc6-587955c621a8.jpg"
+    ],
+    "firstSeenAt": "2026-05-26T09:56:26.498Z",
+    "lastSeenAt": "2026-05-26T09:56:26.498Z"
+  },
+  {
+    "adId": 1070275015,
+    "link": "https://re.kufar.by/vi/1070275015",
+    "title": "участок СТ Шембелевцы",
+    "description": "Продается дачный участок в садовом товариществе «Шембелевцы», Гродненский р-н, Сопоцкинский с/с. До города 12 км. 15 минут езды на автомобиле. Площадь",
+    "priceByn": 19835,
+    "priceUsd": 7200,
+    "address": "Н-6883, Гродненская область",
+    "plotArea": 7,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.754756,
+      "lon": 23.798798
+    },
+    "listTime": "2026-05-25T16:01:39Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/875d6e0b-52db-4c32-ad00-9f8db6f334d5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a36ad325-7b5e-4512-bb65-cba7e1cf248e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1b326d1f-1d08-4801-b5ea-94dd46c0a3b4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/82f594e7-7f60-4d06-a2d8-b7ae212c637c.jpg"
+    ],
+    "firstSeenAt": "2026-05-26T09:56:26.498Z",
+    "lastSeenAt": "2026-05-26T09:56:26.498Z"
+  },
+  {
+    "adId": 1070244388,
+    "link": "https://re.kufar.by/vi/1070244388",
+    "title": "Земельный участок Погораны",
+    "description": "Участок расположен в 5 ти километрах от Гродно.  Участок ровный , крайний (рядом лес). Два подъездных пути (200 м до асфальтированной дороги). На терр",
+    "priceByn": 41324,
+    "priceUsd": 15000,
+    "address": "117, СТ Нива-2, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 6,
+    "seller": "Павел",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.62174366239726,
+      "lon": 23.930639422816476
+    },
+    "listTime": "2026-05-25T10:51:58Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/812a17e4-2608-4d0d-9fa8-65f052972a48.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/40b3a3c0-1745-4723-958c-5e063ce3dd2c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b22147be-d453-471e-9622-205f203ed7d2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b42bb7d9-1ddf-4c3e-a107-a27e44bab422.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b0bc73ac-12b0-4fe9-8452-9d934ed8b393.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a18c1370-c483-4caf-9151-4df0552eb917.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1f0ef2cf-a208-4165-aa92-06b3407ec7b7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3a011493-c854-409d-bdfc-e03e67f685c5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/faa083da-96c1-49d7-92e6-a92923ccb83a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/71a1c2e8-7143-4068-a1e1-983c1ee77ab7.jpg"
+    ],
+    "firstSeenAt": "2026-05-26T09:56:26.498Z",
+    "lastSeenAt": "2026-05-26T09:56:26.498Z"
   }
 ]
