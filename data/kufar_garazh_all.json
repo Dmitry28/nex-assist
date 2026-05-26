@@ -47,7 +47,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-05-25T09:46:47.659Z"
+    "lastSeenAt": "2026-05-26T09:56:26.496Z"
   },
   {
     "adId": 1062002915,
@@ -106,7 +106,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c32966cf-6663-4cbc-a483-09da9f48647d.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-05-17T09:15:11.631Z"
+    "lastSeenAt": "2026-05-26T09:56:26.496Z"
   },
   {
     "adId": 1044024342,
@@ -624,7 +624,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3989f57d-fcc9-4ae7-89eb-138480a835d7.jpg"
     ],
     "firstSeenAt": "2026-04-03T10:00:31.323Z",
-    "lastSeenAt": "2026-05-25T09:46:47.659Z"
+    "lastSeenAt": "2026-05-26T09:56:26.496Z"
   },
   {
     "adId": 1063237673,
@@ -3394,7 +3394,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eee28d59-6640-4521-a4ab-2c556844e31f.jpg"
     ],
     "firstSeenAt": "2026-05-25T09:46:47.659Z",
-    "lastSeenAt": "2026-05-25T09:46:47.659Z"
+    "lastSeenAt": "2026-05-26T09:56:26.496Z"
   },
   {
     "adId": 1070023403,
@@ -3444,5 +3444,35 @@
     ],
     "firstSeenAt": "2026-05-25T09:46:47.659Z",
     "lastSeenAt": "2026-05-25T09:46:47.659Z"
+  },
+  {
+    "adId": 1070272138,
+    "link": "https://re.kufar.by/vi/1070272138",
+    "title": "Гараж",
+    "description": "Продам или сдам в аренду гараж площадью 93 квадрата. На 5 авто. 3 гаража совмещены (слева без стенок) + 2 огорожены стенкой.",
+    "priceByn": 1000,
+    "priceUsd": 363,
+    "address": "Понемуньская ул, 15Аблок17к1706, Гродно, Гродненская область",
+    "area": 93,
+    "seller": "Сергей",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма",
+      "Наземная",
+      "Печное"
+    ],
+    "coordinates": {
+      "lat": 53.664656193525786,
+      "lon": 23.87583634279531
+    },
+    "listTime": "2026-05-25T15:25:25Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/65098fa0-e055-4f6c-a6fd-720de2445994.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1bb9a0bc-2c94-4b17-9c49-679c836af800.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8a658313-a2a3-4096-9000-9060c6a900d9.jpg"
+    ],
+    "firstSeenAt": "2026-05-26T09:56:26.496Z",
+    "lastSeenAt": "2026-05-26T09:56:26.496Z"
   }
 ]
