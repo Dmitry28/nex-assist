@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-26T10:00:37.498Z"
+    "lastSeenAt": "2026-05-27T09:53:47.895Z"
   },
   {
     "adId": 4057786,
@@ -228,7 +228,7 @@
       "https://cdn.realt.by/img/55/923b78de-3cb0-11f1-be49-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-26T10:00:37.498Z"
+    "lastSeenAt": "2026-05-27T09:53:47.895Z"
   },
   {
     "adId": 3969197,
@@ -459,7 +459,7 @@
       "https://cdn.realt.by/img/55/cedbcce6-2d9a-11f1-a3db-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-26T10:00:37.498Z"
+    "lastSeenAt": "2026-05-27T09:53:47.895Z"
   },
   {
     "adId": 4029977,
@@ -591,7 +591,7 @@
       "https://static.realt.by/thumb/c/430x374/3481ea5015ef1403daaa9c2a0a86718a/8c/c/023338dvwc8c/8ff5e5959f.jpeg"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-26T10:00:37.498Z"
+    "lastSeenAt": "2026-05-27T09:53:47.895Z"
   },
   {
     "adId": 3967198,
@@ -778,7 +778,7 @@
       "https://cdn.realt.by/img/55/74e31744-5939-11ef-aed3-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-26T10:00:37.498Z"
+    "lastSeenAt": "2026-05-27T09:53:47.895Z"
   },
   {
     "adId": 3901097,
@@ -1346,7 +1346,7 @@
       "https://cdn.realt.by/img/55/42977b10-05a7-11f1-b8ab-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-26T10:00:37.498Z"
+    "lastSeenAt": "2026-05-27T09:53:47.895Z"
   },
   {
     "adId": 4080609,
@@ -1731,7 +1731,7 @@
       "https://cdn.realt.by/img/55/23a33f36-3faf-11f1-9bd2-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-26T10:00:37.498Z"
+    "lastSeenAt": "2026-05-27T09:53:47.895Z"
   },
   {
     "adId": 3864763,
@@ -5306,12 +5306,12 @@
     "link": "https://realt.by/sale-dachi/object/4123805/",
     "title": "дача СТ «Старт-Каролино»",
     "description": "Предлагаем вашему вниманию идеальное место для отдыха СТ «Старт-Каролино», в 7 км от города.",
-    "priceByn": 62825,
-    "priceUsd": 23000,
+    "priceByn": 55406,
+    "priceUsd": 20000,
     "address": "Старт-Каролино",
     "plotArea": 5.13,
     "seller": "Дарья",
-    "listTime": "2026-05-22T10:47:58+03:00",
+    "listTime": "2026-05-26T14:46:19+03:00",
     "images": [
       "https://cdn.realt.by/img/55/1ad973b4-4f8d-11f1-bd25-0242ac120003",
       "https://cdn.realt.by/img/55/1ae9582e-4f8d-11f1-8ade-0242ac120003",
@@ -5326,7 +5326,7 @@
       "https://cdn.realt.by/img/55/1a992930-4f8d-11f1-a9d8-0242ac120003"
     ],
     "firstSeenAt": "2026-05-15T10:23:27.900Z",
-    "lastSeenAt": "2026-05-22T13:52:19.606Z"
+    "lastSeenAt": "2026-05-27T09:53:47.895Z"
   },
   {
     "adId": 4125647,
@@ -5437,7 +5437,7 @@
       "https://cdn.realt.by/img/55/6f32f3ee-538f-11f1-9ff7-0242ac120003"
     ],
     "firstSeenAt": "2026-05-20T10:03:41.267Z",
-    "lastSeenAt": "2026-05-26T10:00:37.498Z"
+    "lastSeenAt": "2026-05-27T09:53:47.895Z"
   },
   {
     "adId": 4132125,
@@ -5524,6 +5524,81 @@
       "https://cdn.realt.by/img/55/f87a1ea4-56da-11f1-a842-0242ac120003"
     ],
     "firstSeenAt": "2026-05-25T09:50:04.852Z",
-    "lastSeenAt": "2026-05-26T10:00:37.498Z"
+    "lastSeenAt": "2026-05-27T09:53:47.895Z"
+  },
+  {
+    "adId": 4137152,
+    "uuid": "e0319de0-59a5-11f1-98bf-7d269c16dd44",
+    "link": "https://realt.by/sale-dachi/object/4137152/",
+    "title": "Добротная дача рядом с Неманом",
+    "description": "Площадь участка 5,21 сотки. Везде идеальный порядок! Полностью огорожен. Принадлежит на праве пожизненно наследуемого владения. На участке имеются плодовые деревья и кусты. Виноград, вишня, черешня, смородина красная и белая, грецкий орех, лесной орех, 2 молодых абрикоса, 2 яблони, сливы и крыжовник. Удобный подъездной путь к участку. До города Гродно 10 км.",
+    "priceByn": 35538,
+    "priceUsd": 12828,
+    "address": "Текстильщик-Жукевичи",
+    "area": 33.2,
+    "plotArea": 5.2,
+    "yearBuilt": 1989,
+    "levels": 2,
+    "seller": "Елена",
+    "listTime": "2026-05-27T11:27:51+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/99aff088-59a5-11f1-8b29-0242ac120003",
+      "https://cdn.realt.by/img/55/99ce9dc6-59a5-11f1-bfe0-0242ac120003",
+      "https://cdn.realt.by/img/55/99d892c2-59a5-11f1-9df5-0242ac120003",
+      "https://cdn.realt.by/img/55/99e09bde-59a5-11f1-9ea6-0242ac120003",
+      "https://cdn.realt.by/img/55/9f06f91e-59a5-11f1-b1c0-0242ac120003",
+      "https://cdn.realt.by/img/55/9f1d3058-59a5-11f1-b455-0242ac120003",
+      "https://cdn.realt.by/img/55/9f1d333c-59a5-11f1-bd8b-0242ac120003",
+      "https://cdn.realt.by/img/55/a23412c0-59a5-11f1-884e-0242ac120003",
+      "https://cdn.realt.by/img/55/a562b244-59a5-11f1-aa8a-0242ac120003",
+      "https://cdn.realt.by/img/55/a8e59e5e-59a5-11f1-9335-0242ac120003",
+      "https://cdn.realt.by/img/55/a8f9cbc2-59a5-11f1-a3b5-0242ac120003",
+      "https://cdn.realt.by/img/55/a90e3292-59a5-11f1-baf4-0242ac120003",
+      "https://cdn.realt.by/img/55/a9145064-59a5-11f1-8a82-0242ac120003",
+      "https://cdn.realt.by/img/55/a909c694-59a5-11f1-bfa4-0242ac120003"
+    ],
+    "firstSeenAt": "2026-05-27T09:53:47.895Z",
+    "lastSeenAt": "2026-05-27T09:53:47.895Z"
+  },
+  {
+    "adId": 4136314,
+    "uuid": "6bfcd290-58fc-11f1-98bf-7d269c16dd44",
+    "link": "https://realt.by/sale-dachi/object/4136314/",
+    "title": "дача СТ Ласунак-Дубница",
+    "description": "Продаем благоустроенный дом в садовом товариществе \"Ласунак-Дубница\". Дом мансардного типа 2018 года постройки для круглогодичного проживания. Площадь участка 0.077 га. находится в частной собственности.",
+    "priceByn": 800617,
+    "priceUsd": 289000,
+    "address": "Ласунак-Дубница",
+    "area": 92.9,
+    "areaLiving": 50.8,
+    "plotArea": 7.7,
+    "yearBuilt": 2017,
+    "seller": "Наталья",
+    "listTime": "2026-05-26T15:46:28+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/d54df6a8-58fb-11f1-994c-0242ac120003",
+      "https://cdn.realt.by/img/55/d7a5b18e-58fb-11f1-8575-0242ac120003",
+      "https://cdn.realt.by/img/55/da38d944-58fb-11f1-8229-0242ac120003",
+      "https://cdn.realt.by/img/55/dc7e63cc-58fb-11f1-ab49-0242ac120003",
+      "https://cdn.realt.by/img/55/dec33fb8-58fb-11f1-bee5-0242ac120003",
+      "https://cdn.realt.by/img/55/e156d9ec-58fb-11f1-a961-0242ac120003",
+      "https://cdn.realt.by/img/55/e3be0ab6-58fb-11f1-91a4-0242ac120003",
+      "https://cdn.realt.by/img/55/e63ca572-58fb-11f1-8c30-0242ac120003",
+      "https://cdn.realt.by/img/55/e89c5aa6-58fb-11f1-95d8-0242ac120003",
+      "https://cdn.realt.by/img/55/ead413e0-58fb-11f1-ac24-0242ac120003",
+      "https://cdn.realt.by/img/55/eecf3cf4-58fb-11f1-a5d3-0242ac120003",
+      "https://cdn.realt.by/img/55/f1a501a2-58fb-11f1-a6d9-0242ac120003",
+      "https://cdn.realt.by/img/55/f3e97d80-58fb-11f1-abc1-0242ac120003",
+      "https://cdn.realt.by/img/55/f6ffc1d2-58fb-11f1-a46e-0242ac120003",
+      "https://cdn.realt.by/img/55/f901c25a-58fb-11f1-a812-0242ac120003",
+      "https://cdn.realt.by/img/55/fbd8c870-58fb-11f1-9e09-0242ac120003",
+      "https://cdn.realt.by/img/55/fef54b8c-58fb-11f1-b0d6-0242ac120003",
+      "https://cdn.realt.by/img/55/01a0d8e2-58fc-11f1-b72a-0242ac120003",
+      "https://cdn.realt.by/img/55/050868a6-58fc-11f1-8db9-0242ac120003",
+      "https://cdn.realt.by/img/55/080b408c-58fc-11f1-bca2-0242ac120003",
+      "https://cdn.realt.by/img/55/0ae58344-58fc-11f1-9fb0-0242ac120003"
+    ],
+    "firstSeenAt": "2026-05-27T09:53:47.895Z",
+    "lastSeenAt": "2026-05-27T09:53:47.895Z"
   }
 ]
