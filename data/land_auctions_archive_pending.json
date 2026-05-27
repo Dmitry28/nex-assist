@@ -1,20 +1,46 @@
 [
   {
     "listing": {
-      "title": "Земельный участок по ул. Александра Боголюбова, 40",
-      "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-aleksandra-bogolyubova-40/",
-      "price": "40 884,00 руб.",
-      "area": "0,0979 га",
-      "address": "г. Гродно, ул. Александра Боголюбова, 40",
-      "cadastralNumber": "440100000002012970",
-      "cadastralMapUrl": "https://map.nca.by/search/019c656c-a1b1-702b-8eb9-51359758764b",
-      "auctionDate": "Аукцион состоится 12.05.2026",
-      "applicationDeadline": "Заявления принимаются по  06.05.2026",
+      "title": "Земельный участок по ул. Рожанского, 94",
+      "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-rozhanskogo-94/",
+      "price": "34 537,00 руб.",
+      "area": "0,0997 га",
+      "address": "г. Гродно, ул. Рожанского, 94",
+      "cadastralNumber": "440100000002012985",
+      "cadastralMapUrl": "https://map.nca.by/search/019c08bc-b49c-7292-a1d7-b4f36e373ce8",
+      "auctionDate": "Аукцион состоится 26.05.2026",
+      "applicationDeadline": "Заявления принимаются по 20.05.2026",
       "communications": "электроснабжение, газоснабжение, водоснабжение",
       "images": [
-        "http://gcn.by/wp-content/uploads/2026/01/u2-bogolyubova-40-sajt.png"
+        "http://gcn.by/wp-content/uploads/2026/01/rozhanskogo-94-sajt.png"
       ]
     },
-    "removedAt": "2026-05-13T09:34:57.726Z"
+    "removedAt": "2026-05-27T10:45:36.375Z"
+  },
+  {
+    "listing": {
+      "title": "Не завершённый строительством жилой дом по ул. Просторная, 18",
+      "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-prostornaya-18/",
+      "price": "65 626,70 руб.",
+      "area": "0,0998 га",
+      "address": "г. Гродно, У-172 в микрорайоне «Барановичи-9», ул. Просторная, 18",
+      "cadastralNumber": "440100000003006017",
+      "cadastralMapUrl": "",
+      "auctionDate": "Не указана",
+      "applicationDeadline": "Заявления принимаются по 20.05.2026",
+      "communications": "Не указаны",
+      "images": [
+        "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt7.png",
+        "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt1.png",
+        "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt2.png",
+        "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt3.png",
+        "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt4.png",
+        "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt5.png",
+        "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt6.png",
+        "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt7.png",
+        "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt1.png"
+      ]
+    },
+    "removedAt": "2026-05-27T10:45:36.375Z"
   }
 ]

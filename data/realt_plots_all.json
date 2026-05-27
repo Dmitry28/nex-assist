@@ -1105,7 +1105,7 @@
       "https://cdn.realt.by/img/55/3c3b372c-2765-11f1-9b96-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-05-27T11:05:10.588Z"
   },
   {
     "adId": 4070128,
@@ -1965,5 +1965,52 @@
     ],
     "firstSeenAt": "2026-05-24T09:22:42.700Z",
     "lastSeenAt": "2026-05-24T09:22:42.700Z"
+  },
+  {
+    "adId": 4137098,
+    "uuid": "9548f4c0-599d-11f1-87dd-0b591adf90eb",
+    "link": "https://realt.by/sale-plots/object/4137098/",
+    "title": "Гродно, Малаховичская ул.",
+    "description": "Продается участок 15 соток вместе с гаражом. Газ имеется. Дом под снос.",
+    "priceByn": 124664,
+    "priceUsd": 45000,
+    "address": "Гродно Малаховичская ул. 67",
+    "plotArea": 15,
+    "seller": "Оксана",
+    "listTime": "2026-05-27T12:04:06+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/80daebb0-599d-11f1-a232-0242ac120003",
+      "https://cdn.realt.by/img/55/80d91434-599d-11f1-a671-0242ac120003"
+    ],
+    "firstSeenAt": "2026-05-27T11:05:10.588Z",
+    "lastSeenAt": "2026-05-27T11:05:10.588Z"
+  },
+  {
+    "adId": 4136563,
+    "uuid": "fb3c4330-5912-11f1-9d45-8b63f0dfcc9f",
+    "link": "https://realt.by/sale-plots/object/4136563/",
+    "title": "Сябры-Кулевцы",
+    "description": "Продам участок в частной собственности ( не пожизненное наследуемое).Фундамент переливали в 2025 году ,часть под баню,часть под дом в 2 этажа.Выведен свет 220,380 (на электроотопление).Вода.Весь участок огорожен.Отличное расположение!Освальтирование дороги до участка июль месяц.Планируется газификация...",
+    "priceByn": 24933,
+    "priceUsd": 9000,
+    "address": "Сябры-Кулевцы",
+    "plotArea": 8,
+    "seller": "KATSIARYNA",
+    "listTime": "2026-05-26T19:36:47+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/c61732b4-5912-11f1-b0a6-0242ac120003",
+      "https://cdn.realt.by/img/55/c623db18-5912-11f1-9188-0242ac120003",
+      "https://cdn.realt.by/img/55/c62ba76c-5912-11f1-b639-0242ac120003",
+      "https://cdn.realt.by/img/55/c634b7bc-5912-11f1-8988-0242ac120003",
+      "https://cdn.realt.by/img/55/c63ebece-5912-11f1-82f7-0242ac120003",
+      "https://cdn.realt.by/img/55/c6455a18-5912-11f1-ab5a-0242ac120003",
+      "https://cdn.realt.by/img/55/c64deeee-5912-11f1-a522-0242ac120003",
+      "https://cdn.realt.by/img/55/c6584a2e-5912-11f1-9f54-0242ac120003",
+      "https://cdn.realt.by/img/55/c666eea8-5912-11f1-a4f8-0242ac120003",
+      "https://cdn.realt.by/img/55/c66b798c-5912-11f1-bd09-0242ac120003",
+      "https://cdn.realt.by/img/55/c679d2d4-5912-11f1-bf71-0242ac120003"
+    ],
+    "firstSeenAt": "2026-05-27T11:05:10.588Z",
+    "lastSeenAt": "2026-05-27T11:05:10.588Z"
   }
 ]
