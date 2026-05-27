@@ -1,1 +1,56 @@
-[]
+[
+  {
+    "title": "Не завершённый строительством жилой дом по ул. Ранишняя, 8",
+    "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-ranishnyaya-8/",
+    "price": "39 084,43 руб.",
+    "area": "0,1017 га",
+    "address": "г. Гродно, У-59 в микрорайоне «Барановичи 5,6», ул. Ранишняя, 8",
+    "cadastralNumber": "440100000003005093",
+    "cadastralMapUrl": "https://map.nca.by/search/019d855e-865f-72ee-9374-90e077883938",
+    "auctionDate": "Аукцион состоится 26.05.2026",
+    "applicationDeadline": "Не указан",
+    "communications": "Не указаны",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2024/11/u-59-ranishnyaya-baranovichi-sajt.png"
+    ],
+    "salePrice": "75 тыс. руб."
+  },
+  {
+    "title": "Земельный участок по ул. Рожанского, 94",
+    "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-rozhanskogo-94/",
+    "price": "34 537,00 руб.",
+    "area": "0,0997 га",
+    "address": "г. Гродно, ул. Рожанского, 94",
+    "cadastralNumber": "440100000002012985",
+    "cadastralMapUrl": "https://map.nca.by/search/019c08bc-b49c-7292-a1d7-b4f36e373ce8",
+    "auctionDate": "Аукцион состоится 26.05.2026",
+    "applicationDeadline": "Заявления принимаются по 20.05.2026",
+    "communications": "электроснабжение, газоснабжение, водоснабжение",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/01/rozhanskogo-94-sajt.png"
+    ]
+  },
+  {
+    "title": "Не завершённый строительством жилой дом по ул. Просторная, 18",
+    "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-prostornaya-18/",
+    "price": "65 626,70 руб.",
+    "area": "0,0998 га",
+    "address": "г. Гродно, У-172 в микрорайоне «Барановичи-9», ул. Просторная, 18",
+    "cadastralNumber": "440100000003006017",
+    "cadastralMapUrl": "",
+    "auctionDate": "Не указана",
+    "applicationDeadline": "Заявления принимаются по 20.05.2026",
+    "communications": "Не указаны",
+    "images": [
+      "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt7.png",
+      "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt1.png",
+      "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt2.png",
+      "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt3.png",
+      "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt4.png",
+      "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt5.png",
+      "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt6.png",
+      "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt7.png",
+      "https://gcn.by/wp-content/uploads/2025/11/u-172-prostornaya-baranovichi-sajt1.png"
+    ]
+  }
+]
