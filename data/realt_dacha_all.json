@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-28T11:05:45.004Z"
+    "lastSeenAt": "2026-05-29T11:13:58.463Z"
   },
   {
     "adId": 4057786,
@@ -228,7 +228,7 @@
       "https://cdn.realt.by/img/55/923b78de-3cb0-11f1-be49-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-28T11:05:45.004Z"
+    "lastSeenAt": "2026-05-29T11:13:58.463Z"
   },
   {
     "adId": 3969197,
@@ -532,7 +532,7 @@
       "https://cdn.realt.by/img/55/48b2f02e-488c-11f1-92b2-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-28T11:05:45.004Z"
+    "lastSeenAt": "2026-05-29T11:13:58.463Z"
   },
   {
     "adId": 4056686,
@@ -591,7 +591,7 @@
       "https://static.realt.by/thumb/c/430x374/3481ea5015ef1403daaa9c2a0a86718a/8c/c/023338dvwc8c/8ff5e5959f.jpeg"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-28T11:05:45.004Z"
+    "lastSeenAt": "2026-05-29T11:13:58.463Z"
   },
   {
     "adId": 3967198,
@@ -1630,7 +1630,7 @@
       "https://cdn.realt.by/img/55/8201c474-3fe8-11f1-9961-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-28T11:05:45.004Z"
+    "lastSeenAt": "2026-05-29T11:13:58.463Z"
   },
   {
     "adId": 4075049,
@@ -3523,8 +3523,8 @@
     "link": "https://realt.by/sale-dachi/object/3986874/",
     "title": "Нива, Красная",
     "description": "Продаётся уютный дом 83м2 в 8км. от города. д.Горница Гродненского р-на С.Т Нива. Дом 2015 года постройки. Полностью готов к проживанию",
-    "priceByn": 84558,
-    "priceUsd": 30000,
+    "priceByn": 77269,
+    "priceUsd": 28000,
     "address": "Нива Красная 9",
     "area": 80,
     "areaLiving": 40,
@@ -3532,7 +3532,7 @@
     "plotArea": 5,
     "yearBuilt": 2015,
     "seller": "Ольга",
-    "listTime": "2026-03-30T21:24:40+03:00",
+    "listTime": "2026-05-29T09:51:05+03:00",
     "images": [
       "https://cdn.realt.by/img/55/8c329da0-df68-11f0-939d-0242ac120003",
       "https://cdn.realt.by/img/55/89f1d5ce-df68-11f0-b7b4-0242ac120003",
@@ -3556,7 +3556,7 @@
       "https://cdn.realt.by/img/55/8c3ab4f4-df68-11f0-a335-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-05-29T11:13:58.463Z"
   },
   {
     "adId": 4056878,
@@ -5547,7 +5547,7 @@
       "https://cdn.realt.by/img/55/f87a1ea4-56da-11f1-a842-0242ac120003"
     ],
     "firstSeenAt": "2026-05-24T09:22:42.706Z",
-    "lastSeenAt": "2026-05-28T11:05:45.004Z"
+    "lastSeenAt": "2026-05-29T11:13:58.463Z"
   },
   {
     "adId": 4137152,
@@ -5664,6 +5664,100 @@
       "https://cdn.realt.by/img/55/148bfb12-59c9-11f1-b858-0242ac120003"
     ],
     "firstSeenAt": "2026-05-28T11:05:45.004Z",
-    "lastSeenAt": "2026-05-28T11:05:45.004Z"
+    "lastSeenAt": "2026-05-29T11:13:58.463Z"
+  },
+  {
+    "adId": 4138481,
+    "uuid": "a73e8fa0-5b37-11f1-9d45-8b63f0dfcc9f",
+    "link": "https://realt.by/sale-dachi/object/4138481/",
+    "title": "дача СТ Дружный труд",
+    "description": "В продаже отличная дача в окружении леса СТ «Дружный труд», направление Южный рынок, база отдыха «Погораны», рядом д. Погораны. На участке 0,0500 соток (частная собственность).",
+    "priceByn": 110384,
+    "priceUsd": 40000,
+    "address": "Дружный труд",
+    "area": 200,
+    "plotArea": 5,
+    "yearBuilt": 2022,
+    "seller": "Надежда",
+    "listTime": "2026-05-29T12:07:00+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/747f2214-5b37-11f1-af2f-0242ac120003",
+      "https://cdn.realt.by/img/55/74426bee-5b37-11f1-a6a9-0242ac120003",
+      "https://cdn.realt.by/img/55/745e8e8c-5b37-11f1-8697-0242ac120003",
+      "https://cdn.realt.by/img/55/7464f24a-5b37-11f1-a756-0242ac120003",
+      "https://cdn.realt.by/img/55/745fd2e2-5b37-11f1-9de4-0242ac120003",
+      "https://cdn.realt.by/img/55/7461fa22-5b37-11f1-ae39-0242ac120003",
+      "https://cdn.realt.by/img/55/7465c58a-5b37-11f1-974c-0242ac120003",
+      "https://cdn.realt.by/img/55/747aad1a-5b37-11f1-9a9d-0242ac120003",
+      "https://cdn.realt.by/img/55/7436f8cc-5b37-11f1-a000-0242ac120003",
+      "https://cdn.realt.by/img/55/746ce2fc-5b37-11f1-80a2-0242ac120003",
+      "https://cdn.realt.by/img/55/7467fdfa-5b37-11f1-a40e-0242ac120003",
+      "https://cdn.realt.by/img/55/74767d3a-5b37-11f1-9111-0242ac120003",
+      "https://cdn.realt.by/img/55/742ab4cc-5b37-11f1-a408-0242ac120003",
+      "https://cdn.realt.by/img/55/7429983a-5b37-11f1-a427-0242ac120003",
+      "https://cdn.realt.by/img/55/7414bba4-5b37-11f1-b2a6-0242ac120003"
+    ],
+    "firstSeenAt": "2026-05-29T11:13:58.463Z",
+    "lastSeenAt": "2026-05-29T11:13:58.463Z"
+  },
+  {
+    "adId": 4138324,
+    "uuid": "f1f24150-5ad7-11f1-9d45-8b63f0dfcc9f",
+    "link": "https://realt.by/sale-dachi/object/4138324/",
+    "title": "Татарка",
+    "description": "Продается дача в СТ Татарка, Подлабенский с/с, Гродненский р-н. Цена договорная.",
+    "priceByn": 1,
+    "address": "Татарка  59",
+    "area": 36.6,
+    "plotArea": 6,
+    "seller": "Людмила",
+    "listTime": "2026-05-29T10:24:07+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/9fe38b3a-5ad7-11f1-8a35-0242ac120003",
+      "https://cdn.realt.by/img/55/a6dc689e-5ad7-11f1-adc1-0242ac120003",
+      "https://cdn.realt.by/img/55/a871f8c2-5ad7-11f1-adfb-0242ac120003",
+      "https://cdn.realt.by/img/55/a1d0612a-5ad7-11f1-b556-0242ac120003"
+    ],
+    "firstSeenAt": "2026-05-29T11:13:58.463Z",
+    "lastSeenAt": "2026-05-29T11:13:58.463Z"
+  },
+  {
+    "adId": 4138281,
+    "uuid": "da101b80-5ac2-11f1-9d45-8b63f0dfcc9f",
+    "link": "https://realt.by/sale-dachi/object/4138281/",
+    "title": "Продается уютная дача в садовом товариществе Подснежник 2",
+    "description": "Продается уютная дача в садовом товариществе Подснежник-2 – всего в 11 км от города (направление а/г Коптевка). На земельном участке площадью 6,5 соток расположены садовый дом, баня, сарай. Садовый дом (55 м²): • Дом мансардного типа, 2015 года постройки с возможностью организации второго этажа (дополнительные 2 комнаты) • Кирпичные стены, кровля – шифер",
+    "priceByn": 104865,
+    "priceUsd": 38000,
+    "address": "Подснежник-Гривки",
+    "area": 55,
+    "plotArea": 6.4,
+    "yearBuilt": 2015,
+    "seller": "Дмитрий",
+    "listTime": "2026-05-29T10:24:08+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/6546b200-5ac2-11f1-836a-0242ac120003",
+      "https://cdn.realt.by/img/55/5a08fa38-5ac2-11f1-9b5e-0242ac120003",
+      "https://cdn.realt.by/img/55/5c3e7602-5ac2-11f1-accd-0242ac120003",
+      "https://cdn.realt.by/img/55/5b9e15c2-5ac2-11f1-a6a8-0242ac120003",
+      "https://cdn.realt.by/img/55/5f11f9e4-5ac2-11f1-b9af-0242ac120003",
+      "https://cdn.realt.by/img/55/57f35374-5ac2-11f1-87b1-0242ac120003",
+      "https://cdn.realt.by/img/55/5aef3c14-5ac2-11f1-9b86-0242ac120003",
+      "https://cdn.realt.by/img/55/8c8721a6-5ac2-11f1-b9b2-0242ac120003",
+      "https://cdn.realt.by/img/55/40b039ca-5ac2-11f1-8760-0242ac120003",
+      "https://cdn.realt.by/img/55/81aed2b0-5ac2-11f1-9768-0242ac120003",
+      "https://cdn.realt.by/img/55/5f6b8c8e-5ac2-11f1-96d3-0242ac120003",
+      "https://cdn.realt.by/img/55/5fd3a8c8-5ac2-11f1-a462-0242ac120003",
+      "https://cdn.realt.by/img/55/6422670c-5ac2-11f1-b815-0242ac120003",
+      "https://cdn.realt.by/img/55/649ca0ee-5ac2-11f1-95c7-0242ac120003",
+      "https://cdn.realt.by/img/55/64a4e75e-5ac2-11f1-9d05-0242ac120003",
+      "https://cdn.realt.by/img/55/6683be10-5ac2-11f1-8181-0242ac120003",
+      "https://cdn.realt.by/img/55/67a21292-5ac2-11f1-aa9d-0242ac120003",
+      "https://cdn.realt.by/img/55/685f2b52-5ac2-11f1-8a20-0242ac120003",
+      "https://cdn.realt.by/img/55/699c7c4a-5ac2-11f1-94b9-0242ac120003",
+      "https://cdn.realt.by/img/55/6ca3b00c-5ac2-11f1-ae20-0242ac120003"
+    ],
+    "firstSeenAt": "2026-05-29T11:13:58.463Z",
+    "lastSeenAt": "2026-05-29T11:13:58.463Z"
   }
 ]
