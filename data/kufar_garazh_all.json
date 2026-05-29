@@ -47,7 +47,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-05-28T10:59:13.524Z"
+    "lastSeenAt": "2026-05-29T11:05:51.426Z"
   },
   {
     "adId": 1062002915,
@@ -906,7 +906,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca7987d4-c9dc-4301-983f-20329c5638d6.jpg"
     ],
     "firstSeenAt": "2026-04-07T08:31:10.678Z",
-    "lastSeenAt": "2026-05-28T10:59:13.524Z"
+    "lastSeenAt": "2026-05-29T11:05:51.426Z"
   },
   {
     "adId": 1063807131,
@@ -1609,7 +1609,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/327b79da-5d80-4ff8-9a04-7a1132aafbae.jpg"
     ],
     "firstSeenAt": "2026-04-20T09:14:23.705Z",
-    "lastSeenAt": "2026-05-28T10:59:13.524Z"
+    "lastSeenAt": "2026-05-29T11:05:51.426Z"
   },
   {
     "adId": 1065456635,
@@ -1775,7 +1775,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/77b2c7b6-d750-431d-92e2-6d23d6736824.jpg"
     ],
     "firstSeenAt": "2026-04-24T09:16:55.888Z",
-    "lastSeenAt": "2026-05-28T10:59:13.524Z"
+    "lastSeenAt": "2026-05-29T11:05:51.426Z"
   },
   {
     "adId": 1065912942,
@@ -3585,7 +3585,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39ba00b4-ed0b-45e2-a4e5-edade7282d26.jpg"
     ],
     "firstSeenAt": "2026-05-27T11:01:06.131Z",
-    "lastSeenAt": "2026-05-28T10:59:13.524Z"
+    "lastSeenAt": "2026-05-29T11:05:51.426Z"
   },
   {
     "adId": 1070272138,
@@ -3671,7 +3671,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cfd08504-eb47-477e-954c-bb3b5a1c4433.jpg"
     ],
     "firstSeenAt": "2026-05-28T10:59:13.524Z",
-    "lastSeenAt": "2026-05-28T10:59:13.524Z"
+    "lastSeenAt": "2026-05-29T11:05:51.426Z"
   },
   {
     "adId": 1070550879,
@@ -3705,7 +3705,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d0141a14-2572-4b4e-9cae-b36d3dd77f03.jpg"
     ],
     "firstSeenAt": "2026-05-28T10:59:13.524Z",
-    "lastSeenAt": "2026-05-28T10:59:13.524Z"
+    "lastSeenAt": "2026-05-29T11:05:51.426Z"
   },
   {
     "adId": 1070539033,
@@ -3739,7 +3739,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3bdb4e29-8e53-454e-8991-1f69ed1042e3.jpg"
     ],
     "firstSeenAt": "2026-05-28T10:59:13.524Z",
-    "lastSeenAt": "2026-05-28T10:59:13.524Z"
+    "lastSeenAt": "2026-05-29T11:05:51.426Z"
   },
   {
     "adId": 1070525910,
@@ -3772,7 +3772,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/05b3d8b9-8e23-418e-b680-8cdcd7276706.jpg"
     ],
     "firstSeenAt": "2026-05-28T10:59:13.524Z",
-    "lastSeenAt": "2026-05-28T10:59:13.524Z"
+    "lastSeenAt": "2026-05-29T11:05:51.426Z"
   },
   {
     "adId": 1070524360,
@@ -3804,5 +3804,38 @@
     ],
     "firstSeenAt": "2026-05-28T10:59:13.524Z",
     "lastSeenAt": "2026-05-28T10:59:13.524Z"
+  },
+  {
+    "adId": 1068945660,
+    "link": "https://re.kufar.by/vi/1068945660",
+    "title": "Продажа гаража в г. Гродно",
+    "description": "Объявление  660011\nВ продаже гараж по адресу ул. М. Горького, гаражный потребительский кооператив Радуга-2. Ухоженный кооператив. Отличноое расположен",
+    "priceByn": 16558,
+    "priceUsd": 6000,
+    "address": "Максима Горького ул, Гродно, Гродненская область",
+    "area": 16,
+    "seller": "ООО Бугриэлт",
+    "coordinates": {
+      "lat": 53.702121,
+      "lon": 23.818219
+    },
+    "listTime": "2026-05-28T13:46:54Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c207a1a6-409c-4c21-b5f5-feaf9d1596c9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/971b6f81-ec6b-4690-b963-f5762c851f8c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/99cfc569-fd11-4461-87b1-d52388fd99c6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/11a8553c-1ab4-4b5d-be75-2d78ae2f8cd1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/797dccd3-2bd1-40d7-b5b2-dba92c87a720.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/97260e53-a71b-468b-a9ea-04261ba10fc0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a72b7226-fed5-4110-9395-b24b95e9ced6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6fe568fa-e505-4142-aaf5-39fc57c87676.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a6e2124d-27f3-4bd8-b240-da760487dc01.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5672f0e6-cb95-4d34-ace2-e3d4d114443e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/93043d18-533f-453c-92e2-9b2bf121c9fd.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c1b9376e-90c9-48f8-af5a-d5de0a747323.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/69647bea-8ca2-44d5-add2-08183d81e1ba.jpg"
+    ],
+    "firstSeenAt": "2026-05-29T11:05:51.426Z",
+    "lastSeenAt": "2026-05-29T11:05:51.426Z"
   }
 ]
