@@ -830,7 +830,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ec90b0fa-5b55-42e5-a012-6a668ffe9c87.jpg"
     ],
     "firstSeenAt": "2026-04-05T16:51:33.360Z",
-    "lastSeenAt": "2026-04-16T08:40:16.263Z"
+    "lastSeenAt": "2026-05-30T09:22:28.517Z"
   },
   {
     "adId": 1063540543,
@@ -906,7 +906,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca7987d4-c9dc-4301-983f-20329c5638d6.jpg"
     ],
     "firstSeenAt": "2026-04-07T08:31:10.678Z",
-    "lastSeenAt": "2026-05-29T11:05:51.426Z"
+    "lastSeenAt": "2026-05-30T09:22:28.517Z"
   },
   {
     "adId": 1063807131,
@@ -3032,7 +3032,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fe5d8832-bbaa-4267-bc9c-108990ea4ee1.jpg"
     ],
     "firstSeenAt": "2026-05-15T10:12:43.708Z",
-    "lastSeenAt": "2026-05-16T09:01:12.533Z"
+    "lastSeenAt": "2026-05-30T09:22:28.517Z"
   },
   {
     "adId": 1069052969,
@@ -3585,7 +3585,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39ba00b4-ed0b-45e2-a4e5-edade7282d26.jpg"
     ],
     "firstSeenAt": "2026-05-27T11:01:06.131Z",
-    "lastSeenAt": "2026-05-29T11:05:51.426Z"
+    "lastSeenAt": "2026-05-30T09:22:28.517Z"
   },
   {
     "adId": 1070272138,
@@ -3837,5 +3837,65 @@
     ],
     "firstSeenAt": "2026-05-29T11:05:51.426Z",
     "lastSeenAt": "2026-05-29T11:05:51.426Z"
+  },
+  {
+    "adId": 1070867108,
+    "link": "https://re.kufar.by/vi/1070867108",
+    "title": "Гараж",
+    "description": "Гараж 26 м. кв. с ямой и подвалом в ГПК \"Фабричный-3\" по ул. Волкова, 37а, около м-на Ольшанка, торг.",
+    "priceByn": 22800,
+    "priceUsd": 8262,
+    "address": "Волкова ул, 37А, Гродно, Гродненская область",
+    "area": 26,
+    "seller": "Elen",
+    "propertyType": "Гараж",
+    "coordinates": {
+      "lat": 53.631065,
+      "lon": 23.815398
+    },
+    "listTime": "2026-05-30T07:47:39Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8c8aed45-77e5-4269-b7e4-7dbd05d83172.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/787e428c-6d76-4220-89e2-7911e154a131.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6d5568c2-d8f8-4fa2-807b-2c95587a81b1.jpg"
+    ],
+    "firstSeenAt": "2026-05-30T09:22:28.517Z",
+    "lastSeenAt": "2026-05-30T09:22:28.517Z"
+  },
+  {
+    "adId": 1070812614,
+    "link": "https://re.kufar.by/vi/1070812614",
+    "title": "Гараж Фолюш",
+    "description": "Хороший сухой гараж с подвалом, охраняемый гаражный кооператив",
+    "priceByn": 31000,
+    "priceUsd": 11234,
+    "address": "Суворова ул, 141блок20к2004, Гродно, Гродненская область",
+    "area": 22.1,
+    "seller": "Евгений",
+    "propertyType": "Гараж",
+    "features": [
+      "Смотровая яма",
+      "Подвал",
+      "Наземная"
+    ],
+    "coordinates": {
+      "lat": 53.6496064828394,
+      "lon": 23.77651659078859
+    },
+    "listTime": "2026-05-29T18:01:04Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eaa77580-7b8a-49b2-8749-f6f50d21e2e9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/75fafaff-8929-4056-9854-1689f7156427.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bfd12c09-349d-4a68-b9ac-02e84da94035.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/93aa1201-b849-4bef-817d-b87d872e12ff.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ce19a1cc-0bf9-4ef8-b1ff-d027b76c1ba3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/38d810d9-696d-4482-b5e4-6419a5fc8b8c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a4f5c425-a5c5-4417-bffb-79df975503cc.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/edeb0035-6eaa-4de4-91e3-d2c2de9fcd03.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/64a33137-333f-47f2-a3f7-258bb5a96fc8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fbb0e1ff-da5c-402d-ba5b-26d384050718.jpg"
+    ],
+    "firstSeenAt": "2026-05-30T09:22:28.517Z",
+    "lastSeenAt": "2026-05-30T09:22:28.517Z"
   }
 ]
