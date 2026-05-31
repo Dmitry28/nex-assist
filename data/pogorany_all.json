@@ -17,7 +17,7 @@
       "https://static.tildacdn.com/stor6533-3937-4737-a133-616165613136/22226708.jpg"
     ],
     "firstSeenAt": "2026-05-18T20:56:37.948Z",
-    "lastSeenAt": "2026-05-30T09:24:51.715Z"
+    "lastSeenAt": "2026-05-31T09:53:12.155Z"
   },
   {
     "uid": 629746871702,
@@ -37,6 +37,26 @@
       "https://static.tildacdn.com/stor6533-3937-4737-a133-616165613136/22226708.jpg"
     ],
     "firstSeenAt": "2026-05-18T20:56:37.948Z",
-    "lastSeenAt": "2026-05-30T09:24:51.715Z"
+    "lastSeenAt": "2026-05-31T09:53:12.155Z"
+  },
+  {
+    "uid": 475531073612,
+    "link": "https://pogorany.by/tproduct/475531073612-kvartira-99-m-v-taunhause",
+    "title": "Квартира 99 м² в таунхаусе",
+    "price": 113850,
+    "currency": "USD",
+    "pricePerM2": 1100,
+    "pricePerM2Currency": "USD",
+    "area": "99 м²",
+    "rooms": "4",
+    "bathrooms": "2",
+    "ceilingHeight": "3 м.",
+    "plotArea": "1-1.2 сот",
+    "parking": "1",
+    "images": [
+      "https://static.tildacdn.com/stor3132-3962-4630-b031-616266333463/98580098.jpg"
+    ],
+    "firstSeenAt": "2026-05-31T09:53:12.155Z",
+    "lastSeenAt": "2026-05-31T09:53:12.155Z"
   }
 ]
