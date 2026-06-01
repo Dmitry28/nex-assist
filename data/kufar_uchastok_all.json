@@ -725,7 +725,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8c3d8b38-10bc-43c8-9698-7c95e2e6e041.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.801Z",
-    "lastSeenAt": "2026-05-25T09:46:47.661Z"
+    "lastSeenAt": "2026-06-01T09:44:37.445Z"
   },
   {
     "adId": 1062276662,
@@ -2122,7 +2122,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a33e18be-5f9c-4fe4-aeec-25324138f034.jpg"
     ],
     "firstSeenAt": "2026-04-10T08:33:09.046Z",
-    "lastSeenAt": "2026-05-25T09:46:47.661Z"
+    "lastSeenAt": "2026-06-01T09:44:37.445Z"
   },
   {
     "adId": 1064403656,
@@ -2223,7 +2223,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/92c8dec1-5c23-4459-b592-a624d87fe5bb.jpg"
     ],
     "firstSeenAt": "2026-04-12T08:07:35.869Z",
-    "lastSeenAt": "2026-05-26T09:56:26.498Z"
+    "lastSeenAt": "2026-06-01T09:44:37.445Z"
   },
   {
     "adId": 1037553582,
@@ -4487,22 +4487,26 @@
     "link": "https://re.kufar.by/vi/1059141451",
     "title": "Продаю хороший земельный участок в 10  км от Гродн",
     "description": "Продаю земельный участок в хорошем месте( до леса  50 метров, до озера- примерно 1,5- 2 км) в 10км от Гродно. Кроме  жилой застройки имеется сад с эли",
-    "priceByn": 35323,
-    "priceUsd": 12500,
+    "priceByn": 30000,
+    "priceUsd": 10870,
     "address": "110, СТ Гарант, Квасовский сельсовет, Гродненский район, Гродненская область",
-    "plotArea": 8.4,
+    "plotArea": 9,
     "seller": "Ольга",
     "features": [
       "Скважина",
       "Частная собственность",
       "Да"
     ],
-    "listTime": "2026-05-07T08:17:51Z",
+    "coordinates": {
+      "lat": 53.545225,
+      "lon": 23.887677
+    },
+    "listTime": "2026-05-31T14:30:46Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/514def33-fecc-4485-93cf-7590e00d9290.jpg"
     ],
     "firstSeenAt": "2026-05-07T09:35:04.765Z",
-    "lastSeenAt": "2026-05-28T09:45:52.815Z"
+    "lastSeenAt": "2026-06-01T09:44:37.445Z"
   },
   {
     "adId": 1067958807,
@@ -4752,7 +4756,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/43f8e9a1-d441-4835-928a-7e061213ae99.jpg"
     ],
     "firstSeenAt": "2026-05-09T08:44:04.837Z",
-    "lastSeenAt": "2026-05-28T09:45:52.815Z"
+    "lastSeenAt": "2026-06-01T09:44:37.445Z"
   },
   {
     "adId": 1068173573,
@@ -4912,7 +4916,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/786c0db8-5214-45cd-a939-e8e306ffa1d4.jpg"
     ],
     "firstSeenAt": "2026-05-11T10:29:36.289Z",
-    "lastSeenAt": "2026-05-26T09:56:26.498Z"
+    "lastSeenAt": "2026-06-01T09:44:37.445Z"
   },
   {
     "adId": 230575733,
@@ -5497,7 +5501,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1a55610d-3369-4645-8d79-2d22c2d373e9.jpg"
     ],
     "firstSeenAt": "2026-05-17T09:15:11.633Z",
-    "lastSeenAt": "2026-05-25T09:46:47.661Z"
+    "lastSeenAt": "2026-06-01T09:44:37.445Z"
   },
   {
     "adId": 1069270601,
@@ -5899,7 +5903,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/00dd5875-c883-4238-aa8f-b60ce4cd53ac.jpg"
     ],
     "firstSeenAt": "2026-05-26T09:56:26.498Z",
-    "lastSeenAt": "2026-05-27T09:48:34.544Z"
+    "lastSeenAt": "2026-06-01T09:44:37.445Z"
   },
   {
     "adId": 1070347984,
@@ -6046,7 +6050,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/71a1c2e8-7143-4068-a1e1-983c1ee77ab7.jpg"
     ],
     "firstSeenAt": "2026-05-26T09:56:26.498Z",
-    "lastSeenAt": "2026-05-28T09:45:52.815Z"
+    "lastSeenAt": "2026-06-01T09:44:37.445Z"
   },
   {
     "adId": 1070492983,
@@ -6146,5 +6150,36 @@
     ],
     "firstSeenAt": "2026-05-28T09:45:52.815Z",
     "lastSeenAt": "2026-05-28T09:45:52.815Z"
+  },
+  {
+    "adId": 1071065653,
+    "link": "https://re.kufar.by/vi/1071065653",
+    "title": "Усасток",
+    "description": "Участок в СТ Демидково. 10 км от Ольшанки. Участок ровный,обработан. На участке есть обшитый троллейбус,можно использовать на период строительства как",
+    "priceByn": 13800,
+    "priceUsd": 5000,
+    "address": "259, СТ Демидково, Одельский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 8,
+    "seller": "Татьяна",
+    "features": [
+      "Сезонная",
+      "Частная собственность",
+      "Да"
+    ],
+    "coordinates": {
+      "lat": 53.52143696623103,
+      "lon": 23.793235838229744
+    },
+    "listTime": "2026-05-31T18:02:04Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/df734cd6-9040-49a5-8d1b-f944207791be.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4445f8fc-0a3c-447a-a6a1-6589088081d9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6dd0bb5e-2c68-44d9-9e9a-672bfec471a3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ff36d781-5d0b-43e3-a75f-e484fb73d0c5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e79f93cb-b717-424f-a4d0-f7a487145ff8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4ac76141-a0e3-4cad-a9eb-ea25af9273d4.jpg"
+    ],
+    "firstSeenAt": "2026-06-01T09:44:37.445Z",
+    "lastSeenAt": "2026-06-01T09:44:37.445Z"
   }
 ]
