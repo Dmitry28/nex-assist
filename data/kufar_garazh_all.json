@@ -47,7 +47,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-05-31T09:47:41.580Z"
+    "lastSeenAt": "2026-06-01T12:39:39.359Z"
   },
   {
     "adId": 1062002915,
@@ -1775,7 +1775,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/77b2c7b6-d750-431d-92e2-6d23d6736824.jpg"
     ],
     "firstSeenAt": "2026-04-24T09:16:55.888Z",
-    "lastSeenAt": "2026-05-29T11:05:51.426Z"
+    "lastSeenAt": "2026-06-01T12:39:39.359Z"
   },
   {
     "adId": 1065912942,
@@ -2015,7 +2015,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cf9c6d30-3d2a-42ad-8911-555d772063ac.jpg"
     ],
     "firstSeenAt": "2026-04-28T09:37:11.546Z",
-    "lastSeenAt": "2026-05-31T09:47:41.580Z"
+    "lastSeenAt": "2026-06-01T12:39:39.359Z"
   },
   {
     "adId": 1066813976,
@@ -2308,7 +2308,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/986242a0-c9eb-47cd-911b-c9305b4ee522.jpg"
     ],
     "firstSeenAt": "2026-05-03T08:39:26.950Z",
-    "lastSeenAt": "2026-05-09T08:44:04.835Z"
+    "lastSeenAt": "2026-06-01T12:39:39.359Z"
   },
   {
     "adId": 1067544766,
@@ -3589,7 +3589,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39ba00b4-ed0b-45e2-a4e5-edade7282d26.jpg"
     ],
     "firstSeenAt": "2026-05-27T11:01:06.131Z",
-    "lastSeenAt": "2026-05-31T09:47:41.580Z"
+    "lastSeenAt": "2026-06-01T12:39:39.359Z"
   },
   {
     "adId": 1070272138,
@@ -3923,7 +3923,7 @@
     "listTime": "2026-05-30T14:07:45Z",
     "images": [],
     "firstSeenAt": "2026-05-31T09:47:41.580Z",
-    "lastSeenAt": "2026-05-31T09:47:41.580Z"
+    "lastSeenAt": "2026-06-01T12:39:39.359Z"
   },
   {
     "adId": 1070910817,
@@ -3961,7 +3961,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ae2c9670-4792-4641-8eb7-2945befb4c1f.jpg"
     ],
     "firstSeenAt": "2026-05-31T09:47:41.580Z",
-    "lastSeenAt": "2026-05-31T09:47:41.580Z"
+    "lastSeenAt": "2026-06-01T12:39:39.359Z"
   },
   {
     "adId": 1070902080,
@@ -3989,6 +3989,58 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d46a0a0d-2794-4eee-a83c-470c6eaa7bc0.jpg"
     ],
     "firstSeenAt": "2026-05-31T09:47:41.580Z",
-    "lastSeenAt": "2026-05-31T09:47:41.580Z"
+    "lastSeenAt": "2026-06-01T12:39:39.359Z"
+  },
+  {
+    "adId": 1071136657,
+    "link": "https://re.kufar.by/vi/1071136657",
+    "title": "Гараж Понемунь авто",
+    "description": "Стандартный гараж с подвалом по всем гаражом. Есть электричество.",
+    "priceByn": 19400,
+    "priceUsd": 7029,
+    "address": "Понемуньская ул, 15Аблок2к217, Гродно, Гродненская область",
+    "area": 18,
+    "seller": "Игорь",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Круглосуточная охрана",
+      "Видеонаблюдение",
+      "Подвал"
+    ],
+    "coordinates": {
+      "lat": 53.66403617197631,
+      "lon": 23.87921444622674
+    },
+    "listTime": "2026-06-01T09:54:00Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/57a4cec4-a9e7-4f83-a3c4-5fc6a1382da9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/21a5db36-3502-42eb-9e24-f47d8193dda8.jpg"
+    ],
+    "firstSeenAt": "2026-06-01T12:39:39.359Z",
+    "lastSeenAt": "2026-06-01T12:39:39.359Z"
+  },
+  {
+    "adId": 1071041032,
+    "link": "https://re.kufar.by/vi/1071041032",
+    "title": "Гараж в Гродно по ул. Грандичи",
+    "description": "Капитальное строение...",
+    "priceByn": 12000,
+    "priceUsd": 4348,
+    "address": "Меречская Застава ул, 1Аблок4к441, Гродно, Гродненская область",
+    "area": 1,
+    "seller": "Sergio",
+    "propertyType": "Гараж",
+    "coordinates": {
+      "lat": 53.731635665344314,
+      "lon": 23.82686431004555
+    },
+    "listTime": "2026-05-31T14:49:51Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e5570bae-2878-4fc3-afc7-2036c2024802.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c07c4a83-3c58-4104-b009-6a2738d27e31.jpg"
+    ],
+    "firstSeenAt": "2026-06-01T12:39:39.359Z",
+    "lastSeenAt": "2026-06-01T12:39:39.359Z"
   }
 ]
