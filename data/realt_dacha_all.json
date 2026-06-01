@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-31T09:53:04.911Z"
+    "lastSeenAt": "2026-06-01T12:45:12.204Z"
   },
   {
     "adId": 4057786,
@@ -1006,7 +1006,7 @@
       "https://cdn.realt.by/img/55/b4ffdaf2-2c6d-11f1-9dd0-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-31T09:53:04.911Z"
+    "lastSeenAt": "2026-06-01T12:45:12.204Z"
   },
   {
     "adId": 3844540,
@@ -1843,7 +1843,7 @@
       "https://cdn.realt.by/img/55/115a9376-8d65-11f0-a0a7-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-31T09:53:04.911Z"
+    "lastSeenAt": "2026-06-01T12:45:12.204Z"
   },
   {
     "adId": 3987628,
@@ -2580,14 +2580,14 @@
     "link": "https://realt.by/sale-dachi/object/4053334/",
     "title": "Овощевод-1",
     "description": "В домике две комнаты,кухня,печка и большая веранда с хорошим подвалом.При желании на чердаке можно сделать дополнительную большую комнату.На участке имеется деревянный сарай и туалет.Мусора и хлама как в домике так и в сарае нет вообще всё чисто.Дом ✓75.Геолокация участка 53.618768, 23.941245 Без торга.",
-    "priceByn": 21881,
-    "priceUsd": 7900,
+    "priceByn": 21776,
+    "priceUsd": 7890,
     "address": "Овощевод-1  75",
     "area": 33,
     "plotArea": 6,
     "levels": 2,
     "seller": "Юрий",
-    "listTime": "2026-05-15T09:50:39+03:00",
+    "listTime": "2026-06-01T09:38:00+03:00",
     "images": [
       "https://cdn.realt.by/img/55/f9b95e96-38e5-11f1-8582-0242ac120003",
       "https://cdn.realt.by/img/55/5fc41804-1643-11f1-b611-0242ac120003",
@@ -2605,7 +2605,7 @@
       "https://cdn.realt.by/img/55/91fd5eaa-3b5c-11f1-b219-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-16T09:05:31.869Z"
+    "lastSeenAt": "2026-06-01T12:45:12.204Z"
   },
   {
     "adId": 4063406,
@@ -2853,15 +2853,15 @@
     "link": "https://realt.by/sale-dachi/object/4037683/",
     "title": "дача СТ Ландыш, 10 км от Гродно",
     "description": "Продается дача в СТ Ландыш, 10 км от Гродно. Год постройки-2021 Общая площадь - 83 м2, площадь жилых помещений-52,4 м2; Площадь участка – 0,0515 га",
-    "priceByn": 55968,
-    "priceUsd": 20000,
+    "priceByn": 52440,
+    "priceUsd": 19000,
     "address": "Ландыш",
     "area": 83,
     "areaLiving": 52.4,
     "plotArea": 5.15,
     "yearBuilt": 2021,
     "seller": "Елена",
-    "listTime": "2026-05-12T10:17:46+03:00",
+    "listTime": "2026-06-01T11:19:44+03:00",
     "images": [
       "https://cdn.realt.by/img/55/7e73806c-08a8-11f1-bdb0-0242ac120002",
       "https://cdn.realt.by/img/55/7ee1d670-08a8-11f1-984e-0242ac120002",
@@ -2876,7 +2876,7 @@
       "https://cdn.realt.by/img/55/7ee68648-08a8-11f1-a6b3-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-13T10:09:16.601Z"
+    "lastSeenAt": "2026-06-01T12:45:12.204Z"
   },
   {
     "adId": 4095210,
@@ -5547,7 +5547,7 @@
       "https://cdn.realt.by/img/55/f87a1ea4-56da-11f1-a842-0242ac120003"
     ],
     "firstSeenAt": "2026-05-24T09:22:42.706Z",
-    "lastSeenAt": "2026-05-31T09:53:04.911Z"
+    "lastSeenAt": "2026-06-01T12:45:12.204Z"
   },
   {
     "adId": 4137152,
@@ -5787,6 +5787,61 @@
       "https://cdn.realt.by/img/55/acd5e788-5c68-11f1-b002-0242ac120003"
     ],
     "firstSeenAt": "2026-05-31T09:53:04.911Z",
-    "lastSeenAt": "2026-05-31T09:53:04.911Z"
+    "lastSeenAt": "2026-06-01T12:45:12.204Z"
+  },
+  {
+    "adId": 4140044,
+    "uuid": "c63a2550-5db1-11f1-98bf-7d269c16dd44",
+    "link": "https://realt.by/sale-dachi/object/4140044/",
+    "title": "дача СТ Олимпийское",
+    "description": "В продаже отличная дача в окружении леса СТ «Олимпийское», направление Южный рынок, база отдыха «Погораны», рядом д. Погораны. Участок 0, 0483 га в частной собственности.",
+    "priceByn": 41400,
+    "priceUsd": 15000,
+    "address": "Олимпийское",
+    "area": 28.5,
+    "plotArea": 4.83,
+    "yearBuilt": 1982,
+    "seller": "Надежда",
+    "listTime": "2026-06-01T15:14:19+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/9a7f37b6-5db1-11f1-8612-0242ac120003",
+      "https://cdn.realt.by/img/55/9a71b122-5db1-11f1-a671-0242ac120003",
+      "https://cdn.realt.by/img/55/9a69216a-5db1-11f1-a8b6-0242ac120003",
+      "https://cdn.realt.by/img/55/9a7cedbc-5db1-11f1-98ec-0242ac120003",
+      "https://cdn.realt.by/img/55/9a78794e-5db1-11f1-887d-0242ac120003",
+      "https://cdn.realt.by/img/55/9a46c728-5db1-11f1-b508-0242ac120003",
+      "https://cdn.realt.by/img/55/99c8ad34-5db1-11f1-9305-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-01T12:45:12.204Z",
+    "lastSeenAt": "2026-06-01T12:45:12.204Z"
+  },
+  {
+    "adId": 4139513,
+    "uuid": "4c9f0540-5cfc-11f1-98bf-7d269c16dd44",
+    "link": "https://realt.by/sale-dachi/object/4139513/",
+    "title": "Энергетик-2 Погораны",
+    "description": "Продаётся дача в живописном месте. Рядом лес. 6 км от города. СТ Энергетик-2. Погораны. Вода сезонная. Расположение дома уединенное, тихое. Предпоследний со стороны леса. На участке плодово-ягодные деревья. Выражены туи. Стеклопакеты. Печное отопление. Внутри 1й и 2й эт. обшит вагонкой. На 2м этаже пол- ламинат. Пол 1й эт. - доска. Парковка на 2 авто. Земельный участок и капитальное строение в частной собственности. Торг в разумных пределах.",
+    "priceByn": 56580,
+    "priceUsd": 20500,
+    "address": "Энергетик-2 Погораны",
+    "area": 50.5,
+    "plotArea": 6,
+    "seller": "Татьяна",
+    "listTime": "2026-05-31T19:45:32+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/c500d410-5cfb-11f1-b9f7-0242ac120003",
+      "https://cdn.realt.by/img/55/f8b9fe76-5cfb-11f1-b76f-0242ac120003",
+      "https://cdn.realt.by/img/55/f8b607f8-5cfb-11f1-a66c-0242ac120003",
+      "https://cdn.realt.by/img/55/ea0793e8-5cfb-11f1-a4ef-0242ac120003",
+      "https://cdn.realt.by/img/55/ea0d4022-5cfb-11f1-b689-0242ac120003",
+      "https://cdn.realt.by/img/55/ea103390-5cfb-11f1-9383-0242ac120003",
+      "https://cdn.realt.by/img/55/ea0dccae-5cfb-11f1-9759-0242ac120003",
+      "https://cdn.realt.by/img/55/ea14d026-5cfb-11f1-8ac0-0242ac120003",
+      "https://cdn.realt.by/img/55/c59ef94c-5cfb-11f1-8885-0242ac120003",
+      "https://cdn.realt.by/img/55/c5867fca-5cfb-11f1-97b8-0242ac120003",
+      "https://cdn.realt.by/img/55/c49c774a-5cfb-11f1-9fee-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-01T12:45:12.204Z",
+    "lastSeenAt": "2026-06-01T12:45:12.204Z"
   }
 ]

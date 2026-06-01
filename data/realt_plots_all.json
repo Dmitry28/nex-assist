@@ -989,7 +989,7 @@
       "https://cdn.realt.by/img/55/b1402144-0722-11f1-a61c-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-06-01T12:45:12.196Z"
   },
   {
     "adId": 3421758,
@@ -1347,7 +1347,7 @@
       "https://cdn.realt.by/img/55/84524b84-421f-11f1-8ffa-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-06-01T12:45:12.196Z"
   },
   {
     "adId": 3848704,
@@ -2054,5 +2054,29 @@
     ],
     "firstSeenAt": "2026-05-29T11:13:58.455Z",
     "lastSeenAt": "2026-05-30T09:24:44.885Z"
+  },
+  {
+    "adId": 4107084,
+    "uuid": "a597e490-4209-11f1-af4f-11016f3050a0",
+    "link": "https://realt.by/sale-plots/object/4107084/",
+    "title": "Черемушки-3",
+    "description": "Участок находиться в 7 км от Гродно в садовом товариществе.",
+    "priceByn": 30000,
+    "priceUsd": 10870,
+    "address": "Черемушки-3  48",
+    "plotArea": 7.57,
+    "seller": "Юлия",
+    "listTime": "2026-06-01T13:31:49+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/4c53be40-4209-11f1-a918-0242ac120003",
+      "https://cdn.realt.by/img/55/4c9b4012-4209-11f1-bd5d-0242ac120003",
+      "https://cdn.realt.by/img/55/4cfc44a2-4209-11f1-9429-0242ac120003",
+      "https://cdn.realt.by/img/55/4d16831c-4209-11f1-892c-0242ac120003",
+      "https://cdn.realt.by/img/55/4d6ed2c4-4209-11f1-80dc-0242ac120003",
+      "https://cdn.realt.by/img/55/4d89aa2c-4209-11f1-a203-0242ac120003",
+      "https://cdn.realt.by/img/55/4df96d9e-4209-11f1-8dc7-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-01T12:45:12.196Z",
+    "lastSeenAt": "2026-06-01T12:45:12.196Z"
   }
 ]
