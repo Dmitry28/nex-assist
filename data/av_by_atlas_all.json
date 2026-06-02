@@ -3,8 +3,8 @@
     "id": 128530901,
     "url": "https://cars.av.by/volkswagen/atlas/128530901",
     "title": "Volkswagen Atlas 2023",
-    "priceUsd": 48300,
-    "priceByn": 131931,
+    "priceUsd": 47000,
+    "priceByn": 130181,
     "brand": "Volkswagen",
     "model": "Atlas",
     "year": 2023,
@@ -22,7 +22,7 @@
     "renewedAt": "2026-05-19T05:58:03+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0013/0285/6813.jpg",
     "firstSeenAt": "2026-05-18T20:56:25.065Z",
-    "lastSeenAt": "2026-05-29T11:14:43.991Z"
+    "lastSeenAt": "2026-06-02T11:29:08.584Z"
   },
   {
     "id": 123378779,
@@ -47,7 +47,7 @@
     "renewedAt": "2026-01-26T06:18:34+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0012/4231/4071.jpg",
     "firstSeenAt": "2026-05-18T20:56:25.065Z",
-    "lastSeenAt": "2026-05-29T11:14:43.991Z"
+    "lastSeenAt": "2026-06-02T11:29:08.584Z"
   },
   {
     "id": 124663092,
@@ -72,7 +72,7 @@
     "renewedAt": "2026-04-22T12:09:42+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0012/6209/3127.jpg",
     "firstSeenAt": "2026-05-18T20:56:25.065Z",
-    "lastSeenAt": "2026-05-29T11:14:43.991Z"
+    "lastSeenAt": "2026-06-02T11:29:08.584Z"
   },
   {
     "id": 131034072,
@@ -97,7 +97,7 @@
     "renewedAt": "2026-05-23T05:47:46+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0012/5964/8827.jpg",
     "firstSeenAt": "2026-05-18T20:56:25.065Z",
-    "lastSeenAt": "2026-05-29T11:14:43.991Z"
+    "lastSeenAt": "2026-06-02T11:29:08.584Z"
   },
   {
     "id": 130928474,
@@ -122,7 +122,7 @@
     "renewedAt": "2026-05-21T13:26:57+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0012/5172/1128.jpg",
     "firstSeenAt": "2026-05-18T20:56:25.065Z",
-    "lastSeenAt": "2026-05-29T11:14:43.991Z"
+    "lastSeenAt": "2026-06-02T11:29:08.584Z"
   },
   {
     "id": 131025972,
@@ -147,7 +147,7 @@
     "renewedAt": "2026-05-10T12:59:43+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0012/5861/0197.jpg",
     "firstSeenAt": "2026-05-18T20:56:25.065Z",
-    "lastSeenAt": "2026-05-29T11:14:43.991Z"
+    "lastSeenAt": "2026-06-02T11:29:08.584Z"
   },
   {
     "id": 130522734,
@@ -171,7 +171,7 @@
     "publishedAt": "2026-04-06T19:17:15+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0012/3475/9743.jpg",
     "firstSeenAt": "2026-05-18T20:56:25.065Z",
-    "lastSeenAt": "2026-05-29T11:14:43.991Z"
+    "lastSeenAt": "2026-06-02T11:29:08.584Z"
   },
   {
     "id": 130457237,
@@ -196,54 +196,55 @@
     "renewedAt": "2026-05-26T09:11:11+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0012/3065/5166.jpg",
     "firstSeenAt": "2026-05-18T20:56:25.065Z",
-    "lastSeenAt": "2026-05-29T11:14:43.991Z"
+    "lastSeenAt": "2026-06-02T11:29:08.584Z"
   },
   {
-    "id": 132705468,
-    "url": "https://cars.av.by/volkswagen/atlas/132705468",
+    "id": 133566437,
+    "url": "https://cars.av.by/volkswagen/atlas/133566437",
     "title": "Volkswagen Atlas 2023",
-    "priceUsd": 37750,
-    "priceByn": 103114,
+    "priceUsd": 43999,
+    "priceByn": 121868,
     "brand": "Volkswagen",
     "model": "Atlas",
     "year": 2023,
-    "mileageKm": 77500,
+    "mileageKm": 25000,
     "engineCapacity": "2,0",
     "engineType": "бензин",
     "transmission": "автомат",
     "bodyType": "внедорожник 5 дв.",
     "driveType": "подключаемый полный привод",
-    "color": "серый",
-    "vinPartial": "1V2HR2C**********",
-    "location": "Молодечно, Минская обл.",
-    "sellerName": "Николай",
-    "publishedAt": "2026-05-23T05:43:03+0000",
-    "photoUrl": "https://avcdn.av.by/advertmedium/0013/3125/3837.jpg",
-    "firstSeenAt": "2026-05-24T09:23:50.689Z",
-    "lastSeenAt": "2026-05-29T11:14:43.991Z"
+    "color": "белый",
+    "vinPartial": "1V2BR2C**********",
+    "location": "Минск",
+    "sellerName": "Атлас",
+    "publishedAt": "2026-06-02T06:03:49+0000",
+    "photoUrl": "https://avcdn.av.by/advertmedium/0013/6567/0629.jpg",
+    "firstSeenAt": "2026-06-02T11:29:08.584Z",
+    "lastSeenAt": "2026-06-02T11:29:08.584Z"
   },
   {
-    "id": 132635491,
-    "url": "https://cars.av.by/volkswagen/atlas/132635491",
-    "title": "Volkswagen Atlas 2023",
-    "priceUsd": 38367,
-    "priceByn": 104800,
+    "id": 126259418,
+    "url": "https://cars.av.by/volkswagen/atlas/126259418",
+    "title": "Volkswagen Atlas 2024",
+    "priceUsd": 47000,
+    "priceByn": 130181,
     "brand": "Volkswagen",
     "model": "Atlas",
-    "year": 2023,
-    "mileageKm": 73300,
+    "year": 2024,
+    "mileageKm": 31000,
     "engineCapacity": "2,0",
     "engineType": "бензин",
     "transmission": "автомат",
     "bodyType": "внедорожник 5 дв.",
     "driveType": "передний привод",
-    "color": "чёрный",
-    "vinPartial": "1V2WR2C**********",
+    "color": "белый",
+    "vinPartial": "1V2DR2C**********",
     "location": "Минск",
-    "sellerName": "Autoshans",
-    "publishedAt": "2026-05-22T09:26:25+0000",
-    "photoUrl": "https://avcdn.av.by/advertmedium/0013/2912/6200.jpg",
-    "firstSeenAt": "2026-05-24T09:23:50.689Z",
-    "lastSeenAt": "2026-05-29T11:14:43.991Z"
+    "sellerName": "Кирилл ",
+    "publishedAt": "2025-12-11T07:41:37+0000",
+    "renewedAt": "2026-03-29T10:20:58+0000",
+    "photoUrl": "https://avcdn.av.by/advertmedium/0009/9820/2196.jpg",
+    "firstSeenAt": "2026-06-02T11:29:08.584Z",
+    "lastSeenAt": "2026-06-02T11:29:08.584Z"
   }
 ]
