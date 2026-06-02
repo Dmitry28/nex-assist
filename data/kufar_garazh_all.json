@@ -1771,7 +1771,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/77b2c7b6-d750-431d-92e2-6d23d6736824.jpg"
     ],
     "firstSeenAt": "2026-04-24T09:16:55.888Z",
-    "lastSeenAt": "2026-06-01T09:44:37.443Z"
+    "lastSeenAt": "2026-06-02T09:46:27.353Z"
   },
   {
     "adId": 1065912942,
@@ -2304,7 +2304,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/986242a0-c9eb-47cd-911b-c9305b4ee522.jpg"
     ],
     "firstSeenAt": "2026-05-03T08:39:26.950Z",
-    "lastSeenAt": "2026-06-01T09:44:37.443Z"
+    "lastSeenAt": "2026-06-02T09:46:27.353Z"
   },
   {
     "adId": 1067544766,
@@ -3547,7 +3547,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39ba00b4-ed0b-45e2-a4e5-edade7282d26.jpg"
     ],
     "firstSeenAt": "2026-05-27T09:48:34.542Z",
-    "lastSeenAt": "2026-06-01T09:44:37.443Z"
+    "lastSeenAt": "2026-06-02T09:46:27.353Z"
   },
   {
     "adId": 1070564460,
@@ -3765,7 +3765,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c07c4a83-3c58-4104-b009-6a2738d27e31.jpg"
     ],
     "firstSeenAt": "2026-06-01T09:44:37.443Z",
-    "lastSeenAt": "2026-06-01T09:44:37.443Z"
+    "lastSeenAt": "2026-06-02T09:46:27.353Z"
   },
   {
     "adId": 1070911107,
@@ -3788,7 +3788,7 @@
     "listTime": "2026-05-31T14:11:15Z",
     "images": [],
     "firstSeenAt": "2026-06-01T09:44:37.443Z",
-    "lastSeenAt": "2026-06-01T09:44:37.443Z"
+    "lastSeenAt": "2026-06-02T09:46:27.353Z"
   },
   {
     "adId": 1070910817,
@@ -3855,5 +3855,61 @@
     ],
     "firstSeenAt": "2026-06-01T09:44:37.443Z",
     "lastSeenAt": "2026-06-01T09:44:37.443Z"
+  },
+  {
+    "adId": 1071156579,
+    "link": "https://re.kufar.by/vi/1071156579",
+    "title": "Гараж",
+    "description": "Гараж в центре города, рядом новый район на улице Дзержинского, Островского, вблизи домов по улице Пушкина, Доватора...Крыша недавно была перекрыта, и",
+    "priceByn": 16065,
+    "priceUsd": 5800,
+    "address": "Гродно, Гродненская область",
+    "area": 16.8,
+    "seller": "Разгрузка личного гардероба",
+    "propertyType": "Гараж",
+    "coordinates": {
+      "lat": 53.677839,
+      "lon": 23.829529
+    },
+    "listTime": "2026-06-01T13:02:02Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cd728da5-1774-4870-87ff-a20d31f44219.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eb79acc5-c94a-43a4-81fa-d99b56dbe5e2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5bba1ecd-717c-472c-ac0b-3645c27961af.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/98abdcae-cd7f-411c-b86c-0cf9d1276965.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e4250e6a-70be-4970-994f-f2baaa8091e5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/dd6a557a-525a-4dc5-bcd1-30a614003be6.jpg"
+    ],
+    "firstSeenAt": "2026-06-02T09:46:27.353Z",
+    "lastSeenAt": "2026-06-02T09:46:27.353Z"
+  },
+  {
+    "adId": 1071136657,
+    "link": "https://re.kufar.by/vi/1071136657",
+    "title": "Гараж Понемунь авто",
+    "description": "Стандартный гараж с подвалом по всем гаражом. Есть электричество.",
+    "priceByn": 19400,
+    "priceUsd": 7004,
+    "address": "Понемуньская ул, 15Аблок2к217, Гродно, Гродненская область",
+    "area": 18,
+    "seller": "Игорь",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Круглосуточная охрана",
+      "Видеонаблюдение",
+      "Подвал"
+    ],
+    "coordinates": {
+      "lat": 53.66403617197631,
+      "lon": 23.87921444622674
+    },
+    "listTime": "2026-06-01T09:54:00Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/57a4cec4-a9e7-4f83-a3c4-5fc6a1382da9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/21a5db36-3502-42eb-9e24-f47d8193dda8.jpg"
+    ],
+    "firstSeenAt": "2026-06-02T09:46:27.353Z",
+    "lastSeenAt": "2026-06-02T09:46:27.353Z"
   }
 ]
