@@ -47,7 +47,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-06-01T09:44:37.443Z"
+    "lastSeenAt": "2026-06-03T09:49:11.631Z"
   },
   {
     "adId": 1062002915,
@@ -1401,7 +1401,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d0cba27d-2a67-47bb-9f8d-ee2b1f45b921.jpg"
     ],
     "firstSeenAt": "2026-04-16T08:40:16.263Z",
-    "lastSeenAt": "2026-05-28T09:45:52.811Z"
+    "lastSeenAt": "2026-06-03T09:49:11.631Z"
   },
   {
     "adId": 1065272904,
@@ -1910,7 +1910,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6539892e-d819-4f99-a2b9-e4ca318cf9f7.jpg"
     ],
     "firstSeenAt": "2026-04-27T09:21:21.537Z",
-    "lastSeenAt": "2026-04-28T09:37:11.546Z"
+    "lastSeenAt": "2026-06-03T09:49:11.631Z"
   },
   {
     "adId": 1066511821,
@@ -2272,8 +2272,8 @@
     "link": "https://re.kufar.by/vi/1067350141",
     "title": "Двойной гараж 6*6 Лососно-Новики",
     "description": "Продается двойной гараж , размером около 6*6\n\nКрыша не течет, стены оштукатурены и покрашены, потолок так же покрашен, разведена грамотно электрика, в",
-    "priceByn": 50814,
-    "priceUsd": 18000,
+    "priceByn": 44762,
+    "priceUsd": 16000,
     "address": "Венечная ул, 2Аблок26к2665, Гродно, Гродненская область",
     "area": 36,
     "seller": "Андрюха93",
@@ -2285,7 +2285,11 @@
       "Подвал",
       "Печное"
     ],
-    "listTime": "2026-05-02T19:01:14Z",
+    "coordinates": {
+      "lat": 53.66939610838362,
+      "lon": 23.760135674866802
+    },
+    "listTime": "2026-06-02T20:25:20Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3cca49ac-7f81-434a-a20f-535c603359b3.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e839e872-0684-4a64-9dd6-d1b36bcb3923.jpg",
@@ -2304,7 +2308,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/986242a0-c9eb-47cd-911b-c9305b4ee522.jpg"
     ],
     "firstSeenAt": "2026-05-03T08:39:26.950Z",
-    "lastSeenAt": "2026-06-02T09:46:27.353Z"
+    "lastSeenAt": "2026-06-03T09:49:11.631Z"
   },
   {
     "adId": 1067544766,
@@ -3547,7 +3551,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39ba00b4-ed0b-45e2-a4e5-edade7282d26.jpg"
     ],
     "firstSeenAt": "2026-05-27T09:48:34.542Z",
-    "lastSeenAt": "2026-06-02T09:46:27.353Z"
+    "lastSeenAt": "2026-06-03T09:49:11.631Z"
   },
   {
     "adId": 1070564460,
@@ -3771,9 +3775,9 @@
     "adId": 1070911107,
     "link": "https://re.kufar.by/vi/1070911107",
     "title": "Парковочное место",
-    "description": "Продам 2 парковочных машиноместа. \nЦена одного 3.500 долларов",
-    "priceByn": 9660,
-    "priceUsd": 3500,
+    "description": "Продам 2 парковочных машиноместа. \nЦена одного 3000 долларов",
+    "priceByn": 8393,
+    "priceUsd": 3000,
     "address": "Советских Пограничников ул, 57, Гродно, Гродненская область",
     "area": 1,
     "seller": "Денис",
@@ -3785,10 +3789,10 @@
       "lat": 53.670553,
       "lon": 23.815542
     },
-    "listTime": "2026-05-31T14:11:15Z",
+    "listTime": "2026-06-02T14:11:15Z",
     "images": [],
     "firstSeenAt": "2026-06-01T09:44:37.443Z",
-    "lastSeenAt": "2026-06-02T09:46:27.353Z"
+    "lastSeenAt": "2026-06-03T09:49:11.631Z"
   },
   {
     "adId": 1070910817,
@@ -3881,15 +3885,15 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/dd6a557a-525a-4dc5-bcd1-30a614003be6.jpg"
     ],
     "firstSeenAt": "2026-06-02T09:46:27.353Z",
-    "lastSeenAt": "2026-06-02T09:46:27.353Z"
+    "lastSeenAt": "2026-06-03T09:49:11.631Z"
   },
   {
     "adId": 1071136657,
     "link": "https://re.kufar.by/vi/1071136657",
     "title": "Гараж Понемунь авто",
     "description": "Стандартный гараж с подвалом по всем гаражом. Есть электричество.",
-    "priceByn": 19400,
-    "priceUsd": 7004,
+    "priceByn": 15400,
+    "priceUsd": 5505,
     "address": "Понемуньская ул, 15Аблок2к217, Гродно, Гродненская область",
     "area": 18,
     "seller": "Игорь",
@@ -3910,6 +3914,6 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/21a5db36-3502-42eb-9e24-f47d8193dda8.jpg"
     ],
     "firstSeenAt": "2026-06-02T09:46:27.353Z",
-    "lastSeenAt": "2026-06-02T09:46:27.353Z"
+    "lastSeenAt": "2026-06-03T09:49:11.631Z"
   }
 ]

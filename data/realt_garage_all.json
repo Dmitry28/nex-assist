@@ -106,7 +106,7 @@
       "https://cdn.realt.by/img/55/1df8c098-250a-11f1-9a87-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-06-03T10:02:21.643Z"
   },
   {
     "adId": 4069209,
@@ -338,5 +338,24 @@
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
     "lastSeenAt": "2026-05-09T21:42:42.837Z"
+  },
+  {
+    "adId": 4142598,
+    "uuid": "4b148bf0-5f31-11f1-9780-3fb3a7434153",
+    "link": "https://realt.by/sale-garage/object/4142598/",
+    "title": "Гродно, Понемуньская ул.",
+    "description": "Стандартный сухой гараж, электричество, освещение. подвал под всем гаражом.",
+    "priceByn": 15400,
+    "priceUsd": 5505,
+    "address": "Гродно Понемуньская ул. 15 2",
+    "seller": "Игорь",
+    "listTime": "2026-06-03T12:48:14+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/f9895afe-5f30-11f1-92cc-0242ac120003",
+      "https://cdn.realt.by/img/55/fab7ef08-5f30-11f1-b59b-0242ac120003",
+      "https://cdn.realt.by/img/55/f9697c98-5f30-11f1-9ba4-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-03T10:02:21.643Z",
+    "lastSeenAt": "2026-06-03T10:02:21.643Z"
   }
 ]
