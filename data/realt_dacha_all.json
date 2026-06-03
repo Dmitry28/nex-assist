@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-02T09:52:25.307Z"
+    "lastSeenAt": "2026-06-03T10:02:21.650Z"
   },
   {
     "adId": 4057786,
@@ -1045,7 +1045,7 @@
       "https://cdn.realt.by/img/55/875d12b0-a69c-11f0-8ab9-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-02T09:52:25.307Z"
+    "lastSeenAt": "2026-06-03T10:02:21.650Z"
   },
   {
     "adId": 4111872,
@@ -1843,7 +1843,7 @@
       "https://cdn.realt.by/img/55/115a9376-8d65-11f0-a0a7-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-02T09:52:25.307Z"
+    "lastSeenAt": "2026-06-03T10:02:21.650Z"
   },
   {
     "adId": 3987628,
@@ -3381,7 +3381,7 @@
       "https://cdn.realt.by/img/55/e82594fa-34b3-11f1-8ff6-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-02T09:52:25.307Z"
+    "lastSeenAt": "2026-06-03T10:02:21.650Z"
   },
   {
     "adId": 4091802,
@@ -5445,14 +5445,14 @@
     "link": "https://realt.by/sale-dachi/object/4132125/",
     "title": "дача СТ Демидково",
     "description": "Продается садовый (дачный) домик в Гродненской области, Одельский с/с, СТ Демидково, расположенный на участке площадью 8,31 сотки. Площадь дачи 23.5 м2. Участок обработан, высажены плодовые деревья, кустарники.",
-    "priceByn": 46436,
-    "priceUsd": 17000,
+    "priceByn": 41684,
+    "priceUsd": 14900,
     "address": "Демидково",
     "area": 23.5,
     "plotArea": 8.31,
     "yearBuilt": 1998,
     "seller": "Наталья",
-    "listTime": "2026-05-22T15:26:48+03:00",
+    "listTime": "2026-06-02T15:46:22+03:00",
     "images": [
       "https://cdn.realt.by/img/55/befe7a7a-55b4-11f1-8f30-0242ac120003",
       "https://cdn.realt.by/img/55/bece9f1c-55b4-11f1-a951-0242ac120003",
@@ -5466,7 +5466,7 @@
       "https://cdn.realt.by/img/55/bea0c39e-55b4-11f1-b975-0242ac120003"
     ],
     "firstSeenAt": "2026-05-22T13:52:19.606Z",
-    "lastSeenAt": "2026-05-22T13:52:19.606Z"
+    "lastSeenAt": "2026-06-03T10:02:21.650Z"
   },
   {
     "adId": 4129958,
@@ -5524,7 +5524,7 @@
       "https://cdn.realt.by/img/55/f87a1ea4-56da-11f1-a842-0242ac120003"
     ],
     "firstSeenAt": "2026-05-25T09:50:04.852Z",
-    "lastSeenAt": "2026-06-02T09:52:25.307Z"
+    "lastSeenAt": "2026-06-03T10:02:21.650Z"
   },
   {
     "adId": 4137152,
@@ -5725,6 +5725,172 @@
       "https://cdn.realt.by/img/55/99c8ad34-5db1-11f1-9305-0242ac120003"
     ],
     "firstSeenAt": "2026-06-02T09:52:25.307Z",
-    "lastSeenAt": "2026-06-02T09:52:25.307Z"
+    "lastSeenAt": "2026-06-03T10:02:21.650Z"
+  },
+  {
+    "adId": 4141906,
+    "uuid": "9e268300-5e98-11f1-9d45-8b63f0dfcc9f",
+    "link": "https://realt.by/sale-dachi/object/4141906/",
+    "title": "Дача для души и отдыха в СТ Полёт. Всего 10 минут от Гродно",
+    "description": "Отличное местоположение — СТ «Полёт»: Кооператив находится совсем рядом с городом, поездка на авто занимает считанные минуты. Для тех, у кого нет машины, регулярно и без перебоев ходят пригородные и городские автобусы. И город Вокруг — потрясающий сосновый лес с грибами и ягодами.",
+    "priceByn": 32615,
+    "priceUsd": 11658,
+    "address": "Полет Рябиновая",
+    "area": 24.4,
+    "areaLiving": 19.4,
+    "plotArea": 5.6,
+    "yearBuilt": 1986,
+    "levels": 1,
+    "seller": "Елена",
+    "listTime": "2026-06-02T18:48:11+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/582e5f12-5e98-11f1-be94-0242ac120003",
+      "https://cdn.realt.by/img/55/5838198a-5e98-11f1-8b51-0242ac120003",
+      "https://cdn.realt.by/img/55/5bcf5568-5e98-11f1-953c-0242ac120003",
+      "https://cdn.realt.by/img/55/5bdfdba4-5e98-11f1-ad6b-0242ac120003",
+      "https://cdn.realt.by/img/55/5f3c5e4e-5e98-11f1-ae66-0242ac120003",
+      "https://cdn.realt.by/img/55/5f5bb3ca-5e98-11f1-b708-0242ac120003",
+      "https://cdn.realt.by/img/55/5f68cc90-5e98-11f1-84fb-0242ac120003",
+      "https://cdn.realt.by/img/55/63350dfc-5e98-11f1-bdb3-0242ac120003",
+      "https://cdn.realt.by/img/55/632fbadc-5e98-11f1-a72c-0242ac120003",
+      "https://cdn.realt.by/img/55/669e2000-5e98-11f1-98cb-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-03T10:02:21.650Z",
+    "lastSeenAt": "2026-06-03T10:02:21.650Z"
+  },
+  {
+    "adId": 4141658,
+    "uuid": "22529440-5e83-11f1-9d45-8b63f0dfcc9f",
+    "link": "https://realt.by/sale-dachi/object/4141658/",
+    "title": "Дача в живописном месте в СТ Приграничное",
+    "description": "Продается дача в живописном месте в СТ «Приграничное» (Коптёвский с/с). Предусматривается газификация садового товарищества. Подъезд – асфальтированная дорога и до 5 км по грунтовке. В текущем году планируется асфальтирование дороги до садового товарищества (денежные средства на указанные нужды оплачены). Рядом с домом расположена остановка общественного транспорта. На участке площадью 16 соток (земля в частной собственности) есть садовый дом, модульный дом, баня и хозяйственные постройки.",
+    "priceByn": 94200,
+    "priceUsd": 33672,
+    "address": "Приграничное  139",
+    "area": 44.4,
+    "plotArea": 16,
+    "yearBuilt": 2014,
+    "seller": "Елена",
+    "listTime": "2026-06-02T16:41:19+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/72713662-5e82-11f1-af30-0242ac120003",
+      "https://cdn.realt.by/img/55/73e71e12-5e82-11f1-94e5-0242ac120003",
+      "https://cdn.realt.by/img/55/73d9b146-5e82-11f1-808e-0242ac120003",
+      "https://cdn.realt.by/img/55/73f6fe5e-5e82-11f1-8862-0242ac120003",
+      "https://cdn.realt.by/img/55/7fcea402-5e82-11f1-bf69-0242ac120003",
+      "https://cdn.realt.by/img/55/7fe48eb6-5e82-11f1-a9fd-0242ac120003",
+      "https://cdn.realt.by/img/55/7fe98f56-5e82-11f1-a03e-0242ac120003",
+      "https://cdn.realt.by/img/55/7feebf44-5e82-11f1-bef3-0242ac120003",
+      "https://cdn.realt.by/img/55/7ff5b722-5e82-11f1-9cca-0242ac120003",
+      "https://cdn.realt.by/img/55/899d3b88-5e82-11f1-b727-0242ac120003",
+      "https://cdn.realt.by/img/55/89aa4076-5e82-11f1-a9d3-0242ac120003",
+      "https://cdn.realt.by/img/55/89d45d2a-5e82-11f1-9a62-0242ac120003",
+      "https://cdn.realt.by/img/55/89e8b3ec-5e82-11f1-b64d-0242ac120003",
+      "https://cdn.realt.by/img/55/89f0d9fa-5e82-11f1-adb6-0242ac120003",
+      "https://cdn.realt.by/img/55/8ea31b52-5e82-11f1-913b-0242ac120003",
+      "https://cdn.realt.by/img/55/8eaec25e-5e82-11f1-ade2-0242ac120003",
+      "https://cdn.realt.by/img/55/8ebbd052-5e82-11f1-b533-0242ac120003",
+      "https://cdn.realt.by/img/55/8ecb8218-5e82-11f1-9849-0242ac120003",
+      "https://cdn.realt.by/img/55/8ecd34d2-5e82-11f1-adbb-0242ac120003",
+      "https://cdn.realt.by/img/55/94dbfeee-5e82-11f1-b25c-0242ac120003",
+      "https://cdn.realt.by/img/55/94fd4d42-5e82-11f1-8393-0242ac120003",
+      "https://cdn.realt.by/img/55/950423c4-5e82-11f1-8bea-0242ac120003",
+      "https://cdn.realt.by/img/55/95156df0-5e82-11f1-ab97-0242ac120003",
+      "https://cdn.realt.by/img/55/951e526c-5e82-11f1-926e-0242ac120003",
+      "https://cdn.realt.by/img/55/9b839e64-5e82-11f1-b935-0242ac120003",
+      "https://cdn.realt.by/img/55/9b7974fc-5e82-11f1-9ed7-0242ac120003",
+      "https://cdn.realt.by/img/55/9b838af0-5e82-11f1-8338-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-03T10:02:21.650Z",
+    "lastSeenAt": "2026-06-03T10:02:21.650Z"
+  },
+  {
+    "adId": 4141541,
+    "uuid": "244eda70-5e78-11f1-9d45-8b63f0dfcc9f",
+    "link": "https://realt.by/sale-dachi/object/4141541/",
+    "title": "УХОЖЕННАЯ ДАЧА С БАНЕЙ И ЗОНОЙ БАРБЕКЮ В СТ «ЭНЕРГЕТИК - 4», 15 МИН. от ГРОДНО",
+    "description": "УХОЖЕННАЯ ДАЧА С БАНЕЙ И ЗОНОЙ БАРБЕКЮ В СТ «ЭНЕРГЕТИК - 4». В живописном месте, шаговой доступности к р. Неман продам дачу: домик 50,1 м кв., земельный участок 5,55 сот., 15 мин. от г. Гродно",
+    "priceByn": 64345,
+    "priceUsd": 23000,
+    "address": "Гродно СТ Энергетик",
+    "area": 50.1,
+    "areaLiving": 37.8,
+    "areaKitchen": 7.2,
+    "plotArea": 5.5,
+    "seller": "Анна",
+    "listTime": "2026-06-02T15:47:27+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/b6a1c744-5e77-11f1-9f70-0242ac120003",
+      "https://cdn.realt.by/img/55/b745c452-5e77-11f1-8ce7-0242ac120003",
+      "https://cdn.realt.by/img/55/b69af734-5e77-11f1-b319-0242ac120003",
+      "https://cdn.realt.by/img/55/b77519c8-5e77-11f1-92cc-0242ac120003",
+      "https://cdn.realt.by/img/55/b6ce230c-5e77-11f1-ae2e-0242ac120003",
+      "https://cdn.realt.by/img/55/b6b9f986-5e77-11f1-ac06-0242ac120003",
+      "https://cdn.realt.by/img/55/b68f4ed4-5e77-11f1-bb97-0242ac120003",
+      "https://cdn.realt.by/img/55/b73a59e6-5e77-11f1-b34d-0242ac120003",
+      "https://cdn.realt.by/img/55/b768e158-5e77-11f1-bc85-0242ac120003",
+      "https://cdn.realt.by/img/55/b79c7374-5e77-11f1-8c73-0242ac120003",
+      "https://cdn.realt.by/img/55/b743591a-5e77-11f1-baed-0242ac120003",
+      "https://cdn.realt.by/img/55/b763e36a-5e77-11f1-b8c9-0242ac120003",
+      "https://cdn.realt.by/img/55/b76ed8c4-5e77-11f1-90af-0242ac120003",
+      "https://cdn.realt.by/img/55/b781e108-5e77-11f1-890a-0242ac120003",
+      "https://cdn.realt.by/img/55/b6e76c9a-5e77-11f1-acb9-0242ac120003",
+      "https://cdn.realt.by/img/55/b6f717bc-5e77-11f1-b87c-0242ac120003",
+      "https://cdn.realt.by/img/55/b72f3962-5e77-11f1-a89a-0242ac120003",
+      "https://cdn.realt.by/img/55/b7374eb8-5e77-11f1-ba3e-0242ac120003",
+      "https://cdn.realt.by/img/55/b684d706-5e77-11f1-af33-0242ac120003",
+      "https://cdn.realt.by/img/55/b77ba8ba-5e77-11f1-a0da-0242ac120003",
+      "https://cdn.realt.by/img/55/b7753f8e-5e77-11f1-95da-0242ac120003",
+      "https://cdn.realt.by/img/55/b788ec78-5e77-11f1-9697-0242ac120003",
+      "https://cdn.realt.by/img/55/b790510c-5e77-11f1-ab9e-0242ac120003",
+      "https://cdn.realt.by/img/55/b79532b2-5e77-11f1-9496-0242ac120003",
+      "https://cdn.realt.by/img/55/b7a4dffa-5e77-11f1-8041-0242ac120003",
+      "https://cdn.realt.by/img/55/b7ac175c-5e77-11f1-a707-0242ac120003",
+      "https://cdn.realt.by/img/55/b7b39982-5e77-11f1-9617-0242ac120003",
+      "https://cdn.realt.by/img/55/b7c1c444-5e77-11f1-b894-0242ac120003",
+      "https://cdn.realt.by/img/55/b6a57650-5e77-11f1-b5fc-0242ac120003",
+      "https://cdn.realt.by/img/55/b64dd86e-5e77-11f1-b862-0242ac120003",
+      "https://cdn.realt.by/img/55/b69d3fb2-5e77-11f1-a633-0242ac120003",
+      "https://cdn.realt.by/img/55/b5d79f1e-5e77-11f1-a573-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-03T10:02:21.650Z",
+    "lastSeenAt": "2026-06-03T10:02:21.650Z"
+  },
+  {
+    "adId": 3412490,
+    "uuid": "30bc1400-561c-11ef-8cb2-43ea911fc1e0",
+    "link": "https://realt.by/sale-dachi/object/3412490/",
+    "title": "Дача на берегу Немана",
+    "description": "Продается дача рядом с р.Неман СТ «Принеманское-1» Дом мансардного типа. Материал стен -брус обложен кирпичом. Крыша шифер. Размер дома 8мХ8м. На первом этаже пять комнат, на мансарде две. Электричество круглогодично, вода сезонная, отопление- 2 печи. Участок правильной прямоугольной формы размером 20х30м, огражден по периметру, находится в частной собственности (5,9сот). На участке имеются хозпостройки, плодовые деревья. Расстояние от Гродно 14км, асфальтированная дорога, рядом Неман.",
+    "priceByn": 47559,
+    "priceUsd": 17000,
+    "address": "Принеманское-1  56",
+    "area": 97.5,
+    "areaLiving": 47,
+    "areaKitchen": 13,
+    "plotArea": 5.9,
+    "yearBuilt": 1995,
+    "levels": 2,
+    "seller": "Дмитрий",
+    "listTime": "2026-06-02T18:26:48+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/4b8046ba-1f3b-11f0-94e0-0242ac120003",
+      "https://cdn.realt.by/img/55/f9a2d10c-561b-11ef-9498-2236ceb6d16d",
+      "https://cdn.realt.by/img/55/f126c344-561b-11ef-b945-2236ceb6d16d",
+      "https://cdn.realt.by/img/55/4b26ad58-1f3b-11f0-934b-0242ac120003",
+      "https://cdn.realt.by/img/55/4dc2bcb4-1f3b-11f0-b8e3-0242ac120003",
+      "https://cdn.realt.by/img/55/f347cc72-561b-11ef-ae5b-2236ceb6d16d",
+      "https://cdn.realt.by/img/55/4faa2116-1f3b-11f0-9fdf-0242ac120003",
+      "https://cdn.realt.by/img/55/4b2e3e10-1f3b-11f0-b957-0242ac120003",
+      "https://cdn.realt.by/img/55/556a92de-1f3b-11f0-82dd-0242ac120003",
+      "https://cdn.realt.by/img/55/53923fac-1f3b-11f0-a314-0242ac120003",
+      "https://cdn.realt.by/img/55/46355b1e-1f3b-11f0-b327-0242ac120003",
+      "https://cdn.realt.by/img/55/86fd7d66-1f3b-11f0-b490-0242ac120003",
+      "https://cdn.realt.by/img/55/89f2a064-1f3b-11f0-9f88-0242ac120003",
+      "https://cdn.realt.by/img/55/47537daa-1f3b-11f0-8b33-0242ac120003",
+      "https://cdn.realt.by/img/55/8c79fdba-b7bb-11ef-a8bf-2236ceb6d16d"
+    ],
+    "firstSeenAt": "2026-06-03T10:02:21.650Z",
+    "lastSeenAt": "2026-06-03T10:02:21.650Z"
   }
 ]
