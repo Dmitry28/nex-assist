@@ -30,7 +30,7 @@
     "adId": 1068542567,
     "link": "https://re.kufar.by/vi/1068542567",
     "title": "Сдам квартиру.Новостройка Грандичи",
-    "priceByn": 839,
+    "priceByn": 843,
     "priceUsd": 300,
     "address": "Виктора Саяпина ул, 12А, Гродно, Гродненская область",
     "rooms": 3,
@@ -50,7 +50,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/016a0133-bb66-4f53-a356-2dc0224af928.jpg"
     ],
     "firstSeenAt": "2026-05-19T09:38:55.213Z",
-    "lastSeenAt": "2026-06-03T09:49:16.133Z"
+    "lastSeenAt": "2026-06-04T10:05:54.819Z"
   },
   {
     "adId": 1067405190,
@@ -79,15 +79,15 @@
     "adId": 1063816828,
     "link": "https://re.kufar.by/vi/1063816828",
     "title": "Квартира полностью со всем необходимым для проживания",
-    "priceByn": 1250,
-    "priceUsd": 447,
+    "priceByn": 1350,
+    "priceUsd": 480,
     "address": "Виктора Саяпина ул, 4Б, Гродно, Гродненская область",
     "rooms": 2,
     "area": 64,
     "floor": 7,
     "totalFloors": 9,
     "repair": "Евро",
-    "listTime": "2026-04-10T14:11:21Z",
+    "listTime": "2026-06-04T07:19:52Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/55f5a19a-c7ab-4346-87c0-664fc5aff5a9.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d6c5bcff-02c3-4473-8c75-98f3839891b9.jpg",
@@ -96,14 +96,14 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fe3aaa67-820b-4056-a5c1-3f46eb49bd38.jpg"
     ],
     "firstSeenAt": "2026-05-19T09:38:55.213Z",
-    "lastSeenAt": "2026-06-03T09:49:16.133Z"
+    "lastSeenAt": "2026-06-04T10:05:54.819Z"
   },
   {
     "adId": 1060088409,
     "link": "https://re.kufar.by/vi/1060088409",
     "title": "Сдам квартиру на длительный срок",
     "priceByn": 1200,
-    "priceUsd": 429,
+    "priceUsd": 427,
     "address": "Виктора Саяпина ул, 4Б, Гродно, Гродненская область",
     "rooms": 2,
     "area": 79,
@@ -124,7 +124,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/180ba6d0-7fba-4180-a758-613e9ec47911.jpg"
     ],
     "firstSeenAt": "2026-05-19T09:38:55.213Z",
-    "lastSeenAt": "2026-06-03T09:49:16.133Z"
+    "lastSeenAt": "2026-06-04T10:05:54.819Z"
   },
   {
     "adId": 1069998358,
@@ -163,7 +163,7 @@
     "link": "https://re.kufar.by/vi/1070644850",
     "title": "Сдам однокомнатную квартиру в новостройке",
     "priceByn": 700,
-    "priceUsd": 250,
+    "priceUsd": 249,
     "address": "микрорайон Грандичи-2, микрорайон Грандичи, Гродно, Гродненская область",
     "rooms": 1,
     "area": 43,
@@ -184,6 +184,6 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d2879930-e83c-45a8-ad80-3632ccaf5c78.jpg"
     ],
     "firstSeenAt": "2026-06-01T09:46:26.755Z",
-    "lastSeenAt": "2026-06-03T09:49:16.133Z"
+    "lastSeenAt": "2026-06-04T10:05:54.819Z"
   }
 ]
