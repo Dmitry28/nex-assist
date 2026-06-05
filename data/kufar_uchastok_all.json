@@ -2327,7 +2327,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7b484c43-4b27-4651-9da7-52796a4e8d7a.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:08:18.564Z",
-    "lastSeenAt": "2026-06-04T10:47:55.075Z"
+    "lastSeenAt": "2026-06-05T10:56:44.241Z"
   },
   {
     "adId": 1063962481,
@@ -3457,7 +3457,7 @@
     "listTime": "2026-04-25T15:47:13Z",
     "images": [],
     "firstSeenAt": "2026-04-26T08:42:57.861Z",
-    "lastSeenAt": "2026-06-04T10:47:55.075Z"
+    "lastSeenAt": "2026-06-05T10:56:44.241Z"
   },
   {
     "adId": 1007549544,
@@ -3494,7 +3494,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/608c2076-f8b7-4dac-ad05-8a4f03223b00.jpg"
     ],
     "firstSeenAt": "2026-04-26T08:42:57.861Z",
-    "lastSeenAt": "2026-06-04T10:47:55.075Z"
+    "lastSeenAt": "2026-06-05T10:56:44.241Z"
   },
   {
     "adId": 1066326923,
@@ -4520,7 +4520,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/514def33-fecc-4485-93cf-7590e00d9290.jpg"
     ],
     "firstSeenAt": "2026-05-07T09:35:04.765Z",
-    "lastSeenAt": "2026-06-04T10:47:55.075Z"
+    "lastSeenAt": "2026-06-05T10:56:44.241Z"
   },
   {
     "adId": 1067958807,
@@ -5867,7 +5867,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8101ec04-febb-4bb3-8f70-aaad246c6a69.jpg"
     ],
     "firstSeenAt": "2026-05-22T10:31:25.721Z",
-    "lastSeenAt": "2026-06-04T10:47:55.075Z"
+    "lastSeenAt": "2026-06-05T10:56:44.241Z"
   },
   {
     "adId": 1069911935,
@@ -5952,7 +5952,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0d3416ac-b440-44e3-89e8-d2c2568f7ca6.jpg"
     ],
     "firstSeenAt": "2026-05-24T09:20:42.771Z",
-    "lastSeenAt": "2026-05-24T09:20:42.771Z"
+    "lastSeenAt": "2026-06-05T10:56:44.241Z"
   },
   {
     "adId": 1070244388,
@@ -6540,7 +6540,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b275a6f4-4472-48eb-add5-99b929312d26.jpg"
     ],
     "firstSeenAt": "2026-06-04T10:47:55.075Z",
-    "lastSeenAt": "2026-06-04T10:47:55.075Z"
+    "lastSeenAt": "2026-06-05T10:56:44.241Z"
   },
   {
     "adId": 1071440937,
@@ -6567,6 +6567,33 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fb751d78-ce0b-44f4-a8e4-8371c96e4fbd.jpg"
     ],
     "firstSeenAt": "2026-06-04T10:47:55.075Z",
-    "lastSeenAt": "2026-06-04T10:47:55.075Z"
+    "lastSeenAt": "2026-06-05T10:56:44.241Z"
+  },
+  {
+    "adId": 1071638554,
+    "link": "https://re.kufar.by/vi/1071638554",
+    "title": "Участок",
+    "description": "Продам участок. 11 соток. По улице проходит вода и газ. Электричество подведено к участку, залит фундамент.",
+    "priceByn": 48110,
+    "priceUsd": 17000,
+    "address": "Петра Бровки ул, 38, деревня Каменка, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 11,
+    "seller": "Иван",
+    "features": [
+      "Центральная",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.58535484507826,
+      "lon": 23.774692042165924
+    },
+    "listTime": "2026-06-04T13:01:48Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b927f2ef-b82d-4142-acb1-aadb76b03522.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/debed6fc-0a4e-479d-9cea-435b673a93be.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e0a5aa1d-b556-48f8-8ed4-590cec5effe2.jpg"
+    ],
+    "firstSeenAt": "2026-06-05T10:56:44.241Z",
+    "lastSeenAt": "2026-06-05T10:56:44.241Z"
   }
 ]
