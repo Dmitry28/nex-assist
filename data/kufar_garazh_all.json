@@ -3474,7 +3474,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ce5c4bac-49f3-4c34-a7e5-77f3e88f7ce4.jpg"
     ],
     "firstSeenAt": "2026-05-24T09:20:42.769Z",
-    "lastSeenAt": "2026-05-24T09:20:42.769Z"
+    "lastSeenAt": "2026-06-05T10:56:44.239Z"
   },
   {
     "adId": 1070157473,
@@ -3593,7 +3593,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39ba00b4-ed0b-45e2-a4e5-edade7282d26.jpg"
     ],
     "firstSeenAt": "2026-05-27T11:01:06.131Z",
-    "lastSeenAt": "2026-06-04T10:47:55.072Z"
+    "lastSeenAt": "2026-06-05T10:56:44.239Z"
   },
   {
     "adId": 1070272138,
@@ -4098,7 +4098,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b9977669-8edd-4f90-b7d2-8bd3d94c0a3e.jpg"
     ],
     "firstSeenAt": "2026-06-04T10:47:55.072Z",
-    "lastSeenAt": "2026-06-04T10:47:55.072Z"
+    "lastSeenAt": "2026-06-05T10:56:44.239Z"
   },
   {
     "adId": 1071543593,
@@ -4121,6 +4121,62 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/934927a4-ccdf-4a34-8b49-79e8b66d9724.jpg"
     ],
     "firstSeenAt": "2026-06-04T10:47:55.072Z",
-    "lastSeenAt": "2026-06-04T10:47:55.072Z"
+    "lastSeenAt": "2026-06-05T10:56:44.239Z"
+  },
+  {
+    "adId": 1071794646,
+    "link": "https://re.kufar.by/vi/1071794646",
+    "title": "Продам Гараж",
+    "description": "Продам гараж с навесом, вся информация на фото",
+    "priceByn": 9905,
+    "priceUsd": 3500,
+    "address": "Меречская Застава ул, 1А, Гродно, Гродненская область",
+    "area": 16.5,
+    "seller": "Владислав",
+    "propertyType": "Гараж",
+    "features": [
+      "Наземная"
+    ],
+    "coordinates": {
+      "lat": 53.730949,
+      "lon": 23.825989
+    },
+    "listTime": "2026-06-05T08:35:54Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3baf5b80-e3db-474d-a62d-0d061eea2985.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/860a46ff-e7f9-452d-93cb-18a93d45f9b0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b00523ee-8926-495c-a8c4-fe082dc1715a.jpg"
+    ],
+    "firstSeenAt": "2026-06-05T10:56:44.239Z",
+    "lastSeenAt": "2026-06-05T10:56:44.239Z"
+  },
+  {
+    "adId": 1071705796,
+    "link": "https://re.kufar.by/vi/1071705796",
+    "title": "Гаражный бокс",
+    "description": "Продам гаражный бокс с офисом был использован под шиномонтаж   размеры 11*4 м возможно переоборудовать под  общепит , под летний домик и т.д.  самовыв",
+    "priceByn": 25470,
+    "priceUsd": 9000,
+    "address": "Лапенковская ул, Гродно, Гродненская область",
+    "area": 44,
+    "seller": "Зоя",
+    "propertyType": "Бокс",
+    "coordinates": {
+      "lat": 53.73074211242159,
+      "lon": 23.85134416115048
+    },
+    "listTime": "2026-06-04T18:37:41Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d1a870da-14f3-4600-919e-b24a13277592.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0618c444-c0e0-449a-9d9b-a20f7f784484.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/10734449-5408-42d2-8cca-0d7552d092e2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c4db1da2-195e-45fc-a682-faa3c60ca8e2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f46a83a2-a06c-4282-b1f5-5eb10c6c2afa.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1ab54b0d-f7ff-4b3f-a946-7ff114303ed8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f581866b-bb4d-4a2a-a53f-1f94812eb019.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8a386549-f83e-43c1-b32e-528c46893a36.jpg"
+    ],
+    "firstSeenAt": "2026-06-05T10:56:44.239Z",
+    "lastSeenAt": "2026-06-05T10:56:44.239Z"
   }
 ]
