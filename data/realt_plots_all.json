@@ -162,7 +162,7 @@
       "https://cdn.realt.by/img/55/2ffd0c80-4932-11f1-ab34-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-06-05T09:57:36.873Z"
   },
   {
     "adId": 4115566,
@@ -236,7 +236,7 @@
       "https://cdn.realt.by/img/55/bed31b50-8888-11ef-9995-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-06-05T09:57:36.873Z"
   },
   {
     "adId": 3798291,
@@ -320,7 +320,7 @@
       "https://static.realt.by/thumb/c/430x374/131f4d96a433d10c4eac2dbc63603e98/ln/9/site3ac6z9ln/eaa82307e4.jpg"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-06-05T09:57:36.873Z"
   },
   {
     "adId": 3327318,
@@ -415,7 +415,7 @@
       "https://cdn.realt.by/img/55/ff5ca15a-2d0f-11f1-9118-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-06-05T09:57:36.873Z"
   },
   {
     "adId": 4111237,
@@ -441,7 +441,7 @@
       "https://cdn.realt.by/img/55/5c8e657c-449c-11f1-8af6-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-06-05T09:57:36.873Z"
   },
   {
     "adId": 3902136,
@@ -1348,7 +1348,7 @@
       "https://cdn.realt.by/img/55/84524b84-421f-11f1-8ffa-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-04T10:15:40.619Z"
+    "lastSeenAt": "2026-06-05T09:57:36.873Z"
   },
   {
     "adId": 3848704,
@@ -2029,5 +2029,28 @@
     "images": [],
     "firstSeenAt": "2026-06-03T10:02:21.642Z",
     "lastSeenAt": "2026-06-04T10:15:40.619Z"
+  },
+  {
+    "adId": 4144232,
+    "uuid": "d51a2cd0-603d-11f1-82b6-7969fefbc065",
+    "link": "https://realt.by/sale-plots/object/4144232/",
+    "title": "Подлабенский с/с, лесная поляна 14",
+    "description": "Продам дачный домик воды газа света нет торг есть.",
+    "priceByn": 16964,
+    "priceUsd": 6000,
+    "address": "Подлабенский с/с лесная поляна 14 14",
+    "plotArea": 6,
+    "seller": "Андрей",
+    "listTime": "2026-06-04T21:03:07+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/a9f30978-603d-11f1-ac35-0242ac120003",
+      "https://cdn.realt.by/img/55/aa79588e-603d-11f1-8450-0242ac120003",
+      "https://cdn.realt.by/img/55/aaf52e78-603d-11f1-a978-0242ac120003",
+      "https://cdn.realt.by/img/55/ab5e4dea-603d-11f1-a52d-0242ac120003",
+      "https://cdn.realt.by/img/55/abe4a926-603d-11f1-9dcb-0242ac120003",
+      "https://cdn.realt.by/img/55/b42910d6-603d-11f1-adde-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-05T09:57:36.873Z",
+    "lastSeenAt": "2026-06-05T09:57:36.873Z"
   }
 ]
