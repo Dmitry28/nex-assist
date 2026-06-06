@@ -2327,7 +2327,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7b484c43-4b27-4651-9da7-52796a4e8d7a.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:08:18.564Z",
-    "lastSeenAt": "2026-06-05T10:56:44.241Z"
+    "lastSeenAt": "2026-06-06T09:26:08.074Z"
   },
   {
     "adId": 1063962481,
@@ -4520,7 +4520,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/514def33-fecc-4485-93cf-7590e00d9290.jpg"
     ],
     "firstSeenAt": "2026-05-07T09:35:04.765Z",
-    "lastSeenAt": "2026-06-05T10:56:44.241Z"
+    "lastSeenAt": "2026-06-06T09:26:08.074Z"
   },
   {
     "adId": 1067958807,
@@ -5807,7 +5807,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fb667ec6-2d71-4bd5-88f0-540316c387af.jpg"
     ],
     "firstSeenAt": "2026-05-22T10:31:25.721Z",
-    "lastSeenAt": "2026-05-22T10:31:25.721Z"
+    "lastSeenAt": "2026-06-06T09:26:08.074Z"
   },
   {
     "adId": 1069767410,
@@ -5867,7 +5867,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8101ec04-febb-4bb3-8f70-aaad246c6a69.jpg"
     ],
     "firstSeenAt": "2026-05-22T10:31:25.721Z",
-    "lastSeenAt": "2026-06-05T10:56:44.241Z"
+    "lastSeenAt": "2026-06-06T09:26:08.074Z"
   },
   {
     "adId": 1069911935,
@@ -5952,7 +5952,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0d3416ac-b440-44e3-89e8-d2c2568f7ca6.jpg"
     ],
     "firstSeenAt": "2026-05-24T09:20:42.771Z",
-    "lastSeenAt": "2026-06-05T10:56:44.241Z"
+    "lastSeenAt": "2026-06-06T09:26:08.074Z"
   },
   {
     "adId": 1070244388,
@@ -6594,6 +6594,39 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e0a5aa1d-b556-48f8-8ed4-590cec5effe2.jpg"
     ],
     "firstSeenAt": "2026-06-05T10:56:44.241Z",
-    "lastSeenAt": "2026-06-05T10:56:44.241Z"
+    "lastSeenAt": "2026-06-06T09:26:08.074Z"
+  },
+  {
+    "adId": 1071882726,
+    "link": "https://re.kufar.by/vi/1071882726",
+    "title": "Участок",
+    "description": "Дачный участок в СТДубравушка 2. На участке имеется временное строение, сарайчик. Сезонная вода, электричество 220,380.  стоит собственный счетчик по ",
+    "priceByn": 28300,
+    "priceUsd": 10000,
+    "address": "145, СТ Дубравушка-2, Путришковский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5.5,
+    "seller": "Ирина",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.75348845021858,
+      "lon": 23.88193606470037
+    },
+    "listTime": "2026-06-05T19:18:01Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/868acc66-aa2b-4a69-9dbe-655d1a36baf6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8a4312e3-e463-40b4-b8ac-55ccad3dcb92.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/521937a8-5cf0-40c3-82d1-d968b060a99e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5e2775dd-6aa3-4764-8d1c-69f2bd492d50.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e94f3576-0e3c-4f08-9502-f369460b40a6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/aa350957-cbe7-45b9-a0bc-af1724b36a6d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/32e30154-286a-4cd5-b070-7882b301e7b7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/974d08f2-5f62-4748-9628-5f76ce1796a6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1bedb61c-ca02-48e4-bdca-5cd70c9d46aa.jpg"
+    ],
+    "firstSeenAt": "2026-06-06T09:26:08.074Z",
+    "lastSeenAt": "2026-06-06T09:26:08.074Z"
   }
 ]
