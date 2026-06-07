@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-06T09:28:48.148Z"
+    "lastSeenAt": "2026-06-07T10:05:05.020Z"
   },
   {
     "adId": 4057786,
@@ -459,7 +459,7 @@
       "https://cdn.realt.by/img/55/cedbcce6-2d9a-11f1-a3db-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-06T09:28:48.148Z"
+    "lastSeenAt": "2026-06-07T10:05:05.020Z"
   },
   {
     "adId": 4029977,
@@ -1045,7 +1045,7 @@
       "https://cdn.realt.by/img/55/875d12b0-a69c-11f0-8ab9-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-06T09:28:48.148Z"
+    "lastSeenAt": "2026-06-07T10:05:05.020Z"
   },
   {
     "adId": 4111872,
@@ -1481,7 +1481,7 @@
       "https://cdn.realt.by/img/55/5cd22cee-9d12-11f0-a9ab-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-06T09:28:48.148Z"
+    "lastSeenAt": "2026-06-07T10:05:05.020Z"
   },
   {
     "adId": 4079252,
@@ -5242,14 +5242,14 @@
     "link": "https://realt.by/sale-dachi/object/4122349/",
     "title": "Малое Демидково",
     "description": "Продается дача в районе \"Малое Демидково\". 15 км от г.Гродно. Участок 8 соток. Приватизирована. Дом из силикатных блоков-24 м2 с верандой-8 м2. Проведено электричество. На участке имеются колодец,куб для воды,туалет,хозсарай. В доме:печь,бетонированный подвал,чердачное помещение,свет, телевизор. Высажены плодовые деревья,сортовой виноград,кусты. Торг уместен в разумных пределах. Все вопросы,пожалуйста,по телефону.",
-    "priceByn": 27938,
-    "priceUsd": 10000,
+    "priceByn": 22619,
+    "priceUsd": 8000,
     "address": "Малое Демидково",
     "areaLiving": 24,
     "plotArea": 8,
     "levels": 1,
     "seller": "Алексей Иванович",
-    "listTime": "2026-05-13T10:40:16+03:00",
+    "listTime": "2026-06-07T11:59:07+03:00",
     "images": [
       "https://cdn.realt.by/img/55/3df1d172-4e9b-11f1-b5b2-0242ac120003",
       "https://cdn.realt.by/img/55/3d900190-4e9b-11f1-a236-0242ac120003",
@@ -5265,7 +5265,7 @@
       "https://cdn.realt.by/img/55/468bc4e6-4e9b-11f1-9a21-0242ac120003"
     ],
     "firstSeenAt": "2026-05-13T10:09:16.601Z",
-    "lastSeenAt": "2026-05-14T10:05:10.120Z"
+    "lastSeenAt": "2026-06-07T10:05:05.020Z"
   },
   {
     "adId": 4122788,
@@ -5549,7 +5549,7 @@
       "https://cdn.realt.by/img/55/f87a1ea4-56da-11f1-a842-0242ac120003"
     ],
     "firstSeenAt": "2026-05-24T09:22:42.706Z",
-    "lastSeenAt": "2026-06-06T09:28:48.148Z"
+    "lastSeenAt": "2026-06-07T10:05:05.020Z"
   },
   {
     "adId": 4137152,
@@ -6074,7 +6074,7 @@
       "https://cdn.realt.by/img/55/8c79fdba-b7bb-11ef-a8bf-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-06-03T12:22:03.538Z",
-    "lastSeenAt": "2026-06-06T09:28:48.148Z"
+    "lastSeenAt": "2026-06-07T10:05:05.020Z"
   },
   {
     "adId": 3106591,
@@ -6315,7 +6315,7 @@
       "https://cdn.realt.by/img/55/d46b09b4-6180-11f1-ae7f-0242ac120003"
     ],
     "firstSeenAt": "2026-06-06T09:28:48.148Z",
-    "lastSeenAt": "2026-06-06T09:28:48.148Z"
+    "lastSeenAt": "2026-06-07T10:05:05.020Z"
   },
   {
     "adId": 4145192,
@@ -6353,6 +6353,36 @@
       "https://cdn.realt.by/img/55/f9f79eee-60eb-11f1-9639-0242ac120003"
     ],
     "firstSeenAt": "2026-06-06T09:28:48.148Z",
-    "lastSeenAt": "2026-06-06T09:28:48.148Z"
+    "lastSeenAt": "2026-06-07T10:05:05.020Z"
+  },
+  {
+    "adId": 4145814,
+    "uuid": "be482610-61aa-11f1-9780-3fb3a7434153",
+    "link": "https://realt.by/sale-dachi/object/4145814/",
+    "title": "Ландыш",
+    "description": "Продам дом. 2 этажа 11 соток земли. Септик, вода сезонная. Нужна внутренняя отделка . Вопросы по телефону",
+    "priceByn": 56265,
+    "priceUsd": 19900,
+    "address": "Ландыш",
+    "area": 96,
+    "plotArea": 11,
+    "yearBuilt": 2024,
+    "levels": 2,
+    "seller": "Денис",
+    "listTime": "2026-06-06T18:28:48+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/0ff44fb2-61aa-11f1-86de-0242ac120003",
+      "https://cdn.realt.by/img/55/0fcfb1e8-61aa-11f1-a9c1-0242ac120003",
+      "https://cdn.realt.by/img/55/0d63b4d6-61aa-11f1-8e42-0242ac120003",
+      "https://cdn.realt.by/img/55/0bf035d4-61aa-11f1-9e14-0242ac120003",
+      "https://cdn.realt.by/img/55/0d6e3136-61aa-11f1-a00b-0242ac120003",
+      "https://cdn.realt.by/img/55/0cd092be-61aa-11f1-9ecc-0242ac120003",
+      "https://cdn.realt.by/img/55/0d1e8cf8-61aa-11f1-b8be-0242ac120003",
+      "https://cdn.realt.by/img/55/0dc40494-61aa-11f1-a0d2-0242ac120003",
+      "https://cdn.realt.by/img/55/10a3f480-61aa-11f1-8006-0242ac120003",
+      "https://cdn.realt.by/img/55/10b6341a-61aa-11f1-a69f-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-07T10:05:05.020Z",
+    "lastSeenAt": "2026-06-07T10:05:05.020Z"
   }
 ]

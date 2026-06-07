@@ -706,8 +706,8 @@
     "link": "https://re.kufar.by/vi/1056448347",
     "title": "Продам участок с домиком СТ ''Салют'',р-н Каролино",
     "description": "Продам земельный участок с дачным домиком СТ \"Салют\", район Каролино, рядом с автобусной остановкой. Хорошее месторасположение, 2 линия от главной дор",
-    "priceByn": 31135,
-    "priceUsd": 10500,
+    "priceByn": 28297,
+    "priceUsd": 9999,
     "address": "СТ Салют, Подлабенский сельсовет, Гродненский район, Гродненская область",
     "plotArea": 6,
     "seller": "Брайн",
@@ -716,16 +716,24 @@
       "Частная собственность",
       "Да"
     ],
-    "listTime": "2026-03-27T18:15:51Z",
+    "coordinates": {
+      "lat": 53.639602,
+      "lon": 23.691179
+    },
+    "listTime": "2026-06-07T06:51:38Z",
     "images": [
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6c71a843-113f-4c84-9b73-542da0e932c9.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ef4607a5-52dc-43d5-8a46-a7503bb7e699.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f199b06f-a995-4781-9add-fc27b61ec4e3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8abfb16b-92c2-4e7f-98d1-c6a41cb275f7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/03b8c751-7952-46cc-b702-6943209de06c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/67177023-2566-4465-b293-88d1edb4b48e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/537e54ce-86dd-4b7b-947d-2489adaae57c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca47c6b3-fa48-4ae7-9ff7-f0e0cf8c6128.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/da4df45c-8ec8-4a4f-b61d-7ba4a3bb0298.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d7f33a7f-a14e-48e7-8825-942522312a13.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8c3d8b38-10bc-43c8-9698-7c95e2e6e041.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.801Z",
-    "lastSeenAt": "2026-06-01T12:39:39.361Z"
+    "lastSeenAt": "2026-06-07T10:03:25.312Z"
   },
   {
     "adId": 1062276662,
@@ -2126,7 +2134,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a33e18be-5f9c-4fe4-aeec-25324138f034.jpg"
     ],
     "firstSeenAt": "2026-04-10T08:33:09.046Z",
-    "lastSeenAt": "2026-06-01T12:39:39.361Z"
+    "lastSeenAt": "2026-06-07T10:03:25.312Z"
   },
   {
     "adId": 1064403656,
@@ -2254,19 +2262,23 @@
   {
     "adId": 1064519686,
     "link": "https://re.kufar.by/vi/1064519686",
-    "title": "Дача СТ «Нива-2 д.Погораны» , участок 12 соток .",
-    "description": "Продам дачу район Погораны, 12 соток . Участок крайний, боковой недалеко лес . Хорошая, широкая дорога до самой дачи . Участок ровный . На участке ест",
-    "priceByn": 37391,
-    "priceUsd": 13500,
+    "title": "Дача СТ «Нива-2 д.Погораны» , участок 11 соток .",
+    "description": "Продам дачу район Погораны, 11 соток . Участок крайний, боковой недалеко лес . Хорошая, широкая дорога до самой дачи . Участок ровный . На участке ест",
+    "priceByn": 36790,
+    "priceUsd": 13000,
     "address": "22, СТ Нива-2, Коптёвский сельсовет, Гродненский район, Гродненская область",
-    "plotArea": 12,
+    "plotArea": 11,
     "seller": "Елена",
     "features": [
       "Сезонная",
       "Частная собственность",
       "Да"
     ],
-    "listTime": "2026-05-15T16:36:55Z",
+    "coordinates": {
+      "lat": 53.62156356075671,
+      "lon": 23.919451156074444
+    },
+    "listTime": "2026-06-07T06:48:43Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e0f31449-b023-45b8-858d-297f9ef24b30.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/da79b36c-cd88-4d7a-99c5-b9b3c79cd7b3.jpg",
@@ -2275,7 +2287,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2b475c11-052b-4d45-9f0c-33531ebac3c8.jpg"
     ],
     "firstSeenAt": "2026-04-12T08:07:35.869Z",
-    "lastSeenAt": "2026-05-17T09:15:11.633Z"
+    "lastSeenAt": "2026-06-07T10:03:25.312Z"
   },
   {
     "adId": 1064748471,
@@ -2327,7 +2339,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7b484c43-4b27-4651-9da7-52796a4e8d7a.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:08:18.564Z",
-    "lastSeenAt": "2026-06-06T09:26:08.074Z"
+    "lastSeenAt": "2026-06-07T10:03:25.312Z"
   },
   {
     "adId": 1063962481,
@@ -4520,7 +4532,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/514def33-fecc-4485-93cf-7590e00d9290.jpg"
     ],
     "firstSeenAt": "2026-05-07T09:35:04.765Z",
-    "lastSeenAt": "2026-06-06T09:26:08.074Z"
+    "lastSeenAt": "2026-06-07T10:03:25.312Z"
   },
   {
     "adId": 1067958807,
@@ -5515,7 +5527,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1a55610d-3369-4645-8d79-2d22c2d373e9.jpg"
     ],
     "firstSeenAt": "2026-05-17T09:15:11.633Z",
-    "lastSeenAt": "2026-06-01T12:39:39.361Z"
+    "lastSeenAt": "2026-06-07T10:03:25.312Z"
   },
   {
     "adId": 1069270601,
@@ -5807,7 +5819,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fb667ec6-2d71-4bd5-88f0-540316c387af.jpg"
     ],
     "firstSeenAt": "2026-05-22T10:31:25.721Z",
-    "lastSeenAt": "2026-06-06T09:26:08.074Z"
+    "lastSeenAt": "2026-06-07T10:03:25.312Z"
   },
   {
     "adId": 1069767410,
@@ -6627,6 +6639,57 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1bedb61c-ca02-48e4-bdca-5cd70c9d46aa.jpg"
     ],
     "firstSeenAt": "2026-06-06T09:26:08.074Z",
-    "lastSeenAt": "2026-06-06T09:26:08.074Z"
+    "lastSeenAt": "2026-06-07T10:03:25.312Z"
+  },
+  {
+    "adId": 1072087171,
+    "link": "https://re.kufar.by/vi/1072087171",
+    "title": "Участок",
+    "description": "Участок находится не далеко от Ольшанки 12 км.",
+    "priceByn": 17000,
+    "priceUsd": 6007,
+    "address": "27, СТ Вита, Квасовский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 8,
+    "seller": "Валентина",
+    "features": [
+      "Колодец",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.51704543911821,
+      "lon": 23.801556694470808
+    },
+    "listTime": "2026-06-06T19:30:54Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5b9b86c7-0b25-4a8a-95ee-168ae6a7367f.jpg"
+    ],
+    "firstSeenAt": "2026-06-07T10:03:25.312Z",
+    "lastSeenAt": "2026-06-07T10:03:25.312Z"
+  },
+  {
+    "adId": 1071980116,
+    "link": "https://re.kufar.by/vi/1071980116",
+    "title": "Дачный участок",
+    "description": "Продаётся дачный участок в садовом товариществе \"Ландыш\". Участок в собственности, есть сезонная вода и возможность подключения электричества. Растёт ",
+    "priceByn": 2500,
+    "priceUsd": 883,
+    "address": "53, СТ Ландыш, Квасовский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5,
+    "seller": "Алексей",
+    "features": [
+      "Сезонная"
+    ],
+    "coordinates": {
+      "lat": 53.54089265262062,
+      "lon": 23.908235422371384
+    },
+    "listTime": "2026-06-06T10:51:06Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/625a42bf-5c60-4b7d-a143-6d974aa09340.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b0120f33-99de-451a-bdb9-7f15ec2f46e0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/be55c00d-1e68-4b7a-ab95-6b81d320d45f.jpg"
+    ],
+    "firstSeenAt": "2026-06-07T10:03:25.312Z",
+    "lastSeenAt": "2026-06-07T10:03:25.312Z"
   }
 ]
