@@ -733,7 +733,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8c3d8b38-10bc-43c8-9698-7c95e2e6e041.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.801Z",
-    "lastSeenAt": "2026-06-07T10:03:25.312Z"
+    "lastSeenAt": "2026-06-08T11:56:19.997Z"
   },
   {
     "adId": 1062276662,
@@ -1634,7 +1634,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/521fad65-df6d-44df-b80e-ff715b0ad1f5.jpg"
     ],
     "firstSeenAt": "2026-04-05T16:51:33.361Z",
-    "lastSeenAt": "2026-05-27T11:01:06.133Z"
+    "lastSeenAt": "2026-06-08T11:56:19.997Z"
   },
   {
     "adId": 1063723127,
@@ -2235,7 +2235,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/92c8dec1-5c23-4459-b592-a624d87fe5bb.jpg"
     ],
     "firstSeenAt": "2026-04-12T08:07:35.869Z",
-    "lastSeenAt": "2026-06-02T11:25:47.555Z"
+    "lastSeenAt": "2026-06-08T11:56:19.997Z"
   },
   {
     "adId": 1037553582,
@@ -2287,7 +2287,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2b475c11-052b-4d45-9f0c-33531ebac3c8.jpg"
     ],
     "firstSeenAt": "2026-04-12T08:07:35.869Z",
-    "lastSeenAt": "2026-06-07T10:03:25.312Z"
+    "lastSeenAt": "2026-06-08T11:56:19.997Z"
   },
   {
     "adId": 1064748471,
@@ -2339,7 +2339,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7b484c43-4b27-4651-9da7-52796a4e8d7a.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:08:18.564Z",
-    "lastSeenAt": "2026-06-07T10:03:25.312Z"
+    "lastSeenAt": "2026-06-08T11:56:19.997Z"
   },
   {
     "adId": 1063962481,
@@ -5527,7 +5527,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1a55610d-3369-4645-8d79-2d22c2d373e9.jpg"
     ],
     "firstSeenAt": "2026-05-17T09:15:11.633Z",
-    "lastSeenAt": "2026-06-07T10:03:25.312Z"
+    "lastSeenAt": "2026-06-08T11:56:19.997Z"
   },
   {
     "adId": 1069270601,
@@ -6664,7 +6664,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5b9b86c7-0b25-4a8a-95ee-168ae6a7367f.jpg"
     ],
     "firstSeenAt": "2026-06-07T10:03:25.312Z",
-    "lastSeenAt": "2026-06-07T10:03:25.312Z"
+    "lastSeenAt": "2026-06-08T11:56:19.997Z"
   },
   {
     "adId": 1071980116,
@@ -6691,5 +6691,63 @@
     ],
     "firstSeenAt": "2026-06-07T10:03:25.312Z",
     "lastSeenAt": "2026-06-07T10:03:25.312Z"
+  },
+  {
+    "adId": 1072315726,
+    "link": "https://re.kufar.by/vi/1072315726",
+    "title": "Дачный участок возле Коробчиц СТ Лососянка",
+    "description": "Продается отличный земельный участок в СТ Лососянка рядом с д. Коробчицы , 7км до города. (Гродненская обл., Гродненский р-н, Коптевский с/с, СТ «Лосо",
+    "priceByn": 9588,
+    "priceUsd": 3400,
+    "address": "36, СТ Лососянка, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5,
+    "seller": "Пользователь",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.588236,
+      "lon": 23.721722
+    },
+    "listTime": "2026-06-08T07:00:13Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/92858bc3-0f1c-4ca1-a617-ca2cc58f296e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8873303b-9837-430c-b213-a31b1e993ba3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/95934c16-4968-4126-9528-2b0ce6a4324d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d2cfccd2-d4cd-4668-a88a-576c3370093c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eb54d6b3-8c26-4974-ab66-6d2ca5f8a267.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9755906e-c927-462f-abeb-c6c7f718d9bc.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9b625e5d-ba6e-43e1-8cc1-c4e2d14e440e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d5a45fde-7e10-49f2-993e-dcc38154e063.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7c120e1e-e755-48de-9843-33f2981090f7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/31bf36cb-b7e7-4163-b2eb-b7de1168f596.jpg"
+    ],
+    "firstSeenAt": "2026-06-08T11:56:19.997Z",
+    "lastSeenAt": "2026-06-08T11:56:19.997Z"
+  },
+  {
+    "adId": 1072159438,
+    "link": "https://re.kufar.by/vi/1072159438",
+    "title": "Участок дачи",
+    "description": "Адрес гродненский район  сторана Белочка 32 огорожен вода сезоная колодец не далеко  форма собственности частная",
+    "priceByn": 15000,
+    "priceUsd": 5319,
+    "address": "30, СТ Белочка, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 10,
+    "seller": "Татьяна",
+    "coordinates": {
+      "lat": 53.609381,
+      "lon": 23.951466
+    },
+    "listTime": "2026-06-07T10:03:18Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/75529de8-9ef6-414b-be27-0bc36ae361ef.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/496a79ac-22a9-4cd0-ba07-362cf2fd990a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7ae6ff86-6c39-4e5e-9dc5-177ddb4cab03.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/03d6345d-aa76-4633-b12d-79999a10fa15.jpg"
+    ],
+    "firstSeenAt": "2026-06-08T11:56:19.997Z",
+    "lastSeenAt": "2026-06-08T11:56:19.997Z"
   }
 ]
