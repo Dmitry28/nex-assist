@@ -40,7 +40,7 @@
       "https://cdn.realt.by/img/55/03fd1570-d66f-11f0-b546-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-02T09:52:25.301Z"
+    "lastSeenAt": "2026-06-08T09:53:16.948Z"
   },
   {
     "adId": 4058841,
@@ -1061,7 +1061,7 @@
       "https://cdn.realt.by/img/55/62a91ee4-493c-11f1-a7ea-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-06-08T09:53:16.948Z"
   },
   {
     "adId": 4116329,
@@ -2486,7 +2486,7 @@
       "https://cdn.realt.by/img/55/9e8844fa-d590-11f0-a7c8-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-06-08T09:53:16.948Z"
   },
   {
     "adId": 4082934,
@@ -5875,7 +5875,7 @@
       "https://static.realt.by/thumb/c/430x374/c5f662a11b216aff1dcebc6285dd1e9e/b7/i/11013c3efib7/93fc9e448f.jpeg"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-05T09:57:36.875Z"
+    "lastSeenAt": "2026-06-08T09:53:16.948Z"
   },
   {
     "adId": 3878873,
@@ -6133,7 +6133,7 @@
       "https://cdn.realt.by/img/55/d3a16436-f2c9-11f0-916e-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-06-08T09:53:16.948Z"
   },
   {
     "adId": 3501272,
@@ -6932,7 +6932,7 @@
       "https://cdn.realt.by/img/55/5c55b2d6-be1f-11ef-a381-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-04T10:15:40.622Z"
+    "lastSeenAt": "2026-06-08T09:53:16.948Z"
   },
   {
     "adId": 3812144,
@@ -11514,5 +11514,84 @@
     ],
     "firstSeenAt": "2026-06-05T09:57:36.875Z",
     "lastSeenAt": "2026-06-05T09:57:36.875Z"
+  },
+  {
+    "adId": 4146516,
+    "uuid": "15eff5a0-6296-11f1-9ae5-d964c5b7109a",
+    "link": "https://realt.by/sale-cottages/object/4146516/",
+    "title": "Брузги, Пограничная ул.",
+    "description": "Продается дом на большом участке в стороне от соседей рядом лес, река в которой водится форель.",
+    "priceByn": 70423,
+    "priceUsd": 25000,
+    "address": "Брузги Пограничная ул. 35",
+    "area": 49,
+    "areaLiving": 36,
+    "areaKitchen": 13,
+    "plotArea": 24,
+    "yearBuilt": 1940,
+    "seller": "Лилия",
+    "listTime": "2026-06-07T20:37:45+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/7c5586c6-6295-11f1-a09c-0242ac120003",
+      "https://cdn.realt.by/img/55/7e128afe-6295-11f1-8f31-0242ac120003",
+      "https://cdn.realt.by/img/55/7e21708c-6295-11f1-9fad-0242ac120003",
+      "https://cdn.realt.by/img/55/7e3ad46e-6295-11f1-a328-0242ac120003",
+      "https://cdn.realt.by/img/55/7e4829ac-6295-11f1-8666-0242ac120003",
+      "https://cdn.realt.by/img/55/7e52db22-6295-11f1-aa47-0242ac120003",
+      "https://cdn.realt.by/img/55/83645dde-6295-11f1-8c5c-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-08T09:53:16.948Z",
+    "lastSeenAt": "2026-06-08T09:53:16.948Z"
+  },
+  {
+    "adId": 4146451,
+    "uuid": "031babb0-628a-11f1-82b6-7969fefbc065",
+    "link": "https://realt.by/sale-cottages/object/4146451/",
+    "title": "Большой недорогой дом без отделки в Зарице-2!",
+    "description": "Большой дом на коммуникациях в Зарице-2, под отделку, рядом с лесом, участок 9 сот.",
+    "priceByn": 168732,
+    "priceUsd": 59900,
+    "address": "Гродно Желковского ул.",
+    "area": 187.6,
+    "areaLiving": 117,
+    "plotArea": 9.08,
+    "yearBuilt": 2007,
+    "levels": 2,
+    "seller": "Денис",
+    "listTime": "2026-06-07T20:22:15+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/5f2c714e-628c-11f1-98e5-0242ac120003",
+      "https://cdn.realt.by/img/55/f0e773b4-628b-11f1-a1c1-0242ac120003",
+      "https://cdn.realt.by/img/55/98d7af8c-628f-11f1-add5-0242ac120003",
+      "https://cdn.realt.by/img/55/99932118-628f-11f1-8b8f-0242ac120003",
+      "https://cdn.realt.by/img/55/9a2f5f74-628f-11f1-8d42-0242ac120003",
+      "https://cdn.realt.by/img/55/a8284086-628b-11f1-8388-0242ac120003",
+      "https://cdn.realt.by/img/55/a8cb3bba-628b-11f1-86ee-0242ac120003",
+      "https://cdn.realt.by/img/55/a96fe6e2-628b-11f1-a6bc-0242ac120003",
+      "https://cdn.realt.by/img/55/c96b18fc-628d-11f1-9126-0242ac120003",
+      "https://cdn.realt.by/img/55/a3158f5a-628f-11f1-9296-0242ac120003",
+      "https://cdn.realt.by/img/55/a963a27e-628b-11f1-809e-0242ac120003",
+      "https://cdn.realt.by/img/55/f0dce8ea-628b-11f1-bb8e-0242ac120003",
+      "https://cdn.realt.by/img/55/a835c8dc-628b-11f1-b803-0242ac120003",
+      "https://cdn.realt.by/img/55/a8343300-628b-11f1-8702-0242ac120003",
+      "https://cdn.realt.by/img/55/a84dfb28-628b-11f1-9995-0242ac120003",
+      "https://cdn.realt.by/img/55/96062256-628b-11f1-a681-0242ac120003",
+      "https://cdn.realt.by/img/55/a8e1cba0-628b-11f1-9e87-0242ac120003",
+      "https://cdn.realt.by/img/55/a8986000-628b-11f1-ba08-0242ac120003",
+      "https://cdn.realt.by/img/55/c2861aa2-628b-11f1-af1d-0242ac120003",
+      "https://cdn.realt.by/img/55/a60c1dcc-628b-11f1-818a-0242ac120003",
+      "https://cdn.realt.by/img/55/a9dd7d9c-628b-11f1-8a3b-0242ac120003",
+      "https://cdn.realt.by/img/55/b93f8d48-628b-11f1-bf2c-0242ac120003",
+      "https://cdn.realt.by/img/55/b307861a-628b-11f1-b26b-0242ac120003",
+      "https://cdn.realt.by/img/55/c38edd30-628b-11f1-b522-0242ac120003",
+      "https://cdn.realt.by/img/55/8c43ae6e-628b-11f1-9802-0242ac120003",
+      "https://cdn.realt.by/img/55/bf19d9b2-628b-11f1-a1ed-0242ac120003",
+      "https://cdn.realt.by/img/55/c37503c4-628b-11f1-a67f-0242ac120003",
+      "https://cdn.realt.by/img/55/c2fc17b6-628b-11f1-8f0f-0242ac120003",
+      "https://cdn.realt.by/img/55/b074ef78-628b-11f1-ad6e-0242ac120003",
+      "https://cdn.realt.by/img/55/bd1f2298-628b-11f1-8cd5-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-08T09:53:16.948Z",
+    "lastSeenAt": "2026-06-08T09:53:16.948Z"
   }
 ]
