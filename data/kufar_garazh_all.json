@@ -47,7 +47,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-06-07T10:03:25.309Z"
+    "lastSeenAt": "2026-06-08T11:56:19.994Z"
   },
   {
     "adId": 1062002915,
@@ -856,7 +856,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2b140d18-2fdc-4813-874a-545551991b63.jpg"
     ],
     "firstSeenAt": "2026-04-05T16:51:33.360Z",
-    "lastSeenAt": "2026-06-07T10:03:25.309Z"
+    "lastSeenAt": "2026-06-08T11:56:19.994Z"
   },
   {
     "adId": 1063817729,
@@ -3686,7 +3686,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cfd08504-eb47-477e-954c-bb3b5a1c4433.jpg"
     ],
     "firstSeenAt": "2026-05-28T10:59:13.524Z",
-    "lastSeenAt": "2026-06-07T10:03:25.309Z"
+    "lastSeenAt": "2026-06-08T11:56:19.994Z"
   },
   {
     "adId": 1070550879,
@@ -4007,10 +4007,10 @@
     "link": "https://re.kufar.by/vi/1071136657",
     "title": "Гараж Понемунь авто",
     "description": "Стандартный гараж с подвалом по всем гаражом. Есть электричество.",
-    "priceByn": 19400,
-    "priceUsd": 7029,
+    "priceByn": 14000,
+    "priceUsd": 4965,
     "address": "Понемуньская ул, 15Аблок2к217, Гродно, Гродненская область",
-    "area": 18,
+    "area": 16,
     "seller": "Игорь",
     "propertyType": "Гараж",
     "features": [
@@ -4023,13 +4023,13 @@
       "lat": 53.66403617197631,
       "lon": 23.87921444622674
     },
-    "listTime": "2026-06-01T09:54:00Z",
+    "listTime": "2026-06-08T06:16:26Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/57a4cec4-a9e7-4f83-a3c4-5fc6a1382da9.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/21a5db36-3502-42eb-9e24-f47d8193dda8.jpg"
     ],
     "firstSeenAt": "2026-06-01T12:39:39.359Z",
-    "lastSeenAt": "2026-06-02T11:25:47.553Z"
+    "lastSeenAt": "2026-06-08T11:56:19.994Z"
   },
   {
     "adId": 1071041032,
@@ -4268,6 +4268,35 @@
     "listTime": "2026-06-06T13:41:01Z",
     "images": [],
     "firstSeenAt": "2026-06-07T10:03:25.309Z",
-    "lastSeenAt": "2026-06-07T10:03:25.309Z"
+    "lastSeenAt": "2026-06-08T11:56:19.994Z"
+  },
+  {
+    "adId": 1072169230,
+    "link": "https://re.kufar.by/vi/1072169230",
+    "title": "Гараж",
+    "description": "Продам гараж, ширина 3.60 . Хороший ремонт, яма ( подвал ) так же с ремонтом. Свёт по всему гаражу. По всем вопросам просьба писать в лс.",
+    "priceByn": 29610,
+    "priceUsd": 10500,
+    "address": "Промысловый проезд, 6блок21к2108, Гродно, Гродненская область",
+    "area": 20.3,
+    "seller": "Михаил",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Видеонаблюдение",
+      "Смотровая яма",
+      "Подвал",
+      "Печное"
+    ],
+    "coordinates": {
+      "lat": 53.71492281865392,
+      "lon": 23.810829701391217
+    },
+    "listTime": "2026-06-07T11:33:53Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/336d5ebe-7c70-4e5c-a68e-7f61b1ee82bd.jpg"
+    ],
+    "firstSeenAt": "2026-06-08T11:56:19.994Z",
+    "lastSeenAt": "2026-06-08T11:56:19.994Z"
   }
 ]

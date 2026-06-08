@@ -214,8 +214,8 @@
     "link": "https://re.kufar.by/vi/255149518",
     "title": "Дача на берегу Лососянки, СТ ''Тропинка'', 44",
     "description": "Продается дача в районе озера Юбилейное в СТ \"Тропинка, 44 в 7 км от кольца на ул. Суворова. Прекрасное месторасположение вблизи реки Лососянки. Садов",
-    "priceByn": 32751,
-    "priceUsd": 11907,
+    "priceByn": 33840,
+    "priceUsd": 12000,
     "address": "СТ Тропинка, Подлабенский сельсовет, Гродненский район, Гродненская область",
     "area": 18.2,
     "plotArea": 7,
@@ -229,7 +229,7 @@
       "lat": 53.650568,
       "lon": 23.750048
     },
-    "listTime": "2026-05-25T08:10:50Z",
+    "listTime": "2026-06-08T11:31:48Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/666beaa9-a027-4f0b-98b6-dc61193f4d7a.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1fe5f305-83c2-4cc0-8508-563080e334b8.jpg",
@@ -245,7 +245,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eaddc1b6-51e1-4305-aaf4-f44ba8d53318.jpg"
     ],
     "firstSeenAt": "2026-05-11T10:29:36.291Z",
-    "lastSeenAt": "2026-05-25T11:15:07.902Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1036365314,
@@ -421,7 +421,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/52fac510-9c66-444d-9678-588cc58f862b.jpg"
     ],
     "firstSeenAt": "2026-05-11T10:29:36.291Z",
-    "lastSeenAt": "2026-05-25T11:15:07.902Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1065895191,
@@ -497,7 +497,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/26964d3a-7ff4-471e-a9d1-107fb212d8e6.jpg"
     ],
     "firstSeenAt": "2026-05-11T10:29:36.291Z",
-    "lastSeenAt": "2026-06-02T11:25:47.558Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1013585679,
@@ -633,7 +633,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/db778001-9579-456e-8a79-ea75e2ba8532.jpg"
     ],
     "firstSeenAt": "2026-05-11T10:29:36.291Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 245177254,
@@ -1130,7 +1130,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/653070e9-48e0-4d10-9787-2a280866568a.jpg"
     ],
     "firstSeenAt": "2026-05-11T10:29:36.291Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1068459308,
@@ -1179,8 +1179,8 @@
     "link": "https://re.kufar.by/vi/1067817515",
     "title": "Дом под отделку: монолит, участок 14 соток, 5 мин до Гродно. Вид на лес",
     "description": "Мы редко используем слово «уникальный», но этот объект заслуживает именно такого определения. Это не просто «дом в посёлке». Это реализованный архитек",
-    "priceByn": 449168,
-    "priceUsd": 160000,
+    "priceByn": 408900,
+    "priceUsd": 145000,
     "address": "Живописная ул, деревня Каменка, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "area": 300,
     "plotArea": 14.3,
@@ -1192,7 +1192,11 @@
       "Центральная",
       "Частная собственность"
     ],
-    "listTime": "2026-05-10T15:35:32Z",
+    "coordinates": {
+      "lat": 53.582645,
+      "lon": 23.777031
+    },
+    "listTime": "2026-06-08T06:26:13Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0795a165-ccc4-4831-9fb4-6e3b97e6eafe.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ddf76178-d42a-4717-9c4e-9a8eb3ddb795.jpg",
@@ -1222,7 +1226,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9d0ce8b1-ed16-43bf-b520-4f3c77f22444.jpg"
     ],
     "firstSeenAt": "2026-05-11T10:29:36.291Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1067431896,
@@ -1451,7 +1455,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/85c22627-8bcf-44cd-b9ae-3ab9226979ad.jpg"
     ],
     "firstSeenAt": "2026-05-11T10:29:36.291Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1063463025,
@@ -1529,7 +1533,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/26e61698-b95c-4a87-b0eb-7da93941a59c.jpg"
     ],
     "firstSeenAt": "2026-05-11T10:29:36.291Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1060482072,
@@ -1589,7 +1593,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2d6c3d74-829d-4b8e-85b3-fb2a269d6832.jpg"
     ],
     "firstSeenAt": "2026-05-11T10:29:36.291Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1065877445,
@@ -1805,7 +1809,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d64f2f5b-ac97-49d7-b3f7-25d7c12a8721.jpg"
     ],
     "firstSeenAt": "2026-05-11T10:29:36.291Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1032608753,
@@ -2038,9 +2042,10 @@
     "link": "https://re.kufar.by/vi/1016880757",
     "title": "Продам дачу",
     "description": "Дача находится 9 км от города, автобус Торгмаш, от конечной остановки метров 300. На участке есть плодовые деревья, кусты. Вода сезонная, электричеств",
-    "priceByn": 23862,
-    "priceUsd": 8500,
+    "priceByn": 22560,
+    "priceUsd": 8000,
     "address": "Горница, Гродненская область",
+    "area": 10,
     "plotArea": 6,
     "seller": "Виктория",
     "propertyType": "Дача",
@@ -2048,14 +2053,18 @@
       "Отсутствует",
       "Сезонная"
     ],
-    "listTime": "2026-05-09T14:30:52Z",
+    "coordinates": {
+      "lat": 53.593572,
+      "lon": 23.932003
+    },
+    "listTime": "2026-06-07T13:37:07Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ed6e2749-3101-4ae7-b53f-dcad8758692b.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f7e988a2-75ea-4889-996d-9f70ea21bc6a.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2a1121c6-b818-4126-8769-5fbf89319e6e.jpg"
     ],
     "firstSeenAt": "2026-05-11T10:29:36.291Z",
-    "lastSeenAt": "2026-05-24T09:20:42.773Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1055550684,
@@ -2433,7 +2442,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2787c95e-19cc-4891-9139-30c303a27e1c.jpg"
     ],
     "firstSeenAt": "2026-05-12T10:22:56.051Z",
-    "lastSeenAt": "2026-06-02T11:25:47.558Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1031825168,
@@ -3060,7 +3069,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/33cd3630-2c51-460d-9b59-c15bde377659.jpg"
     ],
     "firstSeenAt": "2026-05-12T10:22:56.051Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1066496340,
@@ -3150,7 +3159,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d76a4a29-335c-4e3a-99ff-bdd1b7cd8c4a.jpg"
     ],
     "firstSeenAt": "2026-05-12T10:22:56.051Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1060508185,
@@ -3888,7 +3897,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5ad54857-ce0d-45f1-8aed-841e7cc4fa46.jpg"
     ],
     "firstSeenAt": "2026-05-12T10:22:56.051Z",
-    "lastSeenAt": "2026-06-04T10:47:55.077Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1011233668,
@@ -3936,7 +3945,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3941e2a8-04aa-402b-9bb0-d6bc50dbaf64.jpg"
     ],
     "firstSeenAt": "2026-05-12T10:22:56.051Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1065557584,
@@ -5233,7 +5242,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/700fdb4d-44a2-4f4e-8f04-770696fb1df6.jpg"
     ],
     "firstSeenAt": "2026-05-14T09:57:44.879Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1068829611,
@@ -7746,7 +7755,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/396d5271-050e-4824-bf7c-c156a9a52330.jpg"
     ],
     "firstSeenAt": "2026-05-15T10:12:43.712Z",
-    "lastSeenAt": "2026-05-16T09:01:12.538Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 205314064,
@@ -10547,7 +10556,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2612127e-dfa4-4822-89a9-4a9778d6f131.jpg"
     ],
     "firstSeenAt": "2026-05-18T11:08:43.951Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1069366726,
@@ -10674,7 +10683,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5e02da3a-4669-4708-8708-6e8bd655a98f.jpg"
     ],
     "firstSeenAt": "2026-05-18T11:08:43.951Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1067939641,
@@ -12225,7 +12234,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a87f11aa-5638-4c16-a0f6-2a0f89c51f59.jpg"
     ],
     "firstSeenAt": "2026-05-20T10:32:07.071Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1069720024,
@@ -12897,7 +12906,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/04e4eee6-3583-4618-9e7f-a871116e5285.jpg"
     ],
     "firstSeenAt": "2026-05-21T10:45:04.006Z",
-    "lastSeenAt": "2026-06-06T09:26:08.077Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1069619884,
@@ -13541,7 +13550,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/966d7a31-83b9-4280-8b67-a7b532635e3f.jpg"
     ],
     "firstSeenAt": "2026-05-22T10:31:25.723Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1069758122,
@@ -13640,7 +13649,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e11841f5-ba55-4911-878e-07f535fb2165.jpg"
     ],
     "firstSeenAt": "2026-05-24T09:20:42.773Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1070039569,
@@ -13820,7 +13829,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/52d12833-771e-42ef-846a-119482523ea1.jpg"
     ],
     "firstSeenAt": "2026-05-24T09:20:42.773Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1069978727,
@@ -14323,7 +14332,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4f87851b-9b7a-478c-ad58-fd8a98aa2d47.jpg"
     ],
     "firstSeenAt": "2026-05-24T09:20:42.773Z",
-    "lastSeenAt": "2026-05-24T09:20:42.773Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1069878710,
@@ -14534,7 +14543,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c6cd6be7-bf89-44d2-80ce-aba3dc16f412.jpg"
     ],
     "firstSeenAt": "2026-05-25T11:15:07.902Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1045099128,
@@ -14632,7 +14641,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7a522d3b-e43d-4459-a1d1-71e73caf301f.jpg"
     ],
     "firstSeenAt": "2026-05-25T11:15:07.902Z",
-    "lastSeenAt": "2026-05-25T11:15:07.902Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1070211554,
@@ -15016,7 +15025,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/845a28d2-63ce-4637-8c54-cb67ff552923.jpg"
     ],
     "firstSeenAt": "2026-05-27T11:01:06.136Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1070418542,
@@ -15790,7 +15799,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4338b969-514a-46a3-826d-0df085d63fdd.jpg"
     ],
     "firstSeenAt": "2026-05-27T11:01:06.136Z",
-    "lastSeenAt": "2026-05-27T11:01:06.136Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1070276536,
@@ -16028,7 +16037,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/568334d2-7264-48f0-84b8-b90eb759afc4.jpg"
     ],
     "firstSeenAt": "2026-05-27T11:01:06.136Z",
-    "lastSeenAt": "2026-05-27T11:01:06.136Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1070275009,
@@ -16056,7 +16065,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/acbab3cd-5422-48a4-9638-2d6ff9847086.jpg"
     ],
     "firstSeenAt": "2026-05-27T11:01:06.136Z",
-    "lastSeenAt": "2026-05-27T11:01:06.136Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1070275016,
@@ -18638,7 +18647,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d4e6d4ac-9212-4e45-b1c6-00c006660c6f.jpg"
     ],
     "firstSeenAt": "2026-05-31T09:47:41.585Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1070939765,
@@ -18718,7 +18727,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/857d0503-dfca-4093-b62d-dee060b4a90a.jpg"
     ],
     "firstSeenAt": "2026-05-31T09:47:41.585Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1070892133,
@@ -19023,7 +19032,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e76f640f-5677-42b2-ad55-49deb8902dfb.jpg"
     ],
     "firstSeenAt": "2026-06-01T12:39:39.364Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1071048931,
@@ -19355,7 +19364,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9b3f098f-d2aa-4cfb-94c7-d217c7a5b0b0.jpg"
     ],
     "firstSeenAt": "2026-06-02T11:25:47.558Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1067913023,
@@ -19711,13 +19720,13 @@
     "link": "https://re.kufar.by/vi/1021536586",
     "title": "Дача Гродно",
     "description": "Дача с балконом на 2-м этаже, теплица, колодец, ровный участок, ворота для въезда. Улица 4, участок № 30. Кладовки на 1-м и втором этаже, погреб в при",
-    "priceByn": 34000,
-    "priceUsd": 12143,
+    "priceByn": 34968,
+    "priceUsd": 12400,
     "address": "30, СТ Калинка, Подлабенский сельсовет, Гродненский район, Гродненская область",
     "area": 42,
     "plotArea": 5,
     "rooms": 2,
-    "yearBuilt": 1998,
+    "yearBuilt": 1989,
     "seller": "Игорь Зданчук",
     "propertyType": "Дача",
     "features": [
@@ -19729,7 +19738,7 @@
       "lat": 53.63621733469747,
       "lon": 23.687593626982643
     },
-    "listTime": "2026-06-03T09:56:14Z",
+    "listTime": "2026-06-08T09:56:15Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1f3afa2f-4649-45c8-9157-8d1c56fd2bf0.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6c7d126e-cb62-4743-a7fe-449fd6849cbc.jpg",
@@ -19747,7 +19756,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5d2a58b7-7111-4f02-8ea5-a37814de858a.jpg"
     ],
     "firstSeenAt": "2026-06-03T12:05:04.883Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1071425265,
@@ -20287,7 +20296,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cf36668d-9f25-4011-93b7-9229d38e00e1.jpg"
     ],
     "firstSeenAt": "2026-06-04T10:47:55.077Z",
-    "lastSeenAt": "2026-06-05T10:56:44.244Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1071515766,
@@ -20922,7 +20931,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c8c5eecb-25c4-47d8-ba83-9dec8a37cbc1.jpg"
     ],
     "firstSeenAt": "2026-06-05T10:56:44.244Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 240146145,
@@ -21005,7 +21014,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/dc9bc6cd-03e9-41d3-8da1-70044598411b.jpg"
     ],
     "firstSeenAt": "2026-06-05T10:56:44.244Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1071661549,
@@ -21843,7 +21852,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3fb4ca7f-c941-4d6e-8f9f-d7b6bc93ca0c.jpg"
     ],
     "firstSeenAt": "2026-06-07T10:03:25.315Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1072083633,
@@ -21900,7 +21909,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/916d5f80-173d-4f76-8e26-0099d758e43d.jpg"
     ],
     "firstSeenAt": "2026-06-07T10:03:25.315Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   },
   {
     "adId": 1017161271,
@@ -21930,6 +21939,170 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e63ca5e3-469a-48c0-bbd9-d3c0386a500a.jpg"
     ],
     "firstSeenAt": "2026-06-07T10:03:25.315Z",
-    "lastSeenAt": "2026-06-07T10:03:25.315Z"
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
+  },
+  {
+    "adId": 1045707638,
+    "link": "https://re.kufar.by/vi/1045707638",
+    "title": "Таунхаусы ул. Коммунальная",
+    "description": "Таунхаус \nУл.Коммунальная \n127 кв.м.\n2 сотки земли на праве аренды \n2 этажа\nБлок-кирпич, металлочерепица\n2026 год постройки \n\nПО ЦЕНЕ ЗАСТРОЙЩИКА +под",
+    "priceByn": 447675,
+    "priceUsd": 158750,
+    "address": "Коммунальная ул, Гродно, Гродненская область",
+    "area": 127,
+    "plotArea": 2,
+    "rooms": 3,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "propertyType": "Таунхаус",
+    "coordinates": {
+      "lat": 53.687267,
+      "lon": 23.820482
+    },
+    "listTime": "2026-06-08T07:46:44Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e5a328d2-0602-4ac5-8a98-9812ef459a05.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b21fbb01-012a-4209-8485-30fdbc470ce0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/23fa826c-2283-4bf2-849a-dd8591e878e0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7bc4f158-a00a-4024-9268-d8873444cdd2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e49f70f5-dd93-4e82-b3ac-ed1efb40c4c1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f0cbe363-4242-4f31-ba1a-ce2d59fab713.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/da75601d-6635-4004-9bd9-d4377840ecef.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/08b5abb5-4d8f-428d-b105-abce6c49b5b4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cd2fb29a-89b9-457f-8225-23e1e05414e4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a17cea66-3a57-4f3a-86c0-6888da26f7da.jpg"
+    ],
+    "firstSeenAt": "2026-06-08T11:56:20.000Z",
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
+  },
+  {
+    "adId": 1072309065,
+    "link": "https://re.kufar.by/vi/1072309065",
+    "title": "Дача в черте города, м- н Барановичи",
+    "description": "Продается дача, 5 соток, в черте города, микрорайон Барановичи, городской автобус #35, пять минут ходьбы. Бревенчатый дом, свет , плитка газовая, печь",
+    "priceByn": 31020,
+    "priceUsd": 11000,
+    "address": "Тарусичская ул, Гродно, Гродненская область",
+    "area": 20.8,
+    "plotArea": 5,
+    "rooms": 1,
+    "yearBuilt": 1995,
+    "seller": "Irina",
+    "propertyType": "Дача",
+    "features": [
+      "Печное",
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.669369,
+      "lon": 23.733732
+    },
+    "listTime": "2026-06-08T05:31:52Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/664cccea-f4e1-47f8-9608-34399e7b603c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/af9e8c28-a13a-4b71-a139-36a0de6208da.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/930cd9e7-7a11-433f-bfe6-c88385b005c3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7de69043-5095-4902-aecc-82274895e790.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9eef21be-7a22-40e6-a402-994dc4bd3e54.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/44155bbf-18f0-408d-b591-0302c6d41939.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d4076620-2aae-4671-9852-9fac3160df69.jpg"
+    ],
+    "firstSeenAt": "2026-06-08T11:56:20.000Z",
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
+  },
+  {
+    "adId": 1072245109,
+    "link": "https://re.kufar.by/vi/1072245109",
+    "title": "Большой недорогой дом без отделки в Зарице-2",
+    "description": "В продаже большой дом в востребованном м-не Зарица-2!\nДом находится рядом с лесом и остановкой общественного транспорта.\n\nДом без отделки, на централь",
+    "priceByn": 168918,
+    "priceUsd": 59900,
+    "address": "Желковского ул, Гродно, Гродненская область",
+    "area": 187.6,
+    "plotArea": 9,
+    "rooms": 5,
+    "yearBuilt": 2007,
+    "seller": "ООО Центр жилья",
+    "propertyType": "Дом",
+    "features": [
+      "Газовое",
+      "Центральная",
+      "Пожизненное наследование"
+    ],
+    "coordinates": {
+      "lat": 53.750254,
+      "lon": 23.847576
+    },
+    "listTime": "2026-06-07T17:04:11Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/917f4718-7d59-4c36-b0ec-deaa0ff5a3bb.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cc4781cc-8603-442c-bc04-931bedf031f5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e0dab19a-5640-4be0-877e-4b08e6a260ac.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/70735b84-4a77-420f-b85a-a5e7f6e37020.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/52235fb8-7eb7-4bbb-a41c-d9a1ffcf365e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6ad57c4a-3aaa-45cd-a50e-4652c1a95b86.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c9d95fc4-b088-412b-b804-c650cd65e092.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/29e601f8-a955-4d91-ae5a-894fd894792a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/81718f74-2ae7-4e0e-abea-821d7eaa3627.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f72e047c-6831-410e-ac03-65abae28bb5f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bbf44df5-7aa7-4c10-86c0-05292aadbb76.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b730533c-5059-44c3-a8c9-0611d2159aa0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8a96c807-54ae-40c1-a8da-ffcb4bf8b7a7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/16e4d853-8156-47c2-9669-d05afcdb29b6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ea1e27b8-d565-4d32-8b35-d31b17b7ce36.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3bbbbf9d-3b24-4680-be41-87611d18ff23.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/96f7c41e-36fe-4870-bb43-fbc423245e3c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9d9d66fe-150d-40a6-9ee9-5bc0ee6e3f16.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b41e8ebb-8ac1-42db-b339-afd1a920daff.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/daf957d2-abc3-46c3-952b-29ac64861000.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/dd5bb851-93ab-457f-b49c-a4f06bc2c25a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/894ef7a5-c3c7-4103-b6d1-937c2074247e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/51970e4d-e558-455f-aecf-682e486345d3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/02c6b278-27c9-47f5-8eb3-c94da3ae2ee1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c6b613ef-eef4-4caa-a7f9-35c95b466e1b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6b2c7564-71a9-4c5b-bc38-5f88b3f68d5b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6fc23551-4f7f-450d-88df-c052c9c2a153.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b9a815aa-926c-4817-a6be-d63fd3cf28e0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/02b70812-fc5c-4cc4-9f6b-fca8c7fba36a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ce99f51d-5279-4139-89f3-b6cbf641e6fc.jpg"
+    ],
+    "firstSeenAt": "2026-06-08T11:56:20.000Z",
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
+  },
+  {
+    "adId": 1072162096,
+    "link": "https://re.kufar.by/vi/1072162096",
+    "title": "продам дом в м-не Коробчицы",
+    "description": "Продам дом в м-не Коробчицы. Городская черта. Жилая площадь 101м2, хозбытовые помещения 79м2, подсобные помещения( подвал, гараж, веранды) 147 м2.Учас",
+    "address": "Могучая ул, 21, деревня Коробчицы, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "area": 270,
+    "plotArea": 13,
+    "rooms": 5,
+    "yearBuilt": 2020,
+    "seller": "николай",
+    "propertyType": "Коттедж",
+    "features": [
+      "Отсутствует",
+      "Центральная",
+      "Пожизненное наследование"
+    ],
+    "coordinates": {
+      "lat": 53.62247722714514,
+      "lon": 23.74498788227813
+    },
+    "listTime": "2026-06-07T10:22:25Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ba437f15-4e98-4209-a6a7-f922e97e3f1b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/85c1f532-2e74-445a-83b9-10dc02fa9c7b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2249a121-7104-48fc-b460-8f0d44972bd0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/731bdb8f-1204-443d-a950-a51472884d60.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/328a7cb9-439d-44b3-b736-2ef4d996ed85.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4537c4e9-3135-4a3b-80bb-9f7beace958a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d73dc06c-29b9-4bc5-adf0-8769928a2959.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c6db6523-9a79-4802-8dd8-82686eeec3ce.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c3bc1df5-9653-4ef4-8371-9da6e9ea9636.jpg"
+    ],
+    "firstSeenAt": "2026-06-08T11:56:20.000Z",
+    "lastSeenAt": "2026-06-08T11:56:20.000Z"
   }
 ]
