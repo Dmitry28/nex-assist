@@ -1634,7 +1634,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/521fad65-df6d-44df-b80e-ff715b0ad1f5.jpg"
     ],
     "firstSeenAt": "2026-04-05T16:51:33.361Z",
-    "lastSeenAt": "2026-06-08T11:56:19.997Z"
+    "lastSeenAt": "2026-06-09T10:48:32.691Z"
   },
   {
     "adId": 1063723127,
@@ -2235,7 +2235,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/92c8dec1-5c23-4459-b592-a624d87fe5bb.jpg"
     ],
     "firstSeenAt": "2026-04-12T08:07:35.869Z",
-    "lastSeenAt": "2026-06-08T11:56:19.997Z"
+    "lastSeenAt": "2026-06-09T10:48:32.691Z"
   },
   {
     "adId": 1037553582,
@@ -2287,7 +2287,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2b475c11-052b-4d45-9f0c-33531ebac3c8.jpg"
     ],
     "firstSeenAt": "2026-04-12T08:07:35.869Z",
-    "lastSeenAt": "2026-06-08T11:56:19.997Z"
+    "lastSeenAt": "2026-06-09T10:48:32.691Z"
   },
   {
     "adId": 1064748471,
@@ -2339,7 +2339,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7b484c43-4b27-4651-9da7-52796a4e8d7a.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:08:18.564Z",
-    "lastSeenAt": "2026-06-08T11:56:19.997Z"
+    "lastSeenAt": "2026-06-09T10:48:32.691Z"
   },
   {
     "adId": 1063962481,
@@ -5435,7 +5435,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/01785644-df09-43b1-96ad-39229db42c9c.jpg"
     ],
     "firstSeenAt": "2026-05-16T09:01:12.535Z",
-    "lastSeenAt": "2026-05-17T09:15:11.633Z"
+    "lastSeenAt": "2026-06-09T10:48:32.691Z"
   },
   {
     "adId": 1069125712,
@@ -6724,7 +6724,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/31bf36cb-b7e7-4163-b2eb-b7de1168f596.jpg"
     ],
     "firstSeenAt": "2026-06-08T11:56:19.997Z",
-    "lastSeenAt": "2026-06-08T11:56:19.997Z"
+    "lastSeenAt": "2026-06-09T10:48:32.691Z"
   },
   {
     "adId": 1072159438,
@@ -6749,5 +6749,184 @@
     ],
     "firstSeenAt": "2026-06-08T11:56:19.997Z",
     "lastSeenAt": "2026-06-08T11:56:19.997Z"
+  },
+  {
+    "adId": 1072448489,
+    "link": "https://re.kufar.by/vi/1072448489",
+    "title": "Участок в СТ Демидково",
+    "description": "Участок в СТ Демидково. 10 км от Ольшанки. Участок ровный,обработан. На участке есть обшитый троллейбус,можно использовать на период строительства как",
+    "priceByn": 12645,
+    "priceUsd": 4500,
+    "address": "154, СТ Демидково, Одельский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 8,
+    "seller": "Татьяна",
+    "features": [
+      "Отсутствует",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.522100295741474,
+      "lon": 23.7905957947193
+    },
+    "listTime": "2026-06-09T05:52:46Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0c083ea7-4ff4-43ef-888e-a1fcf1e9626f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9c96d952-f9a2-46af-8a24-23145fa53736.jpg"
+    ],
+    "firstSeenAt": "2026-06-09T10:48:32.691Z",
+    "lastSeenAt": "2026-06-09T10:48:32.691Z"
+  },
+  {
+    "adId": 1072443363,
+    "link": "https://re.kufar.by/vi/1072443363",
+    "title": "Участок-2шт. С хорошим фундаментом",
+    "description": "2 участка. 19 - 7,42сотки. 30-7,49сотки. Отличное место расположения. От знака Гродно около 11км. Хороший подъезд к участкам. По деревне идёт асфальт,",
+    "priceByn": 30910,
+    "priceUsd": 11000,
+    "address": "19к2, СТ Лесница, Гожский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 14.91,
+    "seller": "Екатерина",
+    "coordinates": {
+      "lat": 53.81300853411708,
+      "lon": 23.905430383592293
+    },
+    "listTime": "2026-06-09T04:41:38Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f80cc9c7-41ff-45e3-9059-e6fd662a9110.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/46af2243-2c16-405b-831c-fe8016264f65.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ffee1809-9640-4832-bf21-51b5890a73db.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8a18fa68-68d8-403b-98f7-973bf742f20e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d79df2b8-41ec-4646-b1e2-a2f687d28e93.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/033b6f7d-d3f3-493a-9498-7a3ade591391.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/df963bee-8af6-4e76-823d-df670a72fccb.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f35e95dd-f6c3-478a-bb47-b3361bc711c2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4d87aa3e-0c13-4ffb-8ed7-f6038b5a4cc5.jpg"
+    ],
+    "firstSeenAt": "2026-06-09T10:48:32.691Z",
+    "lastSeenAt": "2026-06-09T10:48:32.691Z"
+  },
+  {
+    "adId": 1072353769,
+    "link": "https://re.kufar.by/vi/1072353769",
+    "title": "участок СТ Горицвет",
+    "description": "Продается   отличный земельный участок в 10  км от   города,  в экологически чистом районе   направление на Каролино) , СТ «Горицвет ».  \n Участок ров",
+    "priceByn": 30910,
+    "priceUsd": 11000,
+    "address": "СТ Горицвет, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 9.15,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.611278,
+      "lon": 23.671749
+    },
+    "listTime": "2026-06-08T12:04:00Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/756c6e6d-406d-4a14-a8f5-e5127a5ffc5f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/33344ae0-72fe-45fb-8f9b-9050033097eb.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/91263461-2641-4280-85cb-78bd94278efd.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a1bdb841-1eb8-4734-89b6-b1bf905e8681.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f9b2b2f9-64c6-491a-852e-cc586d9f40d1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f5741244-3c19-4c02-96be-955979a3d26a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/13a967c0-8e97-48fe-9eac-aefe3b2116ff.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/28b36110-8367-4311-b4a3-6c6008a61256.jpg"
+    ],
+    "firstSeenAt": "2026-06-09T10:48:32.691Z",
+    "lastSeenAt": "2026-06-09T10:48:32.691Z"
+  },
+  {
+    "adId": 1072353756,
+    "link": "https://re.kufar.by/vi/1072353756",
+    "title": "земельный участок СТ Лесное-2",
+    "description": "Продается земельный участок рядом с г. Гродно СТ Лесное-2 , Гродненская область, Подлабенский с/с,  расположенный на участке площадью 8,16 соток (форм",
+    "priceByn": 33000,
+    "priceUsd": 11744,
+    "address": "СТ Лесное-2, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 8.16,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.617449,
+      "lon": 23.705438
+    },
+    "listTime": "2026-06-08T12:03:55Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eed0bb7c-4938-4b27-8436-2101b00212f7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0aa46527-7cb8-4b03-9e9c-28ca0153ddb9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a72f77cf-ec0f-4fa3-9a63-a54721f68529.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/68036818-26fc-4a03-9755-26ec4fc910dd.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ec357bf2-7474-401c-bb12-bfacbb29067f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c6f262ee-2929-4582-a877-0f7389af7980.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7cabb34b-d31c-402d-91e6-8ec269767c84.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/88a955a2-361b-45dc-b32c-4c6175d93dc0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/55001bb1-9b55-4244-b450-a3ee0260f076.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fa98c163-512c-4d47-a3c0-64c8964f4d57.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a7790f43-d61a-4e79-9fcb-a467b02e0574.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/615dda00-8575-4bd8-b9e4-8acf34ae556a.jpg"
+    ],
+    "firstSeenAt": "2026-06-09T10:48:32.691Z",
+    "lastSeenAt": "2026-06-09T10:48:32.691Z"
+  },
+  {
+    "adId": 1072352794,
+    "link": "https://re.kufar.by/vi/1072352794",
+    "title": "земельный участок СТ Магистраль",
+    "description": "Продается земельный участок в 8 км от г. Гродно СТ Магистраль , Гродненская область, Подлабенский с/с,  расположенный на участке площадью 7,03 соток (",
+    "priceByn": 25290,
+    "priceUsd": 9000,
+    "address": "СТ Магистраль, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 7,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.724196,
+      "lon": 23.767085
+    },
+    "listTime": "2026-06-08T11:53:47Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bc80a131-7299-48c1-ab3b-214debd8324c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ebb327d6-30d4-4d4e-8522-4bef49c691ea.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bbbb9d7e-8c31-4028-a3e4-3335f172c96d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f22a7134-383f-46c8-a20d-b4f19da5e7d9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/288cd9cb-d47b-4568-97dd-5d58c74e12ec.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4f34b5ab-3eb5-4af8-b320-31cfc8e5f068.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c170970f-7360-411b-8105-8f7eb8ef9811.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2679633e-224a-4bc7-95ab-0e11e69ea624.jpg"
+    ],
+    "firstSeenAt": "2026-06-09T10:48:32.691Z",
+    "lastSeenAt": "2026-06-09T10:48:32.691Z"
+  },
+  {
+    "adId": 1072352798,
+    "link": "https://re.kufar.by/vi/1072352798",
+    "title": "участок СТ Шембелевцы",
+    "description": "Продается дачный участок в садовом товариществе «Шембелевцы», Гродненский р-н, Сопоцкинский с/с. До города 12 км. 15 минут езды на автомобиле. Площадь",
+    "priceByn": 20232,
+    "priceUsd": 7200,
+    "address": "Н-6883, Гродненская область",
+    "plotArea": 7,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.754756,
+      "lon": 23.798798
+    },
+    "listTime": "2026-06-08T11:53:47Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/241317e3-62ec-4de0-99f8-3e242c8573b7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/273bbbda-b67c-48aa-a7dd-c3f9a03305b4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e95c9ed9-451f-4062-a7f1-99ef0edf203f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2cafa3a3-2ae6-4295-953f-174c5a2170ef.jpg"
+    ],
+    "firstSeenAt": "2026-06-09T10:48:32.691Z",
+    "lastSeenAt": "2026-06-09T10:48:32.691Z"
   }
 ]
