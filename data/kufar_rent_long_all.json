@@ -30,7 +30,7 @@
     "adId": 1068542567,
     "link": "https://re.kufar.by/vi/1068542567",
     "title": "Сдам квартиру.Новостройка Грандичи",
-    "priceByn": 843,
+    "priceByn": 831,
     "priceUsd": 300,
     "address": "Виктора Саяпина ул, 12А, Гродно, Гродненская область",
     "rooms": 3,
@@ -50,7 +50,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/016a0133-bb66-4f53-a356-2dc0224af928.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:43:08.825Z",
-    "lastSeenAt": "2026-06-09T10:48:36.681Z"
+    "lastSeenAt": "2026-06-10T11:12:13.442Z"
   },
   {
     "adId": 1067405190,
@@ -80,7 +80,7 @@
     "link": "https://re.kufar.by/vi/1063816828",
     "title": "Квартира полностью со всем необходимым для проживания",
     "priceByn": 1350,
-    "priceUsd": 480,
+    "priceUsd": 487,
     "address": "Виктора Саяпина ул, 4Б, Гродно, Гродненская область",
     "rooms": 2,
     "area": 64,
@@ -96,14 +96,14 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fe3aaa67-820b-4056-a5c1-3f46eb49bd38.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:43:08.825Z",
-    "lastSeenAt": "2026-06-09T10:48:36.681Z"
+    "lastSeenAt": "2026-06-10T11:12:13.442Z"
   },
   {
     "adId": 1060088409,
     "link": "https://re.kufar.by/vi/1060088409",
     "title": "Сдам квартиру на длительный срок",
     "priceByn": 1200,
-    "priceUsd": 427,
+    "priceUsd": 433,
     "address": "Виктора Саяпина ул, 4Б, Гродно, Гродненская область",
     "rooms": 2,
     "area": 79,
@@ -124,7 +124,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/180ba6d0-7fba-4180-a758-613e9ec47911.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:43:08.825Z",
-    "lastSeenAt": "2026-06-09T10:48:36.681Z"
+    "lastSeenAt": "2026-06-10T11:12:13.442Z"
   },
   {
     "adId": 1069998358,
@@ -163,7 +163,7 @@
     "link": "https://re.kufar.by/vi/1070644850",
     "title": "Сдам однокомнатную квартиру в новостройке",
     "priceByn": 700,
-    "priceUsd": 249,
+    "priceUsd": 253,
     "address": "микрорайон Грандичи-2, микрорайон Грандичи, Гродно, Гродненская область",
     "rooms": 1,
     "area": 43,
@@ -184,13 +184,13 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d2879930-e83c-45a8-ad80-3632ccaf5c78.jpg"
     ],
     "firstSeenAt": "2026-05-29T11:07:18.372Z",
-    "lastSeenAt": "2026-06-09T10:48:36.681Z"
+    "lastSeenAt": "2026-06-10T11:12:13.442Z"
   },
   {
     "adId": 1071881838,
     "link": "https://re.kufar.by/vi/1071881838",
     "title": "Сдается 1-ая квартира на длительный срок",
-    "priceByn": 787,
+    "priceByn": 776,
     "priceUsd": 280,
     "address": "Виктора Саяпина ул, 12, Гродно, Гродненская область",
     "rooms": 1,
@@ -212,13 +212,13 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e5a9b526-f4b7-4900-97b5-d1a4a1701418.jpg"
     ],
     "firstSeenAt": "2026-06-06T09:26:22.746Z",
-    "lastSeenAt": "2026-06-09T10:48:36.681Z"
+    "lastSeenAt": "2026-06-10T11:12:13.442Z"
   },
   {
     "adId": 1072089877,
     "link": "https://re.kufar.by/vi/1072089877",
     "title": "Аренда квартиры",
-    "priceByn": 984,
+    "priceByn": 970,
     "priceUsd": 350,
     "address": "Виктора Глухова ул, 3, Гродно, Гродненская область",
     "rooms": 2,
@@ -226,7 +226,7 @@
     "floor": 3,
     "repair": "Дизайнерский",
     "prepayment": "Месяц",
-    "listTime": "2026-06-08T20:27:37Z",
+    "listTime": "2026-06-09T20:27:37Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/59d6acf3-7d9a-4c6b-9e0b-ac892b3592b8.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ce430cbb-8ad0-455d-8e49-db661988b4c9.jpg",
@@ -239,6 +239,6 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f0e2d96a-2e02-4c7a-a3f2-f07bc524d7a2.jpg"
     ],
     "firstSeenAt": "2026-06-07T10:03:40.625Z",
-    "lastSeenAt": "2026-06-09T10:48:36.681Z"
+    "lastSeenAt": "2026-06-10T11:12:13.442Z"
   }
 ]
