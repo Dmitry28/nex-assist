@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-09T09:56:02.927Z"
+    "lastSeenAt": "2026-06-10T10:02:10.154Z"
   },
   {
     "adId": 4057786,
@@ -259,15 +259,15 @@
     "link": "https://realt.by/sale-dachi/object/4117339/",
     "title": "дача СТ «Приграничное»",
     "description": "Предлагаем Вашему вниманию идеальное место для отдыха: дачу СТ «Приграничное», участок 8 соток: ровный, ухоженный, огражден сеткой-рабицей, а фасад, выходящий к дороге, защищен металлопрофилем.",
-    "priceByn": 50215,
-    "priceUsd": 17900,
+    "priceByn": 46764,
+    "priceUsd": 16900,
     "address": "Приграничное",
     "area": 26,
     "areaLiving": 15,
     "plotArea": 8,
     "yearBuilt": 2023,
     "seller": "Дарья",
-    "listTime": "2026-06-03T18:36:18+03:00",
+    "listTime": "2026-06-09T16:15:35+03:00",
     "images": [
       "https://cdn.realt.by/img/55/6b34b92e-49f0-11f1-8468-0242ac120003",
       "https://cdn.realt.by/img/55/6b3092e0-49f0-11f1-bea1-0242ac120003",
@@ -279,7 +279,7 @@
       "https://cdn.realt.by/img/55/6a43954e-49f0-11f1-900d-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-05T09:57:36.881Z"
+    "lastSeenAt": "2026-06-10T10:02:10.154Z"
   },
   {
     "adId": 4088489,
@@ -459,7 +459,7 @@
       "https://cdn.realt.by/img/55/cedbcce6-2d9a-11f1-a3db-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-09T09:56:02.927Z"
+    "lastSeenAt": "2026-06-10T10:02:10.154Z"
   },
   {
     "adId": 4029977,
@@ -1843,7 +1843,7 @@
       "https://cdn.realt.by/img/55/115a9376-8d65-11f0-a0a7-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-09T09:56:02.927Z"
+    "lastSeenAt": "2026-06-10T10:02:10.154Z"
   },
   {
     "adId": 3987628,
@@ -2141,7 +2141,7 @@
       "https://cdn.realt.by/img/55/a7319d40-0ccc-11f1-a8b5-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-09T09:56:02.927Z"
+    "lastSeenAt": "2026-06-10T10:02:10.154Z"
   },
   {
     "adId": 3606589,
@@ -3747,7 +3747,7 @@
       "https://cdn.realt.by/img/55/aa047b6a-d512-11f0-b685-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-09T09:56:02.927Z"
+    "lastSeenAt": "2026-06-10T10:02:10.154Z"
   },
   {
     "adId": 3968923,
@@ -5524,7 +5524,7 @@
       "https://cdn.realt.by/img/55/f87a1ea4-56da-11f1-a842-0242ac120003"
     ],
     "firstSeenAt": "2026-05-25T09:50:04.852Z",
-    "lastSeenAt": "2026-06-09T09:56:02.927Z"
+    "lastSeenAt": "2026-06-10T10:02:10.154Z"
   },
   {
     "adId": 4137152,
@@ -6222,5 +6222,71 @@
     ],
     "firstSeenAt": "2026-06-08T09:53:16.954Z",
     "lastSeenAt": "2026-06-08T09:53:16.954Z"
+  },
+  {
+    "adId": 4149399,
+    "uuid": "7cab5260-64a5-11f1-9ae5-d964c5b7109a",
+    "link": "https://realt.by/sale-dachi/object/4149399/",
+    "title": "Гудок",
+    "description": "Место шикарное. Рядом с лесочком, недалеко 2 озера, станция ЖД 10 мин пешком. Белого забора пока нет, он в планах. Есть электричество на участке, гараж металлический и маленький домик из дерева, типа бытовки, который недавно построен. Документы все в порядке. Место уютное и лесное. До города 5-8 минут на машине.",
+    "priceByn": 25181,
+    "priceUsd": 9100,
+    "address": "Гудок  187",
+    "area": 12,
+    "plotArea": 8,
+    "yearBuilt": 2025,
+    "seller": "Павел",
+    "listTime": "2026-06-10T11:47:02+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/b0697370-64a5-11f1-a67e-0242ac120003",
+      "https://cdn.realt.by/img/55/ae711a3c-64a5-11f1-b23c-0242ac120003",
+      "https://cdn.realt.by/img/55/bbffc07c-64a5-11f1-8142-0242ac120003",
+      "https://cdn.realt.by/img/55/bba6e920-64a5-11f1-9dd1-0242ac120003",
+      "https://cdn.realt.by/img/55/a86ac0de-64a5-11f1-aa64-0242ac120003",
+      "https://cdn.realt.by/img/55/a9152948-64a5-11f1-8e9a-0242ac120003",
+      "https://cdn.realt.by/img/55/a8faef42-64a5-11f1-b0a4-0242ac120003",
+      "https://cdn.realt.by/img/55/b9e2b574-64a5-11f1-9901-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-10T10:02:10.154Z",
+    "lastSeenAt": "2026-06-10T10:02:10.154Z"
+  },
+  {
+    "adId": 4138281,
+    "uuid": "da101b80-5ac2-11f1-9d45-8b63f0dfcc9f",
+    "link": "https://realt.by/sale-dachi/object/4138281/",
+    "title": "Продается уютная дача в садовом товариществе Подснежник 2",
+    "description": "Продается уютная дача в садовом товариществе Подснежник-2 – всего в 11 км от города (направление а/г Коптевка). На земельном участке площадью 6,5 соток расположены садовый дом, баня, сарай. Садовый дом (55 м²): • Дом мансардного типа, 2015 года постройки с возможностью организации второго этажа (дополнительные 2 комнаты) • Кирпичные стены, кровля – шифер",
+    "priceByn": 94081,
+    "priceUsd": 34000,
+    "address": "Подснежник-Гривки",
+    "area": 55,
+    "plotArea": 6.4,
+    "yearBuilt": 2015,
+    "seller": "Дмитрий",
+    "listTime": "2026-06-09T16:15:35+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/6546b200-5ac2-11f1-836a-0242ac120003",
+      "https://cdn.realt.by/img/55/5a08fa38-5ac2-11f1-9b5e-0242ac120003",
+      "https://cdn.realt.by/img/55/5c3e7602-5ac2-11f1-accd-0242ac120003",
+      "https://cdn.realt.by/img/55/5b9e15c2-5ac2-11f1-a6a8-0242ac120003",
+      "https://cdn.realt.by/img/55/5f11f9e4-5ac2-11f1-b9af-0242ac120003",
+      "https://cdn.realt.by/img/55/57f35374-5ac2-11f1-87b1-0242ac120003",
+      "https://cdn.realt.by/img/55/5aef3c14-5ac2-11f1-9b86-0242ac120003",
+      "https://cdn.realt.by/img/55/8c8721a6-5ac2-11f1-b9b2-0242ac120003",
+      "https://cdn.realt.by/img/55/40b039ca-5ac2-11f1-8760-0242ac120003",
+      "https://cdn.realt.by/img/55/81aed2b0-5ac2-11f1-9768-0242ac120003",
+      "https://cdn.realt.by/img/55/5f6b8c8e-5ac2-11f1-96d3-0242ac120003",
+      "https://cdn.realt.by/img/55/5fd3a8c8-5ac2-11f1-a462-0242ac120003",
+      "https://cdn.realt.by/img/55/6422670c-5ac2-11f1-b815-0242ac120003",
+      "https://cdn.realt.by/img/55/649ca0ee-5ac2-11f1-95c7-0242ac120003",
+      "https://cdn.realt.by/img/55/64a4e75e-5ac2-11f1-9d05-0242ac120003",
+      "https://cdn.realt.by/img/55/6683be10-5ac2-11f1-8181-0242ac120003",
+      "https://cdn.realt.by/img/55/67a21292-5ac2-11f1-aa9d-0242ac120003",
+      "https://cdn.realt.by/img/55/685f2b52-5ac2-11f1-8a20-0242ac120003",
+      "https://cdn.realt.by/img/55/699c7c4a-5ac2-11f1-94b9-0242ac120003",
+      "https://cdn.realt.by/img/55/6ca3b00c-5ac2-11f1-ae20-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-10T10:02:10.154Z",
+    "lastSeenAt": "2026-06-10T10:02:10.154Z"
   }
 ]

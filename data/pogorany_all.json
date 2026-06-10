@@ -17,13 +17,13 @@
       "https://static.tildacdn.com/stor6533-3937-4737-a133-616165613136/22226708.jpg"
     ],
     "firstSeenAt": "2026-05-18T20:56:37.948Z",
-    "lastSeenAt": "2026-06-09T09:56:08.224Z"
+    "lastSeenAt": "2026-06-10T10:02:49.154Z"
   },
   {
     "uid": 629746871702,
     "link": "https://pogorany.by/tproduct/629746871702-kvartira-90-m-v-taunhause",
     "title": "Квартира 90 м² в таунхаусе",
-    "price": 207000,
+    "price": 270000,
     "currency": "BYN",
     "pricePerM2": 3000,
     "pricePerM2Currency": "BYN",
@@ -37,13 +37,13 @@
       "https://static.tildacdn.com/stor6533-3937-4737-a133-616165613136/22226708.jpg"
     ],
     "firstSeenAt": "2026-05-18T20:56:37.948Z",
-    "lastSeenAt": "2026-06-09T09:56:08.224Z"
+    "lastSeenAt": "2026-06-10T10:02:49.154Z"
   },
   {
     "uid": 475531073612,
     "link": "https://pogorany.by/tproduct/475531073612-kvartira-99-m-v-taunhause",
     "title": "Квартира 99 м² в таунхаусе",
-    "price": 113850,
+    "price": 108900,
     "currency": "USD",
     "pricePerM2": 1100,
     "pricePerM2Currency": "USD",
@@ -57,6 +57,26 @@
       "https://static.tildacdn.com/stor3132-3962-4630-b031-616266333463/98580098.jpg"
     ],
     "firstSeenAt": "2026-05-18T20:56:37.948Z",
-    "lastSeenAt": "2026-06-09T09:56:08.224Z"
+    "lastSeenAt": "2026-06-10T10:02:49.154Z"
+  },
+  {
+    "uid": 515245569902,
+    "link": "https://pogorany.by/tproduct/515245569902-kvartira-100-m-v-taunhause",
+    "title": "Квартира 100 м² в таунхаусе",
+    "price": 300000,
+    "currency": "BYN",
+    "pricePerM2": 3000,
+    "pricePerM2Currency": "BYN",
+    "area": "100 м²",
+    "rooms": "4",
+    "bathrooms": "2",
+    "ceilingHeight": "3 м.",
+    "plotArea": "1-1.2 сот",
+    "parking": "1",
+    "images": [
+      "https://static.tildacdn.com/stor3534-6337-4166-a539-363032333931/74530908.jpg"
+    ],
+    "firstSeenAt": "2026-06-10T10:02:49.154Z",
+    "lastSeenAt": "2026-06-10T10:02:49.154Z"
   }
 ]
