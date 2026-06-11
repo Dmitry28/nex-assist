@@ -40,7 +40,7 @@
       "https://cdn.realt.by/img/55/03fd1570-d66f-11f0-b546-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-10T11:14:45.413Z"
+    "lastSeenAt": "2026-06-11T11:39:08.854Z"
   },
   {
     "adId": 4058841,
@@ -1811,7 +1811,7 @@
       "https://cdn.realt.by/img/55/e6a74558-72e2-11f0-973a-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-10T11:14:45.413Z"
+    "lastSeenAt": "2026-06-11T11:39:08.854Z"
   },
   {
     "adId": 3590476,
@@ -2976,7 +2976,7 @@
       "https://cdn.realt.by/img/55/8036fdf6-e568-11f0-8ec0-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-05T11:01:18.780Z"
+    "lastSeenAt": "2026-06-11T11:39:08.854Z"
   },
   {
     "adId": 3442299,
@@ -5119,7 +5119,7 @@
       "https://cdn.realt.by/img/55/6ed84380-f602-11f0-9e78-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-10T11:14:45.413Z"
+    "lastSeenAt": "2026-06-11T11:39:08.854Z"
   },
   {
     "adId": 4014473,
@@ -5875,7 +5875,7 @@
       "https://static.realt.by/thumb/c/430x374/c5f662a11b216aff1dcebc6285dd1e9e/b7/i/11013c3efib7/93fc9e448f.jpeg"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-10T11:14:45.413Z"
+    "lastSeenAt": "2026-06-11T11:39:08.854Z"
   },
   {
     "adId": 3878873,
@@ -6741,14 +6741,14 @@
     "link": "https://realt.by/sale-cottages/object/4095899/",
     "title": "Дом в центре г. Гродно ул. Лелевеля",
     "description": "Дом в центре г. Гродно!!! Продается законсервированное незавершенное строение с участком на ул. Лелевеля Дом площадью 195,4/138,3м2, 5-комнатный одноэтажный мансардного типа, построен из газосиликатных блоков, крыша– битумная черепица.",
-    "priceByn": 301590,
-    "priceUsd": 107000,
+    "priceByn": 274497,
+    "priceUsd": 99000,
     "address": "Гродно Лелевеля ул.",
     "area": 195.4,
     "areaLiving": 138.3,
     "plotArea": 10.75,
     "seller": "Татьяна",
-    "listTime": "2026-04-14T17:56:39+03:00",
+    "listTime": "2026-06-10T17:48:20+03:00",
     "images": [
       "https://cdn.realt.by/img/55/ce2ab1c4-3806-11f1-abd5-0242ac120003",
       "https://cdn.realt.by/img/55/ce047ebe-3806-11f1-be28-0242ac120003",
@@ -6762,7 +6762,7 @@
       "https://cdn.realt.by/img/55/cd722e38-3806-11f1-9a70-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-06-11T11:39:08.854Z"
   },
   {
     "adId": 3780464,
@@ -9481,7 +9481,7 @@
       "https://cdn.realt.by/img/55/3720e94a-9c14-11ef-ab2c-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-10T11:14:45.413Z"
+    "lastSeenAt": "2026-06-11T11:39:08.854Z"
   },
   {
     "adId": 3514949,
@@ -10293,7 +10293,7 @@
       "https://cdn.realt.by/img/55/41c01250-4ca7-11f1-82bc-0242ac120003"
     ],
     "firstSeenAt": "2026-05-11T10:32:02.363Z",
-    "lastSeenAt": "2026-06-10T11:14:45.413Z"
+    "lastSeenAt": "2026-06-11T11:39:08.854Z"
   },
   {
     "adId": 4120780,
@@ -10479,7 +10479,7 @@
       "https://cdn.realt.by/img/55/13ce0d88-4f5a-11f1-85bb-0242ac120003"
     ],
     "firstSeenAt": "2026-05-14T10:05:10.115Z",
-    "lastSeenAt": "2026-06-10T11:14:45.413Z"
+    "lastSeenAt": "2026-06-11T11:39:08.854Z"
   },
   {
     "adId": 4123420,
@@ -11091,9 +11091,9 @@
     "uuid": "2a596630-59e9-11f1-87dd-0b591adf90eb",
     "link": "https://realt.by/sale-cottages/object/4137538/",
     "title": "Продам коттедж в Гродно п Южный 100 % готовность. Английский проект.",
-    "description": "Продается жилой коттедж в м-не Южный 3 г. Гродно. 3 спальни.Английский проект.2 этажа. 2004 г. Общая площадь 260 м², жилая – 101 м², 1 этаж : кухня – 20 м² , зал 41 м², гардероб – 6 м² , санузел 2 м² , отапливаемый гараж на 1 авто 22 м².2 этаж : 3 спальни (22,19,18 м²), ванна 10 м², холл 14 м². Больше фото на сайте www.re.kufar.by/vi/grodno/kupit/dom/1070426338",
-    "priceByn": 697491,
-    "priceUsd": 252066,
+    "description": "Продается жилой коттедж в м-не Южный 3 г. Гродно. 3 спальни.Английский проект.2 этажа. 2004 г. Общая площадь 260 м², жилая – 101 м², 1 этаж : кухня – 20 м² , зал 41 м², гардероб – 6 м² , санузел 2 м² , отапливаемый гараж на 1 авто 22 м².2 этаж : 3 спальни (22,19,18 м²), ванна 10 м², холл 14 м².",
+    "priceByn": 698581,
+    "priceUsd": 251950,
     "address": "Гродно Центральная ул. 89",
     "area": 260,
     "areaLiving": 101,
@@ -11102,7 +11102,7 @@
     "yearBuilt": 2004,
     "levels": 2,
     "seller": "Леонид",
-    "listTime": "2026-06-09T17:57:30+03:00",
+    "listTime": "2026-06-10T18:38:40+03:00",
     "images": [
       "https://cdn.realt.by/img/55/9d2ec096-59ea-11f1-a654-0242ac120003",
       "https://cdn.realt.by/img/55/9d1aa840-59ea-11f1-8b5d-0242ac120003",
@@ -11156,7 +11156,7 @@
       "https://cdn.realt.by/img/55/c2e14ab0-59eb-11f1-8b62-0242ac120003"
     ],
     "firstSeenAt": "2026-05-28T11:05:44.999Z",
-    "lastSeenAt": "2026-06-10T11:14:45.413Z"
+    "lastSeenAt": "2026-06-11T11:39:08.854Z"
   },
   {
     "adId": 4137511,
@@ -11505,7 +11505,7 @@
       "https://cdn.realt.by/img/55/91295e5a-5f71-11f1-8bb9-0242ac120003"
     ],
     "firstSeenAt": "2026-06-04T10:52:25.078Z",
-    "lastSeenAt": "2026-06-05T11:01:18.780Z"
+    "lastSeenAt": "2026-06-11T11:39:08.854Z"
   },
   {
     "adId": 3100473,
@@ -11581,7 +11581,7 @@
       "https://cdn.realt.by/img/55/4dea2ce4-60ae-11f1-84c5-0242ac120003"
     ],
     "firstSeenAt": "2026-06-05T11:01:18.780Z",
-    "lastSeenAt": "2026-06-10T11:14:45.413Z"
+    "lastSeenAt": "2026-06-11T11:39:08.854Z"
   },
   {
     "adId": 3099824,
@@ -11735,8 +11735,8 @@
     "link": "https://realt.by/sale-cottages/object/4149447/",
     "title": "В тихом уголке, вблизи от центра города, продается квартира в блокированном жилом доме",
     "description": "Продается квартира в блокированном жилом доме с собственным участком 3 сотки по переулку Крайний (вблизи улицы О.Соломовой, больницы скорой медицинской помощи)). Отличное месторасположение: до центра на общественном транспорте 10-15 минут. Хорошая транспортная развязка, добраться можно в любую точку города, остановки общественного транспорта рядом. Недалеко лесопарковая зона. В непосредственной близости школы и детские сады, мини-рынки, магазины (евроопт, алми, тысяча мелочей и т.д.), аптеки.",
-    "priceByn": 167000,
-    "priceUsd": 60352,
+    "priceByn": 166500,
+    "priceUsd": 60050,
     "address": "Гродно Крайний пер.",
     "area": 62,
     "areaLiving": 36,
@@ -11744,7 +11744,7 @@
     "plotArea": 5.9,
     "yearBuilt": 1958,
     "seller": "\"Фирма 2К и К\"",
-    "listTime": "2026-06-10T12:27:22+03:00",
+    "listTime": "2026-06-10T15:58:50+03:00",
     "images": [
       "https://cdn.realt.by/img/55/f3ca2fe0-64a2-11f1-ab00-0242ac120003",
       "https://cdn.realt.by/img/55/f394d7f0-64a2-11f1-829d-0242ac120003",
@@ -11768,6 +11768,186 @@
       "https://cdn.realt.by/img/55/8952200e-64a3-11f1-b1a9-0242ac120003"
     ],
     "firstSeenAt": "2026-06-10T11:14:45.413Z",
-    "lastSeenAt": "2026-06-10T11:14:45.413Z"
+    "lastSeenAt": "2026-06-11T11:39:08.854Z"
+  },
+  {
+    "adId": 4150594,
+    "uuid": "ca55bd10-657d-11f1-82b6-7969fefbc065",
+    "link": "https://realt.by/sale-cottages/object/4150594/",
+    "title": "Просторный 2-этажный дом c мансардой в д.Табола, 13 км от Гродно",
+    "description": "Продается просторный 2-этажный дом c мансардой в д.Табола (Вертелишковский с/с) в 13 км от Гродно.",
+    "priceByn": 245000,
+    "priceUsd": 88362,
+    "address": "Табола",
+    "area": 192.7,
+    "areaLiving": 122.6,
+    "areaKitchen": 12.8,
+    "plotArea": 6.8,
+    "yearBuilt": 2006,
+    "levels": 2,
+    "seller": "Дарья",
+    "listTime": "2026-06-11T14:11:36+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/49282638-657d-11f1-87f5-0242ac120003",
+      "https://cdn.realt.by/img/55/49381930-657d-11f1-a207-0242ac120003",
+      "https://cdn.realt.by/img/55/4e3d7f88-657d-11f1-96df-0242ac120003",
+      "https://cdn.realt.by/img/55/4e39e670-657d-11f1-b7a4-0242ac120003",
+      "https://cdn.realt.by/img/55/5e18ec94-657d-11f1-b873-0242ac120003",
+      "https://cdn.realt.by/img/55/5e1e2e2a-657d-11f1-a4f4-0242ac120003",
+      "https://cdn.realt.by/img/55/6284ecc4-657d-11f1-8fee-0242ac120003",
+      "https://cdn.realt.by/img/55/628aca5e-657d-11f1-a97d-0242ac120003",
+      "https://cdn.realt.by/img/55/666dfa2e-657d-11f1-bb64-0242ac120003",
+      "https://cdn.realt.by/img/55/69f101a0-657d-11f1-8ec2-0242ac120003",
+      "https://cdn.realt.by/img/55/69f6a86c-657d-11f1-976b-0242ac120003",
+      "https://cdn.realt.by/img/55/6d379dd8-657d-11f1-bb8e-0242ac120003",
+      "https://cdn.realt.by/img/55/6d380dea-657d-11f1-bdcc-0242ac120003",
+      "https://cdn.realt.by/img/55/7ac9d51a-657d-11f1-b382-0242ac120003",
+      "https://cdn.realt.by/img/55/84e801ca-657d-11f1-887c-0242ac120003",
+      "https://cdn.realt.by/img/55/8556865e-657d-11f1-8c98-0242ac120003",
+      "https://cdn.realt.by/img/55/89380cfc-657d-11f1-a234-0242ac120003",
+      "https://cdn.realt.by/img/55/8951cd22-657d-11f1-9724-0242ac120003",
+      "https://cdn.realt.by/img/55/8bede926-657d-11f1-b017-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-11T11:39:08.854Z",
+    "lastSeenAt": "2026-06-11T11:39:08.854Z"
+  },
+  {
+    "adId": 4150496,
+    "uuid": "f5414a90-6572-11f1-9780-3fb3a7434153",
+    "link": "https://realt.by/sale-cottages/object/4150496/",
+    "title": "жилой дом с мастерской в г.Гродно ул. Заболоть (микрорайон Заболоть)",
+    "description": "Продается дом с мастерской! Продается современный жилой дом с мастерской в г. Гродно ул. Заболоть (микрорайон Заболоть), расположенный на участке площадью 25,0 сотки, прямоугольной формы. Площадь общая 295.9 м2/ жилого помещения 188.4 м2/жилая 85.0 м2. Год постройки 2018.",
+    "priceByn": 534854,
+    "priceUsd": 192900,
+    "address": "Гродно Заболоть ул.",
+    "area": 295.6,
+    "plotArea": 25,
+    "yearBuilt": 2018,
+    "seller": "Александр Г.",
+    "listTime": "2026-06-11T13:05:07+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/060e803c-6572-11f1-a193-0242ac120003",
+      "https://cdn.realt.by/img/55/0459b81a-6572-11f1-b8d2-0242ac120003",
+      "https://cdn.realt.by/img/55/060c5eb0-6572-11f1-85dd-0242ac120003",
+      "https://cdn.realt.by/img/55/05b56b50-6572-11f1-a74e-0242ac120003",
+      "https://cdn.realt.by/img/55/04de541c-6572-11f1-9710-0242ac120003",
+      "https://cdn.realt.by/img/55/05f8c120-6572-11f1-a1b9-0242ac120003",
+      "https://cdn.realt.by/img/55/04e89b52-6572-11f1-a790-0242ac120003",
+      "https://cdn.realt.by/img/55/060c91f0-6572-11f1-a4a1-0242ac120003",
+      "https://cdn.realt.by/img/55/060e08b4-6572-11f1-97f0-0242ac120003",
+      "https://cdn.realt.by/img/55/04ac0c32-6572-11f1-b623-0242ac120003",
+      "https://cdn.realt.by/img/55/05b84f14-6572-11f1-86e3-0242ac120003",
+      "https://cdn.realt.by/img/55/04cf8fc2-6572-11f1-9a2b-0242ac120003",
+      "https://cdn.realt.by/img/55/04f2189e-6572-11f1-9efc-0242ac120003",
+      "https://cdn.realt.by/img/55/05b853ba-6572-11f1-91a2-0242ac120003",
+      "https://cdn.realt.by/img/55/0609a6fc-6572-11f1-8c8d-0242ac120003",
+      "https://cdn.realt.by/img/55/01aea9e0-6572-11f1-a925-0242ac120003",
+      "https://cdn.realt.by/img/55/060d2b88-6572-11f1-a3f9-0242ac120003",
+      "https://cdn.realt.by/img/55/05b5ef30-6572-11f1-adc0-0242ac120003",
+      "https://cdn.realt.by/img/55/04d89f68-6572-11f1-9fe3-0242ac120003",
+      "https://cdn.realt.by/img/55/05d1c0ac-6572-11f1-8a03-0242ac120003",
+      "https://cdn.realt.by/img/55/060e531e-6572-11f1-8d47-0242ac120003",
+      "https://cdn.realt.by/img/55/05c00be6-6572-11f1-b9f1-0242ac120003",
+      "https://cdn.realt.by/img/55/01bc202a-6572-11f1-b240-0242ac120003",
+      "https://cdn.realt.by/img/55/044e462e-6572-11f1-af3f-0242ac120003",
+      "https://cdn.realt.by/img/55/01a0316c-6572-11f1-94b8-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-11T11:39:08.854Z",
+    "lastSeenAt": "2026-06-11T11:39:08.854Z"
+  },
+  {
+    "adId": 4149744,
+    "uuid": "d35b7530-64c4-11f1-82b6-7969fefbc065",
+    "link": "https://realt.by/sale-cottages/object/4149744/",
+    "title": "Уютный дом в центре Гродно (микрорайон Переселка)",
+    "description": "В продаже двухэтажный дом с мансардой в центре города Гродно по улице Гожая (пересекается с улицей Серафимовича, микрорайон Переселка) на земельном участке площадью 3,77 соток..Дом построен из блоков и кирпича. Крыша из качественной жести. В доме все есть для комфортной и спокойной жизни. На первом этаже расположены: просторная прихожая, две жилые комнаты, в одной есть камин, топочная, огромная кухня 21 кв.м и санузлы. На втором этаже: пять комнат, санузлы. Мансарда – коридор и жилая комната.",
+    "priceByn": 748629,
+    "priceUsd": 270000,
+    "address": "Гродно Гожая ул.",
+    "area": 258.8,
+    "areaLiving": 154.7,
+    "areaKitchen": 21,
+    "plotArea": 3.73,
+    "yearBuilt": 1998,
+    "seller": "\"Фирма 2К и К\"",
+    "listTime": "2026-06-10T15:42:04+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/d91fafde-64c1-11f1-aad2-0242ac120003",
+      "https://cdn.realt.by/img/55/d920e034-64c1-11f1-a379-0242ac120003",
+      "https://cdn.realt.by/img/55/d957a308-64c1-11f1-b722-0242ac120003",
+      "https://cdn.realt.by/img/55/dbf3f508-64c1-11f1-b197-0242ac120003",
+      "https://cdn.realt.by/img/55/dbee6818-64c1-11f1-a638-0242ac120003",
+      "https://cdn.realt.by/img/55/da50807c-64c1-11f1-a3cf-0242ac120003",
+      "https://cdn.realt.by/img/55/d954b3f0-64c1-11f1-93fa-0242ac120003",
+      "https://cdn.realt.by/img/55/d98bca84-64c1-11f1-ae94-0242ac120003",
+      "https://cdn.realt.by/img/55/d95716a4-64c1-11f1-9019-0242ac120003",
+      "https://cdn.realt.by/img/55/dba5ceb4-64c1-11f1-912f-0242ac120003",
+      "https://cdn.realt.by/img/55/dba6f096-64c1-11f1-b607-0242ac120003",
+      "https://cdn.realt.by/img/55/d98ab8c4-64c1-11f1-ae14-0242ac120003",
+      "https://cdn.realt.by/img/55/d91e001c-64c1-11f1-a880-0242ac120003",
+      "https://cdn.realt.by/img/55/d955f33c-64c1-11f1-8152-0242ac120003",
+      "https://cdn.realt.by/img/55/d9895920-64c1-11f1-bfba-0242ac120003",
+      "https://cdn.realt.by/img/55/db3db0ae-64c1-11f1-bd0c-0242ac120003",
+      "https://cdn.realt.by/img/55/db6346a2-64c1-11f1-8a7b-0242ac120003",
+      "https://cdn.realt.by/img/55/db65c94a-64c1-11f1-918c-0242ac120003",
+      "https://cdn.realt.by/img/55/db688608-64c1-11f1-a2b7-0242ac120003",
+      "https://cdn.realt.by/img/55/db6bbc92-64c1-11f1-a050-0242ac120003",
+      "https://cdn.realt.by/img/55/db6df728-64c1-11f1-96aa-0242ac120003",
+      "https://cdn.realt.by/img/55/dba4ac78-64c1-11f1-918f-0242ac120003",
+      "https://cdn.realt.by/img/55/dba65af0-64c1-11f1-9601-0242ac120003",
+      "https://cdn.realt.by/img/55/dba70d24-64c1-11f1-836b-0242ac120003",
+      "https://cdn.realt.by/img/55/dba95dae-64c1-11f1-9928-0242ac120003",
+      "https://cdn.realt.by/img/55/dbaa1758-64c1-11f1-99df-0242ac120003",
+      "https://cdn.realt.by/img/55/dbaac0fe-64c1-11f1-95ee-0242ac120003",
+      "https://cdn.realt.by/img/55/dbaca73e-64c1-11f1-8c72-0242ac120003",
+      "https://cdn.realt.by/img/55/dbafce28-64c1-11f1-bb49-0242ac120003",
+      "https://cdn.realt.by/img/55/dbb00136-64c1-11f1-ac0b-0242ac120003",
+      "https://cdn.realt.by/img/55/dbb16396-64c1-11f1-ab7c-0242ac120003",
+      "https://cdn.realt.by/img/55/dbb2021a-64c1-11f1-b995-0242ac120003",
+      "https://cdn.realt.by/img/55/dbb2d4e2-64c1-11f1-8b42-0242ac120003",
+      "https://cdn.realt.by/img/55/dbb207f6-64c1-11f1-95c9-0242ac120003",
+      "https://cdn.realt.by/img/55/dbb2369a-64c1-11f1-b9b1-0242ac120003",
+      "https://cdn.realt.by/img/55/6262c696-64c2-11f1-9937-0242ac120003",
+      "https://cdn.realt.by/img/55/62655442-64c2-11f1-8e40-0242ac120003",
+      "https://cdn.realt.by/img/55/6260b482-64c2-11f1-8c9d-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-11T11:39:08.854Z",
+    "lastSeenAt": "2026-06-11T11:39:08.854Z"
+  },
+  {
+    "adId": 4149737,
+    "uuid": "3e08ae80-64c4-11f1-9ae5-d964c5b7109a",
+    "link": "https://realt.by/sale-cottages/object/4149737/",
+    "title": "дом г. Гродно ул. Болгарина (м-н Заболоть)",
+    "description": "Продается дом в городе Гродно по ул. Болгарина (м-н Заболоть). Общая площадь 331,4 м. кв., жилая – 149,7 м.кв., кухня – 13,1 м.кв. 2020 г.п. Дом блочный, крыша металлочерепица, окна ПВХ, утеплен, оштукатурен.",
+    "priceByn": 499086,
+    "priceUsd": 180000,
+    "address": "Гродно Болгарина ул.",
+    "area": 331.4,
+    "areaLiving": 149.7,
+    "plotArea": 10,
+    "yearBuilt": 2020,
+    "seller": "Елена",
+    "listTime": "2026-06-10T15:42:03+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/bb60f8f2-64c3-11f1-8dcf-0242ac120003",
+      "https://cdn.realt.by/img/55/bb54b358-64c3-11f1-9392-0242ac120003",
+      "https://cdn.realt.by/img/55/bb46dcba-64c3-11f1-b4d9-0242ac120003",
+      "https://cdn.realt.by/img/55/bb1578a0-64c3-11f1-bfe5-0242ac120003",
+      "https://cdn.realt.by/img/55/bb2d7388-64c3-11f1-9cf1-0242ac120003",
+      "https://cdn.realt.by/img/55/bb324246-64c3-11f1-abec-0242ac120003",
+      "https://cdn.realt.by/img/55/bb45c7d0-64c3-11f1-9651-0242ac120003",
+      "https://cdn.realt.by/img/55/bb0df86e-64c3-11f1-9e2c-0242ac120003",
+      "https://cdn.realt.by/img/55/bb491138-64c3-11f1-9ec3-0242ac120003",
+      "https://cdn.realt.by/img/55/bb084d2e-64c3-11f1-a882-0242ac120003",
+      "https://cdn.realt.by/img/55/bb25479e-64c3-11f1-9cbe-0242ac120003",
+      "https://cdn.realt.by/img/55/bb551ff0-64c3-11f1-8c87-0242ac120003",
+      "https://cdn.realt.by/img/55/bb47fc44-64c3-11f1-a283-0242ac120003",
+      "https://cdn.realt.by/img/55/ba103db4-64c3-11f1-a962-0242ac120003",
+      "https://cdn.realt.by/img/55/ba1822b8-64c3-11f1-9b3f-0242ac120003",
+      "https://cdn.realt.by/img/55/ba4f1d2c-64c3-11f1-a571-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-11T11:39:08.854Z",
+    "lastSeenAt": "2026-06-11T11:39:08.854Z"
   }
 ]
