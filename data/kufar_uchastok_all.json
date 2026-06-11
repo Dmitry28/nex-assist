@@ -89,7 +89,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7b4053ef-1b86-4f81-a244-191274796e97.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-06-10T11:12:10.631Z"
+    "lastSeenAt": "2026-06-11T11:33:26.006Z"
   },
   {
     "adId": 1061953023,
@@ -167,31 +167,33 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/76c25739-4706-4d05-aac3-1b8d2ee68fb2.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-06-10T11:12:10.631Z"
+    "lastSeenAt": "2026-06-11T11:33:26.006Z"
   },
   {
     "adId": 1061925432,
     "link": "https://re.kufar.by/vi/1061925432",
     "title": "Участок с домом",
     "description": "Участок находится в живописном месте в 7 км от города по М6 (12 минут езды до центра города), рядом река Неман. 37 соток, из которых 8 соток под строи",
-    "priceByn": 67852,
-    "priceUsd": 23000,
+    "priceByn": 55400,
+    "priceUsd": 20000,
     "address": "деревня Щечиново, Путришковский сельсовет, Гродненский район, Гродненская область",
-    "plotArea": 37,
+    "plotArea": 36,
     "seller": "Татьяна",
     "features": [
-      "Отсутствует",
-      "Частная собственность",
       "Да"
     ],
-    "listTime": "2026-03-25T08:24:01Z",
+    "coordinates": {
+      "lat": 53.647859,
+      "lon": 23.968471
+    },
+    "listTime": "2026-06-11T07:34:45Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2a8e3794-051b-4fa2-b2e6-6219e449fd48.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/15792839-042c-4019-80ad-7c8ea5ba1e69.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/41f2bd24-806b-44f5-9612-c364c6fa8e95.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-03-26T11:27:09.575Z"
+    "lastSeenAt": "2026-06-11T11:33:26.006Z"
   },
   {
     "adId": 1030426280,
@@ -465,7 +467,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6de96517-cfa0-4942-be53-50ac8d4a6b58.jpg"
     ],
     "firstSeenAt": "2026-03-26T11:09:41.472Z",
-    "lastSeenAt": "2026-04-19T08:15:52.350Z"
+    "lastSeenAt": "2026-06-11T11:33:26.006Z"
   },
   {
     "adId": 1060082290,
@@ -873,7 +875,7 @@
     "listTime": "2026-04-07T08:58:38Z",
     "images": [],
     "firstSeenAt": "2026-03-29T19:58:43.075Z",
-    "lastSeenAt": "2026-05-31T09:47:41.582Z"
+    "lastSeenAt": "2026-06-11T11:33:26.006Z"
   },
   {
     "adId": 1011452136,
@@ -1027,7 +1029,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8851791a-b3ff-48e4-85ca-444cee193f6d.jpg"
     ],
     "firstSeenAt": "2026-03-31T09:53:43.593Z",
-    "lastSeenAt": "2026-06-10T11:12:10.631Z"
+    "lastSeenAt": "2026-06-11T11:33:26.006Z"
   },
   {
     "adId": 1016279565,
@@ -2339,7 +2341,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7b484c43-4b27-4651-9da7-52796a4e8d7a.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:08:18.564Z",
-    "lastSeenAt": "2026-06-10T11:12:10.631Z"
+    "lastSeenAt": "2026-06-11T11:33:26.006Z"
   },
   {
     "adId": 1063962481,
@@ -2527,7 +2529,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/51dcdc03-04b8-42a3-9f99-581514c44c9a.jpg"
     ],
     "firstSeenAt": "2026-04-14T08:39:12.555Z",
-    "lastSeenAt": "2026-06-10T11:12:10.631Z"
+    "lastSeenAt": "2026-06-11T11:33:26.006Z"
   },
   {
     "adId": 1064823553,
@@ -2749,7 +2751,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/15886d50-aaff-46b4-933c-7019baf9eeef.jpg"
     ],
     "firstSeenAt": "2026-04-17T08:38:33.335Z",
-    "lastSeenAt": "2026-06-10T11:12:10.631Z"
+    "lastSeenAt": "2026-06-11T11:33:26.006Z"
   },
   {
     "adId": 1065259206,
@@ -2816,7 +2818,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a747eb15-515f-4ba1-afdd-91fcb3c36d61.jpg"
     ],
     "firstSeenAt": "2026-04-17T08:38:33.335Z",
-    "lastSeenAt": "2026-04-18T08:20:21.408Z"
+    "lastSeenAt": "2026-06-11T11:33:26.006Z"
   },
   {
     "adId": 1065207955,
@@ -2969,7 +2971,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e40ca06b-2b60-4059-a3e8-49a418ee918c.jpg"
     ],
     "firstSeenAt": "2026-04-18T08:20:21.408Z",
-    "lastSeenAt": "2026-04-19T08:15:52.350Z"
+    "lastSeenAt": "2026-06-11T11:33:26.006Z"
   },
   {
     "adId": 1027214703,
@@ -6952,7 +6954,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/06e573f6-7de7-4519-ace2-edc1314a1f4c.jpg"
     ],
     "firstSeenAt": "2026-06-10T11:12:10.631Z",
-    "lastSeenAt": "2026-06-10T11:12:10.631Z"
+    "lastSeenAt": "2026-06-11T11:33:26.006Z"
   },
   {
     "adId": 1072561506,
@@ -6978,7 +6980,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8c76c10b-fe65-4bae-bbe2-47511006b851.jpg"
     ],
     "firstSeenAt": "2026-06-10T11:12:10.631Z",
-    "lastSeenAt": "2026-06-10T11:12:10.631Z"
+    "lastSeenAt": "2026-06-11T11:33:26.006Z"
   },
   {
     "adId": 1072560957,
@@ -7005,6 +7007,104 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/347b4c17-10a1-48a4-b0e6-017cc81c682d.jpg"
     ],
     "firstSeenAt": "2026-06-10T11:12:10.631Z",
-    "lastSeenAt": "2026-06-10T11:12:10.631Z"
+    "lastSeenAt": "2026-06-11T11:33:26.006Z"
+  },
+  {
+    "adId": 253577034,
+    "link": "https://re.kufar.by/vi/253577034",
+    "title": "Земельный участок с фундаментом в д. Богушовка",
+    "description": "Земельный участок под застройку жилого дома с фундаментом в живописном месте. Местоположение: Гродненская область, Гродненский район, Гожский сельский",
+    "priceByn": 82823,
+    "priceUsd": 29900,
+    "address": "Центральная ул, 52, деревня Богушовка, Гожский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 25,
+    "seller": "ООО Магазин недвижимости",
+    "features": [
+      "Колодец",
+      "Пожизненное наследование"
+    ],
+    "coordinates": {
+      "lat": 53.760151,
+      "lon": 23.948951
+    },
+    "listTime": "2026-06-10T16:23:38Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a988ed81-e6a2-4dc4-9c54-c998e9db4ea3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/148ab979-ecd0-4795-8112-f711db867d50.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e97183a2-6b60-4b6f-9850-25e5924fa47c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4d9aba56-0774-43c3-9d8d-f0859a0f6442.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fc970417-c149-458b-a82a-3fb962bdf0fa.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3cf97cfc-83cf-4ade-9256-cf1c40132c07.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/503eff70-6f2e-4df4-8494-8d718dca4bbc.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8f928737-8715-40df-80f2-e4e7af54b0b8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/549d1011-d624-44ad-a1cc-af3e4ec46275.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdfe2947-4ea4-4fc2-bf3b-83b77cff9e73.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7705c700-7296-4ed0-9654-ca86b84f6f06.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1c14ce02-a01c-45ef-b22e-e4ba08469b44.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b930dfdf-0006-417f-b394-68156734f94d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0e25876b-bebc-4cef-90fa-2bb6345b0092.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9808bfd2-eb8d-4c4a-89d0-e87aa71412d2.jpg"
+    ],
+    "firstSeenAt": "2026-06-11T11:33:26.006Z",
+    "lastSeenAt": "2026-06-11T11:33:26.006Z"
+  },
+  {
+    "adId": 1072615161,
+    "link": "https://re.kufar.by/vi/1072615161",
+    "title": "Продажа участка с/т ''Афган''",
+    "description": "Продам участок в с/т \"Афган\",на участке есть электричество ,водопровод  от общей скважины,ведутся работы по газификации участков, в обществе и соседни",
+    "priceByn": 27700,
+    "priceUsd": 10000,
+    "address": "СТ Афган, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 7.6,
+    "seller": "Евгений",
+    "features": [
+      "Скважина",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.60466654002349,
+      "lon": 23.667815571655066
+    },
+    "listTime": "2026-06-10T15:09:19Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c26ba66a-fa75-4572-a311-f35ae08a8d31.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cbcda50f-cf86-455a-8447-b4f8889d5dce.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eb7605b9-7d62-4fbc-bf87-22cc933dbd95.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/dc3238d1-8748-4fb4-8d11-d860e2aebcfa.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4ce3dda9-b014-466e-b847-3d357659b1ab.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e2099bd1-6bf4-41ac-97f2-2bbffbc2c3a5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6ceea345-62b6-4914-ba19-3473796d8bbe.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0a8eac82-ade2-40bd-869a-b55d59e7c59b.jpg"
+    ],
+    "firstSeenAt": "2026-06-11T11:33:26.006Z",
+    "lastSeenAt": "2026-06-11T11:33:26.006Z"
+  },
+  {
+    "adId": 1072607654,
+    "link": "https://re.kufar.by/vi/1072607654",
+    "title": "Участок в С/Т Горицвет, 52.  Гродненский район.",
+    "description": "В 10 км от города, в экологически чистой зоне, продается земельный участок, в садовом товариществе «Горицвет» ( направление д.Каралино), общей площадь",
+    "priceByn": 30470,
+    "priceUsd": 11000,
+    "address": "СТ Горицвет, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 8.7,
+    "seller": "Частное лицо",
+    "features": [
+      "Скважина",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.611544,
+      "lon": 23.672072
+    },
+    "listTime": "2026-06-10T13:26:36Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b72871d1-df12-4047-bfb5-28bcd11f91a3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/781bc631-e1c9-4b3c-b738-f513c71e358d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/afda811d-038c-4798-8711-e63b568f44e7.jpg"
+    ],
+    "firstSeenAt": "2026-06-11T11:33:26.006Z",
+    "lastSeenAt": "2026-06-11T11:33:26.006Z"
   }
 ]

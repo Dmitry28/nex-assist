@@ -47,7 +47,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-06-08T11:56:19.994Z"
+    "lastSeenAt": "2026-06-11T11:33:26.004Z"
   },
   {
     "adId": 1062002915,
@@ -1779,7 +1779,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/77b2c7b6-d750-431d-92e2-6d23d6736824.jpg"
     ],
     "firstSeenAt": "2026-04-24T09:16:55.888Z",
-    "lastSeenAt": "2026-06-02T11:25:47.553Z"
+    "lastSeenAt": "2026-06-11T11:33:26.004Z"
   },
   {
     "adId": 1065912942,
@@ -2806,7 +2806,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/95d7e93c-d956-4a23-a935-da8b54ce5a51.jpg"
     ],
     "firstSeenAt": "2026-05-09T08:44:04.835Z",
-    "lastSeenAt": "2026-05-10T08:53:36.255Z"
+    "lastSeenAt": "2026-06-11T11:33:26.004Z"
   },
   {
     "adId": 1068334517,
@@ -3607,7 +3607,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39ba00b4-ed0b-45e2-a4e5-edade7282d26.jpg"
     ],
     "firstSeenAt": "2026-05-27T11:01:06.131Z",
-    "lastSeenAt": "2026-06-10T11:12:10.628Z"
+    "lastSeenAt": "2026-06-11T11:33:26.004Z"
   },
   {
     "adId": 1070272138,
@@ -4013,8 +4013,8 @@
     "link": "https://re.kufar.by/vi/1071136657",
     "title": "Гараж Понемунь авто",
     "description": "Стандартный гараж с подвалом по всем гаражом. Есть электричество.",
-    "priceByn": 13800,
-    "priceUsd": 4982,
+    "priceByn": 13500,
+    "priceUsd": 4874,
     "address": "Понемуньская ул, 15Аблок2к217, Гродно, Гродненская область",
     "area": 16,
     "seller": "Игорь",
@@ -4035,7 +4035,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/21a5db36-3502-42eb-9e24-f47d8193dda8.jpg"
     ],
     "firstSeenAt": "2026-06-01T12:39:39.359Z",
-    "lastSeenAt": "2026-06-10T11:12:10.628Z"
+    "lastSeenAt": "2026-06-11T11:33:26.004Z"
   },
   {
     "adId": 1071041032,
@@ -4421,7 +4421,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2a72e0ad-05ac-4847-8049-50696a65130f.jpg"
     ],
     "firstSeenAt": "2026-06-09T10:48:32.689Z",
-    "lastSeenAt": "2026-06-10T11:12:10.628Z"
+    "lastSeenAt": "2026-06-11T11:33:26.004Z"
   },
   {
     "adId": 1072572457,
@@ -4468,7 +4468,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/05b99bf8-75f7-4848-b973-3ccfc032446c.jpg"
     ],
     "firstSeenAt": "2026-06-10T11:12:10.628Z",
-    "lastSeenAt": "2026-06-10T11:12:10.628Z"
+    "lastSeenAt": "2026-06-11T11:33:26.004Z"
   },
   {
     "adId": 1072533787,
@@ -4500,7 +4500,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/538c0234-a99b-4fc9-a114-292b3f453b89.jpg"
     ],
     "firstSeenAt": "2026-06-10T11:12:10.628Z",
-    "lastSeenAt": "2026-06-10T11:12:10.628Z"
+    "lastSeenAt": "2026-06-11T11:33:26.004Z"
   },
   {
     "adId": 1072506410,
@@ -4564,6 +4564,34 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c9307da0-3410-4eea-a9d3-d3b7cde57a5e.jpg"
     ],
     "firstSeenAt": "2026-06-10T11:12:10.628Z",
-    "lastSeenAt": "2026-06-10T11:12:10.628Z"
+    "lastSeenAt": "2026-06-11T11:33:26.004Z"
+  },
+  {
+    "adId": 1065395276,
+    "link": "https://re.kufar.by/vi/1065395276",
+    "title": "Гараж",
+    "description": "Кирпичный гараж, панельные перекрытия, на весь гараж подвал, электричество,в данный момент ворота обшиты доской временные -металические добротные стоя",
+    "priceByn": 21883,
+    "priceUsd": 7900,
+    "address": "микрорайон Понемунь, Гродно, Гродненская область",
+    "area": 19.6,
+    "seller": "Юля и Денис",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма",
+      "Подвал"
+    ],
+    "coordinates": {
+      "lat": 53.662444,
+      "lon": 23.867186
+    },
+    "listTime": "2026-06-10T21:24:57Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3c904fc1-2f5e-4560-9746-db12eeb38343.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/463f24e0-04c5-48b5-82b6-82f5927b758e.jpg"
+    ],
+    "firstSeenAt": "2026-06-11T11:33:26.004Z",
+    "lastSeenAt": "2026-06-11T11:33:26.004Z"
   }
 ]
