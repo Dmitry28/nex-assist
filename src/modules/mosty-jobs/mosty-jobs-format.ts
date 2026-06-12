@@ -1,7 +1,7 @@
 import { LOCALE, TIMEZONE } from '../../common/utils/locale';
 import { escapeHtml } from '../../common/utils/telegram';
 import { SOURCE_LABELS } from './constants';
-import type { JobVacancy, MostyJobsResult } from './dto/job-vacancy.dto';
+import { JOB_SOURCES, type JobVacancy, type MostyJobsResult } from './dto/job-vacancy.dto';
 
 export interface VacancyMessageParams {
   vacancy: JobVacancy;
@@ -36,8 +36,7 @@ export const buildSummary = (result: MostyJobsResult): string => {
   const lines = [
     `<b>💼 Вакансии · Мостовский район · ${date}</b>`,
     '',
-    formatSourceTotal(SOURCE_LABELS.gsz, result.totalGsz),
-    formatSourceTotal(SOURCE_LABELS.rabota, result.totalRabota),
+    ...JOB_SOURCES.map(source => formatSourceTotal(SOURCE_LABELS[source], result.totals[source])),
     '',
     result.newVacancies.length > 0
       ? `🆕 ${result.newVacancies.length} нов(ых)`

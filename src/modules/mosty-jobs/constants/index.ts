@@ -36,4 +36,6 @@ export const NOTIFICATION_HEADERS = {
 export const SOURCE_LABELS = {
   gsz: 'gsz.gov.by',
   rabota: 'rabota.by',
+  joblab: 'joblab.by',
+  kufar: 'kufar.by',
 } as const;

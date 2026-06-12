@@ -1,8 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { BROWSER_USER_AGENT } from '../../common/utils/scraping';
-import { FETCH_TIMEOUT_MS, MAX_HTML_SIZE_BYTES } from './constants';
 import type { JobVacancy } from './dto/job-vacancy.dto';
+import { fetchText } from './mosty-jobs-http';
 
 /** Embedded initial-state JSON on the rabota.by (hh.ru) search page. */
 const INITIAL_STATE_RE = /<template[^>]*id="HH-Lux-InitialState"[^>]*>([\s\S]*?)<\/template>/i;
@@ -77,38 +76,16 @@ export class RabotaParserService {
    */
   async fetch(): Promise<JobVacancy[] | null> {
     const url = this.config.getOrThrow<string>('mostyJobs.rabotaSearchUrl');
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
-    try {
-      const res = await fetch(url, {
-        signal: controller.signal,
-        headers: {
-          'User-Agent': BROWSER_USER_AGENT,
-          'Accept-Language': 'ru-RU,ru;q=0.9',
-        },
-      });
-      if (!res.ok) {
-        this.logger.warn(`HTTP ${res.status} for ${url}`);
-        return null;
-      }
-      const html = await res.text();
-      if (html.length > MAX_HTML_SIZE_BYTES) {
-        this.logger.warn(`Response too large (${html.length} bytes) for ${url}`);
-        return null;
-      }
-      const vacancies = parseRabotaSearchHtml(html);
-      if (vacancies === null) {
-        this.logger.warn('rabota.by: initial-state JSON not found — captcha or layout change?');
-        return null;
-      }
-      this.logger.log(`rabota.by: ${vacancies.length} vacancies fetched`);
-      return vacancies;
-    } catch (err) {
-      this.logger.error(`Failed to fetch ${url}`, err);
+    const html = await fetchText(url, this.logger);
+    if (html === null) return null;
+
+    const vacancies = parseRabotaSearchHtml(html);
+    if (vacancies === null) {
+      this.logger.warn('rabota.by: initial-state JSON not found — captcha or layout change?');
       return null;
-    } finally {
-      clearTimeout(timer);
     }
+    this.logger.log(`rabota.by: ${vacancies.length} vacancies fetched`);
+    return vacancies;
   }
 }
 
