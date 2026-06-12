@@ -16,7 +16,10 @@ import { AppModule } from '../app.module';
 import { escapeHtml, TELEGRAM_MESSAGE_LIMIT } from '../common/utils/telegram';
 import { LOCALE, TIMEZONE } from '../common/utils/locale';
 import { DATA_FILE, SOURCE_LABELS } from '../modules/mosty-jobs/constants';
-import { isJobSnapshotEntry, type JobSnapshotEntry } from '../modules/mosty-jobs/dto/job-vacancy.dto';
+import {
+  isJobSnapshotEntry,
+  type JobSnapshotEntry,
+} from '../modules/mosty-jobs/dto/job-vacancy.dto';
 import { TelegramService } from '../modules/telegram/telegram.service';
 
 const DRY_RUN = process.argv.includes('--dry-run');
