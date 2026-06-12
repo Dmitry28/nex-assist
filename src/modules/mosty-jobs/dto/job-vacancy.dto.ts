@@ -5,15 +5,26 @@ import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
  *  - gsz — gsz.gov.by state vacancy bank (by law covers most real local vacancies)
  *  - rabota — rabota.by (hh.ru Belarus)
  *  - joblab — joblab.by (commercial job board, RSS)
+ *  - evroopt — e-rabota.by (Евроопт/Грошык own career API; 4 stores in town)
+ *  - crb — mostycrb.by (Мостовская ЦРБ own vacancies page)
  *  - kufar — kufar.by job ads (private/informal)
+ *  - fair — e-vacancy.by электронные ярмарки вакансий for Мостовский район
  *
  * praca.by was evaluated and rejected: its "Мосты" pool is ~95% nationwide
  * remote/blanket postings from Minsk firms (sampled detail pages don't even
  * mention Мосты), while its genuinely local slice duplicates gsz.
  */
-export type JobSource = 'gsz' | 'rabota' | 'joblab' | 'kufar';
+export type JobSource = 'gsz' | 'rabota' | 'joblab' | 'evroopt' | 'crb' | 'kufar' | 'fair';
 
-export const JOB_SOURCES: readonly JobSource[] = ['gsz', 'rabota', 'joblab', 'kufar'];
+export const JOB_SOURCES: readonly JobSource[] = [
+  'gsz',
+  'rabota',
+  'joblab',
+  'evroopt',
+  'crb',
+  'kufar',
+  'fair',
+];
 
 const isJobSource = (v: unknown): v is JobSource =>
   typeof v === 'string' && (JOB_SOURCES as readonly string[]).includes(v);

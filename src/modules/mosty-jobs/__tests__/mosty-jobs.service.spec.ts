@@ -1,6 +1,9 @@
 import { Test, type TestingModule } from '@nestjs/testing';
 import { SnapshotService } from '../../../common/snapshot.service';
 import { isJobSnapshotEntry, type JobSnapshotEntry, type JobVacancy } from '../dto/job-vacancy.dto';
+import { CrbParserService } from '../crb-parser.service';
+import { EvrooptParserService } from '../evroopt-parser.service';
+import { FairParserService } from '../fair-parser.service';
 import { GszParserService } from '../gsz-parser.service';
 import { JoblabParserService } from '../joblab-parser.service';
 import { KufarJobsParserService } from '../kufar-jobs-parser.service';
@@ -43,7 +46,7 @@ describe('isJobSnapshotEntry', () => {
     expect(isJobSnapshotEntry(asSnapshot(gszVacancy))).toBe(true));
 
   it('accepts all known sources', () => {
-    for (const source of ['gsz', 'rabota', 'joblab', 'kufar']) {
+    for (const source of ['gsz', 'rabota', 'joblab', 'evroopt', 'crb', 'kufar', 'fair']) {
       expect(isJobSnapshotEntry({ ...asSnapshot(gszVacancy), source })).toBe(true);
     }
   });
@@ -63,6 +66,9 @@ describe('MostyJobsService — scrape', () => {
   let gszParser: jest.Mocked<GszParserService>;
   let rabotaParser: jest.Mocked<RabotaParserService>;
   let joblabParser: jest.Mocked<JoblabParserService>;
+  let evrooptParser: jest.Mocked<EvrooptParserService>;
+  let crbParser: jest.Mocked<CrbParserService>;
+  let fairParser: jest.Mocked<FairParserService>;
   let kufarParser: jest.Mocked<KufarJobsParserService>;
   let snapshot: jest.Mocked<SnapshotService>;
   let notifier: jest.Mocked<MostyJobsNotifierService>;
@@ -74,6 +80,9 @@ describe('MostyJobsService — scrape', () => {
         { provide: GszParserService, useValue: { fetch: jest.fn() } },
         { provide: RabotaParserService, useValue: { fetch: jest.fn() } },
         { provide: JoblabParserService, useValue: { fetch: jest.fn() } },
+        { provide: EvrooptParserService, useValue: { fetch: jest.fn() } },
+        { provide: CrbParserService, useValue: { fetch: jest.fn() } },
+        { provide: FairParserService, useValue: { fetch: jest.fn() } },
         { provide: KufarJobsParserService, useValue: { fetch: jest.fn() } },
         { provide: SnapshotService, useValue: { read: jest.fn(), write: jest.fn() } },
         {
@@ -87,6 +96,9 @@ describe('MostyJobsService — scrape', () => {
     gszParser = module.get(GszParserService);
     rabotaParser = module.get(RabotaParserService);
     joblabParser = module.get(JoblabParserService);
+    evrooptParser = module.get(EvrooptParserService);
+    crbParser = module.get(CrbParserService);
+    fairParser = module.get(FairParserService);
     kufarParser = module.get(KufarJobsParserService);
     snapshot = module.get(SnapshotService);
     notifier = module.get(MostyJobsNotifierService);
@@ -95,6 +107,9 @@ describe('MostyJobsService — scrape', () => {
     gszParser.fetch.mockResolvedValue([]);
     rabotaParser.fetch.mockResolvedValue([]);
     joblabParser.fetch.mockResolvedValue([]);
+    evrooptParser.fetch.mockResolvedValue([]);
+    crbParser.fetch.mockResolvedValue([]);
+    fairParser.fetch.mockResolvedValue([]);
     kufarParser.fetch.mockResolvedValue([]);
     notifier.notifyRunResult.mockResolvedValue({ notifiedNew: new Set<string>() });
     snapshot.write.mockResolvedValue(undefined);
@@ -229,7 +244,15 @@ describe('MostyJobsService — scrape', () => {
   });
 
   it('throws and notifies when all sources fail', async () => {
-    for (const p of [gszParser, rabotaParser, joblabParser, kufarParser]) {
+    for (const p of [
+      gszParser,
+      rabotaParser,
+      joblabParser,
+      evrooptParser,
+      crbParser,
+      kufarParser,
+      fairParser,
+    ]) {
       p.fetch.mockResolvedValue(null);
     }
     snapshot.read.mockResolvedValue([]);

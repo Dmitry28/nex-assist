@@ -10,6 +10,19 @@ export const RUN_TIMEOUT_MS = 5 * 60 * 1000;
 /** Hard cap on gsz.gov.by result pages per run (the district fits in ~5 pages of 50). */
 export const MAX_GSZ_PAGES = 10;
 
+/** Hard cap on e-vacancy.by/markets/ pages per run (~4 pages of 10 fairs). */
+export const MAX_FAIR_PAGES = 6;
+
+/**
+ * e-rabota.by (Evroopt career API) city ids to poll:
+ * г. Мосты = 103173, агрогородок Мосты Правые = 16701557.
+ * Dictionary: https://static.erabota.by/api/cities
+ */
+export const EVROOPT_CITY_IDS = [103173, 16701557] as const;
+
+/** Page navigation timeout for the e-rabota.by JS-challenge flow (ms). */
+export const EVROOPT_PAGE_TIMEOUT_MS = 45_000;
+
 /**
  * Max per-vacancy Telegram messages per run. Protects against floods after a
  * partial baseline (e.g. one source failed on the first run). Undelivered
@@ -37,5 +50,8 @@ export const SOURCE_LABELS = {
   gsz: 'gsz.gov.by',
   rabota: 'rabota.by',
   joblab: 'joblab.by',
+  evroopt: 'Евроопт (e-rabota.by)',
+  crb: 'Мостовская ЦРБ',
   kufar: 'kufar.by',
+  fair: 'ярмарки (e-vacancy.by)',
 } as const;

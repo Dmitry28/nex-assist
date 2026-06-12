@@ -8,6 +8,9 @@ import {
   type JobVacancy,
   type MostyJobsResult,
 } from './dto/job-vacancy.dto';
+import { CrbParserService } from './crb-parser.service';
+import { EvrooptParserService } from './evroopt-parser.service';
+import { FairParserService } from './fair-parser.service';
 import { GszParserService } from './gsz-parser.service';
 import { JoblabParserService } from './joblab-parser.service';
 import { KufarJobsParserService } from './kufar-jobs-parser.service';
@@ -48,7 +51,10 @@ export class MostyJobsService {
     private readonly gszParser: GszParserService,
     private readonly rabotaParser: RabotaParserService,
     private readonly joblabParser: JoblabParserService,
+    private readonly evrooptParser: EvrooptParserService,
+    private readonly crbParser: CrbParserService,
     private readonly kufarParser: KufarJobsParserService,
+    private readonly fairParser: FairParserService,
     private readonly snapshot: SnapshotService,
     private readonly notifier: MostyJobsNotifierService,
   ) {}
@@ -85,7 +91,10 @@ export class MostyJobsService {
       { source: 'gsz', fetch: () => this.gszParser.fetch() },
       { source: 'rabota', fetch: () => this.rabotaParser.fetch() },
       { source: 'joblab', fetch: () => this.joblabParser.fetch() },
+      { source: 'evroopt', fetch: () => this.evrooptParser.fetch() },
+      { source: 'crb', fetch: () => this.crbParser.fetch() },
       { source: 'kufar', fetch: () => this.kufarParser.fetch() },
+      { source: 'fair', fetch: () => this.fairParser.fetch() },
     ];
 
     const [lists, previousEntries] = await Promise.all([
