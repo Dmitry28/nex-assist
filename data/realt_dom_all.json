@@ -925,8 +925,8 @@
     "link": "https://realt.by/sale-cottages/object/3667318/",
     "title": "В продаже дом в микрорайоне Зарица в Гродно",
     "description": "Территория и благоустройство: тихое экологически чистое место., соседи спокойные, отзывчивые. Удобный подъездной путь к дому – асфальт, и около 50 метров гравийная дорога. Земельный участок на праве пожизненно наследуемом владения площадью 11 соток, состояние – ровный, Г-образной формы, огорожен. На участке имеется хозяйственная постройка, выполненная из блоков.",
-    "priceByn": 253674,
-    "priceUsd": 90000,
+    "priceByn": 222000,
+    "priceUsd": 80098,
     "address": "Гродно Криничная ул.",
     "area": 209.8,
     "areaLiving": 133.4,
@@ -935,7 +935,7 @@
     "yearBuilt": 2008,
     "levels": 2,
     "seller": "Антон",
-    "listTime": "2025-06-05T11:50:30+03:00",
+    "listTime": "2026-06-12T19:50:33+03:00",
     "images": [
       "https://cdn.realt.by/img/55/f37689fa-41e7-11f0-a0ab-0242ac120002",
       "https://cdn.realt.by/img/55/f38ea990-41e7-11f0-a038-0242ac120002",
@@ -973,7 +973,7 @@
       "https://cdn.realt.by/img/55/1de38b3e-41e8-11f0-a391-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-06-12T19:23:00.387Z"
   },
   {
     "adId": 4116581,
@@ -1061,7 +1061,7 @@
       "https://cdn.realt.by/img/55/62a91ee4-493c-11f1-a7ea-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-12T10:14:30.448Z"
+    "lastSeenAt": "2026-06-12T19:23:00.387Z"
   },
   {
     "adId": 4116329,
@@ -2439,7 +2439,7 @@
       "https://cdn.realt.by/img/55/698aad50-2867-11f0-8fc9-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-04T10:15:40.622Z"
+    "lastSeenAt": "2026-06-12T19:23:00.387Z"
   },
   {
     "adId": 3962177,
@@ -5875,7 +5875,7 @@
       "https://static.realt.by/thumb/c/430x374/c5f662a11b216aff1dcebc6285dd1e9e/b7/i/11013c3efib7/93fc9e448f.jpeg"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-12T10:14:30.448Z"
+    "lastSeenAt": "2026-06-12T19:23:00.387Z"
   },
   {
     "adId": 3878873,
@@ -9481,7 +9481,7 @@
       "https://cdn.realt.by/img/55/3720e94a-9c14-11ef-ab2c-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-10T10:02:10.145Z"
+    "lastSeenAt": "2026-06-12T19:23:00.387Z"
   },
   {
     "adId": 3514949,
@@ -10405,7 +10405,7 @@
       "https://cdn.realt.by/img/55/1bc229c0-4e10-11f1-ae0b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-13T10:09:16.596Z",
-    "lastSeenAt": "2026-05-14T10:05:10.115Z"
+    "lastSeenAt": "2026-06-12T19:23:00.387Z"
   },
   {
     "adId": 4123615,
@@ -11697,7 +11697,7 @@
       "https://cdn.realt.by/img/55/8952200e-64a3-11f1-b1a9-0242ac120003"
     ],
     "firstSeenAt": "2026-06-10T10:02:10.145Z",
-    "lastSeenAt": "2026-06-12T10:14:30.448Z"
+    "lastSeenAt": "2026-06-12T19:23:00.387Z"
   },
   {
     "adId": 4150594,
@@ -11738,7 +11738,7 @@
       "https://cdn.realt.by/img/55/8bede926-657d-11f1-b017-0242ac120003"
     ],
     "firstSeenAt": "2026-06-12T10:14:30.448Z",
-    "lastSeenAt": "2026-06-12T10:14:30.448Z"
+    "lastSeenAt": "2026-06-12T19:23:00.387Z"
   },
   {
     "adId": 4150496,
@@ -11782,7 +11782,7 @@
       "https://cdn.realt.by/img/55/01a0316c-6572-11f1-94b8-0242ac120003"
     ],
     "firstSeenAt": "2026-06-12T10:14:30.448Z",
-    "lastSeenAt": "2026-06-12T10:14:30.448Z"
+    "lastSeenAt": "2026-06-12T19:23:00.387Z"
   },
   {
     "adId": 4149744,
@@ -11878,5 +11878,48 @@
     ],
     "firstSeenAt": "2026-06-12T10:14:30.448Z",
     "lastSeenAt": "2026-06-12T10:14:30.448Z"
+  },
+  {
+    "adId": 4151657,
+    "uuid": "6ad5c4c0-664f-11f1-9780-3fb3a7434153",
+    "link": "https://realt.by/sale-cottages/object/4151657/",
+    "title": "Двухуровневая 4-комн. квартира с участком и гаражом в аг. Вертелишки",
+    "description": "Двухуровневая 4-комн. квартира с участком и гаражом в аг. Вертелишки Продается просторная двухуровневая квартира в блокированном жилом доме — отличная замена городской квартире! Вертелишки поселок с образцовой инфраструктурой всего в 12 км от Гродно.",
+    "priceByn": 217571,
+    "priceUsd": 78500,
+    "address": "Вертелишки Тимирязева ул.",
+    "area": 90,
+    "areaLiving": 50,
+    "areaKitchen": 11,
+    "plotArea": 5,
+    "yearBuilt": 1990,
+    "levels": 2,
+    "seller": "Дмитрий",
+    "listTime": "2026-06-12T15:00:17+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/b8d3dfe6-664e-11f1-87ba-0242ac120003",
+      "https://cdn.realt.by/img/55/e19f6724-664e-11f1-bb92-0242ac120003",
+      "https://cdn.realt.by/img/55/88512540-664e-11f1-a090-0242ac120003",
+      "https://cdn.realt.by/img/55/ceb84090-664e-11f1-90cf-0242ac120003",
+      "https://cdn.realt.by/img/55/8854d53c-664e-11f1-98fa-0242ac120003",
+      "https://cdn.realt.by/img/55/887c392e-664e-11f1-80ea-0242ac120003",
+      "https://cdn.realt.by/img/55/cb603fc4-664e-11f1-8aa7-0242ac120003",
+      "https://cdn.realt.by/img/55/88706e50-664e-11f1-86a5-0242ac120003",
+      "https://cdn.realt.by/img/55/c8ca38e6-664e-11f1-9aad-0242ac120003",
+      "https://cdn.realt.by/img/55/c5d73b7a-664e-11f1-9876-0242ac120003",
+      "https://cdn.realt.by/img/55/8874c4dc-664e-11f1-bd00-0242ac120003",
+      "https://cdn.realt.by/img/55/bfa9ceb6-664e-11f1-9b63-0242ac120003",
+      "https://cdn.realt.by/img/55/8876e56e-664e-11f1-952e-0242ac120003",
+      "https://cdn.realt.by/img/55/8857a2d0-664e-11f1-9e34-0242ac120003",
+      "https://cdn.realt.by/img/55/8875a58c-664e-11f1-bf12-0242ac120003",
+      "https://cdn.realt.by/img/55/ae0ab986-664e-11f1-8a8c-0242ac120003",
+      "https://cdn.realt.by/img/55/b189649a-664e-11f1-9c4f-0242ac120003",
+      "https://cdn.realt.by/img/55/b39c8474-664e-11f1-8d9e-0242ac120003",
+      "https://cdn.realt.by/img/55/8873f930-664e-11f1-a6b3-0242ac120003",
+      "https://cdn.realt.by/img/55/b658e18a-664e-11f1-a802-0242ac120003",
+      "https://cdn.realt.by/img/55/0983b830-664f-11f1-82da-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-12T19:23:00.387Z",
+    "lastSeenAt": "2026-06-12T19:23:00.387Z"
   }
 ]
