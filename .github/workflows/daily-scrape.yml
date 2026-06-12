@@ -5,6 +5,11 @@ on:
   schedule:
     - cron: '0 7 * * *' # 07:00 UTC (10:00 Minsk time, UTC+3)
   workflow_dispatch:
+    inputs:
+      send_all_mosty_jobs:
+        description: 'One-off: send ALL snapshot vacancies to the mosty-jobs chat instead of scraping'
+        type: boolean
+        default: false
 
 jobs:
   scrape:
@@ -43,7 +48,15 @@ jobs:
           # version than puppeteer@24.x, so we point it at the already-downloaded binary).
           echo "PUPPETEER_EXECUTABLE_PATH=$(node -p "require('puppeteer').executablePath()")" >> $GITHUB_ENV
 
+      - name: Send all mosty-jobs vacancies (one-off)
+        if: inputs.send_all_mosty_jobs
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_MOSTY_JOBS_CHAT_ID: ${{ vars.TELEGRAM_MOSTY_JOBS_CHAT_ID }}
+        run: npx ts-node -r tsconfig-paths/register src/scripts/mosty-jobs-send-all.ts
+
       - name: Run scrape
+        if: ${{ !inputs.send_all_mosty_jobs }}
         env:
           APP_ENV: ${{ github.ref == 'refs/heads/main' && 'production' || 'development' }}
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
@@ -55,6 +68,7 @@ jobs:
           TELEGRAM_REALT_CHAT_ID: ${{ vars.TELEGRAM_REALT_CHAT_ID }}
           TELEGRAM_AV_BY_CHAT_ID: ${{ vars.TELEGRAM_AV_BY_CHAT_ID }}
           TELEGRAM_POGORANY_CHAT_ID: ${{ vars.TELEGRAM_POGORANY_CHAT_ID }}
+          TELEGRAM_MOSTY_JOBS_CHAT_ID: ${{ vars.TELEGRAM_MOSTY_JOBS_CHAT_ID }}
           SCRAPFLY_API_KEY: ${{ secrets.SCRAPFLY_API_KEY }}
           PUPPETEER_EXECUTABLE_PATH: ${{ env.PUPPETEER_EXECUTABLE_PATH }}
         run: npm run scrape

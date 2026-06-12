@@ -18,10 +18,12 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from '../app.module';
 import { AvByService } from '../modules/av-by/av-by.service';
 import { BidCarsService } from '../modules/bid-cars/bid-cars.service';
+import { GhbService } from '../modules/ghb/ghb.service';
 import { KufarService } from '../modules/kufar/kufar.service';
 import { KufarRentFlatService } from '../modules/kufar-rent-flat/kufar-rent-flat.service';
 import { KufarRentLongService } from '../modules/kufar-rent-long/kufar-rent-long.service';
 import { LandAuctionsService } from '../modules/land-auctions/land-auctions.service';
+import { MostyJobsService } from '../modules/mosty-jobs/mosty-jobs.service';
 import { PogoranyService } from '../modules/pogorany/pogorany.service';
 import { RealtService } from '../modules/realt/realt.service';
 
@@ -34,6 +36,8 @@ type Module =
   | 'realt'
   | 'av-by'
   | 'pogorany'
+  | 'ghb'
+  | 'mosty-jobs'
   | 'all';
 
 function parseModule(): Module {
@@ -47,11 +51,13 @@ function parseModule(): Module {
     arg === 'kufar-rent-long' ||
     arg === 'realt' ||
     arg === 'av-by' ||
-    arg === 'pogorany'
+    arg === 'pogorany' ||
+    arg === 'ghb' ||
+    arg === 'mosty-jobs'
   )
     return arg;
   console.error(
-    `Unknown module: "${arg}". Valid options: land, bid-cars, kufar, kufar-rent-flat, kufar-rent-long, realt, av-by, pogorany`,
+    `Unknown module: "${arg}". Valid options: land, bid-cars, kufar, kufar-rent-flat, kufar-rent-long, realt, av-by, pogorany, ghb, mosty-jobs`,
   );
   process.exit(1);
 }
@@ -128,6 +134,22 @@ async function bootstrap(): Promise<void> {
         await app.get(PogoranyService).run();
       } catch (err) {
         console.error('Pogorany scrape failed:', err);
+      }
+    }
+
+    if (target === 'all' || target === 'ghb') {
+      try {
+        await app.get(GhbService).run();
+      } catch (err) {
+        console.error('Ghb scrape failed:', err);
+      }
+    }
+
+    if (target === 'all' || target === 'mosty-jobs') {
+      try {
+        await app.get(MostyJobsService).run();
+      } catch (err) {
+        console.error('MostyJobs scrape failed:', err);
       }
     }
   } finally {

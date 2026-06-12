@@ -25,6 +25,8 @@
     "scrape:realt": "ts-node -r tsconfig-paths/register src/scripts/scrape.ts realt",
     "scrape:av-by": "ts-node -r tsconfig-paths/register src/scripts/scrape.ts av-by",
     "scrape:pogorany": "ts-node -r tsconfig-paths/register src/scripts/scrape.ts pogorany",
+    "scrape:ghb": "ts-node -r tsconfig-paths/register src/scripts/scrape.ts ghb",
+    "scrape:mosty-jobs": "ts-node -r tsconfig-paths/register src/scripts/scrape.ts mosty-jobs",
     "notify:test": "ts-node -r tsconfig-paths/register src/scripts/notify-test.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"{src,test}/**/*.ts\" --cache",

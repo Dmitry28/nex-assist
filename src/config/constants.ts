@@ -85,9 +85,32 @@ export const KUFAR_RENT_LONG_DEFAULTS = {
   SCRAPE_CRON: '0 9 * * *',
 } as const;
 
+export const GHB_DEFAULTS = {
+  /** "Прейскурант РБ" page on ghb.by — server-rendered HTML with all жилые/офисные объекты. */
+  PRICE_LIST_URL: 'https://ghb.by/ru/construction/price_apartments/',
+  /** "Продажа квартир и домов" page — currently a placeholder; we ping on content change. */
+  APARTMENTS_PAGE_URL: 'https://ghb.by/ru/construction/apartments/',
+  /** Default cron: every day at 09:00 UTC (12:00 Minsk). Cron is wired off — trigger via POST. */
+  SCRAPE_CRON: '0 9 * * *',
+} as const;
+
 export const POGORANY_DEFAULTS = {
   /** Tilda store API — returns the full product list for the ЖК Погораны catalog. */
   STORE_API_URL: 'https://store.tildacdn.com/api/getproductslist/?storepartuid=856309636292',
+  /** Default cron: every day at 09:00 UTC (12:00 Minsk). Cron is wired off — trigger via POST. */
+  SCRAPE_CRON: '0 9 * * *',
+} as const;
+
+export const MOSTY_JOBS_DEFAULTS = {
+  /**
+   * gsz.gov.by state vacancy bank search — Гродненская область (region=12380),
+   * Мостовский район (district=14712), newest first, 50 per page.
+   * The parser appends `&page=N` and walks pages until a 404.
+   */
+  GSZ_SEARCH_URL:
+    'https://gsz.gov.by/registration/vacancy-search/?region=12380&district=14712&sort_by=sort_published_at_desc&paginate_by=50',
+  /** rabota.by (hh.ru Belarus) search — г. Мосты (area=2302), server-rendered HTML. */
+  RABOTA_SEARCH_URL: 'https://rabota.by/search/vacancy?area=2302',
   /** Default cron: every day at 09:00 UTC (12:00 Minsk). Cron is wired off — trigger via POST. */
   SCRAPE_CRON: '0 9 * * *',
 } as const;
