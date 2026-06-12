@@ -16,6 +16,7 @@ import { KufarModule } from './modules/kufar/kufar.module';
 import { KufarRentFlatModule } from './modules/kufar-rent-flat/kufar-rent-flat.module';
 import { KufarRentLongModule } from './modules/kufar-rent-long/kufar-rent-long.module';
 import { LandAuctionsModule } from './modules/land-auctions/land-auctions.module';
+import { MostyJobsModule } from './modules/mosty-jobs/mosty-jobs.module';
 import { PogoranyModule } from './modules/pogorany/pogorany.module';
 import { RealtModule } from './modules/realt/realt.module';
 
@@ -62,6 +63,7 @@ import { RealtModule } from './modules/realt/realt.module';
     AvByModule,
     PogoranyModule,
     GhbModule,
+    MostyJobsModule,
   ],
   providers: [
     // Global validation
