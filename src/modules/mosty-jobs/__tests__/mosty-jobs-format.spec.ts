@@ -8,10 +8,10 @@ const baseVacancy: JobVacancy = {
 };
 
 const baseResult: MostyJobsResult = {
-  totalGsz: 240,
-  totalRabota: 10,
+  totals: { gsz: 240, rabota: 10, joblab: 14, kufar: 0 },
   newVacancies: [],
   seededCount: 0,
+  duplicateCount: 0,
 };
 
 describe('buildVacancyMessage', () => {
@@ -66,6 +66,8 @@ describe('buildSummary', () => {
     expect(summary).toContain('Мостовский район');
     expect(summary).toContain('gsz.gov.by: <b>240</b>');
     expect(summary).toContain('rabota.by: <b>10</b>');
+    expect(summary).toContain('joblab.by: <b>14</b>');
+    expect(summary).toContain('kufar.by: <b>0</b>');
     expect(summary).toContain('Новых вакансий нет');
   });
 
@@ -75,7 +77,7 @@ describe('buildSummary', () => {
   });
 
   it('marks a failed source', () => {
-    const summary = buildSummary({ ...baseResult, totalGsz: null });
+    const summary = buildSummary({ ...baseResult, totals: { ...baseResult.totals, gsz: null } });
     expect(summary).toContain('⚠️ gsz.gov.by: недоступен');
   });
 
