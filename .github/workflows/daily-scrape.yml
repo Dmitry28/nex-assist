@@ -10,6 +10,10 @@ on:
         description: 'One-off: send ALL snapshot vacancies to the mosty-jobs chat instead of scraping'
         type: boolean
         default: false
+      send_all_sources:
+        description: 'Optional comma-separated source filter for send-all (e.g. joblab,kufar)'
+        type: string
+        default: ''
 
 jobs:
   scrape:
@@ -53,6 +57,7 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_MOSTY_JOBS_CHAT_ID: ${{ vars.TELEGRAM_MOSTY_JOBS_CHAT_ID }}
+          SEND_ALL_SOURCES: ${{ inputs.send_all_sources }}
         run: npx ts-node -r tsconfig-paths/register src/scripts/mosty-jobs-send-all.ts
 
       - name: Run scrape

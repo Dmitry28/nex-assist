@@ -111,6 +111,11 @@ export const MOSTY_JOBS_DEFAULTS = {
     'https://gsz.gov.by/registration/vacancy-search/?region=12380&district=14712&sort_by=sort_published_at_desc&paginate_by=50',
   /** rabota.by (hh.ru Belarus) search — г. Мосты (area=2302), server-rendered HTML. */
   RABOTA_SEARCH_URL: 'https://rabota.by/search/vacancy?area=2302',
+  /** joblab.by commercial job board — г. Мосты (srcity=54), RSS feed. */
+  JOBLAB_RSS_URL: 'https://joblab.by/vacancy.php?srcity=54&submit=rss',
+  /** kufar.by job ads (cat=6010) in Мосты (rgn=3, ar=72) — public JSON API, usually empty. */
+  KUFAR_SEARCH_URL:
+    'https://api.kufar.by/search-api/v2/search/rendered-paginated?cat=6010&rgn=3&ar=72&lang=ru&size=30&sort=lst.d',
   /** Default cron: every day at 09:00 UTC (12:00 Minsk). Cron is wired off — trigger via POST. */
   SCRAPE_CRON: '0 9 * * *',
 } as const;

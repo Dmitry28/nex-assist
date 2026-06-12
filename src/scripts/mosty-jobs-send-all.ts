@@ -4,9 +4,15 @@
  * Telegram length limit). Useful right after a baseline run to populate the
  * chat with the vacancies that were silenced.
  *
+ * `--sources=joblab,kufar` (or SEND_ALL_SOURCES env) limits the digest
+ * to those sources AND drops vacancies whose title+employer duplicates an
+ * entry from a non-selected source — for "send only what's new since the
+ * previous digest" after adding a source.
+ *
  * Run:
  *   npx ts-node -r tsconfig-paths/register src/scripts/mosty-jobs-send-all.ts --dry-run
  *   npx ts-node -r tsconfig-paths/register src/scripts/mosty-jobs-send-all.ts
+ *   npx ts-node -r tsconfig-paths/register src/scripts/mosty-jobs-send-all.ts --sources=joblab,kufar
  */
 import { promises as fs } from 'fs';
 import { Logger } from '@nestjs/common';
@@ -18,12 +24,29 @@ import { LOCALE, TIMEZONE } from '../common/utils/locale';
 import { DATA_FILE, SOURCE_LABELS } from '../modules/mosty-jobs/constants';
 import {
   isJobSnapshotEntry,
+  JOB_SOURCES,
   type JobSnapshotEntry,
+  type JobSource,
 } from '../modules/mosty-jobs/dto/job-vacancy.dto';
+import { dedupeKey } from '../modules/mosty-jobs/mosty-jobs-dedupe';
 import { TelegramService } from '../modules/telegram/telegram.service';
 
 const DRY_RUN = process.argv.includes('--dry-run');
 const log = new Logger('MostyJobsSendAll');
+
+const parseSourcesArg = (): JobSource[] | null => {
+  const raw =
+    process.argv.find(a => a.startsWith('--sources='))?.slice('--sources='.length) ??
+    process.env.SEND_ALL_SOURCES;
+  if (!raw) return null;
+  const requested = raw.split(',').map(s => s.trim());
+  const valid = (JOB_SOURCES as readonly string[]).filter((s): s is JobSource =>
+    requested.includes(s),
+  );
+  if (valid.length === 0)
+    throw new Error(`No valid sources in "${raw}" (known: ${JOB_SOURCES.join(', ')})`);
+  return valid;
+};
 
 /** Drop the region/district prefix — every vacancy here is in Мостовский район anyway. */
 const shortAddress = (address: string): string =>
@@ -70,18 +93,37 @@ async function main(): Promise<void> {
     if (!Array.isArray(parsed) || !parsed.every(isJobSnapshotEntry)) {
       throw new Error(`${DATA_FILE} has unexpected shape`);
     }
-    const vacancies = parsed;
-    log.log(`Loaded ${vacancies.length} vacancies from ${DATA_FILE}`);
+    const allEntries = parsed;
+    log.log(`Loaded ${allEntries.length} vacancies from ${DATA_FILE}`);
 
-    // gsz first (the bulk), rabota at the end — stable, readable order.
-    const ordered = [
-      ...vacancies.filter(v => v.source === 'gsz'),
-      ...vacancies.filter(v => v.source === 'rabota'),
-    ];
+    const selectedSources = parseSourcesArg() ?? [...JOB_SOURCES];
+    let vacancies = allEntries.filter(v => selectedSources.includes(v.source));
+
+    // With a source filter, drop cross-source duplicates of NON-selected
+    // sources — those were already delivered in a previous digest.
+    if (selectedSources.length < JOB_SOURCES.length) {
+      const knownKeys = new Set(
+        allEntries.filter(v => !selectedSources.includes(v.source)).map(dedupeKey),
+      );
+      const before = vacancies.length;
+      vacancies = vacancies.filter(v => !knownKeys.has(dedupeKey(v)));
+      log.log(
+        `Sources: ${selectedSources.join(', ')} — ${vacancies.length} unique (${before - vacancies.length} duplicates dropped)`,
+      );
+    }
+    if (vacancies.length === 0) {
+      log.log('Nothing to send');
+      return;
+    }
+
+    // Stable source order keeps the digest readable.
+    const ordered = JOB_SOURCES.flatMap(source => vacancies.filter(v => v.source === source));
 
     const date = new Date().toLocaleDateString(LOCALE, { timeZone: TIMEZONE });
-    const counts = `${SOURCE_LABELS.gsz}: ${vacancies.filter(v => v.source === 'gsz').length} · ${SOURCE_LABELS.rabota}: ${vacancies.filter(v => v.source === 'rabota').length}`;
-    const header = `<b>💼 Все текущие вакансии · Мостовский район · ${date}</b>\n\nВсего: <b>${vacancies.length}</b> (${counts})`;
+    const counts = JOB_SOURCES.filter(s => ordered.some(v => v.source === s))
+      .map(s => `${SOURCE_LABELS[s]}: ${ordered.filter(v => v.source === s).length}`)
+      .join(' · ');
+    const header = `<b>💼 Все текущие вакансии · Мостовский район · ${date}</b>\n\nВсего: <b>${ordered.length}</b> (${counts})`;
     const messages = [header, ...buildDigestMessages(ordered)];
 
     log.log(`Prepared ${messages.length} messages`);

@@ -4,10 +4,14 @@ import { DATA_FILE, RUN_TIMEOUT_MS, SNAPSHOT_RETENTION_DAYS } from './constants'
 import {
   isJobSnapshotEntry,
   type JobSnapshotEntry,
+  type JobSource,
   type JobVacancy,
   type MostyJobsResult,
 } from './dto/job-vacancy.dto';
 import { GszParserService } from './gsz-parser.service';
+import { JoblabParserService } from './joblab-parser.service';
+import { KufarJobsParserService } from './kufar-jobs-parser.service';
+import { dedupeKey } from './mosty-jobs-dedupe';
 import {
   MostyJobsNotifierService,
   type MostyJobsNotifyResult,
@@ -18,7 +22,7 @@ import { RabotaParserService } from './rabota-parser.service';
  * Daily job-vacancy monitor for Мостовский район (Гродненская область).
  *
  * Orchestrates the scrape cycle:
- *   1. Fetch vacancies from gsz.gov.by (state vacancy bank) and rabota.by.
+ *   1. Fetch vacancies from all sources (state bank + commercial boards).
  *   2. Diff against snapshot — report only **new** vacancies (no removed tracking).
  *   3. Send Telegram notifications; only delivered vacancies are persisted.
  *
@@ -29,6 +33,11 @@ import { RabotaParserService } from './rabota-parser.service';
  * Baseline is per-source: a source with no snapshot history has its vacancies
  * seeded silently (no per-vacancy messages). This covers both the very first
  * run and the "one source was down on the first run" case.
+ *
+ * Cross-source dedupe: boards syndicate each other (joblab/aggregators repost
+ * gsz and rabota.by listings). A new vacancy whose title+employer is already
+ * known from another source is persisted silently. Source order below is the
+ * notification priority — state bank first.
  */
 @Injectable()
 export class MostyJobsService {
@@ -38,6 +47,8 @@ export class MostyJobsService {
   constructor(
     private readonly gszParser: GszParserService,
     private readonly rabotaParser: RabotaParserService,
+    private readonly joblabParser: JoblabParserService,
+    private readonly kufarParser: KufarJobsParserService,
     private readonly snapshot: SnapshotService,
     private readonly notifier: MostyJobsNotifierService,
   ) {}
@@ -69,47 +80,70 @@ export class MostyJobsService {
   }
 
   private async scrape(): Promise<MostyJobsResult> {
-    const [gszList, rabotaList, previousEntries] = await Promise.all([
-      this.gszParser.fetch(),
-      this.rabotaParser.fetch(),
+    // Order = notification priority for cross-source duplicates.
+    const sources: Array<{ source: JobSource; fetch: () => Promise<JobVacancy[] | null> }> = [
+      { source: 'gsz', fetch: () => this.gszParser.fetch() },
+      { source: 'rabota', fetch: () => this.rabotaParser.fetch() },
+      { source: 'joblab', fetch: () => this.joblabParser.fetch() },
+      { source: 'kufar', fetch: () => this.kufarParser.fetch() },
+    ];
+
+    const [lists, previousEntries] = await Promise.all([
+      Promise.all(sources.map(s => s.fetch())),
       this.snapshot.read(DATA_FILE, isJobSnapshotEntry),
     ]);
 
-    if (gszList === null && rabotaList === null) {
-      throw new Error('Both sources failed — gsz.gov.by and rabota.by are unreachable');
+    if (lists.every(list => list === null)) {
+      throw new Error('All vacancy sources failed');
     }
 
-    const currentVacancies = [...(gszList ?? []), ...(rabotaList ?? [])];
     const previousMap = new Map(previousEntries.map(e => [e.url, e]));
-    const sourceHasHistory = {
-      gsz: previousEntries.some(e => e.source === 'gsz'),
-      rabota: previousEntries.some(e => e.source === 'rabota'),
-    };
+    const historySources = new Set(previousEntries.map(e => e.source));
+    // Keys of every vacancy already known — duplicates across sources are silenced.
+    const knownKeys = new Set(previousEntries.map(dedupeKey));
 
+    const currentVacancies: JobVacancy[] = [];
     const newVacancies: JobVacancy[] = [];
-    const seededVacancies: JobVacancy[] = [];
-    for (const vacancy of currentVacancies) {
-      if (previousMap.has(vacancy.url)) continue;
-      if (sourceHasHistory[vacancy.source]) newVacancies.push(vacancy);
-      else seededVacancies.push(vacancy);
+    const silentVacancies: JobVacancy[] = []; // seeded baseline + cross-source duplicates
+    let seededCount = 0;
+    let duplicateCount = 0;
+
+    for (const [i, { source }] of sources.entries()) {
+      const list = lists[i];
+      if (list === null) continue;
+      for (const vacancy of list) {
+        currentVacancies.push(vacancy);
+        if (previousMap.has(vacancy.url)) continue;
+
+        if (!historySources.has(source)) {
+          silentVacancies.push(vacancy);
+          seededCount++;
+        } else if (knownKeys.has(dedupeKey(vacancy))) {
+          silentVacancies.push(vacancy);
+          duplicateCount++;
+        } else {
+          newVacancies.push(vacancy);
+        }
+        knownKeys.add(dedupeKey(vacancy));
+      }
     }
 
-    const result: MostyJobsResult = {
-      totalGsz: gszList === null ? null : gszList.length,
-      totalRabota: rabotaList === null ? null : rabotaList.length,
-      newVacancies,
-      seededCount: seededVacancies.length,
-    };
+    const totals = Object.fromEntries(
+      sources.map(({ source }, i) => [source, lists[i] === null ? null : lists[i].length]),
+    ) as Record<JobSource, number | null>;
+
+    const result: MostyJobsResult = { totals, newVacancies, seededCount, duplicateCount };
 
     this.logger.log(
-      `Diff — gsz: ${result.totalGsz ?? 'failed'}, rabota: ${result.totalRabota ?? 'failed'}, ` +
-        `new: ${newVacancies.length}, seeded: ${seededVacancies.length}`,
+      `Diff — ${sources
+        .map(({ source }) => `${source}: ${totals[source] ?? 'failed'}`)
+        .join(', ')} | new: ${newVacancies.length}, seeded: ${seededCount}, dup: ${duplicateCount}`,
     );
 
     const notifyResult = await this.notifier.notifyRunResult(result);
     await this.persistSnapshot({
       currentVacancies,
-      seededVacancies,
+      silentVacancies,
       previousMap,
       result,
       notifyResult,
@@ -120,13 +154,13 @@ export class MostyJobsService {
 
   private async persistSnapshot({
     currentVacancies,
-    seededVacancies,
+    silentVacancies,
     previousMap,
     result,
     notifyResult,
   }: {
     currentVacancies: JobVacancy[];
-    seededVacancies: JobVacancy[];
+    silentVacancies: JobVacancy[];
     previousMap: Map<string, JobSnapshotEntry>;
     result: MostyJobsResult;
     notifyResult: MostyJobsNotifyResult;
@@ -134,15 +168,15 @@ export class MostyJobsService {
     const now = new Date().toISOString();
     const updatedMap = new Map(previousMap);
 
-    // Source baseline — seeded silently, persisted unconditionally.
-    const seededUrls = new Set(seededVacancies.map(v => v.url));
+    // Baseline-seeded and cross-source duplicates — persisted unconditionally, no messages.
+    const silentUrls = new Set(silentVacancies.map(v => v.url));
 
     for (const vacancy of currentVacancies) {
       const prev = updatedMap.get(vacancy.url);
       if (!prev) {
-        // New vacancy — persist if seeded (baseline) or its notification was
-        // delivered (retry next run otherwise).
-        if (seededUrls.has(vacancy.url) || notifyResult.notifiedNew.has(vacancy.url)) {
+        // New vacancy — persist if silent (seeded/duplicate) or its notification
+        // was delivered (retry next run otherwise).
+        if (silentUrls.has(vacancy.url) || notifyResult.notifiedNew.has(vacancy.url)) {
           updatedMap.set(vacancy.url, { ...vacancy, firstSeenAt: now, lastSeenAt: now });
         }
         continue;
