@@ -7,7 +7,7 @@
     "odometer": "8k мили (13k km)",
     "damage": "Столкноевение | Передняя часть",
     "location": "Bridgeport (PA)",
-    "currentBid": "$4,650",
+    "currentBid": "$6,700",
     "engine": "2.0L 4 cyl. 269HP",
     "keys": "Salvage (Pennsylvania)",
     "condition": "На ходу",
@@ -602,6 +602,23 @@
     "auctionDate": "ср 17 июн., 19:00 GMT+2",
     "auctionSource": "Copart",
     "seller": "Usaa"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/0-44868284/2025-Volkswagen-Atlas-1V2JE2CA6SC227649",
+    "title": "2025 Volkswagen Atlas, Cross Sport 2...",
+    "vin": "1V2JE2CA6SC227649",
+    "lot": "0-44868284",
+    "odometer": "13k мили (21k km)",
+    "damage": "Столкноевение | Правый задний",
+    "location": "Miami-North (FL)",
+    "currentBid": "$0",
+    "buyNow": "$18,900",
+    "engine": "2.0L 4 cyl. 269HP",
+    "keys": "Rebuildable (Florida)",
+    "condition": "На ходу",
+    "auctionDate": "чт 18 июн., 15:30 GMT+2",
+    "auctionSource": "IAAI",
+    "seller": "Progressive Casualty Insurance"
   },
   {
     "link": "https://bid.cars/ru/lot/1-52165906/2026-Volkswagen-Atlas-1V2KN2CA8TC508406",
