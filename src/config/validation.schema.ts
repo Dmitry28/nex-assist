@@ -8,6 +8,7 @@ import {
   KUFAR_RENT_FLAT_DEFAULTS,
   KUFAR_RENT_LONG_DEFAULTS,
   LAND_AUCTIONS_DEFAULTS,
+  MOSTY_JOBS_DEFAULTS,
   POGORANY_DEFAULTS,
   REALT_DEFAULTS,
 } from './constants';
@@ -80,6 +81,12 @@ export const validationSchema = Joi.object({
   POGORANY_STORE_API_URL: Joi.string().uri().default(POGORANY_DEFAULTS.STORE_API_URL),
   POGORANY_SCRAPE_CRON: Joi.string().default(POGORANY_DEFAULTS.SCRAPE_CRON),
   TELEGRAM_POGORANY_CHAT_ID: Joi.string().optional(),
+
+  // mosty-jobs module — job vacancies in Мостовский район (gsz.gov.by + rabota.by)
+  MOSTY_JOBS_GSZ_URL: Joi.string().uri().default(MOSTY_JOBS_DEFAULTS.GSZ_SEARCH_URL),
+  MOSTY_JOBS_RABOTA_URL: Joi.string().uri().default(MOSTY_JOBS_DEFAULTS.RABOTA_SEARCH_URL),
+  MOSTY_JOBS_SCRAPE_CRON: Joi.string().default(MOSTY_JOBS_DEFAULTS.SCRAPE_CRON),
+  TELEGRAM_MOSTY_JOBS_CHAT_ID: Joi.string().optional(),
 
   // ghb.by module — ОАО «Гродножилстрой» Прейскурант РБ (new apartments / offices)
   GHB_PRICE_LIST_URL: Joi.string().uri().default(GHB_DEFAULTS.PRICE_LIST_URL),

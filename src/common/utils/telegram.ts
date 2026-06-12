@@ -9,3 +9,11 @@ export const TELEGRAM_MEDIA_GROUP_LIMIT = 10;
 
 export const truncateText = (text: string, limit = TELEGRAM_CAPTION_LIMIT): string =>
   text.length <= limit ? text : text.slice(0, limit - 3) + '...';
+
+/**
+ * Escape text interpolated into a `parse_mode: 'HTML'` Telegram message.
+ * Unescaped `<`/`&` in scraped third-party text makes Telegram reject the
+ * whole message with a parse error.
+ */
+export const escapeHtml = (text: string): string =>
+  text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
