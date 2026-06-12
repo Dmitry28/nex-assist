@@ -87,6 +87,9 @@ export const validationSchema = Joi.object({
   MOSTY_JOBS_RABOTA_URL: Joi.string().uri().default(MOSTY_JOBS_DEFAULTS.RABOTA_SEARCH_URL),
   MOSTY_JOBS_JOBLAB_URL: Joi.string().uri().default(MOSTY_JOBS_DEFAULTS.JOBLAB_RSS_URL),
   MOSTY_JOBS_KUFAR_URL: Joi.string().uri().default(MOSTY_JOBS_DEFAULTS.KUFAR_SEARCH_URL),
+  MOSTY_JOBS_EVROOPT_URL: Joi.string().uri().default(MOSTY_JOBS_DEFAULTS.EVROOPT_API_URL),
+  MOSTY_JOBS_CRB_URL: Joi.string().uri().default(MOSTY_JOBS_DEFAULTS.CRB_URL),
+  MOSTY_JOBS_FAIRS_URL: Joi.string().uri().default(MOSTY_JOBS_DEFAULTS.FAIRS_URL),
   MOSTY_JOBS_SCRAPE_CRON: Joi.string().default(MOSTY_JOBS_DEFAULTS.SCRAPE_CRON),
   TELEGRAM_MOSTY_JOBS_CHAT_ID: Joi.string().optional(),
 

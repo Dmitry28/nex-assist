@@ -2,6 +2,9 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import mostyJobsConfig from '../../config/mosty-jobs.config';
 import { TelegramModule } from '../telegram/telegram.module';
+import { CrbParserService } from './crb-parser.service';
+import { EvrooptParserService } from './evroopt-parser.service';
+import { FairParserService } from './fair-parser.service';
 import { GszParserService } from './gsz-parser.service';
 import { JoblabParserService } from './joblab-parser.service';
 import { KufarJobsParserService } from './kufar-jobs-parser.service';
@@ -18,7 +21,10 @@ import { RabotaParserService } from './rabota-parser.service';
     GszParserService,
     RabotaParserService,
     JoblabParserService,
+    EvrooptParserService,
+    CrbParserService,
     KufarJobsParserService,
+    FairParserService,
     MostyJobsNotifierService,
   ],
 })

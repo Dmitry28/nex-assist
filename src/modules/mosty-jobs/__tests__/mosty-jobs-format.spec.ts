@@ -8,7 +8,7 @@ const baseVacancy: JobVacancy = {
 };
 
 const baseResult: MostyJobsResult = {
-  totals: { gsz: 240, rabota: 10, joblab: 14, kufar: 0 },
+  totals: { gsz: 240, rabota: 10, joblab: 14, evroopt: 0, crb: 8, kufar: 0, fair: 1 },
   newVacancies: [],
   seededCount: 0,
   duplicateCount: 0,
@@ -67,6 +67,8 @@ describe('buildSummary', () => {
     expect(summary).toContain('gsz.gov.by: <b>240</b>');
     expect(summary).toContain('rabota.by: <b>10</b>');
     expect(summary).toContain('joblab.by: <b>14</b>');
+    expect(summary).toContain('Мостовская ЦРБ: <b>8</b>');
+    expect(summary).toContain('ярмарки (e-vacancy.by): <b>1</b>');
     expect(summary).toContain('kufar.by: <b>0</b>');
     expect(summary).toContain('Новых вакансий нет');
   });

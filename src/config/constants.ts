@@ -116,6 +116,16 @@ export const MOSTY_JOBS_DEFAULTS = {
   /** kufar.by job ads (cat=6010) in Мосты (rgn=3, ar=72) — public JSON API, usually empty. */
   KUFAR_SEARCH_URL:
     'https://api.kufar.by/search-api/v2/search/rendered-paginated?cat=6010&rgn=3&ar=72&lang=ru&size=30&sort=lst.d',
+  /**
+   * e-rabota.by (Evroopt career) vacancies API — the parser appends
+   * `&skillazCity=<id>` per city (see EVROOPT_CITY_IDS). Behind a JS
+   * verification page, fetched via Puppeteer.
+   */
+  EVROOPT_API_URL: 'https://static.erabota.by/api/vacancies?page=1&perPage=50',
+  /** Мостовская ЦРБ own vacancies page — static Bitrix HTML list. */
+  CRB_URL: 'https://mostycrb.by/company/vakansii/',
+  /** e-vacancy.by upcoming электронные ярмарки вакансий — paginated static HTML. */
+  FAIRS_URL: 'https://e-vacancy.by/markets/',
   /** Default cron: every day at 09:00 UTC (12:00 Minsk). Cron is wired off — trigger via POST. */
   SCRAPE_CRON: '0 9 * * *',
 } as const;
