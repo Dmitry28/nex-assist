@@ -2806,7 +2806,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/95d7e93c-d956-4a23-a935-da8b54ce5a51.jpg"
     ],
     "firstSeenAt": "2026-05-09T08:44:04.835Z",
-    "lastSeenAt": "2026-06-12T11:10:03.715Z"
+    "lastSeenAt": "2026-06-13T09:56:32.509Z"
   },
   {
     "adId": 1068334517,
@@ -3521,7 +3521,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eee28d59-6640-4521-a4ab-2c556844e31f.jpg"
     ],
     "firstSeenAt": "2026-05-25T11:15:07.897Z",
-    "lastSeenAt": "2026-06-12T11:10:03.715Z"
+    "lastSeenAt": "2026-06-13T09:56:32.509Z"
   },
   {
     "adId": 1070506297,
@@ -3607,7 +3607,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39ba00b4-ed0b-45e2-a4e5-edade7282d26.jpg"
     ],
     "firstSeenAt": "2026-05-27T11:01:06.131Z",
-    "lastSeenAt": "2026-06-12T11:10:03.715Z"
+    "lastSeenAt": "2026-06-13T09:56:32.509Z"
   },
   {
     "adId": 1070272138,
@@ -4421,7 +4421,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2a72e0ad-05ac-4847-8049-50696a65130f.jpg"
     ],
     "firstSeenAt": "2026-06-09T10:48:32.689Z",
-    "lastSeenAt": "2026-06-12T11:10:03.715Z"
+    "lastSeenAt": "2026-06-13T09:56:32.509Z"
   },
   {
     "adId": 1072572457,
@@ -4596,5 +4596,30 @@
     ],
     "firstSeenAt": "2026-06-11T11:33:26.004Z",
     "lastSeenAt": "2026-06-12T11:10:03.715Z"
+  },
+  {
+    "adId": 1072938365,
+    "link": "https://re.kufar.by/vi/1072938365",
+    "title": "Гараж в районе Мясокомбината",
+    "description": "Продам гараж , район Мясокомбината. Размер стандартный 6*3, новая проводка и крыша . Торг.",
+    "priceByn": 14404,
+    "priceUsd": 5200,
+    "address": "Максима Горького ул, 105А, Гродно, Гродненская область",
+    "area": 18,
+    "seller": "Fff",
+    "propertyType": "Гараж",
+    "features": [
+      "Отсутствует"
+    ],
+    "coordinates": {
+      "lat": 53.727731,
+      "lon": 23.828181
+    },
+    "listTime": "2026-06-13T09:30:37Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/530ef714-712f-4085-a2f6-e8e1c009cdee.jpg"
+    ],
+    "firstSeenAt": "2026-06-13T09:56:32.509Z",
+    "lastSeenAt": "2026-06-13T09:56:32.509Z"
   }
 ]
