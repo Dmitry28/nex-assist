@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-13T09:57:59.575Z"
+    "lastSeenAt": "2026-06-14T10:27:14.777Z"
   },
   {
     "adId": 4057786,
@@ -5547,7 +5547,7 @@
       "https://cdn.realt.by/img/55/f87a1ea4-56da-11f1-a842-0242ac120003"
     ],
     "firstSeenAt": "2026-05-24T09:22:42.706Z",
-    "lastSeenAt": "2026-06-13T09:57:59.575Z"
+    "lastSeenAt": "2026-06-14T10:27:14.777Z"
   },
   {
     "adId": 4137152,
@@ -5787,7 +5787,7 @@
       "https://cdn.realt.by/img/55/acd5e788-5c68-11f1-b002-0242ac120003"
     ],
     "firstSeenAt": "2026-05-31T09:53:04.911Z",
-    "lastSeenAt": "2026-06-09T10:50:01.792Z"
+    "lastSeenAt": "2026-06-14T10:27:14.777Z"
   },
   {
     "adId": 4140044,
@@ -6586,5 +6586,50 @@
     ],
     "firstSeenAt": "2026-06-12T11:13:42.594Z",
     "lastSeenAt": "2026-06-13T09:57:59.575Z"
+  },
+  {
+    "adId": 4152668,
+    "uuid": "15cb3590-6736-11f1-82b6-7969fefbc065",
+    "link": "https://realt.by/sale-dachi/object/4152668/",
+    "title": "Отдаём дачу с баней, с бассейном, прудом, огородом теплицей",
+    "description": "Дача с баней(комни малиновый кварцит и талькохлорид) , с колодцем, электричеством, своим водпроводом, близко от Ольшанки, 3 раза в день автобус, 3 раза в неделю автолавка, лес, тишина, два озера...",
+    "priceByn": 50000,
+    "priceUsd": 18040,
+    "address": "Гродно  210",
+    "area": 800,
+    "areaLiving": 42.5,
+    "areaKitchen": 9,
+    "plotArea": 8,
+    "yearBuilt": 2020,
+    "levels": 1,
+    "seller": "Алёна",
+    "listTime": "2026-06-13T19:33:44+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/bb6620ac-6734-11f1-92cd-0242ac120003",
+      "https://cdn.realt.by/img/55/af781674-6734-11f1-b1e5-0242ac120003",
+      "https://cdn.realt.by/img/55/b6a6ebf0-6734-11f1-b858-0242ac120003",
+      "https://cdn.realt.by/img/55/acf9cd2a-6734-11f1-8d00-0242ac120003",
+      "https://cdn.realt.by/img/55/b20640c8-6734-11f1-a371-0242ac120003",
+      "https://cdn.realt.by/img/55/a98e72f8-6734-11f1-b857-0242ac120003",
+      "https://cdn.realt.by/img/55/ba08a8ce-6734-11f1-8f59-0242ac120003",
+      "https://cdn.realt.by/img/55/e366c0e8-6734-11f1-89fa-0242ac120003",
+      "https://cdn.realt.by/img/55/b2631b22-6734-11f1-aae6-0242ac120003",
+      "https://cdn.realt.by/img/55/a742b446-6734-11f1-bbbd-0242ac120003",
+      "https://cdn.realt.by/img/55/a4c4d92e-6734-11f1-a787-0242ac120003",
+      "https://cdn.realt.by/img/55/d7f63b30-6734-11f1-9b2b-0242ac120003",
+      "https://cdn.realt.by/img/55/dc41f1a2-6734-11f1-b440-0242ac120003",
+      "https://cdn.realt.by/img/55/d962fee0-6734-11f1-b702-0242ac120003",
+      "https://cdn.realt.by/img/55/ded436d2-6734-11f1-971a-0242ac120003",
+      "https://cdn.realt.by/img/55/e87bf044-6734-11f1-9a45-0242ac120003",
+      "https://cdn.realt.by/img/55/ed022372-6734-11f1-8b96-0242ac120003",
+      "https://cdn.realt.by/img/55/e0162bf4-6734-11f1-96d3-0242ac120003",
+      "https://cdn.realt.by/img/55/ede1c4b4-6734-11f1-be3e-0242ac120003",
+      "https://cdn.realt.by/img/55/e4a95eac-6734-11f1-9715-0242ac120003",
+      "https://cdn.realt.by/img/55/f566d71e-6735-11f1-8b73-0242ac120003",
+      "https://cdn.realt.by/img/55/0695e5a2-6736-11f1-a949-0242ac120003",
+      "https://cdn.realt.by/img/55/c98f8244-6735-11f1-b8e1-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-14T10:27:14.777Z",
+    "lastSeenAt": "2026-06-14T10:27:14.777Z"
   }
 ]
