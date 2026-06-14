@@ -89,7 +89,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7b4053ef-1b86-4f81-a244-191274796e97.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-06-11T11:33:26.006Z"
+    "lastSeenAt": "2026-06-14T10:26:46.072Z"
   },
   {
     "adId": 1061953023,
@@ -929,7 +929,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4e794612-a7d4-401f-8635-19525b62f0e5.jpg"
     ],
     "firstSeenAt": "2026-03-29T19:58:43.075Z",
-    "lastSeenAt": "2026-06-13T09:56:32.512Z"
+    "lastSeenAt": "2026-06-14T10:26:46.072Z"
   },
   {
     "adId": 1057144146,
@@ -2702,7 +2702,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ededad7b-3100-4171-96c2-5c7fbc3812e8.jpg"
     ],
     "firstSeenAt": "2026-04-16T08:40:16.265Z",
-    "lastSeenAt": "2026-04-18T08:20:21.408Z"
+    "lastSeenAt": "2026-06-14T10:26:46.072Z"
   },
   {
     "adId": 1065050093,
@@ -3432,12 +3432,16 @@
     "link": "https://re.kufar.by/vi/1066361383",
     "title": "Земельный участок",
     "description": "Продается участок. Отличное место положение. Участок правильной прямоуго льной формы, рядом небольшое озеро,хорошая плодородная почва..Хороший торг. Б",
-    "priceByn": 11633,
-    "priceUsd": 4200,
+    "priceByn": 9695,
+    "priceUsd": 3500,
     "address": "31, СТ Дружба 2022, Квасовский сельсовет, Гродненский район, Гродненская область",
     "plotArea": 7.44,
     "seller": "Жанна",
-    "listTime": "2026-05-15T17:50:51Z",
+    "coordinates": {
+      "lat": 53.521655,
+      "lon": 23.794683
+    },
+    "listTime": "2026-06-13T17:38:14Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/31978790-2c2c-4316-85cb-496c60e873b0.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/976c264c-0a17-4470-b8d4-b45997104375.jpg",
@@ -3453,7 +3457,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d1b27886-ef97-4481-a686-a1bf3cf18506.jpg"
     ],
     "firstSeenAt": "2026-04-26T08:42:57.861Z",
-    "lastSeenAt": "2026-05-22T10:31:25.721Z"
+    "lastSeenAt": "2026-06-14T10:26:46.072Z"
   },
   {
     "adId": 1066343518,
@@ -7134,5 +7138,58 @@
     ],
     "firstSeenAt": "2026-06-12T11:10:03.718Z",
     "lastSeenAt": "2026-06-13T09:56:32.512Z"
+  },
+  {
+    "adId": 1073000954,
+    "link": "https://re.kufar.by/vi/1073000954",
+    "title": "Дача, земельный участок",
+    "description": "Два участка вместе по 8 соток. Рядом лес, грибы, ягоды.\nАсфальтированная дорога.",
+    "priceByn": 30470,
+    "priceUsd": 11000,
+    "address": "СТ Спецавтохозяйство, Гожский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 16,
+    "seller": "Надежда",
+    "features": [
+      "Колодец",
+      "Пожизненное наследование"
+    ],
+    "coordinates": {
+      "lat": 53.78880055098458,
+      "lon": 23.961389295294456
+    },
+    "listTime": "2026-06-13T19:38:27Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4aad9fbf-fb68-46d8-b0fd-1f02a1ff3681.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/52961f71-7883-4d78-8b56-daea95890579.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c0cdc5bc-5dc5-472d-9423-70da53d27c37.jpg"
+    ],
+    "firstSeenAt": "2026-06-14T10:26:46.072Z",
+    "lastSeenAt": "2026-06-14T10:26:46.072Z"
+  },
+  {
+    "adId": 1072991551,
+    "link": "https://re.kufar.by/vi/1072991551",
+    "title": "Продам двойной зем.участок СТ Афган-2",
+    "description": "Продается двойной земельный участок в СТ \"Афган-2\", Коптевский с/с, площадью 16 соток, маленькое садовое товарищество, окруженное хвойным лесом, тихое",
+    "priceByn": 33237,
+    "priceUsd": 11999,
+    "address": "78, СТ Афган-2, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 16,
+    "seller": "Брайн",
+    "features": [
+      "Отсутствует",
+      "Частная собственность",
+      "Да"
+    ],
+    "coordinates": {
+      "lat": 53.60092563093478,
+      "lon": 23.696770758675285
+    },
+    "listTime": "2026-06-13T17:26:59Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/df100c91-435f-4eda-a683-7a8a4fce3afa.jpg"
+    ],
+    "firstSeenAt": "2026-06-14T10:26:46.072Z",
+    "lastSeenAt": "2026-06-14T10:26:46.072Z"
   }
 ]

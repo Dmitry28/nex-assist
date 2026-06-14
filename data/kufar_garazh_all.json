@@ -2786,7 +2786,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cd4e1ab3-4956-4f49-8435-8d991f7f7ccc.jpg"
     ],
     "firstSeenAt": "2026-05-09T08:44:04.835Z",
-    "lastSeenAt": "2026-06-07T10:03:25.309Z"
+    "lastSeenAt": "2026-06-14T10:26:46.069Z"
   },
   {
     "adId": 1068144346,
@@ -2806,7 +2806,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/95d7e93c-d956-4a23-a935-da8b54ce5a51.jpg"
     ],
     "firstSeenAt": "2026-05-09T08:44:04.835Z",
-    "lastSeenAt": "2026-06-13T09:56:32.509Z"
+    "lastSeenAt": "2026-06-14T10:26:46.069Z"
   },
   {
     "adId": 1068334517,
@@ -3521,7 +3521,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eee28d59-6640-4521-a4ab-2c556844e31f.jpg"
     ],
     "firstSeenAt": "2026-05-25T11:15:07.897Z",
-    "lastSeenAt": "2026-06-13T09:56:32.509Z"
+    "lastSeenAt": "2026-06-14T10:26:46.069Z"
   },
   {
     "adId": 1070506297,
@@ -3607,7 +3607,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39ba00b4-ed0b-45e2-a4e5-edade7282d26.jpg"
     ],
     "firstSeenAt": "2026-05-27T11:01:06.131Z",
-    "lastSeenAt": "2026-06-13T09:56:32.509Z"
+    "lastSeenAt": "2026-06-14T10:26:46.069Z"
   },
   {
     "adId": 1070272138,
@@ -3692,7 +3692,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cfd08504-eb47-477e-954c-bb3b5a1c4433.jpg"
     ],
     "firstSeenAt": "2026-05-28T10:59:13.524Z",
-    "lastSeenAt": "2026-06-08T11:56:19.994Z"
+    "lastSeenAt": "2026-06-14T10:26:46.069Z"
   },
   {
     "adId": 1070550879,
@@ -4620,6 +4620,30 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/530ef714-712f-4085-a2f6-e8e1c009cdee.jpg"
     ],
     "firstSeenAt": "2026-06-13T09:56:32.509Z",
-    "lastSeenAt": "2026-06-13T09:56:32.509Z"
+    "lastSeenAt": "2026-06-14T10:26:46.069Z"
+  },
+  {
+    "adId": 1072993353,
+    "link": "https://re.kufar.by/vi/1072993353",
+    "title": "Гараж",
+    "description": "В продаже гараж сборно- металлический с ямой. Гаражный кооператив « Дубки-5»",
+    "priceByn": 6925,
+    "priceUsd": 2500,
+    "address": "Репина ул, 44Ак130, Гродно, Гродненская область",
+    "area": 18,
+    "seller": "Миранович Андрей Иванович",
+    "propertyType": "Гараж",
+    "coordinates": {
+      "lat": 53.66168485403603,
+      "lon": 23.79592418726924
+    },
+    "listTime": "2026-06-13T17:53:38Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1b138ff0-e63d-4992-b94c-c4864169a03c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bcac3854-7199-48ea-9ba0-fe0aef39362f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/84259d56-5b01-4e1d-b6d4-8218b82e7262.jpg"
+    ],
+    "firstSeenAt": "2026-06-14T10:26:46.069Z",
+    "lastSeenAt": "2026-06-14T10:26:46.069Z"
   }
 ]
