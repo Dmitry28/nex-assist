@@ -2751,7 +2751,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/15886d50-aaff-46b4-933c-7019baf9eeef.jpg"
     ],
     "firstSeenAt": "2026-04-17T08:38:33.335Z",
-    "lastSeenAt": "2026-06-11T11:33:26.006Z"
+    "lastSeenAt": "2026-06-15T13:09:45.094Z"
   },
   {
     "adId": 1065259206,
@@ -3457,7 +3457,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d1b27886-ef97-4481-a686-a1bf3cf18506.jpg"
     ],
     "firstSeenAt": "2026-04-26T08:42:57.861Z",
-    "lastSeenAt": "2026-06-14T10:26:46.072Z"
+    "lastSeenAt": "2026-06-15T13:09:45.094Z"
   },
   {
     "adId": 1066343518,
@@ -4465,7 +4465,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/736a12f1-77ea-41ca-8ba6-152781250269.jpg"
     ],
     "firstSeenAt": "2026-05-06T09:31:02.941Z",
-    "lastSeenAt": "2026-05-21T10:45:04.003Z"
+    "lastSeenAt": "2026-06-15T13:09:45.094Z"
   },
   {
     "adId": 1067820305,
@@ -4984,8 +4984,8 @@
     "link": "https://re.kufar.by/vi/1068650805",
     "title": "Дачный участок",
     "description": "Продается дачный участок в СТ «Гарант», Квасовский сельсовет, Гродненский район.\nУдобное расположение — всего 10 минут на автомобиле от рынка Южный. У",
-    "priceByn": 14700,
-    "priceUsd": 5253,
+    "priceByn": 14000,
+    "priceUsd": 5054,
     "address": "307, СТ Гарант, Квасовский сельсовет, Гродненский район, Гродненская область",
     "plotArea": 7,
     "seller": "Ирина",
@@ -4994,7 +4994,11 @@
       "Частная собственность",
       "Да"
     ],
-    "listTime": "2026-05-12T07:36:18Z",
+    "coordinates": {
+      "lat": 53.54651940193229,
+      "lon": 23.89671284422101
+    },
+    "listTime": "2026-06-14T13:47:38Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1646a7aa-1795-4694-93f6-50d79592fb5d.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/25401836-81ff-4bf2-8194-6faaba782956.jpg",
@@ -5003,10 +5007,11 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f1b63fe3-e358-4830-b0c2-ad26d012785f.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c79796af-8f9e-4274-bc4f-1566245b63c4.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6241c155-fa58-4b28-af8f-d8c2bf539e7c.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f46dec37-1bee-4026-9b8e-d7fafefb0d5d.jpg"
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f46dec37-1bee-4026-9b8e-d7fafefb0d5d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/db07d574-4b6c-4c41-a280-40115a11f8b8.jpg"
     ],
     "firstSeenAt": "2026-05-12T10:22:56.048Z",
-    "lastSeenAt": "2026-05-13T10:02:46.621Z"
+    "lastSeenAt": "2026-06-15T13:09:45.094Z"
   },
   {
     "adId": 1068597910,
@@ -6388,7 +6393,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3c9fdc61-b5c8-4251-8f29-93854e849361.jpg"
     ],
     "firstSeenAt": "2026-05-29T11:05:51.428Z",
-    "lastSeenAt": "2026-05-30T09:22:28.519Z"
+    "lastSeenAt": "2026-06-15T13:09:45.094Z"
   },
   {
     "adId": 1070670804,
@@ -6448,7 +6453,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0ebd7d2e-f91b-4a8a-9140-513b9fd21fb4.jpg"
     ],
     "firstSeenAt": "2026-05-29T11:05:51.428Z",
-    "lastSeenAt": "2026-05-30T09:22:28.519Z"
+    "lastSeenAt": "2026-06-15T13:09:45.094Z"
   },
   {
     "adId": 1070665572,
@@ -7164,7 +7169,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c0cdc5bc-5dc5-472d-9423-70da53d27c37.jpg"
     ],
     "firstSeenAt": "2026-06-14T10:26:46.072Z",
-    "lastSeenAt": "2026-06-14T10:26:46.072Z"
+    "lastSeenAt": "2026-06-15T13:09:45.094Z"
   },
   {
     "adId": 1072991551,
@@ -7190,6 +7195,190 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/df100c91-435f-4eda-a683-7a8a4fce3afa.jpg"
     ],
     "firstSeenAt": "2026-06-14T10:26:46.072Z",
-    "lastSeenAt": "2026-06-14T10:26:46.072Z"
+    "lastSeenAt": "2026-06-15T13:09:45.094Z"
+  },
+  {
+    "adId": 1073207492,
+    "link": "https://re.kufar.by/vi/1073207492",
+    "title": "участок СТ Сябры-Кулевцы",
+    "description": "Продается участок в пригороде города Гродно, в 1 км от д. Коробчицы и в 10 км от Гродно.  Участок находится на территории садового товарищества «Сябры",
+    "priceByn": 13850,
+    "priceUsd": 5000,
+    "address": "СТ Сябры, Одельский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 7.93,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.592109,
+      "lon": 23.688003
+    },
+    "listTime": "2026-06-15T12:22:12Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d71ce156-b9d7-4d4b-bd88-ede5da0c283d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a022784b-dbdd-4abf-b64f-2fbdf3412f5d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0982f53f-1c3a-4fb8-9e3b-1fab91de201b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a4c05e4b-c1cf-4d31-a1c7-4220bb1980ea.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/38f441dd-2b07-46a5-b867-4a8d039678e8.jpg"
+    ],
+    "firstSeenAt": "2026-06-15T13:09:45.094Z",
+    "lastSeenAt": "2026-06-15T13:09:45.094Z"
+  },
+  {
+    "adId": 1073206834,
+    "link": "https://re.kufar.by/vi/1073206834",
+    "title": "Участок в Наумовичах",
+    "description": "Участок в деревне Наумовичи.",
+    "priceByn": 134345,
+    "priceUsd": 48500,
+    "address": "деревня Наумовичи, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 25.5,
+    "seller": "Sergey",
+    "features": [
+      "Скважина",
+      "Пожизненное наследование",
+      "Да"
+    ],
+    "coordinates": {
+      "lat": 53.719335274227056,
+      "lon": 23.72308990882564
+    },
+    "listTime": "2026-06-15T12:14:36Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/00745261-04b4-480e-8694-2490b7a201c1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9024c92f-5552-49a9-998e-c0f6d6a3b533.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9f651d14-ed5e-480e-9034-a4648417f627.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c8bb3141-d011-4d5a-9c85-c05f6c7dc781.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8f8a7e74-b2a1-4f12-94a2-489bffa085b6.jpg"
+    ],
+    "firstSeenAt": "2026-06-15T13:09:45.094Z",
+    "lastSeenAt": "2026-06-15T13:09:45.094Z"
+  },
+  {
+    "adId": 1073203279,
+    "link": "https://re.kufar.by/vi/1073203279",
+    "title": "Участки",
+    "description": "В продаже два смежных участника общей площадью 16 соток.\nГродненская обл., Гродненский р-н, Коптёвский сельсовет, СТ Ореховая Роща, ул Живописная 34,3",
+    "priceByn": 34625,
+    "priceUsd": 12500,
+    "address": "34, СТ Ореховая Роща, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 16,
+    "seller": "Юрий",
+    "features": [
+      "Скважина",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.601206737278616,
+      "lon": 23.69955446126872
+    },
+    "listTime": "2026-06-15T11:37:03Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d2c140fc-1c59-42bf-9fe6-00a8e2b54bad.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7fa55642-1c2b-403f-afc1-ccb575cadde7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f8dfabc8-8c46-4aa2-bf9a-e274d247d304.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/672df5d8-4574-4b09-a2b1-e301e2a0e49c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0568e49c-2814-4777-b930-9c3e297e03e2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5fb7cbbc-29cc-4065-bc22-95a97accdd1b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c3315551-3c19-497a-902b-4150bbec0807.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fa3dee06-a383-4d62-b733-783d769f5754.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b7c1f526-4d53-4fb8-b4a0-b3d8e5d0522f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2042059f-5faa-4d6f-a814-832d46ee8a86.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9a47cc07-b399-47fb-bc3b-51d2ff4629d4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0c06571e-da96-45d5-9b9d-73d10c18b544.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f5063343-d135-4a00-8844-7cfa75d22e18.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/16804e7e-1b86-4fb5-92c5-cd8ffc94d055.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eb09c37b-b791-49ef-ad1d-dca7504e0315.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7e07e8c8-f5df-46e9-b6f6-54406399fb22.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/07378448-be19-44c6-8e9a-146d33fe95cf.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f726ed2f-2028-46c3-834c-0cb77b6aaeef.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8a981e12-0103-48eb-a3e9-352512152915.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/15c645cf-ee86-4a53-9ef6-2ced86706c42.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdbf1bbf-24fa-40ae-844f-9ce21a238b0d.jpg"
+    ],
+    "firstSeenAt": "2026-06-15T13:09:45.094Z",
+    "lastSeenAt": "2026-06-15T13:09:45.094Z"
+  },
+  {
+    "adId": 1073129577,
+    "link": "https://re.kufar.by/vi/1073129577",
+    "title": "Дачный участок 5 соток",
+    "description": "На участке растут: Яблони 6 шт, в т,ч 2 молодые, посажены 2 года назад, слива-2, вишня-2, малина,персик, черешня, смородина-5, красная смородина-2,жим",
+    "priceByn": 19390,
+    "priceUsd": 7000,
+    "address": "деревня Горница, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5,
+    "seller": "Венскович Татьяна Александровна",
+    "features": [
+      "Сезонная",
+      "Частная собственность",
+      "Да"
+    ],
+    "coordinates": {
+      "lat": 53.593811,
+      "lon": 23.931685
+    },
+    "listTime": "2026-06-14T19:33:31Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c590ea98-920d-4217-99a2-b68096ea2e5e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0982a81d-3481-48e3-9fa6-c9b85f180fd6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8066760e-d155-4314-b6ee-fb6425889c59.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/313b4fa2-a5ef-4c0d-b12c-9db5a029e822.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c0fe263d-022f-4968-991c-b94677771326.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fb9f62cb-e30c-41b5-b3d4-e06ef66c89d0.jpg"
+    ],
+    "firstSeenAt": "2026-06-15T13:09:45.094Z",
+    "lastSeenAt": "2026-06-15T13:09:45.094Z"
+  },
+  {
+    "adId": 1073123649,
+    "link": "https://re.kufar.by/vi/1073123649",
+    "title": "Участок в ст Ласунак 8,8 соток, приватизирован",
+    "description": "Просторный Участок 8,82 соток в ст. Ласунак, участок номер 38. На участке растут сосны, уже довольно большие - можно оставить при желании, основная ча",
+    "priceByn": 19667,
+    "priceUsd": 7100,
+    "address": "СТ Ласунак, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 9,
+    "seller": "ИП Болотько Валентина Сергеевна",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.608393183381324,
+      "lon": 23.66909930739504
+    },
+    "listTime": "2026-06-14T18:27:16Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7d3bfde5-7ba3-4cef-a0c5-20eb95c7771c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/66264230-8518-4c1d-9325-faca6f60be46.jpg"
+    ],
+    "firstSeenAt": "2026-06-15T13:09:45.094Z",
+    "lastSeenAt": "2026-06-15T13:09:45.094Z"
+  },
+  {
+    "adId": 1073119907,
+    "link": "https://re.kufar.by/vi/1073119907",
+    "title": "Продается обработанный участок",
+    "description": "Продаётся ухоженный дачный участок 5 соток в СТ «Конкурент-Каменка» рядом с г. Гродно (5 км от границы города, СТ расположено за д. Каменка). Участок ",
+    "priceByn": 15235,
+    "priceUsd": 5500,
+    "address": "СТ Конкурент-Каменка, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5,
+    "seller": "Максим",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.595922,
+      "lon": 23.772495
+    },
+    "listTime": "2026-06-14T17:41:31Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d239c4a7-cc3c-4778-b0a3-a188504e3453.jpg"
+    ],
+    "firstSeenAt": "2026-06-15T13:09:45.094Z",
+    "lastSeenAt": "2026-06-15T13:09:45.094Z"
   }
 ]
