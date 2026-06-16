@@ -81,8 +81,8 @@
     "isHotel": false,
     "isSuperhost": false,
     "rating": 1,
-    "ratingScoresCount": 2,
-    "listTime": "2026-06-15T11:41:38Z",
+    "ratingScoresCount": 3,
+    "listTime": "2026-06-16T11:41:38Z",
     "images": [
       "https://rms.kufar.by/v1/gallery/adim1/70085a88-9837-499d-9dda-f703a611e90f.jpg",
       "https://rms.kufar.by/v1/gallery/adim1/ad972799-e951-4b5d-a347-31e821ad7c4b.jpg",
@@ -98,7 +98,7 @@
       "https://rms.kufar.by/v1/gallery/adim1/a1a41e8b-3a3d-4ebc-8465-3a468db2e39c.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:41:03.297Z",
-    "lastSeenAt": "2026-06-15T13:09:46.940Z"
+    "lastSeenAt": "2026-06-16T12:14:03.245Z"
   },
   {
     "adId": 1048788437,

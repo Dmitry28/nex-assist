@@ -3376,7 +3376,7 @@
       "https://cdn.realt.by/img/55/163d2d7c-db2b-11f0-941a-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-10T11:14:45.413Z"
+    "lastSeenAt": "2026-06-16T12:16:24.666Z"
   },
   {
     "adId": 3162131,
@@ -4530,7 +4530,7 @@
       "https://cdn.realt.by/img/55/cdb79422-3ef1-11f1-87cb-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-25T11:16:47.329Z"
+    "lastSeenAt": "2026-06-16T12:16:24.666Z"
   },
   {
     "adId": 3750931,
@@ -5875,7 +5875,7 @@
       "https://static.realt.by/thumb/c/430x374/c5f662a11b216aff1dcebc6285dd1e9e/b7/i/11013c3efib7/93fc9e448f.jpeg"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-15T13:15:18.271Z"
+    "lastSeenAt": "2026-06-16T12:16:24.666Z"
   },
   {
     "adId": 3878873,
@@ -9481,7 +9481,7 @@
       "https://cdn.realt.by/img/55/3720e94a-9c14-11ef-ab2c-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-15T13:15:18.271Z"
+    "lastSeenAt": "2026-06-16T12:16:24.666Z"
   },
   {
     "adId": 3514949,
@@ -10691,7 +10691,7 @@
       "https://cdn.realt.by/img/55/2014afe6-4f98-11f1-9a7f-0242ac120003"
     ],
     "firstSeenAt": "2026-05-15T10:23:27.895Z",
-    "lastSeenAt": "2026-06-15T13:15:18.271Z"
+    "lastSeenAt": "2026-06-16T12:16:24.666Z"
   },
   {
     "adId": 3074765,
@@ -11090,73 +11090,43 @@
     "adId": 4137538,
     "uuid": "2a596630-59e9-11f1-87dd-0b591adf90eb",
     "link": "https://realt.by/sale-cottages/object/4137538/",
-    "title": "Продам коттедж в Гродно п Южный 100 % готовность. Английский проект.",
+    "title": "Гродно, Центральная ул.",
     "description": "Продается жилой коттедж в м-не Южный 3 г. Гродно. 3 спальни.Английский проект.2 этажа. 2004 г. Общая площадь 260 м², жилая – 101 м², 1 этаж : кухня – 20 м² , зал 41 м², гардероб – 6 м² , санузел 2 м² , отапливаемый гараж на 1 авто 22 м².2 этаж : 3 спальни (22,19,18 м²), ванна 10 м², холл 14 м².",
-    "priceByn": 696902,
-    "priceUsd": 251444,
+    "priceByn": 701480,
+    "priceUsd": 253032,
     "address": "Гродно Центральная ул. 89",
-    "area": 260,
+    "area": 252,
     "areaLiving": 101,
     "areaKitchen": 20,
     "plotArea": 12,
     "yearBuilt": 2004,
     "levels": 2,
     "seller": "Леонид",
-    "listTime": "2026-06-10T18:38:40+03:00",
+    "listTime": "2026-06-16T10:30:02+03:00",
     "images": [
       "https://cdn.realt.by/img/55/9d2ec096-59ea-11f1-a654-0242ac120003",
+      "https://cdn.realt.by/img/55/9b160c1a-59ea-11f1-8bf4-0242ac120003",
+      "https://cdn.realt.by/img/55/a79cf4c6-59ea-11f1-981c-0242ac120003",
       "https://cdn.realt.by/img/55/9d1aa840-59ea-11f1-8b5d-0242ac120003",
+      "https://cdn.realt.by/img/55/d798d8d4-59ea-11f1-98a5-0242ac120003",
+      "https://cdn.realt.by/img/55/d6956236-59ea-11f1-8237-0242ac120003",
+      "https://cdn.realt.by/img/55/d7e37006-59ea-11f1-b0d8-0242ac120003",
       "https://cdn.realt.by/img/55/9cc20492-59ea-11f1-b9c2-0242ac120003",
       "https://cdn.realt.by/img/55/720585fc-59eb-11f1-aa04-0242ac120003",
       "https://cdn.realt.by/img/55/9b5812e0-59ea-11f1-adef-0242ac120003",
       "https://cdn.realt.by/img/55/9d07abbe-59ea-11f1-940c-0242ac120003",
       "https://cdn.realt.by/img/55/9d449b0a-59ea-11f1-8dd0-0242ac120003",
       "https://cdn.realt.by/img/55/9d5b51ba-59ea-11f1-8391-0242ac120003",
+      "https://cdn.realt.by/img/55/361f4730-59eb-11f1-9d45-0242ac120003",
       "https://cdn.realt.by/img/55/9d6685ee-59ea-11f1-92b3-0242ac120003",
       "https://cdn.realt.by/img/55/9d736412-59ea-11f1-92c5-0242ac120003",
       "https://cdn.realt.by/img/55/9d8c5c06-59ea-11f1-8038-0242ac120003",
       "https://cdn.realt.by/img/55/a733f110-59ea-11f1-92d0-0242ac120003",
       "https://cdn.realt.by/img/55/b0d99288-59ea-11f1-b70a-0242ac120003",
-      "https://cdn.realt.by/img/55/b8bd956c-59ea-11f1-8357-0242ac120003",
-      "https://cdn.realt.by/img/55/b8cce94a-59ea-11f1-aeba-0242ac120003",
-      "https://cdn.realt.by/img/55/b0a085ba-59ea-11f1-ac98-0242ac120003",
-      "https://cdn.realt.by/img/55/d842b28c-59ea-11f1-b9ca-0242ac120003",
-      "https://cdn.realt.by/img/55/d7a27d76-59ea-11f1-863b-0242ac120003",
-      "https://cdn.realt.by/img/55/009a5898-59eb-11f1-a3fe-0242ac120003",
-      "https://cdn.realt.by/img/55/d86ebb2a-59ea-11f1-9a74-0242ac120003",
-      "https://cdn.realt.by/img/55/f3196a60-59ea-11f1-a659-0242ac120003",
-      "https://cdn.realt.by/img/55/075c4b14-59eb-11f1-b7fb-0242ac120003",
-      "https://cdn.realt.by/img/55/07698496-59eb-11f1-b9ab-0242ac120003",
-      "https://cdn.realt.by/img/55/987ac12a-59eb-11f1-afab-0242ac120003",
-      "https://cdn.realt.by/img/55/8eecb3a2-59eb-11f1-8547-0242ac120003",
-      "https://cdn.realt.by/img/55/a78f8764-59ea-11f1-88d2-0242ac120003",
-      "https://cdn.realt.by/img/55/a79cf4c6-59ea-11f1-981c-0242ac120003",
-      "https://cdn.realt.by/img/55/9b160c1a-59ea-11f1-8bf4-0242ac120003",
-      "https://cdn.realt.by/img/55/a7b57c30-59ea-11f1-a2cd-0242ac120003",
-      "https://cdn.realt.by/img/55/b03caad6-59ea-11f1-af8f-0242ac120003",
-      "https://cdn.realt.by/img/55/b04b2584-59ea-11f1-bca0-0242ac120003",
-      "https://cdn.realt.by/img/55/b05e326e-59ea-11f1-a93c-0242ac120003",
-      "https://cdn.realt.by/img/55/b0c4f12a-59ea-11f1-a817-0242ac120003",
-      "https://cdn.realt.by/img/55/b8df8870-59ea-11f1-bd08-0242ac120003",
-      "https://cdn.realt.by/img/55/d5c3e530-59ea-11f1-ac01-0242ac120003",
-      "https://cdn.realt.by/img/55/d65eeb48-59ea-11f1-8f57-0242ac120003",
-      "https://cdn.realt.by/img/55/4974c6f2-59eb-11f1-916e-0242ac120003",
-      "https://cdn.realt.by/img/55/d6956236-59ea-11f1-8237-0242ac120003",
-      "https://cdn.realt.by/img/55/d6a51794-59ea-11f1-a4e4-0242ac120003",
-      "https://cdn.realt.by/img/55/d798d8d4-59ea-11f1-98a5-0242ac120003",
-      "https://cdn.realt.by/img/55/d7d574ec-59ea-11f1-bb16-0242ac120003",
-      "https://cdn.realt.by/img/55/d7e37006-59ea-11f1-b0d8-0242ac120003",
-      "https://cdn.realt.by/img/55/d7f5d87c-59ea-11f1-80a0-0242ac120003",
-      "https://cdn.realt.by/img/55/ed85fbd6-59ea-11f1-b5a1-0242ac120003",
-      "https://cdn.realt.by/img/55/0fb3eb46-59eb-11f1-9fec-0242ac120003",
-      "https://cdn.realt.by/img/55/23ee8148-59eb-11f1-85eb-0242ac120003",
-      "https://cdn.realt.by/img/55/361f4730-59eb-11f1-9d45-0242ac120003",
-      "https://cdn.realt.by/img/55/a73f1e4a-59eb-11f1-9283-0242ac120003",
-      "https://cdn.realt.by/img/55/bb60a588-59eb-11f1-9825-0242ac120003",
-      "https://cdn.realt.by/img/55/c2e14ab0-59eb-11f1-8b62-0242ac120003"
+      "https://cdn.realt.by/img/55/b8bd956c-59ea-11f1-8357-0242ac120003"
     ],
     "firstSeenAt": "2026-05-28T11:05:44.999Z",
-    "lastSeenAt": "2026-06-12T11:13:42.588Z"
+    "lastSeenAt": "2026-06-16T12:16:24.666Z"
   },
   {
     "adId": 4137511,
@@ -11581,7 +11551,7 @@
       "https://cdn.realt.by/img/55/4dea2ce4-60ae-11f1-84c5-0242ac120003"
     ],
     "firstSeenAt": "2026-06-05T11:01:18.780Z",
-    "lastSeenAt": "2026-06-15T13:15:18.271Z"
+    "lastSeenAt": "2026-06-16T12:16:24.666Z"
   },
   {
     "adId": 3099824,
@@ -12011,6 +11981,37 @@
       "https://cdn.realt.by/img/55/8118efb2-6818-11f1-84f9-0242ac120003"
     ],
     "firstSeenAt": "2026-06-15T13:15:18.271Z",
-    "lastSeenAt": "2026-06-15T13:15:18.271Z"
+    "lastSeenAt": "2026-06-16T12:16:24.666Z"
+  },
+  {
+    "adId": 4154298,
+    "uuid": "34ead210-68c0-11f1-9780-3fb3a7434153",
+    "link": "https://realt.by/sale-cottages/object/4154298/",
+    "title": "дом в 30 км от г. Гродно на берегу Гродненского моря д. Новосёлки",
+    "description": "Продается дом в 30 км от города Гродно на берегу Гродненского моря в д. Новосёлки - это одно из живописных мест Гродненского района.",
+    "priceByn": 346538,
+    "priceUsd": 125000,
+    "address": "Новоселки",
+    "area": 220,
+    "plotArea": 15,
+    "yearBuilt": 2025,
+    "seller": "Елена",
+    "listTime": "2026-06-15T18:16:31+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/89bfc9a4-68bf-11f1-95eb-0242ac120003",
+      "https://cdn.realt.by/img/55/8999fcc4-68bf-11f1-9890-0242ac120003",
+      "https://cdn.realt.by/img/55/89a28452-68bf-11f1-a4aa-0242ac120003",
+      "https://cdn.realt.by/img/55/899c47d6-68bf-11f1-bc55-0242ac120003",
+      "https://cdn.realt.by/img/55/89b5d642-68bf-11f1-9aa2-0242ac120003",
+      "https://cdn.realt.by/img/55/89b4f150-68bf-11f1-a52c-0242ac120003",
+      "https://cdn.realt.by/img/55/89716bce-68bf-11f1-b570-0242ac120003",
+      "https://cdn.realt.by/img/55/89b248e2-68bf-11f1-a937-0242ac120003",
+      "https://cdn.realt.by/img/55/89a281d2-68bf-11f1-9691-0242ac120003",
+      "https://cdn.realt.by/img/55/89a616bc-68bf-11f1-a2dc-0242ac120003",
+      "https://cdn.realt.by/img/55/899c1d38-68bf-11f1-b0a0-0242ac120003",
+      "https://cdn.realt.by/img/55/89b476e4-68bf-11f1-bd4c-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-16T12:16:24.666Z",
+    "lastSeenAt": "2026-06-16T12:16:24.666Z"
   }
 ]

@@ -47,7 +47,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-06-15T13:09:45.091Z"
+    "lastSeenAt": "2026-06-16T12:14:01.728Z"
   },
   {
     "adId": 1062002915,
@@ -106,7 +106,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c32966cf-6663-4cbc-a483-09da9f48647d.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-06-15T13:09:45.091Z"
+    "lastSeenAt": "2026-06-16T12:14:01.728Z"
   },
   {
     "adId": 1044024342,
@@ -1409,7 +1409,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d0cba27d-2a67-47bb-9f8d-ee2b1f45b921.jpg"
     ],
     "firstSeenAt": "2026-04-16T08:40:16.263Z",
-    "lastSeenAt": "2026-06-04T10:47:55.072Z"
+    "lastSeenAt": "2026-06-16T12:14:01.728Z"
   },
   {
     "adId": 1065272904,
@@ -1779,7 +1779,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/77b2c7b6-d750-431d-92e2-6d23d6736824.jpg"
     ],
     "firstSeenAt": "2026-04-24T09:16:55.888Z",
-    "lastSeenAt": "2026-06-15T13:09:45.091Z"
+    "lastSeenAt": "2026-06-16T12:14:01.728Z"
   },
   {
     "adId": 1065912942,
@@ -2806,7 +2806,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/95d7e93c-d956-4a23-a935-da8b54ce5a51.jpg"
     ],
     "firstSeenAt": "2026-05-09T08:44:04.835Z",
-    "lastSeenAt": "2026-06-15T13:09:45.091Z"
+    "lastSeenAt": "2026-06-16T12:14:01.728Z"
   },
   {
     "adId": 1068334517,
@@ -3521,7 +3521,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eee28d59-6640-4521-a4ab-2c556844e31f.jpg"
     ],
     "firstSeenAt": "2026-05-25T11:15:07.897Z",
-    "lastSeenAt": "2026-06-15T13:09:45.091Z"
+    "lastSeenAt": "2026-06-16T12:14:01.728Z"
   },
   {
     "adId": 1070506297,
@@ -3573,8 +3573,8 @@
     "link": "https://re.kufar.by/vi/1070472795",
     "title": "Гараж Большой",
     "description": "Продаётся гараж адекватного размера, с большими воротами(2.5х2.5м) в который можно загнать авто, открыть двери и пройти вокруг машины. Все размеры на ",
-    "priceByn": 25009,
-    "priceUsd": 8900,
+    "priceByn": 23268,
+    "priceUsd": 8400,
     "address": "Понемуньская ул, 15А, Гродно, Гродненская область",
     "area": 21,
     "seller": "Павел",
@@ -3588,7 +3588,7 @@
       "lat": 53.663618,
       "lon": 23.877166
     },
-    "listTime": "2026-06-09T08:37:45Z",
+    "listTime": "2026-06-16T10:20:02Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b8f7ea88-e04f-4b64-a398-7e90a377f669.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/427925cd-58b0-4ed7-8a58-93531f64a593.jpg",
@@ -3607,7 +3607,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39ba00b4-ed0b-45e2-a4e5-edade7282d26.jpg"
     ],
     "firstSeenAt": "2026-05-27T11:01:06.131Z",
-    "lastSeenAt": "2026-06-15T13:09:45.091Z"
+    "lastSeenAt": "2026-06-16T12:14:01.728Z"
   },
   {
     "adId": 1070272138,
@@ -4620,7 +4620,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/530ef714-712f-4085-a2f6-e8e1c009cdee.jpg"
     ],
     "firstSeenAt": "2026-06-13T09:56:32.509Z",
-    "lastSeenAt": "2026-06-15T13:09:45.091Z"
+    "lastSeenAt": "2026-06-16T12:14:01.728Z"
   },
   {
     "adId": 1072993353,
@@ -4645,5 +4645,73 @@
     ],
     "firstSeenAt": "2026-06-14T10:26:46.069Z",
     "lastSeenAt": "2026-06-15T13:09:45.091Z"
+  },
+  {
+    "adId": 1073327931,
+    "link": "https://re.kufar.by/vi/1073327931",
+    "title": "ГАРАЖ. УЛ. СУВОРОВА 141",
+    "description": "ГАРАЖ БЕЗ ОТДЕЛКИ, ВЫСОКИЕ ВОРОТА. ВОЗМОЖНО ЗАКОНЧИТЬ ВНУТРИ ПОД СВОИ ПЛАНЫ. ПОДВАЛ ПОД ВСЕМ ГАРАЖОМ 22 КВ.М. СУХОЙ. ТЕРРИТОРИЯ ОХРАНЯЕТСЯ",
+    "priceByn": 34625,
+    "priceUsd": 12500,
+    "address": "Суворова ул, 141блок17к1781, Гродно, Гродненская область",
+    "area": 21.8,
+    "seller": "ЮРИЙ",
+    "propertyType": "Гараж",
+    "features": [
+      "Наземная"
+    ],
+    "coordinates": {
+      "lat": 53.648259569359695,
+      "lon": 23.77632897471684
+    },
+    "listTime": "2026-06-16T09:43:37Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d594ea0a-c8ce-4c20-9a22-c45e5799fd55.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4e76df94-cfa9-4470-b61d-5e6023755e10.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/857152b8-0de0-4187-8fc2-9e96e0ebdf6b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/36b67efc-1d34-4c9a-a572-acf1d58979e0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b2023f56-972f-41e1-9b1a-4881111e0345.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/10ff41bf-6453-431a-aef9-280a7dcec3d5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4b6e8fbf-4e7a-42cc-b39b-2f79224e6e6f.jpg"
+    ],
+    "firstSeenAt": "2026-06-16T12:14:01.728Z",
+    "lastSeenAt": "2026-06-16T12:14:01.728Z"
+  },
+  {
+    "adId": 1073236331,
+    "link": "https://re.kufar.by/vi/1073236331",
+    "title": "Продажа машиномест ул. Буденного д.30",
+    "description": "Продажа машино-мест по адресу ул.Будённого 30. \nЗакрытый, подземный паркинг с личным местом в самом центре г.Гродно.\nВ наличии девять машино-мест. Воз",
+    "priceByn": 31260,
+    "priceUsd": 11285,
+    "address": "Будённого ул, 30, Гродно, Гродненская область",
+    "area": 18.2,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "propertyType": "Машиноместо",
+    "coordinates": {
+      "lat": 53.68118,
+      "lon": 23.842997
+    },
+    "listTime": "2026-06-15T16:21:08Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7df42116-ed8c-4afe-a894-488054f6dfb7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/edec3455-2121-413e-8f09-0c2c49d072b1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9256bb96-5e60-442a-845a-a95e82807386.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/102c3718-bb6e-42d1-9e6d-745ea23533e2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8d82c2ff-ba7e-403a-9507-545970c374d6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0b6db821-eaad-44ef-b8c6-8573aa5b6d66.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/38a0a7d7-bd03-4676-810e-0f0db8340148.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a39e405f-ed7e-44ff-ad5b-1b1713eebabb.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b25c860f-7557-4016-aeaf-eff91449208d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9c052ed2-6aef-4f58-abdd-7b5af9055180.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/519c8f5e-c4e7-4340-b6fc-a818a63ef231.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca93abfa-3870-46c2-8191-66252c14072e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/14578a7e-3c36-4282-8bfc-8a8fe415845b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/569ecb62-5be8-4986-b31e-9b3ba24451aa.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1e49ff09-ae0f-48be-8318-e5c8188a0a89.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4561b3a5-a303-4a5a-9e94-a6d51fe7e116.jpg"
+    ],
+    "firstSeenAt": "2026-06-16T12:14:01.728Z",
+    "lastSeenAt": "2026-06-16T12:14:01.728Z"
   }
 ]
