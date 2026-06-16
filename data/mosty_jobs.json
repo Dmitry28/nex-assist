@@ -2407,7 +2407,7 @@
     "salary": "от 900 руб.",
     "address": "Мосты",
     "firstSeenAt": "2026-06-12T15:11:18.560Z",
-    "lastSeenAt": "2026-06-15T13:15:38.878Z"
+    "lastSeenAt": "2026-06-16T12:17:05.322Z"
   },
   {
     "url": "https://rabota.by/vacancy/133889864",
@@ -2417,7 +2417,7 @@
     "salary": "до 1200 руб.",
     "address": "Мосты",
     "firstSeenAt": "2026-06-12T15:11:18.560Z",
-    "lastSeenAt": "2026-06-15T13:15:38.878Z"
+    "lastSeenAt": "2026-06-16T12:17:05.322Z"
   },
   {
     "url": "https://rabota.by/vacancy/134043292",
@@ -2426,7 +2426,7 @@
     "employer": "5 элемент",
     "address": "Мосты",
     "firstSeenAt": "2026-06-12T15:11:18.560Z",
-    "lastSeenAt": "2026-06-15T13:15:38.878Z"
+    "lastSeenAt": "2026-06-16T12:17:05.322Z"
   },
   {
     "url": "https://rabota.by/vacancy/133715812",
@@ -2436,7 +2436,7 @@
     "salary": "1800 – 2300 руб.",
     "address": "Мосты",
     "firstSeenAt": "2026-06-12T15:11:18.560Z",
-    "lastSeenAt": "2026-06-15T13:15:38.878Z"
+    "lastSeenAt": "2026-06-16T12:17:05.322Z"
   },
   {
     "url": "https://rabota.by/vacancy/128925419",
@@ -2446,7 +2446,7 @@
     "salary": "от 2000 руб.",
     "address": "Мосты",
     "firstSeenAt": "2026-06-12T15:11:18.560Z",
-    "lastSeenAt": "2026-06-15T13:15:38.878Z"
+    "lastSeenAt": "2026-06-16T12:17:05.322Z"
   },
   {
     "url": "https://rabota.by/vacancy/133242000",
@@ -2455,7 +2455,7 @@
     "employer": "Бобруйский бровар",
     "address": "Мосты",
     "firstSeenAt": "2026-06-12T15:11:18.560Z",
-    "lastSeenAt": "2026-06-15T13:15:38.878Z"
+    "lastSeenAt": "2026-06-16T12:17:05.322Z"
   },
   {
     "url": "https://rabota.by/vacancy/130998833",
@@ -2465,7 +2465,7 @@
     "salary": "2900 – 5000 руб.",
     "address": "Мосты",
     "firstSeenAt": "2026-06-12T15:11:18.560Z",
-    "lastSeenAt": "2026-06-15T13:15:38.878Z"
+    "lastSeenAt": "2026-06-16T12:17:05.322Z"
   },
   {
     "url": "https://rabota.by/vacancy/133212374",
@@ -2475,7 +2475,7 @@
     "salary": "2200 руб.",
     "address": "Мосты",
     "firstSeenAt": "2026-06-12T15:11:18.560Z",
-    "lastSeenAt": "2026-06-15T13:15:38.878Z"
+    "lastSeenAt": "2026-06-16T12:17:05.322Z"
   },
   {
     "url": "https://rabota.by/vacancy/133470947",
@@ -2485,7 +2485,7 @@
     "salary": "от 1860 руб.",
     "address": "Мосты",
     "firstSeenAt": "2026-06-12T15:11:18.560Z",
-    "lastSeenAt": "2026-06-15T13:15:38.878Z"
+    "lastSeenAt": "2026-06-16T12:17:05.322Z"
   },
   {
     "url": "https://rabota.by/vacancy/133712523",
@@ -2495,7 +2495,7 @@
     "salary": "1000 – 1200 руб.",
     "address": "Мосты",
     "firstSeenAt": "2026-06-12T15:11:18.560Z",
-    "lastSeenAt": "2026-06-15T13:15:38.878Z"
+    "lastSeenAt": "2026-06-16T12:17:05.322Z"
   },
   {
     "url": "https://joblab.by/vacancy/578582",
@@ -2727,5 +2727,15 @@
     "address": "Гродненская область, Мостовский район, г. Мосты, станция Мосты",
     "firstSeenAt": "2026-06-15T13:15:38.878Z",
     "lastSeenAt": "2026-06-15T13:15:38.878Z"
+  },
+  {
+    "url": "https://rabota.by/vacancy/134196798",
+    "source": "rabota",
+    "title": "Заведующий отделом",
+    "employer": "Санта Ритейл",
+    "salary": "от 1740 руб.",
+    "address": "Мосты",
+    "firstSeenAt": "2026-06-16T12:17:05.322Z",
+    "lastSeenAt": "2026-06-16T12:17:05.322Z"
   }
 ]
