@@ -29,7 +29,7 @@
   {
     "adId": 1068542567,
     "link": "https://re.kufar.by/vi/1068542567",
-    "title": "Сдам квартиру.Новостройка Грандичи",
+    "title": "Сдам квартиру Грандичи Саяпина",
     "priceByn": 831,
     "priceUsd": 300,
     "address": "Виктора Саяпина ул, 12А, Гродно, Гродненская область",
@@ -40,17 +40,17 @@
     "repair": "Евро",
     "furnished": "Да",
     "prepayment": "3 месяца",
-    "listTime": "2026-05-11T10:09:50Z",
+    "listTime": "2026-06-16T13:43:04Z",
     "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/016a0133-bb66-4f53-a356-2dc0224af928.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6c69941a-6643-44ed-b5ad-cc89cf30b7a8.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d6d21cde-4e69-4df0-a863-109b06bc8ed3.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bdb9c5b7-977c-4a51-b236-b559278a0a6e.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/637c7964-5242-4cbc-90e6-68d3f699428d.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d6210677-7f77-4d47-a323-108d0fa63c4f.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/016a0133-bb66-4f53-a356-2dc0224af928.jpg"
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d6210677-7f77-4d47-a323-108d0fa63c4f.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:43:08.825Z",
-    "lastSeenAt": "2026-06-16T12:14:04.785Z"
+    "lastSeenAt": "2026-06-17T11:47:44.041Z"
   },
   {
     "adId": 1067405190,
@@ -96,7 +96,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fe3aaa67-820b-4056-a5c1-3f46eb49bd38.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:43:08.825Z",
-    "lastSeenAt": "2026-06-16T12:14:04.785Z"
+    "lastSeenAt": "2026-06-17T11:47:44.041Z"
   },
   {
     "adId": 1060088409,
@@ -239,6 +239,6 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f0e2d96a-2e02-4c7a-a3f2-f07bc524d7a2.jpg"
     ],
     "firstSeenAt": "2026-06-07T10:03:40.625Z",
-    "lastSeenAt": "2026-06-16T12:14:04.785Z"
+    "lastSeenAt": "2026-06-17T11:47:44.041Z"
   }
 ]

@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-16T12:16:24.671Z"
+    "lastSeenAt": "2026-06-17T11:52:13.138Z"
   },
   {
     "adId": 4057786,
@@ -1085,7 +1085,7 @@
       "https://cdn.realt.by/img/55/19cb7bd0-455f-11f1-83c6-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-16T12:16:24.671Z"
+    "lastSeenAt": "2026-06-17T11:52:13.138Z"
   },
   {
     "adId": 3018174,
@@ -2573,7 +2573,7 @@
       "https://cdn.realt.by/img/55/9664a192-7cee-11f0-8464-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-16T12:16:24.671Z"
+    "lastSeenAt": "2026-06-17T11:52:13.138Z"
   },
   {
     "adId": 4053334,
@@ -2821,7 +2821,7 @@
       "https://cdn.realt.by/img/55/c604edd0-2888-11f1-8bc5-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-16T12:16:24.671Z"
+    "lastSeenAt": "2026-06-17T11:52:13.138Z"
   },
   {
     "adId": 3780907,
@@ -3465,7 +3465,7 @@
       "https://cdn.realt.by/img/55/25dda8c6-2ce1-11f1-9dbb-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-16T12:16:24.671Z"
+    "lastSeenAt": "2026-06-17T11:52:13.138Z"
   },
   {
     "adId": 4081363,
@@ -5418,25 +5418,30 @@
     "link": "https://realt.by/sale-dachi/object/4128733/",
     "title": "Автоагрегатчик",
     "description": "Продаётся кирпичный дом в с/т Автоагрегатчик в 5 км от города за Ольшанкой. Участок 10 соток земли, есть яблони, грецкий орех. В дачный сезон ездит автобус, рядом в деревне магазин",
-    "priceByn": 49999,
-    "priceUsd": 18048,
+    "priceByn": 48423,
+    "priceUsd": 17500,
     "address": "Автоагрегатчик  2",
     "area": 52,
     "areaLiving": 40,
     "plotArea": 10,
     "yearBuilt": 1993,
     "seller": "Виктория",
-    "listTime": "2026-05-26T09:40:29+03:00",
+    "listTime": "2026-06-17T09:30:14+03:00",
     "images": [
-      "https://cdn.realt.by/img/55/6066d06a-538f-11f1-ae86-0242ac120003",
-      "https://cdn.realt.by/img/55/606f3264-538f-11f1-a854-0242ac120003",
+      "https://cdn.realt.by/img/55/2fb81bc4-69b8-11f1-9b82-0242ac120003",
+      "https://cdn.realt.by/img/55/2f983ca0-69b8-11f1-b47d-0242ac120003",
       "https://cdn.realt.by/img/55/607be32e-538f-11f1-9f82-0242ac120003",
       "https://cdn.realt.by/img/55/608ad4e2-538f-11f1-a64c-0242ac120003",
       "https://cdn.realt.by/img/55/608d2170-538f-11f1-b5c4-0242ac120003",
+      "https://cdn.realt.by/img/55/2facb734-69b8-11f1-a0e0-0242ac120003",
+      "https://cdn.realt.by/img/55/2fc35098-69b8-11f1-94e5-0242ac120003",
+      "https://cdn.realt.by/img/55/2fc6a37e-69b8-11f1-84d0-0242ac120003",
+      "https://cdn.realt.by/img/55/2fca40e2-69b8-11f1-ba54-0242ac120003",
+      "https://cdn.realt.by/img/55/2fce2c70-69b8-11f1-8c7f-0242ac120003",
       "https://cdn.realt.by/img/55/6f32f3ee-538f-11f1-9ff7-0242ac120003"
     ],
     "firstSeenAt": "2026-05-20T10:40:41.813Z",
-    "lastSeenAt": "2026-05-27T11:05:10.596Z"
+    "lastSeenAt": "2026-06-17T11:52:13.138Z"
   },
   {
     "adId": 4129958,
@@ -5547,7 +5552,7 @@
       "https://cdn.realt.by/img/55/f87a1ea4-56da-11f1-a842-0242ac120003"
     ],
     "firstSeenAt": "2026-05-24T09:22:42.706Z",
-    "lastSeenAt": "2026-06-16T12:16:24.671Z"
+    "lastSeenAt": "2026-06-17T11:52:13.138Z"
   },
   {
     "adId": 4137152,
@@ -6072,7 +6077,7 @@
       "https://cdn.realt.by/img/55/8c79fdba-b7bb-11ef-a8bf-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-06-03T12:22:03.538Z",
-    "lastSeenAt": "2026-06-16T12:16:24.671Z"
+    "lastSeenAt": "2026-06-17T11:52:13.138Z"
   },
   {
     "adId": 3106591,
@@ -6656,5 +6661,36 @@
     ],
     "firstSeenAt": "2026-06-15T13:15:18.276Z",
     "lastSeenAt": "2026-06-16T12:16:24.671Z"
+  },
+  {
+    "adId": 4155325,
+    "uuid": "618f3ca0-6985-11f1-9780-3fb3a7434153",
+    "link": "https://realt.by/sale-dachi/object/4155325/",
+    "title": "Земельный участок с дачным домом в 11 км от Гродно",
+    "description": "Коммуникации: электричество — 220В, вода – сезонная. Участок правильной прямоугольной формы площадью 5 соток, огорожен со всех сторон, в частной собственности. На участке есть хоз. постройка и туалет. На участке растут множество плодородных деревьев и кустов. Остановка и магазин в 5 минутах от дачного дома.",
+    "priceByn": 69500,
+    "priceUsd": 25117,
+    "address": "Натуралист-Горница",
+    "area": 24,
+    "areaLiving": 19,
+    "plotArea": 5,
+    "yearBuilt": 1970,
+    "levels": 1,
+    "seller": "Дарья",
+    "listTime": "2026-06-16T16:59:35+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/0db2ce76-6985-11f1-ac28-0242ac120003",
+      "https://cdn.realt.by/img/55/0de9c80e-6985-11f1-b2ae-0242ac120003",
+      "https://cdn.realt.by/img/55/14e54192-6985-11f1-9182-0242ac120003",
+      "https://cdn.realt.by/img/55/14f67106-6985-11f1-b85d-0242ac120003",
+      "https://cdn.realt.by/img/55/18f86bec-6985-11f1-b8ff-0242ac120003",
+      "https://cdn.realt.by/img/55/1914f0e6-6985-11f1-ab14-0242ac120003",
+      "https://cdn.realt.by/img/55/191c9684-6985-11f1-98e2-0242ac120003",
+      "https://cdn.realt.by/img/55/193a83ce-6985-11f1-bdff-0242ac120003",
+      "https://cdn.realt.by/img/55/1f9aab36-6985-11f1-b53d-0242ac120003",
+      "https://cdn.realt.by/img/55/268434c6-6985-11f1-9a52-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-17T11:52:13.138Z",
+    "lastSeenAt": "2026-06-17T11:52:13.138Z"
   }
 ]
