@@ -217,7 +217,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4726f432-6c88-499e-843c-386b62e74a79.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-06-04T10:47:55.075Z"
+    "lastSeenAt": "2026-06-17T11:47:40.607Z"
   },
   {
     "adId": 1039071483,
@@ -1344,7 +1344,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b352eb55-46cf-402b-8639-c1dafcb425ef.jpg"
     ],
     "firstSeenAt": "2026-04-03T10:00:31.324Z",
-    "lastSeenAt": "2026-06-03T12:05:04.880Z"
+    "lastSeenAt": "2026-06-17T11:47:40.607Z"
   },
   {
     "adId": 1056526712,
@@ -2529,7 +2529,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/51dcdc03-04b8-42a3-9f99-581514c44c9a.jpg"
     ],
     "firstSeenAt": "2026-04-14T08:39:12.555Z",
-    "lastSeenAt": "2026-06-11T11:33:26.006Z"
+    "lastSeenAt": "2026-06-17T11:47:40.607Z"
   },
   {
     "adId": 1064823553,
@@ -3461,7 +3461,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d1b27886-ef97-4481-a686-a1bf3cf18506.jpg"
     ],
     "firstSeenAt": "2026-04-26T08:42:57.861Z",
-    "lastSeenAt": "2026-06-16T12:14:01.730Z"
+    "lastSeenAt": "2026-06-17T11:47:40.607Z"
   },
   {
     "adId": 1066343518,
@@ -4469,7 +4469,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/736a12f1-77ea-41ca-8ba6-152781250269.jpg"
     ],
     "firstSeenAt": "2026-05-06T09:31:02.941Z",
-    "lastSeenAt": "2026-06-16T12:14:01.730Z"
+    "lastSeenAt": "2026-06-17T11:47:40.607Z"
   },
   {
     "adId": 1067820305,
@@ -5623,7 +5623,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/72757c4e-befb-4751-a79e-db60b603c0df.jpg"
     ],
     "firstSeenAt": "2026-05-18T19:41:16.471Z",
-    "lastSeenAt": "2026-06-03T12:05:04.880Z"
+    "lastSeenAt": "2026-06-17T11:47:40.607Z"
   },
   {
     "adId": 1069446097,
@@ -5753,7 +5753,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/278ca93e-8ecc-49fc-b807-530d97f49369.jpg"
     ],
     "firstSeenAt": "2026-05-21T10:45:04.003Z",
-    "lastSeenAt": "2026-06-04T10:47:55.075Z"
+    "lastSeenAt": "2026-06-17T11:47:40.607Z"
   },
   {
     "adId": 1069780716,
@@ -6145,7 +6145,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2bc5a4c9-a045-425a-8508-78f0c401fdea.jpg"
     ],
     "firstSeenAt": "2026-05-27T11:01:06.133Z",
-    "lastSeenAt": "2026-06-16T12:14:01.730Z"
+    "lastSeenAt": "2026-06-17T11:47:40.607Z"
   },
   {
     "adId": 1070275013,
@@ -6397,7 +6397,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3c9fdc61-b5c8-4251-8f29-93854e849361.jpg"
     ],
     "firstSeenAt": "2026-05-29T11:05:51.428Z",
-    "lastSeenAt": "2026-06-16T12:14:01.730Z"
+    "lastSeenAt": "2026-06-17T11:47:40.607Z"
   },
   {
     "adId": 1070670804,
@@ -6457,7 +6457,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0ebd7d2e-f91b-4a8a-9140-513b9fd21fb4.jpg"
     ],
     "firstSeenAt": "2026-05-29T11:05:51.428Z",
-    "lastSeenAt": "2026-06-16T12:14:01.730Z"
+    "lastSeenAt": "2026-06-17T11:47:40.607Z"
   },
   {
     "adId": 1070665572,
@@ -6712,8 +6712,8 @@
     "link": "https://re.kufar.by/vi/1072315726",
     "title": "Дачный участок возле Коробчиц СТ Лососянка",
     "description": "Продается отличный земельный участок в СТ Лососянка рядом с д. Коробчицы , 7км до города. (Гродненская обл., Гродненский р-н, Коптевский с/с, СТ «Лосо",
-    "priceByn": 9588,
-    "priceUsd": 3400,
+    "priceByn": 9141,
+    "priceUsd": 3300,
     "address": "36, СТ Лососянка, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "plotArea": 5,
     "seller": "Пользователь",
@@ -6725,7 +6725,7 @@
       "lat": 53.588236,
       "lon": 23.721722
     },
-    "listTime": "2026-06-08T07:00:13Z",
+    "listTime": "2026-06-17T09:01:37Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/92858bc3-0f1c-4ca1-a617-ca2cc58f296e.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8873303b-9837-430c-b213-a31b1e993ba3.jpg",
@@ -6739,7 +6739,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/31bf36cb-b7e7-4163-b2eb-b7de1168f596.jpg"
     ],
     "firstSeenAt": "2026-06-08T11:56:19.997Z",
-    "lastSeenAt": "2026-06-09T10:48:32.691Z"
+    "lastSeenAt": "2026-06-17T11:47:40.607Z"
   },
   {
     "adId": 1072159438,
@@ -7206,8 +7206,8 @@
     "link": "https://re.kufar.by/vi/1073207492",
     "title": "участок СТ Сябры-Кулевцы",
     "description": "Продается участок в пригороде города Гродно, в 1 км от д. Коробчицы и в 10 км от Гродно.  Участок находится на территории садового товарищества «Сябры",
-    "priceByn": 13850,
-    "priceUsd": 5000,
+    "priceByn": 12465,
+    "priceUsd": 4500,
     "address": "СТ Сябры, Одельский сельсовет, Гродненский район, Гродненская область",
     "plotArea": 7.93,
     "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
@@ -7227,7 +7227,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/38f441dd-2b07-46a5-b867-4a8d039678e8.jpg"
     ],
     "firstSeenAt": "2026-06-15T13:09:45.094Z",
-    "lastSeenAt": "2026-06-16T12:14:01.730Z"
+    "lastSeenAt": "2026-06-17T11:47:40.607Z"
   },
   {
     "adId": 1073206834,
@@ -7257,7 +7257,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8f8a7e74-b2a1-4f12-94a2-489bffa085b6.jpg"
     ],
     "firstSeenAt": "2026-06-15T13:09:45.094Z",
-    "lastSeenAt": "2026-06-16T12:14:01.730Z"
+    "lastSeenAt": "2026-06-17T11:47:40.607Z"
   },
   {
     "adId": 1073203279,
@@ -7302,7 +7302,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdbf1bbf-24fa-40ae-844f-9ce21a238b0d.jpg"
     ],
     "firstSeenAt": "2026-06-15T13:09:45.094Z",
-    "lastSeenAt": "2026-06-16T12:14:01.730Z"
+    "lastSeenAt": "2026-06-17T11:47:40.607Z"
   },
   {
     "adId": 1073129577,
@@ -7414,7 +7414,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/64c612d6-7f6b-4328-846c-ea152e0f97c9.jpg"
     ],
     "firstSeenAt": "2026-06-16T12:14:01.730Z",
-    "lastSeenAt": "2026-06-16T12:14:01.730Z"
+    "lastSeenAt": "2026-06-17T11:47:40.607Z"
   },
   {
     "adId": 1073234810,
@@ -7443,6 +7443,100 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/49de3161-c7b7-4fdf-9445-fc4619506a07.jpg"
     ],
     "firstSeenAt": "2026-06-16T12:14:01.730Z",
-    "lastSeenAt": "2026-06-16T12:14:01.730Z"
+    "lastSeenAt": "2026-06-17T11:47:40.607Z"
+  },
+  {
+    "adId": 1073455863,
+    "link": "https://re.kufar.by/vi/1073455863",
+    "title": "Продажа дачного участка",
+    "description": "Дачный участок (10 соток), состоящий из двух участков, на одном из них есть домик.  Уютный,  ровный, с садовыми деревьями, иргой, декоративными кустам",
+    "priceByn": 32000,
+    "priceUsd": 11552,
+    "address": "СТ Физкультурник, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 10,
+    "seller": "Татьяна",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.613232,
+      "lon": 23.949193
+    },
+    "listTime": "2026-06-17T08:53:54Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/459c496a-0158-44c8-818e-21a9d7bc460a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/65426223-0eac-452e-beaf-276977ae288e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d409f852-3d8b-4ed8-aa69-1ca0e7f9a1e0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/73a65770-7563-4988-9865-d71fe7ae9ca6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/75123613-63a9-4a19-8aa8-6749fae06786.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/aedf3fc1-1ce9-4993-b516-3f707177737c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdc8a7c1-3c34-4673-8ad8-48f286b7f3ae.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/492a0cb0-d1c7-415d-a130-33d5415a2ff1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eee7ec87-5d7c-4e2c-9b38-4bf8fc8731eb.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ef0faeba-38c7-401b-9424-0d5ba3de2476.jpg"
+    ],
+    "firstSeenAt": "2026-06-17T11:47:40.607Z",
+    "lastSeenAt": "2026-06-17T11:47:40.607Z"
+  },
+  {
+    "adId": 1073432053,
+    "link": "https://re.kufar.by/vi/1073432053",
+    "title": "Участок в Горнице",
+    "description": "Продам неприватизированный участок в Горнице. \nПо всем вопросам, по оформлению документов - звоните. \nХорошее место для отдыха от городской суеты)",
+    "priceByn": 8310,
+    "priceUsd": 3000,
+    "address": "СТ Ирина, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5,
+    "seller": "Ирина",
+    "features": [
+      "Сезонная",
+      "Пожизненное наследование"
+    ],
+    "coordinates": {
+      "lat": 53.608467,
+      "lon": 23.950253
+    },
+    "listTime": "2026-06-17T05:32:33Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/73a56c1e-58d2-408b-9651-fa987d9b8a1b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/314aee69-7cb3-480f-9d9d-ccb4d7faea80.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a49fb1b7-abea-43cd-a388-d87253f3bef3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8950db77-c6a0-490f-83d9-70c687261fe8.jpg"
+    ],
+    "firstSeenAt": "2026-06-17T11:47:40.607Z",
+    "lastSeenAt": "2026-06-17T11:47:40.607Z"
+  },
+  {
+    "adId": 1073430521,
+    "link": "https://re.kufar.by/vi/1073430521",
+    "title": "Участок",
+    "description": "Продается участок. Приватизирован.  Планировние. Ровный,  8 соток. Подведено электричество. Хорошая земля. Вода в колодце хорошая. Рядом Неман.  Возду",
+    "priceByn": 16620,
+    "priceUsd": 6000,
+    "address": "111, СТ Берёзовое, Квасовский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 8,
+    "seller": "Ирина",
+    "features": [
+      "Колодец",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.57296315117106,
+      "lon": 24.01757653797543
+    },
+    "listTime": "2026-06-17T05:06:15Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e76d0dff-0b2a-44cb-b7eb-5bb622325acc.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39d9a7ca-4ecb-4b32-892d-a62404e84e31.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/13dfd540-b7d9-4ff1-b04e-5692b6cdd3fb.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b6eb4f20-e53e-4160-8592-b017bf3a40da.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1ffd6061-1f00-4ad1-8e3b-df7e641e91ac.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/78187107-97ed-4aba-b720-282112207e63.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ee7f15ec-5cbc-448a-b18d-681756fa4bd6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9cd9165f-75ed-4d0b-944a-384a249901e1.jpg"
+    ],
+    "firstSeenAt": "2026-06-17T11:47:40.607Z",
+    "lastSeenAt": "2026-06-17T11:47:40.607Z"
   }
 ]

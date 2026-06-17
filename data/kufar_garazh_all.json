@@ -1409,7 +1409,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d0cba27d-2a67-47bb-9f8d-ee2b1f45b921.jpg"
     ],
     "firstSeenAt": "2026-04-16T08:40:16.263Z",
-    "lastSeenAt": "2026-06-16T12:14:01.728Z"
+    "lastSeenAt": "2026-06-17T11:47:40.605Z"
   },
   {
     "adId": 1065272904,
@@ -2806,7 +2806,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/95d7e93c-d956-4a23-a935-da8b54ce5a51.jpg"
     ],
     "firstSeenAt": "2026-05-09T08:44:04.835Z",
-    "lastSeenAt": "2026-06-16T12:14:01.728Z"
+    "lastSeenAt": "2026-06-17T11:47:40.605Z"
   },
   {
     "adId": 1068334517,
@@ -3521,7 +3521,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eee28d59-6640-4521-a4ab-2c556844e31f.jpg"
     ],
     "firstSeenAt": "2026-05-25T11:15:07.897Z",
-    "lastSeenAt": "2026-06-16T12:14:01.728Z"
+    "lastSeenAt": "2026-06-17T11:47:40.605Z"
   },
   {
     "adId": 1070506297,
@@ -3607,7 +3607,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39ba00b4-ed0b-45e2-a4e5-edade7282d26.jpg"
     ],
     "firstSeenAt": "2026-05-27T11:01:06.131Z",
-    "lastSeenAt": "2026-06-16T12:14:01.728Z"
+    "lastSeenAt": "2026-06-17T11:47:40.605Z"
   },
   {
     "adId": 1070272138,
@@ -4620,7 +4620,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/530ef714-712f-4085-a2f6-e8e1c009cdee.jpg"
     ],
     "firstSeenAt": "2026-06-13T09:56:32.509Z",
-    "lastSeenAt": "2026-06-16T12:14:01.728Z"
+    "lastSeenAt": "2026-06-17T11:47:40.605Z"
   },
   {
     "adId": 1072993353,
@@ -4675,7 +4675,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4b6e8fbf-4e7a-42cc-b39b-2f79224e6e6f.jpg"
     ],
     "firstSeenAt": "2026-06-16T12:14:01.728Z",
-    "lastSeenAt": "2026-06-16T12:14:01.728Z"
+    "lastSeenAt": "2026-06-17T11:47:40.605Z"
   },
   {
     "adId": 1073236331,
@@ -4712,6 +4712,61 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4561b3a5-a303-4a5a-9e94-a6d51fe7e116.jpg"
     ],
     "firstSeenAt": "2026-06-16T12:14:01.728Z",
-    "lastSeenAt": "2026-06-16T12:14:01.728Z"
+    "lastSeenAt": "2026-06-17T11:47:40.605Z"
+  },
+  {
+    "adId": 1073437848,
+    "link": "https://re.kufar.by/vi/1073437848",
+    "title": "Гараж в ГК Понемунь2",
+    "description": "Гараж в Понемунь 2. Блок 8 гараж 304",
+    "priceByn": 22160,
+    "priceUsd": 8000,
+    "address": "Понемуньская ул, 9блок8к304, Гродно, Гродненская область",
+    "area": 19,
+    "seller": "Анна",
+    "propertyType": "Гараж",
+    "coordinates": {
+      "lat": 53.66652374173819,
+      "lon": 23.872386546304035
+    },
+    "listTime": "2026-06-17T06:52:51Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/af56e045-7f67-4ab1-bfb8-41bf31970343.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7a96f001-ef45-406e-ad53-5202e709df9b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4c7f0621-cecd-43bf-98d1-d30d1d273204.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ab29f617-cd3f-4190-84a2-fbebbcda6b03.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b70c12ba-c2e1-4d86-975f-fe2412c6c38a.jpg"
+    ],
+    "firstSeenAt": "2026-06-17T11:47:40.605Z",
+    "lastSeenAt": "2026-06-17T11:47:40.605Z"
+  },
+  {
+    "adId": 1073429932,
+    "link": "https://re.kufar.by/vi/1073429932",
+    "title": "Гараж на Пушкина",
+    "description": "Продам гараж в гаражном кооперативе \" Автостоп 55\"",
+    "priceByn": 15235,
+    "priceUsd": 5500,
+    "address": "Пушкина ул, 33Б, Гродно, Гродненская область",
+    "area": 19.5,
+    "seller": "Vado",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма",
+      "Подвал"
+    ],
+    "coordinates": {
+      "lat": 53.697542,
+      "lon": 23.837173
+    },
+    "listTime": "2026-06-17T05:02:47Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/482d5529-783c-43ad-b726-3ca31f3fc12b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2b42716c-33fc-4e61-8810-097bf64b27e2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b59f88a4-5e82-41f8-95a1-fe33c6db446f.jpg"
+    ],
+    "firstSeenAt": "2026-06-17T11:47:40.605Z",
+    "lastSeenAt": "2026-06-17T11:47:40.605Z"
   }
 ]
