@@ -47,7 +47,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-06-16T12:14:01.728Z"
+    "lastSeenAt": "2026-06-18T11:22:17.122Z"
   },
   {
     "adId": 1062002915,
@@ -2806,7 +2806,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/95d7e93c-d956-4a23-a935-da8b54ce5a51.jpg"
     ],
     "firstSeenAt": "2026-05-09T08:44:04.835Z",
-    "lastSeenAt": "2026-06-17T11:47:40.605Z"
+    "lastSeenAt": "2026-06-18T11:22:17.122Z"
   },
   {
     "adId": 1068334517,
@@ -3521,7 +3521,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eee28d59-6640-4521-a4ab-2c556844e31f.jpg"
     ],
     "firstSeenAt": "2026-05-25T11:15:07.897Z",
-    "lastSeenAt": "2026-06-17T11:47:40.605Z"
+    "lastSeenAt": "2026-06-18T11:22:17.122Z"
   },
   {
     "adId": 1070506297,
@@ -3607,7 +3607,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39ba00b4-ed0b-45e2-a4e5-edade7282d26.jpg"
     ],
     "firstSeenAt": "2026-05-27T11:01:06.131Z",
-    "lastSeenAt": "2026-06-17T11:47:40.605Z"
+    "lastSeenAt": "2026-06-18T11:22:17.122Z"
   },
   {
     "adId": 1070272138,
@@ -4738,7 +4738,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b70c12ba-c2e1-4d86-975f-fe2412c6c38a.jpg"
     ],
     "firstSeenAt": "2026-06-17T11:47:40.605Z",
-    "lastSeenAt": "2026-06-17T11:47:40.605Z"
+    "lastSeenAt": "2026-06-18T11:22:17.122Z"
   },
   {
     "adId": 1073429932,
@@ -4767,6 +4767,42 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b59f88a4-5e82-41f8-95a1-fe33c6db446f.jpg"
     ],
     "firstSeenAt": "2026-06-17T11:47:40.605Z",
-    "lastSeenAt": "2026-06-17T11:47:40.605Z"
+    "lastSeenAt": "2026-06-18T11:22:17.122Z"
+  },
+  {
+    "adId": 1073526756,
+    "link": "https://re.kufar.by/vi/1073526756",
+    "title": "Гараж Сигнал-1 Максима Горького 105А",
+    "description": "Гараж в кооперативе Сигнал-1 по адресу Максима Горького 105А\nподвал в размер гаража, долгов нет, крыша новая сделанная, не течет",
+    "priceByn": 15235,
+    "priceUsd": 5500,
+    "address": "Максима Горького ул, 105Аблок51к5119, Гродно, Гродненская область",
+    "area": 17.5,
+    "seller": "Арсений",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Круглосуточная охрана",
+      "Смотровая яма",
+      "Подвал",
+      "Отсутствует"
+    ],
+    "coordinates": {
+      "lat": 53.72691154254715,
+      "lon": 23.8256414961188
+    },
+    "listTime": "2026-06-17T20:13:57Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/64910310-dd8d-4b57-8572-0ce554910bfc.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/01d3c15b-3524-4817-9a77-a1ccce5eb640.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7a48ef85-2ce6-411d-b874-9b9d68fdc2ce.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d3875da9-720c-4891-a889-d70fdb82eee8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3a2abae9-532a-40db-acd4-f907a5f74bc6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9f2a440b-87c8-42ee-9bf3-a9547fb4b309.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/912eddb1-98b4-40b9-ac07-1269fbee0ad1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bc251179-038a-499d-a4d7-c3a0aac0cf96.jpg"
+    ],
+    "firstSeenAt": "2026-06-18T11:22:17.122Z",
+    "lastSeenAt": "2026-06-18T11:22:17.122Z"
   }
 ]
