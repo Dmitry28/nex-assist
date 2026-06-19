@@ -40,7 +40,7 @@
       "https://cdn.realt.by/img/55/03fd1570-d66f-11f0-b546-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-18T11:25:45.822Z"
+    "lastSeenAt": "2026-06-19T11:25:14.421Z"
   },
   {
     "adId": 4058841,
@@ -2439,7 +2439,7 @@
       "https://cdn.realt.by/img/55/698aad50-2867-11f0-8fc9-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-13T09:57:59.569Z"
+    "lastSeenAt": "2026-06-19T11:25:14.421Z"
   },
   {
     "adId": 3962177,
@@ -2976,7 +2976,7 @@
       "https://cdn.realt.by/img/55/8036fdf6-e568-11f0-8ec0-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-18T11:25:45.822Z"
+    "lastSeenAt": "2026-06-19T11:25:14.421Z"
   },
   {
     "adId": 3442299,
@@ -4230,7 +4230,7 @@
       "https://cdn.realt.by/img/55/be999018-f5db-11ef-a90d-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-18T11:25:45.822Z"
+    "lastSeenAt": "2026-06-19T11:25:14.421Z"
   },
   {
     "adId": 3865880,
@@ -5875,7 +5875,7 @@
       "https://static.realt.by/thumb/c/430x374/c5f662a11b216aff1dcebc6285dd1e9e/b7/i/11013c3efib7/93fc9e448f.jpeg"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-18T11:25:45.822Z"
+    "lastSeenAt": "2026-06-19T11:25:14.421Z"
   },
   {
     "adId": 3878873,
@@ -8856,8 +8856,8 @@
     "link": "https://realt.by/sale-cottages/object/3574088/",
     "title": "Береговой, Балтийская ул.",
     "description": "Продаётся коттедж в живописном месте. Рядом Неман 600м, плотина ГЭС. Гродно 8 км по трассе М-6 пост ГАИ. Все удобства, мебель, камин, баня с комнатой отдыха, бассейн, гараж с ямой на 2 машины, 2 терассы с видом во двор, сарай (можно сделать баню), вольер, мангал, рабочий фонтан, декоративное озеро с карасями, кувшинкой и водопадом, много цветов, плодовых деревьев, виноград 4 вида, газон, качели, место для летнего бассейна полностью оборудован для жизни. Со всем что на фото. Дом крайний.",
-    "priceByn": 538122,
-    "priceUsd": 195000,
+    "priceByn": 487620,
+    "priceUsd": 175000,
     "address": "Береговой Балтийская ул. 8",
     "area": 284,
     "areaLiving": 165,
@@ -8865,7 +8865,7 @@
     "yearBuilt": 1996,
     "levels": 3,
     "seller": "Игорь",
-    "listTime": "2026-05-31T10:38:44+03:00",
+    "listTime": "2026-06-18T17:46:59+03:00",
     "images": [
       "https://cdn.realt.by/img/55/b4e828ee-be23-11ef-a3a6-2236ceb6d16d",
       "https://cdn.realt.by/img/55/b4965438-be23-11ef-8291-2236ceb6d16d",
@@ -8886,7 +8886,7 @@
       "https://cdn.realt.by/img/55/b550ebe0-be23-11ef-bbb5-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-01T12:45:12.198Z"
+    "lastSeenAt": "2026-06-19T11:25:14.421Z"
   },
   {
     "adId": 3429604,
@@ -10479,7 +10479,7 @@
       "https://cdn.realt.by/img/55/13ce0d88-4f5a-11f1-85bb-0242ac120003"
     ],
     "firstSeenAt": "2026-05-14T10:05:10.115Z",
-    "lastSeenAt": "2026-06-11T11:39:08.854Z"
+    "lastSeenAt": "2026-06-19T11:25:14.421Z"
   },
   {
     "adId": 4123420,
@@ -11779,7 +11779,7 @@
       "https://cdn.realt.by/img/55/8bede926-657d-11f1-b017-0242ac120003"
     ],
     "firstSeenAt": "2026-06-11T11:39:08.854Z",
-    "lastSeenAt": "2026-06-18T11:25:45.822Z"
+    "lastSeenAt": "2026-06-19T11:25:14.421Z"
   },
   {
     "adId": 4150496,
@@ -12088,5 +12088,44 @@
     ],
     "firstSeenAt": "2026-06-17T11:52:13.133Z",
     "lastSeenAt": "2026-06-18T11:25:45.822Z"
+  },
+  {
+    "adId": 4157581,
+    "uuid": "86f33500-6b1f-11f1-82b6-7969fefbc065",
+    "link": "https://realt.by/sale-cottages/object/4157581/",
+    "title": "дом г. Гродно  ул. Кубасова (м-н Заболоть)",
+    "description": "Продается дом в городе Гродно по ул. Кубасова (м-н Заболоть) с отделкой, мебелью и бытовой техникой. В доме установлен действующий камин.",
+    "priceByn": 473688,
+    "priceUsd": 170000,
+    "address": "Гродно Кубасова ул.",
+    "area": 214.6,
+    "areaLiving": 123.2,
+    "plotArea": 10,
+    "yearBuilt": 2016,
+    "seller": "Елена",
+    "listTime": "2026-06-18T17:47:00+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/d107758e-6b1f-11f1-b108-0242ac120003",
+      "https://cdn.realt.by/img/55/d181bb8c-6b1f-11f1-b383-0242ac120003",
+      "https://cdn.realt.by/img/55/d17f4442-6b1f-11f1-b069-0242ac120003",
+      "https://cdn.realt.by/img/55/55998de6-6b20-11f1-87fe-0242ac120003",
+      "https://cdn.realt.by/img/55/55b935c4-6b20-11f1-bc8e-0242ac120003",
+      "https://cdn.realt.by/img/55/55e300ca-6b20-11f1-984f-0242ac120003",
+      "https://cdn.realt.by/img/55/6aa22d10-6b20-11f1-b1bd-0242ac120003",
+      "https://cdn.realt.by/img/55/6aaec4c6-6b20-11f1-a3ed-0242ac120003",
+      "https://cdn.realt.by/img/55/6abfa52a-6b20-11f1-8b45-0242ac120003",
+      "https://cdn.realt.by/img/55/80a6fece-6b20-11f1-aa32-0242ac120003",
+      "https://cdn.realt.by/img/55/81909e3a-6b20-11f1-ab43-0242ac120003",
+      "https://cdn.realt.by/img/55/820c4d1e-6b20-11f1-b6e3-0242ac120003",
+      "https://cdn.realt.by/img/55/93b99076-6b20-11f1-ba5b-0242ac120003",
+      "https://cdn.realt.by/img/55/93e6fde0-6b20-11f1-8a29-0242ac120003",
+      "https://cdn.realt.by/img/55/b079e21a-6b20-11f1-8394-0242ac120003",
+      "https://cdn.realt.by/img/55/b09a6c88-6b20-11f1-af39-0242ac120003",
+      "https://cdn.realt.by/img/55/b0d59006-6b20-11f1-b331-0242ac120003",
+      "https://cdn.realt.by/img/55/d10fe0e8-6b1f-11f1-8f53-0242ac120003",
+      "https://cdn.realt.by/img/55/d1207282-6b1f-11f1-b58b-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-19T11:25:14.421Z",
+    "lastSeenAt": "2026-06-19T11:25:14.421Z"
   }
 ]

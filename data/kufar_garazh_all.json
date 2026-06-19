@@ -47,7 +47,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-06-18T11:22:17.122Z"
+    "lastSeenAt": "2026-06-19T11:22:46.024Z"
   },
   {
     "adId": 1062002915,
@@ -2806,7 +2806,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/95d7e93c-d956-4a23-a935-da8b54ce5a51.jpg"
     ],
     "firstSeenAt": "2026-05-09T08:44:04.835Z",
-    "lastSeenAt": "2026-06-18T11:22:17.122Z"
+    "lastSeenAt": "2026-06-19T11:22:46.024Z"
   },
   {
     "adId": 1068334517,
@@ -3521,7 +3521,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eee28d59-6640-4521-a4ab-2c556844e31f.jpg"
     ],
     "firstSeenAt": "2026-05-25T11:15:07.897Z",
-    "lastSeenAt": "2026-06-18T11:22:17.122Z"
+    "lastSeenAt": "2026-06-19T11:22:46.024Z"
   },
   {
     "adId": 1070506297,
@@ -3607,7 +3607,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39ba00b4-ed0b-45e2-a4e5-edade7282d26.jpg"
     ],
     "firstSeenAt": "2026-05-27T11:01:06.131Z",
-    "lastSeenAt": "2026-06-18T11:22:17.122Z"
+    "lastSeenAt": "2026-06-19T11:22:46.024Z"
   },
   {
     "adId": 1070272138,
@@ -4803,6 +4803,39 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bc251179-038a-499d-a4d7-c3a0aac0cf96.jpg"
     ],
     "firstSeenAt": "2026-06-18T11:22:17.122Z",
-    "lastSeenAt": "2026-06-18T11:22:17.122Z"
+    "lastSeenAt": "2026-06-19T11:22:46.024Z"
+  },
+  {
+    "adId": 1073784926,
+    "link": "https://re.kufar.by/vi/1073784926",
+    "title": "Гараж по ул. Скосная",
+    "description": "Продаётся гараж по улице Скосная. Кирпичный, ворота металлические. \nИмеется смотровая яма и подвал на протяжении всего гаража. Есть подъёмник для рабо",
+    "priceByn": 32963,
+    "priceUsd": 11900,
+    "address": "Скосная ул, Гродно, Гродненская область",
+    "area": 21.1,
+    "seller": "Агентство недвижимости ''Ключ к мечте''",
+    "propertyType": "Гараж",
+    "features": [
+      "Смотровая яма",
+      "Наземная",
+      "Отсутствует"
+    ],
+    "coordinates": {
+      "lat": 53.662012,
+      "lon": 23.820096
+    },
+    "listTime": "2026-06-19T08:07:14Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/dfc3b65c-ec8c-4c24-9665-698218248f7f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/17474b50-4a2d-4a44-9434-f18bd3c7af4f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/79cf3040-df8d-48e5-a617-781f386f18d6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/567b107b-6cbb-4d78-85d7-08a67f996031.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b717312c-70a8-487c-8863-37acce9a6361.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/29246ab8-60ba-4c86-9a03-246076275e4a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2f8e6e2a-0686-46b6-ab74-415812dc5acf.jpg"
+    ],
+    "firstSeenAt": "2026-06-19T11:22:46.024Z",
+    "lastSeenAt": "2026-06-19T11:22:46.024Z"
   }
 ]
