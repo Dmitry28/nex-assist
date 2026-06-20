@@ -617,7 +617,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/272d5e94-2800-47f3-943d-f4cadecf1310.jpg"
     ],
     "firstSeenAt": "2026-03-27T10:03:43.686Z",
-    "lastSeenAt": "2026-06-19T11:22:46.026Z"
+    "lastSeenAt": "2026-06-20T10:06:10.753Z"
   },
   {
     "adId": 1051330018,
@@ -929,7 +929,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4e794612-a7d4-401f-8635-19525b62f0e5.jpg"
     ],
     "firstSeenAt": "2026-03-29T19:58:43.075Z",
-    "lastSeenAt": "2026-06-14T10:26:46.072Z"
+    "lastSeenAt": "2026-06-20T10:06:10.753Z"
   },
   {
     "adId": 1057144146,
@@ -1029,7 +1029,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8851791a-b3ff-48e4-85ca-444cee193f6d.jpg"
     ],
     "firstSeenAt": "2026-03-31T09:53:43.593Z",
-    "lastSeenAt": "2026-06-19T11:22:46.026Z"
+    "lastSeenAt": "2026-06-20T10:06:10.753Z"
   },
   {
     "adId": 1016279565,
@@ -2529,7 +2529,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/51dcdc03-04b8-42a3-9f99-581514c44c9a.jpg"
     ],
     "firstSeenAt": "2026-04-14T08:39:12.555Z",
-    "lastSeenAt": "2026-06-19T11:22:46.026Z"
+    "lastSeenAt": "2026-06-20T10:06:10.753Z"
   },
   {
     "adId": 1064823553,
@@ -3461,7 +3461,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d1b27886-ef97-4481-a686-a1bf3cf18506.jpg"
     ],
     "firstSeenAt": "2026-04-26T08:42:57.861Z",
-    "lastSeenAt": "2026-06-19T11:22:46.026Z"
+    "lastSeenAt": "2026-06-20T10:06:10.753Z"
   },
   {
     "adId": 1066343518,
@@ -4469,7 +4469,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/736a12f1-77ea-41ca-8ba6-152781250269.jpg"
     ],
     "firstSeenAt": "2026-05-06T09:31:02.941Z",
-    "lastSeenAt": "2026-06-19T11:22:46.026Z"
+    "lastSeenAt": "2026-06-20T10:06:10.753Z"
   },
   {
     "adId": 1067820305,
@@ -4734,7 +4734,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0393d978-a69f-418c-b0b8-c341ed5740a9.jpg"
     ],
     "firstSeenAt": "2026-05-09T08:44:04.837Z",
-    "lastSeenAt": "2026-06-19T11:22:46.026Z"
+    "lastSeenAt": "2026-06-20T10:06:10.753Z"
   },
   {
     "adId": 1068196806,
@@ -5339,12 +5339,16 @@
     "link": "https://re.kufar.by/vi/1068808893",
     "title": "Участок",
     "description": "Продается участок. Ст. Демидково. Находится в 10 км от Гродно. На участке имеется фундамент и проведен свет. Торг.",
-    "priceByn": 28000,
-    "priceUsd": 10082,
+    "priceByn": 25000,
+    "priceUsd": 8961,
     "address": "Одельский сельсовет, Гродненский район, Гродненская область",
     "plotArea": 16,
     "seller": "Юлия",
-    "listTime": "2026-05-13T12:33:01Z",
+    "coordinates": {
+      "lat": 53.52542665823037,
+      "lon": 23.785980164578802
+    },
+    "listTime": "2026-06-19T15:54:49Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7ff3a93e-19ab-4489-bf27-0f64fd00597f.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8f388c22-8475-4a92-ac2e-ee74d0e73e24.jpg",
@@ -5352,7 +5356,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3356a73a-1741-40ff-91b7-8df677fc23be.jpg"
     ],
     "firstSeenAt": "2026-05-14T09:57:44.876Z",
-    "lastSeenAt": "2026-05-15T10:12:43.710Z"
+    "lastSeenAt": "2026-06-20T10:06:10.753Z"
   },
   {
     "adId": 1068945795,
@@ -6540,7 +6544,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c7b70899-1cc0-485d-8c90-39da577a5a22.jpg"
     ],
     "firstSeenAt": "2026-06-02T11:25:47.555Z",
-    "lastSeenAt": "2026-06-19T11:22:46.026Z"
+    "lastSeenAt": "2026-06-20T10:06:10.753Z"
   },
   {
     "adId": 1071569487,
@@ -6993,7 +6997,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8c76c10b-fe65-4bae-bbe2-47511006b851.jpg"
     ],
     "firstSeenAt": "2026-06-10T11:12:10.631Z",
-    "lastSeenAt": "2026-06-19T11:22:46.026Z"
+    "lastSeenAt": "2026-06-20T10:06:10.753Z"
   },
   {
     "adId": 1072560957,
@@ -7477,7 +7481,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ef0faeba-38c7-401b-9424-0d5ba3de2476.jpg"
     ],
     "firstSeenAt": "2026-06-17T11:47:40.607Z",
-    "lastSeenAt": "2026-06-19T11:22:46.026Z"
+    "lastSeenAt": "2026-06-20T10:06:10.753Z"
   },
   {
     "adId": 1073432053,
@@ -7562,7 +7566,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0daed92f-4a17-4fad-b6fe-4ed2f72fb878.jpg"
     ],
     "firstSeenAt": "2026-06-19T11:22:46.026Z",
-    "lastSeenAt": "2026-06-19T11:22:46.026Z"
+    "lastSeenAt": "2026-06-20T10:06:10.753Z"
   },
   {
     "adId": 1073675397,
@@ -7586,6 +7590,34 @@
     "listTime": "2026-06-18T15:10:58Z",
     "images": [],
     "firstSeenAt": "2026-06-19T11:22:46.026Z",
-    "lastSeenAt": "2026-06-19T11:22:46.026Z"
+    "lastSeenAt": "2026-06-20T10:06:10.753Z"
+  },
+  {
+    "adId": 1073931431,
+    "link": "https://re.kufar.by/vi/1073931431",
+    "title": "Дачный участок",
+    "description": "По всем вопросам, звоните обсудим",
+    "priceByn": 8370,
+    "priceUsd": 3000,
+    "address": "5к5, СТ Азот-Кулёвцы, Одельский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 10.8,
+    "seller": "Александр",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.587296,
+      "lon": 23.66873
+    },
+    "listTime": "2026-06-20T08:39:49Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0b7e0147-383d-499e-8d84-4e57cab15e91.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0046f1ef-c8c9-41df-848c-4f3f41a6ea0c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5b032cd3-900c-416d-ac55-3529fbd699be.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1a99d9ff-131a-4948-9799-7a1a576820fb.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/46e7e5a1-29fa-43d4-b050-5facf89c1e77.jpg"
+    ],
+    "firstSeenAt": "2026-06-20T10:06:10.753Z",
+    "lastSeenAt": "2026-06-20T10:06:10.753Z"
   }
 ]
