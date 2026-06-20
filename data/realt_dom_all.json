@@ -40,7 +40,7 @@
       "https://cdn.realt.by/img/55/03fd1570-d66f-11f0-b546-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-19T11:25:14.421Z"
+    "lastSeenAt": "2026-06-20T10:07:33.892Z"
   },
   {
     "adId": 4058841,
@@ -2439,7 +2439,7 @@
       "https://cdn.realt.by/img/55/698aad50-2867-11f0-8fc9-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-19T11:25:14.421Z"
+    "lastSeenAt": "2026-06-20T10:07:33.892Z"
   },
   {
     "adId": 3962177,
@@ -5875,7 +5875,7 @@
       "https://static.realt.by/thumb/c/430x374/c5f662a11b216aff1dcebc6285dd1e9e/b7/i/11013c3efib7/93fc9e448f.jpeg"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-19T11:25:14.421Z"
+    "lastSeenAt": "2026-06-20T10:07:33.892Z"
   },
   {
     "adId": 3878873,
@@ -7906,7 +7906,7 @@
       "https://cdn.realt.by/img/55/351932b0-3574-11f1-9cbe-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-06-20T10:07:33.892Z"
   },
   {
     "adId": 3942173,
@@ -8886,7 +8886,7 @@
       "https://cdn.realt.by/img/55/b550ebe0-be23-11ef-bbb5-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-19T11:25:14.421Z"
+    "lastSeenAt": "2026-06-20T10:07:33.892Z"
   },
   {
     "adId": 3429604,
@@ -10479,7 +10479,7 @@
       "https://cdn.realt.by/img/55/13ce0d88-4f5a-11f1-85bb-0242ac120003"
     ],
     "firstSeenAt": "2026-05-14T10:05:10.115Z",
-    "lastSeenAt": "2026-06-19T11:25:14.421Z"
+    "lastSeenAt": "2026-06-20T10:07:33.892Z"
   },
   {
     "adId": 4123420,
@@ -12126,6 +12126,91 @@
       "https://cdn.realt.by/img/55/d1207282-6b1f-11f1-b58b-0242ac120003"
     ],
     "firstSeenAt": "2026-06-19T11:25:14.421Z",
-    "lastSeenAt": "2026-06-19T11:25:14.421Z"
+    "lastSeenAt": "2026-06-20T10:07:33.892Z"
+  },
+  {
+    "adId": 4158686,
+    "uuid": "9054d460-6c09-11f1-9ae5-d964c5b7109a",
+    "link": "https://realt.by/sale-cottages/object/4158686/",
+    "title": "Шикарный дом с баней",
+    "description": "Продаётся шикарный жилой дом с дизайнерским ремонтом, расположенный в живописном месте (Гродненский р-н, СТ Гостинец (район д. Тарусичи). Общая информация по дому: общая площадь - 184.0 кв.м. Материал стен - декоративная штукатурка, обои, материал крыши - металлочерепица, материал полов - плитка, ламинат, все окна ПВХ. В доме установлены добротные входные металлических двери, а также современные межкомнатные деревянные двери. Дом спроектирован с учетом всех современных требований",
+    "priceByn": 863784,
+    "priceUsd": 310000,
+    "address": "Гродно",
+    "area": 184,
+    "areaKitchen": 23.4,
+    "plotArea": 8.1,
+    "yearBuilt": 2015,
+    "seller": "\"Фирма 2К и К\"",
+    "listTime": "2026-06-20T10:22:11+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/0271eaf0-6c10-11f1-b5c2-0242ac120003",
+      "https://cdn.realt.by/img/55/f67a792e-6c0f-11f1-b420-0242ac120003",
+      "https://cdn.realt.by/img/55/7ddf7516-6c17-11f1-81d4-0242ac120003",
+      "https://cdn.realt.by/img/55/7eeaf6d8-6c17-11f1-963e-0242ac120003",
+      "https://cdn.realt.by/img/55/f82f9358-6c0f-11f1-b678-0242ac120003",
+      "https://cdn.realt.by/img/55/f96980b2-6c0f-11f1-9c3a-0242ac120003",
+      "https://cdn.realt.by/img/55/91a49a46-6c11-11f1-bae6-0242ac120003",
+      "https://cdn.realt.by/img/55/96e3da8a-6c11-11f1-9e41-0242ac120003",
+      "https://cdn.realt.by/img/55/5a9784f8-6c18-11f1-afc5-0242ac120003",
+      "https://cdn.realt.by/img/55/9833754e-6c11-11f1-b9fc-0242ac120003",
+      "https://cdn.realt.by/img/55/9833a6cc-6c11-11f1-842d-0242ac120003",
+      "https://cdn.realt.by/img/55/5aefa750-6c18-11f1-8b49-0242ac120003",
+      "https://cdn.realt.by/img/55/5a935bb8-6c17-11f1-a9dd-0242ac120003",
+      "https://cdn.realt.by/img/55/5cdaa2aa-6c17-11f1-ba1d-0242ac120003",
+      "https://cdn.realt.by/img/55/4fdf7782-6c18-11f1-b61b-0242ac120003",
+      "https://cdn.realt.by/img/55/5bdd0fea-6c18-11f1-814b-0242ac120003",
+      "https://cdn.realt.by/img/55/5d5748d2-6c17-11f1-a178-0242ac120003",
+      "https://cdn.realt.by/img/55/5c6ff238-6c18-11f1-a9b2-0242ac120003",
+      "https://cdn.realt.by/img/55/5e535e3c-6c18-11f1-b7bd-0242ac120003",
+      "https://cdn.realt.by/img/55/60b9d9ee-6c18-11f1-b315-0242ac120003",
+      "https://cdn.realt.by/img/55/626477c2-6c18-11f1-b9dd-0242ac120003",
+      "https://cdn.realt.by/img/55/54a67338-6c18-11f1-848d-0242ac120003",
+      "https://cdn.realt.by/img/55/4b1cf6e8-6c18-11f1-8a0c-0242ac120003",
+      "https://cdn.realt.by/img/55/4e167c2a-6c18-11f1-8b99-0242ac120003",
+      "https://cdn.realt.by/img/55/4f075280-6c18-11f1-9c5e-0242ac120003",
+      "https://cdn.realt.by/img/55/62ddab1a-6c18-11f1-87ea-0242ac120003",
+      "https://cdn.realt.by/img/55/52f0de7a-6c18-11f1-ae3a-0242ac120003",
+      "https://cdn.realt.by/img/55/5e9b2460-6c18-11f1-802d-0242ac120003",
+      "https://cdn.realt.by/img/55/5f17707e-6c18-11f1-a031-0242ac120003",
+      "https://cdn.realt.by/img/55/632b3876-6c18-11f1-beb5-0242ac120003",
+      "https://cdn.realt.by/img/55/621c9b3c-6c18-11f1-a4da-0242ac120003",
+      "https://cdn.realt.by/img/55/62e7c1b8-6c18-11f1-b449-0242ac120003",
+      "https://cdn.realt.by/img/55/54cc86a4-6c18-11f1-912c-0242ac120003",
+      "https://cdn.realt.by/img/55/9be923f8-6c0e-11f1-9279-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-20T10:07:33.892Z",
+    "lastSeenAt": "2026-06-20T10:07:33.892Z"
+  },
+  {
+    "adId": 4158526,
+    "uuid": "68dded50-6bea-11f1-9ae5-d964c5b7109a",
+    "link": "https://realt.by/sale-cottages/object/4158526/",
+    "title": "дом г. Гродно ул. Соломовой",
+    "description": "Продается просторный дом в частном секторе на улице Соломовой. Тихий востребованный район города ( район Фолюша ) . Жилой одноэтажный дом из бруса 1961 г п. Есть 2 пристройки из кирпича 1974 и 1987 г п.",
+    "priceByn": 250776,
+    "priceUsd": 90000,
+    "address": "Гродно Соломовой ул.",
+    "area": 98.7,
+    "plotArea": 6,
+    "seller": "Светлана",
+    "listTime": "2026-06-19T18:16:33+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/3c887e32-6bea-11f1-8ca4-0242ac120003",
+      "https://cdn.realt.by/img/55/3c5283b8-6bea-11f1-acb1-0242ac120003",
+      "https://cdn.realt.by/img/55/3c676cce-6bea-11f1-87b5-0242ac120003",
+      "https://cdn.realt.by/img/55/3c648be4-6bea-11f1-ac40-0242ac120003",
+      "https://cdn.realt.by/img/55/3c78831a-6bea-11f1-ac0a-0242ac120003",
+      "https://cdn.realt.by/img/55/3c6c65c6-6bea-11f1-8498-0242ac120003",
+      "https://cdn.realt.by/img/55/3c74e5fc-6bea-11f1-bff5-0242ac120003",
+      "https://cdn.realt.by/img/55/3c805810-6bea-11f1-a36d-0242ac120003",
+      "https://cdn.realt.by/img/55/3c6e1e8e-6bea-11f1-a16b-0242ac120003",
+      "https://cdn.realt.by/img/55/3c689978-6bea-11f1-ba30-0242ac120003",
+      "https://cdn.realt.by/img/55/3c72556c-6bea-11f1-a198-0242ac120003",
+      "https://cdn.realt.by/img/55/3c7770ba-6bea-11f1-984f-0242ac120003",
+      "https://cdn.realt.by/img/55/3c4a373a-6bea-11f1-aa23-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-20T10:07:33.892Z",
+    "lastSeenAt": "2026-06-20T10:07:33.892Z"
   }
 ]
