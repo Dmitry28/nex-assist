@@ -875,7 +875,7 @@
     "listTime": "2026-04-07T08:58:38Z",
     "images": [],
     "firstSeenAt": "2026-03-29T19:58:43.075Z",
-    "lastSeenAt": "2026-06-12T11:10:03.718Z"
+    "lastSeenAt": "2026-06-21T10:34:16.180Z"
   },
   {
     "adId": 1011452136,
@@ -929,7 +929,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4e794612-a7d4-401f-8635-19525b62f0e5.jpg"
     ],
     "firstSeenAt": "2026-03-29T19:58:43.075Z",
-    "lastSeenAt": "2026-06-20T10:06:10.753Z"
+    "lastSeenAt": "2026-06-21T10:34:16.180Z"
   },
   {
     "adId": 1057144146,
@@ -2529,7 +2529,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/51dcdc03-04b8-42a3-9f99-581514c44c9a.jpg"
     ],
     "firstSeenAt": "2026-04-14T08:39:12.555Z",
-    "lastSeenAt": "2026-06-20T10:06:10.753Z"
+    "lastSeenAt": "2026-06-21T10:34:16.180Z"
   },
   {
     "adId": 1064823553,
@@ -2755,7 +2755,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/15886d50-aaff-46b4-933c-7019baf9eeef.jpg"
     ],
     "firstSeenAt": "2026-04-17T08:38:33.335Z",
-    "lastSeenAt": "2026-06-16T12:14:01.730Z"
+    "lastSeenAt": "2026-06-21T10:34:16.180Z"
   },
   {
     "adId": 1065259206,
@@ -3461,7 +3461,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d1b27886-ef97-4481-a686-a1bf3cf18506.jpg"
     ],
     "firstSeenAt": "2026-04-26T08:42:57.861Z",
-    "lastSeenAt": "2026-06-20T10:06:10.753Z"
+    "lastSeenAt": "2026-06-21T10:34:16.180Z"
   },
   {
     "adId": 1066343518,
@@ -4028,7 +4028,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/43dad6a8-1f90-492f-974c-4f70de1256d1.jpg"
     ],
     "firstSeenAt": "2026-05-01T09:17:20.861Z",
-    "lastSeenAt": "2026-05-02T08:25:33.530Z"
+    "lastSeenAt": "2026-06-21T10:34:16.180Z"
   },
   {
     "adId": 1067056668,
@@ -4469,7 +4469,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/736a12f1-77ea-41ca-8ba6-152781250269.jpg"
     ],
     "firstSeenAt": "2026-05-06T09:31:02.941Z",
-    "lastSeenAt": "2026-06-20T10:06:10.753Z"
+    "lastSeenAt": "2026-06-21T10:34:16.180Z"
   },
   {
     "adId": 1067820305,
@@ -5356,7 +5356,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3356a73a-1741-40ff-91b7-8df677fc23be.jpg"
     ],
     "firstSeenAt": "2026-05-14T09:57:44.876Z",
-    "lastSeenAt": "2026-06-20T10:06:10.753Z"
+    "lastSeenAt": "2026-06-21T10:34:16.180Z"
   },
   {
     "adId": 1068945795,
@@ -7481,7 +7481,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ef0faeba-38c7-401b-9424-0d5ba3de2476.jpg"
     ],
     "firstSeenAt": "2026-06-17T11:47:40.607Z",
-    "lastSeenAt": "2026-06-20T10:06:10.753Z"
+    "lastSeenAt": "2026-06-21T10:34:16.180Z"
   },
   {
     "adId": 1073432053,
@@ -7618,6 +7618,29 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/46e7e5a1-29fa-43d4-b050-5facf89c1e77.jpg"
     ],
     "firstSeenAt": "2026-06-20T10:06:10.753Z",
-    "lastSeenAt": "2026-06-20T10:06:10.753Z"
+    "lastSeenAt": "2026-06-21T10:34:16.180Z"
+  },
+  {
+    "adId": 1073950926,
+    "link": "https://re.kufar.by/vi/1073950926",
+    "title": "Земельный участок",
+    "description": "Участок без насаждений, возможность проведения газа,белтелекома, бурение скважины,доступность для строительной техники,2 км от Коробчиц",
+    "priceByn": 50499,
+    "priceUsd": 18100,
+    "address": "137, СТ Железнодорожник, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 8.24,
+    "seller": "Дмитрий",
+    "features": [
+      "Отсутствует",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.62235946379664,
+      "lon": 23.719980214359428
+    },
+    "listTime": "2026-06-20T12:32:11Z",
+    "images": [],
+    "firstSeenAt": "2026-06-21T10:34:16.180Z",
+    "lastSeenAt": "2026-06-21T10:34:16.180Z"
   }
 ]
