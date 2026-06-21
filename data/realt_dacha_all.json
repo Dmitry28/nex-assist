@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-19T11:25:14.427Z"
+    "lastSeenAt": "2026-06-21T10:34:44.767Z"
   },
   {
     "adId": 4057786,
@@ -1085,7 +1085,7 @@
       "https://cdn.realt.by/img/55/19cb7bd0-455f-11f1-83c6-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-20T10:07:33.899Z"
+    "lastSeenAt": "2026-06-21T10:34:44.767Z"
   },
   {
     "adId": 3018174,
@@ -6386,7 +6386,7 @@
       "https://cdn.realt.by/img/55/10b6341a-61aa-11f1-a69f-0242ac120003"
     ],
     "firstSeenAt": "2026-06-07T10:05:05.020Z",
-    "lastSeenAt": "2026-06-20T10:07:33.899Z"
+    "lastSeenAt": "2026-06-21T10:34:44.767Z"
   },
   {
     "adId": 4146807,
@@ -6635,7 +6635,7 @@
       "https://cdn.realt.by/img/55/c98f8244-6735-11f1-b8e1-0242ac120003"
     ],
     "firstSeenAt": "2026-06-14T10:27:14.777Z",
-    "lastSeenAt": "2026-06-20T10:07:33.899Z"
+    "lastSeenAt": "2026-06-21T10:34:44.767Z"
   },
   {
     "adId": 4153367,
@@ -6744,5 +6744,46 @@
     ],
     "firstSeenAt": "2026-06-18T11:25:45.827Z",
     "lastSeenAt": "2026-06-19T11:25:14.427Z"
+  },
+  {
+    "adId": 4159089,
+    "uuid": "0c897f50-6ca4-11f1-9ae5-d964c5b7109a",
+    "link": "https://realt.by/sale-dachi/object/4159089/",
+    "title": "Дача/ загородный дом",
+    "description": "Современный каркасный дом 2020 года для отдыха и жизни.",
+    "priceByn": 1000,
+    "priceUsd": 359,
+    "address": "Университетское",
+    "area": 65,
+    "areaLiving": 65,
+    "plotArea": 7,
+    "yearBuilt": 2020,
+    "seller": "Александр",
+    "listTime": "2026-06-20T16:11:57+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/3860ab3a-6c95-11f1-83a2-0242ac120003",
+      "https://cdn.realt.by/img/55/780feab6-6c95-11f1-9e9d-0242ac120003",
+      "https://cdn.realt.by/img/55/3cfeca12-6c97-11f1-bcc6-0242ac120003",
+      "https://cdn.realt.by/img/55/db29797e-6c94-11f1-adc3-0242ac120003",
+      "https://cdn.realt.by/img/55/59f8e4d6-6c97-11f1-9d97-0242ac120003",
+      "https://cdn.realt.by/img/55/6fd92e32-6c97-11f1-b232-0242ac120003",
+      "https://cdn.realt.by/img/55/7f680f62-6c97-11f1-a966-0242ac120003",
+      "https://cdn.realt.by/img/55/968e686c-6c97-11f1-9b74-0242ac120003",
+      "https://cdn.realt.by/img/55/bfea561c-6c97-11f1-a36d-0242ac120003",
+      "https://cdn.realt.by/img/55/041f85e6-6c98-11f1-a66b-0242ac120003",
+      "https://cdn.realt.by/img/55/05e90c3c-6c9b-11f1-bd9c-0242ac120003",
+      "https://cdn.realt.by/img/55/00d2db96-6ca1-11f1-bc2f-0242ac120003",
+      "https://cdn.realt.by/img/55/0a9a3322-6ca1-11f1-9c54-0242ac120003",
+      "https://cdn.realt.by/img/55/2b219ad6-6ca1-11f1-beca-0242ac120003",
+      "https://cdn.realt.by/img/55/f10710b4-6ca1-11f1-a99b-0242ac120003",
+      "https://cdn.realt.by/img/55/1d83c10a-6ca2-11f1-9cc8-0242ac120003",
+      "https://cdn.realt.by/img/55/44fdb326-6ca2-11f1-8a54-0242ac120003",
+      "https://cdn.realt.by/img/55/8a5053ac-6ca2-11f1-9bd2-0242ac120003",
+      "https://cdn.realt.by/img/55/979a3dca-6ca2-11f1-869b-0242ac120003",
+      "https://cdn.realt.by/img/55/c0b8f85e-6ca2-11f1-b9d8-0242ac120003",
+      "https://cdn.realt.by/img/55/ce009ab2-6ca2-11f1-9595-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-21T10:34:44.767Z",
+    "lastSeenAt": "2026-06-21T10:34:44.767Z"
   }
 ]
