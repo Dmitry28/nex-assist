@@ -2806,7 +2806,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/95d7e93c-d956-4a23-a935-da8b54ce5a51.jpg"
     ],
     "firstSeenAt": "2026-05-09T08:44:04.835Z",
-    "lastSeenAt": "2026-06-21T10:34:16.176Z"
+    "lastSeenAt": "2026-06-22T12:51:51.465Z"
   },
   {
     "adId": 1068334517,
@@ -3607,7 +3607,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39ba00b4-ed0b-45e2-a4e5-edade7282d26.jpg"
     ],
     "firstSeenAt": "2026-05-27T11:01:06.131Z",
-    "lastSeenAt": "2026-06-21T10:34:16.176Z"
+    "lastSeenAt": "2026-06-22T12:51:51.465Z"
   },
   {
     "adId": 1070272138,
@@ -3692,7 +3692,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cfd08504-eb47-477e-954c-bb3b5a1c4433.jpg"
     ],
     "firstSeenAt": "2026-05-28T10:59:13.524Z",
-    "lastSeenAt": "2026-06-21T10:34:16.176Z"
+    "lastSeenAt": "2026-06-22T12:51:51.465Z"
   },
   {
     "adId": 1070550879,
@@ -4421,7 +4421,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2a72e0ad-05ac-4847-8049-50696a65130f.jpg"
     ],
     "firstSeenAt": "2026-06-09T10:48:32.689Z",
-    "lastSeenAt": "2026-06-21T10:34:16.176Z"
+    "lastSeenAt": "2026-06-22T12:51:51.465Z"
   },
   {
     "adId": 1072572457,
@@ -4869,7 +4869,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e7bb044f-8581-42fa-b05b-fc12ea498242.jpg"
     ],
     "firstSeenAt": "2026-06-21T10:34:16.176Z",
-    "lastSeenAt": "2026-06-21T10:34:16.176Z"
+    "lastSeenAt": "2026-06-22T12:51:51.465Z"
   },
   {
     "adId": 1074022973,
@@ -4901,7 +4901,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/27301004-90df-4849-bfc0-cd5850cd0d64.jpg"
     ],
     "firstSeenAt": "2026-06-21T10:34:16.176Z",
-    "lastSeenAt": "2026-06-21T10:34:16.176Z"
+    "lastSeenAt": "2026-06-22T12:51:51.465Z"
   },
   {
     "adId": 1073987743,
@@ -4931,7 +4931,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3d9176a0-b265-4cbf-a419-e4f81f340d6b.jpg"
     ],
     "firstSeenAt": "2026-06-21T10:34:16.176Z",
-    "lastSeenAt": "2026-06-21T10:34:16.176Z"
+    "lastSeenAt": "2026-06-22T12:51:51.465Z"
   },
   {
     "adId": 1073979755,
@@ -4966,7 +4966,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3cd86471-d246-4036-bd43-a00b21974ce7.jpg"
     ],
     "firstSeenAt": "2026-06-21T10:34:16.176Z",
-    "lastSeenAt": "2026-06-21T10:34:16.176Z"
+    "lastSeenAt": "2026-06-22T12:51:51.465Z"
   },
   {
     "adId": 1073946186,
@@ -5023,5 +5023,109 @@
     ],
     "firstSeenAt": "2026-06-21T10:34:16.176Z",
     "lastSeenAt": "2026-06-21T10:34:16.176Z"
+  },
+  {
+    "adId": 1074176355,
+    "link": "https://re.kufar.by/vi/1074176355",
+    "title": "Продаю Гараж",
+    "description": "Продаю два гаража ул.Малаховичская г.Гродно.Гаражи расположены рядом (см.фото).Есть яма,свет.Цена за два гаража 55 000 бел.рублей",
+    "priceByn": 55000,
+    "priceUsd": 19713,
+    "address": "Малаховичская ул, Гродно, Гродненская область",
+    "area": 39,
+    "seller": "Елена",
+    "propertyType": "Гараж",
+    "features": [
+      "Отсутствует"
+    ],
+    "coordinates": {
+      "lat": 53.628592,
+      "lon": 23.841153
+    },
+    "listTime": "2026-06-22T11:10:18Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0cb2c14e-befe-4eed-a05c-a9d4b118695a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6ee65c12-1bcf-45a6-b102-a434b4fc2c3b.jpg"
+    ],
+    "firstSeenAt": "2026-06-22T12:51:51.465Z",
+    "lastSeenAt": "2026-06-22T12:51:51.465Z"
+  },
+  {
+    "adId": 1074172357,
+    "link": "https://re.kufar.by/vi/1074172357",
+    "title": "Продается гараж ГСК Радуга",
+    "description": "Сухой гараж. Есть электричество.",
+    "priceByn": 15000,
+    "priceUsd": 5376,
+    "address": "Максима Горького ул, 126Вблок35к3534, Гродно, Гродненская область",
+    "area": 17,
+    "seller": "Константин",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В"
+    ],
+    "coordinates": {
+      "lat": 53.71217291498258,
+      "lon": 23.80778855421247
+    },
+    "listTime": "2026-06-22T10:33:54Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8a502d75-cfce-459f-a89c-292ba8254ad9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/91d60cbe-dc79-4786-995e-d4c45fabdf51.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1e672a35-bb5b-4dff-9d49-2e20f8e44bd3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/56bd442d-375b-4b57-b59b-abe21b1e8e12.jpg"
+    ],
+    "firstSeenAt": "2026-06-22T12:51:51.465Z",
+    "lastSeenAt": "2026-06-22T12:51:51.465Z"
+  },
+  {
+    "adId": 1074160532,
+    "link": "https://re.kufar.by/vi/1074160532",
+    "title": "Гараж металлический",
+    "description": "Ленинский район, по ул. Реймонта.  Гараж металлический 6.1м х 3м, без места, на вывоз. Условно разборный - стены разбираются, крыша цельная из сваренн",
+    "priceByn": 1500,
+    "priceUsd": 538,
+    "address": "Ленинский район, Гродно, Гродненская область",
+    "area": 18,
+    "seller": "Алексей",
+    "coordinates": {
+      "lat": 53.69163435308393,
+      "lon": 23.830741046987928
+    },
+    "listTime": "2026-06-22T08:03:43Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3347cbbd-3380-4e8f-bc57-efe0a1cc7f03.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ce17bace-0b69-42dc-8761-41f2c4e2ce6e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d0ee5b0b-6de5-4001-ac80-393c955c6d9e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1bd0df7f-0165-453f-8148-159025e29cbd.jpg"
+    ],
+    "firstSeenAt": "2026-06-22T12:51:51.465Z",
+    "lastSeenAt": "2026-06-22T12:51:51.465Z"
+  },
+  {
+    "adId": 1074085972,
+    "link": "https://re.kufar.by/vi/1074085972",
+    "title": "Продается гараж",
+    "description": "Возможен торг в гараже имеется смотровая яма и подвал",
+    "priceByn": 13950,
+    "priceUsd": 5000,
+    "address": "Венечная ул, Гродно, Гродненская область",
+    "area": 16.3,
+    "seller": "Генрих",
+    "propertyType": "Гараж",
+    "features": [
+      "Смотровая яма",
+      "Подвал",
+      "Наземная",
+      "Отсутствует"
+    ],
+    "coordinates": {
+      "lat": 53.666322,
+      "lon": 23.760897
+    },
+    "listTime": "2026-06-21T15:52:34Z",
+    "images": [],
+    "firstSeenAt": "2026-06-22T12:51:51.465Z",
+    "lastSeenAt": "2026-06-22T12:51:51.465Z"
   }
 ]
