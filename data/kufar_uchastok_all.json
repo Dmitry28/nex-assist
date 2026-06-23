@@ -2529,7 +2529,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/51dcdc03-04b8-42a3-9f99-581514c44c9a.jpg"
     ],
     "firstSeenAt": "2026-04-14T08:39:12.555Z",
-    "lastSeenAt": "2026-06-22T12:51:51.468Z"
+    "lastSeenAt": "2026-06-23T10:43:51.835Z"
   },
   {
     "adId": 1064823553,
@@ -2637,7 +2637,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/19b9eb71-8846-4f11-a7c2-f9db390d0329.jpg"
     ],
     "firstSeenAt": "2026-04-15T08:37:31.945Z",
-    "lastSeenAt": "2026-06-13T09:56:32.512Z"
+    "lastSeenAt": "2026-06-23T10:43:51.835Z"
   },
   {
     "adId": 1065178373,
@@ -4469,7 +4469,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/736a12f1-77ea-41ca-8ba6-152781250269.jpg"
     ],
     "firstSeenAt": "2026-05-06T09:31:02.941Z",
-    "lastSeenAt": "2026-06-22T12:51:51.468Z"
+    "lastSeenAt": "2026-06-23T10:43:51.835Z"
   },
   {
     "adId": 1067820305,
@@ -5015,7 +5015,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/db07d574-4b6c-4c41-a280-40115a11f8b8.jpg"
     ],
     "firstSeenAt": "2026-05-12T10:22:56.048Z",
-    "lastSeenAt": "2026-06-22T12:51:51.468Z"
+    "lastSeenAt": "2026-06-23T10:43:51.835Z"
   },
   {
     "adId": 1068597910,
@@ -5932,7 +5932,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fbcc186f-b49d-461a-83d2-a1677e6fcf96.jpg"
     ],
     "firstSeenAt": "2026-05-24T09:20:42.771Z",
-    "lastSeenAt": "2026-06-22T12:51:51.468Z"
+    "lastSeenAt": "2026-06-23T10:43:51.835Z"
   },
   {
     "adId": 1069908317,
@@ -7711,7 +7711,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7f1dd455-48fc-472a-9a46-51e04b0c3357.jpg"
     ],
     "firstSeenAt": "2026-06-22T12:51:51.468Z",
-    "lastSeenAt": "2026-06-22T12:51:51.468Z"
+    "lastSeenAt": "2026-06-23T10:43:51.835Z"
   },
   {
     "adId": 1074101664,
@@ -7736,6 +7736,129 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/50a96219-8667-4b6c-9c85-246e49b1166e.jpg"
     ],
     "firstSeenAt": "2026-06-22T12:51:51.468Z",
-    "lastSeenAt": "2026-06-22T12:51:51.468Z"
+    "lastSeenAt": "2026-06-23T10:43:51.835Z"
+  },
+  {
+    "adId": 1074272180,
+    "link": "https://re.kufar.by/vi/1074272180",
+    "title": "Дачный участок",
+    "description": "Участок расположен в лесном массиве, 7 км от города по асфалитрованной дороге, 0,6 км красивое платное рыбное озеро, 1,2 км - озеро юбилейное. Вода на",
+    "priceByn": 10360,
+    "priceUsd": 3700,
+    "address": "СТ Кедр, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5,
+    "seller": "Вероника",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.62525184614626,
+      "lon": 23.684628412676542
+    },
+    "listTime": "2026-06-23T07:14:09Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eca29879-7ab8-446f-9e8a-7dc3ce71bc88.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c615e4fa-c08b-40b9-b9b3-a2e4d43fadf0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c7d40e96-ca6f-4eb1-8e3b-d16349ab15c7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6eb069d2-0c66-4ae2-a4e3-e78ca53f15ed.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/721f9a60-eb99-4cf3-878a-3aeb96f9cfd4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3397a78f-273a-46f0-85bd-0795cbddb8c9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bfe0f481-3fe8-424c-af4f-d33a7e61f565.jpg"
+    ],
+    "firstSeenAt": "2026-06-23T10:43:51.835Z",
+    "lastSeenAt": "2026-06-23T10:43:51.835Z"
+  },
+  {
+    "adId": 1074207833,
+    "link": "https://re.kufar.by/vi/1074207833",
+    "title": "земел. участок СТ Афган-2",
+    "description": "В продаже земельный участок в СТ \"Афган-2\", район Коробчицы. Участок расположен в одном из комфортных районов.\nПлощадь: 0,0801 га (частная собственнос",
+    "priceByn": 15400,
+    "priceUsd": 5500,
+    "address": "СТ Афган-2, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 8,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.599667,
+      "lon": 23.696317
+    },
+    "listTime": "2026-06-22T16:19:18Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1ab606c1-c2ea-4363-9f84-68283453773d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ba085054-8b83-4215-88cf-081450c4baa9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3ec1499d-d365-44d7-ba70-82f279bf1b78.jpg"
+    ],
+    "firstSeenAt": "2026-06-23T10:43:51.835Z",
+    "lastSeenAt": "2026-06-23T10:43:51.835Z"
+  },
+  {
+    "adId": 1074205953,
+    "link": "https://re.kufar.by/vi/1074205953",
+    "title": "участок СТ Горицвет",
+    "description": "Продается   отличный земельный участок в 10  км от   города,  в экологически чистом районе   направление на Каролино) , СТ «Горицвет ».  \n Участок ров",
+    "priceByn": 30800,
+    "priceUsd": 11000,
+    "address": "СТ Горицвет, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 9.15,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.611278,
+      "lon": 23.671749
+    },
+    "listTime": "2026-06-22T15:53:45Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5eab25a8-19ad-4bb9-8de3-58b307e4df38.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0d7de1b5-fc14-4865-9576-aafcdfe58652.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a32512d2-6e46-4706-8857-789cd4e5d140.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1d8f56f1-de24-4c42-919f-ed55d96dfe0f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8563dc77-e838-4309-9ad3-dc4157bc06ae.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/dfea8502-d716-4a5a-bb83-eeca6051d2d4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4bd63994-ccde-4f9f-9bbf-ce2b40df6a47.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a8e7c47e-d2c0-4c73-89d7-2324b28e5c6a.jpg"
+    ],
+    "firstSeenAt": "2026-06-23T10:43:51.835Z",
+    "lastSeenAt": "2026-06-23T10:43:51.835Z"
+  },
+  {
+    "adId": 1074205944,
+    "link": "https://re.kufar.by/vi/1074205944",
+    "title": "земельный участок СТ Лесное-2",
+    "description": "Продается земельный участок рядом с г. Гродно СТ Лесное-2 , Гродненская область, Подлабенский с/с,  расположенный на участке площадью 8,16 соток (форм",
+    "priceByn": 33000,
+    "priceUsd": 11786,
+    "address": "СТ Лесное-2, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 8.16,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.617449,
+      "lon": 23.705438
+    },
+    "listTime": "2026-06-22T15:53:40Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fe4f8e40-63d0-4f15-9c26-87bfd024f50b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a796b601-88b0-4200-ba63-fc6ef1f76a1a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7cde1b69-8ed9-425c-a964-0828f111e6dc.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8edbfad6-9064-4ecf-874b-85ae13fe4f39.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/80614abd-bff0-43bb-beec-d72a3b3b4496.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ef188635-bc68-4695-8ba9-53c97646ea1d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c3a2a83d-cb48-43dc-b496-d913e528c8b9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/703b1bd1-c006-404b-a6cc-cde931ab3546.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/331e2473-6e4d-4bad-b8fc-6fa693f93ac4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c217227d-380a-4a57-a761-bdaecfca9b7b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0c7b2ea2-3887-4e20-9bd6-fbad3b4fa55b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f2bcd02b-3012-4116-bf82-805c1cbf5f1a.jpg"
+    ],
+    "firstSeenAt": "2026-06-23T10:43:51.835Z",
+    "lastSeenAt": "2026-06-23T10:43:51.835Z"
   }
 ]

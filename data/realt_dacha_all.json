@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-22T12:55:21.215Z"
+    "lastSeenAt": "2026-06-23T10:48:28.095Z"
   },
   {
     "adId": 4057786,
@@ -786,14 +786,14 @@
     "link": "https://realt.by/sale-dachi/object/3901097/",
     "title": "Муравей",
     "description": "Продажа дачи в живописном месте вблизи деревень Немейши и Коробчицы Гродненского района.",
-    "priceByn": 57000,
-    "priceUsd": 20223,
+    "priceByn": 54000,
+    "priceUsd": 19286,
     "address": "Муравей  13",
     "area": 45.4,
     "plotArea": 5.37,
     "yearBuilt": 1999,
     "seller": "Кватэра",
-    "listTime": "2026-05-08T11:31:52+03:00",
+    "listTime": "2026-06-23T13:39:53+03:00",
     "images": [
       "https://cdn.realt.by/img/55/69135258-9eb6-11f0-b24f-0242ac120002",
       "https://cdn.realt.by/img/55/6c985996-9eb6-11f0-9b80-0242ac120002",
@@ -809,7 +809,7 @@
       "https://cdn.realt.by/img/55/926b4bce-9eb6-11f0-a916-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-06-23T10:48:28.095Z"
   },
   {
     "adId": 4085116,
@@ -5552,7 +5552,7 @@
       "https://cdn.realt.by/img/55/f87a1ea4-56da-11f1-a842-0242ac120003"
     ],
     "firstSeenAt": "2026-05-24T09:22:42.706Z",
-    "lastSeenAt": "2026-06-22T12:55:21.215Z"
+    "lastSeenAt": "2026-06-23T10:48:28.095Z"
   },
   {
     "adId": 4137152,
@@ -5763,7 +5763,7 @@
       "https://cdn.realt.by/img/55/6ca3b00c-5ac2-11f1-ae20-0242ac120003"
     ],
     "firstSeenAt": "2026-05-29T11:13:58.463Z",
-    "lastSeenAt": "2026-06-22T12:55:21.215Z"
+    "lastSeenAt": "2026-06-23T10:48:28.095Z"
   },
   {
     "adId": 4139294,
@@ -6784,7 +6784,7 @@
       "https://cdn.realt.by/img/55/ce009ab2-6ca2-11f1-9595-0242ac120003"
     ],
     "firstSeenAt": "2026-06-21T10:34:44.767Z",
-    "lastSeenAt": "2026-06-22T12:55:21.215Z"
+    "lastSeenAt": "2026-06-23T10:48:28.095Z"
   },
   {
     "adId": 4160198,
@@ -6810,6 +6810,6 @@
       "https://cdn.realt.by/img/55/f9c0955a-6e17-11f1-aa7c-0242ac120003"
     ],
     "firstSeenAt": "2026-06-22T12:55:21.215Z",
-    "lastSeenAt": "2026-06-22T12:55:21.215Z"
+    "lastSeenAt": "2026-06-23T10:48:28.095Z"
   }
 ]
