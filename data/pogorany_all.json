@@ -3,10 +3,10 @@
     "uid": 369635771192,
     "link": "https://pogorany.by/tproduct/369635771192-kvartira-90-m-v-taunhause",
     "title": "Квартира 90 м² в таунхаусе",
-    "price": 103500,
-    "currency": "USD",
-    "pricePerM2": 1150,
-    "pricePerM2Currency": "USD",
+    "price": 289800,
+    "currency": "BYN",
+    "pricePerM2": 3220,
+    "pricePerM2Currency": "BYN",
     "area": "90 м²",
     "rooms": "4",
     "bathrooms": "2",
@@ -17,7 +17,7 @@
       "https://static.tildacdn.com/stor6533-3937-4737-a133-616165613136/22226708.jpg"
     ],
     "firstSeenAt": "2026-05-18T20:56:37.948Z",
-    "lastSeenAt": "2026-06-23T09:56:32.532Z"
+    "lastSeenAt": "2026-06-24T09:56:44.411Z"
   },
   {
     "uid": 629746871702,
@@ -37,16 +37,16 @@
       "https://static.tildacdn.com/stor6533-3937-4737-a133-616165613136/22226708.jpg"
     ],
     "firstSeenAt": "2026-05-18T20:56:37.948Z",
-    "lastSeenAt": "2026-06-23T09:56:32.532Z"
+    "lastSeenAt": "2026-06-24T09:56:44.411Z"
   },
   {
     "uid": 475531073612,
     "link": "https://pogorany.by/tproduct/475531073612-kvartira-99-m-v-taunhause",
     "title": "Квартира 99 м² в таунхаусе",
-    "price": 108900,
-    "currency": "USD",
-    "pricePerM2": 1100,
-    "pricePerM2Currency": "USD",
+    "price": 306900,
+    "currency": "BYN",
+    "pricePerM2": 3100,
+    "pricePerM2Currency": "BYN",
     "area": "99 м²",
     "rooms": "4",
     "bathrooms": "2",
@@ -57,15 +57,15 @@
       "https://static.tildacdn.com/stor3132-3962-4630-b031-616266333463/98580098.jpg"
     ],
     "firstSeenAt": "2026-05-18T20:56:37.948Z",
-    "lastSeenAt": "2026-06-23T09:56:32.532Z"
+    "lastSeenAt": "2026-06-24T09:56:44.411Z"
   },
   {
     "uid": 515245569902,
     "link": "https://pogorany.by/tproduct/515245569902-kvartira-100-m-v-taunhause",
     "title": "Квартира 100 м² в таунхаусе",
-    "price": 300000,
+    "price": 320000,
     "currency": "BYN",
-    "pricePerM2": 3000,
+    "pricePerM2": 3200,
     "pricePerM2Currency": "BYN",
     "area": "100 м²",
     "rooms": "4",
@@ -77,6 +77,6 @@
       "https://static.tildacdn.com/stor3534-6337-4166-a539-363032333931/74530908.jpg"
     ],
     "firstSeenAt": "2026-06-10T10:02:49.154Z",
-    "lastSeenAt": "2026-06-23T09:56:32.532Z"
+    "lastSeenAt": "2026-06-24T09:56:44.411Z"
   }
 ]

@@ -2681,8 +2681,8 @@
     "link": "https://realt.by/sale-cottages/object/4025222/",
     "title": "Хороший дом в д. Коробчицы",
     "description": "Расстояние до города 10 минут на автомобиле (5 км). В деревне есть несколько продуктовых магазинов, остановки общественного транспорта, рядом расположен Парк в агротуристическом комплексе «Гарадзенскі маёнтак «Каробчыцы», кусочек самого настоящего заповедного леса рядом с городом, База отдыха «Дом рыбака» (охотничье-рыбоводное -хозяйство) на водохранилище Верхнее, Конноспортивный клуб «Амадеус», прачечная №1, Вейкпарк «Revers», водохранилище «Юбилейное».",
-    "priceByn": 150,
-    "priceUsd": 55,
+    "priceByn": 460000,
+    "priceUsd": 163335,
     "address": "Коробчицы",
     "area": 344.6,
     "areaLiving": 124.8,
@@ -2690,7 +2690,7 @@
     "yearBuilt": 1994,
     "levels": 2,
     "seller": "Нина",
-    "listTime": "2026-05-22T16:00:59+03:00",
+    "listTime": "2026-06-23T13:44:58+03:00",
     "images": [
       "https://cdn.realt.by/img/55/84dec1b6-fdd9-11f0-ab80-0242ac120002",
       "https://cdn.realt.by/img/55/8502cca0-fdd9-11f0-8538-0242ac120002",
@@ -2729,7 +2729,7 @@
       "https://cdn.realt.by/img/55/e9453a9a-fdd9-11f0-be0f-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-22T13:52:19.600Z"
+    "lastSeenAt": "2026-06-24T09:56:29.243Z"
   },
   {
     "adId": 3960788,
@@ -4837,17 +4837,17 @@
     "adId": 4101834,
     "uuid": "aa739790-3e1a-11f1-81e8-eba9aa236123",
     "link": "https://realt.by/sale-cottages/object/4101834/",
-    "title": "Гродно, Калиновая ул.",
+    "title": "Гродно, 3-й Калиновый проезд",
     "description": "Оптимальное решение для ценителей комфорта, которым важна городская инфраструктура. Проект предлагает приватную атмосферу, высокий уровень комфорта и достаточное личное пространство для всех домочадцев. Рассрочка от застройщика до 3-х лет.",
-    "priceByn": 304245,
-    "priceUsd": 108900,
-    "address": "Гродно Калиновая ул. 6",
+    "priceByn": 306900,
+    "priceUsd": 108973,
+    "address": "Гродно 3-й Калиновый проезд 8",
     "area": 99,
     "areaLiving": 99,
     "plotArea": 1,
     "yearBuilt": 2025,
     "seller": "ООО \"АйронИнвестПроект\"",
-    "listTime": "2026-05-13T09:51:44+03:00",
+    "listTime": "2026-06-24T10:15:08+03:00",
     "images": [
       "https://cdn.realt.by/img/55/76315be8-3e1a-11f1-8e8b-0242ac120003",
       "https://cdn.realt.by/img/55/76384c64-3e1a-11f1-82c4-0242ac120003",
@@ -4871,23 +4871,23 @@
       "https://cdn.realt.by/img/55/7626a7d4-3e1a-11f1-b3fc-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-14T10:05:10.115Z"
+    "lastSeenAt": "2026-06-24T09:56:29.243Z"
   },
   {
     "adId": 4101829,
     "uuid": "119f4b40-3e1a-11f1-9cb4-05dd8f0ee420",
     "link": "https://realt.by/sale-cottages/object/4101829/",
-    "title": "Гродно, Калиновая ул.",
+    "title": "Гродно, 3-й Калиновый проезд",
     "description": "Оптимальное решение для ценителей комфорта, которым важна городская инфраструктура. Проект предлагает приватную атмосферу, высокий уровень комфорта и достаточное личное пространство для всех домочадцев. Рассрочка от застройщика до 3-х лет.",
-    "priceByn": 289158,
-    "priceUsd": 103500,
-    "address": "Гродно Калиновая ул. 7",
+    "priceByn": 270000,
+    "priceUsd": 95870,
+    "address": "Гродно 3-й Калиновый проезд 6",
     "area": 90,
     "areaLiving": 90,
     "plotArea": 1,
     "yearBuilt": 2025,
     "seller": "ООО \"АйронИнвестПроект\"",
-    "listTime": "2026-05-13T09:51:44+03:00",
+    "listTime": "2026-06-24T10:15:08+03:00",
     "images": [
       "https://cdn.realt.by/img/55/db5f11f0-3e19-11f1-8f86-0242ac120003",
       "https://cdn.realt.by/img/55/db670f04-3e19-11f1-8739-0242ac120003",
@@ -4904,13 +4904,14 @@
       "https://cdn.realt.by/img/55/db5d1184-3e19-11f1-aac5-0242ac120003",
       "https://cdn.realt.by/img/55/db5debea-3e19-11f1-873b-0242ac120003",
       "https://cdn.realt.by/img/55/db5d645e-3e19-11f1-a7e9-0242ac120003",
-      "https://cdn.realt.by/img/55/db6b7832-3e19-11f1-829f-0242ac120003",
-      "https://cdn.realt.by/img/55/db6dd6c2-3e19-11f1-84f8-0242ac120003",
-      "https://cdn.realt.by/img/55/db6d3bcc-3e19-11f1-8b02-0242ac120003",
-      "https://cdn.realt.by/img/55/01637364-3e1a-11f1-a853-0242ac120003"
+      "https://cdn.realt.by/img/55/01637364-3e1a-11f1-a853-0242ac120003",
+      "https://cdn.realt.by/img/55/261f1934-6f4c-11f1-930b-0242ac120003",
+      "https://cdn.realt.by/img/55/26227d5e-6f4c-11f1-93d2-0242ac120003",
+      "https://cdn.realt.by/img/55/2624e4b8-6f4c-11f1-9089-0242ac120003",
+      "https://cdn.realt.by/img/55/2627e104-6f4c-11f1-81ea-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-14T10:05:10.115Z"
+    "lastSeenAt": "2026-06-24T09:56:29.243Z"
   },
   {
     "adId": 3545397,
@@ -5903,7 +5904,7 @@
       "https://static.realt.by/thumb/c/430x374/c5f662a11b216aff1dcebc6285dd1e9e/b7/i/11013c3efib7/93fc9e448f.jpeg"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-23T09:56:26.622Z"
+    "lastSeenAt": "2026-06-24T09:56:29.243Z"
   },
   {
     "adId": 3878873,
@@ -8325,17 +8326,18 @@
     "link": "https://realt.by/sale-cottages/object/4059196/",
     "title": "Гродно, проезд Калиновый 3-й",
     "description": "Двухуровневые квартиры в таунхаусах — это гармония городского комфорта и загородной свободы. Здесь нет соседей над головой, только ваше личное пространство с собственным участком. Почему вам здесь понравится: Ваша земля: Небольшой участок под окнами — для уютных посиделок, первых цветов или чашки кофе на свежем воздухе. Парковка у порога: Забудьте о долгих поисках места. Выходите из машины и... уже дома. Продуманная планировка и черновая отделка от застройщика.",
-    "priceByn": 289158,
-    "priceUsd": 103500,
+    "priceByn": 273000,
+    "priceUsd": 96936,
     "address": "Гродно проезд Калиновый 3-й 10",
     "area": 91,
     "plotArea": 1.83,
     "yearBuilt": 2025,
     "levels": 2,
     "seller": "ООО \"АйронИнвестПроект\"",
-    "listTime": "2026-05-13T09:59:55+03:00",
+    "listTime": "2026-06-24T10:15:08+03:00",
     "images": [
-      "https://cdn.realt.by/img/55/26e31fc8-1d3a-11f1-8948-0242ac120002",
+      "https://cdn.realt.by/img/55/e9a90f32-1d39-11f1-a6d3-0242ac120002",
+      "https://cdn.realt.by/img/55/e9a06256-1d39-11f1-9cfc-0242ac120002",
       "https://cdn.realt.by/img/55/e9980160-1d39-11f1-bfd6-0242ac120002",
       "https://cdn.realt.by/img/55/e998d7e8-1d39-11f1-a2b1-0242ac120002",
       "https://cdn.realt.by/img/55/e9993c42-1d39-11f1-ac31-0242ac120002",
@@ -8343,12 +8345,17 @@
       "https://cdn.realt.by/img/55/e9991bae-1d39-11f1-813c-0242ac120002",
       "https://cdn.realt.by/img/55/e99a51d6-1d39-11f1-ab9b-0242ac120002",
       "https://cdn.realt.by/img/55/e99f24c2-1d39-11f1-bcbe-0242ac120002",
-      "https://cdn.realt.by/img/55/e9a06256-1d39-11f1-9cfc-0242ac120002",
-      "https://cdn.realt.by/img/55/e9a90f32-1d39-11f1-a6d3-0242ac120002",
-      "https://cdn.realt.by/img/55/e455bdd2-1d39-11f1-938b-0242ac120002"
+      "https://cdn.realt.by/img/55/e455bdd2-1d39-11f1-938b-0242ac120002",
+      "https://cdn.realt.by/img/55/3c5c5aa4-6f4c-11f1-9a3f-0242ac120003",
+      "https://cdn.realt.by/img/55/3c5c5a2c-6f4c-11f1-b456-0242ac120003",
+      "https://cdn.realt.by/img/55/3c5fe48a-6f4c-11f1-86aa-0242ac120003",
+      "https://cdn.realt.by/img/55/3c622d6c-6f4c-11f1-ae96-0242ac120003",
+      "https://cdn.realt.by/img/55/3c60b4c8-6f4c-11f1-830b-0242ac120003",
+      "https://cdn.realt.by/img/55/3c622d62-6f4c-11f1-a22b-0242ac120003",
+      "https://cdn.realt.by/img/55/3c628636-6f4c-11f1-b977-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-14T10:05:10.115Z"
+    "lastSeenAt": "2026-06-24T09:56:29.243Z"
   },
   {
     "adId": 3990491,
@@ -8427,8 +8434,8 @@
     "link": "https://realt.by/sale-cottages/object/4046453/",
     "title": "Гродно, Проезд Калиновый 4-й",
     "description": "Все центральные коммуникации, рассрочка от застройщика. Отдельный вход, удобное место для хранения велосипедов, парковочное место, собственная огороженная зеленая зона",
-    "priceByn": 304746,
-    "priceUsd": 108900,
+    "priceByn": 306900,
+    "priceUsd": 108973,
     "address": "Гродно Проезд Калиновый 4-й 3",
     "area": 99.3,
     "areaLiving": 76.2,
@@ -8436,7 +8443,7 @@
     "yearBuilt": 2025,
     "levels": 2,
     "seller": "ООО \"АйронИнвестПроект\"",
-    "listTime": "2026-05-12T11:13:51+03:00",
+    "listTime": "2026-06-24T10:15:35+03:00",
     "images": [
       "https://cdn.realt.by/img/55/1faa8d32-108c-11f1-b4a9-0242ac120003",
       "https://cdn.realt.by/img/55/1fb1d2fe-108c-11f1-af6b-0242ac120003",
@@ -8444,10 +8451,17 @@
       "https://cdn.realt.by/img/55/200d8928-108c-11f1-b9e2-0242ac120003",
       "https://cdn.realt.by/img/55/200eed4a-108c-11f1-b94c-0242ac120003",
       "https://cdn.realt.by/img/55/20126c40-108c-11f1-9725-0242ac120003",
-      "https://cdn.realt.by/img/55/2e6062f2-108c-11f1-8a0f-0242ac120003"
+      "https://cdn.realt.by/img/55/2e6062f2-108c-11f1-8a0f-0242ac120003",
+      "https://cdn.realt.by/img/55/468cb82a-6f4c-11f1-94a2-0242ac120003",
+      "https://cdn.realt.by/img/55/46991bb0-6f4c-11f1-b99e-0242ac120003",
+      "https://cdn.realt.by/img/55/469f409e-6f4c-11f1-8253-0242ac120003",
+      "https://cdn.realt.by/img/55/469fbac4-6f4c-11f1-a8c9-0242ac120003",
+      "https://cdn.realt.by/img/55/46a05218-6f4c-11f1-85ef-0242ac120003",
+      "https://cdn.realt.by/img/55/46a07f36-6f4c-11f1-98a4-0242ac120003",
+      "https://cdn.realt.by/img/55/46a087e2-6f4c-11f1-aae9-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-13T10:09:16.596Z"
+    "lastSeenAt": "2026-06-24T09:56:29.243Z"
   },
   {
     "adId": 4039275,
@@ -9509,7 +9523,7 @@
       "https://cdn.realt.by/img/55/3720e94a-9c14-11ef-ab2c-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-23T09:56:26.622Z"
+    "lastSeenAt": "2026-06-24T09:56:29.243Z"
   },
   {
     "adId": 3514949,
@@ -10694,32 +10708,32 @@
     "uuid": "8c54c350-4f96-11f1-a7a4-d5b3b9712aa2",
     "link": "https://realt.by/sale-cottages/object/4123887/",
     "title": "жилой дом г. Гродно ул. Меречская Застава (район Грандичи)",
-    "description": "Продается жилой дом 1970 года постройки в городе Гродно на ул. Меречская Застава (район Грандичи). Дом 1-этажный, 4 жилые комнаты, общая площадь дома 65,8/жилая 48,5/кухня 8.7 м/кв.",
-    "priceByn": 180031,
-    "priceUsd": 65000,
+    "description": "Продается жилой дом 1970 года постройки в городе Гродно на ул. Меречская Застава (район Грандичи). Соседи только на противоположной стороне ( крайний участок).",
+    "priceByn": 168696,
+    "priceUsd": 59900,
     "address": "Гродно Меречская Застава ул.",
     "area": 65.8,
     "plotArea": 25,
     "yearBuilt": 1970,
     "seller": "Наталья",
-    "listTime": "2026-05-14T17:07:27+03:00",
+    "listTime": "2026-06-23T14:38:21+03:00",
     "images": [
-      "https://cdn.realt.by/img/55/5041dda8-4f96-11f1-90a8-0242ac120003",
-      "https://cdn.realt.by/img/55/5036efa6-4f96-11f1-8741-0242ac120003",
-      "https://cdn.realt.by/img/55/5034938c-4f96-11f1-bfc5-0242ac120003",
-      "https://cdn.realt.by/img/55/503a278e-4f96-11f1-8320-0242ac120003",
-      "https://cdn.realt.by/img/55/5032cdcc-4f96-11f1-8084-0242ac120003",
+      "https://cdn.realt.by/img/55/6b656674-5057-11f1-a21d-0242ac120003",
+      "https://cdn.realt.by/img/55/6b5e4f56-5057-11f1-a22e-0242ac120003",
       "https://cdn.realt.by/img/55/502d57ca-4f96-11f1-9135-0242ac120003",
       "https://cdn.realt.by/img/55/50379226-4f96-11f1-8f5a-0242ac120003",
       "https://cdn.realt.by/img/55/503e9d8c-4f96-11f1-b767-0242ac120003",
       "https://cdn.realt.by/img/55/50147e12-4f96-11f1-a985-0242ac120003",
       "https://cdn.realt.by/img/55/50301b7c-4f96-11f1-99ed-0242ac120003",
       "https://cdn.realt.by/img/55/50298cb2-4f96-11f1-bab9-0242ac120003",
+      "https://cdn.realt.by/img/55/5034938c-4f96-11f1-bfc5-0242ac120003",
+      "https://cdn.realt.by/img/55/503a278e-4f96-11f1-8320-0242ac120003",
+      "https://cdn.realt.by/img/55/5032cdcc-4f96-11f1-8084-0242ac120003",
       "https://cdn.realt.by/img/55/4fd3f64e-4f96-11f1-99ac-0242ac120003",
       "https://cdn.realt.by/img/55/2014afe6-4f98-11f1-9a7f-0242ac120003"
     ],
     "firstSeenAt": "2026-05-15T10:23:27.895Z",
-    "lastSeenAt": "2026-05-17T09:17:35.588Z"
+    "lastSeenAt": "2026-06-24T09:56:29.243Z"
   },
   {
     "adId": 3074765,
@@ -11120,8 +11134,8 @@
     "link": "https://realt.by/sale-cottages/object/4137538/",
     "title": "Гродно, Центральная ул.",
     "description": "Продается жилой коттедж в м-не Южный 3 г. Гродно. 3 спальни.Английский проект.2 этажа. 2004 г. Общая площадь 260 м², жилая – 101 м², 1 этаж : кухня – 20 м² , зал 41 м², гардероб – 6 м² , санузел 2 м² , отапливаемый гараж на 1 авто 22 м².2 этаж : 3 спальни (22,19,18 м²), ванна 10 м², холл 14 м². Больше фото здесь :www.re.kufar.by/vi/grodno/kupit/dom/1070426338",
-    "priceByn": 699431,
-    "priceUsd": 249797,
+    "priceByn": 700652,
+    "priceUsd": 248785,
     "address": "Гродно Центральная ул. 89",
     "area": 252,
     "areaLiving": 101,
@@ -11154,7 +11168,7 @@
       "https://cdn.realt.by/img/55/a733f110-59ea-11f1-92d0-0242ac120003"
     ],
     "firstSeenAt": "2026-05-28T09:51:18.008Z",
-    "lastSeenAt": "2026-06-23T09:56:26.622Z"
+    "lastSeenAt": "2026-06-24T09:56:29.243Z"
   },
   {
     "adId": 4137511,
@@ -11912,7 +11926,7 @@
       "https://cdn.realt.by/img/55/2e4be1a2-6e1e-11f1-9a8c-0242ac120003"
     ],
     "firstSeenAt": "2026-06-22T10:03:30.981Z",
-    "lastSeenAt": "2026-06-23T09:56:26.622Z"
+    "lastSeenAt": "2026-06-24T09:56:29.243Z"
   },
   {
     "adId": 4160868,
@@ -11945,7 +11959,7 @@
       "https://cdn.realt.by/img/55/6477af2e-6e62-11f1-8080-0242ac120003"
     ],
     "firstSeenAt": "2026-06-23T09:56:26.622Z",
-    "lastSeenAt": "2026-06-23T09:56:26.622Z"
+    "lastSeenAt": "2026-06-24T09:56:29.243Z"
   },
   {
     "adId": 4160768,
@@ -11975,7 +11989,7 @@
       "https://cdn.realt.by/img/55/f7f1b822-6e57-11f1-9672-0242ac120003"
     ],
     "firstSeenAt": "2026-06-23T09:56:26.622Z",
-    "lastSeenAt": "2026-06-23T09:56:26.622Z"
+    "lastSeenAt": "2026-06-24T09:56:29.243Z"
   },
   {
     "adId": 4160483,
@@ -12019,6 +12033,76 @@
       "https://cdn.realt.by/img/55/077bd8a8-6e36-11f1-b513-0242ac120003"
     ],
     "firstSeenAt": "2026-06-23T09:56:26.622Z",
-    "lastSeenAt": "2026-06-23T09:56:26.622Z"
+    "lastSeenAt": "2026-06-24T09:56:29.243Z"
+  },
+  {
+    "adId": 4161953,
+    "uuid": "dfdcc690-6f2f-11f1-9aab-ade9cacb27dd",
+    "link": "https://realt.by/sale-cottages/object/4161953/",
+    "title": "Гродно, Дальняя ул.",
+    "description": "Уютный дом в спокойном месте, в 5 минутах езды до центра города. В пределах 150 м.- остановки общественного транспорта. Рядом лесопарк. Улица красивая, широкая, с удобной дорогой, соседи благополучные и дружелюбные. В доме отделка по дизайн- проекту, полы-керамогранит, массив дуба. Дубовые подоконники. Изящная лестница на второй этаж. Двери- массив. 2 комнаты по 13 м, гостиная 22, кухня-12,7, раздельный санузел. Зелёный даже зимой, ухоженный двор полностью укрыт растениями от посторонних глаз",
+    "priceByn": 450608,
+    "priceUsd": 160000,
+    "address": "Гродно Дальняя ул. 33",
+    "area": 81,
+    "areaKitchen": 13,
+    "plotArea": 3,
+    "levels": 2,
+    "seller": "Лора",
+    "listTime": "2026-06-24T10:13:16+03:00",
+    "images": [],
+    "firstSeenAt": "2026-06-24T09:56:29.243Z",
+    "lastSeenAt": "2026-06-24T09:56:29.243Z"
+  },
+  {
+    "adId": 4151657,
+    "uuid": "6ad5c4c0-664f-11f1-9780-3fb3a7434153",
+    "link": "https://realt.by/sale-cottages/object/4151657/",
+    "title": "Двухуровневая 4-комн. квартира с участком и гаражом в аг. Вертелишки",
+    "description": "Двухуровневая 4-комн. квартира с участком и гаражом в аг. Вертелишки Продается просторная двухуровневая квартира в блокированном жилом доме — отличная замена городской квартире! Вертелишки поселок с образцовой инфраструктурой всего в 12 км от Гродно.",
+    "priceByn": 221080,
+    "priceUsd": 78500,
+    "address": "Вертелишки Тимирязева ул.",
+    "area": 90,
+    "areaLiving": 50,
+    "areaKitchen": 11,
+    "plotArea": 5,
+    "yearBuilt": 1990,
+    "levels": 2,
+    "seller": "Дмитрий",
+    "listTime": "2026-06-23T16:15:42+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/b8d3dfe6-664e-11f1-87ba-0242ac120003",
+      "https://cdn.realt.by/img/55/e19f6724-664e-11f1-bb92-0242ac120003",
+      "https://cdn.realt.by/img/55/88512540-664e-11f1-a090-0242ac120003",
+      "https://cdn.realt.by/img/55/ceb84090-664e-11f1-90cf-0242ac120003",
+      "https://cdn.realt.by/img/55/8854d53c-664e-11f1-98fa-0242ac120003",
+      "https://cdn.realt.by/img/55/887c392e-664e-11f1-80ea-0242ac120003",
+      "https://cdn.realt.by/img/55/cb603fc4-664e-11f1-8aa7-0242ac120003",
+      "https://cdn.realt.by/img/55/88706e50-664e-11f1-86a5-0242ac120003",
+      "https://cdn.realt.by/img/55/c8ca38e6-664e-11f1-9aad-0242ac120003",
+      "https://cdn.realt.by/img/55/c5d73b7a-664e-11f1-9876-0242ac120003",
+      "https://cdn.realt.by/img/55/8874c4dc-664e-11f1-bd00-0242ac120003",
+      "https://cdn.realt.by/img/55/bfa9ceb6-664e-11f1-9b63-0242ac120003",
+      "https://cdn.realt.by/img/55/8876e56e-664e-11f1-952e-0242ac120003",
+      "https://cdn.realt.by/img/55/8857a2d0-664e-11f1-9e34-0242ac120003",
+      "https://cdn.realt.by/img/55/8875a58c-664e-11f1-bf12-0242ac120003",
+      "https://cdn.realt.by/img/55/ae0ab986-664e-11f1-8a8c-0242ac120003",
+      "https://cdn.realt.by/img/55/b189649a-664e-11f1-9c4f-0242ac120003",
+      "https://cdn.realt.by/img/55/b39c8474-664e-11f1-8d9e-0242ac120003",
+      "https://cdn.realt.by/img/55/8873f930-664e-11f1-a6b3-0242ac120003",
+      "https://cdn.realt.by/img/55/b658e18a-664e-11f1-a802-0242ac120003",
+      "https://cdn.realt.by/img/55/3cd6b5da-6f04-11f1-a51d-0242ac120003",
+      "https://cdn.realt.by/img/55/369e95fc-6f04-11f1-bd52-0242ac120003",
+      "https://cdn.realt.by/img/55/3cd30354-6f04-11f1-8135-0242ac120003",
+      "https://cdn.realt.by/img/55/2f7e21c0-6f04-11f1-81c2-0242ac120003",
+      "https://cdn.realt.by/img/55/4e250724-6f04-11f1-b2e3-0242ac120003",
+      "https://cdn.realt.by/img/55/29ddeb24-6f04-11f1-b9dd-0242ac120003",
+      "https://cdn.realt.by/img/55/2439b054-6f04-11f1-9fd7-0242ac120003",
+      "https://cdn.realt.by/img/55/2bd2edee-6f04-11f1-8abe-0242ac120003",
+      "https://cdn.realt.by/img/55/0983b830-664f-11f1-82da-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-24T09:56:29.243Z",
+    "lastSeenAt": "2026-06-24T09:56:29.243Z"
   }
 ]
