@@ -167,7 +167,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/76c25739-4706-4d05-aac3-1b8d2ee68fb2.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-06-10T09:57:10.291Z"
+    "lastSeenAt": "2026-06-24T09:47:19.412Z"
   },
   {
     "adId": 1061925432,
@@ -2529,7 +2529,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/51dcdc03-04b8-42a3-9f99-581514c44c9a.jpg"
     ],
     "firstSeenAt": "2026-04-14T08:39:12.555Z",
-    "lastSeenAt": "2026-06-23T09:52:04.037Z"
+    "lastSeenAt": "2026-06-24T09:47:19.412Z"
   },
   {
     "adId": 1064823553,
@@ -2637,7 +2637,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/19b9eb71-8846-4f11-a7c2-f9db390d0329.jpg"
     ],
     "firstSeenAt": "2026-04-15T08:37:31.945Z",
-    "lastSeenAt": "2026-06-23T09:52:04.037Z"
+    "lastSeenAt": "2026-06-24T09:47:19.412Z"
   },
   {
     "adId": 1065178373,
@@ -6355,8 +6355,8 @@
     "link": "https://re.kufar.by/vi/1072315726",
     "title": "Дачный участок возле Коробчиц СТ Лососянка",
     "description": "Продается отличный земельный участок в СТ Лососянка рядом с д. Коробчицы , 7км до города. (Гродненская обл., Гродненский р-н, Коптевский с/с, СТ «Лосо",
-    "priceByn": 9588,
-    "priceUsd": 3400,
+    "priceByn": 9306,
+    "priceUsd": 3300,
     "address": "36, СТ Лососянка, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "plotArea": 5,
     "seller": "Пользователь",
@@ -6368,7 +6368,7 @@
       "lat": 53.588236,
       "lon": 23.721722
     },
-    "listTime": "2026-06-08T07:00:13Z",
+    "listTime": "2026-06-24T09:01:37Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/92858bc3-0f1c-4ca1-a617-ca2cc58f296e.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8873303b-9837-430c-b213-a31b1e993ba3.jpg",
@@ -6382,7 +6382,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/31bf36cb-b7e7-4163-b2eb-b7de1168f596.jpg"
     ],
     "firstSeenAt": "2026-06-08T09:47:06.181Z",
-    "lastSeenAt": "2026-06-09T09:54:01.373Z"
+    "lastSeenAt": "2026-06-24T09:47:19.412Z"
   },
   {
     "adId": 1072159438,
@@ -6941,7 +6941,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7f1dd455-48fc-472a-9a46-51e04b0c3357.jpg"
     ],
     "firstSeenAt": "2026-06-22T09:56:36.255Z",
-    "lastSeenAt": "2026-06-23T09:52:04.037Z"
+    "lastSeenAt": "2026-06-24T09:47:19.412Z"
   },
   {
     "adId": 1074101664,
@@ -7020,7 +7020,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bfe0f481-3fe8-424c-af4f-d33a7e61f565.jpg"
     ],
     "firstSeenAt": "2026-06-23T09:52:04.037Z",
-    "lastSeenAt": "2026-06-23T09:52:04.037Z"
+    "lastSeenAt": "2026-06-24T09:47:19.412Z"
   },
   {
     "adId": 1074207833,
@@ -7046,7 +7046,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3ec1499d-d365-44d7-ba70-82f279bf1b78.jpg"
     ],
     "firstSeenAt": "2026-06-23T09:52:04.037Z",
-    "lastSeenAt": "2026-06-23T09:52:04.037Z"
+    "lastSeenAt": "2026-06-24T09:47:19.412Z"
   },
   {
     "adId": 1074205953,
@@ -7077,7 +7077,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a8e7c47e-d2c0-4c73-89d7-2324b28e5c6a.jpg"
     ],
     "firstSeenAt": "2026-06-23T09:52:04.037Z",
-    "lastSeenAt": "2026-06-23T09:52:04.037Z"
+    "lastSeenAt": "2026-06-24T09:47:19.412Z"
   },
   {
     "adId": 1074205944,
@@ -7112,7 +7112,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f2bcd02b-3012-4116-bf82-805c1cbf5f1a.jpg"
     ],
     "firstSeenAt": "2026-06-23T09:52:04.037Z",
-    "lastSeenAt": "2026-06-23T09:52:04.037Z"
+    "lastSeenAt": "2026-06-24T09:47:19.412Z"
   },
   {
     "adId": 1069911935,
@@ -7146,6 +7146,68 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fbcc186f-b49d-461a-83d2-a1677e6fcf96.jpg"
     ],
     "firstSeenAt": "2026-06-23T09:52:04.037Z",
-    "lastSeenAt": "2026-06-23T09:52:04.037Z"
+    "lastSeenAt": "2026-06-24T09:47:19.412Z"
+  },
+  {
+    "adId": 1074325732,
+    "link": "https://re.kufar.by/vi/1074325732",
+    "title": "Земельный участок в СТ Лесовод-2 (м-н Зарица)",
+    "description": "Продаётся земельный участок в отличном месте, в садовом товариществе «Лесовод-2» (микрорайон Зарица).\nУчасток угловой, лесной массив. Минимум соседей!",
+    "priceByn": 56330,
+    "priceUsd": 19975,
+    "address": "119, СТ Лесовод-2, Путришковский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 10.2,
+    "seller": "ООО Магазин недвижимости",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.753496,
+      "lon": 23.887614
+    },
+    "listTime": "2026-06-23T15:13:41Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8834cc81-30d6-4a7f-8645-a856dbdb1233.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/535763f2-b525-4a8f-ac9c-7aef77891753.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/35d400fa-0f81-413b-8ccd-09d88496db98.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0a66401a-1eb8-4d12-8bec-8833a53635a6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6081712e-1e5b-471b-b8a4-646e3dab7c15.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ada0bc5a-6b73-4525-8329-05cfc898edd9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ae3cdb80-7425-415e-8bcf-1629f9f68734.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1f73b8cf-1294-4186-9275-bae57e2dca50.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4e30e014-7e1e-43f5-8493-8f2bcf94deae.jpg"
+    ],
+    "firstSeenAt": "2026-06-24T09:47:19.412Z",
+    "lastSeenAt": "2026-06-24T09:47:19.412Z"
+  },
+  {
+    "adId": 1074305415,
+    "link": "https://re.kufar.by/vi/1074305415",
+    "title": "земельный участок СТ Крыжачок",
+    "description": "Продается земельный участок рядом с г. Гродно СТ Крыжачок , Гродненский район, Коптёвский с/с,  расположенный на участке площадью 5,18 соток (форма со",
+    "priceByn": 19458,
+    "priceUsd": 6900,
+    "address": "СТ Крыжачок, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5.18,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.61174,
+      "lon": 23.946867
+    },
+    "listTime": "2026-06-23T12:02:53Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/43f45da2-41e2-4f13-98f5-1406216fa588.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b31cf779-4eed-4aa4-81b2-a6cd2d1c9bd7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/679e441f-cd3f-43d8-b871-289f6ae2fb02.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d8a1737d-36d6-4ff1-8999-a8038493b735.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bc480a56-ecd9-4bd1-9f06-40eb06f50bd5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ed9fabfb-7326-479f-8f93-9e2286cf06df.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c0f4f9cb-6beb-4ead-905b-c21678a0e7e8.jpg"
+    ],
+    "firstSeenAt": "2026-06-24T09:47:19.412Z",
+    "lastSeenAt": "2026-06-24T09:47:19.412Z"
   }
 ]
