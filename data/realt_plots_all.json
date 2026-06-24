@@ -258,7 +258,7 @@
       "https://cdn.realt.by/img/55/63c0acca-58c4-11f0-ad1b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-23T10:48:28.087Z"
+    "lastSeenAt": "2026-06-24T10:28:33.835Z"
   },
   {
     "adId": 4085899,
@@ -1171,7 +1171,7 @@
       "https://cdn.realt.by/img/55/8af915d2-26ac-11f1-ac96-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-23T10:48:28.087Z"
+    "lastSeenAt": "2026-06-24T10:28:33.835Z"
   },
   {
     "adId": 4053889,
@@ -1589,7 +1589,7 @@
       "https://cdn.realt.by/img/55/674faf5a-6907-11f0-b54c-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-23T10:48:28.087Z"
+    "lastSeenAt": "2026-06-24T10:28:33.835Z"
   },
   {
     "adId": 3707351,
@@ -2155,7 +2155,7 @@
       "https://cdn.realt.by/img/55/e7e88152-6814-11f1-9378-0242ac120003"
     ],
     "firstSeenAt": "2026-06-15T13:15:18.268Z",
-    "lastSeenAt": "2026-06-23T10:48:28.087Z"
+    "lastSeenAt": "2026-06-24T10:28:33.835Z"
   },
   {
     "adId": 4159841,
@@ -2219,6 +2219,56 @@
       "https://cdn.realt.by/img/55/0ad98660-6da7-11f1-a307-0242ac120003"
     ],
     "firstSeenAt": "2026-06-22T12:55:21.206Z",
-    "lastSeenAt": "2026-06-23T10:48:28.087Z"
+    "lastSeenAt": "2026-06-24T10:28:33.835Z"
+  },
+  {
+    "adId": 4161808,
+    "uuid": "8a9f5ee0-6f16-11f1-9aab-ade9cacb27dd",
+    "link": "https://realt.by/sale-plots/object/4161808/",
+    "title": "Земельный участок в СТ Лесовод-2 (м-н Зарица)",
+    "description": "Хорошее транспортное сообщение. Удобные подъездные пути. Постоянно курсирует городской автобус и маршрутка. 2 км от участка остановка общественного транспорта. Площадь участка 10,15 сотки. Частная собственность. Участок правильной формы.",
+    "priceByn": 56330,
+    "priceUsd": 20001,
+    "address": "Лесовод-2  119",
+    "plotArea": 10.2,
+    "seller": "Елена",
+    "listTime": "2026-06-23T18:23:48+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/5324c0a4-6f16-11f1-ba3d-0242ac120003",
+      "https://cdn.realt.by/img/55/533f02b6-6f16-11f1-9426-0242ac120003",
+      "https://cdn.realt.by/img/55/534f715a-6f16-11f1-ab54-0242ac120003",
+      "https://cdn.realt.by/img/55/5351dab2-6f16-11f1-971c-0242ac120003",
+      "https://cdn.realt.by/img/55/57f80d16-6f16-11f1-bd95-0242ac120003",
+      "https://cdn.realt.by/img/55/5810493a-6f16-11f1-a60f-0242ac120003",
+      "https://cdn.realt.by/img/55/5813342e-6f16-11f1-a2fe-0242ac120003",
+      "https://cdn.realt.by/img/55/5820e1b4-6f16-11f1-8351-0242ac120003",
+      "https://cdn.realt.by/img/55/57fd691e-6f16-11f1-900e-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-24T10:28:33.835Z",
+    "lastSeenAt": "2026-06-24T10:28:33.835Z"
+  },
+  {
+    "adId": 4161593,
+    "uuid": "00182680-6efd-11f1-a739-2bdcb54bdfa3",
+    "link": "https://realt.by/sale-plots/object/4161593/",
+    "title": "земельный участок  СТ Крыжачок , Гродненский район, Коптёвский с/с",
+    "description": "Продается земельный участок рядом с г. Гродно СТ Крыжачок , Гродненский район, Коптёвский с/с, расположенный на участке площадью 5,18 соток (форма собственности-частная). Коммуникации: свет,вода сезонная!",
+    "priceByn": 21000,
+    "priceUsd": 7457,
+    "address": "Крыжачок",
+    "plotArea": 5.18,
+    "seller": "Александр Г.",
+    "listTime": "2026-06-23T15:21:49+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/baa2bf94-6efb-11f1-8f40-0242ac120003",
+      "https://cdn.realt.by/img/55/ba2c1d12-6efb-11f1-997c-0242ac120003",
+      "https://cdn.realt.by/img/55/ba31faa2-6efb-11f1-860f-0242ac120003",
+      "https://cdn.realt.by/img/55/ba4d7624-6efb-11f1-b417-0242ac120003",
+      "https://cdn.realt.by/img/55/ba8c3a3a-6efb-11f1-9fe9-0242ac120003",
+      "https://cdn.realt.by/img/55/ba222fc8-6efb-11f1-af94-0242ac120003",
+      "https://cdn.realt.by/img/55/ba4a7032-6efb-11f1-9398-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-24T10:28:33.835Z",
+    "lastSeenAt": "2026-06-24T10:28:33.835Z"
   }
 ]

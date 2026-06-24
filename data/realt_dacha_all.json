@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-23T10:48:28.095Z"
+    "lastSeenAt": "2026-06-24T10:28:33.844Z"
   },
   {
     "adId": 4057786,
@@ -809,7 +809,7 @@
       "https://cdn.realt.by/img/55/926b4bce-9eb6-11f0-a916-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-23T10:48:28.095Z"
+    "lastSeenAt": "2026-06-24T10:28:33.844Z"
   },
   {
     "adId": 4085116,
@@ -2821,7 +2821,7 @@
       "https://cdn.realt.by/img/55/c604edd0-2888-11f1-8bc5-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-17T11:52:13.138Z"
+    "lastSeenAt": "2026-06-24T10:28:33.844Z"
   },
   {
     "adId": 3780907,
@@ -5552,7 +5552,7 @@
       "https://cdn.realt.by/img/55/f87a1ea4-56da-11f1-a842-0242ac120003"
     ],
     "firstSeenAt": "2026-05-24T09:22:42.706Z",
-    "lastSeenAt": "2026-06-23T10:48:28.095Z"
+    "lastSeenAt": "2026-06-24T10:28:33.844Z"
   },
   {
     "adId": 4137152,
@@ -6364,15 +6364,15 @@
     "link": "https://realt.by/sale-dachi/object/4145814/",
     "title": "Ландыш",
     "description": "Продам дом. 2 этажа 11 соток земли. Септик, вода сезонная. Нужна внутренняя отделка . Вопросы по телефону",
-    "priceByn": 56265,
-    "priceUsd": 19900,
+    "priceByn": 50412,
+    "priceUsd": 17900,
     "address": "Ландыш",
     "area": 96,
     "plotArea": 11,
     "yearBuilt": 2024,
     "levels": 2,
     "seller": "Денис",
-    "listTime": "2026-06-06T18:28:48+03:00",
+    "listTime": "2026-06-24T12:41:17+03:00",
     "images": [
       "https://cdn.realt.by/img/55/0ff44fb2-61aa-11f1-86de-0242ac120003",
       "https://cdn.realt.by/img/55/0fcfb1e8-61aa-11f1-a9c1-0242ac120003",
@@ -6386,7 +6386,7 @@
       "https://cdn.realt.by/img/55/10b6341a-61aa-11f1-a69f-0242ac120003"
     ],
     "firstSeenAt": "2026-06-07T10:05:05.020Z",
-    "lastSeenAt": "2026-06-21T10:34:44.767Z"
+    "lastSeenAt": "2026-06-24T10:28:33.844Z"
   },
   {
     "adId": 4146807,
@@ -6784,7 +6784,7 @@
       "https://cdn.realt.by/img/55/ce009ab2-6ca2-11f1-9595-0242ac120003"
     ],
     "firstSeenAt": "2026-06-21T10:34:44.767Z",
-    "lastSeenAt": "2026-06-23T10:48:28.095Z"
+    "lastSeenAt": "2026-06-24T10:28:33.844Z"
   },
   {
     "adId": 4160198,
@@ -6810,6 +6810,6 @@
       "https://cdn.realt.by/img/55/f9c0955a-6e17-11f1-aa7c-0242ac120003"
     ],
     "firstSeenAt": "2026-06-22T12:55:21.215Z",
-    "lastSeenAt": "2026-06-23T10:48:28.095Z"
+    "lastSeenAt": "2026-06-24T10:28:33.844Z"
   }
 ]

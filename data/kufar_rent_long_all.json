@@ -80,7 +80,7 @@
     "link": "https://re.kufar.by/vi/1063816828",
     "title": "Квартира полностью со всем необходимым для проживания",
     "priceByn": 1350,
-    "priceUsd": 482,
+    "priceUsd": 479,
     "address": "Виктора Саяпина ул, 4Б, Гродно, Гродненская область",
     "rooms": 2,
     "area": 64,
@@ -96,7 +96,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fe3aaa67-820b-4056-a5c1-3f46eb49bd38.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:43:08.825Z",
-    "lastSeenAt": "2026-06-23T10:43:54.774Z"
+    "lastSeenAt": "2026-06-24T10:24:01.041Z"
   },
   {
     "adId": 1060088409,
@@ -218,7 +218,7 @@
     "adId": 1072089877,
     "link": "https://re.kufar.by/vi/1072089877",
     "title": "Аренда квартиры",
-    "priceByn": 980,
+    "priceByn": 987,
     "priceUsd": 350,
     "address": "Виктора Глухова ул, 3, Гродно, Гродненская область",
     "rooms": 2,
@@ -239,6 +239,6 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f0e2d96a-2e02-4c7a-a3f2-f07bc524d7a2.jpg"
     ],
     "firstSeenAt": "2026-06-07T10:03:40.625Z",
-    "lastSeenAt": "2026-06-23T10:43:54.774Z"
+    "lastSeenAt": "2026-06-24T10:24:01.041Z"
   }
 ]
