@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-24T09:56:29.249Z"
+    "lastSeenAt": "2026-06-25T09:52:07.321Z"
   },
   {
     "adId": 4057786,
@@ -809,7 +809,7 @@
       "https://cdn.realt.by/img/55/926b4bce-9eb6-11f0-a916-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-24T09:56:29.249Z"
+    "lastSeenAt": "2026-06-25T09:52:07.321Z"
   },
   {
     "adId": 4085116,
@@ -2820,7 +2820,7 @@
       "https://cdn.realt.by/img/55/c604edd0-2888-11f1-8bc5-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-24T09:56:29.249Z"
+    "lastSeenAt": "2026-06-25T09:52:07.321Z"
   },
   {
     "adId": 3780907,
@@ -5605,15 +5605,15 @@
     "link": "https://realt.by/sale-dachi/object/4137383/",
     "title": "Атмосферный дом рядом с Юбилейным озером",
     "description": "Недалеко от дома благоустроенная набережная озера Юбилейное, где все продуманно для активного отдыха, пеших или велопрогулок, где можно наблюдать чудесные закаты !",
-    "priceByn": 404600,
-    "priceUsd": 146393,
+    "priceByn": 363800,
+    "priceUsd": 129213,
     "address": "Гостинец",
     "area": 92,
     "plotArea": 10.1,
     "yearBuilt": 2016,
     "levels": 1,
     "seller": "Елена",
-    "listTime": "2026-05-27T17:24:56+03:00",
+    "listTime": "2026-06-24T13:49:19+03:00",
     "images": [
       "https://cdn.realt.by/img/55/e41fdfe8-59c8-11f1-bc0d-0242ac120003",
       "https://cdn.realt.by/img/55/e435b1d8-59c8-11f1-83b3-0242ac120003",
@@ -5639,7 +5639,7 @@
       "https://cdn.realt.by/img/55/148bfb12-59c9-11f1-b858-0242ac120003"
     ],
     "firstSeenAt": "2026-05-28T09:51:18.013Z",
-    "lastSeenAt": "2026-05-28T09:51:18.013Z"
+    "lastSeenAt": "2026-06-25T09:52:07.321Z"
   },
   {
     "adId": 4139513,
@@ -6219,7 +6219,7 @@
       "https://cdn.realt.by/img/55/10b6341a-61aa-11f1-a69f-0242ac120003"
     ],
     "firstSeenAt": "2026-06-08T09:53:16.954Z",
-    "lastSeenAt": "2026-06-24T09:56:29.249Z"
+    "lastSeenAt": "2026-06-25T09:52:07.321Z"
   },
   {
     "adId": 4149399,
@@ -6509,7 +6509,7 @@
       "https://cdn.realt.by/img/55/ce009ab2-6ca2-11f1-9595-0242ac120003"
     ],
     "firstSeenAt": "2026-06-22T10:03:30.987Z",
-    "lastSeenAt": "2026-06-24T09:56:29.249Z"
+    "lastSeenAt": "2026-06-25T09:52:07.321Z"
   },
   {
     "adId": 4152668,
@@ -6556,5 +6556,45 @@
     ],
     "firstSeenAt": "2026-06-22T10:03:30.987Z",
     "lastSeenAt": "2026-06-22T10:03:30.987Z"
+  },
+  {
+    "adId": 4162556,
+    "uuid": "c2e7e1a0-6fbb-11f1-ba26-31f638286285",
+    "link": "https://realt.by/sale-dachi/object/4162556/",
+    "title": "2-этажная дача в СТ Ремонтник",
+    "description": "2-этажная дача в СТ «Ремонтник» (Гродненский р-н). Крайний участок, граничит с чистым лесом.",
+    "priceByn": 36600,
+    "priceUsd": 12999,
+    "address": "Ремонтник 1",
+    "area": 20,
+    "plotArea": 6.6,
+    "yearBuilt": 1998,
+    "levels": 2,
+    "seller": "Елена",
+    "listTime": "2026-06-24T14:17:29+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/3e5d136a-6fbb-11f1-82a8-0242ac120003",
+      "https://cdn.realt.by/img/55/3e699432-6fbb-11f1-b3a8-0242ac120003",
+      "https://cdn.realt.by/img/55/41ef63c0-6fbb-11f1-94fe-0242ac120003",
+      "https://cdn.realt.by/img/55/41f0ef38-6fbb-11f1-851c-0242ac120003",
+      "https://cdn.realt.by/img/55/45b08f70-6fbb-11f1-bab6-0242ac120003",
+      "https://cdn.realt.by/img/55/45b2b200-6fbb-11f1-b8f0-0242ac120003",
+      "https://cdn.realt.by/img/55/45b6ae14-6fbb-11f1-a25b-0242ac120003",
+      "https://cdn.realt.by/img/55/4b5f5d3e-6fbb-11f1-b54b-0242ac120003",
+      "https://cdn.realt.by/img/55/4bb64edc-6fbb-11f1-9952-0242ac120003",
+      "https://cdn.realt.by/img/55/4ff864e4-6fbb-11f1-af37-0242ac120003",
+      "https://cdn.realt.by/img/55/4ff864e4-6fbb-11f1-8b07-0242ac120003",
+      "https://cdn.realt.by/img/55/4ffb3d2c-6fbb-11f1-b141-0242ac120003",
+      "https://cdn.realt.by/img/55/4ffdf15c-6fbb-11f1-852c-0242ac120003",
+      "https://cdn.realt.by/img/55/52fe13b4-6fbb-11f1-979c-0242ac120003",
+      "https://cdn.realt.by/img/55/6180ecd6-6fbb-11f1-9de0-0242ac120003",
+      "https://cdn.realt.by/img/55/61949c18-6fbb-11f1-8457-0242ac120003",
+      "https://cdn.realt.by/img/55/6198545c-6fbb-11f1-abe5-0242ac120003",
+      "https://cdn.realt.by/img/55/685fd350-6fbb-11f1-90af-0242ac120003",
+      "https://cdn.realt.by/img/55/688dc2ec-6fbb-11f1-981b-0242ac120003",
+      "https://cdn.realt.by/img/55/6b909d8e-6fbb-11f1-b4f5-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-25T09:52:07.321Z",
+    "lastSeenAt": "2026-06-25T09:52:07.321Z"
   }
 ]
