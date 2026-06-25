@@ -1,28 +1,6 @@
 [
   {
     "listing": {
-      "title": "Земельный участок по ул. Лелевеля, 30А",
-      "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-lelevelya-30a/",
-      "price": "45 679,00 руб.",
-      "area": "0,0687 га",
-      "address": "г. Гродно, ул. Лелевеля, 30А",
-      "cadastralNumber": "440100000001015408",
-      "cadastralMapUrl": "https://map.nca.by/search/019df6e2-ca3c-73e5-b602-a9bf136d84ae",
-      "auctionDate": "Аукцион состоится 09.06.2026",
-      "applicationDeadline": "Заявления принимаются по 03.06.2026",
-      "communications": "электроснабжение, газоснабжение, водоснабжение, водоотведение, теплоснабжение",
-      "images": [
-        "https://gcn.by/wp-content/uploads/2026/05/lelevelya-sajt3.png",
-        "https://gcn.by/wp-content/uploads/2026/05/lelevelya-sajt.png",
-        "https://gcn.by/wp-content/uploads/2026/05/lelevelya-sajt2.png",
-        "https://gcn.by/wp-content/uploads/2026/05/lelevelya-sajt3.png",
-        "https://gcn.by/wp-content/uploads/2026/05/lelevelya-sajt.png"
-      ]
-    },
-    "removedAt": "2026-06-10T10:47:57.842Z"
-  },
-  {
-    "listing": {
       "title": "Земельный участок по ул. Дмитрия Мостовенко, 9",
       "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-dmitriya-mostovenko-9/",
       "price": "47 440,00 руб.",
