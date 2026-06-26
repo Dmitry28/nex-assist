@@ -89,7 +89,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7b4053ef-1b86-4f81-a244-191274796e97.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-06-19T11:22:46.026Z"
+    "lastSeenAt": "2026-06-26T10:30:45.999Z"
   },
   {
     "adId": 1061953023,
@@ -617,7 +617,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/272d5e94-2800-47f3-943d-f4cadecf1310.jpg"
     ],
     "firstSeenAt": "2026-03-27T10:03:43.686Z",
-    "lastSeenAt": "2026-06-20T10:06:10.753Z"
+    "lastSeenAt": "2026-06-26T10:30:45.999Z"
   },
   {
     "adId": 1051330018,
@@ -4734,7 +4734,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0393d978-a69f-418c-b0b8-c341ed5740a9.jpg"
     ],
     "firstSeenAt": "2026-05-09T08:44:04.837Z",
-    "lastSeenAt": "2026-06-20T10:06:10.753Z"
+    "lastSeenAt": "2026-06-26T10:30:45.999Z"
   },
   {
     "adId": 1068196806,
@@ -5932,7 +5932,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fbcc186f-b49d-461a-83d2-a1677e6fcf96.jpg"
     ],
     "firstSeenAt": "2026-05-24T09:20:42.771Z",
-    "lastSeenAt": "2026-06-25T10:14:22.112Z"
+    "lastSeenAt": "2026-06-26T10:30:45.999Z"
   },
   {
     "adId": 1069908317,
@@ -6017,7 +6017,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/71a1c2e8-7143-4068-a1e1-983c1ee77ab7.jpg"
     ],
     "firstSeenAt": "2026-05-25T11:15:07.899Z",
-    "lastSeenAt": "2026-06-25T10:14:22.112Z"
+    "lastSeenAt": "2026-06-26T10:30:45.999Z"
   },
   {
     "adId": 1070502100,
@@ -6096,7 +6096,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2bbc4526-fb26-4a1a-b3e8-66cce5b925bb.jpg"
     ],
     "firstSeenAt": "2026-05-27T11:01:06.133Z",
-    "lastSeenAt": "2026-06-25T10:14:22.112Z"
+    "lastSeenAt": "2026-06-26T10:30:45.999Z"
   },
   {
     "adId": 1070347984,
@@ -6546,7 +6546,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c7b70899-1cc0-485d-8c90-39da577a5a22.jpg"
     ],
     "firstSeenAt": "2026-06-02T11:25:47.555Z",
-    "lastSeenAt": "2026-06-20T10:06:10.753Z"
+    "lastSeenAt": "2026-06-26T10:30:45.999Z"
   },
   {
     "adId": 1071569487,
@@ -7483,7 +7483,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ef0faeba-38c7-401b-9424-0d5ba3de2476.jpg"
     ],
     "firstSeenAt": "2026-06-17T11:47:40.607Z",
-    "lastSeenAt": "2026-06-25T10:14:22.112Z"
+    "lastSeenAt": "2026-06-26T10:30:45.999Z"
   },
   {
     "adId": 1073432053,
@@ -7713,7 +7713,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7f1dd455-48fc-472a-9a46-51e04b0c3357.jpg"
     ],
     "firstSeenAt": "2026-06-22T12:51:51.468Z",
-    "lastSeenAt": "2026-06-25T10:14:22.112Z"
+    "lastSeenAt": "2026-06-26T10:30:45.999Z"
   },
   {
     "adId": 1074101664,
@@ -7948,7 +7948,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39cce499-e181-4b5a-afc1-6e39ea15b4cc.jpg"
     ],
     "firstSeenAt": "2026-06-25T10:14:22.112Z",
-    "lastSeenAt": "2026-06-25T10:14:22.112Z"
+    "lastSeenAt": "2026-06-26T10:30:45.999Z"
   },
   {
     "adId": 1074484031,
@@ -7979,6 +7979,119 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/db083e0c-5e91-4f69-8cfc-ffb55bf25370.jpg"
     ],
     "firstSeenAt": "2026-06-25T10:14:22.112Z",
-    "lastSeenAt": "2026-06-25T10:14:22.112Z"
+    "lastSeenAt": "2026-06-26T10:30:45.999Z"
+  },
+  {
+    "adId": 1074633510,
+    "link": "https://re.kufar.by/vi/1074633510",
+    "title": "Подача объявления",
+    "description": "Продам земельный участок под застройку жилого дома. На участке стоит жилой дом со всеми городскими центральными коммуникациями. Дом возможен как для п",
+    "priceByn": 280000,
+    "priceUsd": 99192,
+    "address": "Гродно, Гродненская область",
+    "plotArea": 11.5,
+    "seller": "Сергей",
+    "features": [
+      "Центральная",
+      "Пожизненное наследование",
+      "Да"
+    ],
+    "coordinates": {
+      "lat": 53.677839,
+      "lon": 23.829529
+    },
+    "listTime": "2026-06-25T16:49:09Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a641019d-dd5a-4c19-8236-409e09c75d8b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/763aba68-149b-4fa8-b03a-4bb4cd60cfad.jpg"
+    ],
+    "firstSeenAt": "2026-06-26T10:30:45.999Z",
+    "lastSeenAt": "2026-06-26T10:30:45.999Z"
+  },
+  {
+    "adId": 1074628461,
+    "link": "https://re.kufar.by/vi/1074628461",
+    "title": "участок СТ Холмистое",
+    "description": "В продаже земельный участок в садовом товариществе «Холмистое». Располагается рядом с деревней Лойки, Сопоцкинский сельский совет. Хороший подъездной ",
+    "priceByn": 7057,
+    "priceUsd": 2500,
+    "address": "СТ Холмистое, Сопоцкинский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 8.93,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.771545,
+      "lon": 23.771776
+    },
+    "listTime": "2026-06-25T16:22:04Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5a43dd08-c9fe-418b-b58a-b80bf47f5980.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9d4c7c98-72c8-4631-acaf-7facd3c6373d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a23e222a-1567-4084-8988-22646f1a0deb.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/49a23fbd-a6fd-47dd-9912-434f3f8746dd.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/42ef8f2c-3d11-4437-a777-97f25c131f31.jpg"
+    ],
+    "firstSeenAt": "2026-06-26T10:30:45.999Z",
+    "lastSeenAt": "2026-06-26T10:30:45.999Z"
+  },
+  {
+    "adId": 1074628444,
+    "link": "https://re.kufar.by/vi/1074628444",
+    "title": "участок СТ Шембелевцы",
+    "description": "Продается дачный участок в садовом товариществе «Шембелевцы», Гродненский р-н, Сопоцкинский с/с. До города 12 км. 15 минут езды на автомобиле. Площадь",
+    "priceByn": 20324,
+    "priceUsd": 7200,
+    "address": "Н-6883, Гродненская область",
+    "plotArea": 7,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.754756,
+      "lon": 23.798798
+    },
+    "listTime": "2026-06-25T16:21:58Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f0c8598f-3877-4ad8-b13d-e15703a5c2a8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b1dc6ead-4b3f-4e38-9e7c-6f367baafb16.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c5205cfb-512d-4d10-ab22-718145b030a9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/523f69db-75fc-4b39-9bbf-60db3881d78a.jpg"
+    ],
+    "firstSeenAt": "2026-06-26T10:30:45.999Z",
+    "lastSeenAt": "2026-06-26T10:30:45.999Z"
+  },
+  {
+    "adId": 1074628447,
+    "link": "https://re.kufar.by/vi/1074628447",
+    "title": "земельный участок СТ Магистраль",
+    "description": "Продается земельный участок в 8 км от г. Гродно СТ Магистраль , Гродненская область, Подлабенский с/с,  расположенный на участке площадью 7,03 соток (",
+    "priceByn": 25405,
+    "priceUsd": 9000,
+    "address": "СТ Магистраль, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 7,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.72421,
+      "lon": 23.767182
+    },
+    "listTime": "2026-06-25T16:21:58Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f6a80dbc-bc1c-4557-9068-6e6944e92240.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3f3fc96c-8e25-4042-b44d-9bf01a139fae.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cd2dc091-3344-4d24-8d6e-571dfbf21eb7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/aec64687-5168-47c3-824d-6b14a91cc065.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8dfac09f-e64c-4431-9cb9-cb54345a35bc.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c399698b-13ce-4fac-b036-2cb71f90d463.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/064ca1ba-77a9-4f07-8156-39a946c1f39e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/68224228-4908-46d9-919c-0d03f77948ad.jpg"
+    ],
+    "firstSeenAt": "2026-06-26T10:30:45.999Z",
+    "lastSeenAt": "2026-06-26T10:30:45.999Z"
   }
 ]
