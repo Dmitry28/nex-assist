@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-25T09:52:07.321Z"
+    "lastSeenAt": "2026-06-26T10:01:31.775Z"
   },
   {
     "adId": 4057786,
@@ -1045,7 +1045,7 @@
       "https://cdn.realt.by/img/55/875d12b0-a69c-11f0-8ab9-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-04T10:15:40.627Z"
+    "lastSeenAt": "2026-06-26T10:01:31.775Z"
   },
   {
     "adId": 4111872,
@@ -1053,15 +1053,15 @@
     "link": "https://realt.by/sale-dachi/object/4111872/",
     "title": "Адпачынак - Гожа",
     "description": "Продается недостроенный дачный дом, расположенный в одном из лучших мест – СТ «Адпачынак Гожа» Гожского сельсовета. На данный момент, в доме можно жить и достраивать под себя. На первом этаже состояние свободной планировки и рабочий санузел с бойлером для нагрева воды. Газ пока в дом не завели, пользуемся в баллонах. Жилые спальни в мансарде. Вода, канализация, электричество. В ванной заложен теплый электрический пол. Участок по одной стороне заканчивается лесом, рядом озеро.",
-    "priceByn": 143000,
-    "priceUsd": 51595,
+    "priceByn": 128000,
+    "priceUsd": 45345,
     "address": "Адпачынак - Гожа",
     "area": 135,
     "plotArea": 10,
     "yearBuilt": 2015,
     "levels": 2,
     "seller": "Елена",
-    "listTime": "2026-06-11T15:45:34+03:00",
+    "listTime": "2026-06-25T15:50:04+03:00",
     "images": [
       "https://cdn.realt.by/img/55/19e4d10c-455f-11f1-9a29-0242ac120003",
       "https://cdn.realt.by/img/55/19dd6d5e-455f-11f1-91ad-0242ac120003",
@@ -1085,7 +1085,7 @@
       "https://cdn.realt.by/img/55/19cb7bd0-455f-11f1-83c6-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-12T10:14:30.454Z"
+    "lastSeenAt": "2026-06-26T10:01:31.775Z"
   },
   {
     "adId": 3018174,
@@ -5522,7 +5522,7 @@
       "https://cdn.realt.by/img/55/f87a1ea4-56da-11f1-a842-0242ac120003"
     ],
     "firstSeenAt": "2026-05-25T09:50:04.852Z",
-    "lastSeenAt": "2026-06-24T09:56:29.249Z"
+    "lastSeenAt": "2026-06-26T10:01:31.775Z"
   },
   {
     "adId": 4137152,
@@ -5639,7 +5639,7 @@
       "https://cdn.realt.by/img/55/148bfb12-59c9-11f1-b858-0242ac120003"
     ],
     "firstSeenAt": "2026-05-28T09:51:18.013Z",
-    "lastSeenAt": "2026-06-25T09:52:07.321Z"
+    "lastSeenAt": "2026-06-26T10:01:31.775Z"
   },
   {
     "adId": 4139513,
@@ -6555,7 +6555,7 @@
       "https://cdn.realt.by/img/55/c98f8244-6735-11f1-b8e1-0242ac120003"
     ],
     "firstSeenAt": "2026-06-22T10:03:30.987Z",
-    "lastSeenAt": "2026-06-22T10:03:30.987Z"
+    "lastSeenAt": "2026-06-26T10:01:31.775Z"
   },
   {
     "adId": 4162556,
@@ -6595,6 +6595,47 @@
       "https://cdn.realt.by/img/55/6b909d8e-6fbb-11f1-b4f5-0242ac120003"
     ],
     "firstSeenAt": "2026-06-25T09:52:07.321Z",
-    "lastSeenAt": "2026-06-25T09:52:07.321Z"
+    "lastSeenAt": "2026-06-26T10:01:31.775Z"
+  },
+  {
+    "adId": 4164175,
+    "uuid": "930f1730-708f-11f1-ba26-31f638286285",
+    "link": "https://realt.by/sale-dachi/object/4164175/",
+    "title": "Друзья",
+    "description": "Продам дом с участком в садовом товариществе Друзья. Живописное место, вокруг лес. Асфальтированный подъезд до участка. Прекрасные соседи, многие живут постоянно, небольшое дружное товарищество Приезжайте, смотрите",
+    "priceByn": 55000,
+    "priceUsd": 19484,
+    "address": "Друзья  22",
+    "area": 42,
+    "areaLiving": 33,
+    "plotArea": 9.75,
+    "yearBuilt": 1987,
+    "levels": 2,
+    "seller": "Михаил",
+    "listTime": "2026-06-25T15:50:04+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/baf57d1c-708e-11f1-8ae6-0242ac120003",
+      "https://cdn.realt.by/img/55/bb92e200-708e-11f1-9a06-0242ac120003",
+      "https://cdn.realt.by/img/55/bb09b7aa-708e-11f1-bf84-0242ac120003",
+      "https://cdn.realt.by/img/55/bb81c40c-708e-11f1-af8b-0242ac120003",
+      "https://cdn.realt.by/img/55/bb23d0a4-708e-11f1-af1f-0242ac120003",
+      "https://cdn.realt.by/img/55/baeaa23e-708e-11f1-8f17-0242ac120003",
+      "https://cdn.realt.by/img/55/bbdd9c78-708e-11f1-a1fc-0242ac120003",
+      "https://cdn.realt.by/img/55/bb286948-708e-11f1-a864-0242ac120003",
+      "https://cdn.realt.by/img/55/b92f082c-708e-11f1-8686-0242ac120003",
+      "https://cdn.realt.by/img/55/b8e6d80e-708e-11f1-abd1-0242ac120003",
+      "https://cdn.realt.by/img/55/b8288ce6-708e-11f1-bd67-0242ac120003",
+      "https://cdn.realt.by/img/55/b8b048b6-708e-11f1-9efe-0242ac120003",
+      "https://cdn.realt.by/img/55/b7e46d36-708e-11f1-ba86-0242ac120003",
+      "https://cdn.realt.by/img/55/b7a32786-708e-11f1-b316-0242ac120003",
+      "https://cdn.realt.by/img/55/b9ab19bc-708e-11f1-805b-0242ac120003",
+      "https://cdn.realt.by/img/55/ba91b1d8-708e-11f1-bed0-0242ac120003",
+      "https://cdn.realt.by/img/55/bb40a832-708e-11f1-a398-0242ac120003",
+      "https://cdn.realt.by/img/55/bbd0f00e-708e-11f1-bf48-0242ac120003",
+      "https://cdn.realt.by/img/55/bbd8fbc8-708e-11f1-b7a1-0242ac120003",
+      "https://cdn.realt.by/img/55/fe5ec77a-708e-11f1-aa5f-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-26T10:01:31.775Z",
+    "lastSeenAt": "2026-06-26T10:01:31.775Z"
   }
 ]
