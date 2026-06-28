@@ -914,7 +914,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca7987d4-c9dc-4301-983f-20329c5638d6.jpg"
     ],
     "firstSeenAt": "2026-04-07T08:31:10.678Z",
-    "lastSeenAt": "2026-06-27T09:37:29.248Z"
+    "lastSeenAt": "2026-06-28T09:59:01.554Z"
   },
   {
     "adId": 1063807131,
@@ -2794,7 +2794,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cd4e1ab3-4956-4f49-8435-8d991f7f7ccc.jpg"
     ],
     "firstSeenAt": "2026-05-09T08:44:04.835Z",
-    "lastSeenAt": "2026-06-21T10:34:16.176Z"
+    "lastSeenAt": "2026-06-28T09:59:01.554Z"
   },
   {
     "adId": 1068144346,
@@ -2814,7 +2814,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/95d7e93c-d956-4a23-a935-da8b54ce5a51.jpg"
     ],
     "firstSeenAt": "2026-05-09T08:44:04.835Z",
-    "lastSeenAt": "2026-06-27T09:37:29.248Z"
+    "lastSeenAt": "2026-06-28T09:59:01.554Z"
   },
   {
     "adId": 1068334517,
@@ -3619,7 +3619,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39ba00b4-ed0b-45e2-a4e5-edade7282d26.jpg"
     ],
     "firstSeenAt": "2026-05-27T11:01:06.131Z",
-    "lastSeenAt": "2026-06-27T09:37:29.248Z"
+    "lastSeenAt": "2026-06-28T09:59:01.554Z"
   },
   {
     "adId": 1070272138,
@@ -3704,7 +3704,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cfd08504-eb47-477e-954c-bb3b5a1c4433.jpg"
     ],
     "firstSeenAt": "2026-05-28T10:59:13.524Z",
-    "lastSeenAt": "2026-06-22T12:51:51.465Z"
+    "lastSeenAt": "2026-06-28T09:59:01.554Z"
   },
   {
     "adId": 1070550879,
@@ -5244,5 +5244,33 @@
     ],
     "firstSeenAt": "2026-06-26T10:30:45.996Z",
     "lastSeenAt": "2026-06-27T09:37:29.248Z"
+  },
+  {
+    "adId": 1074850192,
+    "link": "https://re.kufar.by/vi/1074850192",
+    "title": "Кирпичный гараж на переулок Победы",
+    "description": "Продаю гараж в ГК «Луч-Аргон». Территория ГК полностью заасфальтирована. Видеонаблюдение внутри кооператива\n\nБлок гаража построен на скальном грунте —",
+    "priceByn": 16655,
+    "priceUsd": 5900,
+    "address": "переулок Победы, 11А, Гродно, Гродненская область",
+    "area": 16.8,
+    "seller": "Николай",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Видеонаблюдение",
+      "Смотровая яма",
+      "Подвал"
+    ],
+    "coordinates": {
+      "lat": 53.655859,
+      "lon": 23.824022
+    },
+    "listTime": "2026-06-27T14:59:38Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/19d87c9f-4e63-4ff9-9923-f5277ee208b3.jpg"
+    ],
+    "firstSeenAt": "2026-06-28T09:59:01.554Z",
+    "lastSeenAt": "2026-06-28T09:59:01.554Z"
   }
 ]
