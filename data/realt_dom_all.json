@@ -3406,7 +3406,7 @@
       "https://cdn.realt.by/img/55/163d2d7c-db2b-11f0-941a-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-27T09:38:55.151Z"
+    "lastSeenAt": "2026-06-28T09:59:33.216Z"
   },
   {
     "adId": 3162131,
@@ -5906,7 +5906,7 @@
       "https://static.realt.by/thumb/c/430x374/c5f662a11b216aff1dcebc6285dd1e9e/b7/i/11013c3efib7/93fc9e448f.jpeg"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-27T09:38:55.151Z"
+    "lastSeenAt": "2026-06-28T09:59:33.216Z"
   },
   {
     "adId": 3878873,
@@ -12005,7 +12005,7 @@
       "https://cdn.realt.by/img/55/0983b830-664f-11f1-82da-0242ac120003"
     ],
     "firstSeenAt": "2026-06-13T09:57:59.569Z",
-    "lastSeenAt": "2026-06-27T09:38:55.151Z"
+    "lastSeenAt": "2026-06-28T09:59:33.216Z"
   },
   {
     "adId": 4153391,
@@ -12355,7 +12355,7 @@
       "https://cdn.realt.by/img/55/f7f1b822-6e57-11f1-9672-0242ac120003"
     ],
     "firstSeenAt": "2026-06-23T10:48:28.089Z",
-    "lastSeenAt": "2026-06-27T09:38:55.151Z"
+    "lastSeenAt": "2026-06-28T09:59:33.216Z"
   },
   {
     "adId": 4160483,
@@ -12448,7 +12448,7 @@
       "https://cdn.realt.by/img/55/d286fd5a-713a-11f1-ac14-0242ac120003"
     ],
     "firstSeenAt": "2026-06-26T10:35:27.967Z",
-    "lastSeenAt": "2026-06-27T09:38:55.151Z"
+    "lastSeenAt": "2026-06-28T09:59:33.216Z"
   },
   {
     "adId": 4164805,
@@ -12483,7 +12483,7 @@
       "https://cdn.realt.by/img/55/467c8b36-7126-11f1-a287-0242ac120003"
     ],
     "firstSeenAt": "2026-06-26T10:35:27.967Z",
-    "lastSeenAt": "2026-06-27T09:38:55.151Z"
+    "lastSeenAt": "2026-06-28T09:59:33.216Z"
   },
   {
     "adId": 4164426,
@@ -12517,5 +12517,49 @@
     ],
     "firstSeenAt": "2026-06-26T10:35:27.967Z",
     "lastSeenAt": "2026-06-27T09:38:55.151Z"
+  },
+  {
+    "adId": 4166124,
+    "uuid": "95104b30-724c-11f1-afb3-f5f9d3f7cd27",
+    "link": "https://realt.by/sale-cottages/object/4166124/",
+    "title": "Незавершенное законсервированное капитальное строение в микрорайоне «Зарица-2»",
+    "description": "Здесь уже выполнены самые трудоемкие и дорогостоящие работы: надежный монолитный ленточный фундамент, стены из газосиликатных блоков, крыша из металлочерепицы, заложены перекрытия - деревянные балки, залита стяжка пола. В дом заведены электричество, вода и канализация. Газ подведен на участок к дому, имеется готовый проект газификации. Все коммуникации центральные.",
+    "priceByn": 277000,
+    "priceUsd": 98130,
+    "address": "Гродно Ваньковича ул.",
+    "area": 151.1,
+    "areaLiving": 52.5,
+    "areaKitchen": 47,
+    "plotArea": 9.36,
+    "yearBuilt": 2026,
+    "seller": "Ирина",
+    "listTime": "2026-06-27T20:40:08+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/22d0aa38-724c-11f1-b5bf-0242ac120003",
+      "https://cdn.realt.by/img/55/22d0a8da-724c-11f1-b1e2-0242ac120003",
+      "https://cdn.realt.by/img/55/22d24118-724c-11f1-b916-0242ac120003",
+      "https://cdn.realt.by/img/55/22d84dd8-724c-11f1-840b-0242ac120003",
+      "https://cdn.realt.by/img/55/22d6ae1a-724c-11f1-a22b-0242ac120003",
+      "https://cdn.realt.by/img/55/22e12e58-724c-11f1-b0b1-0242ac120003",
+      "https://cdn.realt.by/img/55/22e73e24-724c-11f1-b1d3-0242ac120003",
+      "https://cdn.realt.by/img/55/22fd0b8c-724c-11f1-b13a-0242ac120003",
+      "https://cdn.realt.by/img/55/22ec0e04-724c-11f1-8f26-0242ac120003",
+      "https://cdn.realt.by/img/55/22dcb544-724c-11f1-beaf-0242ac120003",
+      "https://cdn.realt.by/img/55/22ea9ce0-724c-11f1-a9b9-0242ac120003",
+      "https://cdn.realt.by/img/55/22eb6efe-724c-11f1-b055-0242ac120003",
+      "https://cdn.realt.by/img/55/22ec79e8-724c-11f1-a27e-0242ac120003",
+      "https://cdn.realt.by/img/55/22f16b88-724c-11f1-936d-0242ac120003",
+      "https://cdn.realt.by/img/55/22f7b47a-724c-11f1-8fab-0242ac120003",
+      "https://cdn.realt.by/img/55/22f35254-724c-11f1-b3ae-0242ac120003",
+      "https://cdn.realt.by/img/55/22fd0c04-724c-11f1-85f1-0242ac120003",
+      "https://cdn.realt.by/img/55/22f99f10-724c-11f1-81c8-0242ac120003",
+      "https://cdn.realt.by/img/55/22fa82c2-724c-11f1-ae3e-0242ac120003",
+      "https://cdn.realt.by/img/55/22fae474-724c-11f1-866e-0242ac120003",
+      "https://cdn.realt.by/img/55/22fb7042-724c-11f1-8da0-0242ac120003",
+      "https://cdn.realt.by/img/55/22fb9c84-724c-11f1-bba4-0242ac120003",
+      "https://cdn.realt.by/img/55/230245fc-724c-11f1-b90c-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-28T09:59:33.216Z",
+    "lastSeenAt": "2026-06-28T09:59:33.216Z"
   }
 ]
