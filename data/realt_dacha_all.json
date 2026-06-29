@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-26T10:01:31.775Z"
+    "lastSeenAt": "2026-06-29T09:45:55.547Z"
   },
   {
     "adId": 4057786,
@@ -5522,7 +5522,7 @@
       "https://cdn.realt.by/img/55/f87a1ea4-56da-11f1-a842-0242ac120003"
     ],
     "firstSeenAt": "2026-05-25T09:50:04.852Z",
-    "lastSeenAt": "2026-06-26T10:01:31.775Z"
+    "lastSeenAt": "2026-06-29T09:45:55.547Z"
   },
   {
     "adId": 4137152,
@@ -6509,7 +6509,7 @@
       "https://cdn.realt.by/img/55/ce009ab2-6ca2-11f1-9595-0242ac120003"
     ],
     "firstSeenAt": "2026-06-22T10:03:30.987Z",
-    "lastSeenAt": "2026-06-25T09:52:07.321Z"
+    "lastSeenAt": "2026-06-29T09:45:55.547Z"
   },
   {
     "adId": 4152668,
@@ -6637,5 +6637,34 @@
     ],
     "firstSeenAt": "2026-06-26T10:01:31.775Z",
     "lastSeenAt": "2026-06-26T10:01:31.775Z"
+  },
+  {
+    "adId": 4167255,
+    "uuid": "7f984a70-739e-11f1-9eaf-e5dd7bedc186",
+    "link": "https://realt.by/sale-dachi/object/4167255/",
+    "title": "Домостроитель",
+    "description": "Продается земельный участок (частная собственность) с домиком в СТ \"Домостроитель\" Подлабенского с/с в районе деревни Тарусичи в 5 км от г. Гродно.",
+    "priceByn": 33000,
+    "priceUsd": 11435,
+    "address": "Домостроитель  21",
+    "area": 36.1,
+    "areaKitchen": 6.7,
+    "plotArea": 6,
+    "yearBuilt": 1986,
+    "levels": 1,
+    "seller": "Кватэра",
+    "listTime": "2026-06-29T12:40:14+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/a6a5dcfa-739d-11f1-b052-0242ac120003",
+      "https://cdn.realt.by/img/55/a2ecf04e-739d-11f1-8210-0242ac120003",
+      "https://cdn.realt.by/img/55/9b5aa1a0-739d-11f1-a8c9-0242ac120003",
+      "https://cdn.realt.by/img/55/96a0d4a4-739d-11f1-8523-0242ac120003",
+      "https://cdn.realt.by/img/55/93014df6-739d-11f1-b308-0242ac120003",
+      "https://cdn.realt.by/img/55/8f998b92-739d-11f1-b7e1-0242ac120003",
+      "https://cdn.realt.by/img/55/8b123b50-739d-11f1-8e4e-0242ac120003",
+      "https://cdn.realt.by/img/55/ac11afa2-739d-11f1-bd2b-0242ac120003"
+    ],
+    "firstSeenAt": "2026-06-29T09:45:55.547Z",
+    "lastSeenAt": "2026-06-29T09:45:55.547Z"
   }
 ]
