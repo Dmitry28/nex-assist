@@ -241,7 +241,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9a616e00-3bae-4b5c-80e7-815c0e6afe7c.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-05-12T10:22:56.048Z"
+    "lastSeenAt": "2026-06-29T09:43:54.747Z"
   },
   {
     "adId": 1061820063,
@@ -5007,7 +5007,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/db07d574-4b6c-4c41-a280-40115a11f8b8.jpg"
     ],
     "firstSeenAt": "2026-05-12T10:22:56.048Z",
-    "lastSeenAt": "2026-06-23T09:52:04.037Z"
+    "lastSeenAt": "2026-06-29T09:43:54.747Z"
   },
   {
     "adId": 1068597910,
@@ -6085,7 +6085,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/71a1c2e8-7143-4068-a1e1-983c1ee77ab7.jpg"
     ],
     "firstSeenAt": "2026-05-26T09:56:26.498Z",
-    "lastSeenAt": "2026-06-26T09:54:37.354Z"
+    "lastSeenAt": "2026-06-29T09:43:54.747Z"
   },
   {
     "adId": 1070492983,
@@ -6943,7 +6943,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7f1dd455-48fc-472a-9a46-51e04b0c3357.jpg"
     ],
     "firstSeenAt": "2026-06-22T09:56:36.255Z",
-    "lastSeenAt": "2026-06-26T09:54:37.354Z"
+    "lastSeenAt": "2026-06-29T09:43:54.747Z"
   },
   {
     "adId": 1074101664,
@@ -7148,7 +7148,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fbcc186f-b49d-461a-83d2-a1677e6fcf96.jpg"
     ],
     "firstSeenAt": "2026-06-23T09:52:04.037Z",
-    "lastSeenAt": "2026-06-26T09:54:37.354Z"
+    "lastSeenAt": "2026-06-29T09:43:54.747Z"
   },
   {
     "adId": 1074325732,
@@ -7269,7 +7269,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39cce499-e181-4b5a-afc1-6e39ea15b4cc.jpg"
     ],
     "firstSeenAt": "2026-06-25T09:46:18.972Z",
-    "lastSeenAt": "2026-06-26T09:54:37.354Z"
+    "lastSeenAt": "2026-06-29T09:43:54.747Z"
   },
   {
     "adId": 1074484031,
@@ -7414,5 +7414,57 @@
     ],
     "firstSeenAt": "2026-06-26T09:54:37.354Z",
     "lastSeenAt": "2026-06-26T09:54:37.354Z"
+  },
+  {
+    "adId": 1074983137,
+    "link": "https://re.kufar.by/vi/1074983137",
+    "title": "Дачный участок Торгмаш",
+    "description": "Дачный участок в обществе Торгмаш",
+    "priceByn": 7215,
+    "priceUsd": 2500,
+    "address": "СТ Белочка, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5,
+    "seller": "Виталий",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.609493,
+      "lon": 23.950873
+    },
+    "listTime": "2026-06-28T18:15:22Z",
+    "images": [],
+    "firstSeenAt": "2026-06-29T09:43:54.747Z",
+    "lastSeenAt": "2026-06-29T09:43:54.747Z"
+  },
+  {
+    "adId": 1074865769,
+    "link": "https://re.kufar.by/vi/1074865769",
+    "title": "Дача",
+    "description": "Продается дачный участок возле деревни Жукевичи. Дом под реставрацию либо под снос. Площадь земли 5 соток. Есть электричество и вода. 10 минут езды от",
+    "priceByn": 17315,
+    "priceUsd": 6000,
+    "address": "СТ Теремок, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5,
+    "seller": "Надежда",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.590102,
+      "lon": 23.993669
+    },
+    "listTime": "2026-06-27T17:17:57Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e978ad4f-5da4-4682-91f9-21ca1bbaab47.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/28a859cc-f7b1-4440-b20c-04772e4176de.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1d53b6bf-4cc2-4cf8-a7f6-80f832b49965.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b12d8f1a-00c4-408b-b2a7-0b959d45b77a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e2c424b6-026f-4f63-91be-fb917c3f96c0.jpg"
+    ],
+    "firstSeenAt": "2026-06-29T09:43:54.747Z",
+    "lastSeenAt": "2026-06-29T09:43:54.747Z"
   }
 ]
