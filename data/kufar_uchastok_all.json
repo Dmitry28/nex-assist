@@ -241,7 +241,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9a616e00-3bae-4b5c-80e7-815c0e6afe7c.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-06-29T11:58:03.524Z"
+    "lastSeenAt": "2026-06-30T10:30:34.015Z"
   },
   {
     "adId": 1061820063,
@@ -2319,21 +2319,22 @@
   {
     "adId": 1038882993,
     "link": "https://re.kufar.by/vi/1038882993",
-    "title": "Дачный участок с/Т Автомагнитола",
-    "description": "Дачный участок находится в 6 км от Ольшанки (а судя по началу строительства нового жилого района  - останется 2 км от города) . Полностью огорожен оци",
-    "priceByn": 15174,
-    "priceUsd": 5400,
+    "title": "Дачный участок вблизи Ольшанки, СТ Автомагнитола, 7 соток",
+    "description": "Продам дачный участок вблизи Ольшанки — отличное вложение рядом с городом!\n\nУчасток расположен всего в 6 км от Ольшанки, скоро новая жилая зона сократ",
+    "priceByn": 17294,
+    "priceUsd": 5950,
     "address": "СТ Автомагнитола, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "plotArea": 7,
     "seller": "Почтой не отправляю",
     "features": [
-      "Колодец"
+      "Колодец",
+      "Частная собственность"
     ],
     "coordinates": {
       "lat": 53.57007155056419,
       "lon": 23.811645914456193
     },
-    "listTime": "2026-06-04T08:22:41Z",
+    "listTime": "2026-06-30T08:10:28Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/28031e32-09e0-4ee2-9a2b-d3d32366937c.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/97b336ac-4613-4bdf-a7f7-df80b64ceb7e.jpg",
@@ -2341,7 +2342,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7b484c43-4b27-4651-9da7-52796a4e8d7a.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:08:18.564Z",
-    "lastSeenAt": "2026-06-11T11:33:26.006Z"
+    "lastSeenAt": "2026-06-30T10:30:34.015Z"
   },
   {
     "adId": 1063962481,
@@ -3915,26 +3916,30 @@
   {
     "adId": 1066962335,
     "link": "https://re.kufar.by/vi/1066962335",
-    "title": "Участок",
+    "title": "Участок в черте города",
     "description": "Продам участок 12 соток в черте города. СТ «Принеманское-2». До центра 10 минут на машине. Участок ровный. Газ есть. Рядом лес и река Неман. Идеально ",
-    "priceByn": 55895,
-    "priceUsd": 19800,
+    "priceByn": 56679,
+    "priceUsd": 19500,
     "address": "СТ Принеманское-2, Путришковский сельсовет, Гродненский район, Гродненская область",
     "plotArea": 12,
     "seller": "Ирина",
     "features": [
       "Да"
     ],
-    "listTime": "2026-04-29T18:00:36Z",
+    "coordinates": {
+      "lat": 53.74452288344153,
+      "lon": 23.816485709865724
+    },
+    "listTime": "2026-06-30T09:52:00Z",
     "images": [
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca313ca3-879e-4f31-a133-565b0d774881.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/25bdbcf4-0a96-43c3-ab41-c0dd8ccb8f31.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca313ca3-879e-4f31-a133-565b0d774881.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b170161f-59c7-402f-b58c-bf0f8cbb2d13.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0031bd67-bb5c-4be3-9186-790b8d2e914b.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bcab8ac1-b62b-4855-9d06-311318c4c382.jpg"
     ],
     "firstSeenAt": "2026-04-30T09:19:52.834Z",
-    "lastSeenAt": "2026-06-02T11:25:47.555Z"
+    "lastSeenAt": "2026-06-30T10:30:34.015Z"
   },
   {
     "adId": 1066936344,
@@ -5019,7 +5024,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/db07d574-4b6c-4c41-a280-40115a11f8b8.jpg"
     ],
     "firstSeenAt": "2026-05-12T10:22:56.048Z",
-    "lastSeenAt": "2026-06-29T11:58:03.524Z"
+    "lastSeenAt": "2026-06-30T10:30:34.015Z"
   },
   {
     "adId": 1068597910,
@@ -5936,7 +5941,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fbcc186f-b49d-461a-83d2-a1677e6fcf96.jpg"
     ],
     "firstSeenAt": "2026-05-24T09:20:42.771Z",
-    "lastSeenAt": "2026-06-29T11:58:03.524Z"
+    "lastSeenAt": "2026-06-30T10:30:34.015Z"
   },
   {
     "adId": 1069908317,
@@ -6021,7 +6026,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/71a1c2e8-7143-4068-a1e1-983c1ee77ab7.jpg"
     ],
     "firstSeenAt": "2026-05-25T11:15:07.899Z",
-    "lastSeenAt": "2026-06-29T11:58:03.524Z"
+    "lastSeenAt": "2026-06-30T10:30:34.015Z"
   },
   {
     "adId": 1070502100,
@@ -7717,7 +7722,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7f1dd455-48fc-472a-9a46-51e04b0c3357.jpg"
     ],
     "firstSeenAt": "2026-06-22T12:51:51.468Z",
-    "lastSeenAt": "2026-06-29T11:58:03.524Z"
+    "lastSeenAt": "2026-06-30T10:30:34.015Z"
   },
   {
     "adId": 1074101664,
@@ -7952,7 +7957,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39cce499-e181-4b5a-afc1-6e39ea15b4cc.jpg"
     ],
     "firstSeenAt": "2026-06-25T10:14:22.112Z",
-    "lastSeenAt": "2026-06-29T11:58:03.524Z"
+    "lastSeenAt": "2026-06-30T10:30:34.015Z"
   },
   {
     "adId": 1074484031,
@@ -8203,6 +8208,35 @@
     "listTime": "2026-06-28T18:15:22Z",
     "images": [],
     "firstSeenAt": "2026-06-29T11:58:03.524Z",
-    "lastSeenAt": "2026-06-29T11:58:03.524Z"
+    "lastSeenAt": "2026-06-30T10:30:34.015Z"
+  },
+  {
+    "adId": 1075133191,
+    "link": "https://re.kufar.by/vi/1075133191",
+    "title": "участок СТ Автомагнитола",
+    "description": "Продается отличный земельный участок  в 8 км от города, рядом с д.  Каменка ,д. Бросты,  Коптевский   с/с , в СТ  Автомагнитола . \n Отличное местополо",
+    "priceByn": 20346,
+    "priceUsd": 7000,
+    "address": "СТ Автомагнитола, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 6,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.568939,
+      "lon": 23.808898
+    },
+    "listTime": "2026-06-30T06:53:20Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/972641c5-768c-4d37-8a32-990997cafd47.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3a57ac6e-b665-484e-b61a-15e564fc2d2a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9075c5ff-b4c5-4924-a901-2ab0bcb9a23c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/94b2b081-7447-4642-982f-fa84c33bd1d8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/33dd6a82-3417-484f-9c2e-a91837771172.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4dfa48d9-811e-48e2-ba3c-5593a5a6cb95.jpg"
+    ],
+    "firstSeenAt": "2026-06-30T10:30:34.015Z",
+    "lastSeenAt": "2026-06-30T10:30:34.015Z"
   }
 ]
