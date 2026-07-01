@@ -203,5 +203,36 @@
     ],
     "firstSeenAt": "2026-05-29T11:07:02.414Z",
     "lastSeenAt": "2026-06-28T09:59:03.039Z"
+  },
+  {
+    "adId": 1074760843,
+    "link": "https://travel.kufar.by/hotel/1074760843",
+    "title": "Сдаётся новая 2х-комнатная квартира на сутки /часы/недели",
+    "pricePerNightByn": 110,
+    "address": "Виктора Саяпина ул, 10, Гродно, Гродненская область",
+    "rooms": 2,
+    "area": 9,
+    "personsMax": 4,
+    "accommodationType": "Квартира",
+    "isHotel": false,
+    "isSuperhost": false,
+    "ratingScoresCount": 0,
+    "listTime": "2026-07-01T09:31:46Z",
+    "images": [
+      "https://rms.kufar.by/v1/gallery/adim1/1526cef4-b539-47d4-b698-af84312f9ebd.jpg",
+      "https://rms.kufar.by/v1/gallery/adim1/9252d153-045a-4f00-81cc-af6f79391746.jpg",
+      "https://rms.kufar.by/v1/gallery/adim1/51bd5a50-0001-4bc8-bf19-d0040bc12af7.jpg",
+      "https://rms.kufar.by/v1/gallery/adim1/4f25d6ee-16b3-449b-ae59-4df102b7a7e7.jpg",
+      "https://rms.kufar.by/v1/gallery/adim1/68f7bdbe-fe04-4794-ad5c-38be3da4619f.jpg",
+      "https://rms.kufar.by/v1/gallery/adim1/c3369e30-11f1-4ebc-8aa2-40c68aab0c60.jpg",
+      "https://rms.kufar.by/v1/gallery/adim1/7b97a30a-90c3-422b-845a-c57009962cd1.jpg",
+      "https://rms.kufar.by/v1/gallery/adim1/046d1b6b-8164-48bf-8cfe-bf631098caf0.jpg",
+      "https://rms.kufar.by/v1/gallery/adim1/8c0d5cb9-7cb7-414b-a479-e4ed58551a75.jpg",
+      "https://rms.kufar.by/v1/gallery/adim1/09adb8ad-60a6-4fb3-a73c-65d38a2ff58b.jpg",
+      "https://rms.kufar.by/v1/gallery/adim1/e42514c0-28c7-4627-ab42-396241706795.jpg",
+      "https://rms.kufar.by/v1/gallery/adim1/efcb51a1-fef2-496d-88ea-d3893daa9365.jpg"
+    ],
+    "firstSeenAt": "2026-07-01T10:55:41.090Z",
+    "lastSeenAt": "2026-07-01T10:55:41.090Z"
   }
 ]
