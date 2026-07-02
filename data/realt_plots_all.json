@@ -1348,7 +1348,7 @@
       "https://cdn.realt.by/img/55/84524b84-421f-11f1-8ffa-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-30T09:43:40.768Z"
+    "lastSeenAt": "2026-07-02T09:57:08.641Z"
   },
   {
     "adId": 3848704,
@@ -1589,7 +1589,7 @@
       "https://cdn.realt.by/img/55/674faf5a-6907-11f0-b54c-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-24T09:56:29.241Z"
+    "lastSeenAt": "2026-07-02T09:57:08.641Z"
   },
   {
     "adId": 3707351,
@@ -2204,5 +2204,35 @@
     ],
     "firstSeenAt": "2026-06-24T09:56:29.241Z",
     "lastSeenAt": "2026-06-25T09:52:07.313Z"
+  },
+  {
+    "adId": 4168683,
+    "uuid": "8b168da0-749b-11f1-ad0b-f58e6345e6d6",
+    "link": "https://realt.by/sale-plots/object/4168683/",
+    "title": "Земельный участок в районе д. Малое Демидково, СТ Вита",
+    "description": "Хорошее транспортное сообщение. Удобные подъездные пути. Рядом автобусная остановка. До товарищества ходит круглогодично рейсовый автобус. В шаговой доступности живописный водоём. Приезжает автолавка.",
+    "priceByn": 66000,
+    "priceUsd": 22710,
+    "address": "Вита",
+    "plotArea": 16,
+    "seller": "Елена",
+    "listTime": "2026-06-30T20:21:10+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/478d5028-749b-11f1-9b93-0242ac120003",
+      "https://cdn.realt.by/img/55/47bad39a-749b-11f1-be14-0242ac120003",
+      "https://cdn.realt.by/img/55/4b98bb44-749b-11f1-92cc-0242ac120003",
+      "https://cdn.realt.by/img/55/4bb5892c-749b-11f1-9904-0242ac120003",
+      "https://cdn.realt.by/img/55/4f3a64e6-749b-11f1-8d57-0242ac120003",
+      "https://cdn.realt.by/img/55/4f5f8438-749b-11f1-8a14-0242ac120003",
+      "https://cdn.realt.by/img/55/4f7f4836-749b-11f1-be7b-0242ac120003",
+      "https://cdn.realt.by/img/55/538a3ba2-749b-11f1-b7db-0242ac120003",
+      "https://cdn.realt.by/img/55/539fd4da-749b-11f1-a24a-0242ac120003",
+      "https://cdn.realt.by/img/55/56e27bde-749b-11f1-b8ef-0242ac120003",
+      "https://cdn.realt.by/img/55/56f5ae48-749b-11f1-9762-0242ac120003",
+      "https://cdn.realt.by/img/55/56fb9a92-749b-11f1-9efc-0242ac120003",
+      "https://cdn.realt.by/img/55/5ab96696-749b-11f1-9c50-0242ac120003"
+    ],
+    "firstSeenAt": "2026-07-02T09:57:08.641Z",
+    "lastSeenAt": "2026-07-02T09:57:08.641Z"
   }
 ]
