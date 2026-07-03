@@ -2044,7 +2044,7 @@
       "https://cdn.realt.by/img/55/a81b4ec6-8992-11f0-8643-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-02T09:57:08.643Z"
+    "lastSeenAt": "2026-07-03T09:50:34.418Z"
   },
   {
     "adId": 4105215,
@@ -3272,7 +3272,7 @@
       "https://cdn.realt.by/img/55/ab6757f8-42d0-11f1-a013-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-02T09:57:08.643Z"
+    "lastSeenAt": "2026-07-03T09:50:34.418Z"
   },
   {
     "adId": 3586000,
@@ -5906,7 +5906,7 @@
       "https://static.realt.by/thumb/c/430x374/c5f662a11b216aff1dcebc6285dd1e9e/b7/i/11013c3efib7/93fc9e448f.jpeg"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-02T09:57:08.643Z"
+    "lastSeenAt": "2026-07-03T09:50:34.418Z"
   },
   {
     "adId": 3878873,
@@ -10316,7 +10316,7 @@
       "https://cdn.realt.by/img/55/2b1e4236-0e8f-11ef-a322-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-07-03T09:50:34.418Z"
   },
   {
     "adId": 4120089,
@@ -10979,7 +10979,7 @@
       "https://cdn.realt.by/img/55/043cfed0-5354-11f1-982b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-19T09:42:19.838Z",
-    "lastSeenAt": "2026-07-02T09:57:08.643Z"
+    "lastSeenAt": "2026-07-03T09:50:34.418Z"
   },
   {
     "adId": 4128490,
@@ -11170,7 +11170,7 @@
       "https://cdn.realt.by/img/55/a733f110-59ea-11f1-92d0-0242ac120003"
     ],
     "firstSeenAt": "2026-05-28T09:51:18.008Z",
-    "lastSeenAt": "2026-07-02T09:57:08.643Z"
+    "lastSeenAt": "2026-07-03T09:50:34.418Z"
   },
   {
     "adId": 4137511,
@@ -12295,7 +12295,7 @@
       "https://cdn.realt.by/img/55/4c4b3242-75f4-11f1-a325-0242ac120003"
     ],
     "firstSeenAt": "2026-07-02T09:57:08.643Z",
-    "lastSeenAt": "2026-07-02T09:57:08.643Z"
+    "lastSeenAt": "2026-07-03T09:50:34.418Z"
   },
   {
     "adId": 4170184,
@@ -12330,6 +12330,45 @@
       "https://cdn.realt.by/img/55/02076782-75db-11f1-a62e-0242ac120003"
     ],
     "firstSeenAt": "2026-07-02T09:57:08.643Z",
-    "lastSeenAt": "2026-07-02T09:57:08.643Z"
+    "lastSeenAt": "2026-07-03T09:50:34.418Z"
+  },
+  {
+    "adId": 4170699,
+    "uuid": "f1196150-7611-11f1-a466-0d7e4b3e2baa",
+    "link": "https://realt.by/sale-cottages/object/4170699/",
+    "title": "Гродно, Чернышевского ул.",
+    "description": "Продается часть жилого дома с собственным земельным участком и входом. Дом расположен в тихом районе частной застройки, при этом в непосредственной близости находятся магазины, остановки общественного транспорта, школы и вся необходимая городская инфраструктура.",
+    "priceByn": 116248,
+    "priceUsd": 40000,
+    "address": "Гродно Чернышевского ул. 37",
+    "area": 76.9,
+    "areaLiving": 60.3,
+    "plotArea": 5.7,
+    "seller": "Елена",
+    "listTime": "2026-07-02T15:54:36+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/72614ef4-7611-11f1-ab26-0242ac120003",
+      "https://cdn.realt.by/img/55/75fb8f2a-7611-11f1-b85d-0242ac120003",
+      "https://cdn.realt.by/img/55/78092c82-7611-11f1-a1e6-0242ac120003",
+      "https://cdn.realt.by/img/55/79fca514-7611-11f1-a73c-0242ac120003",
+      "https://cdn.realt.by/img/55/7c9558de-7611-11f1-b9cd-0242ac120003",
+      "https://cdn.realt.by/img/55/7f7c97e2-7611-11f1-8188-0242ac120003",
+      "https://cdn.realt.by/img/55/8337b9c0-7611-11f1-8aaa-0242ac120003",
+      "https://cdn.realt.by/img/55/858b1f5a-7611-11f1-a267-0242ac120003",
+      "https://cdn.realt.by/img/55/87a5acec-7611-11f1-ad41-0242ac120003",
+      "https://cdn.realt.by/img/55/89d4b864-7611-11f1-814c-0242ac120003",
+      "https://cdn.realt.by/img/55/8ba65ad0-7611-11f1-b321-0242ac120003",
+      "https://cdn.realt.by/img/55/8e0e0228-7611-11f1-b058-0242ac120003",
+      "https://cdn.realt.by/img/55/900743d2-7611-11f1-9549-0242ac120003",
+      "https://cdn.realt.by/img/55/927de710-7611-11f1-901c-0242ac120003",
+      "https://cdn.realt.by/img/55/95757b0e-7611-11f1-aeb6-0242ac120003",
+      "https://cdn.realt.by/img/55/97e0196c-7611-11f1-bbcb-0242ac120003",
+      "https://cdn.realt.by/img/55/9a907fe4-7611-11f1-9c10-0242ac120003",
+      "https://cdn.realt.by/img/55/a3ae34a4-7611-11f1-af8a-0242ac120003",
+      "https://cdn.realt.by/img/55/a6816340-7611-11f1-a5db-0242ac120003",
+      "https://cdn.realt.by/img/55/aa43a344-7611-11f1-85d3-0242ac120003"
+    ],
+    "firstSeenAt": "2026-07-03T09:50:34.418Z",
+    "lastSeenAt": "2026-07-03T09:50:34.418Z"
   }
 ]

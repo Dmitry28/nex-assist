@@ -617,7 +617,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/272d5e94-2800-47f3-943d-f4cadecf1310.jpg"
     ],
     "firstSeenAt": "2026-03-27T10:03:43.686Z",
-    "lastSeenAt": "2026-06-26T09:54:37.354Z"
+    "lastSeenAt": "2026-07-03T09:49:33.932Z"
   },
   {
     "adId": 1051330018,
@@ -2342,7 +2342,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7b484c43-4b27-4651-9da7-52796a4e8d7a.jpg"
     ],
     "firstSeenAt": "2026-04-13T09:08:18.564Z",
-    "lastSeenAt": "2026-07-02T09:52:49.641Z"
+    "lastSeenAt": "2026-07-03T09:49:33.932Z"
   },
   {
     "adId": 1063962481,
@@ -4735,7 +4735,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0393d978-a69f-418c-b0b8-c341ed5740a9.jpg"
     ],
     "firstSeenAt": "2026-05-09T08:44:04.837Z",
-    "lastSeenAt": "2026-06-26T09:54:37.354Z"
+    "lastSeenAt": "2026-07-03T09:49:33.932Z"
   },
   {
     "adId": 1068196806,
@@ -4859,7 +4859,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fd31a603-a25d-41e1-ac4d-7af7957c8735.jpg"
     ],
     "firstSeenAt": "2026-05-10T08:53:36.257Z",
-    "lastSeenAt": "2026-07-02T09:52:49.641Z"
+    "lastSeenAt": "2026-07-03T09:49:33.932Z"
   },
   {
     "adId": 1068312789,
@@ -6231,19 +6231,20 @@
     "link": "https://re.kufar.by/vi/1071198231",
     "title": "Дачный участок",
     "description": "Продается участок 6 соток. Огорожен. Проведено электричество, сарай для хоз. инвентаря. Приватизирован. В 5ти минутах езды от м-на Ольшанка.",
-    "priceByn": 19477,
-    "priceUsd": 6900,
+    "priceByn": 18600,
+    "priceUsd": 6400,
     "address": "СТ Автомагнитола, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "plotArea": 6,
     "seller": "Александр",
     "features": [
+      "Отсутствует",
       "Частная собственность"
     ],
     "coordinates": {
       "lat": 53.569365,
       "lon": 23.809155
     },
-    "listTime": "2026-06-25T17:11:07Z",
+    "listTime": "2026-07-02T17:11:07Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/62c89120-bc9b-4eef-8322-3909569dcc8b.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e4e91983-d44c-4eb1-b848-dcf329e6a565.jpg",
@@ -6251,7 +6252,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c7b70899-1cc0-485d-8c90-39da577a5a22.jpg"
     ],
     "firstSeenAt": "2026-06-02T09:46:27.355Z",
-    "lastSeenAt": "2026-06-26T09:54:37.354Z"
+    "lastSeenAt": "2026-07-03T09:49:33.932Z"
   },
   {
     "adId": 1069626257,
@@ -6952,7 +6953,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7f1dd455-48fc-472a-9a46-51e04b0c3357.jpg"
     ],
     "firstSeenAt": "2026-06-22T09:56:36.255Z",
-    "lastSeenAt": "2026-07-02T09:52:49.641Z"
+    "lastSeenAt": "2026-07-03T09:49:33.932Z"
   },
   {
     "adId": 1074101664,
@@ -7157,7 +7158,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fbcc186f-b49d-461a-83d2-a1677e6fcf96.jpg"
     ],
     "firstSeenAt": "2026-06-23T09:52:04.037Z",
-    "lastSeenAt": "2026-07-02T09:52:49.641Z"
+    "lastSeenAt": "2026-07-03T09:49:33.932Z"
   },
   {
     "adId": 1074325732,
@@ -7253,7 +7254,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ef0faeba-38c7-401b-9424-0d5ba3de2476.jpg"
     ],
     "firstSeenAt": "2026-06-25T09:46:18.972Z",
-    "lastSeenAt": "2026-07-02T09:52:49.641Z"
+    "lastSeenAt": "2026-07-03T09:49:33.932Z"
   },
   {
     "adId": 1074487817,
@@ -7278,7 +7279,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39cce499-e181-4b5a-afc1-6e39ea15b4cc.jpg"
     ],
     "firstSeenAt": "2026-06-25T09:46:18.972Z",
-    "lastSeenAt": "2026-07-02T09:52:49.641Z"
+    "lastSeenAt": "2026-07-03T09:49:33.932Z"
   },
   {
     "adId": 1074484031,
@@ -7531,7 +7532,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3c018e4c-cf07-474b-ac60-a8708165b1de.jpg"
     ],
     "firstSeenAt": "2026-07-02T09:52:49.641Z",
-    "lastSeenAt": "2026-07-02T09:52:49.641Z"
+    "lastSeenAt": "2026-07-03T09:49:33.932Z"
   },
   {
     "adId": 1075424221,
@@ -7576,7 +7577,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a3f1d20e-1014-47e0-94cf-0c22dbb50a42.jpg"
     ],
     "firstSeenAt": "2026-07-02T09:52:49.641Z",
-    "lastSeenAt": "2026-07-02T09:52:49.641Z"
+    "lastSeenAt": "2026-07-03T09:49:33.932Z"
   },
   {
     "adId": 1075106759,
@@ -7737,5 +7738,129 @@
     ],
     "firstSeenAt": "2026-07-02T09:52:49.641Z",
     "lastSeenAt": "2026-07-02T09:52:49.641Z"
+  },
+  {
+    "adId": 1075613406,
+    "link": "https://re.kufar.by/vi/1075613406",
+    "title": "Дачный участок,дача,участок",
+    "description": "Продается участок с садовом товариществе. 10км от города.Ходит автобус.Остановка в шаговой доступности .Прекрасное место для  отдыха и жизни.Возможнос",
+    "priceByn": 9000,
+    "priceUsd": 3097,
+    "address": "деревня Шембелевцы, Сопоцкинский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 7.16,
+    "seller": "Гродно",
+    "features": [
+      "Отсутствует",
+      "Частная собственность",
+      "-"
+    ],
+    "coordinates": {
+      "lat": 53.756834,
+      "lon": 23.796659
+    },
+    "listTime": "2026-07-03T07:52:28Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/48170fe5-9dc0-4987-8b24-0e2fdc2b668e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/06834c1c-d53c-4a91-a460-9923f8a04598.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/88c4431b-6072-49e2-ae5d-a951135161aa.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6eb0b4a3-cb2e-445b-aa90-86cbb4a0ec73.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9bf8004d-dbb2-490b-a34c-17fb37486162.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/067f4cb4-2117-45da-90cb-8c191362f42d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0204171a-615a-4409-807f-a16e1ab18f9b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/26168440-99c8-4daf-91a6-06980e02ea1d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/da929110-4f5a-42a9-88fe-ec43d5fadc83.jpg"
+    ],
+    "firstSeenAt": "2026-07-03T09:49:33.932Z",
+    "lastSeenAt": "2026-07-03T09:49:33.932Z"
+  },
+  {
+    "adId": 1075589834,
+    "link": "https://re.kufar.by/vi/1075589834",
+    "title": "Дачный участок",
+    "description": "Продается дача в Подлабеньевском сел.совете, Сад. Тов.Урожай -Тарусичи, ул. Рытвинского,д. 52. Хороший участок под строительство или обработки.На учас",
+    "priceByn": 23250,
+    "priceUsd": 8000,
+    "address": "СТ Урожай-Тарусичи, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 7,
+    "seller": "Людмила",
+    "features": [
+      "Сезонная",
+      "Частная собственность",
+      "Да"
+    ],
+    "coordinates": {
+      "lat": 53.656735826331065,
+      "lon": 23.739250969332918
+    },
+    "listTime": "2026-07-03T04:02:14Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7594844f-3941-4343-9473-92b57b1c1117.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/092a5772-2a2c-44ef-ad36-2fedf78a0750.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/86ca82f4-abe7-4f65-8349-f7cfcd6b5820.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8ed780ec-05d9-4a24-a9d6-a009423a51d6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e19ff438-ec18-4fc8-8a15-2df4ffc6e087.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ebb9a773-de60-4fc5-b3e6-9105bbcdc1d5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8891c543-fe41-4125-b2af-2eeba0260ff2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c0b50beb-eab6-42ff-8461-5eeb994aa58f.jpg"
+    ],
+    "firstSeenAt": "2026-07-03T09:49:33.932Z",
+    "lastSeenAt": "2026-07-03T09:49:33.932Z"
+  },
+  {
+    "adId": 1075537332,
+    "link": "https://re.kufar.by/vi/1075537332",
+    "title": "2 земельных участка СТ Фиалка",
+    "description": "Стоимость указана за 2 участка!!!\nВ продаже 2 земельных участка, расположенные в СТ Фиалка (Подлабенского с/с) направление д. Каролино. Участки площад",
+    "priceByn": 22959,
+    "priceUsd": 7900,
+    "address": "СТ Фиалка, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 12,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.638678,
+      "lon": 23.691849
+    },
+    "listTime": "2026-07-02T16:03:03Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/17e3acb7-ea4c-4719-8b0b-54fc334ea39d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9b846d60-1081-426c-ac08-31db4859e414.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4a91e6b8-af1c-48ac-81c0-ed302d8c91e4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5ebe2b5b-9fda-4771-acfc-e9b4b17d0cce.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/83b2f9d0-52f0-4e6e-a2ae-1a575e1f7763.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/429e777d-dcbf-4a51-be16-617d112fd437.jpg"
+    ],
+    "firstSeenAt": "2026-07-03T09:49:33.932Z",
+    "lastSeenAt": "2026-07-03T09:49:33.932Z"
+  },
+  {
+    "adId": 1075495914,
+    "link": "https://re.kufar.by/vi/1075495914",
+    "title": "Недвижимость",
+    "description": "Продаются два смежных участка, ухожены, огорожены железобетонным забором, двое распашных ворот, площадка для автомобиля, имеются хвойные, плодовые дер",
+    "priceByn": 43593,
+    "priceUsd": 15000,
+    "address": "СТ Василёк, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 9,
+    "seller": "Софья",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.61044891322495,
+      "lon": 23.954289319939186
+    },
+    "listTime": "2026-07-02T10:46:37Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7ab6c7e0-86b8-4898-8b85-f0e9d5a14466.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/292d8cb0-984e-4dbb-9e6c-f3526ab90577.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/72d4e950-cfab-4102-86ca-e5c12a420eaf.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c6fb9764-2de2-4793-8a8c-ccd703f3b9e2.jpg"
+    ],
+    "firstSeenAt": "2026-07-03T09:49:33.932Z",
+    "lastSeenAt": "2026-07-03T09:49:33.932Z"
   }
 ]
