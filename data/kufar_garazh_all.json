@@ -2814,7 +2814,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/95d7e93c-d956-4a23-a935-da8b54ce5a51.jpg"
     ],
     "firstSeenAt": "2026-05-09T08:44:04.835Z",
-    "lastSeenAt": "2026-07-03T10:08:46.286Z"
+    "lastSeenAt": "2026-07-04T09:29:36.896Z"
   },
   {
     "adId": 1068334517,
@@ -3893,7 +3893,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6d5568c2-d8f8-4fa2-807b-2c95587a81b1.jpg"
     ],
     "firstSeenAt": "2026-05-30T09:22:28.517Z",
-    "lastSeenAt": "2026-07-03T10:08:46.286Z"
+    "lastSeenAt": "2026-07-04T09:29:36.896Z"
   },
   {
     "adId": 1070812614,
@@ -5623,7 +5623,7 @@
     "listTime": "2026-07-03T08:47:25Z",
     "images": [],
     "firstSeenAt": "2026-07-03T10:08:46.286Z",
-    "lastSeenAt": "2026-07-03T10:08:46.286Z"
+    "lastSeenAt": "2026-07-04T09:29:36.896Z"
   },
   {
     "adId": 1075613175,
@@ -5657,6 +5657,35 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fd61315b-d40d-41a1-93fe-5385124bcd1f.jpg"
     ],
     "firstSeenAt": "2026-07-03T10:08:46.286Z",
-    "lastSeenAt": "2026-07-03T10:08:46.286Z"
+    "lastSeenAt": "2026-07-04T09:29:36.896Z"
+  },
+  {
+    "adId": 1075676644,
+    "link": "https://re.kufar.by/vi/1075676644",
+    "title": "Гараж",
+    "description": "Гараж, Лососно-Новики,оборудованный,яма, много полок, все вопросы по телефону",
+    "priceByn": 15984,
+    "priceUsd": 5500,
+    "address": "Венечная ул, 2Аблок21к2185, Гродно, Гродненская область",
+    "area": 18,
+    "seller": "Чеслав",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма",
+      "Подвал",
+      "Наземная"
+    ],
+    "coordinates": {
+      "lat": 53.668563,
+      "lon": 23.759074
+    },
+    "listTime": "2026-07-03T17:36:02Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bd3864ce-c12d-4f47-b9cd-35fb17fe4f3b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a1e99b1d-5a9e-4a26-a40c-a3ccac16cfa0.jpg"
+    ],
+    "firstSeenAt": "2026-07-04T09:29:36.896Z",
+    "lastSeenAt": "2026-07-04T09:29:36.896Z"
   }
 ]
