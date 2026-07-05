@@ -2814,7 +2814,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/95d7e93c-d956-4a23-a935-da8b54ce5a51.jpg"
     ],
     "firstSeenAt": "2026-05-09T08:44:04.835Z",
-    "lastSeenAt": "2026-07-04T09:29:36.896Z"
+    "lastSeenAt": "2026-07-05T09:39:18.873Z"
   },
   {
     "adId": 1068334517,
@@ -5686,6 +5686,29 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a1e99b1d-5a9e-4a26-a40c-a3ccac16cfa0.jpg"
     ],
     "firstSeenAt": "2026-07-04T09:29:36.896Z",
-    "lastSeenAt": "2026-07-04T09:29:36.896Z"
+    "lastSeenAt": "2026-07-05T09:39:18.873Z"
+  },
+  {
+    "adId": 1075858593,
+    "link": "https://re.kufar.by/vi/1075858593",
+    "title": "Гараж « Понемунь - 3»",
+    "description": "Гараж сухой, плесень отсутствует, электричество есть. Смотровая яма на весь гараж! \nИнформация по телефону.\nТорг",
+    "priceByn": 16565,
+    "priceUsd": 5700,
+    "address": "Понемуньская ул, 2В, Гродно, Гродненская область",
+    "area": 18,
+    "seller": "Юлия",
+    "propertyType": "Гараж",
+    "coordinates": {
+      "lat": 53.664108,
+      "lon": 23.869117
+    },
+    "listTime": "2026-07-05T08:29:57Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8fcaae51-1504-4d5b-b021-bf06aa86328a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b53eb089-65eb-4e59-b11a-9e2e8c42c6df.jpg"
+    ],
+    "firstSeenAt": "2026-07-05T09:39:18.873Z",
+    "lastSeenAt": "2026-07-05T09:39:18.873Z"
   }
 ]
