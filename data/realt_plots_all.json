@@ -258,7 +258,7 @@
       "https://cdn.realt.by/img/55/63c0acca-58c4-11f0-ad1b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-06T11:32:43.784Z"
+    "lastSeenAt": "2026-07-07T10:33:30.024Z"
   },
   {
     "adId": 4085899,
@@ -352,7 +352,7 @@
       "https://cdn.realt.by/img/55/ed334f36-1111-11ef-8993-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-06T11:32:43.784Z"
+    "lastSeenAt": "2026-07-07T10:33:30.024Z"
   },
   {
     "adId": 3902284,
@@ -1348,7 +1348,7 @@
       "https://cdn.realt.by/img/55/84524b84-421f-11f1-8ffa-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-06T11:32:43.784Z"
+    "lastSeenAt": "2026-07-07T10:33:30.024Z"
   },
   {
     "adId": 3848704,
@@ -2219,7 +2219,7 @@
       "https://cdn.realt.by/img/55/0ad98660-6da7-11f1-a307-0242ac120003"
     ],
     "firstSeenAt": "2026-06-22T12:55:21.206Z",
-    "lastSeenAt": "2026-07-06T11:32:43.784Z"
+    "lastSeenAt": "2026-07-07T10:33:30.024Z"
   },
   {
     "adId": 4161808,
@@ -2322,5 +2322,27 @@
     ],
     "firstSeenAt": "2026-07-05T09:39:40.233Z",
     "lastSeenAt": "2026-07-06T11:32:43.784Z"
+  },
+  {
+    "adId": 4173387,
+    "uuid": "8dde38c0-7933-11f1-a466-0d7e4b3e2baa",
+    "link": "https://realt.by/sale-plots/object/4173387/",
+    "title": "Наумовичи, Центральная ул.",
+    "description": "Участок в деревне Наумовичи. Посмотреть участок вы можете самостоятельно в любое время. Координаты - 53.719370, 23.723080",
+    "priceByn": 140844,
+    "priceUsd": 48500,
+    "address": "Наумовичи Центральная ул. 25",
+    "plotArea": 25,
+    "seller": "Sergey",
+    "listTime": "2026-07-06T15:50:55+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/37dc8030-7933-11f1-80f4-0242ac120003",
+      "https://cdn.realt.by/img/55/37e148b8-7933-11f1-8f59-0242ac120003",
+      "https://cdn.realt.by/img/55/37e211e4-7933-11f1-8ed1-0242ac120003",
+      "https://cdn.realt.by/img/55/37e2977c-7933-11f1-8561-0242ac120003",
+      "https://cdn.realt.by/img/55/37e20fe6-7933-11f1-aba8-0242ac120003"
+    ],
+    "firstSeenAt": "2026-07-07T10:33:30.024Z",
+    "lastSeenAt": "2026-07-07T10:33:30.024Z"
   }
 ]
