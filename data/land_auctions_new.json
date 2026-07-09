@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "title": "Земельный участок по ул. Наполеона Орды, 34",
+    "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-napoleona-ordy-34/",
+    "price": "43 773,00 руб.",
+    "area": "0,1496 га",
+    "address": "г. Гродно, ул. Наполеона Орды, 34",
+    "cadastralNumber": "440100000001015892",
+    "cadastralMapUrl": "https://map.nca.by/search/019f41a5-36b1-72a1-a860-e6252308c6ad",
+    "auctionDate": "Не указана",
+    "applicationDeadline": "Не указан",
+    "communications": "электроснабжение, газоснабжение, водоснабжение",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/07/u2-olshanka-sajt.png"
+    ]
+  },
+  {
+    "title": "Земельный участок по ул. Кондрата Крапивы, 18",
+    "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-kondrata-krapivy-18/",
+    "price": "43 222,00 руб.",
+    "area": "0,1035 га",
+    "address": "г. Гродно, ул. Кондрата Крапивы, 18",
+    "cadastralNumber": "440100000002013036",
+    "cadastralMapUrl": "https://map.nca.by/search/019f4184-5d7c-73a9-b27a-1eb560ca04ef",
+    "auctionDate": "Не указана",
+    "applicationDeadline": "Не указан",
+    "communications": "электроснабжение, газоснабжение, водоснабжение",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/07/kaprivy-22-sajt.png"
+    ]
+  }
+]
