@@ -47,7 +47,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-07-08T09:27:16.771Z"
+    "lastSeenAt": "2026-07-09T10:22:54.697Z"
   },
   {
     "adId": 1062002915,
@@ -2111,7 +2111,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d567989d-b362-455c-8313-321b2130efde.jpg"
     ],
     "firstSeenAt": "2026-04-30T09:19:52.832Z",
-    "lastSeenAt": "2026-07-08T09:27:16.771Z"
+    "lastSeenAt": "2026-07-09T10:22:54.697Z"
   },
   {
     "adId": 1067094178,
@@ -2818,7 +2818,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/95d7e93c-d956-4a23-a935-da8b54ce5a51.jpg"
     ],
     "firstSeenAt": "2026-05-09T08:44:04.835Z",
-    "lastSeenAt": "2026-07-08T09:27:16.771Z"
+    "lastSeenAt": "2026-07-09T10:22:54.697Z"
   },
   {
     "adId": 1068334517,
@@ -3301,7 +3301,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/24b77ffd-3784-4203-b6bd-c36952fd1098.jpg"
     ],
     "firstSeenAt": "2026-05-18T19:41:16.468Z",
-    "lastSeenAt": "2026-07-03T10:08:46.286Z"
+    "lastSeenAt": "2026-07-09T10:22:54.697Z"
   },
   {
     "adId": 1069416579,
@@ -5008,7 +5008,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/634686c2-0094-4318-931d-b3f31a4cf42d.jpg"
     ],
     "firstSeenAt": "2026-06-21T10:34:16.176Z",
-    "lastSeenAt": "2026-07-08T09:27:16.771Z"
+    "lastSeenAt": "2026-07-09T10:22:54.697Z"
   },
   {
     "adId": 1073938992,
@@ -5883,7 +5883,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a5d98a39-5c4a-4af4-9e7c-cf487e24fee2.jpg"
     ],
     "firstSeenAt": "2026-07-08T09:27:16.771Z",
-    "lastSeenAt": "2026-07-08T09:27:16.771Z"
+    "lastSeenAt": "2026-07-09T10:22:54.697Z"
   },
   {
     "adId": 1076141024,
@@ -5913,7 +5913,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/84ab7ecd-98ae-4b46-8e6b-16ba668af192.jpg"
     ],
     "firstSeenAt": "2026-07-08T09:27:16.771Z",
-    "lastSeenAt": "2026-07-08T09:27:16.771Z"
+    "lastSeenAt": "2026-07-09T10:22:54.697Z"
   },
   {
     "adId": 1076137082,
@@ -5942,6 +5942,41 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/76639cbc-3436-4e13-8cd9-58ccd12f3387.jpg"
     ],
     "firstSeenAt": "2026-07-08T09:27:16.771Z",
-    "lastSeenAt": "2026-07-08T09:27:16.771Z"
+    "lastSeenAt": "2026-07-09T10:22:54.697Z"
+  },
+  {
+    "adId": 1076304721,
+    "link": "https://re.kufar.by/vi/1076304721",
+    "title": "Продам гараж",
+    "description": "Продается гараж рядом с аграрным университетом. Хороший подъезд, асфальт.",
+    "priceByn": 22962,
+    "priceUsd": 7999,
+    "address": "Терешковой ул, 28Б, Гродно, Гродненская область",
+    "area": 16.1,
+    "seller": "Павел",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма",
+      "Подвал",
+      "Наземная",
+      "Отсутствует"
+    ],
+    "coordinates": {
+      "lat": 53.696977,
+      "lon": 23.849381
+    },
+    "listTime": "2026-07-08T16:13:44Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/78bc38d7-33e5-40c3-a4ec-bcebf45146b7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8e1515b1-5023-4505-9917-cb41952f90e5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/693b3f53-ed7e-4491-bb95-78896ab1c363.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/82461ee4-c16f-4b40-9fe7-1992987433e9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cedd2196-abee-4fbd-93cb-15a236d76fe8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/af1fb20e-cca0-4eb9-a11e-e429d08866ac.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bdf930bc-c466-4222-aa8d-003c3ed4df16.jpg"
+    ],
+    "firstSeenAt": "2026-07-09T10:22:54.697Z",
+    "lastSeenAt": "2026-07-09T10:22:54.697Z"
   }
 ]

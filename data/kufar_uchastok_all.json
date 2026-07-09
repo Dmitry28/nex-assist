@@ -701,7 +701,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8828a22f-d8a1-448f-80ff-e1a82c4f3d63.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.801Z",
-    "lastSeenAt": "2026-07-08T09:27:16.774Z"
+    "lastSeenAt": "2026-07-09T10:22:54.699Z"
   },
   {
     "adId": 1056448347,
@@ -2638,7 +2638,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/19b9eb71-8846-4f11-a7c2-f9db390d0329.jpg"
     ],
     "firstSeenAt": "2026-04-15T08:37:31.945Z",
-    "lastSeenAt": "2026-07-08T09:27:16.774Z"
+    "lastSeenAt": "2026-07-09T10:22:54.699Z"
   },
   {
     "adId": 1065178373,
@@ -4122,9 +4122,9 @@
     "adId": 1067201197,
     "link": "https://re.kufar.by/vi/1067201197",
     "title": "Дачный участок",
-    "description": "Продам  два совмещенных участка в красивом месте 11км от города.Проведено электричество, щиток на участке. \nхорошие соседи. \nКруглогодично ходят автоб",
-    "priceByn": 20068,
-    "priceUsd": 7000,
+    "description": "Продам два совмещенных участка в красивом месте 11км от города.Проведено электричество, щиток на участке. \nхорошие соседи. \nКруглогодично ходят автобу",
+    "priceByn": 17224,
+    "priceUsd": 6000,
     "address": "28, СТ Черёмушки-2, Одельский сельсовет, Гродненский район, Гродненская область",
     "plotArea": 13,
     "seller": "Дарья",
@@ -4138,7 +4138,7 @@
     "listTime": "2026-07-07T15:38:20Z",
     "images": [],
     "firstSeenAt": "2026-05-02T08:25:33.530Z",
-    "lastSeenAt": "2026-07-08T09:27:16.774Z"
+    "lastSeenAt": "2026-07-09T10:22:54.699Z"
   },
   {
     "adId": 1067200709,
@@ -6759,7 +6759,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/31bf36cb-b7e7-4163-b2eb-b7de1168f596.jpg"
     ],
     "firstSeenAt": "2026-06-08T11:56:19.997Z",
-    "lastSeenAt": "2026-07-08T09:27:16.774Z"
+    "lastSeenAt": "2026-07-09T10:22:54.699Z"
   },
   {
     "adId": 1072159438,
@@ -7497,7 +7497,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ef0faeba-38c7-401b-9424-0d5ba3de2476.jpg"
     ],
     "firstSeenAt": "2026-06-17T11:47:40.607Z",
-    "lastSeenAt": "2026-07-03T10:08:46.288Z"
+    "lastSeenAt": "2026-07-09T10:22:54.699Z"
   },
   {
     "adId": 1073432053,
@@ -7727,7 +7727,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7f1dd455-48fc-472a-9a46-51e04b0c3357.jpg"
     ],
     "firstSeenAt": "2026-06-22T12:51:51.468Z",
-    "lastSeenAt": "2026-07-08T09:27:16.774Z"
+    "lastSeenAt": "2026-07-09T10:22:54.699Z"
   },
   {
     "adId": 1074101664,
@@ -7783,7 +7783,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bfe0f481-3fe8-424c-af4f-d33a7e61f565.jpg"
     ],
     "firstSeenAt": "2026-06-23T10:43:51.835Z",
-    "lastSeenAt": "2026-07-08T09:27:16.774Z"
+    "lastSeenAt": "2026-07-09T10:22:54.699Z"
   },
   {
     "adId": 1074207833,
@@ -8402,7 +8402,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/67f0e0de-3c65-42b6-ba92-2af351e4c3e8.jpg"
     ],
     "firstSeenAt": "2026-07-01T10:55:28.342Z",
-    "lastSeenAt": "2026-07-08T09:27:16.774Z"
+    "lastSeenAt": "2026-07-09T10:22:54.699Z"
   },
   {
     "adId": 1075446792,
@@ -8787,6 +8787,157 @@
     "listTime": "2026-07-07T16:01:28Z",
     "images": [],
     "firstSeenAt": "2026-07-08T09:27:16.774Z",
-    "lastSeenAt": "2026-07-08T09:27:16.774Z"
+    "lastSeenAt": "2026-07-09T10:22:54.699Z"
+  },
+  {
+    "adId": 1076316997,
+    "link": "https://re.kufar.by/vi/1076316997",
+    "title": "Продам участок 6.25 соток",
+    "description": "Продам дачный участок - 6.25 соток. \nБлижний пригород Гродно, престижное и живописное место рядом с базой отдыха привал. На участке возведена коробка ",
+    "priceByn": 20668,
+    "priceUsd": 7200,
+    "address": "76, СТ Будовник, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 6.25,
+    "seller": "Глеб",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.6932343650058,
+      "lon": 23.7535281833689
+    },
+    "listTime": "2026-07-08T17:50:13Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/210c173a-54de-4111-8110-8f659bdc4c6b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f64b9011-435c-4ea4-903f-9038eeee2598.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bbb604c1-e349-40d5-bbfb-fd2e977d707e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c9c97dd3-9c52-4c08-989f-9191d97189e3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5ba0af9c-4985-403e-8f3c-f065614c6d5d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d098c068-f6b2-42cc-aff0-b14bc7bf3802.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2b040df1-fbf8-490b-b8b0-4dfd02c7e6be.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1fbbe98c-4d3b-4987-8d56-913c759774b0.jpg"
+    ],
+    "firstSeenAt": "2026-07-09T10:22:54.699Z",
+    "lastSeenAt": "2026-07-09T10:22:54.699Z"
+  },
+  {
+    "adId": 1076305379,
+    "link": "https://re.kufar.by/vi/1076305379",
+    "title": "Участок с незавершенным строением",
+    "description": "Участок в СТ Каменка,6 км от Ольшанки.",
+    "priceByn": 43059,
+    "priceUsd": 15000,
+    "address": "деревня Каменка, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 11,
+    "seller": "Вячеслав",
+    "features": [
+      "Сезонная",
+      "Частная собственность",
+      "Да"
+    ],
+    "coordinates": {
+      "lat": 53.58683012950072,
+      "lon": 23.798133322374014
+    },
+    "listTime": "2026-07-08T16:20:09Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/34a0156f-ce6c-4ceb-9031-a129aaf0048d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5e739ce6-e7d9-414f-8f2a-b9c98e4dc2ae.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c9784d99-d6c1-4b61-a8b2-3474d68034b0.jpg"
+    ],
+    "firstSeenAt": "2026-07-09T10:22:54.699Z",
+    "lastSeenAt": "2026-07-09T10:22:54.699Z"
+  },
+  {
+    "adId": 1076305327,
+    "link": "https://re.kufar.by/vi/1076305327",
+    "title": "земельный участок СТ Лесное-2",
+    "description": "Продается земельный участок рядом с г. Гродно СТ Лесное-2 , Гродненская область, Подлабенский с/с,  расположенный на участке площадью 8,16 соток (форм",
+    "priceByn": 33000,
+    "priceUsd": 11496,
+    "address": "СТ Лесное-2, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 8.16,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.617449,
+      "lon": 23.705438
+    },
+    "listTime": "2026-07-08T16:19:49Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/712e37ab-ee58-42fc-a8e4-5861113d3b95.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cfb4b177-53a3-41d6-bee8-c5f68c077aaf.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b5a2ac42-eacb-4f88-80c6-27f6e8a8ec08.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4b703173-57ff-44cd-8d1f-a2401616ed49.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3225b369-1683-4562-b9c1-f818135de4e7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3ae2e6b4-e0bc-4c2b-95d7-64d1edfabf9d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9b5cde75-8aee-40a3-b84b-19d1820f5528.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/274b21f4-2908-432e-baec-c6e7c3eb4a51.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1d891565-4d57-4301-ac0f-3f825b5e60f6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/dd7f6246-79f4-467a-b72c-abc44ce20859.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/be03c610-97e8-4778-ae17-e8a51c01f31b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1948918b-9d93-4003-b3ba-c8d668c41973.jpg"
+    ],
+    "firstSeenAt": "2026-07-09T10:22:54.699Z",
+    "lastSeenAt": "2026-07-09T10:22:54.699Z"
+  },
+  {
+    "adId": 1076305330,
+    "link": "https://re.kufar.by/vi/1076305330",
+    "title": "участок СТ Горицвет",
+    "description": "Продается   отличный земельный участок в 10  км от   города,  в экологически чистом районе   направление на Каролино) , СТ «Горицвет ».  \n Участок ров",
+    "priceByn": 32000,
+    "priceUsd": 11148,
+    "address": "СТ Горицвет, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 9.15,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.611278,
+      "lon": 23.671749
+    },
+    "listTime": "2026-07-08T16:19:49Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/51efcd71-b484-46de-abfd-4586670f6211.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d380a447-a5ef-4397-a736-44cafaa4eeee.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eed5be59-d38b-4dfb-9a04-a7f5e1964020.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/75f537d2-a878-4387-82de-b867b6f615a7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/be876215-ce60-48c7-a3a2-9f05c5962d13.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bfeddd42-4b36-4c08-bdf3-92b85e505867.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d2624f6a-787d-42a7-878a-4e30808209d8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ae8c2d23-f753-4be5-add7-71334708f4dd.jpg"
+    ],
+    "firstSeenAt": "2026-07-09T10:22:54.699Z",
+    "lastSeenAt": "2026-07-09T10:22:54.699Z"
+  },
+  {
+    "adId": 1076292343,
+    "link": "https://re.kufar.by/vi/1076292343",
+    "title": "Участок",
+    "description": "Продам участок 6,9 соток, 5 км от Ольшанки",
+    "priceByn": 14353,
+    "priceUsd": 5000,
+    "address": "75, СТ Автомагнитола, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 6.9,
+    "seller": "Таня",
+    "features": [
+      "Отсутствует",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.568947,
+      "lon": 23.810682
+    },
+    "listTime": "2026-07-08T13:40:57Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5bdc09e8-8728-403d-b4ab-ef0ddf2f999e.jpg"
+    ],
+    "firstSeenAt": "2026-07-09T10:22:54.699Z",
+    "lastSeenAt": "2026-07-09T10:22:54.699Z"
   }
 ]
