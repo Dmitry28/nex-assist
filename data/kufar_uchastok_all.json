@@ -6560,7 +6560,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c7b70899-1cc0-485d-8c90-39da577a5a22.jpg"
     ],
     "firstSeenAt": "2026-06-02T11:25:47.555Z",
-    "lastSeenAt": "2026-07-04T09:29:36.899Z"
+    "lastSeenAt": "2026-07-10T10:19:42.318Z"
   },
   {
     "adId": 1071569487,
@@ -7013,7 +7013,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8c76c10b-fe65-4bae-bbe2-47511006b851.jpg"
     ],
     "firstSeenAt": "2026-06-10T11:12:10.631Z",
-    "lastSeenAt": "2026-06-20T10:06:10.753Z"
+    "lastSeenAt": "2026-07-10T10:19:42.318Z"
   },
   {
     "adId": 1072560957,
@@ -7497,7 +7497,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ef0faeba-38c7-401b-9424-0d5ba3de2476.jpg"
     ],
     "firstSeenAt": "2026-06-17T11:47:40.607Z",
-    "lastSeenAt": "2026-07-09T10:22:54.699Z"
+    "lastSeenAt": "2026-07-10T10:19:42.318Z"
   },
   {
     "adId": 1073432053,
@@ -7727,7 +7727,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7f1dd455-48fc-472a-9a46-51e04b0c3357.jpg"
     ],
     "firstSeenAt": "2026-06-22T12:51:51.468Z",
-    "lastSeenAt": "2026-07-09T10:22:54.699Z"
+    "lastSeenAt": "2026-07-10T10:19:42.318Z"
   },
   {
     "adId": 1074101664,
@@ -8819,7 +8819,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1fbbe98c-4d3b-4987-8d56-913c759774b0.jpg"
     ],
     "firstSeenAt": "2026-07-09T10:22:54.699Z",
-    "lastSeenAt": "2026-07-09T10:22:54.699Z"
+    "lastSeenAt": "2026-07-10T10:19:42.318Z"
   },
   {
     "adId": 1076305379,
@@ -8847,7 +8847,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c9784d99-d6c1-4b61-a8b2-3474d68034b0.jpg"
     ],
     "firstSeenAt": "2026-07-09T10:22:54.699Z",
-    "lastSeenAt": "2026-07-09T10:22:54.699Z"
+    "lastSeenAt": "2026-07-10T10:19:42.318Z"
   },
   {
     "adId": 1076305327,
@@ -8882,7 +8882,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1948918b-9d93-4003-b3ba-c8d668c41973.jpg"
     ],
     "firstSeenAt": "2026-07-09T10:22:54.699Z",
-    "lastSeenAt": "2026-07-09T10:22:54.699Z"
+    "lastSeenAt": "2026-07-10T10:19:42.318Z"
   },
   {
     "adId": 1076305330,
@@ -8913,7 +8913,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ae8c2d23-f753-4be5-add7-71334708f4dd.jpg"
     ],
     "firstSeenAt": "2026-07-09T10:22:54.699Z",
-    "lastSeenAt": "2026-07-09T10:22:54.699Z"
+    "lastSeenAt": "2026-07-10T10:19:42.318Z"
   },
   {
     "adId": 1076292343,
@@ -8938,6 +8938,63 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5bdc09e8-8728-403d-b4ab-ef0ddf2f999e.jpg"
     ],
     "firstSeenAt": "2026-07-09T10:22:54.699Z",
-    "lastSeenAt": "2026-07-09T10:22:54.699Z"
+    "lastSeenAt": "2026-07-10T10:19:42.318Z"
+  },
+  {
+    "adId": 1076505955,
+    "link": "https://re.kufar.by/vi/1076505955",
+    "title": "участок СТ Автоагрегатчик",
+    "description": "Продается дачный участок в СТ «Автоагрегатчик», Квасовский с/с. \nУчасток 0,0501 га, ровный, на участке плодовые деревья, сезонная вода. Рядом хвойный ",
+    "priceByn": 12800,
+    "priceUsd": 4474,
+    "address": "25, СТ Автоагрегатчик, Квасовский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.560073,
+      "lon": 23.788464
+    },
+    "listTime": "2026-07-10T06:55:28Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d1c46a39-25d5-40d8-a73a-5892a5f2890e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c5ef2591-234b-4d57-8020-022b28e1a391.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/177c0f53-3d4f-483d-be56-4ac209df2f58.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/06cb3057-0216-4110-84e7-59d958841a58.jpg"
+    ],
+    "firstSeenAt": "2026-07-10T10:19:42.318Z",
+    "lastSeenAt": "2026-07-10T10:19:42.318Z"
+  },
+  {
+    "adId": 1076505951,
+    "link": "https://re.kufar.by/vi/1076505951",
+    "title": "земельный участок СТ Крыжачок",
+    "description": "Продается земельный участок рядом с г. Гродно СТ Крыжачок , Гродненский район, Коптёвский с/с,  расположенный на участке площадью 5,18 соток (форма со",
+    "priceByn": 19739,
+    "priceUsd": 6900,
+    "address": "СТ Крыжачок, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5.18,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.61174,
+      "lon": 23.946867
+    },
+    "listTime": "2026-07-10T06:55:27Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/45adb3c7-ec64-4a11-8824-e9081b451e84.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b37816a2-8e69-4002-932e-1976ca091ec3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/25ccbc63-0a3a-4943-9c19-0a49a6c5ec34.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/05e7209d-fb5e-478d-bba3-19c9737a2347.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ade497fd-4dbb-41b0-aeda-b5c0780a980c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/866a448b-967c-43cf-a9c8-030d3a0b487d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0bd8cb30-f6c9-419d-a5ed-2bf7dc79e095.jpg"
+    ],
+    "firstSeenAt": "2026-07-10T10:19:42.318Z",
+    "lastSeenAt": "2026-07-10T10:19:42.318Z"
   }
 ]
