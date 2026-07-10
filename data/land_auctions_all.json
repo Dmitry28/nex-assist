@@ -1,5 +1,35 @@
 [
   {
+    "title": "Земельный участок по ул. Наполеона Орды, 34",
+    "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-napoleona-ordy-34/",
+    "price": "43 773,00 руб.",
+    "area": "0,1496 га",
+    "address": "г. Гродно, ул. Наполеона Орды, 34",
+    "cadastralNumber": "440100000001015892",
+    "cadastralMapUrl": "https://map.nca.by/search/019f41a5-36b1-72a1-a860-e6252308c6ad",
+    "auctionDate": "Аукцион состоится 11.08.2026",
+    "applicationDeadline": "Заявления принимаются по 05.08.2026",
+    "communications": "электроснабжение, газоснабжение, водоснабжение",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/07/u2-olshanka-sajt.png"
+    ]
+  },
+  {
+    "title": "Земельный участок по ул. Кондрата Крапивы, 18",
+    "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-kondrata-krapivy-18/",
+    "price": "43 222,00 руб.",
+    "area": "0,1035 га",
+    "address": "г. Гродно, ул. Кондрата Крапивы, 18",
+    "cadastralNumber": "440100000002013036",
+    "cadastralMapUrl": "https://map.nca.by/search/019f4184-5d7c-73a9-b27a-1eb560ca04ef",
+    "auctionDate": "Аукцион состоится 11.08.2026",
+    "applicationDeadline": "Заявления принимаются по 05.08.2026",
+    "communications": "электроснабжение, газоснабжение, водоснабжение",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/07/kaprivy-22-sajt.png"
+    ]
+  },
+  {
     "title": "Земельный участок по ул. Сергея Гребченко, 23",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-sergeya-grebchenko-23/",
     "price": "46 772,00 руб.",
@@ -62,8 +92,8 @@
     "address": "г. Гродно, У-66 в микрорайоне «Барановичи-7», ул. Родная, 16",
     "cadastralNumber": "440100000003005895",
     "cadastralMapUrl": "https://map.nca.by/search/019df766-3e78-72fb-a51b-0797673adb7a",
-    "auctionDate": "Проведение аукциона планируется на июнь-август 2026 г.",
-    "applicationDeadline": "Не указан",
+    "auctionDate": "Аукцион состоится 11.08.2026",
+    "applicationDeadline": "Заявления принимаются по 05.08.2026",
     "communications": "Не указаны",
     "images": [
       "https://gcn.by/wp-content/uploads/2026/05/u-66-rodnaya-baranovichi-sajt-3.png",

@@ -3,7 +3,7 @@
     "adId": 209852970,
     "link": "https://travel.kufar.by/hotel/209852970",
     "title": "Сдам квартиру - студию",
-    "pricePerNightByn": 100,
+    "pricePerNightByn": 140,
     "address": "Виктора Саяпина ул, 8, Гродно, Гродненская область",
     "rooms": 1,
     "area": 9,
@@ -12,8 +12,8 @@
     "isHotel": false,
     "isSuperhost": true,
     "rating": 1,
-    "ratingScoresCount": 64,
-    "listTime": "2026-07-02T06:38:27Z",
+    "ratingScoresCount": 65,
+    "listTime": "2026-07-10T06:38:27Z",
     "images": [
       "https://rms.kufar.by/v1/gallery/adim1/19557af8-ed96-48f1-82a4-c1ce14562887.jpg",
       "https://rms.kufar.by/v1/gallery/adim1/3f486676-1d2e-4299-aa1b-b65935496647.jpg",
@@ -33,7 +33,7 @@
       "https://rms.kufar.by/v1/gallery/adim1/d2489f23-b859-4baa-b083-5679bea6c9ab.jpg"
     ],
     "firstSeenAt": "2026-05-19T09:38:29.012Z",
-    "lastSeenAt": "2026-07-02T09:52:57.218Z"
+    "lastSeenAt": "2026-07-10T09:55:02.134Z"
   },
   {
     "adId": 1061321943,
@@ -72,7 +72,7 @@
     "adId": 1065503834,
     "link": "https://travel.kufar.by/hotel/1065503834",
     "title": "2-х комнатная квартира на сутки в Гродно",
-    "pricePerNightByn": 95,
+    "pricePerNightByn": 114,
     "address": "Виктора Саяпина ул, 2А, Гродно, Гродненская область",
     "rooms": 2,
     "area": 9,
@@ -81,16 +81,15 @@
     "isHotel": false,
     "isSuperhost": false,
     "rating": 1,
-    "ratingScoresCount": 4,
-    "listTime": "2026-07-01T11:41:38Z",
+    "ratingScoresCount": 5,
+    "listTime": "2026-07-04T11:41:38Z",
     "images": [
-      "https://rms.kufar.by/v1/gallery/adim1/70085a88-9837-499d-9dda-f703a611e90f.jpg",
+      "https://rms.kufar.by/v1/gallery/adim1/061c159f-c5a1-4b6a-bade-6db658c42bf0.jpg",
       "https://rms.kufar.by/v1/gallery/adim1/ad972799-e951-4b5d-a347-31e821ad7c4b.jpg",
       "https://rms.kufar.by/v1/gallery/adim1/b1f7134c-0ef0-46c9-a74d-a7e505bc2e40.jpg",
       "https://rms.kufar.by/v1/gallery/adim1/cd830052-2204-4249-b4a6-ec3766e1dbe5.jpg",
       "https://rms.kufar.by/v1/gallery/adim1/8a82b714-1bea-4555-abdf-800325fe894d.jpg",
-      "https://rms.kufar.by/v1/gallery/adim1/a5dc5521-676f-4dc9-8d73-8b2a70ad5e20.jpg",
-      "https://rms.kufar.by/v1/gallery/adim1/3284cc66-bf5b-4c93-8280-0a122d730cfb.jpg",
+      "https://rms.kufar.by/v1/gallery/adim1/70085a88-9837-499d-9dda-f703a611e90f.jpg",
       "https://rms.kufar.by/v1/gallery/adim1/52fd0071-22d7-49e5-a1a8-c4c892dbc5a2.jpg",
       "https://rms.kufar.by/v1/gallery/adim1/78c1e83a-32e4-40f9-b106-ae17c0be9645.jpg",
       "https://rms.kufar.by/v1/gallery/adim1/b0c611fb-8a1c-4728-97b9-75561926a597.jpg",
@@ -98,7 +97,7 @@
       "https://rms.kufar.by/v1/gallery/adim1/a1a41e8b-3a3d-4ebc-8465-3a468db2e39c.jpg"
     ],
     "firstSeenAt": "2026-05-19T09:38:29.012Z",
-    "lastSeenAt": "2026-07-02T09:52:57.218Z"
+    "lastSeenAt": "2026-07-10T09:55:02.134Z"
   },
   {
     "adId": 252107999,
