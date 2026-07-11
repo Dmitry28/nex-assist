@@ -2638,7 +2638,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/19b9eb71-8846-4f11-a7c2-f9db390d0329.jpg"
     ],
     "firstSeenAt": "2026-04-15T08:37:31.945Z",
-    "lastSeenAt": "2026-07-09T10:22:54.699Z"
+    "lastSeenAt": "2026-07-11T08:46:24.603Z"
   },
   {
     "adId": 1065178373,
@@ -6030,7 +6030,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/71a1c2e8-7143-4068-a1e1-983c1ee77ab7.jpg"
     ],
     "firstSeenAt": "2026-05-25T11:15:07.899Z",
-    "lastSeenAt": "2026-07-08T09:27:16.774Z"
+    "lastSeenAt": "2026-07-11T08:46:24.603Z"
   },
   {
     "adId": 1070502100,
@@ -6560,7 +6560,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c7b70899-1cc0-485d-8c90-39da577a5a22.jpg"
     ],
     "firstSeenAt": "2026-06-02T11:25:47.555Z",
-    "lastSeenAt": "2026-07-10T10:19:42.318Z"
+    "lastSeenAt": "2026-07-11T08:46:24.603Z"
   },
   {
     "adId": 1071569487,
@@ -7013,7 +7013,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8c76c10b-fe65-4bae-bbe2-47511006b851.jpg"
     ],
     "firstSeenAt": "2026-06-10T11:12:10.631Z",
-    "lastSeenAt": "2026-07-10T10:19:42.318Z"
+    "lastSeenAt": "2026-07-11T08:46:24.603Z"
   },
   {
     "adId": 1072560957,
@@ -7247,7 +7247,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/38f441dd-2b07-46a5-b867-4a8d039678e8.jpg"
     ],
     "firstSeenAt": "2026-06-15T13:09:45.094Z",
-    "lastSeenAt": "2026-06-17T11:47:40.607Z"
+    "lastSeenAt": "2026-07-11T08:46:24.603Z"
   },
   {
     "adId": 1073206834,
@@ -8680,7 +8680,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/71cdd61b-e7a4-4d65-9a00-722b41b0f6a8.jpg"
     ],
     "firstSeenAt": "2026-07-06T11:31:11.284Z",
-    "lastSeenAt": "2026-07-07T10:32:41.851Z"
+    "lastSeenAt": "2026-07-11T08:46:24.603Z"
   },
   {
     "adId": 1075903948,
@@ -8965,7 +8965,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/06cb3057-0216-4110-84e7-59d958841a58.jpg"
     ],
     "firstSeenAt": "2026-07-10T10:19:42.318Z",
-    "lastSeenAt": "2026-07-10T10:19:42.318Z"
+    "lastSeenAt": "2026-07-11T08:46:24.603Z"
   },
   {
     "adId": 1076505951,
@@ -8995,6 +8995,33 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0bd8cb30-f6c9-419d-a5ed-2bf7dc79e095.jpg"
     ],
     "firstSeenAt": "2026-07-10T10:19:42.318Z",
-    "lastSeenAt": "2026-07-10T10:19:42.318Z"
+    "lastSeenAt": "2026-07-11T08:46:24.603Z"
+  },
+  {
+    "adId": 1076626399,
+    "link": "https://re.kufar.by/vi/1076626399",
+    "title": "участок СТ Шембелевцы",
+    "description": "Продается дачный участок в садовом товариществе «Шембелевцы», Гродненский р-н, Сопоцкинский с/с. До города 12 км. 15 минут езды на автомобиле. Площадь",
+    "priceByn": 20597,
+    "priceUsd": 7200,
+    "address": "Н-6883, Гродненская область",
+    "plotArea": 7,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.754667,
+      "lon": 23.798648
+    },
+    "listTime": "2026-07-11T07:02:52Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2da85961-24b9-4bbc-9470-5b8ee210a936.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/17b7e430-26bb-4ae1-83bd-4ba1c9c36aef.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a3c4ce26-7a8e-4311-8c86-24ef78da16ad.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/75fdd2f3-288d-4c60-9275-64946fe301e7.jpg"
+    ],
+    "firstSeenAt": "2026-07-11T08:46:24.603Z",
+    "lastSeenAt": "2026-07-11T08:46:24.603Z"
   }
 ]

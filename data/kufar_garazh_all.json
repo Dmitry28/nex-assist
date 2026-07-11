@@ -2818,7 +2818,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/95d7e93c-d956-4a23-a935-da8b54ce5a51.jpg"
     ],
     "firstSeenAt": "2026-05-09T08:44:04.835Z",
-    "lastSeenAt": "2026-07-10T10:19:42.316Z"
+    "lastSeenAt": "2026-07-11T08:46:24.600Z"
   },
   {
     "adId": 1068334517,
@@ -5369,7 +5369,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3edddf4b-a58b-4dd4-8e8f-3cbec5f6c916.jpg"
     ],
     "firstSeenAt": "2026-06-29T11:58:03.521Z",
-    "lastSeenAt": "2026-07-10T10:19:42.316Z"
+    "lastSeenAt": "2026-07-11T08:46:24.600Z"
   },
   {
     "adId": 1075129097,
@@ -6006,17 +6006,17 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b2295037-94f1-40dc-a88c-8fb3af5a0b0a.jpg"
     ],
     "firstSeenAt": "2026-07-10T10:19:42.316Z",
-    "lastSeenAt": "2026-07-10T10:19:42.316Z"
+    "lastSeenAt": "2026-07-11T08:46:24.600Z"
   },
   {
     "adId": 1076502018,
     "link": "https://re.kufar.by/vi/1076502018",
-    "title": "Гараж (Вишневец, Химволокно)",
+    "title": "Гараж (Вишневец, Химволокно) 5,62х3м",
     "description": "Продаётся гараж в микрорайоне Вишневец, Химволокно",
-    "priceByn": 17164,
-    "priceUsd": 6000,
+    "priceByn": 15734,
+    "priceUsd": 5500,
     "address": "Весёлая ул, Гродно, Гродненская область",
-    "area": 16,
+    "area": 17,
     "seller": "Юрий",
     "propertyType": "Гараж",
     "features": [
@@ -6035,6 +6035,53 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/68f2fe82-da93-48cd-9e8e-9e2e45c7cbf0.jpg"
     ],
     "firstSeenAt": "2026-07-10T10:19:42.316Z",
-    "lastSeenAt": "2026-07-10T10:19:42.316Z"
+    "lastSeenAt": "2026-07-11T08:46:24.600Z"
+  },
+  {
+    "adId": 1076585743,
+    "link": "https://re.kufar.by/vi/1076585743",
+    "title": "Продам гараж",
+    "description": "Продам гараж. Обращаться по номеру телефона : Пётр. Торг",
+    "priceByn": 22880,
+    "priceUsd": 7998,
+    "address": "Богуцкого ул, Гродно, Гродненская область",
+    "area": 15,
+    "seller": "Татьяна",
+    "propertyType": "Гараж",
+    "features": [
+      "Наземная"
+    ],
+    "coordinates": {
+      "lat": 53.709876,
+      "lon": 23.804762
+    },
+    "listTime": "2026-07-10T20:25:37Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bfb2a385-42b7-4efd-b637-1265c620b84c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a72a812c-f4c2-46b7-b6b3-d591659ba9f2.jpg"
+    ],
+    "firstSeenAt": "2026-07-11T08:46:24.600Z",
+    "lastSeenAt": "2026-07-11T08:46:24.600Z"
+  },
+  {
+    "adId": 1076575327,
+    "link": "https://re.kufar.by/vi/1076575327",
+    "title": "Гараж Лососно",
+    "description": "Гараж в Лососно. Все вопросы по телефону. Звоните или пишите",
+    "priceByn": 15448,
+    "priceUsd": 5400,
+    "address": "микрорайон Лососно, Гродно, Гродненская область",
+    "area": 19,
+    "seller": "Руслан",
+    "coordinates": {
+      "lat": 53.672111,
+      "lon": 23.77625
+    },
+    "listTime": "2026-07-10T17:42:16Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7a34a644-45ed-410e-be77-846fb30a610a.jpg"
+    ],
+    "firstSeenAt": "2026-07-11T08:46:24.600Z",
+    "lastSeenAt": "2026-07-11T08:46:24.600Z"
   }
 ]
