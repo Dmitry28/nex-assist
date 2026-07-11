@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-10T10:20:09.582Z"
+    "lastSeenAt": "2026-07-11T08:46:52.642Z"
   },
   {
     "adId": 4057786,
@@ -3555,7 +3555,7 @@
       "https://cdn.realt.by/img/55/8c399970-df68-11f0-b7b9-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-10T10:20:09.582Z"
+    "lastSeenAt": "2026-07-11T08:46:52.642Z"
   },
   {
     "adId": 4056878,
@@ -5552,7 +5552,7 @@
       "https://cdn.realt.by/img/55/f87a1ea4-56da-11f1-a842-0242ac120003"
     ],
     "firstSeenAt": "2026-05-24T09:22:42.706Z",
-    "lastSeenAt": "2026-07-10T10:20:09.582Z"
+    "lastSeenAt": "2026-07-11T08:46:52.642Z"
   },
   {
     "adId": 4137152,
@@ -5763,7 +5763,7 @@
       "https://cdn.realt.by/img/55/6ca3b00c-5ac2-11f1-ae20-0242ac120003"
     ],
     "firstSeenAt": "2026-05-29T11:13:58.463Z",
-    "lastSeenAt": "2026-07-10T10:20:09.582Z"
+    "lastSeenAt": "2026-07-11T08:46:52.642Z"
   },
   {
     "adId": 4139294,
@@ -5792,7 +5792,7 @@
       "https://cdn.realt.by/img/55/acd5e788-5c68-11f1-b002-0242ac120003"
     ],
     "firstSeenAt": "2026-05-31T09:53:04.911Z",
-    "lastSeenAt": "2026-07-07T10:33:30.033Z"
+    "lastSeenAt": "2026-07-11T08:46:52.642Z"
   },
   {
     "adId": 4140044,
@@ -7016,5 +7016,38 @@
     ],
     "firstSeenAt": "2026-07-02T10:07:23.195Z",
     "lastSeenAt": "2026-07-03T10:10:13.981Z"
+  },
+  {
+    "adId": 4177808,
+    "uuid": "50cb05e0-7c70-11f1-979c-a5f5fd8ba07b",
+    "link": "https://realt.by/sale-dachi/object/4177808/",
+    "title": "дача СТ «Юбилейное»",
+    "description": "Продаётся уютная дача в 3-х км от г. Гродно в прекрасном месте рядом с р. Лососянка, оз.Юбилейное СТ «Юбилейное», товарищество окружено лесом. Участок ровный, огороженный, угловой, ухоженный 0,0588 га. На участке расположен садовый дом, хозпостройка и уборная. Материал стен кирпич/доска, крыша шифер. Общая площадь садового домика 33 м, кв. В доме две комнаты и веранда, имеется печь",
+    "priceByn": 28710,
+    "priceUsd": 10036,
+    "address": "Юбилейное",
+    "area": 33,
+    "plotArea": 5.88,
+    "seller": "Дарья",
+    "listTime": "2026-07-10T18:21:20+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/e107b500-7c6f-11f1-bc87-0242ac120002",
+      "https://cdn.realt.by/img/55/d87d9dfa-7c6f-11f1-ab25-0242ac120002",
+      "https://cdn.realt.by/img/55/d8788b08-7c6f-11f1-aaf1-0242ac120002",
+      "https://cdn.realt.by/img/55/e78385a8-7c6f-11f1-a7d7-0242ac120002",
+      "https://cdn.realt.by/img/55/e7856f6c-7c6f-11f1-936a-0242ac120002",
+      "https://cdn.realt.by/img/55/e795b9c6-7c6f-11f1-aeb1-0242ac120002",
+      "https://cdn.realt.by/img/55/e79e8146-7c6f-11f1-a4a4-0242ac120002",
+      "https://cdn.realt.by/img/55/d884b964-7c6f-11f1-be11-0242ac120002",
+      "https://cdn.realt.by/img/55/d88977b0-7c6f-11f1-8ca1-0242ac120002",
+      "https://cdn.realt.by/img/55/d88bfe04-7c6f-11f1-b946-0242ac120002",
+      "https://cdn.realt.by/img/55/d88d709a-7c6f-11f1-81e0-0242ac120002",
+      "https://cdn.realt.by/img/55/d88ea23a-7c6f-11f1-abf7-0242ac120002",
+      "https://cdn.realt.by/img/55/d88eff28-7c6f-11f1-9577-0242ac120002",
+      "https://cdn.realt.by/img/55/d8256086-7c6f-11f1-a644-0242ac120002",
+      "https://cdn.realt.by/img/55/d81d2f56-7c6f-11f1-a4e8-0242ac120002"
+    ],
+    "firstSeenAt": "2026-07-11T08:46:52.642Z",
+    "lastSeenAt": "2026-07-11T08:46:52.642Z"
   }
 ]

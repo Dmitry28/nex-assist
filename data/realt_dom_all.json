@@ -40,7 +40,7 @@
       "https://cdn.realt.by/img/55/03fd1570-d66f-11f0-b546-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-10T10:20:09.576Z"
+    "lastSeenAt": "2026-07-11T08:46:52.637Z"
   },
   {
     "adId": 4058841,
@@ -1711,14 +1711,14 @@
     "link": "https://realt.by/sale-cottages/object/3043000/",
     "title": "2-этажный дом в Коптевке",
     "description": "Участок 23 сотки, ровный, ухоженный, с плодовыми деревьями. Вокруг лес, грибные места. Подъезд: асфальтированная дорога. Развитая инфраструктура: сад, магазины, костел, заправка.",
-    "priceByn": 194483,
-    "priceUsd": 69000,
+    "priceByn": 237000,
+    "priceUsd": 82847,
     "address": "Коптевка Победы пер. 9",
     "area": 234,
     "plotArea": 23,
     "levels": 2,
     "seller": "Виктория",
-    "listTime": "2025-03-18T10:20:40+03:00",
+    "listTime": "2026-07-10T16:51:32+03:00",
     "images": [
       "https://static.realt.by/thumb/c/430x374/9bf7e042f195f1817b8c7b82f71609bd/h4/k/site3uyitkh4/0bf058687f.jpg",
       "https://static.realt.by/thumb/c/430x374/66d11a9d7ef6d523fe1c6285a85809f5/h4/k/site3uyitkh4/d7c31fc219.jpg",
@@ -1736,7 +1736,7 @@
       "https://static.realt.by/thumb/c/430x374/fa140ae0552a664ce8b2f6d0bc3f62af/h4/k/site3uyitkh4/da35968d23.jpg"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-07-11T08:46:52.637Z"
   },
   {
     "adId": 3801361,
@@ -5906,7 +5906,7 @@
       "https://static.realt.by/thumb/c/430x374/c5f662a11b216aff1dcebc6285dd1e9e/b7/i/11013c3efib7/93fc9e448f.jpeg"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-10T10:20:09.576Z"
+    "lastSeenAt": "2026-07-11T08:46:52.637Z"
   },
   {
     "adId": 3878873,
@@ -10523,7 +10523,7 @@
       "https://cdn.realt.by/img/55/13ce0d88-4f5a-11f1-85bb-0242ac120003"
     ],
     "firstSeenAt": "2026-05-14T10:05:10.115Z",
-    "lastSeenAt": "2026-07-02T10:07:23.188Z"
+    "lastSeenAt": "2026-07-11T08:46:52.637Z"
   },
   {
     "adId": 4123420,
@@ -11595,7 +11595,7 @@
       "https://cdn.realt.by/img/55/4dea2ce4-60ae-11f1-84c5-0242ac120003"
     ],
     "firstSeenAt": "2026-06-05T11:01:18.780Z",
-    "lastSeenAt": "2026-07-10T10:20:09.576Z"
+    "lastSeenAt": "2026-07-11T08:46:52.637Z"
   },
   {
     "adId": 3099824,
@@ -12355,7 +12355,7 @@
       "https://cdn.realt.by/img/55/f7f1b822-6e57-11f1-9672-0242ac120003"
     ],
     "firstSeenAt": "2026-06-23T10:48:28.089Z",
-    "lastSeenAt": "2026-07-10T10:20:09.576Z"
+    "lastSeenAt": "2026-07-11T08:46:52.637Z"
   },
   {
     "adId": 4160483,
@@ -12818,6 +12818,50 @@
       "https://cdn.realt.by/img/55/db34e98e-7c17-11f1-b4f9-0242ac120003"
     ],
     "firstSeenAt": "2026-07-10T10:20:09.576Z",
-    "lastSeenAt": "2026-07-10T10:20:09.576Z"
+    "lastSeenAt": "2026-07-11T08:46:52.637Z"
+  },
+  {
+    "adId": 4177813,
+    "uuid": "a39d1c40-7c70-11f1-8820-15c0e8230b3c",
+    "link": "https://realt.by/sale-cottages/object/4177813/",
+    "title": "Незавершенное законсервированное капитальное строение в микрорайоне «Зарица-2»",
+    "description": "Здесь уже выполнены самые трудоемкие и дорогостоящие работы: надежный монолитный ленточный фундамент, стены из газосиликатных блоков, крыша из металлочерепицы, заложены перекрытия - деревянные балки, залита стяжка пола. В дом заведены электричество, вода и канализация. Газ подведен на участок к дому, имеется готовый проект газификации. Все коммуникации центральные.",
+    "priceByn": 280350,
+    "priceUsd": 98000,
+    "address": "Гродно Ваньковича ул.",
+    "area": 151.1,
+    "areaLiving": 52.5,
+    "areaKitchen": 47,
+    "plotArea": 9.36,
+    "yearBuilt": 2026,
+    "seller": "Ирина",
+    "listTime": "2026-07-10T18:21:20+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/22d0aa38-724c-11f1-b5bf-0242ac120003",
+      "https://cdn.realt.by/img/55/22d0a8da-724c-11f1-b1e2-0242ac120003",
+      "https://cdn.realt.by/img/55/22d24118-724c-11f1-b916-0242ac120003",
+      "https://cdn.realt.by/img/55/22d84dd8-724c-11f1-840b-0242ac120003",
+      "https://cdn.realt.by/img/55/22d6ae1a-724c-11f1-a22b-0242ac120003",
+      "https://cdn.realt.by/img/55/22e12e58-724c-11f1-b0b1-0242ac120003",
+      "https://cdn.realt.by/img/55/22e73e24-724c-11f1-b1d3-0242ac120003",
+      "https://cdn.realt.by/img/55/22fd0b8c-724c-11f1-b13a-0242ac120003",
+      "https://cdn.realt.by/img/55/22ec0e04-724c-11f1-8f26-0242ac120003",
+      "https://cdn.realt.by/img/55/22dcb544-724c-11f1-beaf-0242ac120003",
+      "https://cdn.realt.by/img/55/22ea9ce0-724c-11f1-a9b9-0242ac120003",
+      "https://cdn.realt.by/img/55/22eb6efe-724c-11f1-b055-0242ac120003",
+      "https://cdn.realt.by/img/55/22ec79e8-724c-11f1-a27e-0242ac120003",
+      "https://cdn.realt.by/img/55/22f16b88-724c-11f1-936d-0242ac120003",
+      "https://cdn.realt.by/img/55/22f7b47a-724c-11f1-8fab-0242ac120003",
+      "https://cdn.realt.by/img/55/22f35254-724c-11f1-b3ae-0242ac120003",
+      "https://cdn.realt.by/img/55/22fd0c04-724c-11f1-85f1-0242ac120003",
+      "https://cdn.realt.by/img/55/22f99f10-724c-11f1-81c8-0242ac120003",
+      "https://cdn.realt.by/img/55/22fa82c2-724c-11f1-ae3e-0242ac120003",
+      "https://cdn.realt.by/img/55/22fae474-724c-11f1-866e-0242ac120003",
+      "https://cdn.realt.by/img/55/22fb7042-724c-11f1-8da0-0242ac120003",
+      "https://cdn.realt.by/img/55/22fb9c84-724c-11f1-bba4-0242ac120003",
+      "https://cdn.realt.by/img/55/230245fc-724c-11f1-b90c-0242ac120003"
+    ],
+    "firstSeenAt": "2026-07-11T08:46:52.637Z",
+    "lastSeenAt": "2026-07-11T08:46:52.637Z"
   }
 ]
