@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-11T08:46:52.642Z"
+    "lastSeenAt": "2026-07-12T09:01:45.857Z"
   },
   {
     "adId": 4057786,
@@ -5552,7 +5552,7 @@
       "https://cdn.realt.by/img/55/f87a1ea4-56da-11f1-a842-0242ac120003"
     ],
     "firstSeenAt": "2026-05-24T09:22:42.706Z",
-    "lastSeenAt": "2026-07-11T08:46:52.642Z"
+    "lastSeenAt": "2026-07-12T09:01:45.857Z"
   },
   {
     "adId": 4137152,
@@ -5792,7 +5792,7 @@
       "https://cdn.realt.by/img/55/acd5e788-5c68-11f1-b002-0242ac120003"
     ],
     "firstSeenAt": "2026-05-31T09:53:04.911Z",
-    "lastSeenAt": "2026-07-11T08:46:52.642Z"
+    "lastSeenAt": "2026-07-12T09:01:45.857Z"
   },
   {
     "adId": 4140044,
@@ -7048,6 +7048,59 @@
       "https://cdn.realt.by/img/55/d81d2f56-7c6f-11f1-a4e8-0242ac120002"
     ],
     "firstSeenAt": "2026-07-11T08:46:52.642Z",
-    "lastSeenAt": "2026-07-11T08:46:52.642Z"
+    "lastSeenAt": "2026-07-12T09:01:45.857Z"
+  },
+  {
+    "adId": 4178271,
+    "uuid": "efea4910-7d15-11f1-979c-a5f5fd8ba07b",
+    "link": "https://realt.by/sale-dachi/object/4178271/",
+    "title": "Дача с большим участком рядом с Гродно!",
+    "description": "Участок 19,05 сот. в частной собственности; каркасный дом 195,1 м.кв. общ. площ.; вода питьевая и вода сезонная; электричество; рядом с городом; тихое место.",
+    "priceByn": 199963,
+    "priceUsd": 69900,
+    "address": "Энергетик-4",
+    "area": 195.1,
+    "areaLiving": 61.6,
+    "areaKitchen": 34,
+    "plotArea": 19.05,
+    "yearBuilt": 2020,
+    "levels": 2,
+    "seller": "Денис",
+    "listTime": "2026-07-11T14:52:44+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/1d3661ba-7d16-11f1-9dfd-0242ac120002",
+      "https://cdn.realt.by/img/55/6d5be368-7d16-11f1-928b-0242ac120002",
+      "https://cdn.realt.by/img/55/70ddcdd0-7d16-11f1-ba8c-0242ac120002",
+      "https://cdn.realt.by/img/55/336c709a-7d17-11f1-9ee7-0242ac120002",
+      "https://cdn.realt.by/img/55/4de58ae2-7d17-11f1-9478-0242ac120002",
+      "https://cdn.realt.by/img/55/50edd604-7d17-11f1-af61-0242ac120002",
+      "https://cdn.realt.by/img/55/524a01e4-7d17-11f1-8f28-0242ac120002",
+      "https://cdn.realt.by/img/55/575a757e-7d17-11f1-ae9b-0242ac120002",
+      "https://cdn.realt.by/img/55/58926d48-7d17-11f1-9c56-0242ac120002",
+      "https://cdn.realt.by/img/55/7fe87f2c-7d17-11f1-bb93-0242ac120002",
+      "https://cdn.realt.by/img/55/815750f4-7d17-11f1-8d36-0242ac120002",
+      "https://cdn.realt.by/img/55/8d974d06-7d17-11f1-abcc-0242ac120002",
+      "https://cdn.realt.by/img/55/92d0fd1c-7d17-11f1-82d0-0242ac120002",
+      "https://cdn.realt.by/img/55/9594c3b2-7d17-11f1-b46f-0242ac120002",
+      "https://cdn.realt.by/img/55/5e1a1d64-7d18-11f1-ac5b-0242ac120002",
+      "https://cdn.realt.by/img/55/6e0d8efe-7d18-11f1-8faf-0242ac120002",
+      "https://cdn.realt.by/img/55/6fb7c242-7d18-11f1-bd62-0242ac120002",
+      "https://cdn.realt.by/img/55/a7b928b2-7d17-11f1-9770-0242ac120002",
+      "https://cdn.realt.by/img/55/c24fafd4-7d17-11f1-9b11-0242ac120002",
+      "https://cdn.realt.by/img/55/e66c9a94-7d17-11f1-a2c8-0242ac120002",
+      "https://cdn.realt.by/img/55/38eac8c2-7d18-11f1-add5-0242ac120002",
+      "https://cdn.realt.by/img/55/f4901ca4-7d17-11f1-b619-0242ac120002",
+      "https://cdn.realt.by/img/55/efae2e7e-7d17-11f1-a27e-0242ac120002",
+      "https://cdn.realt.by/img/55/4ed989fc-7d18-11f1-97b0-0242ac120002",
+      "https://cdn.realt.by/img/55/83308b6a-7d18-11f1-b664-0242ac120002",
+      "https://cdn.realt.by/img/55/939f8352-7d18-11f1-b623-0242ac120002",
+      "https://cdn.realt.by/img/55/92b25848-7d18-11f1-9570-0242ac120002",
+      "https://cdn.realt.by/img/55/9ae0fc2c-7d18-11f1-a018-0242ac120002",
+      "https://cdn.realt.by/img/55/99019ace-7d18-11f1-8c7e-0242ac120002",
+      "https://cdn.realt.by/img/55/9e95930a-7d18-11f1-839c-0242ac120002",
+      "https://cdn.realt.by/img/55/9eb501ea-7d18-11f1-bc86-0242ac120002"
+    ],
+    "firstSeenAt": "2026-07-12T09:01:45.857Z",
+    "lastSeenAt": "2026-07-12T09:01:45.857Z"
   }
 ]
