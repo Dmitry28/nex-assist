@@ -774,5 +774,42 @@
     "seller": "Progressive Casualty Insurance",
     "removedAt": "2026-07-10T10:15:44.544Z",
     "removalNotifiedAt": "2026-07-10T10:15:44.544Z"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/1-55901376/2025-Volkswagen-Atlas-1V2BR2CA0SC501758",
+    "title": "2025 Volkswagen Atlas, Sel",
+    "vin": "1V2BR2CA0SC501758",
+    "lot": "1-55901376",
+    "odometer": "10k мили (16k km)",
+    "damage": "Задняя часть",
+    "location": "Punta Gord... (FL)",
+    "currentBid": "$8,700",
+    "engine": "2.0L 4 cyl. 269HP",
+    "keys": "CD (Florida)",
+    "condition": "На ходу",
+    "auctionDate": "пт 10 июл., 16:00 GMT+2",
+    "auctionSource": "Copart",
+    "seller": "---",
+    "removedAt": "2026-07-12T08:58:32.937Z",
+    "removalNotifiedAt": "2026-07-12T08:58:32.937Z"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/1-51884406/2025-Volkswagen-Atlas-1V2CR2CA0SC557378",
+    "title": "2025 Volkswagen Atlas, Peak Edition Se",
+    "vin": "1V2CR2CA0SC557378",
+    "lot": "1-51884406",
+    "odometer": "4k мили (6k km)",
+    "damage": "Передняя часть",
+    "location": "Chicago South (IL)",
+    "currentBid": "$1,000",
+    "buyNow": "$15,900",
+    "engine": "2.0L 4 cyl. 269HP",
+    "keys": "SC (West Virginia)",
+    "condition": "На ходу",
+    "auctionDate": "пт 10 июл., 19:00 GMT+2",
+    "auctionSource": "Copart",
+    "seller": "---",
+    "removedAt": "2026-07-12T08:58:32.937Z",
+    "removalNotifiedAt": "2026-07-12T08:58:32.937Z"
   }
 ]
