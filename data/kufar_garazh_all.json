@@ -811,10 +811,10 @@
   {
     "adId": 1055451335,
     "link": "https://re.kufar.by/vi/1055451335",
-    "title": "Продам гараж",
-    "description": "срочно , возможен торг",
-    "priceByn": 24964,
-    "priceUsd": 8500,
+    "title": "ПРОДАМ ГАРАЖ",
+    "description": "ПРОДАМ ГАРАЖ\nСухой, в отличном состоянии, 17,4 кв. м (3,08×5,68), по адресу: г. Гродно, ул. Славинского, 17А, 3 бокс.\nЗвонить по тел.: в\n17.00 (в рабо",
+    "priceByn": 22957,
+    "priceUsd": 8000,
     "address": "Славинского ул, 17А, Гродно, Гродненская область",
     "area": 17.4,
     "seller": "Константин",
@@ -822,7 +822,11 @@
     "features": [
       "Отсутствует"
     ],
-    "listTime": "2026-04-05T08:06:50Z",
+    "coordinates": {
+      "lat": 53.647859,
+      "lon": 23.822315
+    },
+    "listTime": "2026-07-11T20:36:10Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ce55b119-a6bb-4868-87d7-ee148a406be3.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d40b32e7-1b22-40d4-9d71-d6ad31e7985a.jpg",
@@ -830,7 +834,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ec90b0fa-5b55-42e5-a012-6a668ffe9c87.jpg"
     ],
     "firstSeenAt": "2026-04-05T16:51:33.360Z",
-    "lastSeenAt": "2026-04-16T08:40:16.263Z"
+    "lastSeenAt": "2026-07-13T09:35:05.962Z"
   },
   {
     "adId": 1063540543,
