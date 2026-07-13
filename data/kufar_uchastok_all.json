@@ -5269,7 +5269,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9b10c070-08e2-4fb8-a448-4842cb9b69ce.jpg"
     ],
     "firstSeenAt": "2026-05-14T09:57:44.876Z",
-    "lastSeenAt": "2026-07-12T09:01:25.479Z"
+    "lastSeenAt": "2026-07-13T10:19:58.192Z"
   },
   {
     "adId": 1068829593,
@@ -8680,7 +8680,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/71cdd61b-e7a4-4d65-9a00-722b41b0f6a8.jpg"
     ],
     "firstSeenAt": "2026-07-06T11:31:11.284Z",
-    "lastSeenAt": "2026-07-12T09:01:25.479Z"
+    "lastSeenAt": "2026-07-13T10:19:58.192Z"
   },
   {
     "adId": 1075903948,
@@ -9046,7 +9046,7 @@
     "listTime": "2026-07-12T08:20:36Z",
     "images": [],
     "firstSeenAt": "2026-07-12T09:01:25.479Z",
-    "lastSeenAt": "2026-07-12T09:01:25.479Z"
+    "lastSeenAt": "2026-07-13T10:19:58.192Z"
   },
   {
     "adId": 1076665947,
@@ -9081,7 +9081,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/53cfd1f5-e8a3-4cb7-b36f-b2858477666a.jpg"
     ],
     "firstSeenAt": "2026-07-12T09:01:25.479Z",
-    "lastSeenAt": "2026-07-12T09:01:25.479Z"
+    "lastSeenAt": "2026-07-13T10:19:58.192Z"
   },
   {
     "adId": 1076660835,
@@ -9114,7 +9114,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/dcf89ca6-abde-4730-b895-a58fb1d2667d.jpg"
     ],
     "firstSeenAt": "2026-07-12T09:01:25.479Z",
-    "lastSeenAt": "2026-07-12T09:01:25.479Z"
+    "lastSeenAt": "2026-07-13T10:19:58.192Z"
   },
   {
     "adId": 1076660830,
@@ -9145,6 +9145,33 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9403aa24-b288-4bf0-99b8-1a403c0e0a4c.jpg"
     ],
     "firstSeenAt": "2026-07-12T09:01:25.479Z",
-    "lastSeenAt": "2026-07-12T09:01:25.479Z"
+    "lastSeenAt": "2026-07-13T10:19:58.192Z"
+  },
+  {
+    "adId": 1076781806,
+    "link": "https://re.kufar.by/vi/1076781806",
+    "title": "Участок в СТ Шембелевцы",
+    "description": "Продается дачный участок в СТ «Шембелевцы» номер 80, Гродненский р-н, Сопоцкинский с/с.\nОт черты города 10 км.\nПлощадь участка 9.85 соток.\nНа участке ",
+    "priceByn": 17792,
+    "priceUsd": 6200,
+    "address": "СТ Шембелевцы, Сопоцкинский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 9.9,
+    "seller": "Дмитрий",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.75245324279722,
+      "lon": 23.796664134263946
+    },
+    "listTime": "2026-07-12T11:14:37Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8fa9f0c7-1446-4147-bfda-8cd6028190de.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4967b743-7320-44fe-836c-c409b94cbca8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3c60c276-e329-4a5c-9e8d-eadfcd52d4bd.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5c8fc55f-7197-4949-9f57-291293524560.jpg"
+    ],
+    "firstSeenAt": "2026-07-13T10:19:58.192Z",
+    "lastSeenAt": "2026-07-13T10:19:58.192Z"
   }
 ]
