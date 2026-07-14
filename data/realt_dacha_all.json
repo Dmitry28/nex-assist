@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-13T09:35:45.580Z"
+    "lastSeenAt": "2026-07-14T09:36:02.671Z"
   },
   {
     "adId": 4057786,
@@ -5523,7 +5523,7 @@
       "https://cdn.realt.by/img/55/f87a1ea4-56da-11f1-a842-0242ac120003"
     ],
     "firstSeenAt": "2026-05-25T09:50:04.852Z",
-    "lastSeenAt": "2026-07-13T09:35:45.580Z"
+    "lastSeenAt": "2026-07-14T09:36:02.671Z"
   },
   {
     "adId": 4137152,
@@ -6512,7 +6512,7 @@
       "https://cdn.realt.by/img/55/ce009ab2-6ca2-11f1-9595-0242ac120003"
     ],
     "firstSeenAt": "2026-06-22T10:03:30.987Z",
-    "lastSeenAt": "2026-07-13T09:35:45.580Z"
+    "lastSeenAt": "2026-07-14T09:36:02.671Z"
   },
   {
     "adId": 4152668,
@@ -6841,5 +6841,33 @@
     ],
     "firstSeenAt": "2026-07-13T09:35:45.580Z",
     "lastSeenAt": "2026-07-13T09:35:45.580Z"
+  },
+  {
+    "adId": 4157047,
+    "uuid": "6b698370-6ae8-11f1-82b6-7969fefbc065",
+    "link": "https://realt.by/sale-dachi/object/4157047/",
+    "title": "дача  СТ «Лаванда» Квасовского с/с",
+    "description": "Продается дача в СТ «Лаванда» Квасовского с/с Площадь деревянного одноэтажного дома 13,4м2, год постройки 2002, крыша –шифер. Участок 0.0615га. Засажен плодовыми деревьями (вишни, яблони, груши, черешня), растет виноград, малина, смородина, декоративные растения и цветы.",
+    "priceByn": 19750,
+    "priceUsd": 6896,
+    "address": "Лаванда",
+    "area": 13.4,
+    "plotArea": 6.15,
+    "yearBuilt": 2002,
+    "seller": "Татьяна",
+    "listTime": "2026-07-13T19:43:01+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/4163aa74-6ae8-11f1-beb6-0242ac120003",
+      "https://cdn.realt.by/img/55/415afbf4-6ae8-11f1-93e6-0242ac120003",
+      "https://cdn.realt.by/img/55/414dde4c-6ae8-11f1-9013-0242ac120003",
+      "https://cdn.realt.by/img/55/415f2850-6ae8-11f1-a6d5-0242ac120003",
+      "https://cdn.realt.by/img/55/4157cbbe-6ae8-11f1-a6fa-0242ac120003",
+      "https://cdn.realt.by/img/55/4133a572-6ae8-11f1-bc64-0242ac120003",
+      "https://cdn.realt.by/img/55/413552e6-6ae8-11f1-b9ba-0242ac120003",
+      "https://cdn.realt.by/img/55/4135fe6c-6ae8-11f1-8f37-0242ac120003",
+      "https://cdn.realt.by/img/55/41181636-6ae8-11f1-8306-0242ac120003"
+    ],
+    "firstSeenAt": "2026-07-14T09:36:02.671Z",
+    "lastSeenAt": "2026-07-14T09:36:02.671Z"
   }
 ]
