@@ -3466,7 +3466,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d1b27886-ef97-4481-a686-a1bf3cf18506.jpg"
     ],
     "firstSeenAt": "2026-04-26T08:42:57.861Z",
-    "lastSeenAt": "2026-06-21T10:34:16.180Z"
+    "lastSeenAt": "2026-07-14T09:02:46.731Z"
   },
   {
     "adId": 1066343518,
@@ -3676,8 +3676,8 @@
     "link": "https://re.kufar.by/vi/1066489096",
     "title": "Продам два участка ст Суничка",
     "description": "Продам два участка смежных в ст Суничка, 5 км от кольца коробчиц по прямой новой дороге, идеальный подъезд, соседей почти нет, кругом лес живописное м",
-    "priceByn": 44543,
-    "priceUsd": 15800,
+    "priceByn": 45538,
+    "priceUsd": 15900,
     "address": "Подлабенский сельсовет, Гродненский район, Гродненская область",
     "plotArea": 16,
     "seller": "Валентин",
@@ -3685,19 +3685,23 @@
       "Отсутствует",
       "Частная собственность"
     ],
-    "listTime": "2026-04-26T15:51:50Z",
+    "coordinates": {
+      "lat": 53.61447566404516,
+      "lon": 23.665504290838022
+    },
+    "listTime": "2026-07-13T11:21:59Z",
     "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a41f4d4f-c8dd-4389-a690-2cc94e9edad5.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0d4a4000-bb63-4476-9baa-533b88d620df.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/93b50d49-12a2-4048-9d0b-27cd3eb50823.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a7e11269-833d-4ce3-9df8-46a0c4395f70.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/933bf42c-e9c1-4c51-acfb-4894075f3cd4.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a29962b1-eeed-4880-847b-aef724fc1ea8.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a41f4d4f-c8dd-4389-a690-2cc94e9edad5.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fbb4e19c-4f68-47ac-95ec-81449ad7c52a.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4541c295-2246-42a0-be35-dcdf24b5388c.jpg"
     ],
     "firstSeenAt": "2026-04-27T09:21:21.539Z",
-    "lastSeenAt": "2026-04-27T09:21:21.539Z"
+    "lastSeenAt": "2026-07-14T09:02:46.731Z"
   },
   {
     "adId": 1066728162,
@@ -8680,7 +8684,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/71cdd61b-e7a4-4d65-9a00-722b41b0f6a8.jpg"
     ],
     "firstSeenAt": "2026-07-06T11:31:11.284Z",
-    "lastSeenAt": "2026-07-13T10:19:58.192Z"
+    "lastSeenAt": "2026-07-14T09:02:46.731Z"
   },
   {
     "adId": 1075903948,
@@ -9172,6 +9176,92 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5c8fc55f-7197-4949-9f57-291293524560.jpg"
     ],
     "firstSeenAt": "2026-07-13T10:19:58.192Z",
-    "lastSeenAt": "2026-07-13T10:19:58.192Z"
+    "lastSeenAt": "2026-07-14T09:02:46.731Z"
+  },
+  {
+    "adId": 1077008917,
+    "link": "https://re.kufar.by/vi/1077008917",
+    "title": "участок СТ Холмистое",
+    "description": "В продаже земельный участок в садовом товариществе «Холмистое». Располагается рядом с деревней Лойки, Сопоцкинский сельский совет. Хороший подъездной ",
+    "priceByn": 7160,
+    "priceUsd": 2500,
+    "address": "СТ Холмистое, Сопоцкинский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 8.93,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.771634,
+      "lon": 23.771755
+    },
+    "listTime": "2026-07-14T07:02:53Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c50f2b74-e506-4f64-857f-03a03c180ed1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/41928b81-922b-4805-9804-1031a8fb69c3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3f1444c6-1137-4645-a5d6-2aff11bfe671.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e7d1b762-60a6-42ba-bf65-9af2144b300d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d31ccd50-ddcc-4817-8d39-5198c58bc020.jpg"
+    ],
+    "firstSeenAt": "2026-07-14T09:02:46.731Z",
+    "lastSeenAt": "2026-07-14T09:02:46.731Z"
+  },
+  {
+    "adId": 1076944970,
+    "link": "https://re.kufar.by/vi/1076944970",
+    "title": "Продам участок под строительство дома в Зарице",
+    "description": "Продаётся земельный участок площадью 9,66 сотки в г. Гродно, район Зарица, ул. Шидловского 6, кадастровый номер 002012972.\n\nУчасток находится в частно",
+    "priceByn": 103104,
+    "priceUsd": 36000,
+    "address": "Шидловского ул, 6, Гродно, Гродненская область",
+    "plotArea": 10,
+    "seller": "Артем",
+    "features": [
+      "Центральная",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.754726,
+      "lon": 23.828397
+    },
+    "listTime": "2026-07-13T16:10:14Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/024e1ec0-98de-4ec9-a1b0-bec51a43f309.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ae237232-5037-4967-9173-405365dc392a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ce43c80f-475f-491a-bf91-669c92cb34e0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/aa8727c2-93d3-49fa-8df3-4f53145f17ec.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4514c6db-be51-4ac7-895f-14f3580e2fe6.jpg"
+    ],
+    "firstSeenAt": "2026-07-14T09:02:46.731Z",
+    "lastSeenAt": "2026-07-14T09:02:46.731Z"
+  },
+  {
+    "adId": 1076934096,
+    "link": "https://re.kufar.by/vi/1076934096",
+    "title": "Продажа участка г.Гродно Озеро Юбилейное",
+    "description": "Участок расположен в х 150 м. от автобусной остановки городского автобуса №35. В пешей доступности озеро Юбилейное ( 10 минут пешком), на участке имею",
+    "priceByn": 22053,
+    "priceUsd": 7700,
+    "address": "Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 6.1,
+    "seller": "Марина",
+    "features": [
+      "Сезонная",
+      "Пожизненное наследование",
+      "Да"
+    ],
+    "coordinates": {
+      "lat": 53.708704,
+      "lon": 23.679133
+    },
+    "listTime": "2026-07-13T14:07:02Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eab5bb5e-dd3c-400b-96c2-34acc8ce699e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/efd07f63-dd0c-4e26-8665-176250d8fa86.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4f8dc855-6186-4f83-ae8c-10b904a7f730.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/58addcdf-03d1-4652-8b45-7f303d665e5b.jpg"
+    ],
+    "firstSeenAt": "2026-07-14T09:02:46.731Z",
+    "lastSeenAt": "2026-07-14T09:02:46.731Z"
   }
 ]
