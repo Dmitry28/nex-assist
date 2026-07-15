@@ -38,18 +38,15 @@ export class BamperNotifierService {
       this.logger.error('Failed to send bamper summary — skipping all notifications');
       return emptyResult();
     }
-    const totalNew = result.feeds.reduce(
-      (n, f) => n + (f.isBaseline ? 0 : f.newListings.length),
-      0,
-    );
+    const totalNew = result.feeds.reduce((n, f) => n + f.newListings.length, 0);
     this.logger.log(
       `Summary sent (1 message) — ${totalNew} new across ${result.feeds.length} feed(s)`,
     );
 
-    // Cards only for genuinely new listings (baseline feeds stay silent).
+    // Send a card for every new listing. On the first run (empty snapshot) all current
+    // listings are "new", so the whole existing inventory is delivered once.
     const notifiedNew = new Set<string>();
     for (const feed of result.feeds) {
-      if (feed.isBaseline) continue;
       await this.sendFeedListings(feed, notifiedNew);
     }
     return { notifiedNew };
@@ -71,6 +68,7 @@ export class BamperNotifierService {
     for (const [i, listing] of feed.newListings.entries()) {
       const caption = buildListingCaption({
         listing,
+        car: feed.car,
         feedLabel: feed.label,
         index: i + 1,
         total: feed.newListings.length,

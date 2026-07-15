@@ -26,6 +26,7 @@ export class BamperListing {
 /** Result for a single part feed within a scrape cycle. */
 export class BamperFeedResult {
   @ApiProperty() feedKey!: string;
+  @ApiProperty() car!: string;
   @ApiProperty() label!: string;
   @ApiProperty() total!: number;
   @ApiProperty({ type: () => BamperListing, isArray: true }) newListings!: BamperListing[];
