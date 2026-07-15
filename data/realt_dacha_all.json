@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-14T09:03:23.603Z"
+    "lastSeenAt": "2026-07-15T09:38:14.390Z"
   },
   {
     "adId": 4057786,
@@ -3513,7 +3513,7 @@
       "https://cdn.realt.by/img/55/bba5158a-2b3b-11f1-b8ab-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-08T09:27:45.204Z"
+    "lastSeenAt": "2026-07-15T09:38:14.390Z"
   },
   {
     "adId": 3986874,
@@ -6721,7 +6721,7 @@
       "https://cdn.realt.by/img/55/41181636-6ae8-11f1-8306-0242ac120003"
     ],
     "firstSeenAt": "2026-06-18T11:25:45.827Z",
-    "lastSeenAt": "2026-07-14T09:03:23.603Z"
+    "lastSeenAt": "2026-07-15T09:38:14.390Z"
   },
   {
     "adId": 4156768,
@@ -6786,7 +6786,7 @@
       "https://cdn.realt.by/img/55/ce009ab2-6ca2-11f1-9595-0242ac120003"
     ],
     "firstSeenAt": "2026-06-21T10:34:44.767Z",
-    "lastSeenAt": "2026-07-14T09:03:23.603Z"
+    "lastSeenAt": "2026-07-15T09:38:14.390Z"
   },
   {
     "adId": 4160198,
@@ -7102,5 +7102,35 @@
     ],
     "firstSeenAt": "2026-07-12T09:01:45.857Z",
     "lastSeenAt": "2026-07-13T10:20:21.066Z"
+  },
+  {
+    "adId": 4181823,
+    "uuid": "515f7f60-802e-11f1-b833-c1c4a027e5a6",
+    "link": "https://realt.by/sale-dachi/object/4181823/",
+    "title": "Дача в СТ \"Энергетик-2\"",
+    "description": "Продается дача вблизи Гродно в СТ \"Энергетик-2\". Кирпичный двухэтажный садовый домик. Участок ухоженный и благоустроенный. На участке расположены веранда, теплица и 2 хозблока.",
+    "priceByn": 52560,
+    "priceUsd": 18353,
+    "address": "Энергетик-2 Погораны  61",
+    "plotArea": 6,
+    "seller": "Роман",
+    "listTime": "2026-07-15T12:28:00+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/dfe4bed6-802d-11f1-9187-0242ac120002",
+      "https://cdn.realt.by/img/55/df780b24-802d-11f1-9195-0242ac120002",
+      "https://cdn.realt.by/img/55/df574d58-802d-11f1-a562-0242ac120002",
+      "https://cdn.realt.by/img/55/dfeee672-802d-11f1-8dd6-0242ac120002",
+      "https://cdn.realt.by/img/55/df64111e-802d-11f1-94c3-0242ac120002",
+      "https://cdn.realt.by/img/55/dee21ea2-802d-11f1-9ef0-0242ac120002",
+      "https://cdn.realt.by/img/55/deeb1854-802d-11f1-bcef-0242ac120002",
+      "https://cdn.realt.by/img/55/e0538460-802d-11f1-b8a5-0242ac120002",
+      "https://cdn.realt.by/img/55/d95d0c08-802d-11f1-883d-0242ac120002",
+      "https://cdn.realt.by/img/55/dad3cda6-802d-11f1-832a-0242ac120002",
+      "https://cdn.realt.by/img/55/dbac2d86-802d-11f1-bb2e-0242ac120002",
+      "https://cdn.realt.by/img/55/db774eae-802d-11f1-beeb-0242ac120002",
+      "https://cdn.realt.by/img/55/dd479112-802d-11f1-989c-0242ac120002"
+    ],
+    "firstSeenAt": "2026-07-15T09:38:14.390Z",
+    "lastSeenAt": "2026-07-15T09:38:14.390Z"
   }
 ]
