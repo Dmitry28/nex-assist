@@ -45,21 +45,6 @@
     ]
   },
   {
-    "title": "Земельный участок по ул. Сергея Гребченко, 25",
-    "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-sergeya-grebchenko-25/",
-    "price": "42 220,00 руб.",
-    "area": "0,1011 га",
-    "address": "г. Гродно, ул. Сергея Гребченко, 25",
-    "cadastralNumber": "440100000002013006",
-    "cadastralMapUrl": "https://map.nca.by/search/019dfc4f-a598-726c-8a7a-f5dac83202cf",
-    "auctionDate": "Аукцион состоится 14.07.2026",
-    "applicationDeadline": "Заявления принимаются с 08.06. по 08.07.2026",
-    "communications": "электроснабжение, газоснабжение, водоснабжение",
-    "images": [
-      "http://gcn.by/wp-content/uploads/2026/05/grebchenko-25-sajt.png"
-    ]
-  },
-  {
     "title": "Не завершённый строительством жилой дом по ул. Ровная, 33",
     "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-rovnaya-33/",
     "price": "70 714,50 руб.",
@@ -101,27 +86,6 @@
       "https://gcn.by/wp-content/uploads/2026/05/u-66-rodnaya-baranovichi-sajt-2.png",
       "https://gcn.by/wp-content/uploads/2026/05/u-66-rodnaya-baranovichi-sajt-3.png",
       "https://gcn.by/wp-content/uploads/2026/05/u-66-rodnaya-baranovichi-sajt-1.png"
-    ]
-  },
-  {
-    "title": "Не завершённый строительством жилой дом по ул. Родная, 21",
-    "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-rodnaya-21/",
-    "price": "46 842,68 руб.",
-    "area": "0,1004 га",
-    "address": "г. Гродно, У-85 в микрорайоне «Барановичи-7», ул. Родная, 21",
-    "cadastralNumber": "440100000002008672",
-    "cadastralMapUrl": "https://map.nca.by/search/019df75d-37c1-700b-bb84-821ce1eda0c3",
-    "auctionDate": "Аукцион состоится 14.07.2026",
-    "applicationDeadline": "Заявления принимаются с 08.06. по 08.07.2026",
-    "communications": "Не указаны",
-    "images": [
-      "https://gcn.by/wp-content/uploads/2026/05/u-85-rodnaya-baranovichi-sajt-5.png",
-      "https://gcn.by/wp-content/uploads/2026/05/u-85-rodnaya-baranovichi-sajt-1.png",
-      "https://gcn.by/wp-content/uploads/2026/05/u-85-rodnaya-baranovichi-sajt-2.png",
-      "https://gcn.by/wp-content/uploads/2026/05/u-85-rodnaya-baranovichi-sajt-3.png",
-      "https://gcn.by/wp-content/uploads/2026/05/u-85-rodnaya-baranovichi-sajt-4.png",
-      "https://gcn.by/wp-content/uploads/2026/05/u-85-rodnaya-baranovichi-sajt-5.png",
-      "https://gcn.by/wp-content/uploads/2026/05/u-85-rodnaya-baranovichi-sajt-1.png"
     ]
   },
   {
@@ -174,8 +138,8 @@
     "address": "г. Гродно, ул. Рябиновая, 61/36",
     "cadastralNumber": "440100000001015025",
     "cadastralMapUrl": "https://map.nca.by/search/019e91f8-bd98-71b5-8961-4f4f47cfdaff",
-    "auctionDate": "Аукцион состоится 14.07.2026",
-    "applicationDeadline": "Заявления принимаются с 08.06. по 08.07.2026",
+    "auctionDate": "Возможно проведение повторного аукциона при обращении заинтересованного в приобретении объекта лица",
+    "applicationDeadline": "Не указан",
     "communications": "Не указаны",
     "images": [
       "https://gcn.by/wp-content/uploads/2025/09/polyot-foto-3.png",
