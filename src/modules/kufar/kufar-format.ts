@@ -108,7 +108,8 @@ export const buildSummary = (feeds: KufarFeedResult[]): string => {
   const lines = [`<b>🏘 Kufar · ${date}</b>`];
 
   for (const feed of feeds) {
-    const name = FEED_DISPLAY_NAMES[feed.feedName] ?? feed.feedName;
+    const rawName = FEED_DISPLAY_NAMES[feed.feedName] ?? feed.feedName;
+    const name = feed.url ? `<a href="${feed.url}">${rawName}</a>` : rawName;
 
     if (feed.isBaseline) {
       lines.push(

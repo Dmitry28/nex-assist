@@ -13,6 +13,8 @@ export interface SummaryParams {
   specialCount: number;
   newSpecialCount: number;
   isBaseline?: boolean;
+  /** The monitored gcn.by search URL — surfaced as a link in the summary. */
+  sourceUrl?: string;
 }
 
 export interface CaptionParams {
@@ -31,12 +33,15 @@ export const buildSummary = ({
   specialCount,
   newSpecialCount,
   isBaseline,
+  sourceUrl,
 }: SummaryParams): string => {
+  const sourceLine = sourceUrl ? `<a href="${sourceUrl}">🔗 Источник (gcn.by)</a>` : undefined;
   if (isBaseline) {
     return [
       `<b>📊 Сводка на ${date.toLocaleDateString(LOCALE, { timeZone: TIMEZONE })}</b>`,
       `🏗 baseline · <b>${total}</b> объявлений сохранено`,
       `🌿 В ${SPECIAL_AREA_LABEL}: <b>${specialCount}</b>`,
+      ...(sourceLine ? ['', sourceLine] : []),
     ].join('\n');
   }
   return [
@@ -47,6 +52,7 @@ export const buildSummary = ({
     `💰 Продано: <b>${soldCount}</b>`,
     `🌿 Всего в ${SPECIAL_AREA_LABEL}: <b>${specialCount}</b>`,
     `✅ Новые в ${SPECIAL_AREA_LABEL}: <b>${newSpecialCount}</b>`,
+    ...(sourceLine ? ['', sourceLine] : []),
   ].join('\n');
 };
 

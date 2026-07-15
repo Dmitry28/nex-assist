@@ -19,6 +19,7 @@ describe('buildSummary', () => {
     newCount: 6,
     removedCount: 2,
     soldUpdateCount: 0,
+    sourceUrl: 'https://bid.cars/en/search/results?make=Volkswagen',
   };
 
   it('includes date and counts', () => {
@@ -27,6 +28,13 @@ describe('buildSummary', () => {
     expect(s).toContain('30');
     expect(s).toContain('🆕 Новые: <b>6</b>');
     expect(s).toContain('🗑 Снятые: <b>2</b>');
+  });
+
+  it('includes the monitored source link', () => {
+    const s = buildSummary(base);
+    expect(s).toContain(
+      '<a href="https://bid.cars/en/search/results?make=Volkswagen">🔗 Источник (bid.cars)</a>',
+    );
   });
 
   it('omits sold line when soldUpdateCount is 0', () => {

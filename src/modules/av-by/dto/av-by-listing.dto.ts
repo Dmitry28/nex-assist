@@ -70,6 +70,8 @@ export const isRemovedAvByListing = (item: unknown): item is RemovedAvByListing 
 export class AvByFeedResult {
   @ApiProperty() feedKey!: string;
   @ApiProperty() label!: string;
+  /** The monitored cars.av.by search URL — surfaced in the Telegram summary. */
+  @ApiProperty() url!: string;
   @ApiProperty() total!: number;
   @ApiProperty({ type: [AvByListing] }) newListings!: AvByListing[];
   @ApiProperty({ type: [Object], isArray: true }) soldListings!: RemovedAvByListing[];

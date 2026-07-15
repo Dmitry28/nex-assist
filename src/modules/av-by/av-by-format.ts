@@ -25,7 +25,7 @@ export const buildSummary = (result: AvByResult, date: Date): string => {
       `✅ ${feed.soldListings.length}`,
     ];
     const baseline = feed.isBaseline ? ' · baseline' : '';
-    lines.push(`<b>${feed.label}</b>: ${parts.join(' · ')}${baseline}`);
+    lines.push(`<b><a href="${feed.url}">${feed.label}</a></b>: ${parts.join(' · ')}${baseline}`);
   }
   return lines.join('\n');
 };

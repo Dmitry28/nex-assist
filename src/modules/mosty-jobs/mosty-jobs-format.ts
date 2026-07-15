@@ -1,7 +1,12 @@
 import { LOCALE, TIMEZONE } from '../../common/utils/locale';
 import { escapeHtml } from '../../common/utils/telegram';
 import { SOURCE_LABELS } from './constants';
-import { JOB_SOURCES, type JobVacancy, type MostyJobsResult } from './dto/job-vacancy.dto';
+import {
+  JOB_SOURCES,
+  type JobSource,
+  type JobVacancy,
+  type MostyJobsResult,
+} from './dto/job-vacancy.dto';
 
 export interface VacancyMessageParams {
   vacancy: JobVacancy;
@@ -28,15 +33,25 @@ export const buildVacancyMessage = ({
   return lines.join('\n');
 };
 
-const formatSourceTotal = (label: string, total: number | null): string =>
-  total === null ? `⚠️ ${label}: недоступен` : `${label}: <b>${total}</b>`;
+/** Per-source monitored URLs — the summary links each source label to its search page. */
+export type MostyJobsSourceUrls = Partial<Record<JobSource, string>>;
 
-export const buildSummary = (result: MostyJobsResult): string => {
+const formatSourceTotal = (label: string, total: number | null, url?: string): string => {
+  const linkedLabel = url ? `<a href="${url}">${label}</a>` : label;
+  return total === null ? `⚠️ ${linkedLabel}: недоступен` : `${linkedLabel}: <b>${total}</b>`;
+};
+
+export const buildSummary = (
+  result: MostyJobsResult,
+  sourceUrls: MostyJobsSourceUrls = {},
+): string => {
   const date = new Date().toLocaleDateString(LOCALE, { timeZone: TIMEZONE });
   const lines = [
     `<b>💼 Вакансии · Мостовский район · ${date}</b>`,
     '',
-    ...JOB_SOURCES.map(source => formatSourceTotal(SOURCE_LABELS[source], result.totals[source])),
+    ...JOB_SOURCES.map(source =>
+      formatSourceTotal(SOURCE_LABELS[source], result.totals[source], sourceUrls[source]),
+    ),
     '',
     result.newVacancies.length > 0
       ? `🆕 ${result.newVacancies.length} нов(ых)`

@@ -11,6 +11,8 @@ export interface SummaryParams {
   removedCount: number;
   soldUpdateCount: number;
   isBaseline?: boolean;
+  /** The monitored bid.cars search URL — surfaced as a link in the summary. */
+  sourceUrl?: string;
 }
 
 export interface CaptionParams {
@@ -27,11 +29,14 @@ export const buildSummary = ({
   removedCount,
   soldUpdateCount,
   isBaseline,
+  sourceUrl,
 }: SummaryParams): string => {
+  const sourceLine = sourceUrl ? `<a href="${sourceUrl}">🔗 Источник (bid.cars)</a>` : undefined;
   if (isBaseline) {
     return [
       `<b>🚗 Сводка на ${date.toLocaleDateString(LOCALE, { timeZone: TIMEZONE })}</b>`,
       `🏗 baseline · <b>${total}</b> лотов сохранено`,
+      ...(sourceLine ? ['', sourceLine] : []),
     ].join('\n');
   }
   const lines = [
@@ -43,6 +48,7 @@ export const buildSummary = ({
   if (soldUpdateCount > 0) {
     lines.push(`💰 Цены продажи найдены: <b>${soldUpdateCount}</b>`);
   }
+  if (sourceLine) lines.push('', sourceLine);
   return lines.join('\n');
 };
 

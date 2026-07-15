@@ -42,6 +42,8 @@ export interface KufarPriceChange {
 /** Result for a single feed (one search URL). */
 export interface KufarFeedResult {
   feedName: string;
+  /** The monitored Kufar search URL — surfaced in the Telegram summary. */
+  url: string;
   /** Total distinct listings in the snapshot after this run. */
   total: number;
   newListings: KufarListing[];

@@ -42,19 +42,31 @@ export const buildListingCaption = ({
   return lines.join('\n');
 };
 
-export const buildSummary = (result: GhbResult): string => {
+/** Monitored ghb.by source URLs — surfaced as links in the summary. */
+export interface GhbSummarySources {
+  priceListUrl?: string;
+  apartmentsPageUrl?: string;
+}
+
+export const buildSummary = (result: GhbResult, sources: GhbSummarySources = {}): string => {
   const date = new Date().toLocaleDateString(LOCALE, { timeZone: TIMEZONE });
   const lines = [`<b>🏗 ghb.by · ${date}</b>`];
 
   if (result.isBaseline) {
     lines.push('', `🏗 baseline · ${result.total} объект(ов) сохранено`);
-    return lines.join('\n');
+  } else {
+    lines.push('', `Всего в прейскуранте: <b>${result.total}</b>`);
+    lines.push(
+      result.newListings.length > 0 ? `🆕 ${result.newListings.length} нов(ых)` : 'без изменений',
+    );
   }
 
-  lines.push('', `Всего в прейскуранте: <b>${result.total}</b>`);
-  lines.push(
-    result.newListings.length > 0 ? `🆕 ${result.newListings.length} нов(ых)` : 'без изменений',
-  );
+  const sourceLines: string[] = [];
+  if (sources.priceListUrl)
+    sourceLines.push(`<a href="${sources.priceListUrl}">🔗 Прейскурант</a>`);
+  if (sources.apartmentsPageUrl)
+    sourceLines.push(`<a href="${sources.apartmentsPageUrl}">🔗 Квартиры</a>`);
+  if (sourceLines.length) lines.push('', 'Источники:', ...sourceLines);
 
   return lines.join('\n');
 };
