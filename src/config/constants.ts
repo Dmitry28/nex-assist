@@ -103,14 +103,16 @@ export const POGORANY_DEFAULTS = {
 
 export const BAMPER_DEFAULTS = {
   /**
-   * bamper.by used-parts search — VW Atlas Cross Sport rear bumper, restyle years only.
+   * bamper.by used-parts searches for the VW Atlas Cross Sport, one URL per part.
    * `god_2023-2026` is a path-segment year filter (2024+ is the facelift generation that
    * fits the owner's 2025 car; 2023 is kept as a slightly wider net). `?sort=DATE-DESC`
    * surfaces the newest listings first. The whole site sits behind Cloudflare, so the
    * parser drives it with Puppeteer (see BidCars for the same approach).
    */
-  SEARCH_URL:
+  REAR_BUMPER_URL:
     'https://bamper.by/zchbu/zapchast_bamper-zadniy/marka_volkswagen/model_atlascrosssport/god_2023-2026/?sort=DATE-DESC',
+  TAILGATE_URL:
+    'https://bamper.by/zchbu/zapchast_kryshka-bagazhnika-dver-3-5/marka_volkswagen/model_atlascrosssport/god_2023-2026/?sort=DATE-DESC',
   /** Default cron: every day at 09:00 UTC (12:00 Minsk). Cron is wired off — trigger via POST. */
   SCRAPE_CRON: '0 9 * * *',
 } as const;
