@@ -22,6 +22,9 @@ export interface ListingCaptionParams {
   total: number;
 }
 
+/** Max seller-note length shown in a caption — keeps within Telegram's 1024-char limit. */
+const DESCRIPTION_LIMIT = 220;
+
 export const buildListingCaption = ({ listing, index, total }: ListingCaptionParams): string => {
   const lines: string[] = [
     `<b>${NOTIFICATION_HEADER} · ${index}/${total}</b>`,
@@ -31,7 +34,17 @@ export const buildListingCaption = ({ listing, index, total }: ListingCaptionPar
     `💰 ${formatPrice(listing)}`,
   ];
   if (listing.year) lines.push(`📅 ${listing.year} г.`);
-  if (listing.city) lines.push(`📍 ${listing.city}`);
+  const place = [listing.city, listing.sellerRating && `⭐ ${listing.sellerRating}`]
+    .filter(Boolean)
+    .join(' · ');
+  if (place) lines.push(`📍 ${place}`);
+  if (listing.description) {
+    const text =
+      listing.description.length > DESCRIPTION_LIMIT
+        ? `${listing.description.slice(0, DESCRIPTION_LIMIT).trimEnd()}…`
+        : listing.description;
+    lines.push('', `📝 ${text}`);
+  }
   lines.push('', `<a href="${listing.url}">🔗 Подробнее</a>`);
   return lines.join('\n');
 };

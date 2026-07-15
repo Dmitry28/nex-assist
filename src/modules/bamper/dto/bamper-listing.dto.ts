@@ -17,6 +17,10 @@ export class BamperListing {
   @ApiPropertyOptional() priceUsd?: number;
   @ApiPropertyOptional() city?: string;
   @ApiPropertyOptional() photoUrl?: string;
+  /** Seller's free-text notes: engine, condition, origin ("Оригинал США"), R-line, etc. */
+  @ApiPropertyOptional() description?: string;
+  /** Seller positive-feedback rating (karma), e.g. "92%". Not shown for every seller. */
+  @ApiPropertyOptional() sellerRating?: string;
 }
 
 /** Result of one scrape cycle. */

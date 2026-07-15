@@ -157,6 +157,15 @@ export const parseBamperSearchHtml = (html: string): BamperListing[] => {
     const cityMatch = cardText.match(/\d{2}\.\d{2}\s+([А-ЯЁ][А-Яа-яЁё.\- ]+?)\s+\d{1,3}\s*%/);
     const city = cityMatch ? cityMatch[1].trim() : undefined;
 
+    // Seller notes: everything between the title (h5) and the "Артикул:" label — engine,
+    // condition, origin, R-line, etc. Falls back to the price-box boundary if no articul.
+    const descMatch = chunk.match(/<\/h5>([\s\S]*?)(?:Артикул|<div\s+class="col-sm-2)/i);
+    const description = descMatch ? stripTags(descMatch[1]) || undefined : undefined;
+
+    // Seller positive-feedback rating (karma), shown for some sellers only.
+    const ratingMatch = chunk.match(/karma[^>]*>\s*(\d{1,3})\s*%/i);
+    const sellerRating = ratingMatch ? `${ratingMatch[1]}%` : undefined;
+
     // The first photo may be an absolute fs.bamper.by URL or a relative /upload/... path,
     // depending on the seller — capture either and normalise to an absolute URL.
     const imgMatch = chunk.match(/<img[^>]+\bsrc="([^"]+?\.(?:jpg|jpeg|png|webp))"/i);
@@ -172,6 +181,8 @@ export const parseBamperSearchHtml = (html: string): BamperListing[] => {
       priceUsd,
       city,
       photoUrl,
+      description,
+      sellerRating,
     });
   }
 

@@ -53,8 +53,17 @@ describe('parseBamperSearchHtml', () => {
       priceByn: 4350,
       priceUsd: 1519,
       city: 'Минск',
+      sellerRating: '86%',
     });
     expect(listings[0].photoUrl).toMatch(/^https:\/\/fs\.bamper\.by\/.+\.(jpg|jpeg|png|webp)$/);
+    expect(listings[0].description).toContain('R-line');
+  });
+
+  it('extracts seller notes for every listing and a rating for rated sellers', () => {
+    for (const l of listings) expect(l.description && l.description.length).toBeTruthy();
+    const rated = listings.filter(l => l.sellerRating);
+    expect(rated.length).toBeGreaterThanOrEqual(3);
+    for (const l of rated) expect(l.sellerRating).toMatch(/^\d{1,3}%$/);
   });
 
   it('returns an empty array for HTML without a results list', () => {
