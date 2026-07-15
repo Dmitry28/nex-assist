@@ -47,7 +47,12 @@ export class BamperParserService implements OnModuleDestroy {
     this.browser = null;
   }
 
-  async fetch(url: string): Promise<BamperListing[]> {
+  /**
+   * Fetch one part-search page. `partSlug` is the bamper.by zapchast slug for this
+   * part (e.g. "bamper-zadniy") — only listing links with that slug are parsed, so
+   * related-part links elsewhere on the page are ignored.
+   */
+  async fetch(url: string, partSlug: string): Promise<BamperListing[]> {
     for (let attempt = 0; attempt <= CLOUDFLARE_RETRY_ATTEMPTS; attempt++) {
       if (attempt > 0) {
         this.logger.warn(
@@ -59,7 +64,7 @@ export class BamperParserService implements OnModuleDestroy {
       }
 
       const html = await this.fetchHtml(await this.getBrowser(), url);
-      if (html !== null) return parseBamperSearchHtml(html);
+      if (html !== null) return parseBamperSearchHtml(html, partSlug);
     }
 
     throw new Error('Cloudflare challenge not resolved after all retries');
@@ -113,25 +118,29 @@ const stripTags = (html: string): string =>
 
 const digits = (s: string): number => Number(s.replace(/\s/g, ''));
 
+const escapeRegExp = (s: string): string => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
 /**
- * Parse one bamper.by search results page into rear-bumper listings.
+ * Parse one bamper.by search results page into listings for the given part.
  *
  * Cards live in `div.item-list` and each starts with a `col-sm-4 ... photobox` image
- * column, so we split on that boundary. Per card we read: the listing slug from the
- * detail link (stable id), the `h5.add-title` text (title + donor year), and the
- * price/city from the `price-box` column. Price and photo are best-effort — some
- * offers hide the price or lazy-load the image. Exported for unit tests.
+ * column, so we split on that boundary. `partSlug` is the bamper.by zapchast slug for
+ * the part (e.g. "bamper-zadniy") — only links with that slug are treated as listings.
+ * Per card we read: the listing slug from the detail link (stable id), the
+ * `h5.add-title` text (title + donor year), and the price/city from the `price-box`
+ * column. Price and photo are best-effort — some offers hide the price. Exported for tests.
  */
-export const parseBamperSearchHtml = (html: string): BamperListing[] => {
+export const parseBamperSearchHtml = (html: string, partSlug: string): BamperListing[] => {
   const listStart = html.indexOf('item-list');
   if (listStart === -1) return [];
   const list = html.slice(listStart);
 
+  const linkRe = new RegExp(`href="(/zapchast_${escapeRegExp(partSlug)}/(\\d+-[A-Za-z0-9-]+))/?"`);
   const chunks = list.split(/(?=class="col-sm-4 no-padding photobox")/);
   const byId = new Map<string, BamperListing>();
 
   for (const chunk of chunks) {
-    const linkMatch = chunk.match(/href="(\/zapchast_bamper-zadniy\/(\d+-[A-Za-z0-9-]+))\/?"/);
+    const linkMatch = chunk.match(linkRe);
     if (!linkMatch) continue;
     const id = linkMatch[2];
     if (byId.has(id)) continue;

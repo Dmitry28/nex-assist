@@ -95,7 +95,8 @@ export const validationSchema = Joi.object({
   TELEGRAM_MOSTY_JOBS_CHAT_ID: Joi.string().optional(),
 
   // bamper.by module — VW Atlas Cross Sport rear bumper (Cloudflare, driven via Puppeteer)
-  BAMPER_SEARCH_URL: Joi.string().uri().default(BAMPER_DEFAULTS.SEARCH_URL),
+  BAMPER_REAR_BUMPER_URL: Joi.string().uri().default(BAMPER_DEFAULTS.REAR_BUMPER_URL),
+  BAMPER_TAILGATE_URL: Joi.string().uri().default(BAMPER_DEFAULTS.TAILGATE_URL),
   BAMPER_SCRAPE_CRON: Joi.string().default(BAMPER_DEFAULTS.SCRAPE_CRON),
   TELEGRAM_ATLAS_PARTS_CHAT_ID: Joi.string().optional(),
 
