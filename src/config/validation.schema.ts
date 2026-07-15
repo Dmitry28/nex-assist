@@ -97,7 +97,7 @@ export const validationSchema = Joi.object({
   // bamper.by module — VW Atlas Cross Sport rear bumper (Cloudflare, driven via Puppeteer)
   BAMPER_SEARCH_URL: Joi.string().uri().default(BAMPER_DEFAULTS.SEARCH_URL),
   BAMPER_SCRAPE_CRON: Joi.string().default(BAMPER_DEFAULTS.SCRAPE_CRON),
-  TELEGRAM_BAMPER_CHAT_ID: Joi.string().optional(),
+  TELEGRAM_ATLAS_PARTS_CHAT_ID: Joi.string().optional(),
 
   // ghb.by module — ОАО «Гродножилстрой» Прейскурант РБ (new apartments / offices)
   GHB_PRICE_LIST_URL: Joi.string().uri().default(GHB_DEFAULTS.PRICE_LIST_URL),

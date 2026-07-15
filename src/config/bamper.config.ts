@@ -10,5 +10,7 @@ import { BAMPER_DEFAULTS } from './constants';
 export default registerAs('bamper', () => ({
   searchUrl: process.env.BAMPER_SEARCH_URL ?? BAMPER_DEFAULTS.SEARCH_URL,
   scrapeCron: process.env.BAMPER_SCRAPE_CRON ?? BAMPER_DEFAULTS.SCRAPE_CRON,
-  chatId: process.env.TELEGRAM_BAMPER_CHAT_ID,
+  // Abstract "Atlas parts" channel — not tied to bamper/bumper, so it can later
+  // collect parts for the Atlas from other sources too.
+  chatId: process.env.TELEGRAM_ATLAS_PARTS_CHAT_ID,
 }));

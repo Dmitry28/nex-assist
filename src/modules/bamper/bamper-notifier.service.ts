@@ -24,7 +24,7 @@ export class BamperNotifierService {
     this.chatId = config.get<string>('bamper.chatId') ?? '';
     if (!this.chatId) {
       this.logger.warn(
-        'TELEGRAM_BAMPER_CHAT_ID is not set — notifications disabled, nothing will be persisted',
+        'TELEGRAM_ATLAS_PARTS_CHAT_ID is not set — notifications disabled, nothing will be persisted',
       );
     }
   }
