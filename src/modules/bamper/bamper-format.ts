@@ -56,11 +56,11 @@ export const buildListingCaption = ({
   return lines.join('\n');
 };
 
-/** One line per feed for the run summary. */
+/** One line per feed for the run summary — the part label links to the monitored search. */
 const feedSummaryLine = (feed: BamperFeedResult): string => {
   const bits = [`всего ${feed.total}`];
   if (feed.newListings.length > 0) bits.unshift(`🆕 ${feed.newListings.length} нов.`);
-  return `• ${feed.car} · ${feed.label}: ${bits.join(' · ')}`;
+  return `• ${feed.car} · <a href="${feed.url}">${feed.label}</a>: ${bits.join(' · ')}`;
 };
 
 export const buildSummary = (result: BamperResult): string => {
