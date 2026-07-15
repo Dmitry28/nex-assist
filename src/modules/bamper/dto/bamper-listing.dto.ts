@@ -28,6 +28,8 @@ export class BamperFeedResult {
   @ApiProperty() feedKey!: string;
   @ApiProperty() car!: string;
   @ApiProperty() label!: string;
+  /** The monitored bamper.by search URL — surfaced in the Telegram summary. */
+  @ApiProperty() url!: string;
   @ApiProperty() total!: number;
   @ApiProperty({ type: () => BamperListing, isArray: true }) newListings!: BamperListing[];
   @ApiProperty({ type: () => BamperListing, isArray: true }) removedListings!: BamperListing[];
