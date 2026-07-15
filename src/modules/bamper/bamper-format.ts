@@ -1,8 +1,10 @@
 import { LOCALE, TIMEZONE } from '../../common/utils/locale';
-import { NOTIFICATION_HEADER } from './constants';
-import type { BamperListing, BamperResult } from './dto/bamper-listing.dto';
+import type { BamperFeedResult, BamperListing, BamperResult } from './dto/bamper-listing.dto';
 
 const PRICE_ON_REQUEST = 'Цена по запросу';
+
+/** Max seller-note length shown in a caption — keeps within Telegram's 1024-char limit. */
+const DESCRIPTION_LIMIT = 220;
 
 /** "1519 $ · 4350 р." — whichever prices are present. */
 export const formatPrice = (listing: BamperListing): string => {
@@ -18,16 +20,19 @@ export const formatPrice = (listing: BamperListing): string => {
 
 export interface ListingCaptionParams {
   listing: BamperListing;
+  feedLabel: string;
   index: number;
   total: number;
 }
 
-/** Max seller-note length shown in a caption — keeps within Telegram's 1024-char limit. */
-const DESCRIPTION_LIMIT = 220;
-
-export const buildListingCaption = ({ listing, index, total }: ListingCaptionParams): string => {
+export const buildListingCaption = ({
+  listing,
+  feedLabel,
+  index,
+  total,
+}: ListingCaptionParams): string => {
   const lines: string[] = [
-    `<b>${NOTIFICATION_HEADER} · ${index}/${total}</b>`,
+    `<b>🆕 ${feedLabel} · Atlas Cross Sport · ${index}/${total}</b>`,
     '',
     `🚗 <b>${listing.title}</b>`,
     '',
@@ -49,20 +54,17 @@ export const buildListingCaption = ({ listing, index, total }: ListingCaptionPar
   return lines.join('\n');
 };
 
+/** One line per feed for the run summary. */
+const feedSummaryLine = (feed: BamperFeedResult): string => {
+  if (feed.isBaseline) return `• ${feed.label}: 🏗 baseline · ${feed.total} сохранено`;
+  const bits = [`всего ${feed.total}`];
+  if (feed.newListings.length > 0) bits.unshift(`🆕 ${feed.newListings.length} нов.`);
+  return `• ${feed.label}: ${bits.join(' · ')}`;
+};
+
 export const buildSummary = (result: BamperResult): string => {
   const date = new Date().toLocaleDateString(LOCALE, { timeZone: TIMEZONE });
-  const lines = [`<b>🔧 bamper.by · задний бампер Atlas Cross Sport · ${date}</b>`];
-
-  if (result.isBaseline) {
-    lines.push('', `🏗 baseline · ${result.total} объявл. сохранено`);
-    return lines.join('\n');
-  }
-
-  lines.push('', `Всего в выдаче: <b>${result.total}</b>`);
-  lines.push(
-    result.newListings.length > 0
-      ? `🆕 ${result.newListings.length} новых`
-      : 'без новых объявлений',
-  );
+  const lines = [`<b>🔧 bamper.by · Atlas Cross Sport · ${date}</b>`, ''];
+  for (const feed of result.feeds) lines.push(feedSummaryLine(feed));
   return lines.join('\n');
 };

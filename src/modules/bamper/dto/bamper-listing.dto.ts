@@ -23,19 +23,24 @@ export class BamperListing {
   @ApiPropertyOptional() sellerRating?: string;
 }
 
-/** Result of one scrape cycle. */
-export class BamperResult {
+/** Result for a single part feed within a scrape cycle. */
+export class BamperFeedResult {
+  @ApiProperty() feedKey!: string;
+  @ApiProperty() label!: string;
   @ApiProperty() total!: number;
   @ApiProperty({ type: () => BamperListing, isArray: true }) newListings!: BamperListing[];
   @ApiProperty({ type: () => BamperListing, isArray: true }) removedListings!: BamperListing[];
   @ApiProperty() isBaseline!: boolean;
-  @ApiPropertyOptional() skipped?: boolean;
-  @ApiPropertyOptional() skipReason?: string;
+}
+
+/** Result of one scrape cycle across all part feeds. */
+export class BamperResult {
+  @ApiProperty({ type: () => BamperFeedResult, isArray: true }) feeds!: BamperFeedResult[];
 }
 
 /**
  * Persisted snapshot entry — extends BamperListing with tracking timestamps.
- * Stored in ./data/bamper_atlas_cross_sport_all.json
+ * Stored per feed in ./data/bamper_<feedKey>_all.json
  */
 export interface BamperSnapshotEntry extends BamperListing {
   firstSeenAt: string;

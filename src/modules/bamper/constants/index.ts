@@ -21,8 +21,8 @@ export const CLOUDFLARE_RETRY_DELAY_MS = 30_000;
 /** Max wall-clock time for a full scrape cycle — watchdog resets isRunning if exceeded (5 min). */
 export const RUN_TIMEOUT_MS = 5 * 60 * 1000;
 
-/** Snapshot file path — current active rear-bumper listings. */
-export const DATA_FILE = './data/bamper_atlas_cross_sport_all.json';
+/** Delay between feeds to avoid overlapping Puppeteer navigations (ms). */
+export const INTER_FEED_DELAY_MS = 1_000;
 
-/** Telegram notification section header. */
-export const NOTIFICATION_HEADER = '🆕 Задний бампер Atlas Cross Sport';
+/** Per-feed snapshot file path, e.g. ./data/bamper_rear-bumper_all.json. */
+export const dataFile = (feedKey: string): string => `./data/bamper_${feedKey}_all.json`;
