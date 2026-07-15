@@ -17,6 +17,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from '../app.module';
 import { AvByService } from '../modules/av-by/av-by.service';
+import { BamperService } from '../modules/bamper/bamper.service';
 import { BidCarsService } from '../modules/bid-cars/bid-cars.service';
 import { GhbService } from '../modules/ghb/ghb.service';
 import { KufarService } from '../modules/kufar/kufar.service';
@@ -35,6 +36,7 @@ type Module =
   | 'kufar-rent-long'
   | 'realt'
   | 'av-by'
+  | 'bamper'
   | 'pogorany'
   | 'ghb'
   | 'mosty-jobs'
@@ -51,13 +53,14 @@ function parseModule(): Module {
     arg === 'kufar-rent-long' ||
     arg === 'realt' ||
     arg === 'av-by' ||
+    arg === 'bamper' ||
     arg === 'pogorany' ||
     arg === 'ghb' ||
     arg === 'mosty-jobs'
   )
     return arg;
   console.error(
-    `Unknown module: "${arg}". Valid options: land, bid-cars, kufar, kufar-rent-flat, kufar-rent-long, realt, av-by, pogorany, ghb, mosty-jobs`,
+    `Unknown module: "${arg}". Valid options: land, bid-cars, kufar, kufar-rent-flat, kufar-rent-long, realt, av-by, bamper, pogorany, ghb, mosty-jobs`,
   );
   process.exit(1);
 }
@@ -126,6 +129,14 @@ async function bootstrap(): Promise<void> {
         await app.get(AvByService).run();
       } catch (err) {
         console.error('AvBy scrape failed:', err);
+      }
+    }
+
+    if (target === 'all' || target === 'bamper') {
+      try {
+        await app.get(BamperService).run();
+      } catch (err) {
+        console.error('Bamper scrape failed:', err);
       }
     }
 
