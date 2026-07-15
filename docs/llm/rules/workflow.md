@@ -20,19 +20,15 @@ One loop for all tasks. Plan depth scales with task complexity — a simple fix 
 
 ## Git workflow
 
-The release flow has **two steps, always in this order**:
+Two steps, always in this order:
 
-1. Branch off `dev` (`git checkout -b <branch> origin/dev`), open the work PR targeting **`dev`**, merge it there.
-2. Promote to `main` via a **separate `dev → main` release PR**. Code reaches `main` ONLY through this release PR.
+1. Branch off `dev`, open the work PR into **`dev`**, merge it.
+2. Promote to `main` with a separate **`dev → main` release PR** — the only way code reaches `main`.
 
-Rules:
-
-- **Never** target `main` with a work PR — not even for production-affecting fixes or hotfixes. "The daily job runs on `main`" is not a reason to skip `dev`.
-- Base branches on `origin/dev`, not on stale local branches (check `git rev-list --count origin/dev..HEAD`).
+- Never target `main` with a work PR — not even for hotfixes.
+- Base branches on `origin/dev`, not on stale local branches.
 - Merge with `gh pr merge --merge` (squash is disabled).
-- If anything lands on `main` without going through `dev`, sync `main → dev` via a PR first, so `dev` never lacks commits that exist on `main`.
-- `main` is for releases and GitHub Actions only.
-- All GitHub content (PRs, commits, comments, branch names) is English-only — see [github.md](github.md).
+- All GitHub content is English — see [github.md](github.md).
 
 ## 3. Verify
 

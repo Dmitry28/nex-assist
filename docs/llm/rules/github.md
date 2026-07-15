@@ -1,18 +1,16 @@
 # GitHub Rules
 
-## Language: English only
+## English only
 
-All content that lands on GitHub must be written in **English**, regardless of the language used while chatting with the user:
+All content on GitHub is written in **English**, whatever language the chat uses:
 
-- Pull request titles and descriptions
+- PR titles and descriptions
 - Commit messages
 - PR / issue / review comments
 - Issue titles and bodies
 - Branch names
 - Release notes and tags
 
-Chat with the user in whatever language they use; keep GitHub itself English-only for a consistent, contributor-friendly history.
+Chat with the user in their language; keep GitHub itself English-only.
 
-## PR flow
-
-See [workflow.md](workflow.md) for the branch/release flow. In short: branch off `dev`, PR into `dev`, then promote to `main` via a separate `dev → main` release PR. Never target `main` directly.
+For the branch/release flow, see [workflow.md](workflow.md).
