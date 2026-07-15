@@ -57,3 +57,4 @@ MEMORY.md is always loaded into every session. To avoid wasting instruction budg
 | Development philosophy | `docs/llm/rules/development-philosophy.md` |
 | Code review            | `docs/llm/rules/code-review.md`            |
 | Workflow               | `docs/llm/rules/workflow.md`               |
+| GitHub (English-only)  | `docs/llm/rules/github.md`                 |
