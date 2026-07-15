@@ -10,6 +10,7 @@ import { AllExceptionsFilter } from './common/filters/all-exceptions.filter';
 import { TransformInterceptor } from './common/interceptors/transform.interceptor';
 import { HealthModule } from './modules/health/health.module';
 import { AvByModule } from './modules/av-by/av-by.module';
+import { BamperModule } from './modules/bamper/bamper.module';
 import { BidCarsModule } from './modules/bid-cars/bid-cars.module';
 import { GhbModule } from './modules/ghb/ghb.module';
 import { KufarModule } from './modules/kufar/kufar.module';
@@ -61,6 +62,7 @@ import { RealtModule } from './modules/realt/realt.module';
     KufarRentLongModule,
     RealtModule,
     AvByModule,
+    BamperModule,
     PogoranyModule,
     GhbModule,
     MostyJobsModule,
