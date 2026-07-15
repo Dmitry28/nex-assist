@@ -1,6 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 import type { AvByListing } from './dto/av-by-listing.dto';
-import { SCRAPFLY_TIMEOUT_MS } from './constants';
+import { SCRAPFLY_RENDER_WAIT_MS, SCRAPFLY_TIMEOUT_MS } from './constants';
 
 /** Shape of the slice of __NEXT_DATA__ we actually read. */
 interface RawNextDataAdvert {
@@ -41,9 +41,11 @@ interface RawNextData {
  * av.by SSRs Next.js pages — every filter response embeds the full listing
  * data as JSON in a `<script id="__NEXT_DATA__">` blob. We extract that blob
  * and read `props.initialState.filter.main.adverts` directly, so there is no
- * HTML card parsing and no need to render JS (saves ScrapFly credits).
+ * HTML card parsing.
  *
- * Cost per call: 25 ScrapFly credits (residential proxy, country=by, asp=true).
+ * The site is fronted by the SafeLine WAF, which serves a JS challenge before
+ * the real page. We therefore request `render_js=true` so ScrapFly executes the
+ * challenge; the SSR'd __NEXT_DATA__ is present once it resolves.
  */
 @Injectable()
 export class AvByParserService {
@@ -61,6 +63,8 @@ export class AvByParserService {
       url,
       country: 'by',
       asp: 'true',
+      render_js: 'true',
+      rendering_wait: String(SCRAPFLY_RENDER_WAIT_MS),
     });
 
     const apiUrl = `https://api.scrapfly.io/scrape?${params.toString()}`;
@@ -110,6 +114,10 @@ export class AvByParserService {
 const extractNextData = (html: string): RawNextData => {
   const match = html.match(/<script id="__NEXT_DATA__"[^>]*>(.+?)<\/script>/s);
   if (!match) {
+    // SafeLine WAF challenge page uses `slg-`-prefixed element ids.
+    if (html.includes('slg-box')) {
+      throw new Error('av.by blocked by SafeLine WAF — challenge not solved');
+    }
     throw new Error('__NEXT_DATA__ script not found in av.by response — page structure changed');
   }
   return JSON.parse(match[1]) as RawNextData;
