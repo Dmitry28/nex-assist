@@ -20,9 +20,15 @@ One loop for all tasks. Plan depth scales with task complexity — a simple fix 
 
 ## Git workflow
 
-- Branch off `dev`, PR to `dev` — never directly to `main`
-- Merge with `gh pr merge --merge` (squash is disabled)
-- `main` is for releases and GitHub Actions only
+Two steps, always in this order:
+
+1. Branch off `dev`, open the work PR into **`dev`**, merge it.
+2. Promote to `main` with a separate **`dev → main` release PR** — the only way code reaches `main`.
+
+- Never target `main` with a work PR — not even for hotfixes.
+- Base branches on `origin/dev`, not on stale local branches.
+- Merge with `gh pr merge --merge` (squash is disabled).
+- All GitHub content is English — see [github.md](github.md).
 
 ## 3. Verify
 
