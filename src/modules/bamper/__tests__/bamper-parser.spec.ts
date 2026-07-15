@@ -39,6 +39,12 @@ describe('parseBamperSearchHtml', () => {
     expect(withUsd.length).toBeGreaterThanOrEqual(6);
   });
 
+  it('extracts an absolute photo URL for every listing (fs.bamper.by or /upload/...)', () => {
+    for (const l of listings) {
+      expect(l.photoUrl).toMatch(/^https:\/\/(fs\.)?bamper\.by\/.+\.(jpg|jpeg|png|webp)$/);
+    }
+  });
+
   it('matches the first card exactly', () => {
     expect(listings[0]).toMatchObject({
       id: '105924-108638066',

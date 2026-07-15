@@ -157,10 +157,11 @@ export const parseBamperSearchHtml = (html: string): BamperListing[] => {
     const cityMatch = cardText.match(/\d{2}\.\d{2}\s+([А-ЯЁ][А-Яа-яЁё.\- ]+?)\s+\d{1,3}\s*%/);
     const city = cityMatch ? cityMatch[1].trim() : undefined;
 
-    const imgMatch = chunk.match(
-      /(?:src|data-src)="(https:\/\/fs\.bamper\.by\/[^"]+?\.(?:jpg|jpeg|png|webp))"/i,
-    );
-    const photoUrl = imgMatch ? imgMatch[1] : undefined;
+    // The first photo may be an absolute fs.bamper.by URL or a relative /upload/... path,
+    // depending on the seller — capture either and normalise to an absolute URL.
+    const imgMatch = chunk.match(/<img[^>]+\bsrc="([^"]+?\.(?:jpg|jpeg|png|webp))"/i);
+    const rawPhoto = imgMatch ? imgMatch[1] : undefined;
+    const photoUrl = rawPhoto?.startsWith('/') ? `${BASE_URL}${rawPhoto}` : rawPhoto;
 
     byId.set(id, {
       id,
