@@ -37,7 +37,11 @@ export class BamperNotifierService {
       this.logger.error('Failed to send bamper summary — skipping all notifications');
       return emptyResult();
     }
-    this.logger.log('Summary sent to Telegram');
+    // One summary per run by design. Log which kind so runs are auditable from logs
+    // alone (no need to inspect the chat).
+    this.logger.log(
+      `Summary sent (1 message) — ${result.isBaseline ? 'baseline' : `${result.newListings.length} new`}`,
+    );
 
     // Baseline is persisted unconditionally by the service, so no per-listing spam on first run.
     const notifiedNew = result.isBaseline
@@ -69,8 +73,14 @@ export class BamperNotifierService {
             this.chatId,
             truncateText(caption, TELEGRAM_MESSAGE_LIMIT),
           );
-      if (ok) notified.add(listing.id);
-      else this.logger.warn(`Failed to send listing id=${listing.id} (${listing.title})`);
+      if (ok) {
+        notified.add(listing.id);
+        this.logger.log(
+          `Sent listing id=${listing.id} (${listing.year ?? '?'}, ${listing.photoUrl ? 'photo' : 'text'}) — ${listing.title}`,
+        );
+      } else {
+        this.logger.warn(`Failed to send listing id=${listing.id} (${listing.title})`);
+      }
     }
     return notified;
   }
