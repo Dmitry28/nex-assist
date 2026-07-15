@@ -18,8 +18,12 @@ export const CLOUDFLARE_RETRY_ATTEMPTS = 2;
 /** Delay between Cloudflare retries (ms). 30s gives CF time to settle. */
 export const CLOUDFLARE_RETRY_DELAY_MS = 30_000;
 
-/** Max wall-clock time for a full scrape cycle — watchdog resets isRunning if exceeded (5 min). */
-export const RUN_TIMEOUT_MS = 5 * 60 * 1000;
+/**
+ * Max wall-clock time for a full scrape cycle — watchdog resets isRunning if exceeded.
+ * 10 min: several feeds + a first-run dump of the whole inventory (dozens of throttled
+ * Telegram sends) can legitimately run a few minutes.
+ */
+export const RUN_TIMEOUT_MS = 10 * 60 * 1000;
 
 /** Delay between feeds to avoid overlapping Puppeteer navigations (ms). */
 export const INTER_FEED_DELAY_MS = 1_000;

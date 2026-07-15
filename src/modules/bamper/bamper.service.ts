@@ -89,6 +89,7 @@ export class BamperService {
         this.logger.warn(`Feed ${feed.key}: 0 listings but snapshot non-empty — skipping diff`);
         feedResults.push({
           feedKey: feed.key,
+          car: feed.car,
           label: feed.label,
           total: previousEntries.length,
           newListings: [],
@@ -105,6 +106,7 @@ export class BamperService {
 
       const result: BamperFeedResult = {
         feedKey: feed.key,
+        car: feed.car,
         label: feed.label,
         total: current.length,
         newListings,
@@ -144,18 +146,9 @@ export class BamperService {
   ): Promise<void> {
     const now = new Date().toISOString();
 
-    // Baseline: persist everything unconditionally — no per-listing messages were sent.
-    if (result.isBaseline) {
-      const seeded = current.map<BamperSnapshotEntry>(l => ({
-        ...l,
-        firstSeenAt: now,
-        lastSeenAt: now,
-      }));
-      await this.snapshot.write(dataFile(feed.key), seeded);
-      this.logger.log(`Feed ${feed.key}: baseline saved (${seeded.length} entries, no messages)`);
-      return;
-    }
-
+    // Note: the first run (empty snapshot) is NOT silent — every current listing counts
+    // as "new" and is sent, so the channel gets the full existing inventory once. Only
+    // successfully-sent listings are persisted below, so a Telegram failure retries next run.
     const updated = new Map(previousMap);
     for (const listing of current) {
       const prev = updated.get(listing.id);

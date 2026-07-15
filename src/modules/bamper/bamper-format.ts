@@ -20,6 +20,7 @@ export const formatPrice = (listing: BamperListing): string => {
 
 export interface ListingCaptionParams {
   listing: BamperListing;
+  car: string;
   feedLabel: string;
   index: number;
   total: number;
@@ -27,12 +28,13 @@ export interface ListingCaptionParams {
 
 export const buildListingCaption = ({
   listing,
+  car,
   feedLabel,
   index,
   total,
 }: ListingCaptionParams): string => {
   const lines: string[] = [
-    `<b>🆕 ${feedLabel} · Atlas Cross Sport · ${index}/${total}</b>`,
+    `<b>🆕 ${car} · ${feedLabel} · ${index}/${total}</b>`,
     '',
     `🚗 <b>${listing.title}</b>`,
     '',
@@ -56,15 +58,14 @@ export const buildListingCaption = ({
 
 /** One line per feed for the run summary. */
 const feedSummaryLine = (feed: BamperFeedResult): string => {
-  if (feed.isBaseline) return `• ${feed.label}: 🏗 baseline · ${feed.total} сохранено`;
   const bits = [`всего ${feed.total}`];
   if (feed.newListings.length > 0) bits.unshift(`🆕 ${feed.newListings.length} нов.`);
-  return `• ${feed.label}: ${bits.join(' · ')}`;
+  return `• ${feed.car} · ${feed.label}: ${bits.join(' · ')}`;
 };
 
 export const buildSummary = (result: BamperResult): string => {
   const date = new Date().toLocaleDateString(LOCALE, { timeZone: TIMEZONE });
-  const lines = [`<b>🔧 bamper.by · Atlas Cross Sport · ${date}</b>`, ''];
+  const lines = [`<b>🔧 bamper.by · запчасти Atlas · ${date}</b>`, ''];
   for (const feed of result.feeds) lines.push(feedSummaryLine(feed));
   return lines.join('\n');
 };
