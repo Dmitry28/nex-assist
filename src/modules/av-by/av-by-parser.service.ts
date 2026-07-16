@@ -1,4 +1,5 @@
-import { Injectable, Logger } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
+import { ScrapingClient } from '../../common/scraping/scraping-client.service';
 import type { AvByListing } from './dto/av-by-listing.dto';
 import { SCRAPFLY_RENDER_WAIT_MS, SCRAPFLY_TIMEOUT_MS } from './constants';
 
@@ -49,60 +50,20 @@ interface RawNextData {
  */
 @Injectable()
 export class AvByParserService {
-  private readonly logger = new Logger(AvByParserService.name);
-
-  constructor(private readonly apiKey: string) {}
+  constructor(private readonly scraping: ScrapingClient) {}
 
   async fetchFeed(url: string): Promise<{ listings: AvByListing[]; total: number }> {
-    if (!this.apiKey) {
-      throw new Error('SCRAPFLY_API_KEY is not configured');
-    }
-
-    const params = new URLSearchParams({
-      key: this.apiKey,
-      url,
+    // Goes through the provider chain (ScrapFly today) — residential BY proxy + JS render
+    // to clear the SafeLine WAF. Falls over to the next provider if ScrapFly is out of quota.
+    const { content } = await this.scraping.scrape(url, {
       country: 'by',
-      asp: 'true',
-      render_js: 'true',
-      rendering_wait: String(SCRAPFLY_RENDER_WAIT_MS),
+      asp: true,
+      renderJs: true,
+      renderWaitMs: SCRAPFLY_RENDER_WAIT_MS,
+      timeoutMs: SCRAPFLY_TIMEOUT_MS,
     });
 
-    const apiUrl = `https://api.scrapfly.io/scrape?${params.toString()}`;
-
-    const ctrl = new AbortController();
-    const timer = setTimeout(() => ctrl.abort(), SCRAPFLY_TIMEOUT_MS);
-
-    let json: {
-      result?: { content?: string; status_code?: number };
-      context?: { cost?: { total?: number } };
-    };
-    try {
-      const resp = await fetch(apiUrl, { signal: ctrl.signal });
-      if (!resp.ok) {
-        throw new Error(`ScrapFly returned HTTP ${resp.status}`);
-      }
-      json = (await resp.json()) as typeof json;
-    } catch (err) {
-      if (err instanceof Error && err.name === 'AbortError') {
-        throw new Error(`ScrapFly timeout after ${SCRAPFLY_TIMEOUT_MS / 1000}s for ${url}`, {
-          cause: err,
-        });
-      }
-      throw err;
-    } finally {
-      clearTimeout(timer);
-    }
-
-    const cost = json.context?.cost?.total;
-    const upstreamStatus = json.result?.status_code;
-    this.logger.log(`ScrapFly OK — upstream ${upstreamStatus}, cost ${cost} credits`);
-
-    const html = json.result?.content;
-    if (!html) {
-      throw new Error('ScrapFly response missing content');
-    }
-
-    const nextData = extractNextData(html);
+    const nextData = extractNextData(content);
     const main = nextData.props?.initialState?.filter?.main;
     const raw = main?.adverts ?? [];
     const total = main?.count ?? raw.length;
