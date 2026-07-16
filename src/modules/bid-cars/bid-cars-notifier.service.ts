@@ -14,12 +14,14 @@ import { buildCaption, buildSummary, type CaptionParams } from './bid-cars-forma
 export class BidCarsNotifierService {
   private readonly logger = new Logger(BidCarsNotifierService.name);
   private readonly chatId: string;
+  private readonly sourceUrl: string;
 
   constructor(
     private readonly telegram: TelegramService,
     config: ConfigService,
   ) {
     this.chatId = config.get<string>('bidCars.chatId') ?? '';
+    this.sourceUrl = config.get<string>('bidCars.scrapeUrl') ?? '';
   }
 
   /**
@@ -42,6 +44,7 @@ export class BidCarsNotifierService {
         removedCount: removedListings.length,
         soldUpdateCount: soldPriceUpdates.length,
         isBaseline,
+        sourceUrl: this.sourceUrl,
       }),
     );
 

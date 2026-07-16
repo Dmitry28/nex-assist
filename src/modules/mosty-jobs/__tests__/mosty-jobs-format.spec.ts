@@ -87,4 +87,15 @@ describe('buildSummary', () => {
     const summary = buildSummary({ ...baseResult, seededCount: 250 });
     expect(summary).toContain('250 вакансий сохранено без уведомлений');
   });
+
+  it('links each source label to its monitored URL when provided', () => {
+    const summary = buildSummary(baseResult, {
+      gsz: 'https://gsz.gov.by/search',
+      crb: 'https://mostycrb.by/vacancies',
+    });
+    expect(summary).toContain('<a href="https://gsz.gov.by/search">gsz.gov.by</a>: <b>240</b>');
+    expect(summary).toContain(
+      '<a href="https://mostycrb.by/vacancies">Мостовская ЦРБ</a>: <b>8</b>',
+    );
+  });
 });

@@ -194,6 +194,7 @@ export class AvByService {
       const result: AvByFeedResult = {
         feedKey: feed.key,
         label: feed.label,
+        url: feed.url,
         total,
         newListings,
         soldListings: isBaseline ? [] : soldThisRun,

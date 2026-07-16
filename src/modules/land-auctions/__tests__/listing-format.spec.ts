@@ -22,6 +22,7 @@ const summaryBase = {
   soldCount: 2,
   specialCount: 5,
   newSpecialCount: 2,
+  sourceUrl: 'https://gcn.by/auction',
 };
 
 describe('hasValue', () => {
@@ -79,6 +80,7 @@ describe('buildSummary', () => {
     expect(s).toContain('💰 Продано: <b>2</b>');
     expect(s).toContain('Всего в Заболоть: <b>5</b>');
     expect(s).toContain('Новые в Заболоть: <b>2</b>');
+    expect(s).toContain('<a href="https://gcn.by/auction">🔗 Источник (gcn.by)</a>');
   });
 
   it('renders baseline summary when isBaseline=true', () => {

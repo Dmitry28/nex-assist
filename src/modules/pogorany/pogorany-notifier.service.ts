@@ -37,12 +37,14 @@ const emptyResult = (): PogoranyNotifyResult => ({
 export class PogoranyNotifierService {
   private readonly logger = new Logger(PogoranyNotifierService.name);
   private readonly chatId: string;
+  private readonly sourceUrl: string;
 
   constructor(
     private readonly telegram: TelegramService,
     config: ConfigService,
   ) {
     this.chatId = config.get<string>('pogorany.chatId') ?? '';
+    this.sourceUrl = config.get<string>('pogorany.storeApiUrl') ?? '';
     if (!this.chatId) {
       this.logger.warn(
         'TELEGRAM_POGORANY_CHAT_ID is not set — notifications disabled, nothing will be persisted',
@@ -53,7 +55,10 @@ export class PogoranyNotifierService {
   async notifyRunResult(result: PogoranyResult): Promise<PogoranyNotifyResult> {
     if (!this.chatId) return emptyResult();
 
-    const summaryOk = await this.telegram.sendMessage(this.chatId, buildSummary(result));
+    const summaryOk = await this.telegram.sendMessage(
+      this.chatId,
+      buildSummary(result, this.sourceUrl),
+    );
     if (!summaryOk) {
       this.logger.error('Failed to send pogorany summary — skipping all notifications');
       return emptyResult();

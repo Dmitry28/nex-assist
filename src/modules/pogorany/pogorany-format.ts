@@ -102,22 +102,23 @@ export const buildRemovedCaption = ({
   ].join('\n');
 };
 
-export const buildSummary = (result: PogoranyResult): string => {
+export const buildSummary = (result: PogoranyResult, sourceUrl?: string): string => {
   const date = new Date().toLocaleDateString(LOCALE, { timeZone: TIMEZONE });
   const lines = [`<b>🏘 pogorany.by · ${date}</b>`];
 
   if (result.isBaseline) {
     lines.push('', `🏗 baseline · ${result.total} лот(ов) сохранено`);
-    return lines.join('\n');
+  } else {
+    const parts: string[] = [];
+    if (result.newListings.length > 0) parts.push(`🆕 ${result.newListings.length} новых`);
+    if (result.removedListings.length > 0) parts.push(`🚫 ${result.removedListings.length} снято`);
+    if (result.priceChanges.length > 0) parts.push(`💸 ${result.priceChanges.length} изм. цены`);
+
+    lines.push('', `Всего в каталоге: <b>${result.total}</b>`);
+    lines.push(parts.length > 0 ? parts.join(' · ') : 'без изменений');
   }
 
-  const parts: string[] = [];
-  if (result.newListings.length > 0) parts.push(`🆕 ${result.newListings.length} новых`);
-  if (result.removedListings.length > 0) parts.push(`🚫 ${result.removedListings.length} снято`);
-  if (result.priceChanges.length > 0) parts.push(`💸 ${result.priceChanges.length} изм. цены`);
-
-  lines.push('', `Всего в каталоге: <b>${result.total}</b>`);
-  lines.push(parts.length > 0 ? parts.join(' · ') : 'без изменений');
+  if (sourceUrl) lines.push('', `<a href="${sourceUrl}">🔗 Источник (pogorany.by)</a>`);
 
   return lines.join('\n');
 };

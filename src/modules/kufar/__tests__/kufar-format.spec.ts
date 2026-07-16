@@ -132,6 +132,7 @@ describe('buildPriceChangeCaption', () => {
 describe('buildSummary', () => {
   const feed: KufarFeedResult = {
     feedName: 'uchastok',
+    url: 'https://re.kufar.by/l/uchastki',
     total: 10,
     newListings: [baseListing, baseListing],
     priceChanges: [],
@@ -142,6 +143,11 @@ describe('buildSummary', () => {
   it('shows feed display name', () => {
     const summary = buildSummary([feed]);
     expect(summary).toContain('Участки');
+  });
+
+  it('links the feed name to the monitored search URL', () => {
+    const summary = buildSummary([feed]);
+    expect(summary).toContain('<a href="https://re.kufar.by/l/uchastki">Участки</a>');
   });
 
   it('shows new listing count', () => {

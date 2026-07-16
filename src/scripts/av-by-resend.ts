@@ -50,6 +50,7 @@ async function main(): Promise<void> {
       feedResults.push({
         feedKey: spec.feedKey,
         label: spec.label,
+        url: '',
         total: entries.length,
         newListings: entries,
         soldListings: [],
