@@ -17,12 +17,16 @@ const emptyResult = (): GhbNotifyResult => ({ notifiedNew: new Set() });
 export class GhbNotifierService {
   private readonly logger = new Logger(GhbNotifierService.name);
   private readonly chatId: string;
+  private readonly priceListUrl: string;
+  private readonly apartmentsPageUrl: string;
 
   constructor(
     private readonly telegram: TelegramService,
     config: ConfigService,
   ) {
     this.chatId = config.get<string>('ghb.chatId') ?? '';
+    this.priceListUrl = config.get<string>('ghb.priceListUrl') ?? '';
+    this.apartmentsPageUrl = config.get<string>('ghb.apartmentsPageUrl') ?? '';
     if (!this.chatId) {
       this.logger.warn(
         'TELEGRAM_GHB_CHAT_ID is not set — notifications disabled, nothing will be persisted',
@@ -33,7 +37,13 @@ export class GhbNotifierService {
   async notifyRunResult(result: GhbResult): Promise<GhbNotifyResult> {
     if (!this.chatId) return emptyResult();
 
-    const summaryOk = await this.telegram.sendMessage(this.chatId, buildSummary(result));
+    const summaryOk = await this.telegram.sendMessage(
+      this.chatId,
+      buildSummary(result, {
+        priceListUrl: this.priceListUrl,
+        apartmentsPageUrl: this.apartmentsPageUrl,
+      }),
+    );
     if (!summaryOk) {
       this.logger.error('Failed to send ghb.by summary — skipping all notifications');
       return emptyResult();

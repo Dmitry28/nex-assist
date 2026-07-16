@@ -4,7 +4,7 @@ import { escapeHtml, TELEGRAM_MESSAGE_LIMIT, truncateText } from '../../common/u
 import { TelegramService } from '../telegram/telegram.service';
 import { MAX_NOTIFICATIONS_PER_RUN, NOTIFICATION_HEADERS } from './constants';
 import type { JobVacancy, MostyJobsResult } from './dto/job-vacancy.dto';
-import { buildSummary, buildVacancyMessage } from './mosty-jobs-format';
+import { buildSummary, buildVacancyMessage, type MostyJobsSourceUrls } from './mosty-jobs-format';
 
 /** Tracks which vacancies were successfully delivered — service uses this to gate persistence. */
 export interface MostyJobsNotifyResult {
@@ -17,12 +17,22 @@ const emptyResult = (): MostyJobsNotifyResult => ({ notifiedNew: new Set() });
 export class MostyJobsNotifierService {
   private readonly logger = new Logger(MostyJobsNotifierService.name);
   private readonly chatId: string;
+  private readonly sourceUrls: MostyJobsSourceUrls;
 
   constructor(
     private readonly telegram: TelegramService,
     config: ConfigService,
   ) {
     this.chatId = config.get<string>('mostyJobs.chatId') ?? '';
+    this.sourceUrls = {
+      gsz: config.get<string>('mostyJobs.gszSearchUrl'),
+      rabota: config.get<string>('mostyJobs.rabotaSearchUrl'),
+      joblab: config.get<string>('mostyJobs.joblabRssUrl'),
+      kufar: config.get<string>('mostyJobs.kufarSearchUrl'),
+      evroopt: config.get<string>('mostyJobs.evrooptApiUrl'),
+      crb: config.get<string>('mostyJobs.crbUrl'),
+      fair: config.get<string>('mostyJobs.fairsUrl'),
+    };
     if (!this.chatId) {
       this.logger.warn(
         'TELEGRAM_MOSTY_JOBS_CHAT_ID is not set — notifications disabled, only baseline seeding will be persisted',
@@ -33,7 +43,10 @@ export class MostyJobsNotifierService {
   async notifyRunResult(result: MostyJobsResult): Promise<MostyJobsNotifyResult> {
     if (!this.chatId) return emptyResult();
 
-    const summaryOk = await this.telegram.sendMessage(this.chatId, buildSummary(result));
+    const summaryOk = await this.telegram.sendMessage(
+      this.chatId,
+      buildSummary(result, this.sourceUrls),
+    );
     if (!summaryOk) {
       this.logger.error('Failed to send mosty-jobs summary — skipping all notifications');
       return emptyResult();

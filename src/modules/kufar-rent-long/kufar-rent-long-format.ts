@@ -58,19 +58,22 @@ export const buildListingCaption = ({
   return lines.join('\n');
 };
 
-export const buildSummary = (result: KufarRentLongResult): string => {
+export const buildSummary = (result: KufarRentLongResult, sourceUrl?: string): string => {
   const date = new Date().toLocaleDateString(LOCALE, { timeZone: TIMEZONE });
   const lines = [`<b>🏘 Kufar · аренда квартиры · Гродно · ${date}</b>`];
 
   if (result.isBaseline) {
     lines.push('', `🏗 baseline · ${result.total} вариант(ов) сохранено`);
-    return lines.join('\n');
+  } else {
+    lines.push('', `Найдено вариантов: <b>${result.total}</b>`);
+    lines.push(
+      result.newListings.length > 0
+        ? `🆕 ${result.newListings.length} новых`
+        : 'без новых вариантов',
+    );
   }
 
-  lines.push('', `Найдено вариантов: <b>${result.total}</b>`);
-  lines.push(
-    result.newListings.length > 0 ? `🆕 ${result.newListings.length} новых` : 'без новых вариантов',
-  );
+  if (sourceUrl) lines.push('', `<a href="${sourceUrl}">🔗 Источник (re.kufar.by)</a>`);
 
   return lines.join('\n');
 };
