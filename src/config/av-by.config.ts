@@ -20,7 +20,7 @@ export interface AvByFeedConfig {
  * the Next.js __NEXT_DATA__ blob).
  */
 export default registerAs('avBy', () => ({
-  scrapflyApiKey: process.env.SCRAPFLY_API_KEY,
+  // SCRAPFLY_API_KEY is read by the shared ScrapingModule (provider chain), not here.
   chatId: process.env.TELEGRAM_AV_BY_CHAT_ID,
   minRunIntervalHours: Number(
     process.env.AV_BY_MIN_RUN_INTERVAL_HOURS ?? AV_BY_DEFAULTS.MIN_RUN_INTERVAL_HOURS,
