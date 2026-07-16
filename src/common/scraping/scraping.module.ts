@@ -10,11 +10,17 @@ import { SCRAPING_PROVIDERS, type ScrapingProvider } from './scraping.types';
  * ScrapingProvider, add it to `providers` below, and append it to the injected array
  * (after the one it should fall back from).
  */
-// TODO: add fallback providers to the chain so scraping continues once ScrapFly's
-// free limit (1000/mo) is exhausted. Per provider: implement a ScrapingProvider adapter
-// (e.g. ScraperApiProvider — free 1000/mo — / Zyte / Scrapingdog), add its API-key env var
-// (validation.schema.ts, .env.example, daily-scrape.yml), register it below, and append it
-// to the array after ScrapFly. Needs the provider account/key (owner: user).
+// TODO: add fallback providers so scraping continues once ScrapFly's free limit
+// (1000/mo) is exhausted. Per provider: implement a ScrapingProvider adapter, add its
+// API-key env var (validation.schema.ts, .env.example, daily-scrape.yml), register it
+// below, and append it to the array after ScrapFly. Needs the account/key (owner: user).
+// Candidate services:
+//   - ScraperAPI    — free 1000/mo, simple HTTP API, solves JS/anti-bot (recommended)
+//   - ScrapingBee   — free ~1000 credits (trial), JS render
+//   - Scrapingdog   — cheap, free trial, weaker anti-bot
+//   - Zyte          — strong anti-bot, more complex API, limited free tier
+//   - ScrapingAnt   — free ~10k/mo (feature-limited)
+//   - Bright Data   — paid, most powerful (last resort)
 @Module({
   providers: [
     ScrapflyProvider,
