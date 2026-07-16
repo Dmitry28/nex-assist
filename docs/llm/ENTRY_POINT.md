@@ -46,6 +46,7 @@ MEMORY.md is always loaded into every session. To avoid wasting instruction budg
 - **Never duplicate** what is already in skills, docs/llm/, or code
 - **Only store** unique insights: user preferences, debugging findings, non-obvious decisions
 - **Keep concise** — under 200 lines
+- **Repo, not memory** — TODOs/NOTEs, decisions, backlog and lists belong in the repo (code comments per `rules/code-style.md`, or `docs/llm/`): it is shared and versioned. Memory is local only.
 
 ## Quick Reference
 
