@@ -146,6 +146,7 @@ describe('buildPriceChangeCaption', () => {
 describe('buildSummary', () => {
   const feed: RealtFeedResult = {
     feedName: 'plots',
+    url: 'https://realt.by/sale-plots/',
     total: 10,
     newListings: [baseListing, baseListing],
     priceChanges: [],
@@ -155,6 +156,10 @@ describe('buildSummary', () => {
 
   it('shows feed display name', () => {
     expect(buildSummary([feed])).toContain('Участки');
+  });
+
+  it('links the feed name to the monitored search URL', () => {
+    expect(buildSummary([feed])).toContain('<a href="https://realt.by/sale-plots/">Участки</a>');
   });
 
   it('shows new listing count', () => {

@@ -169,7 +169,15 @@ export class RealtService implements OnModuleInit, OnModuleDestroy {
       feed,
       currentListings,
       previousMap,
-      result: { feedName: feed.key, total, newListings, priceChanges, truncated, isBaseline },
+      result: {
+        feedName: feed.key,
+        url: feed.url,
+        total,
+        newListings,
+        priceChanges,
+        truncated,
+        isBaseline,
+      },
     };
   }
 

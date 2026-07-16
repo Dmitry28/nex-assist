@@ -45,6 +45,8 @@ export interface RealtPriceChange {
 /** Result for a single feed (one search URL). */
 export interface RealtFeedResult {
   feedName: string;
+  /** The monitored realt.by search URL — surfaced in the Telegram summary. */
+  url: string;
   /** Total distinct listings in the snapshot after this run. */
   total: number;
   newListings: RealtListing[];

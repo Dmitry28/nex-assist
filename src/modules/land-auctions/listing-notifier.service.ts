@@ -20,12 +20,14 @@ import { buildCaption, buildSummary, type CaptionParams } from './listing-format
 export class ListingNotifierService {
   private readonly logger = new Logger(ListingNotifierService.name);
   private readonly chatId: string;
+  private readonly sourceUrl: string;
 
   constructor(
     private readonly telegram: TelegramService,
     config: ConfigService,
   ) {
     this.chatId = config.get<string>('landAuctions.chatId') ?? '';
+    this.sourceUrl = config.get<string>('landAuctions.scrapeUrl') ?? '';
   }
 
   /**
@@ -59,6 +61,7 @@ export class ListingNotifierService {
         specialCount: specialListings.length,
         newSpecialCount: newSpecialListings.length,
         isBaseline,
+        sourceUrl: this.sourceUrl,
       }),
     );
 

@@ -22,12 +22,14 @@ const emptyResult = (): KufarRentFlatNotifyResult => ({ notifiedNew: new Set() }
 export class KufarRentFlatNotifierService {
   private readonly logger = new Logger(KufarRentFlatNotifierService.name);
   private readonly chatId: string;
+  private readonly sourceUrl: string;
 
   constructor(
     private readonly telegram: TelegramService,
     config: ConfigService,
   ) {
     this.chatId = config.get<string>('kufarRentFlat.chatId') ?? '';
+    this.sourceUrl = config.get<string>('kufarRentFlat.url') ?? '';
     if (!this.chatId) {
       this.logger.warn(
         'TELEGRAM_KUFAR_RENT_FLAT_CHAT_ID is not set — notifications disabled, nothing will be persisted',
@@ -38,7 +40,10 @@ export class KufarRentFlatNotifierService {
   async notifyRunResult(result: KufarRentFlatResult): Promise<KufarRentFlatNotifyResult> {
     if (!this.chatId) return emptyResult();
 
-    const summaryOk = await this.telegram.sendMessage(this.chatId, buildSummary(result));
+    const summaryOk = await this.telegram.sendMessage(
+      this.chatId,
+      buildSummary(result, this.sourceUrl),
+    );
     if (!summaryOk) {
       this.logger.error('Failed to send kufar-rent-flat summary — skipping all notifications');
       return emptyResult();
