@@ -2,6 +2,7 @@ import { ConflictException, Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { promises as fs } from 'fs';
 import path from 'path';
+import { ScrapingClient } from '../../common/scraping/scraping-client.service';
 import { SnapshotService } from '../../common/snapshot.service';
 import { sleep } from '../../common/utils/sleep';
 import type { AvByFeedConfig } from '../../config/av-by.config';
@@ -69,6 +70,7 @@ export class AvByService {
     private readonly config: ConfigService,
     private readonly snapshot: SnapshotService,
     private readonly notifier: AvByNotifierService,
+    private readonly scraping: ScrapingClient,
   ) {}
 
   async run(): Promise<AvByResult> {
@@ -100,7 +102,6 @@ export class AvByService {
   private async scrape(): Promise<AvByResult> {
     const feeds = this.config.get<AvByFeedConfig[]>('avBy.feeds') ?? [];
     const minIntervalHours = this.config.getOrThrow<number>('avBy.minRunIntervalHours');
-    const apiKey = this.config.get<string>('avBy.scrapflyApiKey') ?? '';
 
     const appEnv = process.env.APP_ENV ?? 'development';
     if (appEnv !== 'production') {
@@ -108,9 +109,9 @@ export class AvByService {
       return { feeds: [], skipped: true, skipReason: `app_env:${appEnv}` };
     }
 
-    if (!apiKey) {
-      this.logger.warn('SCRAPFLY_API_KEY not set — skipping av.by scrape');
-      return { feeds: [], skipped: true, skipReason: 'no_api_key' };
+    if (!this.scraping.isAvailable()) {
+      this.logger.warn('No scraping provider configured — skipping av.by scrape');
+      return { feeds: [], skipped: true, skipReason: 'no_scraping_provider' };
     }
     if (feeds.length === 0) {
       this.logger.warn('No av.by feeds configured — skipping');
@@ -133,7 +134,7 @@ export class AvByService {
       }
     }
 
-    const parser = new AvByParserService(apiKey);
+    const parser = new AvByParserService(this.scraping);
 
     const feedResults: AvByFeedResult[] = [];
     const currentByFeed = new Map<string, AvByListing[]>();
