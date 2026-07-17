@@ -1110,7 +1110,7 @@
       "https://cdn.realt.by/img/55/8032b8e0-492c-11f1-8cb8-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-16T10:38:27.424Z"
+    "lastSeenAt": "2026-07-17T09:10:45.987Z"
   },
   {
     "adId": 4050744,
@@ -1287,7 +1287,7 @@
       "https://cdn.realt.by/img/55/c0e4bdce-b495-11f0-86d7-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-17T09:17:35.588Z"
+    "lastSeenAt": "2026-07-17T09:10:45.987Z"
   },
   {
     "adId": 3256328,
@@ -5906,7 +5906,7 @@
       "https://static.realt.by/thumb/c/430x374/c5f662a11b216aff1dcebc6285dd1e9e/b7/i/11013c3efib7/93fc9e448f.jpeg"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-16T10:38:27.424Z"
+    "lastSeenAt": "2026-07-17T09:10:45.987Z"
   },
   {
     "adId": 3878873,
@@ -5931,7 +5931,7 @@
       "https://cdn.realt.by/img/55/3284ce96-8d55-11f0-8d92-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-07-17T09:10:45.987Z"
   },
   {
     "adId": 2848493,
@@ -10316,7 +10316,7 @@
       "https://cdn.realt.by/img/55/2b1e4236-0e8f-11ef-a322-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-06T11:32:43.786Z"
+    "lastSeenAt": "2026-07-17T09:10:45.987Z"
   },
   {
     "adId": 4120089,
@@ -10898,7 +10898,7 @@
       "https://cdn.realt.by/img/55/d6761f66-528d-11f1-8970-0242ac120003"
     ],
     "firstSeenAt": "2026-05-18T11:11:21.760Z",
-    "lastSeenAt": "2026-07-16T10:38:27.424Z"
+    "lastSeenAt": "2026-07-17T09:10:45.987Z"
   },
   {
     "adId": 4128189,
@@ -12355,7 +12355,7 @@
       "https://cdn.realt.by/img/55/f7f1b822-6e57-11f1-9672-0242ac120003"
     ],
     "firstSeenAt": "2026-06-23T10:48:28.089Z",
-    "lastSeenAt": "2026-07-16T10:38:27.424Z"
+    "lastSeenAt": "2026-07-17T09:10:45.987Z"
   },
   {
     "adId": 4160483,
@@ -12964,6 +12964,175 @@
       "https://cdn.realt.by/img/55/ba70ee0e-806e-11f1-a48b-0242ac120002"
     ],
     "firstSeenAt": "2026-07-16T09:13:25.548Z",
-    "lastSeenAt": "2026-07-16T10:38:27.424Z"
+    "lastSeenAt": "2026-07-17T09:10:45.987Z"
+  },
+  {
+    "adId": 4183777,
+    "uuid": "6e01cd90-81bd-11f1-9780-e106263b8a38",
+    "link": "https://realt.by/sale-cottages/object/4183777/",
+    "title": "Дом в д. Коробчицы",
+    "description": "Продается дом в д. Коробчицы, на ул. Дивной. Статус незавершенного законсервированного капитального строения. Участок 14 соток, правильной формы, огорожен с двух сторон.",
+    "priceByn": 210576,
+    "priceUsd": 73000,
+    "address": "Коробчицы Дивная ул. 79",
+    "area": 208.7,
+    "plotArea": 14,
+    "seller": "Роман",
+    "listTime": "2026-07-17T11:57:02+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/0c990640-81bd-11f1-9b23-0242ac120002",
+      "https://cdn.realt.by/img/55/0d00aeee-81bd-11f1-a9d6-0242ac120002",
+      "https://cdn.realt.by/img/55/0dd7ae26-81bd-11f1-b2af-0242ac120002",
+      "https://cdn.realt.by/img/55/0e0d3ee2-81bd-11f1-bb85-0242ac120002",
+      "https://cdn.realt.by/img/55/0df9d212-81bd-11f1-8830-0242ac120002",
+      "https://cdn.realt.by/img/55/0e530c38-81bd-11f1-8ebc-0242ac120002",
+      "https://cdn.realt.by/img/55/03811c28-81bd-11f1-bcda-0242ac120002",
+      "https://cdn.realt.by/img/55/04080a08-81bd-11f1-a3cc-0242ac120002",
+      "https://cdn.realt.by/img/55/040b60d6-81bd-11f1-a896-0242ac120002",
+      "https://cdn.realt.by/img/55/04361704-81bd-11f1-b8f9-0242ac120002",
+      "https://cdn.realt.by/img/55/0438fa96-81bd-11f1-8108-0242ac120002",
+      "https://cdn.realt.by/img/55/043bcb54-81bd-11f1-8e83-0242ac120002",
+      "https://cdn.realt.by/img/55/046e4bc4-81bd-11f1-85cd-0242ac120002",
+      "https://cdn.realt.by/img/55/0d846946-81bd-11f1-b401-0242ac120002",
+      "https://cdn.realt.by/img/55/0dbd3082-81bd-11f1-9cd0-0242ac120002"
+    ],
+    "firstSeenAt": "2026-07-17T09:10:45.987Z",
+    "lastSeenAt": "2026-07-17T09:10:45.987Z"
+  },
+  {
+    "adId": 4183701,
+    "uuid": "4605a790-81b7-11f1-8f66-a1c7c2af34eb",
+    "link": "https://realt.by/sale-cottages/object/4183701/",
+    "title": "Дом в Южном с участком 12 соток",
+    "description": "Продается классный дом в престижном районе города Гродно Южном, улица Центральная. Расположен на первой линии! С видами на березовую рощу. Двухэтажный, с цоколем и гаражом. Дом построен из качественных материалов (г/с блок с утеплением), обложен клинкерным кирпичом, перекрытия ж/б плитами. Накрыт керамической черепицей. Общая площадь – 263 м2, жилая - 101 м2.",
+    "priceByn": 718265,
+    "priceUsd": 249000,
+    "address": "Гродно Центральная ул. 89",
+    "area": 263,
+    "areaLiving": 101.1,
+    "areaKitchen": 20.4,
+    "plotArea": 12,
+    "yearBuilt": 2019,
+    "levels": 2,
+    "seller": "Надежда",
+    "listTime": "2026-07-17T11:12:44+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/ddab3336-81b6-11f1-9bd4-0242ac120002",
+      "https://cdn.realt.by/img/55/ddcdc126-81b6-11f1-ba87-0242ac120002",
+      "https://cdn.realt.by/img/55/ddd6820c-81b6-11f1-b520-0242ac120002",
+      "https://cdn.realt.by/img/55/dcc612ba-81b6-11f1-b3df-0242ac120002",
+      "https://cdn.realt.by/img/55/dd7ff068-81b6-11f1-8789-0242ac120002",
+      "https://cdn.realt.by/img/55/d8522a70-81b6-11f1-81ba-0242ac120002",
+      "https://cdn.realt.by/img/55/dbde2cf2-81b6-11f1-9c3f-0242ac120002",
+      "https://cdn.realt.by/img/55/da0a68dc-81b6-11f1-9fde-0242ac120002",
+      "https://cdn.realt.by/img/55/dc58a7c0-81b6-11f1-a117-0242ac120002",
+      "https://cdn.realt.by/img/55/da305966-81b6-11f1-9203-0242ac120002",
+      "https://cdn.realt.by/img/55/da3c4dc0-81b6-11f1-bbab-0242ac120002",
+      "https://cdn.realt.by/img/55/db4c0d90-81b6-11f1-bd69-0242ac120002",
+      "https://cdn.realt.by/img/55/db44639c-81b6-11f1-b9fe-0242ac120002",
+      "https://cdn.realt.by/img/55/daf2e490-81b6-11f1-ac2a-0242ac120002",
+      "https://cdn.realt.by/img/55/dceacae2-81b6-11f1-aaaa-0242ac120002",
+      "https://cdn.realt.by/img/55/dcb42db6-81b6-11f1-8232-0242ac120002",
+      "https://cdn.realt.by/img/55/dc82b31c-81b6-11f1-bdda-0242ac120002",
+      "https://cdn.realt.by/img/55/db50dd02-81b6-11f1-8ec5-0242ac120002",
+      "https://cdn.realt.by/img/55/da4da28c-81b6-11f1-8fe1-0242ac120002",
+      "https://cdn.realt.by/img/55/dbfd668a-81b6-11f1-b8ce-0242ac120002",
+      "https://cdn.realt.by/img/55/d798e8c6-81b6-11f1-835f-0242ac120002",
+      "https://cdn.realt.by/img/55/db08f05a-81b6-11f1-98e2-0242ac120002",
+      "https://cdn.realt.by/img/55/dbf142e2-81b6-11f1-a5cf-0242ac120002",
+      "https://cdn.realt.by/img/55/d9f71e4e-81b6-11f1-9e60-0242ac120002",
+      "https://cdn.realt.by/img/55/da7596a2-81b6-11f1-a09f-0242ac120002",
+      "https://cdn.realt.by/img/55/dab8d084-81b6-11f1-9071-0242ac120002",
+      "https://cdn.realt.by/img/55/d440dd1e-81b6-11f1-9ad6-0242ac120002",
+      "https://cdn.realt.by/img/55/db32e748-81b6-11f1-95f4-0242ac120002",
+      "https://cdn.realt.by/img/55/dc4a9d2e-81b6-11f1-874e-0242ac120002",
+      "https://cdn.realt.by/img/55/dc74ef70-81b6-11f1-903b-0242ac120002"
+    ],
+    "firstSeenAt": "2026-07-17T09:10:45.987Z",
+    "lastSeenAt": "2026-07-17T09:10:45.987Z"
+  },
+  {
+    "adId": 4183295,
+    "uuid": "73d89040-812d-11f1-8f66-a1c7c2af34eb",
+    "link": "https://realt.by/sale-cottages/object/4183295/",
+    "title": "Гродно, Правонабережная ул.",
+    "description": "Объект с исключительным потенциалом в одной из самых статусных !!!!! локаций города. Локация: Г. Гродно, ул. Правонабережная, 9. Здание с уникальной геометрией и видом на реку Неман, который невозможно перекрыть!!! Подходит как бизнес-объект, так и как элитный жилой дом премиум-сегмента",
+    "priceByn": 3,
+    "priceUsd": 1,
+    "address": "Гродно Правонабережная ул. 9",
+    "area": 585.3,
+    "areaLiving": 270.1,
+    "plotArea": 12.39,
+    "yearBuilt": 2021,
+    "levels": 3,
+    "seller": "VT",
+    "listTime": "2026-07-16T20:45:42+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/023152fc-8136-11f1-abfd-0242ac120002",
+      "https://cdn.realt.by/img/55/8cf2b37a-8129-11f1-94fc-0242ac120002",
+      "https://cdn.realt.by/img/55/8ce0f39c-8129-11f1-bca9-0242ac120002",
+      "https://cdn.realt.by/img/55/8ce1ae18-8129-11f1-bb7f-0242ac120002",
+      "https://cdn.realt.by/img/55/8ce756c4-8129-11f1-ac57-0242ac120002",
+      "https://cdn.realt.by/img/55/8ce92c74-8129-11f1-94e9-0242ac120002",
+      "https://cdn.realt.by/img/55/8ce98638-8129-11f1-8501-0242ac120002",
+      "https://cdn.realt.by/img/55/8cfa261e-8129-11f1-9efd-0242ac120002",
+      "https://cdn.realt.by/img/55/8cf53a8c-8129-11f1-8667-0242ac120002",
+      "https://cdn.realt.by/img/55/8d05d964-8129-11f1-a47b-0242ac120002",
+      "https://cdn.realt.by/img/55/8d03c9da-8129-11f1-8cce-0242ac120002",
+      "https://cdn.realt.by/img/55/5c8f7340-8137-11f1-b3b2-0242ac120002",
+      "https://cdn.realt.by/img/55/de890928-8129-11f1-b7c9-0242ac120002",
+      "https://cdn.realt.by/img/55/dddada10-8129-11f1-95c7-0242ac120002",
+      "https://cdn.realt.by/img/55/fe74cf10-8129-11f1-94fe-0242ac120002",
+      "https://cdn.realt.by/img/55/f9b6d48c-8129-11f1-9151-0242ac120002",
+      "https://cdn.realt.by/img/55/fdecc750-8129-11f1-9d48-0242ac120002",
+      "https://cdn.realt.by/img/55/fc29fbc2-8129-11f1-b213-0242ac120002",
+      "https://cdn.realt.by/img/55/e5f33be8-8129-11f1-95fb-0242ac120002",
+      "https://cdn.realt.by/img/55/fc35eb1c-8129-11f1-881f-0242ac120002"
+    ],
+    "firstSeenAt": "2026-07-17T09:10:45.987Z",
+    "lastSeenAt": "2026-07-17T09:10:45.987Z"
+  },
+  {
+    "adId": 4182948,
+    "uuid": "2a0355f0-8104-11f1-9780-e106263b8a38",
+    "link": "https://realt.by/sale-cottages/object/4182948/",
+    "title": "незаверш. капит. строение ул. Фестивальная, д. 24а (урочище Пышки)",
+    "description": "Продаётся незавершённое капитальное строение в микрорайоне Пышки — идеальный вариант под три отдельных квартиры или небольшой многоквартирный дом в черте города. Основные характеристики: • Площадь дома: 590 м². • Этажность: 3 этажа. • Участок: 11,21 сотки, право пожизненного наследуемого владения (ПНВ). Земля огорожена. Конструкция и коммуникации: • Стены: блок + кирпич. • Фундамент: монолитный. • Крыша: металлическая черепица, утеплена минеральной ватой. • Окна: ПВХ. • Перекрытия: между 1–2 и 2",
+    "priceByn": 688800,
+    "priceUsd": 238785,
+    "address": "Гродно Фестивальная ул. 24 а",
+    "area": 590,
+    "plotArea": 11.21,
+    "yearBuilt": 2010,
+    "seller": "Ольга",
+    "listTime": "2026-07-16T14:41:56+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/aac00a40-8103-11f1-b2d7-0242ac120002",
+      "https://cdn.realt.by/img/55/aabc003a-8103-11f1-acb3-0242ac120002",
+      "https://cdn.realt.by/img/55/aada92e8-8103-11f1-b6a7-0242ac120002",
+      "https://cdn.realt.by/img/55/aae3c0fc-8103-11f1-b6d5-0242ac120002",
+      "https://cdn.realt.by/img/55/aa3cf9b6-8103-11f1-a9d7-0242ac120002",
+      "https://cdn.realt.by/img/55/aa3ecf70-8103-11f1-8d9a-0242ac120002",
+      "https://cdn.realt.by/img/55/aa72a61a-8103-11f1-9c05-0242ac120002",
+      "https://cdn.realt.by/img/55/aa87ec1e-8103-11f1-ad59-0242ac120002",
+      "https://cdn.realt.by/img/55/aa9b5510-8103-11f1-a609-0242ac120002",
+      "https://cdn.realt.by/img/55/aaa6742c-8103-11f1-a478-0242ac120002",
+      "https://cdn.realt.by/img/55/aaab1824-8103-11f1-8245-0242ac120002",
+      "https://cdn.realt.by/img/55/aac619a8-8103-11f1-8cbe-0242ac120002",
+      "https://cdn.realt.by/img/55/aacb2092-8103-11f1-bb8d-0242ac120002",
+      "https://cdn.realt.by/img/55/aacb619c-8103-11f1-a475-0242ac120002",
+      "https://cdn.realt.by/img/55/aacec1d4-8103-11f1-9a44-0242ac120002",
+      "https://cdn.realt.by/img/55/aad2399a-8103-11f1-85c4-0242ac120002",
+      "https://cdn.realt.by/img/55/aadaa634-8103-11f1-a109-0242ac120002",
+      "https://cdn.realt.by/img/55/aadec9ee-8103-11f1-b878-0242ac120002",
+      "https://cdn.realt.by/img/55/aadb63da-8103-11f1-855d-0242ac120002",
+      "https://cdn.realt.by/img/55/aab39472-8103-11f1-8d12-0242ac120002",
+      "https://cdn.realt.by/img/55/aadcc96e-8103-11f1-9b56-0242ac120002",
+      "https://cdn.realt.by/img/55/a9eda604-8103-11f1-a135-0242ac120002",
+      "https://cdn.realt.by/img/55/a99e7e94-8103-11f1-84bc-0242ac120002",
+      "https://cdn.realt.by/img/55/a99d99fc-8103-11f1-89a2-0242ac120002"
+    ],
+    "firstSeenAt": "2026-07-17T09:10:45.987Z",
+    "lastSeenAt": "2026-07-17T09:10:45.987Z"
   }
 ]

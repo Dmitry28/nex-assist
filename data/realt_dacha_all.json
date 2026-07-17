@@ -65,7 +65,7 @@
       "https://cdn.realt.by/img/55/a29d9992-458d-11f1-852b-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-16T10:38:27.430Z"
+    "lastSeenAt": "2026-07-17T09:10:45.993Z"
   },
   {
     "adId": 4057786,
@@ -743,7 +743,7 @@
       "https://cdn.realt.by/img/55/a2407af8-2f5f-11f1-ab36-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-16T10:38:27.430Z"
+    "lastSeenAt": "2026-07-17T09:10:45.993Z"
   },
   {
     "adId": 3415459,
@@ -3555,7 +3555,7 @@
       "https://cdn.realt.by/img/55/8c399970-df68-11f0-b7b9-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-16T10:38:27.430Z"
+    "lastSeenAt": "2026-07-17T09:10:45.993Z"
   },
   {
     "adId": 4056878,
@@ -5552,7 +5552,7 @@
       "https://cdn.realt.by/img/55/f87a1ea4-56da-11f1-a842-0242ac120003"
     ],
     "firstSeenAt": "2026-05-24T09:22:42.706Z",
-    "lastSeenAt": "2026-07-16T10:38:27.430Z"
+    "lastSeenAt": "2026-07-17T09:10:45.993Z"
   },
   {
     "adId": 4137152,
@@ -6077,7 +6077,7 @@
       "https://cdn.realt.by/img/55/8c79fdba-b7bb-11ef-a8bf-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-06-03T12:22:03.538Z",
-    "lastSeenAt": "2026-07-16T10:38:27.430Z"
+    "lastSeenAt": "2026-07-17T09:10:45.993Z"
   },
   {
     "adId": 3106591,
@@ -6693,7 +6693,7 @@
       "https://cdn.realt.by/img/55/268434c6-6985-11f1-9a52-0242ac120003"
     ],
     "firstSeenAt": "2026-06-17T11:52:13.138Z",
-    "lastSeenAt": "2026-07-16T10:38:27.430Z"
+    "lastSeenAt": "2026-07-17T09:10:45.993Z"
   },
   {
     "adId": 4157047,
@@ -6786,7 +6786,7 @@
       "https://cdn.realt.by/img/55/ce009ab2-6ca2-11f1-9595-0242ac120003"
     ],
     "firstSeenAt": "2026-06-21T10:34:44.767Z",
-    "lastSeenAt": "2026-07-16T10:38:27.430Z"
+    "lastSeenAt": "2026-07-17T09:10:45.993Z"
   },
   {
     "adId": 4160198,
@@ -7131,7 +7131,7 @@
       "https://cdn.realt.by/img/55/dd479112-802d-11f1-989c-0242ac120002"
     ],
     "firstSeenAt": "2026-07-15T09:25:17.632Z",
-    "lastSeenAt": "2026-07-16T10:38:27.430Z"
+    "lastSeenAt": "2026-07-17T09:10:45.993Z"
   },
   {
     "adId": 4181952,
@@ -7163,6 +7163,109 @@
       "https://cdn.realt.by/img/55/b29780b4-803f-11f1-a746-0242ac120002"
     ],
     "firstSeenAt": "2026-07-16T09:13:25.554Z",
-    "lastSeenAt": "2026-07-16T10:38:27.430Z"
+    "lastSeenAt": "2026-07-17T09:10:45.993Z"
+  },
+  {
+    "adId": 4183326,
+    "uuid": "99dabb00-8133-11f1-aa05-b7e2dae94fba",
+    "link": "https://realt.by/sale-dachi/object/4183326/",
+    "title": "дача СТ Энергетик-2",
+    "description": "Продается жилой дачный дом мансардного типа Коптевский с\\с, СТ \"Энергетик 2\", 1985 года постройки. Расстояние от Гродно 8 км. В доме 2 жилые комнаты. Общая площадь дома 27 кв м, жилая - 21 кв.м, кухня - 4 кв.м. Материал внутренних стен - сосновый брус, снаружи дом утеплен и обшит доской. Крыша- шифер, окна - деревянные.",
+    "priceByn": 53000,
+    "priceUsd": 18373,
+    "address": "Энергетик-4",
+    "area": 27,
+    "areaLiving": 21,
+    "plotArea": 5.79,
+    "seller": "Наталья",
+    "listTime": "2026-07-16T19:47:56+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/588b8c74-8133-11f1-87d6-0242ac120002",
+      "https://cdn.realt.by/img/55/58849cb6-8133-11f1-9b6e-0242ac120002",
+      "https://cdn.realt.by/img/55/58839046-8133-11f1-af1f-0242ac120002",
+      "https://cdn.realt.by/img/55/58809058-8133-11f1-98bc-0242ac120002",
+      "https://cdn.realt.by/img/55/5884961c-8133-11f1-900f-0242ac120002",
+      "https://cdn.realt.by/img/55/588830ce-8133-11f1-8ae0-0242ac120002",
+      "https://cdn.realt.by/img/55/588438de-8133-11f1-bc0c-0242ac120002",
+      "https://cdn.realt.by/img/55/58847484-8133-11f1-9641-0242ac120002",
+      "https://cdn.realt.by/img/55/5883ac34-8133-11f1-a9c9-0242ac120002",
+      "https://cdn.realt.by/img/55/586ca174-8133-11f1-9705-0242ac120002",
+      "https://cdn.realt.by/img/55/5854821a-8133-11f1-89b7-0242ac120002"
+    ],
+    "firstSeenAt": "2026-07-17T09:10:45.993Z",
+    "lastSeenAt": "2026-07-17T09:10:45.993Z"
+  },
+  {
+    "adId": 4183245,
+    "uuid": "5e8eeea0-8123-11f1-aa05-b7e2dae94fba",
+    "link": "https://realt.by/sale-dachi/object/4183245/",
+    "title": "дача СТ Одуванчик -1",
+    "description": "В продаже одноэтажный дачный дом в СТ «Одуванчик -1», (3 км от г.Гродно, направление Чеховщизна), расположенный на земельном участке 0,0531 га в праве пожизненно наследуемого владения. Общая площадь 25,2 м2. Дом 1995 года постройки. Дом выполнен из качественных материалов. Материал стен – газосиликатный блок. Стены оштукатурены. По периметру дома залита отмостка. Кровля – шифер с организованным водостоком. Внутри стены отделаны деревом. Печное отопление. Выделена кухонная зона.",
+    "priceByn": 55100,
+    "priceUsd": 19101,
+    "address": "Одуванчик-1",
+    "area": 25.2,
+    "plotArea": 5.31,
+    "yearBuilt": 1995,
+    "seller": "Наталия",
+    "listTime": "2026-07-16T19:47:57+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/08731992-8123-11f1-8dac-0242ac120002",
+      "https://cdn.realt.by/img/55/0874650e-8123-11f1-9eca-0242ac120002",
+      "https://cdn.realt.by/img/55/0873cda6-8123-11f1-b17e-0242ac120002",
+      "https://cdn.realt.by/img/55/08721df8-8123-11f1-b021-0242ac120002",
+      "https://cdn.realt.by/img/55/0872f91c-8123-11f1-a8ea-0242ac120002",
+      "https://cdn.realt.by/img/55/0859d3d8-8123-11f1-8254-0242ac120002",
+      "https://cdn.realt.by/img/55/08710fda-8123-11f1-a58c-0242ac120002",
+      "https://cdn.realt.by/img/55/0871bcbe-8123-11f1-8ec9-0242ac120002",
+      "https://cdn.realt.by/img/55/0873f1f0-8123-11f1-b2b1-0242ac120002",
+      "https://cdn.realt.by/img/55/0873f470-8123-11f1-8df3-0242ac120002",
+      "https://cdn.realt.by/img/55/087692ca-8123-11f1-8748-0242ac120002",
+      "https://cdn.realt.by/img/55/08769270-8123-11f1-ab35-0242ac120002",
+      "https://cdn.realt.by/img/55/08737360-8123-11f1-b11b-0242ac120002",
+      "https://cdn.realt.by/img/55/08430e6e-8123-11f1-bfb8-0242ac120002"
+    ],
+    "firstSeenAt": "2026-07-17T09:10:45.993Z",
+    "lastSeenAt": "2026-07-17T09:10:45.993Z"
+  },
+  {
+    "adId": 4183107,
+    "uuid": "ec981e70-8113-11f1-aa05-b7e2dae94fba",
+    "link": "https://realt.by/sale-dachi/object/4183107/",
+    "title": "дача СТ Лето Подлабенский с/с",
+    "description": "Продается двухэтажный жилой дом в 7 км от г.Гродно Подлабенский с/с СТ Лето (крайний участок у леса), расположенный на участке (право пожизненного наследуемого владения) площадью 9,89 сотки, асфальтированный подъезд до СТ. Площадь жилого помещения 180.0 м2/жилая 90.0 м2. Предполагаемая сдача дома 2026.",
+    "priceByn": 315700,
+    "priceUsd": 109443,
+    "address": "Лето",
+    "area": 180,
+    "areaLiving": 90,
+    "plotArea": 9.89,
+    "seller": "Александр",
+    "listTime": "2026-07-16T17:09:11+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/c2725476-8113-11f1-a771-0242ac120002",
+      "https://cdn.realt.by/img/55/c25cc264-8113-11f1-83a0-0242ac120002",
+      "https://cdn.realt.by/img/55/c23c4278-8113-11f1-9764-0242ac120002",
+      "https://cdn.realt.by/img/55/c2211d0e-8113-11f1-b48e-0242ac120002",
+      "https://cdn.realt.by/img/55/c229f1ea-8113-11f1-a159-0242ac120002",
+      "https://cdn.realt.by/img/55/c2396332-8113-11f1-a04b-0242ac120002",
+      "https://cdn.realt.by/img/55/c25dbeda-8113-11f1-927b-0242ac120002",
+      "https://cdn.realt.by/img/55/c2630732-8113-11f1-9eea-0242ac120002",
+      "https://cdn.realt.by/img/55/c26bb184-8113-11f1-b1f0-0242ac120002",
+      "https://cdn.realt.by/img/55/c269e2dc-8113-11f1-bec5-0242ac120002",
+      "https://cdn.realt.by/img/55/c274e5c4-8113-11f1-aac0-0242ac120002",
+      "https://cdn.realt.by/img/55/c275b404-8113-11f1-b12f-0242ac120002",
+      "https://cdn.realt.by/img/55/c27797ce-8113-11f1-ac6d-0242ac120002",
+      "https://cdn.realt.by/img/55/c279056e-8113-11f1-85b4-0242ac120002",
+      "https://cdn.realt.by/img/55/c277c4ba-8113-11f1-9064-0242ac120002",
+      "https://cdn.realt.by/img/55/c27b2f4c-8113-11f1-82b6-0242ac120002",
+      "https://cdn.realt.by/img/55/c27d9ed0-8113-11f1-b324-0242ac120002",
+      "https://cdn.realt.by/img/55/c279c580-8113-11f1-b12c-0242ac120002",
+      "https://cdn.realt.by/img/55/c2810ee4-8113-11f1-8bd5-0242ac120002",
+      "https://cdn.realt.by/img/55/c2534b44-8113-11f1-8cf8-0242ac120002",
+      "https://cdn.realt.by/img/55/c1fc41b4-8113-11f1-9da5-0242ac120002"
+    ],
+    "firstSeenAt": "2026-07-17T09:10:45.993Z",
+    "lastSeenAt": "2026-07-17T09:10:45.993Z"
   }
 ]
