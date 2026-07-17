@@ -39,7 +39,7 @@
     "adId": 1061321943,
     "link": "https://travel.kufar.by/hotel/1061321943",
     "title": "Сдам квартиру на сутки",
-    "pricePerNightByn": 600,
+    "pricePerNightByn": 800,
     "address": "Виктора Саяпина ул, 4Б, Гродно, Гродненская область",
     "rooms": 2,
     "area": 9,
@@ -49,7 +49,7 @@
     "isSuperhost": false,
     "rating": 1,
     "ratingScoresCount": 10,
-    "listTime": "2026-07-06T06:55:12Z",
+    "listTime": "2026-07-17T09:01:43Z",
     "images": [
       "https://rms.kufar.by/v1/gallery/adim1/7d3dd7c4-cf68-41a0-97d3-85348c94bce2.jpg",
       "https://rms.kufar.by/v1/gallery/adim1/a3029e38-ca16-43fd-8dec-9a270d88e8d3.jpg",
@@ -72,7 +72,7 @@
       "https://rms.kufar.by/v1/gallery/adim1/c158fdbb-a028-48e4-9b90-e6e158c50936.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:41:03.297Z",
-    "lastSeenAt": "2026-07-11T08:46:25.886Z"
+    "lastSeenAt": "2026-07-17T09:39:39.194Z"
   },
   {
     "adId": 1065503834,
