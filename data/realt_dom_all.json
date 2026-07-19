@@ -40,7 +40,7 @@
       "https://cdn.realt.by/img/55/03fd1570-d66f-11f0-b546-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-18T08:38:06.228Z"
+    "lastSeenAt": "2026-07-19T09:05:49.925Z"
   },
   {
     "adId": 4058841,
@@ -5906,7 +5906,7 @@
       "https://static.realt.by/thumb/c/430x374/c5f662a11b216aff1dcebc6285dd1e9e/b7/i/11013c3efib7/93fc9e448f.jpeg"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-18T08:38:06.228Z"
+    "lastSeenAt": "2026-07-19T09:05:49.925Z"
   },
   {
     "adId": 3878873,
@@ -12997,7 +12997,7 @@
       "https://cdn.realt.by/img/55/0dbd3082-81bd-11f1-9cd0-0242ac120002"
     ],
     "firstSeenAt": "2026-07-17T09:10:45.987Z",
-    "lastSeenAt": "2026-07-18T08:38:06.228Z"
+    "lastSeenAt": "2026-07-19T09:05:49.925Z"
   },
   {
     "adId": 4183701,
@@ -13049,7 +13049,7 @@
       "https://cdn.realt.by/img/55/dc74ef70-81b6-11f1-903b-0242ac120002"
     ],
     "firstSeenAt": "2026-07-17T09:10:45.987Z",
-    "lastSeenAt": "2026-07-18T08:38:06.228Z"
+    "lastSeenAt": "2026-07-19T09:05:49.925Z"
   },
   {
     "adId": 4183295,
@@ -13134,5 +13134,49 @@
     ],
     "firstSeenAt": "2026-07-17T09:10:45.987Z",
     "lastSeenAt": "2026-07-18T08:38:06.228Z"
+  },
+  {
+    "adId": 3886880,
+    "uuid": "9e2e6df0-9313-11f0-8ec8-b3cdfe87f25c",
+    "link": "https://realt.by/sale-cottages/object/3886880/",
+    "title": "Современный одноэтажный дом в м-не Южном на ул. Школьной",
+    "description": "В доме предусмотрен вместительный гараж, а также откатные ворота и гаражная ролета с электроприводом. Дом расположен на земельном участке 15 соток. Участок правильной формы, ровный в 2-х уровнях, огорожен. Высажены плодовые деревья, декоративные растения. По периметру для минимизации шума посажены туи 5 м. Из дома 2 выхода во внутренний двор. На участке построена блочная баня",
+    "priceByn": 565500,
+    "priceUsd": 196041,
+    "address": "Гродно Школьная ул.",
+    "area": 155.7,
+    "areaLiving": 83,
+    "areaKitchen": 12.4,
+    "plotArea": 15,
+    "yearBuilt": 2010,
+    "levels": 1,
+    "seller": "Наталья",
+    "listTime": "2026-07-18T17:02:11+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/320cc66c-9313-11f0-854c-0242ac120002",
+      "https://cdn.realt.by/img/55/323454fc-9313-11f0-87c4-0242ac120002",
+      "https://cdn.realt.by/img/55/35cd5302-9313-11f0-b825-0242ac120002",
+      "https://cdn.realt.by/img/55/35d0fc0a-9313-11f0-b196-0242ac120002",
+      "https://cdn.realt.by/img/55/3ba00ea0-9313-11f0-a700-0242ac120002",
+      "https://cdn.realt.by/img/55/3ba80bfa-9313-11f0-9845-0242ac120002",
+      "https://cdn.realt.by/img/55/3f931cdc-9313-11f0-a5a6-0242ac120002",
+      "https://cdn.realt.by/img/55/3f9733d0-9313-11f0-b876-0242ac120002",
+      "https://cdn.realt.by/img/55/449d7236-9313-11f0-b140-0242ac120002",
+      "https://cdn.realt.by/img/55/44a20d96-9313-11f0-b7a3-0242ac120002",
+      "https://cdn.realt.by/img/55/49851d76-9313-11f0-b3eb-0242ac120002",
+      "https://cdn.realt.by/img/55/4988cd36-9313-11f0-bbe7-0242ac120002",
+      "https://cdn.realt.by/img/55/4eb6d4b0-9313-11f0-af37-0242ac120002",
+      "https://cdn.realt.by/img/55/4ebadad8-9313-11f0-b9b0-0242ac120002",
+      "https://cdn.realt.by/img/55/562ba6da-9313-11f0-84e0-0242ac120002",
+      "https://cdn.realt.by/img/55/56315062-9313-11f0-baef-0242ac120002",
+      "https://cdn.realt.by/img/55/5b3fb6fc-9313-11f0-b582-0242ac120002",
+      "https://cdn.realt.by/img/55/5b445d7e-9313-11f0-8d0e-0242ac120002",
+      "https://cdn.realt.by/img/55/5ff316b2-9313-11f0-9339-0242ac120002",
+      "https://cdn.realt.by/img/55/5ff6aeb2-9313-11f0-b4f8-0242ac120002",
+      "https://cdn.realt.by/img/55/63783ce0-9313-11f0-881a-0242ac120002",
+      "https://cdn.realt.by/img/55/637745b0-9313-11f0-983d-0242ac120002"
+    ],
+    "firstSeenAt": "2026-07-19T09:05:49.925Z",
+    "lastSeenAt": "2026-07-19T09:05:49.925Z"
   }
 ]
