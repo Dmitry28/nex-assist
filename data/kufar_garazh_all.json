@@ -4596,9 +4596,9 @@
     "link": "https://re.kufar.by/vi/1065395276",
     "title": "Гараж",
     "description": "Кирпичный гараж, панельные перекрытия, на весь гараж подвал, электричество,в данный момент ворота обшиты доской временные -металические добротные стоя",
-    "priceByn": 20720,
-    "priceUsd": 7400,
-    "address": "микрорайон Понемунь, Гродно, Гродненская область",
+    "priceByn": 20401,
+    "priceUsd": 7050,
+    "address": "Понемуньская ул, 9блок19к1963, Гродно, Гродненская область",
     "area": 19.6,
     "seller": "Юля и Денис",
     "propertyType": "Гараж",
@@ -4608,10 +4608,10 @@
       "Подвал"
     ],
     "coordinates": {
-      "lat": 53.662444,
-      "lon": 23.867186
+      "lat": 53.666671892743786,
+      "lon": 23.87349261608364
     },
-    "listTime": "2026-06-22T21:07:18Z",
+    "listTime": "2026-07-18T16:12:29Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3c904fc1-2f5e-4560-9746-db12eeb38343.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/463f24e0-04c5-48b5-82b6-82f5927b758e.jpg",
@@ -4620,7 +4620,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e10e4924-650d-4610-ae62-3794c3c258e2.jpg"
     ],
     "firstSeenAt": "2026-06-11T11:33:26.004Z",
-    "lastSeenAt": "2026-07-03T10:08:46.286Z"
+    "lastSeenAt": "2026-07-20T09:36:52.846Z"
   },
   {
     "adId": 1072938365,
@@ -4861,7 +4861,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2f8e6e2a-0686-46b6-ab74-415812dc5acf.jpg"
     ],
     "firstSeenAt": "2026-06-19T11:22:46.024Z",
-    "lastSeenAt": "2026-07-16T09:35:28.653Z"
+    "lastSeenAt": "2026-07-20T09:36:52.846Z"
   },
   {
     "adId": 1074045974,
@@ -6426,5 +6426,38 @@
     ],
     "firstSeenAt": "2026-07-17T09:39:37.477Z",
     "lastSeenAt": "2026-07-17T09:39:37.477Z"
+  },
+  {
+    "adId": 1077668370,
+    "link": "https://re.kufar.by/vi/1077668370",
+    "title": "Большой нестандартный гараж 22.4 м² на ул. Скосная (р-н Табачки)",
+    "description": "Продам кирпичный гараж увеличенного размера — 22.4 м². Он значительно шире и просторнее стандартных кооперативных вариантов (внутренние размеры 5.48 м",
+    "priceByn": 24019,
+    "priceUsd": 8300,
+    "address": "Скосная ул, Гродно, Гродненская область",
+    "area": 22.4,
+    "seller": "Владимир",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма",
+      "Подвал",
+      "Наземная",
+      "Отсутствует"
+    ],
+    "coordinates": {
+      "lat": 53.662012,
+      "lon": 23.820096
+    },
+    "listTime": "2026-07-18T17:08:10Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/dad63fb7-2365-48eb-a730-932eea144e28.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/36386d0e-0c46-4d0b-bb56-63ad0877ae4e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bc15f547-c5bc-4243-b636-18ed3b118950.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/984db9e4-833c-4d48-9c8c-57c974079cc7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/55a4a279-92f0-4a2c-9d29-6d459752a35f.jpg"
+    ],
+    "firstSeenAt": "2026-07-20T09:36:52.846Z",
+    "lastSeenAt": "2026-07-20T09:36:52.846Z"
   }
 ]
