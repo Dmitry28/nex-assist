@@ -3545,7 +3545,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f2a25bc6-350e-455e-afec-de9b5d894b49.jpg"
     ],
     "firstSeenAt": "2026-05-25T11:15:07.897Z",
-    "lastSeenAt": "2026-07-15T09:37:35.644Z"
+    "lastSeenAt": "2026-07-21T09:35:57.590Z"
   },
   {
     "adId": 1070506297,
@@ -3631,7 +3631,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39ba00b4-ed0b-45e2-a4e5-edade7282d26.jpg"
     ],
     "firstSeenAt": "2026-05-27T11:01:06.131Z",
-    "lastSeenAt": "2026-07-15T09:37:35.644Z"
+    "lastSeenAt": "2026-07-21T09:35:57.590Z"
   },
   {
     "adId": 1070272138,
@@ -3716,7 +3716,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cfd08504-eb47-477e-954c-bb3b5a1c4433.jpg"
     ],
     "firstSeenAt": "2026-05-28T10:59:13.524Z",
-    "lastSeenAt": "2026-07-15T09:37:35.644Z"
+    "lastSeenAt": "2026-07-21T09:35:57.590Z"
   },
   {
     "adId": 1070550879,
@@ -4861,7 +4861,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2f8e6e2a-0686-46b6-ab74-415812dc5acf.jpg"
     ],
     "firstSeenAt": "2026-06-19T11:22:46.024Z",
-    "lastSeenAt": "2026-07-20T09:36:52.846Z"
+    "lastSeenAt": "2026-07-21T09:35:57.590Z"
   },
   {
     "adId": 1074045974,
@@ -6459,5 +6459,54 @@
     ],
     "firstSeenAt": "2026-07-20T09:36:52.846Z",
     "lastSeenAt": "2026-07-20T09:36:52.846Z"
+  },
+  {
+    "adId": 1077915075,
+    "link": "https://re.kufar.by/vi/1077915075",
+    "title": "Железный гараж",
+    "description": "Продам железный гараж, без места 6*3,8, самовывоз, торг",
+    "priceByn": 1446,
+    "priceUsd": 500,
+    "address": "Гродно, Гродненская область",
+    "area": 22.8,
+    "seller": "илья",
+    "propertyType": "Гараж",
+    "coordinates": {
+      "lat": 53.677839,
+      "lon": 23.829529
+    },
+    "listTime": "2026-07-20T17:30:31Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/45cbbcad-cc3a-4121-97d6-58526f4097d5.jpg"
+    ],
+    "firstSeenAt": "2026-07-21T09:35:57.590Z",
+    "lastSeenAt": "2026-07-21T09:35:57.590Z"
+  },
+  {
+    "adId": 1077874916,
+    "link": "https://re.kufar.by/vi/1077874916",
+    "title": "Гараж в ГПК «Августовок», район фабрики Динамо",
+    "description": "Продается просторный и сухой кирпичный гараж с ямой в ГПК «Августовок», ул. Лизы Чайкиной, блок №5 (заезд от фабрики «Динамо» и электроподстанции).\nОт",
+    "priceByn": 21754,
+    "priceUsd": 7523,
+    "address": "Лизы Чайкиной ул, Гродно, Гродненская область",
+    "area": 18,
+    "seller": "Николай",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Наземная",
+      "Отсутствует"
+    ],
+    "coordinates": {
+      "lat": 53.663964,
+      "lon": 23.792671
+    },
+    "listTime": "2026-07-20T12:13:54Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6373fdfc-090a-4226-bb8b-84b659cb1735.jpg"
+    ],
+    "firstSeenAt": "2026-07-21T09:35:57.590Z",
+    "lastSeenAt": "2026-07-21T09:35:57.590Z"
   }
 ]
