@@ -96,7 +96,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fe3aaa67-820b-4056-a5c1-3f46eb49bd38.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:43:08.825Z",
-    "lastSeenAt": "2026-07-20T09:53:42.157Z"
+    "lastSeenAt": "2026-07-21T09:26:18.387Z"
   },
   {
     "adId": 1060088409,
@@ -240,5 +240,28 @@
     ],
     "firstSeenAt": "2026-06-07T10:03:40.625Z",
     "lastSeenAt": "2026-06-30T10:30:37.336Z"
+  },
+  {
+    "adId": 1077906800,
+    "link": "https://re.kufar.by/vi/1077906800",
+    "title": "Сдам квартиру по договору на длительный срок",
+    "priceByn": 660,
+    "priceUsd": 228,
+    "address": "Виктора Саяпина ул, 2, Гродно, Гродненская область",
+    "rooms": 3,
+    "area": 74,
+    "floor": 1,
+    "totalFloors": 9,
+    "repair": "Строительная отделка",
+    "prepayment": "2 месяца",
+    "listTime": "2026-07-20T16:39:19Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4959b58e-66a2-4ba8-8406-4575953c997b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/15e7e894-e775-4788-81b8-db52365b7aa1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/944dbd0a-55f8-4a9d-96ef-1544461eef3b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2de19fee-ee5f-4a3b-b507-a81fc8eb7850.jpg"
+    ],
+    "firstSeenAt": "2026-07-21T09:26:18.387Z",
+    "lastSeenAt": "2026-07-21T09:26:18.387Z"
   }
 ]
