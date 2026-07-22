@@ -3545,7 +3545,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f2a25bc6-350e-455e-afec-de9b5d894b49.jpg"
     ],
     "firstSeenAt": "2026-05-25T11:15:07.897Z",
-    "lastSeenAt": "2026-07-21T09:35:57.590Z"
+    "lastSeenAt": "2026-07-22T09:36:32.317Z"
   },
   {
     "adId": 1070506297,
@@ -3631,7 +3631,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39ba00b4-ed0b-45e2-a4e5-edade7282d26.jpg"
     ],
     "firstSeenAt": "2026-05-27T11:01:06.131Z",
-    "lastSeenAt": "2026-07-21T09:35:57.590Z"
+    "lastSeenAt": "2026-07-22T09:36:32.317Z"
   },
   {
     "adId": 1070272138,
@@ -3716,7 +3716,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cfd08504-eb47-477e-954c-bb3b5a1c4433.jpg"
     ],
     "firstSeenAt": "2026-05-28T10:59:13.524Z",
-    "lastSeenAt": "2026-07-21T09:35:57.590Z"
+    "lastSeenAt": "2026-07-22T09:36:32.317Z"
   },
   {
     "adId": 1070550879,
@@ -5016,7 +5016,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/634686c2-0094-4318-931d-b3f31a4cf42d.jpg"
     ],
     "firstSeenAt": "2026-06-21T10:34:16.176Z",
-    "lastSeenAt": "2026-07-16T09:35:28.653Z"
+    "lastSeenAt": "2026-07-22T09:36:32.317Z"
   },
   {
     "adId": 1073938992,
@@ -6480,7 +6480,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/45cbbcad-cc3a-4121-97d6-58526f4097d5.jpg"
     ],
     "firstSeenAt": "2026-07-21T09:35:57.590Z",
-    "lastSeenAt": "2026-07-21T09:35:57.590Z"
+    "lastSeenAt": "2026-07-22T09:36:32.317Z"
   },
   {
     "adId": 1077874916,
@@ -6507,6 +6507,132 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6373fdfc-090a-4226-bb8b-84b659cb1735.jpg"
     ],
     "firstSeenAt": "2026-07-21T09:35:57.590Z",
-    "lastSeenAt": "2026-07-21T09:35:57.590Z"
+    "lastSeenAt": "2026-07-22T09:36:32.317Z"
+  },
+  {
+    "adId": 1078028849,
+    "link": "https://re.kufar.by/vi/1078028849",
+    "title": "Гараж",
+    "description": "Продам бетонный гараж с полноценным подвалом. ГСК «Радуга», Гродно.\nГараж площадью 16,5 м² \nоптимальный размер для легкового автомобиля и хранения все",
+    "priceByn": 21000,
+    "priceUsd": 7260,
+    "address": "Максима Горького ул, 126Б, Гродно, Гродненская область",
+    "area": 16.7,
+    "seller": "Татьяна",
+    "propertyType": "Гараж",
+    "features": [
+      "Круглосуточная охрана",
+      "Видеонаблюдение",
+      "Смотровая яма",
+      "Подвал",
+      "Наземная",
+      "Отсутствует"
+    ],
+    "coordinates": {
+      "lat": 53.713319,
+      "lon": 23.810898
+    },
+    "listTime": "2026-07-21T16:25:42Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0551db7c-8ede-4e87-8346-a471f9079e27.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/333c9c74-1d5b-4901-ae19-af2e5b529241.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6ee4a6ef-9b36-4d2c-947a-3a1378c2fc06.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7125e2e4-535e-4070-99b7-8313fe086f36.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e36cf323-1399-4573-8356-6686fe3f690c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0e80e984-c7c8-420b-a86e-58d5133ded83.jpg"
+    ],
+    "firstSeenAt": "2026-07-22T09:36:32.317Z",
+    "lastSeenAt": "2026-07-22T09:36:32.317Z"
+  },
+  {
+    "adId": 1078025145,
+    "link": "https://re.kufar.by/vi/1078025145",
+    "title": "гараж пр. Космонавтов 68В",
+    "description": "Продается гараж на пр. Космонавтов 68В в гаражно-строительном кооперативе, за гаражом находится лесной массив. Общая площадь – 16,3 м2. Размеры гаража",
+    "priceByn": 19959,
+    "priceUsd": 6900,
+    "address": "Космонавтов пр, 68Вблок2к201, Гродно, Гродненская область",
+    "area": 16.3,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "propertyType": "Гараж",
+    "coordinates": {
+      "lat": 53.679157,
+      "lon": 23.87258
+    },
+    "listTime": "2026-07-21T15:53:17Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca835336-fbef-4ec0-844f-0297ab98a788.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4034e0cc-5eb9-4fb0-838f-39e1848cea19.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0f2439eb-9444-4140-ab65-0cf18fd3dcbd.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3a020c02-06c5-43e3-9495-4f2e5929180b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9d376508-bc96-4a0e-8b2a-98217e0f6368.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8c90b531-da37-4f61-92ca-60e4bf072bfc.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8ec22099-d5d9-432b-9db5-81da69bf9d3e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f6f578d3-ef0e-4581-9ac1-613ae086041a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5801599c-4044-4db9-93ec-8c67042da3b0.jpg"
+    ],
+    "firstSeenAt": "2026-07-22T09:36:32.317Z",
+    "lastSeenAt": "2026-07-22T09:36:32.317Z"
+  },
+  {
+    "adId": 1077995726,
+    "link": "https://re.kufar.by/vi/1077995726",
+    "title": "Гараж в кооперативе ''Радуга''",
+    "description": "Продам гараж в кооперативе Радуга. Асфальтированный заезд до ворот, удобный подъезд/выезд/разворот благодаря широкому ряду. Размеры гаража: ширина 3.1",
+    "priceByn": 17934,
+    "priceUsd": 6200,
+    "address": "Максима Горького ул, 126Вблок61к6136, Гродно, Гродненская область",
+    "area": 18,
+    "seller": "Пользователь",
+    "propertyType": "Гараж",
+    "features": [
+      "Отсутствует"
+    ],
+    "coordinates": {
+      "lat": 53.71215580208314,
+      "lon": 23.810948641751903
+    },
+    "listTime": "2026-07-21T11:23:44Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/49514c3b-72f3-4d72-8df9-2868b396ebba.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4f98da26-179a-4847-9c89-09c9ae858ab1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2d91dd34-7bad-41b7-9e47-92aa677e70c0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b334d6cc-21df-4d01-bf1e-d7a4614626df.jpg"
+    ],
+    "firstSeenAt": "2026-07-22T09:36:32.317Z",
+    "lastSeenAt": "2026-07-22T09:36:32.317Z"
+  },
+  {
+    "adId": 1077988384,
+    "link": "https://re.kufar.by/vi/1077988384",
+    "title": "Двойной гараж мясокомбинат",
+    "description": "Гараж утеплен, крыша не течет..\nЭлектричество - 2фазы..\nТорг..",
+    "priceByn": 50621,
+    "priceUsd": 17500,
+    "address": "Ленинский район, Гродно, Гродненская область",
+    "area": 35,
+    "seller": "Was",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Круглосуточная охрана",
+      "Смотровая яма",
+      "Подвал",
+      "Наземная",
+      "Печное"
+    ],
+    "coordinates": {
+      "lat": 53.72820402509891,
+      "lon": 23.83060143294781
+    },
+    "listTime": "2026-07-21T10:10:36Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bcb75692-d1f1-411c-bb6b-67b602696957.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e5b11b2e-0157-4b47-8530-110f67dfce27.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6d069927-1767-4220-b649-23e14c000a75.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e54f4051-0920-425d-84b6-509392d485be.jpg"
+    ],
+    "firstSeenAt": "2026-07-22T09:36:32.317Z",
+    "lastSeenAt": "2026-07-22T09:36:32.317Z"
   }
 ]
