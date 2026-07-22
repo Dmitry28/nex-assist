@@ -701,7 +701,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8828a22f-d8a1-448f-80ff-e1a82c4f3d63.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.801Z",
-    "lastSeenAt": "2026-07-16T10:38:09.037Z"
+    "lastSeenAt": "2026-07-22T09:26:28.269Z"
   },
   {
     "adId": 1056448347,
@@ -3363,7 +3363,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/12568c2d-84e7-46f5-b021-d98ba9501d8c.jpg"
     ],
     "firstSeenAt": "2026-04-25T08:14:20.498Z",
-    "lastSeenAt": "2026-05-20T10:32:07.066Z"
+    "lastSeenAt": "2026-07-22T09:26:28.269Z"
   },
   {
     "adId": 1066088943,
@@ -3943,7 +3943,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bcab8ac1-b62b-4855-9d06-311318c4c382.jpg"
     ],
     "firstSeenAt": "2026-04-30T09:19:52.834Z",
-    "lastSeenAt": "2026-07-16T09:12:26.029Z"
+    "lastSeenAt": "2026-07-22T09:26:28.269Z"
   },
   {
     "adId": 1066936344,
@@ -5694,7 +5694,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c58e4a13-091d-49c9-b9b7-3744e68f61ec.jpg"
     ],
     "firstSeenAt": "2026-05-20T10:32:07.066Z",
-    "lastSeenAt": "2026-07-21T09:26:09.652Z"
+    "lastSeenAt": "2026-07-22T09:26:28.269Z"
   },
   {
     "adId": 1069506217,
@@ -7051,7 +7051,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/347b4c17-10a1-48a4-b0e6-017cc81c682d.jpg"
     ],
     "firstSeenAt": "2026-06-10T11:12:10.631Z",
-    "lastSeenAt": "2026-07-21T09:26:09.652Z"
+    "lastSeenAt": "2026-07-22T09:26:28.269Z"
   },
   {
     "adId": 253577034,
@@ -7794,7 +7794,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bfe0f481-3fe8-424c-af4f-d33a7e61f565.jpg"
     ],
     "firstSeenAt": "2026-06-23T10:43:51.835Z",
-    "lastSeenAt": "2026-07-16T10:38:09.037Z"
+    "lastSeenAt": "2026-07-22T09:26:28.269Z"
   },
   {
     "adId": 1074207833,
@@ -9926,8 +9926,8 @@
     "link": "https://re.kufar.by/vi/1077907655",
     "title": "Участок 7 соток Лесное-2",
     "description": "Лесное 2, участок 286, от перекрестка Колбасино 7 км в сторону Белян, дорога отличная почти до участка, рядом лес, участок огорожен забором,есть ворот",
-    "priceByn": 26772,
-    "priceUsd": 9258,
+    "priceByn": 26763,
+    "priceUsd": 9252,
     "address": "СТ Лесное-2, Подлабенский сельсовет, Гродненский район, Гродненская область",
     "plotArea": 7,
     "seller": "Наталья",
@@ -9951,6 +9951,58 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a4ba7f98-46fc-4b4a-ada0-4c29d0026000.jpg"
     ],
     "firstSeenAt": "2026-07-21T09:26:09.652Z",
-    "lastSeenAt": "2026-07-21T09:26:09.652Z"
+    "lastSeenAt": "2026-07-22T09:26:28.269Z"
+  },
+  {
+    "adId": 1078038097,
+    "link": "https://re.kufar.by/vi/1078038097",
+    "title": "Дачный участок",
+    "description": "Продается дачный участок 5 сот, на участке есть вода сезонно, хоз. постройка, туалет, участок огорожен.",
+    "address": "деревня Копаньки, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5,
+    "seller": "Евгения",
+    "features": [
+      "Сезонная",
+      "Частная собственность",
+      "Да"
+    ],
+    "coordinates": {
+      "lat": 53.573172,
+      "lon": 23.760538
+    },
+    "listTime": "2026-07-21T17:44:02Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b1af3766-90f5-4694-83c6-d24af040284d.jpg"
+    ],
+    "firstSeenAt": "2026-07-22T09:26:28.269Z",
+    "lastSeenAt": "2026-07-22T09:26:28.269Z"
+  },
+  {
+    "adId": 1078029219,
+    "link": "https://re.kufar.by/vi/1078029219",
+    "title": "Дачный участок",
+    "description": "Продам дачный участок\n\nУчасток принадлежит садовому товариществу\nСТ \"Лососянка\" 8 (р-н д. Коробчицы), 5.5 соток\n\nУчасток угловой, огорожен. Хорошая пл",
+    "address": "8, СТ Лососянка, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5.2,
+    "seller": "Светлана",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.58938,
+      "lon": 23.720338
+    },
+    "listTime": "2026-07-21T16:28:55Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/173eb4d9-d326-483b-b52a-2ac6c8065138.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9123083d-dfd3-4461-9053-d6d4e1bb8498.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/15aa605e-f9d4-4e45-8fa0-797080e98362.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/28ca8dfa-5d2a-454e-b85f-c6e88b17198f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f46c83dc-35c0-4081-b3c4-962d590c7089.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/20a8e25a-60ef-43b3-a65b-7f48410a6f65.jpg"
+    ],
+    "firstSeenAt": "2026-07-22T09:26:28.269Z",
+    "lastSeenAt": "2026-07-22T09:26:28.269Z"
   }
 ]
