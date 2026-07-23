@@ -2119,7 +2119,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d567989d-b362-455c-8313-321b2130efde.jpg"
     ],
     "firstSeenAt": "2026-04-30T09:19:52.832Z",
-    "lastSeenAt": "2026-07-09T10:22:54.697Z"
+    "lastSeenAt": "2026-07-23T09:23:18.460Z"
   },
   {
     "adId": 1067094178,
@@ -6546,7 +6546,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0e80e984-c7c8-420b-a86e-58d5133ded83.jpg"
     ],
     "firstSeenAt": "2026-07-22T09:26:28.266Z",
-    "lastSeenAt": "2026-07-22T09:26:28.266Z"
+    "lastSeenAt": "2026-07-23T09:23:18.460Z"
   },
   {
     "adId": 1078025145,
@@ -6576,7 +6576,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5801599c-4044-4db9-93ec-8c67042da3b0.jpg"
     ],
     "firstSeenAt": "2026-07-22T09:26:28.266Z",
-    "lastSeenAt": "2026-07-22T09:26:28.266Z"
+    "lastSeenAt": "2026-07-23T09:23:18.460Z"
   },
   {
     "adId": 1077995726,
@@ -6604,7 +6604,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b334d6cc-21df-4d01-bf1e-d7a4614626df.jpg"
     ],
     "firstSeenAt": "2026-07-22T09:26:28.266Z",
-    "lastSeenAt": "2026-07-22T09:26:28.266Z"
+    "lastSeenAt": "2026-07-23T09:23:18.460Z"
   },
   {
     "adId": 1077988384,
@@ -6637,6 +6637,67 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e54f4051-0920-425d-84b6-509392d485be.jpg"
     ],
     "firstSeenAt": "2026-07-22T09:26:28.266Z",
-    "lastSeenAt": "2026-07-22T09:26:28.266Z"
+    "lastSeenAt": "2026-07-23T09:23:18.460Z"
+  },
+  {
+    "adId": 1078214267,
+    "link": "https://re.kufar.by/vi/1078214267",
+    "title": "Гараж переулок победы",
+    "description": "Продам гараж , все документы есть\nНе течет,крышу перестилали пару лет назад,подвал сухой\nхорошее место(тупик на возвышенности)\nРядом остановка обществ",
+    "priceByn": 20814,
+    "priceUsd": 7200,
+    "address": "переулок Победы, 11Аблок7к767, Гродно, Гродненская область",
+    "area": 35,
+    "seller": "Мартин",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Подвал",
+      "Отсутствует"
+    ],
+    "coordinates": {
+      "lat": 53.65671218814195,
+      "lon": 23.82283483086826
+    },
+    "listTime": "2026-07-23T05:28:42Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cad0e5b6-8c50-407b-9337-6894b0055676.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a6a7a0ac-4a32-482d-9aaa-38af10024580.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca2c64d1-e9a3-4047-99e8-afce2e3b17cb.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a13a9889-ace0-4a68-9755-cb84cd5da2fa.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2a3f606e-e27a-4c4e-80b5-292e409699af.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/20649dfc-d7f8-404a-9acd-e24a319f0a3f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ef3282c5-fad3-40e7-9b5e-47f901787ae5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d062880a-e428-4697-9089-0be4c97f8264.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/aeb892e0-04e5-4793-a149-74f347faf0b2.jpg"
+    ],
+    "firstSeenAt": "2026-07-23T09:23:18.460Z",
+    "lastSeenAt": "2026-07-23T09:23:18.460Z"
+  },
+  {
+    "adId": 1078164853,
+    "link": "https://re.kufar.by/vi/1078164853",
+    "title": "Продам гараж",
+    "description": "Продам  гараж в ГСК Фолюш. Высота ворот 2.30.Длина 5.79,ширина 3.48\nСвет,подвал под всем гаражом, длинна ямы 3.9м.Гараж оборудован охраной МВД.",
+    "priceByn": 34691,
+    "priceUsd": 12000,
+    "address": "Суворова ул, 141блок19к1940, Гродно, Гродненская область",
+    "area": 20.1,
+    "seller": "Денис",
+    "propertyType": "Гараж",
+    "coordinates": {
+      "lat": 53.649247,
+      "lon": 23.776169
+    },
+    "listTime": "2026-07-22T17:24:20Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/337414e7-c655-424e-93f5-d383af2c3a63.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f1b94e4d-64b3-4f82-abdb-2052c264837f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a6031b12-068d-45fa-937d-d718225c6056.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/25e64626-8b40-45a3-9256-6b9f64ca3cfd.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eac3aef8-33d5-4f76-be57-d9c0df195586.jpg"
+    ],
+    "firstSeenAt": "2026-07-23T09:23:18.460Z",
+    "lastSeenAt": "2026-07-23T09:23:18.460Z"
   }
 ]
