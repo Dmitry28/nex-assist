@@ -459,7 +459,7 @@
       "https://cdn.realt.by/img/55/cedbcce6-2d9a-11f1-a3db-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-16T12:16:24.671Z"
+    "lastSeenAt": "2026-07-23T09:37:27.102Z"
   },
   {
     "adId": 4029977,
@@ -1891,7 +1891,7 @@
       "https://cdn.realt.by/img/55/f84a5d96-e014-11f0-9994-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-22T09:37:07.310Z"
+    "lastSeenAt": "2026-07-23T09:37:27.102Z"
   },
   {
     "adId": 3894105,
@@ -3513,7 +3513,7 @@
       "https://cdn.realt.by/img/55/bba5158a-2b3b-11f1-b8ab-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-22T09:37:07.310Z"
+    "lastSeenAt": "2026-07-23T09:37:27.102Z"
   },
   {
     "adId": 3986874,
@@ -5552,7 +5552,7 @@
       "https://cdn.realt.by/img/55/f87a1ea4-56da-11f1-a842-0242ac120003"
     ],
     "firstSeenAt": "2026-05-24T09:22:42.706Z",
-    "lastSeenAt": "2026-07-22T09:37:07.310Z"
+    "lastSeenAt": "2026-07-23T09:37:27.102Z"
   },
   {
     "adId": 4137152,
@@ -6318,7 +6318,7 @@
       "https://cdn.realt.by/img/55/d46b09b4-6180-11f1-ae7f-0242ac120003"
     ],
     "firstSeenAt": "2026-06-06T09:28:48.148Z",
-    "lastSeenAt": "2026-07-22T09:37:07.310Z"
+    "lastSeenAt": "2026-07-23T09:37:27.102Z"
   },
   {
     "adId": 4145192,
@@ -6786,7 +6786,7 @@
       "https://cdn.realt.by/img/55/ce009ab2-6ca2-11f1-9595-0242ac120003"
     ],
     "firstSeenAt": "2026-06-21T10:34:44.767Z",
-    "lastSeenAt": "2026-07-22T09:37:07.310Z"
+    "lastSeenAt": "2026-07-23T09:37:27.102Z"
   },
   {
     "adId": 4160198,
@@ -7294,6 +7294,58 @@
       "https://cdn.realt.by/img/55/dab92b00-8595-11f1-bc89-0242ac120002"
     ],
     "firstSeenAt": "2026-07-22T09:37:07.310Z",
-    "lastSeenAt": "2026-07-22T09:37:07.310Z"
+    "lastSeenAt": "2026-07-23T09:37:27.102Z"
+  },
+  {
+    "adId": 4188518,
+    "uuid": "4799ab50-8668-11f1-bb03-e160b852bcdb",
+    "link": "https://realt.by/sale-dachi/object/4188518/",
+    "title": "Гродно",
+    "description": "Дача Химик Азот в черте года Дом 2 этажа Кирпичный дом . печь Есть шараж .Сад",
+    "priceByn": 15000,
+    "priceUsd": 5189,
+    "address": "Гродно",
+    "plotArea": 8,
+    "seller": "Анатолий Петрович",
+    "listTime": "2026-07-23T12:20:05+03:00",
+    "images": [],
+    "firstSeenAt": "2026-07-23T09:37:27.102Z",
+    "lastSeenAt": "2026-07-23T09:37:27.102Z"
+  },
+  {
+    "adId": 4188106,
+    "uuid": "9551dc80-85de-11f1-b1d0-252f154811f1",
+    "link": "https://realt.by/sale-dachi/object/4188106/",
+    "title": "Дача с баней под одной крышей в СТ Погораны, 7 км от Гродно",
+    "description": "До города Гродно 7 км. Асфальтированный подъезд к садоводческому товариществу. Отличное транспортное сообщение, недалеко находится остановка. Есть магазин.",
+    "priceByn": 230000,
+    "priceUsd": 79560,
+    "address": "Погораны  175",
+    "area": 82.7,
+    "areaKitchen": 34.8,
+    "plotArea": 9,
+    "yearBuilt": 2014,
+    "levels": 2,
+    "seller": "Наталья",
+    "listTime": "2026-07-22T18:30:01+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/105a0138-85de-11f1-8849-0242ac120002",
+      "https://cdn.realt.by/img/55/105e44c8-85de-11f1-a83a-0242ac120002",
+      "https://cdn.realt.by/img/55/13b38f34-85de-11f1-989c-0242ac120002",
+      "https://cdn.realt.by/img/55/13b71230-85de-11f1-ba4b-0242ac120002",
+      "https://cdn.realt.by/img/55/17ddda10-85de-11f1-9b33-0242ac120002",
+      "https://cdn.realt.by/img/55/17f0d8d6-85de-11f1-8979-0242ac120002",
+      "https://cdn.realt.by/img/55/17f6ac98-85de-11f1-9158-0242ac120002",
+      "https://cdn.realt.by/img/55/17fb11a2-85de-11f1-afef-0242ac120002",
+      "https://cdn.realt.by/img/55/180038d0-85de-11f1-b20c-0242ac120002",
+      "https://cdn.realt.by/img/55/1d487af0-85de-11f1-9c06-0242ac120002",
+      "https://cdn.realt.by/img/55/1d57d2e8-85de-11f1-82e1-0242ac120002",
+      "https://cdn.realt.by/img/55/23814ee2-85de-11f1-92d4-0242ac120002",
+      "https://cdn.realt.by/img/55/23908330-85de-11f1-b83e-0242ac120002",
+      "https://cdn.realt.by/img/55/26821c34-85de-11f1-b52a-0242ac120002",
+      "https://cdn.realt.by/img/55/29b2540a-85de-11f1-8536-0242ac120002"
+    ],
+    "firstSeenAt": "2026-07-23T09:37:27.102Z",
+    "lastSeenAt": "2026-07-23T09:37:27.102Z"
   }
 ]
