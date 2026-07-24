@@ -47,7 +47,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-07-16T10:38:09.033Z"
+    "lastSeenAt": "2026-07-24T09:17:52.275Z"
   },
   {
     "adId": 1062002915,
@@ -918,7 +918,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca7987d4-c9dc-4301-983f-20329c5638d6.jpg"
     ],
     "firstSeenAt": "2026-04-07T08:31:10.678Z",
-    "lastSeenAt": "2026-07-03T10:08:46.286Z"
+    "lastSeenAt": "2026-07-24T09:17:52.275Z"
   },
   {
     "adId": 1063807131,
@@ -2119,7 +2119,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d567989d-b362-455c-8313-321b2130efde.jpg"
     ],
     "firstSeenAt": "2026-04-30T09:19:52.832Z",
-    "lastSeenAt": "2026-07-23T09:23:18.460Z"
+    "lastSeenAt": "2026-07-24T09:17:52.275Z"
   },
   {
     "adId": 1067094178,
@@ -4303,10 +4303,10 @@
   {
     "adId": 1072169230,
     "link": "https://re.kufar.by/vi/1072169230",
-    "title": "Гараж",
-    "description": "Продам гараж, ширина 3.60 . Хороший ремонт, яма ( подвал ) так же с ремонтом. Свёт по всему гаражу. По всем вопросам просьба писать в лс.",
-    "priceByn": 29610,
-    "priceUsd": 10500,
+    "title": "Гараж( 'ГСК' Ландыш),район Ксм.",
+    "description": "Продам гараж, ширина 3.60 . Отшуткатурен и покрашен, подвал так же практически весь отштукатурен и покрашен. Свет по всему гаражу, осталось только до ",
+    "priceByn": 28824,
+    "priceUsd": 9990,
     "address": "Промысловый проезд, 6блок21к2108, Гродно, Гродненская область",
     "area": 20.3,
     "seller": "Михаил",
@@ -4322,12 +4322,13 @@
       "lat": 53.71492281865392,
       "lon": 23.810829701391217
     },
-    "listTime": "2026-06-07T11:33:53Z",
+    "listTime": "2026-07-23T18:31:07Z",
     "images": [
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/336d5ebe-7c70-4e5c-a68e-7f61b1ee82bd.jpg"
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/336d5ebe-7c70-4e5c-a68e-7f61b1ee82bd.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/16be0679-56f2-49a5-bbc2-220b139605d0.jpg"
     ],
     "firstSeenAt": "2026-06-08T11:56:19.994Z",
-    "lastSeenAt": "2026-06-09T10:48:32.689Z"
+    "lastSeenAt": "2026-07-24T09:17:52.275Z"
   },
   {
     "adId": 1072473028,
@@ -5381,7 +5382,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3edddf4b-a58b-4dd4-8e8f-3cbec5f6c916.jpg"
     ],
     "firstSeenAt": "2026-06-29T11:58:03.521Z",
-    "lastSeenAt": "2026-07-18T08:37:42.594Z"
+    "lastSeenAt": "2026-07-24T09:17:52.275Z"
   },
   {
     "adId": 1075129097,
@@ -6672,7 +6673,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/aeb892e0-04e5-4793-a149-74f347faf0b2.jpg"
     ],
     "firstSeenAt": "2026-07-23T09:23:18.460Z",
-    "lastSeenAt": "2026-07-23T09:23:18.460Z"
+    "lastSeenAt": "2026-07-24T09:17:52.275Z"
   },
   {
     "adId": 1078164853,
@@ -6698,6 +6699,43 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eac3aef8-33d5-4f76-be57-d9c0df195586.jpg"
     ],
     "firstSeenAt": "2026-07-23T09:23:18.460Z",
-    "lastSeenAt": "2026-07-23T09:23:18.460Z"
+    "lastSeenAt": "2026-07-24T09:17:52.275Z"
+  },
+  {
+    "adId": 1078255592,
+    "link": "https://re.kufar.by/vi/1078255592",
+    "title": "Гараж",
+    "description": "Продам гараж , с хорошим подъездом, есть смотровая яма, глубокая, с подвалом, перекрытие крыши новое, электричество по всему гаражу, по всем вопросам ",
+    "priceByn": 17312,
+    "priceUsd": 6000,
+    "address": "Максима Горького ул, 105А, Гродно, Гродненская область",
+    "area": 19.5,
+    "seller": "Сергей",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма",
+      "Подвал",
+      "Наземная",
+      "Печное"
+    ],
+    "coordinates": {
+      "lat": 53.727731,
+      "lon": 23.828181
+    },
+    "listTime": "2026-07-23T11:51:48Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c178b180-8020-4fa1-a853-427871e19e99.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/74c8a3c0-010b-4110-98f0-893d23eedb28.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b4a344d1-5e5c-4e58-b0a8-286d48d53b1c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/74a86966-b5ef-4d3c-b54f-05dd01e55962.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b7069c1d-9a05-4bf6-b039-1638c730aa44.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/665c01cf-c32a-4a64-be2d-c35f8f99cff2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7f83ae7b-e834-4aea-916e-d8ced52fe865.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d30400a1-cb0c-4c86-8196-0f7e682cadac.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ff03f2e4-c55c-4cd2-8a69-e9b945109a21.jpg"
+    ],
+    "firstSeenAt": "2026-07-24T09:17:52.275Z",
+    "lastSeenAt": "2026-07-24T09:17:52.275Z"
   }
 ]
