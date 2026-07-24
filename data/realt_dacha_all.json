@@ -459,7 +459,7 @@
       "https://cdn.realt.by/img/55/cedbcce6-2d9a-11f1-a3db-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-23T09:37:27.102Z"
+    "lastSeenAt": "2026-07-24T09:37:25.009Z"
   },
   {
     "adId": 4029977,
@@ -2820,7 +2820,7 @@
       "https://cdn.realt.by/img/55/c604edd0-2888-11f1-8bc5-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-25T10:18:46.607Z"
+    "lastSeenAt": "2026-07-24T09:37:25.009Z"
   },
   {
     "adId": 3780907,
@@ -3513,7 +3513,7 @@
       "https://cdn.realt.by/img/55/bba5158a-2b3b-11f1-b8ab-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-23T09:37:27.102Z"
+    "lastSeenAt": "2026-07-24T09:37:25.009Z"
   },
   {
     "adId": 3986874,
@@ -5552,7 +5552,7 @@
       "https://cdn.realt.by/img/55/f87a1ea4-56da-11f1-a842-0242ac120003"
     ],
     "firstSeenAt": "2026-05-24T09:22:42.706Z",
-    "lastSeenAt": "2026-07-23T09:37:27.102Z"
+    "lastSeenAt": "2026-07-24T09:37:25.009Z"
   },
   {
     "adId": 4137152,
@@ -6786,7 +6786,7 @@
       "https://cdn.realt.by/img/55/ce009ab2-6ca2-11f1-9595-0242ac120003"
     ],
     "firstSeenAt": "2026-06-21T10:34:44.767Z",
-    "lastSeenAt": "2026-07-23T09:37:27.102Z"
+    "lastSeenAt": "2026-07-24T09:37:25.009Z"
   },
   {
     "adId": 4160198,
@@ -7310,7 +7310,7 @@
     "listTime": "2026-07-23T12:20:05+03:00",
     "images": [],
     "firstSeenAt": "2026-07-23T09:37:27.102Z",
-    "lastSeenAt": "2026-07-23T09:37:27.102Z"
+    "lastSeenAt": "2026-07-24T09:37:25.009Z"
   },
   {
     "adId": 4188106,
@@ -7346,6 +7346,113 @@
       "https://cdn.realt.by/img/55/29b2540a-85de-11f1-8536-0242ac120002"
     ],
     "firstSeenAt": "2026-07-23T09:37:27.102Z",
-    "lastSeenAt": "2026-07-23T09:37:27.102Z"
+    "lastSeenAt": "2026-07-24T09:37:25.009Z"
+  },
+  {
+    "adId": 4189350,
+    "uuid": "3c2323d0-872d-11f1-86e8-8f5431bc91bb",
+    "link": "https://realt.by/sale-dachi/object/4189350/",
+    "title": "дача СТ Магистраль",
+    "description": "Продается отличный дом для круглогодичного проживания в СТ Магистраль (7 км от города) и 2 земельных участка в частной собственности (0,0377 га и 0,06 га ) в живописном районе недалеко от Гродно (Подлабенский сельсовет).",
+    "priceByn": 365000,
+    "priceUsd": 126503,
+    "address": "Магистраль",
+    "area": 91.1,
+    "areaLiving": 43.1,
+    "plotArea": 9.77,
+    "yearBuilt": 2019,
+    "seller": "Светлана",
+    "listTime": "2026-07-24T10:44:30+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/d34f1186-872a-11f1-862e-0242ac120002",
+      "https://cdn.realt.by/img/55/d34236a0-872a-11f1-a098-0242ac120002",
+      "https://cdn.realt.by/img/55/d3423bbe-872a-11f1-beed-0242ac120002",
+      "https://cdn.realt.by/img/55/d344b3ee-872a-11f1-acb9-0242ac120002",
+      "https://cdn.realt.by/img/55/d34db73c-872a-11f1-ba1a-0242ac120002",
+      "https://cdn.realt.by/img/55/d34bdeee-872a-11f1-aa22-0242ac120002",
+      "https://cdn.realt.by/img/55/d314bdec-872a-11f1-b158-0242ac120002",
+      "https://cdn.realt.by/img/55/d34a74a0-872a-11f1-8825-0242ac120002",
+      "https://cdn.realt.by/img/55/d301f5fe-872a-11f1-b9e9-0242ac120002",
+      "https://cdn.realt.by/img/55/d348dc44-872a-11f1-853f-0242ac120002",
+      "https://cdn.realt.by/img/55/d326a818-872a-11f1-a18a-0242ac120002",
+      "https://cdn.realt.by/img/55/d329415e-872a-11f1-ac9d-0242ac120002",
+      "https://cdn.realt.by/img/55/d331f4de-872a-11f1-95a0-0242ac120002",
+      "https://cdn.realt.by/img/55/d33e4234-872a-11f1-bcc8-0242ac120002",
+      "https://cdn.realt.by/img/55/d339c65a-872a-11f1-9b75-0242ac120002",
+      "https://cdn.realt.by/img/55/d342e7d0-872a-11f1-af9a-0242ac120002",
+      "https://cdn.realt.by/img/55/d346abfe-872a-11f1-8f68-0242ac120002",
+      "https://cdn.realt.by/img/55/d343e252-872a-11f1-bd70-0242ac120002",
+      "https://cdn.realt.by/img/55/d344ee54-872a-11f1-a0f1-0242ac120002",
+      "https://cdn.realt.by/img/55/d34a10e6-872a-11f1-8442-0242ac120002",
+      "https://cdn.realt.by/img/55/d34cde34-872a-11f1-ac6d-0242ac120002",
+      "https://cdn.realt.by/img/55/d34c32b8-872a-11f1-ac6e-0242ac120002",
+      "https://cdn.realt.by/img/55/d34cd10a-872a-11f1-ac05-0242ac120002"
+    ],
+    "firstSeenAt": "2026-07-24T09:37:25.009Z",
+    "lastSeenAt": "2026-07-24T09:37:25.009Z"
+  },
+  {
+    "adId": 4188711,
+    "uuid": "e89fc770-867f-11f1-86e8-8f5431bc91bb",
+    "link": "https://realt.by/sale-dachi/object/4188711/",
+    "title": "Дача в СТ \"Лебедь\"",
+    "description": "Идеальное место для тех, кто хочет сбежать от городской суеты.",
+    "priceByn": 38000,
+    "priceUsd": 13170,
+    "address": "Лебедь  71",
+    "area": 37.1,
+    "areaLiving": 37.1,
+    "plotArea": 5.7,
+    "yearBuilt": 2000,
+    "seller": "\"Фирма 2К и К\"",
+    "listTime": "2026-07-23T13:32:25+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/ff7552b8-867e-11f1-afc3-0242ac120002",
+      "https://cdn.realt.by/img/55/f1bfcfc2-867e-11f1-b31f-0242ac120002",
+      "https://cdn.realt.by/img/55/5b491bf6-867f-11f1-ba3a-0242ac120002",
+      "https://cdn.realt.by/img/55/ebe2ae12-867e-11f1-9258-0242ac120002",
+      "https://cdn.realt.by/img/55/f5618300-867e-11f1-b730-0242ac120002",
+      "https://cdn.realt.by/img/55/f9587536-867e-11f1-a179-0242ac120002"
+    ],
+    "firstSeenAt": "2026-07-24T09:37:25.009Z",
+    "lastSeenAt": "2026-07-24T09:37:25.009Z"
+  },
+  {
+    "adId": 4188580,
+    "uuid": "f51f1f40-8671-11f1-bb03-e160b852bcdb",
+    "link": "https://realt.by/sale-dachi/object/4188580/",
+    "title": "Гневенщина",
+    "description": "Дача в Коробчицах — уединение в 16 км от Гродно СТ «Салют-2», участок 10. Экологически чистый район, крайняя улица, тишина, приятные соседи. Дом 44 м, 2 этажа, оштукатуренный кирпич, высокий фундамент, погреб, балкон, веранда. • Участок 5 соток, ухоженный, много плодовых деревьев и зелени. • Электричество круглый год, вода сезонная. 50 500 бел.руб. Торг возможен. Ксения, +375 29 889 24 22 (Telegram, Viber)",
+    "priceByn": 50500,
+    "priceUsd": 17503,
+    "address": "Гневенщина  10",
+    "area": 44.3,
+    "areaKitchen": 8.6,
+    "plotArea": 4.72,
+    "yearBuilt": 1987,
+    "levels": 2,
+    "seller": "Кватэра",
+    "listTime": "2026-07-24T12:11:11+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/6c49fba6-866f-11f1-a98b-0242ac120002",
+      "https://cdn.realt.by/img/55/53dc8a24-8670-11f1-a232-0242ac120002",
+      "https://cdn.realt.by/img/55/f76dd2e2-8670-11f1-8460-0242ac120002",
+      "https://cdn.realt.by/img/55/fcff8d72-8670-11f1-87a6-0242ac120002",
+      "https://cdn.realt.by/img/55/f1debc92-8670-11f1-bf68-0242ac120002",
+      "https://cdn.realt.by/img/55/58da7716-8670-11f1-9fed-0242ac120002",
+      "https://cdn.realt.by/img/55/567e460a-8670-11f1-9117-0242ac120002",
+      "https://cdn.realt.by/img/55/53ec3992-8670-11f1-b5cb-0242ac120002",
+      "https://cdn.realt.by/img/55/55893aac-8670-11f1-92fc-0242ac120002",
+      "https://cdn.realt.by/img/55/578c0e7e-8670-11f1-b716-0242ac120002",
+      "https://cdn.realt.by/img/55/3c93c0a8-8670-11f1-9c93-0242ac120002",
+      "https://cdn.realt.by/img/55/e8f8f714-8670-11f1-b684-0242ac120002",
+      "https://cdn.realt.by/img/55/f12f47f8-8670-11f1-b276-0242ac120002",
+      "https://cdn.realt.by/img/55/f1b0808e-8670-11f1-9197-0242ac120002",
+      "https://cdn.realt.by/img/55/f7096816-8670-11f1-9852-0242ac120002",
+      "https://cdn.realt.by/img/55/29c48c30-866d-11f1-8b24-0242ac120002",
+      "https://cdn.realt.by/img/55/355f873e-866d-11f1-8972-0242ac120002"
+    ],
+    "firstSeenAt": "2026-07-24T09:37:25.009Z",
+    "lastSeenAt": "2026-07-24T09:37:25.009Z"
   }
 ]

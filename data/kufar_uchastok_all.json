@@ -72,9 +72,9 @@
     "adId": 1054012577,
     "link": "https://re.kufar.by/vi/1054012577",
     "title": "Дача в СТ Ягодка, Гродно, 6 соток, дом, баня, теплица",
-    "description": "Продаётся дача: 6 соток, 2-этажный дом 7*8 с печкой, камином, закрытой и открытой верандами, с баней и теплицей. Яблони, груши, сливы, вишни, виноград",
-    "priceByn": 56372,
-    "priceUsd": 20000,
+    "description": "Продаётся дача: 6 соток, 2-этажный дом 7*8 с печкой, камином, закрытой и открытой верандами, с баней и теплицей. Яблони, груши, сливы, вишни, черешня,",
+    "priceByn": 60000,
+    "priceUsd": 20795,
     "address": "СТ Ягодка, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "plotArea": 6,
     "seller": "Людмила",
@@ -82,14 +82,25 @@
       "Частная собственность",
       "Да"
     ],
-    "listTime": "2026-04-25T08:19:23Z",
+    "coordinates": {
+      "lat": 53.608355,
+      "lon": 23.943606
+    },
+    "listTime": "2026-07-23T12:44:50Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9e01492b-0fc1-415f-8ffd-9c8a64adb381.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/05e94ba8-824d-4549-941a-a772717cffe6.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7b4053ef-1b86-4f81-a244-191274796e97.jpg"
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7b4053ef-1b86-4f81-a244-191274796e97.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d52362b1-d86e-4be4-b59f-196f5d063be9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ab998965-b155-4d20-954a-45f50e860d2b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c4fcf244-b269-4f45-a15d-031e373e5297.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ed84db46-0fa1-4ccf-ae0e-ba11a8f83c86.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/750639ae-311e-4656-a1c6-0e69b3fe54d4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d18072eb-762c-433c-b1f6-8d5eec833f57.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cb8326e8-dbd8-48cb-a17a-4f4e520024a7.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-06-27T09:37:29.252Z"
+    "lastSeenAt": "2026-07-24T09:36:28.446Z"
   },
   {
     "adId": 1061953023,
@@ -708,8 +719,8 @@
     "link": "https://re.kufar.by/vi/1056448347",
     "title": "Продам участок с домиком СТ ''Салют'',р-н Каролино",
     "description": "Продам земельный участок с дачным домиком СТ \"Салют\", район Каролино, рядом с автобусной остановкой. Хорошее месторасположение, 2 линия от главной дор",
-    "priceByn": 28297,
-    "priceUsd": 9999,
+    "priceByn": 21640,
+    "priceUsd": 7500,
     "address": "СТ Салют, Подлабенский сельсовет, Гродненский район, Гродненская область",
     "plotArea": 6,
     "seller": "Брайн",
@@ -722,7 +733,7 @@
       "lat": 53.639602,
       "lon": 23.691179
     },
-    "listTime": "2026-06-07T06:51:38Z",
+    "listTime": "2026-07-24T08:12:19Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f199b06f-a995-4781-9add-fc27b61ec4e3.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8abfb16b-92c2-4e7f-98d1-c6a41cb275f7.jpg",
@@ -735,7 +746,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8c3d8b38-10bc-43c8-9698-7c95e2e6e041.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.801Z",
-    "lastSeenAt": "2026-06-08T11:56:19.997Z"
+    "lastSeenAt": "2026-07-24T09:36:28.446Z"
   },
   {
     "adId": 1062276662,
@@ -1990,7 +2001,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/00f4e8ba-add5-431d-8412-cfdd670ca21b.jpg"
     ],
     "firstSeenAt": "2026-04-09T08:28:36.680Z",
-    "lastSeenAt": "2026-07-23T09:36:54.113Z"
+    "lastSeenAt": "2026-07-24T09:36:28.446Z"
   },
   {
     "adId": 1064068920,
@@ -2642,7 +2653,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/19b9eb71-8846-4f11-a7c2-f9db390d0329.jpg"
     ],
     "firstSeenAt": "2026-04-15T08:37:31.945Z",
-    "lastSeenAt": "2026-07-23T09:36:54.113Z"
+    "lastSeenAt": "2026-07-24T09:36:28.446Z"
   },
   {
     "adId": 1065178373,
@@ -6045,7 +6056,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/71a1c2e8-7143-4068-a1e1-983c1ee77ab7.jpg"
     ],
     "firstSeenAt": "2026-05-25T11:15:07.899Z",
-    "lastSeenAt": "2026-07-23T09:36:54.113Z"
+    "lastSeenAt": "2026-07-24T09:36:28.446Z"
   },
   {
     "adId": 1070502100,
@@ -7055,7 +7066,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/347b4c17-10a1-48a4-b0e6-017cc81c682d.jpg"
     ],
     "firstSeenAt": "2026-06-10T11:12:10.631Z",
-    "lastSeenAt": "2026-07-23T09:36:54.113Z"
+    "lastSeenAt": "2026-07-24T09:36:28.446Z"
   },
   {
     "adId": 253577034,
@@ -7234,7 +7245,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/df100c91-435f-4eda-a683-7a8a4fce3afa.jpg"
     ],
     "firstSeenAt": "2026-06-14T10:26:46.072Z",
-    "lastSeenAt": "2026-06-15T13:09:45.094Z"
+    "lastSeenAt": "2026-07-24T09:36:28.446Z"
   },
   {
     "adId": 1073207492,
@@ -7512,7 +7523,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ef0faeba-38c7-401b-9424-0d5ba3de2476.jpg"
     ],
     "firstSeenAt": "2026-06-17T11:47:40.607Z",
-    "lastSeenAt": "2026-07-17T09:39:37.480Z"
+    "lastSeenAt": "2026-07-24T09:36:28.446Z"
   },
   {
     "adId": 1073432053,
@@ -9865,7 +9876,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b1af3766-90f5-4694-83c6-d24af040284d.jpg"
     ],
     "firstSeenAt": "2026-07-22T09:36:32.321Z",
-    "lastSeenAt": "2026-07-23T09:36:54.113Z"
+    "lastSeenAt": "2026-07-24T09:36:28.446Z"
   },
   {
     "adId": 1078029219,
@@ -9922,7 +9933,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d328f256-d90a-4af6-9fd7-5ffc67f9b01e.jpg"
     ],
     "firstSeenAt": "2026-07-23T09:36:54.113Z",
-    "lastSeenAt": "2026-07-23T09:36:54.113Z"
+    "lastSeenAt": "2026-07-24T09:36:28.446Z"
   },
   {
     "adId": 1078169973,
@@ -9949,6 +9960,37 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2af9b9ea-9064-4558-ad66-239f2842e0ca.jpg"
     ],
     "firstSeenAt": "2026-07-23T09:36:54.113Z",
-    "lastSeenAt": "2026-07-23T09:36:54.113Z"
+    "lastSeenAt": "2026-07-24T09:36:28.446Z"
+  },
+  {
+    "adId": 1078352548,
+    "link": "https://re.kufar.by/vi/1078352548",
+    "title": "участок СТ Горицвет",
+    "description": "Продается   отличный земельный участок в 10  км от   города,  в экологически чистом районе   направление на Каролино) , СТ «Горицвет ».  \n Участок ров",
+    "priceByn": 32000,
+    "priceUsd": 11091,
+    "address": "129, СТ Горицвет, Подлабенский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 9.15,
+    "seller": "Агентство недвижимости ''Юриэлт'' г.Гродно",
+    "features": [
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.611189,
+      "lon": 23.671921
+    },
+    "listTime": "2026-07-24T07:03:11Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/023c1b42-95cc-4688-9614-e0324bfb1018.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7f69b2db-6af2-4a2d-aef5-9c0c9a14f899.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/284224cd-c962-4d37-8a4e-86f10c2ce8ee.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d9df285b-1d23-40c3-9bc6-966b521087e5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/43d8bc6d-efe5-48d6-9e46-8f901976bf09.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0ee57a74-b6e2-496e-acba-bebc8315c497.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3478c4bd-20df-4105-810b-57b6d5759ed7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2ab3e73b-c2c4-4bda-b12e-35405e7140dd.jpg"
+    ],
+    "firstSeenAt": "2026-07-24T09:36:28.446Z",
+    "lastSeenAt": "2026-07-24T09:36:28.446Z"
   }
 ]
