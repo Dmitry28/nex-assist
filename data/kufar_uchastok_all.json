@@ -100,7 +100,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cb8326e8-dbd8-48cb-a17a-4f4e520024a7.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.159Z",
-    "lastSeenAt": "2026-07-24T09:17:52.280Z"
+    "lastSeenAt": "2026-07-25T08:58:38.389Z"
   },
   {
     "adId": 1061953023,
@@ -746,7 +746,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8c3d8b38-10bc-43c8-9698-7c95e2e6e041.jpg"
     ],
     "firstSeenAt": "2026-03-28T10:34:02.801Z",
-    "lastSeenAt": "2026-07-24T09:17:52.280Z"
+    "lastSeenAt": "2026-07-25T08:58:38.389Z"
   },
   {
     "adId": 1062276662,
@@ -891,10 +891,10 @@
   {
     "adId": 1011452136,
     "link": "https://re.kufar.by/vi/1011452136",
-    "title": "Участок в СТ Приграничное ",
+    "title": "Участок в СТ Приграничное",
     "description": "Продается участок 8,2 сотки в СТ \"Приграничное\" – идеальное место для семейного отдыха!\n\n~ Полностью приватизирован – никаких сложностей с оформлением",
-    "priceByn": 15419,
-    "priceUsd": 5200,
+    "priceByn": 15869,
+    "priceUsd": 5500,
     "address": "СТ Приграничное, Коптёвский сельсовет, Гродненский район, Гродненская область",
     "plotArea": 8.2,
     "seller": "Ирина",
@@ -902,7 +902,11 @@
       "Сезонная",
       "Частная собственность"
     ],
-    "listTime": "2026-03-29T08:06:08Z",
+    "coordinates": {
+      "lat": 53.588075245643886,
+      "lon": 23.695516649271124
+    },
+    "listTime": "2026-07-25T08:51:47Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8ae18fd2-456c-4597-b7ed-3545bc87c87c.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a24dd242-9c90-417d-b1c2-286da6e11d87.jpg",
@@ -910,7 +914,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/19308854-e352-4526-aa78-2d21744ea132.jpg"
     ],
     "firstSeenAt": "2026-03-29T19:58:43.075Z",
-    "lastSeenAt": "2026-05-28T10:59:13.526Z"
+    "lastSeenAt": "2026-07-25T08:58:38.389Z"
   },
   {
     "adId": 1035133763,
@@ -7066,7 +7070,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/347b4c17-10a1-48a4-b0e6-017cc81c682d.jpg"
     ],
     "firstSeenAt": "2026-06-10T11:12:10.631Z",
-    "lastSeenAt": "2026-07-24T09:17:52.280Z"
+    "lastSeenAt": "2026-07-25T08:58:38.389Z"
   },
   {
     "adId": 253577034,
@@ -7245,7 +7249,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/df100c91-435f-4eda-a683-7a8a4fce3afa.jpg"
     ],
     "firstSeenAt": "2026-06-14T10:26:46.072Z",
-    "lastSeenAt": "2026-07-24T09:17:52.280Z"
+    "lastSeenAt": "2026-07-25T08:58:38.389Z"
   },
   {
     "adId": 1073207492,
@@ -7523,7 +7527,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ef0faeba-38c7-401b-9424-0d5ba3de2476.jpg"
     ],
     "firstSeenAt": "2026-06-17T11:47:40.607Z",
-    "lastSeenAt": "2026-07-24T09:17:52.280Z"
+    "lastSeenAt": "2026-07-25T08:58:38.389Z"
   },
   {
     "adId": 1073432053,
@@ -8908,7 +8912,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1948918b-9d93-4003-b3ba-c8d668c41973.jpg"
     ],
     "firstSeenAt": "2026-07-09T10:22:54.699Z",
-    "lastSeenAt": "2026-07-10T10:19:42.318Z"
+    "lastSeenAt": "2026-07-25T08:58:38.389Z"
   },
   {
     "adId": 1076305330,
@@ -9990,7 +9994,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b1af3766-90f5-4694-83c6-d24af040284d.jpg"
     ],
     "firstSeenAt": "2026-07-22T09:26:28.269Z",
-    "lastSeenAt": "2026-07-24T09:17:52.280Z"
+    "lastSeenAt": "2026-07-25T08:58:38.389Z"
   },
   {
     "adId": 1078029219,
@@ -10105,6 +10109,6 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2ab3e73b-c2c4-4bda-b12e-35405e7140dd.jpg"
     ],
     "firstSeenAt": "2026-07-24T09:17:52.280Z",
-    "lastSeenAt": "2026-07-24T09:17:52.280Z"
+    "lastSeenAt": "2026-07-25T08:58:38.389Z"
   }
 ]

@@ -47,7 +47,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-07-24T09:17:52.275Z"
+    "lastSeenAt": "2026-07-25T08:58:38.386Z"
   },
   {
     "adId": 1062002915,
@@ -106,7 +106,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c32966cf-6663-4cbc-a483-09da9f48647d.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-07-17T09:09:50.540Z"
+    "lastSeenAt": "2026-07-25T08:58:38.386Z"
   },
   {
     "adId": 1044024342,
@@ -918,7 +918,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca7987d4-c9dc-4301-983f-20329c5638d6.jpg"
     ],
     "firstSeenAt": "2026-04-07T08:31:10.678Z",
-    "lastSeenAt": "2026-07-24T09:17:52.275Z"
+    "lastSeenAt": "2026-07-25T08:58:38.386Z"
   },
   {
     "adId": 1063807131,
@@ -4328,7 +4328,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/16be0679-56f2-49a5-bbc2-220b139605d0.jpg"
     ],
     "firstSeenAt": "2026-06-08T11:56:19.994Z",
-    "lastSeenAt": "2026-07-24T09:17:52.275Z"
+    "lastSeenAt": "2026-07-25T08:58:38.386Z"
   },
   {
     "adId": 1072473028,
@@ -4996,7 +4996,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f178d8d7-4e75-4dda-87f4-50a4d843577a.jpg"
     ],
     "firstSeenAt": "2026-06-21T10:34:16.176Z",
-    "lastSeenAt": "2026-07-19T09:05:22.781Z"
+    "lastSeenAt": "2026-07-25T08:58:38.386Z"
   },
   {
     "adId": 1073946186,
@@ -5382,7 +5382,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3edddf4b-a58b-4dd4-8e8f-3cbec5f6c916.jpg"
     ],
     "firstSeenAt": "2026-06-29T11:58:03.521Z",
-    "lastSeenAt": "2026-07-24T09:17:52.275Z"
+    "lastSeenAt": "2026-07-25T08:58:38.386Z"
   },
   {
     "adId": 1075129097,
@@ -6736,6 +6736,78 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ff03f2e4-c55c-4cd2-8a69-e9b945109a21.jpg"
     ],
     "firstSeenAt": "2026-07-24T09:17:52.275Z",
-    "lastSeenAt": "2026-07-24T09:17:52.275Z"
+    "lastSeenAt": "2026-07-25T08:58:38.386Z"
+  },
+  {
+    "adId": 1078426137,
+    "link": "https://re.kufar.by/vi/1078426137",
+    "title": "Гараж Радуга 2, асфальтный подъезд",
+    "description": "Гараж в отличном месте, рядом магазины мебели, подъезд асфальтный, рядом остановка общественного транспорта. Освещение уличное есть. Гараж сухой, пере",
+    "priceByn": 22650,
+    "priceUsd": 7850,
+    "address": "Максима Горького ул, 126Гк444, Гродно, Гродненская область",
+    "area": 17.4,
+    "seller": "Александр",
+    "propertyType": "Гараж",
+    "coordinates": {
+      "lat": 53.71114322925465,
+      "lon": 23.806415645019683
+    },
+    "listTime": "2026-07-24T18:52:28Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/32f8055a-0bd1-48a8-9690-5014db112509.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/03b29084-3029-4bc1-a1ae-46f7a35d579c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e3f98085-7438-42ff-9995-8c0180975520.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0ec4fb0c-71e3-4f6d-bb90-ec0522abff7a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2243f269-bcd7-4b93-a677-42fcc31272aa.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/95b89e54-118b-4878-a860-1bb81ebdc342.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c8e1241e-1f86-4621-843d-e4012563bda0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2ff0d79a-64fa-49b6-a3fb-1f926f2137a8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/874c9f6e-27b0-4309-b775-ddbc0a2850ba.jpg"
+    ],
+    "firstSeenAt": "2026-07-25T08:58:38.386Z",
+    "lastSeenAt": "2026-07-25T08:58:38.386Z"
+  },
+  {
+    "adId": 1078372312,
+    "link": "https://re.kufar.by/vi/1078372312",
+    "title": "Гараж Понемунь-авто",
+    "description": "Сухой гараж в Понемуни. В первом блоке от шлагбаума. Под всем гаражом подвал(разделен на 3 помещения). На полу подвала уложена плитка. Стены окрашены.",
+    "priceByn": 19764,
+    "priceUsd": 6850,
+    "address": "Понемуньская ул, 15Аблок15к1511, Гродно, Гродненская область",
+    "area": 20,
+    "seller": "Андрей",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Видеонаблюдение",
+      "Круглосуточная охрана",
+      "Смотровая яма",
+      "Подвал",
+      "Наземная",
+      "Отсутствует"
+    ],
+    "coordinates": {
+      "lat": 53.664349915360546,
+      "lon": 23.875379996952155
+    },
+    "listTime": "2026-07-24T10:11:25Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7103bfee-1e04-4536-8990-dd59e7cee898.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e2220232-0c19-4ebb-b2eb-e8d56ba18251.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e8977aee-7f91-4d89-ac27-7138e20022f7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/715b96d7-77f3-4880-9dea-08ba4a4693b9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/66cdd015-38da-43ff-a731-56ffc17ed8ab.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d445f52c-0d67-4801-ab5a-2ecefc3c89de.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7034ee84-51b2-4e45-b112-3242d39a8ee3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/278dc04d-dd87-4055-9e35-f64da1af79d1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9154a81a-6356-44f7-8314-ad9ffc2318a6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/228de360-c1de-4c90-91d4-676ff1bf9580.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cb7a5ad0-54d5-442e-acb7-e2aff1432058.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/af71e64e-c576-457e-bb61-e18cd11f697d.jpg"
+    ],
+    "firstSeenAt": "2026-07-25T08:58:38.386Z",
+    "lastSeenAt": "2026-07-25T08:58:38.386Z"
   }
 ]
