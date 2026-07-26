@@ -22,7 +22,7 @@
     "renewedAt": "2026-06-09T13:53:27+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0009/3296/2406.jpg",
     "firstSeenAt": "2026-05-18T20:56:25.065Z",
-    "lastSeenAt": "2026-07-23T09:24:35.134Z"
+    "lastSeenAt": "2026-07-26T09:11:36.954Z"
   },
   {
     "id": 130928474,
@@ -47,7 +47,7 @@
     "renewedAt": "2026-06-11T10:25:40+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0012/5172/1128.jpg",
     "firstSeenAt": "2026-05-18T20:56:25.065Z",
-    "lastSeenAt": "2026-07-23T09:24:35.134Z"
+    "lastSeenAt": "2026-07-26T09:11:36.954Z"
   },
   {
     "id": 130457237,
@@ -72,7 +72,7 @@
     "renewedAt": "2026-07-13T09:55:25+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0012/3065/5166.jpg",
     "firstSeenAt": "2026-05-18T20:56:25.065Z",
-    "lastSeenAt": "2026-07-23T09:24:35.134Z"
+    "lastSeenAt": "2026-07-26T09:11:36.954Z"
   },
   {
     "id": 126259418,
@@ -97,7 +97,7 @@
     "renewedAt": "2026-03-29T10:20:58+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0009/9820/2151.jpg",
     "firstSeenAt": "2026-06-02T11:29:08.584Z",
-    "lastSeenAt": "2026-07-23T09:24:35.134Z"
+    "lastSeenAt": "2026-07-26T09:11:36.954Z"
   },
   {
     "id": 131242346,
@@ -122,31 +122,7 @@
     "renewedAt": "2026-07-22T09:41:28+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/5073/1650.jpg",
     "firstSeenAt": "2026-06-17T11:52:58.390Z",
-    "lastSeenAt": "2026-07-23T09:24:35.134Z"
-  },
-  {
-    "id": 134655441,
-    "url": "https://cars.av.by/volkswagen/atlas/134655441",
-    "title": "Volkswagen Atlas 2025",
-    "priceUsd": 52990,
-    "priceByn": 147651,
-    "brand": "Volkswagen",
-    "model": "Atlas",
-    "year": 2025,
-    "mileageKm": 1600,
-    "engineCapacity": "2,0",
-    "engineType": "бензин",
-    "transmission": "автомат",
-    "bodyType": "внедорожник 5 дв.",
-    "driveType": "подключаемый полный привод",
-    "color": "чёрный",
-    "vinPartial": "1V2BR2C**********",
-    "location": "Минск",
-    "sellerName": "ООО «БелАвтоЭксперт»",
-    "publishedAt": "2026-06-19T11:14:31+0000",
-    "photoUrl": "https://avcdn.av.by/advertmedium/0014/0142/6539.jpg",
-    "firstSeenAt": "2026-06-19T11:25:52.553Z",
-    "lastSeenAt": "2026-07-23T09:24:35.134Z"
+    "lastSeenAt": "2026-07-26T09:11:36.954Z"
   },
   {
     "id": 134509852,
@@ -170,7 +146,7 @@
     "publishedAt": "2026-06-17T18:58:30+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0013/9801/2529.jpg",
     "firstSeenAt": "2026-06-19T11:25:52.553Z",
-    "lastSeenAt": "2026-07-23T09:24:35.134Z"
+    "lastSeenAt": "2026-07-26T09:11:36.954Z"
   },
   {
     "id": 131025972,
@@ -219,7 +195,7 @@
     "publishedAt": "2026-06-22T15:36:29+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/0471/4581.jpg",
     "firstSeenAt": "2026-06-23T10:48:57.826Z",
-    "lastSeenAt": "2026-07-23T09:24:35.134Z"
+    "lastSeenAt": "2026-07-26T09:11:36.954Z"
   },
   {
     "id": 135305585,
@@ -243,7 +219,7 @@
     "publishedAt": "2026-07-01T16:16:14+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/1704/1393.jpg",
     "firstSeenAt": "2026-07-02T10:07:56.274Z",
-    "lastSeenAt": "2026-07-23T09:24:35.134Z"
+    "lastSeenAt": "2026-07-26T09:11:36.954Z"
   },
   {
     "id": 135345723,
@@ -268,7 +244,7 @@
     "renewedAt": "2026-07-15T06:28:55+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/1842/3926.jpg",
     "firstSeenAt": "2026-07-15T09:26:26.750Z",
-    "lastSeenAt": "2026-07-23T09:24:35.134Z"
+    "lastSeenAt": "2026-07-26T09:11:36.954Z"
   },
   {
     "id": 135830470,
@@ -292,7 +268,7 @@
     "publishedAt": "2026-07-12T16:00:59+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/3106/1744.jpg",
     "firstSeenAt": "2026-07-15T09:26:26.750Z",
-    "lastSeenAt": "2026-07-23T09:24:35.134Z"
+    "lastSeenAt": "2026-07-26T09:11:36.954Z"
   },
   {
     "id": 135413644,
@@ -316,7 +292,7 @@
     "publishedAt": "2026-07-03T17:47:39+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/2099/3424.jpg",
     "firstSeenAt": "2026-07-15T09:26:26.750Z",
-    "lastSeenAt": "2026-07-23T09:24:35.134Z"
+    "lastSeenAt": "2026-07-26T09:11:36.954Z"
   },
   {
     "id": 136078198,
@@ -340,7 +316,7 @@
     "publishedAt": "2026-07-17T13:26:11+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/4417/5580.jpg",
     "firstSeenAt": "2026-07-19T09:06:29.189Z",
-    "lastSeenAt": "2026-07-23T09:24:35.134Z"
+    "lastSeenAt": "2026-07-26T09:11:36.954Z"
   },
   {
     "id": 136285854,
@@ -364,6 +340,30 @@
     "publishedAt": "2026-07-22T10:50:28+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/5102/8350.jpg",
     "firstSeenAt": "2026-07-23T09:24:35.134Z",
-    "lastSeenAt": "2026-07-23T09:24:35.134Z"
+    "lastSeenAt": "2026-07-26T09:11:36.954Z"
+  },
+  {
+    "id": 136491123,
+    "url": "https://cars.av.by/volkswagen/atlas/136491123",
+    "title": "Volkswagen Atlas 2025",
+    "priceUsd": 42000,
+    "priceByn": 121183,
+    "brand": "Volkswagen",
+    "model": "Atlas",
+    "year": 2025,
+    "mileageKm": 28000,
+    "engineCapacity": "2,0",
+    "engineType": "бензин",
+    "transmission": "автомат",
+    "bodyType": "внедорожник 5 дв.",
+    "driveType": "передний привод",
+    "color": "чёрный",
+    "vinPartial": "1V2DR2C**********",
+    "location": "Минск",
+    "sellerName": "Атлас ",
+    "publishedAt": "2026-07-25T17:42:05+0000",
+    "photoUrl": "https://avcdn.av.by/advertmedium/0014/5843/6824.jpg",
+    "firstSeenAt": "2026-07-26T09:11:36.954Z",
+    "lastSeenAt": "2026-07-26T09:11:36.954Z"
   }
 ]

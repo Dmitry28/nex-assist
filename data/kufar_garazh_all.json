@@ -106,7 +106,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c32966cf-6663-4cbc-a483-09da9f48647d.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-07-25T08:58:38.386Z"
+    "lastSeenAt": "2026-07-26T09:10:37.690Z"
   },
   {
     "adId": 1044024342,
@@ -4996,7 +4996,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f178d8d7-4e75-4dda-87f4-50a4d843577a.jpg"
     ],
     "firstSeenAt": "2026-06-21T10:34:16.176Z",
-    "lastSeenAt": "2026-07-25T08:58:38.386Z"
+    "lastSeenAt": "2026-07-26T09:10:37.690Z"
   },
   {
     "adId": 1073946186,
@@ -6808,6 +6808,26 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/af71e64e-c576-457e-bb61-e18cd11f697d.jpg"
     ],
     "firstSeenAt": "2026-07-25T08:58:38.386Z",
-    "lastSeenAt": "2026-07-25T08:58:38.386Z"
+    "lastSeenAt": "2026-07-26T09:10:37.690Z"
+  },
+  {
+    "adId": 1078525089,
+    "link": "https://re.kufar.by/vi/1078525089",
+    "title": "2 гаража общей площадью 36 квадратных метров",
+    "description": "Продам два рядом стоящих гаража в гаражном кооперативе «Веселка». Общая площадь 36м.кв. Торг при осмотре.",
+    "priceByn": 30000,
+    "priceUsd": 10398,
+    "address": "Богуцкого ул, 11, Гродно, Гродненская область",
+    "area": 36,
+    "seller": "Пользователь",
+    "propertyType": "Гараж",
+    "coordinates": {
+      "lat": 53.712381,
+      "lon": 23.802022
+    },
+    "listTime": "2026-07-25T16:43:34Z",
+    "images": [],
+    "firstSeenAt": "2026-07-26T09:10:37.690Z",
+    "lastSeenAt": "2026-07-26T09:10:37.690Z"
   }
 ]
