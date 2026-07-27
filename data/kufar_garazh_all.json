@@ -4862,7 +4862,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2f8e6e2a-0686-46b6-ab74-415812dc5acf.jpg"
     ],
     "firstSeenAt": "2026-06-19T11:22:46.024Z",
-    "lastSeenAt": "2026-07-21T09:26:09.649Z"
+    "lastSeenAt": "2026-07-27T10:38:09.061Z"
   },
   {
     "adId": 1074045974,
@@ -6828,6 +6828,37 @@
     "listTime": "2026-07-25T16:43:34Z",
     "images": [],
     "firstSeenAt": "2026-07-26T09:10:37.690Z",
-    "lastSeenAt": "2026-07-26T09:10:37.690Z"
+    "lastSeenAt": "2026-07-27T10:38:09.061Z"
+  },
+  {
+    "adId": 1078701108,
+    "link": "https://re.kufar.by/vi/1078701108",
+    "title": "Продам гараж",
+    "description": "Продам гараж в районе Лососно-Новики",
+    "priceByn": 10082,
+    "priceUsd": 3500,
+    "address": "Венечная ул, 2Аблок6к624, Гродно, Гродненская область",
+    "area": 17.5,
+    "seller": "Юра",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Смотровая яма",
+      "Подвал",
+      "Наземная"
+    ],
+    "coordinates": {
+      "lat": 53.66806653644918,
+      "lon": 23.759892735697097
+    },
+    "listTime": "2026-07-27T08:52:47Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c468aa99-e7b5-4c50-b9b7-f028eb7496ab.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1964bb70-df67-447d-9407-421f0ed7c019.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7ad4f7db-348e-4978-9578-ba7ad92e855f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a98a0435-7197-4dfa-9c09-8426fed6a0f9.jpg"
+    ],
+    "firstSeenAt": "2026-07-27T10:38:09.061Z",
+    "lastSeenAt": "2026-07-27T10:38:09.061Z"
   }
 ]
