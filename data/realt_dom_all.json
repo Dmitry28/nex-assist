@@ -1232,7 +1232,7 @@
       "https://cdn.realt.by/img/55/88a5fd2e-0198-11f1-af5e-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-27T11:05:10.591Z"
+    "lastSeenAt": "2026-07-27T09:36:22.433Z"
   },
   {
     "adId": 3930490,
@@ -3004,7 +3004,7 @@
       "https://cdn.realt.by/img/55/8036fdf6-e568-11f0-8ec0-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-19T11:25:14.421Z"
+    "lastSeenAt": "2026-07-27T09:36:22.433Z"
   },
   {
     "adId": 3442299,
@@ -4560,7 +4560,7 @@
       "https://cdn.realt.by/img/55/cdb79422-3ef1-11f1-87cb-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-24T09:37:25.003Z"
+    "lastSeenAt": "2026-07-27T09:36:22.433Z"
   },
   {
     "adId": 3750931,
@@ -5906,7 +5906,7 @@
       "https://static.realt.by/thumb/c/430x374/c5f662a11b216aff1dcebc6285dd1e9e/b7/i/11013c3efib7/93fc9e448f.jpeg"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-24T09:37:25.003Z"
+    "lastSeenAt": "2026-07-27T09:36:22.433Z"
   },
   {
     "adId": 3878873,
@@ -7867,7 +7867,7 @@
       "https://cdn.realt.by/img/55/b3ce98da-9541-11f0-b4b1-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-27T11:05:10.591Z"
+    "lastSeenAt": "2026-07-27T09:36:22.433Z"
   },
   {
     "adId": 3914905,
@@ -9591,7 +9591,7 @@
       "https://static.realt.by/thumb/c/430x374/e1f23b7b238ea278e145778c31630c46/mx/h/site31qpchmx/e7740b4b1d.jpg"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-10T09:57:56.161Z"
+    "lastSeenAt": "2026-07-27T09:36:22.433Z"
   },
   {
     "adId": 3425380,
@@ -9627,14 +9627,14 @@
     "link": "https://realt.by/sale-cottages/object/3390588/",
     "title": "Дорошевичи",
     "description": "Продаётся дом с участком. Газ отопление, газ в доме, Неман 100м,17.69 соток. Электричество",
-    "priceByn": 59191,
-    "priceUsd": 21000,
+    "priceByn": 54730,
+    "priceUsd": 19000,
     "address": "Дорошевичи  20",
     "area": 59.6,
     "areaLiving": 38,
     "plotArea": 17.69,
     "seller": "Илья",
-    "listTime": "2025-08-19T09:21:47+03:00",
+    "listTime": "2026-07-26T18:43:08+03:00",
     "images": [
       "https://cdn.realt.by/img/55/5b01b292-46b8-11ef-b3be-2236ceb6d16d",
       "https://cdn.realt.by/img/55/6d6a7fd6-46b8-11ef-8578-2236ceb6d16d",
@@ -9658,7 +9658,7 @@
       "https://cdn.realt.by/img/55/6bdf202c-46b8-11ef-8613-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-05-09T21:42:42.837Z"
+    "lastSeenAt": "2026-07-27T09:36:22.433Z"
   },
   {
     "adId": 3344281,
@@ -11094,7 +11094,7 @@
       "https://cdn.realt.by/img/55/92ea30f4-5817-11f1-bcee-0242ac120003"
     ],
     "firstSeenAt": "2026-05-25T11:16:47.329Z",
-    "lastSeenAt": "2026-06-06T09:28:48.142Z"
+    "lastSeenAt": "2026-07-27T09:36:22.433Z"
   },
   {
     "adId": 4136565,
@@ -12355,7 +12355,7 @@
       "https://cdn.realt.by/img/55/f7f1b822-6e57-11f1-9672-0242ac120003"
     ],
     "firstSeenAt": "2026-06-23T10:48:28.089Z",
-    "lastSeenAt": "2026-07-24T09:37:25.003Z"
+    "lastSeenAt": "2026-07-27T09:36:22.433Z"
   },
   {
     "adId": 4160483,
@@ -13375,5 +13375,38 @@
     ],
     "firstSeenAt": "2026-07-24T09:37:25.003Z",
     "lastSeenAt": "2026-07-24T09:37:25.003Z"
+  },
+  {
+    "adId": 4191333,
+    "uuid": "8c21d310-8997-11f1-86e8-8f5431bc91bb",
+    "link": "https://realt.by/sale-cottages/object/4191333/",
+    "title": "Дом в д. Коробчицы",
+    "description": "Продается дом в д. Коробчицы, на ул. Дивной. Статус незавершенного законсервированного капитального строения. Участок 14 соток, правильной формы, огорожен с двух сторон. Принадлежит на праве собственности. Дом двухэтажный с мансардным этажом. Площадь первого этажа с подвалом – 208,7 м2. Материал стен – блоки. Перекрытие Ж/Б плита. Установлены окна ПВХ. Все центральные коммуникации на улице. Асфальтированный подъезд практически до дома.",
+    "priceByn": 210277,
+    "priceUsd": 73000,
+    "address": "Коробчицы Дивная ул. 79",
+    "area": 208.7,
+    "plotArea": 14,
+    "seller": "Надежда",
+    "listTime": "2026-07-27T12:07:15+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/18f3c6a0-8997-11f1-82a2-0242ac120002",
+      "https://cdn.realt.by/img/55/19fdb862-8997-11f1-92f8-0242ac120002",
+      "https://cdn.realt.by/img/55/1a4b08c4-8997-11f1-bdd8-0242ac120002",
+      "https://cdn.realt.by/img/55/191229ec-8997-11f1-8bcb-0242ac120002",
+      "https://cdn.realt.by/img/55/1a29b016-8997-11f1-a543-0242ac120002",
+      "https://cdn.realt.by/img/55/1aa99dda-8997-11f1-878d-0242ac120002",
+      "https://cdn.realt.by/img/55/1164c4a2-8997-11f1-9e9d-0242ac120002",
+      "https://cdn.realt.by/img/55/117205d6-8997-11f1-bc0b-0242ac120002",
+      "https://cdn.realt.by/img/55/11679650-8997-11f1-b7b3-0242ac120002",
+      "https://cdn.realt.by/img/55/1179bd12-8997-11f1-a47c-0242ac120002",
+      "https://cdn.realt.by/img/55/1173c808-8997-11f1-9b82-0242ac120002",
+      "https://cdn.realt.by/img/55/116c226a-8997-11f1-81c6-0242ac120002",
+      "https://cdn.realt.by/img/55/113d3e50-8997-11f1-8c0c-0242ac120002",
+      "https://cdn.realt.by/img/55/19a8197a-8997-11f1-903f-0242ac120002",
+      "https://cdn.realt.by/img/55/19e00696-8997-11f1-94fa-0242ac120002"
+    ],
+    "firstSeenAt": "2026-07-27T09:36:22.433Z",
+    "lastSeenAt": "2026-07-27T09:36:22.433Z"
   }
 ]
