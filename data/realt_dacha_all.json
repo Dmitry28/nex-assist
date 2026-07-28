@@ -778,7 +778,7 @@
       "https://cdn.realt.by/img/55/74e31744-5939-11ef-aed3-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-27T09:36:22.438Z"
+    "lastSeenAt": "2026-07-28T09:38:11.358Z"
   },
   {
     "adId": 3901097,
@@ -809,7 +809,7 @@
       "https://cdn.realt.by/img/55/926b4bce-9eb6-11f0-a916-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-27T09:36:22.438Z"
+    "lastSeenAt": "2026-07-28T09:38:11.358Z"
   },
   {
     "adId": 4085116,
@@ -2820,7 +2820,7 @@
       "https://cdn.realt.by/img/55/c604edd0-2888-11f1-8bc5-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-24T09:37:25.009Z"
+    "lastSeenAt": "2026-07-28T09:38:11.358Z"
   },
   {
     "adId": 3780907,
@@ -3513,7 +3513,7 @@
       "https://cdn.realt.by/img/55/bba5158a-2b3b-11f1-b8ab-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-24T09:37:25.009Z"
+    "lastSeenAt": "2026-07-28T09:38:11.358Z"
   },
   {
     "adId": 3986874,
@@ -4454,7 +4454,7 @@
       "https://cdn.realt.by/img/55/5776bc5c-1927-11f0-a87d-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-27T09:36:22.438Z"
+    "lastSeenAt": "2026-07-28T09:38:11.358Z"
   },
   {
     "adId": 3667534,
@@ -5552,7 +5552,7 @@
       "https://cdn.realt.by/img/55/f87a1ea4-56da-11f1-a842-0242ac120003"
     ],
     "firstSeenAt": "2026-05-24T09:22:42.706Z",
-    "lastSeenAt": "2026-07-27T09:36:22.438Z"
+    "lastSeenAt": "2026-07-28T09:38:11.358Z"
   },
   {
     "adId": 4137152,
@@ -6386,7 +6386,7 @@
       "https://cdn.realt.by/img/55/10b6341a-61aa-11f1-a69f-0242ac120003"
     ],
     "firstSeenAt": "2026-06-07T10:05:05.020Z",
-    "lastSeenAt": "2026-07-27T09:36:22.438Z"
+    "lastSeenAt": "2026-07-28T09:38:11.358Z"
   },
   {
     "adId": 4146807,
@@ -6786,7 +6786,7 @@
       "https://cdn.realt.by/img/55/ce009ab2-6ca2-11f1-9595-0242ac120003"
     ],
     "firstSeenAt": "2026-06-21T10:34:44.767Z",
-    "lastSeenAt": "2026-07-27T09:36:22.438Z"
+    "lastSeenAt": "2026-07-28T09:38:11.358Z"
   },
   {
     "adId": 4160198,
@@ -7453,6 +7453,66 @@
       "https://cdn.realt.by/img/55/355f873e-866d-11f1-8972-0242ac120002"
     ],
     "firstSeenAt": "2026-07-24T09:37:25.009Z",
-    "lastSeenAt": "2026-07-24T09:37:25.009Z"
+    "lastSeenAt": "2026-07-28T09:38:11.358Z"
+  },
+  {
+    "adId": 4192356,
+    "uuid": "d0a41b80-8a62-11f1-86e8-8f5431bc91bb",
+    "link": "https://realt.by/sale-dachi/object/4192356/",
+    "title": "Хорошая дача в СТ \"Сантехник\" (Гожский сельсовет)",
+    "description": "Хорошая дача в СТ \"Сантехник\" д. Пальница (Гожский сельсовет)",
+    "priceByn": 68320,
+    "priceUsd": 23700,
+    "address": "Гродно СТ Сантехник",
+    "area": 64.8,
+    "areaLiving": 52.3,
+    "areaKitchen": 10.3,
+    "plotArea": 7,
+    "yearBuilt": 1981,
+    "levels": 2,
+    "seller": "Наталья",
+    "listTime": "2026-07-28T12:03:52+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/cbaf568c-8a60-11f1-ae68-0242ac120002",
+      "https://cdn.realt.by/img/55/e58a8144-8a60-11f1-9477-0242ac120002",
+      "https://cdn.realt.by/img/55/e7e1a4b8-8a60-11f1-9255-0242ac120002",
+      "https://cdn.realt.by/img/55/f122fa22-8a60-11f1-96b8-0242ac120002",
+      "https://cdn.realt.by/img/55/fee704c8-8a60-11f1-9498-0242ac120002",
+      "https://cdn.realt.by/img/55/00d95fba-8a61-11f1-83b7-0242ac120002",
+      "https://cdn.realt.by/img/55/0dad4f6c-8a61-11f1-954c-0242ac120002",
+      "https://cdn.realt.by/img/55/0fad48e4-8a61-11f1-bf84-0242ac120002",
+      "https://cdn.realt.by/img/55/21be0f0a-8a61-11f1-bf94-0242ac120002",
+      "https://cdn.realt.by/img/55/23ec7c44-8a61-11f1-905a-0242ac120002",
+      "https://cdn.realt.by/img/55/2d3e3760-8a61-11f1-9b70-0242ac120002",
+      "https://cdn.realt.by/img/55/2d467f88-8a61-11f1-97aa-0242ac120002",
+      "https://cdn.realt.by/img/55/2f97a5d2-8a61-11f1-9477-0242ac120002"
+    ],
+    "firstSeenAt": "2026-07-28T09:38:11.358Z",
+    "lastSeenAt": "2026-07-28T09:38:11.358Z"
+  },
+  {
+    "adId": 3160385,
+    "uuid": "2c7a88f8-654a-11ee-94e0-525305579d91",
+    "link": "https://realt.by/sale-dachi/object/3160385/",
+    "title": "Меридиан, луговая",
+    "priceByn": 40358,
+    "priceUsd": 14000,
+    "address": "Меридиан луговая 78",
+    "plotArea": 5,
+    "levels": 2,
+    "seller": "Людмила",
+    "listTime": "2026-07-28T10:05:43+03:00",
+    "images": [
+      "https://static.realt.by/thumb/c/430x374/29dd9e69001987923ade761edcfb45f0/3b/t/site326brt3b/288aebe42f.jpg",
+      "https://static.realt.by/thumb/c/430x374/562ee99769b4e2340a80a95d6435aba0/3b/t/site326brt3b/ce4df45cc7.jpg",
+      "https://static.realt.by/thumb/c/430x374/ef82758315fc39d2cea128da42424677/3b/t/site326brt3b/d166bebdd4.jpg",
+      "https://static.realt.by/thumb/c/430x374/4e30e68db314e94974038e6642e9852e/3b/t/site326brt3b/16b4fd9af0.jpg",
+      "https://static.realt.by/thumb/c/430x374/7c768b4839f293887b3f2b7b446e2e59/3b/t/site326brt3b/b16ed6246c.jpg",
+      "https://static.realt.by/thumb/c/430x374/0651aff79ddb930be7f4d164af2abc2b/3b/t/site326brt3b/7586e6dfa0.jpg",
+      "https://static.realt.by/thumb/c/430x374/a41830d70cbd3d5b937a06e235841a9f/3b/t/site326brt3b/17a9ea3185.jpg",
+      "https://static.realt.by/thumb/c/430x374/fa2a1707ea3cafcb95582b25d640b0e5/3b/t/site326brt3b/9cca933aa9.jpg"
+    ],
+    "firstSeenAt": "2026-07-28T09:38:11.358Z",
+    "lastSeenAt": "2026-07-28T09:38:11.358Z"
   }
 ]
