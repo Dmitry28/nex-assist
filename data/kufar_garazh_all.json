@@ -3545,7 +3545,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f2a25bc6-350e-455e-afec-de9b5d894b49.jpg"
     ],
     "firstSeenAt": "2026-05-25T11:15:07.897Z",
-    "lastSeenAt": "2026-07-22T09:36:32.317Z"
+    "lastSeenAt": "2026-07-28T09:37:39.471Z"
   },
   {
     "adId": 1070506297,
@@ -4862,7 +4862,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2f8e6e2a-0686-46b6-ab74-415812dc5acf.jpg"
     ],
     "firstSeenAt": "2026-06-19T11:22:46.024Z",
-    "lastSeenAt": "2026-07-21T09:35:57.590Z"
+    "lastSeenAt": "2026-07-28T09:37:39.471Z"
   },
   {
     "adId": 1074045974,
@@ -6763,7 +6763,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a98a0435-7197-4dfa-9c09-8426fed6a0f9.jpg"
     ],
     "firstSeenAt": "2026-07-27T09:35:51.428Z",
-    "lastSeenAt": "2026-07-27T09:35:51.428Z"
+    "lastSeenAt": "2026-07-28T09:37:39.471Z"
   },
   {
     "adId": 1078525089,
@@ -6784,5 +6784,55 @@
     "images": [],
     "firstSeenAt": "2026-07-27T09:35:51.428Z",
     "lastSeenAt": "2026-07-27T09:35:51.428Z"
+  },
+  {
+    "adId": 1078803759,
+    "link": "https://re.kufar.by/vi/1078803759",
+    "title": "Гараж",
+    "description": "Интересует гараж в районе ул. Краснопартизанской, Мира, Гагарина, Лелявеля.\nВ любом состоянии, с любыми проблемами, можно без ямы, без света, с протек",
+    "address": "Краснопартизанская ул, Гродно, Гродненская область",
+    "area": 18,
+    "seller": "Евгения",
+    "propertyType": "Гараж",
+    "coordinates": {
+      "lat": 53.675407,
+      "lon": 23.813826
+    },
+    "listTime": "2026-07-28T06:52:30Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/abbfb23f-dda6-4fc2-8e43-b22882219438.jpg"
+    ],
+    "firstSeenAt": "2026-07-28T09:37:39.471Z",
+    "lastSeenAt": "2026-07-28T09:37:39.471Z"
+  },
+  {
+    "adId": 1078740403,
+    "link": "https://re.kufar.by/vi/1078740403",
+    "title": "Гараж ул. Звёздная, 47 (мр-н Южный)",
+    "description": "Подвал под всем гаражом, вентиляция, электричество, крыша утеплена.",
+    "priceByn": 22000,
+    "priceUsd": 7632,
+    "address": "Звёздная ул, 47блок2к221, Гродно, Гродненская область",
+    "area": 18.3,
+    "seller": "Николай",
+    "propertyType": "Гараж",
+    "features": [
+      "Наземная",
+      "Отсутствует"
+    ],
+    "coordinates": {
+      "lat": 53.62464370623681,
+      "lon": 23.840195434762478
+    },
+    "listTime": "2026-07-27T14:53:58Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/305f9184-48b0-4090-acdf-9092595832e2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/79776c3c-95f6-4c87-9c82-9c29afc5d1a3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/96fe6e28-0798-40da-94cf-dedd532b9322.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b722bfdb-de91-4dbd-8bc4-c9e8122e07a4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5ed608e7-4e15-47a3-a122-265dbada1e82.jpg"
+    ],
+    "firstSeenAt": "2026-07-28T09:37:39.471Z",
+    "lastSeenAt": "2026-07-28T09:37:39.471Z"
   }
 ]
