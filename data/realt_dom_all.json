@@ -4560,7 +4560,7 @@
       "https://cdn.realt.by/img/55/cdb79422-3ef1-11f1-87cb-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-28T09:38:11.351Z"
+    "lastSeenAt": "2026-07-29T09:36:56.893Z"
   },
   {
     "adId": 3750931,
@@ -5906,7 +5906,7 @@
       "https://static.realt.by/thumb/c/430x374/c5f662a11b216aff1dcebc6285dd1e9e/b7/i/11013c3efib7/93fc9e448f.jpeg"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-28T09:38:11.351Z"
+    "lastSeenAt": "2026-07-29T09:36:56.893Z"
   },
   {
     "adId": 3878873,
@@ -9525,7 +9525,7 @@
       "https://cdn.realt.by/img/55/3720e94a-9c14-11ef-ab2c-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-28T09:38:11.351Z"
+    "lastSeenAt": "2026-07-29T09:36:56.893Z"
   },
   {
     "adId": 3514949,
@@ -12355,7 +12355,7 @@
       "https://cdn.realt.by/img/55/f7f1b822-6e57-11f1-9672-0242ac120003"
     ],
     "firstSeenAt": "2026-06-23T10:48:28.089Z",
-    "lastSeenAt": "2026-07-28T09:38:11.351Z"
+    "lastSeenAt": "2026-07-29T09:36:56.893Z"
   },
   {
     "adId": 4160483,
@@ -13210,7 +13210,7 @@
       "https://cdn.realt.by/img/55/45b7bd44-8501-11f1-ab58-0242ac120002"
     ],
     "firstSeenAt": "2026-07-22T09:37:07.303Z",
-    "lastSeenAt": "2026-07-28T09:38:11.351Z"
+    "lastSeenAt": "2026-07-29T09:36:56.893Z"
   },
   {
     "adId": 4189143,
@@ -13415,8 +13415,8 @@
     "link": "https://realt.by/sale-cottages/object/4181714/",
     "title": "Стильный коттедж с ухоженным участком 12 соток в Южном",
     "description": "В продаже достойный вариант - стильный коттедж с ухоженным участком 12 соток в Южном, Гродно, улица Центральная. Прекрасное сочетание параметров \"цена-качество\".",
-    "priceByn": 716108,
-    "priceUsd": 248416,
+    "priceByn": 714844,
+    "priceUsd": 247556,
     "address": "Гродно Центральная ул. 89",
     "area": 263,
     "areaLiving": 101,
@@ -13479,6 +13479,87 @@
       "https://cdn.realt.by/img/55/0b53eddc-8022-11f1-862a-0242ac120002"
     ],
     "firstSeenAt": "2026-07-28T09:38:11.351Z",
-    "lastSeenAt": "2026-07-28T09:38:11.351Z"
+    "lastSeenAt": "2026-07-29T09:36:56.893Z"
+  },
+  {
+    "adId": 4192910,
+    "uuid": "482806e0-8ac1-11f1-bb03-e160b852bcdb",
+    "link": "https://realt.by/sale-cottages/object/4192910/",
+    "title": "Гродно, Богушовская ул.",
+    "description": "Собственная парковка на 3 авто, установлена зарядка для электромобилей, итальянская широкоформатная керамическая плитка, пол с подогревом на первом этаже и в двух санузлах, бытовая техника и сантехника премиальных марок, два кондиционера, отопление газовое (круглый год горячая вода ), есть система очистки и смягчения воды, сделана дренажная и ливневая система на участке, установлена купель с подогревом и гидромассажем, продается со всем что на фото, очень хорошее местоположение.",
+    "priceByn": 650000,
+    "priceUsd": 225100,
+    "address": "Гродно Богушовская ул. 5 1",
+    "area": 109.8,
+    "areaLiving": 87.1,
+    "plotArea": 2,
+    "yearBuilt": 2021,
+    "levels": 2,
+    "seller": "Павел",
+    "listTime": "2026-07-29T09:44:02+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/cc352676-8ac0-11f1-8729-0242ac120002",
+      "https://cdn.realt.by/img/55/cc28d7ea-8ac0-11f1-a5dd-0242ac120002",
+      "https://cdn.realt.by/img/55/cc2fe8d2-8ac0-11f1-8cec-0242ac120002",
+      "https://cdn.realt.by/img/55/cc37e00a-8ac0-11f1-adcc-0242ac120002",
+      "https://cdn.realt.by/img/55/cc395822-8ac0-11f1-946c-0242ac120002",
+      "https://cdn.realt.by/img/55/cc387fe2-8ac0-11f1-8dd3-0242ac120002",
+      "https://cdn.realt.by/img/55/cc39c032-8ac0-11f1-9530-0242ac120002",
+      "https://cdn.realt.by/img/55/cc3a782e-8ac0-11f1-afa1-0242ac120002",
+      "https://cdn.realt.by/img/55/cc3ad7e2-8ac0-11f1-924b-0242ac120002",
+      "https://cdn.realt.by/img/55/cc39e1f2-8ac0-11f1-89bf-0242ac120002",
+      "https://cdn.realt.by/img/55/cc3c5acc-8ac0-11f1-a80f-0242ac120002",
+      "https://cdn.realt.by/img/55/cc3bb5c2-8ac0-11f1-97db-0242ac120002",
+      "https://cdn.realt.by/img/55/cc3c1422-8ac0-11f1-9146-0242ac120002",
+      "https://cdn.realt.by/img/55/cc3be20e-8ac0-11f1-9790-0242ac120002",
+      "https://cdn.realt.by/img/55/cc3d3dfc-8ac0-11f1-8ea3-0242ac120002",
+      "https://cdn.realt.by/img/55/cc3d9fe0-8ac0-11f1-b534-0242ac120002",
+      "https://cdn.realt.by/img/55/cc3d41d0-8ac0-11f1-8465-0242ac120002",
+      "https://cdn.realt.by/img/55/cc3e594e-8ac0-11f1-bcbb-0242ac120002",
+      "https://cdn.realt.by/img/55/cc3fd724-8ac0-11f1-aab2-0242ac120002",
+      "https://cdn.realt.by/img/55/cc40f924-8ac0-11f1-84cf-0242ac120002"
+    ],
+    "firstSeenAt": "2026-07-29T09:36:56.893Z",
+    "lastSeenAt": "2026-07-29T09:36:56.893Z"
+  },
+  {
+    "adId": 4192711,
+    "uuid": "14b0cff0-8a98-11f1-86e8-8f5431bc91bb",
+    "link": "https://realt.by/sale-cottages/object/4192711/",
+    "title": "Дом в Гродно, ул. Тарусичская (м-н Барановичи-2)",
+    "description": "Тихое экологически чистое место. Удобный подъездной путь – асфальт к самому дому. Развивающаяся инфраструктура для комфортного проживания.",
+    "priceByn": 216203,
+    "priceUsd": 74873,
+    "address": "Гродно Тарусичская ул.",
+    "area": 81,
+    "areaLiving": 52,
+    "areaKitchen": 7.8,
+    "plotArea": 15,
+    "yearBuilt": 1979,
+    "levels": 1,
+    "seller": "Дарья",
+    "listTime": "2026-07-29T11:23:19+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/6a894f3e-8a97-11f1-980e-0242ac120002",
+      "https://cdn.realt.by/img/55/6a94bb08-8a97-11f1-b5f3-0242ac120002",
+      "https://cdn.realt.by/img/55/6dba80ec-8a97-11f1-b045-0242ac120002",
+      "https://cdn.realt.by/img/55/6dc909d2-8a97-11f1-a74f-0242ac120002",
+      "https://cdn.realt.by/img/55/71fef5d4-8a97-11f1-bf8d-0242ac120002",
+      "https://cdn.realt.by/img/55/7212d57c-8a97-11f1-8bad-0242ac120002",
+      "https://cdn.realt.by/img/55/75442a0c-8a97-11f1-91c5-0242ac120002",
+      "https://cdn.realt.by/img/55/754e5860-8a97-11f1-ba64-0242ac120002",
+      "https://cdn.realt.by/img/55/7883229a-8a97-11f1-8695-0242ac120002",
+      "https://cdn.realt.by/img/55/7be57ec4-8a97-11f1-aa13-0242ac120002",
+      "https://cdn.realt.by/img/55/7bf37362-8a97-11f1-9e3d-0242ac120002",
+      "https://cdn.realt.by/img/55/7f55e710-8a97-11f1-a9df-0242ac120002",
+      "https://cdn.realt.by/img/55/7f6025ae-8a97-11f1-8b17-0242ac120002",
+      "https://cdn.realt.by/img/55/828ecaaa-8a97-11f1-bcb7-0242ac120002",
+      "https://cdn.realt.by/img/55/861156e8-8a97-11f1-ae0e-0242ac120002",
+      "https://cdn.realt.by/img/55/8623ee34-8a97-11f1-af2f-0242ac120002",
+      "https://cdn.realt.by/img/55/8972b02a-8a97-11f1-9527-0242ac120002",
+      "https://cdn.realt.by/img/55/8980cb24-8a97-11f1-ae80-0242ac120002"
+    ],
+    "firstSeenAt": "2026-07-29T09:36:56.893Z",
+    "lastSeenAt": "2026-07-29T09:36:56.893Z"
   }
 ]

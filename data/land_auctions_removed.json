@@ -1,1 +1,39 @@
-[]
+[
+  {
+    "title": "Земельный участок по ул. Сергея Гребченко, 23",
+    "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-sergeya-grebchenko-23/",
+    "price": "46 772,00 руб.",
+    "area": "0,112 га",
+    "address": "г. Гродно, ул. Сергея Гребченко, 23",
+    "cadastralNumber": "440100000002013005",
+    "cadastralMapUrl": "https://map.nca.by/search/019df817-de37-7063-90ae-3cabf42f4a58",
+    "auctionDate": "Аукцион состоится 28.07.2026",
+    "applicationDeadline": "Заявления принимаются по 22.07.2026",
+    "communications": "электроснабжение, газоснабжение, водоснабжение",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/05/grebchenko-23-sajt.png"
+    ],
+    "salePrice": "111,5 тыс. руб."
+  },
+  {
+    "title": "Не завершённый строительством жилой дом по ул. Заблоцкого, 9",
+    "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-zabloczkogo-9/",
+    "price": "55 444,79 руб.",
+    "area": "0,1224 га",
+    "address": "г. Гродно, У-1443 в микрорайоне «Зарица-4», ул. Заблоцкого, 9",
+    "cadastralNumber": "440100000003004267",
+    "cadastralMapUrl": "https://map.nca.by/search/019df72f-9056-70c7-b5ea-4506df8349b7",
+    "auctionDate": "Аукцион состоится 28.07.2026",
+    "applicationDeadline": "Заявления принимаются по 22.07.2026",
+    "communications": "Не указаны",
+    "images": [
+      "https://gcn.by/wp-content/uploads/2026/05/u-1443-zabloczkogo-zaricza-sajt-4.png",
+      "https://gcn.by/wp-content/uploads/2026/05/u-1443-zabloczkogo-zaricza-sajt-1.png",
+      "https://gcn.by/wp-content/uploads/2026/05/u-1443-zabloczkogo-zaricza-sajt-2.png",
+      "https://gcn.by/wp-content/uploads/2026/05/u-1443-zabloczkogo-zaricza-sajt-3.png",
+      "https://gcn.by/wp-content/uploads/2026/05/u-1443-zabloczkogo-zaricza-sajt-4.png",
+      "https://gcn.by/wp-content/uploads/2026/05/u-1443-zabloczkogo-zaricza-sajt-1.png"
+    ],
+    "salePrice": "75,5 тыс. руб."
+  }
+]
