@@ -2820,7 +2820,7 @@
       "https://cdn.realt.by/img/55/c604edd0-2888-11f1-8bc5-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-28T09:37:13.528Z"
+    "lastSeenAt": "2026-07-29T09:37:12.929Z"
   },
   {
     "adId": 3780907,
@@ -3513,7 +3513,7 @@
       "https://cdn.realt.by/img/55/bba5158a-2b3b-11f1-b8ab-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-28T09:37:13.528Z"
+    "lastSeenAt": "2026-07-29T09:37:12.929Z"
   },
   {
     "adId": 3986874,
@@ -5552,7 +5552,7 @@
       "https://cdn.realt.by/img/55/f87a1ea4-56da-11f1-a842-0242ac120003"
     ],
     "firstSeenAt": "2026-05-24T09:22:42.706Z",
-    "lastSeenAt": "2026-07-28T09:37:13.528Z"
+    "lastSeenAt": "2026-07-29T09:37:12.929Z"
   },
   {
     "adId": 4137152,
@@ -6786,7 +6786,7 @@
       "https://cdn.realt.by/img/55/ce009ab2-6ca2-11f1-9595-0242ac120003"
     ],
     "firstSeenAt": "2026-06-21T10:34:44.767Z",
-    "lastSeenAt": "2026-07-28T09:37:13.528Z"
+    "lastSeenAt": "2026-07-29T09:37:12.929Z"
   },
   {
     "adId": 4160198,
@@ -6931,8 +6931,8 @@
     "link": "https://realt.by/sale-dachi/object/4167255/",
     "title": "Домостроитель",
     "description": "Продается земельный участок (частная собственность) с домиком в СТ \"Домостроитель\" Подлабенского с/с в районе деревни Тарусичи в 5 км от г. Гродно.",
-    "priceByn": 33000,
-    "priceUsd": 11435,
+    "priceByn": 30000,
+    "priceUsd": 10389,
     "address": "Домостроитель  21",
     "area": 36.1,
     "areaKitchen": 6.7,
@@ -6940,7 +6940,7 @@
     "yearBuilt": 1986,
     "levels": 1,
     "seller": "Кватэра",
-    "listTime": "2026-06-29T13:25:56+03:00",
+    "listTime": "2026-07-29T11:15:46+03:00",
     "images": [
       "https://cdn.realt.by/img/55/a6a5dcfa-739d-11f1-b052-0242ac120003",
       "https://cdn.realt.by/img/55/a2ecf04e-739d-11f1-8210-0242ac120003",
@@ -6952,7 +6952,7 @@
       "https://cdn.realt.by/img/55/ac11afa2-739d-11f1-bd2b-0242ac120003"
     ],
     "firstSeenAt": "2026-06-29T11:58:34.419Z",
-    "lastSeenAt": "2026-06-30T10:32:07.125Z"
+    "lastSeenAt": "2026-07-29T09:37:12.929Z"
   },
   {
     "adId": 4169102,
@@ -7346,16 +7346,18 @@
     "uuid": "4799ab50-8668-11f1-bb03-e160b852bcdb",
     "link": "https://realt.by/sale-dachi/object/4188518/",
     "title": "Гродно",
-    "description": "Дача Химик Азот в черте года Дом 2 этажа Кирпичный дом . печь Есть шараж .Сад",
-    "priceByn": 43280,
-    "priceUsd": 15000,
+    "description": "Дача Химик Азот в черте города Дом 2 этаж мансандра Кирпичный дом . печь Есть гараж .Сад. электроплуг.",
+    "priceByn": 35000,
+    "priceUsd": 12121,
     "address": "Гродно",
+    "areaLiving": 25,
     "plotArea": 8,
+    "yearBuilt": 1999,
     "seller": "Анатолий Петрович",
-    "listTime": "2026-07-24T15:05:08+03:00",
+    "listTime": "2026-07-29T11:51:50+03:00",
     "images": [],
     "firstSeenAt": "2026-07-23T09:23:52.396Z",
-    "lastSeenAt": "2026-07-26T09:10:52.760Z"
+    "lastSeenAt": "2026-07-29T09:37:12.929Z"
   },
   {
     "adId": 4188106,
@@ -7498,7 +7500,7 @@
       "https://cdn.realt.by/img/55/355f873e-866d-11f1-8972-0242ac120002"
     ],
     "firstSeenAt": "2026-07-24T09:18:52.616Z",
-    "lastSeenAt": "2026-07-28T09:37:13.528Z"
+    "lastSeenAt": "2026-07-29T09:37:12.929Z"
   },
   {
     "adId": 4189842,
@@ -7622,7 +7624,7 @@
       "https://cdn.realt.by/img/55/2f97a5d2-8a61-11f1-9477-0242ac120002"
     ],
     "firstSeenAt": "2026-07-28T09:37:13.528Z",
-    "lastSeenAt": "2026-07-28T09:37:13.528Z"
+    "lastSeenAt": "2026-07-29T09:37:12.929Z"
   },
   {
     "adId": 3160385,
@@ -7647,6 +7649,6 @@
       "https://static.realt.by/thumb/c/430x374/fa2a1707ea3cafcb95582b25d640b0e5/3b/t/site326brt3b/9cca933aa9.jpg"
     ],
     "firstSeenAt": "2026-07-28T09:37:13.528Z",
-    "lastSeenAt": "2026-07-28T09:37:13.528Z"
+    "lastSeenAt": "2026-07-29T09:37:12.929Z"
   }
 ]
