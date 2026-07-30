@@ -3513,7 +3513,7 @@
       "https://cdn.realt.by/img/55/bba5158a-2b3b-11f1-b8ab-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-29T09:36:56.899Z"
+    "lastSeenAt": "2026-07-30T09:51:29.974Z"
   },
   {
     "adId": 3986874,
@@ -5552,7 +5552,7 @@
       "https://cdn.realt.by/img/55/f87a1ea4-56da-11f1-a842-0242ac120003"
     ],
     "firstSeenAt": "2026-05-24T09:22:42.706Z",
-    "lastSeenAt": "2026-07-29T09:36:56.899Z"
+    "lastSeenAt": "2026-07-30T09:51:29.974Z"
   },
   {
     "adId": 4137152,
@@ -6786,7 +6786,7 @@
       "https://cdn.realt.by/img/55/ce009ab2-6ca2-11f1-9595-0242ac120003"
     ],
     "firstSeenAt": "2026-06-21T10:34:44.767Z",
-    "lastSeenAt": "2026-07-29T09:36:56.899Z"
+    "lastSeenAt": "2026-07-30T09:51:29.974Z"
   },
   {
     "adId": 4160198,
@@ -6952,7 +6952,7 @@
       "https://cdn.realt.by/img/55/ac11afa2-739d-11f1-bd2b-0242ac120003"
     ],
     "firstSeenAt": "2026-06-29T11:58:34.419Z",
-    "lastSeenAt": "2026-07-29T09:36:56.899Z"
+    "lastSeenAt": "2026-07-30T09:51:29.974Z"
   },
   {
     "adId": 4169102,
@@ -7312,7 +7312,7 @@
     "listTime": "2026-07-29T11:51:50+03:00",
     "images": [],
     "firstSeenAt": "2026-07-23T09:37:27.102Z",
-    "lastSeenAt": "2026-07-29T09:36:56.899Z"
+    "lastSeenAt": "2026-07-30T09:51:29.974Z"
   },
   {
     "adId": 4188106,
@@ -7490,7 +7490,7 @@
       "https://cdn.realt.by/img/55/2f97a5d2-8a61-11f1-9477-0242ac120002"
     ],
     "firstSeenAt": "2026-07-28T09:38:11.358Z",
-    "lastSeenAt": "2026-07-29T09:36:56.899Z"
+    "lastSeenAt": "2026-07-30T09:51:29.974Z"
   },
   {
     "adId": 3160385,
@@ -7516,5 +7516,50 @@
     ],
     "firstSeenAt": "2026-07-28T09:38:11.358Z",
     "lastSeenAt": "2026-07-29T09:36:56.899Z"
+  },
+  {
+    "adId": 4194004,
+    "uuid": "9822deb0-8bf0-11f1-9e06-4dda8b151f60",
+    "link": "https://realt.by/sale-dachi/object/4194004/",
+    "title": "Современный дачный дом в СТ Татарка в 8 км от Гродно",
+    "description": "Современный дачный дом в СТ «Татарка» в 8 км от Гродно. Живописное и экологически чистое место в окружении сосен. Удобный подъездной путь: асфальт и 100 м. по гравийной дороге. Недалеко остановка пригородного транспорта, сообщение — в сезон (апрель-ноябрь).",
+    "priceByn": 151130,
+    "priceUsd": 52001,
+    "address": "Татарка",
+    "area": 75.9,
+    "plotArea": 6,
+    "yearBuilt": 2017,
+    "levels": 2,
+    "seller": "Антон",
+    "listTime": "2026-07-30T11:28:17+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/23e8688a-8bf0-11f1-bb31-5ad387a4d818",
+      "https://cdn.realt.by/img/55/2423b570-8bf0-11f1-b529-5ad387a4d818",
+      "https://cdn.realt.by/img/55/27a4d526-8bf0-11f1-ab4a-5ad387a4d818",
+      "https://cdn.realt.by/img/55/27b0ac2a-8bf0-11f1-96b5-5ad387a4d818",
+      "https://cdn.realt.by/img/55/2b876816-8bf0-11f1-86b3-5ad387a4d818",
+      "https://cdn.realt.by/img/55/2b95fb4c-8bf0-11f1-97ba-5ad387a4d818",
+      "https://cdn.realt.by/img/55/2f541e30-8bf0-11f1-8327-5ad387a4d818",
+      "https://cdn.realt.by/img/55/2f58c1a6-8bf0-11f1-9f75-5ad387a4d818",
+      "https://cdn.realt.by/img/55/328892d4-8bf0-11f1-a046-5ad387a4d818",
+      "https://cdn.realt.by/img/55/363e6b06-8bf0-11f1-9d30-5ad387a4d818",
+      "https://cdn.realt.by/img/55/36571dc2-8bf0-11f1-8435-5ad387a4d818",
+      "https://cdn.realt.by/img/55/3a40eeae-8bf0-11f1-bef0-5ad387a4d818",
+      "https://cdn.realt.by/img/55/3a56bb3a-8bf0-11f1-823c-5ad387a4d818",
+      "https://cdn.realt.by/img/55/42538552-8bf0-11f1-bf1c-5ad387a4d818",
+      "https://cdn.realt.by/img/55/46d765f8-8bf0-11f1-a773-5ad387a4d818",
+      "https://cdn.realt.by/img/55/46eab5f4-8bf0-11f1-911a-5ad387a4d818",
+      "https://cdn.realt.by/img/55/4a8e92b6-8bf0-11f1-9ae3-5ad387a4d818",
+      "https://cdn.realt.by/img/55/4aa38ea0-8bf0-11f1-a31d-5ad387a4d818",
+      "https://cdn.realt.by/img/55/4da86e5e-8bf0-11f1-ad20-5ad387a4d818",
+      "https://cdn.realt.by/img/55/5222ff3a-8bf0-11f1-9354-eeba2c24f1ee",
+      "https://cdn.realt.by/img/55/523199d2-8bf0-11f1-b43c-eeba2c24f1ee",
+      "https://cdn.realt.by/img/55/56a060fc-8bf0-11f1-b29c-eeba2c24f1ee",
+      "https://cdn.realt.by/img/55/56a9ceee-8bf0-11f1-89ee-eeba2c24f1ee",
+      "https://cdn.realt.by/img/55/5b2dcf38-8bf0-11f1-9639-eeba2c24f1ee",
+      "https://cdn.realt.by/img/55/5e3d36fa-8bf0-11f1-bcb7-eeba2c24f1ee"
+    ],
+    "firstSeenAt": "2026-07-30T09:51:29.974Z",
+    "lastSeenAt": "2026-07-30T09:51:29.974Z"
   }
 ]
