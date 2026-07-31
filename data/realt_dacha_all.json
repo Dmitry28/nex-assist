@@ -2174,14 +2174,14 @@
     "link": "https://realt.by/sale-dachi/object/4042791/",
     "title": "дача в Гродненской области, Коптёвский с/с СТ Планета",
     "description": "Продается дача в Гродненской области, Коптёвский с/с СТ Планета , расположенный на участке площадью 5,23 сотки. Площадь дачи 42.2 м2.",
-    "priceByn": 41997,
-    "priceUsd": 14900,
+    "priceByn": 37000,
+    "priceUsd": 12700,
     "address": "Планета",
     "area": 42.2,
     "plotArea": 5.2,
     "yearBuilt": 2002,
     "seller": "Александр Г.",
-    "listTime": "2026-04-17T12:02:44+03:00",
+    "listTime": "2026-07-30T17:31:45+03:00",
     "images": [
       "https://cdn.realt.by/img/55/8c3a4a42-0cc6-11f1-9cf0-0242ac120002",
       "https://cdn.realt.by/img/55/8c34d03a-0cc6-11f1-b955-0242ac120002",
@@ -2198,7 +2198,7 @@
       "https://cdn.realt.by/img/55/8b03d454-0cc6-11f1-9192-0242ac120002"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-06-19T11:25:14.427Z"
+    "lastSeenAt": "2026-07-31T09:41:06.489Z"
   },
   {
     "adId": 4069360,
@@ -3513,7 +3513,7 @@
       "https://cdn.realt.by/img/55/bba5158a-2b3b-11f1-b8ab-0242ac120003"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-07-30T09:29:31.847Z"
+    "lastSeenAt": "2026-07-31T09:41:06.489Z"
   },
   {
     "adId": 3986874,
@@ -5552,7 +5552,7 @@
       "https://cdn.realt.by/img/55/f87a1ea4-56da-11f1-a842-0242ac120003"
     ],
     "firstSeenAt": "2026-05-24T09:22:42.706Z",
-    "lastSeenAt": "2026-07-30T09:29:31.847Z"
+    "lastSeenAt": "2026-07-31T09:41:06.489Z"
   },
   {
     "adId": 4137152,
@@ -6786,7 +6786,7 @@
       "https://cdn.realt.by/img/55/ce009ab2-6ca2-11f1-9595-0242ac120003"
     ],
     "firstSeenAt": "2026-06-21T10:34:44.767Z",
-    "lastSeenAt": "2026-07-30T09:29:31.847Z"
+    "lastSeenAt": "2026-07-31T09:41:06.489Z"
   },
   {
     "adId": 4160198,
@@ -7694,6 +7694,6 @@
       "https://cdn.realt.by/img/55/5e3d36fa-8bf0-11f1-bcb7-eeba2c24f1ee"
     ],
     "firstSeenAt": "2026-07-30T09:29:31.847Z",
-    "lastSeenAt": "2026-07-30T09:29:31.847Z"
+    "lastSeenAt": "2026-07-31T09:41:06.489Z"
   }
 ]
