@@ -47,7 +47,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fdb0ade4-68b9-46fe-8753-7a5fb7b410ca.jpg"
     ],
     "firstSeenAt": "2026-03-26T09:58:07.158Z",
-    "lastSeenAt": "2026-07-25T08:58:38.386Z"
+    "lastSeenAt": "2026-08-01T09:04:20.161Z"
   },
   {
     "adId": 1062002915,
@@ -918,7 +918,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca7987d4-c9dc-4301-983f-20329c5638d6.jpg"
     ],
     "firstSeenAt": "2026-04-07T08:31:10.678Z",
-    "lastSeenAt": "2026-07-31T09:40:30.905Z"
+    "lastSeenAt": "2026-08-01T09:04:20.161Z"
   },
   {
     "adId": 1063807131,
@@ -4214,7 +4214,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8a386549-f83e-43c1-b32e-528c46893a36.jpg"
     ],
     "firstSeenAt": "2026-06-05T10:56:44.239Z",
-    "lastSeenAt": "2026-07-31T09:40:30.905Z"
+    "lastSeenAt": "2026-08-01T09:04:20.161Z"
   },
   {
     "adId": 1071926844,
@@ -4996,7 +4996,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f178d8d7-4e75-4dda-87f4-50a4d843577a.jpg"
     ],
     "firstSeenAt": "2026-06-21T10:34:16.176Z",
-    "lastSeenAt": "2026-07-26T09:10:37.690Z"
+    "lastSeenAt": "2026-08-01T09:04:20.161Z"
   },
   {
     "adId": 1073946186,
@@ -5382,7 +5382,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3edddf4b-a58b-4dd4-8e8f-3cbec5f6c916.jpg"
     ],
     "firstSeenAt": "2026-06-29T11:58:03.521Z",
-    "lastSeenAt": "2026-07-31T09:40:30.905Z"
+    "lastSeenAt": "2026-08-01T09:04:20.161Z"
   },
   {
     "adId": 1075129097,
@@ -7054,7 +7054,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c2b5f4b0-b144-496b-824d-803f365a79af.jpg"
     ],
     "firstSeenAt": "2026-07-30T09:28:53.997Z",
-    "lastSeenAt": "2026-07-31T09:40:30.905Z"
+    "lastSeenAt": "2026-08-01T09:04:20.161Z"
   },
   {
     "adId": 1079175446,
@@ -7075,5 +7075,78 @@
     "images": [],
     "firstSeenAt": "2026-07-31T09:40:30.905Z",
     "lastSeenAt": "2026-07-31T09:40:30.905Z"
+  },
+  {
+    "adId": 1079224184,
+    "link": "https://re.kufar.by/vi/1079224184",
+    "title": "Гараж металлический",
+    "description": "Гараж металлический 4х6 метров без места. (на утилизацию).\nЗвонить",
+    "address": "Гродно, Гродненская область",
+    "area": 24,
+    "seller": "МВ",
+    "propertyType": "Гараж",
+    "coordinates": {
+      "lat": 53.677839,
+      "lon": 23.829529
+    },
+    "listTime": "2026-07-31T16:11:24Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3c1989a6-d1c1-482a-b15f-5ec26e4733d1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c8e3f670-bdf7-41b4-bf1a-32eca9e32386.jpg"
+    ],
+    "firstSeenAt": "2026-08-01T09:04:20.161Z",
+    "lastSeenAt": "2026-08-01T09:04:20.161Z"
+  },
+  {
+    "adId": 1079217789,
+    "link": "https://re.kufar.by/vi/1079217789",
+    "title": "Продам гараж",
+    "description": "Продам гараж в ГСК Фолюш. Гараж сухой, под всем гаражом подвал, удобный заезд. Высота ворот 2.5м.Размер 3.47*6.04.",
+    "priceByn": 37873,
+    "priceUsd": 13000,
+    "address": "Суворова ул, 141блок17к1780, Гродно, Гродненская область",
+    "area": 21,
+    "seller": "Денис",
+    "propertyType": "Гараж",
+    "coordinates": {
+      "lat": 53.648233,
+      "lon": 23.776286
+    },
+    "listTime": "2026-07-31T15:18:09Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c5d9f148-e729-4b66-8daf-8df29f7539ad.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e5fd9f8f-ad19-4e00-9612-ad6c17af4ea4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f4dc2874-93ba-4c56-ac69-64eb0241ab6c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/62a8a956-ce43-4232-9033-3ca86a9d5129.jpg"
+    ],
+    "firstSeenAt": "2026-08-01T09:04:20.161Z",
+    "lastSeenAt": "2026-08-01T09:04:20.161Z"
+  },
+  {
+    "adId": 1079218527,
+    "link": "https://re.kufar.by/vi/1079218527",
+    "title": "Гараж, проспект космонавтов",
+    "description": "Продам гараж, номер 746 , блок 10А \nТребует частичных вложений, козырек, крыша.\nИмеется яма, электричество, счетчик.",
+    "priceByn": 16023,
+    "priceUsd": 5500,
+    "address": "Космонавтов пр, 68Б, Гродно, Гродненская область",
+    "area": 17.5,
+    "seller": "Andrei",
+    "propertyType": "Гараж",
+    "features": [
+      "Электричество 220В",
+      "Отсутствует"
+    ],
+    "coordinates": {
+      "lat": 53.675636,
+      "lon": 23.871543
+    },
+    "listTime": "2026-07-31T14:44:09Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b83bb883-17bc-431e-986e-836a307ec8b1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e15e8a93-f48d-403c-931e-e373bfd03099.jpg"
+    ],
+    "firstSeenAt": "2026-08-01T09:04:20.161Z",
+    "lastSeenAt": "2026-08-01T09:04:20.161Z"
   }
 ]
