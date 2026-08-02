@@ -24,29 +24,43 @@ import type { TownhouseListing } from './dto/townhouse-listing.dto';
 export class TownhousesPrometrParserService {
   private readonly logger = new Logger(TownhousesPrometrParserService.name);
 
-  /** Fetches every unit on sale in one complex. */
-  async fetchComplex(complexUrl: string, complexName: string): Promise<TownhouseListing[]> {
+  /**
+   * Fetches every unit on sale in one complex.
+   *
+   * `degraded` is true when any page failed to load, so the caller can report the source as
+   * unavailable instead of as "0 units" — a down site and a sold-out complex look identical
+   * otherwise.
+   */
+  async fetchComplex(
+    complexUrl: string,
+    complexName: string,
+  ): Promise<{ listings: TownhouseListing[]; degraded: boolean }> {
     const complexHtml = await this.fetchHtml(complexUrl);
-    if (!complexHtml) return [];
+    if (!complexHtml) return { listings: [], degraded: true };
 
     const buildings = extractBuildingLinks(complexHtml, complexUrl);
     if (buildings.length === 0) {
+      // Not degraded: a complex with nothing left to sell legitimately lists no buildings.
       this.logger.warn(`${complexName}: no building pages found on ${complexUrl}`);
-      return [];
+      return { listings: [], degraded: false };
     }
 
     const listings: TownhouseListing[] = [];
+    let degraded = false;
     for (const [i, path] of buildings.slice(0, MAX_BUILDINGS_PER_COMPLEX).entries()) {
       if (i > 0) await sleep(INTER_PAGE_DELAY_MS);
       const html = await this.fetchHtml(`${PROMETR_ORIGIN}${path}`);
-      if (!html) continue;
+      if (!html) {
+        degraded = true;
+        continue;
+      }
       listings.push(...parseUnits(html, complexName));
     }
 
     this.logger.log(
       `${complexName}: ${buildings.length} building(s), ${listings.length} unit(s) on sale`,
     );
-    return listings;
+    return { listings, degraded };
   }
 
   private async fetchHtml(url: string): Promise<string | null> {

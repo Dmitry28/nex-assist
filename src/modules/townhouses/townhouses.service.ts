@@ -132,38 +132,52 @@ export class TownhousesService {
       () =>
         this.guard('prometr', async () => {
           const all: TownhouseListing[] = [];
-          for (const c of complexes) all.push(...(await this.prometr.fetchComplex(c.url, c.name)));
-          return all;
+          let degraded = false;
+          for (const c of complexes) {
+            const r = await this.prometr.fetchComplex(c.url, c.name);
+            all.push(...r.listings);
+            degraded ||= r.degraded;
+          }
+          return { listings: all, degraded };
         }),
       () =>
-        this.guard('kufar', async () =>
-          fromKufar((await this.kufar.fetchFeed(url('kufarUrl'))).listings),
-        ),
+        this.guard('kufar', async () => {
+          const r = await this.kufar.fetchFeed(url('kufarUrl'));
+          return { listings: fromKufar(r.listings), degraded: r.truncated };
+        }),
       () =>
-        this.guard('realt', async () =>
-          fromRealt((await this.realt.fetchFeed(url('realtUrl'), 'sale-cottages')).listings),
-        ),
+        this.guard('realt', async () => {
+          const r = await this.realt.fetchFeed(url('realtUrl'), 'sale-cottages');
+          return { listings: fromRealt(r.listings), degraded: r.truncated };
+        }),
       () =>
-        this.guard('kufar-flats', async () =>
-          fromKufar((await this.kufar.fetchFeed(url('kufarFlatsUrl'))).listings).filter(keepTown),
-        ),
+        this.guard('kufar-flats', async () => {
+          const r = await this.kufar.fetchFeed(url('kufarFlatsUrl'));
+          return { listings: fromKufar(r.listings).filter(keepTown), degraded: r.truncated };
+        }),
       () =>
-        this.guard('realt-flats', async () =>
-          fromRealt(
-            (await this.realt.fetchFeed(url('realtFlatsUrl'), 'sale-flats')).listings,
-          ).filter(keepTown),
-        ),
+        this.guard('realt-flats', async () => {
+          const r = await this.realt.fetchFeed(url('realtFlatsUrl'), 'sale-flats');
+          return { listings: fromRealt(r.listings).filter(keepTown), degraded: r.truncated };
+        }),
     ];
   }
 
+  /**
+   * Runs one source. `failed` covers both a thrown error and a degraded fetch — the parsers
+   * swallow HTTP errors and return an empty list, so without the degraded signal a dead site
+   * would be indistinguishable from one with nothing on it.
+   */
   private async guard(
     source: string,
-    fetchAll: () => Promise<TownhouseListing[]>,
+    fetchAll: () => Promise<{ listings: TownhouseListing[]; degraded: boolean }>,
   ): Promise<{ source: string; listings: TownhouseListing[]; failed: boolean }> {
     try {
-      const listings = await fetchAll();
-      this.logger.log(`Source ${source}: ${listings.length} listing(s)`);
-      return { source, listings, failed: false };
+      const { listings, degraded } = await fetchAll();
+      this.logger.log(
+        `Source ${source}: ${listings.length} listing(s)${degraded ? ' [DEGRADED]' : ''}`,
+      );
+      return { source, listings, failed: degraded };
     } catch (error) {
       // Swallowed on purpose: one dead source must not abort the others, and reporting it as
       // `failed` keeps the diff from reading its absence as listings being withdrawn.
@@ -199,7 +213,10 @@ export class TownhousesService {
           updated.set(listing.uid, { ...listing, firstSeenAt: prev.firstSeenAt, lastSeenAt: now });
         else updated.set(listing.uid, { ...prev, lastSeenAt: now });
       } else {
-        updated.set(listing.uid, { ...prev, lastSeenAt: now });
+        // Re-seen at the same price: refresh the whole record rather than only the timestamp.
+        // Keeping `...prev` would freeze title, address and photos at whatever the first run
+        // captured, so a corrected mapping or an edited ad would never reach the snapshot.
+        updated.set(listing.uid, { ...listing, firstSeenAt: prev.firstSeenAt, lastSeenAt: now });
       }
     }
 
@@ -211,8 +228,7 @@ export class TownhousesService {
 // ─── Pure helpers ─────────────────────────────────────────────────────────────
 
 const keepTown = (l: TownhouseListing): boolean =>
-  matchesKeywords(l.title, TOWNHOUSE_KEYWORDS) ||
-  matchesKeywords(l.address ?? '', TOWNHOUSE_KEYWORDS);
+  matchesKeywords([l.title, l.description ?? '', l.address ?? ''].join(' '), TOWNHOUSE_KEYWORDS);
 
 /**
  * Same property on two sites → one entry. Prefers whichever source was collected first.
@@ -272,6 +288,7 @@ export const fromRealt = (
     link: string;
     title: string;
     description?: string;
+    address?: string;
     priceByn?: number;
     priceUsd?: number;
     area?: number;
@@ -290,6 +307,7 @@ export const fromRealt = (
     area: l.area,
     plotArea: l.plotArea,
     rooms: l.rooms,
-    address: l.description,
+    address: l.address,
+    description: l.description,
     images: l.images,
   }));
