@@ -55,7 +55,7 @@
     "cron": "^4.4.0",
     "helmet": "^8.1.0",
     "joi": "^18.1.1",
-    "node-telegram-bot-api": "^0.67.0",
+    "node-telegram-bot-api": "^1.2.0",
     "puppeteer": "^24.40.0",
     "rebrowser-puppeteer": "^24.8.1",
     "reflect-metadata": "^0.2.2",
@@ -69,7 +69,6 @@
     "@types/express": "^5.0.6",
     "@types/jest": "^30.0.0",
     "@types/node": "^25.5.0",
-    "@types/node-telegram-bot-api": "^0.64.14",
     "@types/supertest": "^7.2.0",
     "eslint": "^10.1.0",
     "eslint-config-prettier": "^10.1.8",
@@ -124,5 +123,8 @@
     "testTimeout": 30000,
     "maxWorkers": "50%",
     "verbose": true
+  },
+  "overrides": {
+    "js-yaml": "^5.2.2"
   }
 }
