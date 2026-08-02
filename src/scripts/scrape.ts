@@ -10,6 +10,7 @@
  *   npm run scrape:bid-cars     # bid-cars only
  *   npm run scrape:kufar        # kufar only
  *   npm run scrape:realt        # realt only
+ *   npm run scrape townhouses   # townhouses only
  *
  * TODO: replace with a proper persistent deployment — see _TODO.md in the
  * land-auctions module.
@@ -27,6 +28,7 @@ import { LandAuctionsService } from '../modules/land-auctions/land-auctions.serv
 import { MostyJobsService } from '../modules/mosty-jobs/mosty-jobs.service';
 import { PogoranyService } from '../modules/pogorany/pogorany.service';
 import { RealtService } from '../modules/realt/realt.service';
+import { TownhousesService } from '../modules/townhouses/townhouses.service';
 
 type Module =
   | 'land'
@@ -40,6 +42,7 @@ type Module =
   | 'pogorany'
   | 'ghb'
   | 'mosty-jobs'
+  | 'townhouses'
   | 'all';
 
 function parseModule(): Module {
@@ -56,7 +59,8 @@ function parseModule(): Module {
     arg === 'bamper' ||
     arg === 'pogorany' ||
     arg === 'ghb' ||
-    arg === 'mosty-jobs'
+    arg === 'mosty-jobs' ||
+    arg === 'townhouses'
   )
     return arg;
   console.error(
@@ -145,6 +149,14 @@ async function bootstrap(): Promise<void> {
         await app.get(PogoranyService).run();
       } catch (err) {
         console.error('Pogorany scrape failed:', err);
+      }
+    }
+
+    if (target === 'all' || target === 'townhouses') {
+      try {
+        await app.get(TownhousesService).run();
+      } catch (err) {
+        console.error('Townhouses scrape failed:', err);
       }
     }
 
