@@ -1,8 +1,12 @@
 /** Base URL for Kufar image CDN (thumbnail, 2x). */
 export const IMAGE_CDN_BASE = 'https://rms.kufar.by/v1/list_thumbs_2x';
 
-/** Maximum pages to follow via cursor pagination per run. */
-export const MAX_PAGES = 10;
+/**
+ * Maximum pages to follow via cursor pagination per run — a safety cap, not a target.
+ * Feeds are diffed in full (no time window), so this must exceed the largest feed:
+ * at 30 ads/page the biggest one (oblast `dom`) is ~19 pages, so 40 leaves room to grow.
+ */
+export const MAX_PAGES = 40;
 
 /** HTTP request timeout for fetching Kufar pages (ms). */
 export const FETCH_TIMEOUT_MS = 30_000;
@@ -17,10 +21,11 @@ export const RUN_TIMEOUT_MS = 15 * 60 * 1000;
 export const INTER_FEED_DELAY_MS = 2_000;
 
 /**
- * Only process listings whose list_time is within the last LOOKBACK_HOURS.
- * 48 h covers today + yesterday regardless of timezone offset.
+ * Pause between consecutive pages of one feed. Kufar rate-limits sustained pagination —
+ * walking the oblast `dom` feed back-to-back returned HTTP 429 on page 12. 1.5 s keeps a
+ * ~19-page feed comfortably under the limit.
  */
-export const LOOKBACK_HOURS = 48;
+export const INTER_PAGE_DELAY_MS = 1_500;
 
 /** Field values considered empty — skipped when building Telegram captions. */
 export const EMPTY_VALUES = new Set(['', 'Не указано', 'Не указан', 'Не указана', 'N/A']);
@@ -36,6 +41,9 @@ export const FEED_DISPLAY_NAMES: Record<string, string> = {
   kvartira: 'Квартиры',
   komnata: 'Комнаты',
   dacha: 'Дачи',
+  'grodno-uchastok': 'Участки (Гродно, зона моста)',
+  'grodno-dom': 'Дома/дачи/коттеджи (Гродно, зона моста)',
+  'grodno-taunhaus': 'Таунхаусы в квартирах (Гродно, зона моста)',
 };
 
 /** Snapshot file path for a given feed key. */

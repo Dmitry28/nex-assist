@@ -1,4 +1,5 @@
 import { registerAs } from '@nestjs/config';
+import { TOWNHOUSE_KEYWORDS } from '../common/utils/keyword-filter';
 import { REALT_DEFAULTS } from './constants';
 
 export interface RealtFeedConfig {
@@ -12,6 +13,11 @@ export interface RealtFeedConfig {
    * (e.g. sale-plots, sale-garage, sale-cottages, sale-dachi).
    */
   linkPath: string;
+  /**
+   * When set, only listings whose title or description contains one of these terms are
+   * diffed. For categories too broad to notify on wholesale — see `keyword-filter.ts`.
+   */
+  titleKeywords?: string[];
 }
 
 /**
@@ -40,6 +46,29 @@ function buildFeeds(): RealtFeedConfig[] {
       key: 'dacha',
       url: process.env.REALT_DACHI_URL ?? REALT_DEFAULTS.DACHI_URL,
       linkPath: 'sale-dachi',
+    },
+    // Grodno "bridge zone" — narrower bbox, own snapshots (see REALT_DEFAULTS.GRODNO_*).
+    {
+      key: 'grodno-plots',
+      url: process.env.REALT_GRODNO_PLOTS_URL ?? REALT_DEFAULTS.GRODNO_PLOTS_URL,
+      linkPath: 'sale-plots',
+    },
+    {
+      key: 'grodno-dom',
+      url: process.env.REALT_GRODNO_COTTAGES_URL ?? REALT_DEFAULTS.GRODNO_COTTAGES_URL,
+      linkPath: 'sale-cottages',
+    },
+    {
+      key: 'grodno-dacha',
+      url: process.env.REALT_GRODNO_DACHI_URL ?? REALT_DEFAULTS.GRODNO_DACHI_URL,
+      linkPath: 'sale-dachi',
+    },
+    // Townhouses sold as flats — see the matching kufar feed.
+    {
+      key: 'grodno-taunhaus',
+      url: process.env.REALT_GRODNO_TOWNHOUSE_URL ?? REALT_DEFAULTS.GRODNO_TOWNHOUSE_URL,
+      linkPath: 'sale-flats',
+      titleKeywords: TOWNHOUSE_KEYWORDS,
     },
   ];
 }

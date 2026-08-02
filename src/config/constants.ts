@@ -17,6 +17,21 @@ export const KUFAR_DEFAULTS = {
     'https://re.kufar.by/l/grodnenskaya-oblast/kupit/uchastok?cur=BYR&gbx=b%3A23.63247006323345%2C53.454666565957595%2C24.079476288819368%2C53.81379430265694&size=30',
   HOUSES_URL:
     'https://re.kufar.by/l/grodnenskaya-oblast/kupit/dom?cur=BYR&gbx=b%3A23.656203109090203%2C53.45970346998098%2C24.10320933467615%2C53.81878831030225&size=30',
+  // ── Grodno "bridge zone" (investment watch) ────────────────────────────────
+  // A new bridge is planned here within ~2 years, so the area is expected to appreciate.
+  // Goal: catch cheap plots, dachas and old houses early. Bbox is fully inside the oblast
+  // ones above, but tracked separately so these listings get their own snapshot instead of
+  // being diluted among hundreds of region-wide ads (the oblast feed can hit MAX_PAGES
+  // before ever reaching them — page 1 of the oblast houses feed had 1/30 inside this bbox).
+  // Kufar has no `dacha`/`kottedzh` category — `dom` already covers Дом/Коттедж/Дача/Таунхаус.
+  GRODNO_LAND_URL:
+    'https://re.kufar.by/l/grodno/kupit/uchastok?cur=USD&gbx=b%3A23.701980384014313%2C53.668878674336966%2C23.8137319404108%2C53.75899990083715&size=30',
+  GRODNO_HOUSES_URL:
+    'https://re.kufar.by/l/grodno/kupit/dom?cur=USD&gbx=b%3A23.701980384014313%2C53.668878674336966%2C23.8137319404108%2C53.75899990083715&size=30',
+  // Flats in the zone, keyword-filtered down to townhouses. Note the category segment is
+  // `kvartiru`, not `kvartira` — the latter 404s.
+  GRODNO_TOWNHOUSE_URL:
+    'https://re.kufar.by/l/grodno/kupit/kvartiru?cur=USD&gbx=b%3A23.701980384014313%2C53.668878674336966%2C23.8137319404108%2C53.75899990083715&size=30',
   /** Default cron: every day at 09:00 UTC (12:00 Minsk) */
   SCRAPE_CRON: '0 9 * * *',
 } as const;
@@ -35,6 +50,18 @@ export const REALT_DEFAULTS = {
   // No dacha bbox in kufar — reuse the houses bbox (same Grodno-region area).
   DACHI_URL:
     'https://realt.by/grodno-region/sale/dachi/map/?addressV2=%5B%7B%22stateRegionUuid%22%3A%22499f04f0-7b00-11eb-8943-0cc47adabd66%22%7D%5D&coords=53.45970346998098&coords=23.656203109090203&coords=53.81878831030225&coords=24.10320933467615&sortType=createdAt',
+  // ── Grodno "bridge zone" (investment watch) ────────────────────────────────
+  // Same bbox as KUFAR_DEFAULTS.GRODNO_* — see the rationale there. realt.by splits what
+  // kufar lumps into `dom`, so the zone needs three feeds: plots, cottages and dachi.
+  GRODNO_PLOTS_URL:
+    'https://realt.by/grodno-region/sale/plots/map/?addressV2=%5B%7B%22stateRegionUuid%22%3A%22499f04f0-7b00-11eb-8943-0cc47adabd66%22%7D%5D&coords=53.668878674336966&coords=23.701980384014313&coords=53.75899990083715&coords=23.8137319404108&sortType=createdAt',
+  GRODNO_COTTAGES_URL:
+    'https://realt.by/grodno-region/sale/cottages/map/?addressV2=%5B%7B%22stateRegionUuid%22%3A%22499f04f0-7b00-11eb-8943-0cc47adabd66%22%7D%5D&coords=53.668878674336966&coords=23.701980384014313&coords=53.75899990083715&coords=23.8137319404108&sortType=createdAt',
+  GRODNO_DACHI_URL:
+    'https://realt.by/grodno-region/sale/dachi/map/?addressV2=%5B%7B%22stateRegionUuid%22%3A%22499f04f0-7b00-11eb-8943-0cc47adabd66%22%7D%5D&coords=53.668878674336966&coords=23.701980384014313&coords=53.75899990083715&coords=23.8137319404108&sortType=createdAt',
+  // Flats in the zone, keyword-filtered down to townhouses.
+  GRODNO_TOWNHOUSE_URL:
+    'https://realt.by/grodno-region/sale/flats/map/?addressV2=%5B%7B%22stateRegionUuid%22%3A%22499f04f0-7b00-11eb-8943-0cc47adabd66%22%7D%5D&coords=53.668878674336966&coords=23.701980384014313&coords=53.75899990083715&coords=23.8137319404108&sortType=createdAt',
   /** Default cron: every day at 09:00 UTC (12:00 Minsk) */
   SCRAPE_CRON: '0 9 * * *',
 } as const;

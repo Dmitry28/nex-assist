@@ -1,10 +1,11 @@
 import { Injectable, Logger } from '@nestjs/common';
 import type { KufarListing } from './dto/kufar-listing.dto';
 import { BROWSER_USER_AGENT } from '../../common/utils/scraping';
+import { sleep } from '../../common/utils/sleep';
 import {
   FETCH_TIMEOUT_MS,
   IMAGE_CDN_BASE,
-  LOOKBACK_HOURS,
+  INTER_PAGE_DELAY_MS,
   MAX_HTML_SIZE_BYTES,
   MAX_PAGES,
 } from './constants';
@@ -71,24 +72,38 @@ export const parseCoordinates = (v: unknown): { lat: number; lon: number } | und
  * embedded in the server-side-rendered HTML.
  *
  * No Puppeteer needed — all listing data is available in the initial HTML response.
- * Follows cursor-based pagination and stops once listings are older than LOOKBACK_HOURS.
+ * Follows cursor-based pagination until the feed's full inventory has been read.
  */
 @Injectable()
 export class KufarParserService {
   private readonly logger = new Logger(KufarParserService.name);
 
+  /**
+   * Fetches the feed's entire current inventory.
+   *
+   * There is deliberately no time filter. Kufar's `list_time` is the publish/bump time, not
+   * a "last modified" stamp: a seller can cut the price and `list_time` stays put. Measured
+   * against a 2-day-old snapshot — so recent edits could not have aged out — all 56 genuine
+   * price changes carried a `list_time` older than 48 h, as did 74 of 85 listings the feed
+   * had never recorded. A daily 48 h window would have caught none of them.
+   */
   async fetchFeed(url: string): Promise<{ listings: KufarListing[]; truncated: boolean }> {
     const allListings: KufarListing[] = [];
     let currentUrl = url;
     let truncated = false;
 
-    // Cutoff is fixed for the entire run so pagination decisions are consistent
-    const cutoff = new Date(Date.now() - LOOKBACK_HOURS * 60 * 60 * 1000);
-    const isRecent = (listTime: string) => new Date(listTime) >= cutoff;
-
     for (let page = 1; page <= MAX_PAGES; page++) {
+      // Pace pagination — Kufar returns 429 on sustained back-to-back page fetches.
+      if (page > 1) await sleep(INTER_PAGE_DELAY_MS);
+
       const html = await this.fetchHtml(currentUrl);
-      if (!html) break;
+      if (!html) {
+        // Giving up mid-feed leaves the inventory incomplete — the diff would otherwise
+        // treat the pages we never saw as if they simply held nothing.
+        truncated = page > 1;
+        this.logger.warn(`Page ${page}: fetch failed — stopping pagination`);
+        break;
+      }
 
       const { ads, pagination } = this.extractPageData(html);
 
@@ -97,15 +112,9 @@ export class KufarParserService {
         break;
       }
 
-      const recentAds = ads.filter(ad => isRecent(ad.list_time));
-      allListings.push(...recentAds.map(mapListing));
+      allListings.push(...ads.map(mapListing));
 
-      this.logger.log(
-        `Page ${page}: ${ads.length} ads total, ${recentAds.length} within ${LOOKBACK_HOURS}h window`,
-      );
-
-      // Stop paginating if the oldest ad on this page is outside our window
-      if (!isRecent(ads[ads.length - 1].list_time)) break;
+      this.logger.log(`Page ${page}: ${ads.length} ads (running total ${allListings.length})`);
 
       const nextToken = pagination.find(p => p.label === 'next')?.token;
       if (!nextToken) break;
@@ -120,7 +129,7 @@ export class KufarParserService {
       currentUrl = this.buildNextPageUrl(url, nextToken);
     }
 
-    this.logger.log(`Fetched ${allListings.length} listings within ${LOOKBACK_HOURS}h window`);
+    this.logger.log(`Fetched ${allListings.length} listings (full inventory)`);
     return { listings: allListings, truncated };
   }
 
