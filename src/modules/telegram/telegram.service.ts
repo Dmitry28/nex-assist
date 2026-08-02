@@ -1,6 +1,6 @@
 import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import TelegramBot from 'node-telegram-bot-api';
+import TelegramBot, { type InputMediaPhoto } from 'node-telegram-bot-api';
 import { sleep } from '../../common/utils/sleep';
 import { MAX_SEND_ATTEMPTS, SEND_INTERVAL_MS } from './constants';
 import { extractRetryAfter } from './telegram.utils';
@@ -72,7 +72,7 @@ export class TelegramService implements OnModuleInit {
     );
   }
 
-  async sendMediaGroup(chatId: string, media: TelegramBot.InputMediaPhoto[]): Promise<boolean> {
+  async sendMediaGroup(chatId: string, media: InputMediaPhoto[]): Promise<boolean> {
     if (!this.bot) return this.dryRun('sendMediaGroup', chatId, `${media.length} photos`);
     await this.throttle(chatId);
     const ok = await this.withRetry(() =>
