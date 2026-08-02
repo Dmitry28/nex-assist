@@ -5906,7 +5906,7 @@
       "https://static.realt.by/thumb/c/430x374/c5f662a11b216aff1dcebc6285dd1e9e/b7/i/11013c3efib7/93fc9e448f.jpeg"
     ],
     "firstSeenAt": "2026-05-09T21:42:42.837Z",
-    "lastSeenAt": "2026-08-01T09:04:36.079Z"
+    "lastSeenAt": "2026-08-02T09:10:34.097Z"
   },
   {
     "adId": 3878873,
@@ -12355,7 +12355,7 @@
       "https://cdn.realt.by/img/55/f7f1b822-6e57-11f1-9672-0242ac120003"
     ],
     "firstSeenAt": "2026-06-23T10:48:28.089Z",
-    "lastSeenAt": "2026-07-29T09:37:12.923Z"
+    "lastSeenAt": "2026-08-02T09:10:34.097Z"
   },
   {
     "adId": 4160483,
@@ -13561,5 +13561,31 @@
     ],
     "firstSeenAt": "2026-07-29T09:37:12.923Z",
     "lastSeenAt": "2026-07-30T09:29:31.841Z"
+  },
+  {
+    "adId": 4196298,
+    "uuid": "a81faea0-8dbd-11f1-86e8-8f5431bc91bb",
+    "link": "https://realt.by/sale-cottages/object/4196298/",
+    "title": "Ракитно",
+    "description": "Продается 1/3 дома. Читайте подробную информацию в описании.",
+    "priceByn": 52410,
+    "priceUsd": 17990,
+    "address": "Ракитно",
+    "area": 40,
+    "areaLiving": 36,
+    "plotArea": 25,
+    "yearBuilt": 1960,
+    "seller": "Марина",
+    "listTime": "2026-08-01T18:36:01+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/f09f93da-8dbc-11f1-884e-9e021d6d5eb2",
+      "https://cdn.realt.by/img/55/f0bc88be-8dbc-11f1-9c85-9e021d6d5eb2",
+      "https://cdn.realt.by/img/55/f0c0571e-8dbc-11f1-b6a2-9e021d6d5eb2",
+      "https://cdn.realt.by/img/55/f0c72bc0-8dbc-11f1-94eb-9e021d6d5eb2",
+      "https://cdn.realt.by/img/55/f0c8e992-8dbc-11f1-afad-9e021d6d5eb2",
+      "https://cdn.realt.by/img/55/f0cab8bc-8dbc-11f1-b530-9e021d6d5eb2"
+    ],
+    "firstSeenAt": "2026-08-02T09:10:34.097Z",
+    "lastSeenAt": "2026-08-02T09:10:34.097Z"
   }
 ]
