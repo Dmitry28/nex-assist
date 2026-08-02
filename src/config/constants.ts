@@ -28,10 +28,6 @@ export const KUFAR_DEFAULTS = {
     'https://re.kufar.by/l/grodno/kupit/uchastok?cur=USD&gbx=b%3A23.701980384014313%2C53.668878674336966%2C23.8137319404108%2C53.75899990083715&size=30',
   GRODNO_HOUSES_URL:
     'https://re.kufar.by/l/grodno/kupit/dom?cur=USD&gbx=b%3A23.701980384014313%2C53.668878674336966%2C23.8137319404108%2C53.75899990083715&size=30',
-  // Flats in the zone, keyword-filtered down to townhouses. Note the category segment is
-  // `kvartiru`, not `kvartira` — the latter 404s.
-  GRODNO_TOWNHOUSE_URL:
-    'https://re.kufar.by/l/grodno/kupit/kvartiru?cur=USD&gbx=b%3A23.701980384014313%2C53.668878674336966%2C23.8137319404108%2C53.75899990083715&size=30',
   // ── Neman reservoir zone (investment watch) ────────────────────────────────
   // The Гродненское море / Neman backwater east of the city, around Квасовка–Березовое.
   // Waterfront plots are the target; houses and dachas here sit on the same land, so the
@@ -67,9 +63,6 @@ export const REALT_DEFAULTS = {
     'https://realt.by/grodno-region/sale/cottages/map/?addressV2=%5B%7B%22stateRegionUuid%22%3A%22499f04f0-7b00-11eb-8943-0cc47adabd66%22%7D%5D&coords=53.668878674336966&coords=23.701980384014313&coords=53.75899990083715&coords=23.8137319404108&sortType=createdAt',
   GRODNO_DACHI_URL:
     'https://realt.by/grodno-region/sale/dachi/map/?addressV2=%5B%7B%22stateRegionUuid%22%3A%22499f04f0-7b00-11eb-8943-0cc47adabd66%22%7D%5D&coords=53.668878674336966&coords=23.701980384014313&coords=53.75899990083715&coords=23.8137319404108&sortType=createdAt',
-  // Flats in the zone, keyword-filtered down to townhouses.
-  GRODNO_TOWNHOUSE_URL:
-    'https://realt.by/grodno-region/sale/flats/map/?addressV2=%5B%7B%22stateRegionUuid%22%3A%22499f04f0-7b00-11eb-8943-0cc47adabd66%22%7D%5D&coords=53.668878674336966&coords=23.701980384014313&coords=53.75899990083715&coords=23.8137319404108&sortType=createdAt',
   // ── Neman reservoir zone (investment watch) ────────────────────────────────
   // Same bbox as KUFAR_DEFAULTS.NEMAN_* — see the rationale there.
   NEMAN_PLOTS_URL:
@@ -80,6 +73,28 @@ export const REALT_DEFAULTS = {
     'https://realt.by/grodno-region/sale/dachi/map/?addressV2=%5B%7B%22stateRegionUuid%22%3A%22499f04f0-7b00-11eb-8943-0cc47adabd66%22%7D%5D&coords=53.418208042890285&coords=23.98467193379422&coords=53.59933232883824&coords=24.208175046587193&sortType=createdAt',
   /** Default cron: every day at 09:00 UTC (12:00 Minsk) */
   SCRAPE_CRON: '0 9 * * *',
+} as const;
+
+export const TOWNHOUSES_DEFAULTS = {
+  // Primary market — every townhouse development in Grodno, on prometr.by.
+  // Developers' own sites (millenium-city.by, astostroi.by, airon.by) publish no prices at
+  // all, only phone numbers, so prometr is the single source that carries unit figures.
+  PROMETR_POGORANY_URL: 'https://prometr.by/newbuild_belarus/grodno/pogorany/',
+  PROMETR_BELYE_ROSY_URL: 'https://prometr.by/newbuild_belarus/grodno/belye-rosy/',
+  PROMETR_ROYAL_PARK_URL: 'https://prometr.by/newbuild_belarus/grodno/royal-park/',
+  // Secondary market — the sites' dedicated townhouse sub-categories. Note these live under
+  // the houses category (`kupit/dom/taunhaus`, `sale/cottages/taunhaus`); the bare
+  // `kupit/taunhaus` path returns zero ads.
+  KUFAR_URL: 'https://re.kufar.by/l/grodno/kupit/dom/taunhaus?cur=USD&size=30',
+  // No `addressV2` here on purpose: adding it overrides the `taunhaus` path filter and
+  // returns every cottage in the country (18 -> 1330). The `/grodno-region/` path scopes it.
+  REALT_URL: 'https://realt.by/grodno-region/sale/cottages/taunhaus/?sortType=createdAt',
+  // Townhouses filed as flats ("квартира в блокированном доме") — absent from the
+  // categories above, so the flats category is watched behind a keyword filter.
+  KUFAR_FLATS_URL:
+    'https://re.kufar.by/l/grodno/kupit/kvartiru?cur=USD&gbx=b%3A23.701980384014313%2C53.668878674336966%2C23.8137319404108%2C53.75899990083715&size=30',
+  REALT_FLATS_URL:
+    'https://realt.by/grodno-region/sale/flats/map/?addressV2=%5B%7B%22stateRegionUuid%22%3A%22499f04f0-7b00-11eb-8943-0cc47adabd66%22%7D%5D&coords=53.668878674336966&coords=23.701980384014313&coords=53.75899990083715&coords=23.8137319404108&sortType=createdAt',
 } as const;
 
 export const AV_BY_DEFAULTS = {

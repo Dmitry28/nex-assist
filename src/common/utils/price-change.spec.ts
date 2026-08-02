@@ -110,3 +110,18 @@ describe('hasPriceChanged', () => {
     });
   });
 });
+
+describe('hasPriceChanged — single-currency sources', () => {
+  // prometr.by quotes BYN only; there is no conversion, so any move is the seller's.
+  it('reports a BYN-only price change of any size', () => {
+    expect(hasPriceChanged({ priceByn: 522_937 }, { priceByn: 510_000 })).toBe(true);
+  });
+
+  it('ignores an unchanged BYN-only price', () => {
+    expect(hasPriceChanged({ priceByn: 522_937 }, { priceByn: 522_937 })).toBe(false);
+  });
+
+  it('reports a USD-only price change', () => {
+    expect(hasPriceChanged({ priceUsd: 100_000 }, { priceUsd: 99_000 })).toBe(true);
+  });
+});

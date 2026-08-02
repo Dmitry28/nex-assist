@@ -20,6 +20,7 @@ import { LandAuctionsModule } from './modules/land-auctions/land-auctions.module
 import { MostyJobsModule } from './modules/mosty-jobs/mosty-jobs.module';
 import { PogoranyModule } from './modules/pogorany/pogorany.module';
 import { RealtModule } from './modules/realt/realt.module';
+import { TownhousesModule } from './modules/townhouses/townhouses.module';
 
 @Module({
   imports: [
@@ -64,6 +65,7 @@ import { RealtModule } from './modules/realt/realt.module';
     AvByModule,
     BamperModule,
     PogoranyModule,
+    TownhousesModule,
     GhbModule,
     MostyJobsModule,
   ],

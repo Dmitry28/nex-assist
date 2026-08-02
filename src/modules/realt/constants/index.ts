@@ -35,7 +35,6 @@ export const FEED_DISPLAY_NAMES: Record<string, string> = {
   'grodno-plots': 'Участки (Гродно, зона моста)',
   'grodno-dom': 'Дома (Гродно, зона моста)',
   'grodno-dacha': 'Дачи (Гродно, зона моста)',
-  'grodno-taunhaus': 'Таунхаусы в квартирах (Гродно, зона моста)',
   'neman-plots': 'Участки (Неман, водохранилище)',
   'neman-dom': 'Дома (Неман, водохранилище)',
   'neman-dacha': 'Дачи (Неман, водохранилище)',
