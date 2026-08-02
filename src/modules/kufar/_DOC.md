@@ -35,19 +35,54 @@ Cron trigger (or HTTP POST /run)
 
 Kufar SSR pages embed all listing data in a `<script id="__NEXT_DATA__">` JSON block. The parser reads this directly — no Puppeteer, no DOM interaction, no JavaScript execution needed.
 
-Pagination follows cursor tokens from the same JSON. Stops when listings are older than `LOOKBACK_HOURS` (48h) or `MAX_PAGES` is reached.
+Pagination follows cursor tokens from the same JSON until the feed's inventory is exhausted or `MAX_PAGES` (40) is reached. Pages are fetched 1.5 s apart — Kufar returned HTTP 429 on page 12 when walked back-to-back. A page that fails mid-feed sets the `truncated` flag rather than silently shortening the inventory.
+
+**No time window.** Every feed is diffed in full. `list_time` is the publish/bump time, not a
+"last modified" stamp — a seller can cut the price and it stays put, so filtering by age drops
+most of what we watch for. Measured against the 16.07 snapshot, a 48 h window would have caught
+only **8 of 36** real kufar price changes (22 %).
 
 ---
 
 ## Feeds
 
-Feeds are configured in `kufar.config.ts` as an array of `{ key, url }` objects. Each feed maps to a separate snapshot file `kufar_<key>_all.json`. Current feeds: `garazh`, `uchastok`, `dom`.
+Feeds are configured in `kufar.config.ts` as an array of `{ key, url }` objects. Each feed maps to a separate snapshot file `kufar_<key>_all.json`.
+
+| Feed | Area | Covers |
+|---|---|---|
+| `garazh` | Grodno oblast | Гаражи |
+| `uchastok` | Grodno oblast | Участки |
+| `dom` | Grodno oblast | Дома, дачи, коттеджи, таунхаусы |
+| `grodno-uchastok` | Grodno "bridge zone" | Участки |
+| `grodno-dom` | Grodno "bridge zone" | Дома, дачи, коттеджи, таунхаусы |
+
+**Kufar has no separate `dacha` / `kottedzh` category** — both URLs return zero ads. Дачи and коттеджи live inside `kupit/dom`, distinguished by the `house_type_for_sell` ad parameter (`Дом`, `Коттедж`, `Дача`, `Таунхаус`, `Часть дома`). So `dom` is the only feed needed for all of them.
+
+### Grodno "bridge zone"
+
+A narrower bbox over the Grodno city core (`23.7020,53.6689,23.8137,53.7590`), watched as an investment target — a bridge is planned there within ~2 years, so the goal is to spot cheap plots, dachas and old houses early.
+
+The bbox sits fully **inside** the oblast bboxes, so these listings also appear in the oblast feeds — the same ad will be notified twice. That is intentional: the oblast feeds are region-wide and dilute the zone (page 1 of the oblast `dom` feed had 1 of 30 ads inside this bbox), and can hit `MAX_PAGES` before reaching it. Separate feeds guarantee the zone is never truncated away.
 
 ---
 
 ## Price change detection
 
-A price change is detected only when **both** BYN and USD prices differ from the previous snapshot. If either currency is unchanged, it means the seller didn't change the price — the other just fluctuated with the exchange rate. `effectivePrice` treats 0 and `undefined` as equivalent to avoid false positives on missing prices. When no numeric price is set, the listing shows "Договорная" (negotiable).
+Shared with realt via `common/utils/price-change.ts`. A change counts only when **both**
+currency figures move, **in the same direction**, and **each by at least 2 %**.
+
+Both figures are conversions of one base price the site does not expose, so a seller edit
+scales them together while exchange-rate drift does not. Requiring both to move already
+covers listings priced in BYN or USD (the base figure stays put). The direction and 2 %
+checks cover listings quoted in a third currency, where drift moves both.
+
+Measured against the 16.07 snapshot, the old "both figures moved" rule flagged 34 kufar and
+16 realt listings; 13 and 6 of those were pure drift — including unrelated listings sharing
+an identical -2.58 % / +0.69 % signature, which only a rate change can produce.
+
+Deliberate trade-off: genuine edits below 2 % are not reported. When no numeric price is set
+the listing shows "Договорная" (negotiable); a price appearing or disappearing is always
+reported, since there is no percentage to compare.
 
 ---
 
@@ -55,6 +90,11 @@ A price change is detected only when **both** BYN and USD prices differ from the
 
 | Variable | Default | Description |
 |---|---|---|
+| `KUFAR_GARAGES_URL` | hardcoded oblast garages search | Search URL for the `garazh` feed |
+| `KUFAR_LAND_URL` | hardcoded oblast plots search | Search URL for the `uchastok` feed |
+| `KUFAR_HOUSES_URL` | hardcoded oblast houses search | Search URL for the `dom` feed |
+| `KUFAR_GRODNO_LAND_URL` | hardcoded bridge-zone plots search | Search URL for the `grodno-uchastok` feed |
+| `KUFAR_GRODNO_HOUSES_URL` | hardcoded bridge-zone houses search | Search URL for the `grodno-dom` feed |
 | `KUFAR_SCRAPE_CRON` | `0 9 * * *` (09:00 UTC daily) | Cron expression |
 | `TELEGRAM_TOKEN` | — | Bot token (optional; omit for dry-run) |
 | `TELEGRAM_KUFAR_CHAT_ID` | — | Target chat/channel ID |
@@ -70,6 +110,8 @@ Feed URLs are hardcoded in `kufar.config.ts`.
 | `kufar_garazh_all.json` | Garage listings snapshot |
 | `kufar_uchastok_all.json` | Plot listings snapshot |
 | `kufar_dom_all.json` | House listings snapshot |
+| `kufar_grodno-uchastok_all.json` | Bridge-zone plot listings snapshot |
+| `kufar_grodno-dom_all.json` | Bridge-zone house listings snapshot |
 
 Each entry includes `firstSeenAt` and `lastSeenAt` timestamps for tracking.
 

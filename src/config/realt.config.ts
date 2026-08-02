@@ -41,6 +41,22 @@ function buildFeeds(): RealtFeedConfig[] {
       url: process.env.REALT_DACHI_URL ?? REALT_DEFAULTS.DACHI_URL,
       linkPath: 'sale-dachi',
     },
+    // Grodno "bridge zone" — narrower bbox, own snapshots (see REALT_DEFAULTS.GRODNO_*).
+    {
+      key: 'grodno-plots',
+      url: process.env.REALT_GRODNO_PLOTS_URL ?? REALT_DEFAULTS.GRODNO_PLOTS_URL,
+      linkPath: 'sale-plots',
+    },
+    {
+      key: 'grodno-dom',
+      url: process.env.REALT_GRODNO_COTTAGES_URL ?? REALT_DEFAULTS.GRODNO_COTTAGES_URL,
+      linkPath: 'sale-cottages',
+    },
+    {
+      key: 'grodno-dacha',
+      url: process.env.REALT_GRODNO_DACHI_URL ?? REALT_DEFAULTS.GRODNO_DACHI_URL,
+      linkPath: 'sale-dachi',
+    },
   ];
 }
 

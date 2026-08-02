@@ -10,19 +10,15 @@ export const RUN_TIMEOUT_MS = 15 * 60 * 1000;
 /** Pause between fetching consecutive feeds to reduce load on realt.by servers (2 s). */
 export const INTER_FEED_DELAY_MS = 2_000;
 
-/**
- * Maximum pages to follow per run. realt.by uses ?page=N pagination with pageSize=30.
- * Effective cap; pagination naturally stops when totalCount is exhausted.
- */
-export const MAX_PAGES = 20;
+/** Pause between consecutive pages of one feed — same politeness rationale as kufar. */
+export const INTER_PAGE_DELAY_MS = 1_000;
 
 /**
- * Only process listings whose `updatedAt` is within the last LOOKBACK_HOURS.
- * realt.by map view returns ALL active listings (incl. years-old ones) — without this
- * filter we'd diff hundreds of stale ads and never catch what actually changed.
- * 48 h covers today + yesterday regardless of timezone offset.
+ * Maximum pages to follow per run — a safety cap, not a target. realt.by uses ?page=N
+ * pagination with pageSize=30 and stops naturally once totalCount is exhausted.
+ * Feeds are diffed in full (no time window); the biggest one (region `dom`) is ~9 pages.
  */
-export const LOOKBACK_HOURS = 48;
+export const MAX_PAGES = 30;
 
 /** Field values considered empty — skipped when building Telegram captions. */
 export const EMPTY_VALUES = new Set(['', 'Не указано', 'Не указан', 'Не указана', 'N/A']);
@@ -36,6 +32,9 @@ export const FEED_DISPLAY_NAMES: Record<string, string> = {
   garage: 'Гаражи',
   dom: 'Дома',
   dacha: 'Дачи',
+  'grodno-plots': 'Участки (Гродно, зона моста)',
+  'grodno-dom': 'Дома (Гродно, зона моста)',
+  'grodno-dacha': 'Дачи (Гродно, зона моста)',
 };
 
 /** Snapshot file path for a given feed key. */

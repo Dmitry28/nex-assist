@@ -22,18 +22,10 @@ import type {
 import { RealtNotifierService, RealtNotifyResult } from './realt-notifier.service';
 import { RealtParserService } from './realt-parser.service';
 
-/** Treat 0 and undefined as equivalent "no price" to avoid false price-change detections. */
-export const effectivePrice = (p: number | undefined): number | undefined =>
-  p !== undefined && p > 0 ? p : undefined;
+import { hasPriceChanged } from '../../common/utils/price-change';
 
-/**
- * Single source of truth for price-change detection — used in both scrapeFeed and persistSnapshot.
- * Both BYN and USD must change: if either is stable, the seller didn't change the price
- * (the other just fluctuated with the exchange rate).
- */
-export const hasPriceChanged = (prev: RealtSnapshotEntry, current: RealtListing): boolean =>
-  effectivePrice(prev.priceByn) !== effectivePrice(current.priceByn) &&
-  effectivePrice(prev.priceUsd) !== effectivePrice(current.priceUsd);
+// Re-exported so existing importers (and tests) keep a single entry point per module.
+export { effectivePrice, hasPriceChanged } from '../../common/utils/price-change';
 
 /** Internal data kept per feed during a scrape cycle — not exposed to callers. */
 interface RealtFeedScrapeData {

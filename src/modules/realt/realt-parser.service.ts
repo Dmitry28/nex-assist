@@ -1,10 +1,11 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { BROWSER_USER_AGENT } from '../../common/utils/scraping';
+import { sleep } from '../../common/utils/sleep';
 import {
   CURRENCY_BYN,
   CURRENCY_USD,
   FETCH_TIMEOUT_MS,
-  LOOKBACK_HOURS,
+  INTER_PAGE_DELAY_MS,
   MAX_HTML_SIZE_BYTES,
   MAX_PAGES,
   listingLink,
@@ -68,6 +69,13 @@ interface RawPagination {
 export class RealtParserService {
   private readonly logger = new Logger(RealtParserService.name);
 
+  /**
+   * Fetches the feed's entire current inventory.
+   *
+   * There is deliberately no time filter. realt.by's `updatedAt` does not move when a seller
+   * edits the price — measured against the 16.07 snapshot, listings untouched for 11 and 16
+   * months had changed price, and a 48 h window would have caught 0 of 16 real price changes.
+   */
   async fetchFeed(
     url: string,
     linkPath: string,
@@ -75,14 +83,19 @@ export class RealtParserService {
     const allListings: RealtListing[] = [];
     let truncated = false;
 
-    // Cutoff is fixed for the entire run so pagination decisions are consistent
-    const cutoff = new Date(Date.now() - LOOKBACK_HOURS * 60 * 60 * 1000);
-    const isRecent = (updatedAt: string): boolean => new Date(updatedAt) >= cutoff;
-
     for (let page = 1; page <= MAX_PAGES; page++) {
+      // Pace pagination for the same reason as kufar — avoid tripping rate limits.
+      if (page > 1) await sleep(INTER_PAGE_DELAY_MS);
+
       const pageUrl = page === 1 ? url : this.buildPageUrl(url, page);
       const html = await this.fetchHtml(pageUrl);
-      if (!html) break;
+      if (!html) {
+        // Stopping mid-feed leaves the inventory incomplete — flag it rather than let the
+        // diff treat the unseen pages as empty.
+        truncated = page > 1;
+        this.logger.warn(`Page ${page}: fetch failed — stopping pagination`);
+        break;
+      }
 
       const { objects, pagination } = this.extractPageData(html);
 
@@ -91,11 +104,10 @@ export class RealtParserService {
         break;
       }
 
-      const recentObjects = objects.filter(o => isRecent(o.updatedAt));
-      allListings.push(...recentObjects.map(o => mapListing(o, linkPath)));
+      allListings.push(...objects.map(o => mapListing(o, linkPath)));
 
       this.logger.log(
-        `Page ${page}: ${objects.length} objects total, ${recentObjects.length} within ${LOOKBACK_HOURS}h window (totalCount=${pagination?.totalCount ?? '?'})`,
+        `Page ${page}: ${objects.length} objects (running total ${allListings.length} of ${pagination?.totalCount ?? '?'})`,
       );
 
       if (!pagination) break;
@@ -108,7 +120,7 @@ export class RealtParserService {
       }
     }
 
-    this.logger.log(`Fetched ${allListings.length} listings within ${LOOKBACK_HOURS}h window`);
+    this.logger.log(`Fetched ${allListings.length} listings (full inventory)`);
     return { listings: allListings, truncated };
   }
 

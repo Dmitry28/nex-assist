@@ -17,6 +17,15 @@ function buildFeeds(): KufarFeedConfig[] {
     { key: 'garazh', url: process.env.KUFAR_GARAGES_URL ?? KUFAR_DEFAULTS.GARAGES_URL },
     { key: 'uchastok', url: process.env.KUFAR_LAND_URL ?? KUFAR_DEFAULTS.LAND_URL },
     { key: 'dom', url: process.env.KUFAR_HOUSES_URL ?? KUFAR_DEFAULTS.HOUSES_URL },
+    // Grodno "bridge zone" — narrower bbox, own snapshots (see KUFAR_DEFAULTS.GRODNO_*).
+    {
+      key: 'grodno-uchastok',
+      url: process.env.KUFAR_GRODNO_LAND_URL ?? KUFAR_DEFAULTS.GRODNO_LAND_URL,
+    },
+    {
+      key: 'grodno-dom',
+      url: process.env.KUFAR_GRODNO_HOUSES_URL ?? KUFAR_DEFAULTS.GRODNO_HOUSES_URL,
+    },
   ];
 }
 

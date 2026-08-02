@@ -57,6 +57,8 @@ export const validationSchema = Joi.object({
   KUFAR_GARAGES_URL: Joi.string().uri().default(KUFAR_DEFAULTS.GARAGES_URL),
   KUFAR_LAND_URL: Joi.string().uri().default(KUFAR_DEFAULTS.LAND_URL),
   KUFAR_HOUSES_URL: Joi.string().uri().default(KUFAR_DEFAULTS.HOUSES_URL),
+  KUFAR_GRODNO_LAND_URL: Joi.string().uri().default(KUFAR_DEFAULTS.GRODNO_LAND_URL),
+  KUFAR_GRODNO_HOUSES_URL: Joi.string().uri().default(KUFAR_DEFAULTS.GRODNO_HOUSES_URL),
   KUFAR_SCRAPE_CRON: Joi.string().default(KUFAR_DEFAULTS.SCRAPE_CRON),
   TELEGRAM_KUFAR_CHAT_ID: Joi.string().optional(),
 
@@ -75,6 +77,9 @@ export const validationSchema = Joi.object({
   REALT_GARAGE_URL: Joi.string().uri().default(REALT_DEFAULTS.GARAGE_URL),
   REALT_COTTAGES_URL: Joi.string().uri().default(REALT_DEFAULTS.COTTAGES_URL),
   REALT_DACHI_URL: Joi.string().uri().default(REALT_DEFAULTS.DACHI_URL),
+  REALT_GRODNO_PLOTS_URL: Joi.string().uri().default(REALT_DEFAULTS.GRODNO_PLOTS_URL),
+  REALT_GRODNO_COTTAGES_URL: Joi.string().uri().default(REALT_DEFAULTS.GRODNO_COTTAGES_URL),
+  REALT_GRODNO_DACHI_URL: Joi.string().uri().default(REALT_DEFAULTS.GRODNO_DACHI_URL),
   REALT_SCRAPE_CRON: Joi.string().default(REALT_DEFAULTS.SCRAPE_CRON),
   TELEGRAM_REALT_CHAT_ID: Joi.string().optional(),
 
