@@ -1,0 +1,202 @@
+[
+  {
+    "adId": 1060433665,
+    "link": "https://re.kufar.by/vi/1060433665",
+    "title": "Земельный участок",
+    "description": "Земельный участок ухожен,строений нет,рядом 50 метров река Свислочь(отличное место для отдыха и ловли рыбы).",
+    "priceByn": 40786,
+    "priceUsd": 14000,
+    "address": "деревня Корозичи, Квасовский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 7.7,
+    "seller": "Наталья",
+    "coordinates": {
+      "lat": 53.48861155779115,
+      "lon": 24.049641724673794
+    },
+    "listTime": "2026-07-31T14:56:49Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0d58591c-7007-421f-9fd3-9298784010cc.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d4ff6354-f828-47c6-a82d-c1b48ad5a6e3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c1d5a051-2937-4177-87ed-93f39722ed6c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/786c0db8-5214-45cd-a939-e8e306ffa1d4.jpg"
+    ],
+    "firstSeenAt": "2026-08-02T17:05:05.806Z",
+    "lastSeenAt": "2026-08-02T17:05:05.806Z"
+  },
+  {
+    "adId": 1073473704,
+    "link": "https://re.kufar.by/vi/1073473704",
+    "title": "Участок",
+    "description": "Продается участок с собственным сосновым бором на территории.\nИдеальная инфраструктура: асфальтированная дорога прямо к участку, полный пакет коммуник",
+    "priceByn": 55000,
+    "priceUsd": 18879,
+    "address": "деревня Гущицы, Обуховский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 15,
+    "seller": "Сергей",
+    "features": [
+      "Центральная",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.59768,
+      "lon": 24.192439
+    },
+    "listTime": "2026-07-28T15:56:59Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/faba87de-4698-42e0-bb72-ea05e32d45c1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/574debe5-b5fb-4442-90c6-f97947cf18d5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/823285ad-fa88-4b05-8315-331300c9a878.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/adb2071c-cfdf-4ff5-a6ef-a2368e26e32f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/91ff274f-9213-49bd-acd9-0303b0aca3c9.jpg"
+    ],
+    "firstSeenAt": "2026-08-02T17:05:05.806Z",
+    "lastSeenAt": "2026-08-02T17:05:05.806Z"
+  },
+  {
+    "adId": 1077767146,
+    "link": "https://re.kufar.by/vi/1077767146",
+    "title": "Участок",
+    "description": "Продаётся ровный прямоугольный дачный участок в живописном месте с отличными круглогодичными подъездами. , 15 км от Гродно, рядом р. Неман. Вокруг акт",
+    "priceByn": 19900,
+    "priceUsd": 6831,
+    "address": "31, СТ Берёзовое, Квасовский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 7,
+    "seller": "Елена",
+    "features": [
+      "Отсутствует",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.572068796968985,
+      "lon": 24.01423050960605
+    },
+    "listTime": "2026-07-19T14:51:46Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0d56d7bc-663f-4866-9a72-bc228c7c2692.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a178fa38-eea7-4873-a526-c5c7b87edb65.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/54d1530b-4ed4-40a5-be22-ef219e26116a.jpg"
+    ],
+    "firstSeenAt": "2026-08-02T17:05:05.806Z",
+    "lastSeenAt": "2026-08-02T17:05:05.806Z"
+  },
+  {
+    "adId": 1059771925,
+    "link": "https://re.kufar.by/vi/1059771925",
+    "title": "Хутор с домом под снос в д.Витьки",
+    "description": "Продаётся ветхий дом с земельным участком в д.Витьки, Квасовский с/с, Гродненский р-н.\nРасстояние до Гродно 18 км.\nУчасток – 14,25 соток. Принадлежит ",
+    "priceByn": 39150,
+    "priceUsd": 13438,
+    "address": "деревня Витьки, Квасовский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 14.3,
+    "seller": "ООО Магазин недвижимости",
+    "features": [
+      "Колодец",
+      "Пожизненное наследование"
+    ],
+    "coordinates": {
+      "lat": 53.559112,
+      "lon": 24.031407
+    },
+    "listTime": "2026-06-30T16:47:48Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2320962b-5b6d-413b-98d2-af3629b4ec54.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cabf5e17-1cd7-450b-8965-068c1477f51f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/aa350bfe-b45a-458b-8003-a8f9bdb5db68.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/18221305-7a91-418e-aa42-3d7763c97bae.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c50ac4e7-5aae-4b75-85ac-3754183e4655.jpg"
+    ],
+    "firstSeenAt": "2026-08-02T17:05:05.806Z",
+    "lastSeenAt": "2026-08-02T17:05:05.806Z"
+  },
+  {
+    "adId": 1074865769,
+    "link": "https://re.kufar.by/vi/1074865769",
+    "title": "Дача",
+    "description": "Продается дачный участок возле деревни Жукевичи. Дом под реставрацию либо под снос. Площадь земли 5 соток. Есть электричество и вода. 10 минут езды от",
+    "priceByn": 20393,
+    "priceUsd": 7000,
+    "address": "СТ Теремок, Коптёвский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 5,
+    "seller": "Надежда",
+    "features": [
+      "Сезонная",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.590102,
+      "lon": 23.993669
+    },
+    "listTime": "2026-06-27T17:17:57Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e978ad4f-5da4-4682-91f9-21ca1bbaab47.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/28a859cc-f7b1-4440-b20c-04772e4176de.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1d53b6bf-4cc2-4cf8-a7f6-80f832b49965.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b12d8f1a-00c4-408b-b2a7-0b959d45b77a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e2c424b6-026f-4f63-91be-fb917c3f96c0.jpg"
+    ],
+    "firstSeenAt": "2026-08-02T17:05:05.806Z",
+    "lastSeenAt": "2026-08-02T17:05:05.806Z"
+  },
+  {
+    "adId": 1073430521,
+    "link": "https://re.kufar.by/vi/1073430521",
+    "title": "Участок",
+    "description": "Продается участок. Приватизирован.  Планировние. Ровный,  8 соток. Подведено электричество. Хорошая земля. Вода в колодце хорошая. Рядом Неман.  Возду",
+    "priceByn": 17480,
+    "priceUsd": 6000,
+    "address": "111, СТ Берёзовое, Квасовский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 8,
+    "seller": "Ирина",
+    "features": [
+      "Колодец",
+      "Частная собственность"
+    ],
+    "coordinates": {
+      "lat": 53.57296315117106,
+      "lon": 24.01757653797543
+    },
+    "listTime": "2026-06-17T05:06:15Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e76d0dff-0b2a-44cb-b7eb-5bb622325acc.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39d9a7ca-4ecb-4b32-892d-a62404e84e31.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/13dfd540-b7d9-4ff1-b04e-5692b6cdd3fb.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b6eb4f20-e53e-4160-8592-b017bf3a40da.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1ffd6061-1f00-4ad1-8e3b-df7e641e91ac.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/78187107-97ed-4aba-b720-282112207e63.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ee7f15ec-5cbc-448a-b18d-681756fa4bd6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9cd9165f-75ed-4d0b-944a-384a249901e1.jpg"
+    ],
+    "firstSeenAt": "2026-08-02T17:05:05.806Z",
+    "lastSeenAt": "2026-08-02T17:05:05.806Z"
+  },
+  {
+    "adId": 1021470099,
+    "link": "https://re.kufar.by/vi/1021470099",
+    "title": "Продается дачный участок",
+    "description": "Продается участок в С/Т Березовое недалеко от Гродно, площадь участка 8.36 соток, на участке есть хоз. постройка, отлично подойдет для ночлега и хране",
+    "priceByn": 14564,
+    "priceUsd": 4999,
+    "address": "61, СТ Берёзовое, Квасовский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 8.4,
+    "seller": "Александр",
+    "features": [
+      "Частная собственность",
+      "Да"
+    ],
+    "coordinates": {
+      "lat": 53.573124,
+      "lon": 24.016405
+    },
+    "listTime": "2026-06-13T08:40:31Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ab8768f8-512f-4a9d-84b0-ec2439af24e6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/118b5ed4-efcc-4cda-b0a8-023fd3f0b322.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b45fe11b-6402-4d94-8ab1-f33ec686ae7c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/586ce33b-27f2-41ae-ac20-9d6ee2fc1d72.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/63f0f62f-3eb1-4452-b8d2-0638303aab63.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/17cbedc6-71e3-4a45-833b-045b14493cbf.jpg"
+    ],
+    "firstSeenAt": "2026-08-02T17:05:05.806Z",
+    "lastSeenAt": "2026-08-02T17:05:05.806Z"
+  }
+]

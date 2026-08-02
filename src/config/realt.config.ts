@@ -70,6 +70,22 @@ function buildFeeds(): RealtFeedConfig[] {
       linkPath: 'sale-flats',
       titleKeywords: TOWNHOUSE_KEYWORDS,
     },
+    // Neman reservoir zone — waterfront land east of Grodno (see REALT_DEFAULTS.NEMAN_*).
+    {
+      key: 'neman-plots',
+      url: process.env.REALT_NEMAN_PLOTS_URL ?? REALT_DEFAULTS.NEMAN_PLOTS_URL,
+      linkPath: 'sale-plots',
+    },
+    {
+      key: 'neman-dom',
+      url: process.env.REALT_NEMAN_COTTAGES_URL ?? REALT_DEFAULTS.NEMAN_COTTAGES_URL,
+      linkPath: 'sale-cottages',
+    },
+    {
+      key: 'neman-dacha',
+      url: process.env.REALT_NEMAN_DACHI_URL ?? REALT_DEFAULTS.NEMAN_DACHI_URL,
+      linkPath: 'sale-dachi',
+    },
   ];
 }
 

@@ -62,6 +62,8 @@ Feeds are configured in `kufar.config.ts` as an array of `{ key, url }` objects.
 | `grodno-uchastok` | Grodno "bridge zone" | Участки |
 | `grodno-dom` | Grodno "bridge zone" | Дома, дачи, коттеджи, таунхаусы |
 | `grodno-taunhaus` | Grodno "bridge zone" | Таунхаусы, проданные как квартиры (keyword-filtered) |
+| `neman-uchastok` | Neman reservoir | Участки |
+| `neman-dom` | Neman reservoir | Дома, дачи, коттеджи |
 
 ### Townhouses
 
@@ -81,6 +83,16 @@ Note the category segment is `kvartiru` — `kvartira` and `kvartiry` both 404.
 A narrower bbox over the Grodno city core (`23.7020,53.6689,23.8137,53.7590`), watched as an investment target — a bridge is planned there within ~2 years, so the goal is to spot cheap plots, dachas and old houses early.
 
 The bbox sits fully **inside** the oblast bboxes, so these listings also appear in the oblast feeds — the same ad will be notified twice. That is intentional: the oblast feeds are region-wide and dilute the zone (page 1 of the oblast `dom` feed had 1 of 30 ads inside this bbox), and can hit `MAX_PAGES` before reaching it. Separate feeds guarantee the zone is never truncated away.
+
+### Neman reservoir zone
+
+A second investment area east of the city — the Гродненское море / Neman backwater around
+Квасовка–Березовое (`23.9847,53.4182,24.2082,53.5993`). **Waterfront plots are the target**;
+houses and dachas there sit on the same land, so `neman-dom` is tracked alongside. No garage
+feed — the area has none.
+
+The bbox uses kufar's `/l/belarus/` scope rather than an oblast segment: the bbox does the
+filtering, and the wider scope avoids losing listings filed under a neighbouring region.
 
 ---
 
@@ -114,6 +126,8 @@ reported, since there is no percentage to compare.
 | `KUFAR_GRODNO_LAND_URL` | hardcoded bridge-zone plots search | Search URL for the `grodno-uchastok` feed |
 | `KUFAR_GRODNO_HOUSES_URL` | hardcoded bridge-zone houses search | Search URL for the `grodno-dom` feed |
 | `KUFAR_GRODNO_TOWNHOUSE_URL` | hardcoded bridge-zone flats search | Search URL for the `grodno-taunhaus` feed |
+| `KUFAR_NEMAN_LAND_URL` | hardcoded reservoir plots search | Search URL for the `neman-uchastok` feed |
+| `KUFAR_NEMAN_HOUSES_URL` | hardcoded reservoir houses search | Search URL for the `neman-dom` feed |
 | `KUFAR_SCRAPE_CRON` | `0 9 * * *` (09:00 UTC daily) | Cron expression |
 | `TELEGRAM_TOKEN` | — | Bot token (optional; omit for dry-run) |
 | `TELEGRAM_KUFAR_CHAT_ID` | — | Target chat/channel ID |
@@ -132,6 +146,8 @@ Feed URLs are hardcoded in `kufar.config.ts`.
 | `kufar_grodno-uchastok_all.json` | Bridge-zone plot listings snapshot |
 | `kufar_grodno-dom_all.json` | Bridge-zone house listings snapshot |
 | `kufar_grodno-taunhaus_all.json` | Bridge-zone townhouse-in-flats snapshot |
+| `kufar_neman-uchastok_all.json` | Reservoir plot listings snapshot |
+| `kufar_neman-dom_all.json` | Reservoir house listings snapshot |
 
 Each entry includes `firstSeenAt` and `lastSeenAt` timestamps for tracking.
 
