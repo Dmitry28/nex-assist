@@ -1,11 +1,8 @@
 /**
  * Seller-initiated price-change detection for listings quoted in two currencies.
  *
- * Shared by the kufar and realt modules — both store a BYN and a USD figure per listing,
- * and both are conversions of one base price the site does not expose.
- *
- * TODO: av-by carries a copy of the old "both currencies moved" rule and has the same
- * false-positive problem; switch it over once its notifications have been reviewed.
+ * Shared by the kufar, realt, av-by and townhouses modules — each stores a BYN and a USD
+ * figure per listing, and both are conversions of one base price the site does not expose.
  */
 
 /**

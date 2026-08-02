@@ -1,33 +1,5 @@
 [
   {
-    "uid": "prometr:42548",
-    "source": "prometr",
-    "complex": "ЖК Погораны",
-    "link": "https://prometr.by/newbuild_belarus/grodno/pogorany/dom-4-1_1550/2-komnatnaya-120-14-42548/",
-    "title": "ЖК Погораны, 2-комн., 120.14 м²",
-    "priceByn": 273003,
-    "pricePerM2Byn": 2272,
-    "area": 120.14,
-    "rooms": 2,
-    "images": [],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
-  },
-  {
-    "uid": "prometr:42550",
-    "source": "prometr",
-    "complex": "ЖК Погораны",
-    "link": "https://prometr.by/newbuild_belarus/grodno/pogorany/dom-4-1_1550/2-komnatnaya-120-5-42550/",
-    "title": "ЖК Погораны, 2-комн., 120.5 м²",
-    "priceByn": 273821,
-    "pricePerM2Byn": 2272,
-    "area": 120.5,
-    "rooms": 2,
-    "images": [],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
-  },
-  {
     "uid": "prometr:38540",
     "source": "prometr",
     "complex": "ЖК Белые Росы",
@@ -38,8 +10,8 @@
     "area": 145,
     "rooms": 4,
     "images": [],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "prometr:38539",
@@ -52,8 +24,8 @@
     "area": 185.8,
     "rooms": 4,
     "images": [],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "kufar:1009941055",
@@ -80,8 +52,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f2b7e6df-9520-4d23-b1c8-3f70b2bd8ace.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d64f2f5b-ac97-49d7-b3f7-25d7c12a8721.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "kufar:1059749645",
@@ -112,8 +84,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c2180852-8b16-42d3-a352-fb02acff1fdc.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e791f2d3-df8e-4883-9f23-f8f8df7ef539.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "kufar:1057476665",
@@ -141,8 +113,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/dd521795-0417-456e-94ae-3655cd9980a2.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9c22b18b-4d06-4497-9067-3109c0ef6433.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "kufar:1006986209",
@@ -167,8 +139,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7fc95898-1490-43ae-83be-3ebfdbd4807e.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ef6239ce-6c5f-43f7-a4ab-789ee0b8394c.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "kufar:1024113988",
@@ -203,8 +175,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca11b9ae-86de-4275-a335-2745d332c8a7.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6e98d72f-de42-48f4-9e19-4d7089240802.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "kufar:1070672980",
@@ -241,8 +213,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7342ada6-f834-41ab-8bee-edf145607d69.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0459d881-cd64-4898-a16d-0e504674756a.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "kufar:1027795543",
@@ -261,8 +233,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2b34ef5c-d859-4496-bbd5-b7488b54b8d1.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bfaa73dd-ff10-4226-af33-96dcdf795c0e.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "kufar:1067560511",
@@ -285,8 +257,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6a2cdd5c-1229-4d5d-aca6-5f8f6c6a85ae.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/56f44f2f-c48b-4895-b027-dbcbc5dffe49.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "kufar:1068925765",
@@ -327,8 +299,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e28c1965-0bb5-4e37-9192-22a9d1a6f56a.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3b1ea00a-8a2c-4084-9546-0955146922a7.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "kufar:1045707638",
@@ -353,15 +325,15 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cd2fb29a-89b9-457f-8225-23e1e05414e4.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a17cea66-3a57-4f3a-86c0-6888da26f7da.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "realt:4172587",
     "source": "realt",
     "link": "https://realt.by/sale-cottages/object/4172587/",
     "title": "Гродно, Молодая ул.",
-    "priceByn": 582660,
+    "priceByn": 581160,
     "priceUsd": 200000,
     "area": 89,
     "plotArea": 1,
@@ -389,15 +361,15 @@
       "https://cdn.realt.by/img/55/e75adcb6-7864-11f1-bd67-0242ac120003",
       "https://cdn.realt.by/img/55/e76f4e80-7864-11f1-b471-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "realt:4131531",
     "source": "realt",
     "link": "https://realt.by/sale-cottages/object/4131531/",
     "title": "Гродно, Старомалыщинская ул.",
-    "priceByn": 772025,
+    "priceByn": 770037,
     "priceUsd": 265000,
     "area": 115,
     "plotArea": 2,
@@ -425,8 +397,8 @@
       "https://cdn.realt.by/img/55/90822ffc-5500-11f1-83d8-0242ac120003",
       "https://cdn.realt.by/img/55/919b1e3a-5500-11f1-9cc8-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "realt:4094226",
@@ -434,7 +406,7 @@
     "link": "https://realt.by/sale-cottages/object/4094226/",
     "title": "4-комнатная квартира 4 - таунхаус в микрорайоне Девятовка-7",
     "priceByn": 539000,
-    "priceUsd": 185014,
+    "priceUsd": 185491,
     "area": 174.4,
     "plotArea": 1.85,
     "address": "Гродно Малыщинская ул. 22",
@@ -470,8 +442,8 @@
       "https://cdn.realt.by/img/55/909592fa-3709-11f1-8f8c-0242ac120003",
       "https://cdn.realt.by/img/55/9693f2dc-3709-11f1-b7b8-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "realt:4092569",
@@ -479,7 +451,7 @@
     "link": "https://realt.by/sale-cottages/object/4092569/",
     "title": "4-комнатная квартира 2-таунхаус в микрорайоне Девятовка-7",
     "priceByn": 539000,
-    "priceUsd": 185014,
+    "priceUsd": 185491,
     "area": 174.8,
     "plotArea": 1.87,
     "address": "Гродно Малыщинская ул. 22",
@@ -518,15 +490,91 @@
       "https://cdn.realt.by/img/55/91291ecc-34ce-11f1-a9f4-0242ac120003",
       "https://cdn.realt.by/img/55/912772c0-34ce-11f1-a302-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
+  },
+  {
+    "uid": "realt:4081184",
+    "source": "realt",
+    "link": "https://realt.by/sale-cottages/object/4081184/",
+    "title": "Гродно, 17 Сентября ул.",
+    "priceByn": 665000,
+    "priceUsd": 228853,
+    "area": 207.7,
+    "plotArea": 2.94,
+    "address": "Гродно 17 Сентября ул. 59 2",
+    "description": "Такого вы большо не купите. Уникальный Таунхаус\nПлощадь дома - 207.7 м2.  Площадь кухни 55.7 м 2. Жилая площадь 90 м2. Дом 2023 года постройки для круглогодичного проживания.  Три уровня, два этажа, 3комнаты, 2 санузла. Высота потолка 3.72м. и свой винный погреб. Участок 3.5 сотки.\nДля того, чтобы ощутить всю атмосферу этого дома нужно обязательно побывать в нем.\nУчасток полностью огорожен и благоустроен, выполнена современная дренажная система.\nВсе коммуникации центральные: водо-, электро- и газоснабжение, проведено оптоволокно, устроена система вентиляции. Отопление – автономный газовый котел. Выполнена черновая отделка, установлены современные деревянные стеклопакеты, залита стяжка пола. Все работы выполнялись по проекту с оформлением соответствующей разрешительной документацией. Помещения полностью готовы к чистовой отделке.\nОтличная локация для жизни и бизнеса! Рядом находятся крупные магазины и торговые центры: гипермаркет Евроопт, БЦ Августовский, кофейни и рестораны, Зоопарк, городской парк им. Жилибера, Свято-Покровский кафедральный собор, Лютеранская кирха. Также рядом есть школа и детский сад. Отличная пешеходная и транспортная доступность: остановки общественного транспорта, авто- и ж/д вокзал.\nВозможен перевод под коммерческое использование.",
+    "images": [
+      "https://static.realt.by/thumb/c/430x374/7148e922433651fb09f44ae257e6390f/kp/d/04243cpszdkp/3e2f670ba6.jpeg",
+      "https://static.realt.by/thumb/c/430x374/be2147fdcc4ccdbf9cae7c827724ad1f/kp/d/04243cpszdkp/f99dbad5ae.jpeg",
+      "https://static.realt.by/thumb/c/430x374/946f1296af1d3575434127cbb4c6bd3c/kp/d/04243cpszdkp/01c7d90e46.jpeg",
+      "https://static.realt.by/thumb/c/430x374/8b849f33f29e29bbd995051ddea49958/kp/d/04243cpszdkp/06b15909d9.jpeg",
+      "https://static.realt.by/thumb/c/430x374/ddfa96f37bcf9509c1d4e46fb4fce324/kp/d/04243cpszdkp/237b63166e.jpeg",
+      "https://static.realt.by/thumb/c/430x374/bd583cb3278dd4ef333c0d1f4d70e2b4/kp/d/04243cpszdkp/3acbdae0d8.jpeg",
+      "https://static.realt.by/thumb/c/430x374/30e6b54832af371baa2ca860b7b5be6a/kp/d/04243cpszdkp/b13ae22990.jpeg",
+      "https://static.realt.by/thumb/c/430x374/59991edb3bad06bbabf9910738ebaaba/kp/d/04243cpszdkp/f93595fa8e.jpeg",
+      "https://static.realt.by/thumb/c/430x374/e9b85c7b0bbe5b5d6eef5d9adbe6c0ef/kp/d/04243cpszdkp/f171c424a9.jpeg",
+      "https://static.realt.by/thumb/c/430x374/a3e9c7a5c44ea11f3bf792e299fcfef4/kp/d/04243cpszdkp/9120af604d.jpeg",
+      "https://static.realt.by/thumb/c/430x374/ecc99ce857e57f1538cebcfdd4c140dd/kp/d/04243cpszdkp/a125ee6636.jpeg",
+      "https://static.realt.by/thumb/c/430x374/b656c29e963e4975c47d6ff0d1c36dab/kp/d/04243cpszdkp/219d5bb345.jpeg",
+      "https://static.realt.by/thumb/c/430x374/0ac30dc69022208de3ab8a4e7e99de7b/kp/d/04243cpszdkp/3ad09bf4e6.jpeg",
+      "https://static.realt.by/thumb/c/430x374/0eeaee73f04459c9ea5dd9e1fa06447e/kp/d/04243cpszdkp/121d0326c6.jpeg",
+      "https://static.realt.by/thumb/c/430x374/be8bbd4ea06275c0b59f844958237dd7/kp/d/04243cpszdkp/d6c5c56e51.jpeg",
+      "https://static.realt.by/thumb/c/430x374/0ca669402d07da7dcd4dd6127ba16690/kp/d/04243cpszdkp/e79c98b3e4.jpeg",
+      "https://static.realt.by/thumb/c/430x374/45ad99304d901397d5e9806ab59f3ea2/kp/d/04243cpszdkp/34f136bfc0.jpeg",
+      "https://static.realt.by/thumb/c/430x374/fae9ed454a3b0b69250a99d4f1b45723/kp/d/04243cpszdkp/229c3fd8f2.jpeg",
+      "https://static.realt.by/thumb/c/430x374/37c8760c3594b20d3638423d989a169e/kp/d/04243cpszdkp/5d2de47c97.jpeg",
+      "https://static.realt.by/thumb/c/430x374/c50afa61541abdfc352c22a96edfe9f7/kp/d/04243cpszdkp/98859b1632.jpeg",
+      "https://static.realt.by/thumb/c/430x374/38a861123e4a518494d86f22345b9f5f/kp/d/04243cpszdkp/aa6182fbae.jpeg",
+      "https://static.realt.by/thumb/c/430x374/1fae8d25653682318a9d47036aa3f1d7/kp/d/04243cpszdkp/49aebb43d3.jpeg",
+      "https://static.realt.by/thumb/c/430x374/e0dc18b5c5000bbbaa715efe3e1099df/kp/d/04243cpszdkp/47585587c2.jpeg",
+      "https://static.realt.by/thumb/c/430x374/b596ca44e38c16b1c192326a958adea3/kp/d/04243cpszdkp/1a264a815a.jpeg",
+      "https://static.realt.by/thumb/c/430x374/fd1d2ba83e337e118b33c26d6bf4d9b0/kp/d/04243cpszdkp/95b86612bf.jpeg",
+      "https://static.realt.by/thumb/c/430x374/8583287e69f46b849a30c2a48b73e2aa/kp/d/04243cpszdkp/b6c7ac11c1.jpeg",
+      "https://static.realt.by/thumb/c/430x374/827f69e1cce69220531cffdf6e4804e6/kp/d/04243cpszdkp/3952c12140.jpeg"
+    ],
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
+  },
+  {
+    "uid": "realt:4059196",
+    "source": "realt",
+    "link": "https://realt.by/sale-cottages/object/4059196/",
+    "title": "Гродно, проезд Калиновый 3-й",
+    "priceByn": 291200,
+    "priceUsd": 100213,
+    "area": 91,
+    "plotArea": 1.83,
+    "address": "Гродно проезд Калиновый 3-й 10",
+    "description": "Двухуровневые квартиры в таунхаусах — это гармония городского комфорта и загородной свободы. Здесь нет соседей над головой, только ваше личное пространство с собственным участком. Почему вам здесь понравится: Ваша земля: Небольшой участок под окнами — для уютных посиделок, первых цветов или чашки кофе на свежем воздухе. Парковка у порога: Забудьте о долгих поисках места. Выходите из машины и... уже дома. Продуманная планировка и черновая отделка от застройщика.",
+    "images": [
+      "https://cdn.realt.by/img/55/e9a90f32-1d39-11f1-a6d3-0242ac120002",
+      "https://cdn.realt.by/img/55/e9a06256-1d39-11f1-9cfc-0242ac120002",
+      "https://cdn.realt.by/img/55/e9980160-1d39-11f1-bfd6-0242ac120002",
+      "https://cdn.realt.by/img/55/e998d7e8-1d39-11f1-a2b1-0242ac120002",
+      "https://cdn.realt.by/img/55/e9993c42-1d39-11f1-ac31-0242ac120002",
+      "https://cdn.realt.by/img/55/e99c6034-1d39-11f1-b626-0242ac120002",
+      "https://cdn.realt.by/img/55/e9991bae-1d39-11f1-813c-0242ac120002",
+      "https://cdn.realt.by/img/55/e99a51d6-1d39-11f1-ab9b-0242ac120002",
+      "https://cdn.realt.by/img/55/e99f24c2-1d39-11f1-bcbe-0242ac120002",
+      "https://cdn.realt.by/img/55/e455bdd2-1d39-11f1-938b-0242ac120002",
+      "https://cdn.realt.by/img/55/3c5c5aa4-6f4c-11f1-9a3f-0242ac120003",
+      "https://cdn.realt.by/img/55/3c5c5a2c-6f4c-11f1-b456-0242ac120003",
+      "https://cdn.realt.by/img/55/3c5fe48a-6f4c-11f1-86aa-0242ac120003",
+      "https://cdn.realt.by/img/55/3c622d6c-6f4c-11f1-ae96-0242ac120003",
+      "https://cdn.realt.by/img/55/3c60b4c8-6f4c-11f1-830b-0242ac120003",
+      "https://cdn.realt.by/img/55/3c622d62-6f4c-11f1-a22b-0242ac120003",
+      "https://cdn.realt.by/img/55/3c628636-6f4c-11f1-b977-0242ac120003"
+    ],
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "realt:4050755",
     "source": "realt",
     "link": "https://realt.by/sale-cottages/object/4050755/",
     "title": "Гродно, 3-й Калиновый проезд",
-    "priceByn": 317258,
+    "priceByn": 316442,
     "priceUsd": 108900,
     "area": 99,
     "plotArea": 1.2,
@@ -540,15 +588,15 @@
       "https://cdn.realt.by/img/55/7ac241ac-13ce-11f1-8f44-0242ac120003",
       "https://cdn.realt.by/img/55/7b4f499e-13ce-11f1-9449-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "realt:4050744",
     "source": "realt",
     "link": "https://realt.by/sale-cottages/object/4050744/",
     "title": "Гродно, 3-й Калиновый проезд",
-    "priceByn": 301527,
+    "priceByn": 300750,
     "priceUsd": 103500,
     "area": 90,
     "plotArea": 1.2,
@@ -564,8 +612,38 @@
       "https://cdn.realt.by/img/55/9ed3664e-13cd-11f1-8d6f-0242ac120003",
       "https://cdn.realt.by/img/55/9f29c070-13cd-11f1-9dc5-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
+  },
+  {
+    "uid": "realt:4046453",
+    "source": "realt",
+    "link": "https://realt.by/sale-cottages/object/4046453/",
+    "title": "Гродно, Проезд Калиновый 4-й",
+    "priceByn": 307830,
+    "priceUsd": 105936,
+    "area": 99.3,
+    "plotArea": 1.9,
+    "address": "Гродно Проезд Калиновый 4-й 3",
+    "description": "Все центральные коммуникации, рассрочка от застройщика. Отдельный вход, удобное место для хранения велосипедов, парковочное место, собственная огороженная зеленая зона",
+    "images": [
+      "https://cdn.realt.by/img/55/1faa8d32-108c-11f1-b4a9-0242ac120003",
+      "https://cdn.realt.by/img/55/1fb1d2fe-108c-11f1-af6b-0242ac120003",
+      "https://cdn.realt.by/img/55/200f9b96-108c-11f1-8e2e-0242ac120003",
+      "https://cdn.realt.by/img/55/200d8928-108c-11f1-b9e2-0242ac120003",
+      "https://cdn.realt.by/img/55/200eed4a-108c-11f1-b94c-0242ac120003",
+      "https://cdn.realt.by/img/55/20126c40-108c-11f1-9725-0242ac120003",
+      "https://cdn.realt.by/img/55/2e6062f2-108c-11f1-8a0f-0242ac120003",
+      "https://cdn.realt.by/img/55/468cb82a-6f4c-11f1-94a2-0242ac120003",
+      "https://cdn.realt.by/img/55/46991bb0-6f4c-11f1-b99e-0242ac120003",
+      "https://cdn.realt.by/img/55/469f409e-6f4c-11f1-8253-0242ac120003",
+      "https://cdn.realt.by/img/55/469fbac4-6f4c-11f1-a8c9-0242ac120003",
+      "https://cdn.realt.by/img/55/46a05218-6f4c-11f1-85ef-0242ac120003",
+      "https://cdn.realt.by/img/55/46a07f36-6f4c-11f1-98a4-0242ac120003",
+      "https://cdn.realt.by/img/55/46a087e2-6f4c-11f1-aae9-0242ac120003"
+    ],
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "realt:3895227",
@@ -573,7 +651,7 @@
     "link": "https://realt.by/sale-cottages/object/3895227/",
     "title": "Гродно, Грандичская ул.",
     "priceByn": 272000,
-    "priceUsd": 93365,
+    "priceUsd": 93606,
     "area": 92,
     "plotArea": 3.5,
     "address": "Гродно Грандичская ул. 8 а",
@@ -584,8 +662,77 @@
       "https://cdn.realt.by/img/55/a3dbff3c-9a08-11f0-9379-0242ac120002",
       "https://cdn.realt.by/img/55/a3c47254-9a08-11f0-a574-0242ac120002"
     ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
+  },
+  {
+    "uid": "realt:3799051",
+    "source": "realt",
+    "link": "https://realt.by/sale-cottages/object/3799051/",
+    "title": "Таунхаус в 10 минутах езды от центра Гродно",
+    "priceByn": 350000,
+    "priceUsd": 120449,
+    "area": 192,
+    "plotArea": 1.2,
+    "address": "Гродно Капличная ул.",
+    "description": "Таунхаус — интересная альтернатива новостройкам для тех, кто ищет просторное и уединенное жилье близко к центру. В жилом доме 11 двухэтажных квартир с выходом на личный участок.",
+    "images": [
+      "https://cdn.realt.by/img/55/cf82cc60-963e-11f0-b3b9-0242ac120002",
+      "https://cdn.realt.by/img/55/cf90fd30-963e-11f0-bd59-0242ac120002",
+      "https://cdn.realt.by/img/55/d300e764-963e-11f0-b812-0242ac120002",
+      "https://cdn.realt.by/img/55/d3040fb6-963e-11f0-b391-0242ac120002",
+      "https://cdn.realt.by/img/55/d8147b26-963e-11f0-b249-0242ac120002",
+      "https://cdn.realt.by/img/55/d8233904-963e-11f0-af80-0242ac120002",
+      "https://cdn.realt.by/img/55/de833768-963e-11f0-adb1-0242ac120002",
+      "https://cdn.realt.by/img/55/de8f034a-963e-11f0-913d-0242ac120002",
+      "https://cdn.realt.by/img/55/e416e102-963e-11f0-a073-0242ac120002",
+      "https://cdn.realt.by/img/55/e41c28d8-963e-11f0-8e8b-0242ac120002",
+      "https://cdn.realt.by/img/55/e91cc356-963e-11f0-b687-0242ac120002",
+      "https://cdn.realt.by/img/55/e926ebc4-963e-11f0-85b9-0242ac120002",
+      "https://cdn.realt.by/img/55/e932bd64-963e-11f0-bb12-0242ac120002",
+      "https://cdn.realt.by/img/55/e93122d8-963e-11f0-ac82-0242ac120002",
+      "https://cdn.realt.by/img/55/e9341aec-963e-11f0-8a3a-0242ac120002",
+      "https://cdn.realt.by/img/55/e95bc402-963e-11f0-908d-0242ac120002",
+      "https://cdn.realt.by/img/55/e95d5600-963e-11f0-adc3-0242ac120002",
+      "https://cdn.realt.by/img/55/e96dad0c-963e-11f0-a03e-0242ac120002",
+      "https://cdn.realt.by/img/55/e97d0bee-963e-11f0-819d-0242ac120002",
+      "https://cdn.realt.by/img/55/e9a78d6a-963e-11f0-b3ce-0242ac120002"
+    ],
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
+  },
+  {
+    "uid": "realt:3782727",
+    "source": "realt",
+    "link": "https://realt.by/sale-cottages/object/3782727/",
+    "title": "Квартира 4 в таунхаусе в Гродно",
+    "priceByn": 350000,
+    "priceUsd": 120449,
+    "area": 192,
+    "plotArea": 1.2,
+    "address": "Гродно Капличная ул.",
+    "description": "Таунхаус площадью 192 кв. м., имеет 2 этажа, высота потолков 3 м. Построен из газасиликатных блоков с утеплением каменной ватой, двускатная фальцевая кровля , на полу сделана стяжка + теплый водяной пол. Выполнены черновые работы: проложены отопление водяное электрическое, электроснабжение, водоснабжение и канализация центральные.",
+    "images": [
+      "https://cdn.realt.by/img/55/a1d36e90-a5f3-11f0-a17c-0242ac120002",
+      "https://cdn.realt.by/img/55/a1f02cba-a5f3-11f0-a5a6-0242ac120002",
+      "https://cdn.realt.by/img/55/aaa4dd42-a5f3-11f0-8cc1-0242ac120002",
+      "https://cdn.realt.by/img/55/aaa95f66-a5f3-11f0-a989-0242ac120002",
+      "https://cdn.realt.by/img/55/aad3328c-a5f3-11f0-8309-0242ac120002",
+      "https://cdn.realt.by/img/55/ab01ac7a-a5f3-11f0-8ba5-0242ac120002",
+      "https://cdn.realt.by/img/55/aafe7f96-a5f3-11f0-b9f2-0242ac120002",
+      "https://cdn.realt.by/img/55/ab02d8ca-a5f3-11f0-9c81-0242ac120002",
+      "https://cdn.realt.by/img/55/ab2f37a8-a5f3-11f0-9096-0242ac120002",
+      "https://cdn.realt.by/img/55/b348d476-a5f3-11f0-8d17-0242ac120002",
+      "https://cdn.realt.by/img/55/b35b07f4-a5f3-11f0-ac93-0242ac120002",
+      "https://cdn.realt.by/img/55/b8d61958-a5f3-11f0-8234-0242ac120002",
+      "https://cdn.realt.by/img/55/b8e87ca6-a5f3-11f0-a9f4-0242ac120002",
+      "https://cdn.realt.by/img/55/bd1f0470-a5f3-11f0-b82a-0242ac120002",
+      "https://cdn.realt.by/img/55/c028d0f6-a5f3-11f0-802f-0242ac120002",
+      "https://cdn.realt.by/img/55/c306b95a-a5f3-11f0-b998-0242ac120002",
+      "https://cdn.realt.by/img/55/0a925334-439b-11f1-955a-0242ac120003"
+    ],
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "realt:3782290",
@@ -593,7 +740,7 @@
     "link": "https://realt.by/sale-cottages/object/3782290/",
     "title": "Волковыск, Жолудева ул.",
     "priceByn": 90000,
-    "priceUsd": 30893,
+    "priceUsd": 30973,
     "area": 99.3,
     "plotArea": 1.5,
     "address": "Волковыск Жолудева ул. 119",
@@ -615,15 +762,77 @@
       "https://cdn.realt.by/img/55/6cbd8d54-4d0a-11f0-8533-0242ac120003",
       "https://cdn.realt.by/img/55/db87a986-4d0a-11f0-a542-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
+  },
+  {
+    "uid": "realt:3763750",
+    "source": "realt",
+    "link": "https://realt.by/sale-cottages/object/3763750/",
+    "title": "Таунхаус на ул. Капличной",
+    "priceByn": 350000,
+    "priceUsd": 120449,
+    "area": 192,
+    "plotArea": 1.2,
+    "address": "Гродно Капличная ул.",
+    "description": "Продается таунхаус на ул. Капличной в городе Гродно. В жилом доме 11 двухэтажных квартир с выходом на земельный участок площадью около 1,2сотки. Площадь квартиры 192 кв.м., в том числе площадью подвала 69 кв.м.",
+    "images": [
+      "https://cdn.realt.by/img/55/78b657b2-9e9f-11f0-a0db-0242ac120002",
+      "https://cdn.realt.by/img/55/78bd649e-9e9f-11f0-ad43-0242ac120002",
+      "https://cdn.realt.by/img/55/7f0e1a14-9e9f-11f0-a3d3-0242ac120002",
+      "https://cdn.realt.by/img/55/7f1619a8-9e9f-11f0-bd21-0242ac120002",
+      "https://cdn.realt.by/img/55/7f1378d8-9e9f-11f0-9def-0242ac120002",
+      "https://cdn.realt.by/img/55/7f1c8f90-9e9f-11f0-94a1-0242ac120002",
+      "https://cdn.realt.by/img/55/7f1e6c34-9e9f-11f0-a557-0242ac120002",
+      "https://cdn.realt.by/img/55/7f1e69d2-9e9f-11f0-a764-0242ac120002",
+      "https://cdn.realt.by/img/55/8644825a-9e9f-11f0-8088-0242ac120002",
+      "https://cdn.realt.by/img/55/86f6350e-9e9f-11f0-9acc-0242ac120002",
+      "https://cdn.realt.by/img/55/86f04dc4-9e9f-11f0-8075-0242ac120002",
+      "https://cdn.realt.by/img/55/86f8051e-9e9f-11f0-a2cf-0242ac120002",
+      "https://cdn.realt.by/img/55/86f7eafc-9e9f-11f0-8ecb-0242ac120002",
+      "https://cdn.realt.by/img/55/86fb575a-9e9f-11f0-b8fd-0242ac120002",
+      "https://cdn.realt.by/img/55/8dffa010-9e9f-11f0-8304-0242ac120002",
+      "https://cdn.realt.by/img/55/8dfee8dc-9e9f-11f0-a0d2-0242ac120002",
+      "https://cdn.realt.by/img/55/8dfe34d2-9e9f-11f0-af8f-0242ac120002"
+    ],
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
+  },
+  {
+    "uid": "realt:3753228",
+    "source": "realt",
+    "link": "https://realt.by/sale-cottages/object/3753228/",
+    "title": "Гродно, Коммунальная ул.",
+    "priceByn": 477000,
+    "priceUsd": 164154,
+    "area": 127,
+    "plotArea": 2.4,
+    "address": "Гродно Коммунальная ул. 32",
+    "description": "Закрытая клубная застройка в центре, территория со шлагбаумом, 11 двухквартирных домов, современный стиль жилья! Квартиры с продуманной планировкой по 127 метров в центре!",
+    "images": [
+      "https://cdn.realt.by/img/55/c894c7a2-0b0d-11f1-b9e6-0242ac120002",
+      "https://cdn.realt.by/img/55/2aba44fe-0b0c-11f1-9d8d-0242ac120002",
+      "https://cdn.realt.by/img/55/2e4c5b7a-0b0c-11f1-865c-0242ac120002",
+      "https://cdn.realt.by/img/55/f7d499aa-3c8e-11f0-a7eb-0242ac120003",
+      "https://cdn.realt.by/img/55/f7d38e66-3c8e-11f0-a5b5-0242ac120003",
+      "https://cdn.realt.by/img/55/18b058d0-3c8f-11f0-ac2c-0242ac120003",
+      "https://cdn.realt.by/img/55/18ab2716-3c8f-11f0-9a5e-0242ac120003",
+      "https://cdn.realt.by/img/55/3e233484-3c8f-11f0-a97c-0242ac120003",
+      "https://cdn.realt.by/img/55/8be43352-5a76-11f1-8385-0242ac120003",
+      "https://cdn.realt.by/img/55/8f404234-5a76-11f1-9cd0-0242ac120003",
+      "https://cdn.realt.by/img/55/9551c9b8-5a76-11f1-9b71-0242ac120003",
+      "https://cdn.realt.by/img/55/9e5834f2-5a76-11f1-b257-0242ac120003",
+      "https://cdn.realt.by/img/55/a36d4d1a-5a76-11f1-b662-0242ac120003"
+    ],
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "realt:3590476",
     "source": "realt",
     "link": "https://realt.by/sale-cottages/object/3590476/",
     "title": "Таунхаусы в микрорайоне Девятовка-7",
-    "priceByn": 522937,
+    "priceByn": 521591,
     "priceUsd": 179500,
     "area": 209.8,
     "plotArea": 2,
@@ -657,15 +866,15 @@
       "https://cdn.realt.by/img/55/3ac918b4-cdcf-11ef-98b8-2236ceb6d16d",
       "https://cdn.realt.by/img/55/44526d7c-cdcf-11ef-b920-2236ceb6d16d"
     ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "realt:3586000",
     "source": "realt",
     "link": "https://realt.by/sale-cottages/object/3586000/",
     "title": "Таунхаус в микрорайоне Девятовка-7",
-    "priceByn": 522937,
+    "priceByn": 521591,
     "priceUsd": 179500,
     "area": 209.8,
     "plotArea": 2,
@@ -698,8 +907,8 @@
       "https://cdn.realt.by/img/55/230f0b70-c933-11ef-b5bf-2236ceb6d16d",
       "https://cdn.realt.by/img/55/26e2fad6-c933-11ef-a45e-2236ceb6d16d"
     ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "realt:3503522",
@@ -707,7 +916,7 @@
     "link": "https://realt.by/sale-cottages/object/3503522/",
     "title": "Таунхаус премиум-класса ЖК \"Белые Росы\" ул. Малыщинская (Девятовка-7)",
     "priceByn": 509000,
-    "priceUsd": 174716,
+    "priceUsd": 175167,
     "area": 185.8,
     "plotArea": 2,
     "address": "Гродно Малыщинская ул.",
@@ -736,85 +945,8 @@
       "https://cdn.realt.by/img/55/c54a754c-67a2-11f0-b999-0242ac120003",
       "https://cdn.realt.by/img/55/cbd1b236-67a2-11f0-918a-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
-  },
-  {
-    "uid": "kufar:1073812795",
-    "source": "kufar",
-    "link": "https://re.kufar.by/vi/1073812795",
-    "title": "Квартира в блокированном доме",
-    "priceByn": 259284,
-    "priceUsd": 89000,
-    "area": 165,
-    "rooms": 4,
-    "address": "1-й Песочный переулок, Гродно, Гродненская область",
-    "images": [
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/168c21d0-e8be-4f47-914a-78a99509aa3d.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eb0168e6-a82e-44a0-9c5e-a84b4ffa30c5.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/286934c1-790c-4264-82c6-0ecbb5cb5403.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bbffb747-5e51-4526-8a0f-075590f59f12.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6ebfd75a-43be-4d9a-9afb-d1d3153d0e3b.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ed865816-4f6d-4699-8373-2bd3c3fcd836.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/93ea572c-1ba1-40b6-8ced-a14d264a78a8.jpg"
-    ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
-  },
-  {
-    "uid": "realt:4143683",
-    "source": "realt",
-    "link": "https://realt.by/sale-flats/object/4143683/",
-    "title": "Квартира в блокированном жилом доме с отдельным входом и собственным участком в Гродно",
-    "priceByn": 168330,
-    "priceUsd": 57780,
-    "area": 62,
-    "rooms": 3,
-    "address": "Гродно Крайний пер. 38",
-    "description": "Жилое состояние, отдельный вход, собственный участок 5.8 сотки. В квартире подключены все центральные коммуникации: центральное водоснабжение, центральная канализация, центральное газоснабжение, центральное электричество. Установлен современный двухконтурный газовый котел, обеспечивающий отопление и горячее водоснабжение. Технические характеристики: окна ПВХ; полы: линолеум, в кухне и в ванной комнате - плитка; стены окрашены, в санузле - плитка; потолки: сайдинг, натяжные.",
-    "images": [
-      "https://cdn.realt.by/img/55/2f473dc0-5ffc-11f1-95e7-0242ac120003",
-      "https://cdn.realt.by/img/55/2f0d48b8-5ffc-11f1-bdd9-0242ac120003",
-      "https://cdn.realt.by/img/55/2ef394ae-5ffc-11f1-a8fc-0242ac120003",
-      "https://cdn.realt.by/img/55/3e8ad440-5ffc-11f1-a38f-0242ac120003",
-      "https://cdn.realt.by/img/55/3ecc3a52-5ffc-11f1-89cd-0242ac120003",
-      "https://cdn.realt.by/img/55/22c821c2-5ffc-11f1-9859-0242ac120003",
-      "https://cdn.realt.by/img/55/22bdd2ee-5ffc-11f1-87eb-0242ac120003",
-      "https://cdn.realt.by/img/55/4e39b76c-5ffc-11f1-ab24-0242ac120003",
-      "https://cdn.realt.by/img/55/58e7ed46-5ffc-11f1-8b1c-0242ac120003",
-      "https://cdn.realt.by/img/55/58e97904-5ffc-11f1-9952-0242ac120003",
-      "https://cdn.realt.by/img/55/22ad705c-5ffc-11f1-bf47-0242ac120003",
-      "https://cdn.realt.by/img/55/37fc6e9a-5ffc-11f1-a0ad-0242ac120003",
-      "https://cdn.realt.by/img/55/384eff3e-5ffc-11f1-aa2a-0242ac120003",
-      "https://cdn.realt.by/img/55/38646e82-5ffc-11f1-8794-0242ac120003",
-      "https://cdn.realt.by/img/55/46c4ab54-5ffc-11f1-8b7f-0242ac120003",
-      "https://cdn.realt.by/img/55/46c55db0-5ffc-11f1-be1b-0242ac120003",
-      "https://cdn.realt.by/img/55/6317ad42-5ffc-11f1-bd08-0242ac120003"
-    ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
-  },
-  {
-    "uid": "realt:3888907",
-    "source": "realt",
-    "link": "https://realt.by/sale-flats/object/3888907/",
-    "title": "Квартира в блокированном доме",
-    "priceByn": 261979,
-    "priceUsd": 89925,
-    "area": 165,
-    "rooms": 4,
-    "address": "Гродно Песочный 1-й пер. 15",
-    "description": "Квартира 4 комнаты, общей площадью 165 м², расположена на первом этаже дома в м-не Барановичи, на переулке Песочном 1-м. Отдельный вход. Свой подвал с гаражом и погребом. Дом построен основательно, из кирпича – полуметровые стены. Железобетонные перекрытия. Окна ПВХ с ламинацией. Подведен газ с отдельным учетом. Разведено электричество, водоснабжение, канализация. Надежная фальцевая кровля.",
-    "images": [
-      "https://cdn.realt.by/img/55/e20c6552-948c-11f0-a574-0242ac120002",
-      "https://cdn.realt.by/img/55/e1d8d3ae-948c-11f0-ac97-0242ac120002",
-      "https://cdn.realt.by/img/55/e17e427c-948c-11f0-838d-0242ac120002",
-      "https://cdn.realt.by/img/55/e140fe12-948c-11f0-8685-0242ac120002",
-      "https://cdn.realt.by/img/55/e168d6ee-948c-11f0-a146-0242ac120002",
-      "https://cdn.realt.by/img/55/e0b95ac0-948c-11f0-acc2-0242ac120002"
-    ],
-    "firstSeenAt": "2026-08-02T17:29:56.595Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "kufar:1064330654",
@@ -839,8 +971,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/21b2cea6-15f0-4383-b9d4-9cdc8790b101.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cf7db18b-0da5-4b7f-b63b-e9a238ddc82c.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:45:12.158Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "kufar:1068287609",
@@ -883,8 +1015,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0ae32712-a2ae-4b68-b783-b9836e6a87e9.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8e1c98cb-5267-4e34-9021-0c271ac64026.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:45:12.158Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "kufar:1069987012",
@@ -910,8 +1042,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bb023a51-1faf-4128-9b35-6ec7538cfdb1.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5a9c6289-efb2-455c-a13b-d1245281101a.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:45:12.158Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "kufar:1078845283",
@@ -952,8 +1084,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eb07f609-c258-4c10-a92c-c5eae1d3c4fb.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/18eaba83-cd74-462d-8e77-884eba8019c9.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:45:12.158Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "kufar:1027793297",
@@ -974,8 +1106,30 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a57759c8-333d-423c-974c-e5f46d29d95a.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cd3d275f-bd5e-423f-8c87-62e998154faf.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:45:12.158Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
+  },
+  {
+    "uid": "kufar:1073812795",
+    "source": "kufar",
+    "link": "https://re.kufar.by/vi/1073812795",
+    "title": "Квартира в блокированном доме",
+    "priceByn": 259284,
+    "priceUsd": 89000,
+    "area": 165,
+    "rooms": 4,
+    "address": "1-й Песочный переулок, Гродно, Гродненская область",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/168c21d0-e8be-4f47-914a-78a99509aa3d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eb0168e6-a82e-44a0-9c5e-a84b4ffa30c5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/286934c1-790c-4264-82c6-0ecbb5cb5403.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bbffb747-5e51-4526-8a0f-075590f59f12.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6ebfd75a-43be-4d9a-9afb-d1d3153d0e3b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ed865816-4f6d-4699-8373-2bd3c3fcd836.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/93ea572c-1ba1-40b6-8ced-a14d264a78a8.jpg"
+    ],
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "kufar:1005064263",
@@ -1014,8 +1168,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c3f99b16-611d-42cd-814e-664c0f5f54f9.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/be7db705-e122-4d00-9d34-ab35161390b2.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:45:12.158Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "kufar:1064066798",
@@ -1054,8 +1208,99 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/02b778cd-a3e4-4ea7-aabb-d7d9ec4e312c.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b27bbff9-4438-48bb-8ff2-deb8d1cc0cf6.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:45:12.158Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
+  },
+  {
+    "uid": "kufar:1064271586",
+    "source": "kufar",
+    "link": "https://re.kufar.by/vi/1064271586",
+    "title": "4-комнатная квартира 2 - таунхаус в микрорайоне Девятовка-7",
+    "priceByn": 539000,
+    "priceUsd": 185014,
+    "area": 174.8,
+    "rooms": 4,
+    "address": "Малыщинская ул, 22, Гродно, Гродненская область",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/78f596a7-06e5-4e3b-aa3f-413b62bf4997.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/25921e31-c83d-4c28-a9f4-d4a341d63ed6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6ea3c528-c7eb-4f82-8fd0-cdee1bca14e5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c83abe33-daeb-4a0d-9e1c-84a42e842d61.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/63749c7b-cec4-47e1-b4d2-33e0422fb954.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b3304337-4f94-4819-b3d7-110ba6cdbf8f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/39297ed4-3d02-4bbc-8bab-33cc93dddbe0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/60e5a736-b99f-4cef-87ae-b83768833ab4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b96b0c29-6227-4505-be30-923a211e8a3a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9e8814b8-b3bb-499f-ba03-a9e6dfff716d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2602e84e-2b16-4378-9675-130c6869c51e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8778d22d-1e90-4b36-a76b-ec2016ece9d2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3093b6d4-f71e-4912-8889-9b66711dcdc6.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/05288385-f05f-4b28-81e9-59cc83586fcd.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4d5e9cc4-83ac-4f7d-ab17-696d0e3c47b3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d6fb24a6-109a-4c21-9d0d-5c22848a87b4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/62db1faf-5ce5-4b03-9378-7dd210399c0e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bd6233c4-72f4-445e-903f-2250c1f4eb88.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eec785e0-323c-4d7b-838b-63853054d799.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6d6c88a0-b5ec-44e7-9f8c-4add15f28cce.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c087543b-11e2-4318-bbb8-2abd9c7d84be.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bd8ba19d-0669-41b8-a512-f4a8bf240958.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3547b7f5-ff2f-40d7-8531-0df0bb3859cf.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/623ac951-60a6-4ddf-9c9f-ec8ab8dbe7dc.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e9532f34-9016-4ec4-a862-53f8e8e800b7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d6d434cb-3748-4ae5-b507-7a0ea8152f34.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bea28b87-e596-4769-ac51-1affeaf4abb1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/13f53f8f-aba2-4157-937b-6d9f040abc44.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1f530975-6548-440a-a28f-60a7947f9870.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5e2925e8-4cce-4f81-a66d-57e2ec239b75.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/70a16acf-9710-43fe-9685-cca87f711e10.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1c550eb7-9454-43cb-9393-76da4d935f11.jpg"
+    ],
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
+  },
+  {
+    "uid": "kufar:1064734622",
+    "source": "kufar",
+    "link": "https://re.kufar.by/vi/1064734622",
+    "title": "4-комнатная квартира 4 - таунхаус в микрорайоне Девятовка-7",
+    "priceByn": 539000,
+    "priceUsd": 185014,
+    "area": 174.4,
+    "rooms": 4,
+    "address": "Малыщинская ул, Гродно, Гродненская область",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/472f6044-1c6f-47cc-b9ee-e030e9ef4f2e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bdf1022d-9011-476f-8e6b-52adb74ec38b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d4f0cefc-462b-47df-8334-f08171ff1224.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/52f8df2e-570a-4409-92e4-f9ee31efce6a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/df7d4074-d449-47f3-966b-c80b6f732b4d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/017c4033-831d-41f2-941d-13d52a96f298.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c5a8bbe9-836a-4e9d-824a-627c771120bb.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ed52e5a4-8a04-4fb3-8d66-d57c99f5ba0a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/412b5cfa-ddd1-4053-8ec2-9605a3397393.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/36464ab8-4e28-4812-989a-86a6fbbb85d5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/40ee829b-dd47-4c22-85f1-6f54093e2011.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/45364a05-4d66-4239-a9ec-ffeabf63588c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/aafa8f97-ba3a-4ccd-9b65-dda7c6f6fcfc.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6ac627e1-aa78-4769-a9c0-7112c64100cb.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0e92ac40-7cfb-4cf6-82f8-e62f26b5fc56.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f5e341cf-154c-452d-a015-8d3d5e31c33c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/32102ec0-b862-4e6e-9a18-0776cefbbfad.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0a2ae2ec-49b9-4e42-92ef-88564b8f35e9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b0ac9b93-12fe-4ea9-8d17-a9265ba907fa.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/abd1af52-d1aa-48ee-8c6b-6399dc565005.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ac82031e-aa57-4f54-935f-e443ccbc8933.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f585bc0d-d367-4e24-9e60-45e087f878eb.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/47a32f8a-e27b-4418-8a6d-d82044a09779.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/38cbed5d-c8f9-4120-b22f-7f64c514f094.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ff083ce8-253d-46af-bc61-0530c9774ca0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2d8aab92-fe5d-48ec-a94e-a9e2479b3742.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/46b40885-67d2-4f39-8d37-2746d3670054.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/10b5f7f9-3291-4a93-a831-e7c73520991c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/21722f2c-c4d7-49e6-b63e-5df84014cd34.jpg"
+    ],
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "kufar:1011242756",
@@ -1090,15 +1335,61 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/826b649c-8d78-4730-a2ab-e2648d2a6ddd.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/56416d28-d52c-407f-a315-40bb7c590f91.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:45:12.158Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
+  },
+  {
+    "uid": "kufar:1054947753",
+    "source": "kufar",
+    "link": "https://re.kufar.by/vi/1054947753",
+    "title": "Купить двухуровневый таунхаус, 3-й Калиновый проезд",
+    "priceByn": 301527,
+    "priceUsd": 103500,
+    "area": 90,
+    "rooms": 4,
+    "address": "3-й Калиновый проезд, Гродно, Гродненская область",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6a99a5d4-ac61-4b0f-a273-259d968e482e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca6c9866-3f2d-46ab-9840-85dfbc614dc7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c8c1135a-36c8-408c-bb22-cae07c63adb2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/53b2e4db-5dc5-43cc-9189-b1fb77fc6666.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8ea91100-a641-42f0-8860-e79924394f1c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0831e682-ffdd-4639-9f4f-5d8229c64bfb.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/35682470-f97d-4ce9-b0fd-fa299b0b3529.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9bfce2d2-487a-4e7f-bfc2-d7fbd4b0196d.jpg"
+    ],
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
+  },
+  {
+    "uid": "kufar:1054951661",
+    "source": "kufar",
+    "link": "https://re.kufar.by/vi/1054951661",
+    "title": "Купить таунхаус, г. Гродно, 3-й Калиновый проезд",
+    "priceByn": 317258,
+    "priceUsd": 108900,
+    "area": 99,
+    "rooms": 4,
+    "address": "3-й Калиновый проезд, Гродно, Гродненская область",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b20bc814-8fec-4940-8d67-7b30a92e0e99.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/880c7862-227b-4750-9177-481a583e447b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/138401d7-0110-4afb-a394-aa0dca6151da.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c6755814-c2b5-4885-b0e1-232596893b26.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9f13771d-c2e5-4b9c-a44d-a5296e5ed6e0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/28291d54-3fb5-48e9-9f6e-b309e5625da9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2bd78ad2-1291-4710-867f-c4d5deac4410.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b12e5ec2-a773-40ba-907d-77793bd039ca.jpg"
+    ],
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "realt:4170356",
     "source": "realt",
     "link": "https://realt.by/sale-flats/object/4170356/",
     "title": "Двухкомнатная квартира в блокированном доме",
-    "priceByn": 174798,
+    "priceByn": 174348,
     "priceUsd": 60000,
     "area": 75.5,
     "rooms": 2,
@@ -1125,8 +1416,8 @@
       "https://cdn.realt.by/img/55/cb7a73be-6f98-11f1-bad8-0242ac120003",
       "https://cdn.realt.by/img/55/cb92683e-6f98-11f1-bafc-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T17:45:12.158Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "realt:4170295",
@@ -1134,7 +1425,7 @@
     "link": "https://realt.by/sale-flats/object/4170295/",
     "title": "Гродно, Космонавтов просп.",
     "priceByn": 73000,
-    "priceUsd": 25057,
+    "priceUsd": 25122,
     "area": 28.2,
     "rooms": 1,
     "address": "Гродно Космонавтов просп. 65",
@@ -1161,15 +1452,81 @@
       "https://cdn.realt.by/img/55/c9b08f76-75e9-11f1-975f-0242ac120003",
       "https://cdn.realt.by/img/55/d0f8f39a-75e9-11f1-ab80-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T17:45:12.158Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
+  },
+  {
+    "uid": "realt:4147599",
+    "source": "realt",
+    "link": "https://realt.by/sale-flats/object/4147599/",
+    "title": "Стильный таунхаус в ЖК «Белые Росы». В современном районе Девятовка-7",
+    "priceByn": 539000,
+    "priceUsd": 185491,
+    "area": 185.8,
+    "rooms": 4,
+    "address": "Гродно Малыщинская ул. 22",
+    "description": "При строительстве использовались высококачественные материалы: монолитный каркас, экологичные керамзитобетонные блоки с высокой шумоизоляцией, фальцевая кровля, клинкерная плитка.",
+    "images": [
+      "https://cdn.realt.by/img/55/30e5b520-634a-11f1-9c16-0242ac120003",
+      "https://cdn.realt.by/img/55/31502856-634a-11f1-8a4f-0242ac120003",
+      "https://cdn.realt.by/img/55/31e8a2ac-634a-11f1-ae65-0242ac120003",
+      "https://cdn.realt.by/img/55/32688666-634a-11f1-a877-0242ac120003",
+      "https://cdn.realt.by/img/55/32dcb9be-634a-11f1-96b3-0242ac120003",
+      "https://cdn.realt.by/img/55/334a0f0a-634a-11f1-9701-0242ac120003",
+      "https://cdn.realt.by/img/55/33b5788a-634a-11f1-8cd7-0242ac120003",
+      "https://cdn.realt.by/img/55/341e6d18-634a-11f1-a254-0242ac120003",
+      "https://cdn.realt.by/img/55/348c7772-634a-11f1-85dd-0242ac120003",
+      "https://cdn.realt.by/img/55/350d1490-634a-11f1-bd1c-0242ac120003",
+      "https://cdn.realt.by/img/55/3577d730-634a-11f1-ba47-0242ac120003",
+      "https://cdn.realt.by/img/55/35de95b0-634a-11f1-a6d1-0242ac120003",
+      "https://cdn.realt.by/img/55/3646255e-634a-11f1-b613-0242ac120003",
+      "https://cdn.realt.by/img/55/36b4d030-634a-11f1-81a1-0242ac120003",
+      "https://cdn.realt.by/img/55/37fa3b92-634a-11f1-b396-0242ac120003",
+      "https://cdn.realt.by/img/55/3876aee8-634a-11f1-ad9f-0242ac120003",
+      "https://cdn.realt.by/img/55/38e596dc-634a-11f1-803e-0242ac120003"
+    ],
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
+  },
+  {
+    "uid": "realt:4143683",
+    "source": "realt",
+    "link": "https://realt.by/sale-flats/object/4143683/",
+    "title": "Квартира в блокированном жилом доме с отдельным входом и собственным участком в Гродно",
+    "priceByn": 168330,
+    "priceUsd": 57929,
+    "area": 62,
+    "rooms": 3,
+    "address": "Гродно Крайний пер. 38",
+    "description": "Жилое состояние, отдельный вход, собственный участок 5.8 сотки. В квартире подключены все центральные коммуникации: центральное водоснабжение, центральная канализация, центральное газоснабжение, центральное электричество. Установлен современный двухконтурный газовый котел, обеспечивающий отопление и горячее водоснабжение. Технические характеристики: окна ПВХ; полы: линолеум, в кухне и в ванной комнате - плитка; стены окрашены, в санузле - плитка; потолки: сайдинг, натяжные.",
+    "images": [
+      "https://cdn.realt.by/img/55/2f473dc0-5ffc-11f1-95e7-0242ac120003",
+      "https://cdn.realt.by/img/55/2f0d48b8-5ffc-11f1-bdd9-0242ac120003",
+      "https://cdn.realt.by/img/55/2ef394ae-5ffc-11f1-a8fc-0242ac120003",
+      "https://cdn.realt.by/img/55/3e8ad440-5ffc-11f1-a38f-0242ac120003",
+      "https://cdn.realt.by/img/55/3ecc3a52-5ffc-11f1-89cd-0242ac120003",
+      "https://cdn.realt.by/img/55/22c821c2-5ffc-11f1-9859-0242ac120003",
+      "https://cdn.realt.by/img/55/22bdd2ee-5ffc-11f1-87eb-0242ac120003",
+      "https://cdn.realt.by/img/55/4e39b76c-5ffc-11f1-ab24-0242ac120003",
+      "https://cdn.realt.by/img/55/58e7ed46-5ffc-11f1-8b1c-0242ac120003",
+      "https://cdn.realt.by/img/55/58e97904-5ffc-11f1-9952-0242ac120003",
+      "https://cdn.realt.by/img/55/22ad705c-5ffc-11f1-bf47-0242ac120003",
+      "https://cdn.realt.by/img/55/37fc6e9a-5ffc-11f1-a0ad-0242ac120003",
+      "https://cdn.realt.by/img/55/384eff3e-5ffc-11f1-aa2a-0242ac120003",
+      "https://cdn.realt.by/img/55/38646e82-5ffc-11f1-8794-0242ac120003",
+      "https://cdn.realt.by/img/55/46c4ab54-5ffc-11f1-8b7f-0242ac120003",
+      "https://cdn.realt.by/img/55/46c55db0-5ffc-11f1-be1b-0242ac120003",
+      "https://cdn.realt.by/img/55/6317ad42-5ffc-11f1-bd08-0242ac120003"
+    ],
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "realt:4137867",
     "source": "realt",
     "link": "https://realt.by/sale-flats/object/4137867/",
     "title": "2-комнатная квартира ул. Шоссейная д.9",
-    "priceByn": 110705,
+    "priceByn": 110420,
     "priceUsd": 38000,
     "area": 49.7,
     "rooms": 2,
@@ -1187,15 +1544,43 @@
       "https://cdn.realt.by/img/55/06c3c5e6-5a69-11f1-89dd-0242ac120003",
       "https://cdn.realt.by/img/55/06e45f86-5a69-11f1-9814-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T17:45:12.158Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
+  },
+  {
+    "uid": "realt:4132877",
+    "source": "realt",
+    "link": "https://realt.by/sale-flats/object/4132877/",
+    "title": "Квартира в блокированном доме на ул.Гонионской",
+    "priceByn": 145000,
+    "priceUsd": 49900,
+    "area": 65.4,
+    "rooms": 4,
+    "address": "Гродно Гонионская ул.",
+    "description": "Отличное месторасположение! Удобная транспортная развязка! В шаговой доступности расположены: гимназия, школы, детские сады, бассейн, аптеки, мини-рынок, магазины и супермаркеты, лесопарковая зона «Лососно».",
+    "images": [
+      "https://cdn.realt.by/img/55/2e67ad16-568f-11f1-9ee4-0242ac120003",
+      "https://cdn.realt.by/img/55/2e80abf4-568f-11f1-adcf-0242ac120003",
+      "https://cdn.realt.by/img/55/31f679bc-568f-11f1-858b-0242ac120003",
+      "https://cdn.realt.by/img/55/31fe847c-568f-11f1-8e23-0242ac120003",
+      "https://cdn.realt.by/img/55/36492136-568f-11f1-8c66-0242ac120003",
+      "https://cdn.realt.by/img/55/365915c8-568f-11f1-aef9-0242ac120003",
+      "https://cdn.realt.by/img/55/3b8b7518-568f-11f1-99d4-0242ac120003",
+      "https://cdn.realt.by/img/55/3ba6992e-568f-11f1-a69c-0242ac120003",
+      "https://cdn.realt.by/img/55/3e6580b2-568f-11f1-8a3e-0242ac120003",
+      "https://cdn.realt.by/img/55/41d54c96-568f-11f1-858e-0242ac120003",
+      "https://cdn.realt.by/img/55/41e4c41e-568f-11f1-b5c0-0242ac120003",
+      "https://cdn.realt.by/img/55/4526794c-568f-11f1-a299-0242ac120003"
+    ],
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "realt:4116205",
     "source": "realt",
     "link": "https://realt.by/sale-flats/object/4116205/",
     "title": "2-комнатная квартира ул. Крайняя д.10",
-    "priceByn": 87399,
+    "priceByn": 87174,
     "priceUsd": 30000,
     "area": 34.6,
     "rooms": 2,
@@ -1213,15 +1598,56 @@
       "https://cdn.realt.by/img/55/08942b4a-4925-11f1-8b54-0242ac120003",
       "https://cdn.realt.by/img/55/0896e25e-4925-11f1-8b52-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T17:45:12.158Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
+  },
+  {
+    "uid": "realt:4090649",
+    "source": "realt",
+    "link": "https://realt.by/sale-flats/object/4090649/",
+    "title": "4-комнатная квартира 3-таунхаус в микрорайоне Девятовка-7",
+    "priceByn": 539000,
+    "priceUsd": 185491,
+    "area": 174.7,
+    "rooms": 4,
+    "address": "Гродно Малыщинская ул. 22",
+    "description": "Развитая инфраструктура: рядом находится детский сад, магазины Табакерка, Алми и др. аптеки, остановки общественного транспорта; в шаговой доступности школы, стадионы, поликлиника, костел, храм, сквер, банки, супермаркеты, аптеки, отделение связи и др. 5 мин на автомобиле до исторического центра города и ж/д вокзала, рядом выезд на объездное кольцо.",
+    "images": [
+      "https://cdn.realt.by/img/55/dab91ad2-3344-11f1-aef3-0242ac120003",
+      "https://cdn.realt.by/img/55/dad0b034-3344-11f1-9197-0242ac120003",
+      "https://cdn.realt.by/img/55/eb18cdc8-3344-11f1-a6a4-0242ac120003",
+      "https://cdn.realt.by/img/55/eb2c2dbe-3344-11f1-82a7-0242ac120003",
+      "https://cdn.realt.by/img/55/f40ee98a-3344-11f1-8ce3-0242ac120003",
+      "https://cdn.realt.by/img/55/f4394e64-3344-11f1-83a7-0242ac120003",
+      "https://cdn.realt.by/img/55/f43d905a-3344-11f1-9dba-0242ac120003",
+      "https://cdn.realt.by/img/55/f4467b3e-3344-11f1-ad24-0242ac120003",
+      "https://cdn.realt.by/img/55/fd671b1a-3344-11f1-8924-0242ac120003",
+      "https://cdn.realt.by/img/55/03d227e2-3345-11f1-85d6-0242ac120003",
+      "https://cdn.realt.by/img/55/03e92f8c-3345-11f1-9218-0242ac120003",
+      "https://cdn.realt.by/img/55/0408aa4c-3345-11f1-aaf7-0242ac120003",
+      "https://cdn.realt.by/img/55/044fdbf6-3345-11f1-82da-0242ac120003",
+      "https://cdn.realt.by/img/55/046405fe-3345-11f1-acc0-0242ac120003",
+      "https://cdn.realt.by/img/55/0859b7d0-3345-11f1-8040-0242ac120003",
+      "https://cdn.realt.by/img/55/086f8fce-3345-11f1-a11a-0242ac120003",
+      "https://cdn.realt.by/img/55/08650356-3345-11f1-ad50-0242ac120003",
+      "https://cdn.realt.by/img/55/0f753c42-3345-11f1-8447-0242ac120003",
+      "https://cdn.realt.by/img/55/0f8a576c-3345-11f1-bec8-0242ac120003",
+      "https://cdn.realt.by/img/55/1689f3c4-3345-11f1-89e0-0242ac120003",
+      "https://cdn.realt.by/img/55/16abb07c-3345-11f1-9611-0242ac120003",
+      "https://cdn.realt.by/img/55/1ad73cd4-3345-11f1-91bf-0242ac120003",
+      "https://cdn.realt.by/img/55/1ad98ec6-3345-11f1-b6c3-0242ac120003",
+      "https://cdn.realt.by/img/55/1adf2264-3345-11f1-ba61-0242ac120003",
+      "https://cdn.realt.by/img/55/1de1ac66-3345-11f1-8f83-0242ac120003"
+    ],
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "realt:4072799",
     "source": "realt",
     "link": "https://realt.by/sale-flats/object/4072799/",
     "title": "2 комнатная квартира ул. Пимена Панченко д.6",
-    "priceByn": 61179,
+    "priceByn": 61022,
     "priceUsd": 21000,
     "area": 73,
     "rooms": 2,
@@ -1233,15 +1659,15 @@
       "https://cdn.realt.by/img/55/2071a868-274d-11f1-8218-0242ac120003",
       "https://cdn.realt.by/img/55/1bfb7e1c-274d-11f1-8418-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T17:45:12.158Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "realt:4044540",
     "source": "realt",
     "link": "https://realt.by/sale-flats/object/4044540/",
     "title": "Гродно, Заслонова ул.",
-    "priceByn": 125272,
+    "priceByn": 124949,
     "priceUsd": 43000,
     "area": 40,
     "rooms": 2,
@@ -1255,15 +1681,15 @@
       "https://static.realt.by/thumb/c/430x374/2e2a2292dc233457f8f8fe6577146537/ev/9/02331arba9ev/f28c13884f.jpeg",
       "https://static.realt.by/thumb/c/430x374/48a549c1270ab582c9016bec72775f7b/ev/9/02331arba9ev/69da3772dc.jpeg"
     ],
-    "firstSeenAt": "2026-08-02T17:45:12.158Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "realt:3987442",
     "source": "realt",
     "link": "https://realt.by/sale-flats/object/3987442/",
     "title": "2-комнатная квартира ул. Шоссейная д.9",
-    "priceByn": 72833,
+    "priceByn": 72645,
     "priceUsd": 25000,
     "area": 54.6,
     "rooms": 2,
@@ -1281,8 +1707,8 @@
       "https://cdn.realt.by/img/55/b9009bb6-dffe-11f0-ad0c-0242ac120003",
       "https://cdn.realt.by/img/55/bd790a52-dffe-11f0-add6-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T17:45:12.158Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "realt:3949158",
@@ -1290,7 +1716,7 @@
     "link": "https://realt.by/sale-flats/object/3949158/",
     "title": "Двухуровневая квартира в таунхаусе",
     "priceByn": 329360,
-    "priceUsd": 113054,
+    "priceUsd": 113346,
     "area": 92,
     "rooms": 4,
     "address": "Гродно Мясницкая ул. 10 б",
@@ -1312,15 +1738,15 @@
       "https://cdn.realt.by/img/55/7da19c8c-c537-11f0-94b0-0242ac120003",
       "https://cdn.realt.by/img/55/8a7095d0-c537-11f0-9a4e-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T17:45:12.158Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "realt:3916759",
     "source": "realt",
     "link": "https://realt.by/sale-flats/object/3916759/",
     "title": "2 комнатная квартира в блокированном доме ул. Антонова д.6",
-    "priceByn": 151492,
+    "priceByn": 151102,
     "priceUsd": 52000,
     "area": 41,
     "rooms": 2,
@@ -1335,15 +1761,37 @@
       "https://cdn.realt.by/img/55/2e4614f8-a901-11f0-a38a-0242ac120002",
       "https://cdn.realt.by/img/55/2cc8654a-a901-11f0-aadd-0242ac120002"
     ],
-    "firstSeenAt": "2026-08-02T17:45:12.158Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
+  },
+  {
+    "uid": "realt:3888907",
+    "source": "realt",
+    "link": "https://realt.by/sale-flats/object/3888907/",
+    "title": "Квартира в блокированном доме",
+    "priceByn": 261304,
+    "priceUsd": 89925,
+    "area": 165,
+    "rooms": 4,
+    "address": "Гродно Песочный 1-й пер. 15",
+    "description": "Квартира 4 комнаты, общей площадью 165 м², расположена на первом этаже дома в м-не Барановичи, на переулке Песочном 1-м. Отдельный вход. Свой подвал с гаражом и погребом. Дом построен основательно, из кирпича – полуметровые стены. Железобетонные перекрытия. Окна ПВХ с ламинацией. Подведен газ с отдельным учетом. Разведено электричество, водоснабжение, канализация. Надежная фальцевая кровля.",
+    "images": [
+      "https://cdn.realt.by/img/55/e20c6552-948c-11f0-a574-0242ac120002",
+      "https://cdn.realt.by/img/55/e1d8d3ae-948c-11f0-ac97-0242ac120002",
+      "https://cdn.realt.by/img/55/e17e427c-948c-11f0-838d-0242ac120002",
+      "https://cdn.realt.by/img/55/e140fe12-948c-11f0-8685-0242ac120002",
+      "https://cdn.realt.by/img/55/e168d6ee-948c-11f0-a146-0242ac120002",
+      "https://cdn.realt.by/img/55/e0b95ac0-948c-11f0-acc2-0242ac120002"
+    ],
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "realt:3679550",
     "source": "realt",
     "link": "https://realt.by/sale-flats/object/3679550/",
     "title": "Таунхаус — отличное решение",
-    "priceByn": 269189,
+    "priceByn": 268496,
     "priceUsd": 92400,
     "area": 120,
     "rooms": 4,
@@ -1372,8 +1820,8 @@
       "https://cdn.realt.by/img/55/12c3f1e8-06f7-11f0-b0a8-0242ac120003",
       "https://cdn.realt.by/img/55/170039b0-06f7-11f0-8529-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T17:45:12.158Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   },
   {
     "uid": "realt:2541496",
@@ -1381,7 +1829,7 @@
     "link": "https://realt.by/sale-flats/object/2541496/",
     "title": "Таунхаус премиального уровня в Гродно - 610124",
     "priceByn": 539000,
-    "priceUsd": 185014,
+    "priceUsd": 185491,
     "area": 185,
     "rooms": 4,
     "address": "Гродно Старомалыщинская ул. 94",
@@ -1413,7 +1861,7 @@
       "https://static.realt.by/thumb/c/430x374/20786b42414e9101bdb28409154cb3ec/w1/t/023313r2ktw1/a556e2d630.jpeg",
       "https://static.realt.by/thumb/c/430x374/8e7c016729400d5e12cdca20e2e70572/w1/t/023313r2ktw1/a9950e810d.jpeg"
     ],
-    "firstSeenAt": "2026-08-02T17:45:12.158Z",
-    "lastSeenAt": "2026-08-02T21:13:40.616Z"
+    "firstSeenAt": "2026-08-02T21:33:43.039Z",
+    "lastSeenAt": "2026-08-02T21:36:59.094Z"
   }
 ]

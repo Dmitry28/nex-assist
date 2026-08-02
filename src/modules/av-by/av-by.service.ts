@@ -25,19 +25,10 @@ interface AvByMeta {
   lastRunAt?: string;
 }
 
-/** Treat 0 and undefined as equivalent "no price" to avoid false price-change detections. */
-export const effectivePrice = (p: number | undefined): number | undefined =>
-  p !== undefined && p > 0 ? p : undefined;
+import { effectivePrice, hasPriceChanged } from '../../common/utils/price-change';
 
-/** Single source of truth for price-change detection — used in both scrape and persist.
- * Both BYN and USD must change: if either is stable, the seller didn't change the price
- * (the other just fluctuated with the exchange rate). */
-export const hasPriceChanged = (
-  prev: { priceUsd: number; priceByn: number },
-  current: { priceUsd: number; priceByn: number },
-): boolean =>
-  effectivePrice(prev.priceByn) !== effectivePrice(current.priceByn) &&
-  effectivePrice(prev.priceUsd) !== effectivePrice(current.priceUsd);
+// Re-exported so existing importers (and tests) keep a single entry point per module.
+export { effectivePrice, hasPriceChanged };
 
 const isAvByMeta = (v: unknown): v is AvByMeta =>
   typeof v === 'object' &&
@@ -280,7 +271,16 @@ export class AvByService {
           updated.set(listing.id, { ...prev, lastSeenAt: now });
         }
       } else {
-        updated.set(listing.id, { ...prev, lastSeenAt: now });
+        // Re-seen at the same price: refresh the whole record, not just the timestamp.
+        // Keeping `...prev` freezes title, photos and every other field at whatever the first
+        // run captured, so an edited ad — or a corrected parser mapping — never lands.
+        // `prev` is spread first so snapshot-only fields (e.g. soldNotifiedAt) survive.
+        updated.set(listing.id, {
+          ...prev,
+          ...listing,
+          firstSeenAt: prev.firstSeenAt,
+          lastSeenAt: now,
+        });
       }
     }
 
