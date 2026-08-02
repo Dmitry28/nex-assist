@@ -39,6 +39,15 @@ function buildFeeds(): KufarFeedConfig[] {
       url: process.env.KUFAR_GRODNO_TOWNHOUSE_URL ?? KUFAR_DEFAULTS.GRODNO_TOWNHOUSE_URL,
       titleKeywords: TOWNHOUSE_KEYWORDS,
     },
+    // Neman reservoir zone — waterfront land east of Grodno (see KUFAR_DEFAULTS.NEMAN_*).
+    {
+      key: 'neman-uchastok',
+      url: process.env.KUFAR_NEMAN_LAND_URL ?? KUFAR_DEFAULTS.NEMAN_LAND_URL,
+    },
+    {
+      key: 'neman-dom',
+      url: process.env.KUFAR_NEMAN_HOUSES_URL ?? KUFAR_DEFAULTS.NEMAN_HOUSES_URL,
+    },
   ];
 }
 

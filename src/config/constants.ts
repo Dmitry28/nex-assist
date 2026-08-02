@@ -32,6 +32,14 @@ export const KUFAR_DEFAULTS = {
   // `kvartiru`, not `kvartira` — the latter 404s.
   GRODNO_TOWNHOUSE_URL:
     'https://re.kufar.by/l/grodno/kupit/kvartiru?cur=USD&gbx=b%3A23.701980384014313%2C53.668878674336966%2C23.8137319404108%2C53.75899990083715&size=30',
+  // ── Neman reservoir zone (investment watch) ────────────────────────────────
+  // The Гродненское море / Neman backwater east of the city, around Квасовка–Березовое.
+  // Waterfront plots are the target; houses and dachas here sit on the same land, so the
+  // `dom` feed is tracked alongside. Garages are deliberately absent — the area has none.
+  NEMAN_LAND_URL:
+    'https://re.kufar.by/l/belarus/kupit/uchastok?cur=USD&gbx=b%3A23.98467193379422%2C53.418208042890285%2C24.208175046587193%2C53.59933232883824&size=30',
+  NEMAN_HOUSES_URL:
+    'https://re.kufar.by/l/belarus/kupit/dom?cur=USD&gbx=b%3A23.98467193379422%2C53.418208042890285%2C24.208175046587193%2C53.59933232883824&size=30',
   /** Default cron: every day at 09:00 UTC (12:00 Minsk) */
   SCRAPE_CRON: '0 9 * * *',
 } as const;
@@ -62,6 +70,14 @@ export const REALT_DEFAULTS = {
   // Flats in the zone, keyword-filtered down to townhouses.
   GRODNO_TOWNHOUSE_URL:
     'https://realt.by/grodno-region/sale/flats/map/?addressV2=%5B%7B%22stateRegionUuid%22%3A%22499f04f0-7b00-11eb-8943-0cc47adabd66%22%7D%5D&coords=53.668878674336966&coords=23.701980384014313&coords=53.75899990083715&coords=23.8137319404108&sortType=createdAt',
+  // ── Neman reservoir zone (investment watch) ────────────────────────────────
+  // Same bbox as KUFAR_DEFAULTS.NEMAN_* — see the rationale there.
+  NEMAN_PLOTS_URL:
+    'https://realt.by/grodno-region/sale/plots/map/?addressV2=%5B%7B%22stateRegionUuid%22%3A%22499f04f0-7b00-11eb-8943-0cc47adabd66%22%7D%5D&coords=53.418208042890285&coords=23.98467193379422&coords=53.59933232883824&coords=24.208175046587193&sortType=createdAt',
+  NEMAN_COTTAGES_URL:
+    'https://realt.by/grodno-region/sale/cottages/map/?addressV2=%5B%7B%22stateRegionUuid%22%3A%22499f04f0-7b00-11eb-8943-0cc47adabd66%22%7D%5D&coords=53.418208042890285&coords=23.98467193379422&coords=53.59933232883824&coords=24.208175046587193&sortType=createdAt',
+  NEMAN_DACHI_URL:
+    'https://realt.by/grodno-region/sale/dachi/map/?addressV2=%5B%7B%22stateRegionUuid%22%3A%22499f04f0-7b00-11eb-8943-0cc47adabd66%22%7D%5D&coords=53.418208042890285&coords=23.98467193379422&coords=53.59933232883824&coords=24.208175046587193&sortType=createdAt',
   /** Default cron: every day at 09:00 UTC (12:00 Minsk) */
   SCRAPE_CRON: '0 9 * * *',
 } as const;

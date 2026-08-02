@@ -60,6 +60,8 @@ export const validationSchema = Joi.object({
   KUFAR_GRODNO_LAND_URL: Joi.string().uri().default(KUFAR_DEFAULTS.GRODNO_LAND_URL),
   KUFAR_GRODNO_HOUSES_URL: Joi.string().uri().default(KUFAR_DEFAULTS.GRODNO_HOUSES_URL),
   KUFAR_GRODNO_TOWNHOUSE_URL: Joi.string().uri().default(KUFAR_DEFAULTS.GRODNO_TOWNHOUSE_URL),
+  KUFAR_NEMAN_LAND_URL: Joi.string().uri().default(KUFAR_DEFAULTS.NEMAN_LAND_URL),
+  KUFAR_NEMAN_HOUSES_URL: Joi.string().uri().default(KUFAR_DEFAULTS.NEMAN_HOUSES_URL),
   KUFAR_SCRAPE_CRON: Joi.string().default(KUFAR_DEFAULTS.SCRAPE_CRON),
   TELEGRAM_KUFAR_CHAT_ID: Joi.string().optional(),
 
@@ -82,6 +84,9 @@ export const validationSchema = Joi.object({
   REALT_GRODNO_COTTAGES_URL: Joi.string().uri().default(REALT_DEFAULTS.GRODNO_COTTAGES_URL),
   REALT_GRODNO_DACHI_URL: Joi.string().uri().default(REALT_DEFAULTS.GRODNO_DACHI_URL),
   REALT_GRODNO_TOWNHOUSE_URL: Joi.string().uri().default(REALT_DEFAULTS.GRODNO_TOWNHOUSE_URL),
+  REALT_NEMAN_PLOTS_URL: Joi.string().uri().default(REALT_DEFAULTS.NEMAN_PLOTS_URL),
+  REALT_NEMAN_COTTAGES_URL: Joi.string().uri().default(REALT_DEFAULTS.NEMAN_COTTAGES_URL),
+  REALT_NEMAN_DACHI_URL: Joi.string().uri().default(REALT_DEFAULTS.NEMAN_DACHI_URL),
   REALT_SCRAPE_CRON: Joi.string().default(REALT_DEFAULTS.SCRAPE_CRON),
   TELEGRAM_REALT_CHAT_ID: Joi.string().optional(),
 

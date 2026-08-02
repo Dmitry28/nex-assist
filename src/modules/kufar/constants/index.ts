@@ -44,6 +44,8 @@ export const FEED_DISPLAY_NAMES: Record<string, string> = {
   'grodno-uchastok': 'Участки (Гродно, зона моста)',
   'grodno-dom': 'Дома/дачи/коттеджи (Гродно, зона моста)',
   'grodno-taunhaus': 'Таунхаусы в квартирах (Гродно, зона моста)',
+  'neman-uchastok': 'Участки (Неман, водохранилище)',
+  'neman-dom': 'Дома/дачи/коттеджи (Неман, водохранилище)',
 };
 
 /** Snapshot file path for a given feed key. */
