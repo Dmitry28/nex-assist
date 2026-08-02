@@ -39,8 +39,14 @@ Pagination follows cursor tokens from the same JSON until the feed's inventory i
 
 **No time window.** Every feed is diffed in full. `list_time` is the publish/bump time, not a
 "last modified" stamp — a seller can cut the price and it stays put, so filtering by age drops
-most of what we watch for. Measured against the 16.07 snapshot, a 48 h window would have caught
-only **8 of 36** real kufar price changes (22 %).
+most of what we watch for.
+
+Measured against a **2-day-old** snapshot (so a recent edit could not have aged out of the
+window): of 56 genuine price changes, **0** carried a `list_time` within 48 h, and 74 of 85
+never-recorded listings likewise. A daily 48 h window would have caught none of them.
+
+An earlier measurement against a 17-day-old snapshot was inconclusive: the window is applied
+daily, so a stamp that looks old today may well have been fresh on the day the run saw it.
 
 ---
 

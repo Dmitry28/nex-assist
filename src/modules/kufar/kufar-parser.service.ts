@@ -83,8 +83,9 @@ export class KufarParserService {
    *
    * There is deliberately no time filter. Kufar's `list_time` is the publish/bump time, not
    * a "last modified" stamp: a seller can cut the price and `list_time` stays put. Measured
-   * against the 16.07 snapshot, a 48 h window caught only 8 of 36 real price changes (22%),
-   * so filtering by age silently drops most of what we are watching for.
+   * against a 2-day-old snapshot — so recent edits could not have aged out — all 56 genuine
+   * price changes carried a `list_time` older than 48 h, as did 74 of 85 listings the feed
+   * had never recorded. A daily 48 h window would have caught none of them.
    */
   async fetchFeed(url: string): Promise<{ listings: KufarListing[]; truncated: boolean }> {
     const allListings: KufarListing[] = [];

@@ -37,9 +37,14 @@ realt.by SSR pages embed all listing data in `<script id="__NEXT_DATA__">`. The 
 
 Pagination is page-based: `?page=N` until `page * pageSize >= totalCount` or `MAX_PAGES` (30) is reached, with a 1 s pause between pages. A page that fails mid-feed sets the `truncated` flag rather than silently shortening the inventory.
 
-**No time window.** Every feed is diffed in full. realt.by's `updatedAt` does not move when a
-seller edits the price: measured against the 16.07 snapshot, listings untouched for 11 and 16
-months had changed price, and a 48 h window would have caught **0 of 16** real price changes.
+**No time window.** Every feed is diffed in full. Unlike kufar, realt.by's `updatedAt` *does*
+move on most seller edits, so the 48 h window was catching price changes here — measured against
+a 2-day-old snapshot there were no missed ones. It still lost listings whose `updatedAt` predates
+their appearance in the feed (3 of 4 newly-seen objects had stamps older than 48 h).
+
+Dropping the window anyway keeps both modules on one rule and removes any dependence on
+timestamp semantics the sites can change without notice. The largest feed is ~250 objects, so a
+full diff costs 9 page requests.
 
 ---
 

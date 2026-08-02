@@ -72,9 +72,11 @@ export class RealtParserService {
   /**
    * Fetches the feed's entire current inventory.
    *
-   * There is deliberately no time filter. realt.by's `updatedAt` does not move when a seller
-   * edits the price — measured against the 16.07 snapshot, listings untouched for 11 and 16
-   * months had changed price, and a 48 h window would have caught 0 of 16 real price changes.
+   * There is deliberately no time filter. Unlike kufar, realt.by's `updatedAt` does move on
+   * most seller edits, so a 48 h window did catch price changes here. It still lost listings
+   * whose `updatedAt` predates their appearance in the feed (3 of 4 newly-seen objects had
+   * stamps older than 48 h), and matching kufar removes any dependence on timestamp semantics
+   * we do not control. The region feed is ~250 objects, so a full diff is cheap.
    */
   async fetchFeed(
     url: string,
