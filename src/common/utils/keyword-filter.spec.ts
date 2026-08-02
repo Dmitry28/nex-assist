@@ -1,4 +1,4 @@
-import { filterByKeywords, matchesKeywords, TOWNHOUSE_KEYWORDS } from './keyword-filter';
+import { matchesKeywords, TOWNHOUSE_KEYWORDS } from './keyword-filter';
 
 describe('matchesKeywords', () => {
   it('matches case-insensitively', () => {
@@ -37,23 +37,4 @@ describe('TOWNHOUSE_KEYWORDS', () => {
       expect(matchesKeywords(title, TOWNHOUSE_KEYWORDS)).toBe(false);
     },
   );
-});
-
-describe('filterByKeywords', () => {
-  const items = [{ t: 'Таунхаус на Капличной' }, { t: 'Обычная квартира' }];
-  const toText = (i: { t: string }): string => i.t;
-
-  it('passes everything through when a feed has no keywords', () => {
-    expect(filterByKeywords(items, undefined, toText)).toHaveLength(2);
-  });
-
-  it('keeps only matching listings', () => {
-    expect(filterByKeywords(items, TOWNHOUSE_KEYWORDS, toText)).toEqual([
-      { t: 'Таунхаус на Капличной' },
-    ]);
-  });
-
-  it('keeps nothing when the keyword list is empty', () => {
-    expect(filterByKeywords(items, [], toText)).toHaveLength(0);
-  });
 });

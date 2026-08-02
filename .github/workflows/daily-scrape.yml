@@ -90,12 +90,21 @@ jobs:
             echo "No data changes, skipping PR"
             exit 0
           fi
+          # Snapshots belong to the production branch only. A manual run on dev uses the
+          # development environment (different chats), so committing its data would fork the
+          # snapshot history: dev and main would each grow their own chain, every release PR
+          # would conflict across every data file, and resolving one the wrong way would roll
+          # production data back. Test runs therefore scrape and notify, but do not persist.
+          if [ "${GITHUB_REF_NAME}" != "main" ]; then
+            echo "Ref is ${GITHUB_REF_NAME}, not main — skipping data PR (test run)"
+            exit 0
+          fi
           DATE=$(date '+%Y-%m-%d')
           BRANCH="chore/data-${DATE}-${GITHUB_RUN_ID}"
           git checkout -b "$BRANCH"
           git commit -m "chore: update scraped data [${DATE}]"
           git push origin "$BRANCH"
-          BASE_BRANCH="${GITHUB_REF_NAME}"
+          BASE_BRANCH=main
           PR_URL=$(gh pr create \
             --title "chore: update scraped data [${DATE}]" \
             --body "Automated data update from daily scrape workflow." \

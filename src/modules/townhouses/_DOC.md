@@ -17,9 +17,11 @@ No single site has a complete view, and the pieces live in four different places
 | 3 | realt `sale/cottages/taunhaus` | Resale, dedicated sub-category (~18) |
 | 4 | kufar/realt flats + keyword filter | Townhouses filed as "квартира в блокированном доме" |
 
-Source 4 exists because those listings appear in neither dedicated sub-category. Watching the
-flats category unfiltered would mean ~156 ordinary apartments for 2 townhouses, so it runs
-behind `common/utils/keyword-filter.ts`.
+Source 4 exists because those listings appear in neither dedicated sub-category. It covers the
+whole city/region rather than a bbox — the goal is every townhouse in Grodno — so the keyword
+filter in `common/utils/keyword-filter.ts` is what keeps it usable: ~705 kufar and ~543 realt
+flats reduce to a handful. The filter reads title, description and address, since the wording
+usually sits in the description.
 
 Note the sub-categories sit **under houses** — `kupit/dom/taunhaus`, not `kupit/taunhaus`. The
 bare path returns zero ads, which is easy to misread as "the site has no townhouse category".
@@ -86,10 +88,14 @@ any move is the seller's. kufar and realt carry both currencies and take the str
 
 ## Failure handling
 
-Each source is fetched inside its own guard. A failure is reported as `failed: true` and
-called out in the summary rather than counted as zero — otherwise a broken site is
-indistinguishable from a site with nothing on it, and the diff would read its absence as every
-listing being withdrawn.
+Each source is fetched inside its own guard, and `failed` covers two cases: a thrown error,
+and a **degraded** fetch. The degraded signal matters because the parsers swallow HTTP errors
+and return an empty list — without it a dead site reports "0" and is indistinguishable from a
+site with nothing on it. kufar and realt surface it via `truncated` (now set on any failed
+page, including the first); prometr returns it per complex.
+
+A failed source is called out in the summary rather than counted as zero. Its listings simply
+stay in the snapshot untouched, so the diff never reads the outage as listings being withdrawn.
 
 **Notify-then-persist**: a listing is saved only after its Telegram message is delivered, so a
 failed send is retried next run.

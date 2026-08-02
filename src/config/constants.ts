@@ -91,10 +91,12 @@ export const TOWNHOUSES_DEFAULTS = {
   REALT_URL: 'https://realt.by/grodno-region/sale/cottages/taunhaus/?sortType=createdAt',
   // Townhouses filed as flats ("квартира в блокированном доме") — absent from the
   // categories above, so the flats category is watched behind a keyword filter.
-  KUFAR_FLATS_URL:
-    'https://re.kufar.by/l/grodno/kupit/kvartiru?cur=USD&gbx=b%3A23.701980384014313%2C53.668878674336966%2C23.8137319404108%2C53.75899990083715&size=30',
-  REALT_FLATS_URL:
-    'https://realt.by/grodno-region/sale/flats/map/?addressV2=%5B%7B%22stateRegionUuid%22%3A%22499f04f0-7b00-11eb-8943-0cc47adabd66%22%7D%5D&coords=53.668878674336966&coords=23.701980384014313&coords=53.75899990083715&coords=23.8137319404108&sortType=createdAt',
+  // Scoped to the whole city/region, not a bbox: the goal is every townhouse in Grodno, and
+  // the filter is what keeps the volume down (705 + 543 listings -> a handful).
+  KUFAR_FLATS_URL: 'https://re.kufar.by/l/grodno/kupit/kvartiru?cur=USD&size=30',
+  // realt has no Grodno-city path (`/grodno/sale/flats/` 404s), so the region is the tightest
+  // scope available; the keyword filter carries the rest.
+  REALT_FLATS_URL: 'https://realt.by/grodno-region/sale/flats/?sortType=createdAt',
 } as const;
 
 export const AV_BY_DEFAULTS = {

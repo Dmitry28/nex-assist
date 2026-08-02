@@ -98,9 +98,9 @@ export class KufarParserService {
 
       const html = await this.fetchHtml(currentUrl);
       if (!html) {
-        // Giving up mid-feed leaves the inventory incomplete — the diff would otherwise
-        // treat the pages we never saw as if they simply held nothing.
-        truncated = page > 1;
+        // Any failed page leaves the inventory incomplete — including page 1, where the
+        // result would otherwise read as "the feed is genuinely empty".
+        truncated = true;
         this.logger.warn(`Page ${page}: fetch failed — stopping pagination`);
         break;
       }
