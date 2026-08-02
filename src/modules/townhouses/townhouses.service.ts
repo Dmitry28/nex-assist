@@ -86,9 +86,15 @@ export class TownhousesService {
       current.push(...listings);
     }
 
-    // The same townhouse is often listed on both kufar and realt. Keep the first, so the
-    // owner gets one message per property rather than one per site.
-    const listings = dedupe(current);
+    // The same townhouse is often listed on both kufar and realt. De-duplication decides what
+    // gets *messaged*, never what gets stored: the snapshot keeps every uid the sources
+    // returned. Storing only the survivors would be unstable, because the key depends on a
+    // price the sites recompute — realt quotes USD as a live conversion, so a listing can move
+    // 185014 -> 185491 untouched. The losing twin would then differ run to run, and anything
+    // dropped would never persist, resurfacing as "new" the next day, forever.
+    const listings = current;
+    const keptUids = new Set(dedupe(current).map(l => l.uid));
+    const duplicateUids = new Set(current.filter(l => !keptUids.has(l.uid)).map(l => l.uid));
 
     const previous = await this.snapshot.read(DATA_FILE, isTownhouseSnapshotEntry);
     const previousMap = new Map(previous.map(e => [e.uid, e]));
@@ -103,21 +109,23 @@ export class TownhousesService {
         priceChanges.push({ listing, oldPriceByn: prev.priceByn, oldPriceUsd: prev.priceUsd });
     }
 
+    // Only the surviving twin is announced; the other is stored silently.
     const result: TownhousesResult = {
       total: previousMap.size + newListings.length,
-      newListings,
-      priceChanges,
+      newListings: newListings.filter(l => keptUids.has(l.uid)),
+      priceChanges: priceChanges.filter(c => keptUids.has(c.listing.uid)),
       sources,
       isBaseline,
     };
 
     this.logger.log(
-      `Collected ${listings.length} townhouse(s) — new: ${newListings.length}, ` +
-        `price changes: ${priceChanges.length}${isBaseline ? ' [BASELINE]' : ''}`,
+      `Collected ${listings.length} townhouse(s), ${duplicateUids.size} cross-listed — ` +
+        `new: ${result.newListings.length}, price changes: ${result.priceChanges.length}` +
+        `${isBaseline ? ' [BASELINE]' : ''}`,
     );
 
     const notified = await this.notifier.notifyRunResult(result);
-    await this.persist(listings, previousMap, result, notified);
+    await this.persist(listings, previousMap, result, notified, duplicateUids);
     return result;
   }
 
@@ -191,7 +199,11 @@ export class TownhousesService {
     previousMap: Map<string, TownhouseSnapshotEntry>,
     result: TownhousesResult,
     notified: Set<string>,
+    duplicateUids: Set<string>,
   ): Promise<void> {
+    // A cross-listed twin is deliberately never messaged, so gating its persistence on
+    // delivery would keep it out of the snapshot forever and re-detect it every run.
+    const shouldPersist = (uid: string): boolean => notified.has(uid) || duplicateUids.has(uid);
     const now = new Date().toISOString();
     const updated = new Map(previousMap);
 
@@ -206,17 +218,23 @@ export class TownhousesService {
       const prev = updated.get(listing.uid);
       if (!prev) {
         // Notify-then-persist: an undelivered listing stays "new" and is retried next run.
-        if (notified.has(listing.uid))
+        if (shouldPersist(listing.uid))
           updated.set(listing.uid, { ...listing, firstSeenAt: now, lastSeenAt: now });
       } else if (hasPriceChanged(prev, listing)) {
-        if (notified.has(listing.uid))
+        if (shouldPersist(listing.uid))
           updated.set(listing.uid, { ...listing, firstSeenAt: prev.firstSeenAt, lastSeenAt: now });
         else updated.set(listing.uid, { ...prev, lastSeenAt: now });
       } else {
         // Re-seen at the same price: refresh the whole record rather than only the timestamp.
         // Keeping `...prev` would freeze title, address and photos at whatever the first run
         // captured, so a corrected mapping or an edited ad would never reach the snapshot.
-        updated.set(listing.uid, { ...listing, firstSeenAt: prev.firstSeenAt, lastSeenAt: now });
+        // `prev` is spread first so any snapshot-only field survives the refresh.
+        updated.set(listing.uid, {
+          ...prev,
+          ...listing,
+          firstSeenAt: prev.firstSeenAt,
+          lastSeenAt: now,
+        });
       }
     }
 
@@ -243,7 +261,10 @@ export const dedupe = (listings: TownhouseListing[]): TownhouseListing[] => {
   const seenBySource = new Map<string, TownhouseSource>();
   for (const l of listings) {
     if (byUid.has(l.uid)) continue;
-    const key = l.priceUsd && l.area ? `${l.priceUsd}|${l.area}` : null;
+    // Bucket the price: the sites recompute USD from BYN, so the same unit differs by a few
+    // hundred between fetches. Same area to 0.1 m² and price within ~1k is one property.
+    const key =
+      l.priceUsd && l.area ? `${Math.round(l.priceUsd / 1000)}|${l.area.toFixed(1)}` : null;
     if (key !== null) {
       const owner = seenBySource.get(key);
       if (owner !== undefined && owner !== l.source) continue;

@@ -177,3 +177,36 @@ describe('dedupe — same-source collisions', () => {
     ).toHaveLength(1);
   });
 });
+
+describe('dedupe — tolerance to recomputed prices', () => {
+  const at = (uid: string, source: 'kufar' | 'realt', priceUsd: number, area: number) => ({
+    uid,
+    source,
+    link: 'l',
+    title: 't',
+    priceUsd,
+    area,
+    images: [],
+  });
+
+  // realt quotes USD as a live conversion: the same untouched listing was seen at 185014 and
+  // later 185491. An exact key made the pair match on one run and not the next, so the losing
+  // twin changed run to run and kept resurfacing as "new".
+  it('still matches a pair whose price drifted by a few hundred', () => {
+    expect(
+      dedupe([at('kufar:1', 'kufar', 185014, 185.8), at('realt:2', 'realt', 185491, 185.8)]),
+    ).toHaveLength(1);
+  });
+
+  it('keeps genuinely different prices apart', () => {
+    expect(
+      dedupe([at('kufar:1', 'kufar', 120000, 185.8), at('realt:2', 'realt', 185491, 185.8)]),
+    ).toHaveLength(2);
+  });
+
+  it('keeps same price but different area apart', () => {
+    expect(
+      dedupe([at('kufar:1', 'kufar', 185014, 90), at('realt:2', 'realt', 185014, 185.8)]),
+    ).toHaveLength(2);
+  });
+});

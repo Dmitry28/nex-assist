@@ -245,8 +245,16 @@ export class KufarService implements OnModuleInit, OnModuleDestroy {
           updatedMap.set(listing.adId, { ...prev, lastSeenAt: now });
         }
       } else {
-        // Bumped (same price) — always update lastSeenAt
-        updatedMap.set(listing.adId, { ...prev, lastSeenAt: now });
+        // Re-seen at the same price: refresh the whole record, not just the timestamp.
+        // Keeping `...prev` freezes title, photos and every other field at whatever the first
+        // run captured, so an edited ad — or a corrected parser mapping — never lands.
+        // `prev` is spread first so snapshot-only fields (e.g. soldNotifiedAt) survive.
+        updatedMap.set(listing.adId, {
+          ...prev,
+          ...listing,
+          firstSeenAt: prev.firstSeenAt,
+          lastSeenAt: now,
+        });
       }
     }
 
