@@ -1,9 +1,15 @@
 import { registerAs } from '@nestjs/config';
+import { TOWNHOUSE_KEYWORDS } from '../common/utils/keyword-filter';
 import { KUFAR_DEFAULTS } from './constants';
 
 export interface KufarFeedConfig {
   key: string;
   url: string;
+  /**
+   * When set, only listings whose title or description contains one of these terms are
+   * diffed. For categories too broad to notify on wholesale — see `keyword-filter.ts`.
+   */
+  titleKeywords?: string[];
 }
 
 /**
@@ -25,6 +31,13 @@ function buildFeeds(): KufarFeedConfig[] {
     {
       key: 'grodno-dom',
       url: process.env.KUFAR_GRODNO_HOUSES_URL ?? KUFAR_DEFAULTS.GRODNO_HOUSES_URL,
+    },
+    // Townhouses sold as flats. Most townhouses are filed under `dom` and already covered;
+    // this catches the "квартира в блокированном доме" minority the houses feeds never see.
+    {
+      key: 'grodno-taunhaus',
+      url: process.env.KUFAR_GRODNO_TOWNHOUSE_URL ?? KUFAR_DEFAULTS.GRODNO_TOWNHOUSE_URL,
+      titleKeywords: TOWNHOUSE_KEYWORDS,
     },
   ];
 }

@@ -61,6 +61,14 @@ Feeds are configured in `realt.config.ts` as an array of `{ key, url, linkPath }
 | `grodno-plots` | Grodno "bridge zone" | Участки | `sale-plots` |
 | `grodno-dom` | Grodno "bridge zone" | Дома/коттеджи | `sale-cottages` |
 | `grodno-dacha` | Grodno "bridge zone" | Дачи | `sale-dachi` |
+| `grodno-taunhaus` | Grodno "bridge zone" | Таунхаусы, проданные как квартиры (keyword-filtered) | `sale-flats` |
+
+### Townhouses
+
+realt.by has no townhouse section (`/sale/townhouses/` 404s). Most are filed under `cottages`
+and already covered — 20 in the region feed, 3 inside the zone. A minority are sold as flats
+and live in `sale/flats`, which `grodno-taunhaus` watches with a keyword filter
+(see `common/utils/keyword-filter.ts`): unfiltered it is 70 flats in the zone for 2 townhouses.
 
 ### Grodno "bridge zone"
 
@@ -90,6 +98,7 @@ realt.by exposes the two figures directly via `priceRates["840"]` (USD) and `pri
 | `REALT_GRODNO_PLOTS_URL` | hardcoded bridge-zone plots search | Search URL for the `grodno-plots` feed |
 | `REALT_GRODNO_COTTAGES_URL` | hardcoded bridge-zone houses search | Search URL for the `grodno-dom` feed |
 | `REALT_GRODNO_DACHI_URL` | hardcoded bridge-zone dachas search | Search URL for the `grodno-dacha` feed |
+| `REALT_GRODNO_TOWNHOUSE_URL` | hardcoded bridge-zone flats search | Search URL for the `grodno-taunhaus` feed |
 | `REALT_SCRAPE_CRON` | `0 9 * * *` | Reserved (cron currently disabled) |
 | `TELEGRAM_TOKEN` | — | Bot token (optional; omit for dry-run) |
 | `TELEGRAM_REALT_CHAT_ID` | — | Target chat/channel ID |
@@ -107,6 +116,7 @@ realt.by exposes the two figures directly via `priceRates["840"]` (USD) and `pri
 | `realt_grodno-plots_all.json` | Bridge-zone plot listings snapshot |
 | `realt_grodno-dom_all.json` | Bridge-zone house listings snapshot |
 | `realt_grodno-dacha_all.json` | Bridge-zone dacha listings snapshot |
+| `realt_grodno-taunhaus_all.json` | Bridge-zone townhouse-in-flats snapshot |
 
 Each entry includes `firstSeenAt` and `lastSeenAt` timestamps for tracking.
 

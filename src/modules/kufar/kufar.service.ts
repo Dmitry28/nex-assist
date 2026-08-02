@@ -22,6 +22,7 @@ import { INTER_FEED_DELAY_MS, dataFile, RUN_TIMEOUT_MS } from './constants';
 import { KufarParserService } from './kufar-parser.service';
 import { KufarNotifierService, KufarNotifyResult } from './kufar-notifier.service';
 
+import { filterByKeywords } from '../../common/utils/keyword-filter';
 import { hasPriceChanged } from '../../common/utils/price-change';
 
 // Re-exported so existing importers (and tests) keep a single entry point per module.
@@ -152,10 +153,19 @@ export class KufarService implements OnModuleInit, OnModuleDestroy {
   private async scrapeFeed(feed: KufarFeedConfig): Promise<KufarFeedScrapeData> {
     this.logger.log(`Fetching feed: ${feed.key}`);
 
-    const [{ listings: currentListings, truncated }, previousEntries] = await Promise.all([
+    const [{ listings: fetched, truncated }, previousEntries] = await Promise.all([
       this.parser.fetchFeed(feed.url),
       this.snapshot.read(dataFile(feed.key), isKufarSnapshotEntry),
     ]);
+
+    const currentListings = filterByKeywords(fetched, feed.titleKeywords, l =>
+      `${l.title} ${l.description ?? ''}`.trim(),
+    );
+    if (feed.titleKeywords && fetched.length !== currentListings.length) {
+      this.logger.log(
+        `Feed ${feed.key}: keyword filter kept ${currentListings.length} of ${fetched.length}`,
+      );
+    }
 
     const previousMap = new Map(previousEntries.map(e => [e.adId, e]));
     const isBaseline = previousMap.size === 0 && currentListings.length > 0;

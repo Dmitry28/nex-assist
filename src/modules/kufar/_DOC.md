@@ -61,6 +61,18 @@ Feeds are configured in `kufar.config.ts` as an array of `{ key, url }` objects.
 | `dom` | Grodno oblast | Дома, дачи, коттеджи, таунхаусы |
 | `grodno-uchastok` | Grodno "bridge zone" | Участки |
 | `grodno-dom` | Grodno "bridge zone" | Дома, дачи, коттеджи, таунхаусы |
+| `grodno-taunhaus` | Grodno "bridge zone" | Таунхаусы, проданные как квартиры (keyword-filtered) |
+
+### Townhouses
+
+Kufar has no townhouse category either (`kupit/taunhaus` returns zero ads). Most townhouses
+are filed under `dom` with `house_type_for_sell = Таунхаус` and are already covered — 13 were
+found in the oblast feed. A minority are sold as flats ("квартира в блокированном доме") and
+live in `kupit/kvartiru`, which no houses feed reaches. The `grodno-taunhaus` feed watches
+that category with a keyword filter (see `common/utils/keyword-filter.ts`): unfiltered it is
+86 flats in the zone for 2 townhouses.
+
+Note the category segment is `kvartiru` — `kvartira` and `kvartiry` both 404.
 
 **Kufar has no separate `dacha` / `kottedzh` category** — both URLs return zero ads. Дачи and коттеджи live inside `kupit/dom`, distinguished by the `house_type_for_sell` ad parameter (`Дом`, `Коттедж`, `Дача`, `Таунхаус`, `Часть дома`). So `dom` is the only feed needed for all of them.
 
@@ -101,6 +113,7 @@ reported, since there is no percentage to compare.
 | `KUFAR_HOUSES_URL` | hardcoded oblast houses search | Search URL for the `dom` feed |
 | `KUFAR_GRODNO_LAND_URL` | hardcoded bridge-zone plots search | Search URL for the `grodno-uchastok` feed |
 | `KUFAR_GRODNO_HOUSES_URL` | hardcoded bridge-zone houses search | Search URL for the `grodno-dom` feed |
+| `KUFAR_GRODNO_TOWNHOUSE_URL` | hardcoded bridge-zone flats search | Search URL for the `grodno-taunhaus` feed |
 | `KUFAR_SCRAPE_CRON` | `0 9 * * *` (09:00 UTC daily) | Cron expression |
 | `TELEGRAM_TOKEN` | — | Bot token (optional; omit for dry-run) |
 | `TELEGRAM_KUFAR_CHAT_ID` | — | Target chat/channel ID |
@@ -118,6 +131,7 @@ Feed URLs are hardcoded in `kufar.config.ts`.
 | `kufar_dom_all.json` | House listings snapshot |
 | `kufar_grodno-uchastok_all.json` | Bridge-zone plot listings snapshot |
 | `kufar_grodno-dom_all.json` | Bridge-zone house listings snapshot |
+| `kufar_grodno-taunhaus_all.json` | Bridge-zone townhouse-in-flats snapshot |
 
 Each entry includes `firstSeenAt` and `lastSeenAt` timestamps for tracking.
 
