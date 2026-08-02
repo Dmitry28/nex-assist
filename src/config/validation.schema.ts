@@ -12,6 +12,7 @@ import {
   MOSTY_JOBS_DEFAULTS,
   POGORANY_DEFAULTS,
   REALT_DEFAULTS,
+  TOWNHOUSES_DEFAULTS,
 } from './constants';
 
 /**
@@ -59,7 +60,6 @@ export const validationSchema = Joi.object({
   KUFAR_HOUSES_URL: Joi.string().uri().default(KUFAR_DEFAULTS.HOUSES_URL),
   KUFAR_GRODNO_LAND_URL: Joi.string().uri().default(KUFAR_DEFAULTS.GRODNO_LAND_URL),
   KUFAR_GRODNO_HOUSES_URL: Joi.string().uri().default(KUFAR_DEFAULTS.GRODNO_HOUSES_URL),
-  KUFAR_GRODNO_TOWNHOUSE_URL: Joi.string().uri().default(KUFAR_DEFAULTS.GRODNO_TOWNHOUSE_URL),
   KUFAR_NEMAN_LAND_URL: Joi.string().uri().default(KUFAR_DEFAULTS.NEMAN_LAND_URL),
   KUFAR_NEMAN_HOUSES_URL: Joi.string().uri().default(KUFAR_DEFAULTS.NEMAN_HOUSES_URL),
   KUFAR_SCRAPE_CRON: Joi.string().default(KUFAR_DEFAULTS.SCRAPE_CRON),
@@ -83,7 +83,6 @@ export const validationSchema = Joi.object({
   REALT_GRODNO_PLOTS_URL: Joi.string().uri().default(REALT_DEFAULTS.GRODNO_PLOTS_URL),
   REALT_GRODNO_COTTAGES_URL: Joi.string().uri().default(REALT_DEFAULTS.GRODNO_COTTAGES_URL),
   REALT_GRODNO_DACHI_URL: Joi.string().uri().default(REALT_DEFAULTS.GRODNO_DACHI_URL),
-  REALT_GRODNO_TOWNHOUSE_URL: Joi.string().uri().default(REALT_DEFAULTS.GRODNO_TOWNHOUSE_URL),
   REALT_NEMAN_PLOTS_URL: Joi.string().uri().default(REALT_DEFAULTS.NEMAN_PLOTS_URL),
   REALT_NEMAN_COTTAGES_URL: Joi.string().uri().default(REALT_DEFAULTS.NEMAN_COTTAGES_URL),
   REALT_NEMAN_DACHI_URL: Joi.string().uri().default(REALT_DEFAULTS.NEMAN_DACHI_URL),
@@ -93,6 +92,10 @@ export const validationSchema = Joi.object({
   // pogorany.by module — Tilda store with ЖК Погораны townhouse apartments
   POGORANY_STORE_API_URL: Joi.string().uri().default(POGORANY_DEFAULTS.STORE_API_URL),
   POGORANY_SCRAPE_CRON: Joi.string().default(POGORANY_DEFAULTS.SCRAPE_CRON),
+  TOWNHOUSES_KUFAR_URL: Joi.string().uri().default(TOWNHOUSES_DEFAULTS.KUFAR_URL),
+  TOWNHOUSES_REALT_URL: Joi.string().uri().default(TOWNHOUSES_DEFAULTS.REALT_URL),
+  TOWNHOUSES_KUFAR_FLATS_URL: Joi.string().uri().default(TOWNHOUSES_DEFAULTS.KUFAR_FLATS_URL),
+  TOWNHOUSES_REALT_FLATS_URL: Joi.string().uri().default(TOWNHOUSES_DEFAULTS.REALT_FLATS_URL),
   TELEGRAM_POGORANY_CHAT_ID: Joi.string().optional(),
 
   // mosty-jobs module — job vacancies in Мостовский район (gsz, rabota, joblab, kufar)

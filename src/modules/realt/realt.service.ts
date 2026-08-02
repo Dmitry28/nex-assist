@@ -22,7 +22,6 @@ import type {
 import { RealtNotifierService, RealtNotifyResult } from './realt-notifier.service';
 import { RealtParserService } from './realt-parser.service';
 
-import { filterByKeywords } from '../../common/utils/keyword-filter';
 import { hasPriceChanged } from '../../common/utils/price-change';
 
 // Re-exported so existing importers (and tests) keep a single entry point per module.
@@ -130,19 +129,10 @@ export class RealtService implements OnModuleInit, OnModuleDestroy {
   private async scrapeFeed(feed: RealtFeedConfig): Promise<RealtFeedScrapeData> {
     this.logger.log(`Fetching feed: ${feed.key}`);
 
-    const [{ listings: fetched, truncated }, previousEntries] = await Promise.all([
+    const [{ listings: currentListings, truncated }, previousEntries] = await Promise.all([
       this.parser.fetchFeed(feed.url, feed.linkPath),
       this.snapshot.read(dataFile(feed.key), isRealtSnapshotEntry),
     ]);
-
-    const currentListings = filterByKeywords(fetched, feed.titleKeywords, l =>
-      `${l.title} ${l.description ?? ''}`.trim(),
-    );
-    if (feed.titleKeywords && fetched.length !== currentListings.length) {
-      this.logger.log(
-        `Feed ${feed.key}: keyword filter kept ${currentListings.length} of ${fetched.length}`,
-      );
-    }
 
     const previousMap = new Map(previousEntries.map(e => [e.adId, e]));
     const isBaseline = previousMap.size === 0 && currentListings.length > 0;
