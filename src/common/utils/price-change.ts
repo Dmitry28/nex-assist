@@ -47,14 +47,21 @@ export const hasPriceChanged = (prev: DualCurrencyPrice, current: DualCurrencyPr
   const currentByn = effectivePrice(current.priceByn);
   const currentUsd = effectivePrice(current.priceUsd);
 
-  // A price appearing or disappearing has no percentage to compare — fall back to the
-  // plain "both figures differ" test so "договорная" → priced is still reported.
   if (
     prevByn === undefined ||
     prevUsd === undefined ||
     currentByn === undefined ||
     currentUsd === undefined
   ) {
+    // Single-currency source (prometr quotes BYN only): there is no second figure to
+    // cross-check against, and no conversion to drift, so any move is the seller's.
+    const bynComparable = prevByn !== undefined && currentByn !== undefined;
+    const usdComparable = prevUsd !== undefined && currentUsd !== undefined;
+    if (bynComparable !== usdComparable) {
+      return bynComparable ? prevByn !== currentByn : prevUsd !== currentUsd;
+    }
+    // A price appearing or disappearing has no percentage to compare — fall back to the
+    // plain "both figures differ" test so "договорная" → priced is still reported.
     return prevByn !== currentByn && prevUsd !== currentUsd;
   }
 
