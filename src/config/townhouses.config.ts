@@ -12,14 +12,13 @@ export interface TownhouseComplexConfig {
 /**
  * Grodno townhouse developments on the primary market.
  *
- * These are every townhouse complex in the city, not a selection: Погораны, Белые Росы and
- * Роял Парк. Погораны is also covered in more detail by the `pogorany` module, which reads
- * the developer's own catalogue — kept because prometr shows the whole complex while
- * pogorany.by only lists what that developer publishes.
+ * ЖК Погораны is deliberately absent. The `pogorany` module already reads that developer's
+ * own catalogue and notifies the same chat, so listing it here produced two messages for one
+ * unit. Its catalogue is also the better source: 4 units against prometr's 2, with photos and
+ * per-room detail prometr does not publish.
  */
 function buildComplexes(): TownhouseComplexConfig[] {
   return [
-    { key: 'pogorany', name: 'ЖК Погораны', url: TOWNHOUSES_DEFAULTS.PROMETR_POGORANY_URL },
     { key: 'belye-rosy', name: 'ЖК Белые Росы', url: TOWNHOUSES_DEFAULTS.PROMETR_BELYE_ROSY_URL },
     { key: 'royal-park', name: 'ЖК Роял Парк', url: TOWNHOUSES_DEFAULTS.PROMETR_ROYAL_PARK_URL },
   ];
