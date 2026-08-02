@@ -62,6 +62,9 @@ Feeds are configured in `realt.config.ts` as an array of `{ key, url, linkPath }
 | `grodno-dom` | Grodno "bridge zone" | Дома/коттеджи | `sale-cottages` |
 | `grodno-dacha` | Grodno "bridge zone" | Дачи | `sale-dachi` |
 | `grodno-taunhaus` | Grodno "bridge zone" | Таунхаусы, проданные как квартиры (keyword-filtered) | `sale-flats` |
+| `neman-plots` | Neman reservoir | Участки | `sale-plots` |
+| `neman-dom` | Neman reservoir | Дома/коттеджи | `sale-cottages` |
+| `neman-dacha` | Neman reservoir | Дачи | `sale-dachi` |
 
 ### Townhouses
 
@@ -75,6 +78,11 @@ and live in `sale/flats`, which `grodno-taunhaus` watches with a keyword filter
 A narrower bbox over the Grodno city core (`coords=53.6689&23.7020&53.7590&23.8137`), watched as an investment target — a bridge is planned there within ~2 years, so the goal is to spot cheap plots, dachas and old houses early. Mirrors `KUFAR_DEFAULTS.GRODNO_*`; unlike kufar (which lumps everything into `dom`), realt.by splits the types, so the zone needs three feeds.
 
 The bbox sits fully **inside** the region bboxes, so the same ad is notified from both the region and the zone feed. That is intentional — the region feeds dilute the zone (region cottages: 252 objects vs 26 inside the zone) and can hit `MAX_PAGES` before reaching it.
+
+### Neman reservoir zone
+
+Mirrors `KUFAR_DEFAULTS.NEMAN_*` — the Гродненское море / Neman backwater east of the city.
+Waterfront plots are the target; houses and dachas share the same land and are tracked too.
 
 ---
 
@@ -99,6 +107,9 @@ realt.by exposes the two figures directly via `priceRates["840"]` (USD) and `pri
 | `REALT_GRODNO_COTTAGES_URL` | hardcoded bridge-zone houses search | Search URL for the `grodno-dom` feed |
 | `REALT_GRODNO_DACHI_URL` | hardcoded bridge-zone dachas search | Search URL for the `grodno-dacha` feed |
 | `REALT_GRODNO_TOWNHOUSE_URL` | hardcoded bridge-zone flats search | Search URL for the `grodno-taunhaus` feed |
+| `REALT_NEMAN_PLOTS_URL` | hardcoded reservoir plots search | Search URL for the `neman-plots` feed |
+| `REALT_NEMAN_COTTAGES_URL` | hardcoded reservoir houses search | Search URL for the `neman-dom` feed |
+| `REALT_NEMAN_DACHI_URL` | hardcoded reservoir dachas search | Search URL for the `neman-dacha` feed |
 | `REALT_SCRAPE_CRON` | `0 9 * * *` | Reserved (cron currently disabled) |
 | `TELEGRAM_TOKEN` | — | Bot token (optional; omit for dry-run) |
 | `TELEGRAM_REALT_CHAT_ID` | — | Target chat/channel ID |
@@ -117,6 +128,9 @@ realt.by exposes the two figures directly via `priceRates["840"]` (USD) and `pri
 | `realt_grodno-dom_all.json` | Bridge-zone house listings snapshot |
 | `realt_grodno-dacha_all.json` | Bridge-zone dacha listings snapshot |
 | `realt_grodno-taunhaus_all.json` | Bridge-zone townhouse-in-flats snapshot |
+| `realt_neman-plots_all.json` | Reservoir plot listings snapshot |
+| `realt_neman-dom_all.json` | Reservoir house listings snapshot |
+| `realt_neman-dacha_all.json` | Reservoir dacha listings snapshot |
 
 Each entry includes `firstSeenAt` and `lastSeenAt` timestamps for tracking.
 
