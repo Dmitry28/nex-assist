@@ -1,6 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import TelegramBot from 'node-telegram-bot-api';
+import type { InputMediaPhoto } from 'node-telegram-bot-api';
 import {
   TELEGRAM_MEDIA_GROUP_LIMIT,
   TELEGRAM_MESSAGE_LIMIT,
@@ -121,8 +121,8 @@ export class ListingNotifierService {
     const captionFor1024 = truncateText(rawCaption); // photo/media-group: 1024-char limit
 
     if (photos.length > 1) {
-      const media: TelegramBot.InputMediaPhoto[] = photos.map((url, i) => {
-        const item: TelegramBot.InputMediaPhoto = { type: 'photo', media: url };
+      const media: InputMediaPhoto[] = photos.map((url, i) => {
+        const item: InputMediaPhoto = { type: 'photo', media: url };
         if (i === 0) {
           item.caption = captionFor1024;
           item.parse_mode = 'HTML';
