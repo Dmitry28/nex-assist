@@ -27,14 +27,3 @@ export const TOWNHOUSE_KEYWORDS = [
   'блокирован',
   'квадрохаус',
 ];
-
-/**
- * Keeps only listings matching one of `keywords`. A feed with no keywords is unfiltered,
- * so this is a no-op for every ordinary feed.
- */
-export const filterByKeywords = <T>(
-  listings: T[],
-  keywords: string[] | undefined,
-  toText: (listing: T) => string,
-): T[] =>
-  keywords === undefined ? listings : listings.filter(l => matchesKeywords(toText(l), keywords));

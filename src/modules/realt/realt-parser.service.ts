@@ -92,9 +92,9 @@ export class RealtParserService {
       const pageUrl = page === 1 ? url : this.buildPageUrl(url, page);
       const html = await this.fetchHtml(pageUrl);
       if (!html) {
-        // Stopping mid-feed leaves the inventory incomplete — flag it rather than let the
-        // diff treat the unseen pages as empty.
-        truncated = page > 1;
+        // Any failed page leaves the inventory incomplete — including page 1, where the
+        // result would otherwise read as "the feed is genuinely empty".
+        truncated = true;
         this.logger.warn(`Page ${page}: fetch failed — stopping pagination`);
         break;
       }

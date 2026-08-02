@@ -28,6 +28,8 @@ export class TownhouseListing {
   @ApiPropertyOptional() plotArea?: number;
   @ApiPropertyOptional() rooms?: number;
   @ApiPropertyOptional() address?: string;
+  /** Free text; searched for townhouse wording, never rendered as an address. */
+  @ApiPropertyOptional() description?: string;
   @ApiProperty({ type: [String] }) images!: string[];
 }
 

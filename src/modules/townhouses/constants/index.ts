@@ -36,6 +36,8 @@ export const SOURCE_DISPLAY_NAMES: Record<string, string> = {
   prometr: 'Застройщики (prometr.by)',
   kufar: 'Kufar',
   realt: 'Realt',
+  'kufar-flats': 'Kufar (в квартирах)',
+  'realt-flats': 'Realt (в квартирах)',
 };
 
 /** Max price-change rows shown inline in the run summary. */
