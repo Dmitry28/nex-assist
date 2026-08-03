@@ -39,10 +39,7 @@ export interface RemovedCarListing extends CarListing {
 // Minimal check: only 'link' presence is verified — sufficient because snapshot files
 // are module-specific and will never contain cross-module data.
 export const isCarListing = (item: unknown): item is CarListing =>
-  typeof item === 'object' &&
-  item !== null &&
-  'link' in item &&
-  typeof (item as { link: unknown }).link === 'string';
+  typeof item === 'object' && item !== null && 'link' in item && typeof item.link === 'string';
 
 export const isRemovedCarListing = (item: unknown): item is RemovedCarListing =>
   isCarListing(item) && typeof (item as unknown as Record<string, unknown>).removedAt === 'string';

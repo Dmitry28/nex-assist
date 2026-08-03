@@ -39,17 +39,14 @@ export interface ArchivePendingItem {
 
 /** Type guard: checks that an unknown value is a valid {@link Listing}. */
 export const isListing = (item: unknown): item is Listing =>
-  typeof item === 'object' &&
-  item !== null &&
-  'link' in item &&
-  typeof (item as { link: unknown }).link === 'string';
+  typeof item === 'object' && item !== null && 'link' in item && typeof item.link === 'string';
 
 /** Type guard: checks that an unknown value is a valid {@link ArchivePendingItem}. */
 export const isArchivePendingItem = (item: unknown): item is ArchivePendingItem =>
   typeof item === 'object' &&
   item !== null &&
   'listing' in item &&
-  isListing((item as { listing: unknown }).listing) &&
+  isListing(item.listing) &&
   'removedAt' in item &&
   typeof (item as { removedAt: unknown }).removedAt === 'string';
 
