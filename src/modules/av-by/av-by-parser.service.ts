@@ -1,7 +1,12 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, Logger } from '@nestjs/common';
+import { fetchEscalating } from '../../common/scraping/escalating-fetch';
 import { ScrapingClient } from '../../common/scraping/scraping-client.service';
+import { BROWSER_USER_AGENT } from '../../common/utils/scraping';
 import type { AvByListing } from './dto/av-by-listing.dto';
 import { SCRAPFLY_RENDER_WAIT_MS, SCRAPFLY_TIMEOUT_MS } from './constants';
+
+/** Rung-1 timeout — a cheap probe before paying, so it fails fast. */
+const PLAIN_TIMEOUT_MS = 15_000;
 
 /** Shape of the slice of __NEXT_DATA__ we actually read. */
 interface RawNextDataAdvert {
@@ -50,27 +55,66 @@ interface RawNextData {
  */
 @Injectable()
 export class AvByParserService {
+  private readonly logger = new Logger(AvByParserService.name);
+
   constructor(private readonly scraping: ScrapingClient) {}
 
   async fetchFeed(url: string): Promise<{ listings: AvByListing[]; total: number }> {
-    // Goes through the provider chain (ScrapFly today) — residential BY proxy + JS render
-    // to clear the SafeLine WAF. Falls over to the next provider if ScrapFly is out of quota.
-    const { content } = await this.scraping.scrape(url, {
-      country: 'by',
-      asp: true,
-      renderJs: true,
-      renderWaitMs: SCRAPFLY_RENDER_WAIT_MS,
-      timeoutMs: SCRAPFLY_TIMEOUT_MS,
+    const result = await fetchEscalating<{ listings: AvByListing[]; total: number }>({
+      logger: this.logger,
+      label: 'av.by',
+      // Rung 1. Costs ~1s and is normally refused by the SafeLine WAF, but it is the rung that
+      // makes this feed free the day av.by stops challenging — and until now this module went
+      // straight to a paid provider on every single run.
+      attemptPlain: () => this.tryPlain(url),
+      // Rung 2 is deliberately absent. A local browser was measured against this WAF and came
+      // back with 8 KB and no __NEXT_DATA__, so spending ~9s per feed to prove that again every
+      // run would be waste. Recorded here rather than hidden as a branch in the shared policy.
+      attemptPaid: async () => {
+        const { content, provider } = await this.scraping.scrape(url, {
+          country: 'by',
+          asp: true,
+          renderJs: true,
+          renderWaitMs: SCRAPFLY_RENDER_WAIT_MS,
+          timeoutMs: SCRAPFLY_TIMEOUT_MS,
+        });
+        return { value: parseFeed(content), provider };
+      },
+      paidAvailable: this.scraping.isAvailable(),
+      retries: 0,
+      retryDelayMs: 0,
     });
 
-    const nextData = extractNextData(content);
-    const main = nextData.props?.initialState?.filter?.main;
-    const raw = main?.adverts ?? [];
-    const total = main?.count ?? raw.length;
+    if (result === null) throw new Error('av.by: every fetch rung failed');
+    return result;
+  }
 
-    return { listings: raw.map(mapAdvert), total };
+  /** Rung 1 — plain request. Returns null when the WAF answered instead of the page. */
+  private async tryPlain(url: string): Promise<{ listings: AvByListing[]; total: number } | null> {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), PLAIN_TIMEOUT_MS);
+    try {
+      const res = await fetch(url, {
+        signal: controller.signal,
+        headers: { 'User-Agent': BROWSER_USER_AGENT, 'Accept-Language': 'ru-RU,ru;q=0.9' },
+      });
+      if (!res.ok) return null;
+      const parsed = parseFeed(await res.text());
+      return parsed.listings.length > 0 ? parsed : null;
+    } catch {
+      return null;
+    } finally {
+      clearTimeout(timer);
+    }
   }
 }
+
+/** Turns a page body into the feed shape both rungs return. */
+const parseFeed = (html: string): { listings: AvByListing[]; total: number } => {
+  const main = extractNextData(html).props?.initialState?.filter?.main;
+  const raw = main?.adverts ?? [];
+  return { listings: raw.map(mapAdvert), total: main?.count ?? raw.length };
+};
 
 const extractNextData = (html: string): RawNextData => {
   const match = html.match(/<script id="__NEXT_DATA__"[^>]*>(.+?)<\/script>/s);
