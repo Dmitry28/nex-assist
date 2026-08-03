@@ -1,0 +1,58 @@
+version: 2
+
+# Every update must land on `dev` first and reach `main` only through a release PR.
+# Without `target-branch` Dependabot opens PRs against the default branch (`main`), which
+# bypasses the release flow and conflicts with the `dev -> main` merge — that is why #324
+# was closed rather than merged.
+updates:
+  - package-ecosystem: npm
+    directory: '/'
+    target-branch: dev
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    # One PR per batch instead of a dozen: the project pins NestJS packages that have to move
+    # together, and separate PRs for them each fail to build on their own.
+    groups:
+      nestjs:
+        patterns:
+          - '@nestjs/*'
+      # Security fixes stay separate so they can be reviewed and merged without waiting on
+      # a routine version bump.
+      security:
+        applies-to: security-updates
+        patterns:
+          - '*'
+      dev-tooling:
+        dependency-type: development
+        patterns:
+          - '*'
+      production:
+        dependency-type: production
+        patterns:
+          - '*'
+    labels:
+      - dependencies
+    commit-message:
+      prefix: chore
+      include: scope
+
+  - package-ecosystem: github-actions
+    directory: '/'
+    target-branch: dev
+    schedule:
+      interval: weekly
+    labels:
+      - dependencies
+    commit-message:
+      prefix: chore
+
+  - package-ecosystem: docker
+    directory: '/'
+    target-branch: dev
+    schedule:
+      interval: weekly
+    labels:
+      - dependencies
+    commit-message:
+      prefix: chore
