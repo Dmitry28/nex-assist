@@ -22,6 +22,7 @@ import { INTER_FEED_DELAY_MS, dataFile, RUN_TIMEOUT_MS } from './constants';
 import { KufarParserService } from './kufar-parser.service';
 import { KufarNotifierService, KufarNotifyResult } from './kufar-notifier.service';
 
+import { pruneStale, STALE_AFTER_DAYS } from '../../common/utils/prune-stale';
 import { hasPriceChanged } from '../../common/utils/price-change';
 
 // Re-exported so existing importers (and tests) keep a single entry point per module.
@@ -268,7 +269,18 @@ export class KufarService implements OnModuleInit, OnModuleDestroy {
       );
     }
 
-    await this.snapshot.write(dataFile(feed.key), [...updatedMap.values()]);
-    this.logger.log(`Feed ${feed.key}: snapshot saved (${updatedMap.size} entries)`);
+    // Drop long-gone listings. Guarded on `truncated`: if the fetch was incomplete we did not
+    // really "not see" those ads, and pruning on a bad run would re-announce them later.
+    const { kept, removed } = result.truncated
+      ? { kept: [...updatedMap.values()], removed: [] }
+      : pruneStale([...updatedMap.values()], new Date());
+    if (removed.length > 0) {
+      this.logger.log(
+        `Feed ${feed.key}: pruned ${removed.length} listing(s) unseen for over ${STALE_AFTER_DAYS} days`,
+      );
+    }
+
+    await this.snapshot.write(dataFile(feed.key), kept);
+    this.logger.log(`Feed ${feed.key}: snapshot saved (${kept.length} entries)`);
   }
 }
