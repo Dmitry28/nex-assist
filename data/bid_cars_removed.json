@@ -1161,5 +1161,24 @@
     "seller": "Progressive Casualty Insurance",
     "removedAt": "2026-08-02T09:05:48.495Z",
     "removalNotifiedAt": "2026-08-02T09:05:48.495Z"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/0-45329792/2024-Volkswagen-Atlas-1V2HR2CA4RC575799",
+    "title": "2024 Volkswagen Atlas, 2.0T Se W/Tec...",
+    "vin": "1V2HR2CA4RC575799",
+    "lot": "0-45329792",
+    "odometer": "40k мили (65k km)",
+    "damage": "Столкноевение | Правая сторона",
+    "location": "Phoenix (AZ)",
+    "currentBid": "$0",
+    "buyNow": "$10,500",
+    "engine": "2.0L 4 cyl. 269HP",
+    "keys": "Salvage (Arizona)",
+    "condition": "На ходу",
+    "auctionDate": "вт 4 авг., 18:30 GMT+2",
+    "auctionSource": "IAAI",
+    "seller": "Progressive Casualty Insurance",
+    "removedAt": "2026-08-03T10:31:42.474Z",
+    "removalNotifiedAt": "2026-08-03T10:31:42.474Z"
   }
 ]
