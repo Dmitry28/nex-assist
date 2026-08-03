@@ -25,10 +25,7 @@ interface AvByMeta {
   lastRunAt?: string;
 }
 
-import { effectivePrice, hasPriceChanged } from '../../common/utils/price-change';
-
-// Re-exported so existing importers (and tests) keep a single entry point per module.
-export { effectivePrice, hasPriceChanged };
+import { hasPriceChanged } from '../../common/utils/price-change';
 
 const isAvByMeta = (v: unknown): v is AvByMeta =>
   typeof v === 'object' &&

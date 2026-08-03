@@ -8,7 +8,7 @@ import {
   buildSoldCaption,
   buildSummary,
 } from './av-by-format';
-import type { AvByFeedResult, AvByResult, RemovedAvByListing } from './dto/av-by-listing.dto';
+import type { AvByFeedResult, AvByResult } from './dto/av-by-listing.dto';
 
 /** What was successfully delivered to Telegram — used to gate persistence. */
 export interface AvByNotifyResult {
@@ -110,6 +110,3 @@ export class AvByNotifierService {
     return this.telegram.sendMessage(this.chatId, caption);
   }
 }
-
-// Re-export for test convenience.
-export type { RemovedAvByListing };

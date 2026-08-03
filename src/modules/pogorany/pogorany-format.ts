@@ -1,5 +1,4 @@
 import { LOCALE, TIMEZONE } from '../../common/utils/locale';
-import { NOTIFICATION_HEADERS } from './constants';
 import type {
   PogoranyListing,
   PogoranyPriceChange,
@@ -122,5 +121,3 @@ export const buildSummary = (result: PogoranyResult, sourceUrl?: string): string
 
   return lines.join('\n');
 };
-
-export const HEADERS = NOTIFICATION_HEADERS;

@@ -1,5 +1,4 @@
 import { LOCALE, TIMEZONE } from '../../common/utils/locale';
-import { NOTIFICATION_HEADERS } from './constants';
 import type { KufarRentLongListing, KufarRentLongResult } from './dto/kufar-rent-long-listing.dto';
 
 const NEGOTIABLE_PRICE = 'Договорная';
@@ -77,5 +76,3 @@ export const buildSummary = (result: KufarRentLongResult, sourceUrl?: string): s
 
   return lines.join('\n');
 };
-
-export const HEADERS = NOTIFICATION_HEADERS;
