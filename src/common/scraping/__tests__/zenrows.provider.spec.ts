@@ -55,6 +55,23 @@ describe('ZenRowsProvider', () => {
     expect(p.get('proxy_country')).toBe('by');
   });
 
+  // Measured against bamper.by: premium_proxy alone is rejected with 422, and js_render alone
+  // returns a 6 KB stub. bamper asks for asp without renderJs (that split is about ScrapFly's
+  // pricing), so the provider has to add the render itself or it fails in the chain.
+  it('adds js_render whenever asp is set, even if the caller did not ask for rendering', async () => {
+    let seen = '';
+    global.fetch = jest.fn((url: string) => {
+      seen = url;
+      return Promise.resolve({ ok: true, status: 200, text: () => Promise.resolve('<html/>') });
+    }) as unknown as typeof fetch;
+
+    await providerWithKey('k').scrape('https://x', { asp: true, country: 'by' });
+
+    const p = new URL(seen).searchParams;
+    expect(p.get('premium_proxy')).toBe('true');
+    expect(p.get('js_render')).toBe('true');
+  });
+
   it('omits the optional parameters when not asked for', async () => {
     let seen = '';
     global.fetch = jest.fn((url: string) => {
