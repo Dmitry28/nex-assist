@@ -55,7 +55,7 @@ export const isAvByListing = (item: unknown): item is AvByListing =>
   typeof item === 'object' &&
   item !== null &&
   'id' in item &&
-  typeof (item as { id: unknown }).id === 'number' &&
+  typeof item.id === 'number' &&
   'url' in item &&
   typeof (item as { url: unknown }).url === 'string';
 
