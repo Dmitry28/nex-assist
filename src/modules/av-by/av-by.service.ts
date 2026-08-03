@@ -2,7 +2,7 @@ import { ConflictException, Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { promises as fs } from 'fs';
 import path from 'path';
-import { ScrapingClient } from '../../common/scraping/scraping-client.service';
+import { EscalatingHtmlFetcher } from '../../common/scraping/escalating-html-fetcher';
 import { SnapshotService } from '../../common/snapshot.service';
 import { sleep } from '../../common/utils/sleep';
 import type { AvByFeedConfig } from '../../config/av-by.config';
@@ -58,7 +58,7 @@ export class AvByService {
     private readonly config: ConfigService,
     private readonly snapshot: SnapshotService,
     private readonly notifier: AvByNotifierService,
-    private readonly scraping: ScrapingClient,
+    private readonly html: EscalatingHtmlFetcher,
   ) {}
 
   async run(): Promise<AvByResult> {
@@ -97,10 +97,10 @@ export class AvByService {
       return { feeds: [], skipped: true, skipReason: `app_env:${appEnv}` };
     }
 
-    if (!this.scraping.isAvailable()) {
-      this.logger.warn('No scraping provider configured — skipping av.by scrape');
-      return { feeds: [], skipped: true, skipReason: 'no_scraping_provider' };
-    }
+    // No provider-key pre-flight any more. This module used to skip entirely without one,
+    // which made sense when a provider was its only way in — but it now has two free rungs
+    // ahead of them, and refusing to even try a plain request because a paid key is missing is
+    // backwards. If every rung fails the run reports it, which is the truthful outcome.
     if (feeds.length === 0) {
       this.logger.warn('No av.by feeds configured — skipping');
       return { feeds: [], skipped: true, skipReason: 'no_feeds' };
@@ -122,7 +122,7 @@ export class AvByService {
       }
     }
 
-    const parser = new AvByParserService(this.scraping);
+    const parser = new AvByParserService(this.html);
 
     const feedResults: AvByFeedResult[] = [];
     const currentByFeed = new Map<string, AvByListing[]>();

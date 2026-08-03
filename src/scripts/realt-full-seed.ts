@@ -18,6 +18,8 @@ import {
   RealtParserService,
   type RawObject,
 } from '../modules/realt/realt-parser.service';
+import { EscalatingHtmlFetcher } from '../common/scraping/escalating-html-fetcher';
+import { ScrapingClient } from '../common/scraping/scraping-client.service';
 import { dataFile, MAX_PAGES } from '../modules/realt/constants';
 import type { RealtSnapshotEntry } from '../modules/realt/dto/realt-listing.dto';
 import { REALT_DEFAULTS } from '../config/constants';
@@ -64,7 +66,9 @@ async function fetchAllObjects(parser: RealtParserService, feed: FeedSpec): Prom
 }
 
 async function main(): Promise<void> {
-  const parser = new RealtParserService();
+  // No provider keys wired here on purpose: a one-off seeding run only needs the free rungs
+  // (plain request, then a browser), and realt.by answers the first one.
+  const parser = new RealtParserService(new EscalatingHtmlFetcher(new ScrapingClient([])));
   const now = new Date().toISOString();
 
   for (const feed of FEEDS) {

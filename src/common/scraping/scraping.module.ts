@@ -3,6 +3,7 @@ import { ScraperApiProvider } from './scraper-api.provider';
 import { ScrapingAntProvider } from './scrapingant.provider';
 import { ZenRowsProvider } from './zenrows.provider';
 import { ScrapflyProvider } from './scrapfly.provider';
+import { EscalatingHtmlFetcher } from './escalating-html-fetcher';
 import { ScrapingClient } from './scraping-client.service';
 import { SCRAPING_PROVIDERS, type ScrapingProvider } from './scraping.types';
 
@@ -60,7 +61,8 @@ import { SCRAPING_PROVIDERS, type ScrapingProvider } from './scraping.types';
       inject: [ScraperApiProvider, ZenRowsProvider, ScrapingAntProvider, ScrapflyProvider],
     },
     ScrapingClient,
+    EscalatingHtmlFetcher,
   ],
-  exports: [ScrapingClient],
+  exports: [ScrapingClient, EscalatingHtmlFetcher],
 })
 export class ScrapingModule {}
