@@ -4,6 +4,7 @@ import { Injectable, Logger, OnModuleDestroy } from '@nestjs/common';
 import puppeteer from 'rebrowser-puppeteer';
 import type { Browser, Page } from 'rebrowser-puppeteer';
 import { sleep } from '../../common/utils/sleep';
+import { fetchFreeFirst } from '../../common/scraping/free-first';
 import { ScrapingClient } from '../../common/scraping/scraping-client.service';
 import { BROWSER_USER_AGENT } from '../../common/utils/scraping';
 import {
@@ -61,56 +62,33 @@ export class BamperParserService implements OnModuleDestroy {
    * related-part links elsewhere on the page are ignored.
    */
   async fetch(url: string, partSlug: string): Promise<BamperListing[]> {
-    // Free first, paid second.
-    //
-    // The local browser costs nothing and clears the challenge from a residential IP, so it
-    // gets the first attempt. Only when it fails do we spend a managed-provider request. The
-    // reverse order was the earlier behaviour and it burned 250 ScrapFly credits on a local
-    // run where the browser would have succeeded for free.
-    //
-    // The first browser attempt is deliberately single: in CI the failure is IP reputation
-    // (Cloudflare blocks GitHub Actions' AWS ranges), and retrying the same blocked address
-    // cannot help — it would only add CLOUDFLARE_RETRY_DELAY_MS per feed before the provider
-    // is reached. Retries are kept, but as a last resort after the chain has also failed,
-    // since a challenge can genuinely clear on a second try from a good IP.
-    const first = await this.tryBrowser(url, partSlug);
-    if (first) return first;
-
-    if (this.scraping.isAvailable()) {
-      try {
+    const listings = await fetchFreeFirst<BamperListing[]>({
+      logger: this.logger,
+      label: partSlug,
+      attemptFree: () => this.tryBrowser(url, partSlug),
+      attemptPaid: async () => {
         const { content, provider } = await this.scraping.scrape(url, {
           country: 'by',
-          // `asp` alone clears the Cloudflare challenge and returns the full page. Adding
-          // `renderJs` changes nothing about the result and doubles ScrapFly's price: measured
-          // on this feed, asp-only cost 40 credits and asp+render cost 80, both yielding the
-          // same 7 listings. render alone cost 0 but returned the interstitial.
+          // `asp` alone clears the challenge and returns the full page. Adding `renderJs`
+          // changes nothing and doubles ScrapFly's price: measured on this feed, asp-only cost
+          // 40 credits and asp+render cost 80, both yielding the same 7 listings. render alone
+          // cost 0 but returned the interstitial.
           asp: true,
           timeoutMs: PROVIDER_TIMEOUT_MS,
         });
-        const listings = parseBamperSearchHtml(content, partSlug);
-        this.logger.log(`Fetched via ${provider}: ${listings.length} listing(s)`);
-        return listings;
-      } catch (err) {
-        const reason = err instanceof Error ? err.message : String(err);
-        this.logger.warn(`Scraping chain failed (${reason}) — retrying the local browser`);
-      }
-    } else {
-      this.logger.warn('No scraping provider configured — retrying the local browser');
-    }
+        return { value: parseBamperSearchHtml(content, partSlug), provider };
+      },
+      paidAvailable: this.scraping.isAvailable(),
+      retries: CLOUDFLARE_RETRY_ATTEMPTS,
+      retryDelayMs: CLOUDFLARE_RETRY_DELAY_MS,
+      beforeRetry: async () => {
+        await this.browser?.close();
+        this.browser = null;
+      },
+    });
 
-    for (let attempt = 1; attempt <= CLOUDFLARE_RETRY_ATTEMPTS; attempt++) {
-      this.logger.warn(
-        `Cloudflare retry ${attempt}/${CLOUDFLARE_RETRY_ATTEMPTS} — waiting ${CLOUDFLARE_RETRY_DELAY_MS / 1000}s`,
-      );
-      await this.browser?.close();
-      this.browser = null;
-      await sleep(CLOUDFLARE_RETRY_DELAY_MS);
-
-      const listings = await this.tryBrowser(url, partSlug);
-      if (listings) return listings;
-    }
-
-    throw new Error('Cloudflare challenge not resolved after all retries');
+    if (listings === null) throw new Error('Cloudflare challenge not resolved after all retries');
+    return listings;
   }
 
   /** One browser attempt. Returns null when the challenge did not clear. */
