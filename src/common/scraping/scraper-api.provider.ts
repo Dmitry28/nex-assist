@@ -59,12 +59,16 @@ export class ScraperApiProvider implements ScrapingProvider {
         signal: ctrl.signal,
       });
 
-      // 429 = rate limited, 403 = plan/credit limit reached. Both mean "this provider is done
-      // for now", which is what ScrapingQuotaError signals so the chain moves on.
-      if (resp.status === 429 || resp.status === 403) {
-        throw new ScrapingQuotaError(
-          this.name,
-          `ScraperAPI quota/rate limit reached (HTTP ${resp.status})`,
+      // 429 is the only "out of allowance" status. 403 is a plan rejection — measured against
+      // bamper.by it means "this country needs the premium residential tier" — so it must not
+      // be reported as an exhausted quota. Both fall through; only the log differs.
+      if (resp.status === 429) {
+        throw new ScrapingQuotaError(this.name, 'ScraperAPI rate/quota limit reached (HTTP 429)');
+      }
+      if (resp.status === 403) {
+        throw new Error(
+          'ScraperAPI rejected the request for this plan (HTTP 403) — the free tier cannot ' +
+            'target every country, and residential proxies are premium-only',
         );
       }
       if (!resp.ok) throw new Error(`ScraperAPI returned HTTP ${resp.status}`);
