@@ -1,12 +1,10 @@
-import { Injectable, Logger } from '@nestjs/common';
-import { fetchEscalating } from '../../common/scraping/escalating-fetch';
-import { ScrapingClient } from '../../common/scraping/scraping-client.service';
-import { BROWSER_USER_AGENT } from '../../common/utils/scraping';
+import { Injectable } from '@nestjs/common';
+import { EscalatingHtmlFetcher } from '../../common/scraping/escalating-html-fetcher';
 import type { AvByListing } from './dto/av-by-listing.dto';
-import { SCRAPFLY_RENDER_WAIT_MS, SCRAPFLY_TIMEOUT_MS } from './constants';
+import { SCRAPFLY_TIMEOUT_MS } from './constants';
 
-/** Rung-1 timeout — a cheap probe before paying, so it fails fast. */
-const PLAIN_TIMEOUT_MS = 15_000;
+/** Reject absurd bodies before buffering them — av.by pages run ~450 KB. */
+const MAX_HTML_SIZE_BYTES = 8 * 1024 * 1024;
 
 /** Shape of the slice of __NEXT_DATA__ we actually read. */
 interface RawNextDataAdvert {
@@ -55,61 +53,28 @@ interface RawNextData {
  */
 @Injectable()
 export class AvByParserService {
-  private readonly logger = new Logger(AvByParserService.name);
-
-  constructor(private readonly scraping: ScrapingClient) {}
+  constructor(private readonly html: EscalatingHtmlFetcher) {}
 
   async fetchFeed(url: string): Promise<{ listings: AvByListing[]; total: number }> {
-    const result = await fetchEscalating<{ listings: AvByListing[]; total: number }>({
-      logger: this.logger,
+    // Same ladder as every other module: plain request, then a browser, then the providers.
+    // av.by is fronted by the SafeLine WAF, so today the first two rungs are refused and a
+    // provider serves it — but both free rungs are still attempted, because the moment the WAF
+    // relaxes this feed stops costing anything and nobody has to notice.
+    const html = await this.html.fetch(url, {
       label: 'av.by',
-      // Rung 1. Costs ~1s and is normally refused by the SafeLine WAF, but it is the rung that
-      // makes this feed free the day av.by stops challenging — and until now this module went
-      // straight to a paid provider on every single run.
-      attemptPlain: () => this.tryPlain(url),
-      // Rung 2 is deliberately absent. A local browser was measured against this WAF and came
-      // back with 8 KB and no __NEXT_DATA__, so spending ~9s per feed to prove that again every
-      // run would be waste. Recorded here rather than hidden as a branch in the shared policy.
-      attemptPaid: async () => {
-        const { content, provider } = await this.scraping.scrape(url, {
-          country: 'by',
-          asp: true,
-          renderJs: true,
-          renderWaitMs: SCRAPFLY_RENDER_WAIT_MS,
-          timeoutMs: SCRAPFLY_TIMEOUT_MS,
-        });
-        return { value: parseFeed(content), provider };
-      },
-      paidAvailable: this.scraping.isAvailable(),
-      retries: 0,
-      retryDelayMs: 0,
+      // Without the Next.js payload the body is a challenge page, not the listing feed.
+      isUsable: body => body.includes('__NEXT_DATA__'),
+      timeoutMs: SCRAPFLY_TIMEOUT_MS,
+      maxBytes: MAX_HTML_SIZE_BYTES,
+      country: 'by',
     });
 
-    if (result === null) throw new Error('av.by: every fetch rung failed');
-    return result;
-  }
-
-  /** Rung 1 — plain request. Returns null when the WAF answered instead of the page. */
-  private async tryPlain(url: string): Promise<{ listings: AvByListing[]; total: number } | null> {
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), PLAIN_TIMEOUT_MS);
-    try {
-      const res = await fetch(url, {
-        signal: controller.signal,
-        headers: { 'User-Agent': BROWSER_USER_AGENT, 'Accept-Language': 'ru-RU,ru;q=0.9' },
-      });
-      if (!res.ok) return null;
-      const parsed = parseFeed(await res.text());
-      return parsed.listings.length > 0 ? parsed : null;
-    } catch {
-      return null;
-    } finally {
-      clearTimeout(timer);
-    }
+    if (html === null) throw new Error('av.by: every fetch rung failed');
+    return parseFeed(html);
   }
 }
 
-/** Turns a page body into the feed shape both rungs return. */
+/** Turns a page body into the feed shape the caller expects. */
 const parseFeed = (html: string): { listings: AvByListing[]; total: number } => {
   const main = extractNextData(html).props?.initialState?.filter?.main;
   const raw = main?.adverts ?? [];

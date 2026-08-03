@@ -1,6 +1,9 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { BROWSER_USER_AGENT } from '../../common/utils/scraping';
+import { EscalatingHtmlFetcher } from '../../common/scraping/escalating-html-fetcher';
 import { sleep } from '../../common/utils/sleep';
+
+/** A usable realt.by page always embeds the Next.js payload the parser reads. */
+const hasNextData = (html: string): boolean => html.includes('__NEXT_DATA__');
 import {
   CURRENCY_BYN,
   CURRENCY_USD,
@@ -69,6 +72,8 @@ interface RawPagination {
 export class RealtParserService {
   private readonly logger = new Logger(RealtParserService.name);
 
+  constructor(private readonly html: EscalatingHtmlFetcher) {}
+
   /**
    * Fetches the feed's entire current inventory.
    *
@@ -90,7 +95,12 @@ export class RealtParserService {
       if (page > 1) await sleep(INTER_PAGE_DELAY_MS);
 
       const pageUrl = page === 1 ? url : this.buildPageUrl(url, page);
-      const html = await this.fetchHtml(pageUrl);
+      const html = await this.html.fetch(pageUrl, {
+        label: 'realt',
+        isUsable: hasNextData,
+        timeoutMs: FETCH_TIMEOUT_MS,
+        maxBytes: MAX_HTML_SIZE_BYTES,
+      });
       if (!html) {
         // Any failed page leaves the inventory incomplete — including page 1, where the
         // result would otherwise read as "the feed is genuinely empty".
@@ -124,40 +134,6 @@ export class RealtParserService {
 
     this.logger.log(`Fetched ${allListings.length} listings (full inventory)`);
     return { listings: allListings, truncated };
-  }
-
-  private async fetchHtml(url: string): Promise<string | null> {
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
-    try {
-      const res = await fetch(url, {
-        signal: controller.signal,
-        headers: {
-          'User-Agent': BROWSER_USER_AGENT,
-          'Accept-Language': 'ru-RU,ru;q=0.9',
-        },
-      });
-      if (!res.ok) {
-        this.logger.warn(`HTTP ${res.status} for ${url}`);
-        return null;
-      }
-      const contentLength = Number(res.headers.get('content-length'));
-      if (contentLength > MAX_HTML_SIZE_BYTES) {
-        this.logger.warn(`Content-Length ${contentLength} exceeds limit for ${url} — skipping`);
-        return null;
-      }
-      const html = await res.text();
-      if (html.length > MAX_HTML_SIZE_BYTES) {
-        this.logger.warn(`Response too large (${html.length} bytes) for ${url} — skipping`);
-        return null;
-      }
-      return html;
-    } catch (err) {
-      this.logger.error(`Failed to fetch ${url}`, err);
-      return null;
-    } finally {
-      clearTimeout(timer);
-    }
   }
 
   private extractPageData(html: string): {
