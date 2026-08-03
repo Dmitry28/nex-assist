@@ -42,9 +42,9 @@ const BROWSER_ARGS = [
  *
  * NOTE: Cloudflare blocks GitHub Actions (AWS) IP ranges, so in CI the local browser never
  * clears the challenge — every scheduled run failed and reported "Cloudflare challenge not
- * resolved after all retries" to Telegram, and the snapshot stayed empty. The managed
- * provider chain is tried first for exactly that reason; the browser remains the fallback
- * because it does work from a residential IP.
+ * resolved after all retries" to Telegram, and the snapshot stayed empty. The managed provider
+ * chain exists for that case, but the browser is tried first because it is free: paying only
+ * happens once the free attempt has failed.
  */
 @Injectable()
 export class BamperParserService implements OnModuleDestroy {
@@ -64,10 +64,21 @@ export class BamperParserService implements OnModuleDestroy {
    * related-part links elsewhere on the page are ignored.
    */
   async fetch(url: string, partSlug: string): Promise<BamperListing[]> {
-    // Managed provider first. Cloudflare blocks GitHub Actions' AWS ranges, so the local
-    // browser below cannot clear the challenge there however many times it retries — this is
-    // the path that makes the module work in CI. Locally, where the browser does get through,
-    // the chain is usually unconfigured and we fall straight to it.
+    // Free first, paid second.
+    //
+    // The local browser costs nothing and clears the challenge from a residential IP, so it
+    // gets the first attempt. Only when it fails do we spend a managed-provider request. The
+    // reverse order was the earlier behaviour and it burned 250 ScrapFly credits on a local
+    // run where the browser would have succeeded for free.
+    //
+    // The first browser attempt is deliberately single: in CI the failure is IP reputation
+    // (Cloudflare blocks GitHub Actions' AWS ranges), and retrying the same blocked address
+    // cannot help — it would only add CLOUDFLARE_RETRY_DELAY_MS per feed before the provider
+    // is reached. Retries are kept, but as a last resort after the chain has also failed,
+    // since a challenge can genuinely clear on a second try from a good IP.
+    const first = await this.tryBrowser(url, partSlug);
+    if (first) return first;
+
     if (this.scraping.isAvailable()) {
       try {
         const { content, provider } = await this.scraping.scrape(url, {
@@ -81,27 +92,32 @@ export class BamperParserService implements OnModuleDestroy {
         this.logger.log(`Fetched via ${provider}: ${listings.length} listing(s)`);
         return listings;
       } catch (err) {
-        // Not fatal: fall through to the local browser, which succeeds off CI.
         const reason = err instanceof Error ? err.message : String(err);
-        this.logger.warn(`Scraping chain failed (${reason}) — falling back to local browser`);
+        this.logger.warn(`Scraping chain failed (${reason}) — retrying the local browser`);
       }
+    } else {
+      this.logger.warn('No scraping provider configured — retrying the local browser');
     }
 
-    for (let attempt = 0; attempt <= CLOUDFLARE_RETRY_ATTEMPTS; attempt++) {
-      if (attempt > 0) {
-        this.logger.warn(
-          `Cloudflare retry ${attempt}/${CLOUDFLARE_RETRY_ATTEMPTS} — waiting ${CLOUDFLARE_RETRY_DELAY_MS / 1000}s`,
-        );
-        await this.browser?.close();
-        this.browser = null;
-        await sleep(CLOUDFLARE_RETRY_DELAY_MS);
-      }
+    for (let attempt = 1; attempt <= CLOUDFLARE_RETRY_ATTEMPTS; attempt++) {
+      this.logger.warn(
+        `Cloudflare retry ${attempt}/${CLOUDFLARE_RETRY_ATTEMPTS} — waiting ${CLOUDFLARE_RETRY_DELAY_MS / 1000}s`,
+      );
+      await this.browser?.close();
+      this.browser = null;
+      await sleep(CLOUDFLARE_RETRY_DELAY_MS);
 
-      const html = await this.fetchHtml(await this.getBrowser(), url);
-      if (html !== null) return parseBamperSearchHtml(html, partSlug);
+      const listings = await this.tryBrowser(url, partSlug);
+      if (listings) return listings;
     }
 
     throw new Error('Cloudflare challenge not resolved after all retries');
+  }
+
+  /** One browser attempt. Returns null when the challenge did not clear. */
+  private async tryBrowser(url: string, partSlug: string): Promise<BamperListing[] | null> {
+    const html = await this.fetchHtml(await this.getBrowser(), url);
+    return html === null ? null : parseBamperSearchHtml(html, partSlug);
   }
 
   private async getBrowser(): Promise<Browser> {

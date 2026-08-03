@@ -11,6 +11,41 @@ import {
 const DEFAULT_TIMEOUT_MS = 120_000;
 
 /**
+ * Countries ScrapingAnt accepts for `proxy_country`, lower-case, as returned by its own 422
+ * error. Anything else is rejected outright, so an unsupported country is dropped rather than
+ * sent — notably **Belarus is absent**, which is why bamper.by cannot be geo-targeted here.
+ */
+const SUPPORTED_PROXY_COUNTRIES = new Set([
+  'ae',
+  'au',
+  'br',
+  'ca',
+  'cn',
+  'cz',
+  'de',
+  'es',
+  'fr',
+  'gb',
+  'hk',
+  'id',
+  'il',
+  'in',
+  'it',
+  'jp',
+  'kr',
+  'my',
+  'nl',
+  'ph',
+  'pl',
+  'ru',
+  'sa',
+  'sg',
+  'th',
+  'us',
+  'vn',
+]);
+
+/**
  * ScrapingAnt provider (https://scrapingant.com). Third link in the chain.
  *
  * Sits between ScraperAPI and ScrapFly because its free allowance is the largest of the three,
@@ -44,7 +79,13 @@ export class ScrapingAntProvider implements ScrapingProvider {
     // comes from routing through a residential proxy, so `asp` maps onto that instead.
     if (opts.renderJs) params.set('browser', 'true');
     if (opts.asp) params.set('proxy_type', 'residential');
-    if (opts.country) params.set('proxy_country', opts.country.toUpperCase());
+    const country = opts.country?.toLowerCase();
+    if (country && SUPPORTED_PROXY_COUNTRIES.has(country)) {
+      params.set('proxy_country', country);
+    } else if (country) {
+      // Sending an unsupported code is a hard 422, so drop it and let ScrapingAnt pick.
+      this.logger.warn(`ScrapingAnt does not support proxy_country="${country}" — omitting it`);
+    }
 
     const timeoutMs = opts.timeoutMs ?? DEFAULT_TIMEOUT_MS;
     const ctrl = new AbortController();
@@ -56,13 +97,15 @@ export class ScrapingAntProvider implements ScrapingProvider {
         headers: { 'x-api-key': this.apiKey },
       });
 
-      // 423 is ScrapingAnt's "out of credits"; 429 rate limit, 403 plan rejected. All three mean
-      // "done for now", which ScrapingQuotaError signals so the chain moves to the next link.
-      if (resp.status === 423 || resp.status === 429 || resp.status === 403) {
-        throw new ScrapingQuotaError(
-          this.name,
-          `ScrapingAnt quota/rate limit reached (HTTP ${resp.status})`,
-        );
+      // Only 429 means "out of allowance" here. 423 is "our browser was detected by the target
+      // site" — a capability failure, not an exhausted tier — and reporting it as quota would
+      // wrongly suggest the free plan had run out. Both still fall through to the next
+      // provider; the distinction is in what the log tells you.
+      if (resp.status === 429) {
+        throw new ScrapingQuotaError(this.name, 'ScrapingAnt rate/quota limit reached (HTTP 429)');
+      }
+      if (resp.status === 423) {
+        throw new Error('ScrapingAnt was detected by the target site (HTTP 423)');
       }
       if (!resp.ok) throw new Error(`ScrapingAnt returned HTTP ${resp.status}`);
 
