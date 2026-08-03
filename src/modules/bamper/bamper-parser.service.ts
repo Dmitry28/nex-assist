@@ -4,7 +4,7 @@ import { Injectable, Logger, OnModuleDestroy } from '@nestjs/common';
 import puppeteer from 'rebrowser-puppeteer';
 import type { Browser, Page } from 'rebrowser-puppeteer';
 import { sleep } from '../../common/utils/sleep';
-import { fetchFreeFirst } from '../../common/scraping/free-first';
+import { fetchEscalating } from '../../common/scraping/escalating-fetch';
 import { ScrapingClient } from '../../common/scraping/scraping-client.service';
 import { BROWSER_USER_AGENT } from '../../common/utils/scraping';
 import {
@@ -16,6 +16,10 @@ import {
 import type { BamperListing } from './dto/bamper-listing.dto';
 
 const BASE_URL = 'https://bamper.by';
+
+/** Rung-1 timeout. Short on purpose: a challenge page comes back fast, and this is only
+ * a cheap probe before the browser. */
+const PLAIN_TIMEOUT_MS = 15_000;
 
 /** Overall provider request timeout — anti-bot + JS render is slow (ms). */
 const PROVIDER_TIMEOUT_MS = 120_000;
@@ -62,10 +66,14 @@ export class BamperParserService implements OnModuleDestroy {
    * related-part links elsewhere on the page are ignored.
    */
   async fetch(url: string, partSlug: string): Promise<BamperListing[]> {
-    const listings = await fetchFreeFirst<BamperListing[]>({
+    const listings = await fetchEscalating<BamperListing[]>({
       logger: this.logger,
       label: partSlug,
-      attemptFree: () => this.tryBrowser(url, partSlug),
+      // Rung 1. bamper.by is behind a Cloudflare JS challenge today, so this normally returns
+      // the interstitial and escalates — but it costs ~1s to find out, and the day the site
+      // drops the challenge every run becomes free without anyone noticing.
+      attemptPlain: () => this.tryPlain(url, partSlug),
+      attemptBrowser: () => this.tryBrowser(url, partSlug),
       attemptPaid: async () => {
         const { content, provider } = await this.scraping.scrape(url, {
           country: 'by',
@@ -89,6 +97,29 @@ export class BamperParserService implements OnModuleDestroy {
 
     if (listings === null) throw new Error('Cloudflare challenge not resolved after all retries');
     return listings;
+  }
+
+  /**
+   * Rung 1 — a plain HTTP request. Returns null when the body is a challenge page rather than
+   * the listing page, which is what the parser yielding nothing indicates.
+   */
+  private async tryPlain(url: string, partSlug: string): Promise<BamperListing[] | null> {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), PLAIN_TIMEOUT_MS);
+    try {
+      const res = await fetch(url, {
+        signal: controller.signal,
+        headers: { 'User-Agent': BROWSER_USER_AGENT, 'Accept-Language': 'ru-RU,ru;q=0.9' },
+      });
+      if (!res.ok) return null;
+      const listings = parseBamperSearchHtml(await res.text(), partSlug);
+      return listings.length > 0 ? listings : null;
+    } catch {
+      // Any transport failure just means "escalate" — no need to distinguish causes here.
+      return null;
+    } finally {
+      clearTimeout(timer);
+    }
   }
 
   /** One browser attempt. Returns null when the challenge did not clear. */
