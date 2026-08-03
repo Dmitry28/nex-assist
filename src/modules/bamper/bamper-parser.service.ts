@@ -16,9 +16,6 @@ import type { BamperListing } from './dto/bamper-listing.dto';
 
 const BASE_URL = 'https://bamper.by';
 
-/** Settle time asked of the managed provider so the challenge clears before capture (ms). */
-const PROVIDER_RENDER_WAIT_MS = 8_000;
-
 /** Overall provider request timeout — anti-bot + JS render is slow (ms). */
 const PROVIDER_TIMEOUT_MS = 120_000;
 
@@ -83,9 +80,11 @@ export class BamperParserService implements OnModuleDestroy {
       try {
         const { content, provider } = await this.scraping.scrape(url, {
           country: 'by',
+          // `asp` alone clears the Cloudflare challenge and returns the full page. Adding
+          // `renderJs` changes nothing about the result and doubles ScrapFly's price: measured
+          // on this feed, asp-only cost 40 credits and asp+render cost 80, both yielding the
+          // same 7 listings. render alone cost 0 but returned the interstitial.
           asp: true,
-          renderJs: true,
-          renderWaitMs: PROVIDER_RENDER_WAIT_MS,
           timeoutMs: PROVIDER_TIMEOUT_MS,
         });
         const listings = parseBamperSearchHtml(content, partSlug);
