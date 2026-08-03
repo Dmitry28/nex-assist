@@ -5,7 +5,7 @@ import { Injectable, Logger, OnModuleDestroy } from '@nestjs/common';
 import puppeteer from 'rebrowser-puppeteer';
 import type { Browser, Page } from 'rebrowser-puppeteer';
 import type { CarListing } from './dto/car-listing.dto';
-import { fetchFreeFirst } from '../../common/scraping/free-first';
+import { fetchEscalating } from '../../common/scraping/escalating-fetch';
 import { BROWSER_USER_AGENT } from '../../common/utils/scraping';
 import {
   CARD_WALK_DEPTH,
@@ -58,10 +58,12 @@ export class BidCarsParserService implements OnModuleDestroy {
   }
 
   async fetchListings(url: string): Promise<CarListing[]> {
-    const listings = await fetchFreeFirst<CarListing[]>({
+    const listings = await fetchEscalating<CarListing[]>({
       logger: this.logger,
       label: 'bid.cars',
-      attemptFree: async () => this.scrapeResultsPage(await this.getBrowser(), url),
+      // Rung 1 absent: this parser reads the page through page.evaluate rather than from an
+      // HTML string, so a plain request has nothing to hand it. Rung 2 is where it starts.
+      attemptBrowser: async () => this.scrapeResultsPage(await this.getBrowser(), url),
       // No chain here, deliberately. This parser reads the page through page.evaluate rather
       // than from an HTML string, so a provider's response cannot be fed to it without writing
       // a second, HTML-based parser. bid.cars is not blocked today — measured on the same
