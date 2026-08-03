@@ -4,6 +4,7 @@ import { Injectable, Logger, OnModuleDestroy } from '@nestjs/common';
 import puppeteer from 'rebrowser-puppeteer';
 import type { Browser, Page } from 'rebrowser-puppeteer';
 import { sleep } from '../../common/utils/sleep';
+import { ScrapingClient } from '../../common/scraping/scraping-client.service';
 import { BROWSER_USER_AGENT } from '../../common/utils/scraping';
 import {
   CLOUDFLARE_RETRY_ATTEMPTS,
@@ -14,6 +15,12 @@ import {
 import type { BamperListing } from './dto/bamper-listing.dto';
 
 const BASE_URL = 'https://bamper.by';
+
+/** Settle time asked of the managed provider so the challenge clears before capture (ms). */
+const PROVIDER_RENDER_WAIT_MS = 8_000;
+
+/** Overall provider request timeout — anti-bot + JS render is slow (ms). */
+const PROVIDER_TIMEOUT_MS = 120_000;
 
 const BROWSER_ARGS = [
   '--no-sandbox',
@@ -33,14 +40,18 @@ const BROWSER_ARGS = [
  *
  * The browser is reused across calls and closed on module destroy.
  *
- * NOTE: Cloudflare blocks GitHub Actions (AWS) IPs intermittently — the same known
- * limitation as BidCars. A blocked run throws after all retries and is reported to
- * Telegram; the next run recovers.
+ * NOTE: Cloudflare blocks GitHub Actions (AWS) IP ranges, so in CI the local browser never
+ * clears the challenge — every scheduled run failed and reported "Cloudflare challenge not
+ * resolved after all retries" to Telegram, and the snapshot stayed empty. The managed
+ * provider chain is tried first for exactly that reason; the browser remains the fallback
+ * because it does work from a residential IP.
  */
 @Injectable()
 export class BamperParserService implements OnModuleDestroy {
   private readonly logger = new Logger(BamperParserService.name);
   private browser: Browser | null = null;
+
+  constructor(private readonly scraping: ScrapingClient) {}
 
   async onModuleDestroy(): Promise<void> {
     await this.browser?.close();
@@ -53,6 +64,29 @@ export class BamperParserService implements OnModuleDestroy {
    * related-part links elsewhere on the page are ignored.
    */
   async fetch(url: string, partSlug: string): Promise<BamperListing[]> {
+    // Managed provider first. Cloudflare blocks GitHub Actions' AWS ranges, so the local
+    // browser below cannot clear the challenge there however many times it retries — this is
+    // the path that makes the module work in CI. Locally, where the browser does get through,
+    // the chain is usually unconfigured and we fall straight to it.
+    if (this.scraping.isAvailable()) {
+      try {
+        const { content, provider } = await this.scraping.scrape(url, {
+          country: 'by',
+          asp: true,
+          renderJs: true,
+          renderWaitMs: PROVIDER_RENDER_WAIT_MS,
+          timeoutMs: PROVIDER_TIMEOUT_MS,
+        });
+        const listings = parseBamperSearchHtml(content, partSlug);
+        this.logger.log(`Fetched via ${provider}: ${listings.length} listing(s)`);
+        return listings;
+      } catch (err) {
+        // Not fatal: fall through to the local browser, which succeeds off CI.
+        const reason = err instanceof Error ? err.message : String(err);
+        this.logger.warn(`Scraping chain failed (${reason}) — falling back to local browser`);
+      }
+    }
+
     for (let attempt = 0; attempt <= CLOUDFLARE_RETRY_ATTEMPTS; attempt++) {
       if (attempt > 0) {
         this.logger.warn(
