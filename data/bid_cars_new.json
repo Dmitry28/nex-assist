@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "link": "https://bid.cars/ru/lot/1-55799266/2026-Volkswagen-Atlas-1V2JN2CA9TC516395",
+    "title": "2026 Volkswagen Atlas, SE",
+    "vin": "1V2JN2CA9TC516395",
+    "lot": "1-55799266",
+    "odometer": "12k мили (20k km)",
+    "damage": "Передняя часть",
+    "location": "Vinton (LA)",
+    "currentBid": "$0",
+    "engine": "2.0L 4 cyl. 269HP",
+    "keys": "CT (Texas)",
+    "condition": "На ходу",
+    "auctionDate": "ср 5 авг., 18:00 GMT+2",
+    "auctionSource": "Copart",
+    "seller": "Hertz"
+  }
+]
