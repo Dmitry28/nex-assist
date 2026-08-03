@@ -24,18 +24,18 @@ jobs:
       pull-requests: write
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           token: ${{ secrets.GH_PAT }}
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version-file: '.nvmrc'
           cache: 'npm'
 
       - name: Cache Puppeteer browser
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: ~/.cache/puppeteer
           key: puppeteer-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
@@ -90,21 +90,16 @@ jobs:
             echo "No data changes, skipping PR"
             exit 0
           fi
-          # Snapshots belong to the production branch only. A manual run on dev uses the
-          # development environment (different chats), so committing its data would fork the
-          # snapshot history: dev and main would each grow their own chain, every release PR
-          # would conflict across every data file, and resolving one the wrong way would roll
-          # production data back. Test runs therefore scrape and notify, but do not persist.
-          if [ "${GITHUB_REF_NAME}" != "main" ]; then
-            echo "Ref is ${GITHUB_REF_NAME}, not main — skipping data PR (test run)"
-            exit 0
-          fi
+          # dev and main are two environments, each with its own chats and its own snapshots,
+          # so both persist. The data therefore diverges by design and a `dev -> main` release
+          # merge will conflict across data/: resolve it by keeping the TARGET branch's data,
+          # never by taking the source's, or you roll that environment's state back.
           DATE=$(date '+%Y-%m-%d')
           BRANCH="chore/data-${DATE}-${GITHUB_RUN_ID}"
           git checkout -b "$BRANCH"
           git commit -m "chore: update scraped data [${DATE}]"
           git push origin "$BRANCH"
-          BASE_BRANCH=main
+          BASE_BRANCH="${GITHUB_REF_NAME}"
           PR_URL=$(gh pr create \
             --title "chore: update scraped data [${DATE}]" \
             --body "Automated data update from daily scrape workflow." \

@@ -11,26 +11,37 @@ updates:
     schedule:
       interval: weekly
     open-pull-requests-limit: 5
-    # One PR per batch instead of a dozen: the project pins NestJS packages that have to move
-    # together, and separate PRs for them each fail to build on their own.
+    # Groups are split by update-type on purpose. Batching majors together with patches
+    # produced PRs that could not be merged at all: #446 buried typescript 5.9 -> 7.0 among
+    # ten patch bumps, and #447 buried puppeteer 24 -> 25 (which breaks jest's ESM handling)
+    # next to a harmless helmet bump. A major now arrives on its own, so it can be evaluated
+    # without holding the routine updates hostage.
     groups:
       nestjs:
         patterns:
           - '@nestjs/*'
-      # Security fixes stay separate so they can be reviewed and merged without waiting on
-      # a routine version bump.
-      security:
-        applies-to: security-updates
-        patterns:
-          - '*'
-      dev-tooling:
-        dependency-type: development
-        patterns:
-          - '*'
+        update-types:
+          - minor
+          - patch
       production:
         dependency-type: production
         patterns:
           - '*'
+        update-types:
+          - minor
+          - patch
+      dev-tooling:
+        dependency-type: development
+        patterns:
+          - '*'
+        update-types:
+          - minor
+          - patch
+    ignore:
+      # TypeScript majors change type-checking semantics across the whole codebase; move on it
+      # deliberately, not because a bot opened a PR.
+      - dependency-name: typescript
+        update-types: ['version-update:semver-major']
     labels:
       - dependencies
     commit-message:
@@ -52,6 +63,12 @@ updates:
     target-branch: dev
     schedule:
       interval: weekly
+    # The Node major is pinned to whatever `.nvmrc` says, so CI, local dev and the image stay
+    # on one version. Dependabot proposed 24 -> 26 while `.nvmrc` said 24, which would have
+    # split them; bump both together when moving to a new LTS instead.
+    ignore:
+      - dependency-name: node
+        update-types: ['version-update:semver-major']
     labels:
       - dependencies
     commit-message:
