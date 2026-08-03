@@ -5,7 +5,7 @@ import { Injectable, Logger, OnModuleDestroy } from '@nestjs/common';
 import puppeteer from 'rebrowser-puppeteer';
 import type { Browser, Page } from 'rebrowser-puppeteer';
 import type { CarListing } from './dto/car-listing.dto';
-import { sleep } from '../../common/utils/sleep';
+import { fetchFreeFirst } from '../../common/scraping/free-first';
 import { BROWSER_USER_AGENT } from '../../common/utils/scraping';
 import {
   CARD_WALK_DEPTH,
@@ -15,12 +15,11 @@ import {
   PAGE_TIMEOUT_MS,
 } from './constants';
 
-// TODO: Cloudflare blocks GitHub Actions (AWS) IP range regardless of browser fingerprint.
-// Options to fix bid.cars scraping on CI:
-//   1. Deploy the service to a VPS (Hetzner/DigitalOcean) — residential IP bypasses the block,
-//      and the built-in NestJS cron replaces the GitHub Actions schedule entirely.
-//   2. Route through ScrapFly (https://scrapfly.io) — residential proxies + managed browsers
-//      that handle Cloudflare JS challenges. Requires API key and SDK integration.
+// Option 2 of the old TODO here is done: the managed provider chain is wired in as a fallback
+// via fetchFreeFirst. The note also over-stated the problem — Cloudflare does not block the
+// GitHub Actions range outright. Measured on the same runners, bid.cars returns 51 listings
+// while bamper.by is refused, so strictness is per-site. A VPS or self-hosted runner remains
+// the only free way to fix a site that is genuinely blocked.
 
 const BROWSER_ARGS = [
   '--no-sandbox',
@@ -59,23 +58,27 @@ export class BidCarsParserService implements OnModuleDestroy {
   }
 
   async fetchListings(url: string): Promise<CarListing[]> {
-    for (let attempt = 0; attempt <= CLOUDFLARE_RETRY_ATTEMPTS; attempt++) {
-      if (attempt > 0) {
-        this.logger.warn(
-          `Cloudflare retry ${attempt}/${CLOUDFLARE_RETRY_ATTEMPTS} — waiting ${CLOUDFLARE_RETRY_DELAY_MS / 1000}s`,
-        );
-        // Close the old browser so the next attempt starts with a fresh instance
+    const listings = await fetchFreeFirst<CarListing[]>({
+      logger: this.logger,
+      label: 'bid.cars',
+      attemptFree: async () => this.scrapeResultsPage(await this.getBrowser(), url),
+      // No chain here, deliberately. This parser reads the page through page.evaluate rather
+      // than from an HTML string, so a provider's response cannot be fed to it without writing
+      // a second, HTML-based parser. bid.cars is not blocked today — measured on the same
+      // GitHub Actions runners it returns 51 listings while bamper.by is refused — so that
+      // parser would be speculative work for a site that works. The shared policy is still
+      // used, to keep retry and logging behaviour identical across the two modules.
+      paidAvailable: false,
+      retries: CLOUDFLARE_RETRY_ATTEMPTS,
+      retryDelayMs: CLOUDFLARE_RETRY_DELAY_MS,
+      beforeRetry: async () => {
         await this.browser?.close();
         this.browser = null;
-        await sleep(CLOUDFLARE_RETRY_DELAY_MS);
-      }
+      },
+    });
 
-      const browser = await this.getBrowser();
-      const result = await this.scrapeResultsPage(browser, url);
-      if (result !== null) return result;
-    }
-
-    throw new Error('Cloudflare challenge not resolved after all retries');
+    if (listings === null) throw new Error('Cloudflare challenge not resolved after all retries');
+    return listings;
   }
 
   /** Returns the shared browser, launching one if not yet started or if it crashed. */
