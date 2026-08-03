@@ -1,5 +1,5 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { BROWSER_USER_AGENT } from '../../common/utils/scraping';
+import { EscalatingHtmlFetcher } from '../../common/scraping/escalating-html-fetcher';
 import { sleep } from '../../common/utils/sleep';
 import {
   FETCH_TIMEOUT_MS,
@@ -24,6 +24,8 @@ import type { TownhouseListing } from './dto/townhouse-listing.dto';
 export class TownhousesPrometrParserService {
   private readonly logger = new Logger(TownhousesPrometrParserService.name);
 
+  constructor(private readonly html: EscalatingHtmlFetcher) {}
+
   /**
    * Fetches every unit on sale in one complex.
    *
@@ -35,7 +37,13 @@ export class TownhousesPrometrParserService {
     complexUrl: string,
     complexName: string,
   ): Promise<{ listings: TownhouseListing[]; degraded: boolean }> {
-    const complexHtml = await this.fetchHtml(complexUrl);
+    const complexHtml = await this.html.fetch(complexUrl, {
+      label: complexName,
+      // A complex page always links its buildings; a body without one is an error shell.
+      isUsable: html => html.includes('/newbuild_belarus/'),
+      timeoutMs: FETCH_TIMEOUT_MS,
+      maxBytes: MAX_HTML_SIZE_BYTES,
+    });
     if (!complexHtml) return { listings: [], degraded: true };
 
     const buildings = extractBuildingLinks(complexHtml, complexUrl);
@@ -49,7 +57,12 @@ export class TownhousesPrometrParserService {
     let degraded = false;
     for (const [i, path] of buildings.slice(0, MAX_BUILDINGS_PER_COMPLEX).entries()) {
       if (i > 0) await sleep(INTER_PAGE_DELAY_MS);
-      const html = await this.fetchHtml(`${PROMETR_ORIGIN}${path}`);
+      const html = await this.html.fetch(`${PROMETR_ORIGIN}${path}`, {
+        label: complexName,
+        isUsable: html => html.includes('flats-in__') || html.includes('newbuild_belarus'),
+        timeoutMs: FETCH_TIMEOUT_MS,
+        maxBytes: MAX_HTML_SIZE_BYTES,
+      });
       if (!html) {
         degraded = true;
         continue;
@@ -61,32 +74,6 @@ export class TownhousesPrometrParserService {
       `${complexName}: ${buildings.length} building(s), ${listings.length} unit(s) on sale`,
     );
     return { listings, degraded };
-  }
-
-  private async fetchHtml(url: string): Promise<string | null> {
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
-    try {
-      const res = await fetch(url, {
-        signal: controller.signal,
-        headers: { 'User-Agent': BROWSER_USER_AGENT, 'Accept-Language': 'ru-RU,ru;q=0.9' },
-      });
-      if (!res.ok) {
-        this.logger.warn(`HTTP ${res.status} for ${url}`);
-        return null;
-      }
-      const html = await res.text();
-      if (html.length > MAX_HTML_SIZE_BYTES) {
-        this.logger.warn(`Response too large (${html.length} bytes) for ${url} — skipping`);
-        return null;
-      }
-      return html;
-    } catch (err) {
-      this.logger.error(`Failed to fetch ${url}`, err);
-      return null;
-    } finally {
-      clearTimeout(timer);
-    }
   }
 }
 

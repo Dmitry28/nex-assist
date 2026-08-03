@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import townhousesConfig from '../../config/townhouses.config';
+import { ScrapingModule } from '../../common/scraping/scraping.module';
 import { KufarParserService } from '../kufar/kufar-parser.service';
 import { RealtParserService } from '../realt/realt-parser.service';
 import { TelegramModule } from '../telegram/telegram.module';
@@ -15,7 +16,7 @@ import { TownhousesService } from './townhouses.service';
  * unrelated modules just to reach a stateless fetcher.
  */
 @Module({
-  imports: [ConfigModule.forFeature(townhousesConfig), TelegramModule],
+  imports: [ConfigModule.forFeature(townhousesConfig), ScrapingModule, TelegramModule],
   controllers: [TownhousesController],
   providers: [
     TownhousesService,

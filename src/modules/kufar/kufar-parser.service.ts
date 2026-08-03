@@ -1,7 +1,10 @@
 import { Injectable, Logger } from '@nestjs/common';
 import type { KufarListing } from './dto/kufar-listing.dto';
-import { BROWSER_USER_AGENT } from '../../common/utils/scraping';
+import { EscalatingHtmlFetcher } from '../../common/scraping/escalating-html-fetcher';
 import { sleep } from '../../common/utils/sleep';
+
+/** A usable Kufar page always embeds the Next.js payload the parser reads. */
+const hasNextData = (html: string): boolean => html.includes('__NEXT_DATA__');
 import {
   FETCH_TIMEOUT_MS,
   IMAGE_CDN_BASE,
@@ -78,6 +81,8 @@ export const parseCoordinates = (v: unknown): { lat: number; lon: number } | und
 export class KufarParserService {
   private readonly logger = new Logger(KufarParserService.name);
 
+  constructor(private readonly html: EscalatingHtmlFetcher) {}
+
   /**
    * Fetches the feed's entire current inventory.
    *
@@ -96,7 +101,14 @@ export class KufarParserService {
       // Pace pagination — Kufar returns 429 on sustained back-to-back page fetches.
       if (page > 1) await sleep(INTER_PAGE_DELAY_MS);
 
-      const html = await this.fetchHtml(currentUrl);
+      const html = await this.html.fetch(currentUrl, {
+        label: 'kufar',
+        // A body without the Next.js payload is a challenge or error shell, not the listing
+        // page — treating it as success would stop the ladder at a useless response.
+        isUsable: hasNextData,
+        timeoutMs: FETCH_TIMEOUT_MS,
+        maxBytes: MAX_HTML_SIZE_BYTES,
+      });
       if (!html) {
         // Any failed page leaves the inventory incomplete — including page 1, where the
         // result would otherwise read as "the feed is genuinely empty".
@@ -131,41 +143,6 @@ export class KufarParserService {
 
     this.logger.log(`Fetched ${allListings.length} listings (full inventory)`);
     return { listings: allListings, truncated };
-  }
-
-  private async fetchHtml(url: string): Promise<string | null> {
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
-    try {
-      const res = await fetch(url, {
-        signal: controller.signal,
-        headers: {
-          'User-Agent': BROWSER_USER_AGENT,
-          'Accept-Language': 'ru-RU,ru;q=0.9',
-        },
-      });
-      if (!res.ok) {
-        this.logger.warn(`HTTP ${res.status} for ${url}`);
-        return null;
-      }
-      // Cheap early exit before buffering the body
-      const contentLength = Number(res.headers.get('content-length'));
-      if (contentLength > MAX_HTML_SIZE_BYTES) {
-        this.logger.warn(`Content-Length ${contentLength} exceeds limit for ${url} — skipping`);
-        return null;
-      }
-      const html = await res.text();
-      if (html.length > MAX_HTML_SIZE_BYTES) {
-        this.logger.warn(`Response too large (${html.length} bytes) for ${url} — skipping`);
-        return null;
-      }
-      return html;
-    } catch (err) {
-      this.logger.error(`Failed to fetch ${url}`, err);
-      return null;
-    } finally {
-      clearTimeout(timer);
-    }
   }
 
   private extractPageData(html: string): { ads: RawAd[]; pagination: RawPaginationEntry[] } {
