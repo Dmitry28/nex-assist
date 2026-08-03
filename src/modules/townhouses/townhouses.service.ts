@@ -2,6 +2,7 @@ import { ConflictException, Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { SnapshotService } from '../../common/snapshot.service';
 import { TOWNHOUSE_KEYWORDS, matchesKeywords } from '../../common/utils/keyword-filter';
+import { pruneStale, STALE_AFTER_DAYS } from '../../common/utils/prune-stale';
 import { hasPriceChanged } from '../../common/utils/price-change';
 import { sleep } from '../../common/utils/sleep';
 import type { TownhouseComplexConfig } from '../../config/townhouses.config';
@@ -238,8 +239,20 @@ export class TownhousesService {
       }
     }
 
-    await this.snapshot.write(DATA_FILE, [...updated.values()]);
-    this.logger.log(`Snapshot saved (${updated.size} entries)`);
+    // Drop long-gone listings. Skipped when any source failed: their listings are absent for
+    // that reason, not because they were withdrawn.
+    const anyFailed = result.sources.some(s => s.failed);
+    const { kept, removed } = anyFailed
+      ? { kept: [...updated.values()], removed: [] }
+      : pruneStale([...updated.values()], new Date());
+    if (removed.length > 0) {
+      this.logger.log(
+        `Pruned ${removed.length} listing(s) unseen for over ${STALE_AFTER_DAYS} days`,
+      );
+    }
+
+    await this.snapshot.write(DATA_FILE, kept);
+    this.logger.log(`Snapshot saved (${kept.length} entries)`);
   }
 }
 
