@@ -19,10 +19,9 @@ const DEFAULT_TIMEOUT_MS = 120_000;
  * against bamper's six feeds daily, 180/mo. ScrapFly by comparison allows ~25 protected calls
  * a month at the measured 40 credits each, which is why it stays last.
  *
- * NOT YET VERIFIED against a live key. Parameter names come from ZenRows' documentation
- * (`apikey`, `url`, `premium_proxy`, `js_render`, `proxy_country`), but the two providers added
- * before this one both had mapping bugs that only a real request exposed — ScrapingAnt's
- * country case, and error codes misread as quota. Treat the first live run as the real test.
+ * Verified live against bamper.by: premium_proxy + js_render + proxy_country=by returns the
+ * real page (668 KB, 7 listings). Belarus is supported, unlike ScrapingAnt. The combination
+ * matters — premium_proxy alone is a 422, and js_render alone returns a 6 KB stub.
  */
 @Injectable()
 export class ZenRowsProvider implements ScrapingProvider {
@@ -44,8 +43,16 @@ export class ZenRowsProvider implements ScrapingProvider {
 
     const params = new URLSearchParams({ apikey: this.apiKey, url });
     // `premium_proxy` is the anti-bot tier — residential IPs — which is what clears Cloudflare.
-    if (opts.asp) params.set('premium_proxy', 'true');
-    if (opts.renderJs) params.set('js_render', 'true');
+    // It has to travel with `js_render`: measured against bamper.by, premium_proxy alone is
+    // rejected with 422, and without premium_proxy the response is a 6 KB stub rather than the
+    // page. So `asp` implies both here, even when the caller did not ask for rendering — the
+    // caller's `renderJs` is about ScrapFly's pricing, where the two are billed separately.
+    if (opts.asp) {
+      params.set('premium_proxy', 'true');
+      params.set('js_render', 'true');
+    } else if (opts.renderJs) {
+      params.set('js_render', 'true');
+    }
     // Lower-case ISO-2. ZenRows advertises 190+ countries, so unlike ScrapingAnt there is no
     // short enum to guard against; a rejected code simply fails and the chain moves on.
     if (opts.country) params.set('proxy_country', opts.country.toLowerCase());
