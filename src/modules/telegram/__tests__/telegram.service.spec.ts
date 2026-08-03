@@ -28,7 +28,7 @@ async function buildService(): Promise<TelegramService> {
 
 // Helper: inject a bot mock directly into the service (bypasses onModuleInit)
 function injectBot(service: TelegramService, bot: ReturnType<typeof makeBotMock>): void {
-  (service as unknown as Record<string, unknown>).bot = bot as unknown as TelegramBot;
+  (service as unknown as Record<string, unknown>).bot = bot;
 }
 
 describe('TelegramService — dry-run (no bot set)', () => {

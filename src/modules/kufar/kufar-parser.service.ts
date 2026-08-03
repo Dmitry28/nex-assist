@@ -193,8 +193,7 @@ export class KufarParserService {
         props?.initialState;
 
       const listing = (initialState as Record<string, unknown> | undefined)?.listing as
-        | Record<string, unknown>
-        | undefined;
+        Record<string, unknown> | undefined;
 
       const ads = (listing?.ads as RawAd[] | undefined) ?? [];
       const pagination = (listing?.pagination as RawPaginationEntry[] | undefined) ?? [];

@@ -25,9 +25,6 @@ import { KufarNotifierService, KufarNotifyResult } from './kufar-notifier.servic
 import { pruneStale, STALE_AFTER_DAYS } from '../../common/utils/prune-stale';
 import { hasPriceChanged } from '../../common/utils/price-change';
 
-// Re-exported so existing importers (and tests) keep a single entry point per module.
-export { effectivePrice, hasPriceChanged } from '../../common/utils/price-change';
-
 /** Internal data kept per feed during a scrape cycle — not exposed to callers. */
 interface KufarFeedScrapeData {
   feed: KufarFeedConfig;

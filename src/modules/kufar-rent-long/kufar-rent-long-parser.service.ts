@@ -117,8 +117,7 @@ export class KufarRentLongParserService {
         (props?.pageProps as Record<string, unknown> | undefined)?.initialState ??
         props?.initialState;
       const listing = (initialState as Record<string, unknown> | undefined)?.listing as
-        | Record<string, unknown>
-        | undefined;
+        Record<string, unknown> | undefined;
       const ads = (listing?.ads as RawAd[] | undefined) ?? [];
       return Array.isArray(ads) ? ads : [];
     } catch (err) {
