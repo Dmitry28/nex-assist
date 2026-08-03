@@ -55,17 +55,38 @@ describe('ScrapingAntProvider', () => {
     // residential proxy, which is where the bypass comes from.
     expect(params.get('browser')).toBe('true');
     expect(params.get('proxy_type')).toBe('residential');
-    // Country must be upper-case here — the opposite of ScraperAPI.
-    expect(params.get('proxy_country')).toBe('BY');
+    // Unsupported country is dropped: ScrapingAnt 422s on anything outside its enum, and
+    // Belarus is not in it. This test previously asserted 'BY', which encoded the bug.
+    expect(params.get('proxy_country')).toBeNull();
   });
 
-  it.each([
-    [423, 'out of credits'],
-    [429, 'rate limited'],
-    [403, 'plan rejected'],
-  ])('treats HTTP %i (%s) as quota so the chain moves on', async status => {
-    global.fetch = jest.fn(() => Promise.resolve({ ok: false, status })) as unknown as typeof fetch;
+  it('passes a supported country through, lower-cased', async () => {
+    let seenUrl = '';
+    global.fetch = jest.fn((url: string) => {
+      seenUrl = url;
+      return Promise.resolve({ ok: true, status: 200, text: () => Promise.resolve('<html/>') });
+    }) as unknown as typeof fetch;
+
+    await providerWithKey('k').scrape('https://x', { country: 'PL' });
+    expect(new URL(seenUrl).searchParams.get('proxy_country')).toBe('pl');
+  });
+
+  it('treats HTTP 429 as quota so a spent allowance is reported as such', async () => {
+    global.fetch = jest.fn(() =>
+      Promise.resolve({ ok: false, status: 429 }),
+    ) as unknown as typeof fetch;
     await expect(providerWithKey('k').scrape('https://x', {})).rejects.toThrow(ScrapingQuotaError);
+  });
+
+  // Measured against bamper.by: 423 means "our browser was detected by target site". Calling
+  // that a quota error would wrongly suggest the free tier had run out.
+  it('treats HTTP 423 as a detection failure, not a spent quota', async () => {
+    global.fetch = jest.fn(() =>
+      Promise.resolve({ ok: false, status: 423 }),
+    ) as unknown as typeof fetch;
+    const call = providerWithKey('k').scrape('https://x', {});
+    await expect(call).rejects.toThrow('detected by the target site');
+    await expect(call).rejects.not.toBeInstanceOf(ScrapingQuotaError);
   });
 
   it('raises a plain error on other HTTP failures', async () => {

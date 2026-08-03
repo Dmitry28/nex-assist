@@ -70,9 +70,22 @@ describe('ScraperApiProvider', () => {
     expect(result).toEqual({ content: '<html>page</html>', provider: 'scraperapi' });
   });
 
-  it.each([429, 403])('raises a quota error on HTTP %i so the chain moves on', async status => {
-    global.fetch = jest.fn(() => Promise.resolve({ ok: false, status })) as unknown as typeof fetch;
+  it('raises a quota error on HTTP 429 so a spent allowance is reported as such', async () => {
+    global.fetch = jest.fn(() =>
+      Promise.resolve({ ok: false, status: 429 }),
+    ) as unknown as typeof fetch;
     await expect(providerWithKey('k').scrape('https://x', {})).rejects.toThrow(ScrapingQuotaError);
+  });
+
+  // Measured against bamper.by: 403 is "this country needs the premium residential tier".
+  // Reporting it as quota would wrongly suggest the free tier had run out.
+  it('treats HTTP 403 as a plan rejection, not a spent quota', async () => {
+    global.fetch = jest.fn(() =>
+      Promise.resolve({ ok: false, status: 403 }),
+    ) as unknown as typeof fetch;
+    const call = providerWithKey('k').scrape('https://x', {});
+    await expect(call).rejects.toThrow('rejected the request for this plan');
+    await expect(call).rejects.not.toBeInstanceOf(ScrapingQuotaError);
   });
 
   it('raises a plain error on other HTTP failures', async () => {
