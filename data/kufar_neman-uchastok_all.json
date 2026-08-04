@@ -1,33 +1,5 @@
 [
   {
-    "adId": 1060433665,
-    "link": "https://re.kufar.by/vi/1060433665",
-    "title": "Земельный участок",
-    "description": "Земельный участок ухожен,строений нет,рядом 50 метров река Свислочь(отличное место для отдыха и ловли рыбы).",
-    "priceByn": 40713,
-    "priceUsd": 14000,
-    "address": "деревня Корозичи, Квасовский сельсовет, Гродненский район, Гродненская область",
-    "plotArea": 7.7,
-    "seller": "Наталья",
-    "coordinates": {
-      "lat": 53.48861155779115,
-      "lon": 24.049641724673794
-    },
-    "listTime": "2026-07-31T14:56:49Z",
-    "images": [
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0d58591c-7007-421f-9fd3-9298784010cc.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d4ff6354-f828-47c6-a82d-c1b48ad5a6e3.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c1d5a051-2937-4177-87ed-93f39722ed6c.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/786c0db8-5214-45cd-a939-e8e306ffa1d4.jpg"
-    ],
-    "firstSeenAt": "2026-08-02T17:05:05.806Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:51:43.468Z"
-=======
-    "lastSeenAt": "2026-08-04T09:37:52.722Z"
->>>>>>> origin/main
-  },
-  {
     "adId": 1073473704,
     "link": "https://re.kufar.by/vi/1073473704",
     "title": "Участок",
@@ -53,12 +25,32 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/adb2071c-cfdf-4ff5-a6ef-a2368e26e32f.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/91ff274f-9213-49bd-acd9-0303b0aca3c9.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:05:05.806Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:51:43.468Z"
-=======
-    "lastSeenAt": "2026-08-04T09:37:52.722Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:43:04.401Z",
+    "lastSeenAt": "2026-08-04T15:43:04.401Z"
+  },
+  {
+    "adId": 1060433665,
+    "link": "https://re.kufar.by/vi/1060433665",
+    "title": "Земельный участок",
+    "description": "Земельный участок ухожен,строений нет,рядом 50 метров река Свислочь(отличное место для отдыха и ловли рыбы).",
+    "priceByn": 40713,
+    "priceUsd": 14000,
+    "address": "деревня Корозичи, Квасовский сельсовет, Гродненский район, Гродненская область",
+    "plotArea": 7.7,
+    "seller": "Наталья",
+    "coordinates": {
+      "lat": 53.48861155779115,
+      "lon": 24.049641724673794
+    },
+    "listTime": "2026-07-31T14:56:49Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0d58591c-7007-421f-9fd3-9298784010cc.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d4ff6354-f828-47c6-a82d-c1b48ad5a6e3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c1d5a051-2937-4177-87ed-93f39722ed6c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/786c0db8-5214-45cd-a939-e8e306ffa1d4.jpg"
+    ],
+    "firstSeenAt": "2026-08-04T15:43:04.401Z",
+    "lastSeenAt": "2026-08-04T15:43:04.401Z"
   },
   {
     "adId": 1077767146,
@@ -84,12 +76,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a178fa38-eea7-4873-a526-c5c7b87edb65.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/54d1530b-4ed4-40a5-be22-ef219e26116a.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:05:05.806Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:51:43.468Z"
-=======
-    "lastSeenAt": "2026-08-04T09:37:52.722Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:43:04.401Z",
+    "lastSeenAt": "2026-08-04T15:43:04.401Z"
   },
   {
     "adId": 1059771925,
@@ -117,12 +105,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/18221305-7a91-418e-aa42-3d7763c97bae.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c50ac4e7-5aae-4b75-85ac-3754183e4655.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:05:05.806Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:51:43.468Z"
-=======
-    "lastSeenAt": "2026-08-04T09:37:52.722Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:43:04.401Z",
+    "lastSeenAt": "2026-08-04T15:43:04.401Z"
   },
   {
     "adId": 1074865769,
@@ -150,12 +134,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b12d8f1a-00c4-408b-b2a7-0b959d45b77a.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e2c424b6-026f-4f63-91be-fb917c3f96c0.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:05:05.806Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:51:43.468Z"
-=======
-    "lastSeenAt": "2026-08-04T09:37:52.722Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:43:04.401Z",
+    "lastSeenAt": "2026-08-04T15:43:04.401Z"
   },
   {
     "adId": 1073430521,
@@ -186,12 +166,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ee7f15ec-5cbc-448a-b18d-681756fa4bd6.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9cd9165f-75ed-4d0b-944a-384a249901e1.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:05:05.806Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:51:43.468Z"
-=======
-    "lastSeenAt": "2026-08-04T09:37:52.722Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:43:04.401Z",
+    "lastSeenAt": "2026-08-04T15:43:04.401Z"
   },
   {
     "adId": 1021470099,
@@ -220,11 +196,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/63f0f62f-3eb1-4452-b8d2-0638303aab63.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/17cbedc6-71e3-4a45-833b-045b14493cbf.jpg"
     ],
-    "firstSeenAt": "2026-08-02T17:05:05.806Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:51:43.468Z"
-=======
-    "lastSeenAt": "2026-08-04T09:37:52.722Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:43:04.401Z",
+    "lastSeenAt": "2026-08-04T15:43:04.401Z"
   }
 ]
