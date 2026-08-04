@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import mostyJobsConfig from '../../config/mosty-jobs.config';
 import { TelegramModule } from '../telegram/telegram.module';
+import { ScrapingModule } from '../../common/scraping/scraping.module';
 import { CrbParserService } from './crb-parser.service';
 import { EvrooptParserService } from './evroopt-parser.service';
 import { FairParserService } from './fair-parser.service';
@@ -14,7 +15,7 @@ import { MostyJobsService } from './mosty-jobs.service';
 import { RabotaParserService } from './rabota-parser.service';
 
 @Module({
-  imports: [ConfigModule.forFeature(mostyJobsConfig), TelegramModule],
+  imports: [ConfigModule.forFeature(mostyJobsConfig), ScrapingModule, TelegramModule],
   controllers: [MostyJobsController],
   providers: [
     MostyJobsService,

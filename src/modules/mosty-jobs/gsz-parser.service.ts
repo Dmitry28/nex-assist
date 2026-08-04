@@ -2,6 +2,7 @@ import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import https from 'https';
 import { BROWSER_USER_AGENT } from '../../common/utils/scraping';
+import { EscalatingHtmlFetcher } from '../../common/scraping/escalating-html-fetcher';
 import { FETCH_TIMEOUT_MS, MAX_GSZ_PAGES, MAX_HTML_SIZE_BYTES } from './constants';
 import { GSZ_CA_BUNDLE } from './constants/gsz-ca';
 import type { JobVacancy } from './dto/job-vacancy.dto';
@@ -54,7 +55,10 @@ interface PageResult {
 export class GszParserService {
   private readonly logger = new Logger(GszParserService.name);
 
-  constructor(private readonly config: ConfigService) {}
+  constructor(
+    private readonly config: ConfigService,
+    private readonly html: EscalatingHtmlFetcher,
+  ) {}
 
   /**
    * Fetch all result pages and return the deduplicated vacancy list.
@@ -71,7 +75,7 @@ export class GszParserService {
       const url = pageUrl.toString();
       let result: PageResult;
       try {
-        result = await this.fetchPage(url);
+        result = await this.fetchPageEscalating(url, page);
       } catch (err) {
         this.logger.error(`Failed to fetch gsz page ${page}`, err);
         // First page down = source failure; later pages: keep what we have.
@@ -93,6 +97,33 @@ export class GszParserService {
 
     this.logger.log(`gsz.gov.by: ${byUrl.size} vacancies fetched`);
     return [...byUrl.values()];
+  }
+
+  /**
+   * The custom-CA request first, then the shared ladder.
+   *
+   * The hand-rolled trust anchors are the fragile part: gsz omits its intermediate certificate,
+   * so the bundle below has to track Let's Encrypt's roots, and production died with
+   * ECONNRESET on 04.08 while every other source answered. A browser carries the system trust
+   * store and does not care about any of that, so it is the natural second attempt — and the
+   * providers behind it cover the case where the host refuses us outright.
+   */
+  private async fetchPageEscalating(url: string, page: number): Promise<PageResult> {
+    try {
+      return await this.fetchPage(url);
+    } catch (err) {
+      const reason = err instanceof Error ? err.message : String(err);
+      this.logger.warn(`gsz page ${page}: custom-CA request failed (${reason}) — escalating`);
+    }
+
+    const html = await this.html.fetch(url, {
+      label: `gsz page ${page}`,
+      isUsable: body => body.includes('vacancy') || body.includes('vakansii'),
+      timeoutMs: FETCH_TIMEOUT_MS,
+      maxBytes: MAX_HTML_SIZE_BYTES,
+    });
+    if (html === null) throw new Error(`gsz page ${page}: every fetch rung failed`);
+    return { html, status: 200 };
   }
 
   /**

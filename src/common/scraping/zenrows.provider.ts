@@ -56,6 +56,10 @@ export class ZenRowsProvider implements ScrapingProvider {
     // Lower-case ISO-2. ZenRows advertises 190+ countries, so unlike ScrapingAnt there is no
     // short enum to guard against; a rejected code simply fails and the chain moves on.
     if (opts.country) params.set('proxy_country', opts.country.toLowerCase());
+    // Settle time after render. This was missing and it mattered: bid.cars returned 254 KB with
+    // zero lot links without it, and 764 KB with 53 links once a 10s wait was passed through.
+    // A site that fills its results after load looks like an empty page otherwise.
+    if (opts.renderWaitMs) params.set('wait', String(opts.renderWaitMs));
 
     const timeoutMs = opts.timeoutMs ?? DEFAULT_TIMEOUT_MS;
     const ctrl = new AbortController();
