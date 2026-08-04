@@ -52,3 +52,21 @@ jobs:
       - name: Security audit
         run: npm audit --audit-level=high
         continue-on-error: true
+      # A merge that leaves conflict markers inside data/*.json is not a syntax error anywhere
+      # the other checks look, so it reaches production intact. There the snapshot loader spots
+      # the invalid JSON, resets the file and re-baselines the feed — silently, because a
+      # baseline suppresses per-listing messages. That happened on 04.08: 34 feeds reset at once
+      # and their history was lost. Parsing the files here is the cheap way to never repeat it.
+      - name: Validate snapshots
+        run: |
+          fail=0
+          for f in data/*.json; do
+            if grep -qE '^(<<<<<<<|>>>>>>>|=======)$' "$f"; then
+              echo "::error file=$f::unresolved merge conflict markers"
+              fail=1
+            elif ! node -e 'JSON.parse(require("fs").readFileSync(process.argv[1],"utf8"))' "$f" 2>/dev/null; then
+              echo "::error file=$f::invalid JSON"
+              fail=1
+            fi
+          done
+          exit $fail
