@@ -1,4 +1,4 @@
-import { parseRabotaSearchHtml } from '../rabota-parser.service';
+import { parseRabotaSearchHtml, decodeHtmlEntities } from '../rabota-parser.service';
 import { RABOTA_SEARCH_PAGE_HTML } from './fixtures/rabota-search-page';
 
 describe('parseRabotaSearchHtml', () => {
@@ -38,5 +38,38 @@ describe('parseRabotaSearchHtml', () => {
     const html =
       '<template id="HH-Lux-InitialState" data-name="HH-Lux-InitialState">{oops</template>';
     expect(parseRabotaSearchHtml(html)).toBeNull();
+  });
+});
+
+describe('decodeHtmlEntities', () => {
+  // hh.ru switched its embedded state from raw JSON to entity-escaped JSON, and uses the
+  // numeric form. Assuming `&quot;` would have missed it entirely — JSON.parse fails at
+  // position 1, which read as "captcha or layout change?" for days.
+  it('decodes the numeric entities hh.ru actually emits', () => {
+    expect(decodeHtmlEntities('{&#34;a&#34;:1}')).toBe('{"a":1}');
+  });
+
+  it('decodes hex entities', () => {
+    expect(decodeHtmlEntities('&#x22;x&#x22;')).toBe('"x"');
+  });
+
+  it('decodes the named entities too', () => {
+    expect(decodeHtmlEntities('&quot;a&quot; &lt;b&gt; &apos;c&apos; &amp;')).toBe(
+      '"a" <b> \'c\' &',
+    );
+  });
+
+  it('leaves unknown entities untouched rather than dropping text', () => {
+    expect(decodeHtmlEntities('&unknownthing; kept')).toBe('&unknownthing; kept');
+  });
+
+  it('is a single pass, so a decoded ampersand cannot be re-consumed', () => {
+    // `&amp;#34;` must become the literal `&#34;`, not a quote.
+    expect(decodeHtmlEntities('&amp;#34;')).toBe('&#34;');
+  });
+
+  it('produces parseable JSON from an escaped payload', () => {
+    const escaped = '{&#34;vacancySearchResult&#34;:{&#34;vacancies&#34;:[]}}';
+    expect(() => JSON.parse(decodeHtmlEntities(escaped)) as unknown).not.toThrow();
   });
 });
