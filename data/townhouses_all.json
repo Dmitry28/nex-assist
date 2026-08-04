@@ -5,13 +5,13 @@
     "complex": "ЖК Белые Росы",
     "link": "https://prometr.by/newbuild_belarus/grodno/belye-rosy/dupleksy-v-zhk-belye-rosy_1421/4-komnatnaya-145-38540/",
     "title": "ЖК Белые Росы, 4-комн., 145 м²",
-    "priceByn": 435538,
-    "pricePerM2Byn": 3004,
+    "priceByn": 434417,
+    "pricePerM2Byn": 2996,
     "area": 145,
     "rooms": 4,
     "images": [],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "prometr:38539",
@@ -19,13 +19,13 @@
     "complex": "ЖК Белые Росы",
     "link": "https://prometr.by/newbuild_belarus/grodno/belye-rosy/taunkhausy-v-zhk-belye-rosy_1420/4-komnatnaya-185-8-38539/",
     "title": "ЖК Белые Росы, 4-комн., 185.8 м²",
-    "priceByn": 522937,
-    "pricePerM2Byn": 2814,
+    "priceByn": 521591,
+    "pricePerM2Byn": 2807,
     "area": 185.8,
     "rooms": 4,
     "images": [],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1009941055",
@@ -33,7 +33,7 @@
     "link": "https://re.kufar.by/vi/1009941055",
     "title": "Пожалуй, лучшее предложение по таунхаусам в центре Гродно, квартиры по 127 кв.м.()",
     "priceByn": 477000,
-    "priceUsd": 164154,
+    "priceUsd": 164025,
     "area": 127,
     "plotArea": 2,
     "rooms": 4,
@@ -53,7 +53,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d64f2f5b-ac97-49d7-b3f7-25d7c12a8721.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1059749645",
@@ -61,7 +61,7 @@
     "link": "https://re.kufar.by/vi/1059749645",
     "title": "Продажа таунхауса в г. Гродно, проезд Калиновый 3",
     "priceByn": 291200,
-    "priceUsd": 100213,
+    "priceUsd": 100134,
     "area": 91,
     "plotArea": 1.83,
     "address": "3-й Калиновый проезд, 10, Гродно, Гродненская область",
@@ -85,7 +85,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e791f2d3-df8e-4883-9f23-f8f8df7ef539.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1057476665",
@@ -93,7 +93,7 @@
     "link": "https://re.kufar.by/vi/1057476665",
     "title": "Продажа таунхауса в г. Гродно, Проезд Калиновый 4",
     "priceByn": 307830,
-    "priceUsd": 105936,
+    "priceUsd": 105853,
     "area": 99.3,
     "plotArea": 1.9,
     "address": "4-й Калиновый проезд, 3, Гродно, Гродненская область",
@@ -114,7 +114,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9c22b18b-4d06-4497-9067-3109c0ef6433.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1006986209",
@@ -122,7 +122,7 @@
     "link": "https://re.kufar.by/vi/1006986209",
     "title": "Блокированный дом (квадрохаус)",
     "priceByn": 288300,
-    "priceUsd": 99215,
+    "priceUsd": 99137,
     "area": 93,
     "plotArea": 2,
     "rooms": 4,
@@ -140,7 +140,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ef6239ce-6c5f-43f7-a4ab-789ee0b8394c.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1024113988",
@@ -148,7 +148,7 @@
     "link": "https://re.kufar.by/vi/1024113988",
     "title": "Квартира в таунхаусе в 10 мин. от центра Гродно",
     "priceByn": 350000,
-    "priceUsd": 120449,
+    "priceUsd": 120354,
     "area": 192,
     "plotArea": 1.2,
     "rooms": 4,
@@ -176,7 +176,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6e98d72f-de42-48f4-9e19-4d7089240802.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1070672980",
@@ -184,7 +184,7 @@
     "link": "https://re.kufar.by/vi/1070672980",
     "title": "таунхаус ЖК Белые Росы",
     "priceByn": 539000,
-    "priceUsd": 185491,
+    "priceUsd": 185344,
     "area": 185.8,
     "plotArea": 2,
     "rooms": 3,
@@ -214,7 +214,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0459d881-cd64-4898-a16d-0e504674756a.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1027795543",
@@ -222,7 +222,7 @@
     "link": "https://re.kufar.by/vi/1027795543",
     "title": "ТАУНХАУСЫ В ЦЕНТРЕ ГОРОДА",
     "priceByn": 477000,
-    "priceUsd": 164154,
+    "priceUsd": 164025,
     "area": 127,
     "plotArea": 2,
     "rooms": 5,
@@ -234,7 +234,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bfaa73dd-ff10-4226-af33-96dcdf795c0e.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1067560511",
@@ -258,7 +258,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/56f44f2f-c48b-4895-b027-dbcbc5dffe49.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1068925765",
@@ -266,7 +266,7 @@
     "link": "https://re.kufar.by/vi/1068925765",
     "title": "Продажа таунхауса в г. Гродно, ул. 17 Сентября, д",
     "priceByn": 665000,
-    "priceUsd": 228853,
+    "priceUsd": 228672,
     "area": 207.7,
     "plotArea": 2.94,
     "address": "17 Сентября ул, 59к2, Гродно, Гродненская область",
@@ -300,14 +300,14 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3b1ea00a-8a2c-4084-9546-0955146922a7.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1045707638",
     "source": "kufar",
     "link": "https://re.kufar.by/vi/1045707638",
     "title": "Таунхаусы ул. Коммунальная",
-    "priceByn": 461296,
+    "priceByn": 461661,
     "priceUsd": 158750,
     "area": 127,
     "plotArea": 2,
@@ -326,7 +326,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a17cea66-3a57-4f3a-86c0-6888da26f7da.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:4172587",
@@ -362,7 +362,7 @@
       "https://cdn.realt.by/img/55/e76f4e80-7864-11f1-b471-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:4131531",
@@ -398,7 +398,7 @@
       "https://cdn.realt.by/img/55/919b1e3a-5500-11f1-9cc8-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:4094226",
@@ -443,7 +443,7 @@
       "https://cdn.realt.by/img/55/9693f2dc-3709-11f1-b7b8-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:4092569",
@@ -491,7 +491,7 @@
       "https://cdn.realt.by/img/55/912772c0-34ce-11f1-a302-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:4081184",
@@ -534,7 +534,7 @@
       "https://static.realt.by/thumb/c/430x374/827f69e1cce69220531cffdf6e4804e6/kp/d/04243cpszdkp/3952c12140.jpeg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:4059196",
@@ -567,7 +567,7 @@
       "https://cdn.realt.by/img/55/3c628636-6f4c-11f1-b977-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:4050755",
@@ -589,7 +589,7 @@
       "https://cdn.realt.by/img/55/7b4f499e-13ce-11f1-9449-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:4050744",
@@ -613,7 +613,7 @@
       "https://cdn.realt.by/img/55/9f29c070-13cd-11f1-9dc5-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:4046453",
@@ -643,7 +643,7 @@
       "https://cdn.realt.by/img/55/46a087e2-6f4c-11f1-aae9-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:3895227",
@@ -663,7 +663,7 @@
       "https://cdn.realt.by/img/55/a3c47254-9a08-11f0-a574-0242ac120002"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:3799051",
@@ -699,7 +699,7 @@
       "https://cdn.realt.by/img/55/e9a78d6a-963e-11f0-b3ce-0242ac120002"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:3782727",
@@ -732,7 +732,7 @@
       "https://cdn.realt.by/img/55/0a925334-439b-11f1-955a-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:3782290",
@@ -763,7 +763,7 @@
       "https://cdn.realt.by/img/55/db87a986-4d0a-11f0-a542-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:3763750",
@@ -796,7 +796,7 @@
       "https://cdn.realt.by/img/55/8dfe34d2-9e9f-11f0-af8f-0242ac120002"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:3753228",
@@ -825,7 +825,7 @@
       "https://cdn.realt.by/img/55/a36d4d1a-5a76-11f1-b662-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:3590476",
@@ -867,7 +867,7 @@
       "https://cdn.realt.by/img/55/44526d7c-cdcf-11ef-b920-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:3586000",
@@ -908,7 +908,7 @@
       "https://cdn.realt.by/img/55/26e2fad6-c933-11ef-a45e-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:3503522",
@@ -946,14 +946,14 @@
       "https://cdn.realt.by/img/55/cbd1b236-67a2-11f0-918a-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1064330654",
     "source": "kufar",
     "link": "https://re.kufar.by/vi/1064330654",
     "title": "Квартира в Таунхаусе",
-    "priceByn": 273145,
+    "priceByn": 273361,
     "priceUsd": 94000,
     "area": 88.3,
     "rooms": 3,
@@ -972,14 +972,14 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cf7db18b-0da5-4b7f-b63b-e9a238ddc82c.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1068287609",
     "source": "kufar",
     "link": "https://re.kufar.by/vi/1068287609",
     "title": "Таунхаус",
-    "priceByn": 770037,
+    "priceByn": 770647,
     "priceUsd": 265000,
     "area": 114.6,
     "rooms": 4,
@@ -1016,7 +1016,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8e1c98cb-5267-4e34-9021-0c271ac64026.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1069987012",
@@ -1024,7 +1024,7 @@
     "link": "https://re.kufar.by/vi/1069987012",
     "title": "Квартира в блокированном доме на ул.Гонионской",
     "priceByn": 145000,
-    "priceUsd": 49900,
+    "priceUsd": 49861,
     "area": 65.4,
     "rooms": 4,
     "address": "Гонионская ул, Гродно, Гродненская область",
@@ -1043,7 +1043,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5a9c6289-efb2-455c-a13b-d1245281101a.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1078845283",
@@ -1051,7 +1051,7 @@
     "link": "https://re.kufar.by/vi/1078845283",
     "title": "Продается ТАУНХАУС",
     "priceByn": 650000,
-    "priceUsd": 223691,
+    "priceUsd": 223514,
     "area": 109.8,
     "rooms": 4,
     "address": "Богушовская ул, 5, Гродно, Гродненская область",
@@ -1085,7 +1085,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/18eaba83-cd74-462d-8e77-884eba8019c9.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1027793297",
@@ -1093,7 +1093,7 @@
     "link": "https://re.kufar.by/vi/1027793297",
     "title": "ПРОДАЖА ТАУНХАУСОВ В ГРОДНО",
     "priceByn": 447000,
-    "priceUsd": 153830,
+    "priceUsd": 153709,
     "area": 127,
     "rooms": 5,
     "address": "Коммунальная ул, Гродно, Гродненская область",
@@ -1107,14 +1107,14 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cd3d275f-bd5e-423f-8c87-62e998154faf.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1073812795",
     "source": "kufar",
     "link": "https://re.kufar.by/vi/1073812795",
     "title": "Квартира в блокированном доме",
-    "priceByn": 258616,
+    "priceByn": 258821,
     "priceUsd": 89000,
     "area": 165,
     "rooms": 4,
@@ -1129,14 +1129,14 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/93ea572c-1ba1-40b6-8ced-a14d264a78a8.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1005064263",
     "source": "kufar",
     "link": "https://re.kufar.by/vi/1005064263",
     "title": "4-комн. квартира 2 - таунхаус в микрорайоне Девятовка-7",
-    "priceByn": 521591,
+    "priceByn": 522004,
     "priceUsd": 179500,
     "area": 174.8,
     "rooms": 4,
@@ -1169,7 +1169,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/be7db705-e122-4d00-9d34-ab35161390b2.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1064066798",
@@ -1177,7 +1177,7 @@
     "link": "https://re.kufar.by/vi/1064066798",
     "title": "4-комн. квартира 3 в таунхаусе в м-не Девятовка-7",
     "priceByn": 539000,
-    "priceUsd": 185491,
+    "priceUsd": 185344,
     "area": 174.7,
     "rooms": 4,
     "address": "Малыщинская ул, 22, Гродно, Гродненская область",
@@ -1209,7 +1209,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b27bbff9-4438-48bb-8ff2-deb8d1cc0cf6.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1064271586",
@@ -1217,7 +1217,7 @@
     "link": "https://re.kufar.by/vi/1064271586",
     "title": "4-комнатная квартира 2 - таунхаус в микрорайоне Девятовка-7",
     "priceByn": 539000,
-    "priceUsd": 185491,
+    "priceUsd": 185344,
     "area": 174.8,
     "rooms": 4,
     "address": "Малыщинская ул, 22, Гродно, Гродненская область",
@@ -1256,7 +1256,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1c550eb7-9454-43cb-9393-76da4d935f11.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1064734622",
@@ -1264,7 +1264,7 @@
     "link": "https://re.kufar.by/vi/1064734622",
     "title": "4-комнатная квартира 4 - таунхаус в микрорайоне Девятовка-7",
     "priceByn": 539000,
-    "priceUsd": 185491,
+    "priceUsd": 185344,
     "area": 174.4,
     "rooms": 4,
     "address": "Малыщинская ул, Гродно, Гродненская область",
@@ -1300,7 +1300,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/21722f2c-c4d7-49e6-b63e-5df84014cd34.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1011242756",
@@ -1308,7 +1308,7 @@
     "link": "https://re.kufar.by/vi/1011242756",
     "title": "Таунхаус-отличное решение",
     "priceByn": 310000,
-    "priceUsd": 106683,
+    "priceUsd": 106599,
     "area": 120,
     "rooms": 4,
     "address": "Молодая ул, 3А, Гродно, Гродненская область",
@@ -1336,14 +1336,14 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/56416d28-d52c-407f-a315-40bb7c590f91.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1054947753",
     "source": "kufar",
     "link": "https://re.kufar.by/vi/1054947753",
     "title": "Купить двухуровневый таунхаус, 3-й Калиновый проезд",
-    "priceByn": 300750,
+    "priceByn": 300988,
     "priceUsd": 103500,
     "area": 90,
     "rooms": 4,
@@ -1359,14 +1359,14 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9bfce2d2-487a-4e7f-bfc2-d7fbd4b0196d.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "kufar:1054951661",
     "source": "kufar",
     "link": "https://re.kufar.by/vi/1054951661",
     "title": "Купить таунхаус, г. Гродно, 3-й Калиновый проезд",
-    "priceByn": 316442,
+    "priceByn": 316692,
     "priceUsd": 108900,
     "area": 99,
     "rooms": 4,
@@ -1382,7 +1382,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b12e5ec2-a773-40ba-907d-77793bd039ca.jpg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:4170356",
@@ -1417,7 +1417,7 @@
       "https://cdn.realt.by/img/55/cb92683e-6f98-11f1-bafc-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:4170295",
@@ -1453,7 +1453,7 @@
       "https://cdn.realt.by/img/55/d0f8f39a-75e9-11f1-ab80-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:4147599",
@@ -1486,7 +1486,7 @@
       "https://cdn.realt.by/img/55/38e596dc-634a-11f1-803e-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:4143683",
@@ -1519,7 +1519,7 @@
       "https://cdn.realt.by/img/55/6317ad42-5ffc-11f1-bd08-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:4137867",
@@ -1545,7 +1545,7 @@
       "https://cdn.realt.by/img/55/06e45f86-5a69-11f1-9814-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:4132877",
@@ -1573,7 +1573,7 @@
       "https://cdn.realt.by/img/55/4526794c-568f-11f1-a299-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:4116205",
@@ -1599,7 +1599,7 @@
       "https://cdn.realt.by/img/55/0896e25e-4925-11f1-8b52-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:4090649",
@@ -1640,7 +1640,7 @@
       "https://cdn.realt.by/img/55/1de1ac66-3345-11f1-8f83-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:4072799",
@@ -1660,7 +1660,7 @@
       "https://cdn.realt.by/img/55/1bfb7e1c-274d-11f1-8418-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:4044540",
@@ -1682,7 +1682,7 @@
       "https://static.realt.by/thumb/c/430x374/48a549c1270ab582c9016bec72775f7b/ev/9/02331arba9ev/69da3772dc.jpeg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:3987442",
@@ -1708,7 +1708,7 @@
       "https://cdn.realt.by/img/55/bd790a52-dffe-11f0-add6-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:3949158",
@@ -1739,7 +1739,7 @@
       "https://cdn.realt.by/img/55/8a7095d0-c537-11f0-9a4e-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:3916759",
@@ -1762,7 +1762,7 @@
       "https://cdn.realt.by/img/55/2cc8654a-a901-11f0-aadd-0242ac120002"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:3888907",
@@ -1784,7 +1784,7 @@
       "https://cdn.realt.by/img/55/e0b95ac0-948c-11f0-acc2-0242ac120002"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:3679550",
@@ -1821,7 +1821,7 @@
       "https://cdn.realt.by/img/55/170039b0-06f7-11f0-8529-0242ac120003"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   },
   {
     "uid": "realt:2541496",
@@ -1862,6 +1862,6 @@
       "https://static.realt.by/thumb/c/430x374/8e7c016729400d5e12cdca20e2e70572/w1/t/023313r2ktw1/a9950e810d.jpeg"
     ],
     "firstSeenAt": "2026-08-02T21:33:43.039Z",
-    "lastSeenAt": "2026-08-03T21:38:08.617Z"
+    "lastSeenAt": "2026-08-04T09:43:12.249Z"
   }
 ]
