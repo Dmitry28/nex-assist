@@ -315,7 +315,11 @@ export class BidCarsParserService implements OnModuleDestroy {
         }
       }
 
-      return this.extractListings(page);
+      // `await` is load-bearing: `return promise` inside a try/finally lets the finally run
+      // before the promise settles, so page.close() fired while the evaluate was still in
+      // flight and the whole process died with an unhandled "Target closed". Splitting the
+      // extraction into its own method is what introduced that; it was inline before.
+      return await this.extractListings(page);
     } finally {
       await page.close();
     }
