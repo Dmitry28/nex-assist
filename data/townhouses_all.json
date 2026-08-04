@@ -10,12 +10,8 @@
     "area": 145,
     "rooms": 4,
     "images": [],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "prometr:38539",
@@ -28,12 +24,52 @@
     "area": 185.8,
     "rooms": 4,
     "images": [],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
+  },
+  {
+    "uid": "kufar:1067560511",
+    "source": "kufar",
+    "link": "https://re.kufar.by/vi/1067560511",
+    "title": "ПРОДАЖА ТАУНХАУСОВ В ГРОДНО РАЙОН ''ЮЖНЫЙ''",
+    "area": 130,
+    "plotArea": 2,
+    "address": "Садакова ул, Гродно, Гродненская область",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4ceb5ab0-f55e-4af7-b4ed-1c63844b9901.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9e6dba21-7886-4346-97fd-b90fdb499395.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8b3afaf7-c7a1-4c63-a2ae-ecbc5b523084.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f2484252-4a3a-4ec4-85e9-ed8d539d2035.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca7da3e7-ae45-43f1-b426-b6e0bf8e0398.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/40417355-6ea4-4f91-a522-a3a9b1840a29.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/acdaaeb9-cd89-42bd-87b0-fc4d83bcd158.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c4b68f82-9701-413a-a718-9621ff09adf5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a72bf6dc-6e7e-4cdc-aa10-4e2d40b56e88.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6a2cdd5c-1229-4d5d-aca6-5f8f6c6a85ae.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/56f44f2f-c48b-4895-b027-dbcbc5dffe49.jpg"
+    ],
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
+  },
+  {
+    "uid": "kufar:1027795543",
+    "source": "kufar",
+    "link": "https://re.kufar.by/vi/1027795543",
+    "title": "ТАУНХАУСЫ В ЦЕНТРЕ ГОРОДА",
+    "priceByn": 477000,
+    "priceUsd": 164025,
+    "area": 127,
+    "plotArea": 2,
+    "rooms": 5,
+    "address": "Коммунальная ул, Гродно, Гродненская область",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0b2dcc12-707d-4b7b-a20c-9405954d90bb.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/33e8c444-82f9-4db4-b41b-953f3c0d63d5.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2b34ef5c-d859-4496-bbd5-b7488b54b8d1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bfaa73dd-ff10-4226-af33-96dcdf795c0e.jpg"
+    ],
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "kufar:1009941055",
@@ -60,12 +96,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f2b7e6df-9520-4d23-b1c8-3f70b2bd8ace.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d64f2f5b-ac97-49d7-b3f7-25d7c12a8721.jpg"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "kufar:1059749645",
@@ -96,12 +128,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c2180852-8b16-42d3-a352-fb02acff1fdc.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e791f2d3-df8e-4883-9f23-f8f8df7ef539.jpg"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "kufar:1057476665",
@@ -129,12 +157,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/dd521795-0417-456e-94ae-3655cd9980a2.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9c22b18b-4d06-4497-9067-3109c0ef6433.jpg"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "kufar:1006986209",
@@ -159,12 +183,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7fc95898-1490-43ae-83be-3ebfdbd4807e.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ef6239ce-6c5f-43f7-a4ab-789ee0b8394c.jpg"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "kufar:1024113988",
@@ -199,12 +219,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca11b9ae-86de-4275-a335-2745d332c8a7.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6e98d72f-de42-48f4-9e19-4d7089240802.jpg"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "kufar:1070672980",
@@ -241,64 +257,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7342ada6-f834-41ab-8bee-edf145607d69.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0459d881-cd64-4898-a16d-0e504674756a.jpg"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
-  },
-  {
-    "uid": "kufar:1027795543",
-    "source": "kufar",
-    "link": "https://re.kufar.by/vi/1027795543",
-    "title": "ТАУНХАУСЫ В ЦЕНТРЕ ГОРОДА",
-    "priceByn": 477000,
-    "priceUsd": 164025,
-    "area": 127,
-    "plotArea": 2,
-    "rooms": 5,
-    "address": "Коммунальная ул, Гродно, Гродненская область",
-    "images": [
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0b2dcc12-707d-4b7b-a20c-9405954d90bb.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/33e8c444-82f9-4db4-b41b-953f3c0d63d5.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2b34ef5c-d859-4496-bbd5-b7488b54b8d1.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bfaa73dd-ff10-4226-af33-96dcdf795c0e.jpg"
-    ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
-  },
-  {
-    "uid": "kufar:1067560511",
-    "source": "kufar",
-    "link": "https://re.kufar.by/vi/1067560511",
-    "title": "ПРОДАЖА ТАУНХАУСОВ В ГРОДНО РАЙОН ''ЮЖНЫЙ''",
-    "area": 130,
-    "plotArea": 2,
-    "address": "Садакова ул, Гродно, Гродненская область",
-    "images": [
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4ceb5ab0-f55e-4af7-b4ed-1c63844b9901.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9e6dba21-7886-4346-97fd-b90fdb499395.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8b3afaf7-c7a1-4c63-a2ae-ecbc5b523084.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f2484252-4a3a-4ec4-85e9-ed8d539d2035.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ca7da3e7-ae45-43f1-b426-b6e0bf8e0398.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/40417355-6ea4-4f91-a522-a3a9b1840a29.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/acdaaeb9-cd89-42bd-87b0-fc4d83bcd158.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c4b68f82-9701-413a-a718-9621ff09adf5.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a72bf6dc-6e7e-4cdc-aa10-4e2d40b56e88.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6a2cdd5c-1229-4d5d-aca6-5f8f6c6a85ae.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/56f44f2f-c48b-4895-b027-dbcbc5dffe49.jpg"
-    ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "kufar:1068925765",
@@ -339,12 +299,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e28c1965-0bb5-4e37-9192-22a9d1a6f56a.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3b1ea00a-8a2c-4084-9546-0955146922a7.jpg"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "kufar:1045707638",
@@ -369,12 +325,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cd2fb29a-89b9-457f-8225-23e1e05414e4.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a17cea66-3a57-4f3a-86c0-6888da26f7da.jpg"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:4172587",
@@ -409,12 +361,8 @@
       "https://cdn.realt.by/img/55/e75adcb6-7864-11f1-bd67-0242ac120003",
       "https://cdn.realt.by/img/55/e76f4e80-7864-11f1-b471-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:4131531",
@@ -449,12 +397,8 @@
       "https://cdn.realt.by/img/55/90822ffc-5500-11f1-83d8-0242ac120003",
       "https://cdn.realt.by/img/55/919b1e3a-5500-11f1-9cc8-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:4094226",
@@ -498,12 +442,8 @@
       "https://cdn.realt.by/img/55/909592fa-3709-11f1-8f8c-0242ac120003",
       "https://cdn.realt.by/img/55/9693f2dc-3709-11f1-b7b8-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:4092569",
@@ -550,12 +490,8 @@
       "https://cdn.realt.by/img/55/91291ecc-34ce-11f1-a9f4-0242ac120003",
       "https://cdn.realt.by/img/55/912772c0-34ce-11f1-a302-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:4081184",
@@ -597,12 +533,8 @@
       "https://static.realt.by/thumb/c/430x374/8583287e69f46b849a30c2a48b73e2aa/kp/d/04243cpszdkp/b6c7ac11c1.jpeg",
       "https://static.realt.by/thumb/c/430x374/827f69e1cce69220531cffdf6e4804e6/kp/d/04243cpszdkp/3952c12140.jpeg"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:4059196",
@@ -634,12 +566,8 @@
       "https://cdn.realt.by/img/55/3c622d62-6f4c-11f1-a22b-0242ac120003",
       "https://cdn.realt.by/img/55/3c628636-6f4c-11f1-b977-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:4050755",
@@ -660,12 +588,8 @@
       "https://cdn.realt.by/img/55/7ac241ac-13ce-11f1-8f44-0242ac120003",
       "https://cdn.realt.by/img/55/7b4f499e-13ce-11f1-9449-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:4050744",
@@ -688,12 +612,8 @@
       "https://cdn.realt.by/img/55/9ed3664e-13cd-11f1-8d6f-0242ac120003",
       "https://cdn.realt.by/img/55/9f29c070-13cd-11f1-9dc5-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:4046453",
@@ -722,12 +642,8 @@
       "https://cdn.realt.by/img/55/46a07f36-6f4c-11f1-98a4-0242ac120003",
       "https://cdn.realt.by/img/55/46a087e2-6f4c-11f1-aae9-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:3895227",
@@ -746,12 +662,8 @@
       "https://cdn.realt.by/img/55/a3dbff3c-9a08-11f0-9379-0242ac120002",
       "https://cdn.realt.by/img/55/a3c47254-9a08-11f0-a574-0242ac120002"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:3799051",
@@ -786,12 +698,8 @@
       "https://cdn.realt.by/img/55/e97d0bee-963e-11f0-819d-0242ac120002",
       "https://cdn.realt.by/img/55/e9a78d6a-963e-11f0-b3ce-0242ac120002"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:3782727",
@@ -823,12 +731,8 @@
       "https://cdn.realt.by/img/55/c306b95a-a5f3-11f0-b998-0242ac120002",
       "https://cdn.realt.by/img/55/0a925334-439b-11f1-955a-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:3782290",
@@ -858,12 +762,8 @@
       "https://cdn.realt.by/img/55/6cbd8d54-4d0a-11f0-8533-0242ac120003",
       "https://cdn.realt.by/img/55/db87a986-4d0a-11f0-a542-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:3763750",
@@ -895,12 +795,8 @@
       "https://cdn.realt.by/img/55/8dfee8dc-9e9f-11f0-a0d2-0242ac120002",
       "https://cdn.realt.by/img/55/8dfe34d2-9e9f-11f0-af8f-0242ac120002"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:3753228",
@@ -928,12 +824,8 @@
       "https://cdn.realt.by/img/55/9e5834f2-5a76-11f1-b257-0242ac120003",
       "https://cdn.realt.by/img/55/a36d4d1a-5a76-11f1-b662-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:3590476",
@@ -974,12 +866,8 @@
       "https://cdn.realt.by/img/55/3ac918b4-cdcf-11ef-98b8-2236ceb6d16d",
       "https://cdn.realt.by/img/55/44526d7c-cdcf-11ef-b920-2236ceb6d16d"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:3586000",
@@ -1019,12 +907,8 @@
       "https://cdn.realt.by/img/55/230f0b70-c933-11ef-b5bf-2236ceb6d16d",
       "https://cdn.realt.by/img/55/26e2fad6-c933-11ef-a45e-2236ceb6d16d"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:3503522",
@@ -1061,12 +945,72 @@
       "https://cdn.realt.by/img/55/c54a754c-67a2-11f0-b999-0242ac120003",
       "https://cdn.realt.by/img/55/cbd1b236-67a2-11f0-918a-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
+  },
+  {
+    "uid": "kufar:1078845283",
+    "source": "kufar",
+    "link": "https://re.kufar.by/vi/1078845283",
+    "title": "Продается ТАУНХАУС",
+    "priceByn": 650000,
+    "priceUsd": 223514,
+    "area": 109.8,
+    "rooms": 4,
+    "address": "Богушовская ул, 5, Гродно, Гродненская область",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d5e6431d-7dc1-41d3-b673-ad9d5d2e4a97.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9139b87a-2288-4e10-b28a-5675a42d78b0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b13f5fe7-2e34-4772-8abe-5ac1da45c99d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6751834d-70a2-4e02-b615-30b0a0987789.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c20c8fc4-8cda-45a1-aec4-b5a04e39b197.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1119d8e6-0bbb-423e-a803-b6455a50c62d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0efab9a1-7207-4043-b765-a700b480f1a8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8d074f18-e0dd-46e5-8470-907fa1338cc8.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a2f48bce-a83a-4a28-b308-2adcee0ce49b.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/470e925b-e47c-43b4-9c2b-9dc1aa52b505.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2ec44be8-7d2c-4f6d-9e3d-116297bb09dc.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/468c0095-f61f-4933-8361-19b0d01a0ca4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9f89598a-53b0-4dc1-b6be-77a201f6302f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/84c9a236-70e8-456c-973b-3cb1e5625538.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e5b3e909-6772-4aeb-b18c-d526e234c236.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b30b9c63-1431-456a-82eb-5a7012b3fcb3.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/41be6868-d1ab-47d2-a37b-f7596de3fa01.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1621cea2-d863-49a1-ad49-d103c2807886.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/41c0a943-edef-4f6c-be39-c9000797e2e1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a850761e-4943-4783-830a-1e41367a73fc.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/064dd1e3-3b78-4c0c-a93b-2dd748fda4b2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/df54c63f-a3fb-4a3e-ad4a-6e6c9971bd46.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0c6711c8-0e49-43c9-8b11-11f612654d56.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e61929f3-f263-41fd-b605-32e15fae272e.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c8dd7253-9eb1-44a1-8898-a92f45525783.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eb07f609-c258-4c10-a92c-c5eae1d3c4fb.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/18eaba83-cd74-462d-8e77-884eba8019c9.jpg"
+    ],
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
+  },
+  {
+    "uid": "kufar:1027793297",
+    "source": "kufar",
+    "link": "https://re.kufar.by/vi/1027793297",
+    "title": "ПРОДАЖА ТАУНХАУСОВ В ГРОДНО",
+    "priceByn": 447000,
+    "priceUsd": 153709,
+    "area": 127,
+    "rooms": 5,
+    "address": "Коммунальная ул, Гродно, Гродненская область",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/897d8125-6ceb-4e8e-b994-3662a539f0ac.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c4f8bba6-d662-4074-8006-36c769e4b1ea.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/768b4ed0-35c3-49c4-8390-fb7641c41caa.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ec8365b8-36f8-4957-ae30-05b5a57ab8d4.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6be73252-93fc-4ad0-ae15-9f085543c43f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a57759c8-333d-423c-974c-e5f46d29d95a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cd3d275f-bd5e-423f-8c87-62e998154faf.jpg"
+    ],
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "kufar:1064330654",
@@ -1091,12 +1035,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/21b2cea6-15f0-4383-b9d4-9cdc8790b101.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cf7db18b-0da5-4b7f-b63b-e9a238ddc82c.jpg"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "kufar:1068287609",
@@ -1139,12 +1079,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0ae32712-a2ae-4b68-b783-b9836e6a87e9.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8e1c98cb-5267-4e34-9021-0c271ac64026.jpg"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "kufar:1069987012",
@@ -1170,84 +1106,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/bb023a51-1faf-4128-9b35-6ec7538cfdb1.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/5a9c6289-efb2-455c-a13b-d1245281101a.jpg"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
-  },
-  {
-    "uid": "kufar:1078845283",
-    "source": "kufar",
-    "link": "https://re.kufar.by/vi/1078845283",
-    "title": "Продается ТАУНХАУС",
-    "priceByn": 650000,
-    "priceUsd": 223514,
-    "area": 109.8,
-    "rooms": 4,
-    "address": "Богушовская ул, 5, Гродно, Гродненская область",
-    "images": [
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d5e6431d-7dc1-41d3-b673-ad9d5d2e4a97.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9139b87a-2288-4e10-b28a-5675a42d78b0.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b13f5fe7-2e34-4772-8abe-5ac1da45c99d.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6751834d-70a2-4e02-b615-30b0a0987789.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c20c8fc4-8cda-45a1-aec4-b5a04e39b197.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1119d8e6-0bbb-423e-a803-b6455a50c62d.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0efab9a1-7207-4043-b765-a700b480f1a8.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8d074f18-e0dd-46e5-8470-907fa1338cc8.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a2f48bce-a83a-4a28-b308-2adcee0ce49b.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/470e925b-e47c-43b4-9c2b-9dc1aa52b505.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2ec44be8-7d2c-4f6d-9e3d-116297bb09dc.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/468c0095-f61f-4933-8361-19b0d01a0ca4.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9f89598a-53b0-4dc1-b6be-77a201f6302f.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/84c9a236-70e8-456c-973b-3cb1e5625538.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e5b3e909-6772-4aeb-b18c-d526e234c236.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b30b9c63-1431-456a-82eb-5a7012b3fcb3.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/41be6868-d1ab-47d2-a37b-f7596de3fa01.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1621cea2-d863-49a1-ad49-d103c2807886.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/41c0a943-edef-4f6c-be39-c9000797e2e1.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a850761e-4943-4783-830a-1e41367a73fc.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/064dd1e3-3b78-4c0c-a93b-2dd748fda4b2.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/df54c63f-a3fb-4a3e-ad4a-6e6c9971bd46.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0c6711c8-0e49-43c9-8b11-11f612654d56.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e61929f3-f263-41fd-b605-32e15fae272e.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c8dd7253-9eb1-44a1-8898-a92f45525783.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/eb07f609-c258-4c10-a92c-c5eae1d3c4fb.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/18eaba83-cd74-462d-8e77-884eba8019c9.jpg"
-    ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
-  },
-  {
-    "uid": "kufar:1027793297",
-    "source": "kufar",
-    "link": "https://re.kufar.by/vi/1027793297",
-    "title": "ПРОДАЖА ТАУНХАУСОВ В ГРОДНО",
-    "priceByn": 447000,
-    "priceUsd": 153709,
-    "area": 127,
-    "rooms": 5,
-    "address": "Коммунальная ул, Гродно, Гродненская область",
-    "images": [
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/897d8125-6ceb-4e8e-b994-3662a539f0ac.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c4f8bba6-d662-4074-8006-36c769e4b1ea.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/768b4ed0-35c3-49c4-8390-fb7641c41caa.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ec8365b8-36f8-4957-ae30-05b5a57ab8d4.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6be73252-93fc-4ad0-ae15-9f085543c43f.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/a57759c8-333d-423c-974c-e5f46d29d95a.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/cd3d275f-bd5e-423f-8c87-62e998154faf.jpg"
-    ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "kufar:1073812795",
@@ -1268,12 +1128,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/ed865816-4f6d-4699-8373-2bd3c3fcd836.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/93ea572c-1ba1-40b6-8ced-a14d264a78a8.jpg"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "kufar:1005064263",
@@ -1312,12 +1168,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c3f99b16-611d-42cd-814e-664c0f5f54f9.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/be7db705-e122-4d00-9d34-ab35161390b2.jpg"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "kufar:1064066798",
@@ -1356,12 +1208,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/02b778cd-a3e4-4ea7-aabb-d7d9ec4e312c.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b27bbff9-4438-48bb-8ff2-deb8d1cc0cf6.jpg"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "kufar:1064271586",
@@ -1407,12 +1255,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/70a16acf-9710-43fe-9685-cca87f711e10.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1c550eb7-9454-43cb-9393-76da4d935f11.jpg"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "kufar:1064734622",
@@ -1455,12 +1299,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/10b5f7f9-3291-4a93-a831-e7c73520991c.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/21722f2c-c4d7-49e6-b63e-5df84014cd34.jpg"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "kufar:1011242756",
@@ -1495,12 +1335,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/826b649c-8d78-4730-a2ab-e2648d2a6ddd.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/56416d28-d52c-407f-a315-40bb7c590f91.jpg"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "kufar:1054947753",
@@ -1522,12 +1358,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/35682470-f97d-4ce9-b0fd-fa299b0b3529.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9bfce2d2-487a-4e7f-bfc2-d7fbd4b0196d.jpg"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "kufar:1054951661",
@@ -1549,12 +1381,8 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2bd78ad2-1291-4710-867f-c4d5deac4410.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b12e5ec2-a773-40ba-907d-77793bd039ca.jpg"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:4170356",
@@ -1588,12 +1416,8 @@
       "https://cdn.realt.by/img/55/cb7a73be-6f98-11f1-bad8-0242ac120003",
       "https://cdn.realt.by/img/55/cb92683e-6f98-11f1-bafc-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:4170295",
@@ -1628,12 +1452,8 @@
       "https://cdn.realt.by/img/55/c9b08f76-75e9-11f1-975f-0242ac120003",
       "https://cdn.realt.by/img/55/d0f8f39a-75e9-11f1-ab80-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:4147599",
@@ -1665,12 +1485,8 @@
       "https://cdn.realt.by/img/55/3876aee8-634a-11f1-ad9f-0242ac120003",
       "https://cdn.realt.by/img/55/38e596dc-634a-11f1-803e-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:4143683",
@@ -1702,12 +1518,8 @@
       "https://cdn.realt.by/img/55/46c55db0-5ffc-11f1-be1b-0242ac120003",
       "https://cdn.realt.by/img/55/6317ad42-5ffc-11f1-bd08-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:4137867",
@@ -1732,12 +1544,8 @@
       "https://cdn.realt.by/img/55/06c3c5e6-5a69-11f1-89dd-0242ac120003",
       "https://cdn.realt.by/img/55/06e45f86-5a69-11f1-9814-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:4132877",
@@ -1764,12 +1572,8 @@
       "https://cdn.realt.by/img/55/41e4c41e-568f-11f1-b5c0-0242ac120003",
       "https://cdn.realt.by/img/55/4526794c-568f-11f1-a299-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:4116205",
@@ -1794,12 +1598,8 @@
       "https://cdn.realt.by/img/55/08942b4a-4925-11f1-8b54-0242ac120003",
       "https://cdn.realt.by/img/55/0896e25e-4925-11f1-8b52-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:4090649",
@@ -1839,12 +1639,8 @@
       "https://cdn.realt.by/img/55/1adf2264-3345-11f1-ba61-0242ac120003",
       "https://cdn.realt.by/img/55/1de1ac66-3345-11f1-8f83-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:4072799",
@@ -1863,12 +1659,8 @@
       "https://cdn.realt.by/img/55/2071a868-274d-11f1-8218-0242ac120003",
       "https://cdn.realt.by/img/55/1bfb7e1c-274d-11f1-8418-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:4044540",
@@ -1889,12 +1681,8 @@
       "https://static.realt.by/thumb/c/430x374/2e2a2292dc233457f8f8fe6577146537/ev/9/02331arba9ev/f28c13884f.jpeg",
       "https://static.realt.by/thumb/c/430x374/48a549c1270ab582c9016bec72775f7b/ev/9/02331arba9ev/69da3772dc.jpeg"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:3987442",
@@ -1919,12 +1707,8 @@
       "https://cdn.realt.by/img/55/b9009bb6-dffe-11f0-ad0c-0242ac120003",
       "https://cdn.realt.by/img/55/bd790a52-dffe-11f0-add6-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:3949158",
@@ -1954,12 +1738,8 @@
       "https://cdn.realt.by/img/55/7da19c8c-c537-11f0-94b0-0242ac120003",
       "https://cdn.realt.by/img/55/8a7095d0-c537-11f0-9a4e-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:3916759",
@@ -1981,12 +1761,8 @@
       "https://cdn.realt.by/img/55/2e4614f8-a901-11f0-a38a-0242ac120002",
       "https://cdn.realt.by/img/55/2cc8654a-a901-11f0-aadd-0242ac120002"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:3888907",
@@ -2007,12 +1783,8 @@
       "https://cdn.realt.by/img/55/e168d6ee-948c-11f0-a146-0242ac120002",
       "https://cdn.realt.by/img/55/e0b95ac0-948c-11f0-acc2-0242ac120002"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:3679550",
@@ -2048,12 +1820,8 @@
       "https://cdn.realt.by/img/55/12c3f1e8-06f7-11f0-b0a8-0242ac120003",
       "https://cdn.realt.by/img/55/170039b0-06f7-11f0-8529-0242ac120003"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   },
   {
     "uid": "realt:2541496",
@@ -2093,11 +1861,7 @@
       "https://static.realt.by/thumb/c/430x374/20786b42414e9101bdb28409154cb3ec/w1/t/023313r2ktw1/a556e2d630.jpeg",
       "https://static.realt.by/thumb/c/430x374/8e7c016729400d5e12cdca20e2e70572/w1/t/023313r2ktw1/a9950e810d.jpeg"
     ],
-    "firstSeenAt": "2026-08-02T21:33:43.039Z",
-<<<<<<< HEAD
-    "lastSeenAt": "2026-08-04T09:57:12.644Z"
-=======
-    "lastSeenAt": "2026-08-04T09:43:12.249Z"
->>>>>>> origin/main
+    "firstSeenAt": "2026-08-04T15:50:52.686Z",
+    "lastSeenAt": "2026-08-04T15:50:52.686Z"
   }
 ]
