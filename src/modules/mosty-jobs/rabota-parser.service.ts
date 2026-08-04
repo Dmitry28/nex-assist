@@ -1,7 +1,8 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import type { JobVacancy } from './dto/job-vacancy.dto';
-import { fetchText } from './mosty-jobs-http';
+import { EscalatingHtmlFetcher } from '../../common/scraping/escalating-html-fetcher';
+import { FETCH_TIMEOUT_MS, MAX_HTML_SIZE_BYTES } from './constants';
 
 /** Embedded initial-state JSON on the rabota.by (hh.ru) search page. */
 const INITIAL_STATE_RE = /<template[^>]*id="HH-Lux-InitialState"[^>]*>([\s\S]*?)<\/template>/i;
@@ -68,7 +69,10 @@ const mapVacancy = (raw: unknown): JobVacancy | undefined => {
 export class RabotaParserService {
   private readonly logger = new Logger(RabotaParserService.name);
 
-  constructor(private readonly config: ConfigService) {}
+  constructor(
+    private readonly config: ConfigService,
+    private readonly html: EscalatingHtmlFetcher,
+  ) {}
 
   /**
    * Fetch the rabota.by search page and return vacancies.
@@ -76,7 +80,18 @@ export class RabotaParserService {
    */
   async fetch(): Promise<JobVacancy[] | null> {
     const url = this.config.getOrThrow<string>('mostyJobs.rabotaSearchUrl');
-    const html = await fetchText(url, this.logger);
+    // Same ladder as every other site: plain request, then a browser, then the providers.
+    // This source failed on a plain fetch in production while the others answered, and a lost
+    // source is invisible in the summary — the module reports what it got, not what it missed.
+    const html = await this.html.fetch(url, {
+      label: 'rabota.by',
+      // Test for the marker the parser actually needs, not a substring any page contains.
+      // `includes('vacancy')` matched hh.ru's anti-bot page too, so rung 1 reported success on
+      // an unusable body and the ladder never escalated — the source just went down.
+      isUsable: body => INITIAL_STATE_RE.test(body),
+      timeoutMs: FETCH_TIMEOUT_MS,
+      maxBytes: MAX_HTML_SIZE_BYTES,
+    });
     if (html === null) return null;
 
     const vacancies = parseRabotaSearchHtml(html);
