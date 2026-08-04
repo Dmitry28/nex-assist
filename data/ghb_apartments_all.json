@@ -19,7 +19,11 @@
     "minPricePerM2Byn": 3000,
     "maxPricePerM2Byn": 3000,
     "firstSeenAt": "2026-05-26T10:00:42.879Z",
+<<<<<<< HEAD
     "lastSeenAt": "2026-08-04T09:57:13.918Z"
+=======
+    "lastSeenAt": "2026-08-04T09:43:13.852Z"
+>>>>>>> origin/main
   },
   {
     "url": "https://ghb.by/ru/construction/nedvizhimost-dogovor/9102/",
@@ -30,7 +34,11 @@
     "minPricePerM2Byn": 3000,
     "maxPricePerM2Byn": 3000,
     "firstSeenAt": "2026-05-26T10:00:42.879Z",
+<<<<<<< HEAD
     "lastSeenAt": "2026-08-04T09:57:13.918Z"
+=======
+    "lastSeenAt": "2026-08-04T09:43:13.852Z"
+>>>>>>> origin/main
   },
   {
     "url": "https://ghb.by/ru/construction/nedvizhimost-dogovor/8665/",
@@ -41,7 +49,11 @@
     "minPricePerM2Byn": 2800,
     "maxPricePerM2Byn": 3350,
     "firstSeenAt": "2026-05-26T10:00:42.879Z",
+<<<<<<< HEAD
     "lastSeenAt": "2026-08-04T09:57:13.918Z"
+=======
+    "lastSeenAt": "2026-08-04T09:43:13.852Z"
+>>>>>>> origin/main
   },
   {
     "url": "https://ghb.by/ru/construction/nedvizhimost-dogovor/7674/",
@@ -77,7 +89,11 @@
     "minPricePerM2Byn": 2900,
     "maxPricePerM2Byn": 3900,
     "firstSeenAt": "2026-05-26T10:00:42.879Z",
+<<<<<<< HEAD
     "lastSeenAt": "2026-08-04T09:57:13.918Z"
+=======
+    "lastSeenAt": "2026-08-04T09:43:13.852Z"
+>>>>>>> origin/main
   },
   {
     "url": "https://ghb.by/ru/construction/nedvizhimost-dogovor/7938/",
@@ -98,7 +114,11 @@
     "minPricePerM2Byn": 2700,
     "maxPricePerM2Byn": 3900,
     "firstSeenAt": "2026-05-26T10:00:42.879Z",
+<<<<<<< HEAD
     "lastSeenAt": "2026-08-04T09:57:13.918Z"
+=======
+    "lastSeenAt": "2026-08-04T09:43:13.852Z"
+>>>>>>> origin/main
   },
   {
     "url": "https://ghb.by/ru/construction/nedvizhimost-dogovor/8337/",
@@ -109,7 +129,11 @@
     "minPricePerM2Byn": 2720,
     "maxPricePerM2Byn": 2900,
     "firstSeenAt": "2026-05-26T10:00:42.879Z",
+<<<<<<< HEAD
     "lastSeenAt": "2026-08-04T09:57:13.918Z"
+=======
+    "lastSeenAt": "2026-08-04T09:43:13.852Z"
+>>>>>>> origin/main
   },
   {
     "url": "https://ghb.by/ru/construction/nedvizhimost-dogovor/8300/",
@@ -120,7 +144,11 @@
     "minPricePerM2Byn": 2150,
     "maxPricePerM2Byn": 3000,
     "firstSeenAt": "2026-05-26T10:00:42.879Z",
+<<<<<<< HEAD
     "lastSeenAt": "2026-08-04T09:57:13.918Z"
+=======
+    "lastSeenAt": "2026-08-04T09:43:13.852Z"
+>>>>>>> origin/main
   },
   {
     "url": "https://ghb.by/ru/construction/nedvizhimost-dogovor/8240/",
@@ -140,7 +168,11 @@
     "minPricePerM2Byn": 2250,
     "maxPricePerM2Byn": 2600,
     "firstSeenAt": "2026-05-26T10:00:42.879Z",
+<<<<<<< HEAD
     "lastSeenAt": "2026-08-04T09:57:13.918Z"
+=======
+    "lastSeenAt": "2026-08-04T09:43:13.852Z"
+>>>>>>> origin/main
   },
   {
     "url": "https://ghb.by/ru/construction/nedvizhimost-dogovor/7350/",
@@ -170,7 +202,11 @@
     "minPricePerM2Byn": 4000,
     "maxPricePerM2Byn": 4000,
     "firstSeenAt": "2026-05-26T10:00:42.879Z",
+<<<<<<< HEAD
     "lastSeenAt": "2026-08-04T09:57:13.918Z"
+=======
+    "lastSeenAt": "2026-08-04T09:43:13.852Z"
+>>>>>>> origin/main
   },
   {
     "url": "https://ghb.by/ru/construction/nedvizhimost/8760/",
@@ -180,7 +216,11 @@
     "minPricePerM2Byn": 1530,
     "maxPricePerM2Byn": 5400,
     "firstSeenAt": "2026-05-26T10:00:42.879Z",
+<<<<<<< HEAD
     "lastSeenAt": "2026-08-04T09:57:13.918Z"
+=======
+    "lastSeenAt": "2026-08-04T09:43:13.852Z"
+>>>>>>> origin/main
   },
   {
     "url": "https://ghb.by/ru/construction/nedvizhimost/7181/",
@@ -190,7 +230,11 @@
     "minPricePerM2Byn": 1185,
     "maxPricePerM2Byn": 3500,
     "firstSeenAt": "2026-05-26T10:00:42.879Z",
+<<<<<<< HEAD
     "lastSeenAt": "2026-08-04T09:57:13.918Z"
+=======
+    "lastSeenAt": "2026-08-04T09:43:13.852Z"
+>>>>>>> origin/main
   },
   {
     "url": "https://ghb.by/ru/construction/nedvizhimost/6429/",
@@ -200,6 +244,10 @@
     "minPricePerM2Byn": 2148,
     "maxPricePerM2Byn": 2950,
     "firstSeenAt": "2026-05-26T10:00:42.879Z",
+<<<<<<< HEAD
     "lastSeenAt": "2026-08-04T09:57:13.918Z"
+=======
+    "lastSeenAt": "2026-08-04T09:43:13.852Z"
+>>>>>>> origin/main
   }
 ]
