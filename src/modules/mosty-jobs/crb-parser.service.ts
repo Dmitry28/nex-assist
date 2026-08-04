@@ -1,7 +1,8 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import type { JobVacancy } from './dto/job-vacancy.dto';
-import { fetchText } from './mosty-jobs-http';
+import { EscalatingHtmlFetcher } from '../../common/scraping/escalating-html-fetcher';
+import { FETCH_TIMEOUT_MS, MAX_HTML_SIZE_BYTES } from './constants';
 
 /**
  * The vacancy list on mostycrb.by is a single `<ol>` right after the heading:
@@ -28,12 +29,23 @@ const stripTags = (html: string): string =>
 export class CrbParserService {
   private readonly logger = new Logger(CrbParserService.name);
 
-  constructor(private readonly config: ConfigService) {}
+  constructor(
+    private readonly config: ConfigService,
+    private readonly html: EscalatingHtmlFetcher,
+  ) {}
 
   /** Fetch the Мостовская ЦРБ vacancies page. Returns null when the source failed. */
   async fetch(): Promise<JobVacancy[] | null> {
     const url = this.config.getOrThrow<string>('mostyJobs.crbUrl');
-    const html = await fetchText(url, this.logger);
+    // Same ladder as every other site: plain request, then a browser, then the providers.
+    // This source failed on a plain fetch in production while the others answered, and a lost
+    // source is invisible in the summary — the module reports what it got, not what it missed.
+    const html = await this.html.fetch(url, {
+      label: 'mostycrb.by',
+      isUsable: body => body.includes('vakansii') || body.includes('<table'),
+      timeoutMs: FETCH_TIMEOUT_MS,
+      maxBytes: MAX_HTML_SIZE_BYTES,
+    });
     if (html === null) return null;
 
     const vacancies = parseCrbPage(html, url);
