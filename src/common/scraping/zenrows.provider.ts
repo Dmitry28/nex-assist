@@ -14,14 +14,15 @@ const DEFAULT_TIMEOUT_MS = 120_000;
  * ZenRows provider (https://zenrows.com). Sits ahead of ScrapFly because it is the only free
  * tier whose arithmetic covers a daily bamper run.
  *
- * Free tier: 5000 credits/mo, no card. A Cloudflare-protected page costs 25 credits (their
- * "JS Rendering + Premium Proxies (protected)" bracket), i.e. **200 protected requests/mo** —
- * against bamper's six feeds daily, 180/mo. ScrapFly by comparison allows ~25 protected calls
- * a month at the measured 40 credits each, which is why it stays last.
+ * Free tier: 5000 credits/mo, no card. A protected page costs 10 credits on the premium-proxy
+ * bracket, or 25 once JS rendering is added — so rendering only when a caller actually needs it
+ * is the difference between ~500 and ~200 protected requests a month. ScrapFly by comparison
+ * allows ~25 protected calls a month at the measured 40 credits each, which is why it stays last.
  *
- * Verified live against bamper.by: premium_proxy + js_render + proxy_country=by returns the
- * real page (668 KB, 7 listings). Belarus is supported, unlike ScrapingAnt. The combination
- * matters — premium_proxy alone is a 422, and js_render alone returns a 6 KB stub.
+ * Verified live against bamper.by: premium_proxy + proxy_country=by returns the real page
+ * (684 KB, 8 listings), identical to the same call with js_render. Belarus is supported, unlike
+ * ScrapingAnt — which is what makes this the only provider that can reach e-rabota.by at all.
+ * js_render alone, without premium_proxy, returns a 6 KB stub.
  */
 @Injectable()
 export class ZenRowsProvider implements ScrapingProvider {
@@ -42,17 +43,17 @@ export class ZenRowsProvider implements ScrapingProvider {
     if (!this.apiKey) throw new Error('ZENROWS_API_KEY is not configured');
 
     const params = new URLSearchParams({ apikey: this.apiKey, url });
-    // `premium_proxy` is the anti-bot tier — residential IPs — which is what clears Cloudflare.
-    // It has to travel with `js_render`: measured against bamper.by, premium_proxy alone is
-    // rejected with 422, and without premium_proxy the response is a 6 KB stub rather than the
-    // page. So `asp` implies both here, even when the caller did not ask for rendering — the
-    // caller's `renderJs` is about ScrapFly's pricing, where the two are billed separately.
-    if (opts.asp) {
-      params.set('premium_proxy', 'true');
-      params.set('js_render', 'true');
-    } else if (opts.renderJs) {
-      params.set('js_render', 'true');
-    }
+    // `premium_proxy` is the anti-bot tier — residential IPs — which is what clears Cloudflare
+    // and what a geo-blocked site needs. Without it the response is a 6 KB stub.
+    if (opts.asp) params.set('premium_proxy', 'true');
+    // Rendering is billed separately and is NOT implied by the anti-bot tier. This used to force
+    // `js_render` alongside every `asp` call, on a measurement that premium_proxy alone returned
+    // 422 — re-measured since and that is wrong: bamper.by returns the same page with the same 8
+    // listings either way, and e-rabota.by's API answers 200. Forcing it charged the 25-credit
+    // bracket instead of the 10-credit one for every protected call — most of the monthly free
+    // tier for nothing. A settle time only means something once rendering happens, so asking to
+    // wait implies it.
+    if (opts.renderJs || opts.renderWaitMs) params.set('js_render', 'true');
     // Lower-case ISO-2. ZenRows advertises 190+ countries, so unlike ScrapingAnt there is no
     // short enum to guard against; a rejected code simply fails and the chain moves on.
     if (opts.country) params.set('proxy_country', opts.country.toLowerCase());

@@ -52,3 +52,6 @@ docs/llm/mcp.json
 
 # ESLint
 .eslintcache
+
+# Local throwaway probes (never committed)
+*.probe.ts
