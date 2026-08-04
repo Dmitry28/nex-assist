@@ -1,6 +1,6 @@
 import type { ConfigService } from '@nestjs/config';
 import { ScraperApiProvider } from '../scraper-api.provider';
-import { ScrapingQuotaError } from '../scraping.types';
+import { ScrapingCapabilityError, ScrapingQuotaError } from '../scraping.types';
 
 const providerWithKey = (key: string | undefined): ScraperApiProvider => {
   const config = { get: () => key } as unknown as ConfigService;
@@ -86,6 +86,8 @@ describe('ScraperApiProvider', () => {
     const call = providerWithKey('k').scrape('https://x', {});
     await expect(call).rejects.toThrow('rejected the request for this plan');
     await expect(call).rejects.not.toBeInstanceOf(ScrapingQuotaError);
+    // Typed so the chain can remember the refusal instead of re-queueing it every call.
+    await expect(call).rejects.toBeInstanceOf(ScrapingCapabilityError);
   });
 
   it('raises a plain error on other HTTP failures', async () => {

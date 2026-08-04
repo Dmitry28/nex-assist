@@ -1,5 +1,6 @@
 import { Inject, Injectable, Logger } from '@nestjs/common';
 import {
+  ScrapingCapabilityError,
   ScrapingQuotaError,
   SCRAPING_PROVIDERS,
   type ScrapeOptions,
@@ -16,6 +17,8 @@ import {
 @Injectable()
 export class ScrapingClient {
   private readonly logger = new Logger(ScrapingClient.name);
+  /** Providers whose plan refused an anti-bot request during this process. */
+  private readonly refusedAsp = new Set<string>();
 
   constructor(@Inject(SCRAPING_PROVIDERS) private readonly providers: ScrapingProvider[]) {}
 
@@ -30,23 +33,51 @@ export class ScrapingClient {
       throw new Error('No scraping provider is configured');
     }
 
+    // Drop providers that already refused this request class on this plan. The memo is only an
+    // optimisation, so if it would empty the chain we ignore it and try everyone — better to
+    // waste a call than to report "no providers" while some are configured.
+    const eligible = configured.filter(p => !this.refusedBy(p.name, opts));
+    const chain = eligible.length > 0 ? eligible : configured;
+
     let lastError: unknown;
-    for (const [i, provider] of configured.entries()) {
+    for (const [i, provider] of chain.entries()) {
       try {
         const result = await provider.scrape(url, opts);
         if (i > 0) this.logger.warn(`Fell back to provider "${provider.name}" for ${url}`);
         return result;
       } catch (err) {
         lastError = err;
-        const isQuota = err instanceof ScrapingQuotaError;
+        if (err instanceof ScrapingCapabilityError) this.remember(provider.name, opts);
         const reason = err instanceof Error ? err.message : String(err);
-        const next = configured[i + 1];
+        const next = chain[i + 1];
         this.logger.warn(
-          `Provider "${provider.name}" ${isQuota ? 'out of quota' : 'failed'}: ${reason}` +
+          `Provider "${provider.name}" ${this.describe(err)}: ${reason}` +
             (next ? ` — trying "${next.name}"` : ' — no more providers'),
         );
       }
     }
     throw lastError instanceof Error ? lastError : new Error('All scraping providers failed');
+  }
+
+  private describe(err: unknown): string {
+    if (err instanceof ScrapingQuotaError) return 'out of quota';
+    if (err instanceof ScrapingCapabilityError) return 'cannot serve this request on its plan';
+    return 'failed';
+  }
+
+  /**
+   * Anti-bot requests are the class that gets refused by plan, and they are the expensive ones to
+   * retry, so the memo is kept at that granularity rather than per URL.
+   */
+  private refusedBy(name: string, opts: ScrapeOptions): boolean {
+    return Boolean(opts.asp) && this.refusedAsp.has(name);
+  }
+
+  private remember(name: string, opts: ScrapeOptions): void {
+    if (!opts.asp || this.refusedAsp.has(name)) return;
+    this.refusedAsp.add(name);
+    this.logger.warn(
+      `Skipping "${name}" for anti-bot requests for the rest of this run — its plan refuses them`,
+    );
   }
 }

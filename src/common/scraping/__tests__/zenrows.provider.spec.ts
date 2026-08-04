@@ -55,10 +55,11 @@ describe('ZenRowsProvider', () => {
     expect(p.get('proxy_country')).toBe('by');
   });
 
-  // Measured against bamper.by: premium_proxy alone is rejected with 422, and js_render alone
-  // returns a 6 KB stub. bamper asks for asp without renderJs (that split is about ScrapFly's
-  // pricing), so the provider has to add the render itself or it fails in the chain.
-  it('adds js_render whenever asp is set, even if the caller did not ask for rendering', async () => {
+  // Rendering triples the price (10 credits → 25) and this provider used to force it onto every
+  // asp call, on a measurement that premium_proxy alone returned 422. Re-measured: bamper.by
+  // returns the same page with the same 8 listings either way. Charging the render bracket for
+  // callers that never asked to render burned most of the monthly free tier for nothing.
+  it('does not add js_render for an asp call that did not ask for rendering', async () => {
     let seen = '';
     global.fetch = jest.fn((url: string) => {
       seen = url;
@@ -69,7 +70,23 @@ describe('ZenRowsProvider', () => {
 
     const p = new URL(seen).searchParams;
     expect(p.get('premium_proxy')).toBe('true');
+    expect(p.get('js_render')).toBeNull();
+  });
+
+  // bid.cars asks for a settle time without naming renderJs, and `wait` is meaningless unless
+  // something is rendering — so the request has to imply it or that feed silently returns 0 lots.
+  it('turns on js_render when a settle time is requested', async () => {
+    let seen = '';
+    global.fetch = jest.fn((url: string) => {
+      seen = url;
+      return Promise.resolve({ ok: true, status: 200, text: () => Promise.resolve('<html/>') });
+    }) as unknown as typeof fetch;
+
+    await providerWithKey('k').scrape('https://x', { asp: true, renderWaitMs: 10_000 });
+
+    const p = new URL(seen).searchParams;
     expect(p.get('js_render')).toBe('true');
+    expect(p.get('wait')).toBe('10000');
   });
 
   it('omits the optional parameters when not asked for', async () => {

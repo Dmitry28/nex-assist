@@ -1,6 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import {
+  ScrapingCapabilityError,
   ScrapingQuotaError,
   type ScrapeOptions,
   type ScrapeResult,
@@ -66,7 +67,10 @@ export class ScraperApiProvider implements ScrapingProvider {
         throw new ScrapingQuotaError(this.name, 'ScraperAPI rate/quota limit reached (HTTP 429)');
       }
       if (resp.status === 403) {
-        throw new Error(
+        // A capability error, not a plain failure: this plan will refuse the same request class
+        // for the rest of the run, so the chain should stop re-queueing it.
+        throw new ScrapingCapabilityError(
+          this.name,
           'ScraperAPI rejected the request for this plan (HTTP 403) — the free tier cannot ' +
             'target every country, and residential proxies are premium-only',
         );

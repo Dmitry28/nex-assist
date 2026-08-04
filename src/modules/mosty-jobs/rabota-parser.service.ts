@@ -2,6 +2,7 @@ import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import type { JobVacancy } from './dto/job-vacancy.dto';
 import { EscalatingHtmlFetcher } from '../../common/scraping/escalating-html-fetcher';
+import { decodeHtmlEntities } from '../../common/utils/html-entities';
 import { FETCH_TIMEOUT_MS, MAX_HTML_SIZE_BYTES } from './constants';
 
 /** Embedded initial-state JSON on the rabota.by (hh.ru) search page. */
@@ -111,35 +112,6 @@ export class RabotaParserService {
  * Returns null when the page has no parseable initial state (treat as source
  * failure, not as "0 vacancies"). Exported for unit tests.
  */
-/**
- * Decodes the HTML entities hh.ru now escapes its embedded state with.
- *
- * The `<template>` used to hold raw JSON; it currently holds the same JSON with every quote
- * written as `&#34;`. JSON.parse fails at position 1 on that, which surfaced as "initial-state
- * JSON not found — captcha or layout change?" — the layout-change half of that guess was right.
- *
- * Numeric entities are handled as well as named ones: only the numeric form appears today, and
- * assuming `&quot;` would have missed it entirely.
- */
-export const decodeHtmlEntities = (input: string): string => {
-  const named: Record<string, string> = {
-    quot: '"',
-    apos: "'",
-    lt: '<',
-    gt: '>',
-    nbsp: '\u00a0',
-    amp: '&',
-  };
-  return input.replace(/&(#x[0-9a-f]+|#\d+|[a-z]+);/gi, (match, entity: string) => {
-    const token = entity.toLowerCase();
-    if (token.startsWith('#x')) return String.fromCodePoint(parseInt(token.slice(2), 16));
-    if (token.startsWith('#')) return String.fromCodePoint(Number(token.slice(1)));
-    // `amp` is listed last in `named` on purpose but resolved here like any other: decoding is
-    // a single pass, so an already-decoded `&` cannot be re-consumed.
-    return named[token] ?? match;
-  });
-};
-
 export const parseRabotaSearchHtml = (html: string): JobVacancy[] | null => {
   const m = html.match(INITIAL_STATE_RE);
   if (!m) return null;
