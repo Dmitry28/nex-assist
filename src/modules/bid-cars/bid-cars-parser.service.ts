@@ -6,6 +6,17 @@ import puppeteer from 'rebrowser-puppeteer';
 import type { Browser, Page } from 'rebrowser-puppeteer';
 import type { CarListing } from './dto/car-listing.dto';
 import { fetchEscalating } from '../../common/scraping/escalating-fetch';
+import { ScrapingClient } from '../../common/scraping/scraping-client.service';
+
+/** Settle time asked of a provider so bid.cars finishes filling its result cards (ms). */
+const PROVIDER_RENDER_WAIT_MS = 10_000;
+
+/**
+ * Provider timeout. Must comfortably exceed the settle time plus the provider's own render:
+ * passing the browser's PAGE_TIMEOUT_MS cut ZenRows off at 30s mid-render, and only the next
+ * link in the chain saved the fetch.
+ */
+const PROVIDER_TIMEOUT_MS = 120_000;
 import { BROWSER_USER_AGENT } from '../../common/utils/scraping';
 import {
   CARD_WALK_DEPTH,
@@ -50,6 +61,8 @@ const BROWSER_ARGS = [
 @Injectable()
 export class BidCarsParserService implements OnModuleDestroy {
   private readonly logger = new Logger(BidCarsParserService.name);
+
+  constructor(private readonly scraping: ScrapingClient) {}
   private browser: Browser | null = null;
 
   async onModuleDestroy(): Promise<void> {
@@ -64,13 +77,12 @@ export class BidCarsParserService implements OnModuleDestroy {
       // Rung 1 absent: this parser reads the page through page.evaluate rather than from an
       // HTML string, so a plain request has nothing to hand it. Rung 2 is where it starts.
       attemptBrowser: async () => this.scrapeResultsPage(await this.getBrowser(), url),
-      // No chain here, deliberately. This parser reads the page through page.evaluate rather
-      // than from an HTML string, so a provider's response cannot be fed to it without writing
-      // a second, HTML-based parser. bid.cars is not blocked today — measured on the same
-      // GitHub Actions runners it returns 51 listings while bamper.by is refused — so that
-      // parser would be speculative work for a site that works. The shared policy is still
-      // used, to keep retry and logging behaviour identical across the two modules.
-      paidAvailable: false,
+      attemptPaid: async () => {
+        const listings = await this.viaProvider(url);
+        if (listings === null) throw new Error('provider body yielded no listings');
+        return { value: listings, provider: 'chain' };
+      },
+      paidAvailable: this.scraping.isAvailable(),
       retries: CLOUDFLARE_RETRY_ATTEMPTS,
       retryDelayMs: CLOUDFLARE_RETRY_DELAY_MS,
       beforeRetry: async () => {
@@ -81,6 +93,167 @@ export class BidCarsParserService implements OnModuleDestroy {
 
     if (listings === null) throw new Error('Cloudflare challenge not resolved after all retries');
     return listings;
+  }
+
+  /**
+   * Pulls the cards out of a rendered page.
+   *
+   * Kept as a `page.evaluate` block rather than an HTML parser because it leans on `innerText`
+   * — bid.cars labels its fields as "Label\nvalue" in rendered text, which markup alone does
+   * not give you. That is also why the provider rung below feeds the fetched HTML back into a
+   * local page instead of parsing it directly: the extraction is reused verbatim, so a fallback
+   * cannot quietly return different fields from the primary path.
+   */
+  private async extractListings(page: Page): Promise<CarListing[]> {
+    const listings: CarListing[] = await page.evaluate((walkDepth: number) => {
+      const seen = new Set<string>();
+      const results: Array<{
+        link: string;
+        title?: string;
+        vin?: string;
+        lot?: string;
+        odometer?: string;
+        damage?: string;
+        location?: string;
+        currentBid?: string;
+        buyNow?: string;
+        engine?: string;
+        keys?: string;
+        condition?: string;
+        auctionDate?: string;
+        auctionSource?: string;
+        seller?: string;
+      }> = [];
+
+      /** Parse VIN (17-char) from a lot URL — VIN follows the last hyphen in the slug. */
+      const vinFromUrl = (href: string): string => {
+        const m = href.match(/([A-HJ-NPR-Z0-9]{17})(?:[/?#]|$)/i);
+        return m ? m[1].toUpperCase() : '';
+      };
+
+      /** Parse lot ID from URL path: /lot/<lot-id>/. */
+      const lotFromUrl = (href: string): string => {
+        const m = href.match(/\/lot\/([^/]+)\//);
+        return m ? m[1] : '';
+      };
+
+      document.querySelectorAll<HTMLAnchorElement>('a[href*="/lot/"]').forEach(anchor => {
+        const link = anchor.href;
+        if (seen.has(link)) return;
+        seen.add(link);
+
+        // Find the card: walk up until the parent contains more than one lot link
+        let card: Element = anchor;
+        for (let i = 0; i < walkDepth; i++) {
+          if (!card.parentElement) break;
+          if (card.parentElement.querySelectorAll('a[href*="/lot/"]').length > 1) break;
+          card = card.parentElement;
+        }
+
+        // Title: prefer heading; avoid grabbing the entire card text blob.
+        // Strip trailing VIN, lot ID, and auction source appended by bid.cars.
+        const titleEl =
+          card.querySelector('h1, h2, h3, h4') ??
+          card.querySelector('[class*="title" i]:not([class*="subtitle" i])');
+        const title = titleEl?.textContent
+          ?.trim()
+          .replace(/\s+[A-HJ-NPR-Z0-9]{17}.*$/i, '') // strip VIN and everything after
+          .trim();
+
+        // VIN and lot parsed from the URL — 100% reliable regardless of DOM changes
+        const vin = vinFromUrl(link) || undefined;
+        const lot = lotFromUrl(link) || undefined;
+
+        // bid.cars labels are in Russian. Extract fields by matching label\nvalue
+        // patterns from the card's innerText — more reliable than DOM traversal
+        // for this site's markup.
+        const cardText = (card as HTMLElement).innerText ?? '';
+        const matchText = (re: RegExp): string | undefined => {
+          const m = cardText.match(re);
+          return m ? m[1].trim() : undefined;
+        };
+
+        const odometer = matchText(/Километраж:\s*([^\n]+)/);
+        const damage = matchText(/Повреждение:\s*([^\n]+)/);
+        const location = matchText(/Место расположение:\s*([^\n]+)/);
+        const currentBid = matchText(/Текущая ставка:\s*([^\n]+)/);
+        const buyNow = matchText(/Купить сейчас:\s*([^\n]+)/);
+        // Repurpose `keys` for document/title type (e.g. "Salvage (South Carolina)")
+        const keys = matchText(/Док\. продажи:\s*([^\n]+)/);
+        // Running condition (e.g. "На ходу")
+        const condition = matchText(/Статус:\s*([^\n]+)/);
+        // Auction datetime (e.g. "пн 23 мар., 14:30 GMT+1")
+        const auctionDate = matchText(/((?:пн|вт|ср|чт|пт|сб|вс)\s+[^\n]+GMT[+-]\d+)/i);
+        // Auction house: standalone line — IAAI, Copart, Manheim, etc.
+        // Newline-delimited only on a styled page, and lower-cased in the raw markup, so match
+        // on any whitespace boundary and normalise the case.
+        const auctionSource = cardText
+          .match(/(?:^|\s)(IAAI|IAA|Copart|Manheim|ADESA|BacklotCars|ACV)(?=\s|$)/i)?.[1]
+          ?.toUpperCase();
+        // Seller / insurance company (e.g. "State Farm Group Insurance")
+        const seller = matchText(/Продавец:\s*([^\n]+)/);
+        // Engine: "2.0L", "4 cyl.", "269HP" appear on consecutive lines — join them
+        const engineParts = [
+          matchText(/(\d+[.,]\d+[Ll])\b/),
+          matchText(/(\d+\s*cyl\.?)/i),
+          matchText(/(\d+\s*HP)/i),
+        ].filter((x): x is string => x !== undefined);
+        const engine = engineParts.length > 0 ? engineParts.join(' ') : undefined;
+
+        results.push({
+          link,
+          title,
+          vin,
+          lot,
+          odometer,
+          damage,
+          location,
+          currentBid,
+          buyNow,
+          engine,
+          keys,
+          condition,
+          auctionDate,
+          auctionSource: auctionSource ?? undefined,
+          seller,
+        });
+      });
+
+      return results;
+    }, CARD_WALK_DEPTH);
+
+    this.logger.log(`Found ${listings.length} listings on results page`);
+    return listings;
+  }
+
+  /**
+   * Rung 3 — provider chain. bid.cars was refused outright in CI on 04.08 after working the day
+   * before, and this module had no fallback because its extraction needs a DOM. The provider
+   * bypasses the challenge, and `setContent` gives the extraction the DOM it needs.
+   *
+   * Only the first page of results: "Загрузить больше" issues its own request to bid.cars, which
+   * a static body cannot serve. Partial data beats the total outage this replaces.
+   */
+  private async viaProvider(url: string): Promise<CarListing[] | null> {
+    const { content, provider } = await this.scraping.scrape(url, {
+      asp: true,
+      // bid.cars fills its result cards after load, so without a settle time the provider
+      // returns the shell: measured, 254 KB and zero lot links versus 764 KB and 53 with it.
+      renderWaitMs: PROVIDER_RENDER_WAIT_MS,
+      timeoutMs: PROVIDER_TIMEOUT_MS,
+    });
+    const browser = await this.getBrowser();
+    const page = await browser.newPage();
+    try {
+      await page.setContent(content, { waitUntil: 'domcontentloaded' });
+      const listings = await this.extractListings(page);
+      this.logger.log(
+        `bid.cars: fetched via ${provider} — ${listings.length} listing(s), first page only`,
+      );
+      return listings.length > 0 ? listings : null;
+    } finally {
+      await page.close();
+    }
   }
 
   /** Returns the shared browser, launching one if not yet started or if it crashed. */
@@ -142,123 +315,7 @@ export class BidCarsParserService implements OnModuleDestroy {
         }
       }
 
-      const listings: CarListing[] = await page.evaluate((walkDepth: number) => {
-        const seen = new Set<string>();
-        const results: Array<{
-          link: string;
-          title?: string;
-          vin?: string;
-          lot?: string;
-          odometer?: string;
-          damage?: string;
-          location?: string;
-          currentBid?: string;
-          buyNow?: string;
-          engine?: string;
-          keys?: string;
-          condition?: string;
-          auctionDate?: string;
-          auctionSource?: string;
-          seller?: string;
-        }> = [];
-
-        /** Parse VIN (17-char) from a lot URL — VIN follows the last hyphen in the slug. */
-        const vinFromUrl = (href: string): string => {
-          const m = href.match(/([A-HJ-NPR-Z0-9]{17})(?:[/?#]|$)/i);
-          return m ? m[1].toUpperCase() : '';
-        };
-
-        /** Parse lot ID from URL path: /lot/<lot-id>/. */
-        const lotFromUrl = (href: string): string => {
-          const m = href.match(/\/lot\/([^/]+)\//);
-          return m ? m[1] : '';
-        };
-
-        document.querySelectorAll<HTMLAnchorElement>('a[href*="/lot/"]').forEach(anchor => {
-          const link = anchor.href;
-          if (seen.has(link)) return;
-          seen.add(link);
-
-          // Find the card: walk up until the parent contains more than one lot link
-          let card: Element = anchor;
-          for (let i = 0; i < walkDepth; i++) {
-            if (!card.parentElement) break;
-            if (card.parentElement.querySelectorAll('a[href*="/lot/"]').length > 1) break;
-            card = card.parentElement;
-          }
-
-          // Title: prefer heading; avoid grabbing the entire card text blob.
-          // Strip trailing VIN, lot ID, and auction source appended by bid.cars.
-          const titleEl =
-            card.querySelector('h1, h2, h3, h4') ??
-            card.querySelector('[class*="title" i]:not([class*="subtitle" i])');
-          const title = titleEl?.textContent
-            ?.trim()
-            .replace(/\s+[A-HJ-NPR-Z0-9]{17}.*$/i, '') // strip VIN and everything after
-            .trim();
-
-          // VIN and lot parsed from the URL — 100% reliable regardless of DOM changes
-          const vin = vinFromUrl(link) || undefined;
-          const lot = lotFromUrl(link) || undefined;
-
-          // bid.cars labels are in Russian. Extract fields by matching label\nvalue
-          // patterns from the card's innerText — more reliable than DOM traversal
-          // for this site's markup.
-          const cardText = (card as HTMLElement).innerText ?? '';
-          const matchText = (re: RegExp): string | undefined => {
-            const m = cardText.match(re);
-            return m ? m[1].trim() : undefined;
-          };
-
-          const odometer = matchText(/Километраж:\n\s*([^\n]+)/);
-          const damage = matchText(/Повреждение:\n\s*([^\n]+)/);
-          const location = matchText(/Место расположение:\n\s*([^\n]+)/);
-          const currentBid = matchText(/Текущая ставка:\n\s*([^\n]+)/);
-          const buyNow = matchText(/Купить сейчас:\n\s*([^\n]+)/);
-          // Repurpose `keys` for document/title type (e.g. "Salvage (South Carolina)")
-          const keys = matchText(/Док\. продажи:\n\s*([^\n]+)/);
-          // Running condition (e.g. "На ходу")
-          const condition = matchText(/Статус:\n\s*([^\n]+)/);
-          // Auction datetime (e.g. "пн 23 мар., 14:30 GMT+1")
-          const auctionDate = matchText(/((?:пн|вт|ср|чт|пт|сб|вс)\s+[^\n]+GMT[+-]\d+)/i);
-          // Auction house: standalone line — IAAI, Copart, Manheim, etc.
-          const auctionSource = cardText.match(
-            /\n(IAAI|IAA|Copart|Manheim|ADESA|BacklotCars|ACV)\n/,
-          )?.[1];
-          // Seller / insurance company (e.g. "State Farm Group Insurance")
-          const seller = matchText(/Продавец:\n\s*([^\n]+)/);
-          // Engine: "2.0L", "4 cyl.", "269HP" appear on consecutive lines — join them
-          const engineParts = [
-            matchText(/(\d+[.,]\d+[Ll])\b/),
-            matchText(/(\d+\s*cyl\.?)/i),
-            matchText(/(\d+\s*HP)/i),
-          ].filter((x): x is string => x !== undefined);
-          const engine = engineParts.length > 0 ? engineParts.join(' ') : undefined;
-
-          results.push({
-            link,
-            title,
-            vin,
-            lot,
-            odometer,
-            damage,
-            location,
-            currentBid,
-            buyNow,
-            engine,
-            keys,
-            condition,
-            auctionDate,
-            auctionSource: auctionSource ?? undefined,
-            seller,
-          });
-        });
-
-        return results;
-      }, CARD_WALK_DEPTH);
-
-      this.logger.log(`Found ${listings.length} listings on results page`);
-      return listings;
+      return this.extractListings(page);
     } finally {
       await page.close();
     }

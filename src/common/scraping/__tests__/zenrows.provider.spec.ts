@@ -119,3 +119,25 @@ describe('ZenRowsProvider', () => {
     );
   });
 });
+
+// Measured on bid.cars: without a settle time the body came back 254 KB with zero lot links;
+// with `wait=10000` it was 764 KB with 53. A site that fills results after load is otherwise
+// indistinguishable from an empty one.
+describe('ZenRowsProvider — settle time', () => {
+  const originalFetch = global.fetch;
+  afterEach(() => {
+    global.fetch = originalFetch;
+  });
+
+  it('passes renderWaitMs through as `wait`', async () => {
+    let seen = '';
+    global.fetch = jest.fn((url: string) => {
+      seen = url;
+      return Promise.resolve({ ok: true, status: 200, text: () => Promise.resolve('<html/>') });
+    }) as unknown as typeof fetch;
+
+    await providerWithKey('k').scrape('https://x', { asp: true, renderWaitMs: 10_000 });
+
+    expect(new URL(seen).searchParams.get('wait')).toBe('10000');
+  });
+});
