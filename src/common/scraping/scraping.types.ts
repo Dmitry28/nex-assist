@@ -47,6 +47,24 @@ export class ScrapingQuotaError extends Error {
   }
 }
 
+/**
+ * Thrown when a provider cannot serve this *class* of request at all on its current plan — as
+ * opposed to being out of quota or failing transiently. ScraperAPI's free tier answers 403 to
+ * every anti-bot request, so without this the chain spent ~20s per protected call queueing up a
+ * refusal it had already seen, on every feed of every run. The client remembers the refusal for
+ * the rest of the process instead of assuming a plan in code, so raising the plan simply starts
+ * working again on the next run.
+ */
+export class ScrapingCapabilityError extends Error {
+  constructor(
+    readonly provider: string,
+    message: string,
+  ) {
+    super(message);
+    this.name = 'ScrapingCapabilityError';
+  }
+}
+
 /** One managed-scraping backend. Implement this to add a provider to the chain. */
 export interface ScrapingProvider {
   /** Short identifier used in logs, e.g. "scrapfly". */

@@ -1,5 +1,6 @@
 import { ScrapingClient } from '../scraping-client.service';
 import {
+  ScrapingCapabilityError,
   ScrapingQuotaError,
   type ScrapeOptions,
   type ScrapeResult,
@@ -91,6 +92,55 @@ describe('ScrapingClient', () => {
   it('throws a clear error when nothing is configured at all', async () => {
     const client = new ScrapingClient([provider('a', 'unconfigured')]);
     await expect(client.scrape('https://x')).rejects.toThrow('No scraping provider is configured');
+  });
+
+  // ScraperAPI's free tier refuses every anti-bot request with a 403. The chain used to re-queue
+  // that refusal on every feed of every run, ~20s each, and log it as a failure worth reading.
+  describe('a plan that refuses anti-bot requests', () => {
+    const refusing = (name: string): ScrapingProvider & { calls: number } => ({
+      name,
+      calls: 0,
+      isConfigured: () => true,
+      scrape(_url: string, _opts: ScrapeOptions): Promise<ScrapeResult> {
+        (this as { calls: number }).calls++;
+        return Promise.reject(new ScrapingCapabilityError(name, `${name} cannot do that`));
+      },
+    });
+
+    it('stops asking it after the first refusal', async () => {
+      const refuser = refusing('refuser');
+      const spare = provider('spare', 'ok');
+      const client = new ScrapingClient([refuser, spare]);
+
+      expect((await client.scrape('https://a', { asp: true })).provider).toBe('spare');
+      expect((await client.scrape('https://b', { asp: true })).provider).toBe('spare');
+      expect(refuser.calls).toBe(1);
+    });
+
+    // The refusal is about the anti-bot tier, so ordinary requests must keep using the provider.
+    it('keeps using it for requests that are not anti-bot', async () => {
+      const refuser = refusing('refuser');
+      const client = new ScrapingClient([refuser, provider('spare', 'ok')]);
+
+      await client.scrape('https://a', { asp: true });
+      await client.scrape('https://b');
+      expect(refuser.calls).toBe(2);
+    });
+
+    // A memo must never be able to empty the chain: with nothing left it is ignored and the
+    // refusing provider is tried again, so a real error surfaces instead of "no providers".
+    it('ignores the memo when it would leave no provider to try', async () => {
+      const refuser = refusing('only');
+      const client = new ScrapingClient([refuser]);
+
+      await expect(client.scrape('https://a', { asp: true })).rejects.toThrow(
+        'only cannot do that',
+      );
+      await expect(client.scrape('https://b', { asp: true })).rejects.toThrow(
+        'only cannot do that',
+      );
+      expect(refuser.calls).toBe(2);
+    });
   });
 
   it('passes the caller options through to the provider', async () => {
