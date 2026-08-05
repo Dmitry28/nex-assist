@@ -6,7 +6,8 @@
  */
 
 /**
- * Minimum relative move (percent) in BOTH currencies for a change to count.
+ * Minimum relative move (percent) for a change to count — in BOTH currencies when the listing
+ * carries two, in the only comparable one otherwise.
  *
  * Sized against measured exchange-rate drift: between two daily runs the BYN/USD rate moves
  * well under 1 %, so a real edit of >= 2 % is never masked, and drift never reaches it.
@@ -23,6 +24,9 @@ export interface DualCurrencyPrice {
   priceByn?: number;
   priceUsd?: number;
 }
+
+/** Relative move between two positive prices, in percent (signed). */
+const movePercent = (prev: number, current: number): number => ((current - prev) / prev) * 100;
 
 /**
  * True when the seller actually changed the price, as opposed to the exchange rate moving.
@@ -44,32 +48,31 @@ export const hasPriceChanged = (prev: DualCurrencyPrice, current: DualCurrencyPr
   const currentByn = effectivePrice(current.priceByn);
   const currentUsd = effectivePrice(current.priceUsd);
 
-  if (
-    prevByn === undefined ||
-    prevUsd === undefined ||
-    currentByn === undefined ||
-    currentUsd === undefined
-  ) {
-    // Single-currency source (prometr quotes BYN only): there is no second figure to
-    // cross-check against, and no conversion to drift, so any move is the seller's.
-    const bynComparable = prevByn !== undefined && currentByn !== undefined;
-    const usdComparable = prevUsd !== undefined && currentUsd !== undefined;
-    if (bynComparable !== usdComparable) {
-      return bynComparable ? prevByn !== currentByn : prevUsd !== currentUsd;
-    }
-    // A price appearing or disappearing has no percentage to compare — fall back to the
-    // plain "both figures differ" test so "договорная" → priced is still reported.
-    return prevByn !== currentByn && prevUsd !== currentUsd;
+  const bynComparable = prevByn !== undefined && currentByn !== undefined;
+  const usdComparable = prevUsd !== undefined && currentUsd !== undefined;
+
+  if (bynComparable && usdComparable) {
+    const bynPercent = movePercent(prevByn, currentByn);
+    const usdPercent = movePercent(prevUsd, currentUsd);
+    const sameDirection = bynPercent > 0 === usdPercent > 0;
+
+    return (
+      sameDirection &&
+      Math.abs(bynPercent) >= MIN_PRICE_CHANGE_PERCENT &&
+      Math.abs(usdPercent) >= MIN_PRICE_CHANGE_PERCENT
+    );
   }
 
-  const bynPercent = ((currentByn - prevByn) / prevByn) * 100;
-  const usdPercent = ((currentUsd - prevUsd) / prevUsd) * 100;
+  // One comparable figure only (prometr quotes BYN, some kufar/realt ads quote a single
+  // currency): there is no second figure to cross-check, so the direction test is unavailable —
+  // but the magnitude floor still applies. The single figure is not drift-free: prometr's BYN
+  // price is a daily conversion of a base price the site never publishes, so it wobbled ~0.08 %
+  // between runs (521 591 → 522 004 BYN on the same untouched unit) and reported a price change
+  // every single day.
+  if (bynComparable) return Math.abs(movePercent(prevByn, currentByn)) >= MIN_PRICE_CHANGE_PERCENT;
+  if (usdComparable) return Math.abs(movePercent(prevUsd, currentUsd)) >= MIN_PRICE_CHANGE_PERCENT;
 
-  const sameDirection = bynPercent > 0 === usdPercent > 0;
-
-  return (
-    sameDirection &&
-    Math.abs(bynPercent) >= MIN_PRICE_CHANGE_PERCENT &&
-    Math.abs(usdPercent) >= MIN_PRICE_CHANGE_PERCENT
-  );
+  // Nothing comparable: a price appearing or disappearing has no percentage to compare — fall
+  // back to the plain "both figures differ" test so "договорная" → priced is still reported.
+  return prevByn !== currentByn && prevUsd !== currentUsd;
 };
