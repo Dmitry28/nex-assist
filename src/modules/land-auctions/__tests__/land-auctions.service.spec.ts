@@ -6,13 +6,17 @@ import { SnapshotService } from '../../../common/snapshot.service';
 import { LandAuctionsService } from '../land-auctions.service';
 import { isListing, isArchivePendingItem } from '../dto/listing.dto';
 import { GcnParserService } from '../gcn-parser.service';
+import { GrodnorikParserService } from '../grodnorik-parser.service';
 import { ListingNotifierService } from '../listing-notifier.service';
 import type { ArchivePendingItem, Listing } from '../dto/listing.dto';
+import { isGrodnorikNotice, type GrodnorikNotice } from '../dto/grodnorik-notice.dto';
 import { DATA_FILES } from '../constants';
 import {
   listingA,
   listingB,
   listingSpecial,
+  noticeA,
+  noticeB,
   pendingRecent,
   pendingExpired,
   salePricesB,
@@ -52,6 +56,18 @@ describe('isArchivePendingItem', () => {
     ));
 });
 
+describe('isGrodnorikNotice', () => {
+  it('returns true for a valid notice', () =>
+    expect(isGrodnorikNotice({ link: 'https://grodnorik.gov.by/a.pdf', title: 'Извещение' })).toBe(
+      true,
+    ));
+  it('returns false for null', () => expect(isGrodnorikNotice(null)).toBe(false));
+  it('returns false when title is missing', () =>
+    expect(isGrodnorikNotice({ link: 'https://grodnorik.gov.by/a.pdf' })).toBe(false));
+  it('returns false when link is not a string', () =>
+    expect(isGrodnorikNotice({ link: 42, title: 'Извещение' })).toBe(false));
+});
+
 // ---------------------------------------------------------------------------
 // LandAuctionsService — scrape orchestration
 // ---------------------------------------------------------------------------
@@ -60,6 +76,7 @@ describe('LandAuctionsService — scrape', () => {
   let module: TestingModule;
   let service: LandAuctionsService;
   let parser: jest.Mocked<GcnParserService>;
+  let grodnorikParser: jest.Mocked<GrodnorikParserService>;
   let snapshot: jest.Mocked<SnapshotService>;
   let notifier: jest.Mocked<ListingNotifierService>;
 
@@ -76,6 +93,8 @@ describe('LandAuctionsService — scrape', () => {
             getOrThrow: jest.fn().mockImplementation((key: string) => {
               if (key === 'landAuctions.scrapeCron') return '0 8 * * *';
               if (key === 'landAuctions.scrapeUrl') return 'https://gcn.by';
+              if (key === 'landAuctions.grodnorikUrl')
+                return 'https://grodnorik.gov.by/ru/auctions/';
               throw new Error(`Unexpected config key in test: ${key}`);
             }),
             // ListingNotifierService reads chatId via get() — return empty so it skips real sends
@@ -95,6 +114,10 @@ describe('LandAuctionsService — scrape', () => {
           useValue: { fetchListings: jest.fn(), findSalePrices: jest.fn() },
         },
         {
+          provide: GrodnorikParserService,
+          useValue: { fetchNotices: jest.fn().mockResolvedValue([]) },
+        },
+        {
           provide: SnapshotService,
           useValue: { read: jest.fn(), write: jest.fn().mockResolvedValue(undefined) },
         },
@@ -110,6 +133,7 @@ describe('LandAuctionsService — scrape', () => {
 
     service = module.get(LandAuctionsService);
     parser = module.get(GcnParserService);
+    grodnorikParser = module.get(GrodnorikParserService);
     snapshot = module.get(SnapshotService);
     notifier = module.get(ListingNotifierService);
   });
@@ -127,16 +151,27 @@ describe('LandAuctionsService — scrape', () => {
     previous?: Listing[];
     pending?: ArchivePendingItem[];
     salePrices?: Map<string, string>;
+    notices?: GrodnorikNotice[];
+    previousNotices?: GrodnorikNotice[];
   }): void {
-    const { current, previous = [], pending = [], salePrices = new Map() } = opts;
+    const {
+      current,
+      previous = [],
+      pending = [],
+      salePrices = new Map(),
+      notices = [],
+      previousNotices = [],
+    } = opts;
 
     parser.fetchListings.mockResolvedValue(current);
     (snapshot.read as jest.Mock).mockImplementation((filePath: string) => {
       if (filePath === DATA_FILES.all) return Promise.resolve(previous);
       if (filePath === DATA_FILES.archivePending) return Promise.resolve(pending);
+      if (filePath === DATA_FILES.grodnorik) return Promise.resolve(previousNotices);
       return Promise.resolve([]);
     });
     parser.findSalePrices.mockResolvedValue(salePrices);
+    grodnorikParser.fetchNotices.mockResolvedValue(notices);
   }
 
   /** Return the data array written for a specific snapshot file path. */
@@ -213,6 +248,62 @@ describe('LandAuctionsService — scrape', () => {
       const result = await service.run();
 
       expect(notifier.notifyRunResult).toHaveBeenCalledWith(result);
+    });
+  });
+
+  // -------------------------------------------------------------------------
+  // grodnorik.gov.by — second source
+  // -------------------------------------------------------------------------
+
+  describe('grodnorik notices', () => {
+    it('first run: every notice is new and flagged as baseline', async () => {
+      setupRun({ current: [listingA], notices: [noticeA, noticeB] });
+
+      const result = await service.run();
+
+      expect(result.grodnorikNotices).toEqual([noticeA, noticeB]);
+      expect(result.newGrodnorikNotices).toEqual([noticeA, noticeB]);
+      expect(result.isGrodnorikBaseline).toBe(true);
+    });
+
+    it('only notices missing from the snapshot are new', async () => {
+      setupRun({ current: [listingA], notices: [noticeA, noticeB], previousNotices: [noticeA] });
+
+      const result = await service.run();
+
+      expect(result.newGrodnorikNotices).toEqual([noticeB]);
+      expect(result.isGrodnorikBaseline).toBe(false);
+    });
+
+    it('a notice leaving the page is not reported and drops out of the snapshot', async () => {
+      setupRun({ current: [listingA], notices: [noticeA], previousNotices: [noticeA, noticeB] });
+
+      const result = await service.run();
+
+      expect(result.newGrodnorikNotices).toHaveLength(0);
+      expect(writtenFor(DATA_FILES.grodnorik)).toEqual([noticeA]);
+    });
+
+    it('0 notices (fetch failure) keeps the snapshot and reports nothing new', async () => {
+      setupRun({ current: [listingA], notices: [], previousNotices: [noticeA] });
+
+      const result = await service.run();
+
+      expect(result.newGrodnorikNotices).toHaveLength(0);
+      expect(result.isGrodnorikBaseline).toBe(false);
+      expect(result.grodnorikNotices).toEqual([noticeA]);
+      expect(writtenFor(DATA_FILES.grodnorik)).toBeUndefined();
+    });
+
+    it('seeding gcn.by does not suppress the grodnorik diff', async () => {
+      // gcn.by is on its first run (isBaseline) while grodnorik already has a snapshot
+      setupRun({ current: [listingA], notices: [noticeA, noticeB], previousNotices: [noticeA] });
+
+      const result = await service.run();
+
+      expect(result.isBaseline).toBe(true);
+      expect(result.isGrodnorikBaseline).toBe(false);
+      expect(result.newGrodnorikNotices).toEqual([noticeB]);
     });
   });
 

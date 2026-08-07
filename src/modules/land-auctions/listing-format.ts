@@ -1,6 +1,13 @@
 import type { Listing } from './dto/listing.dto';
+import type { GrodnorikNotice } from './dto/grodnorik-notice.dto';
+import { escapeHtml } from '../../common/utils/telegram';
 import { LOCALE, TIMEZONE } from '../../common/utils/locale';
-import { EMPTY_VALUES, MAX_AUCTION_DATE_LENGTH, SPECIAL_AREA_LABEL } from './constants';
+import {
+  EMPTY_VALUES,
+  GRODNORIK_SOURCE_LABEL,
+  MAX_AUCTION_DATE_LENGTH,
+  SPECIAL_AREA_LABEL,
+} from './constants';
 
 export const hasValue = (val: string | undefined): val is string => !!val && !EMPTY_VALUES.has(val);
 
@@ -15,6 +22,19 @@ export interface SummaryParams {
   isBaseline?: boolean;
   /** The monitored gcn.by search URL — surfaced as a link in the summary. */
   sourceUrl?: string;
+  /** Counts for the second source (grodnorik.gov.by). */
+  grodnorikCount: number;
+  newGrodnorikCount: number;
+  isGrodnorikBaseline?: boolean;
+  /** The monitored grodnorik.gov.by page — surfaced as a link in the summary. */
+  grodnorikUrl?: string;
+}
+
+export interface NoticeCaptionParams {
+  notice: GrodnorikNotice;
+  header: string;
+  index: number;
+  total: number;
 }
 
 export interface CaptionParams {
@@ -34,26 +54,65 @@ export const buildSummary = ({
   newSpecialCount,
   isBaseline,
   sourceUrl,
+  grodnorikCount,
+  newGrodnorikCount,
+  isGrodnorikBaseline,
+  grodnorikUrl,
 }: SummaryParams): string => {
-  const sourceLine = sourceUrl ? `<a href="${sourceUrl}">🔗 Источник (gcn.by)</a>` : undefined;
-  if (isBaseline) {
-    return [
-      `<b>📊 Сводка на ${date.toLocaleDateString(LOCALE, { timeZone: TIMEZONE })}</b>`,
-      `🏗 baseline · <b>${total}</b> объявлений сохранено`,
-      `🌿 В ${SPECIAL_AREA_LABEL}: <b>${specialCount}</b>`,
-      ...(sourceLine ? ['', sourceLine] : []),
-    ].join('\n');
-  }
+  const header = `<b>📊 Сводка на ${date.toLocaleDateString(LOCALE, { timeZone: TIMEZONE })}</b>`;
+
+  const gcnLines = isBaseline
+    ? [
+        `🏗 baseline · <b>${total}</b> объявлений сохранено`,
+        `🌿 В ${SPECIAL_AREA_LABEL}: <b>${specialCount}</b>`,
+      ]
+    : [
+        `📋 Всего объявлений: <b>${total}</b>`,
+        `🆕 Новые: <b>${newCount}</b>`,
+        `🗑 Удалённые: <b>${removedCount}</b>`,
+        `💰 Продано: <b>${soldCount}</b>`,
+        `🌿 Всего в ${SPECIAL_AREA_LABEL}: <b>${specialCount}</b>`,
+        `✅ Новые в ${SPECIAL_AREA_LABEL}: <b>${newSpecialCount}</b>`,
+      ];
+
+  const grodnorikLine = isGrodnorikBaseline
+    ? `🏛 ${GRODNORIK_SOURCE_LABEL}: 🏗 baseline · <b>${grodnorikCount}</b> извещений сохранено`
+    : `🏛 ${GRODNORIK_SOURCE_LABEL}: <b>${grodnorikCount}</b> · новых <b>${newGrodnorikCount}</b>`;
+
+  const sourceLines = [
+    sourceUrl ? `<a href="${sourceUrl}">🔗 Источник (gcn.by)</a>` : undefined,
+    grodnorikUrl ? `<a href="${grodnorikUrl}">🔗 Источник (grodnorik.gov.by)</a>` : undefined,
+  ].filter((line): line is string => !!line);
+
   return [
-    `<b>📊 Сводка на ${date.toLocaleDateString(LOCALE, { timeZone: TIMEZONE })}</b>`,
-    `📋 Всего объявлений: <b>${total}</b>`,
-    `🆕 Новые: <b>${newCount}</b>`,
-    `🗑 Удалённые: <b>${removedCount}</b>`,
-    `💰 Продано: <b>${soldCount}</b>`,
-    `🌿 Всего в ${SPECIAL_AREA_LABEL}: <b>${specialCount}</b>`,
-    `✅ Новые в ${SPECIAL_AREA_LABEL}: <b>${newSpecialCount}</b>`,
-    ...(sourceLine ? ['', sourceLine] : []),
+    header,
+    ...gcnLines,
+    '',
+    grodnorikLine,
+    ...(sourceLines.length ? ['', ...sourceLines] : []),
   ].join('\n');
+};
+
+/**
+ * Caption for one grodnorik.gov.by notice. Titles come from a freeform CMS editor, so they
+ * are HTML-escaped — an unescaped `&` or `<` makes Telegram reject the whole message.
+ */
+export const buildNoticeCaption = ({
+  notice,
+  header,
+  index,
+  total,
+}: NoticeCaptionParams): string => {
+  const lines: string[] = [
+    `<b>${header} · ${index}/${total}</b>`,
+    '',
+    `📄 <b>${escapeHtml(notice.title)}</b>`,
+  ];
+
+  if (notice.auctionDate) lines.push('', `🗓 ${notice.auctionDate}`);
+  lines.push('', `<a href="${notice.link}">🔗 Извещение</a>`);
+
+  return lines.join('\n');
 };
 
 export const getListingEmoji = (title: string | undefined): string => {

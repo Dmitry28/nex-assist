@@ -39,6 +39,7 @@ export const validationSchema = Joi.object({
 
   // Land auctions module
   SCRAPE_URL: Joi.string().uri().default(LAND_AUCTIONS_DEFAULTS.SCRAPE_URL),
+  GRODNORIK_URL: Joi.string().uri().default(LAND_AUCTIONS_DEFAULTS.GRODNORIK_URL),
   SCRAPE_CRON: Joi.string().default(LAND_AUCTIONS_DEFAULTS.SCRAPE_CRON),
   TELEGRAM_LAND_AUCTIONS_CHAT_ID: Joi.string().optional(),
 

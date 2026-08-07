@@ -13,6 +13,7 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from '../app.module';
 import { ListingNotifierService } from '../modules/land-auctions/listing-notifier.service';
 import type { LandAuctionsResult, Listing } from '../modules/land-auctions/dto/listing.dto';
+import type { GrodnorikNotice } from '../modules/land-auctions/dto/grodnorik-notice.dto';
 
 // Public-domain placeholder images (Wikimedia Commons) — realistic sizes, no external deps
 const SAMPLE_IMAGES = [
@@ -66,6 +67,20 @@ const MOCK_LISTINGS: Listing[] = [
   },
 ];
 
+const MOCK_NOTICES: GrodnorikNotice[] = [
+  {
+    link: 'https://grodnorik.gov.by/uploads/files/materialy/aukciony/2026/auktsion-Skidel-selo-7-08-2026.pdf',
+    title:
+      'Извещение о проведении 7 августа 2026 г. аукциона по продаже в частную собственность земельных участков, расположенных на территории Скидельского сельсовета',
+    auctionDate: '07.08.2026',
+  },
+  {
+    // No date in the title → the 🗓 line is omitted
+    link: 'https://grodnorik.gov.by/uploads/files/materialy/aukciony/2026/Izveschenie-o-provedenii-elektronnyx-torgov.pdf',
+    title: 'Извещение о проведении повторных электронных торгов',
+  },
+];
+
 const MOCK_RESULT: LandAuctionsResult = {
   total: 42,
   newListings: MOCK_LISTINGS.slice(0, 2),
@@ -74,6 +89,9 @@ const MOCK_RESULT: LandAuctionsResult = {
   specialListings: MOCK_LISTINGS.slice(0, 1),
   newSpecialListings: MOCK_LISTINGS.slice(0, 1),
   isBaseline: false,
+  grodnorikNotices: MOCK_NOTICES,
+  newGrodnorikNotices: MOCK_NOTICES,
+  isGrodnorikBaseline: false,
 };
 
 async function bootstrap(): Promise<void> {

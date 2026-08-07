@@ -1,6 +1,8 @@
 import type { Listing } from '../dto/listing.dto';
+import type { GrodnorikNotice } from '../dto/grodnorik-notice.dto';
 import {
   buildCaption,
+  buildNoticeCaption,
   buildSummary,
   formatAuctionDate,
   formatDeadline,
@@ -23,6 +25,15 @@ const summaryBase = {
   specialCount: 5,
   newSpecialCount: 2,
   sourceUrl: 'https://gcn.by/auction',
+  grodnorikCount: 12,
+  newGrodnorikCount: 1,
+  grodnorikUrl: 'https://grodnorik.gov.by/ru/auctions/',
+};
+
+const baseNotice: GrodnorikNotice = {
+  link: 'https://grodnorik.gov.by/uploads/files/materialy/aukciony/2026/auktsion.pdf',
+  title: 'Извещение о проведении 7 августа 2026 г. аукциона',
+  auctionDate: '07.08.2026',
 };
 
 describe('hasValue', () => {
@@ -89,6 +100,56 @@ describe('buildSummary', () => {
     expect(s).toContain('<b>24</b>');
     expect(s).not.toContain('🆕 Новые');
     expect(s).not.toContain('🗑 Удалённые');
+  });
+
+  it('includes grodnorik counts and source link', () => {
+    const s = buildSummary(summaryBase);
+    expect(s).toContain('🏛 Гродненский райисполком: <b>12</b> · новых <b>1</b>');
+    expect(s).toContain(
+      '<a href="https://grodnorik.gov.by/ru/auctions/">🔗 Источник (grodnorik.gov.by)</a>',
+    );
+  });
+
+  it('reports grodnorik baseline independently of the gcn.by section', () => {
+    const s = buildSummary({ ...summaryBase, isGrodnorikBaseline: true });
+    expect(s).toContain('🏛 Гродненский райисполком: 🏗 baseline · <b>12</b> извещений сохранено');
+    // gcn.by section is unaffected
+    expect(s).toContain('🆕 Новые: <b>3</b>');
+  });
+});
+
+describe('buildNoticeCaption', () => {
+  it('includes header, title, date and link', () => {
+    const c = buildNoticeCaption({
+      notice: baseNotice,
+      header: 'Новые извещения:',
+      index: 1,
+      total: 2,
+    });
+    expect(c).toContain('Новые извещения: · 1/2');
+    expect(c).toContain('Извещение о проведении 7 августа 2026 г. аукциона');
+    expect(c).toContain('🗓 07.08.2026');
+    expect(c).toContain(`<a href="${baseNotice.link}">🔗 Извещение</a>`);
+  });
+
+  it('omits the date line when the title carries no date', () => {
+    const c = buildNoticeCaption({
+      notice: { link: baseNotice.link, title: 'Извещение о проведении торгов' },
+      header: 'Новые извещения:',
+      index: 1,
+      total: 1,
+    });
+    expect(c).not.toContain('🗓');
+  });
+
+  it('escapes HTML in the scraped title', () => {
+    const c = buildNoticeCaption({
+      notice: { ...baseNotice, title: 'Дом <b>№5</b> & участок' },
+      header: 'Новые извещения:',
+      index: 1,
+      total: 1,
+    });
+    expect(c).toContain('Дом &lt;b&gt;№5&lt;/b&gt; &amp; участок');
   });
 });
 

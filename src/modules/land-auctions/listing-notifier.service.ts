@@ -8,8 +8,14 @@ import {
 } from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
 import type { LandAuctionsResult, Listing } from './dto/listing.dto';
+import type { GrodnorikNotice } from './dto/grodnorik-notice.dto';
 import { NOTIFICATION_HEADERS } from './constants';
-import { buildCaption, buildSummary, type CaptionParams } from './listing-format';
+import {
+  buildCaption,
+  buildNoticeCaption,
+  buildSummary,
+  type CaptionParams,
+} from './listing-format';
 
 /**
  * Sends land auction notifications via Telegram.
@@ -21,6 +27,7 @@ export class ListingNotifierService {
   private readonly logger = new Logger(ListingNotifierService.name);
   private readonly chatId: string;
   private readonly sourceUrl: string;
+  private readonly grodnorikUrl: string;
 
   constructor(
     private readonly telegram: TelegramService,
@@ -28,6 +35,7 @@ export class ListingNotifierService {
   ) {
     this.chatId = config.get<string>('landAuctions.chatId') ?? '';
     this.sourceUrl = config.get<string>('landAuctions.scrapeUrl') ?? '';
+    this.grodnorikUrl = config.get<string>('landAuctions.grodnorikUrl') ?? '';
   }
 
   /**
@@ -48,6 +56,9 @@ export class ListingNotifierService {
       specialListings,
       newSpecialListings,
       isBaseline,
+      grodnorikNotices,
+      newGrodnorikNotices,
+      isGrodnorikBaseline,
     } = result;
 
     const ok = await this.telegram.sendMessage(
@@ -62,25 +73,37 @@ export class ListingNotifierService {
         newSpecialCount: newSpecialListings.length,
         isBaseline,
         sourceUrl: this.sourceUrl,
+        grodnorikCount: grodnorikNotices.length,
+        newGrodnorikCount: newGrodnorikNotices.length,
+        isGrodnorikBaseline,
+        grodnorikUrl: this.grodnorikUrl,
       }),
     );
 
     if (!ok) throw new Error('Не удалось отправить сводку в Telegram');
 
     // Baseline: summary already mentions the seeded count — skip per-listing flood.
+    // Each source has its own baseline flag, so seeding one never mutes the other.
     if (isBaseline) {
       this.logger.log(
         `Baseline run — skipping per-listing messages (${newListings.length} listings)`,
       );
-      return;
+    } else {
+      if (newListings.length) await this.sendListings(newListings, NOTIFICATION_HEADERS.new);
+      if (removedListings.length)
+        await this.sendListings(removedListings, NOTIFICATION_HEADERS.removed);
+      if (soldListings.length) await this.sendListings(soldListings, NOTIFICATION_HEADERS.sold);
+      if (newSpecialListings.length)
+        await this.sendListings(newSpecialListings, NOTIFICATION_HEADERS.newSpecial);
     }
 
-    if (newListings.length) await this.sendListings(newListings, NOTIFICATION_HEADERS.new);
-    if (removedListings.length)
-      await this.sendListings(removedListings, NOTIFICATION_HEADERS.removed);
-    if (soldListings.length) await this.sendListings(soldListings, NOTIFICATION_HEADERS.sold);
-    if (newSpecialListings.length)
-      await this.sendListings(newSpecialListings, NOTIFICATION_HEADERS.newSpecial);
+    if (isGrodnorikBaseline) {
+      this.logger.log(
+        `Baseline run — skipping per-notice messages (${grodnorikNotices.length} notices)`,
+      );
+    } else if (newGrodnorikNotices.length) {
+      await this.sendNotices(newGrodnorikNotices, NOTIFICATION_HEADERS.newGrodnorik);
+    }
   }
 
   /** Send a critical error notification. */
@@ -110,6 +133,39 @@ export class ListingNotifierService {
       await this.telegram.sendMessage(
         this.chatId,
         `⚠️ Не удалось отправить ${failed.length} объект(а):\n${list}`,
+      );
+    }
+  }
+
+  /**
+   * Send grodnorik.gov.by notices as plain text — the source publishes PDF/DOC files only,
+   * so there is never a photo to attach.
+   */
+  private async sendNotices(notices: GrodnorikNotice[], header: string): Promise<void> {
+    const failed: GrodnorikNotice[] = [];
+
+    this.logger.log(`Sending ${notices.length} ${header}`);
+
+    for (const [i, notice] of notices.entries()) {
+      const caption = buildNoticeCaption({
+        notice,
+        header,
+        index: i + 1,
+        total: notices.length,
+      });
+      const ok = await this.telegram.sendMessage(
+        this.chatId,
+        truncateText(caption, TELEGRAM_MESSAGE_LIMIT),
+      );
+      if (!ok) failed.push(notice);
+    }
+
+    if (failed.length > 0) {
+      this.logger.warn(`${failed.length} notices failed to send`);
+      const list = failed.map(n => `• ${n.title}`).join('\n');
+      await this.telegram.sendMessage(
+        this.chatId,
+        `⚠️ Не удалось отправить ${failed.length} извещение(й):\n${list}`,
       );
     }
   }
