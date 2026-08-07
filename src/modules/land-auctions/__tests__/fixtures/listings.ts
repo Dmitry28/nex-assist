@@ -1,5 +1,6 @@
 import { ARCHIVE_PENDING_TTL_DAYS } from '../../constants';
 import type { ArchivePendingItem, Listing } from '../../dto/listing.dto';
+import type { GrodnorikNotice } from '../../dto/grodnorik-notice.dto';
 
 // ---------------------------------------------------------------------------
 // Base listings
@@ -31,6 +32,22 @@ export const listingSpecial: Listing = {
 export const listingBSold: Listing = {
   ...listingB,
   salePrice: '25 тыс. руб.',
+};
+
+// ---------------------------------------------------------------------------
+// grodnorik.gov.by notices
+// ---------------------------------------------------------------------------
+
+export const noticeA: GrodnorikNotice = {
+  link: 'https://grodnorik.gov.by/uploads/files/materialy/aukciony/2026/a.pdf',
+  title: 'Извещение о проведении 7 августа 2026 г. аукциона',
+  auctionDate: '07.08.2026',
+};
+
+export const noticeB: GrodnorikNotice = {
+  link: 'https://grodnorik.gov.by/uploads/files/materialy/aukciony/2026/b.pdf',
+  title: 'Извещение о проведении 28 июля 2026 г. аукциона',
+  auctionDate: '28.07.2026',
 };
 
 // ---------------------------------------------------------------------------

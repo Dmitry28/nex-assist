@@ -1,4 +1,5 @@
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
+import { GrodnorikNotice } from './grodnorik-notice.dto';
 
 /** A single land auction listing from gcn.by. */
 export class Listing {
@@ -65,4 +66,9 @@ export class LandAuctionsResult {
    * baseline and per-listing Telegram messages are skipped (avoids first-run flood).
    */
   @ApiProperty() isBaseline!: boolean;
+  /** All auction notices currently listed by Гродненский райисполком. */
+  @ApiProperty({ type: [GrodnorikNotice] }) grodnorikNotices!: GrodnorikNotice[];
+  @ApiProperty({ type: [GrodnorikNotice] }) newGrodnorikNotices!: GrodnorikNotice[];
+  /** Same baseline rule as {@link isBaseline}, tracked separately per source. */
+  @ApiProperty() isGrodnorikBaseline!: boolean;
 }

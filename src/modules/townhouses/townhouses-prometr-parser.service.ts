@@ -138,7 +138,8 @@ export const parseUnits = (html: string, complexName: string): TownhouseListing[
       title: [complexName, rooms ? `${rooms}-комн.` : null, area ? `${area} м²` : null]
         .filter(Boolean)
         .join(', '),
-      // prometr quotes the primary market in BYN only — there is no USD figure to cross-check.
+      // prometr quotes the primary market in BYN only — there is no USD figure to cross-check,
+      // and the BYN figure is recomputed daily from an unpublished base price, so it drifts.
       priceByn: parseMoney(money('ЦЕНА квартиры')),
       pricePerM2Byn: parseMoney(money('ЦЕНА ЗА М2')),
       area,

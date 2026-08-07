@@ -6,6 +6,12 @@
  */
 export const LAND_AUCTIONS_DEFAULTS = {
   SCRAPE_URL: 'https://gcn.by/zemelnye-uchastki/zemelnye-uchastki-v-sobstvennost/',
+  /**
+   * Second source — Гродненский райисполком publishes its auction notices as PDF/DOC files
+   * on a single page instead of per-lot pages, so it is scraped and diffed separately
+   * from gcn.by but reported into the same Telegram feed.
+   */
+  GRODNORIK_URL: 'https://grodnorik.gov.by/ru/auctions/',
   /** Default cron: every day at 08:00 UTC */
   SCRAPE_CRON: '0 8 * * *',
 } as const;

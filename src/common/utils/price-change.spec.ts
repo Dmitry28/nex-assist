@@ -112,8 +112,9 @@ describe('hasPriceChanged', () => {
 });
 
 describe('hasPriceChanged — single-currency sources', () => {
-  // prometr.by quotes BYN only; there is no conversion, so any move is the seller's.
-  it('reports a BYN-only price change of any size', () => {
+  // prometr.by quotes BYN only, but that figure is itself a daily conversion of an unpublished
+  // base price, so the magnitude floor applies here too.
+  it('reports a BYN-only cut above the threshold', () => {
     expect(hasPriceChanged({ priceByn: 522_937 }, { priceByn: 510_000 })).toBe(true);
   });
 
@@ -121,7 +122,16 @@ describe('hasPriceChanged — single-currency sources', () => {
     expect(hasPriceChanged({ priceByn: 522_937 }, { priceByn: 522_937 })).toBe(false);
   });
 
-  it('reports a USD-only price change', () => {
-    expect(hasPriceChanged({ priceUsd: 100_000 }, { priceUsd: 99_000 })).toBe(true);
+  // Observed daily on ЖК Белые Росы, 185.8 м²: +0.08 %, an untouched unit.
+  it('ignores BYN-only exchange-rate drift', () => {
+    expect(hasPriceChanged({ priceByn: 521_591 }, { priceByn: 522_004 })).toBe(false);
+  });
+
+  it('reports a USD-only cut above the threshold', () => {
+    expect(hasPriceChanged({ priceUsd: 100_000 }, { priceUsd: 95_000 })).toBe(true);
+  });
+
+  it('ignores a USD-only move below the threshold', () => {
+    expect(hasPriceChanged({ priceUsd: 100_000 }, { priceUsd: 99_000 })).toBe(false);
   });
 });
