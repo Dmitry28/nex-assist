@@ -30,6 +30,8 @@ export const DATA_FILES = {
   special: './data/land_auctions_special.json',
   /** Removed listings awaiting sale price confirmation from the archive. */
   archivePending: './data/land_auctions_archive_pending.json',
+  /** Auction notices published by Гродненский райисполком (second source). */
+  grodnorik: './data/land_auctions_grodnorik.json',
 } as const;
 
 /** Keyword to detect special listings (Заболоть area). */
@@ -47,7 +49,26 @@ export const NOTIFICATION_HEADERS = {
   removed: 'Удаленные:',
   newSpecial: 'Новые в Заболоть:',
   sold: 'Продано:',
+  newGrodnorik: 'Новые извещения (райисполком):',
 } as const;
+
+// ─── grodnorik.gov.by (second source) ────────────────────────────────────────
+
+/** Human-readable label for the grodnorik.gov.by source — used in summary and notifications. */
+export const GRODNORIK_SOURCE_LABEL = 'Гродненский райисполком';
+
+/**
+ * URL path marker of an auction notice file. Every notice on the page links to
+ * /uploads/files/materialy/aukciony/<year>/<file>.pdf — matching the path keeps the
+ * parser independent of the page's freeform WYSIWYG markup.
+ */
+export const GRODNORIK_NOTICE_PATH = '/materialy/aukciony/';
+
+/** HTTP request timeout for the grodnorik.gov.by page (ms). */
+export const GRODNORIK_FETCH_TIMEOUT_MS = 30_000;
+
+/** Max HTML response size — reject anything larger to avoid memory exhaustion (2 MB). */
+export const GRODNORIK_MAX_HTML_SIZE_BYTES = 2 * 1024 * 1024;
 
 /** Archive page URL for completed auctions. */
 export const ARCHIVE_URL = 'https://gcn.by/arhiv-aukczionov/';

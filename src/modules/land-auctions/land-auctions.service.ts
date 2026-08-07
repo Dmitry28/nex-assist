@@ -11,16 +11,22 @@ import { CronJob } from 'cron';
 import { SnapshotService } from '../../common/snapshot.service';
 import { isArchivePendingItem, isListing } from './dto/listing.dto';
 import type { ArchivePendingItem, LandAuctionsResult, Listing } from './dto/listing.dto';
+import { isGrodnorikNotice } from './dto/grodnorik-notice.dto';
+import type { GrodnorikNotice } from './dto/grodnorik-notice.dto';
 import { ARCHIVE_PENDING_TTL_DAYS, DATA_FILES, RUN_TIMEOUT_MS, SPECIAL_KEYWORD } from './constants';
 import { GcnParserService } from './gcn-parser.service';
+import { GrodnorikParserService } from './grodnorik-parser.service';
 import { ListingNotifierService } from './listing-notifier.service';
 
 /**
  * Business orchestration for the land auctions scrape cycle:
- *   1. Fetch current listings from gcn.by
- *   2. Diff against the previous snapshot → detect new / removed listings
+ *   1. Fetch current listings from gcn.by and auction notices from grodnorik.gov.by
+ *   2. Diff each source against its own previous snapshot → new / removed items
  *   3. Send Telegram notifications
  *   4. Persist updated snapshots to disk (only after successful notification)
+ *
+ * The two sources are diffed and persisted independently — they share nothing but the
+ * Telegram feed — so a change in one can never mark the other's items as new or removed.
  *
  * The cron schedule is read from config at runtime (SCRAPE_CRON env var),
  * which is why we use dynamic scheduling via SchedulerRegistry instead of
@@ -38,6 +44,7 @@ export class LandAuctionsService implements OnModuleInit, OnModuleDestroy {
     private readonly config: ConfigService,
     private readonly scheduler: SchedulerRegistry,
     private readonly parser: GcnParserService,
+    private readonly grodnorikParser: GrodnorikParserService,
     private readonly snapshot: SnapshotService,
     private readonly notifier: ListingNotifierService,
   ) {}
@@ -103,12 +110,16 @@ export class LandAuctionsService implements OnModuleInit, OnModuleDestroy {
 
   private async scrape(): Promise<LandAuctionsResult> {
     const url = this.config.getOrThrow<string>('landAuctions.scrapeUrl');
+    const grodnorikUrl = this.config.getOrThrow<string>('landAuctions.grodnorikUrl');
 
-    const [currentListings, previousListings, archivePending] = await Promise.all([
-      this.parser.fetchListings(url),
-      this.snapshot.read(DATA_FILES.all, isListing),
-      this.snapshot.read(DATA_FILES.archivePending, isArchivePendingItem),
-    ]);
+    const [currentListings, previousListings, archivePending, grodnorikNotices, previousGrodnorik] =
+      await Promise.all([
+        this.parser.fetchListings(url),
+        this.snapshot.read(DATA_FILES.all, isListing),
+        this.snapshot.read(DATA_FILES.archivePending, isArchivePendingItem),
+        this.grodnorikParser.fetchNotices(grodnorikUrl),
+        this.snapshot.read(DATA_FILES.grodnorik, isGrodnorikNotice),
+      ]);
 
     const isBaseline = previousListings.length === 0 && currentListings.length > 0;
 
@@ -159,6 +170,17 @@ export class LandAuctionsService implements OnModuleInit, OnModuleDestroy {
 
     const updatedPending = [...stillPending, ...newPending];
 
+    // grodnorik.gov.by — a flat page of notice files. Only additions are reported: a notice
+    // leaving the page means it moved to the site's archive, not that anything was sold.
+    // An empty result means the fetch failed or the layout changed — keep the old snapshot,
+    // otherwise the next successful run would re-announce every notice.
+    const grodnorikOk = grodnorikNotices.length > 0;
+    const newGrodnorikNotices: GrodnorikNotice[] = grodnorikOk
+      ? grodnorikNotices.filter(n => !previousGrodnorik.some(prev => prev.link === n.link))
+      : [];
+    const isGrodnorikBaseline = grodnorikOk && previousGrodnorik.length === 0;
+    if (!grodnorikOk) this.logger.warn('grodnorik.gov.by returned 0 notices — keeping snapshot');
+
     const result: LandAuctionsResult = {
       total: currentListings.length,
       newListings,
@@ -167,12 +189,16 @@ export class LandAuctionsService implements OnModuleInit, OnModuleDestroy {
       specialListings,
       newSpecialListings,
       isBaseline,
+      grodnorikNotices: grodnorikOk ? grodnorikNotices : previousGrodnorik,
+      newGrodnorikNotices,
+      isGrodnorikBaseline,
     };
 
     this.logger.log(
       `Done — total: ${result.total}, new: ${newListings.length}, ` +
         `removed: ${enrichedRemoved.length}, sold: ${soldListings.length}, ` +
-        `special: ${specialListings.length}, pending: ${updatedPending.length}`,
+        `special: ${specialListings.length}, pending: ${updatedPending.length}, ` +
+        `grodnorik: ${result.grodnorikNotices.length} (new: ${newGrodnorikNotices.length})`,
     );
 
     // Notify first — if Telegram is down the snapshot must NOT be updated, so items remain
@@ -185,6 +211,7 @@ export class LandAuctionsService implements OnModuleInit, OnModuleDestroy {
       this.snapshot.write(DATA_FILES.removed, enrichedRemoved),
       this.snapshot.write(DATA_FILES.special, specialListings),
       this.snapshot.write(DATA_FILES.archivePending, updatedPending),
+      ...(grodnorikOk ? [this.snapshot.write(DATA_FILES.grodnorik, grodnorikNotices)] : []),
     ]);
     this.logger.log('Snapshots saved');
 

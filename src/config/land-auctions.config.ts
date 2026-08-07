@@ -8,6 +8,7 @@ import { LAND_AUCTIONS_DEFAULTS } from './constants';
  */
 export default registerAs('landAuctions', () => ({
   scrapeUrl: process.env.SCRAPE_URL ?? LAND_AUCTIONS_DEFAULTS.SCRAPE_URL,
+  grodnorikUrl: process.env.GRODNORIK_URL ?? LAND_AUCTIONS_DEFAULTS.GRODNORIK_URL,
   scrapeCron: process.env.SCRAPE_CRON ?? LAND_AUCTIONS_DEFAULTS.SCRAPE_CRON,
   chatId: process.env.TELEGRAM_LAND_AUCTIONS_CHAT_ID,
 }));

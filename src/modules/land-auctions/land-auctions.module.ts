@@ -5,11 +5,17 @@ import { TelegramModule } from '../telegram/telegram.module';
 import { LandAuctionsController } from './land-auctions.controller';
 import { LandAuctionsService } from './land-auctions.service';
 import { GcnParserService } from './gcn-parser.service';
+import { GrodnorikParserService } from './grodnorik-parser.service';
 import { ListingNotifierService } from './listing-notifier.service';
 
 @Module({
   imports: [ConfigModule.forFeature(landAuctionsConfig), TelegramModule],
   controllers: [LandAuctionsController],
-  providers: [LandAuctionsService, GcnParserService, ListingNotifierService],
+  providers: [
+    LandAuctionsService,
+    GcnParserService,
+    GrodnorikParserService,
+    ListingNotifierService,
+  ],
 })
 export class LandAuctionsModule {}
