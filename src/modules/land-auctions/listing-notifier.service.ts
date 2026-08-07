@@ -2,6 +2,7 @@ import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import type { InputMediaPhoto } from 'node-telegram-bot-api';
 import {
+  escapeHtml,
   TELEGRAM_MEDIA_GROUP_LIMIT,
   TELEGRAM_MESSAGE_LIMIT,
   truncateText,
@@ -162,7 +163,9 @@ export class ListingNotifierService {
 
     if (failed.length > 0) {
       this.logger.warn(`${failed.length} notices failed to send`);
-      const list = failed.map(n => `• ${n.title}`).join('\n');
+      // Escaped for the same reason as the caption: an unescaped `&` here would make Telegram
+      // reject the very message that reports what was lost.
+      const list = failed.map(n => `• ${escapeHtml(n.title)}`).join('\n');
       await this.telegram.sendMessage(
         this.chatId,
         `⚠️ Не удалось отправить ${failed.length} извещение(й):\n${list}`,
