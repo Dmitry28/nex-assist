@@ -44,7 +44,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fe3aaa67-820b-4056-a5c1-3f46eb49bd38.jpg"
     ],
     "firstSeenAt": "2026-08-04T15:43:12.972Z",
-    "lastSeenAt": "2026-08-07T08:12:01.286Z"
+    "lastSeenAt": "2026-08-09T07:49:11.273Z"
   },
   {
     "adId": 1080055437,
@@ -66,11 +66,41 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6955c32d-7000-42ef-928f-f079c87e0a4f.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/b9b7b947-9fdb-4a92-9343-0e6609c65cfd.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4ac31cae-cb48-4dcd-bff1-91c0b81a1a82.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d5eeb003-3482-4b84-853b-6d7b9025530a.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6d0c1b3d-4524-4717-8e20-f836de6f2a5f.jpg",
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/94ad7ef2-0aba-4595-bc25-e34c975a5cdc.jpg"
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/94ad7ef2-0aba-4595-bc25-e34c975a5cdc.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/2c61ae53-fdae-466a-845d-6a186f98f5a9.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/172ccaff-373c-4c0e-a2e2-3115392fe7c9.jpg"
     ],
     "firstSeenAt": "2026-08-07T08:12:01.286Z",
-    "lastSeenAt": "2026-08-07T08:12:01.286Z"
+    "lastSeenAt": "2026-08-09T07:49:11.273Z"
+  },
+  {
+    "adId": 1080272360,
+    "link": "https://re.kufar.by/vi/1080272360",
+    "title": "Квартира в новостройке на длитильный срок",
+    "priceByn": 1100,
+    "priceUsd": 374,
+    "address": "Виктора Саяпина ул, 8, Гродно, Гродненская область",
+    "rooms": 1,
+    "area": 42,
+    "floor": 10,
+    "totalFloors": 16,
+    "repair": "Евро",
+    "prepayment": "2 месяца",
+    "listTime": "2026-08-08T15:43:29Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/739cd781-f9d8-458a-b9ff-1eb5336aec0f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/63d1692d-8c5a-47dd-ac46-ffd3c5e8b08f.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d3057825-2bb0-4b18-bb2f-14725c0bc06a.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/e5a88bee-416a-4c79-a15e-b9113acb43e1.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/262e714f-3876-48ce-ac16-b24a2a9be742.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/342a8b30-28e7-4675-8a16-a5f25f93bb33.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/3687d919-ea33-4ef7-b876-fd7b98ea2045.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/34f0cf2d-a2ba-44b7-a7d4-fac580d5e846.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0d272654-477b-4ef5-99b5-84c2200c26f7.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/04464366-1594-463f-94ac-396a000c8107.jpg"
+    ],
+    "firstSeenAt": "2026-08-09T07:49:11.273Z",
+    "lastSeenAt": "2026-08-09T07:49:11.273Z"
   }
 ]
