@@ -49,7 +49,7 @@
       "https://cdn.realt.by/img/55/652a3640-8757-11f1-af1a-0242ac120002"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.773Z",
-    "lastSeenAt": "2026-08-14T08:13:12.727Z"
+    "lastSeenAt": "2026-08-15T07:28:54.515Z"
   },
   {
     "adId": 4143824,
@@ -90,7 +90,7 @@
       "https://cdn.realt.by/img/55/427a2402-600b-11f1-9d17-0242ac120003"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.773Z",
-    "lastSeenAt": "2026-08-14T08:13:12.727Z"
+    "lastSeenAt": "2026-08-15T07:28:54.515Z"
   },
   {
     "adId": 4143704,
@@ -129,7 +129,7 @@
       "https://cdn.realt.by/img/55/bf20efd2-6000-11f1-999b-0242ac120003"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.773Z",
-    "lastSeenAt": "2026-08-14T08:13:12.727Z"
+    "lastSeenAt": "2026-08-15T07:28:54.515Z"
   },
   {
     "adId": 3736313,
@@ -147,7 +147,7 @@
       "https://cdn.realt.by/img/55/c9f3f488-3183-11f0-a25d-0242ac120002"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.773Z",
-    "lastSeenAt": "2026-08-14T08:13:12.727Z"
+    "lastSeenAt": "2026-08-15T07:28:54.515Z"
   },
   {
     "adId": 3731065,
@@ -187,7 +187,7 @@
       "https://cdn.realt.by/img/55/0d2c7f96-2e8b-11f0-a5db-0242ac120002"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.773Z",
-    "lastSeenAt": "2026-08-14T08:13:12.727Z"
+    "lastSeenAt": "2026-08-15T07:28:54.515Z"
   },
   {
     "adId": 3412490,
@@ -224,7 +224,7 @@
       "https://cdn.realt.by/img/55/8c79fdba-b7bb-11ef-a8bf-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.773Z",
-    "lastSeenAt": "2026-08-14T08:13:12.727Z"
+    "lastSeenAt": "2026-08-15T07:28:54.515Z"
   },
   {
     "adId": 3081535,
@@ -252,6 +252,39 @@
       "https://static.realt.by/thumb/c/430x374/4dca2d4e16bcdae15f8576f416699bb5/64/v/site3xfchv64/5b34d76ffc.jpg"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.773Z",
-    "lastSeenAt": "2026-08-14T08:13:12.727Z"
+    "lastSeenAt": "2026-08-15T07:28:54.515Z"
+  },
+  {
+    "adId": 4207136,
+    "uuid": "209f5af0-97e7-11f1-aaf2-3b3f3469305e",
+    "link": "https://realt.by/sale-dachi/object/4207136/",
+    "title": "дача СТ Турист",
+    "description": "Добро пожаловать в чудесное место на разливе Немана в окружении леса! Продается дача в живописном месте в садовом товариществе Турист. Площадь земельного участка – 6 соток. Гармонично и разумно распределено пространство. На территории размещены садовый домик, беседка, хозяйственные постройки.",
+    "priceByn": 51000,
+    "priceUsd": 17131,
+    "address": "Турист",
+    "area": 43,
+    "plotArea": 6,
+    "yearBuilt": 1970,
+    "seller": "Людмила",
+    "listTime": "2026-08-14T20:00:22+03:00",
+    "images": [
+      "https://cdn.realt.by/img/55/d9ee2c44-97e6-11f1-9454-b255eba31035",
+      "https://cdn.realt.by/img/55/d9f87aaa-97e6-11f1-98f6-b255eba31035",
+      "https://cdn.realt.by/img/55/da40c99a-97e6-11f1-a035-b255eba31035",
+      "https://cdn.realt.by/img/55/d87b0bc0-97e6-11f1-80c4-b255eba31035",
+      "https://cdn.realt.by/img/55/d8b8ae30-97e6-11f1-9f2d-b255eba31035",
+      "https://cdn.realt.by/img/55/d7c661fc-97e6-11f1-97a5-b255eba31035",
+      "https://cdn.realt.by/img/55/d8a9d27a-97e6-11f1-9f1f-b255eba31035",
+      "https://cdn.realt.by/img/55/d963e6ce-97e6-11f1-bc2e-b255eba31035",
+      "https://cdn.realt.by/img/55/d7456ec6-97e6-11f1-a1ed-b255eba31035",
+      "https://cdn.realt.by/img/55/d56a84ba-97e6-11f1-b18a-b255eba31035",
+      "https://cdn.realt.by/img/55/d5975e5e-97e6-11f1-9e09-b255eba31035",
+      "https://cdn.realt.by/img/55/d6cec956-97e6-11f1-a14f-b255eba31035",
+      "https://cdn.realt.by/img/55/cdf2cd00-97e6-11f1-a1c2-b255eba31035",
+      "https://cdn.realt.by/img/55/ce40ebc0-97e6-11f1-a95d-b255eba31035"
+    ],
+    "firstSeenAt": "2026-08-15T07:28:54.515Z",
+    "lastSeenAt": "2026-08-15T07:28:54.515Z"
   }
 ]
