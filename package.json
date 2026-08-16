@@ -104,6 +104,7 @@
       "^.+\\.(t|j)s$": "ts-jest"
     },
     "moduleNameMapper": {
+      "^puppeteer$": "rebrowser-puppeteer",
       "@common/(.*)": "<rootDir>/common/$1",
       "@config/(.*)": "<rootDir>/config/$1",
       "@modules/(.*)": "<rootDir>/modules/$1"
