@@ -15,7 +15,22 @@ interface TildaStoreProduct {
 /** Shape of the Tilda store list API response. */
 interface TildaStoreResponse {
   products?: TildaStoreProduct[];
+  /**
+   * Root zone the account has moved to, e.g. "biz". Tilda answers this instead of the products
+   * when the endpoint is called on the wrong zone, and its own catalog script retries against
+   * the same host with the TLD swapped. Ours did not, so from ~4 Aug 2026 the module parsed a
+   * products-less body as an empty catalog and reported "0 listings" every run — indistinguishable
+   * from a sold-out complex.
+   */
+  redirectto?: string;
 }
+
+/** Swap the host's root zone: store.tildaapi.com + "biz" → store.tildaapi.biz. */
+const withRootZone = (url: string, zone: string): string => {
+  const parsed = new URL(url);
+  parsed.hostname = `${parsed.hostname.split('.').slice(0, -1).join('.')}.${zone}`;
+  return parsed.toString();
+};
 
 /**
  * Raw edition object embedded in each /tproduct/{uid}-{slug} HTML page.
@@ -87,7 +102,8 @@ export class PogoranyParserService {
     return listings;
   }
 
-  private async fetchProductList(apiUrl: string): Promise<TildaStoreProduct[]> {
+  /** One `redirectto` hop is all Tilda's own script takes, and a second would mean a loop. */
+  private async fetchProductList(apiUrl: string, followed = false): Promise<TildaStoreProduct[]> {
     const body = await this.fetchText(apiUrl, 'https://pogorany.by/');
     if (!body) return [];
 
@@ -97,6 +113,12 @@ export class PogoranyParserService {
     } catch (err) {
       this.logger.error('Failed to parse Tilda store API JSON', err);
       return [];
+    }
+
+    if (parsed.redirectto && !followed) {
+      const moved = withRootZone(apiUrl, parsed.redirectto);
+      this.logger.log(`Tilda store moved to the "${parsed.redirectto}" zone — retrying ${moved}`);
+      return this.fetchProductList(moved, true);
     }
 
     return (parsed.products ?? []).filter(
