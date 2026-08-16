@@ -1870,5 +1870,23 @@
     "seller": "Non-insurance Company",
     "removedAt": "2026-08-15T07:21:33.798Z",
     "removalNotifiedAt": "2026-08-15T07:21:33.798Z"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/0-45086786/2024-Volkswagen-Atlas-1V2AE2CA9RC210211",
+    "title": "2024 Volkswagen Atlas, Cross Sport 2...",
+    "vin": "1V2AE2CA9RC210211",
+    "lot": "0-45086786",
+    "odometer": "51k мили (82k km)",
+    "damage": "Столкноевение | Левая часть",
+    "location": "St. Louis (IL)",
+    "currentBid": "$0",
+    "engine": "2.0L 4 cyl. 269HP",
+    "keys": "Salvage (Illinois)",
+    "condition": "На ходу",
+    "auctionDate": "вт 18 авг., 16:30 GMT+2",
+    "auctionSource": "IAAI",
+    "seller": "Progressive Casualty Insurance",
+    "removedAt": "2026-08-16T07:22:33.716Z",
+    "removalNotifiedAt": "2026-08-16T07:22:33.716Z"
   }
 ]
