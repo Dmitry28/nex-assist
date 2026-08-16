@@ -9,13 +9,19 @@ import type { JobVacancy } from './dto/job-vacancy.dto';
 
 /**
  * Vacancy card title anchor on the gsz.gov.by search results page:
- *   <a href="/registration/employer/vacancy/{id}/detail-public/" title="..." class="debounced-link">TITLE</a>
+ *   <a href="/registration/employer/vacancy/{id}/detail-public/?source=search" title="…">TITLE</a>
  *
- * The card's "Контакты" button links to the same path with a `#contact-info-anchor`
- * fragment — requiring `/"` right after `detail-public/` excludes it.
+ * Two things about `{id}` and the query string, both learned the hard way. The site moved from
+ * numeric ids to UUIDs and started appending `?source=search`, and this pattern demanded digits
+ * followed immediately by `"` — so from ~12 Aug 2026 it matched nothing, the parser reported
+ * "0 cards" and the source counted as down every single run. Ids are matched loosely and the
+ * query is optional, so neither change can silence the source again.
+ *
+ * The card's "Контакты" button links to the same path with a `#contact-info-anchor` fragment;
+ * the query class stops at `#`, which still excludes it.
  */
 const CARD_ANCHOR_RE =
-  /<a\s+href="\/registration\/employer\/vacancy\/(\d+)\/detail-public\/"[^>]*>([\s\S]*?)<\/a>/gi;
+  /<a\s+href="\/registration\/employer\/vacancy\/([\w-]+)\/detail-public\/(?:\?[^"#]*)?"[^>]*>([\s\S]*?)<\/a>/gi;
 
 /** Salary line inside a card, e.g. " 1 400 –\n      1 500 руб." */
 const SALARY_RE = /<span\s+class="salary">([\s\S]*?)<\/span>/i;

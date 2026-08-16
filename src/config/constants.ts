@@ -161,8 +161,14 @@ export const GHB_DEFAULTS = {
 } as const;
 
 export const POGORANY_DEFAULTS = {
-  /** Tilda store API — returns the full product list for the ЖК Погораны catalog. */
-  STORE_API_URL: 'https://store.tildacdn.com/api/getproductslist/?storepartuid=856309636292',
+  /**
+   * Tilda store API — returns the full product list for the ЖК Погораны catalog.
+   *
+   * The host is `store.tildaapi.com`, which is what Tilda's own catalog script calls. It answers
+   * `{"redirectto":"<zone>"}` when the account has been moved to another root zone (ours is on
+   * `.biz` since ~4 Aug 2026), and the parser follows that hint the same way the script does.
+   */
+  STORE_API_URL: 'https://store.tildaapi.com/api/getproductslist/?storepartuid=856309636292',
   /** Default cron: every day at 09:00 UTC (12:00 Minsk). Cron is wired off — trigger via POST. */
   SCRAPE_CRON: '0 9 * * *',
 } as const;
