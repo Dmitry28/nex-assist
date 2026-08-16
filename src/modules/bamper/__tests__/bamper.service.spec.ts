@@ -1,5 +1,6 @@
 import type { ConfigService } from '@nestjs/config';
 import type { SnapshotService } from '../../../common/snapshot.service';
+import type { SourceHealthService } from '../../../common/source-health.service';
 import type { BamperFeedConfig } from '../../../config/bamper.config';
 import type { BamperNotifierService } from '../bamper-notifier.service';
 import type { BamperParserService } from '../bamper-parser.service';
@@ -66,8 +67,13 @@ const harness = (feeds: BamperFeedConfig[], failing: Set<string>): Harness => {
     },
   } as unknown as BamperNotifierService;
 
+  // Health tracking is exercised in its own spec; here it must simply never speak up.
+  const health = {
+    record: () => Promise.resolve({ alert: null, zeroRuns: 0 }),
+  } as unknown as SourceHealthService;
+
   return {
-    service: new BamperService(config, parser, snapshot, notifier),
+    service: new BamperService(config, parser, snapshot, notifier, health),
     written,
     notified,
     errors,

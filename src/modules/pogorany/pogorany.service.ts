@@ -1,5 +1,6 @@
 import { ConflictException, Injectable, Logger } from '@nestjs/common';
 import { SnapshotService } from '../../common/snapshot.service';
+import { SourceHealthService } from '../../common/source-health.service';
 import { DATA_FILE, RUN_TIMEOUT_MS } from './constants';
 import {
   isPogoranySnapshotEntry,
@@ -49,6 +50,7 @@ export class PogoranyService {
     private readonly parser: PogoranyParserService,
     private readonly snapshot: SnapshotService,
     private readonly notifier: PogoranyNotifierService,
+    private readonly health: SourceHealthService,
   ) {}
 
   async run(): Promise<PogoranyResult> {
@@ -82,6 +84,11 @@ export class PogoranyService {
       this.parser.fetch(),
       this.snapshot.read(DATA_FILE, isPogoranySnapshotEntry),
     ]);
+
+    // The empty parse is also the moment worth counting: a source that had data yesterday and
+    // none today is either a dead parser or a sold-out complex, and only the streak tells them
+    // apart. This one reported "0 listings" for twelve days after Tilda moved root zone.
+    await this.reportHealth(currentListings.length, previousEntries.length > 0);
 
     if (currentListings.length === 0) {
       // Defensive: never wipe a non-empty snapshot if the parser yields nothing.
@@ -204,5 +211,10 @@ export class PogoranyService {
 
     await this.snapshot.write(DATA_FILE, [...updatedMap.values()]);
     this.logger.log(`Snapshot saved (${updatedMap.size} entries)`);
+  }
+  /** Tells the channel when this source has been empty long enough to be a bug, and when it recovers. */
+  private async reportHealth(count: number, hadData: boolean): Promise<void> {
+    const { alert } = await this.health.record('pogorany', count, hadData);
+    if (alert) await this.notifier.notifyError(alert);
   }
 }
