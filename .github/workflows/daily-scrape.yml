@@ -49,8 +49,14 @@ jobs:
           npx puppeteer browsers install chrome
           # Export the installed Chrome path so rebrowser-puppeteer uses it instead of
           # its bundled version (rebrowser-puppeteer@24.8.1 bundles a different Chrome
-          # version than puppeteer@24.x, so we point it at the already-downloaded binary).
-          echo "PUPPETEER_EXECUTABLE_PATH=$(node -p "require('puppeteer').executablePath()")" >> $GITHUB_ENV
+          # version than puppeteer@25.x, so we point it at the already-downloaded binary).
+          #
+          # `node -p` is not safe here: puppeteer 25 made executablePath() return a Promise, so
+          # it printed a two-line `Promise { '/path' }` dump and $GITHUB_ENV rejected the
+          # multi-line value, failing the whole run before a single site was scraped. Awaiting
+          # the value and writing it raw works whether the function returns a string or a
+          # promise, so the next major cannot break the run this way again.
+          echo "PUPPETEER_EXECUTABLE_PATH=$(node -e "Promise.resolve(require('puppeteer').executablePath()).then(p => process.stdout.write(p))")" >> $GITHUB_ENV
 
       - name: Send all mosty-jobs vacancies (one-off)
         if: inputs.send_all_mosty_jobs
