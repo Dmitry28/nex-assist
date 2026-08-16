@@ -54,6 +54,7 @@ export const validationSchema = Joi.object({
   SCRAPER_API_KEY: Joi.string().optional().allow(''),
   SCRAPINGANT_API_KEY: Joi.string().optional().allow(''),
   ZENROWS_API_KEY: Joi.string().optional().allow(''),
+  SCRAPE_DO_API_KEY: Joi.string().optional().allow(''),
   AV_BY_ATLAS_URL: Joi.string().uri().default(AV_BY_DEFAULTS.ATLAS_URL),
   AV_BY_ATLAS_CROSS_SPORT_URL: Joi.string().uri().default(AV_BY_DEFAULTS.ATLAS_CROSS_SPORT_URL),
   AV_BY_MIN_RUN_INTERVAL_HOURS: Joi.number().default(AV_BY_DEFAULTS.MIN_RUN_INTERVAL_HOURS),

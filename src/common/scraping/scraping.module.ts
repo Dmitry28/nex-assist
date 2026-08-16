@@ -1,4 +1,5 @@
 import { Module } from '@nestjs/common';
+import { ScrapeDoProvider } from './scrape-do.provider';
 import { ScraperApiProvider } from './scraper-api.provider';
 import { ScrapingAntProvider } from './scrapingant.provider';
 import { ZenRowsProvider } from './zenrows.provider';
@@ -31,6 +32,14 @@ import { SCRAPING_PROVIDERS, type ScrapingProvider } from './scraping.types';
 // ~22s to fail on a protected page, and ahead of ScrapFly because ScrapFly's measured 40
 // credits per call allow only ~25 a month.
 //
+// Scrape.do comes third, and it exists because the chain had quietly narrowed to one working
+// link. Measured live against bamper.by: `super=true` (residential) with `geoCode=by` returns the
+// real page and the response header put the cost at 10 credits, so its 1000-a-month free tier —
+// renewed monthly, unlike ScrapFly's one-time grant — is ~100 protected calls. Without `super`
+// the same URL is a 502, so Cloudflare needs residential here just as it does on ZenRows. That
+// puts it behind ZenRows, whose 5000 credits at the same 10 per page are five times the runway,
+// and ahead of ScrapingAnt, which takes ~22s to fail on anything protected.
+//
 // ScrapingAnt still earns its slot for unprotected sites, where it is the largest allowance.
 //
 // Ordering cheap-first is safe because the chain falls through: a provider that cannot serve a
@@ -51,6 +60,7 @@ import { SCRAPING_PROVIDERS, type ScrapingProvider } from './scraping.types';
     ScrapflyProvider,
     ScraperApiProvider,
     ZenRowsProvider,
+    ScrapeDoProvider,
     ScrapingAntProvider,
     {
       provide: SCRAPING_PROVIDERS,
@@ -58,10 +68,17 @@ import { SCRAPING_PROVIDERS, type ScrapingProvider } from './scraping.types';
       useFactory: (
         scraperapi: ScraperApiProvider,
         zenrows: ZenRowsProvider,
+        scrapedo: ScrapeDoProvider,
         scrapingant: ScrapingAntProvider,
         scrapfly: ScrapflyProvider,
-      ): ScrapingProvider[] => [scraperapi, zenrows, scrapingant, scrapfly],
-      inject: [ScraperApiProvider, ZenRowsProvider, ScrapingAntProvider, ScrapflyProvider],
+      ): ScrapingProvider[] => [scraperapi, zenrows, scrapedo, scrapingant, scrapfly],
+      inject: [
+        ScraperApiProvider,
+        ZenRowsProvider,
+        ScrapeDoProvider,
+        ScrapingAntProvider,
+        ScrapflyProvider,
+      ],
     },
     ScrapingClient,
     EscalatingHtmlFetcher,
