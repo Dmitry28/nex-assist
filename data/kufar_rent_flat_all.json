@@ -109,7 +109,7 @@
     "adId": 1048788437,
     "link": "https://travel.kufar.by/hotel/1048788437",
     "title": "Уютная 1-комн.квартира с красивыми закатами в новом доме",
-    "pricePerNightByn": 130,
+    "pricePerNightByn": 100,
     "address": "Виктора Саяпина ул, 8, Гродно, Гродненская область",
     "rooms": 1,
     "area": 9,
@@ -119,7 +119,7 @@
     "isSuperhost": false,
     "rating": 1,
     "ratingScoresCount": 20,
-    "listTime": "2026-07-12T10:11:18Z",
+    "listTime": "2026-08-16T14:05:14Z",
     "images": [
       "https://rms.kufar.by/v1/gallery/adim1/a1ba9958-2941-4af2-b986-dd8375b65187.jpg",
       "https://rms.kufar.by/v1/gallery/adim1/4e8b50c9-f3b2-4df2-9d2b-7683a0fa4773.jpg",
@@ -143,7 +143,7 @@
       "https://rms.kufar.by/v1/gallery/adim1/8a312cf1-04da-4b6f-9736-e890d184f91f.jpg"
     ],
     "firstSeenAt": "2026-05-24T09:20:56.505Z",
-    "lastSeenAt": "2026-08-16T07:26:03.705Z"
+    "lastSeenAt": "2026-08-16T20:04:59.559Z"
   },
   {
     "adId": 1015254848,
