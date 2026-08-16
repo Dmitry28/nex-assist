@@ -1,5 +1,6 @@
 import type { CarListing, RemovedCarListing } from '../dto/car-listing.dto';
 import { buildCaption, buildSummary, hasValue } from '../bid-cars-format';
+import { isChallengePage } from '../bid-cars-parser.service';
 
 const baseListing: CarListing = {
   link: 'https://bid.cars/ru/lot/12345/vw-atlas-2024',
@@ -96,5 +97,21 @@ describe('buildCaption', () => {
     expect(c).not.toContain('💥');
     expect(c).not.toContain('📏');
     expect(c).not.toContain('🏛');
+  });
+});
+
+// Our browser loads the sold-price pages, clears the challenge and still renders no lot — while
+// a rendered provider fetch of the same URL returns all 50 archived Atlas lots. Telling those two
+// apart is what decides whether "0 sold prices" is a fact or a silent failure.
+describe('isChallengePage', () => {
+  it('recognises the Cloudflare interstitial', () => {
+    expect(isChallengePage('<html><head><title>Just a moment...</title></head></html>')).toBe(true);
+    expect(isChallengePage('<div id="cf-browser-verification"></div>')).toBe(true);
+  });
+
+  it('does not mistake a real results page for one', () => {
+    expect(isChallengePage('<html><title>Поиск Volkswagen Atlas - Архив | Bid.Cars</title>')).toBe(
+      false,
+    );
   });
 });
