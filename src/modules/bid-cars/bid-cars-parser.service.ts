@@ -32,6 +32,10 @@ import {
 // while bamper.by is refused, so strictness is per-site. A VPS or self-hosted runner remains
 // the only free way to fix a site that is genuinely blocked.
 
+/** Cloudflare's interstitial, as it looks in a provider-returned body. */
+export const isChallengePage = (html: string): boolean =>
+  /<title>[^<]*just a moment/i.test(html) || html.includes('cf-browser-verification');
+
 const BROWSER_ARGS = [
   '--no-sandbox',
   '--disable-setuid-sandbox',
@@ -79,7 +83,7 @@ export class BidCarsParserService implements OnModuleDestroy {
       attemptBrowser: async () => this.scrapeResultsPage(await this.getBrowser(), url),
       attemptPaid: async () => {
         const listings = await this.viaProvider(url);
-        if (listings === null) throw new Error('provider body yielded no listings');
+        if (listings === null) throw new Error('provider returned a challenge page');
         return { value: listings, provider: 'chain' };
       },
       paidAvailable: this.scraping.isAvailable(),
@@ -250,7 +254,11 @@ export class BidCarsParserService implements OnModuleDestroy {
       this.logger.log(
         `bid.cars: fetched via ${provider} — ${listings.length} listing(s), first page only`,
       );
-      return listings.length > 0 ? listings : null;
+      // A rendered results page with no cards is a genuinely empty search — the archive of a
+      // filter nobody sold into — and must be reported as such, or the caller retries a browser
+      // that will keep finding the same nothing. Only an interstitial means "blocked".
+      if (listings.length === 0 && isChallengePage(content)) return null;
+      return listings;
     } finally {
       await page.close();
     }
@@ -287,8 +295,15 @@ export class BidCarsParserService implements OnModuleDestroy {
           this.logger.warn(`Cloudflare challenge detected (page title: "${title}")`);
           return null;
         }
-        this.logger.warn(`No lot links found — page title: "${title}". Possibly empty results.`);
-        return [];
+        // "No lots" here is not evidence of an empty search. Measured on the sold-price pages:
+        // our browser loads the real page (correct title, challenge cleared) and never renders a
+        // lot, while a rendered provider fetch of the same URL from an ordinary datacenter IP —
+        // same user agent, no residential proxy — returns all 50 archived Atlas lots. Reporting
+        // [] here made the ladder call it a success, so the provider rung was never reached and
+        // "sold prices found: 0" was printed every run against an archive full of matches.
+        // Escalating costs one rendered call and the paid rung decides what empty really means.
+        this.logger.warn(`No lot links found — page title: "${title}". Escalating to a provider.`);
+        return null;
       }
 
       // Click "Загрузить больше" until it disappears or MAX_PAGES is reached
