@@ -2,9 +2,14 @@ import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { escapeHtml, TELEGRAM_MESSAGE_LIMIT, truncateText } from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
-import { MAX_NOTIFICATIONS_PER_RUN, NOTIFICATION_HEADERS } from './constants';
+import { NOTIFICATION_HEADERS, NOTIFY_BUDGET_MS } from './constants';
 import type { JobVacancy, MostyJobsResult } from './dto/job-vacancy.dto';
-import { buildSummary, buildVacancyMessage, type MostyJobsSourceUrls } from './mosty-jobs-format';
+import {
+  buildDigests,
+  buildSummary,
+  buildVacancyMessage,
+  type MostyJobsSourceUrls,
+} from './mosty-jobs-format';
 
 /** Tracks which vacancies were successfully delivered — service uses this to gate persistence. */
 export interface MostyJobsNotifyResult {
@@ -71,19 +76,26 @@ export class MostyJobsNotifierService {
     const notified = new Set<string>();
     if (vacancies.length === 0) return notified;
 
-    // Flood guard: undelivered vacancies stay unpersisted and drip out next runs.
-    const batch = vacancies.slice(0, MAX_NOTIFICATIONS_PER_RUN);
-    if (batch.length < vacancies.length) {
-      this.logger.warn(`Capping notifications: ${batch.length}/${vacancies.length} sent this run`);
-    }
-    this.logger.log(`Sending ${batch.length} new vacancy(ies)`);
+    this.logger.log(`Sending ${vacancies.length} new vacancy(ies)`);
 
-    for (const [i, vacancy] of batch.entries()) {
+    // Send until the list runs out or the budget does. Sends are paced 3.1s apart inside
+    // TelegramService, so the budget is a duration rather than a count of messages — and what
+    // does not fit stays unpersisted and goes out next run.
+    const deadline = Date.now() + NOTIFY_BUDGET_MS;
+    for (const [i, vacancy] of vacancies.entries()) {
+      if (Date.now() >= deadline) {
+        // Whatever is left goes out as one digest rather than waiting for tomorrow: the point
+        // of a daily monitor is that today's vacancies are visible today.
+        this.logger.warn(`Send budget spent after ${i}/${vacancies.length} — digesting the rest`);
+        await this.sendDigest(vacancies.slice(i), i + 1, vacancies.length, notified);
+        break;
+      }
+
       const message = buildVacancyMessage({
         vacancy,
         header: NOTIFICATION_HEADERS.new,
         index: i + 1,
-        total: batch.length,
+        total: vacancies.length,
       });
       const ok = await this.telegram.sendMessage(
         this.chatId,
@@ -94,5 +106,22 @@ export class MostyJobsNotifierService {
     }
 
     return notified;
+  }
+  /**
+   * Sends the remainder as compact list messages, chunked to Telegram's per-message limit.
+   * Delivered entries count as notified — they have been seen, and re-sending them as cards
+   * next run would be a duplicate, not a courtesy.
+   */
+  private async sendDigest(
+    rest: JobVacancy[],
+    from: number,
+    total: number,
+    notified: Set<string>,
+  ): Promise<void> {
+    for (const chunk of buildDigests(rest, from, total)) {
+      const ok = await this.telegram.sendMessage(this.chatId, chunk.text);
+      if (ok) for (const v of chunk.vacancies) notified.add(v.url);
+      else this.logger.warn(`Failed to send digest of ${chunk.vacancies.length} vacancy(ies)`);
+    }
   }
 }

@@ -1,5 +1,5 @@
 import type { JobVacancy, MostyJobsResult } from '../dto/job-vacancy.dto';
-import { buildSummary, buildVacancyMessage } from '../mosty-jobs-format';
+import { buildSummary, buildVacancyMessage, buildDigests } from '../mosty-jobs-format';
 
 const baseVacancy: JobVacancy = {
   url: 'https://gsz.gov.by/registration/employer/vacancy/123/detail-public/',
@@ -97,5 +97,55 @@ describe('buildSummary', () => {
     expect(summary).toContain(
       '<a href="https://mostycrb.by/vacancies">Мостовская ЦРБ</a>: <b>8</b>',
     );
+  });
+});
+
+// A source returning from an outage can produce more vacancies than a run can send as cards,
+// 3.1s apart. The rest used to wait for tomorrow, which defeats a daily monitor — they now go
+// out as a list the same day.
+describe('buildDigests', () => {
+  const vacancy = (i: number, extra: Partial<JobVacancy> = {}): JobVacancy => ({
+    url: `https://gsz.gov.by/vacancy/${i}/`,
+    source: 'gsz',
+    title: `Слесарь ${i}`,
+    ...extra,
+  });
+
+  it('lists every remaining vacancy in one message when they fit', () => {
+    const [digest, ...rest] = buildDigests([vacancy(1), vacancy(2)], 21, 22);
+
+    expect(rest).toHaveLength(0);
+    expect(digest.vacancies).toHaveLength(2);
+    expect(digest.text).toContain('21-22 из 22');
+    expect(digest.text).toContain('Слесарь 1');
+    expect(digest.text).toContain('https://gsz.gov.by/vacancy/2/');
+  });
+
+  it('appends employer and salary when known', () => {
+    const [digest] = buildDigests(
+      [vacancy(1, { employer: 'ОАО "Мотекс"', salary: '1000 – 1300 руб.' })],
+      2,
+      2,
+    );
+
+    // escapeHtml here covers &, < and > — quotes are left as the seller wrote them.
+    expect(digest.text).toContain('ОАО "Мотекс" · 1000 – 1300 руб.');
+  });
+
+  it('splits into several messages rather than exceeding the Telegram limit', () => {
+    const many = Array.from({ length: 120 }, (_, i) =>
+      vacancy(i, { employer: 'Очень длинное название предприятия для проверки лимита сообщения' }),
+    );
+
+    const digests = buildDigests(many, 21, 140);
+
+    expect(digests.length).toBeGreaterThan(1);
+    expect(Math.max(...digests.map(d => d.text.length))).toBeLessThanOrEqual(4096);
+    // Nothing is dropped in the chunking — the whole tail is still accounted for.
+    expect(digests.flatMap(d => d.vacancies)).toHaveLength(120);
+  });
+
+  it('returns nothing when there is no tail', () => {
+    expect(buildDigests([], 1, 0)).toEqual([]);
   });
 });

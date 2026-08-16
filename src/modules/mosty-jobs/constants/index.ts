@@ -4,8 +4,12 @@ export const FETCH_TIMEOUT_MS = 30_000;
 /** Max HTML response size — reject anything larger to avoid memory exhaustion (2 MB). */
 export const MAX_HTML_SIZE_BYTES = 2 * 1024 * 1024;
 
-/** Max wall-clock time for a full scrape cycle — watchdog resets isRunning if exceeded (5 min). */
-export const RUN_TIMEOUT_MS = 5 * 60 * 1000;
+/**
+ * Max wall-clock time for a full scrape cycle — watchdog resets isRunning if exceeded.
+ * 10 min: the scrape itself takes ~1.5, and NOTIFY_BUDGET_MS lets a recovering source spend
+ * another four sending what it found. Five minutes used to fire mid-send in exactly that case.
+ */
+export const RUN_TIMEOUT_MS = 10 * 60 * 1000;
 
 /** Hard cap on gsz.gov.by result pages per run (the district fits in ~5 pages of 50). */
 export const MAX_GSZ_PAGES = 10;
@@ -24,11 +28,19 @@ export const EVROOPT_CITY_IDS = [103173, 16701557] as const;
 export const EVROOPT_PAGE_TIMEOUT_MS = 45_000;
 
 /**
- * Max per-vacancy Telegram messages per run. Protects against floods after a
- * partial baseline (e.g. one source failed on the first run). Undelivered
- * vacancies are not persisted, so the rest drip out on subsequent runs.
+ * How long a run may spend sending per-vacancy messages.
+ *
+ * This used to be a flat cap of 20 messages, which was mistaken for a Telegram limit — it is
+ * not. TelegramService already paces sends 3.1s apart, under the ~20/min a group chat allows,
+ * so the only thing a count protected was run duration. It measured that badly: when gsz came
+ * back from four days down with 65 new vacancies, 45 of them were held for later runs — two to
+ * three days of drip for messages that would have taken three and a half minutes to send.
+ *
+ * A time budget bounds what actually matters. At 3.1s a message, four minutes is ~77 vacancies:
+ * comfortably more than a source returning from an outage, and still a stop for the pathological
+ * case. Whatever does not fit is not persisted, so it goes out on the next run as before.
  */
-export const MAX_NOTIFICATIONS_PER_RUN = 20;
+export const NOTIFY_BUDGET_MS = 4 * 60 * 1000;
 
 /** Snapshot file path for Мостовский район vacancies. */
 export const DATA_FILE = './data/mosty_jobs.json';
