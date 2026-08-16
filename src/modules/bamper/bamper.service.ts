@@ -91,7 +91,9 @@ export class BamperService {
         ]);
       } catch (error) {
         lastFetchError = error;
-        failedFeeds.push(feed.label);
+        // Same "<car> · <part>" shape the summary uses for the feeds that worked — two cars
+        // share the channel, so a bare part label would not say whose part went unchecked.
+        failedFeeds.push(`${feed.car} · ${feed.label}`);
         this.logger.error(
           `Feed ${feed.key}: fetch failed — ${error instanceof Error ? error.message : String(error)}`,
         );

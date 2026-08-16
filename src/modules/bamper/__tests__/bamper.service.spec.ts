@@ -91,8 +91,8 @@ describe('BamperService', () => {
       const { service, notified } = harness(feeds, new Set(['bamper-zadniy']));
       const result = await service.run();
 
-      expect(result.failedFeeds).toEqual(['bamper-zadniy']);
-      expect(notified[0].failedFeeds).toEqual(['bamper-zadniy']);
+      expect(result.failedFeeds).toEqual(['VW Atlas · bamper-zadniy']);
+      expect(notified[0].failedFeeds).toEqual(['VW Atlas · bamper-zadniy']);
     });
 
     it('persists the feeds that did work and leaves the failed one untouched', async () => {
