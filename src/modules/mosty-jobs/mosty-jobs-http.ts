@@ -7,7 +7,16 @@ import { FETCH_TIMEOUT_MS, MAX_HTML_SIZE_BYTES } from './constants';
  * kufar). Returns the response body, or null on any failure (logged).
  * The gsz parser can't use this — it needs a custom CA via https.get.
  */
-export const fetchText = async (url: string, logger: Logger): Promise<string | null> => {
+export const fetchText = async (
+  url: string,
+  logger: Logger,
+  /**
+   * Set when a 404 is the expected end of pagination rather than a fault. e-vacancy.by has
+   * exactly five pages of fairs and answers 404 for the sixth, so every run logged a warning
+   * about a page that was never supposed to exist — noise that reads like a broken source.
+   */
+  { expect404 = false }: { expect404?: boolean } = {},
+): Promise<string | null> => {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
   try {
@@ -19,7 +28,8 @@ export const fetchText = async (url: string, logger: Logger): Promise<string | n
       },
     });
     if (!res.ok) {
-      logger.warn(`HTTP ${res.status} for ${url}`);
+      if (res.status === 404 && expect404) logger.debug(`No page at ${url} — end of pagination`);
+      else logger.warn(`HTTP ${res.status} for ${url}`);
       return null;
     }
     const text = await res.text();
