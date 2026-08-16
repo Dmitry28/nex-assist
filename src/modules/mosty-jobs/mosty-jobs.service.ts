@@ -1,5 +1,6 @@
 import { ConflictException, Injectable, Logger } from '@nestjs/common';
 import { SnapshotService } from '../../common/snapshot.service';
+import { SourceHealthService } from '../../common/source-health.service';
 import { DATA_FILE, RUN_TIMEOUT_MS, SNAPSHOT_RETENTION_DAYS } from './constants';
 import {
   isJobSnapshotEntry,
@@ -42,6 +43,12 @@ import { RabotaParserService } from './rabota-parser.service';
  * known from another source is persisted silently. Source order below is the
  * notification priority — state bank first.
  */
+/**
+ * Sources whose emptiness is normal: kufar's Мосты job category is usually empty and the fairs
+ * calendar only fills before an event. For these, only a failed fetch counts as a bad run.
+ */
+const EPISODIC_SOURCES = new Set<JobSource>(['kufar', 'fair']);
+
 @Injectable()
 export class MostyJobsService {
   private readonly logger = new Logger(MostyJobsService.name);
@@ -57,6 +64,7 @@ export class MostyJobsService {
     private readonly fairParser: FairParserService,
     private readonly snapshot: SnapshotService,
     private readonly notifier: MostyJobsNotifierService,
+    private readonly health: SourceHealthService,
   ) {}
 
   async run(): Promise<MostyJobsResult> {
@@ -149,6 +157,10 @@ export class MostyJobsService {
         .join(', ')} | new: ${newVacancies.length}, seeded: ${seededCount}, dup: ${duplicateCount}`,
     );
 
+    // `gsz: failed` sat in this line for four days while the site was up and full of vacancies —
+    // a summary line is not an alert. A source that keeps coming back broken now says so out loud.
+    await this.reportSourceHealth(totals);
+
     const notifyResult = await this.notifier.notifyRunResult(result);
     await this.persistSnapshot({
       currentVacancies,
@@ -217,5 +229,23 @@ export class MostyJobsService {
 
     await this.snapshot.write(DATA_FILE, entries);
     this.logger.log(`Snapshot saved (${entries.length} entries)`);
+  }
+  /**
+   * One alert per broken source, sent through the same channel as the daily summary.
+   *
+   * Sources differ in what "empty" means. The district's vacancy banks always hold something, so
+   * zero there is a broken parser. kufar's job category and the fairs calendar are genuinely
+   * empty most days — for those only a failed fetch counts, or the watchdog becomes the noise it
+   * was built to cut through.
+   */
+  private async reportSourceHealth(totals: Record<JobSource, number | null>): Promise<void> {
+    for (const [source, total] of Object.entries(totals) as Array<[JobSource, number | null]>) {
+      const failedOnly = EPISODIC_SOURCES.has(source);
+      if (failedOnly && total !== null) continue;
+      // No per-source snapshot to point at, so the watchdog's own history is the proof that
+      // this source once worked — a new source stays silent until it has produced something.
+      const { alert } = await this.health.record(`mosty:${source}`, total ?? 0, false);
+      if (alert) await this.notifier.notifyError(alert);
+    }
   }
 }

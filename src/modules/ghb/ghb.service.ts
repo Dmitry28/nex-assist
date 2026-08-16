@@ -4,6 +4,7 @@ import { createHash } from 'crypto';
 import { promises as fs } from 'fs';
 import path from 'path';
 import { SnapshotService } from '../../common/snapshot.service';
+import { SourceHealthService } from '../../common/source-health.service';
 import { DATA_FILE, META_FILE, RUN_TIMEOUT_MS } from './constants';
 import {
   isGhbSnapshotEntry,
@@ -43,6 +44,7 @@ export class GhbService {
     private readonly snapshot: SnapshotService,
     private readonly notifier: GhbNotifierService,
     private readonly config: ConfigService,
+    private readonly health: SourceHealthService,
   ) {}
 
   async run(): Promise<GhbResult> {
@@ -83,6 +85,15 @@ export class GhbService {
       this.parser.fetch(),
       this.snapshot.read(DATA_FILE, isGhbSnapshotEntry),
     ]);
+
+    // A silent zero here is a broken parser, not a sold-out building: this feed has held ~13
+    // apartments for months. The streak is what tells those apart, one run at a time.
+    const { alert } = await this.health.record(
+      'ghb',
+      currentListings.length,
+      previousEntries.length > 0,
+    );
+    if (alert) await this.notifier.notifyError(alert);
 
     if (currentListings.length === 0) {
       this.logger.warn('Parser returned 0 listings — skipping diff and persistence');

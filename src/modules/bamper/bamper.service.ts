@@ -1,6 +1,7 @@
 import { ConflictException, Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { SnapshotService } from '../../common/snapshot.service';
+import { SourceHealthService } from '../../common/source-health.service';
 import { sleep } from '../../common/utils/sleep';
 import type { BamperFeedConfig } from '../../config/bamper.config';
 import { BamperNotifierService, type BamperNotifyResult } from './bamper-notifier.service';
@@ -38,6 +39,7 @@ export class BamperService {
     private readonly parser: BamperParserService,
     private readonly snapshot: SnapshotService,
     private readonly notifier: BamperNotifierService,
+    private readonly health: SourceHealthService,
   ) {}
 
   async run(): Promise<BamperResult> {
@@ -101,6 +103,15 @@ export class BamperService {
       }
 
       const previousMap = new Map(previousEntries.map(e => [e.id, e]));
+
+      // Per feed, because parts differ: the rear bumper can genuinely sell out while the
+      // headlights keep listing, and a whole-module counter would hide that.
+      const { alert } = await this.health.record(
+        `bamper:${feed.key}`,
+        current.length,
+        previousEntries.length > 0,
+      );
+      if (alert) await this.notifier.notifyError(alert);
 
       // Defensive: never wipe a non-empty snapshot if the parser yields nothing (e.g. a
       // Cloudflare block that slipped through) — that would re-notify everything next run.

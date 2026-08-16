@@ -8,6 +8,7 @@ import { GszParserService } from '../gsz-parser.service';
 import { JoblabParserService } from '../joblab-parser.service';
 import { KufarJobsParserService } from '../kufar-jobs-parser.service';
 import { MostyJobsNotifierService } from '../mosty-jobs-notifier.service';
+import { SourceHealthService } from '../../../common/source-health.service';
 import { MostyJobsService } from '../mosty-jobs.service';
 import { RabotaParserService } from '../rabota-parser.service';
 
@@ -88,6 +89,11 @@ describe('MostyJobsService — scrape', () => {
         {
           provide: MostyJobsNotifierService,
           useValue: { notifyRunResult: jest.fn(), notifyError: jest.fn() },
+        },
+        // Health streaks have their own spec; here the watchdog must simply stay quiet.
+        {
+          provide: SourceHealthService,
+          useValue: { record: jest.fn().mockResolvedValue({ alert: null, zeroRuns: 0 }) },
         },
       ],
     }).compile();
