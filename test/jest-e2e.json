@@ -7,6 +7,7 @@
     "^.+\\.(t|j)s$": ["ts-jest", { "tsconfig": "tsconfig.test.json" }]
   },
   "moduleNameMapper": {
+    "^puppeteer$": "rebrowser-puppeteer",
     "@common/(.*)": "<rootDir>/../src/common/$1",
     "@config/(.*)": "<rootDir>/../src/config/$1",
     "@modules/(.*)": "<rootDir>/../src/modules/$1"
