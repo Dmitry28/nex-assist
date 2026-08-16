@@ -42,7 +42,8 @@ export class FairParserService {
     for (let page = 1; page <= MAX_FAIR_PAGES; page++) {
       const pageUrl = new URL(baseUrl);
       pageUrl.searchParams.set('page', String(page));
-      const html = await fetchText(pageUrl.toString(), this.logger);
+      // Page 1 missing is a real outage; anything past it is just the end of the list.
+      const html = await fetchText(pageUrl.toString(), this.logger, { expect404: page > 1 });
       if (html === null) {
         // First page down = source failure; later pages: keep what we have.
         return page === 1 ? null : fairs;
