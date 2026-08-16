@@ -1,4 +1,5 @@
 import { Global, Module } from '@nestjs/common';
+import { SourceHealthService } from './source-health.service';
 import { SnapshotService } from './snapshot.service';
 
 /**
@@ -8,7 +9,7 @@ import { SnapshotService } from './snapshot.service';
  */
 @Global()
 @Module({
-  providers: [SnapshotService],
-  exports: [SnapshotService],
+  providers: [SnapshotService, SourceHealthService],
+  exports: [SnapshotService, SourceHealthService],
 })
 export class CommonModule {}
