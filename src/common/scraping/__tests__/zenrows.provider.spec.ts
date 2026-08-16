@@ -2,6 +2,9 @@ import type { ConfigService } from '@nestjs/config';
 import { ScrapingQuotaError } from '../scraping.types';
 import { ZenRowsProvider } from '../zenrows.provider';
 
+// The retry pause is real seconds in production and nothing to wait for in a test.
+jest.mock('../../utils/sleep', () => ({ sleep: (): Promise<void> => Promise.resolve() }));
+
 const providerWithKey = (key: string | undefined): ZenRowsProvider => {
   const config = { get: () => key } as unknown as ConfigService;
   return new ZenRowsProvider(config);
@@ -103,9 +106,52 @@ describe('ZenRowsProvider', () => {
     expect(p.get('proxy_country')).toBeNull();
   });
 
-  it.each([402, 429])('treats HTTP %i as quota so the chain moves on', async status => {
-    respond({ ok: false, status });
+  it('treats HTTP 402 as quota so the chain moves on at once', async () => {
+    respond({ ok: false, status: 402 });
     await expect(providerWithKey('k').scrape('https://x', {})).rejects.toThrow(ScrapingQuotaError);
+  });
+
+  // 422 is RESP001 "could not get content" — a bypass that failed on ZenRows' side, documented
+  // as retryable. It cost three days of bamper.by runs before anything retried it.
+  describe('a retryable failure', () => {
+    const respondThen = (statuses: number[], body: string): jest.Mock => {
+      const fn = jest.fn(() => {
+        const status = statuses.shift() ?? 200;
+        return Promise.resolve({
+          ok: status === 200,
+          status,
+          text: () => Promise.resolve(body),
+        });
+      });
+      global.fetch = fn as unknown as typeof fetch;
+      return fn;
+    };
+
+    it('retries a 422 and returns the page when the next attempt succeeds', async () => {
+      const fetchMock = respondThen([422], '<html>page</html>');
+      const result = await providerWithKey('k').scrape('https://x', {});
+
+      expect(result).toEqual({ content: '<html>page</html>', provider: 'zenrows' });
+      expect(fetchMock).toHaveBeenCalledTimes(2);
+    });
+
+    it('gives up after the retries and reports a plain failure, not a spent tier', async () => {
+      const fetchMock = respondThen([422, 422, 422], '');
+      const call = providerWithKey('k').scrape('https://x', {});
+
+      await expect(call).rejects.toThrow('ZenRows returned HTTP 422 after 2 retries');
+      await expect(call).rejects.not.toBeInstanceOf(ScrapingQuotaError);
+      expect(fetchMock).toHaveBeenCalledTimes(3);
+    });
+
+    // The concurrency limit clears on its own, but a persistent one still means "nothing more
+    // from this provider now" — the chain reads that as quota and skips it for the run.
+    it('retries a 429 and reports quota once it persists', async () => {
+      respondThen([429, 429, 429], '');
+      await expect(providerWithKey('k').scrape('https://x', {})).rejects.toThrow(
+        ScrapingQuotaError,
+      );
+    });
   });
 
   // A block by the target must stay distinguishable from a spent allowance — the mistake made

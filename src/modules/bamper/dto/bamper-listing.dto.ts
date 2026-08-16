@@ -39,6 +39,12 @@ export class BamperFeedResult {
 /** Result of one scrape cycle across all part feeds. */
 export class BamperResult {
   @ApiProperty({ type: () => BamperFeedResult, isArray: true }) feeds!: BamperFeedResult[];
+  /**
+   * Labels of the feeds whose fetch failed this run. A failing feed no longer aborts the
+   * cycle, so the run has to say out loud which parts it could not check — otherwise a
+   * partial run is indistinguishable from a quiet one.
+   */
+  @ApiProperty({ type: String, isArray: true }) failedFeeds!: string[];
 }
 
 /**

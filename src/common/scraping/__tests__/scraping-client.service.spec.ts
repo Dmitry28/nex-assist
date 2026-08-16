@@ -89,6 +89,38 @@ describe('ScrapingClient', () => {
     await expect(client.scrape('https://x')).rejects.toThrow('b broke');
   });
 
+  // Three days of bamper.by outages were reported as "ScrapFly out of quota" — the last link in
+  // the chain, long spent — while the failure that mattered was a ZenRows 422 two links earlier.
+  // A spent allowance is not a diagnosis, so it must not be what the caller sees.
+  it('surfaces the provider that genuinely failed, not a later spent one', async () => {
+    const client = new ScrapingClient([provider('real', 'error'), provider('spent', 'quota')]);
+    await expect(client.scrape('https://x')).rejects.toThrow('real broke');
+  });
+
+  // ScrapFly's free credits are granted once at signup and never refill, so every later call in
+  // the run is a guaranteed wasted round-trip.
+  describe('a provider that reported a spent allowance', () => {
+    it('stops calling it for the rest of the run', async () => {
+      const spent = provider('spent', 'quota');
+      const spare = provider('spare', 'ok');
+      const client = new ScrapingClient([spent, spare]);
+
+      expect((await client.scrape('https://a')).provider).toBe('spare');
+      expect((await client.scrape('https://b')).provider).toBe('spare');
+      expect(spent.calls).toBe(1);
+    });
+
+    // Same rule as the plan-refusal memo: it may never be the reason nothing gets tried.
+    it('ignores the memo when it would leave no provider to try', async () => {
+      const spent = provider('only', 'quota');
+      const client = new ScrapingClient([spent]);
+
+      await expect(client.scrape('https://a')).rejects.toThrow('only out of quota');
+      await expect(client.scrape('https://b')).rejects.toThrow('only out of quota');
+      expect(spent.calls).toBe(2);
+    });
+  });
+
   it('throws a clear error when nothing is configured at all', async () => {
     const client = new ScrapingClient([provider('a', 'unconfigured')]);
     await expect(client.scrape('https://x')).rejects.toThrow('No scraping provider is configured');
