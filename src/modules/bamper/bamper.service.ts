@@ -72,14 +72,31 @@ export class BamperService {
     const feedResults: BamperFeedResult[] = [];
     const currentByFeed = new Map<string, BamperListing[]>();
     const previousByFeed = new Map<string, Map<string, BamperSnapshotEntry>>();
+    const failedFeeds: string[] = [];
+    let lastFetchError: unknown;
 
     for (const [i, feed] of feeds.entries()) {
       if (i > 0) await sleep(INTER_FEED_DELAY_MS);
 
-      const [current, previousEntries] = await Promise.all([
-        this.parser.fetch(feed.url, partSlugOf(feed.url)),
-        this.snapshot.read(dataFile(feed.key), isBamperSnapshotEntry),
-      ]);
+      // One feed's fetch must not cost us the other five. bamper.by sits behind Cloudflare and
+      // the paid chain occasionally fails on a single URL (a transient ZenRows 422 did it three
+      // days running); before this, that threw out of the loop and the remaining parts were
+      // never checked at all — a silent gap, not a smaller run.
+      let current: BamperListing[];
+      let previousEntries: BamperSnapshotEntry[];
+      try {
+        [current, previousEntries] = await Promise.all([
+          this.parser.fetch(feed.url, partSlugOf(feed.url)),
+          this.snapshot.read(dataFile(feed.key), isBamperSnapshotEntry),
+        ]);
+      } catch (error) {
+        lastFetchError = error;
+        failedFeeds.push(feed.label);
+        this.logger.error(
+          `Feed ${feed.key}: fetch failed — ${error instanceof Error ? error.message : String(error)}`,
+        );
+        continue;
+      }
 
       const previousMap = new Map(previousEntries.map(e => [e.id, e]));
 
@@ -124,7 +141,16 @@ export class BamperService {
       previousByFeed.set(feed.key, previousMap);
     }
 
-    const aggregate: BamperResult = { feeds: feedResults };
+    // Every feed failing is a real outage (Cloudflare, or the whole provider chain spent), and
+    // it still deserves the error alert. A partial failure does not: the run keeps its value
+    // and the summary carries the warning.
+    if (feeds.length > 0 && failedFeeds.length === feeds.length) {
+      throw lastFetchError instanceof Error
+        ? lastFetchError
+        : new Error(`All ${feeds.length} bamper feeds failed`);
+    }
+
+    const aggregate: BamperResult = { feeds: feedResults, failedFeeds };
     const notifyResult = await this.notifier.notifyRunResult(aggregate);
 
     for (const feed of feeds) {

@@ -18,8 +18,11 @@ import { SCRAPING_PROVIDERS, type ScrapingProvider } from './scraping.types';
 //
 // ScraperAPI first: its free tier counts *requests* (1000/mo), so a Cloudflare-protected page
 // costs the same as a plain one. ScrapFly second: it is the stronger bypass but its free tier
-// counts *credits* (1000/mo) and a measured bamper.by call cost 45-80 of them — six feeds came
-// to 250 credits per run, which is 7.5x the monthly free tier if run daily.
+// counts *credits* and a measured bamper.by call cost 45-80 of them — six feeds came to 250
+// credits per run. Worse than it looks: those 1000 credits are granted once at signup and do
+// not refill monthly, so ScrapFly is a one-off reserve, not a recurring allowance. It has been
+// spent since 2026-08-12 and answers 429 to everything; the client now stops calling it after
+// the first such answer within a run. Restoring it means paying.
 //
 // ZenRows comes second: measured against bamper.by, ScraperAPI cannot target Belarus on the
 // free tier (403) and ScrapingAnt is detected outright (423), while ZenRows is the only free

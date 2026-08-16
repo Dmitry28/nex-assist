@@ -67,5 +67,10 @@ export const buildSummary = (result: BamperResult): string => {
   const date = new Date().toLocaleDateString(LOCALE, { timeZone: TIMEZONE });
   const lines = [`<b>🔧 bamper.by · запчасти Atlas · ${date}</b>`, ''];
   for (const feed of result.feeds) lines.push(feedSummaryLine(feed));
+  // A feed that could not be fetched is absent from the list above; say so, or a partial run
+  // reads as "nothing new" for the parts we never managed to check.
+  if (result.failedFeeds.length > 0) {
+    lines.push('', `⚠️ Не удалось проверить: ${result.failedFeeds.join(', ')}`);
+  }
   return lines.join('\n');
 };
