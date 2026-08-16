@@ -1,5 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
+import { sleep } from '../utils/sleep';
 import {
   ScrapingQuotaError,
   type ScrapeOptions,
@@ -9,6 +10,20 @@ import {
 
 /** Default request timeout when the caller doesn't specify one (ms). */
 const DEFAULT_TIMEOUT_MS = 120_000;
+
+/**
+ * Statuses worth trying again on the same provider before falling down the chain.
+ *
+ * 422 is ZenRows' RESP001 "could not get content" — a failed bypass on their side, documented
+ * as retryable, and observed as exactly that: the same bamper.by feed 422'd on four runs and
+ * returned 690 KB on the next with identical parameters. 429 is the concurrency limit, which
+ * clears on its own. Neither SDK retries 422 for us, so it is ours to do.
+ */
+const RETRY_STATUSES = new Set([422, 429]);
+
+/** Extra attempts after the first, and the pause between them (ms). */
+const RETRY_ATTEMPTS = 2;
+const RETRY_DELAY_MS = 3_000;
 
 /**
  * ZenRows provider (https://zenrows.com). Sits ahead of ScrapFly because it is the only free
@@ -42,6 +57,22 @@ export class ZenRowsProvider implements ScrapingProvider {
   async scrape(url: string, opts: ScrapeOptions): Promise<ScrapeResult> {
     if (!this.apiKey) throw new Error('ZENROWS_API_KEY is not configured');
 
+    for (let attempt = 0; ; attempt++) {
+      const status = await this.attempt(url, opts);
+      if (typeof status !== 'number') return status;
+      if (attempt >= RETRY_ATTEMPTS) return this.giveUp(status);
+      this.logger.warn(
+        `ZenRows returned HTTP ${status} for ${url} — retry ${attempt + 1}/${RETRY_ATTEMPTS} in ${RETRY_DELAY_MS / 1000}s`,
+      );
+      await sleep(RETRY_DELAY_MS);
+    }
+  }
+
+  /**
+   * One call. Returns the result, or the status code when it is worth retrying — anything
+   * else throws, since only the retryable statuses need to survive back up to the loop.
+   */
+  private async attempt(url: string, opts: ScrapeOptions): Promise<ScrapeResult | number> {
     const params = new URLSearchParams({ apikey: this.apiKey, url });
     // `premium_proxy` is the anti-bot tier — residential IPs — which is what clears Cloudflare
     // and what a geo-blocked site needs. Without it the response is a 6 KB stub.
@@ -71,15 +102,13 @@ export class ZenRowsProvider implements ScrapingProvider {
         signal: ctrl.signal,
       });
 
-      // 402 is the usual "out of credits"; 429 is the documented concurrency/rate limit. Both
-      // mean "nothing more from this provider now". Everything else — including a block by the
-      // target — is a plain error, so a spent tier stays distinguishable from a failed bypass.
-      if (resp.status === 402 || resp.status === 429) {
-        throw new ScrapingQuotaError(
-          this.name,
-          `ZenRows quota/rate limit reached (HTTP ${resp.status})`,
-        );
+      // 402 is "out of credits" — nothing more from this provider now, so the chain moves on
+      // immediately. Everything else — including a block by the target — is a plain error, so a
+      // spent tier stays distinguishable from a failed bypass.
+      if (resp.status === 402) {
+        throw new ScrapingQuotaError(this.name, `ZenRows quota reached (HTTP ${resp.status})`);
       }
+      if (RETRY_STATUSES.has(resp.status)) return resp.status;
       if (!resp.ok) throw new Error(`ZenRows returned HTTP ${resp.status}`);
 
       const content = await resp.text();
@@ -95,5 +124,16 @@ export class ZenRowsProvider implements ScrapingProvider {
     } finally {
       clearTimeout(timer);
     }
+  }
+
+  /**
+   * A retryable status that outlived its retries. 429 still means the allowance is spent for
+   * now — the chain treats that as quota — while a stuck 422 is a failed bypass like any other.
+   */
+  private giveUp(status: number): never {
+    if (status === 429) {
+      throw new ScrapingQuotaError(this.name, `ZenRows rate limit reached (HTTP ${status})`);
+    }
+    throw new Error(`ZenRows returned HTTP ${status} after ${RETRY_ATTEMPTS} retries`);
   }
 }
