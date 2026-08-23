@@ -22,7 +22,7 @@
     "renewedAt": "2026-06-09T13:53:27+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/3182/1416.jpg",
     "firstSeenAt": "2026-05-18T20:56:25.065Z",
-    "lastSeenAt": "2026-08-21T07:44:16.133Z"
+    "lastSeenAt": "2026-08-23T07:32:21.523Z"
   },
   {
     "id": 130928474,
@@ -47,7 +47,7 @@
     "renewedAt": "2026-08-20T06:22:52+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0012/5172/1128.jpg",
     "firstSeenAt": "2026-05-18T20:56:25.065Z",
-    "lastSeenAt": "2026-08-21T07:44:16.133Z"
+    "lastSeenAt": "2026-08-23T07:32:21.523Z"
   },
   {
     "id": 126259418,
@@ -72,7 +72,7 @@
     "renewedAt": "2026-08-08T06:10:26+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0009/9820/2151.jpg",
     "firstSeenAt": "2026-06-02T11:29:08.584Z",
-    "lastSeenAt": "2026-08-21T07:44:16.133Z"
+    "lastSeenAt": "2026-08-23T07:32:21.523Z"
   },
   {
     "id": 134509852,
@@ -96,7 +96,7 @@
     "publishedAt": "2026-06-17T18:58:30+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0013/9801/2499.jpg",
     "firstSeenAt": "2026-06-19T11:25:52.553Z",
-    "lastSeenAt": "2026-08-21T07:44:16.133Z"
+    "lastSeenAt": "2026-08-23T07:32:21.523Z"
   },
   {
     "id": 131025972,
@@ -145,8 +145,8 @@
     "publishedAt": "2026-06-22T15:36:29+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/0471/4581.jpg",
     "firstSeenAt": "2026-06-23T10:48:57.826Z",
-    "lastSeenAt": "2026-08-21T07:44:16.133Z",
-    "renewedAt": "2026-08-14T10:56:33+0000"
+    "lastSeenAt": "2026-08-23T07:32:21.523Z",
+    "renewedAt": "2026-08-21T10:08:38+0000"
   },
   {
     "id": 135305585,
@@ -170,7 +170,7 @@
     "publishedAt": "2026-07-01T16:16:14+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/1704/1393.jpg",
     "firstSeenAt": "2026-07-02T10:07:56.274Z",
-    "lastSeenAt": "2026-08-21T07:44:16.133Z"
+    "lastSeenAt": "2026-08-23T07:32:21.523Z"
   },
   {
     "id": 135345723,
@@ -195,7 +195,7 @@
     "renewedAt": "2026-08-19T08:38:32+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/1842/3926.jpg",
     "firstSeenAt": "2026-07-15T09:26:26.750Z",
-    "lastSeenAt": "2026-08-21T07:44:16.133Z"
+    "lastSeenAt": "2026-08-23T07:32:21.523Z"
   },
   {
     "id": 135830470,
@@ -219,15 +219,15 @@
     "publishedAt": "2026-07-12T16:00:59+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/3106/1744.jpg",
     "firstSeenAt": "2026-07-15T09:26:26.750Z",
-    "lastSeenAt": "2026-08-21T07:44:16.133Z",
+    "lastSeenAt": "2026-08-23T07:32:21.523Z",
     "renewedAt": "2026-08-18T16:30:18+0000"
   },
   {
     "id": 135413644,
     "url": "https://cars.av.by/volkswagen/atlas/135413644",
     "title": "Volkswagen Atlas 2024",
-    "priceUsd": 39990,
-    "priceByn": 119286,
+    "priceUsd": 39500,
+    "priceByn": 117825,
     "brand": "Volkswagen",
     "model": "Atlas",
     "year": 2024,
@@ -244,7 +244,7 @@
     "publishedAt": "2026-07-03T17:47:39+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/2099/3350.jpg",
     "firstSeenAt": "2026-07-15T09:26:26.750Z",
-    "lastSeenAt": "2026-08-21T07:44:16.133Z",
+    "lastSeenAt": "2026-08-23T07:32:21.523Z",
     "renewedAt": "2026-08-18T06:24:43+0000"
   },
   {
@@ -269,7 +269,7 @@
     "publishedAt": "2026-07-17T13:26:11+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/4417/5580.jpg",
     "firstSeenAt": "2026-07-19T09:06:29.189Z",
-    "lastSeenAt": "2026-08-21T07:44:16.133Z",
+    "lastSeenAt": "2026-08-23T07:32:21.523Z",
     "renewedAt": "2026-08-07T22:31:35+0000"
   },
   {
@@ -294,7 +294,7 @@
     "publishedAt": "2026-07-22T10:50:28+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/5102/8350.jpg",
     "firstSeenAt": "2026-07-23T09:24:35.134Z",
-    "lastSeenAt": "2026-08-21T07:44:16.133Z",
+    "lastSeenAt": "2026-08-23T07:32:21.523Z",
     "renewedAt": "2026-08-16T12:06:29+0000"
   },
   {
@@ -319,7 +319,7 @@
     "publishedAt": "2026-07-28T15:54:43+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/6160/1920.jpg",
     "firstSeenAt": "2026-07-30T09:30:32.968Z",
-    "lastSeenAt": "2026-08-21T07:44:16.133Z",
+    "lastSeenAt": "2026-08-23T07:32:21.523Z",
     "renewedAt": "2026-08-16T21:07:14+0000"
   },
   {
@@ -344,7 +344,7 @@
     "publishedAt": "2026-07-29T08:22:14+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/6308/1354.jpg",
     "firstSeenAt": "2026-07-30T09:30:32.968Z",
-    "lastSeenAt": "2026-08-21T07:44:16.133Z",
+    "lastSeenAt": "2026-08-23T07:32:21.523Z",
     "renewedAt": "2026-08-17T09:18:13+0000"
   },
   {
@@ -369,7 +369,7 @@
     "publishedAt": "2026-07-27T15:23:35+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/6015/8166.jpg",
     "firstSeenAt": "2026-07-30T09:30:32.968Z",
-    "lastSeenAt": "2026-08-21T07:44:16.133Z"
+    "lastSeenAt": "2026-08-23T07:32:21.523Z"
   },
   {
     "id": 136526871,
@@ -391,10 +391,10 @@
     "location": "Брест",
     "sellerName": "МирИнтерКарс",
     "publishedAt": "2026-07-27T19:49:02+0000",
-    "renewedAt": "2026-08-16T09:49:55+0000",
+    "renewedAt": "2026-08-22T16:05:40+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/6024/2679.jpg",
     "firstSeenAt": "2026-07-30T09:30:32.968Z",
-    "lastSeenAt": "2026-08-21T07:44:16.133Z"
+    "lastSeenAt": "2026-08-23T07:32:21.523Z"
   },
   {
     "id": 136514701,
@@ -418,7 +418,7 @@
     "publishedAt": "2026-07-26T12:27:51+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/8231/1741.jpg",
     "firstSeenAt": "2026-07-30T09:30:32.968Z",
-    "lastSeenAt": "2026-08-21T07:44:16.133Z"
+    "lastSeenAt": "2026-08-23T07:32:21.523Z"
   },
   {
     "id": 136866842,
@@ -442,7 +442,7 @@
     "publishedAt": "2026-08-01T19:08:51+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/6803/5818.jpg",
     "firstSeenAt": "2026-08-02T09:11:20.424Z",
-    "lastSeenAt": "2026-08-21T07:44:16.133Z"
+    "lastSeenAt": "2026-08-23T07:32:21.523Z"
   },
   {
     "id": 136795912,
@@ -464,10 +464,10 @@
     "location": "Брест",
     "sellerName": "МирИнтерКарс",
     "publishedAt": "2026-07-31T13:41:49+0000",
-    "renewedAt": "2026-08-16T09:49:53+0000",
+    "renewedAt": "2026-08-22T16:05:39+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/6642/2578.jpg",
     "firstSeenAt": "2026-08-02T09:11:20.424Z",
-    "lastSeenAt": "2026-08-21T07:44:16.133Z"
+    "lastSeenAt": "2026-08-23T07:32:21.523Z"
   },
   {
     "id": 130522734,
@@ -491,7 +491,7 @@
     "publishedAt": "2026-04-06T19:17:15+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0012/3475/9743.jpg",
     "firstSeenAt": "2026-08-02T09:11:20.424Z",
-    "lastSeenAt": "2026-08-21T07:44:16.133Z"
+    "lastSeenAt": "2026-08-23T07:32:21.523Z"
   },
   {
     "id": 137215638,
@@ -515,7 +515,7 @@
     "publishedAt": "2026-08-07T09:11:16+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/7674/9856.jpg",
     "firstSeenAt": "2026-08-09T07:50:36.085Z",
-    "lastSeenAt": "2026-08-21T07:44:16.133Z",
+    "lastSeenAt": "2026-08-23T07:32:21.523Z",
     "renewedAt": "2026-08-19T11:35:27+0000"
   },
   {
@@ -540,6 +540,6 @@
     "publishedAt": "2026-08-17T14:23:46+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0014/8976/5040.jpg",
     "firstSeenAt": "2026-08-19T07:39:39.742Z",
-    "lastSeenAt": "2026-08-21T07:44:16.133Z"
+    "lastSeenAt": "2026-08-23T07:32:21.523Z"
   }
 ]
