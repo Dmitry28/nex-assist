@@ -1,24 +1,6 @@
 [
   {
     "listing": {
-      "title": "Земельный участок по ул. Наполеона Орды, 34",
-      "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-napoleona-ordy-34/",
-      "price": "43 773,00 руб.",
-      "area": "0,1496 га",
-      "address": "г. Гродно, ул. Наполеона Орды, 34",
-      "cadastralNumber": "440100000001015892",
-      "cadastralMapUrl": "https://map.nca.by/search/019f41a5-36b1-72a1-a860-e6252308c6ad",
-      "auctionDate": "Аукцион состоится 11.08.2026",
-      "applicationDeadline": "Заявления принимаются по 05.08.2026",
-      "communications": "электроснабжение, газоснабжение, водоснабжение",
-      "images": [
-        "http://gcn.by/wp-content/uploads/2026/07/u2-olshanka-sajt.png"
-      ]
-    },
-    "removedAt": "2026-08-12T08:08:28.008Z"
-  },
-  {
-    "listing": {
       "title": "Земельный участок по ул. Радостная, 22",
       "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-radostnaya-22/",
       "price": "30 803,00 руб.",
