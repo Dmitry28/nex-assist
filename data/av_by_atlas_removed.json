@@ -579,5 +579,32 @@
     "lastSeenAt": "2026-08-11T08:11:18.128Z",
     "removedAt": "2026-08-13T08:19:07.253Z",
     "soldNotifiedAt": "2026-08-13T08:19:21.746Z"
+  },
+  {
+    "id": 136526871,
+    "url": "https://cars.av.by/volkswagen/atlas/136526871",
+    "title": "Volkswagen Atlas 2024",
+    "priceUsd": 41400,
+    "priceByn": 124390,
+    "brand": "Volkswagen",
+    "model": "Atlas",
+    "year": 2024,
+    "mileageKm": 43000,
+    "engineCapacity": "2,0",
+    "engineType": "бензин",
+    "transmission": "автомат",
+    "bodyType": "внедорожник 5 дв.",
+    "driveType": "подключаемый полный привод",
+    "color": "белый",
+    "vinPartial": "1V2HR2C**********",
+    "location": "Брест",
+    "sellerName": "МирИнтерКарс",
+    "publishedAt": "2026-07-27T19:49:02+0000",
+    "renewedAt": "2026-08-22T16:05:40+0000",
+    "photoUrl": "https://avcdn.av.by/advertmedium/0014/6024/2679.jpg",
+    "firstSeenAt": "2026-07-30T09:30:32.968Z",
+    "lastSeenAt": "2026-08-27T18:11:00.715Z",
+    "removedAt": "2026-08-30T12:34:56.756Z",
+    "soldNotifiedAt": "2026-08-30T12:35:16.648Z"
   }
 ]
