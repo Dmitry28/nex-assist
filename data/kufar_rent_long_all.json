@@ -28,7 +28,7 @@
     "link": "https://re.kufar.by/vi/1063816828",
     "title": "Квартира полностью со всем необходимым для проживания",
     "priceByn": 1350,
-    "priceUsd": 441,
+    "priceUsd": 440,
     "address": "Виктора Саяпина ул, 4Б, Гродно, Гродненская область",
     "rooms": 2,
     "area": 64,
@@ -44,7 +44,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fe3aaa67-820b-4056-a5c1-3f46eb49bd38.jpg"
     ],
     "firstSeenAt": "2026-08-04T15:43:12.972Z",
-    "lastSeenAt": "2026-09-02T11:56:32.956Z"
+    "lastSeenAt": "2026-09-03T11:55:18.069Z"
   },
   {
     "adId": 1080055437,
@@ -139,17 +139,17 @@
     "link": "https://re.kufar.by/vi/1083191798",
     "title": "1 комн.41 кв.м,14 этаж",
     "priceByn": 850,
-    "priceUsd": 278,
+    "priceUsd": 277,
     "address": "Виктора Саяпина ул, 10, Гродно, Гродненская область",
     "rooms": 1,
     "area": 41,
     "floor": 14,
     "totalFloors": 19,
-    "prepayment": "Месяц",
-    "listTime": "2026-08-30T12:18:58Z",
+    "prepayment": "Один месяц",
+    "listTime": "2026-09-02T16:50:00Z",
     "images": [
-      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/88c642e9-cda4-4280-884e-eecca53186ba.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7382036b-b065-44ac-ad8a-f73c38c9b228.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/88c642e9-cda4-4280-884e-eecca53186ba.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/75c35963-107a-4f88-a12c-c3453c9c538b.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/8212c4d2-0fef-4a10-8547-6a310f5f56aa.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/577200c6-2f1c-487f-b70d-acdff56ad485.jpg",
@@ -157,6 +157,6 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/c05b10b2-d0fe-4b30-b7fb-37188f1a5862.jpg"
     ],
     "firstSeenAt": "2026-08-30T12:33:17.564Z",
-    "lastSeenAt": "2026-09-02T11:56:32.956Z"
+    "lastSeenAt": "2026-09-03T11:55:18.069Z"
   }
 ]
