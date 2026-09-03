@@ -1,20 +1,48 @@
 [
   {
     "listing": {
-      "title": "Земельный участок по ул. Наполеона Орды, 34",
-      "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-napoleona-ordy-34/",
-      "price": "43 773,00 руб.",
-      "area": "0,1496 га",
-      "address": "г. Гродно, ул. Наполеона Орды, 34",
-      "cadastralNumber": "440100000001015892",
-      "cadastralMapUrl": "https://map.nca.by/search/019f41a5-36b1-72a1-a860-e6252308c6ad",
-      "auctionDate": "Аукцион состоится 11.08.2026",
-      "applicationDeadline": "Заявления принимаются по 05.08.2026",
+      "title": "Земельный участок по ул. Радостная, 22",
+      "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-radostnaya-22/",
+      "price": "30 803,00 руб.",
+      "area": "0,1003 га",
+      "address": "г. Гродно, ул. Радостная, 22",
+      "cadastralNumber": "440100000001015890",
+      "cadastralMapUrl": "https://map.nca.by/search/019f6f10-ba39-7264-b347-29825144bd6b",
+      "auctionDate": "Аукцион состоится 25.08.2026",
+      "applicationDeadline": "Заявления принимаются по 19.08.2026",
       "communications": "электроснабжение, газоснабжение, водоснабжение",
       "images": [
-        "http://gcn.by/wp-content/uploads/2026/07/u2-olshanka-sajt.png"
+        "http://gcn.by/wp-content/uploads/2026/07/u1-nektarnaya-sajt.png"
       ]
     },
-    "removedAt": "2026-08-12T08:08:28.008Z"
+    "removedAt": "2026-09-03T09:41:42.247Z"
+  },
+  {
+    "listing": {
+      "title": "Не завершённый строительством жилой дом по ул. Ровная, 33",
+      "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-rovnaya-33/",
+      "price": "70 714,50 руб.",
+      "area": "0,0995 га",
+      "address": "г. Гродно, У-146 в микрорайоне «Барановичи-9», ул. Ровная, 33",
+      "cadastralNumber": "440100000003005965",
+      "cadastralMapUrl": "https://map.nca.by/search/019df778-5c36-7233-a381-6b71349f1679",
+      "auctionDate": "Аукцион состоится 25.08.2026",
+      "applicationDeadline": "Заявления принимаются по 19.08.2026",
+      "communications": "Не указаны",
+      "images": [
+        "https://gcn.by/wp-content/uploads/2026/05/u-146-rovnaya-baranovichi-sajt-2.png",
+        "https://gcn.by/wp-content/uploads/2026/05/u-146-rovnaya-baranovichi-sajt-7.png",
+        "https://gcn.by/wp-content/uploads/2026/05/u-146-rovnaya-baranovichi-sajt-8.png",
+        "https://gcn.by/wp-content/uploads/2026/05/u-146-rovnaya-baranovichi-sajt-1.png",
+        "https://gcn.by/wp-content/uploads/2026/05/u-146-rovnaya-baranovichi-sajt-9.png",
+        "https://gcn.by/wp-content/uploads/2026/05/u-146-rovnaya-baranovichi-sajt-3.png",
+        "https://gcn.by/wp-content/uploads/2026/05/u-146-rovnaya-baranovichi-sajt-4.png",
+        "https://gcn.by/wp-content/uploads/2026/05/u-146-rovnaya-baranovichi-sajt-5.png",
+        "https://gcn.by/wp-content/uploads/2026/05/u-146-rovnaya-baranovichi-sajt-6.png",
+        "https://gcn.by/wp-content/uploads/2026/05/u-146-rovnaya-baranovichi-sajt-2.png",
+        "https://gcn.by/wp-content/uploads/2026/05/u-146-rovnaya-baranovichi-sajt-7.png"
+      ]
+    },
+    "removedAt": "2026-09-03T09:41:42.247Z"
   }
 ]
