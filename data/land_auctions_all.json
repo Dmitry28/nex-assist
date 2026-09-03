@@ -73,21 +73,6 @@
     ]
   },
   {
-    "title": "Земельный участок по ул. Кондрата Крапивы, 22",
-    "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-kondrata-krapivy-22/",
-    "price": "41 426,00 руб.",
-    "area": "0,0992 га",
-    "address": "г. Гродно, ул. Кондрата Крапивы, 22",
-    "cadastralNumber": "440100000002013034",
-    "cadastralMapUrl": "https://map.nca.by/search/019ff511-fb09-72bf-a4b2-cbbd0518f62b",
-    "auctionDate": "Аукцион состоится 25.08.2026",
-    "applicationDeadline": "Заявления принимаются по 19.08.2026",
-    "communications": "электроснабжение, газоснабжение, водоснабжение",
-    "images": [
-      "http://gcn.by/wp-content/uploads/2026/07/krapivy-naprotiv-doma-33-sajt.png"
-    ]
-  },
-  {
     "title": "Земельный участок по ул. Кондрата Крапивы, 20",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-kondrata-krapivy-20/",
     "price": "36 165,00 руб.",
@@ -130,21 +115,6 @@
     "communications": "электроснабжение, газоснабжение, водоснабжение",
     "images": [
       "http://gcn.by/wp-content/uploads/2026/07/krapivy-naprotiv-doma-1-sajt.png"
-    ]
-  },
-  {
-    "title": "Земельный участок по ул. Радостная, 22",
-    "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-radostnaya-22/",
-    "price": "30 803,00 руб.",
-    "area": "0,1003 га",
-    "address": "г. Гродно, ул. Радостная, 22",
-    "cadastralNumber": "440100000001015890",
-    "cadastralMapUrl": "https://map.nca.by/search/019f6f10-ba39-7264-b347-29825144bd6b",
-    "auctionDate": "Аукцион состоится 25.08.2026",
-    "applicationDeadline": "Заявления принимаются по 19.08.2026",
-    "communications": "электроснабжение, газоснабжение, водоснабжение",
-    "images": [
-      "http://gcn.by/wp-content/uploads/2026/07/u1-nektarnaya-sajt.png"
     ]
   },
   {
@@ -223,31 +193,6 @@
     ]
   },
   {
-    "title": "Не завершённый строительством жилой дом по ул. Ровная, 33",
-    "link": "http://gcn.by/properties/ne-zavershyonnyj-stroitelstvom-zhiloj-dom-po-ul-rovnaya-33/",
-    "price": "70 714,50 руб.",
-    "area": "0,0995 га",
-    "address": "г. Гродно, У-146 в микрорайоне «Барановичи-9», ул. Ровная, 33",
-    "cadastralNumber": "440100000003005965",
-    "cadastralMapUrl": "https://map.nca.by/search/019df778-5c36-7233-a381-6b71349f1679",
-    "auctionDate": "Аукцион состоится 25.08.2026",
-    "applicationDeadline": "Заявления принимаются по 19.08.2026",
-    "communications": "Не указаны",
-    "images": [
-      "https://gcn.by/wp-content/uploads/2026/05/u-146-rovnaya-baranovichi-sajt-2.png",
-      "https://gcn.by/wp-content/uploads/2026/05/u-146-rovnaya-baranovichi-sajt-7.png",
-      "https://gcn.by/wp-content/uploads/2026/05/u-146-rovnaya-baranovichi-sajt-8.png",
-      "https://gcn.by/wp-content/uploads/2026/05/u-146-rovnaya-baranovichi-sajt-1.png",
-      "https://gcn.by/wp-content/uploads/2026/05/u-146-rovnaya-baranovichi-sajt-9.png",
-      "https://gcn.by/wp-content/uploads/2026/05/u-146-rovnaya-baranovichi-sajt-3.png",
-      "https://gcn.by/wp-content/uploads/2026/05/u-146-rovnaya-baranovichi-sajt-4.png",
-      "https://gcn.by/wp-content/uploads/2026/05/u-146-rovnaya-baranovichi-sajt-5.png",
-      "https://gcn.by/wp-content/uploads/2026/05/u-146-rovnaya-baranovichi-sajt-6.png",
-      "https://gcn.by/wp-content/uploads/2026/05/u-146-rovnaya-baranovichi-sajt-2.png",
-      "https://gcn.by/wp-content/uploads/2026/05/u-146-rovnaya-baranovichi-sajt-7.png"
-    ]
-  },
-  {
     "title": "Земельный участок по пер. Серафимовича, 2-му",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-po-per-serafimovicha-2-mu/",
     "price": "70 049,00 руб.",
@@ -296,8 +241,8 @@
     "address": "г. Гродно, ул. Юбилейная, 11",
     "cadastralNumber": "Не найден",
     "cadastralMapUrl": "",
-    "auctionDate": "Не указана",
-    "applicationDeadline": "Заявления принимаются по 19.08.2026",
+    "auctionDate": "Возможно проведение повторного аукциона при обращении заинтересованного в приобретении объекта лица",
+    "applicationDeadline": "Не указан",
     "communications": "Не указаны",
     "images": [
       "https://gcn.by/wp-content/uploads/2025/02/yubilejnaya-4.png",
