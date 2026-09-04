@@ -3,7 +3,7 @@
     "adId": 209852970,
     "link": "https://travel.kufar.by/hotel/209852970",
     "title": "Сдам квартиру - студию",
-    "pricePerNightByn": 100,
+    "pricePerNightByn": 140,
     "address": "Виктора Саяпина ул, 8, Гродно, Гродненская область",
     "rooms": 1,
     "area": 9,
@@ -12,8 +12,8 @@
     "isHotel": false,
     "isSuperhost": true,
     "rating": 1,
-    "ratingScoresCount": 85,
-    "listTime": "2026-09-02T09:34:56Z",
+    "ratingScoresCount": 86,
+    "listTime": "2026-09-04T09:34:56Z",
     "images": [
       "https://rms.kufar.by/v1/gallery/adim1/19557af8-ed96-48f1-82a4-c1ce14562887.jpg",
       "https://rms.kufar.by/v1/gallery/adim1/3f486676-1d2e-4299-aa1b-b65935496647.jpg",
@@ -33,7 +33,7 @@
       "https://rms.kufar.by/v1/gallery/adim1/d2489f23-b859-4baa-b083-5679bea6c9ab.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:41:03.297Z",
-    "lastSeenAt": "2026-09-02T11:56:31.681Z"
+    "lastSeenAt": "2026-09-04T12:04:01.907Z"
   },
   {
     "adId": 1061321943,
@@ -78,7 +78,7 @@
     "adId": 1065503834,
     "link": "https://travel.kufar.by/hotel/1065503834",
     "title": "2-х комнатная квартира на сутки в Гродно",
-    "pricePerNightByn": 105,
+    "pricePerNightByn": 238,
     "address": "Виктора Саяпина ул, 2А, Гродно, Гродненская область",
     "rooms": 2,
     "area": 9,
@@ -101,7 +101,7 @@
       "https://rms.kufar.by/v1/gallery/adim1/a1a41e8b-3a3d-4ebc-8465-3a468db2e39c.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:41:03.297Z",
-    "lastSeenAt": "2026-09-03T11:55:16.579Z"
+    "lastSeenAt": "2026-09-04T12:04:01.907Z"
   },
   {
     "adId": 1048788437,
@@ -211,7 +211,7 @@
     "adId": 1074760843,
     "link": "https://travel.kufar.by/hotel/1074760843",
     "title": "Сдаётся новая 2х-комнатная квартира на сутки /часы/недели",
-    "pricePerNightByn": 110,
+    "pricePerNightByn": 120,
     "address": "Виктора Саяпина ул, 10, Гродно, Гродненская область",
     "rooms": 2,
     "area": 9,
@@ -251,6 +251,6 @@
       "https://rms.kufar.by/v1/gallery/adim1/94546795-6240-4c5b-818e-7bf6de094cc5.jpg"
     ],
     "firstSeenAt": "2026-07-01T10:55:41.090Z",
-    "lastSeenAt": "2026-09-02T11:56:31.681Z"
+    "lastSeenAt": "2026-09-04T12:04:01.907Z"
   }
 ]
