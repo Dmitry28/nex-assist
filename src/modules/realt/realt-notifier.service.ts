@@ -6,6 +6,7 @@ import {
   TELEGRAM_MESSAGE_LIMIT,
   truncateText,
 } from '../../common/utils/telegram';
+import { QuietSummaryService } from '../../common/quiet-summary.service';
 import { TelegramService } from '../telegram/telegram.service';
 import { FEED_DISPLAY_NAMES, NOTIFICATION_HEADERS } from './constants';
 import type { RealtListing, RealtPriceChange, RealtResult } from './dto/realt-listing.dto';
@@ -33,6 +34,7 @@ export class RealtNotifierService {
 
   constructor(
     private readonly telegram: TelegramService,
+    private readonly quiet: QuietSummaryService,
     config: ConfigService,
   ) {
     this.chatId = config.get<string>('realt.chatId') ?? '';
@@ -53,12 +55,20 @@ export class RealtNotifierService {
 
     const { feeds } = result;
 
-    const summaryOk = await this.telegram.sendMessage(this.chatId, buildSummary(feeds));
-    if (!summaryOk) {
+    // No feed found anything new or re-priced: stay silent and let the weekly report speak.
+    const hasChanges = feeds.some(
+      f => f.isBaseline || f.newListings.length > 0 || f.priceChanges.length > 0,
+    );
+    const { delivered } = await this.quiet.sendSummary({
+      module: 'realt',
+      hasChanges,
+      summary: buildSummary(feeds),
+      send: text => this.telegram.sendMessage(this.chatId, text),
+    });
+    if (!delivered) {
       this.logger.error('Failed to send realt.by summary — skipping all notifications');
       return empty;
     }
-    this.logger.log('Summary sent to Telegram');
 
     const notifiedNew = new Map<string, Set<number>>();
     const notifiedPriceChanges = new Map<string, Set<number>>();

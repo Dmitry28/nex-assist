@@ -6,6 +6,7 @@ import {
   TELEGRAM_MESSAGE_LIMIT,
   truncateText,
 } from '../../common/utils/telegram';
+import { QuietSummaryService } from '../../common/quiet-summary.service';
 import { TelegramService } from '../telegram/telegram.service';
 import { NOTIFICATION_HEADERS } from './constants';
 import type {
@@ -41,6 +42,7 @@ export class PogoranyNotifierService {
 
   constructor(
     private readonly telegram: TelegramService,
+    private readonly quiet: QuietSummaryService,
     config: ConfigService,
   ) {
     this.chatId = config.get<string>('pogorany.chatId') ?? '';
@@ -55,15 +57,22 @@ export class PogoranyNotifierService {
   async notifyRunResult(result: PogoranyResult): Promise<PogoranyNotifyResult> {
     if (!this.chatId) return emptyResult();
 
-    const summaryOk = await this.telegram.sendMessage(
-      this.chatId,
-      buildSummary(result, this.sourceUrl),
-    );
-    if (!summaryOk) {
+    // Catalog unchanged since yesterday — say nothing, the weekly report covers a quiet week.
+    const hasChanges =
+      result.isBaseline ||
+      result.newListings.length > 0 ||
+      result.removedListings.length > 0 ||
+      result.priceChanges.length > 0;
+    const { delivered } = await this.quiet.sendSummary({
+      module: 'pogorany',
+      hasChanges,
+      summary: buildSummary(result, this.sourceUrl),
+      send: text => this.telegram.sendMessage(this.chatId, text),
+    });
+    if (!delivered) {
       this.logger.error('Failed to send pogorany summary — skipping all notifications');
       return emptyResult();
     }
-    this.logger.log('Summary sent to Telegram');
 
     // Catalog is tiny (~3 lots) — always send per-listing details, including baseline.
     // Service still persists all listings unconditionally on baseline so a transient
