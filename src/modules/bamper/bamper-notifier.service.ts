@@ -1,5 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
+import { QuietSummaryService } from '../../common/quiet-summary.service';
 import { TELEGRAM_MESSAGE_LIMIT, truncateText } from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
 import { buildListingCaption, buildSummary } from './bamper-format';
@@ -19,6 +20,7 @@ export class BamperNotifierService {
 
   constructor(
     private readonly telegram: TelegramService,
+    private readonly quiet: QuietSummaryService,
     config: ConfigService,
   ) {
     this.chatId = config.get<string>('bamper.chatId') ?? '';
@@ -32,16 +34,26 @@ export class BamperNotifierService {
   async notifyRunResult(result: BamperResult): Promise<BamperNotifyResult> {
     if (!this.chatId) return emptyResult();
 
-    // One summary per run covering every feed.
-    const summaryOk = await this.telegram.sendMessage(this.chatId, buildSummary(result));
-    if (!summaryOk) {
+    // One summary per run covering every feed — skipped entirely on a run with nothing to say.
+    // A feed we could not fetch counts as something to say: the summary names it, and silence
+    // would claim the part was checked and found unchanged.
+    const hasChanges =
+      result.failedFeeds.length > 0 ||
+      result.feeds.some(
+        f => f.isBaseline || f.newListings.length > 0 || f.removedListings.length > 0,
+      );
+    const { delivered } = await this.quiet.sendSummary({
+      module: 'bamper',
+      hasChanges,
+      summary: buildSummary(result),
+      send: text => this.telegram.sendMessage(this.chatId, text),
+    });
+    if (!delivered) {
       this.logger.error('Failed to send bamper summary — skipping all notifications');
       return emptyResult();
     }
     const totalNew = result.feeds.reduce((n, f) => n + f.newListings.length, 0);
-    this.logger.log(
-      `Summary sent (1 message) — ${totalNew} new across ${result.feeds.length} feed(s)`,
-    );
+    this.logger.log(`Summary handled — ${totalNew} new across ${result.feeds.length} feed(s)`);
 
     // Send a card for every new listing. On the first run (empty snapshot) all current
     // listings are "new", so the whole existing inventory is delivered once.

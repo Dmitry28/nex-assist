@@ -1,5 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
+import { QuietSummaryService } from '../../common/quiet-summary.service';
 import { TELEGRAM_MESSAGE_LIMIT, truncateText } from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
 import type { BidCarsResult, CarListing, RemovedCarListing } from './dto/car-listing.dto';
@@ -18,6 +19,7 @@ export class BidCarsNotifierService {
 
   constructor(
     private readonly telegram: TelegramService,
+    private readonly quiet: QuietSummaryService,
     config: ConfigService,
   ) {
     this.chatId = config.get<string>('bidCars.chatId') ?? '';
@@ -35,9 +37,18 @@ export class BidCarsNotifierService {
     }
     const { total, newListings, removedListings, soldPriceUpdates, isBaseline } = result;
 
-    const ok = await this.telegram.sendMessage(
-      this.chatId,
-      buildSummary({
+    // A run that found no new, removed or newly-priced lots stays silent — the weekly report
+    // confirms the quiet week instead.
+    const hasChanges =
+      isBaseline ||
+      newListings.length > 0 ||
+      removedListings.length > 0 ||
+      soldPriceUpdates.length > 0;
+
+    const { delivered } = await this.quiet.sendSummary({
+      module: 'bid-cars',
+      hasChanges,
+      summary: buildSummary({
         date: new Date(),
         total,
         newCount: newListings.length,
@@ -46,9 +57,10 @@ export class BidCarsNotifierService {
         isBaseline,
         sourceUrl: this.sourceUrl,
       }),
-    );
+      send: text => this.telegram.sendMessage(this.chatId, text),
+    });
 
-    if (!ok) throw new Error('Не удалось отправить сводку в Telegram');
+    if (!delivered) throw new Error('Не удалось отправить сводку в Telegram');
 
     // Baseline: summary already covers the seeded count — skip per-listing flood.
     if (isBaseline) {

@@ -1,5 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
+import { QuietSummaryService } from '../../common/quiet-summary.service';
 import { TELEGRAM_CAPTION_LIMIT, truncateText } from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
 import {
@@ -24,6 +25,7 @@ export class AvByNotifierService {
 
   constructor(
     private readonly telegram: TelegramService,
+    private readonly quiet: QuietSummaryService,
     config: ConfigService,
   ) {
     this.chatId = config.get<string>('avBy.chatId') ?? '';
@@ -46,8 +48,21 @@ export class AvByNotifierService {
       return out;
     }
 
-    const ok = await this.telegram.sendMessage(this.chatId, buildSummary(result, new Date()));
-    if (!ok) throw new Error('Не удалось отправить сводку av.by в Telegram');
+    // Quiet run — no new cars, none sold, no price moves: nothing is sent until the weekly report.
+    const hasChanges = result.feeds.some(
+      f =>
+        f.isBaseline ||
+        f.newListings.length > 0 ||
+        f.soldListings.length > 0 ||
+        f.priceChanges.length > 0,
+    );
+    const { delivered } = await this.quiet.sendSummary({
+      module: 'av-by',
+      hasChanges,
+      summary: buildSummary(result, new Date()),
+      send: text => this.telegram.sendMessage(this.chatId, text),
+    });
+    if (!delivered) throw new Error('Не удалось отправить сводку av.by в Telegram');
 
     for (const feed of result.feeds) {
       out.notifiedNew.set(feed.feedKey, new Set());

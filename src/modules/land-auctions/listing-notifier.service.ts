@@ -1,6 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import type { InputMediaPhoto } from 'node-telegram-bot-api';
+import { QuietSummaryService } from '../../common/quiet-summary.service';
 import {
   escapeHtml,
   TELEGRAM_MEDIA_GROUP_LIMIT,
@@ -32,6 +33,7 @@ export class ListingNotifierService {
 
   constructor(
     private readonly telegram: TelegramService,
+    private readonly quiet: QuietSummaryService,
     config: ConfigService,
   ) {
     this.chatId = config.get<string>('landAuctions.chatId') ?? '';
@@ -62,9 +64,21 @@ export class ListingNotifierService {
       isGrodnorikBaseline,
     } = result;
 
-    const ok = await this.telegram.sendMessage(
-      this.chatId,
-      buildSummary({
+    // Nothing new, removed or sold on either source: send nothing at all, and let the weekly
+    // report confirm the quiet week on Sunday.
+    const hasChanges =
+      isBaseline ||
+      isGrodnorikBaseline ||
+      newListings.length > 0 ||
+      removedListings.length > 0 ||
+      soldListings.length > 0 ||
+      newSpecialListings.length > 0 ||
+      newGrodnorikNotices.length > 0;
+
+    const { delivered } = await this.quiet.sendSummary({
+      module: 'land-auctions',
+      hasChanges,
+      summary: buildSummary({
         date: new Date(),
         total,
         newCount: newListings.length,
@@ -79,9 +93,10 @@ export class ListingNotifierService {
         isGrodnorikBaseline,
         grodnorikUrl: this.grodnorikUrl,
       }),
-    );
+      send: text => this.telegram.sendMessage(this.chatId, text),
+    });
 
-    if (!ok) throw new Error('Не удалось отправить сводку в Telegram');
+    if (!delivered) throw new Error('Не удалось отправить сводку в Telegram');
 
     // Baseline: summary already mentions the seeded count — skip per-listing flood.
     // Each source has its own baseline flag, so seeding one never mutes the other.
