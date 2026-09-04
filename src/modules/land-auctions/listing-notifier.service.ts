@@ -1,13 +1,13 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import type { InputMediaPhoto } from 'node-telegram-bot-api';
+import { QuietSummaryService } from '../../common/quiet-summary.service';
 import {
   escapeHtml,
   TELEGRAM_MEDIA_GROUP_LIMIT,
   TELEGRAM_MESSAGE_LIMIT,
   truncateText,
 } from '../../common/utils/telegram';
-import { QuietSummaryService } from '../../common/quiet-summary.service';
 import { TelegramService } from '../telegram/telegram.service';
 import type { LandAuctionsResult, Listing } from './dto/listing.dto';
 import type { GrodnorikNotice } from './dto/grodnorik-notice.dto';

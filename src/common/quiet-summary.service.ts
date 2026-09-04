@@ -123,7 +123,10 @@ export class QuietSummaryService {
       const ok = await send(summary);
       // A rejected summary leaves the streak untouched: the caller will not persist the diff
       // either, so the next run reports the same changes and gets another chance to be seen.
-      if (ok) entry.lastChangeAt = now.toISOString();
+      if (ok) {
+        entry.lastChangeAt = now.toISOString();
+        this.logger.log(`[${module}] summary sent`);
+      }
       await save();
       return { delivered: ok, sent: ok };
     }
@@ -132,14 +135,18 @@ export class QuietSummaryService {
     const quietDays = daysBetween(quietSince, now);
 
     if (!this.isReportDue({ entry, now, quietDays })) {
-      this.logger.log(`Nothing new — staying quiet (${quietDays} quiet day(s))`);
+      this.logger.log(`[${module}] nothing new — staying quiet (${quietDays} quiet day(s))`);
       await save();
       return { delivered: true, sent: false };
     }
 
     const ok = await send(buildQuietReport({ summary, quietSince, quietDays }));
-    if (ok) entry.lastQuietReportAt = now.toISOString();
-    else this.logger.warn('Failed to send the weekly quiet report');
+    if (ok) {
+      entry.lastQuietReportAt = now.toISOString();
+      this.logger.log(`[${module}] weekly quiet report sent (${quietDays} quiet day(s))`);
+    } else {
+      this.logger.warn(`[${module}] failed to send the weekly quiet report`);
+    }
     await save();
     // Nothing changed this run, so nothing is waiting on delivery — persistence may proceed.
     return { delivered: true, sent: ok };

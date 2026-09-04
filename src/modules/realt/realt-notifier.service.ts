@@ -1,12 +1,12 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import type { InputMediaPhoto } from 'node-telegram-bot-api';
+import { QuietSummaryService } from '../../common/quiet-summary.service';
 import {
   TELEGRAM_MEDIA_GROUP_LIMIT,
   TELEGRAM_MESSAGE_LIMIT,
   truncateText,
 } from '../../common/utils/telegram';
-import { QuietSummaryService } from '../../common/quiet-summary.service';
 import { TelegramService } from '../telegram/telegram.service';
 import { FEED_DISPLAY_NAMES, NOTIFICATION_HEADERS } from './constants';
 import type { RealtListing, RealtPriceChange, RealtResult } from './dto/realt-listing.dto';

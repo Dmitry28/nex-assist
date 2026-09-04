@@ -1,7 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { TELEGRAM_CAPTION_LIMIT, truncateText } from '../../common/utils/telegram';
 import { QuietSummaryService } from '../../common/quiet-summary.service';
+import { TELEGRAM_CAPTION_LIMIT, truncateText } from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
 import {
   buildNewCaption,
