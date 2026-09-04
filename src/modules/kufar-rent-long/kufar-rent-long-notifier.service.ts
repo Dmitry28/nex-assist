@@ -1,6 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import type { InputMediaPhoto } from 'node-telegram-bot-api';
+import { QuietSummaryService } from '../../common/quiet-summary.service';
 import {
   TELEGRAM_MEDIA_GROUP_LIMIT,
   TELEGRAM_MESSAGE_LIMIT,
@@ -26,6 +27,7 @@ export class KufarRentLongNotifierService {
 
   constructor(
     private readonly telegram: TelegramService,
+    private readonly quiet: QuietSummaryService,
     config: ConfigService,
   ) {
     this.chatId = config.get<string>('kufarRentLong.chatId') ?? '';
@@ -40,15 +42,18 @@ export class KufarRentLongNotifierService {
   async notifyRunResult(result: KufarRentLongResult): Promise<KufarRentLongNotifyResult> {
     if (!this.chatId) return emptyResult();
 
-    const summaryOk = await this.telegram.sendMessage(
-      this.chatId,
-      buildSummary(result, this.sourceUrl),
-    );
-    if (!summaryOk) {
+    // No new options today — stay silent; the weekly report confirms a quiet week.
+    const hasChanges = result.isBaseline || result.newListings.length > 0;
+    const { delivered } = await this.quiet.sendSummary({
+      module: 'kufar-rent-long',
+      hasChanges,
+      summary: buildSummary(result, this.sourceUrl),
+      send: text => this.telegram.sendMessage(this.chatId, text),
+    });
+    if (!delivered) {
       this.logger.error('Failed to send kufar-rent-long summary — skipping all notifications');
       return emptyResult();
     }
-    this.logger.log('Summary sent to Telegram');
 
     // Catalog is tiny (~5 lots in narrow bbox) — always send per-listing details, including baseline.
     // On baseline, `result.newListings` already contains the full set.

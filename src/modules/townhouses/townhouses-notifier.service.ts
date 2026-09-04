@@ -1,6 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import type { InputMediaPhoto } from 'node-telegram-bot-api';
+import { QuietSummaryService } from '../../common/quiet-summary.service';
 import {
   TELEGRAM_MEDIA_GROUP_LIMIT,
   TELEGRAM_MESSAGE_LIMIT,
@@ -24,6 +25,7 @@ export class TownhousesNotifierService {
 
   constructor(
     private readonly telegram: TelegramService,
+    private readonly quiet: QuietSummaryService,
     config: ConfigService,
   ) {
     this.chatId = config.get<string>('townhouses.chatId') ?? '';
@@ -38,12 +40,24 @@ export class TownhousesNotifierService {
     const notified = new Set<string>();
     if (!this.chatId) return notified;
 
-    const summaryOk = await this.telegram.sendMessage(this.chatId, buildSummary(result));
-    if (!summaryOk) {
+    // Nothing new or re-priced across the sources — stay silent until the weekly report.
+    // A source that failed still gets a summary: it is named there, and silence would read
+    // as "checked, nothing new".
+    const hasChanges =
+      result.isBaseline ||
+      result.newListings.length > 0 ||
+      result.priceChanges.length > 0 ||
+      result.sources.some(s => s.failed);
+    const { delivered } = await this.quiet.sendSummary({
+      module: 'townhouses',
+      hasChanges,
+      summary: buildSummary(result),
+      send: text => this.telegram.sendMessage(this.chatId, text),
+    });
+    if (!delivered) {
       this.logger.error('Failed to send summary — skipping per-listing notifications');
       return notified;
     }
-    this.logger.log('Summary sent to Telegram');
 
     // Baseline: the summary states the seeded count; sending the whole catalogue would be spam.
     if (result.isBaseline) {

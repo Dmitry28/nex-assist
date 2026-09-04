@@ -1,6 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import type { InputMediaPhoto } from 'node-telegram-bot-api';
+import { QuietSummaryService } from '../../common/quiet-summary.service';
 import {
   TELEGRAM_MEDIA_GROUP_LIMIT,
   TELEGRAM_MESSAGE_LIMIT,
@@ -33,6 +34,7 @@ export class KufarNotifierService {
 
   constructor(
     private readonly telegram: TelegramService,
+    private readonly quiet: QuietSummaryService,
     config: ConfigService,
   ) {
     this.chatId = config.get<string>('kufar.chatId') ?? '';
@@ -53,12 +55,20 @@ export class KufarNotifierService {
 
     const { feeds } = result;
 
-    const summaryOk = await this.telegram.sendMessage(this.chatId, buildSummary(feeds));
-    if (!summaryOk) {
+    // No feed found anything new or re-priced: stay silent and let the weekly report speak.
+    const hasChanges = feeds.some(
+      f => f.isBaseline || f.newListings.length > 0 || f.priceChanges.length > 0,
+    );
+    const { delivered } = await this.quiet.sendSummary({
+      module: 'kufar',
+      hasChanges,
+      summary: buildSummary(feeds),
+      send: text => this.telegram.sendMessage(this.chatId, text),
+    });
+    if (!delivered) {
       this.logger.error('Failed to send Kufar summary — skipping all notifications');
       return empty;
     }
-    this.logger.log('Summary sent to Telegram');
 
     const notifiedNew = new Map<string, Set<number>>();
     const notifiedPriceChanges = new Map<string, Set<number>>();

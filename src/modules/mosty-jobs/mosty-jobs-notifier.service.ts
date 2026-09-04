@@ -1,5 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
+import { QuietSummaryService } from '../../common/quiet-summary.service';
 import { escapeHtml, TELEGRAM_MESSAGE_LIMIT, truncateText } from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
 import { NOTIFICATION_HEADERS, NOTIFY_BUDGET_MS } from './constants';
@@ -26,6 +27,7 @@ export class MostyJobsNotifierService {
 
   constructor(
     private readonly telegram: TelegramService,
+    private readonly quiet: QuietSummaryService,
     config: ConfigService,
   ) {
     this.chatId = config.get<string>('mostyJobs.chatId') ?? '';
@@ -48,15 +50,21 @@ export class MostyJobsNotifierService {
   async notifyRunResult(result: MostyJobsResult): Promise<MostyJobsNotifyResult> {
     if (!this.chatId) return emptyResult();
 
-    const summaryOk = await this.telegram.sendMessage(
-      this.chatId,
-      buildSummary(result, this.sourceUrls),
-    );
-    if (!summaryOk) {
+    // A day with no new vacancies sends nothing; a quiet week is confirmed once, on Sunday.
+    // A failed source is worth a summary either way — the totals line names it, and staying
+    // quiet would claim we checked that board and found nothing.
+    const hasFailedSource = Object.values(result.totals).some(total => total === null);
+    const hasChanges = result.newVacancies.length > 0 || result.seededCount > 0 || hasFailedSource;
+    const { delivered } = await this.quiet.sendSummary({
+      module: 'mosty-jobs',
+      hasChanges,
+      summary: buildSummary(result, this.sourceUrls),
+      send: text => this.telegram.sendMessage(this.chatId, text),
+    });
+    if (!delivered) {
       this.logger.error('Failed to send mosty-jobs summary — skipping all notifications');
       return emptyResult();
     }
-    this.logger.log('Summary sent to Telegram');
 
     // Seeded (baseline) vacancies are not in newVacancies — only genuinely new ones are sent.
     const notifiedNew = await this.sendVacancies(result.newVacancies);
