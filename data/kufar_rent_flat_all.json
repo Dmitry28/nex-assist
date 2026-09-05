@@ -33,13 +33,13 @@
       "https://rms.kufar.by/v1/gallery/adim1/d2489f23-b859-4baa-b083-5679bea6c9ab.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:41:03.297Z",
-    "lastSeenAt": "2026-09-04T09:45:06.635Z"
+    "lastSeenAt": "2026-09-04T12:04:01.907Z"
   },
   {
     "adId": 1061321943,
     "link": "https://travel.kufar.by/hotel/1061321943",
     "title": "Сдам квартиру на сутки",
-    "pricePerNightByn": 500,
+    "pricePerNightByn": 300,
     "address": "Виктора Саяпина ул, 4Б, Гродно, Гродненская область",
     "rooms": 2,
     "area": 9,
@@ -49,7 +49,7 @@
     "isSuperhost": false,
     "rating": 1,
     "ratingScoresCount": 13,
-    "listTime": "2026-08-03T12:01:29Z",
+    "listTime": "2026-09-05T10:29:44Z",
     "images": [
       "https://rms.kufar.by/v1/gallery/adim1/7d3dd7c4-cf68-41a0-97d3-85348c94bce2.jpg",
       "https://rms.kufar.by/v1/gallery/adim1/a3029e38-ca16-43fd-8dec-9a270d88e8d3.jpg",
@@ -72,7 +72,7 @@
       "https://rms.kufar.by/v1/gallery/adim1/c158fdbb-a028-48e4-9b90-e6e158c50936.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:41:03.297Z",
-    "lastSeenAt": "2026-08-07T08:11:53.853Z"
+    "lastSeenAt": "2026-09-05T11:06:37.657Z"
   },
   {
     "adId": 1065503834,
@@ -101,13 +101,13 @@
       "https://rms.kufar.by/v1/gallery/adim1/a1a41e8b-3a3d-4ebc-8465-3a468db2e39c.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:41:03.297Z",
-    "lastSeenAt": "2026-09-04T09:45:06.635Z"
+    "lastSeenAt": "2026-09-04T12:04:01.907Z"
   },
   {
     "adId": 1048788437,
     "link": "https://travel.kufar.by/hotel/1048788437",
     "title": "Уютная 1-комн.квартира с красивыми закатами в новом доме",
-    "pricePerNightByn": 65,
+    "pricePerNightByn": 90,
     "address": "Виктора Саяпина ул, 8, Гродно, Гродненская область",
     "rooms": 1,
     "area": 9,
@@ -141,7 +141,7 @@
       "https://rms.kufar.by/v1/gallery/adim1/8a312cf1-04da-4b6f-9736-e890d184f91f.jpg"
     ],
     "firstSeenAt": "2026-05-24T09:20:56.505Z",
-    "lastSeenAt": "2026-08-16T20:55:52.905Z"
+    "lastSeenAt": "2026-08-30T12:33:09.949Z"
   },
   {
     "adId": 1015254848,
@@ -176,13 +176,13 @@
       "https://rms.kufar.by/v1/gallery/adim1/893dca01-dbcd-4fea-8e4d-ec68b13e80ce.jpg"
     ],
     "firstSeenAt": "2026-05-29T11:07:02.414Z",
-    "lastSeenAt": "2026-09-03T10:05:25.630Z"
+    "lastSeenAt": "2026-09-03T11:55:16.579Z"
   },
   {
     "adId": 252107999,
     "link": "https://travel.kufar.by/hotel/252107999",
     "title": "Уютная квартира на сутки",
-    "pricePerNightByn": 170,
+    "pricePerNightByn": 200,
     "address": "Виктора Глухова ул, 3, Гродно, Гродненская область",
     "rooms": 2,
     "area": 9,
@@ -192,7 +192,7 @@
     "isSuperhost": false,
     "rating": 1,
     "ratingScoresCount": 28,
-    "listTime": "2026-08-13T09:56:25Z",
+    "listTime": "2026-08-20T09:56:25Z",
     "images": [
       "https://rms.kufar.by/v1/gallery/adim1/572ea90b-9970-436f-8184-00d797c86ecc.jpg",
       "https://rms.kufar.by/v1/gallery/adim1/10827378-02b8-4cb1-8af4-eab6820f0667.jpg",
@@ -205,13 +205,13 @@
       "https://rms.kufar.by/v1/gallery/adim1/4aae695e-a69b-4d85-b37a-bd3aa0816e78.jpg"
     ],
     "firstSeenAt": "2026-05-29T11:07:02.414Z",
-    "lastSeenAt": "2026-08-16T07:26:03.705Z"
+    "lastSeenAt": "2026-08-23T07:31:05.888Z"
   },
   {
     "adId": 1074760843,
     "link": "https://travel.kufar.by/hotel/1074760843",
     "title": "Сдаётся новая 2х-комнатная квартира на сутки /часы/недели",
-    "pricePerNightByn": 150,
+    "pricePerNightByn": 120,
     "address": "Виктора Саяпина ул, 10, Гродно, Гродненская область",
     "rooms": 2,
     "area": 9,
@@ -251,6 +251,6 @@
       "https://rms.kufar.by/v1/gallery/adim1/94546795-6240-4c5b-818e-7bf6de094cc5.jpg"
     ],
     "firstSeenAt": "2026-07-01T10:55:41.090Z",
-    "lastSeenAt": "2026-09-04T09:45:06.635Z"
+    "lastSeenAt": "2026-09-04T12:04:01.907Z"
   }
 ]
