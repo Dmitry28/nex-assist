@@ -181,11 +181,13 @@ export const BAMPER_DEFAULTS = {
    * surfaces the newest listings first. The whole site sits behind Cloudflare, so the
    * parser drives it with Puppeteer (see BidCars for the same approach).
    */
-  // Car 1 — Atlas Cross Sport (rear-end damage): rear bumper + tailgate.
+  // Car 1 — Atlas Cross Sport: rear bumper + tailgate (rear-end damage) and windshield.
   REAR_BUMPER_URL:
     'https://bamper.by/zchbu/zapchast_bamper-zadniy/marka_volkswagen/model_atlascrosssport/god_2023-2026/?sort=DATE-DESC',
   TAILGATE_URL:
     'https://bamper.by/zchbu/zapchast_kryshka-bagazhnika-dver-3-5/marka_volkswagen/model_atlascrosssport/god_2023-2026/?sort=DATE-DESC',
+  WINDSHIELD_URL:
+    'https://bamper.by/zchbu/zapchast_steklo-lobovoe/marka_volkswagen/model_atlascrosssport/god_2023-2026/?sort=DATE-DESC',
   // Car 2 — Atlas (front-end damage): front bumper, hood, left headlight, radiator support.
   ATLAS_FRONT_BUMPER_URL:
     'https://bamper.by/zchbu/zapchast_bamper-peredniy/marka_volkswagen/model_atlas/god_2023-2026/?sort=DATE-DESC',

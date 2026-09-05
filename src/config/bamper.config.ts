@@ -23,7 +23,7 @@ export interface BamperFeedConfig {
  */
 export default registerAs('bamper', () => ({
   feeds: [
-    // Car 1 — Atlas Cross Sport (rear-end)
+    // Car 1 — Atlas Cross Sport
     {
       key: 'rear-bumper',
       car: 'Atlas Cross Sport',
@@ -35,6 +35,12 @@ export default registerAs('bamper', () => ({
       car: 'Atlas Cross Sport',
       label: 'Крышка багажника',
       url: process.env.BAMPER_TAILGATE_URL ?? BAMPER_DEFAULTS.TAILGATE_URL,
+    },
+    {
+      key: 'windshield',
+      car: 'Atlas Cross Sport',
+      label: 'Лобовое стекло',
+      url: process.env.BAMPER_WINDSHIELD_URL ?? BAMPER_DEFAULTS.WINDSHIELD_URL,
     },
     // Car 2 — Atlas (front-end)
     {
