@@ -11,7 +11,7 @@
   {
     "module": "kufar",
     "trackedSince": "2026-09-05T14:37:34.016Z",
-    "lastChangeAt": "2026-09-07T09:34:14.036Z"
+    "lastChangeAt": "2026-09-08T09:34:40.696Z"
   },
   {
     "module": "kufar-rent-flat",
@@ -24,7 +24,7 @@
   {
     "module": "realt",
     "trackedSince": "2026-09-05T14:41:04.454Z",
-    "lastChangeAt": "2026-09-07T09:36:40.868Z"
+    "lastChangeAt": "2026-09-08T09:39:01.585Z"
   },
   {
     "module": "bamper",
@@ -47,6 +47,6 @@
   {
     "module": "mosty-jobs",
     "trackedSince": "2026-09-05T14:45:19.667Z",
-    "lastChangeAt": "2026-09-07T09:56:01.354Z"
+    "lastChangeAt": "2026-09-08T09:59:02.414Z"
   }
 ]
