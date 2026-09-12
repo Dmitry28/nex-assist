@@ -1263,5 +1263,23 @@
     "seller": "Farmers Insurance",
     "removedAt": "2026-09-11T11:56:16.885Z",
     "removalNotifiedAt": "2026-09-11T11:56:16.885Z"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/0-45633286/2024-Volkswagen-Atlas-1V2HR2CAXRC570607",
+    "title": "2024 Volkswagen Atlas, 2.0T Se W/Tec...",
+    "vin": "1V2HR2CAXRC570607",
+    "lot": "0-45633286",
+    "odometer": "32k мили (52k km)",
+    "damage": "Столкноевение | Передняя часть",
+    "location": "ACE - Perris (CA)",
+    "currentBid": "$3,050",
+    "engine": "4 cyl. 269HP",
+    "keys": "Salvage certificate (California)",
+    "condition": "На ходу",
+    "auctionDate": "пт 11 сент., 18:00 GMT+2",
+    "auctionSource": "IAAI",
+    "seller": "Auto Club Of Southern Ca (acsc)",
+    "removedAt": "2026-09-12T11:22:01.991Z",
+    "removalNotifiedAt": "2026-09-12T11:22:01.991Z"
   }
 ]
