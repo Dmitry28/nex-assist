@@ -3,79 +3,79 @@
     "source": "bamper:rear-bumper",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-12T11:28:57.012Z"
+    "lastNonEmptyAt": "2026-09-13T12:32:36.399Z"
   },
   {
     "source": "bamper:tailgate",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-12T11:29:09.026Z"
+    "lastNonEmptyAt": "2026-09-13T12:32:50.147Z"
   },
   {
     "source": "bamper:atlas-front-bumper",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-12T11:29:38.503Z"
+    "lastNonEmptyAt": "2026-09-13T12:33:13.795Z"
   },
   {
     "source": "bamper:atlas-hood",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-12T11:29:59.799Z"
+    "lastNonEmptyAt": "2026-09-13T12:33:27.292Z"
   },
   {
     "source": "bamper:atlas-headlight-left",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-12T11:30:12.680Z"
+    "lastNonEmptyAt": "2026-09-13T12:33:39.739Z"
   },
   {
     "source": "bamper:atlas-radiator-support",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-12T11:30:29.967Z"
+    "lastNonEmptyAt": "2026-09-13T12:33:52.480Z"
   },
   {
     "source": "pogorany",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-12T11:30:53.023Z"
+    "lastNonEmptyAt": "2026-09-13T12:34:03.808Z"
   },
   {
     "source": "ghb",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-12T11:32:35.332Z"
+    "lastNonEmptyAt": "2026-09-13T12:35:56.851Z"
   },
   {
     "source": "mosty:gsz",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-12T11:32:58.718Z"
+    "lastNonEmptyAt": "2026-09-13T12:36:20.708Z"
   },
   {
     "source": "mosty:rabota",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-12T11:32:58.719Z"
+    "lastNonEmptyAt": "2026-09-13T12:36:20.709Z"
   },
   {
     "source": "mosty:joblab",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-12T11:32:58.719Z"
+    "lastNonEmptyAt": "2026-09-13T12:36:20.710Z"
   },
   {
     "source": "mosty:evroopt",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-12T11:32:58.720Z"
+    "lastNonEmptyAt": "2026-09-13T12:36:20.710Z"
   },
   {
     "source": "mosty:crb",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-12T11:32:58.720Z"
+    "lastNonEmptyAt": "2026-09-13T12:36:20.711Z"
   },
   {
     "source": "mosty:fair",
@@ -84,7 +84,7 @@
   },
   {
     "source": "bamper:windshield",
-    "zeroRuns": 7,
+    "zeroRuns": 8,
     "alertedAt": 0
   }
 ]
