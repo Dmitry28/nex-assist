@@ -25,6 +25,7 @@
     "scrape:realt": "ts-node -r tsconfig-paths/register src/scripts/scrape.ts realt",
     "scrape:av-by": "ts-node -r tsconfig-paths/register src/scripts/scrape.ts av-by",
     "scrape:bamper": "ts-node -r tsconfig-paths/register src/scripts/scrape.ts bamper",
+    "scrape:idriver": "ts-node -r tsconfig-paths/register src/scripts/scrape.ts idriver",
     "scrape:pogorany": "ts-node -r tsconfig-paths/register src/scripts/scrape.ts pogorany",
     "scrape:ghb": "ts-node -r tsconfig-paths/register src/scripts/scrape.ts ghb",
     "scrape:mosty-jobs": "ts-node -r tsconfig-paths/register src/scripts/scrape.ts mosty-jobs",

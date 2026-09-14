@@ -5,6 +5,7 @@ import {
   BAMPER_DEFAULTS,
   BID_CARS_DEFAULTS,
   GHB_DEFAULTS,
+  IDRIVER_DEFAULTS,
   KUFAR_DEFAULTS,
   KUFAR_RENT_FLAT_DEFAULTS,
   KUFAR_RENT_LONG_DEFAULTS,
@@ -129,6 +130,12 @@ export const validationSchema = Joi.object({
     .default(BAMPER_DEFAULTS.ATLAS_RADIATOR_SUPPORT_URL),
   BAMPER_SCRAPE_CRON: Joi.string().default(BAMPER_DEFAULTS.SCRAPE_CRON),
   TELEGRAM_ATLAS_PARTS_CHAT_ID: Joi.string().optional(),
+
+  // idriver.by module — second source for the same Atlas parts (geo-blocked, JS-gated).
+  // Shares TELEGRAM_ATLAS_PARTS_CHAT_ID above.
+  IDRIVER_ATLAS_CROSS_SPORT_URL: Joi.string().uri().default(IDRIVER_DEFAULTS.ATLAS_CROSS_SPORT_URL),
+  IDRIVER_MIN_YEAR: Joi.number().integer().min(1990).default(IDRIVER_DEFAULTS.MIN_YEAR),
+  IDRIVER_SCRAPE_CRON: Joi.string().default(IDRIVER_DEFAULTS.SCRAPE_CRON),
 
   // ghb.by module — ОАО «Гродножилстрой» Прейскурант РБ (new apartments / offices)
   GHB_PRICE_LIST_URL: Joi.string().uri().default(GHB_DEFAULTS.PRICE_LIST_URL),

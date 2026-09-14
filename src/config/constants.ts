@@ -201,6 +201,30 @@ export const BAMPER_DEFAULTS = {
   SCRAPE_CRON: '0 9 * * *',
 } as const;
 
+export const IDRIVER_DEFAULTS = {
+  /**
+   * idriver.by aggregates Belarusian breakers' yards. Unlike bamper.by there is no year filter
+   * in the URL and no per-part page worth paying for: the whole model catalogue is one page
+   * sorted by `sorter=fresh`, whose first screen carries the 50 newest offers across every part
+   * of the car. One fetch therefore covers the entire car instead of one part, which matters
+   * because every fetch here is expensive — see the render note below.
+   */
+  ATLAS_CROSS_SPORT_URL: 'https://idriver.by/auto-parts/volkswagen/atlas-cross-sport?sorter=fresh',
+  /**
+   * Donor year from which a part is treated as fitting the owner's 2025 car — the same
+   * 2023+ window the bamper.by feeds encode in their URLs. idriver has no year filter, so the
+   * cut is applied after parsing. Listings without a stated year are kept: the site omits it
+   * for a minority of offers and a missed fit costs more than one extra card.
+   *
+   * Measured 2026-09-14: the site's whole Atlas Cross Sport stock is 2019-2022 (plus a single
+   * 2024 windscreen) and its `atlas` model covers 2017-2020 only, so this filter is expected to
+   * be quiet — it exists to catch the rare restyle part rather than to page daily.
+   */
+  MIN_YEAR: 2023,
+  /** Default cron: every day at 09:00 UTC (12:00 Minsk). Cron is wired off — trigger via POST. */
+  SCRAPE_CRON: '0 9 * * *',
+} as const;
+
 export const MOSTY_JOBS_DEFAULTS = {
   /**
    * gsz.gov.by state vacancy bank search — Гродненская область (region=12380),
