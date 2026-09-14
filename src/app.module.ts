@@ -11,6 +11,7 @@ import { TransformInterceptor } from './common/interceptors/transform.intercepto
 import { HealthModule } from './modules/health/health.module';
 import { AvByModule } from './modules/av-by/av-by.module';
 import { BamperModule } from './modules/bamper/bamper.module';
+import { IdriverModule } from './modules/idriver/idriver.module';
 import { BidCarsModule } from './modules/bid-cars/bid-cars.module';
 import { GhbModule } from './modules/ghb/ghb.module';
 import { KufarModule } from './modules/kufar/kufar.module';
@@ -64,6 +65,7 @@ import { TownhousesModule } from './modules/townhouses/townhouses.module';
     RealtModule,
     AvByModule,
     BamperModule,
+    IdriverModule,
     PogoranyModule,
     TownhousesModule,
     GhbModule,
