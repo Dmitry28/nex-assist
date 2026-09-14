@@ -137,6 +137,21 @@ describe('IdriverService', () => {
     });
   });
 
+  // A page that parses to nothing is a broken source, not a quiet day — the summary has to keep
+  // showing the car, and the snapshot must survive untouched.
+  describe('when the page parses to nothing', () => {
+    it('still reports the car, with zeroes, and writes no snapshot', async () => {
+      const known = entry('2', new Date().toISOString());
+      const { service, written } = harness([], [known]);
+      const result = await service.run();
+
+      expect(result.feeds).toHaveLength(1);
+      expect(result.feeds[0]).toMatchObject({ car: FEED.car, total: 0, matching: 0 });
+      expect(result.feeds[0].newListings).toEqual([]);
+      expect(written.size).toBe(0);
+    });
+  });
+
   // Page one turning over completely means arrivals may have scrolled past between runs; the
   // run has to say so rather than report a clean sweep.
   describe('coverage', () => {

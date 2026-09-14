@@ -110,7 +110,20 @@ export class IdriverService {
       if (alert) await this.notifier.notifyError(alert);
 
       if (current.length === 0) {
+        // Still report the car, with zeroes: dropping it from the result would leave the summary
+        // showing no feed at all, which reads like a quiet day rather than a source that stopped
+        // answering. The snapshot is deliberately left untouched (no entry in matchingByFeed).
         this.logger.warn(`Feed ${feed.key}: page parsed to 0 listings — skipping diff`);
+        feedResults.push({
+          feedKey: feed.key,
+          car: feed.car,
+          url: feed.url,
+          total: 0,
+          matching: 0,
+          newListings: [],
+          isBaseline: false,
+          mayHaveMissed: false,
+        });
         continue;
       }
 

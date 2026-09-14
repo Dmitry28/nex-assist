@@ -74,7 +74,7 @@ const partFromTitle = (title: string): string => {
   const cut = title.search(/\s+Volkswagen\b/);
   // No make in the title (never seen, but the catalogue is not ours): drop the trailing year
   // rather than return nothing.
-  return cut > 0 ? title.slice(0, cut).trim() : title.replace(/,\s*20\d\d\s*$/, '').trim();
+  return cut >= 0 ? title.slice(0, cut).trim() : title.replace(/,\s*20\d\d\s*$/, '').trim();
 };
 
 /**
