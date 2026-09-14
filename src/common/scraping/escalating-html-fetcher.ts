@@ -27,6 +27,14 @@ export interface EscalatingHtmlOptions {
   maxBytes: number;
   /** Proxy country for the paid rung, when the site is geo-restricted. */
   country?: string;
+  /**
+   * Ask the paid rung to render the page in a real browser. Rendering is billed on top of the
+   * anti-bot tier, so it is opt-in: only sites whose content is behind a JS gate need it
+   * (idriver.by reloads itself from a script and serves a 713-byte stub without it).
+   */
+  renderJs?: boolean;
+  /** Settle time after render (ms) — implies renderJs on every provider. */
+  renderWaitMs?: number;
 }
 
 /**
@@ -63,6 +71,8 @@ export class EscalatingHtmlFetcher implements OnModuleDestroy {
       attemptPaid: async () => {
         const { content, provider } = await this.scraping.scrape(url, {
           ...(options.country ? { country: options.country } : {}),
+          ...(options.renderJs ? { renderJs: true } : {}),
+          ...(options.renderWaitMs ? { renderWaitMs: options.renderWaitMs } : {}),
           asp: true,
           timeoutMs: options.timeoutMs,
         });

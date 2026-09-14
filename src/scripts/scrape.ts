@@ -8,6 +8,7 @@
  *   npm run scrape              # run all modules
  *   npm run scrape:land         # land-auctions only
  *   npm run scrape:bid-cars     # bid-cars only
+ *   npm run scrape:idriver      # idriver only
  *   npm run scrape:kufar        # kufar only
  *   npm run scrape:realt        # realt only
  *   npm run scrape townhouses   # townhouses only
@@ -21,6 +22,7 @@ import { AvByService } from '../modules/av-by/av-by.service';
 import { BamperService } from '../modules/bamper/bamper.service';
 import { BidCarsService } from '../modules/bid-cars/bid-cars.service';
 import { GhbService } from '../modules/ghb/ghb.service';
+import { IdriverService } from '../modules/idriver/idriver.service';
 import { KufarService } from '../modules/kufar/kufar.service';
 import { KufarRentFlatService } from '../modules/kufar-rent-flat/kufar-rent-flat.service';
 import { KufarRentLongService } from '../modules/kufar-rent-long/kufar-rent-long.service';
@@ -39,6 +41,7 @@ type Module =
   | 'realt'
   | 'av-by'
   | 'bamper'
+  | 'idriver'
   | 'pogorany'
   | 'ghb'
   | 'mosty-jobs'
@@ -57,6 +60,7 @@ function parseModule(): Module {
     arg === 'realt' ||
     arg === 'av-by' ||
     arg === 'bamper' ||
+    arg === 'idriver' ||
     arg === 'pogorany' ||
     arg === 'ghb' ||
     arg === 'mosty-jobs' ||
@@ -64,7 +68,7 @@ function parseModule(): Module {
   )
     return arg;
   console.error(
-    `Unknown module: "${arg}". Valid options: land, bid-cars, kufar, kufar-rent-flat, kufar-rent-long, realt, av-by, bamper, pogorany, ghb, mosty-jobs`,
+    `Unknown module: "${arg}". Valid options: land, bid-cars, kufar, kufar-rent-flat, kufar-rent-long, realt, av-by, bamper, idriver, pogorany, ghb, mosty-jobs`,
   );
   process.exit(1);
 }
@@ -141,6 +145,14 @@ async function bootstrap(): Promise<void> {
         await app.get(BamperService).run();
       } catch (err) {
         console.error('Bamper scrape failed:', err);
+      }
+    }
+
+    if (target === 'all' || target === 'idriver') {
+      try {
+        await app.get(IdriverService).run();
+      } catch (err) {
+        console.error('Idriver scrape failed:', err);
       }
     }
 
