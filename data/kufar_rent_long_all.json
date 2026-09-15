@@ -44,7 +44,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fe3aaa67-820b-4056-a5c1-3f46eb49bd38.jpg"
     ],
     "firstSeenAt": "2026-08-04T15:43:12.972Z",
-    "lastSeenAt": "2026-09-14T13:33:34.501Z"
+    "lastSeenAt": "2026-09-15T12:27:40.532Z"
   },
   {
     "adId": 1080055437,
@@ -163,7 +163,7 @@
     "adId": 1084648825,
     "link": "https://re.kufar.by/vi/1084648825",
     "title": "Сдаю 2-ку в новом доме",
-    "priceByn": 606,
+    "priceByn": 605,
     "priceUsd": 200,
     "address": "Асфальтная ул, 61А, Гродно, Гродненская область",
     "rooms": 2,
@@ -190,7 +190,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/013f89fd-e3af-4403-bef2-63157b48e5e3.jpg"
     ],
     "firstSeenAt": "2026-09-11T12:02:30.638Z",
-    "lastSeenAt": "2026-09-14T13:33:34.501Z"
+    "lastSeenAt": "2026-09-15T12:27:40.532Z"
   },
   {
     "adId": 1084958295,
@@ -225,6 +225,6 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/1a89dec4-60a3-41ff-b9ac-1bd98d754c6a.jpg"
     ],
     "firstSeenAt": "2026-09-13T12:31:17.362Z",
-    "lastSeenAt": "2026-09-14T13:33:34.501Z"
+    "lastSeenAt": "2026-09-15T12:27:40.532Z"
   }
 ]
