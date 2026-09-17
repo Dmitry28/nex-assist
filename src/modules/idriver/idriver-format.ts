@@ -50,7 +50,7 @@ export const buildListingCaption = ({
 
 /** One line per car for the run summary — the car links to the monitored catalogue. */
 const feedSummaryLine = (feed: IdriverFeedResult, minYear: number): string => {
-  const bits = [`на странице ${feed.total}`, `${minYear}+: ${feed.matching}`];
+  const bits = [`на странице ${feed.total}`, `подходит (${minYear}+): ${feed.matching}`];
   if (feed.newListings.length > 0) bits.unshift(`🆕 ${feed.newListings.length} нов.`);
   return `• <a href="${feed.url}">${feed.car}</a>: ${bits.join(' · ')}`;
 };

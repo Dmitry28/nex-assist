@@ -21,11 +21,11 @@ const FEED: IdriverFeedConfig = {
   url: 'https://idriver.by/auto-parts/volkswagen/atlas-cross-sport?sorter=fresh',
 };
 
-const listing = (id: string, year?: number): IdriverListing => ({
+const listing = (id: string, year?: number, part = 'Крышка багажника'): IdriverListing => ({
   id,
-  url: `https://idriver.by/auto-parts/kapot/volkswagen/atlas-cross-sport/${id}`,
-  title: `Капот Volkswagen Atlas Cross Sport, ${year ?? '—'}`,
-  part: 'Капот',
+  url: `https://idriver.by/auto-parts/kryshka-bagajnika/volkswagen/atlas-cross-sport/${id}`,
+  title: `${part} Volkswagen Atlas Cross Sport, ${year ?? '—'}`,
+  part,
   ...(year ? { year } : {}),
 });
 
@@ -100,6 +100,22 @@ describe('IdriverService', () => {
       const result = await service.run();
 
       expect(result.feeds[0].newListings.map(l => l.id)).toEqual(['1']);
+    });
+  });
+
+  // The catalogue covers every part of the car, so without this cut the channel fills with floor
+  // mats and deflectors — which is exactly what it did before the filter existed.
+  describe('part filter', () => {
+    it('notifies only the watched parts', async () => {
+      const { service } = harness([
+        listing('1', 2024, 'Дефлектор обдува салона'),
+        listing('2', 2024, 'Антенна'),
+        listing('3', 2024, 'Бампер задний'),
+      ]);
+      const result = await service.run();
+
+      expect(result.feeds[0].total).toBe(3);
+      expect(result.feeds[0].newListings.map(l => l.id)).toEqual(['3']);
     });
   });
 
