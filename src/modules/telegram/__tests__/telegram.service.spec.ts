@@ -70,10 +70,26 @@ describe('TelegramService — with bot', () => {
 
   it('sendPhoto returns true on success', async () => {
     expect(await service.sendPhoto('123', 'http://img', 'caption')).toBe(true);
-    expect(bot.sendPhoto).toHaveBeenCalledWith('123', 'http://img', {
-      caption: 'caption',
-      parse_mode: 'HTML',
-    });
+    expect(bot.sendPhoto).toHaveBeenCalledWith(
+      '123',
+      'http://img',
+      { caption: 'caption', parse_mode: 'HTML' },
+      undefined,
+    );
+  });
+
+  // idriver.by photos are uploaded as bytes — Telegram's own fetcher cannot reach that host —
+  // and an upload needs the file type declared, or Telegram rejects it.
+  it('sendPhoto uploads a buffer with an explicit content type', async () => {
+    const photo = Buffer.from('webp bytes');
+    const upload = { filename: 'photo.webp', contentType: 'image/webp' };
+    expect(await service.sendPhoto('123', photo, 'caption', upload)).toBe(true);
+    expect(bot.sendPhoto).toHaveBeenCalledWith(
+      '123',
+      photo,
+      { caption: 'caption', parse_mode: 'HTML' },
+      upload,
+    );
   });
 
   it('sendMediaGroup returns true on success', async () => {

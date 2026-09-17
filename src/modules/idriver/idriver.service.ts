@@ -6,6 +6,7 @@ import { sleep } from '../../common/utils/sleep';
 import type { IdriverFeedConfig } from '../../config/idriver.config';
 import { IdriverNotifierService, type IdriverNotifyResult } from './idriver-notifier.service';
 import { IdriverParserService } from './idriver-parser.service';
+import { isWantedPart } from './idriver-part-filter';
 import { INTER_FEED_DELAY_MS, RETENTION_DAYS, RUN_TIMEOUT_MS, dataFile } from './constants';
 import {
   isIdriverSnapshotEntry,
@@ -18,7 +19,7 @@ import {
 /**
  * Orchestrates the idriver.by scrape cycle, one catalogue page per car:
  *   1. Fetch the newest page of the model catalogue (every part, newest first).
- *   2. Keep the listings whose donor year fits the owner's car.
+ *   2. Keep the listings that are both a watched part and a donor year that fits the car.
  *   3. Diff those against the snapshot → new listings.
  *   4. Notify — only what was successfully sent gets persisted.
  *
@@ -27,8 +28,9 @@ import {
  * • **No removals.** A run sees the newest page, not the full set for a part, so a listing that
  *   is absent may simply have been pushed down the list. Snapshot entries are therefore aged out
  *   after RETENTION_DAYS instead of being dropped when they disappear.
- * • **A year filter in code.** idriver URLs carry no year parameter, so the 2023+ window that
- *   the bamper feeds encode in their URLs is applied after parsing.
+ * • **Year and part filters in code.** idriver URLs carry neither parameter, so both the 2023+
+ *   window and the part whitelist that the bamper feeds encode in their URLs are applied after
+ *   parsing — see `idriver-part-filter.ts`.
  */
 @Injectable()
 export class IdriverService {
@@ -127,9 +129,12 @@ export class IdriverService {
         continue;
       }
 
-      // Year unknown is kept: the site omits it on a minority of cards, and a missed fit costs
-      // more than one extra card in the channel.
-      const matching = current.filter(l => l.year === undefined || l.year >= minYear);
+      // Two filters, both in code: idriver URLs carry neither a year nor a part parameter, so a
+      // feed is the model's entire catalogue. Year unknown is kept — the site omits it on a
+      // minority of cards, and a missed fit costs more than one extra card in the channel.
+      const matching = current.filter(
+        l => (l.year === undefined || l.year >= minYear) && isWantedPart(l.part),
+      );
       const newListings = matching.filter(l => !previousMap.has(l.id));
       // Nothing on the page was seen before, yet we had a snapshot: the catalogue turned over
       // entirely between runs, so arrivals could have scrolled off unseen.
@@ -147,7 +152,7 @@ export class IdriverService {
         mayHaveMissed,
       };
       this.logger.log(
-        `Diff [${feed.key}] — page: ${result.total}, ${minYear}+: ${matching.length}, new: ${newListings.length}${result.isBaseline ? ' [BASELINE]' : ''}`,
+        `Diff [${feed.key}] — page: ${result.total}, wanted parts ${minYear}+: ${matching.length}, new: ${newListings.length}${result.isBaseline ? ' [BASELINE]' : ''}`,
       );
 
       feedResults.push(result);
