@@ -4,7 +4,11 @@ import { QuietSummaryService } from '../../common/quiet-summary.service';
 import { TELEGRAM_MESSAGE_LIMIT, truncateText } from '../../common/utils/telegram';
 import { TelegramService } from '../telegram/telegram.service';
 import { buildListingCaption, buildSummary } from './idriver-format';
-import type { IdriverFeedResult, IdriverResult } from './dto/idriver-listing.dto';
+import { fetchPhoto } from './idriver-photo';
+import type { IdriverFeedResult, IdriverListing, IdriverResult } from './dto/idriver-listing.dto';
+
+/** idriver serves images as WebP only, so every uploaded photo is declared as one. */
+const PHOTO_UPLOAD = { filename: 'photo.webp', contentType: 'image/webp' };
 
 /** Tracks which listings were successfully delivered — the service gates persistence on this. */
 export interface IdriverNotifyResult {
@@ -82,19 +86,26 @@ export class IdriverNotifierService {
         index: i + 1,
         total: feed.newListings.length,
       });
-      // Text only: see the parser for why these cards carry no photo.
-      const ok = await this.telegram.sendMessage(
-        this.chatId,
-        truncateText(caption, TELEGRAM_MESSAGE_LIMIT),
-      );
+      const ok = await this.sendListing(listing, caption);
       if (ok) {
         notified.add(listing.id);
         this.logger.log(
-          `Sent [${feed.feedKey}] id=${listing.id} (${listing.year ?? '?'}) — ${listing.title}`,
+          `Sent [${feed.feedKey}] id=${listing.id} (${listing.year ?? '?'}, ${listing.photoUrl ? 'photo' : 'text'}) — ${listing.title}`,
         );
       } else {
         this.logger.warn(`Failed to send [${feed.feedKey}] id=${listing.id} (${listing.title})`);
       }
     }
+  }
+
+  /**
+   * The photo is downloaded and uploaded as bytes: Telegram's fetcher cannot reach
+   * img*.idriver.by — see `idriver-photo.ts`. A failed download falls back to text.
+   */
+  private async sendListing(listing: IdriverListing, caption: string): Promise<boolean> {
+    const photo = listing.photoUrl ? await fetchPhoto(listing.photoUrl) : null;
+    return photo
+      ? this.telegram.sendPhoto(this.chatId, photo, truncateText(caption), PHOTO_UPLOAD)
+      : this.telegram.sendMessage(this.chatId, truncateText(caption, TELEGRAM_MESSAGE_LIMIT));
   }
 }

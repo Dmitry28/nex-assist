@@ -52,6 +52,17 @@ describe('parseIdriverCatalogueHtml — Atlas Cross Sport catalogue', () => {
     }
   });
 
+  // The site serves WebP only, and Telegram cannot fetch these hosts itself — the notifier
+  // downloads the file, so the URL has to be the full-size one, not the thumbnail.
+  it('takes the first card photo at full size', () => {
+    const withPhoto = listings.filter(l => l.photoUrl);
+    expect(withPhoto.length).toBeGreaterThan(40);
+    for (const l of withPhoto) {
+      expect(l.photoUrl).toMatch(/^https:\/\/img\d*\.idriver\.by\/[\w/-]+\.webp$/);
+      expect(l.photoUrl).not.toContain('_thumb');
+    }
+  });
+
   it('returns nothing for the verification stub, and rejects it as unusable', () => {
     const stub = fixture('verification-stub.html');
     expect(isCataloguePage(stub)).toBe(false);
