@@ -8,12 +8,12 @@
   {
     "module": "bid-cars",
     "trackedSince": "2026-09-05T11:02:13.356Z",
-    "lastChangeAt": "2026-09-16T12:19:25.929Z"
+    "lastChangeAt": "2026-09-17T12:20:19.012Z"
   },
   {
     "module": "kufar",
     "trackedSince": "2026-09-05T11:04:21.332Z",
-    "lastChangeAt": "2026-09-16T12:22:13.738Z"
+    "lastChangeAt": "2026-09-17T12:23:05.002Z"
   },
   {
     "module": "kufar-rent-flat",
@@ -22,17 +22,17 @@
   {
     "module": "kufar-rent-long",
     "trackedSince": "2026-09-05T11:06:38.927Z",
-    "lastChangeAt": "2026-09-13T12:31:11.127Z"
+    "lastChangeAt": "2026-09-17T12:23:58.234Z"
   },
   {
     "module": "realt",
     "trackedSince": "2026-09-05T11:07:23.309Z",
-    "lastChangeAt": "2026-09-16T12:25:19.569Z"
+    "lastChangeAt": "2026-09-17T12:24:48.834Z"
   },
   {
     "module": "av-by",
     "trackedSince": "2026-09-05T11:07:56.508Z",
-    "lastChangeAt": "2026-09-14T13:34:48.800Z"
+    "lastChangeAt": "2026-09-17T12:25:16.329Z"
   },
   {
     "module": "bamper",
@@ -57,11 +57,11 @@
   {
     "module": "mosty-jobs",
     "trackedSince": "2026-09-05T11:11:38.821Z",
-    "lastChangeAt": "2026-09-16T12:46:48.271Z"
+    "lastChangeAt": "2026-09-17T12:35:03.970Z"
   },
   {
     "module": "idriver",
     "trackedSince": "2026-09-14T13:37:28.266Z",
-    "lastChangeAt": "2026-09-16T12:43:24.011Z"
+    "lastChangeAt": "2026-09-17T12:31:17.871Z"
   }
 ]
