@@ -85,9 +85,11 @@ const partFromTitle = (title: string): string => {
  * `itemprop="name"` title, the `itemprop="price"` meta, the `part_txt` seller note, the
  * "Авто:" spec, and the `dop` row holding city, seller and publication date.
  *
- * The card's photos are deliberately not read: idriver serves every image as WebP (even behind a
- * .jpg path), and Telegram's sendPhoto-by-URL refuses WebP — measured, every send 400'd and fell
- * back to text. The listing link carries the gallery instead. Exported for tests.
+ * The first `itemprop="image"` is kept as the card photo. idriver serves images as WebP only
+ * (a .jpg path 404s), and Telegram's servers cannot fetch img*.idriver.by at all — sendPhoto by
+ * URL answers "failed to get HTTP URL content" — so the notifier downloads the file itself and
+ * uploads the bytes, which Telegram accepts. The `_thumb` suffix is dropped for the full-size
+ * image. Exported for tests.
  */
 export const parseIdriverCatalogueHtml = (html: string): IdriverListing[] => {
   const cards = html.split(/(?=<li class="Element\d+")/).slice(1);
@@ -119,6 +121,11 @@ export const parseIdriverCatalogueHtml = (html: string): IdriverListing[] => {
     const descMatch = card.match(/class="part_txt"[^>]*>([\s\S]*?)<\/p>/i);
     const description = descMatch ? stripTags(descMatch[1]) || undefined : undefined;
 
+    // The card is a slider of thumbnails; the first one is the offer's lead photo. Dropping
+    // `_thumb` yields the full-size file at the same path (~55-85 KB against ~8 KB).
+    const imgMatch = card.match(/<img[^>]+\bsrc="(https?:\/\/[^"]+?\.webp)"[^>]*itemprop="image"/i);
+    const photoUrl = imgMatch ? imgMatch[1].replace(/_thumb(?=\.webp$)/, '') : undefined;
+
     const specMatch = card.match(/Авто:\s*<strong>([^<]*)<\/strong>/);
     const carSpec = specMatch ? stripTags(specMatch[1]) || undefined : undefined;
 
@@ -138,6 +145,7 @@ export const parseIdriverCatalogueHtml = (html: string): IdriverListing[] => {
       ...(yearMatch ? { year: Number(yearMatch[1]) } : {}),
       ...(priceByn && priceByn > 0 ? { priceByn } : {}),
       ...(city ? { city } : {}),
+      ...(photoUrl ? { photoUrl } : {}),
       ...(description ? { description } : {}),
       ...(carSpec ? { carSpec } : {}),
       ...(seller ? { seller } : {}),

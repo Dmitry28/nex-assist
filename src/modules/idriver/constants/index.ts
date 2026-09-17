@@ -34,3 +34,9 @@ export const RETENTION_DAYS = 180;
 
 /** Per-feed snapshot file path, e.g. ./data/idriver_atlas-cross-sport_all.json. */
 export const dataFile = (feedKey: string): string => `./data/idriver_${feedKey}_all.json`;
+
+/** Timeout for downloading one card photo (ms) — a slow image must not stall the run. */
+export const PHOTO_TIMEOUT_MS = 15_000;
+
+/** Telegram's own limit for an uploaded photo; a larger file would be rejected anyway. */
+export const MAX_PHOTO_BYTES = 10 * 1024 * 1024;

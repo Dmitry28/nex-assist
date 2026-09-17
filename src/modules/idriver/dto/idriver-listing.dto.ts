@@ -13,6 +13,11 @@ export class IdriverListing {
   /** Price in BYN. Undefined when the seller hides it. */
   @ApiPropertyOptional() priceByn?: number;
   @ApiPropertyOptional() city?: string;
+  /**
+   * Full-size card photo. Always a WebP URL — the site offers nothing else — and one that only
+   * we can fetch, never Telegram: it is uploaded as bytes, not passed on as a link.
+   */
+  @ApiPropertyOptional() photoUrl?: string;
   /** Seller's free-text notes: condition, colour, origin, "оригинал из США", etc. */
   @ApiPropertyOptional() description?: string;
   /** Donor-car spec as shown on the card, e.g. "2.0TSI, Бензин, АКПП". */
@@ -31,7 +36,7 @@ export class IdriverFeedResult {
   @ApiProperty() url!: string;
   /** Listings parsed from the page, before the year filter. */
   @ApiProperty() total!: number;
-  /** Listings that passed the year filter — the ones that could fit the owner's car. */
+  /** Listings that passed the part and year filters — the ones worth notifying about. */
   @ApiProperty() matching!: number;
   @ApiProperty({ type: () => IdriverListing, isArray: true }) newListings!: IdriverListing[];
   @ApiProperty() isBaseline!: boolean;

@@ -5,6 +5,12 @@ import { sleep } from '../../common/utils/sleep';
 import { MAX_SEND_ATTEMPTS, SEND_INTERVAL_MS } from './constants';
 import { extractRetryAfter } from './telegram.utils';
 
+/** Name and media type for a photo sent as bytes rather than as a URL. */
+export interface PhotoUpload {
+  filename: string;
+  contentType: string;
+}
+
 /**
  * Generic Telegram bot wrapper.
  * Handles connection setup, rate-limit retries, and exposes simple send methods.
@@ -53,11 +59,25 @@ export class TelegramService implements OnModuleInit {
     );
   }
 
-  async sendPhoto(chatId: string, url: string, caption: string): Promise<boolean> {
-    if (!this.bot) return this.dryRun('sendPhoto', chatId, caption, url);
+  /**
+   * Sends a photo by URL, or as bytes when the caller passes a Buffer — the latter for hosts
+   * Telegram's own fetcher cannot reach (idriver.by) or formats it refuses to pull by link.
+   * A buffer carries no name or type of its own, so the caller declares both; Telegram rejects
+   * an upload whose type it cannot work out. Falls back to a text-only message on failure.
+   */
+  async sendPhoto(
+    chatId: string,
+    photo: string | Buffer,
+    caption: string,
+    upload?: PhotoUpload,
+  ): Promise<boolean> {
+    const source = typeof photo === 'string' ? photo : `${photo.length} bytes`;
+    if (!this.bot) return this.dryRun('sendPhoto', chatId, caption, source);
     await this.throttle(chatId);
     const ok = await this.withRetry(() =>
-      this.bot!.sendPhoto(chatId, url, { caption, parse_mode: 'HTML' }).then(() => undefined),
+      this.bot!.sendPhoto(chatId, photo, { caption, parse_mode: 'HTML' }, upload).then(
+        () => undefined,
+      ),
     );
     if (ok) return true;
     this.logger.warn('Photo send failed, falling back to text-only message');
