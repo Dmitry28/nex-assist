@@ -3,17 +3,17 @@
     "module": "land-auctions",
     "trackedSince": "2026-09-05T11:00:40.259Z",
     "lastQuietReportAt": "2026-09-13T12:25:22.355Z",
-    "lastChangeAt": "2026-09-16T12:17:46.338Z"
+    "lastChangeAt": "2026-09-18T11:58:29.399Z"
   },
   {
     "module": "bid-cars",
     "trackedSince": "2026-09-05T11:02:13.356Z",
-    "lastChangeAt": "2026-09-17T12:20:19.012Z"
+    "lastChangeAt": "2026-09-18T12:00:10.840Z"
   },
   {
     "module": "kufar",
     "trackedSince": "2026-09-05T11:04:21.332Z",
-    "lastChangeAt": "2026-09-17T12:23:05.002Z"
+    "lastChangeAt": "2026-09-18T12:01:58.782Z"
   },
   {
     "module": "kufar-rent-flat",
@@ -27,7 +27,7 @@
   {
     "module": "realt",
     "trackedSince": "2026-09-05T11:07:23.309Z",
-    "lastChangeAt": "2026-09-17T12:24:48.834Z"
+    "lastChangeAt": "2026-09-18T12:04:11.097Z"
   },
   {
     "module": "av-by",
@@ -57,7 +57,7 @@
   {
     "module": "mosty-jobs",
     "trackedSince": "2026-09-05T11:11:38.821Z",
-    "lastChangeAt": "2026-09-17T12:35:03.970Z"
+    "lastChangeAt": "2026-09-18T12:08:45.450Z"
   },
   {
     "module": "idriver",
