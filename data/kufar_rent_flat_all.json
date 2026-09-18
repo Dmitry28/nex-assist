@@ -3,7 +3,7 @@
     "adId": 209852970,
     "link": "https://travel.kufar.by/hotel/209852970",
     "title": "Сдам квартиру - студию",
-    "pricePerNightByn": 110,
+    "pricePerNightByn": 140,
     "address": "Виктора Саяпина ул, 8, Гродно, Гродненская область",
     "rooms": 1,
     "area": 9,
@@ -13,7 +13,7 @@
     "isSuperhost": true,
     "rating": 1,
     "ratingScoresCount": 91,
-    "listTime": "2026-09-17T09:34:56Z",
+    "listTime": "2026-09-18T09:34:56Z",
     "images": [
       "https://rms.kufar.by/v1/gallery/adim1/19557af8-ed96-48f1-82a4-c1ce14562887.jpg",
       "https://rms.kufar.by/v1/gallery/adim1/3f486676-1d2e-4299-aa1b-b65935496647.jpg",
@@ -33,7 +33,7 @@
       "https://rms.kufar.by/v1/gallery/adim1/d2489f23-b859-4baa-b083-5679bea6c9ab.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:41:03.297Z",
-    "lastSeenAt": "2026-09-17T09:37:06.050Z"
+    "lastSeenAt": "2026-09-18T09:36:48.973Z"
   },
   {
     "adId": 1061321943,
@@ -72,13 +72,13 @@
       "https://rms.kufar.by/v1/gallery/adim1/c158fdbb-a028-48e4-9b90-e6e158c50936.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:41:03.297Z",
-    "lastSeenAt": "2026-09-17T09:37:06.050Z"
+    "lastSeenAt": "2026-09-18T09:36:48.973Z"
   },
   {
     "adId": 1065503834,
     "link": "https://travel.kufar.by/hotel/1065503834",
     "title": "2-х комнатная квартира на сутки в Гродно",
-    "pricePerNightByn": 105,
+    "pricePerNightByn": 133,
     "address": "Виктора Саяпина ул, 2А, Гродно, Гродненская область",
     "rooms": 2,
     "area": 9,
@@ -101,7 +101,7 @@
       "https://rms.kufar.by/v1/gallery/adim1/a1a41e8b-3a3d-4ebc-8465-3a468db2e39c.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:41:03.297Z",
-    "lastSeenAt": "2026-09-09T09:37:30.073Z"
+    "lastSeenAt": "2026-09-18T09:36:48.973Z"
   },
   {
     "adId": 1048788437,
@@ -210,8 +210,8 @@
   {
     "adId": 1074760843,
     "link": "https://travel.kufar.by/hotel/1074760843",
-    "title": "Сдаётся новая 2х-комнатная квартира на сутки /часы/недели",
-    "pricePerNightByn": 100,
+    "title": "Сдаётся новая 2х-комнатная квартира на сутки /недели",
+    "pricePerNightByn": 120,
     "address": "Виктора Саяпина ул, 10, Гродно, Гродненская область",
     "rooms": 2,
     "area": 9,
@@ -221,7 +221,7 @@
     "isSuperhost": false,
     "rating": 1,
     "ratingScoresCount": 11,
-    "listTime": "2026-09-04T14:02:05Z",
+    "listTime": "2026-09-16T11:38:20Z",
     "images": [
       "https://rms.kufar.by/v1/gallery/adim1/bc0930c8-f85a-482a-82e6-8d794aa393b4.jpg",
       "https://rms.kufar.by/v1/gallery/adim1/e7350488-cae6-4d0d-9fd8-6c4f3adb08be.jpg",
@@ -251,6 +251,6 @@
       "https://rms.kufar.by/v1/gallery/adim1/94546795-6240-4c5b-818e-7bf6de094cc5.jpg"
     ],
     "firstSeenAt": "2026-07-01T10:55:41.090Z",
-    "lastSeenAt": "2026-09-16T09:38:35.602Z"
+    "lastSeenAt": "2026-09-18T09:36:48.973Z"
   }
 ]
