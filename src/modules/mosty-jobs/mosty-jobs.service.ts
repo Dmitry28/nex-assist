@@ -245,7 +245,7 @@ export class MostyJobsService {
       // No per-source snapshot to point at, so the watchdog's own history is the proof that
       // this source once worked — a new source stays silent until it has produced something.
       const { alert } = await this.health.record(`mosty:${source}`, total ?? 0, false);
-      if (alert) await this.notifier.notifyError(alert);
+      if (alert) await this.notifier.notifyHealth(alert);
     }
   }
 }

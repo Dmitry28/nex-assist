@@ -101,6 +101,17 @@ export class PogoranyNotifierService {
     if (!ok) this.logger.warn('Failed to send pogorany error notification');
   }
 
+  /**
+   * Source-health verdicts are already worded and already carry their own ⚠️/✅, so they
+   * go out as-is — routing them through notifyError announced a recovery under an
+   * "Ошибка скрапинга" header.
+   */
+  async notifyHealth(message: string): Promise<void> {
+    if (!this.chatId) return;
+    const ok = await this.telegram.sendMessage(this.chatId, message);
+    if (!ok) this.logger.warn('Failed to send pogorany health notification');
+  }
+
   private async sendListings(
     listings: PogoranyListing[],
     header: string,

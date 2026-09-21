@@ -28,13 +28,22 @@ interface Harness {
   written: Map<string, unknown[]>;
   notified: BamperResult[];
   errors: string[];
+  healthAlerts: string[];
 }
 
-/** Wires the service to stubs whose only interesting behaviour is which feeds fail to fetch. */
-const harness = (feeds: BamperFeedConfig[], failing: Set<string>): Harness => {
+/**
+ * Wires the service to stubs whose only interesting behaviour is which feeds fail to fetch and,
+ * when `healthAlert` is given, what the source-health watchdog has to say about every feed.
+ */
+const harness = (
+  feeds: BamperFeedConfig[],
+  failing: Set<string>,
+  healthAlert: string | null = null,
+): Harness => {
   const written = new Map<string, unknown[]>();
   const notified: BamperResult[] = [];
   const errors: string[] = [];
+  const healthAlerts: string[] = [];
 
   const config = { get: () => feeds } as unknown as ConfigService;
 
@@ -65,11 +74,15 @@ const harness = (feeds: BamperFeedConfig[], failing: Set<string>): Harness => {
       errors.push(message);
       return Promise.resolve();
     },
+    notifyHealth: (message: string): Promise<void> => {
+      healthAlerts.push(message);
+      return Promise.resolve();
+    },
   } as unknown as BamperNotifierService;
 
-  // Health tracking is exercised in its own spec; here it must simply never speak up.
+  // Health tracking is exercised in its own spec; here it stays quiet unless a test asks for it.
   const health = {
-    record: () => Promise.resolve({ alert: null, zeroRuns: 0 }),
+    record: () => Promise.resolve({ alert: healthAlert, zeroRuns: 0 }),
   } as unknown as SourceHealthService;
 
   return {
@@ -77,6 +90,7 @@ const harness = (feeds: BamperFeedConfig[], failing: Set<string>): Harness => {
     written,
     notified,
     errors,
+    healthAlerts,
   };
 };
 
@@ -128,6 +142,18 @@ describe('BamperService', () => {
     await expect(service.run()).rejects.toThrow('kapot is behind Cloudflare');
     expect(errors).toEqual(['kapot is behind Cloudflare']);
     expect(notified).toEqual([]);
+  });
+
+  // A recovery verdict once arrived in the channel under the "⚠️ Ошибка скрапинга" header,
+  // because the health alert went out through notifyError like a real failure would.
+  it('sends a source-health verdict as a plain message, not as a scrape error', async () => {
+    const alert = '✅ Источник «bamper:kapot» снова отдаёт данные (пустовал 5 прогон(ов) подряд)';
+    const { service, errors, healthAlerts } = harness([feed('kapot')], new Set(), alert);
+
+    await service.run();
+
+    expect(healthAlerts).toEqual([alert]);
+    expect(errors).toEqual([]);
   });
 
   it('reports no failures on a clean run', async () => {

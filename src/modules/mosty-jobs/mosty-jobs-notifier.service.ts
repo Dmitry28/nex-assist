@@ -80,6 +80,17 @@ export class MostyJobsNotifierService {
     if (!ok) this.logger.warn('Failed to send mosty-jobs error notification');
   }
 
+  /**
+   * Source-health verdicts are already worded and already carry their own ⚠️/✅, so they
+   * go out as-is — routing them through notifyError announced a recovery under an
+   * "Ошибка скрапинга" header.
+   */
+  async notifyHealth(message: string): Promise<void> {
+    if (!this.chatId) return;
+    const ok = await this.telegram.sendMessage(this.chatId, message);
+    if (!ok) this.logger.warn('Failed to send mosty-jobs health notification');
+  }
+
   private async sendVacancies(vacancies: JobVacancy[]): Promise<Set<string>> {
     const notified = new Set<string>();
     if (vacancies.length === 0) return notified;
