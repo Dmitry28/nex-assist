@@ -181,56 +181,67 @@ const escapeRegExp = (s: string): string => s.replace(/[.*+?^${}()|[\]\\]/g, '\\
 /**
  * Parse one bamper.by search results page into listings for the given part.
  *
- * Cards live in `div.item-list` and each starts with a `col-sm-4 ... photobox` image
- * column, so we split on that boundary. `partSlug` is the bamper.by zapchast slug for
- * the part (e.g. "bamper-zadniy") — only links with that slug are treated as listings.
- * Per card we read: the listing slug from the detail link (stable id), the
- * `h5.add-title` text (title + donor year), and the price/city from the `price-box`
- * column. Price and photo are best-effort — some offers hide the price. Exported for tests.
+ * The site was rebuilt on a Tailwind template in September 2026 — the old `item-list` /
+ * `photobox` markup is gone. Cards are now split on the one element every card starts with:
+ * the photo link `<a href="/zapchast_<slug>/<id>/" target="_blank" title="...">`. That anchor
+ * is structural rather than cosmetic, so it survives the utility-class churn that broke the
+ * previous boundary. `partSlug` is the bamper.by zapchast slug for the part (e.g.
+ * "bamper-zadniy") — chunks linking to another part are skipped.
+ *
+ * Per card we read: the listing slug (stable id — unchanged by the redesign, so snapshots
+ * carry over), the photo link's `title` attribute (title + donor year), the price block that
+ * precedes the headline link, and the engine/notes/city/rating that follow it. Price, photo,
+ * city and rating are best-effort — some offers hide the price and unrated sellers have no
+ * badge. Exported for tests.
  */
 export const parseBamperSearchHtml = (html: string, partSlug: string): BamperListing[] => {
-  const listStart = html.indexOf('item-list');
-  if (listStart === -1) return [];
-  const list = html.slice(listStart);
-
-  const linkRe = new RegExp(`href="(/zapchast_${escapeRegExp(partSlug)}/(\\d+-[A-Za-z0-9-]+))/?"`);
-  const chunks = list.split(/(?=class="col-sm-4 no-padding photobox")/);
+  // Anchored at the chunk start: the split guarantees each card chunk begins with its photo link.
+  const cardRe = new RegExp(
+    `^<a href="(/zapchast_${escapeRegExp(partSlug)}/([\\w-]+))/" target="_blank" title="([^"]*)"`,
+  );
+  const chunks = html.split(/(?=<a href="\/zapchast_[^"]+" target="_blank" title=")/);
   const byId = new Map<string, BamperListing>();
 
   for (const chunk of chunks) {
-    const linkMatch = chunk.match(linkRe);
-    if (!linkMatch) continue;
-    const id = linkMatch[2];
+    const cardMatch = chunk.match(cardRe);
+    if (!cardMatch) continue;
+    const [, href, id, rawTitle] = cardMatch;
     if (byId.has(id)) continue;
 
-    const titleMatch = chunk.match(/<h5[^>]*add-title[^>]*>([\s\S]*?)<\/h5>/i);
-    const title = titleMatch ? stripTags(titleMatch[1]) : '';
-
+    const title = stripTags(rawTitle);
     const yearMatch = title.match(/(20\d\d)\s*г/);
     const year = yearMatch ? Number(yearMatch[1]) : undefined;
 
-    // Scope price to this card's price-box so a neighbouring card's price never bleeds in.
-    const priceMatch = chunk.match(
-      /price-box([\s\S]*?)(?=class="col-sm-4 no-padding photobox|list-wrapper|$)/,
-    );
-    const priceText = priceMatch ? stripTags(priceMatch[1]) : '';
+    // The card's headline link repeats the photo link's href and always follows the price
+    // block, so it is the boundary between "price" and "everything else" — scoping both
+    // halves this way keeps a neighbouring card's numbers out of this one.
+    const photoHref = `href="${href}/"`;
+    const headlineAt = chunk.indexOf(photoHref, chunk.indexOf(photoHref) + 1);
+    const priceText = stripTags(chunk.slice(0, headlineAt === -1 ? undefined : headlineAt));
+    const details = headlineAt === -1 ? '' : chunk.slice(headlineAt);
+
     const usdMatch = priceText.match(/~\s*([\d ]+)\s*\$/);
     const priceUsd = usdMatch ? digits(usdMatch[1]) : undefined;
-    // Main BYN price shown as "4 350 00 р." — last two digits are kopecks, dropped.
-    const bynMatch = priceText.match(/(\d[\d ]*?)\s+\d{2}\s*р\./);
+    // Main price, shown as "1 209 р." (whole rubles since the redesign — no kopecks tail).
+    const bynMatch = priceText.match(/(\d[\d ]*?)\s*р\./);
     const priceByn = bynMatch ? digits(bynMatch[1]) : undefined;
 
-    const cardText = stripTags(chunk);
-    const cityMatch = cardText.match(/\d{2}\.\d{2}\s+([А-ЯЁ][А-Яа-яЁё.\- ]+?)\s+\d{1,3}\s*%/);
-    const city = cityMatch ? cityMatch[1].trim() : undefined;
+    const cityMatch = details.match(/\/catalog\/gorod_[^"]*"[\s\S]*?<span>([^<]+)<\/span>/);
+    const city = cityMatch ? stripTags(cityMatch[1]) : undefined;
 
-    // Seller notes: everything between the title (h5) and the "Артикул:" label — engine,
-    // condition, origin, R-line, etc. Falls back to the price-box boundary if no articul.
-    const descMatch = chunk.match(/<\/h5>([\s\S]*?)(?:Артикул|<div\s+class="col-sm-2)/i);
-    const description = descMatch ? stripTags(descMatch[1]) || undefined : undefined;
+    // Seller notes split across two blocks since the redesign: the car spec line next to the
+    // "car" sprite ("2.0 л, бензин, АКПП") and the free-text description. Joined to keep the
+    // one-line shape the Telegram card and the existing snapshots use.
+    const engineMatch = details.match(/sprite\.svg#car[\s\S]*?<span[^>]*>([^<]*)<\/span>/);
+    const notesMatch = details.match(/line-clamp-3[^>]*>([\s\S]*?)<\/p>/);
+    const description =
+      [engineMatch?.[1], notesMatch?.[1]]
+        .map(part => (part ? stripTags(part) : ''))
+        .filter(Boolean)
+        .join(' ') || undefined;
 
-    // Seller positive-feedback rating (karma), shown for some sellers only.
-    const ratingMatch = chunk.match(/karma[^>]*>\s*(\d{1,3})\s*%/i);
+    // Seller positive-feedback rating, now a plain badge span ("87%") — the `karma` class is gone.
+    const ratingMatch = details.match(/>\s*(\d{1,3})\s*%\s*</);
     const sellerRating = ratingMatch ? `${ratingMatch[1]}%` : undefined;
 
     // The first photo may be an absolute fs.bamper.by URL or a relative /upload/... path,
@@ -241,7 +252,7 @@ export const parseBamperSearchHtml = (html: string, partSlug: string): BamperLis
 
     byId.set(id, {
       id,
-      url: `${BASE_URL}${linkMatch[1]}/`,
+      url: `${BASE_URL}${href}/`,
       title: title || `Объявление ${id}`,
       year,
       priceByn,
