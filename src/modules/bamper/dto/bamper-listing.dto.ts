@@ -11,7 +11,7 @@ export class BamperListing {
   @ApiProperty() title!: string;
   /** Donor-car year parsed from the title (e.g. 2024). Undefined if not stated. */
   @ApiPropertyOptional() year?: number;
-  /** Price in BYN (integer rubles, kopecks dropped). Undefined if "on request". */
+  /** Price in BYN (whole rubles, as the site shows it). Undefined if "on request". */
   @ApiPropertyOptional() priceByn?: number;
   /** Converted price in USD as shown by the site. Undefined if not shown. */
   @ApiPropertyOptional() priceUsd?: number;
@@ -19,7 +19,7 @@ export class BamperListing {
   @ApiPropertyOptional() photoUrl?: string;
   /** Seller's free-text notes: engine, condition, origin ("Оригинал США"), R-line, etc. */
   @ApiPropertyOptional() description?: string;
-  /** Seller positive-feedback rating (karma), e.g. "92%". Not shown for every seller. */
+  /** Seller positive-feedback rating, e.g. "92%". Not shown for every seller. */
   @ApiPropertyOptional() sellerRating?: string;
 }
 
