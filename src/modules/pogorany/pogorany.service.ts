@@ -215,6 +215,6 @@ export class PogoranyService {
   /** Tells the channel when this source has been empty long enough to be a bug, and when it recovers. */
   private async reportHealth(count: number, hadData: boolean): Promise<void> {
     const { alert } = await this.health.record('pogorany', count, hadData);
-    if (alert) await this.notifier.notifyError(alert);
+    if (alert) await this.notifier.notifyHealth(alert);
   }
 }
