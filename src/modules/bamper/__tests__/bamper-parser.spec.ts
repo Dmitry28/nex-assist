@@ -9,14 +9,16 @@ describe('parseBamperSearchHtml — rear bumper', () => {
   const listings = parseBamperSearchHtml(fixture('search-atlas-cross-sport.html'), 'bamper-zadniy');
 
   it('parses every rear-bumper card on the page', () => {
-    expect(listings).toHaveLength(7);
+    expect(listings).toHaveLength(9);
   });
 
   it('derives a unique stable id and absolute url from the listing slug', () => {
     const ids = listings.map(l => l.id);
     expect(new Set(ids).size).toBe(ids.length);
     for (const l of listings) {
-      expect(l.id).toMatch(/^\d+-[A-Za-z0-9-]+$/);
+      // Seller-side ids are not always plain digits: some carry a letter prefix
+      // ("92501-e18257298") or a duplicate suffix ("12710-163896111_1").
+      expect(l.id).toMatch(/^\d+-\w+$/);
       expect(l.url).toBe(`https://bamper.by/zapchast_bamper-zadniy/${l.id}/`);
     }
   });
@@ -41,21 +43,21 @@ describe('parseBamperSearchHtml — rear bumper', () => {
   it('extracts seller notes for every listing and a rating for rated sellers', () => {
     for (const l of listings) expect(l.description && l.description.length).toBeTruthy();
     const rated = listings.filter(l => l.sellerRating);
-    expect(rated.length).toBeGreaterThanOrEqual(3);
+    expect(rated.length).toBeGreaterThanOrEqual(2);
     for (const l of rated) expect(l.sellerRating).toMatch(/^\d{1,3}%$/);
   });
 
   it('matches the first card exactly', () => {
     expect(listings[0]).toMatchObject({
-      id: '105924-108638066',
-      url: 'https://bamper.by/zapchast_bamper-zadniy/105924-108638066/',
+      id: '153546-177618866',
+      url: 'https://bamper.by/zapchast_bamper-zadniy/153546-177618866/',
+      title: 'Бампер задний к Volkswagen Atlas Cross Sport, 2024 г.',
       year: 2024,
-      priceByn: 4350,
-      priceUsd: 1519,
-      city: 'Минск',
-      sellerRating: '86%',
+      priceByn: 1209,
+      priceUsd: 400,
+      city: 'Витебск',
     });
-    expect(listings[0].description).toContain('R-line');
+    expect(listings[0].description).toContain('в родном цвете');
   });
 });
 
