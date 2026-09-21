@@ -109,7 +109,7 @@ export class IdriverService {
         current.length,
         previousEntries.length > 0,
       );
-      if (alert) await this.notifier.notifyError(alert);
+      if (alert) await this.notifier.notifyHealth(alert);
 
       if (current.length === 0) {
         // Still report the car, with zeroes: dropping it from the result would leave the summary
