@@ -71,6 +71,17 @@ export class GhbNotifierService {
     if (!ok) this.logger.warn('Failed to send ghb.by error notification');
   }
 
+  /**
+   * Source-health verdicts are already worded and already carry their own ⚠️/✅, so they
+   * go out as-is — routing them through notifyError announced a recovery under an
+   * "Ошибка скрапинга" header.
+   */
+  async notifyHealth(message: string): Promise<void> {
+    if (!this.chatId) return;
+    const ok = await this.telegram.sendMessage(this.chatId, message);
+    if (!ok) this.logger.warn('Failed to send ghb.by health notification');
+  }
+
   /** Notify when the /apartments/ placeholder page changes. Returns true if delivered. */
   async notifyApartmentsPageChanged(url: string): Promise<boolean> {
     if (!this.chatId) return false;

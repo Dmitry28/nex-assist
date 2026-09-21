@@ -111,7 +111,7 @@ export class BamperService {
         current.length,
         previousEntries.length > 0,
       );
-      if (alert) await this.notifier.notifyError(alert);
+      if (alert) await this.notifier.notifyHealth(alert);
 
       // Defensive: never wipe a non-empty snapshot if the parser yields nothing (e.g. a
       // Cloudflare block that slipped through) — that would re-notify everything next run.

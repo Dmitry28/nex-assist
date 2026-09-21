@@ -93,7 +93,7 @@ export class GhbService {
       currentListings.length,
       previousEntries.length > 0,
     );
-    if (alert) await this.notifier.notifyError(alert);
+    if (alert) await this.notifier.notifyHealth(alert);
 
     if (currentListings.length === 0) {
       this.logger.warn('Parser returned 0 listings — skipping diff and persistence');
