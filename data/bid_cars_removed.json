@@ -1617,5 +1617,24 @@
     "seller": "Progressive Casualty Insurance",
     "removedAt": "2026-09-21T19:20:29.164Z",
     "removalNotifiedAt": "2026-09-21T19:20:29.164Z"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/1-66790336/2023-Volkswagen-Atlas-1V2HP2CA8PC525779",
+    "title": "2023 Volkswagen Atlas, SE",
+    "vin": "1V2HP2CA8PC525779",
+    "lot": "1-66790336",
+    "odometer": "36k мили (57k km)",
+    "damage": "Передняя часть",
+    "location": "North Boston (MA)",
+    "currentBid": "$0",
+    "buyNow": "$8,700",
+    "engine": "4 cyl. 2HP",
+    "keys": "ST (Massachusetts)",
+    "condition": "На ходу",
+    "auctionDate": "ср 23 сент., 16:00 GMT+2",
+    "auctionSource": "COPART",
+    "seller": "Insurance Company",
+    "removedAt": "2026-09-22T09:32:55.726Z",
+    "removalNotifiedAt": "2026-09-22T09:32:55.726Z"
   }
 ]
