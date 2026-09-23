@@ -259,21 +259,15 @@
   {
     "title": "Земельный участок в СТ «Полёт»",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-v-st-polyot/",
-    "price": "11 178,00 руб.",
-    "area": "0,0540 га",
-    "address": "г. Гродно, ул. Рябиновая, 61/36",
-    "cadastralNumber": "440100000001015025",
-    "cadastralMapUrl": "https://map.nca.by/search/019e91f8-bd98-71b5-8961-4f4f47cfdaff",
-    "auctionDate": "Возможно проведение повторного аукциона при обращении заинтересованного в приобретении объекта лица",
+    "price": "Не найдено",
+    "area": "Не найдено",
+    "address": "Не найдено",
+    "cadastralNumber": "Не найдено",
+    "cadastralMapUrl": "",
+    "auctionDate": "Не указана",
     "applicationDeadline": "Не указан",
     "communications": "Не указаны",
-    "images": [
-      "https://gcn.by/wp-content/uploads/2025/09/polyot-foto-3.png",
-      "https://gcn.by/wp-content/uploads/2025/09/polyot-foto-1.png",
-      "https://gcn.by/wp-content/uploads/2025/09/polyot-foto-2.png",
-      "https://gcn.by/wp-content/uploads/2025/09/polyot-foto-3.png",
-      "https://gcn.by/wp-content/uploads/2025/09/polyot-foto-1.png"
-    ]
+    "images": []
   },
   {
     "title": "Жилой дом по ул. Юбилейная, 11",
@@ -307,11 +301,9 @@
     "applicationDeadline": "Не указан",
     "communications": "электроснабжение, газоснабжение, водоснабжение",
     "images": [
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2-2.png",
       "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-1-1.png",
       "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-3-1.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2-2.png",
-      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-1-1.png"
+      "https://gcn.by/wp-content/uploads/2023/06/U-2-Bolgarina-Tanka-2-2.png"
     ]
   },
   {
