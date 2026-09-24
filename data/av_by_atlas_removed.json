@@ -766,5 +766,31 @@
     "lastSeenAt": "2026-09-14T13:34:55.170Z",
     "removedAt": "2026-09-17T12:25:05.549Z",
     "soldNotifiedAt": "2026-09-17T12:25:19.616Z"
+  },
+  {
+    "id": 136514701,
+    "url": "https://cars.av.by/volkswagen/atlas/136514701",
+    "title": "Volkswagen Atlas 2023",
+    "priceUsd": 39000,
+    "priceByn": 117913,
+    "brand": "Volkswagen",
+    "model": "Atlas",
+    "year": 2023,
+    "mileageKm": 14100,
+    "engineCapacity": "2,0",
+    "engineType": "бензин",
+    "transmission": "автомат",
+    "bodyType": "внедорожник 5 дв.",
+    "driveType": "подключаемый полный привод",
+    "color": "красный",
+    "vinPartial": "1V2HR2C**********",
+    "location": "Молодечно, Минская обл.",
+    "sellerName": "Евгений",
+    "publishedAt": "2026-07-26T12:27:51+0000",
+    "photoUrl": "https://avcdn.av.by/advertmedium/0014/8231/1741.jpg",
+    "firstSeenAt": "2026-07-30T09:30:32.968Z",
+    "lastSeenAt": "2026-09-21T13:35:26.974Z",
+    "removedAt": "2026-09-24T12:31:10.858Z",
+    "soldNotifiedAt": "2026-09-24T12:31:30.856Z"
   }
 ]
