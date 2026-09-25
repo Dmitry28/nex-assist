@@ -42,6 +42,13 @@ export default registerAs('bamper', () => ({
       label: 'Лобовое стекло',
       url: process.env.BAMPER_WINDSHIELD_URL ?? BAMPER_DEFAULTS.WINDSHIELD_URL,
     },
+    {
+      key: 'rear-left-door-molding',
+      car: 'Atlas Cross Sport',
+      label: 'Молдинг двери задней левой',
+      url:
+        process.env.BAMPER_REAR_LEFT_DOOR_MOLDING_URL ?? BAMPER_DEFAULTS.REAR_LEFT_DOOR_MOLDING_URL,
+    },
     // Car 2 — Atlas (front-end)
     {
       key: 'atlas-front-bumper',
