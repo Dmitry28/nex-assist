@@ -5,9 +5,10 @@
  * part parameter in its URLs: a feed is the model's whole catalogue, ~3600 offers deep, and the
  * newest page is whatever the yards happened to upload — deflectors, floor mats, lambda probes.
  * The wanted parts are therefore selected here, matching the set the bamper.by module watches
- * for the same car: rear bumper, tailgate, windshield. That set is deliberately spelled out
- * twice — bamper.by narrows by URL, idriver by part name — because neither representation can
- * express the other; changing what the owner shops for means editing both.
+ * for the same car: rear bumper, tailgate, rear-left door molding, windshield. That set is
+ * deliberately spelled out twice — bamper.by narrows by URL, idriver by part name — because
+ * neither representation can express the other; changing what the owner shops for means editing
+ * both.
  *
  * Matching is on the Russian part name from the card title rather than on the URL slug: the slug
  * spelling is the site's own transliteration and differs per part, while the title is the text
@@ -23,7 +24,10 @@ const WANTED_PARTS: RegExp[] = [
   /(?:крышка|дверь)\s+багажника/i,
   // "Лобовое стекло" / "Стекло лобовое (ветровое)".
   /лобово[а-яё]*\s+стекл|стекл[а-яё]*\s+лобово/i,
+  // "Молдинг двери задней левой" / "Молдинг задней левой двери". Only the rear-left door —
+  // the other doors' moldings and the bumper molding are not what the owner needs.
+  /молдинг\s+(?:двери\s+задней\s+левой|задней\s+левой\s+двери)/i,
 ];
 
-/** True when the part is one of the three the owner is actually shopping for. */
+/** True when the part is one of those the owner is actually shopping for. */
 export const isWantedPart = (part: string): boolean => WANTED_PARTS.some(re => re.test(part));
