@@ -3,7 +3,7 @@
     "adId": 209852970,
     "link": "https://travel.kufar.by/hotel/209852970",
     "title": "Сдам квартиру - студию",
-    "pricePerNightByn": 110,
+    "pricePerNightByn": 140,
     "address": "Виктора Саяпина ул, 8, Гродно, Гродненская область",
     "rooms": 1,
     "area": 9,
@@ -13,7 +13,7 @@
     "isSuperhost": true,
     "rating": 1,
     "ratingScoresCount": 92,
-    "listTime": "2026-09-23T10:38:13Z",
+    "listTime": "2026-09-24T10:38:20Z",
     "images": [
       "https://rms.kufar.by/v1/gallery/adim1/19557af8-ed96-48f1-82a4-c1ce14562887.jpg",
       "https://rms.kufar.by/v1/gallery/adim1/3f486676-1d2e-4299-aa1b-b65935496647.jpg",
@@ -33,7 +33,7 @@
       "https://rms.kufar.by/v1/gallery/adim1/d2489f23-b859-4baa-b083-5679bea6c9ab.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:41:03.297Z",
-    "lastSeenAt": "2026-09-24T09:38:18.663Z"
+    "lastSeenAt": "2026-09-25T09:38:58.113Z"
   },
   {
     "adId": 1061321943,
@@ -220,7 +220,7 @@
     "isHotel": false,
     "isSuperhost": false,
     "rating": 1,
-    "ratingScoresCount": 11,
+    "ratingScoresCount": 12,
     "listTime": "2026-09-16T11:38:20Z",
     "images": [
       "https://rms.kufar.by/v1/gallery/adim1/bc0930c8-f85a-482a-82e6-8d794aa393b4.jpg",
@@ -251,6 +251,6 @@
       "https://rms.kufar.by/v1/gallery/adim1/94546795-6240-4c5b-818e-7bf6de094cc5.jpg"
     ],
     "firstSeenAt": "2026-07-01T10:55:41.090Z",
-    "lastSeenAt": "2026-09-18T09:36:48.973Z"
+    "lastSeenAt": "2026-09-25T09:38:58.113Z"
   }
 ]
