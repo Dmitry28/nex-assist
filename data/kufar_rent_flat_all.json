@@ -3,7 +3,7 @@
     "adId": 209852970,
     "link": "https://travel.kufar.by/hotel/209852970",
     "title": "Сдам квартиру - студию",
-    "pricePerNightByn": 110,
+    "pricePerNightByn": 140,
     "address": "Виктора Саяпина ул, 8, Гродно, Гродненская область",
     "rooms": 1,
     "area": 9,
@@ -13,7 +13,7 @@
     "isSuperhost": true,
     "rating": 1,
     "ratingScoresCount": 92,
-    "listTime": "2026-09-24T10:38:20Z",
+    "listTime": "2026-09-25T10:38:13Z",
     "images": [
       "https://rms.kufar.by/v1/gallery/adim1/19557af8-ed96-48f1-82a4-c1ce14562887.jpg",
       "https://rms.kufar.by/v1/gallery/adim1/3f486676-1d2e-4299-aa1b-b65935496647.jpg",
@@ -33,7 +33,7 @@
       "https://rms.kufar.by/v1/gallery/adim1/d2489f23-b859-4baa-b083-5679bea6c9ab.jpg"
     ],
     "firstSeenAt": "2026-05-19T10:41:03.297Z",
-    "lastSeenAt": "2026-09-24T12:30:01.975Z"
+    "lastSeenAt": "2026-09-25T12:28:41.311Z"
   },
   {
     "adId": 1061321943,
@@ -210,8 +210,8 @@
   {
     "adId": 1074760843,
     "link": "https://travel.kufar.by/hotel/1074760843",
-    "title": "Сдаётся новая 2х-комнатная квартира на сутки /часы/недели",
-    "pricePerNightByn": 100,
+    "title": "Сдаётся новая 2х-комнатная квартира на сутки /недели",
+    "pricePerNightByn": 120,
     "address": "Виктора Саяпина ул, 10, Гродно, Гродненская область",
     "rooms": 2,
     "area": 9,
@@ -220,8 +220,8 @@
     "isHotel": false,
     "isSuperhost": false,
     "rating": 1,
-    "ratingScoresCount": 7,
-    "listTime": "2026-09-04T14:02:05Z",
+    "ratingScoresCount": 12,
+    "listTime": "2026-09-16T11:38:20Z",
     "images": [
       "https://rms.kufar.by/v1/gallery/adim1/bc0930c8-f85a-482a-82e6-8d794aa393b4.jpg",
       "https://rms.kufar.by/v1/gallery/adim1/e7350488-cae6-4d0d-9fd8-6c4f3adb08be.jpg",
@@ -251,6 +251,6 @@
       "https://rms.kufar.by/v1/gallery/adim1/94546795-6240-4c5b-818e-7bf6de094cc5.jpg"
     ],
     "firstSeenAt": "2026-07-01T10:55:41.090Z",
-    "lastSeenAt": "2026-09-08T11:58:03.756Z"
+    "lastSeenAt": "2026-09-25T12:28:41.311Z"
   }
 ]
