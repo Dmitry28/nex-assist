@@ -9,6 +9,8 @@ describe('isWantedPart', () => {
     'Дверь багажника',
     'Лобовое стекло',
     'Стекло лобовое (ветровое)',
+    'Молдинг двери задней левой',
+    'Молдинг задней левой двери',
   ])('keeps %s', part => expect(isWantedPart(part)).toBe(true));
 
   it.each([
@@ -22,5 +24,9 @@ describe('isWantedPart', () => {
     'Обшивка багажника',
     // Other glass — the windshield is the only one worth a message.
     'Стекло двери задней левой',
+    // Moldings other than the rear-left door's.
+    'Молдинг двери задней правой',
+    'Молдинг двери передней левой',
+    'Молдинг заднего бампера',
   ])('drops %s', part => expect(isWantedPart(part)).toBe(false));
 });

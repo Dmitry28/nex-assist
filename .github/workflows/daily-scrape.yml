@@ -3,11 +3,12 @@ name: Daily Land Scrape
 # TODO: this workflow is a temporary workaround — see src/modules/land-auctions/_TODO.md
 on:
   schedule:
-    # Nominally 07:00 UTC / 10:00 Minsk (UTC+3), but GitHub queues scheduled runs under
-    # load and they start 5-6.5h late in practice (11:20-13:26 UTC, Sep 11-14 2026). A run
+    # Target: ~12:00 Minsk (09:00 UTC). GitHub queues scheduled runs under load and they
+    # start ~5-6h late in practice (07:00 UTC fired at 12:10-13:26 UTC, Sep 2026), so the cron
+    # is set to 03:40 UTC to land near noon. If the delay changes, re-tune this line. A run
     # missing in the morning is that queue, not a breakage — do NOT dispatch manually to
     # catch up, it sends every listing to the production chats a second time.
-    - cron: '0 7 * * *'
+    - cron: '40 3 * * *'
   workflow_dispatch:
     inputs:
       send_all_mosty_jobs:
