@@ -792,5 +792,32 @@
     "lastSeenAt": "2026-09-21T13:35:26.974Z",
     "removedAt": "2026-09-24T12:31:10.858Z",
     "soldNotifiedAt": "2026-09-24T12:31:30.856Z"
+  },
+  {
+    "id": 136525948,
+    "url": "https://cars.av.by/volkswagen/atlas/136525948",
+    "title": "Volkswagen Atlas 2025",
+    "priceUsd": 53500,
+    "priceByn": 161597,
+    "brand": "Volkswagen",
+    "model": "Atlas",
+    "year": 2025,
+    "mileageKm": 5000,
+    "engineCapacity": "2,0",
+    "engineType": "бензин",
+    "transmission": "автомат",
+    "bodyType": "внедорожник 5 дв.",
+    "driveType": "подключаемый полный привод",
+    "color": "белый",
+    "vinPartial": "1V2FM2C**********",
+    "location": "Барановичи, Брестская обл.",
+    "sellerName": "Атлас",
+    "publishedAt": "2026-07-27T15:23:35+0000",
+    "renewedAt": "2026-09-07T07:48:58+0000",
+    "photoUrl": "https://avcdn.av.by/advertmedium/0014/6015/8166.jpg",
+    "firstSeenAt": "2026-07-30T09:30:32.968Z",
+    "lastSeenAt": "2026-09-24T12:31:30.856Z",
+    "removedAt": "2026-09-27T09:37:14.156Z",
+    "soldNotifiedAt": "2026-09-27T09:37:31.233Z"
   }
 ]
