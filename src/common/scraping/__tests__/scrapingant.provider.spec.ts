@@ -60,6 +60,21 @@ describe('ScrapingAntProvider', () => {
     expect(params.get('proxy_country')).toBeNull();
   });
 
+  it('honours renderWaitMs through an awaited js_snippet', async () => {
+    let seenUrl = '';
+    global.fetch = jest.fn((url: string) => {
+      seenUrl = url;
+      return Promise.resolve({ ok: true, status: 200, text: () => Promise.resolve('<html/>') });
+    }) as unknown as typeof fetch;
+
+    await providerWithKey('k').scrape('https://x', { renderWaitMs: 10_000 });
+
+    const snippet = new URL(seenUrl).searchParams.get('js_snippet') ?? '';
+    expect(Buffer.from(snippet, 'base64').toString()).toBe(
+      'await new Promise(r => setTimeout(r, 10000));',
+    );
+  });
+
   it('passes a supported country through, lower-cased', async () => {
     let seenUrl = '';
     global.fetch = jest.fn((url: string) => {

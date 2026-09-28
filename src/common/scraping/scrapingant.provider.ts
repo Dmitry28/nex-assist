@@ -79,6 +79,12 @@ export class ScrapingAntProvider implements ScrapingProvider {
     // comes from routing through a residential proxy, so `asp` maps onto that instead.
     if (opts.renderJs) params.set('browser', 'true');
     if (opts.asp) params.set('proxy_type', 'residential');
+    // No wait parameter exists, but `js_snippet` is awaited — without it bid.cars came back as
+    // the 254 KB shell with no cards on 25.09 and 27.09 and the run aborted on 0 listings.
+    if (opts.renderWaitMs) {
+      const snippet = `await new Promise(r => setTimeout(r, ${opts.renderWaitMs}));`;
+      params.set('js_snippet', Buffer.from(snippet).toString('base64'));
+    }
     const country = opts.country?.toLowerCase();
     if (country && SUPPORTED_PROXY_COUNTRIES.has(country)) {
       params.set('proxy_country', country);
