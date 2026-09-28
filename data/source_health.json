@@ -3,94 +3,100 @@
     "source": "bamper:rear-bumper",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-25T09:40:18.467Z"
+    "lastNonEmptyAt": "2026-09-28T09:49:32.136Z"
   },
   {
     "source": "bamper:tailgate",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-25T09:40:32.579Z"
+    "lastNonEmptyAt": "2026-09-28T09:50:09.561Z"
   },
   {
     "source": "bamper:atlas-front-bumper",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-25T09:40:54.368Z"
+    "lastNonEmptyAt": "2026-09-28T09:51:57.950Z"
   },
   {
     "source": "bamper:atlas-hood",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-25T09:41:05.497Z"
+    "lastNonEmptyAt": "2026-09-28T09:52:34.601Z"
   },
   {
     "source": "bamper:atlas-headlight-left",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-25T09:41:16.779Z"
+    "lastNonEmptyAt": "2026-09-28T09:53:11.043Z"
   },
   {
     "source": "bamper:atlas-radiator-support",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-25T09:41:28.100Z"
+    "lastNonEmptyAt": "2026-09-28T09:53:52.123Z"
   },
   {
     "source": "pogorany",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-25T09:43:12.751Z"
+    "lastNonEmptyAt": "2026-09-28T09:55:11.950Z"
   },
   {
     "source": "ghb",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-25T09:45:00.396Z"
+    "lastNonEmptyAt": "2026-09-28T09:57:20.899Z"
   },
   {
     "source": "mosty:gsz",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-25T09:45:22.965Z"
+    "lastNonEmptyAt": "2026-09-28T09:57:48.317Z"
   },
   {
     "source": "mosty:rabota",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-25T09:45:22.967Z"
+    "lastNonEmptyAt": "2026-09-28T09:57:48.318Z"
   },
   {
     "source": "mosty:joblab",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-25T09:45:22.967Z"
+    "lastNonEmptyAt": "2026-09-28T09:57:48.319Z"
   },
   {
     "source": "mosty:evroopt",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-25T09:45:22.968Z"
+    "lastNonEmptyAt": "2026-09-28T09:57:48.319Z"
   },
   {
     "source": "mosty:crb",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-25T09:45:22.969Z"
+    "lastNonEmptyAt": "2026-09-28T09:57:48.320Z"
   },
   {
     "source": "bamper:windshield",
-    "zeroRuns": 10,
+    "zeroRuns": 11,
     "alertedAt": 0
   },
   {
     "source": "idriver:atlas-cross-sport",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-09-25T09:43:07.927Z"
+    "lastNonEmptyAt": "2026-09-28T09:55:06.504Z"
   },
   {
     "source": "mosty:fair",
     "zeroRuns": 1,
     "alertedAt": 0
+  },
+  {
+    "source": "bamper:rear-left-door-molding",
+    "zeroRuns": 0,
+    "alertedAt": 0,
+    "lastNonEmptyAt": "2026-09-28T09:51:18.061Z"
   }
 ]
