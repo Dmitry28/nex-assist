@@ -92,6 +92,7 @@ jobs:
           SCRAPINGANT_API_KEY: ${{ secrets.SCRAPINGANT_API_KEY }}
           ZENROWS_API_KEY: ${{ secrets.ZENROWS_API_KEY }}
           SCRAPE_DO_API_KEY: ${{ secrets.SCRAPE_DO_API_KEY }}
+          SCRAPEOPS_API_KEY: ${{ secrets.SCRAPEOPS_API_KEY }}
           PUPPETEER_EXECUTABLE_PATH: ${{ env.PUPPETEER_EXECUTABLE_PATH }}
         run: npm run scrape
 
