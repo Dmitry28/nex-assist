@@ -5,7 +5,7 @@ This page is for reading the daily-scrape logs and checking provider accounts.
 
 ## Chain and limits
 
-Order: ScraperAPI → ZenRows → Scrape.do → ScrapingAnt → ScrapFly.
+Order: ScraperAPI → ZenRows → Scrape.do → ScrapingAnt → ScrapeOps → ScrapFly.
 
 | Provider    | Free allowance    | Resets                              |
 | ----------- | ----------------- | ----------------------------------- |
@@ -13,6 +13,7 @@ Order: ScraperAPI → ZenRows → Scrape.do → ScrapingAnt → ScrapFly.
 | ZenRows     | 5000 credits/mo   | billing cycle starts on the 3rd     |
 | Scrape.do   | 1000 credits/mo   | around the 16th (as of 09.2026)     |
 | ScrapingAnt | largest free tier | monthly                             |
+| ScrapeOps   | 1000 credits/mo   | monthly; only 200/404 are billed    |
 | ScrapFly    | one-time grant    | does not refill                     |
 
 ## Log lines that are not bugs
@@ -20,8 +21,8 @@ Order: ScraperAPI → ZenRows → Scrape.do → ScrapingAnt → ScrapFly.
 A spent or refused provider is skipped for the rest of the run, and the request falls through
 to the next one. The run only fails if every provider in the chain fails.
 
-bamper.by passes only through ZenRows, Scrape.do or ScrapFly (the browser, ScraperAPI and
-ScrapingAnt are all blocked). When all three are spent, every feed fails with
+bamper.by passes only through ZenRows, Scrape.do, ScrapeOps or ScrapFly (the browser, ScraperAPI and
+ScrapingAnt are all blocked). When all of them are spent, every feed fails with
 `Cloudflare challenge not resolved after all retries`. That is why bamper runs only in
 production: dev and prod share the keys.
 
