@@ -71,6 +71,14 @@ export class BamperService {
   private async scrape(): Promise<BamperResult> {
     const feeds = this.config.get<BamperFeedConfig[]>('bamper.feeds') ?? [];
 
+    // bamper.by only opens through paid provider credits, and dev and prod share the keys: on
+    // 28.09 the dev run spent ScrapFly on every feed and left prod one call before a 429.
+    const appEnv = process.env.APP_ENV ?? 'development';
+    if (appEnv !== 'production') {
+      this.logger.log(`APP_ENV="${appEnv}" — bamper.by runs only in production, skipping`);
+      return { feeds: [], failedFeeds: [] };
+    }
+
     const feedResults: BamperFeedResult[] = [];
     const currentByFeed = new Map<string, BamperListing[]>();
     const previousByFeed = new Map<string, Map<string, BamperSnapshotEntry>>();

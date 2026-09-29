@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { ScrapeDoProvider } from './scrape-do.provider';
+import { ScrapeOpsProvider } from './scrapeops.provider';
 import { ScraperApiProvider } from './scraper-api.provider';
 import { ScrapingAntProvider } from './scrapingant.provider';
 import { ZenRowsProvider } from './zenrows.provider';
@@ -42,6 +43,9 @@ import { SCRAPING_PROVIDERS, type ScrapingProvider } from './scraping.types';
 //
 // ScrapingAnt still earns its slot for unprotected sites, where it is the largest allowance.
 //
+// ScrapeOps comes after ScrapingAnt so bid.cars, which ScrapingAnt serves, does not spend its
+// 1000 monthly credits; what reaches it is mostly bamper.by. See scrapeops.provider.ts.
+//
 // Ordering cheap-first is safe because the chain falls through: a provider that cannot serve a
 // site (weaker bypass, or out of quota) simply hands the request to the next one. ScrapFly is
 // deliberately last, so nothing follows it — by then the two volume tiers are exhausted, and
@@ -62,6 +66,7 @@ import { SCRAPING_PROVIDERS, type ScrapingProvider } from './scraping.types';
     ZenRowsProvider,
     ScrapeDoProvider,
     ScrapingAntProvider,
+    ScrapeOpsProvider,
     {
       provide: SCRAPING_PROVIDERS,
       // Chain order = fallback order.
@@ -70,13 +75,15 @@ import { SCRAPING_PROVIDERS, type ScrapingProvider } from './scraping.types';
         zenrows: ZenRowsProvider,
         scrapedo: ScrapeDoProvider,
         scrapingant: ScrapingAntProvider,
+        scrapeops: ScrapeOpsProvider,
         scrapfly: ScrapflyProvider,
-      ): ScrapingProvider[] => [scraperapi, zenrows, scrapedo, scrapingant, scrapfly],
+      ): ScrapingProvider[] => [scraperapi, zenrows, scrapedo, scrapingant, scrapeops, scrapfly],
       inject: [
         ScraperApiProvider,
         ZenRowsProvider,
         ScrapeDoProvider,
         ScrapingAntProvider,
+        ScrapeOpsProvider,
         ScrapflyProvider,
       ],
     },
