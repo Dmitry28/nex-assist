@@ -95,6 +95,25 @@ const harness = (
 };
 
 describe('BamperService', () => {
+  const originalAppEnv = process.env.APP_ENV;
+  beforeEach(() => {
+    process.env.APP_ENV = 'production';
+  });
+  afterAll(() => {
+    if (originalAppEnv === undefined) delete process.env.APP_ENV;
+    else process.env.APP_ENV = originalAppEnv;
+  });
+
+  it('skips outside production, so dev does not spend the shared provider credits', async () => {
+    process.env.APP_ENV = 'development';
+    const { service, notified, written } = harness([feed('kapot')], new Set());
+    const result = await service.run();
+
+    expect(result).toEqual({ feeds: [], failedFeeds: [] });
+    expect(notified).toHaveLength(0);
+    expect(written.size).toBe(0);
+  });
+
   // The bug this covers cost three days of parts monitoring: the first feed's fetch threw out of
   // the loop, so the other five parts were never checked and nothing said so.
   describe('when one feed fails to fetch', () => {
