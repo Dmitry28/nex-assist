@@ -12,7 +12,7 @@
   {
     "module": "kufar",
     "trackedSince": "2026-09-05T14:37:34.016Z",
-    "lastChangeAt": "2026-10-01T09:36:14.558Z"
+    "lastChangeAt": "2026-10-02T09:34:00.407Z"
   },
   {
     "module": "kufar-rent-flat",
@@ -26,7 +26,7 @@
   {
     "module": "realt",
     "trackedSince": "2026-09-05T14:41:04.454Z",
-    "lastChangeAt": "2026-10-01T09:39:08.177Z"
+    "lastChangeAt": "2026-10-02T09:36:53.960Z"
   },
   {
     "module": "bamper",
@@ -35,7 +35,8 @@
   },
   {
     "module": "pogorany",
-    "trackedSince": "2026-09-05T14:43:06.020Z"
+    "trackedSince": "2026-09-05T14:43:06.020Z",
+    "lastChangeAt": "2026-10-02T09:38:03.385Z"
   },
   {
     "module": "townhouses",
@@ -50,7 +51,7 @@
   {
     "module": "mosty-jobs",
     "trackedSince": "2026-09-05T14:45:19.667Z",
-    "lastChangeAt": "2026-10-01T09:43:33.670Z"
+    "lastChangeAt": "2026-10-02T09:40:33.781Z"
   },
   {
     "module": "idriver",
