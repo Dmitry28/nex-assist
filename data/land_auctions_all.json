@@ -142,15 +142,17 @@
   {
     "title": "Земельный участок по ул. Нектарная, 2Б",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-nektarnaya-2b/",
-    "price": "Не найдено",
-    "area": "Не найдено",
-    "address": "Не найдено",
-    "cadastralNumber": "Не найдено",
-    "cadastralMapUrl": "",
-    "auctionDate": "Не указана",
+    "price": "30 833,00 руб.",
+    "area": "0,1004 га",
+    "address": "г. Гродно, ул. Нектарная, 2Б",
+    "cadastralNumber": "440100000001015887",
+    "cadastralMapUrl": "https://map.nca.by/search/019ff50d-fc36-7322-b126-c9dfca10b402",
+    "auctionDate": "Проведение аукциона планируется на II полугодие 2026 года",
     "applicationDeadline": "Не указан",
-    "communications": "Не указаны",
-    "images": []
+    "communications": "электроснабжение, газоснабжение, водоснабжение",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/07/u4-nektarnaya-sajt.png"
+    ]
   },
   {
     "title": "Земельный участок по ул. Нектарная, 2А",
