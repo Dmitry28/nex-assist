@@ -49,7 +49,7 @@
       "https://cdn.realt.by/img/55/652a3640-8757-11f1-af1a-0242ac120002"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.773Z",
-    "lastSeenAt": "2026-10-02T10:11:14.334Z"
+    "lastSeenAt": "2026-10-03T09:34:47.462Z"
   },
   {
     "adId": 4143824,
@@ -145,7 +145,7 @@
       "https://cdn.realt.by/img/55/c9f3f488-3183-11f0-a25d-0242ac120002"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.773Z",
-    "lastSeenAt": "2026-10-02T10:11:14.334Z"
+    "lastSeenAt": "2026-10-03T09:34:47.462Z"
   },
   {
     "adId": 3731065,
@@ -185,7 +185,7 @@
       "https://cdn.realt.by/img/55/0d2c7f96-2e8b-11f0-a5db-0242ac120002"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.773Z",
-    "lastSeenAt": "2026-10-02T10:11:14.334Z"
+    "lastSeenAt": "2026-10-03T09:34:47.462Z"
   },
   {
     "adId": 3412490,
@@ -250,7 +250,7 @@
       "https://static.realt.by/thumb/c/430x374/4dca2d4e16bcdae15f8576f416699bb5/64/v/site3xfchv64/5b34d76ffc.jpg"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.773Z",
-    "lastSeenAt": "2026-10-02T10:11:14.334Z"
+    "lastSeenAt": "2026-10-03T09:34:47.462Z"
   },
   {
     "adId": 4207136,
@@ -258,14 +258,14 @@
     "link": "https://realt.by/sale-dachi/object/4207136/",
     "title": "дача СТ Турист",
     "description": "Добро пожаловать в чудесное место на разливе Немана в окружении леса! Продается дача в живописном месте в садовом товариществе Турист. Площадь земельного участка – 6 соток. Гармонично и разумно распределено пространство. На территории размещены садовый домик, беседка, хозяйственные постройки.",
-    "priceByn": 51000,
-    "priceUsd": 16971,
+    "priceByn": 45000,
+    "priceUsd": 14975,
     "address": "Турист",
     "area": 43,
     "plotArea": 6,
     "yearBuilt": 1970,
     "seller": "Людмила",
-    "listTime": "2026-08-14T20:00:22+03:00",
+    "listTime": "2026-10-02T14:08:11+03:00",
     "images": [
       "https://cdn.realt.by/img/55/d9ee2c44-97e6-11f1-9454-b255eba31035",
       "https://cdn.realt.by/img/55/d9f87aaa-97e6-11f1-98f6-b255eba31035",
@@ -283,6 +283,6 @@
       "https://cdn.realt.by/img/55/ce40ebc0-97e6-11f1-a95d-b255eba31035"
     ],
     "firstSeenAt": "2026-08-15T07:28:54.515Z",
-    "lastSeenAt": "2026-10-02T10:11:14.334Z"
+    "lastSeenAt": "2026-10-03T09:34:47.462Z"
   }
 ]
