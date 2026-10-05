@@ -1,5 +1,35 @@
 [
   {
+    "title": "Земельный участок по ул. Богатой, 9А",
+    "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-bogatoj-9a/",
+    "price": "35 437,00 руб.",
+    "area": "0,1023 га",
+    "address": "г. Гродно,  ул. Богатая, 9А",
+    "cadastralNumber": "440100000002013060",
+    "cadastralMapUrl": "https://map.nca.by/search/01a10b61-b08c-7394-a7a3-f0a473c1ca02",
+    "auctionDate": "Проведение аукциона планируется на IV квартал 2026 года — I квартал 2027 года",
+    "applicationDeadline": "Не указан",
+    "communications": "электроснабжение, газоснабжение, водоснабжение, водоотведение",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/10/u2-bogataya-sajt-1.png"
+    ]
+  },
+  {
+    "title": "Земельный участок по пер. Заречному 1-му, 1А",
+    "link": "http://gcn.by/properties/zemelnyj-uchastok-po-per-zarechnomu-1-mu-1a/",
+    "price": "34 467,00 руб.",
+    "area": "0,0995 га",
+    "address": "г. Гродно, пер. Заречный 1-й, 1А",
+    "cadastralNumber": "440100000002013061",
+    "cadastralMapUrl": "https://map.nca.by/search/01a10b59-cfb3-70d5-b264-cd19e3804705",
+    "auctionDate": "Проведение аукциона планируется на IV квартал 2026 года — I квартал 2027 года",
+    "applicationDeadline": "Не указан",
+    "communications": "электроснабжение, газоснабжение, водоснабжение, водоотведение",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/10/u1-bogataya-sajt-1.png"
+    ]
+  },
+  {
     "title": "Земельный участок по ул. Райгородская, 29",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-rajgorodskaya-29/",
     "price": "36 011,00 руб.",
@@ -7,7 +37,7 @@
     "address": "г. Гродно, ул. Райгородская, 29",
     "cadastralNumber": "440100000002013067",
     "cadastralMapUrl": "https://map.nca.by/search/01a0c82b-27db-7269-b7e1-ed56981fbc4e",
-    "auctionDate": "Проведение аукциона планируется на II полугодие 2026 года",
+    "auctionDate": "Проведение аукциона планируется на IV квартал 2026 года — I квартал 2027 года",
     "applicationDeadline": "Не указан",
     "communications": "электроснабжение, газоснабжение, водоснабжение",
     "images": [
@@ -22,7 +52,7 @@
     "address": "г. Гродно, ул. Райгородская, 35",
     "cadastralNumber": "440100000002013064",
     "cadastralMapUrl": "https://map.nca.by/search/01a0c81f-30ad-7028-8e38-52b5eec35d24",
-    "auctionDate": "Проведение аукциона планируется на II полугодие 2026 года",
+    "auctionDate": "Проведение аукциона планируется на IV квартал 2026 года — I квартал 2027 года",
     "applicationDeadline": "Не указан",
     "communications": "электроснабжение, газоснабжение, водоснабжение",
     "images": [
@@ -41,7 +71,7 @@
     "address": "г. Гродно, ул. Переломская, 9",
     "cadastralNumber": "440100000002013066",
     "cadastralMapUrl": "https://map.nca.by/search/01a0c819-ff15-7225-9323-99af43d3983c",
-    "auctionDate": "Проведение аукциона планируется на II полугодие 2026 года",
+    "auctionDate": "Проведение аукциона планируется на IV квартал 2026 года — I квартал 2027 года",
     "applicationDeadline": "Не указан",
     "communications": "электроснабжение, газоснабжение, водоснабжение",
     "images": [
@@ -228,22 +258,15 @@
   {
     "title": "Жилой дом по ул. Юбилейная, 11",
     "link": "http://gcn.by/properties/zhiloj-dom-po-ul-yubilejnaya-11/",
-    "price": "45 400 руб.",
+    "price": "Не найдено",
     "area": "Не найдено",
-    "address": "г. Гродно, ул. Юбилейная, 11",
-    "cadastralNumber": "Не найден",
+    "address": "Не найдено",
+    "cadastralNumber": "Не найдено",
     "cadastralMapUrl": "",
-    "auctionDate": "Возможно проведение повторного аукциона при обращении заинтересованного в приобретении объекта лица",
+    "auctionDate": "Не указана",
     "applicationDeadline": "Не указан",
     "communications": "Не указаны",
-    "images": [
-      "https://gcn.by/wp-content/uploads/2025/02/yubilejnaya-4.png",
-      "https://gcn.by/wp-content/uploads/2025/02/yubilejnaya-1.png",
-      "https://gcn.by/wp-content/uploads/2025/02/yubilejnaya-2.png",
-      "https://gcn.by/wp-content/uploads/2025/02/yubilejnaya-3.png",
-      "https://gcn.by/wp-content/uploads/2025/02/yubilejnaya-4.png",
-      "https://gcn.by/wp-content/uploads/2025/02/yubilejnaya-1.png"
-    ]
+    "images": []
   },
   {
     "title": "Земельный участок У-3 по ул. Максима Танка",
