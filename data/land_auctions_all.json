@@ -1,5 +1,65 @@
 [
   {
+    "title": "Земельный участок по ул. Песчаной, 2",
+    "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-peschanoj-2/",
+    "price": "34 294,00 руб.",
+    "area": "0,099 га",
+    "address": "г. Гродно, ул. Песчаная, 2",
+    "cadastralNumber": "440100000002013056",
+    "cadastralMapUrl": "https://map.nca.by/search/01a10be5-163b-72ec-ae41-9474ef37b9f0",
+    "auctionDate": "Проведение аукциона планируется на IV квартал 2026 года — I квартал 2027 года",
+    "applicationDeadline": "Не указан",
+    "communications": "электроснабжение, газоснабжение, водоснабжение, водоотведение",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/10/u4-peschanaya-sajt1.png"
+    ]
+  },
+  {
+    "title": "Земельный участок по ул. Песчаной, 4",
+    "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-peschanoj-4/",
+    "price": "36 372,00 руб.",
+    "area": "0,105 га",
+    "address": "г. Гродно, ул. Песчаная, 4",
+    "cadastralNumber": "440100000002013057",
+    "cadastralMapUrl": "https://map.nca.by/search/01a10be0-3abd-72d1-a58e-dbfbdf4e92dd",
+    "auctionDate": "Проведение аукциона планируется на IV квартал 2026 года — I квартал 2027 года",
+    "applicationDeadline": "Не указан",
+    "communications": "электроснабжение, газоснабжение, водоснабжение, водоотведение",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/10/u3-peschanaya-sajt1.png"
+    ]
+  },
+  {
+    "title": "Земельный участок по ул. Песчаной, 6",
+    "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-peschanoj-6/",
+    "price": "36 372,00 руб.",
+    "area": "0,1050 га",
+    "address": "г. Гродно, ул. Песчаная, 6",
+    "cadastralNumber": "440100000002013058",
+    "cadastralMapUrl": "https://map.nca.by/search/01a10bda-d3c8-729a-b884-51a0789561a0",
+    "auctionDate": "Проведение аукциона планируется на IV квартал 2026 года — I квартал 2027 года",
+    "applicationDeadline": "Не указан",
+    "communications": "электроснабжение, газоснабжение, водоснабжение, водоотведение",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/10/u2-peschanaya-sajt.png"
+    ]
+  },
+  {
+    "title": "Земельный участок по ул. Богатой, 9А",
+    "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-bogatoj-9a-2/",
+    "price": "34 259,00 руб.",
+    "area": "0,0989 га",
+    "address": "г. Гродно, ул. Богатая, 2А",
+    "cadastralNumber": "440100000002013059",
+    "cadastralMapUrl": "https://map.nca.by/search/01a10bd2-171a-703f-ac1b-6396bcbce8e0",
+    "auctionDate": "Проведение аукциона планируется на IV квартал 2026 года — I квартал 2027 года",
+    "applicationDeadline": "Не указан",
+    "communications": "электроснабжение, газоснабжение, водоснабжение, водоотведение",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/10/u3-bogataya-sajt-1.png"
+    ]
+  },
+  {
     "title": "Земельный участок по ул. Богатой, 9А",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-bogatoj-9a/",
     "price": "35 437,00 руб.",
