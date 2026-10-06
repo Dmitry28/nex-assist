@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "link": "https://bid.cars/ru/lot/1-70708106/2025-Volkswagen-Atlas-1V2HR2CA2SC532794",
+    "title": "2025 Volkswagen Atlas, SE",
+    "vin": "1V2HR2CA2SC532794",
+    "lot": "1-70708106",
+    "odometer": "40k мили (65k km)",
+    "damage": "Сторона",
+    "location": "Little Rock (AR)",
+    "currentBid": "$0",
+    "engine": "4 cyl. 269HP",
+    "keys": "CT (Massachusetts)",
+    "condition": "На ходу",
+    "auctionDate": "ср 7 окт., 18:00 GMT+2",
+    "auctionSource": "COPART",
+    "seller": "Non-insurance Company"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/1-70660576/2024-Volkswagen-Atlas-1V2JE2CA3RC220555",
+    "title": "2024 Volkswagen Atlas, SE",
+    "vin": "1V2JE2CA3RC220555",
+    "lot": "1-70660576",
+    "odometer": "24k мили (39k km)",
+    "damage": "Сторона",
+    "location": "Knoxville (TN)",
+    "currentBid": "$175",
+    "engine": "4 cyl. 269HP",
+    "keys": "SC (Tennessee)",
+    "condition": "На ходу",
+    "auctionDate": "чт 8 окт., 16:00 GMT+2",
+    "auctionSource": "COPART",
+    "seller": "Insurance Company"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/1-62881116/2023-Volkswagen-Atlas-1V2LC2CA6PC226152",
+    "title": "2023 Volkswagen Atlas, SE",
+    "vin": "1V2LC2CA6PC226152",
+    "lot": "1-62881116",
+    "odometer": "32k мили (52k km)",
+    "damage": "Передняя часть",
+    "location": "Denver (CO)",
+    "currentBid": "$0",
+    "engine": "4 cyl. 235HP",
+    "keys": "SC (Idaho)",
+    "condition": "На ходу",
+    "auctionDate": "чт 8 окт., 20:00 GMT+2",
+    "auctionSource": "COPART",
+    "seller": "Geico"
+  }
+]
