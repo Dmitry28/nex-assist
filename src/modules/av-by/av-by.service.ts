@@ -145,6 +145,15 @@ export class AvByService {
         );
       }
 
+      // Guard against a page that silently dropped its filter (06.10.2026: /filter started
+      // serving the whole catalogue) — it would announce random cars as new and the real ones as sold.
+      const foreign = current.filter(l => l.model !== feed.model);
+      if (foreign.length > 0) {
+        throw new Error(
+          `Feed ${feed.key}: ${foreign.length}/${current.length} listings are not ${feed.model} (e.g. ${foreign[0].title}) — page lost its filter, aborting`,
+        );
+      }
+
       const previousMap = new Map(previousEntries.map(e => [e.id, e]));
       const isBaseline = previousMap.size === 0 && current.length > 0;
 
