@@ -106,12 +106,14 @@ export const TOWNHOUSES_DEFAULTS = {
 } as const;
 
 export const AV_BY_DEFAULTS = {
-  // Volkswagen Atlas, year 2023+, engine <= 2.0L
-  ATLAS_URL:
-    'https://cars.av.by/filter?brands[0][brand]=1216&brands[0][model]=5980&brands[0][generation]=13256&year[min]=2023&engine_capacity[max]=2000',
-  // Volkswagen Atlas Cross Sport, year 2023+, engine <= 2.0L
-  ATLAS_CROSS_SPORT_URL:
-    'https://cars.av.by/filter?brands[0][brand]=1216&brands[0][model]=10265&brands[0][generation]=13810&year[min]=2023&engine_capacity[max]=2000',
+  // Generation landing pages, not `/filter?brands[0][brand]=...`: since 06.10.2026 the filter
+  // page ignores its query and serves the whole catalogue (~101k adverts) even to a real
+  // browser. Each landing page is one generation, which keeps the old "2023+" scope; the 2.0L
+  // cap is moot because both restylings come only with the 2.0 TSI.
+  // Volkswagen Atlas I, 2nd restyling (2023+)
+  ATLAS_URL: 'https://cars.av.by/volkswagen/atlas/i-2-j-restajling-2023',
+  // Volkswagen Atlas Cross Sport I, restyling (2023+)
+  ATLAS_CROSS_SPORT_URL: 'https://cars.av.by/volkswagen/atlas-cross-sport/i-restajling-2023',
   /** Minimum interval between runs — protects ScrapFly free-tier budget (1000 credits/mo). */
   MIN_RUN_INTERVAL_HOURS: 47,
 } as const;
