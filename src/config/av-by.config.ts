@@ -7,8 +7,10 @@ export interface AvByFeedConfig {
   key: string;
   /** Human-readable label for messages. */
   label: string;
-  /** Filter URL on cars.av.by. */
+  /** Listing page on cars.av.by. */
   url: string;
+  /** av.by `model` property every advert in the feed must carry — anything else means the page lost its filter. */
+  model: string;
 }
 
 /**
@@ -29,11 +31,13 @@ export default registerAs('avBy', () => ({
     {
       key: 'atlas',
       label: 'VW Atlas',
+      model: 'Atlas',
       url: process.env.AV_BY_ATLAS_URL ?? AV_BY_DEFAULTS.ATLAS_URL,
     },
     {
       key: 'atlas_cross_sport',
       label: 'VW Atlas Cross Sport',
+      model: 'Atlas Cross Sport',
       url: process.env.AV_BY_ATLAS_CROSS_SPORT_URL ?? AV_BY_DEFAULTS.ATLAS_CROSS_SPORT_URL,
     },
   ] satisfies AvByFeedConfig[],
