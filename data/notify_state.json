@@ -2,17 +2,17 @@
   {
     "module": "land-auctions",
     "trackedSince": "2026-09-05T14:33:35.243Z",
-    "lastChangeAt": "2026-10-05T09:31:36.176Z"
+    "lastChangeAt": "2026-10-06T09:32:44.240Z"
   },
   {
     "module": "bid-cars",
     "trackedSince": "2026-09-05T14:35:08.591Z",
-    "lastChangeAt": "2026-10-05T09:33:15.463Z"
+    "lastChangeAt": "2026-10-06T09:34:39.495Z"
   },
   {
     "module": "kufar",
     "trackedSince": "2026-09-05T14:37:34.016Z",
-    "lastChangeAt": "2026-10-05T09:37:35.884Z"
+    "lastChangeAt": "2026-10-06T09:36:35.157Z"
   },
   {
     "module": "kufar-rent-flat",
@@ -27,7 +27,7 @@
   {
     "module": "realt",
     "trackedSince": "2026-09-05T14:41:04.454Z",
-    "lastChangeAt": "2026-10-05T09:42:02.661Z"
+    "lastChangeAt": "2026-10-06T09:40:23.693Z"
   },
   {
     "module": "bamper",
