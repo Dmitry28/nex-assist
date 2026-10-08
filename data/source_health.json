@@ -39,43 +39,43 @@
     "source": "pogorany",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-10-07T09:40:06.892Z"
+    "lastNonEmptyAt": "2026-10-08T09:42:09.462Z"
   },
   {
     "source": "ghb",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-10-07T09:42:07.448Z"
+    "lastNonEmptyAt": "2026-10-08T09:44:10.983Z"
   },
   {
     "source": "mosty:gsz",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-10-07T09:42:29.678Z"
+    "lastNonEmptyAt": "2026-10-08T09:44:36.515Z"
   },
   {
     "source": "mosty:rabota",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-10-07T09:42:29.681Z"
+    "lastNonEmptyAt": "2026-10-08T09:44:36.516Z"
   },
   {
     "source": "mosty:joblab",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-10-07T09:42:29.683Z"
+    "lastNonEmptyAt": "2026-10-08T09:44:36.516Z"
   },
   {
     "source": "mosty:evroopt",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-10-07T09:42:29.686Z"
+    "lastNonEmptyAt": "2026-10-08T09:44:36.517Z"
   },
   {
     "source": "mosty:crb",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-10-07T09:42:29.690Z"
+    "lastNonEmptyAt": "2026-10-08T09:44:36.518Z"
   },
   {
     "source": "bamper:windshield",
@@ -86,7 +86,7 @@
     "source": "idriver:atlas-cross-sport",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-10-07T09:40:01.089Z"
+    "lastNonEmptyAt": "2026-10-08T09:42:03.545Z"
   },
   {
     "source": "mosty:fair",
