@@ -1,6 +1,6 @@
 import { readFileSync } from 'fs';
 import path from 'path';
-import { parseBamperSearchHtml } from '../bamper-parser.service';
+import { parseBamperSearchHtml, usableListings } from '../bamper-parser.service';
 
 const fixture = (name: string): string =>
   readFileSync(path.join(__dirname, 'fixtures', name), 'utf8');
@@ -94,5 +94,23 @@ describe('parseBamperSearchHtml — edge cases', () => {
   it('ignores listings of a different part slug on the page', () => {
     const bumperPage = fixture('search-atlas-cross-sport.html');
     expect(parseBamperSearchHtml(bumperPage, 'kryshka-bagazhnika-dver-3-5')).toEqual([]);
+  });
+});
+
+describe('usableListings', () => {
+  it('returns the listings of a page that has them', () => {
+    expect(usableListings(fixture('search-atlas-cross-sport.html'), 'bamper-zadniy')).toHaveLength(
+      9,
+    );
+  });
+
+  it('accepts an empty search as a real page, so it does not escalate to the paid rung', () => {
+    const empty = '<h1>Стекло лобовое</h1><div>Найдено объявлений: 0</div><p>Ничего не найдено</p>';
+    expect(usableListings(empty, 'steklo-lobovoe')).toEqual([]);
+  });
+
+  it('rejects a Cloudflare challenge', () => {
+    const challenge = '<html><head><title>Just a moment...</title></head><body></body></html>';
+    expect(usableListings(challenge, 'bamper-zadniy')).toBeNull();
   });
 });
