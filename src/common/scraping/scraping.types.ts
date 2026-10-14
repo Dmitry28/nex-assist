@@ -19,6 +19,11 @@ export interface ScrapeOptions {
   renderWaitMs?: number;
   /** Overall request timeout (ms). */
   timeoutMs?: number;
+  /**
+   * Whether a body is the page we wanted. Checked by the client after each provider, so a 200
+   * challenge or stub from one provider hands over to the next instead of ending the chain.
+   */
+  isUsable?: (content: string) => boolean;
 }
 
 /** Result of a successful scrape. */
