@@ -299,7 +299,16 @@ export class BidCarsParserService implements OnModuleDestroy {
         // [] here made the ladder call it a success, so the provider rung was never reached and
         // "sold prices found: 0" was printed every run against an archive full of matches.
         // Escalating costs one rendered call and the paid rung decides what empty really means.
-        this.logger.warn(`No lot links found — page title: "${title}". Escalating to a provider.`);
+        // What the page says under its heading — tells an empty search from one that never
+        // rendered, which is what the escalation below costs a rendered provider call to find out.
+        const text = await page.evaluate(() => {
+          const body = document.body.innerText.replace(/\s+/g, ' ');
+          const h1 = document.querySelector('h1')?.textContent?.trim() ?? '';
+          return body.slice(Math.max(0, body.indexOf(h1)), body.indexOf(h1) + 500);
+        });
+        this.logger.warn(
+          `No lot links found — page title: "${title}", text: "${text}". Escalating to a provider.`,
+        );
         return null;
       }
 
