@@ -8,7 +8,7 @@
     "minPricePerM2Byn": 3120,
     "maxPricePerM2Byn": 3120,
     "firstSeenAt": "2026-08-04T15:50:53.592Z",
-    "lastSeenAt": "2026-10-14T09:42:10.386Z"
+    "lastSeenAt": "2026-10-14T21:43:29.428Z"
   },
   {
     "url": "https://ghb.by/ru/construction/nedvizhimost-dogovor/9155/",
@@ -19,7 +19,7 @@
     "minPricePerM2Byn": 3000,
     "maxPricePerM2Byn": 3000,
     "firstSeenAt": "2026-08-04T15:50:53.592Z",
-    "lastSeenAt": "2026-10-14T09:42:10.386Z"
+    "lastSeenAt": "2026-10-14T21:43:29.428Z"
   },
   {
     "url": "https://ghb.by/ru/construction/nedvizhimost-dogovor/9102/",
@@ -30,7 +30,7 @@
     "minPricePerM2Byn": 3000,
     "maxPricePerM2Byn": 3000,
     "firstSeenAt": "2026-08-04T15:50:53.592Z",
-    "lastSeenAt": "2026-10-14T09:42:10.386Z"
+    "lastSeenAt": "2026-10-14T21:43:29.428Z"
   },
   {
     "url": "https://ghb.by/ru/construction/nedvizhimost-dogovor/8665/",
@@ -41,7 +41,7 @@
     "minPricePerM2Byn": 2800,
     "maxPricePerM2Byn": 2800,
     "firstSeenAt": "2026-08-04T15:50:53.592Z",
-    "lastSeenAt": "2026-10-14T09:42:10.386Z"
+    "lastSeenAt": "2026-10-14T21:43:29.428Z"
   },
   {
     "url": "https://ghb.by/ru/construction/nedvizhimost-dogovor/8321/",
@@ -62,7 +62,7 @@
     "minPricePerM2Byn": 2250,
     "maxPricePerM2Byn": 4900,
     "firstSeenAt": "2026-08-04T15:50:53.592Z",
-    "lastSeenAt": "2026-10-14T09:42:10.386Z"
+    "lastSeenAt": "2026-10-14T21:43:29.428Z"
   },
   {
     "url": "https://ghb.by/ru/construction/nedvizhimost-dogovor/8337/",
@@ -104,15 +104,17 @@
     "minPricePerM2Byn": 4000,
     "maxPricePerM2Byn": 4000,
     "firstSeenAt": "2026-08-04T15:50:53.592Z",
-    "lastSeenAt": "2026-10-14T09:42:10.386Z"
+    "lastSeenAt": "2026-10-14T21:43:29.428Z"
   },
   {
     "url": "https://ghb.by/ru/construction/nedvizhimost/8760/",
     "id": 8760,
     "type": "office",
-    "title": "Объект:",
+    "title": "Объект: «Микрорайон многоквартирной жилой застройки в районе улиц Калиновского – Весенней в г. Гродно. Жилой дом № 1»",
+    "minPricePerM2Byn": 4200,
+    "maxPricePerM2Byn": 5400,
     "firstSeenAt": "2026-08-04T15:50:53.592Z",
-    "lastSeenAt": "2026-10-14T09:42:10.386Z"
+    "lastSeenAt": "2026-10-14T21:43:29.428Z"
   },
   {
     "url": "https://ghb.by/ru/construction/nedvizhimost/7181/",
@@ -122,7 +124,7 @@
     "minPricePerM2Byn": 1185,
     "maxPricePerM2Byn": 3500,
     "firstSeenAt": "2026-08-04T15:50:53.592Z",
-    "lastSeenAt": "2026-10-14T09:42:10.386Z"
+    "lastSeenAt": "2026-10-14T21:43:29.428Z"
   },
   {
     "url": "https://ghb.by/ru/construction/nedvizhimost/6429/",
@@ -132,7 +134,7 @@
     "minPricePerM2Byn": 2148,
     "maxPricePerM2Byn": 2950,
     "firstSeenAt": "2026-08-04T15:50:53.592Z",
-    "lastSeenAt": "2026-10-14T09:42:10.386Z"
+    "lastSeenAt": "2026-10-14T21:43:29.428Z"
   },
   {
     "url": "https://ghb.by/ru/construction/nedvizhimost-dogovor/8703/",
@@ -154,7 +156,7 @@
     "minPricePerM2Byn": 3120,
     "maxPricePerM2Byn": 3500,
     "firstSeenAt": "2026-08-19T09:45:20.992Z",
-    "lastSeenAt": "2026-10-14T09:42:10.386Z"
+    "lastSeenAt": "2026-10-14T21:43:29.428Z"
   },
   {
     "url": "https://ghb.by/ru/construction/nedvizhimost-dogovor/9262/",
@@ -176,7 +178,7 @@
     "minPricePerM2Byn": 2200,
     "maxPricePerM2Byn": 73000,
     "firstSeenAt": "2026-09-28T09:57:24.280Z",
-    "lastSeenAt": "2026-10-14T09:42:10.386Z"
+    "lastSeenAt": "2026-10-14T21:43:29.428Z"
   },
   {
     "url": "https://ghb.by/ru/construction/nedvizhimost-dogovor/9311/",
@@ -187,6 +189,6 @@
     "minPricePerM2Byn": 2350,
     "maxPricePerM2Byn": 96000,
     "firstSeenAt": "2026-10-12T09:42:29.192Z",
-    "lastSeenAt": "2026-10-14T09:42:10.386Z"
+    "lastSeenAt": "2026-10-14T21:43:29.428Z"
   }
 ]
