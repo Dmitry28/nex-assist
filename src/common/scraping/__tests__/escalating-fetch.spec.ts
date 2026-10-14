@@ -36,6 +36,35 @@ describe('fetchEscalating', () => {
     expect(result).toBe('paid');
   });
 
+  it('tries free proxies after the browser and before the paid chain', async () => {
+    const order: string[] = [];
+    const result = await fetchEscalating({
+      ...base,
+      attemptBrowser: () => (order.push('browser'), Promise.resolve(null)),
+      attemptFreeProxy: () => (order.push('proxy'), Promise.resolve(null)),
+      attemptPaid: () => (
+        order.push('paid'),
+        Promise.resolve({ value: 'paid', provider: 'zenrows' })
+      ),
+      paidAvailable: true,
+    });
+    expect(result).toBe('paid');
+    expect(order).toEqual(['browser', 'proxy', 'paid']);
+  });
+
+  it('spends nothing when a free proxy works', async () => {
+    const paid = jest.fn();
+    const result = await fetchEscalating({
+      ...base,
+      attemptBrowser: () => Promise.resolve(null),
+      attemptFreeProxy: () => Promise.resolve('via-proxy'),
+      attemptPaid: paid,
+      paidAvailable: true,
+    });
+    expect(result).toBe('via-proxy');
+    expect(paid).not.toHaveBeenCalled();
+  });
+
   it('skips the chain when no provider has a key', async () => {
     const paid = jest.fn();
     const result = await fetchEscalating({

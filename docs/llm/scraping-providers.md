@@ -54,3 +54,11 @@ The keys in the local `.env` are empty. The real values are GitHub Actions secre
 - **ScrapingAnt** has no render-wait parameter, so `renderWaitMs` is sent as an awaited
   `js_snippet`. Without the wait, bid.cars sometimes came back as a 254 KB shell with no cards,
   and BidCars aborted on 0 listings (25.09 and 27.09.2026).
+
+## Free country proxies
+
+Before the paid chain, a source with a `country` (av.by, idriver, e-rabota, bamper) races three
+public proxies of that country (`src/common/scraping/free-proxies.ts`, lists from proxifly and
+geonode). They live for minutes, so the rung often fails — then the paid chain serves the page as
+before. `fetched via free by proxy …` in the log is a page that cost no credits; `… free by
+proxies failed` is normal. Measured 15.10.2026: idriver and bamper came through, av.by did not.
