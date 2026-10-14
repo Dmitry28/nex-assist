@@ -5,6 +5,7 @@ import puppeteer from 'rebrowser-puppeteer';
 import type { Browser, Page } from 'rebrowser-puppeteer';
 import { sleep } from '../../common/utils/sleep';
 import { fetchEscalating } from '../../common/scraping/escalating-fetch';
+import { fetchViaFreeProxy } from '../../common/scraping/free-proxies';
 import { ScrapingClient } from '../../common/scraping/scraping-client.service';
 import { BROWSER_USER_AGENT } from '../../common/utils/scraping';
 import {
@@ -20,6 +21,9 @@ const BASE_URL = 'https://bamper.by';
 /** Rung-1 timeout. Short on purpose: a challenge page comes back fast, and this is only
  * a cheap probe before the browser. */
 const PLAIN_TIMEOUT_MS = 15_000;
+
+/** A search page is ~200 KB; anything far larger is not the page. */
+const MAX_HTML_BYTES = 5 * 1024 * 1024;
 
 /** Overall provider request timeout — anti-bot + JS render is slow (ms). */
 const PROVIDER_TIMEOUT_MS = 120_000;
@@ -74,6 +78,7 @@ export class BamperParserService implements OnModuleDestroy {
       // drops the challenge every run becomes free without anyone noticing.
       attemptPlain: () => this.tryPlain(url, partSlug),
       attemptBrowser: () => this.tryBrowser(url, partSlug),
+      attemptFreeProxy: () => this.tryFreeProxy(url, partSlug),
       attemptPaid: async () => {
         const { content, provider } = await this.scraping.scrape(url, {
           country: 'by',
@@ -120,6 +125,19 @@ export class BamperParserService implements OnModuleDestroy {
     } finally {
       clearTimeout(timer);
     }
+  }
+
+  /** Rung 3 — Belarusian free proxies: through one, bamper served the real page (nexo-assist, 10.2026). */
+  private async tryFreeProxy(url: string, partSlug: string): Promise<BamperListing[] | null> {
+    const html = await fetchViaFreeProxy(url, {
+      logger: this.logger,
+      label: partSlug,
+      country: 'by',
+      isUsable: body => parseBamperSearchHtml(body, partSlug).length > 0,
+      timeoutMs: PLAIN_TIMEOUT_MS,
+      maxBytes: MAX_HTML_BYTES,
+    });
+    return html === null ? null : parseBamperSearchHtml(html, partSlug);
   }
 
   /** One browser attempt. Returns null when the challenge did not clear. */
