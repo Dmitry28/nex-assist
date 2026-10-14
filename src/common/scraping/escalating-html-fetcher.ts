@@ -2,6 +2,7 @@ import { Injectable, Logger, type OnModuleDestroy } from '@nestjs/common';
 import puppeteer, { type Browser } from 'rebrowser-puppeteer';
 import { BROWSER_USER_AGENT } from '../utils/scraping';
 import { fetchEscalating } from './escalating-fetch';
+import { fetchViaFreeProxy } from './free-proxies';
 import { ScrapingClient } from './scraping-client.service';
 
 /** Chrome flags that keep a headless browser from advertising itself. */
@@ -25,7 +26,7 @@ export interface EscalatingHtmlOptions {
   isUsable: (html: string) => boolean;
   timeoutMs: number;
   maxBytes: number;
-  /** Proxy country for the paid rung, when the site is geo-restricted. */
+  /** Proxy country for the free-proxy and paid rungs, when the site is geo-restricted. */
   country?: string;
   /**
    * Ask the paid rung to render the page in a real browser. Rendering is billed on top of the
@@ -38,8 +39,8 @@ export interface EscalatingHtmlOptions {
 }
 
 /**
- * Fetches a page over the full escalation ladder: plain request, then a local browser, then the
- * managed provider chain.
+ * Fetches a page over the full escalation ladder: plain request, a local browser, free proxies of
+ * `country` (when set), then the managed provider chain.
  *
  * Every HTML-parsing module used to own a private `fetchHtml` that stopped at the first rung, so
  * a site adding protection meant a silent break — which is exactly how bamper went months
@@ -63,14 +64,21 @@ export class EscalatingHtmlFetcher implements OnModuleDestroy {
 
   /** Returns the page body, or null when every rung failed. */
   async fetch(url: string, options: EscalatingHtmlOptions): Promise<string | null> {
+    const { country } = options;
     return fetchEscalating<string>({
       logger: this.logger,
       label: options.label,
       attemptPlain: () => this.plain(url, options),
       attemptBrowser: () => this.viaBrowser(url, options),
+      ...(country
+        ? {
+            attemptFreeProxy: () =>
+              fetchViaFreeProxy(url, { ...options, country, logger: this.logger }),
+          }
+        : {}),
       attemptPaid: async () => {
         const { content, provider } = await this.scraping.scrape(url, {
-          ...(options.country ? { country: options.country } : {}),
+          ...(country ? { country } : {}),
           ...(options.renderJs ? { renderJs: true } : {}),
           ...(options.renderWaitMs ? { renderWaitMs: options.renderWaitMs } : {}),
           asp: true,
