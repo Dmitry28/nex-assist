@@ -83,8 +83,8 @@ export class EscalatingHtmlFetcher implements OnModuleDestroy {
           ...(options.renderWaitMs ? { renderWaitMs: options.renderWaitMs } : {}),
           asp: true,
           timeoutMs: options.timeoutMs,
+          isUsable: options.isUsable,
         });
-        if (!options.isUsable(content)) throw new Error('provider returned an unusable body');
         return { value: content, provider };
       },
       paidAvailable: this.scraping.isAvailable(),
