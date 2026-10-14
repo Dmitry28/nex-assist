@@ -1716,7 +1716,9 @@
     "auctionSource": "COPART",
     "seller": "Non-insurance Company",
     "removedAt": "2026-10-14T21:34:49.508Z",
-    "removalNotifiedAt": "2026-10-14T21:34:49.508Z"
+    "removalNotifiedAt": "2026-10-14T21:34:49.508Z",
+    "soldPrice": "$4,000",
+    "soldNotifiedAt": "2026-10-14T22:11:01.380Z"
   },
   {
     "link": "https://bid.cars/ru/lot/1-72398056/2026-Volkswagen-Atlas-1V2HN2CA6TC537414",
