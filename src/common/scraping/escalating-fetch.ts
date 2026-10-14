@@ -6,7 +6,8 @@ import { sleep } from '../utils/sleep';
  *
  *   1. plain HTTP fetch   free,  ~1s   — works for kufar, realt, prometr, ghb, pogorany
  *   2. local browser      free,  ~9s   — needed where a plain fetch meets a JS challenge
- *   3. managed chain      paid        — needed where even a browser is refused
+ *   3. free proxies       free,  ≤20s  — geo-fenced sites, public proxies of their country
+ *   4. managed chain      paid        — needed where every free rung is refused
  *
  * A rung is only reached when the one above it fails, so a site that answers a plain request
  * never costs anything, and a site that needs residential proxies still gets them. The per-site
@@ -29,9 +30,11 @@ export interface EscalatingFetchOptions<T> {
   attemptPlain?: () => Promise<T | null>;
   /** Rung 2. Returns null when the challenge did not clear. */
   attemptBrowser?: () => Promise<T | null>;
-  /** Rung 3. */
+  /** Rung 3. Returns null when no free proxy returned a usable body. */
+  attemptFreeProxy?: () => Promise<T | null>;
+  /** Rung 4. */
   attemptPaid?: () => Promise<{ value: T; provider: string }>;
-  /** Whether any provider holds credentials — false means rung 3 is skipped silently. */
+  /** Whether any provider holds credentials — false means rung 4 is skipped. */
   paidAvailable: boolean;
   /** Browser retries after the paid rung has also failed. */
   retries: number;
@@ -47,13 +50,24 @@ export const fetchEscalating = async <T>(o: EscalatingFetchOptions<T>): Promise<
     if (plain !== null) return plain;
     // Name the rung actually coming next: av-by declares no browser, and a log that claimed
     // otherwise would send a diagnosis looking for a browser failure that never happened.
-    const next = o.attemptBrowser ? 'a browser' : o.attemptPaid ? 'the provider chain' : 'nothing';
+    const next = o.attemptBrowser
+      ? 'a browser'
+      : o.attemptFreeProxy
+        ? 'free proxies'
+        : o.attemptPaid
+          ? 'the provider chain'
+          : 'nothing';
     o.logger.warn(`${o.label}: plain request did not return usable content — trying ${next}`);
   }
 
   if (o.attemptBrowser) {
     const viaBrowser = await o.attemptBrowser();
     if (viaBrowser !== null) return viaBrowser;
+  }
+
+  if (o.attemptFreeProxy) {
+    const viaProxy = await o.attemptFreeProxy();
+    if (viaProxy !== null) return viaProxy;
   }
 
   if (o.attemptPaid && o.paidAvailable) {
