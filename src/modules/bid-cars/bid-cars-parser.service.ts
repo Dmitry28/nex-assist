@@ -81,11 +81,7 @@ export class BidCarsParserService implements OnModuleDestroy {
       // Rung 1 absent: this parser reads the page through page.evaluate rather than from an
       // HTML string, so a plain request has nothing to hand it. Rung 2 is where it starts.
       attemptBrowser: async () => this.scrapeResultsPage(await this.getBrowser(), url),
-      attemptPaid: async () => {
-        const listings = await this.viaProvider(url);
-        if (listings === null) throw new Error('provider returned a challenge page');
-        return { value: listings, provider: 'chain' };
-      },
+      attemptPaid: async () => ({ value: await this.viaProvider(url), provider: 'chain' }),
       paidAvailable: this.scraping.isAvailable(),
       retries: CLOUDFLARE_RETRY_ATTEMPTS,
       retryDelayMs: CLOUDFLARE_RETRY_DELAY_MS,
@@ -238,13 +234,15 @@ export class BidCarsParserService implements OnModuleDestroy {
    * Only the first page of results: "Загрузить больше" issues its own request to bid.cars, which
    * a static body cannot serve. Partial data beats the total outage this replaces.
    */
-  private async viaProvider(url: string): Promise<CarListing[] | null> {
+  private async viaProvider(url: string): Promise<CarListing[]> {
     const { content, provider } = await this.scraping.scrape(url, {
       asp: true,
       // bid.cars fills its result cards after load, so without a settle time the provider
       // returns the shell: measured, 254 KB and zero lot links versus 764 KB and 53 with it.
       renderWaitMs: PROVIDER_RENDER_WAIT_MS,
       timeoutMs: PROVIDER_TIMEOUT_MS,
+      // An interstitial from one provider is the next one's turn, not the end of the chain.
+      isUsable: body => !isChallengePage(body),
     });
     const browser = await this.getBrowser();
     const page = await browser.newPage();
@@ -256,8 +254,7 @@ export class BidCarsParserService implements OnModuleDestroy {
       );
       // A rendered results page with no cards is a genuinely empty search — the archive of a
       // filter nobody sold into — and must be reported as such, or the caller retries a browser
-      // that will keep finding the same nothing. Only an interstitial means "blocked".
-      if (listings.length === 0 && isChallengePage(content)) return null;
+      // that will keep finding the same nothing. An interstitial never gets here (`isUsable`).
       return listings;
     } finally {
       await page.close();

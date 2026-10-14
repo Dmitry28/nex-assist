@@ -88,6 +88,7 @@ export class BamperParserService implements OnModuleDestroy {
           // cost 0 but returned the interstitial.
           asp: true,
           timeoutMs: PROVIDER_TIMEOUT_MS,
+          isUsable: body => usableListings(body, partSlug) !== null,
         });
         return { value: parseBamperSearchHtml(content, partSlug), provider };
       },
