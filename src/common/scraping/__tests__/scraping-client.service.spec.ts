@@ -65,6 +65,16 @@ describe('ScrapingClient', () => {
     expect((await new ScrapingClient([broken, spare]).scrape('https://x')).provider).toBe('spare');
   });
 
+  it('hands over to the next provider when a body is not the page', async () => {
+    const stub = provider('stub', 'ok');
+    const real = provider('real', 'ok');
+    const result = await new ScrapingClient([stub, real]).scrape('https://x', {
+      isUsable: body => body.includes('real'),
+    });
+    expect(result.provider).toBe('real');
+    expect(stub.calls).toBe(1);
+  });
+
   it('walks the whole chain — a third provider is reached when two are exhausted', async () => {
     const a = provider('a', 'quota');
     const b = provider('b', 'quota');

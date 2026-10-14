@@ -58,6 +58,9 @@ export class ScrapingClient {
     for (const [i, provider] of chain.entries()) {
       try {
         const result = await provider.scrape(url, opts);
+        if (opts.isUsable && !opts.isUsable(result.content)) {
+          throw new Error(`${provider.name} returned an unusable body`);
+        }
         if (i > 0) this.logger.warn(`Fell back to provider "${provider.name}" for ${url}`);
         return result;
       } catch (err) {

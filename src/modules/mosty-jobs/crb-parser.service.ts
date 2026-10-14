@@ -45,6 +45,8 @@ export class CrbParserService {
       isUsable: body => body.includes('vakansii') || body.includes('<table'),
       timeoutMs: FETCH_TIMEOUT_MS,
       maxBytes: MAX_HTML_SIZE_BYTES,
+      // Like gsz: unreachable from GitHub's runners (connect timeout), fine from a BY address.
+      country: 'by',
     });
     if (html === null) return null;
 

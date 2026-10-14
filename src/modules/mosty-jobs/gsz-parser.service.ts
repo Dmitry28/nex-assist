@@ -127,6 +127,9 @@ export class GszParserService {
       isUsable: body => body.includes('vacancy') || body.includes('vakansii'),
       timeoutMs: FETCH_TIMEOUT_MS,
       maxBytes: MAX_HTML_SIZE_BYTES,
+      // Since 10.2026 GitHub's runners cannot even connect (ConnectTimeoutError) while a home
+      // connection gets the page in a second — so free Belarusian proxies go before paid ones.
+      country: 'by',
     });
     if (html === null) throw new Error(`gsz page ${page}: every fetch rung failed`);
     return { html, status: 200 };
