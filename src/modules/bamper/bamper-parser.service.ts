@@ -106,7 +106,7 @@ export class BamperParserService implements OnModuleDestroy {
 
   /**
    * Rung 1 — a plain HTTP request. Returns null when the body is a challenge page rather than
-   * the listing page, which is what the parser yielding nothing indicates.
+   * the search page (see `usableListings`).
    */
   private async tryPlain(url: string, partSlug: string): Promise<BamperListing[] | null> {
     const controller = new AbortController();
@@ -117,8 +117,7 @@ export class BamperParserService implements OnModuleDestroy {
         headers: { 'User-Agent': BROWSER_USER_AGENT, 'Accept-Language': 'ru-RU,ru;q=0.9' },
       });
       if (!res.ok) return null;
-      const listings = parseBamperSearchHtml(await res.text(), partSlug);
-      return listings.length > 0 ? listings : null;
+      return usableListings(await res.text(), partSlug);
     } catch {
       // Any transport failure just means "escalate" — no need to distinguish causes here.
       return null;
@@ -133,7 +132,7 @@ export class BamperParserService implements OnModuleDestroy {
       logger: this.logger,
       label: partSlug,
       country: 'by',
-      isUsable: body => parseBamperSearchHtml(body, partSlug).length > 0,
+      isUsable: body => usableListings(body, partSlug) !== null,
       timeoutMs: PLAIN_TIMEOUT_MS,
       maxBytes: MAX_HTML_BYTES,
     });
@@ -180,6 +179,16 @@ export class BamperParserService implements OnModuleDestroy {
 }
 
 // ─── Pure parsing helpers ─────────────────────────────────────────────────────
+
+/**
+ * The listings when the body is a real search page — an empty one included — or null for a
+ * challenge. Judging by listings alone sent every empty feed (windshield, 0 since 09.2026) up
+ * to the paid rung each day. The results header is on every real page, empty or not.
+ */
+export const usableListings = (html: string, partSlug: string): BamperListing[] | null => {
+  const listings = parseBamperSearchHtml(html, partSlug);
+  return listings.length > 0 || html.includes('Найдено объявлений') ? listings : null;
+};
 
 const stripTags = (html: string): string =>
   html
