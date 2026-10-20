@@ -267,7 +267,7 @@
     "isSuperhost": false,
     "rating": 1,
     "ratingScoresCount": 10,
-    "listTime": "2026-10-12T16:04:27Z",
+    "listTime": "2026-10-19T16:04:27Z",
     "images": [
       "https://rms.kufar.by/v1/gallery/adim1/fb327df9-a707-4f87-a6a5-9dbe6802b392.jpg",
       "https://rms.kufar.by/v1/gallery/adim1/3f6770c7-714c-4e79-a145-313684ac4cfe.jpg",
@@ -289,6 +289,6 @@
       "https://rms.kufar.by/v1/gallery/adim1/27f79bfd-75b0-4801-95ba-39199867a197.jpg"
     ],
     "firstSeenAt": "2026-10-05T09:41:16.550Z",
-    "lastSeenAt": "2026-10-19T09:39:31.998Z"
+    "lastSeenAt": "2026-10-20T09:38:16.711Z"
   }
 ]
