@@ -25,7 +25,9 @@ jobs:
     # Pinned: on ubuntu-26.04 (ubuntu-latest since Oct 2026) puppeteer's postinstall fails to
     # unzip Chrome ("checkdir error: ... File exists"). It only shows when the browser cache is cold.
     runs-on: ubuntu-24.04
-    environment: ${{ github.ref == 'refs/heads/main' && 'production' || 'development' }}
+    # Production only: test changes locally (`npm run scrape:<source>`), then release to main.
+    if: github.ref == 'refs/heads/main'
+    environment: production
     permissions:
       contents: write
       pull-requests: write
@@ -76,7 +78,7 @@ jobs:
       - name: Run scrape
         if: ${{ !inputs.send_all_mosty_jobs }}
         env:
-          APP_ENV: ${{ github.ref == 'refs/heads/main' && 'production' || 'development' }}
+          APP_ENV: production
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_LAND_AUCTIONS_CHAT_ID: ${{ vars.TELEGRAM_LAND_AUCTIONS_CHAT_ID }}
           TELEGRAM_BID_CARS_CHAT_ID: ${{ vars.TELEGRAM_BID_CARS_CHAT_ID }}
@@ -109,10 +111,7 @@ jobs:
             echo "No data changes, skipping PR"
             exit 0
           fi
-          # dev and main are two environments, each with its own chats and its own snapshots,
-          # so both persist. The data therefore diverges by design and a `dev -> main` release
-          # merge will conflict across data/: resolve it by keeping the TARGET branch's data,
-          # never by taking the source's, or you roll that environment's state back.
+          # Snapshots live on main only; dev's data/ is stale. Never carry dev's data/ into main.
           DATE=$(date '+%Y-%m-%d')
           BRANCH="chore/data-${DATE}-${GITHUB_RUN_ID}"
           git checkout -b "$BRANCH"
