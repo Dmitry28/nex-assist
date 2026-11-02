@@ -28,6 +28,9 @@ Two steps, always in this order:
 2. Promote to `main` with a separate **`dev → main` release PR** — the only way code reaches `main` — again, only after the user's review/OK.
 
 - Never target `main` with a work PR — not even for hotfixes.
+- The daily scrape runs on `main` only (production chats). Test scraper changes locally with
+  `npm run scrape:<source>` and a local `.env` pointing at test chats before releasing.
+- `data/` snapshots live on `main`; never carry `dev`'s stale `data/` into a release.
 - Base branches on `origin/dev`, not on stale local branches.
 - Merge with `gh pr merge --merge` (squash is disabled) — only once the user has approved.
 - All GitHub content is English — see [github.md](github.md).
