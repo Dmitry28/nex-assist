@@ -27,15 +27,15 @@
     "adId": 1063816828,
     "link": "https://re.kufar.by/vi/1063816828",
     "title": "Квартира полностью со всем необходимым для проживания",
-    "priceByn": 1300,
-    "priceUsd": 434,
+    "priceByn": 1250,
+    "priceUsd": 424,
     "address": "Виктора Саяпина ул, 4Б, Гродно, Гродненская область",
     "rooms": 3,
     "area": 64,
     "floor": 7,
     "totalFloors": 9,
     "repair": "Евро",
-    "listTime": "2026-10-20T08:42:44Z",
+    "listTime": "2026-10-30T06:51:59Z",
     "images": [
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/55f5a19a-c7ab-4346-87c0-664fc5aff5a9.jpg",
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d6c5bcff-02c3-4473-8c75-98f3839891b9.jpg",
@@ -44,7 +44,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/fe3aaa67-820b-4056-a5c1-3f46eb49bd38.jpg"
     ],
     "firstSeenAt": "2026-08-04T15:43:12.972Z",
-    "lastSeenAt": "2026-10-20T08:59:46.780Z"
+    "lastSeenAt": "2026-11-02T09:33:40.268Z"
   },
   {
     "adId": 1080055437,
@@ -232,7 +232,7 @@
     "link": "https://re.kufar.by/vi/1085461217",
     "title": "Однокомнатная квартира",
     "priceByn": 1100,
-    "priceUsd": 367,
+    "priceUsd": 373,
     "address": "Виктора Саяпина ул, 10, Гродно, Гродненская область",
     "rooms": 1,
     "area": 40,
@@ -250,7 +250,7 @@
       "https://rms.kufar.by/v1/list_thumbs_2x/adim1/71fbf24f-3d84-4451-b7f1-97c5203594ea.jpg"
     ],
     "firstSeenAt": "2026-09-17T12:24:01.787Z",
-    "lastSeenAt": "2026-10-20T08:59:46.780Z"
+    "lastSeenAt": "2026-11-02T09:33:40.268Z"
   },
   {
     "adId": 1087043790,
@@ -301,5 +301,35 @@
     ],
     "firstSeenAt": "2026-10-01T10:34:42.661Z",
     "lastSeenAt": "2026-10-07T10:43:07.750Z"
+  },
+  {
+    "adId": 1092478680,
+    "link": "https://re.kufar.by/vi/1092478680",
+    "title": "Сдам 2-комнатную квартиру Глухова 3",
+    "priceByn": 1031,
+    "priceUsd": 350,
+    "address": "Виктора Глухова ул, 3, Гродно, Гродненская область",
+    "rooms": 2,
+    "area": 65,
+    "floor": 7,
+    "totalFloors": 18,
+    "repair": "Евро",
+    "prepayment": "Один месяц",
+    "listTime": "2026-10-31T13:27:33Z",
+    "images": [
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6be3d163-7c03-4f91-b92b-a71e2b5188bc.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/7ef89698-f896-4580-bedc-9562be818e3c.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/95705121-0c01-44b1-b781-1d51e021ff31.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/4a936713-37f8-465e-97f9-65b4f8589240.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/6b380eb8-ae62-4196-bfcb-22b64f25164d.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/0bf5032f-a47f-455c-8b62-68df2f6d59c0.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/f5fb6a0d-2fee-4680-8805-e0292bc3b4e2.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/d73ed0b8-81fd-4545-8e59-4ec32974b7ad.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/be8628ec-815a-4581-8d7e-44f80e295927.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/63249459-b4bc-414f-87ae-9764ca4bf742.jpg",
+      "https://rms.kufar.by/v1/list_thumbs_2x/adim1/9c169f78-3c32-4df9-a95c-f1dff2928f1a.jpg"
+    ],
+    "firstSeenAt": "2026-11-02T09:33:40.268Z",
+    "lastSeenAt": "2026-11-02T09:33:40.268Z"
   }
 ]
