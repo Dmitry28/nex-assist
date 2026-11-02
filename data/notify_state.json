@@ -3,17 +3,17 @@
     "module": "land-auctions",
     "trackedSince": "2026-09-05T11:00:40.259Z",
     "lastQuietReportAt": "2026-09-13T12:25:22.355Z",
-    "lastChangeAt": "2026-10-20T08:53:33.110Z"
+    "lastChangeAt": "2026-11-02T09:03:43.879Z"
   },
   {
     "module": "bid-cars",
     "trackedSince": "2026-09-05T11:02:13.356Z",
-    "lastChangeAt": "2026-10-20T08:55:10.755Z"
+    "lastChangeAt": "2026-11-02T09:07:50.751Z"
   },
   {
     "module": "kufar",
     "trackedSince": "2026-09-05T11:04:21.332Z",
-    "lastChangeAt": "2026-10-20T08:57:24.562Z"
+    "lastChangeAt": "2026-11-02T09:12:33.395Z"
   },
   {
     "module": "kufar-rent-flat",
@@ -24,23 +24,23 @@
   {
     "module": "kufar-rent-long",
     "trackedSince": "2026-09-05T11:06:38.927Z",
-    "lastChangeAt": "2026-10-01T10:34:38.943Z",
+    "lastChangeAt": "2026-11-02T09:33:36.777Z",
     "lastQuietReportAt": "2026-10-18T08:26:34.321Z"
   },
   {
     "module": "realt",
     "trackedSince": "2026-09-05T11:07:23.309Z",
-    "lastChangeAt": "2026-10-20T09:00:36.573Z"
+    "lastChangeAt": "2026-11-02T09:34:25.092Z"
   },
   {
     "module": "av-by",
     "trackedSince": "2026-09-05T11:07:56.508Z",
-    "lastChangeAt": "2026-10-20T09:01:11.000Z"
+    "lastChangeAt": "2026-11-02T09:37:22.634Z"
   },
   {
     "module": "bamper",
     "trackedSince": "2026-09-05T11:09:20.708Z",
-    "lastChangeAt": "2026-10-20T09:03:51.783Z"
+    "lastChangeAt": "2026-11-02T09:48:53.148Z"
   },
   {
     "module": "pogorany",
@@ -50,7 +50,7 @@
   {
     "module": "townhouses",
     "trackedSince": "2026-09-05T11:11:14.262Z",
-    "lastChangeAt": "2026-10-20T09:06:30.309Z"
+    "lastChangeAt": "2026-11-02T09:52:41.210Z"
   },
   {
     "module": "ghb",
@@ -61,7 +61,7 @@
   {
     "module": "mosty-jobs",
     "trackedSince": "2026-09-05T11:11:38.821Z",
-    "lastChangeAt": "2026-10-20T09:07:02.030Z"
+    "lastChangeAt": "2026-11-02T09:54:20.642Z"
   },
   {
     "module": "idriver",
