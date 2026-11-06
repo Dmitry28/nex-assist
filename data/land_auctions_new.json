@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "title": "Земельный участок по ул. Тарусичская, 1Б",
+    "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-tarusichskaya-1b/",
+    "price": "45 317,00 руб.",
+    "area": "0,1358 га",
+    "address": "г. Гродно, ул. Тарусичская, 1Б",
+    "cadastralNumber": "440100000001015936",
+    "cadastralMapUrl": "https://map.nca.by/share/de8d5028-3970-431b-bc8c-eba8ce53e05b",
+    "auctionDate": "Не указана",
+    "applicationDeadline": "Не указан",
+    "communications": "электроснабжение, газоснабжение, водоснабжение",
+    "images": [
+      "https://gcn.by/wp-content/uploads/2026/11/tarusichskaya-satj-4.png",
+      "https://gcn.by/wp-content/uploads/2026/11/tarusichskaya-satj-1.png",
+      "https://gcn.by/wp-content/uploads/2026/11/tarusichskaya-satj-2.png",
+      "https://gcn.by/wp-content/uploads/2026/11/tarusichskaya-satj-3.png",
+      "https://gcn.by/wp-content/uploads/2026/11/tarusichskaya-satj-4.png",
+      "https://gcn.by/wp-content/uploads/2026/11/tarusichskaya-satj-1.png"
+    ]
+  }
+]
