@@ -1223,5 +1223,24 @@
     "seller": "Progressive Casualty Insurance",
     "removedAt": "2026-11-07T10:42:45.235Z",
     "removalNotifiedAt": "2026-11-07T10:42:45.235Z"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/0-45975549/2024-Volkswagen-Atlas-1V2HR2CA2RC534622",
+    "title": "2024 Volkswagen Atlas, 2.0T Se W/Tec...",
+    "vin": "1V2HR2CA2RC534622",
+    "lot": "0-45975549",
+    "odometer": "50k мили (81k km)",
+    "damage": "Столкноевение | Задний",
+    "location": "Lafayette (LA)",
+    "currentBid": "$0",
+    "buyNow": "$11,500",
+    "engine": "4 cyl. 269HP",
+    "keys": "Salvage (Louisiana)",
+    "condition": "На ходу",
+    "auctionDate": "ср 11 нояб., 16:30 GMT+1",
+    "auctionSource": "IAAI",
+    "seller": "Louisiana Farm Bureau",
+    "removedAt": "2026-11-08T10:47:10.955Z",
+    "removalNotifiedAt": "2026-11-08T10:47:10.955Z"
   }
 ]

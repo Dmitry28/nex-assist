@@ -8,17 +8,17 @@
   {
     "module": "bid-cars",
     "trackedSince": "2026-09-05T11:02:13.356Z",
-    "lastChangeAt": "2026-11-07T10:44:14.604Z"
+    "lastChangeAt": "2026-11-08T10:48:40.243Z"
   },
   {
     "module": "kufar",
     "trackedSince": "2026-09-05T11:04:21.332Z",
-    "lastChangeAt": "2026-11-07T10:46:03.597Z"
+    "lastChangeAt": "2026-11-08T10:50:05.219Z"
   },
   {
     "module": "kufar-rent-flat",
     "trackedSince": "2026-09-05T11:06:37.655Z",
-    "lastQuietReportAt": "2026-10-18T08:26:32.466Z",
+    "lastQuietReportAt": "2026-11-08T10:50:37.154Z",
     "lastChangeAt": "2026-10-05T10:56:52.359Z"
   },
   {
@@ -35,17 +35,17 @@
   {
     "module": "av-by",
     "trackedSince": "2026-09-05T11:07:56.508Z",
-    "lastChangeAt": "2026-11-06T11:39:22.470Z"
+    "lastChangeAt": "2026-11-08T10:51:44.887Z"
   },
   {
     "module": "bamper",
     "trackedSince": "2026-09-05T11:09:20.708Z",
-    "lastChangeAt": "2026-11-07T10:51:52.821Z"
+    "lastChangeAt": "2026-11-08T10:54:25.552Z"
   },
   {
     "module": "pogorany",
     "trackedSince": "2026-09-05T11:09:32.501Z",
-    "lastQuietReportAt": "2026-10-18T08:31:23.638Z"
+    "lastQuietReportAt": "2026-11-08T10:55:22.490Z"
   },
   {
     "module": "townhouses",
@@ -61,12 +61,12 @@
   {
     "module": "mosty-jobs",
     "trackedSince": "2026-09-05T11:11:38.821Z",
-    "lastChangeAt": "2026-11-07T10:55:15.010Z"
+    "lastChangeAt": "2026-11-08T10:57:50.350Z"
   },
   {
     "module": "idriver",
     "trackedSince": "2026-09-14T13:37:28.266Z",
     "lastChangeAt": "2026-09-17T12:31:17.871Z",
-    "lastQuietReportAt": "2026-10-18T08:31:17.555Z"
+    "lastQuietReportAt": "2026-11-08T10:55:16.137Z"
   }
 ]
