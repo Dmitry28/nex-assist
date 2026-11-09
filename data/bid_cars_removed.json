@@ -1242,5 +1242,41 @@
     "seller": "Louisiana Farm Bureau",
     "removedAt": "2026-11-08T10:47:10.955Z",
     "removalNotifiedAt": "2026-11-08T10:47:10.955Z"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/1-70569726/2024-Volkswagen-Atlas-1V2WR2CA4RC607254",
+    "title": "2024 Volkswagen Atlas, SE",
+    "vin": "1V2WR2CA4RC607254",
+    "lot": "1-70569726",
+    "odometer": "28k мили (46k km)",
+    "damage": "Передняя часть",
+    "location": "Longview (TX)",
+    "currentBid": "$0",
+    "engine": "2.0L 4 cyl. 269HP",
+    "keys": "ST (Oklahoma)",
+    "condition": "На ходу",
+    "auctionDate": "пн 16 нояб., 19:00 GMT+1",
+    "auctionSource": "COPART",
+    "seller": "---",
+    "removedAt": "2026-11-09T12:09:00.936Z",
+    "removalNotifiedAt": "2026-11-09T12:09:00.936Z"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/0-45549169/2025-Volkswagen-Atlas-1V2KR2CA4SC522192",
+    "title": "2025 Volkswagen Atlas, 2.0T Se W/Tec...",
+    "vin": "1V2KR2CA4SC522192",
+    "lot": "0-45549169",
+    "odometer": "9k мили (14k km)",
+    "damage": "Другой | Левая сторона",
+    "location": "Chicago-South (IL)",
+    "currentBid": "$0",
+    "engine": "2.0L 4 cyl. 269HP",
+    "keys": "Salvage (Illinois)",
+    "condition": "На ходу",
+    "auctionDate": "вт 17 нояб., 16:30 GMT+1",
+    "auctionSource": "IAAI",
+    "seller": "Progressive Casualty Insurance",
+    "removedAt": "2026-11-09T12:09:00.936Z",
+    "removalNotifiedAt": "2026-11-09T12:09:00.936Z"
   }
 ]
