@@ -180,17 +180,15 @@
   {
     "title": "Земельный участок по ул. Нектарная, 2А",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-nektarnaya-2a/",
-    "price": "30 772,00 руб.",
-    "area": "0,1002 га",
-    "address": "г. Гродно, ул. Нектарная, 2А",
-    "cadastralNumber": "440100000001015886",
-    "cadastralMapUrl": "https://map.nca.by/search/019ff50d-b24b-725c-ad41-55c47f7ff54b",
-    "auctionDate": "Аукцион состоится 24.11.2026",
-    "applicationDeadline": "Заявления принимаются с 21.10.2026 по 18.11.2026",
-    "communications": "электроснабжение, газоснабжение, водоснабжение",
-    "images": [
-      "http://gcn.by/wp-content/uploads/2026/07/u5-nektarnaya-sajt.png"
-    ]
+    "price": "Не найдено",
+    "area": "Не найдено",
+    "address": "Не найдено",
+    "cadastralNumber": "Не найдено",
+    "cadastralMapUrl": "",
+    "auctionDate": "Не указана",
+    "applicationDeadline": "Не указан",
+    "communications": "Не указаны",
+    "images": []
   },
   {
     "title": "Земельный участок по ул. Нектарная, 2",
@@ -219,35 +217,26 @@
     "applicationDeadline": "Не указан",
     "communications": "электроснабжение, газоснабжение, водоснабжение",
     "images": [
-      "https://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-6.png",
       "https://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-1.png",
       "https://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-2.png",
       "https://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-3.png",
       "https://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-4.png",
       "https://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-5.png",
-      "https://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-6.png",
-      "https://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-1.png"
+      "https://gcn.by/wp-content/uploads/2026/01/serafimovicha-sajt-6.png"
     ]
   },
   {
     "title": "Жилой дом по ул. Юбилейная, 11",
     "link": "http://gcn.by/properties/zhiloj-dom-po-ul-yubilejnaya-11/",
-    "price": "45 400 руб.",
+    "price": "Не найдено",
     "area": "Не найдено",
-    "address": "г. Гродно, ул. Юбилейная, 11",
-    "cadastralNumber": "Не найден",
+    "address": "Не найдено",
+    "cadastralNumber": "Не найдено",
     "cadastralMapUrl": "",
-    "auctionDate": "Возможно проведение повторного аукциона при обращении заинтересованного в приобретении объекта лица",
+    "auctionDate": "Не указана",
     "applicationDeadline": "Не указан",
     "communications": "Не указаны",
-    "images": [
-      "https://gcn.by/wp-content/uploads/2025/02/yubilejnaya-4.png",
-      "https://gcn.by/wp-content/uploads/2025/02/yubilejnaya-1.png",
-      "https://gcn.by/wp-content/uploads/2025/02/yubilejnaya-2.png",
-      "https://gcn.by/wp-content/uploads/2025/02/yubilejnaya-3.png",
-      "https://gcn.by/wp-content/uploads/2025/02/yubilejnaya-4.png",
-      "https://gcn.by/wp-content/uploads/2025/02/yubilejnaya-1.png"
-    ]
+    "images": []
   },
   {
     "title": "Земельный участок У-3 по ул. Максима Танка",
