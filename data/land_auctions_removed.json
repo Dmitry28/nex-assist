@@ -1,1 +1,33 @@
-[]
+[
+  {
+    "title": "Земельный участок по ул. Песчаной, 2",
+    "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-peschanoj-2/",
+    "price": "34 294,00 руб.",
+    "area": "0,099 га",
+    "address": "г. Гродно, ул. Песчаная, 2",
+    "cadastralNumber": "440100000002013056",
+    "cadastralMapUrl": "https://map.nca.by/search/01a10be5-163b-72ec-ae41-9474ef37b9f0",
+    "auctionDate": "Аукцион состоится 10.11.2026",
+    "applicationDeadline": "Заявления принимаются по 04.11.2026",
+    "communications": "электроснабжение, газоснабжение, водоснабжение, водоотведение",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/10/u4-peschanaya-sajt1.png"
+    ],
+    "salePrice": "96 тыс. руб.;"
+  },
+  {
+    "title": "Земельный участок по ул. Нектарная, 2Б",
+    "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-nektarnaya-2b/",
+    "price": "30 833,00 руб.",
+    "area": "0,1004 га",
+    "address": "г. Гродно, ул. Нектарная, 2Б",
+    "cadastralNumber": "440100000001015887",
+    "cadastralMapUrl": "https://map.nca.by/search/019ff50d-fc36-7322-b126-c9dfca10b402",
+    "auctionDate": "Аукцион состоится 10.11.2026",
+    "applicationDeadline": "Заявления принимаются по 04.11.2026",
+    "communications": "электроснабжение, газоснабжение, водоснабжение",
+    "images": [
+      "http://gcn.by/wp-content/uploads/2026/07/u4-nektarnaya-sajt.png"
+    ]
+  }
+]
