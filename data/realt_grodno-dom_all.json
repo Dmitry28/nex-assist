@@ -80,7 +80,7 @@
       "https://cdn.realt.by/img/55/a99d99fc-8103-11f1-89a2-0242ac120002"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.770Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 4182387,
@@ -136,7 +136,7 @@
       "https://cdn.realt.by/img/55/c6481e3e-7dd8-11f1-aa0d-0242ac120002"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.770Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 4170699,
@@ -203,7 +203,7 @@
       "https://cdn.realt.by/img/55/f93b903a-43bf-11f1-9f80-0242ac120003"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.770Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 4108374,
@@ -265,7 +265,7 @@
       "https://cdn.realt.by/img/55/ab6757f8-42d0-11f1-a013-0242ac120003"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.770Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 4094282,
@@ -314,7 +314,7 @@
       "https://static.realt.by/thumb/c/430x374/05b6fb1d006176108958fc3e40453abb/hs/o/02333dfamohs/b8030fe6f6.jpeg"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.770Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 4082239,
@@ -343,7 +343,7 @@
       "https://cdn.realt.by/img/55/4b2bc96e-2cff-11f1-b098-0242ac120003"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.770Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 4058841,
@@ -359,12 +359,28 @@
     "plotArea": 9,
     "yearBuilt": 2001,
     "seller": "\"Фирма 2К и К\"",
-    "listTime": "2026-09-07T13:38:07+03:00",
+    "listTime": "2026-11-14T10:23:54+03:00",
     "images": [
-      "https://cdn.realt.by/img/55/1e733bd4-1cb3-11f1-867e-0242ac120002",
+      "https://cdn.realt.by/img/55/7bc64b3a-dff1-11f1-b0db-3a5ec57fc6ad",
+      "https://cdn.realt.by/img/55/7efd38e0-dff1-11f1-819c-3a5ec57fc6ad",
       "https://cdn.realt.by/img/55/3f93df44-1cb3-11f1-9fed-0242ac120002",
       "https://cdn.realt.by/img/55/547f0442-1cb3-11f1-91c1-0242ac120002",
+      "https://cdn.realt.by/img/55/820d417e-dff1-11f1-a333-3a5ec57fc6ad",
+      "https://cdn.realt.by/img/55/496c082c-dff2-11f1-b414-0242ac120003",
+      "https://cdn.realt.by/img/55/9d2d4b48-dff1-11f1-9208-9ec992c48380",
+      "https://cdn.realt.by/img/55/92f26c8a-dff1-11f1-860c-9ec992c48380",
+      "https://cdn.realt.by/img/55/85c1a6f2-dff1-11f1-bb02-3a5ec57fc6ad",
+      "https://cdn.realt.by/img/55/9f82d002-dff1-11f1-848a-9ec992c48380",
+      "https://cdn.realt.by/img/55/89e28d0a-dff1-11f1-843d-3a5ec57fc6ad",
       "https://cdn.realt.by/img/55/a0f7a5cc-1cb3-11f1-9c8b-0242ac120002",
+      "https://cdn.realt.by/img/55/8d04d0ce-dff1-11f1-a303-3a5ec57fc6ad",
+      "https://cdn.realt.by/img/55/8fa1a6f4-dff1-11f1-bdac-9ec992c48380",
+      "https://cdn.realt.by/img/55/a72e2798-dff1-11f1-9fd7-9ec992c48380",
+      "https://cdn.realt.by/img/55/955f8c1e-dff1-11f1-92b5-9ec992c48380",
+      "https://cdn.realt.by/img/55/4df3da78-dff2-11f1-8712-0242ac120003",
+      "https://cdn.realt.by/img/55/a22fbc34-dff1-11f1-98a6-9ec992c48380",
+      "https://cdn.realt.by/img/55/51506826-dff2-11f1-806b-0242ac120003",
+      "https://cdn.realt.by/img/55/5566bdac-dff2-11f1-a218-0242ac120003",
       "https://cdn.realt.by/img/55/a682380e-1cb3-11f1-b8db-0242ac120002",
       "https://cdn.realt.by/img/55/5f7d2ca2-1cb3-11f1-96a4-0242ac120002",
       "https://cdn.realt.by/img/55/906d5ff8-1cb3-11f1-8654-0242ac120002",
@@ -379,7 +395,7 @@
       "https://cdn.realt.by/img/55/89d73e06-1cb4-11f1-a3fa-0242ac120002"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.770Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 3431932,
@@ -415,7 +431,7 @@
       "https://cdn.realt.by/img/55/5262e330-6469-11ef-9234-2236ceb6d16d"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.770Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 4039275,
@@ -443,7 +459,7 @@
       "https://cdn.realt.by/img/55/ba8b1dd8-0a62-11f1-a914-0242ac120002"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.770Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 3903448,
@@ -506,7 +522,7 @@
       "https://cdn.realt.by/img/55/a3c47254-9a08-11f0-a574-0242ac120002"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.770Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 3895211,
@@ -650,7 +666,7 @@
       "https://cdn.realt.by/img/55/af981942-8404-11f0-882e-0242ac120002"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.770Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 3772415,
@@ -687,7 +703,7 @@
       "https://cdn.realt.by/img/55/4fe583d2-55a5-11f0-a708-0242ac120003"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.770Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 3743507,
@@ -727,7 +743,7 @@
       "https://cdn.realt.by/img/55/be72940a-36cb-11f0-ac81-0242ac120002"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.770Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 3504262,
@@ -838,7 +854,7 @@
       "https://static.realt.by/thumb/c/430x374/e7913d142dfaa75ca63c3aa1c5b5ae4c/w9/d/site3ykppdw9/096f6c887b.jpg"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.770Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 3068699,
@@ -879,7 +895,7 @@
       "https://static.realt.by/thumb/c/430x374/27c7d31b255928c4c1bd0c6902874701/b4/p/site3wlpzpb4/827da60be7.jpg"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.770Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 3031593,
@@ -918,7 +934,7 @@
       "https://static.realt.by/thumb/c/430x374/5ca74ae4d97ccfc9aacfc831e7db6fd5/ct/3/site3u5643ct/8b829fba00.jpeg"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.770Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 2746496,
@@ -990,7 +1006,7 @@
       "https://static.realt.by/thumb/c/430x374/82375d75b576c906e4d0004835cb0ccf/3l/m/02333b04em3l/e407ea5b95.jpeg"
     ],
     "firstSeenAt": "2026-08-04T15:43:57.770Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 4208398,
@@ -1032,7 +1048,7 @@
       "https://cdn.realt.by/img/55/4b4870a2-9977-11f1-be50-0242ac120003"
     ],
     "firstSeenAt": "2026-08-21T07:43:54.865Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 4217178,
@@ -1072,7 +1088,7 @@
       "https://cdn.realt.by/img/55/822d3430-a13e-11f1-b8ac-0242ac120002"
     ],
     "firstSeenAt": "2026-08-27T18:10:30.212Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 4228122,
@@ -1143,7 +1159,7 @@
       "https://cdn.realt.by/img/55/18197b70-ab62-11f1-a311-d2d664c59506"
     ],
     "firstSeenAt": "2026-09-08T11:59:33.413Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 4236159,
@@ -1200,7 +1216,7 @@
       "https://cdn.realt.by/img/55/c9c8b882-b2a5-11f1-8052-0242ac120002"
     ],
     "firstSeenAt": "2026-09-18T12:04:31.669Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 4248178,
@@ -1266,7 +1282,7 @@
       "https://cdn.realt.by/img/55/1ca081e4-bf11-11f1-b023-0242ac120002"
     ],
     "firstSeenAt": "2026-10-04T10:12:34.631Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 4250191,
@@ -1362,7 +1378,7 @@
       "https://cdn.realt.by/img/55/43264cf6-cfdb-11f1-936d-726af1395927"
     ],
     "firstSeenAt": "2026-11-02T09:37:02.221Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 4263596,
@@ -1408,7 +1424,7 @@
       "https://cdn.realt.by/img/55/3b00bc2c-cee7-11f1-9406-726af1395927"
     ],
     "firstSeenAt": "2026-11-02T09:37:02.221Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   },
   {
     "adId": 4269737,
@@ -1464,6 +1480,6 @@
       "https://cdn.realt.by/img/55/d66972ac-d78a-11f1-acc1-9ec992c48380"
     ],
     "firstSeenAt": "2026-11-04T11:43:29.965Z",
-    "lastSeenAt": "2026-11-13T11:40:56.792Z"
+    "lastSeenAt": "2026-11-14T11:05:45.159Z"
   }
 ]

@@ -4,7 +4,7 @@
     "url": "https://cars.av.by/volkswagen/atlas-cross-sport/135522708",
     "title": "Volkswagen Atlas Cross Sport 2023",
     "priceUsd": 36150,
-    "priceByn": 108703,
+    "priceByn": 108544,
     "brand": "Volkswagen",
     "model": "Atlas Cross Sport",
     "year": 2023,
@@ -22,14 +22,14 @@
     "renewedAt": "2026-09-03T04:34:43+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0016/6264/8618.jpg",
     "firstSeenAt": "2026-07-15T09:26:26.751Z",
-    "lastSeenAt": "2026-11-12T11:59:43.984Z"
+    "lastSeenAt": "2026-11-14T11:06:46.265Z"
   },
   {
     "id": 139092943,
     "url": "https://cars.av.by/volkswagen/atlas-cross-sport/139092943",
     "title": "Volkswagen Atlas Cross Sport 2024",
     "priceUsd": 38000,
-    "priceByn": 114266,
+    "priceByn": 114099,
     "brand": "Volkswagen",
     "model": "Atlas Cross Sport",
     "year": 2024,
@@ -47,7 +47,7 @@
     "renewedAt": "2026-11-12T01:53:56+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0015/2587/8897.jpg",
     "firstSeenAt": "2026-09-10T12:07:48.820Z",
-    "lastSeenAt": "2026-11-12T11:59:43.984Z"
+    "lastSeenAt": "2026-11-14T11:06:46.265Z"
   },
   {
     "id": 139740191,
@@ -79,7 +79,7 @@
     "url": "https://cars.av.by/volkswagen/atlas-cross-sport/143140090",
     "title": "Volkswagen Atlas Cross Sport 2025",
     "priceUsd": 38000,
-    "priceByn": 114266,
+    "priceByn": 114099,
     "brand": "Volkswagen",
     "model": "Atlas Cross Sport",
     "year": 2025,
@@ -96,14 +96,14 @@
     "publishedAt": "2026-10-31T14:54:45+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0016/5548/4608.jpg",
     "firstSeenAt": "2026-11-02T09:38:40.382Z",
-    "lastSeenAt": "2026-11-12T11:59:43.984Z"
+    "lastSeenAt": "2026-11-14T11:06:46.265Z"
   },
   {
     "id": 143251281,
     "url": "https://cars.av.by/volkswagen/atlas-cross-sport/143251281",
     "title": "Volkswagen Atlas Cross Sport 2024",
     "priceUsd": 38500,
-    "priceByn": 115770,
+    "priceByn": 115600,
     "brand": "Volkswagen",
     "model": "Atlas Cross Sport",
     "year": 2024,
@@ -120,14 +120,15 @@
     "publishedAt": "2026-11-05T12:29:56+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0016/6023/9046.jpg",
     "firstSeenAt": "2026-11-06T11:39:50.715Z",
-    "lastSeenAt": "2026-11-12T11:59:43.984Z"
+    "lastSeenAt": "2026-11-14T11:06:46.265Z",
+    "renewedAt": "2026-11-13T08:22:43+0000"
   },
   {
     "id": 143381688,
     "url": "https://cars.av.by/volkswagen/atlas-cross-sport/143381688",
     "title": "Volkswagen Atlas Cross Sport 2025",
     "priceUsd": 38500,
-    "priceByn": 115770,
+    "priceByn": 115600,
     "brand": "Volkswagen",
     "model": "Atlas Cross Sport",
     "year": 2025,
@@ -144,6 +145,6 @@
     "publishedAt": "2026-11-10T18:40:33+0000",
     "photoUrl": "https://avcdn.av.by/advertmedium/0016/6586/5356.jpg",
     "firstSeenAt": "2026-11-12T11:59:43.984Z",
-    "lastSeenAt": "2026-11-12T11:59:43.984Z"
+    "lastSeenAt": "2026-11-14T11:06:46.265Z"
   }
 ]
