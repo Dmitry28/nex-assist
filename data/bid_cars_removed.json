@@ -1984,5 +1984,24 @@
     "seller": "Progressive Casualty Insurance",
     "removedAt": "2026-11-14T10:57:31.374Z",
     "removalNotifiedAt": "2026-11-14T10:57:31.374Z"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/0-46024600/2023-Volkswagen-Atlas-1V2DC2CAXPC227731",
+    "title": "2023 Volkswagen Atlas, Cross Sport 2...",
+    "vin": "1V2DC2CAXPC227731",
+    "lot": "0-46024600",
+    "odometer": "39k мили (62k km)",
+    "damage": "Столкноевение | Передняя часть",
+    "location": "Fresno (CA)",
+    "currentBid": "$25",
+    "buyNow": "$8,750",
+    "engine": "4 cyl. 235HP",
+    "keys": "Salvage (California)",
+    "condition": "На ходу",
+    "auctionDate": "вт 17 нояб., 18:30 GMT+1",
+    "auctionSource": "IAAI",
+    "seller": "Aaa So California",
+    "removedAt": "2026-11-15T11:32:02.613Z",
+    "removalNotifiedAt": "2026-11-15T11:32:02.613Z"
   }
 ]
