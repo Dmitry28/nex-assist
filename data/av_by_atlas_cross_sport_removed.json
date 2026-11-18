@@ -257,5 +257,31 @@
     "lastSeenAt": "2026-11-02T09:38:40.382Z",
     "removedAt": "2026-11-04T11:43:51.448Z",
     "soldNotifiedAt": "2026-11-04T11:44:19.605Z"
+  },
+  {
+    "id": 143381688,
+    "url": "https://cars.av.by/volkswagen/atlas-cross-sport/143381688",
+    "title": "Volkswagen Atlas Cross Sport 2025",
+    "priceUsd": 37000,
+    "priceByn": 111011,
+    "brand": "Volkswagen",
+    "model": "Atlas Cross Sport",
+    "year": 2025,
+    "mileageKm": 5600,
+    "engineCapacity": "2,0",
+    "engineType": "бензин",
+    "transmission": "автомат",
+    "bodyType": "внедорожник 5 дв.",
+    "driveType": "передний привод",
+    "color": "синий",
+    "vinPartial": "1V2DE2C**********",
+    "location": "Кобрин, Брестская обл.",
+    "sellerName": "Роман ",
+    "publishedAt": "2026-11-10T18:40:33+0000",
+    "photoUrl": "https://avcdn.av.by/advertmedium/0016/6586/5356.jpg",
+    "firstSeenAt": "2026-11-12T11:59:43.984Z",
+    "lastSeenAt": "2026-11-16T12:12:21.911Z",
+    "removedAt": "2026-11-18T12:23:24.032Z",
+    "soldNotifiedAt": "2026-11-18T12:23:42.815Z"
   }
 ]
