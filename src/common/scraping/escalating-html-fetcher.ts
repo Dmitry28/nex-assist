@@ -36,6 +36,11 @@ export interface EscalatingHtmlOptions {
   renderJs?: boolean;
   /** Settle time after render (ms) — implies renderJs on every provider. */
   renderWaitMs?: number;
+  /**
+   * User-Agent for the plain rung. Defaults to a desktop Chrome string; override for a site that
+   * rejects it (razborf.by answers 403 to that exact string but 200 to a bare `Mozilla/5.0`).
+   */
+  userAgent?: string;
 }
 
 /**
@@ -102,7 +107,10 @@ export class EscalatingHtmlFetcher implements OnModuleDestroy {
     try {
       const res = await fetch(url, {
         signal: controller.signal,
-        headers: { 'User-Agent': BROWSER_USER_AGENT, 'Accept-Language': 'ru-RU,ru;q=0.9' },
+        headers: {
+          'User-Agent': o.userAgent ?? BROWSER_USER_AGENT,
+          'Accept-Language': 'ru-RU,ru;q=0.9',
+        },
       });
       if (!res.ok) {
         this.logger.warn(`${o.label}: HTTP ${res.status} for ${url}`);
