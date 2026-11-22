@@ -2,7 +2,7 @@
   {
     "module": "land-auctions",
     "trackedSince": "2026-09-05T11:00:40.259Z",
-    "lastQuietReportAt": "2026-09-13T12:25:22.355Z",
+    "lastQuietReportAt": "2026-11-22T12:00:16.300Z",
     "lastChangeAt": "2026-11-11T11:28:06.026Z"
   },
   {
@@ -13,24 +13,24 @@
   {
     "module": "kufar",
     "trackedSince": "2026-09-05T11:04:21.332Z",
-    "lastChangeAt": "2026-11-21T11:51:46.217Z"
+    "lastChangeAt": "2026-11-22T12:06:35.298Z"
   },
   {
     "module": "kufar-rent-flat",
     "trackedSince": "2026-09-05T11:06:37.655Z",
-    "lastQuietReportAt": "2026-11-15T11:36:44.362Z",
+    "lastQuietReportAt": "2026-11-22T12:07:27.464Z",
     "lastChangeAt": "2026-10-05T10:56:52.359Z"
   },
   {
     "module": "kufar-rent-long",
     "trackedSince": "2026-09-05T11:06:38.927Z",
     "lastChangeAt": "2026-11-15T11:36:46.037Z",
-    "lastQuietReportAt": "2026-10-18T08:26:34.321Z"
+    "lastQuietReportAt": "2026-11-22T12:07:29.012Z"
   },
   {
     "module": "realt",
     "trackedSince": "2026-09-05T11:07:23.309Z",
-    "lastChangeAt": "2026-11-21T11:55:31.475Z"
+    "lastChangeAt": "2026-11-22T12:08:19.369Z"
   },
   {
     "module": "av-by",
@@ -40,12 +40,12 @@
   {
     "module": "bamper",
     "trackedSince": "2026-09-05T11:09:20.708Z",
-    "lastChangeAt": "2026-11-21T12:05:53.798Z"
+    "lastChangeAt": "2026-11-22T12:20:27.761Z"
   },
   {
     "module": "pogorany",
     "trackedSince": "2026-09-05T11:09:32.501Z",
-    "lastQuietReportAt": "2026-11-15T11:41:22.681Z"
+    "lastQuietReportAt": "2026-11-22T12:21:23.926Z"
   },
   {
     "module": "townhouses",
@@ -61,12 +61,12 @@
   {
     "module": "mosty-jobs",
     "trackedSince": "2026-09-05T11:11:38.821Z",
-    "lastChangeAt": "2026-11-21T12:09:45.662Z"
+    "lastChangeAt": "2026-11-22T12:26:03.226Z"
   },
   {
     "module": "idriver",
     "trackedSince": "2026-09-14T13:37:28.266Z",
     "lastChangeAt": "2026-09-17T12:31:17.871Z",
-    "lastQuietReportAt": "2026-11-15T11:41:16.326Z"
+    "lastQuietReportAt": "2026-11-22T12:21:17.172Z"
   }
 ]
