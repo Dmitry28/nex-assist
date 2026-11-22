@@ -9,6 +9,7 @@
  *   npm run scrape:land         # land-auctions only
  *   npm run scrape:bid-cars     # bid-cars only
  *   npm run scrape:idriver      # idriver only
+ *   npm run scrape:razborf      # razborf only
  *   npm run scrape:kufar        # kufar only
  *   npm run scrape:realt        # realt only
  *   npm run scrape townhouses   # townhouses only
@@ -23,6 +24,7 @@ import { BamperService } from '../modules/bamper/bamper.service';
 import { BidCarsService } from '../modules/bid-cars/bid-cars.service';
 import { GhbService } from '../modules/ghb/ghb.service';
 import { IdriverService } from '../modules/idriver/idriver.service';
+import { RazborfService } from '../modules/razborf/razborf.service';
 import { KufarService } from '../modules/kufar/kufar.service';
 import { KufarRentFlatService } from '../modules/kufar-rent-flat/kufar-rent-flat.service';
 import { KufarRentLongService } from '../modules/kufar-rent-long/kufar-rent-long.service';
@@ -42,6 +44,7 @@ type Module =
   | 'av-by'
   | 'bamper'
   | 'idriver'
+  | 'razborf'
   | 'pogorany'
   | 'ghb'
   | 'mosty-jobs'
@@ -61,6 +64,7 @@ function parseModule(): Module {
     arg === 'av-by' ||
     arg === 'bamper' ||
     arg === 'idriver' ||
+    arg === 'razborf' ||
     arg === 'pogorany' ||
     arg === 'ghb' ||
     arg === 'mosty-jobs' ||
@@ -68,7 +72,7 @@ function parseModule(): Module {
   )
     return arg;
   console.error(
-    `Unknown module: "${arg}". Valid options: land, bid-cars, kufar, kufar-rent-flat, kufar-rent-long, realt, av-by, bamper, idriver, pogorany, ghb, mosty-jobs`,
+    `Unknown module: "${arg}". Valid options: land, bid-cars, kufar, kufar-rent-flat, kufar-rent-long, realt, av-by, bamper, idriver, razborf, pogorany, ghb, mosty-jobs`,
   );
   process.exit(1);
 }
@@ -153,6 +157,14 @@ async function bootstrap(): Promise<void> {
         await app.get(IdriverService).run();
       } catch (err) {
         console.error('Idriver scrape failed:', err);
+      }
+    }
+
+    if (target === 'all' || target === 'razborf') {
+      try {
+        await app.get(RazborfService).run();
+      } catch (err) {
+        console.error('Razborf scrape failed:', err);
       }
     }
 
