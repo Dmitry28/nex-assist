@@ -230,6 +230,17 @@ export const IDRIVER_DEFAULTS = {
   SCRAPE_CRON: '0 9 * * *',
 } as const;
 
+export const RAZBORF_DEFAULTS = {
+  /**
+   * razborf.by — one Minsk breaker's yard. Its single "Atlas restailing 2" model (2023-2026,
+   * the restyle) covers both of the owner's cars; the page is the part index, from which the
+   * wanted categories are discovered.
+   */
+  MODEL_URL: 'https://razborf.by/razborka/volkswagen/atlas-restailing-2',
+  /** Default cron: every day at 09:00 UTC (12:00 Minsk). Cron is wired off — trigger via POST. */
+  SCRAPE_CRON: '0 9 * * *',
+} as const;
+
 export const MOSTY_JOBS_DEFAULTS = {
   /**
    * gsz.gov.by state vacancy bank search — Гродненская область (region=12380),

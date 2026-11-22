@@ -12,6 +12,7 @@ import { HealthModule } from './modules/health/health.module';
 import { AvByModule } from './modules/av-by/av-by.module';
 import { BamperModule } from './modules/bamper/bamper.module';
 import { IdriverModule } from './modules/idriver/idriver.module';
+import { RazborfModule } from './modules/razborf/razborf.module';
 import { BidCarsModule } from './modules/bid-cars/bid-cars.module';
 import { GhbModule } from './modules/ghb/ghb.module';
 import { KufarModule } from './modules/kufar/kufar.module';
@@ -66,6 +67,7 @@ import { TownhousesModule } from './modules/townhouses/townhouses.module';
     AvByModule,
     BamperModule,
     IdriverModule,
+    RazborfModule,
     PogoranyModule,
     TownhousesModule,
     GhbModule,
