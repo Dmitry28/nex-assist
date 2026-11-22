@@ -6,6 +6,7 @@ import {
   BID_CARS_DEFAULTS,
   GHB_DEFAULTS,
   IDRIVER_DEFAULTS,
+  RAZBORF_DEFAULTS,
   KUFAR_DEFAULTS,
   KUFAR_RENT_FLAT_DEFAULTS,
   KUFAR_RENT_LONG_DEFAULTS,
@@ -140,6 +141,11 @@ export const validationSchema = Joi.object({
   IDRIVER_ATLAS_CROSS_SPORT_URL: Joi.string().uri().default(IDRIVER_DEFAULTS.ATLAS_CROSS_SPORT_URL),
   IDRIVER_MIN_YEAR: Joi.number().integer().min(1990).default(IDRIVER_DEFAULTS.MIN_YEAR),
   IDRIVER_SCRAPE_CRON: Joi.string().default(IDRIVER_DEFAULTS.SCRAPE_CRON),
+
+  // razborf.by module — third source for the Atlas parts (plain HTML). Shares
+  // TELEGRAM_ATLAS_PARTS_CHAT_ID above.
+  RAZBORF_MODEL_URL: Joi.string().uri().default(RAZBORF_DEFAULTS.MODEL_URL),
+  RAZBORF_SCRAPE_CRON: Joi.string().default(RAZBORF_DEFAULTS.SCRAPE_CRON),
 
   // ghb.by module — ОАО «Гродножилстрой» Прейскурант РБ (new apartments / offices)
   GHB_PRICE_LIST_URL: Joi.string().uri().default(GHB_DEFAULTS.PRICE_LIST_URL),
