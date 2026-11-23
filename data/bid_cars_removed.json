@@ -20,42 +20,6 @@
     "soldNotifiedAt": "2026-08-03T21:25:31.840Z"
   },
   {
-    "link": "https://bid.cars/ru/lot/1-70569726/2024-Volkswagen-Atlas-1V2WR2CA4RC607254",
-    "title": "2024 Volkswagen Atlas, SE",
-    "vin": "1V2WR2CA4RC607254",
-    "lot": "1-70569726",
-    "odometer": "28k мили (46k km)",
-    "damage": "Передняя часть",
-    "location": "Longview (TX)",
-    "currentBid": "$0",
-    "engine": "2.0L 4 cyl. 269HP",
-    "keys": "ST (Oklahoma)",
-    "condition": "На ходу",
-    "auctionDate": "пн 16 нояб., 19:00 GMT+1",
-    "auctionSource": "COPART",
-    "seller": "---",
-    "removedAt": "2026-11-09T12:09:00.936Z",
-    "removalNotifiedAt": "2026-11-09T12:09:00.936Z"
-  },
-  {
-    "link": "https://bid.cars/ru/lot/0-45549169/2025-Volkswagen-Atlas-1V2KR2CA4SC522192",
-    "title": "2025 Volkswagen Atlas, 2.0T Se W/Tec...",
-    "vin": "1V2KR2CA4SC522192",
-    "lot": "0-45549169",
-    "odometer": "9k мили (14k km)",
-    "damage": "Другой | Левая сторона",
-    "location": "Chicago-South (IL)",
-    "currentBid": "$0",
-    "engine": "2.0L 4 cyl. 269HP",
-    "keys": "Salvage (Illinois)",
-    "condition": "На ходу",
-    "auctionDate": "вт 17 нояб., 16:30 GMT+1",
-    "auctionSource": "IAAI",
-    "seller": "Progressive Casualty Insurance",
-    "removedAt": "2026-11-09T12:09:00.936Z",
-    "removalNotifiedAt": "2026-11-09T12:09:00.936Z"
-  },
-  {
     "link": "https://bid.cars/ru/lot/0-46251614/2023-Volkswagen-Atlas-1V2WP2CA7PC541141",
     "title": "2023 Volkswagen Atlas, 2.0T Se W/Tec...",
     "vin": "1V2WP2CA7PC541141",
@@ -1485,5 +1449,24 @@
     "seller": "Progressive Casualty Insurance",
     "removedAt": "2026-11-21T11:48:14.747Z",
     "removalNotifiedAt": "2026-11-21T11:48:14.747Z"
+  },
+  {
+    "link": "https://bid.cars/ru/lot/0-45756304/2024-Volkswagen-Atlas-1V2HR2CA5RC539507",
+    "title": "2024 Volkswagen Atlas, 2.0T Se W/Tec...",
+    "vin": "1V2HR2CA5RC539507",
+    "lot": "0-45756304",
+    "odometer": "48k мили (77k km)",
+    "damage": "Другой | Град",
+    "location": "Denver East (CO)",
+    "currentBid": "$25",
+    "buyNow": "$14,100",
+    "engine": "4 cyl. 269HP",
+    "keys": "Salvage (Idaho)",
+    "condition": "На ходу",
+    "auctionDate": "вт 24 нояб., 17:30 GMT+1",
+    "auctionSource": "IAAI",
+    "seller": "Progressive Casualty Insurance",
+    "removedAt": "2026-11-23T13:40:47.355Z",
+    "removalNotifiedAt": "2026-11-23T13:40:47.355Z"
   }
 ]
