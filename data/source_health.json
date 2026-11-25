@@ -3,7 +3,7 @@
     "source": "bamper:rear-bumper",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-11-24T14:25:36.418Z"
+    "lastNonEmptyAt": "2026-11-25T13:42:38.623Z"
   },
   {
     "source": "bamper:tailgate",
@@ -21,7 +21,7 @@
     "source": "bamper:atlas-hood",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-11-24T14:31:59.369Z"
+    "lastNonEmptyAt": "2026-11-25T13:53:10.841Z"
   },
   {
     "source": "bamper:atlas-headlight-left",
@@ -39,17 +39,17 @@
     "source": "pogorany",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-11-24T14:35:46.406Z"
+    "lastNonEmptyAt": "2026-11-25T14:00:33.872Z"
   },
   {
     "source": "ghb",
-    "zeroRuns": 24,
+    "zeroRuns": 25,
     "alertedAt": 24,
     "lastNonEmptyAt": "2026-10-20T09:06:38.257Z"
   },
   {
     "source": "mosty:gsz",
-    "zeroRuns": 29,
+    "zeroRuns": 30,
     "alertedAt": 24,
     "lastNonEmptyAt": "2026-10-15T08:49:19.182Z"
   },
@@ -57,25 +57,25 @@
     "source": "mosty:rabota",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-11-24T14:39:49.340Z"
+    "lastNonEmptyAt": "2026-11-25T14:03:21.715Z"
   },
   {
     "source": "mosty:joblab",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-11-24T14:39:49.340Z"
+    "lastNonEmptyAt": "2026-11-25T14:03:21.715Z"
   },
   {
     "source": "mosty:evroopt",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-11-24T14:39:49.341Z"
+    "lastNonEmptyAt": "2026-11-25T14:03:21.716Z"
   },
   {
     "source": "mosty:crb",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-11-24T14:39:49.341Z"
+    "lastNonEmptyAt": "2026-11-25T14:03:21.716Z"
   },
   {
     "source": "mosty:fair",
@@ -104,6 +104,6 @@
     "source": "razborf",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-11-24T14:35:41.418Z"
+    "lastNonEmptyAt": "2026-11-25T14:00:28.778Z"
   }
 ]
