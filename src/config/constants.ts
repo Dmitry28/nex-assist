@@ -202,6 +202,14 @@ export const BAMPER_DEFAULTS = {
     'https://bamper.by/zchbu/zapchast_fara-levaya/marka_volkswagen/model_atlas/god_2023-2026/?sort=DATE-DESC',
   ATLAS_RADIATOR_SUPPORT_URL:
     'https://bamper.by/zchbu/zapchast_perednyaya-panel-krepleniya-oblitsovki-televizor/marka_volkswagen/model_atlas/god_2023-2026/?sort=DATE-DESC',
+  ATLAS_PANORAMIC_ROOF_GLASS_URL:
+    'https://bamper.by/zchbu/zapchast_steklo-panoramnoy-kryshi/marka_volkswagen/model_atlas/god_2023-2026/?sort=DATE-DESC',
+  ATLAS_STEERING_AIRBAG_URL:
+    'https://bamper.by/zchbu/zapchast_podushka-bezopasnosti-voditelya/marka_volkswagen/model_atlas/god_2023-2026/?sort=DATE-DESC',
+  ATLAS_FRONT_BUMPER_BRACKET_URL:
+    'https://bamper.by/zchbu/zapchast_kronshteyn-perednego-bampera/marka_volkswagen/model_atlas/god_2023-2026/?sort=DATE-DESC',
+  ATLAS_RADIATOR_DEFLECTOR_URL:
+    'https://bamper.by/zchbu/zapchast_deflektor-radiatora/marka_volkswagen/model_atlas/god_2023-2026/?sort=DATE-DESC',
   /** Default cron: every day at 09:00 UTC (12:00 Minsk). Cron is wired off — trigger via POST. */
   SCRAPE_CRON: '0 9 * * *',
 } as const;
