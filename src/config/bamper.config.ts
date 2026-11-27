@@ -75,6 +75,37 @@ export default registerAs('bamper', () => ({
       url:
         process.env.BAMPER_ATLAS_RADIATOR_SUPPORT_URL ?? BAMPER_DEFAULTS.ATLAS_RADIATOR_SUPPORT_URL,
     },
+    {
+      key: 'atlas-panoramic-roof-glass',
+      car: 'Atlas',
+      label: 'Стекло панорамной крыши',
+      url:
+        process.env.BAMPER_ATLAS_PANORAMIC_ROOF_GLASS_URL ??
+        BAMPER_DEFAULTS.ATLAS_PANORAMIC_ROOF_GLASS_URL,
+    },
+    {
+      key: 'atlas-steering-airbag',
+      car: 'Atlas',
+      label: 'Подушка безопасности руля',
+      url:
+        process.env.BAMPER_ATLAS_STEERING_AIRBAG_URL ?? BAMPER_DEFAULTS.ATLAS_STEERING_AIRBAG_URL,
+    },
+    {
+      key: 'atlas-front-bumper-bracket',
+      car: 'Atlas',
+      label: 'Крепление переднего бампера',
+      url:
+        process.env.BAMPER_ATLAS_FRONT_BUMPER_BRACKET_URL ??
+        BAMPER_DEFAULTS.ATLAS_FRONT_BUMPER_BRACKET_URL,
+    },
+    {
+      key: 'atlas-radiator-deflector',
+      car: 'Atlas',
+      label: 'Дефлектор радиатора',
+      url:
+        process.env.BAMPER_ATLAS_RADIATOR_DEFLECTOR_URL ??
+        BAMPER_DEFAULTS.ATLAS_RADIATOR_DEFLECTOR_URL,
+    },
   ] satisfies BamperFeedConfig[],
   scrapeCron: process.env.BAMPER_SCRAPE_CRON ?? BAMPER_DEFAULTS.SCRAPE_CRON,
   // Abstract "Atlas parts" channel — shared by both cars/all parts.
