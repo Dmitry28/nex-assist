@@ -29,6 +29,7 @@ interface Harness {
   notified: BamperResult[];
   errors: string[];
   healthAlerts: string[];
+  fetched: string[];
 }
 
 /**
@@ -44,12 +45,14 @@ const harness = (
   const notified: BamperResult[] = [];
   const errors: string[] = [];
   const healthAlerts: string[] = [];
+  const fetched: string[] = [];
 
   const config = { get: () => feeds } as unknown as ConfigService;
 
   const parser = {
     fetch: (url: string): Promise<BamperListing[]> => {
       const key = url.match(/zapchast_([^/]+)/)?.[1] ?? '';
+      fetched.push(key);
       if (failing.has(key)) return Promise.reject(new Error(`${key} is behind Cloudflare`));
       return Promise.resolve([listing(`${key}-1`)]);
     },
@@ -91,6 +94,7 @@ const harness = (
     notified,
     errors,
     healthAlerts,
+    fetched,
   };
 };
 
@@ -161,6 +165,29 @@ describe('BamperService', () => {
     await expect(service.run()).rejects.toThrow('kapot is behind Cloudflare');
     expect(errors).toEqual(['kapot is behind Cloudflare']);
     expect(notified).toEqual([]);
+  });
+
+  // On 28.11 every one of 12 feeds failed on the same cause and the run spent 42 minutes (~3.5 min
+  // per feed) finding that out. Once the failures are clearly shared, the rest are not tried.
+  it('stops fetching after 3 feeds fail in a row and names the skipped ones as failed', async () => {
+    const feeds = ['a', 'b', 'c', 'd', 'e', 'f'].map(feed);
+    const { service, fetched } = harness(feeds, new Set(['c', 'd', 'e']));
+
+    const result = await service.run();
+
+    expect(fetched).toEqual(['a', 'b', 'c', 'd', 'e']);
+    expect(result.feeds.map(f => f.feedKey)).toEqual(['a', 'b']);
+    expect(result.failedFeeds).toEqual(['c', 'd', 'e', 'f'].map(k => `VW Atlas · ${k}`));
+  });
+
+  it('keeps going when failures are not consecutive', async () => {
+    const feeds = ['a', 'b', 'c', 'd', 'e'].map(feed);
+    const { service, fetched } = harness(feeds, new Set(['a', 'b', 'd']));
+
+    const result = await service.run();
+
+    expect(fetched).toEqual(['a', 'b', 'c', 'd', 'e']);
+    expect(result.feeds.map(f => f.feedKey)).toEqual(['c', 'e']);
   });
 
   // A recovery verdict once arrived in the channel under the "⚠️ Ошибка скрапинга" header,

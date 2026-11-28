@@ -98,6 +98,58 @@ describe('TelegramService — with bot', () => {
     expect(bot.sendMediaGroup).toHaveBeenCalledWith('123', media);
   });
 
+  describe('sendMediaGroup when Telegram rejects one photo', () => {
+    const rejected = (position: number): Error =>
+      new Error(
+        `ETELEGRAM: 400 Bad Request: failed to send message #${position} with the error message "WEBPAGE_CURL_FAILED"`,
+      );
+    const photo = (n: number, caption?: string) => ({
+      type: 'photo' as const,
+      media: `http://img/${n}`,
+      ...(caption ? { caption, parse_mode: 'HTML' as const } : {}),
+    });
+
+    it('resends the album without the rejected photo', async () => {
+      bot.sendMediaGroup.mockRejectedValueOnce(rejected(2)).mockResolvedValueOnce([{}]);
+      const media = [photo(1, 'cap'), photo(2), photo(3)];
+
+      expect(await service.sendMediaGroup('123', media)).toBe(true);
+
+      expect(bot.sendMediaGroup).toHaveBeenLastCalledWith('123', [photo(1, 'cap'), photo(3)]);
+      expect(bot.sendMessage).not.toHaveBeenCalled();
+    });
+
+    it('moves the caption when the rejected photo carried it', async () => {
+      bot.sendMediaGroup.mockRejectedValueOnce(rejected(1)).mockResolvedValueOnce([{}]);
+
+      await service.sendMediaGroup('123', [photo(1, 'cap'), photo(2), photo(3)]);
+
+      expect(bot.sendMediaGroup).toHaveBeenLastCalledWith('123', [photo(2, 'cap'), photo(3)]);
+    });
+
+    it('sends the lone survivor as a plain photo', async () => {
+      bot.sendMediaGroup.mockRejectedValueOnce(rejected(2));
+
+      expect(await service.sendMediaGroup('123', [photo(1, 'cap'), photo(2)])).toBe(true);
+
+      expect(bot.sendPhoto).toHaveBeenCalledWith(
+        '123',
+        'http://img/1',
+        { caption: 'cap', parse_mode: 'HTML' },
+        undefined,
+      );
+    });
+
+    it('falls back to text when the failure does not name a photo', async () => {
+      bot.sendMediaGroup.mockRejectedValue(new Error('network error'));
+
+      expect(await service.sendMediaGroup('123', [photo(1, 'cap'), photo(2)])).toBe(true);
+
+      expect(bot.sendMediaGroup).toHaveBeenCalledTimes(1);
+      expect(bot.sendMessage).toHaveBeenCalledWith('123', 'cap', { parse_mode: 'HTML' });
+    });
+  });
+
   it('returns false immediately on non-429 error (no retry)', async () => {
     bot.sendMessage.mockRejectedValue(new Error('network error'));
     expect(await service.sendMessage('123', 'hello')).toBe(false);
