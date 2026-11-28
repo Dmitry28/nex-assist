@@ -80,21 +80,6 @@
     ]
   },
   {
-    "title": "Земельный участок по пер. Заречному 1-му, 1А",
-    "link": "http://gcn.by/properties/zemelnyj-uchastok-po-per-zarechnomu-1-mu-1a/",
-    "price": "34 467,00 руб.",
-    "area": "0,0995 га",
-    "address": "г. Гродно, пер. Заречный 1-й, 1А",
-    "cadastralNumber": "440100000002013061",
-    "cadastralMapUrl": "https://map.nca.by/search/01a10b59-cfb3-70d5-b264-cd19e3804705",
-    "auctionDate": "Аукцион состоится 24.11.2026",
-    "applicationDeadline": "Заявления принимаются с 21.10.2026 по 18.11.2026",
-    "communications": "электроснабжение, газоснабжение, водоснабжение, водоотведение",
-    "images": [
-      "http://gcn.by/wp-content/uploads/2026/10/u1-bogataya-sajt-1.png"
-    ]
-  },
-  {
     "title": "Земельный участок по ул. Райгородская, 29",
     "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-rajgorodskaya-29/",
     "price": "36 011,00 руб.",
@@ -145,21 +130,6 @@
       "https://gcn.by/wp-content/uploads/2026/09/perelomskaya-sajt-1.png",
       "https://gcn.by/wp-content/uploads/2026/09/perelomskaya-sajt-2.png",
       "https://gcn.by/wp-content/uploads/2026/09/perelomskaya-sajt-3.png"
-    ]
-  },
-  {
-    "title": "Земельный участок по ул. Нектарная, 2А",
-    "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-nektarnaya-2a/",
-    "price": "30 772,00 руб.",
-    "area": "0,1002 га",
-    "address": "г. Гродно, ул. Нектарная, 2А",
-    "cadastralNumber": "440100000001015886",
-    "cadastralMapUrl": "https://map.nca.by/search/019ff50d-b24b-725c-ad41-55c47f7ff54b",
-    "auctionDate": "Аукцион состоится 24.11.2026",
-    "applicationDeadline": "Заявления принимаются с 21.10.2026 по 18.11.2026",
-    "communications": "электроснабжение, газоснабжение, водоснабжение",
-    "images": [
-      "http://gcn.by/wp-content/uploads/2026/07/u5-nektarnaya-sajt.png"
     ]
   },
   {
@@ -284,8 +254,8 @@
     "address": "г. Гродно, У-1557 в микрорайоне «Зарица-4», ул. Рожанского, 110",
     "cadastralNumber": "440100000003004431",
     "cadastralMapUrl": "https://map.nca.by/search/019db985-de98-73fc-8a6b-3bb7a168581e",
-    "auctionDate": "Возможно проведение повторного аукциона при обращении заинтересованного в приобретении объекта лица",
-    "applicationDeadline": "Не указан",
+    "auctionDate": "Не указана",
+    "applicationDeadline": "Заявления принимаются по 16.12.2026",
     "communications": "Не указаны",
     "images": [
       "https://gcn.by/wp-content/uploads/2022/03/rozhanskogo-110-7.png",

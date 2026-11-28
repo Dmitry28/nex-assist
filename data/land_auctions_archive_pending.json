@@ -1,20 +1,38 @@
 [
   {
     "listing": {
-      "title": "Земельный участок по ул. Нектарная, 2Б",
-      "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-nektarnaya-2b/",
-      "price": "30 833,00 руб.",
-      "area": "0,1004 га",
-      "address": "г. Гродно, ул. Нектарная, 2Б",
-      "cadastralNumber": "440100000001015887",
-      "cadastralMapUrl": "https://map.nca.by/search/019ff50d-fc36-7322-b126-c9dfca10b402",
-      "auctionDate": "Аукцион состоится 10.11.2026",
-      "applicationDeadline": "Заявления принимаются по 04.11.2026",
-      "communications": "электроснабжение, газоснабжение, водоснабжение",
+      "title": "Земельный участок по пер. Заречному 1-му, 1А",
+      "link": "http://gcn.by/properties/zemelnyj-uchastok-po-per-zarechnomu-1-mu-1a/",
+      "price": "34 467,00 руб.",
+      "area": "0,0995 га",
+      "address": "г. Гродно, пер. Заречный 1-й, 1А",
+      "cadastralNumber": "440100000002013061",
+      "cadastralMapUrl": "https://map.nca.by/search/01a10b59-cfb3-70d5-b264-cd19e3804705",
+      "auctionDate": "Аукцион состоится 24.11.2026",
+      "applicationDeadline": "Заявления принимаются с 21.10.2026 по 18.11.2026",
+      "communications": "электроснабжение, газоснабжение, водоснабжение, водоотведение",
       "images": [
-        "http://gcn.by/wp-content/uploads/2026/07/u4-nektarnaya-sajt.png"
+        "http://gcn.by/wp-content/uploads/2026/10/u1-bogataya-sajt-1.png"
       ]
     },
-    "removedAt": "2026-11-11T11:28:06.024Z"
+    "removedAt": "2026-11-28T12:22:01.555Z"
+  },
+  {
+    "listing": {
+      "title": "Земельный участок по ул. Нектарная, 2А",
+      "link": "http://gcn.by/properties/zemelnyj-uchastok-po-ul-nektarnaya-2a/",
+      "price": "30 772,00 руб.",
+      "area": "0,1002 га",
+      "address": "г. Гродно, ул. Нектарная, 2А",
+      "cadastralNumber": "440100000001015886",
+      "cadastralMapUrl": "https://map.nca.by/search/019ff50d-b24b-725c-ad41-55c47f7ff54b",
+      "auctionDate": "Аукцион состоится 24.11.2026",
+      "applicationDeadline": "Заявления принимаются с 21.10.2026 по 18.11.2026",
+      "communications": "электроснабжение, газоснабжение, водоснабжение",
+      "images": [
+        "http://gcn.by/wp-content/uploads/2026/07/u5-nektarnaya-sajt.png"
+      ]
+    },
+    "removedAt": "2026-11-28T12:22:01.555Z"
   }
 ]

@@ -39,17 +39,17 @@
     "source": "pogorany",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-11-26T13:39:15.107Z"
+    "lastNonEmptyAt": "2026-11-28T13:03:43.795Z"
   },
   {
     "source": "ghb",
-    "zeroRuns": 26,
+    "zeroRuns": 27,
     "alertedAt": 24,
     "lastNonEmptyAt": "2026-10-20T09:06:38.257Z"
   },
   {
     "source": "mosty:gsz",
-    "zeroRuns": 31,
+    "zeroRuns": 32,
     "alertedAt": 31,
     "lastNonEmptyAt": "2026-10-15T08:49:19.182Z"
   },
@@ -57,25 +57,25 @@
     "source": "mosty:rabota",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-11-26T13:43:00.138Z"
+    "lastNonEmptyAt": "2026-11-28T13:06:06.545Z"
   },
   {
     "source": "mosty:joblab",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-11-26T13:43:00.139Z"
+    "lastNonEmptyAt": "2026-11-28T13:06:06.546Z"
   },
   {
     "source": "mosty:evroopt",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-11-26T13:43:00.139Z"
+    "lastNonEmptyAt": "2026-11-28T13:06:06.547Z"
   },
   {
     "source": "mosty:crb",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-11-26T13:43:00.140Z"
+    "lastNonEmptyAt": "2026-11-28T13:06:06.547Z"
   },
   {
     "source": "mosty:fair",
@@ -104,6 +104,6 @@
     "source": "razborf",
     "zeroRuns": 0,
     "alertedAt": 0,
-    "lastNonEmptyAt": "2026-11-26T13:39:09.536Z"
+    "lastNonEmptyAt": "2026-11-28T13:03:38.145Z"
   }
 ]
