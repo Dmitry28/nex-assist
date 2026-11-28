@@ -6,7 +6,12 @@ import { sleep } from '../../common/utils/sleep';
 import type { BamperFeedConfig } from '../../config/bamper.config';
 import { BamperNotifierService, type BamperNotifyResult } from './bamper-notifier.service';
 import { BamperParserService } from './bamper-parser.service';
-import { INTER_FEED_DELAY_MS, RUN_TIMEOUT_MS, dataFile } from './constants';
+import {
+  INTER_FEED_DELAY_MS,
+  MAX_CONSECUTIVE_FEED_FAILURES,
+  RUN_TIMEOUT_MS,
+  dataFile,
+} from './constants';
 import {
   isBamperSnapshotEntry,
   type BamperFeedResult,
@@ -84,8 +89,18 @@ export class BamperService {
     const previousByFeed = new Map<string, Map<string, BamperSnapshotEntry>>();
     const failedFeeds: string[] = [];
     let lastFetchError: unknown;
+    let consecutiveFailures = 0;
 
     for (const [i, feed] of feeds.entries()) {
+      // The failures share a cause, so fetching the rest only burns another ~3.5 min each.
+      // The skipped feeds are named as failed, so the summary still says they went unchecked.
+      if (consecutiveFailures >= MAX_CONSECUTIVE_FEED_FAILURES) {
+        failedFeeds.push(`${feed.car} · ${feed.label}`);
+        this.logger.warn(
+          `Feed ${feed.key}: skipped — ${consecutiveFailures} feeds failed in a row`,
+        );
+        continue;
+      }
       if (i > 0) await sleep(INTER_FEED_DELAY_MS);
 
       // One feed's fetch must not cost us the other five. bamper.by sits behind Cloudflare and
@@ -101,6 +116,7 @@ export class BamperService {
         ]);
       } catch (error) {
         lastFetchError = error;
+        consecutiveFailures++;
         // Same "<car> · <part>" shape the summary uses for the feeds that worked — two cars
         // share the channel, so a bare part label would not say whose part went unchecked.
         failedFeeds.push(`${feed.car} · ${feed.label}`);
@@ -109,6 +125,7 @@ export class BamperService {
         );
         continue;
       }
+      consecutiveFailures = 0;
 
       const previousMap = new Map(previousEntries.map(e => [e.id, e]));
 
