@@ -3,7 +3,7 @@ import { ConfigService } from '@nestjs/config';
 import TelegramBot, { type InputMediaPhoto } from 'node-telegram-bot-api';
 import { sleep } from '../../common/utils/sleep';
 import { MAX_SEND_ATTEMPTS, SEND_INTERVAL_MS } from './constants';
-import { extractRetryAfter } from './telegram.utils';
+import { extractFailedMediaPosition, extractRetryAfter, withoutMediaAt } from './telegram.utils';
 
 /** Name and media type for a photo sent as bytes rather than as a URL. */
 export interface PhotoUpload {
@@ -92,14 +92,40 @@ export class TelegramService implements OnModuleInit {
     );
   }
 
+  /**
+   * Sends 2-10 photos as an album. When Telegram cannot fetch one URL (WEBPAGE_CURL_FAILED, the
+   * Kufar CDN does this), it names that photo — the album is resent without it rather than losing
+   * every photo. Falls back to a text-only message when nothing can be sent.
+   */
   async sendMediaGroup(chatId: string, media: InputMediaPhoto[]): Promise<boolean> {
     if (!this.bot) return this.dryRun('sendMediaGroup', chatId, `${media.length} photos`);
-    await this.throttle(chatId);
-    const ok = await this.withRetry(() =>
-      this.bot!.sendMediaGroup(chatId, media).then(() => undefined),
-    );
-    if (ok) return true;
+    let group = media;
+    for (;;) {
+      await this.throttle(chatId);
+      let failure: unknown;
+      const ok = await this.withRetry(() =>
+        this.bot!.sendMediaGroup(chatId, group)
+          .then(() => undefined)
+          .catch((error: unknown) => {
+            failure = error;
+            throw error;
+          }),
+      );
+      if (ok) return true;
+
+      const position = extractFailedMediaPosition(failure);
+      if (position === null || position > group.length) break;
+      this.logger.warn(`Photo #${position} rejected by Telegram — resending without it`);
+      group = withoutMediaAt(group, position - 1);
+      if (group.length < 2) break;
+    }
+
     const caption = media.find(m => m.caption)?.caption ?? '';
+    // An album needs two photos; a lone survivor goes out as a plain photo.
+    const [last] = group;
+    if (group.length === 1 && last && typeof last.media === 'string') {
+      return this.sendPhoto(chatId, last.media, last.caption ?? caption);
+    }
     this.logger.warn('Media group failed, falling back to text-only message');
     return this.sendMessage(chatId, caption);
   }

@@ -18,6 +18,7 @@
  * land-auctions module.
  */
 import { NestFactory } from '@nestjs/core';
+import { withTimeout } from '../common/utils/with-timeout';
 import { AppModule } from '../app.module';
 import { AvByService } from '../modules/av-by/av-by.service';
 import { BamperService } from '../modules/bamper/bamper.service';
@@ -33,6 +34,16 @@ import { MostyJobsService } from '../modules/mosty-jobs/mosty-jobs.service';
 import { PogoranyService } from '../modules/pogorany/pogorany.service';
 import { RealtService } from '../modules/realt/realt.service';
 import { TownhousesService } from '../modules/townhouses/townhouses.service';
+
+/**
+ * Wall-clock cap per module. The services' own watchdogs only release their lock — they do not
+ * stop the run — so one hung browser (27.11: GCN, after a 600s watchdog) held the whole job
+ * until GitHub cancelled it 6 hours later and every module after it never ran.
+ */
+const MODULE_TIMEOUT_MS = 20 * 60 * 1000;
+
+/** How long `app.close()` may take before we stop waiting for a stuck browser to shut down. */
+const CLOSE_TIMEOUT_MS = 30_000;
 
 type Module =
   | 'land'
@@ -77,6 +88,15 @@ function parseModule(): Module {
   process.exit(1);
 }
 
+/** Run one module; a failure or a hang is logged and must not stop the modules after it. */
+async function runModule(name: string, run: () => Promise<unknown>): Promise<void> {
+  try {
+    await withTimeout(run(), MODULE_TIMEOUT_MS, name);
+  } catch (err) {
+    console.error(`${name} scrape failed:`, err);
+  }
+}
+
 async function bootstrap(): Promise<void> {
   const target = parseModule();
 
@@ -89,122 +109,74 @@ async function bootstrap(): Promise<void> {
     // Each scraper is wrapped independently so one failure does not skip the other.
     // Errors are already reported to Telegram via notifyError() inside each service.
     if (target === 'all' || target === 'land') {
-      try {
-        await app.get(LandAuctionsService).run();
-      } catch (err) {
-        console.error('LandAuctions scrape failed:', err);
-      }
+      await runModule('LandAuctions', () => app.get(LandAuctionsService).run());
     }
 
     if (target === 'all' || target === 'bid-cars') {
-      try {
-        await app.get(BidCarsService).run();
-      } catch (err) {
-        console.error('BidCars scrape failed:', err);
-      }
+      await runModule('BidCars', () => app.get(BidCarsService).run());
     }
 
     if (target === 'all' || target === 'kufar') {
-      try {
-        await app.get(KufarService).run();
-      } catch (err) {
-        console.error('Kufar scrape failed:', err);
-      }
+      await runModule('Kufar', () => app.get(KufarService).run());
     }
 
     if (target === 'all' || target === 'kufar-rent-flat') {
-      try {
-        await app.get(KufarRentFlatService).run();
-      } catch (err) {
-        console.error('KufarRentFlat scrape failed:', err);
-      }
+      await runModule('KufarRentFlat', () => app.get(KufarRentFlatService).run());
     }
 
     if (target === 'all' || target === 'kufar-rent-long') {
-      try {
-        await app.get(KufarRentLongService).run();
-      } catch (err) {
-        console.error('KufarRentLong scrape failed:', err);
-      }
+      await runModule('KufarRentLong', () => app.get(KufarRentLongService).run());
     }
 
     if (target === 'all' || target === 'realt') {
-      try {
-        await app.get(RealtService).run();
-      } catch (err) {
-        console.error('Realt scrape failed:', err);
-      }
+      await runModule('Realt', () => app.get(RealtService).run());
     }
 
     if (target === 'all' || target === 'av-by') {
-      try {
-        await app.get(AvByService).run();
-      } catch (err) {
-        console.error('AvBy scrape failed:', err);
-      }
+      await runModule('AvBy', () => app.get(AvByService).run());
     }
 
     if (target === 'all' || target === 'bamper') {
-      try {
-        await app.get(BamperService).run();
-      } catch (err) {
-        console.error('Bamper scrape failed:', err);
-      }
+      await runModule('Bamper', () => app.get(BamperService).run());
     }
 
     if (target === 'all' || target === 'idriver') {
-      try {
-        await app.get(IdriverService).run();
-      } catch (err) {
-        console.error('Idriver scrape failed:', err);
-      }
+      await runModule('Idriver', () => app.get(IdriverService).run());
     }
 
     if (target === 'all' || target === 'razborf') {
-      try {
-        await app.get(RazborfService).run();
-      } catch (err) {
-        console.error('Razborf scrape failed:', err);
-      }
+      await runModule('Razborf', () => app.get(RazborfService).run());
     }
 
     if (target === 'all' || target === 'pogorany') {
-      try {
-        await app.get(PogoranyService).run();
-      } catch (err) {
-        console.error('Pogorany scrape failed:', err);
-      }
+      await runModule('Pogorany', () => app.get(PogoranyService).run());
     }
 
     if (target === 'all' || target === 'townhouses') {
-      try {
-        await app.get(TownhousesService).run();
-      } catch (err) {
-        console.error('Townhouses scrape failed:', err);
-      }
+      await runModule('Townhouses', () => app.get(TownhousesService).run());
     }
 
     if (target === 'all' || target === 'ghb') {
-      try {
-        await app.get(GhbService).run();
-      } catch (err) {
-        console.error('Ghb scrape failed:', err);
-      }
+      await runModule('Ghb', () => app.get(GhbService).run());
     }
 
     if (target === 'all' || target === 'mosty-jobs') {
-      try {
-        await app.get(MostyJobsService).run();
-      } catch (err) {
-        console.error('MostyJobs scrape failed:', err);
-      }
+      await runModule('MostyJobs', () => app.get(MostyJobsService).run());
     }
   } finally {
-    await app.close();
+    try {
+      await withTimeout(app.close(), CLOSE_TIMEOUT_MS, 'app.close');
+    } catch (err) {
+      console.error('Shutdown failed:', err);
+    }
   }
 }
 
-bootstrap().catch(err => {
-  console.error('Scrape failed:', err);
-  process.exit(1);
-});
+bootstrap()
+  // An abandoned (timed-out) module may still hold a Chrome process and keep the event loop
+  // alive, so exit explicitly instead of waiting for it to drain.
+  .then(() => process.exit(0))
+  .catch(err => {
+    console.error('Scrape failed:', err);
+    process.exit(1);
+  });

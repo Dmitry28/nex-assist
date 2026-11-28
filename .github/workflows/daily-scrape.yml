@@ -25,6 +25,9 @@ jobs:
     # Pinned: on ubuntu-26.04 (ubuntu-latest since Oct 2026) puppeteer's postinstall fails to
     # unzip Chrome ("checkdir error: ... File exists"). It only shows when the browser cache is cold.
     runs-on: ubuntu-24.04
+    # 27.11: one hung browser held the job for 6h until GitHub cancelled it. A normal run is
+    # 20-50 min; the default cap is 360.
+    timeout-minutes: 120
     # Production only: test changes locally (`npm run scrape:<source>`), then release to main.
     if: github.ref == 'refs/heads/main'
     environment: production

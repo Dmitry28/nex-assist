@@ -28,5 +28,13 @@ export const RUN_TIMEOUT_MS = 10 * 60 * 1000;
 /** Delay between feeds to avoid overlapping Puppeteer navigations (ms). */
 export const INTER_FEED_DELAY_MS = 1_000;
 
+/**
+ * Feeds that may fail in a row before the rest of the run is skipped. A feed that fails has
+ * already burned the whole ladder (browser, free proxies, every paid provider, two 30s browser
+ * retries) — about 3.5 min. When the cause is shared (Cloudflare, spent provider credits) the
+ * next feeds fail the same way: on 28.11 all 12 did, and the run spent 42 minutes finding out.
+ */
+export const MAX_CONSECUTIVE_FEED_FAILURES = 3;
+
 /** Per-feed snapshot file path, e.g. ./data/bamper_rear-bumper_all.json. */
 export const dataFile = (feedKey: string): string => `./data/bamper_${feedKey}_all.json`;
